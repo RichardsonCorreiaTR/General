@@ -1,0 +1,7 @@
+{
+  "pasta_destino": "referencia/codigo-fonte",
+  "pasta_zip_onedrive": "referencia/banco-dados/codigo-sistema/zip",
+  "versao_minima": "1.0.0",
+  "arquivos_essenciais": ["META.json", "src/"],
+  "ultima_verificacao": ""
+}

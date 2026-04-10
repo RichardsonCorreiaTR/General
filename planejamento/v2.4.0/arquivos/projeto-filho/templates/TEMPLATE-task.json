@@ -1,0 +1,20 @@
+{
+  "id": "",
+  "titulo": "",
+  "rota": "",
+  "passo_atual": 0,
+  "total_passos": 0,
+  "status": "em-andamento",
+  "analista": "",
+  "criado_em": "",
+  "atualizado_em": "",
+  "artefatos": [],
+  "achados_resumo": "",
+  "modulos_envolvidos": [],
+  "pendencias": "",
+  "sgd_submetido": false,
+  "similares_detectadas": [],
+  "alinhamento_sugerido": false,
+  "alinhamento_realizado": false,
+  "historico": []
+}

@@ -1,0 +1,75 @@
+---
+description: Agente para revisao de definicoes submetidas pelos analistas
+globs: "revisao/**"
+alwaysApply: false
+---
+
+# Agente -- Revisao de Definicoes
+
+## Quando ativado
+
+Quando o gerente pedir para revisar definicoes em `revisao/pendente/`.
+
+## Tipos de artefato aceitos
+
+- **PSAIs**: Pre-analise de solicitacao (formato TEMPLATE-psai.md)
+- **SAIs**: Definicao detalhada com GERAL/PROCESSOS/ARQUIVO/CONTROLE/RELATORIOS (formato TEMPLATE-sai.md)
+- **RNs** (legado): Regras de negocio no formato antigo
+- **Fluxos, Glossarios, Analises de Impacto**: Formatos proprios
+
+## Procedimento
+
+1. **Leia a definicao**: Abra o arquivo em `revisao/pendente/`.
+2. **Identifique o tipo**: E uma PSAI, SAI, RN ou outro?
+3. **Verifique o template**: O formato segue o template correto?
+   - PSAI: todos os campos de identificacao, cenarios descritos?
+   - SAI: secoes GERAL/PROCESSOS/ARQUIVO/CONTROLE/RELATORIOS presentes?
+   - Campos obrigatorios preenchidos?
+4. **Cruze com a base**: Busque definicoes relacionadas em `banco-dados/regras-negocio/`.
+   Identifique conflitos, sobreposicoes e lacunas.
+5. **Verifique cenarios**: Os cenarios cobrem o caso principal, excecoes e bordas?
+   Ha exemplos numericos concretos?
+6. **Analise impacto**: As areas de impacto marcadas estao corretas?
+   Faltou alguma area? Use `banco-dados/mapa-sistema/mapa-escrita.md` e `indice-mapas-areas.md` como referencia.
+7. **Verifique legislacao**: Se envolve calculos legais, confira
+   com `banco-dados/legislacao/`.
+8. **Emita parecer**: APROVAR, DEVOLVER ou ESCALAR.
+
+## Formato do parecer
+
+```markdown
+## Parecer de Revisao -- [PSAI/SAI XXXXX]
+
+**Revisor**: Agente IA + Gerente de Produto
+**Data**: AAAA-MM-DD
+**Decisao**: APROVADO / DEVOLVIDO / ESCALADO
+
+### Pontos positivos
+- [liste]
+
+### Cobertura de cenarios
+- Total de cenarios identificados: X
+- Cenarios cobertos: Y
+- Cenarios faltantes: [liste, se houver]
+
+### Pontos de atencao
+- [liste]
+
+### Conflitos identificados
+- [liste com referencia ao arquivo]
+
+### Recomendacao
+[texto]
+```
+
+## Apos a decisao
+
+Use o script `scripts\revisar-definicao.ps1` para executar a acao:
+
+- **APROVADO**: `.\scripts\revisar-definicao.ps1 -Acao aprovar -Arquivo {nome}.md`
+  O script move para `revisao/aprovado/` e copia automaticamente para `banco-dados/regras-negocio/{dominio-escrita}/` (mapeamento legado em `revisar-definicao.ps1`).
+- **DEVOLVIDO**: `.\scripts\revisar-definicao.ps1 -Acao devolver -Arquivo {nome}.md -Motivo "razao"`
+  O script move para `revisao/devolvido/` e registra o motivo no log.
+- **ESCALADO**: Manter em `revisao/pendente/` com flag de discussao necessaria.
+
+Para listar pendentes: `.\scripts\revisar-definicao.ps1 -Acao listar`

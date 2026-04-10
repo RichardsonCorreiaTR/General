@@ -1,0 +1,22 @@
+=== Reconstruindo cache monolitico a partir dos fracionados ===
+Fracionados: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\banco-dados\dados-brutos\psai
+Destino: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\scripts\cache\sai-psai-folha.json
+
+Arquivos encontrados: 12
+  Lendo ne-descartadas.json... 7406 registros (acumulado: 7406)
+  Lendo ne-liberadas.json... 12528 registros (acumulado: 19934)
+  Lendo ne-pendentes.json... 319 registros (acumulado: 20253)
+  Lendo sail-descartadas.json... 358 registros (acumulado: 20611)
+  Lendo sail-liberadas.json... 678 registros (acumulado: 21289)
+  Lendo sail-pendentes.json... 1017 registros (acumulado: 22306)
+  Lendo sal-descartadas.json... 1998 registros (acumulado: 24304)
+  Lendo sal-liberadas.json... 2015 registros (acumulado: 26319)
+  Lendo sal-pendentes.json... 11 registros (acumulado: 26330)
+  Lendo sam-descartadas.json... 1586 registros (acumulado: 27916)
+  Lendo sam-liberadas.json... 2649 registros (acumulado: 30565)
+  Lendo sam-pendentes.json... 4742 registros (acumulado: 35307)
+
+Total de registros: 35307
+Salvando cache...
+Cache reconstruido: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\scripts\cache\sai-psai-folha.json (178.4 MB, 35307 registros)
+=== Concluido! ===

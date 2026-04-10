@@ -1,0 +1,8 @@
+﻿{
+  "mcpServers": {
+    "sharepoint-tr": {
+      "url": "https://aideployment-prod.plexus.gcs.int.thomsonreuters.com/207870/sharepoint-mcp-server/mcp/",
+      "type": "streamableHttp"
+    }
+  }
+}

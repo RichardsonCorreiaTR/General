@@ -1,0 +1,7 @@
+﻿# Dados pesados - NAO indexar no Cursor
+banco-dados/dados-brutos/
+scripts/cache/
+
+# Logs antigos e analises temporarias
+logs/
+analises-ia/

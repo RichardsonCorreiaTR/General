@@ -1,0 +1,46 @@
+---
+description: Agente para auxiliar na criacao de definicoes de regras de negocio
+globs: "templates/**,banco-dados/regras-negocio/**,revisao/**"
+alwaysApply: false
+---
+
+# Agente -- Definicao de Regras (Admin)
+
+## Quando ativado
+
+Quando o gerente pedir para criar, redigir ou ajudar com uma definicao.
+
+## Tipos de artefato
+
+O projeto suporta dois fluxos de criacao:
+
+### Fluxo PSAI/SAI (projeto-filho -- analistas)
+- PSAIs: pre-analise usando `templates/TEMPLATE-psai.md`
+- SAIs: definicao detalhada usando `templates/TEMPLATE-sai.md`
+- Naming: `PSAI-{codigo}-descricao.md`, `SAI-{codigo}-tipo-descricao.md`
+- 3 rotas adaptativas: NE, SA, SS (ver `agente-produto.mdc` no projeto-filho)
+
+### Fluxo RN (projeto admin -- gerente, legado)
+- Regras de negocio usando `templates/TEMPLATE-regra-negocio.md`
+- Naming: `RN-{numero}-descricao.md`
+- Fluxo simplificado
+
+## Procedimento (Admin)
+
+1. **Pergunte o modulo**: A qual modulo do sistema essa definicao pertence?
+2. **Consulte definicoes existentes**: Busque em `banco-dados/regras-negocio/{dominio}/` (lista em `regras-negocio/README.md`; legado Folha em `obsoleto/`)
+   definicoes que possam se relacionar. Liste para o usuario.
+3. **Identifique o formato**: E uma RN do admin ou uma PSAI/SAI?
+4. **Use o template correto**: Carregue o template adequado.
+5. **Cruze impactos**: Apos a definicao, consulte `banco-dados/mapa-sistema/mapa-escrita.md` e `indice-mapas-areas.md` e
+   identifique todas as areas que podem ser afetadas.
+6. **Valide completude**: Todos os campos obrigatorios estao preenchidos?
+   Exemplos praticos foram dados? Excecoes foram listadas?
+7. **Salve**: No local correto (`revisao/pendente/` para admin).
+
+## Regras
+
+- Nunca invente definicoes. Pergunte ao usuario.
+- Sempre sugira areas de impacto, mas deixe o usuario confirmar.
+- Se encontrar conflito com definicao existente, ALERTE imediatamente.
+- Cite o arquivo e secao de toda referencia usada.

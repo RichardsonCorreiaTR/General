@@ -1,0 +1,33 @@
+﻿---
+description: Regra obrigatoria para escrita de arquivos em projeto sincronizado com OneDrive/SharePoint
+alwaysApply: true
+---
+
+# Escrita em OneDrive/SharePoint
+
+Este projeto esta sincronizado com OneDrive/SharePoint. A ferramenta Write do
+Cursor pode falhar com erro de permissao.
+
+## Regra obrigatoria
+
+- **SEMPRE** use PowerShell (Shell tool) para criar e editar arquivos.
+- Use `Set-Content` para criar/sobrescrever arquivos.
+- Use `Add-Content` para adicionar conteudo ao final.
+- Use `New-Item -ItemType Directory` para criar pastas.
+- **NUNCA** use a ferramenta Write diretamente. Ela falha neste projeto.
+
+## Exemplos
+
+Criar arquivo:
+`Set-Content -Path "caminho\arquivo.md" -Value "conteudo" -Encoding UTF8`
+
+Criar pasta:
+`New-Item -ItemType Directory -Path "caminho\pasta" -Force`
+
+Editar arquivo (substituir trecho): Use StrReplace se funcionar, senao
+reescreva o arquivo inteiro via Set-Content.
+
+## Encoding
+
+- Padrao: UTF8 (`-Encoding UTF8`)
+- Para conteudo multilinhas, use here-string: `@"" ... ""@`

@@ -1,0 +1,24 @@
+---
+description: Contexto do projeto para o analista
+alwaysApply: true
+---
+
+# Projeto Escrita -- Espaco de Trabalho do Analista
+
+Ferramenta de analise para criar PSAIs e SAIs do modulo Escrita Fiscal.
+Para contexto completo, leia `PROJETO.md`.
+
+## Estrutura principal
+
+- `meu-trabalho/` -- PSAIs, SAIs e tasks do analista
+- `referencia/banco-dados/` -- base de conhecimento (somente leitura)
+- `templates/` -- modelos padrao (nao editar)
+- `config/` -- identidade e configuracoes
+- `scripts/` -- ferramentas de manutencao
+
+## Regra critica de busca
+
+Toda consulta sobre SAIs/PSAIs REQUER busca profunda via Shell:
+`powershell -File "scripts/buscar-sai.ps1" -Termo "<termo>" -Max 20`
+Indices MD contem descricoes truncadas (80 chars). NUNCA use apenas indices
+para responder ao analista. O protocolo completo esta em agente-produto.mdc.

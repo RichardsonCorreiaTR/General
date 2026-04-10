@@ -1,0 +1,16 @@
+﻿{
+  "id": "",
+  "titulo": "",
+  "rota": "",
+  "passo_atual": 0,
+  "total_passos": 0,
+  "status": "em-andamento",
+  "analista": "",
+  "criado_em": "",
+  "atualizado_em": "",
+  "artefatos": [],
+  "achados_resumo": "",
+  "modulos_envolvidos": [],
+  "pendencias": "",
+  "historico": []
+}

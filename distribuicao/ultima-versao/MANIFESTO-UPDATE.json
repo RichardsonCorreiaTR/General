@@ -1,0 +1,11 @@
+﻿{
+    "geradoPor":  "0181286",
+    "changelog":  "Documentacao Escrita SDD: templates apresentacao e TEMPLATE-fluxo-processo; alinhamento CursorEscrita. Blueprint admin 2.5.",
+    "data":  "2026-04-10T14:02:41",
+    "preservar":  [
+                      "config/analista.json",
+                      "config/caminhos.json",
+                      "meu-trabalho"
+                  ],
+    "versao":  "2.4.2"
+}

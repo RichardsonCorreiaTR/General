@@ -1,0 +1,20 @@
+﻿{
+    "ultimaExecucao":  "2026-03-27T08:02:54.5058858-03:00",
+    "resultado":  "sucesso",
+    "tempoSegundos":  171,
+    "registrosProcessados":  29502,
+    "totalNoBanco":  0,
+    "psaiMaisRecente":  129579,
+    "dataPsaiMaisRecente":  "2026-03-26",
+    "defasagemHoras":  12.4,
+    "fracionadosPSAI":  12,
+    "fracionadosSAI":  12,
+    "indicesMD":  51,
+    "smartWriteEscritos":  0,
+    "smartWritePulados":  51,
+    "cacheMB":  166.4,
+    "alertas":  [
+
+                ],
+    "erro":  null
+}

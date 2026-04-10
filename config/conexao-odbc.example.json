@@ -1,0 +1,27 @@
+﻿{
+  "odbc": {
+    "dsn": "pbcvs9",
+    "usuario": "<usuario_odbc>",
+    "senha": "<definir_localmente>",
+    "timeout_conexao_seg": 60,
+    "timeout_query_seg": 600,
+    "encoding": "Windows-1252"
+  },
+  "extracao": {
+    "areas": [
+      "Escrita",
+      "Importação",
+      "Onvio Escrita"
+    ],
+    "batch_size": 50,
+    "ano_inicial": 2002,
+    "delay_entre_lotes_ms": 2000,
+    "reconectar_a_cada_n_lotes": 15,
+    "max_retries": 5
+  },
+  "destino": {
+    "dados_brutos": "banco-dados/dados-brutos",
+    "indices": "banco-dados/sais/indices",
+    "cache_meta": "banco-dados/sais/cache/importacao-meta.json"
+  }
+}

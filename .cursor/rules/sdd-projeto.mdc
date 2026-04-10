@@ -1,0 +1,43 @@
+---
+description: Agente Meta-SDD para revisão e melhoria contínua do próprio projeto
+globs: ".cursor/rules/**,arquitetura/**,templates/**,PROJETO.md"
+alwaysApply: false
+---
+
+# Agente SDD — Melhoria do Projeto
+
+## Quando ativado
+
+Quando o gerente solicitar uma revisão da arquitetura ou melhoria do projeto,
+ou quando qualquer alteração estrutural for necessária.
+
+## Procedimento de revisão
+
+1. **Analise a arquitetura atual**: Leia `arquitetura/visao-geral.md`.
+2. **Verifique as regras .mdc**: Estão atualizadas? Refletem o uso real?
+3. **Verifique os templates**: São usados corretamente? Precisam de ajustes?
+4. **Analise os logs**: Padrões de erro ou dúvida recorrente indicam problemas.
+5. **Verifique limites**: Algum arquivo passou do limite de linhas?
+6. **Proponha melhorias**: Liste com justificativa e impacto estimado.
+
+## Checklist de saúde do projeto
+
+- [ ] PROJETO.md está atualizado e abaixo de 500 linhas?
+- [ ] Todas as regras .mdc estão abaixo de 100 linhas?
+- [ ] Templates refletem as necessidades atuais do time?
+- [ ] Estrutura de pastas está limpa (sem arquivos órfãos)?
+- [ ] .cursorignore está atualizado?
+- [ ] Projeto-filho está sincronizado com as últimas mudanças?
+- [ ] Glossário está atualizado com termos recentes?
+- [ ] Mapa do sistema reflete a realidade?
+- [ ] Numeros (agentes, fases, modulos, PBs) consistentes entre fontes?
+- [ ] Pasta agentes/ alinhada com .mdc implementados no projeto-filho?
+- [ ] Sistema de tasks funcional? Template, agente-produto e guardiao alinhados?
+- [ ] ADRs em sdd-decisoes.md refletem todas as decisoes implementadas?
+
+## Regras
+
+- Toda mudança estrutural requer aprovação explícita do gerente.
+- Documente o motivo de cada mudança proposta.
+- Ao alterar templates, verifique se definições existentes precisam migrar.
+- Ao alterar regras .mdc, verifique impacto no projeto-filho.

@@ -1,0 +1,46 @@
+---
+description: Contexto geral do projeto Escrita SDD — leitura obrigatória
+alwaysApply: true
+---
+
+# Projeto Escrita SDD — Contexto
+
+## O que é
+
+Projeto de gestão de definições de regras de negócio do módulo **Escrita Fiscal**
+(Domínio Contábil), usando metodologia Spec-Driven Development (SDD).
+
+**Não é um projeto de código.** É um projeto de produto/negócio.
+
+## Quem usa
+
+- **Gerente de Produto** (Orquestrador): Usa este Projeto Admin para revisar,
+  aprovar e consolidar definições.
+- **Analistas de Produto** (~17 pessoas): Usam o Projeto Filho para consultar
+  a base e criar novas definições.
+
+## Blueprint
+
+O arquivo `PROJETO.md` na raiz é o blueprint mestre. Consulte por seção:
+- Seção 1: O que é este projeto
+- Seção 2: Papéis
+- Seção 3: Estrutura de pastas
+- Seção 4: Metodologia SDD
+- Seção 5: Conexão OneDrive
+- Seção 6: Módulos do sistema
+- Seção 7: Regras de otimização
+- Seção 8: Como rodar
+
+## Caminhos importantes
+
+- Base oficial: `banco-dados/`
+- Templates: `templates/`
+- Revisão: `revisao/`
+- Logs: `logs/`
+- Agentes: `agentes/` (documentação) e `.cursor/rules/` (regras IA)
+- Projeto Filho: `projeto-filho/`
+
+## OneDrive/SharePoint
+
+URL: https://trten.sharepoint.com/sites/CursorEscrita/Shared%20Documents/General
+Local: `C:\Users\{usuario}\Thomson Reuters Incorporated\CursorEscrita - General`

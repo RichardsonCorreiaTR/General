@@ -1,0 +1,382 @@
+
+============================================================
+  EXTRACAO INTELIGENTE -- Somente registros faltantes
+============================================================
+
+[1/5] Consultando banco ODBC (paginado, sem BLOBs)...
+  [conexao] Pool ODBC aberto
+  Total no banco: 35307
+  Pagina 10/177: 2000 registros coletados
+  Pagina 20/177: 4000 registros coletados
+  Pagina 30/177: 6000 registros coletados
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Pagina 40/177: 8000 registros coletados
+  Pagina 50/177: 10000 registros coletados
+  Pagina 60/177: 12000 registros coletados
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Pagina 70/177: 14000 registros coletados
+  Pagina 80/177: 16000 registros coletados
+  Pagina 90/177: 18000 registros coletados
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Pagina 100/177: 20000 registros coletados
+  Pagina 110/177: 22000 registros coletados
+  Pagina 120/177: 24000 registros coletados
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Pagina 130/177: 26000 registros coletados
+  Pagina 140/177: 28000 registros coletados
+  Pagina 150/177: 30000 registros coletados
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Pagina 160/177: 32000 registros coletados
+  Pagina 170/177: 34000 registros coletados
+  Pagina 177/177: 35307 registros coletados
+  Registros no banco: 35307
+[2/5] Lendo chaves dos fracionados locais...
+  Registros locais: 29300
+[3/5] Calculando diferenca...
+  Faltantes: 6007 registros
+  Com PSAI (i_psai > 0): 0
+  Sem PSAI (i_psai = 0): 6007 (SAIs antigas)
+[4/5] Extraindo 6007 registros faltantes...
+  Lote 1/241 OK (25/6007 = 0.4% | vel: 39/min | ETA: 153min)
+  Lote 2/241 OK (50/6007 = 0.8% | vel: 39/min | ETA: 153min)
+  Lote 3/241 OK (75/6007 = 1.2% | vel: 39/min | ETA: 152min)
+  Lote 4/241 OK (100/6007 = 1.7% | vel: 39/min | ETA: 151min)
+  Lote 5/241 OK (125/6007 = 2.1% | vel: 39/min | ETA: 151min)
+  Lote 6/241 OK (150/6007 = 2.5% | vel: 39/min | ETA: 150min)
+  Lote 7/241 OK (175/6007 = 2.9% | vel: 39/min | ETA: 150min)
+  Lote 8/241 OK (200/6007 = 3.3% | vel: 39/min | ETA: 149min)
+  Lote 9/241 OK (225/6007 = 3.7% | vel: 39/min | ETA: 148min)
+  Lote 10/241 OK (250/6007 = 4.2% | vel: 39/min | ETA: 148min)
+  Lote 11/241 OK (275/6007 = 4.6% | vel: 39/min | ETA: 147min)
+  Lote 12/241 OK (300/6007 = 5% | vel: 39/min | ETA: 146min)
+  Lote 13/241 OK (325/6007 = 5.4% | vel: 39/min | ETA: 146min)
+  Lote 14/241 OK (350/6007 = 5.8% | vel: 39/min | ETA: 145min)
+  Lote 15/241 OK (375/6007 = 6.2% | vel: 39/min | ETA: 144min)
+  Lote 16/241 OK (400/6007 = 6.7% | vel: 39/min | ETA: 144min)
+  Lote 17/241 OK (425/6007 = 7.1% | vel: 39/min | ETA: 143min)
+  Lote 18/241 OK (450/6007 = 7.5% | vel: 39/min | ETA: 142min)
+  Lote 19/241 OK (475/6007 = 7.9% | vel: 39/min | ETA: 142min)
+  Lote 20/241 OK (500/6007 = 8.3% | vel: 39/min | ETA: 141min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 21/241 OK (525/6007 = 8.7% | vel: 39/min | ETA: 141min)
+  Lote 22/241 OK (550/6007 = 9.2% | vel: 39/min | ETA: 140min)
+  Lote 23/241 OK (575/6007 = 9.6% | vel: 39/min | ETA: 139min)
+  Lote 24/241 OK (600/6007 = 10% | vel: 39/min | ETA: 139min)
+  Lote 25/241 OK (625/6007 = 10.4% | vel: 39/min | ETA: 138min)
+  Lote 26/241 OK (650/6007 = 10.8% | vel: 39/min | ETA: 137min)
+  Lote 27/241 OK (675/6007 = 11.2% | vel: 39/min | ETA: 137min)
+  Lote 28/241 OK (700/6007 = 11.7% | vel: 39/min | ETA: 136min)
+  Lote 29/241 OK (725/6007 = 12.1% | vel: 39/min | ETA: 135min)
+  Lote 30/241 OK (750/6007 = 12.5% | vel: 39/min | ETA: 135min)
+  Lote 31/241 OK (775/6007 = 12.9% | vel: 39/min | ETA: 134min)
+  Lote 32/241 OK (800/6007 = 13.3% | vel: 39/min | ETA: 134min)
+  Lote 33/241 OK (825/6007 = 13.7% | vel: 39/min | ETA: 133min)
+  Lote 34/241 OK (850/6007 = 14.2% | vel: 39/min | ETA: 132min)
+  Lote 35/241 OK (875/6007 = 14.6% | vel: 39/min | ETA: 132min)
+  Lote 36/241 OK (900/6007 = 15% | vel: 39/min | ETA: 131min)
+  Lote 37/241 OK (925/6007 = 15.4% | vel: 39/min | ETA: 130min)
+  Lote 38/241 OK (950/6007 = 15.8% | vel: 39/min | ETA: 130min)
+  Lote 39/241 OK (975/6007 = 16.2% | vel: 39/min | ETA: 129min)
+  Lote 40/241 OK (1000/6007 = 16.6% | vel: 39/min | ETA: 128min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 41/241 OK (1025/6007 = 17.1% | vel: 39/min | ETA: 128min)
+  Lote 42/241 OK (1050/6007 = 17.5% | vel: 39/min | ETA: 127min)
+  Lote 43/241 OK (1075/6007 = 17.9% | vel: 39/min | ETA: 126min)
+  Lote 44/241 OK (1100/6007 = 18.3% | vel: 39/min | ETA: 126min)
+  Lote 45/241 OK (1125/6007 = 18.7% | vel: 39/min | ETA: 125min)
+  Lote 46/241 OK (1150/6007 = 19.1% | vel: 39/min | ETA: 125min)
+  Lote 47/241 OK (1175/6007 = 19.6% | vel: 39/min | ETA: 124min)
+  Lote 48/241 OK (1200/6007 = 20% | vel: 39/min | ETA: 123min)
+  Lote 49/241 OK (1225/6007 = 20.4% | vel: 39/min | ETA: 123min)
+  Lote 50/241 OK (1250/6007 = 20.8% | vel: 39/min | ETA: 122min)
+  Lote 51/241 OK (1275/6007 = 21.2% | vel: 39/min | ETA: 121min)
+  Lote 52/241 OK (1300/6007 = 21.6% | vel: 39/min | ETA: 121min)
+  Lote 53/241 OK (1325/6007 = 22.1% | vel: 39/min | ETA: 120min)
+  Lote 54/241 OK (1350/6007 = 22.5% | vel: 39/min | ETA: 119min)
+  Lote 55/241 OK (1375/6007 = 22.9% | vel: 39/min | ETA: 119min)
+  Lote 56/241 OK (1400/6007 = 23.3% | vel: 39/min | ETA: 118min)
+  Lote 57/241 OK (1425/6007 = 23.7% | vel: 39/min | ETA: 117min)
+  Lote 58/241 OK (1450/6007 = 24.1% | vel: 39/min | ETA: 117min)
+  Lote 59/241 OK (1475/6007 = 24.6% | vel: 39/min | ETA: 116min)
+  Lote 60/241 OK (1500/6007 = 25% | vel: 39/min | ETA: 116min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 61/241 OK (1525/6007 = 25.4% | vel: 39/min | ETA: 115min)
+  Lote 62/241 OK (1550/6007 = 25.8% | vel: 39/min | ETA: 114min)
+  Lote 63/241 OK (1575/6007 = 26.2% | vel: 39/min | ETA: 114min)
+  Lote 64/241 OK (1600/6007 = 26.6% | vel: 39/min | ETA: 113min)
+  Lote 65/241 OK (1625/6007 = 27.1% | vel: 39/min | ETA: 112min)
+  Lote 66/241 OK (1650/6007 = 27.5% | vel: 39/min | ETA: 112min)
+  Lote 67/241 OK (1675/6007 = 27.9% | vel: 39/min | ETA: 111min)
+  Lote 68/241 OK (1700/6007 = 28.3% | vel: 39/min | ETA: 110min)
+  Lote 69/241 OK (1725/6007 = 28.7% | vel: 39/min | ETA: 110min)
+  Lote 70/241 OK (1750/6007 = 29.1% | vel: 39/min | ETA: 109min)
+  Lote 71/241 OK (1775/6007 = 29.5% | vel: 39/min | ETA: 109min)
+  Lote 72/241 OK (1800/6007 = 30% | vel: 39/min | ETA: 108min)
+  Lote 73/241 OK (1825/6007 = 30.4% | vel: 39/min | ETA: 107min)
+  Lote 74/241 OK (1850/6007 = 30.8% | vel: 39/min | ETA: 107min)
+  Lote 75/241 OK (1875/6007 = 31.2% | vel: 39/min | ETA: 106min)
+  Lote 76/241 OK (1900/6007 = 31.6% | vel: 39/min | ETA: 105min)
+  Lote 77/241 OK (1925/6007 = 32% | vel: 39/min | ETA: 105min)
+  Lote 78/241 OK (1950/6007 = 32.5% | vel: 39/min | ETA: 104min)
+  Lote 79/241 OK (1975/6007 = 32.9% | vel: 39/min | ETA: 103min)
+  Lote 80/241 OK (2000/6007 = 33.3% | vel: 39/min | ETA: 103min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 81/241 OK (2025/6007 = 33.7% | vel: 38/min | ETA: 105min)
+  Lote 82/241 OK (2050/6007 = 34.1% | vel: 38/min | ETA: 104min)
+  Lote 83/241 OK (2075/6007 = 34.5% | vel: 38/min | ETA: 103min)
+  Lote 84/241 OK (2100/6007 = 35% | vel: 38/min | ETA: 103min)
+  Lote 85/241 OK (2125/6007 = 35.4% | vel: 38/min | ETA: 102min)
+  Lote 86/241 OK (2150/6007 = 35.8% | vel: 38/min | ETA: 102min)
+  Lote 87/241 OK (2175/6007 = 36.2% | vel: 38/min | ETA: 101min)
+  Lote 88/241 OK (2200/6007 = 36.6% | vel: 38/min | ETA: 100min)
+  Lote 89/241 OK (2225/6007 = 37% | vel: 38/min | ETA: 100min)
+  Lote 90/241 OK (2250/6007 = 37.5% | vel: 38/min | ETA: 99min)
+  Lote 91/241 OK (2275/6007 = 37.9% | vel: 38/min | ETA: 98min)
+  Lote 92/241 OK (2300/6007 = 38.3% | vel: 38/min | ETA: 98min)
+  Lote 93/241 OK (2325/6007 = 38.7% | vel: 38/min | ETA: 97min)
+  Lote 94/241 OK (2350/6007 = 39.1% | vel: 38/min | ETA: 96min)
+  Lote 95/241 OK (2375/6007 = 39.5% | vel: 38/min | ETA: 96min)
+  Lote 96/241 OK (2400/6007 = 40% | vel: 38/min | ETA: 95min)
+  Lote 97/241 OK (2425/6007 = 40.4% | vel: 38/min | ETA: 94min)
+  Lote 98/241 OK (2450/6007 = 40.8% | vel: 38/min | ETA: 94min)
+  Lote 99/241 OK (2475/6007 = 41.2% | vel: 38/min | ETA: 93min)
+  Lote 100/241 OK (2500/6007 = 41.6% | vel: 38/min | ETA: 92min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 101/241 OK (2525/6007 = 42% | vel: 38/min | ETA: 92min)
+  Lote 102/241 OK (2550/6007 = 42.5% | vel: 38/min | ETA: 91min)
+  Lote 103/241 OK (2575/6007 = 42.9% | vel: 38/min | ETA: 90min)
+  Lote 104/241 OK (2600/6007 = 43.3% | vel: 38/min | ETA: 90min)
+  Lote 105/241 OK (2625/6007 = 43.7% | vel: 38/min | ETA: 89min)
+  Lote 106/241 OK (2650/6007 = 44.1% | vel: 38/min | ETA: 88min)
+  Lote 107/241 OK (2675/6007 = 44.5% | vel: 38/min | ETA: 88min)
+  Lote 108/241 OK (2700/6007 = 44.9% | vel: 38/min | ETA: 87min)
+  Lote 109/241 OK (2725/6007 = 45.4% | vel: 38/min | ETA: 86min)
+  Lote 110/241 OK (2750/6007 = 45.8% | vel: 38/min | ETA: 86min)
+  Lote 111/241 OK (2775/6007 = 46.2% | vel: 38/min | ETA: 85min)
+  Lote 112/241 OK (2800/6007 = 46.6% | vel: 38/min | ETA: 84min)
+  Lote 113/241 OK (2825/6007 = 47% | vel: 38/min | ETA: 84min)
+  Lote 114/241 OK (2850/6007 = 47.4% | vel: 38/min | ETA: 83min)
+  Lote 115/241 OK (2875/6007 = 47.9% | vel: 38/min | ETA: 82min)
+  Lote 116/241 OK (2900/6007 = 48.3% | vel: 38/min | ETA: 82min)
+  Lote 117/241 OK (2925/6007 = 48.7% | vel: 38/min | ETA: 81min)
+  Lote 118/241 OK (2950/6007 = 49.1% | vel: 38/min | ETA: 80min)
+  Lote 119/241 OK (2975/6007 = 49.5% | vel: 38/min | ETA: 80min)
+  Lote 120/241 OK (3000/6007 = 49.9% | vel: 38/min | ETA: 79min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 121/241 OK (3025/6007 = 50.4% | vel: 38/min | ETA: 78min)
+  Lote 122/241 OK (3050/6007 = 50.8% | vel: 38/min | ETA: 78min)
+  Lote 123/241 OK (3075/6007 = 51.2% | vel: 38/min | ETA: 77min)
+  Lote 124/241 OK (3100/6007 = 51.6% | vel: 38/min | ETA: 76min)
+  Lote 125/241 OK (3125/6007 = 52% | vel: 38/min | ETA: 76min)
+  Lote 126/241 OK (3150/6007 = 52.4% | vel: 38/min | ETA: 75min)
+  Lote 127/241 OK (3175/6007 = 52.9% | vel: 38/min | ETA: 75min)
+  Lote 128/241 OK (3200/6007 = 53.3% | vel: 38/min | ETA: 74min)
+  Lote 129/241 OK (3225/6007 = 53.7% | vel: 38/min | ETA: 73min)
+  Lote 130/241 OK (3250/6007 = 54.1% | vel: 38/min | ETA: 73min)
+  Lote 131/241 OK (3275/6007 = 54.5% | vel: 38/min | ETA: 72min)
+  Lote 132/241 OK (3300/6007 = 54.9% | vel: 38/min | ETA: 71min)
+  Lote 133/241 OK (3325/6007 = 55.4% | vel: 38/min | ETA: 71min)
+  Lote 134/241 OK (3350/6007 = 55.8% | vel: 38/min | ETA: 70min)
+  Lote 135/241 OK (3375/6007 = 56.2% | vel: 38/min | ETA: 69min)
+  Lote 136/241 OK (3400/6007 = 56.6% | vel: 38/min | ETA: 69min)
+  Lote 137/241 OK (3425/6007 = 57% | vel: 38/min | ETA: 68min)
+  Lote 138/241 OK (3450/6007 = 57.4% | vel: 38/min | ETA: 67min)
+  Lote 139/241 OK (3475/6007 = 57.8% | vel: 38/min | ETA: 67min)
+  Lote 140/241 OK (3500/6007 = 58.3% | vel: 38/min | ETA: 66min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 141/241 OK (3525/6007 = 58.7% | vel: 38/min | ETA: 65min)
+  Lote 142/241 OK (3550/6007 = 59.1% | vel: 38/min | ETA: 65min)
+  Lote 143/241 OK (3575/6007 = 59.5% | vel: 38/min | ETA: 64min)
+  Lote 144/241 OK (3600/6007 = 59.9% | vel: 38/min | ETA: 63min)
+  Lote 145/241 OK (3625/6007 = 60.3% | vel: 38/min | ETA: 63min)
+  Lote 146/241 OK (3650/6007 = 60.8% | vel: 38/min | ETA: 62min)
+  Lote 147/241 OK (3675/6007 = 61.2% | vel: 38/min | ETA: 61min)
+  Lote 148/241 OK (3700/6007 = 61.6% | vel: 38/min | ETA: 61min)
+  Lote 149/241 OK (3725/6007 = 62% | vel: 38/min | ETA: 60min)
+  Lote 150/241 OK (3750/6007 = 62.4% | vel: 38/min | ETA: 59min)
+  Lote 151/241 OK (3775/6007 = 62.8% | vel: 38/min | ETA: 59min)
+  Lote 152/241 OK (3800/6007 = 63.3% | vel: 38/min | ETA: 58min)
+  Lote 153/241 OK (3825/6007 = 63.7% | vel: 38/min | ETA: 57min)
+  Lote 154/241 OK (3850/6007 = 64.1% | vel: 38/min | ETA: 57min)
+  Lote 155/241 OK (3875/6007 = 64.5% | vel: 38/min | ETA: 56min)
+  Lote 156/241 OK (3900/6007 = 64.9% | vel: 38/min | ETA: 55min)
+  Lote 157/241 OK (3925/6007 = 65.3% | vel: 38/min | ETA: 55min)
+  Lote 158/241 OK (3950/6007 = 65.8% | vel: 38/min | ETA: 54min)
+  Lote 159/241 OK (3975/6007 = 66.2% | vel: 38/min | ETA: 53min)
+  Lote 160/241 OK (4000/6007 = 66.6% | vel: 38/min | ETA: 53min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 161/241 OK (4025/6007 = 67% | vel: 38/min | ETA: 52min)
+  Lote 162/241 OK (4050/6007 = 67.4% | vel: 38/min | ETA: 52min)
+  Lote 163/241 OK (4075/6007 = 67.8% | vel: 38/min | ETA: 51min)
+  Lote 164/241 OK (4100/6007 = 68.3% | vel: 38/min | ETA: 50min)
+  Lote 165/241 OK (4125/6007 = 68.7% | vel: 38/min | ETA: 50min)
+  Lote 166/241 OK (4150/6007 = 69.1% | vel: 38/min | ETA: 49min)
+  Lote 167/241 OK (4175/6007 = 69.5% | vel: 38/min | ETA: 48min)
+  Lote 168/241 OK (4200/6007 = 69.9% | vel: 38/min | ETA: 48min)
+  Lote 169/241 OK (4225/6007 = 70.3% | vel: 38/min | ETA: 47min)
+  Lote 170/241 OK (4250/6007 = 70.8% | vel: 38/min | ETA: 46min)
+  Lote 171/241 OK (4275/6007 = 71.2% | vel: 38/min | ETA: 46min)
+  Lote 172/241 OK (4300/6007 = 71.6% | vel: 38/min | ETA: 45min)
+  Lote 173/241 OK (4325/6007 = 72% | vel: 38/min | ETA: 44min)
+  Lote 174/241 OK (4350/6007 = 72.4% | vel: 38/min | ETA: 44min)
+  Lote 175/241 OK (4375/6007 = 72.8% | vel: 38/min | ETA: 43min)
+  Lote 176/241 OK (4400/6007 = 73.2% | vel: 38/min | ETA: 42min)
+  Lote 177/241 OK (4425/6007 = 73.7% | vel: 38/min | ETA: 42min)
+  Lote 178/241 OK (4450/6007 = 74.1% | vel: 38/min | ETA: 41min)
+  Lote 179/241 OK (4475/6007 = 74.5% | vel: 38/min | ETA: 40min)
+  Lote 180/241 OK (4500/6007 = 74.9% | vel: 38/min | ETA: 40min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 181/241 OK (4525/6007 = 75.3% | vel: 38/min | ETA: 39min)
+  Lote 182/241 OK (4550/6007 = 75.7% | vel: 38/min | ETA: 38min)
+  Lote 183/241 OK (4575/6007 = 76.2% | vel: 38/min | ETA: 38min)
+  Lote 184/241 OK (4600/6007 = 76.6% | vel: 38/min | ETA: 37min)
+  Lote 185/241 OK (4625/6007 = 77% | vel: 38/min | ETA: 36min)
+  Lote 186/241 OK (4650/6007 = 77.4% | vel: 38/min | ETA: 36min)
+  Lote 187/241 OK (4675/6007 = 77.8% | vel: 38/min | ETA: 35min)
+  Lote 188/241 OK (4700/6007 = 78.2% | vel: 38/min | ETA: 34min)
+  Lote 189/241 OK (4725/6007 = 78.7% | vel: 38/min | ETA: 34min)
+  Lote 190/241 OK (4750/6007 = 79.1% | vel: 38/min | ETA: 33min)
+  Lote 191/241 OK (4775/6007 = 79.5% | vel: 38/min | ETA: 32min)
+  Lote 192/241 OK (4800/6007 = 79.9% | vel: 38/min | ETA: 32min)
+  Lote 193/241 OK (4825/6007 = 80.3% | vel: 38/min | ETA: 31min)
+  Lote 194/241 OK (4850/6007 = 80.7% | vel: 38/min | ETA: 30min)
+  Lote 195/241 OK (4875/6007 = 81.2% | vel: 38/min | ETA: 30min)
+  Lote 196/241 OK (4900/6007 = 81.6% | vel: 38/min | ETA: 29min)
+  Lote 197/241 OK (4925/6007 = 82% | vel: 38/min | ETA: 28min)
+  Lote 198/241 OK (4950/6007 = 82.4% | vel: 38/min | ETA: 28min)
+  Lote 199/241 OK (4975/6007 = 82.8% | vel: 38/min | ETA: 27min)
+  Lote 200/241 OK (5000/6007 = 83.2% | vel: 38/min | ETA: 26min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 201/241 OK (5025/6007 = 83.7% | vel: 37/min | ETA: 27min)
+  Lote 202/241 OK (5050/6007 = 84.1% | vel: 37/min | ETA: 26min)
+  Lote 203/241 OK (5075/6007 = 84.5% | vel: 37/min | ETA: 25min)
+  Lote 204/241 OK (5100/6007 = 84.9% | vel: 37/min | ETA: 25min)
+  Lote 205/241 OK (5125/6007 = 85.3% | vel: 37/min | ETA: 24min)
+  Lote 206/241 OK (5150/6007 = 85.7% | vel: 37/min | ETA: 23min)
+  Lote 207/241 OK (5175/6007 = 86.1% | vel: 37/min | ETA: 22min)
+  Lote 208/241 OK (5200/6007 = 86.6% | vel: 37/min | ETA: 22min)
+  Lote 209/241 OK (5225/6007 = 87% | vel: 37/min | ETA: 21min)
+  Lote 210/241 OK (5250/6007 = 87.4% | vel: 37/min | ETA: 20min)
+  Lote 211/241 OK (5275/6007 = 87.8% | vel: 37/min | ETA: 20min)
+  Lote 212/241 OK (5300/6007 = 88.2% | vel: 37/min | ETA: 19min)
+  Lote 213/241 OK (5325/6007 = 88.6% | vel: 37/min | ETA: 18min)
+  Lote 214/241 OK (5350/6007 = 89.1% | vel: 37/min | ETA: 18min)
+  Lote 215/241 OK (5375/6007 = 89.5% | vel: 37/min | ETA: 17min)
+  Lote 216/241 OK (5400/6007 = 89.9% | vel: 37/min | ETA: 16min)
+  Lote 217/241 OK (5425/6007 = 90.3% | vel: 37/min | ETA: 16min)
+  Lote 218/241 OK (5450/6007 = 90.7% | vel: 37/min | ETA: 15min)
+  Lote 219/241 OK (5475/6007 = 91.1% | vel: 37/min | ETA: 14min)
+  Lote 220/241 OK (5500/6007 = 91.6% | vel: 37/min | ETA: 14min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 221/241 OK (5525/6007 = 92% | vel: 37/min | ETA: 13min)
+  Lote 222/241 OK (5550/6007 = 92.4% | vel: 37/min | ETA: 12min)
+  Lote 223/241 OK (5575/6007 = 92.8% | vel: 37/min | ETA: 12min)
+  Lote 224/241 OK (5600/6007 = 93.2% | vel: 37/min | ETA: 11min)
+  Lote 225/241 OK (5625/6007 = 93.6% | vel: 37/min | ETA: 10min)
+  Lote 226/241 OK (5650/6007 = 94.1% | vel: 37/min | ETA: 10min)
+  Lote 227/241 OK (5675/6007 = 94.5% | vel: 37/min | ETA: 9min)
+  Lote 228/241 OK (5700/6007 = 94.9% | vel: 37/min | ETA: 8min)
+  Lote 229/241 OK (5725/6007 = 95.3% | vel: 37/min | ETA: 8min)
+  Lote 230/241 OK (5750/6007 = 95.7% | vel: 37/min | ETA: 7min)
+  Lote 231/241 OK (5775/6007 = 96.1% | vel: 37/min | ETA: 6min)
+  Lote 232/241 OK (5800/6007 = 96.6% | vel: 37/min | ETA: 6min)
+  Lote 233/241 OK (5825/6007 = 97% | vel: 37/min | ETA: 5min)
+  Lote 234/241 OK (5850/6007 = 97.4% | vel: 37/min | ETA: 4min)
+  Lote 235/241 OK (5875/6007 = 97.8% | vel: 37/min | ETA: 4min)
+  Lote 236/241 OK (5900/6007 = 98.2% | vel: 37/min | ETA: 3min)
+  Lote 237/241 OK (5925/6007 = 98.6% | vel: 36/min | ETA: 2min)
+  Lote 238/241 OK (5950/6007 = 99.1% | vel: 36/min | ETA: 2min)
+  Lote 239/241 OK (5975/6007 = 99.5% | vel: 36/min | ETA: 1min)
+  Lote 240/241 OK (6000/6007 = 99.9% | vel: 36/min | ETA: 0min)
+  [conexao] Reconectando...
+  [conexao] Pool ODBC aberto
+  Lote 241/241 OK (6007/6007 = 100% | vel: 36/min | ETA: 0min)
+  Extraidos: 6007 registros em 167.7 min
+[5/5] Mergeando nos fracionados existentes...
+  PSAI ne-liberadas: +5033 (total: 12601)
+  SAI  ne-liberadas: +5033 (total: 12601)
+  PSAI sal-liberadas: +363 (total: 2016)
+  SAI  sal-liberadas: +363 (total: 2016)
+  PSAI sail-liberadas: +72 (total: 678)
+  SAI  sail-liberadas: +72 (total: 678)
+  PSAI sam-pendentes: +4 (total: 4742)
+  SAI  sam-pendentes: +4 (total: 245)
+  PSAI ne-descartadas: +391 (total: 7406)
+  SAI  ne-descartadas: +391 (total: 1917)
+  PSAI sail-descartadas: +23 (total: 358)
+  SAI  sail-descartadas: +23 (total: 49)
+  PSAI sam-descartadas: +4 (total: 1586)
+  SAI  sam-descartadas: +4 (total: 312)
+  PSAI sal-descartadas: +29 (total: 1998)
+  SAI  sal-descartadas: +29 (total: 145)
+  PSAI sam-liberadas: +88 (total: 2651)
+  SAI  sam-liberadas: +88 (total: 2651)
+
+Regenerando indices...
+=== Gerador de Indices Markdown ===
+Fracionados: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\banco-dados\dados-brutos\psai
+Indices MD: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\banco-dados\sais\indices
+Carregando fracionados (lightweight)...
+  35383 registros carregados (lightweight)
+  PSAI mais recente: 128889 | Data: 03/06/2026 17:36:11 | Defasagem: 42h
+  Data fonte: 08/03/2026 11:36
+
+[B] Gerando indices Markdown...
+[B1a] Gerando indices de NEs pendentes...
+  319 NEs pendentes (dividido em 2 arquivos)
+[B1b] Gerando indices de NEs liberadas...
+  12601 SAIs NE liberadas (1815 recentes + 10786 antigas)
+[B1c] Gerando indice de NEs descartadas...
+  1917 SAIs NE descartadas
+[B2a] Gerando indices de SAs pendentes...
+  5770 SAs pendentes (3 arquivos por tipo)
+[B2b] Gerando indices de SAs liberadas...
+  5348 PSAIs de SAs liberadas (3 arquivos por tipo)
+[B2c] Gerando indices de SAs descartadas...
+  3945 PSAIs de SAs descartadas (3 arquivos por tipo)
+[B3] Gerando indices por versao...
+  5 versoes geradas
+[B4] Gerando resumo estatistico...
+[B5] Carregando classificacao por modulo...
+  23 modulos carregados de modulos-keywords.json
+  Classificando SAIs (multi-modulo)...
+  10512 PSAIs classificadas, 18801 nao classificadas
+  Gerando por-modulo.md (legado)...
+  por-modulo.md gerado (18801 nao classificados)
+[B5b] Gerando modulos inteligentes...
+  24 modulos inteligentes gerados em indices/modulos/
+[B5c] Gerando resumo de pendentes...
+  resumo-pendentes.md gerado (555 pendentes)
+[B6] Gerando indice por rubrica...
+  449 rubricas identificadas
+[B8a] Gerando indice-geral.md...
+[B8b] Gerando por-rubrica.md (resumido)...
+[B8c] Gerando por-cenario-complexo.md...
+  Indices orfaos gerados (indice-geral, por-rubrica, por-cenario-complexo)
+[B7] Gerando pagina de navegacao...
+
+=== Concluido! ===
+Indices MD em: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\banco-dados\sais\indices
+Smart-Write: 47 escritos, 4 pulados (identicos)
+
+============================================================
+  CONCLUIDO!
+  Faltantes extraidos: 6007
+  Tempo total: 224.3 min
+============================================================

@@ -1,0 +1,8 @@
+Register-ScheduledTask : Acesso negado.
+No C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\scripts\agendar-atualizacao.ps1:67 caractere:1
++ Register-ScheduledTask `
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (PS_ScheduledTask:Root/Microsoft/...S_ScheduledTask) [Register-Schedul 
+   edTask], CimException
+    + FullyQualifiedErrorId : HRESULT 0x80070005,Register-ScheduledTask
+ 

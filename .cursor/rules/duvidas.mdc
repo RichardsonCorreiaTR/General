@@ -1,0 +1,25 @@
+---
+description: Registro de dúvidas pendentes e decisões tomadas
+globs: "**/*"
+alwaysApply: false
+---
+
+# Dúvidas e Decisões
+
+## Pendentes
+
+| # | Dúvida | Contexto | Data | Status |
+|---|---|---|---|---|
+| 1 | Quais são todos os módulos/áreas oficiais da Escrita Fiscal? | Necessário para completar mapa do sistema | 2026-04 | Pendente |
+| 2 | Qual ferramenta de documentação o time usa hoje? | Para definir formato de migração | 2026-03-04 | Pendente |
+| 3 | Como funciona a divisão de trabalho entre analistas? | Por módulo ou por demanda? | 2026-03-04 | Pendente |
+| 4 | Conexão ODBC é necessária para os analistas? | Para consultar dados do sistema | 2026-03-04 | Pendente |
+
+## Resolvidas
+
+| # | Decisão | Contexto | Data |
+|---|---|---|---|
+| 1 | Dois projetos: Admin + Filho | Melhor performance offline | 2026-03-04 |
+| 2 | OneDrive como ponte de sincronização | Já usado pela Thomson Reuters | 2026-03-04 |
+| 3 | Logs por analista com identificação via config | analista.json no setup | 2026-03-04 |
+| 4 | Metodologia SDD para definições | Padronização e qualidade | 2026-03-04 |

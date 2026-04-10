@@ -1,0 +1,14 @@
+﻿---
+description: "[OBSOLETO] Substituido por agente-produto.mdc"
+globs: ""
+alwaysApply: false
+---
+
+# OBSOLETO — Este agente foi substituido
+
+Este arquivo foi substituido por `agente-produto.mdc`.
+O novo agente conduz uma pipeline de 7 fases para gerar PSAIs e SAIs
+com analise profunda de contexto, codigo e cenarios.
+
+Nao use este agente. Use: "Recebi a NE XXXXX..." ou "Preciso criar uma PSAI..."
+e o agente-produto.mdc sera ativado automaticamente.

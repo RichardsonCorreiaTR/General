@@ -1,0 +1,29 @@
+﻿# Dados pesados e cache (OOM / tamanho)
+banco-dados/dados-brutos/
+scripts/cache/
+
+# Logs e analises locais
+logs/
+analises-ia/
+
+# Editor / SO
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+
+# Opcional: credenciais locais (se criar)
+.env
+*.local.json
+
+# Credenciais locais (nunca commitar)
+config/conexao-odbc.json
+
+# Cursor / IDE
+.snapshots/
+
+# Temporarios
+logs-consolidado-temp.json
+
+# Symlink projeto-filho: dados brutos SAIs (mesma regra que .cursorignore do filho)
+projeto-filho/referencia/banco-dados/dados-brutos/

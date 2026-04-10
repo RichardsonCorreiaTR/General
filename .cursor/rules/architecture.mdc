@@ -1,0 +1,48 @@
+---
+description: Regras de arquitetura do projeto Escrita SDD
+globs: "**/*"
+alwaysApply: false
+---
+
+# Arquitetura do Projeto
+
+## Princípios
+
+1. **Single Source of Truth**: banco-dados/ é a única fonte oficial de regras.
+2. **Imutabilidade**: Regras aprovadas nunca são editadas. Cria-se nova versão.
+3. **Separação de responsabilidades**: Admin ≠ Analista, cada um com seu escopo.
+4. **Rastreabilidade**: Todo artefato tem autor, data, versão e histórico.
+5. **Validação em camadas**: IA → Analista → Gerente.
+6. **Padronização**: Templates obrigatórios para toda definição.
+
+## Limites de tamanho
+
+| Artefato | Máximo |
+|---|---|
+| Definição de regra (.md) | 300 linhas |
+| Regra Cursor (.mdc) | 100 linhas |
+| PROJETO.md | 500 linhas (lido por seção) |
+| Log diário | 200 linhas |
+
+## Organizacao de arquivos
+
+- Um dominio Escrita = uma subpasta em `banco-dados/regras-negocio/` (ver `regras-negocio/README.md`)
+- Uma definicao = um arquivo .md com ID unico:
+  - PSAIs: `PSAI-{codigo}-{descricao}.md` (ex: `PSAI-119453-fgts-cct-retroativo.md`)
+  - SAIs: `SAI-{codigo}-{tipo}-{descricao}.md` (ex: `SAI-95069-ne-fgts-cct-alteracao.md`)
+  - RNs (legado): `RN-{numero}-{descricao}.md` (ex: `RN-042-abono-pecuniario.md`)
+- Um fluxo = um arquivo .md em `banco-dados/fluxos/`
+- Um termo = uma entrada no glossario do modulo
+
+## Nomeacao
+
+- Arquivos: `kebab-case` sem acentos
+- Pastas: `kebab-case` (ex: `regras-negocio/apuracao-impostos/`)
+- IDs de definicao: PSAI-XXXXX ou SAI-XXXXX (codigo do sistema) ou RN-XXX (legado)
+
+## Fluxo de aprovação
+
+```
+Rascunho → Em revisão → Aprovado → Publicado em banco-dados/
+                      → Devolvido → Corrigido → Em revisão (loop)
+```

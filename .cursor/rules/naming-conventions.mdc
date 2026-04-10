@@ -1,0 +1,62 @@
+﻿---
+description: Convencoes de nomeacao para artefatos do projeto
+globs: "**/*.md"
+alwaysApply: false
+---
+
+# Convencoes de Nomeacao
+
+## Arquivos de PSAI
+
+Formato: `PSAI-{codigo}-{descricao-curta}.md`
+- Codigo: numero da PSAI no sistema (ex: 119453)
+- Descricao: kebab-case, sem acentos, maximo 5 palavras
+- Ex: `PSAI-119453-fgts-cct-retroativo.md`, `PSAI-120001-ferias-coletivas-calculo.md`
+
+## Arquivos de SAI
+
+Formato: `SAI-{codigo}-{tipo}-{descricao-curta}.md`
+- Codigo: numero da SAI no sistema
+- Tipo: NE, SAM, SAL ou SAIL (minusculo: ne, sam, sal, sail)
+- Descricao: kebab-case, sem acentos, maximo 5 palavras
+- Ex: `SAI-95069-ne-fgts-cct-alteracao.md`, `SAI-96001-sam-tela-ferias-coletivas.md`
+
+## Arquivos de regra de negocio (legado)
+
+Formato: `RN-{numero}-{descricao-curta}.md`
+- Numero: 3 digitos, sequencial por modulo
+- Descricao: kebab-case, sem acentos, maximo 5 palavras
+- Ex: `RN-001-calculo-hora-extra.md`, `RN-042-abono-pecuniario.md`
+
+## Arquivos de fluxo
+
+Formato: `FL-{numero}-{descricao-curta}.md`
+- Ex: `FL-001-fluxo-calculo-mensal.md`
+
+## Arquivos de analise de impacto
+
+Formato: `AI-{numero}-{descricao-curta}.md`
+- Ex: `AI-001-impacto-nova-tabela-inss.md`
+
+## Termos de glossario
+
+Formato: `{termo}.md` em kebab-case
+- Ex: `salario-base.md`, `dsr.md`, `hora-extra.md`
+
+## Logs de analista
+
+Formato: `{AAAA-MM-DD}.md` dentro de `logs/analistas/{nome-analista}/`
+- Nome do analista: kebab-case sem acentos
+- Ex: `logs/analistas/joao-silva/2026-03-04.md`
+
+## Regras Cursor (.mdc)
+
+Formato: `{tema}.mdc` em kebab-case
+- Ex: `guardiao.mdc`, `agente-produto.mdc`, `agente-codigo.mdc`
+
+## Versionamento de definicoes
+
+Quando uma definicao aprovada precisa mudar, NAO edite. Crie nova versao:
+- Original: `PSAI-119453-fgts-cct-retroativo.md` (v1.0)
+- Nova: `PSAI-119453-fgts-cct-retroativo-v2.md` (v2.0)
+- A original recebe status "Obsoleta" no campo de metadados

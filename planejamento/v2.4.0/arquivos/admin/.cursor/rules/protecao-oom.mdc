@@ -1,0 +1,51 @@
+---
+description: Regra critica para evitar crash OOM do Cursor
+alwaysApply: true
+---
+
+# Protecao contra OOM (Out of Memory)
+
+O Cursor tem limite de ~2-4 GB de memoria. Violacoes causam crash.
+
+## NUNCA faca
+
+- Carregar arquivos de `banco-dados/dados-brutos/` no terminal do Cursor
+- Carregar arquivos de `scripts/cache/` (cache monolitico)
+- Rodar ConvertFrom-Json em JSON > 10MB dentro do Cursor
+- Listar recursivamente pastas com > 500 arquivos
+- Executar mais de 1 comando pesado por vez
+- Grep/buscar em TODOS os indices MD de uma vez
+
+## Zonas proibidas (protegidas por .cursorignore)
+
+| Local | Risco |
+|-------|-------|
+| `banco-dados/dados-brutos/psai/` | OOM imediato |
+| `banco-dados/dados-brutos/sai/` | Moderado a alto |
+| `scripts/cache/sai-psai-folha.json` | OOM imediato |
+
+Consulte `referencia/atualizacao/status.json` para tamanhos atuais.
+Nao confie em tamanhos fixos — o volume de dados cresce a cada importacao.
+
+## Indices MD (usar com cuidado)
+
+Buscar por MODULO ou TIPO, nunca todos de uma vez.
+Preferir `banco-dados/sais/indices/modulos/{slug}.md` (individual)
+em vez de varrer toda a pasta.
+
+Consulte `referencia/atualizacao/status.json` para o tamanho atual dos indices.
+
+## Como acessar SAIs com seguranca
+
+1. **Indices leves**: `banco-dados/sais/indices/modulos/{slug}.md`
+2. **Indices enriquecidos**: `banco-dados/sais/indices/enriquecidos/{modulo}.md` (v2.4.0)
+3. **Busca profunda**: via Shell tool com `buscar-sai.ps1`
+4. **Mapa do sistema**: `banco-dados/mapa-sistema/`
+
+### Busca via Shell (seguro)
+
+`powershell -File scripts\buscar-sai.ps1 -Termo INSS`
+`powershell -File scripts\buscar-sai.ps1 -Termo ferias -Tipo NE -Pendentes`
+`powershell -File scripts\buscar-sai.ps1 -Termo eSocial -Resumido -Max 50`
+
+O `buscar-sai.ps1` roda em processo separado; nao consome memoria do Cursor.

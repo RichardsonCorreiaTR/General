@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "General (Escrita SDD)",
+      "path": "."
+    },
+    {
+      "name": "brtap-dominio",
+      "path": "../brtap-dominio"
+    }
+  ],
+  "settings": {}
+}

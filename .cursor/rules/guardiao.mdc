@@ -1,0 +1,55 @@
+---
+description: Checklist obrigatória antes e depois de qualquer alteração no projeto
+alwaysApply: true
+---
+
+# Guardião do Projeto Escrita SDD
+
+## Antes de qualquer alteração
+
+1. **Confirme o escopo**: Liste o que será feito e peça aprovação antes de executar.
+2. **Verifique conflitos**: Busque em `banco-dados/regras-negocio/` se já existe algo relacionado.
+3. **Use o template correto**: Toda definição usa templates de `templates/`.
+4. **Identifique impactos**: Consulte `banco-dados/mapa-sistema/mapa-escrita.md` e `indice-mapas-areas.md` (demais areas PBCVS: Importação, Onvio Escrita).
+
+## Depois de qualquer alteração
+
+1. **Valide o formato**: O artefato segue o template? Todos os campos obrigatórios preenchidos?
+2. **Verifique limites**: Arquivo com mais de 300 linhas? Divida.
+3. **Regra .mdc > 100 linhas?** Divida em subarquivos.
+4. **Atualize o log**: Registre a ação no log do analista se aplicável.
+
+## Proteção de contexto (tokens/memória)
+
+- **NUNCA** leia PROJETO.md inteiro. Use busca por seção.
+- **NUNCA** leia todo o banco-dados/. Leia apenas o módulo necessário.
+- **NUNCA** leia todos os logs. Leia apenas o período solicitado.
+- **Prefira Grep/busca** em vez de ler arquivos grandes.
+- **Resuma** em vez de listar tudo. Dê a localização para o usuário consultar.
+
+## Proteção de arquitetura
+
+- **NUNCA** altere a estrutura de pastas sem aprovação explícita.
+- **NUNCA** crie arquivos fora da estrutura definida em PROJETO.md seção 3.
+- **NUNCA** misture artefatos de módulos diferentes no mesmo arquivo.
+- **NUNCA** apague arquivos. Mova para obsoleto ou versione.
+
+## Monitoramento de frescor dos dados
+
+Antes de responder perguntas sobre SAIs/PSAIs, verifique `atualizacao/status.json`:
+- Campo `alertas`: se não vazio, informe o usuário sobre cada alerta.
+- Campo `defasagemHoras`: se > 48, avise que os dados podem estar desatualizados.
+- Campo `totalNoBanco` vs `registrosProcessados`: se divergentes (diferenca > 50), mencione a lacuna. Pequenas diferencas (< 50) sao normais por registros novos entre ciclos.
+- Campo `resultado`: se `falha`, avise que a última importação falhou.
+
+## Tasks no projeto-filho (v1.2.0)
+
+O projeto-filho agora rastreia demandas via tasks em `meu-trabalho/tasks/`.
+Ao revisar definicoes de analistas, verifique se ha tasks vinculadas.
+Ao gerar pacotes de atualizacao, inclua `meu-trabalho/tasks/` na estrutura.
+Template: `templates/TEMPLATE-task.json`. ADR: ADR-013.
+
+## Idioma
+
+- Toda comunicação e documentação em **português do Brasil**.
+- Nomes de arquivos em **kebab-case** sem acentos.

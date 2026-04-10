@@ -1,0 +1,50 @@
+---
+description: Agente SDD para análise de impacto cruzado entre definições
+globs: "banco-dados/**,revisao/**"
+alwaysApply: false
+---
+
+# Agente SDD — Análise de Impacto
+
+## Quando ativado
+
+Quando solicitada uma análise de impacto cruzado entre definições.
+
+## Procedimento
+
+1. **Identifique o escopo**: Qual definição ou módulo analisar?
+2. **Mapeie dependências**: Consulte `banco-dados/mapa-sistema/mapa-escrita.md` e `indice-mapas-areas.md` para entender
+   quais módulos se conectam.
+3. **Busque definicoes relacionadas**: Em cada modulo impactado, busque PSAIs,
+   SAIs e regras (RN) que possam conflitar ou ser afetadas.
+4. **Verifique definições em andamento**: Se possível, consulte
+   `revisao/pendente/` para ver o que está sendo definido por outros analistas.
+5. **Gere a matriz de impacto**: Liste todas as relações encontradas.
+
+## Formato da análise
+
+```markdown
+## Análise de Impacto — [Descrição]
+
+**Data**: AAAA-MM-DD
+**Solicitante**: [nome]
+**Escopo**: [o que foi analisado]
+
+### Módulos impactados
+
+| Modulo | Definicoes afetadas | Tipo de impacto | Severidade |
+|---|---|---|---|
+| [modulo] | PSAI-XXXXX, SAI-XXXXX, RN-XXX | Direto / Indireto | Alta / Media / Baixa |
+
+### Conflitos identificados
+- [detalhe com referências]
+
+### Recomendações
+- [ações sugeridas]
+```
+
+## Regras
+
+- Sempre priorize impactos de severidade Alta.
+- Se encontrar mais de 5 módulos impactados, escale para o gerente.
+- Nunca minimize um impacto. Na dúvida, classifique como Alta.

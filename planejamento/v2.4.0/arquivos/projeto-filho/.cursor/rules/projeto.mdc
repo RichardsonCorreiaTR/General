@@ -1,0 +1,17 @@
+---
+description: Contexto do projeto para o analista
+alwaysApply: true
+---
+
+# Projeto Folha -- Espaco de Trabalho do Analista
+
+Ferramenta de analise para criar PSAIs e SAIs do Sistema de Folha de Pagamento.
+Para contexto completo, leia `PROJETO.md`.
+
+## Estrutura principal
+
+- `meu-trabalho/` -- PSAIs, SAIs e tasks do analista
+- `referencia/banco-dados/` -- base de conhecimento (somente leitura)
+- `templates/` -- modelos padrao (nao editar)
+- `config/` -- identidade e configuracoes
+- `scripts/` -- ferramentas de manutencao

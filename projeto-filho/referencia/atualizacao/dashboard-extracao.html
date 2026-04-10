@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="30">
+<title>Dashboard Extracao SAI/PSAI</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap');
+  :root { --bg:#0f1117; --card:#1a1d27; --border:#2a2d3a; --text:#e0e0e0; --dim:#888; --accent:#4fc3f7; --ok:#66bb6a; --warn:#ffa726; --err:#ef5350; --bar:#4fc3f7; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'DM Sans',sans-serif; background:var(--bg); color:var(--text); padding:24px; min-height:100vh; }
+  h1 { font-family:'JetBrains Mono',monospace; font-size:1.4rem; color:var(--accent); margin-bottom:4px; letter-spacing:-0.5px; }
+  .subtitle { color:var(--dim); font-size:0.85rem; margin-bottom:24px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:20px; }
+  .card-title { font-family:'JetBrains Mono',monospace; font-size:0.75rem; text-transform:uppercase; color:var(--dim); letter-spacing:1px; margin-bottom:12px; }
+  .big-number { font-family:'JetBrains Mono',monospace; font-size:2.4rem; font-weight:700; line-height:1; }
+  .big-label { font-size:0.8rem; color:var(--dim); margin-top:4px; }
+  .progress-bar { background:#2a2d3a; border-radius:6px; height:20px; overflow:hidden; margin:8px 0; position:relative; }
+  .progress-fill { background:linear-gradient(90deg,#4fc3f7,#29b6f6); height:100%; border-radius:6px; transition:width 0.5s; }
+  .progress-text { position:absolute; top:0; left:0; right:0; text-align:center; line-height:20px; font-size:0.7rem; font-family:'JetBrains Mono',monospace; color:#fff; }
+  .stat-row { display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid var(--border); font-size:0.85rem; }
+  .stat-row:last-child { border:none; }
+  .stat-label { color:var(--dim); }
+  .stat-val { font-family:'JetBrains Mono',monospace; font-weight:700; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:700; text-transform:uppercase; font-family:'JetBrains Mono',monospace; }
+  .badge-ok { background:#1b3a1b; color:var(--ok); }
+  .badge-warn { background:#3a2e1b; color:var(--warn); }
+  .badge-err { background:#3a1b1b; color:var(--err); }
+  .badge-run { background:#1b2e3a; color:var(--accent); animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+  table { width:100%; border-collapse:collapse; font-size:0.8rem; }
+  th { text-align:left; padding:8px 6px; border-bottom:2px solid var(--border); color:var(--dim); font-family:'JetBrains Mono',monospace; font-size:0.7rem; text-transform:uppercase; }
+  td { padding:6px; border-bottom:1px solid var(--border); }
+  .full-width { grid-column:1/-1; }
+  .log-line { font-family:'JetBrains Mono',monospace; font-size:0.72rem; padding:3px 0; border-bottom:1px solid #1f2230; color:var(--dim); }
+  .log-line:last-child { border:none; }
+  .compare-bar { display:flex; height:28px; border-radius:4px; overflow:hidden; margin:4px 0; }
+  .compare-seg { display:flex; align-items:center; justify-content:center; font-size:0.65rem; font-family:'JetBrains Mono',monospace; color:#fff; font-weight:700; }
+  .alert-box { background:#3a2e1b; border:1px solid var(--warn); border-radius:6px; padding:10px 14px; margin-bottom:8px; font-size:0.8rem; }
+</style>
+</head>
+<body>
+<h1>EXTRACAO SAI/PSAI -- DASHBOARD</h1>
+<div class="subtitle" id="subtitle"></div>
+<div id="alerts"></div>
+<div class="grid">
+  <div class="card" id="card-progress"></div>
+  <div class="card" id="card-status"></div>
+  <div class="card full-width" id="card-compare"></div>
+  <div class="card" id="card-fracionados"></div>
+  <div class="card" id="card-fontes"></div>
+  <div class="card full-width" id="card-historico"></div>
+</div>
+<script>
+const D = {"geradoEm":"2026-03-08 21:04:08","status":{"ultimaExecucao":"2026-03-08T13:14:46.6471051-03:00","resultado":"sucesso","tempoSegundos":0,"registrosProcessados":35307,"totalNoBanco":35307,"psaiMaisRecente":128889,"dataPsaiMaisRecente":"2026-03-06","defasagemHoras":42,"fracionadosPSAI":12,"fracionadosSAI":12,"indicesMD":51,"smartWriteEscritos":47,"smartWritePulados":4,"cacheMB":166.4,"alertas":[],"erro":null},"extracaoAtiva":false,"logArquivo":"extracao-faltantes-2026-03-08-0814.log","progresso":{"extraidos":6007,"total":6007,"percentual":100,"velocidade":36,"etaMinutos":0,"etaHoras":0},"extracaoConcluida":"CONCLUIDO!","fracionados":{"psaiArquivos":12,"saiArquivos":12,"psaiTotalMB":178.4,"saiTotalMB":7.1,"detalhesPsai":[{"nome":"ne-descartadas.json","kb":17020.3,"data":"03/08 11:36"},{"nome":"ne-liberadas.json","kb":57213.8,"data":"03/08 13:14"},{"nome":"ne-pendentes.json","kb":3598.7,"data":"03/08 11:04"},{"nome":"sail-descartadas.json","kb":1639.9,"data":"03/08 11:36"},{"nome":"sail-liberadas.json","kb":29804.9,"data":"03/08 11:36"},{"nome":"sail-pendentes.json","kb":2842.5,"data":"03/08 11:04"},{"nome":"sal-descartadas.json","kb":3973.5,"data":"03/08 11:36"},{"nome":"sal-liberadas.json","kb":28596.2,"data":"03/08 13:14"},{"nome":"sal-pendentes.json","kb":72.8,"data":"03/08 11:04"},{"nome":"sam-descartadas.json","kb":3304,"data":"03/08 11:36"},{"nome":"sam-liberadas.json","kb":25954.6,"data":"03/08 13:14"},{"nome":"sam-pendentes.json","kb":8667.6,"data":"03/08 11:36"}],"detalhesSai":[{"nome":"ne-descartadas.json","kb":728.8,"data":"03/08 11:36"},{"nome":"ne-liberadas.json","kb":4381,"data":"03/08 13:14"},{"nome":"ne-pendentes.json","kb":117.7,"data":"03/08 13:14"},{"nome":"sail-descartadas.json","kb":14,"data":"03/08 13:14"},{"nome":"sail-liberadas.json","kb":210.5,"data":"03/08 11:36"},{"nome":"sail-pendentes.json","kb":15.9,"data":"03/08 13:14"},{"nome":"sal-descartadas.json","kb":49.1,"data":"03/08 13:14"},{"nome":"sal-liberadas.json","kb":672,"data":"03/08 13:14"},{"nome":"sal-pendentes.json","kb":1.3,"data":"03/08 13:14"},{"nome":"sam-descartadas.json","kb":97.6,"data":"03/08 13:14"},{"nome":"sam-liberadas.json","kb":845,"data":"03/08 13:14"},{"nome":"sam-pendentes.json","kb":87.7,"data":"03/08 13:14"}]},"buscaSaiFolha":{"cacheMB":165.5,"cacheData":"2026-03-06 17:49","NE":14829,"SAIL":1958,"SAL":3632,"SAM":8881,"totalMDs":29300},"mapeamento":{"caches":[{"nome":"meta-extracao.json","mb":0,"data":"2026-02-21"},{"nome":"pendentes-ne.json","mb":1.8,"data":"2026-02-21"},{"nome":"pendentes-sa.json","mb":3.4,"data":"2026-02-21"},{"nome":"responsaveis.json","mb":0.4,"data":"2026-02-21"}],"preTrabalho":9},"historico":["[2026-03-07 15:08:30] INICIO | Modo: ODBC","[2026-03-07 15:11:13] SUCESSO | 29372 reg | 12 psai | 51 md | 0 escritos, 51 pulados | 164s","[2026-03-07 17:00:02] INICIO | Modo: ODBC","[2026-03-07 17:03:47] SUCESSO | 29372 reg | 12 psai | 51 md | 0 escritos, 51 pulados | 226s","[2026-03-08 07:30:24] REVISAO | Pipeline corrigido (5 bugs), observabilidade adicionada, PSAI 128881 verificada | 29376 reg | max PSAI 128889 de 2026-03-06 | defasagem 37.8h | Ver: logs/consolidado/revisao-pipeline-extracao-2026-03-08.md","[2026-03-08 08:00:03] INICIO | Modo: ODBC","[2026-03-08 08:00:03] SUCESSO | 29376 reg | max PSAI 128889 de 2026-03-06 | 12 psai | 51 md | 0 escritos, 51 pulados | 1s","[2026-03-08 11:00:03] INICIO | Modo: ODBC","[2026-03-08 11:07:23] SUCESSO | 29376 reg | max PSAI 128889 de 2026-03-06 | 12 psai | 51 md | 50 escritos, 1 pulados | 440s | ALERTAS: DIVERGENCIA: banco=35307 vs cache=29300 (faltam 6007)","[2026-03-08 14:00:04] INICIO | Modo: ODBC","[2026-03-08 17:00:04] INICIO | Modo: ODBC"]};
+
+document.getElementById('subtitle').textContent = 'Gerado em: ' + D.geradoEm + ' | Para atualizar: .\\scripts\\dashboard-extracao.ps1';
+
+// Alerts
+const alertsEl = document.getElementById('alerts');
+if (D.status && D.status.alertas && D.status.alertas.length > 0) {
+  D.status.alertas.forEach(a => { alertsEl.innerHTML += '<div class="alert-box">' + a + '</div>'; });
+}
+
+// Progress
+const cp = document.getElementById('card-progress');
+if (D.extracaoAtiva && D.progresso) {
+  const p = D.progresso;
+  cp.innerHTML = '<div class="card-title">Extracao em Andamento</div>' +
+    '<div class="big-number" style="color:var(--accent)">' + p.percentual.toFixed(1) + '%</div>' +
+    '<div class="big-label">' + p.extraidos.toLocaleString() + ' de ' + p.total.toLocaleString() + ' registros</div>' +
+    '<div class="progress-bar"><div class="progress-fill" style="width:' + p.percentual + '%"></div>' +
+    '<div class="progress-text">' + p.extraidos + '/' + p.total + '</div></div>' +
+    '<div class="stat-row"><span class="stat-label">Velocidade</span><span class="stat-val">' + p.velocidade + '/min</span></div>' +
+    '<div class="stat-row"><span class="stat-label">ETA</span><span class="stat-val">' + p.etaHoras + 'h (' + p.etaMinutos + 'min)</span></div>' +
+    '<div class="stat-row"><span class="stat-label">Status</span><span class="badge badge-run">EXTRAINDO</span></div>';
+} else if (D.extracaoConcluida) {
+  cp.innerHTML = '<div class="card-title">Extracao</div>' +
+    '<div class="big-number" style="color:var(--ok)">100%</div>' +
+    '<div class="big-label">Concluida</div>' +
+    '<div style="margin-top:8px;font-size:0.8rem;color:var(--dim)">' + D.extracaoConcluida + '</div>';
+} else {
+  cp.innerHTML = '<div class="card-title">Extracao</div>' +
+    '<div class="big-number" style="color:var(--dim)">--</div>' +
+    '<div class="big-label">Nenhuma extracao em andamento</div>';
+}
+
+// Status
+const cs = document.getElementById('card-status');
+const s = D.status || {};
+const resBadge = s.resultado === 'sucesso' ? 'badge-ok' : s.resultado === 'falha' ? 'badge-err' : 'badge-warn';
+cs.innerHTML = '<div class="card-title">Ultimo Status (status.json)</div>' +
+  '<div class="stat-row"><span class="stat-label">Resultado</span><span class="badge ' + resBadge + '">' + (s.resultado||'?') + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">Ultima execucao</span><span class="stat-val">' + (s.ultimaExecucao ? new Date(s.ultimaExecucao).toLocaleString('pt-BR') : 'N/A') + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">Registros processados</span><span class="stat-val">' + (s.registrosProcessados||0).toLocaleString() + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">Total no banco</span><span class="stat-val">' + (s.totalNoBanco||0).toLocaleString() + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">PSAI mais recente</span><span class="stat-val">' + (s.psaiMaisRecente||'?') + ' (' + (s.dataPsaiMaisRecente||'?') + ')</span></div>' +
+  '<div class="stat-row"><span class="stat-label">Defasagem</span><span class="stat-val">' + (s.defasagemHoras||'?') + 'h</span></div>' +
+  '<div class="stat-row"><span class="stat-label">Cache</span><span class="stat-val">' + (s.cacheMB||0) + ' MB</span></div>';
+
+// Compare
+const cc = document.getElementById('card-compare');
+const odbc = s.totalNoBanco || 35307;
+const frac = s.registrosProcessados || 0;
+const bsf = D.buscaSaiFolha ? D.buscaSaiFolha.totalMDs : 0;
+const maxV = Math.max(odbc, frac, bsf, 1);
+cc.innerHTML = '<div class="card-title">Comparacao de Fontes</div>' +
+  '<table><tr><th>Fonte</th><th>Registros</th><th>Cobertura vs ODBC</th><th>Status</th></tr>' +
+  '<tr><td>Banco ODBC (Sybase)</td><td class="stat-val">' + odbc.toLocaleString() + '</td><td><div class="progress-bar" style="height:14px"><div class="progress-fill" style="width:100%;background:var(--accent)"></div></div></td><td><span class="badge badge-ok">REFERENCIA</span></td></tr>' +
+  '<tr><td>Fracionados (cache local)</td><td class="stat-val">' + frac.toLocaleString() + '</td><td><div class="progress-bar" style="height:14px"><div class="progress-fill" style="width:' + (frac/odbc*100).toFixed(1) + '%;background:var(--ok)"></div></div></td><td><span class="badge ' + (frac>=odbc?'badge-ok':'badge-warn') + '">' + (frac/odbc*100).toFixed(1) + '%</span></td></tr>' +
+  '<tr><td>BuscaSaiFolha (MDs)</td><td class="stat-val">' + bsf.toLocaleString() + '</td><td><div class="progress-bar" style="height:14px"><div class="progress-fill" style="width:' + (bsf/odbc*100).toFixed(1) + '%;background:#ab47bc"></div></div></td><td><span class="badge ' + (bsf>=odbc?'badge-ok':'badge-warn') + '">' + (bsf/odbc*100).toFixed(1) + '%</span></td></tr>' +
+  '</table>';
+
+// Fracionados
+const cf = document.getElementById('card-fracionados');
+let fhtml = '<div class="card-title">Fracionados Locais</div>' +
+  '<div class="stat-row"><span class="stat-label">PSAI</span><span class="stat-val">' + D.fracionados.psaiArquivos + ' arq (' + D.fracionados.psaiTotalMB + ' MB)</span></div>' +
+  '<div class="stat-row"><span class="stat-label">SAI</span><span class="stat-val">' + D.fracionados.saiArquivos + ' arq (' + D.fracionados.saiTotalMB + ' MB)</span></div>';
+function renderFileTable(label, items) {
+  let h = '<div style="font-size:0.8rem;font-weight:700;margin:10px 0 4px;color:var(--accent)">' + label + '</div>';
+  h += '<table><tr><th>Arquivo</th><th>KB</th><th>Data</th></tr>';
+  (items||[]).forEach(d => { h += '<tr><td>' + d.nome + '</td><td class="stat-val">' + d.kb + '</td><td>' + d.data + '</td></tr>'; });
+  return h + '</table>';
+}
+fhtml += renderFileTable('PSAI', D.fracionados.detalhesPsai);
+fhtml += renderFileTable('SAI', D.fracionados.detalhesSai);
+cf.innerHTML = fhtml;
+
+// Fontes externas
+const cfe = document.getElementById('card-fontes');
+const b = D.buscaSaiFolha || {};
+let fehtml = '<div class="card-title">Fontes Externas</div>' +
+  '<div style="font-size:0.8rem;font-weight:700;margin-bottom:6px">BuscaSaiFolha</div>' +
+  '<div class="stat-row"><span class="stat-label">Cache</span><span class="stat-val">' + (b.cacheMB||0) + ' MB (' + (b.cacheData||'?') + ')</span></div>' +
+  '<div class="stat-row"><span class="stat-label">NE</span><span class="stat-val">' + (b.NE||0).toLocaleString() + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">SAIL</span><span class="stat-val">' + (b.SAIL||0).toLocaleString() + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">SAL</span><span class="stat-val">' + (b.SAL||0).toLocaleString() + '</span></div>' +
+  '<div class="stat-row"><span class="stat-label">SAM</span><span class="stat-val">' + (b.SAM||0).toLocaleString() + '</span></div>';
+if (D.mapeamento) {
+  fehtml += '<div style="font-size:0.8rem;font-weight:700;margin:10px 0 6px">Mapeamento de SAIs</div>';
+  (D.mapeamento.caches||[]).forEach(c => { fehtml += '<div class="stat-row"><span class="stat-label">' + c.nome + '</span><span class="stat-val">' + c.mb + ' MB</span></div>'; });
+  fehtml += '<div class="stat-row"><span class="stat-label">Pre-trabalho</span><span class="stat-val">' + (D.mapeamento.preTrabalho||0) + ' arq</span></div>';
+}
+cfe.innerHTML = fehtml;
+
+// Historico
+const ch = document.getElementById('card-historico');
+let hhtml = '<div class="card-title">Historico de Execucoes</div>';
+(D.historico||[]).slice().reverse().forEach(l => {
+  const cls = l.includes('SUCESSO') ? 'color:var(--ok)' : l.includes('FALHA') ? 'color:var(--err)' : l.includes('REVISAO') ? 'color:var(--accent)' : '';
+  hhtml += '<div class="log-line" style="' + cls + '">' + l + '</div>';
+});
+ch.innerHTML = hhtml;
+</script>
+</body>
+</html>
