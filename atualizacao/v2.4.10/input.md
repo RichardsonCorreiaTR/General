@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.9 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.10 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-verificar-ambiente.ps1 agora publica status-ambiente.json no OneDrive (logs/analistas/{pasta_log}/) com campos analista, email, host e usuario_windows; novo script scripts/relatorio-versoes-analistas.ps1 (admin) consolida os status publicados e gera relatorio centralizado em logs/relatorios/versoes-analistas.{md,json} comparando versao instalada de cada analista com a versao alvo de distribuicao/ultima-versao.
+fix(privacidade): excluir status-ambiente.json dos pacotes de atualizacao (continha nome/email/host/usuario_windows do empacotador). gerar-atualizacao.ps1 agora limpa esse arquivo automaticamente, e .gitignore cobre tambem atualizacao/v*/arquivos/config/status-ambiente.json.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -26,7 +26,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 | arquivos/.cursor/rules/revisar-psai.mdc | .cursor/rules/revisar-psai.mdc |
 | arquivos/config/analista.json | config/analista.json |
 | arquivos/config/codigo-fonte.json | config/codigo-fonte.json |
-| arquivos/config/status-ambiente.json | config/status-ambiente.json |
 | arquivos/config/VERSION.json | config/VERSION.json |
 | arquivos/scripts/atualizar-codigo-fonte.ps1 | scripts/atualizar-codigo-fonte.ps1 |
 | arquivos/scripts/atualizar-codigo.ps1 | scripts/atualizar-codigo.ps1 |
@@ -60,6 +59,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.9".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.10".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

@@ -85,6 +85,10 @@ if (Test-Path $analistaJson) {
 }
 $caminhosJson = Join-Path $tempPack "config\caminhos.json"
 if (Test-Path $caminhosJson) { Remove-Item $caminhosJson -Force }
+# status-ambiente.json contem dados pessoais (nome/email/host/usuario) e e
+# regenerado por verificar-ambiente.ps1; nunca empacotar.
+$statusJson = Join-Path $tempPack "config\status-ambiente.json"
+if (Test-Path $statusJson) { Remove-Item $statusJson -Force }
 
 # Criar manifesto de atualizacao
 $manifesto = @{

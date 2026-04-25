@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.10 - 24/04/2026
+
+fix(privacidade): excluir status-ambiente.json dos pacotes de atualizacao (continha nome/email/host/usuario_windows do empacotador). gerar-atualizacao.ps1 agora limpa esse arquivo automaticamente, e .gitignore cobre tambem atualizacao/v*/arquivos/config/status-ambiente.json.
+
+---
+
 ## v2.4.9 - 24/04/2026
 
 verificar-ambiente.ps1 agora publica status-ambiente.json no OneDrive (logs/analistas/{pasta_log}/) com campos analista, email, host e usuario_windows; novo script scripts/relatorio-versoes-analistas.ps1 (admin) consolida os status publicados e gera relatorio centralizado em logs/relatorios/versoes-analistas.{md,json} comparando versao instalada de cada analista com a versao alvo de distribuicao/ultima-versao.
@@ -118,6 +124,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

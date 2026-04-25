@@ -37,8 +37,10 @@ scripts/gerar-indices-error.txt
 scripts/*.tmp.txt
 
 # status-ambiente.json local (gerado por verificar-ambiente.ps1)
+# Contem dados pessoais (nome, email, host, usuario_windows); nunca commitar.
 projeto-filho/config/status-ambiente.json
 distribuicao/ultima-versao/config/status-ambiente.json
+atualizacao/**/arquivos/config/status-ambiente.json
 
 # Junctions do projeto-filho: apontam para pastas do General (evita duplicacao no git)
 projeto-filho/referencia/banco-dados/
