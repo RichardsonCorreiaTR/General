@@ -1,7 +1,0 @@
-=== Configurando tarefa agendada ===
-Nome: FolhaSDD-Atualizacao
-Script: C:\Users\6038243\Thomson Reuters Incorporated\CursorFolha - General\scripts\atualizar-silencioso.ps1
-Hora inicial: 08:00
-Repeticao: a cada 3h (ate 17h)
-Dias: segunda a sexta
-

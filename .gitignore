@@ -30,19 +30,17 @@ atualizacao/.stats-temp.json
 atualizacao/.extracao-temp.json
 atualizacao/log-importacao.txt
 atualizacao/status.json
-projeto-filho/referencia/atualizacao/.stats-temp.json
-projeto-filho/referencia/atualizacao/.extracao-temp.json
-projeto-filho/referencia/atualizacao/log-importacao.txt
-projeto-filho/referencia/atualizacao/status.json
 
 # Output de scripts de teste
 scripts/gerar-indices-output.txt
 scripts/gerar-indices-error.txt
 scripts/*.tmp.txt
 
-# status-ambiente.json local do analista (gerado por verificar-ambiente.ps1)
+# status-ambiente.json local (gerado por verificar-ambiente.ps1)
 projeto-filho/config/status-ambiente.json
 distribuicao/ultima-versao/config/status-ambiente.json
 
-# Symlink projeto-filho: dados brutos SAIs (mesma regra que .cursorignore do filho)
-projeto-filho/referencia/banco-dados/dados-brutos/
+# Junctions do projeto-filho: apontam para pastas do General (evita duplicacao no git)
+projeto-filho/referencia/banco-dados/
+projeto-filho/referencia/atualizacao/
+projeto-filho/referencia/logs/
