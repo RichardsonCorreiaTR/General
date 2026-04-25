@@ -1,16 +1,19 @@
 ﻿# SAIL Liberadas - Escrita Fiscal
 
-> Atualizado em: 10/04/2026 02:04
-> Total SAIs unicas: 939
+> Atualizado em: 24/04/2026 22:48
+> Total SAIs unicas: 942
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
 | 99843 | 127551 | 10.6A-03 | 04/02/2026 | Em Teste DEMO | Implementar a gera��o dos benef�cios da DIRBI pela API integra contador, conform |
+| 100555 | 125883 | 10.6A-04 | 26/12/2025 | Em Teste DEMO | Implementar o envio do 'Evento: 211124 - Perecimento, perda, roubo ou furto dura |
 | 98693 | 125691 | 10.5A-12 | 19/12/2025 | Em Teste DEMO | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 por�m n�o fo |
+| 100574 | 125613 | 10.6A-04 | 17/12/2025 | Em Teste DEMO | Implementar o novo 'Evento: 112130 - Perecimento, perda, roubo ou furto durante  |
 | 98995 | 125535 | 10.6A-02 | 16/12/2025 | Em Teste DEMO | Implementar novos benef�cios na DIRBI conforme IN RFB 2.294/2025. |
 | 99942 | 125133 | 10.6A-03 | 08/12/2025 | Em Teste DEMO | Implementar a tela para envio do 'Evento: 211120 - Destina��o de item para consu |
 | 99351 | 124865 | 10.6A-02 | 28/11/2025 | Em Teste DEMO | Implementar rotina de distribui��o de lucros e dividendos com reten��o de IR e c |
 | 98653 | 124127 | 10.6A-01 | 07/11/2025 | Em Teste DEMO | Preparar os movimentos e implementar a apura��o do Imposto Seletivo-IS. |
+| 100526 | 123874 | 10.6A-04 | 30/10/2025 | Em Teste DEMO | SP-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
 | 98062 | 123447 | 10.5A-12 | 15/10/2025 | Em Teste DEMO | Preparar o sistema para calcular o Imposto Seletivo-IS. |
 | 98060 | 122815 | 10.5A-12 | 23/09/2025 | Em Teste DEMO | Implementar no sistema a Nota Fiscal da �gua e Saneamento Eletr�nica, modelo 75 |
 | 97330 | 122690 | 10.5A-11 | 17/09/2025 | Em Teste DEMO | Criar campo para informar o c�digo NBS no cadastro de produtos, movimentos e uti |

@@ -1,5 +1,47 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.9 - 24/04/2026
+
+verificar-ambiente.ps1 agora publica status-ambiente.json no OneDrive (logs/analistas/{pasta_log}/) com campos analista, email, host e usuario_windows; novo script scripts/relatorio-versoes-analistas.ps1 (admin) consolida os status publicados e gera relatorio centralizado em logs/relatorios/versoes-analistas.{md,json} comparando versao instalada de cada analista com a versao alvo de distribuicao/ultima-versao.
+
+---
+
+## v2.4.8 - 24/04/2026
+
+Area Contabil adicionada: 6 novos modulos (Contabilidade, Patrimônio, Atualização Monetária, LALUR, Registros Contábeis, Conteúdo Contábil Tributário); importar-sais.ps1 com -SomenteAreas para extração incremental por área; extrair-sais.ps1 com -AreasOverride; modulos-keywords.json com campo keywords nos módulos Contábil; gerar-indices-sais.ps1 robusto a keywords null. Templates PSAI e regra-negocio atualizados com areas Escrita/Importacao/Contabilidade; novos guias GUIA-padroes-psai.md e GUIA-validacao-ne.md; nova regra revisar-psai.mdc.
+
+---
+
+## v2.4.7 - 23/04/2026
+
+Filtro de areas por analista: campo areas[] em time-analistas.json e analista.json; buscar-sai.ps1 aceita -Areas (array); agente-produto.mdc aplica areas automaticamente nas buscas; instalar-projeto-filho.ps1 copia areas do cadastro central no setup.
+
+---
+
+## v2.4.6 - 23/04/2026
+
+Atualizacao base SAIs modulos Escrita e Importacao (PSAI mais recente 130257 de 20-04-2026); registro centralizado do time de analistas (27 membros) em config/time-analistas.json; pastas de log criadas para todos os analistas.
+
+---
+
+## v2.4.5 - 22/04/2026
+
+Removida referencia a rubrica nos filtros de busca (agente-produto.mdc e guardiao.mdc); fix buscar-sai.ps1: inicializacao nula de variavel e remocao de BOM.
+
+---
+
+## v2.4.4 - 15/04/2026
+
+Atualizacao base SAIs todos os modulos (ODBC multi-area): +15053 registros vs ciclo anterior, PSAI mais recente 130119 de 15-04-2026; indices regenerados.
+
+---
+
+## v2.4.3 - 14/04/2026
+
+Fix buscar-sai.ps1: remocao de BOM e correcao de variavel nao inicializada; normalizacao de line endings em templates.
+
+---
+
 ## v2.4.2 - 10/04/2026
 
 Documentacao Escrita SDD: templates apresentacao e TEMPLATE-fluxo-processo; alinhamento CursorEscrita. Blueprint admin 2.5.
@@ -76,6 +118,13 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
+
+
+
+
+
+
 
 
 

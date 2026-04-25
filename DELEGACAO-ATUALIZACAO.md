@@ -9,7 +9,7 @@ SAIs/PSAIs atualizados. Se o gerente estiver ausente, os dados ficam defasados.
 
 ### Quem pode ser backup
 - Analista senior com acesso a maquina com ODBC pbcvs9 configurado
-- Ou qualquer pessoa com acesso ao SharePoint CursorFolha como editor
+- Ou qualquer pessoa com acesso ao SharePoint CursorEscrita como editor
 
 ### O que o backup precisa fazer
 1. Abrir terminal (PowerShell) na pasta do projeto
@@ -20,7 +20,7 @@ SAIs/PSAIs atualizados. Se o gerente estiver ausente, os dados ficam defasados.
 ### Checklist para preparar backup
 - [ ] Pessoa identificada e aceita
 - [ ] ODBC pbcvs9 configurado na maquina dela (`scripts\setup-odbc.ps1`)
-- [ ] Acesso de escrita ao SharePoint CursorFolha
+- [ ] Acesso de escrita ao SharePoint CursorEscrita
 - [ ] Treinamento de 5 min (rodar o bat e verificar)
 
 ## Solucao 2 — Tarefa agendada (Windows Task Scheduler)
@@ -31,12 +31,12 @@ Para automatizar na maquina do gerente ou servidor compartilhado.
 
 1. Abrir Agendador de Tarefas (taskschd.msc)
 2. Criar Tarefa Basica:
-   - **Nome**: Atualizacao FolhaSDD
+   - **Nome**: Atualizacao EscritaSDD
    - **Disparador**: Diariamente as 07:00 (ou semanalmente segunda)
    - **Acao**: Iniciar programa
    - **Programa**: `powershell.exe`
-   - **Argumentos**: `-ExecutionPolicy Bypass -File "C:\Users\{usuario}\Thomson Reuters Incorporated\CursorFolha - General\scripts\importar-sais.ps1"`
-   - **Iniciar em**: `C:\Users\{usuario}\Thomson Reuters Incorporated\CursorFolha - General`
+   - **Argumentos**: `-ExecutionPolicy Bypass -File "C:\Users\{usuario}\Thomson Reuters Incorporated\CursorEscrita - General\scripts\importar-sais.ps1"`
+   - **Iniciar em**: `C:\Users\{usuario}\Thomson Reuters Incorporated\CursorEscrita - General`
 3. Na aba **Geral**: Marcar "Executar estando o usuario conectado ou nao"
 4. Na aba **Configuracoes**: Marcar "Se a tarefa falhar, reiniciar a cada 30 min"
 

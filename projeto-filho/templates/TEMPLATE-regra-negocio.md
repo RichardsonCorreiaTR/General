@@ -1,4 +1,4 @@
-# Regra de Negócio: [RN-XXX] — [Título da Regra]
+﻿# Regra de Negócio: [RN-XXX] — [Título da Regra]
 
 ## Metadados
 
@@ -6,12 +6,14 @@
 |---|---|
 | **ID** | RN-XXX |
 | **Título** | [Título descritivo] |
-| **Módulo** | [Admissão / Cálculo / Férias / 13º / Rescisão / Benefícios / INSS / IRRF / FGTS / eSocial / Provisões / Integração Contábil] |
+| **Modulo** | Escrita / Importação / Contabilidade |
 | **Autor** | [Nome do analista] |
 | **Data** | AAAA-MM-DD |
 | **Versão** | 1.0 |
 | **Status** | Rascunho / Em revisão / Aprovada / Obsoleta |
 | **Prioridade** | Alta / Média / Baixa |
+
+> **Referência de domínios** (subpasta em `banco-dados/regras-negocio/`): **Escrita** → `apuracao-impostos`, `escrituracao-movimento-fiscal`, `sped-documentos-eletronicos`, `obrigacoes-relatorios-estaduais`, `parcelamento-planejamento`, `utilitarios-rotinas` | **Importação** → `onvio-importacao-dados` | **Contabilidade** → `integracoes-canais-digitais`.
 
 ## Contexto
 
@@ -57,22 +59,27 @@
 
 ## Áreas de Impacto
 
-> Marque TODAS as áreas que podem ser afetadas. Na dúvida, marque.
+> Marque **área** e **domínios** que podem ser afetados. Na dúvida, marque.
 
-- [ ] Admissão
-- [ ] Cálculo mensal
-- [ ] Férias
-- [ ] 13º salário
-- [ ] Rescisão
-- [ ] Benefícios
-- [ ] INSS / Previdência
-- [ ] IRRF
-- [ ] FGTS
-- [ ] eSocial
-- [ ] DIRF / Informe de rendimentos
-- [ ] Provisões contábeis
-- [ ] Integração contábil
-- [ ] Relatórios gerenciais
+### Escrita
+
+- [ ] Apuração / DRCST / Simples (`apuracao-impostos`)
+- [ ] Escrituração e movimento fiscal (`escrituracao-movimento-fiscal`)
+- [ ] SPED e documentos eletrônicos (`sped-documentos-eletronicos`)
+- [ ] Obrigações e relatórios estaduais (`obrigacoes-relatorios-estaduais`)
+- [ ] Parcelamento e planejamento tributário (`parcelamento-planejamento`)
+- [ ] Utilitários e rotinas (`utilitarios-rotinas`)
+
+### Importação
+
+- [ ] Onvio e rotinas de importação (`onvio-importacao-dados`)
+
+### Contabilidade
+
+- [ ] Integrações e canais digitais / amarração contábil (`integracoes-canais-digitais`)
+
+### Outros
+
 - [ ] Outro: [especifique]
 
 ## Dependências
@@ -83,9 +90,9 @@
 
 ## Base Legal
 
-> Legislação, convenção coletiva ou normativo que fundamenta esta regra.
+> Legislação, normativo ou documento oficial que fundamenta esta regra (quando aplicável).
 
-- [Ex: CLT Art. 130 — Férias anuais]
+- [Referência]
 
 ## Critérios de Aceite
 

@@ -1,4 +1,4 @@
-﻿# buscar-sai.ps1 (wrapper para projeto filho)
+# buscar-sai.ps1 (wrapper para projeto filho)
 # Redireciona para o script original via: caminhos.json > referencia/ > erro.
 # IMPORTANTE: Rodar em terminal SEPARADO (fora do Cursor)
 #
@@ -10,7 +10,7 @@
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
-$scriptOriginal = "
+$scriptOriginal = $null
 
 # Tentativa 1: via config/caminhos.json (onedrive_base)
 $caminhosFile = Join-Path $projetoDir config\caminhos.json

@@ -14,7 +14,8 @@ param(
     [switch]$Completo,
     [switch]$GerarMonolitico,
     [switch]$SemLock,
-    [int]$AnoInicial = 0
+    [int]$AnoInicial = 0,
+    [string[]]$AreasOverride = @()
 )
 
 $ErrorActionPreference = "Stop"
@@ -40,7 +41,10 @@ $UID = $cfg.odbc.usuario
 $PWD_DB = $cfg.odbc.senha
 $ENCODING = $cfg.odbc.encoding
 # Areas PBCVS (coluna nomeArea). Compat: extracao.areas[] ou extracao.area (string)
-if ($cfg.extracao.areas -and @($cfg.extracao.areas).Count -gt 0) {
+if ($AreasOverride.Count -gt 0) {
+    $script:AREAS = @($AreasOverride)
+    Write-Host "  [Areas] Override: $($script:AREAS -join ', ')" -ForegroundColor DarkCyan
+} elseif ($cfg.extracao.areas -and @($cfg.extracao.areas).Count -gt 0) {
     $script:AREAS = @($cfg.extracao.areas)
 } elseif ($cfg.extracao.area) {
     $script:AREAS = @($cfg.extracao.area)
@@ -67,7 +71,10 @@ New-Item -ItemType Directory -Path $cacheDir -Force | Out-Null
 $destinoJson = Join-Path $cacheDir "sai-psai-escrita.json"
 $destinoJsonOneDrive = Join-Path $dadosBrutosDir "sai-psai-escrita.json"
 $destinoSituacoes = Join-Path $dadosBrutosDir "situacoes.json"
-$lotesDir = Join-Path $dadosBrutosDir "lotes-temp"
+# Lotes temporarios no cache local (fora do OneDrive e do TEMP do sistema).
+# - OneDrive: trava arquivos durante sync, impede delete entre runs.
+# - $env:TEMP: limpeza automatica do SO durante runs longas (>1h) apaga lotes.
+$lotesDir = Join-Path $cacheDir "lotes-temp"
 $progressoFile = Join-Path $dadosBrutosDir "progresso-extracao.json"
 
 New-Item -ItemType Directory -Path $dadosBrutosDir -Force | Out-Null
@@ -106,44 +113,33 @@ function Executar-Query {
         $cmd = $script:conn.CreateCommand()
         $cmd.CommandText = $sql
         $cmd.CommandTimeout = $cfg.odbc.timeout_query_seg
-        $reader = $cmd.ExecuteReader([System.Data.CommandBehavior]::SequentialAccess)
+        # Sem SequentialAccess: o driver Sybase ODBC faz round-trips extras ao
+        # servidor para cada chunk GetBytes() com SequentialAccess, tornando
+        # cada lote com BLOBs ~100x mais lento. GetValue() retorna byte[] em
+        # uma unica transferencia, sem streaming extra.
+        $reader = $cmd.ExecuteReader()
 
         $resultados = [System.Collections.ArrayList]::new()
         $colunas = @()
-        $colTipos = @()
         for ($i = 0; $i -lt $reader.FieldCount; $i++) {
             $colunas += $reader.GetName($i)
-            try { $colTipos += $reader.GetDataTypeName($i) } catch { $colTipos += "unknown" }
         }
 
         while ($reader.Read()) {
             $row = [ordered]@{}
             for ($i = 0; $i -lt $reader.FieldCount; $i++) {
                 $nome = $colunas[$i]
-                $isBlob = $colTipos[$i] -match 'binary|blob|long'
-                if ($isBlob) {
-                    try {
-                        $bufSize = 8192
-                        $buf = New-Object byte[] $bufSize
-                        $stream = New-Object System.IO.MemoryStream
-                        $offset = 0
-                        do {
-                            $read = $reader.GetBytes($i, $offset, $buf, 0, $bufSize)
-                            if ($read -gt 0) { $stream.Write($buf, 0, $read); $offset += $read }
-                        } while ($read -eq $bufSize)
-                        $allBytes = $stream.ToArray()
-                        $stream.Dispose()
-                        $row[$nome] = if ($allBytes.Length -gt 0) { $enc.GetString($allBytes) } else { $null }
-                    } catch {
+                try {
+                    $val = $reader.GetValue($i)
+                    if ($val -eq $null -or $val -eq [System.DBNull]::Value) {
                         $row[$nome] = $null
+                    } elseif ($val -is [byte[]]) {
+                        $row[$nome] = if ($val.Length -gt 0) { $enc.GetString($val) } else { $null }
+                    } else {
+                        $row[$nome] = $val
                     }
-                } else {
-                    try {
-                        $val = $reader.GetValue($i)
-                        $row[$nome] = if ($val -eq [System.DBNull]::Value) { $null } else { $val }
-                    } catch {
-                        $row[$nome] = $null
-                    }
+                } catch {
+                    $row[$nome] = $null
                 }
             }
             [void]$resultados.Add($row)
@@ -205,9 +201,12 @@ function Sql-ContarDistinto([int]$ano) {
     return "SELECT COUNT(DISTINCT sp.i_psai) as total FROM UP.SAI_PSAI sp WHERE $pred AND YEAR(sp.CadastroPSAI) >= $ano"
 }
 
-function Sql-Extrair([int]$ano, [int]$offset) {
+function Sql-Extrair([int]$ano, [int]$lastPsai) {
+    $pred = Get-SqlNomeAreaPredicate
+    # Keyset pagination: i_psai > lastPsai usa o indice clustered diretamente,
+    # sem varrer registros anteriores (O(1) por pagina vs O(n) do START AT).
     return @"
-SELECT TOP $BATCH START AT $offset
+SELECT TOP $BATCH
     sp.i_sai, sp.i_psai, sp.tipoSAI, sp.nomeArea, sp.nomeVersao,
     sp.CadastroPSAI, sp.CadastroSAI, sp.Liberacao, sp.Descarte,
     sp.dataFinalizada, sp.gravidade_ne, sp.tempoPrevistoTotal,
@@ -224,19 +223,31 @@ SELECT TOP $BATCH START AT $offset
 FROM UP.SAI_PSAI sp
 LEFT JOIN bethadba.sai s ON sp.i_sai = s.i_sai
 LEFT JOIN bethadba.psai p ON sp.i_psai = p.i_psai
-WHERE $(Get-SqlNomeAreaPredicate) AND YEAR(sp.CadastroPSAI) >= $ano
+WHERE $pred AND YEAR(sp.CadastroPSAI) >= $ano AND sp.i_psai > $lastPsai
 ORDER BY sp.i_psai ASC
 "@
 }
 
-function Sql-ContarAlterados([string]$desde) {
+function Sql-ContarNovos([string]$desde) {
     $pred = Get-SqlNomeAreaPredicate
-    return "SELECT COUNT(*) as total FROM UP.SAI_PSAI sp WHERE $pred AND (sp.ultima_modificacao > '$desde' OR sp.CadastroPSAI > '$desde')"
+    return "SELECT COUNT(*) as total FROM UP.SAI_PSAI sp WHERE $pred AND sp.CadastroPSAI > '$desde'"
 }
 
-function Sql-ExtrairAlterados([string]$desde, [int]$offset) {
+function Sql-ContarMudancasStatus([string]$desde) {
+    $pred = Get-SqlNomeAreaPredicate
     return @"
-SELECT TOP $BATCH START AT $offset
+SELECT COUNT(*) as total FROM UP.SAI_PSAI sp
+WHERE $pred AND (
+    (sp.Liberacao IS NOT NULL AND sp.Liberacao > '$desde') OR
+    (sp.Descarte  IS NOT NULL AND sp.Descarte  > '$desde')
+)
+"@
+}
+
+function Sql-ExtrairNovos([string]$desde, [int]$lastPsai) {
+    $pred = Get-SqlNomeAreaPredicate
+    return @"
+SELECT TOP $BATCH
     sp.i_sai, sp.i_psai, sp.tipoSAI, sp.nomeArea, sp.nomeVersao,
     sp.CadastroPSAI, sp.CadastroSAI, sp.Liberacao, sp.Descarte,
     sp.dataFinalizada, sp.gravidade_ne, sp.tempoPrevistoTotal,
@@ -253,7 +264,35 @@ SELECT TOP $BATCH START AT $offset
 FROM UP.SAI_PSAI sp
 LEFT JOIN bethadba.sai s ON sp.i_sai = s.i_sai
 LEFT JOIN bethadba.psai p ON sp.i_psai = p.i_psai
-WHERE $(Get-SqlNomeAreaPredicate) AND (sp.ultima_modificacao > '$desde' OR sp.CadastroPSAI > '$desde')
+WHERE $pred AND sp.CadastroPSAI > '$desde' AND sp.i_psai > $lastPsai
+ORDER BY sp.i_psai ASC
+"@
+}
+
+function Sql-ExtrairMudancasStatus([string]$desde, [int]$lastPsai) {
+    $pred = Get-SqlNomeAreaPredicate
+    return @"
+SELECT TOP $BATCH
+    sp.i_sai, sp.i_psai, sp.tipoSAI, sp.nomeArea, sp.nomeVersao,
+    sp.CadastroPSAI, sp.CadastroSAI, sp.Liberacao, sp.Descarte,
+    sp.dataFinalizada, sp.gravidade_ne, sp.tempoPrevistoTotal,
+    sp.tempoRealizadoTotal, sp.ne_prevencao, sp.i_sai_situacoes,
+    sp.i_psai_situacoes, sp.i_sistemas, sp.i_modulos,
+    sp.ultima_modificacao, sp.liberacaoOficial, sp.qtde_ssc,
+    sp.qtde_sane, s.pontuacao, p.nivel_alteracao, p.i_produto_grupo,
+    CAST(s.descricao AS LONG BINARY) as sai_descricao,
+    CAST(s.comportamento AS LONG BINARY) as comportamento,
+    CAST(s.definicao AS LONG BINARY) as definicao,
+    CAST(s.descricao_destaque AS LONG BINARY) as sai_destaque,
+    CAST(p.descricao AS LONG BINARY) as psai_descricao,
+    CAST(p.descricao_destaque AS LONG BINARY) as psai_destaque
+FROM UP.SAI_PSAI sp
+LEFT JOIN bethadba.sai s ON sp.i_sai = s.i_sai
+LEFT JOIN bethadba.psai p ON sp.i_psai = p.i_psai
+WHERE $pred AND sp.i_psai > $lastPsai AND (
+    (sp.Liberacao IS NOT NULL AND sp.Liberacao > '$desde') OR
+    (sp.Descarte  IS NOT NULL AND sp.Descarte  > '$desde')
+)
 ORDER BY sp.i_psai ASC
 "@
 }
@@ -274,9 +313,6 @@ function Enriquecer-Registro {
     $reg['situacaoSai'] = if ($sitSai.ContainsKey($idSitSai)) { $sitSai[$idSitSai] } else { "ID $idSitSai" }
     $reg['situacaoPsai'] = if ($sitPsai.ContainsKey($idSitPsai)) { $sitPsai[$idSitPsai] } else { "ID $idSitPsai" }
 
-    $partes = @($reg['comportamento'], $reg['definicao'], $reg['sai_descricao'],
-                $reg['sai_destaque'], $reg['psai_descricao'], $reg['psai_destaque']) | Where-Object { $_ }
-    $reg['textoCompleto'] = ($partes -join ' ').ToLower()
     return $reg
 }
 
@@ -347,8 +383,10 @@ function Formatar-DataSybase([string]$iso) {
 # ── Extracao Completa ─────────────────────────────────────────────────
 
 function Extrair-Completo {
+    param([switch]$Retomar)
     $progresso = Carregar-Progresso
-    $resumindo = $progresso -and $progresso.tipo -eq 'completo' -and -not $progresso.concluido
+    # Retomar so e valido se explicitamente solicitado E o progresso usa formato keyset (ultimoPsai)
+    $resumindo = $Retomar -and $progresso -and $progresso.tipo -eq 'completo' -and -not $progresso.concluido -and $null -ne $progresso.ultimoPsai
 
     Write-Host "  Contando registros (ano >= $AnoInicial)..." -ForegroundColor Cyan
     $contagem = Executar-Query (Sql-Contar $AnoInicial)
@@ -357,27 +395,34 @@ function Extrair-Completo {
 
     $situacoes = Extrair-Situacoes
 
-    $offsetInicial = 1; $loteInicial = 1; $extraidos = 0
-    if ($resumindo -and $progresso.extraidos -gt 0) {
-        $offsetInicial = $progresso.ultimoOffset + $BATCH
+    # Keyset pagination: rastreia o ultimo i_psai retornado para evitar
+    # o custo O(n) do START AT N que varre todas as linhas anteriores.
+    $lastPsai = 0; $loteInicial = 1; $extraidos = 0
+    # So retoma se o progresso tem ultimoPsai (formato keyset). Progresso antigo
+    # com ultimoOffset (formato offset) e descartado para evitar dados corrompidos.
+    $podeResumir = $resumindo -and $progresso.extraidos -gt 0 -and $null -ne $progresso.ultimoPsai
+    if ($podeResumir) {
+        $lastPsai = [int]$progresso.ultimoPsai
         $loteInicial = $progresso.ultimoLote + 1
         $extraidos = $progresso.extraidos
         $lotesExistentes = if (Test-Path $lotesDir) { (Get-ChildItem $lotesDir -Filter "lote-*.json").Count } else { 0 }
-        Write-Host "  RESUMINDO: lote $loteInicial, offset $offsetInicial ($extraidos salvos em $lotesExistentes lotes)" -ForegroundColor Yellow
+        Write-Host "  RESUMINDO: lote $loteInicial, ultimo i_psai=$lastPsai ($extraidos salvos em $lotesExistentes lotes)" -ForegroundColor Yellow
     } else {
+        if ($progresso -and -not $podeResumir) {
+            Write-Host "  Progresso incompativel descartado. Iniciando do zero." -ForegroundColor DarkYellow
+        }
         Limpar-Lotes
     }
 
-    $offset = $offsetInicial; $lote = $loteInicial
+    $lote = $loteInicial
     $totalLotes = [math]::Ceiling($total / $BATCH)
     $inicio = Get-Date
 
-    while ($offset -le $total) {
-        $fim = [math]::Min($offset + $BATCH - 1, $total)
-        Write-Host "  Lote $lote/$totalLotes - extraindo $offset-$fim de $total..." -ForegroundColor White -NoNewline
+    while ($true) {
+        Write-Host "  Lote $lote/$totalLotes - extraindo apos i_psai=$lastPsai de $total..." -ForegroundColor White -NoNewline
 
         try {
-            $registros = Executar-Query (Sql-Extrair $AnoInicial $offset)
+            $registros = Executar-Query (Sql-Extrair $AnoInicial $lastPsai)
             if ($registros.Count -eq 0) { Write-Host " (vazio, fim)"; break }
 
             $enriquecidos = @()
@@ -385,6 +430,7 @@ function Extrair-Completo {
                 $enriquecidos += Enriquecer-Registro $r $situacoes.sai $situacoes.psai
             }
             Salvar-Lote $lote $enriquecidos
+            $lastPsai = [int]$registros[-1]['i_psai']
             $extraidos += $registros.Count
 
             $elapsed = ((Get-Date) - $inicio).TotalSeconds
@@ -398,7 +444,7 @@ function Extrair-Completo {
 
             Salvar-Progresso @{
                 tipo = 'completo'; anoInicial = $AnoInicial
-                ultimoOffset = $offset; ultimoLote = $lote
+                ultimoPsai = $lastPsai; ultimoLote = $lote
                 totalLotes = $totalLotes; totalEsperado = $total; extraidos = $extraidos
                 concluido = $false; atualizadoEm = (Get-Date -Format o)
             }
@@ -407,7 +453,7 @@ function Extrair-Completo {
             Write-Host "  Erro: $($_.Exception.Message)" -ForegroundColor Red
             Salvar-Progresso @{
                 tipo = 'completo'; anoInicial = $AnoInicial
-                ultimoOffset = $offset - $BATCH; ultimoLote = $lote - 1
+                ultimoPsai = $lastPsai; ultimoLote = $lote - 1
                 totalLotes = $totalLotes; totalEsperado = $total; extraidos = $extraidos
                 concluido = $false; ultimoErro = $_.Exception.Message
                 atualizadoEm = (Get-Date -Format o)
@@ -416,18 +462,16 @@ function Extrair-Completo {
             throw
         }
 
-        $offset += $BATCH; $lote++
+        $lote++
 
-        if ($offset -le $total) {
-            $lotesDesdeReconexao = ($lote - $loteInicial) % $RECONECTAR_N
-            if ($lotesDesdeReconexao -eq 0) {
-                Write-Host "  [reconexao preventiva]" -ForegroundColor DarkGray
-                try { Reconectar } catch {
-                    Write-Host "  Aviso: reconexao preventiva falhou, continuando..." -ForegroundColor DarkYellow
-                }
+        $lotesDesdeReconexao = ($lote - $loteInicial) % $RECONECTAR_N
+        if ($lotesDesdeReconexao -eq 0) {
+            Write-Host "  [reconexao preventiva]" -ForegroundColor DarkGray
+            try { Reconectar } catch {
+                Write-Host "  Aviso: reconexao preventiva falhou, continuando..." -ForegroundColor DarkYellow
             }
-            Start-Sleep -Milliseconds $DELAY_MS
         }
+        Start-Sleep -Milliseconds $DELAY_MS
     }
 
     Write-Host "  Fazendo merge de lotes..." -ForegroundColor Cyan
@@ -440,65 +484,168 @@ function Extrair-Completo {
 
 # ── Extracao Incremental ──────────────────────────────────────────────
 
+function Ler-GeradoEm {
+    # Le apenas o timestamp geradoEm sem carregar o JSON de 400-500 MB na memoria.
+    # Ordem de tentativa: sidecar leve -> meta externo -> stream dos primeiros bytes do cache.
+    $sidecar = $destinoJson -replace '\.json$', '.gerado.json'
+    if (Test-Path $sidecar) {
+        try { $v = (Get-Content $sidecar -Raw | ConvertFrom-Json).geradoEm; if ($v) { return $v } } catch {}
+    }
+    if (Test-Path $metaFile) {
+        try { $v = (Get-Content $metaFile -Raw | ConvertFrom-Json).importadoEm; if ($v) { return $v } } catch {}
+    }
+    if (Test-Path $destinoJson) {
+        try {
+            $fs = [System.IO.File]::OpenRead($destinoJson)
+            $buf = New-Object byte[] 512
+            [void]$fs.Read($buf, 0, 512)
+            $fs.Close()
+            $m = [regex]::Match([System.Text.Encoding]::UTF8.GetString($buf), '"geradoEm"\s*:\s*"([^"]+)"')
+            if ($m.Success) { return $m.Groups[1].Value }
+        } catch {}
+    }
+    return $null
+}
+
+function Gravar-Sidecar-GeradoEm {
+    $sidecar = $destinoJson -replace '\.json$', '.gerado.json'
+    @{ geradoEm = (Get-Date -Format o) } | ConvertTo-Json | Set-Content $sidecar -Encoding UTF8
+}
+
+function Aplicar-Delta-Fracionados($delta, $situacoes) {
+    # Aplica registros delta nos fracionados PSAI/SAI sem carregar o monolitico.
+    # Processa um arquivo por vez para manter uso de RAM baixo.
+    $psaiOutDir = Join-Path $dadosBrutosDir "psai"
+    $saiOutDir  = Join-Path $dadosBrutosDir "sai"
+    New-Item -ItemType Directory -Path $psaiOutDir -Force | Out-Null
+    New-Item -ItemType Directory -Path $saiOutDir  -Force | Out-Null
+
+    # Index dos registros delta por i_psai para lookup O(1)
+    $deltaIdx = @{}
+    foreach ($r in $delta) { $deltaIdx[[string]$r.i_psai] = $r }
+
+    $tiposTodos = @("NE","SAM","SAL","SAIL")
+    $statusDef  = @(
+        @{ nome="pendentes";   test={ param($r) -not $r.Liberacao -and -not $r.Descarte } },
+        @{ nome="liberadas";   test={ param($r) $r.Liberacao } },
+        @{ nome="descartadas"; test={ param($r) $r.Descarte } }
+    )
+    $escritos = 0; $pulados = 0
+
+    foreach ($tp in $tiposTodos) {
+        foreach ($sd in $statusDef) {
+            $arquivo    = Join-Path $psaiOutDir "$($tp.ToLower())-$($sd.nome).json"
+            $saiArquivo = Join-Path $saiOutDir  "$($tp.ToLower())-$($sd.nome).json"
+
+            # Carregar arquivo existente (ou array vazio)
+            $existente = [System.Collections.ArrayList]::new()
+            if (Test-Path $arquivo) {
+                try {
+                    $j = Get-Content $arquivo -Raw -Encoding UTF8 | ConvertFrom-Json
+                    if ($j.dados) { foreach ($d in $j.dados) { [void]$existente.Add($d) } }
+                } catch {}
+            }
+
+            # Remover registros que estao no delta (podem ter mudado de bucket)
+            $existente = [System.Collections.ArrayList]@($existente | Where-Object { -not $deltaIdx.ContainsKey([string]$_.i_psai) })
+
+            # Adicionar registros delta que pertencem a este bucket
+            foreach ($r in $delta) {
+                if ($r.tipoSAI -eq $tp -and (& $sd.test $r)) {
+                    [void]$existente.Add($r)
+                }
+            }
+
+            # Escrever PSAI fracionado
+            $psaiObj     = @{ tipo=$tp; status=$sd.nome; total=$existente.Count; dados=$existente.ToArray() }
+            $psaiContent = $psaiObj | ConvertTo-Json -Depth 5 -Compress
+            if (Smart-Write $arquivo $psaiContent) { $escritos++ } else { $pulados++ }
+
+            # Escrever SAI fracionado (nivel SAI, 1 por i_sai)
+            $gruposSaiD = $existente | Group-Object -Property i_sai
+            $saiRegs = [System.Collections.ArrayList]::new()
+            foreach ($g in $gruposSaiD) {
+                $mr = $g.Group | Sort-Object {
+                    if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue }
+                } -Descending | Select-Object -First 1
+                [void]$saiRegs.Add([PSCustomObject]@{
+                    i_sai = $mr.i_sai; tipoSAI = $mr.tipoSAI; sai_descricao = $mr.sai_descricao
+                    nomeVersao = $mr.nomeVersao; gravidade_ne = $mr.gravidade_ne; situacaoSai = $mr.situacaoSai
+                    ultimaPsai = $mr.i_psai; ultimoCadastro = $mr.CadastroPSAI; totalPsais = $g.Count
+                })
+            }
+            $saiObj = @{ tipo=$tp; status=$sd.nome; totalSais=$saiRegs.Count; dados=$saiRegs.ToArray() }
+            if (Smart-Write $saiArquivo ($saiObj | ConvertTo-Json -Depth 5 -Compress)) { $escritos++ } else { $pulados++ }
+
+            # Liberar memoria antes do proximo arquivo
+            $existente = $null; $j = $null; [GC]::Collect()
+        }
+    }
+    Write-Host "  Fracionados patch: $escritos escritos, $pulados pulados (identicos)" -ForegroundColor Green
+}
+
 function Extrair-Incremental {
-    if (-not (Test-Path $destinoJson)) {
-        Write-Host "  Nenhum cache existente. Executando extracao completa..." -ForegroundColor Yellow
+    # Le geradoEm via metodo leve (sem carregar o cache de 400-500 MB)
+    $geradoEm = Ler-GeradoEm
+    if (-not $geradoEm) {
+        Write-Host "  Sem referencia de data. Executando extracao completa..." -ForegroundColor Yellow
         return Extrair-Completo
     }
 
-    $cacheInfo = Get-Content $destinoJson -Raw -ErrorAction SilentlyContinue | ConvertFrom-Json -ErrorAction SilentlyContinue
-    if (-not $cacheInfo -or -not $cacheInfo.geradoEm) {
-        Write-Host "  Cache invalido. Executando extracao completa..." -ForegroundColor Yellow
-        return Extrair-Completo
-    }
-
-    $desde = Formatar-DataSybase $cacheInfo.geradoEm
+    $desde = Formatar-DataSybase $geradoEm
     Write-Host "  Buscando registros alterados desde $desde..." -ForegroundColor Cyan
 
     $situacoes = Extrair-Situacoes
 
-    $contagem = Executar-Query (Sql-ContarAlterados $desde)
-    $total = [int]$contagem[0]['total']
+    # Coleta delta em memoria usando queries indexadas (sem full scan)
+    $delta = [System.Collections.ArrayList]::new()
+    $deltaIdx = @{}
 
-    if ($total -eq 0) {
+    function Coletar-Lotes($sqlContar, $sqlExtrair, $descricao) {
+        $cnt = Executar-Query $sqlContar
+        $totalLocal = [int]$cnt[0]['total']
+        if ($totalLocal -eq 0) { Write-Host "  ${descricao}: nenhum" -ForegroundColor DarkGray; return }
+        $totalLotesLocal = [math]::Ceiling($totalLocal / $BATCH)
+        Write-Host "  ${descricao}: $totalLocal registros" -ForegroundColor Yellow
+        $lastPsaiLocal = 0; $lt = 1
+        while ($true) {
+            Write-Host "    Lote $lt/$totalLotesLocal (apos i_psai=$lastPsaiLocal)..." -ForegroundColor White -NoNewline
+            $regs = Executar-Query (& $sqlExtrair $desde $lastPsaiLocal)
+            if ($regs.Count -eq 0) { Write-Host " (vazio, fim)"; break }
+            $lastPsaiLocal = [int]$regs[-1]['i_psai']
+            foreach ($r in $regs) {
+                $enr = Enriquecer-Registro $r $situacoes.sai $situacoes.psai
+                $k   = [string]$enr['i_psai']
+                if (-not $deltaIdx.ContainsKey($k)) { [void]$delta.Add($enr); $deltaIdx[$k] = $true }
+            }
+            Write-Host " OK ($($delta.Count) acumulados)" -ForegroundColor Green
+            $lt++
+            Start-Sleep -Milliseconds $DELAY_MS
+        }
+    }
+
+    # 1. Novos PSAIs (CadastroPSAI > since — usa indice de data de cadastro)
+    Coletar-Lotes (Sql-ContarNovos $desde) { param($d,$lp) Sql-ExtrairNovos $d $lp } "Novos (CadastroPSAI)"
+
+    # 2. Status alterados (Liberacao/Descarte > since — usa indice de data de liberacao)
+    Coletar-Lotes (Sql-ContarMudancasStatus $desde) { param($d,$lp) Sql-ExtrairMudancasStatus $d $lp } "Mudancas status (Liberacao/Descarte)"
+
+    if ($delta.Count -eq 0) {
         Write-Host "  Nenhum registro alterado. Cache esta atualizado." -ForegroundColor Green
         return 0
     }
 
-    Write-Host "  $total registros alterados/novos encontrados" -ForegroundColor Yellow
+    Write-Host "  Total delta: $($delta.Count) registros coletados" -ForegroundColor Yellow
 
-    $registrosAntigos = $cacheInfo.dados
-    $mapa = @{}
-    foreach ($r in $registrosAntigos) {
-        $chave = [string]$r.i_psai
-        $mapa[$chave] = $r
-    }
+    # Aplica delta nos fracionados (um arquivo por vez, sem carregar o monolitico)
+    Write-Host "  Aplicando $($delta.Count) registros nos fracionados..." -ForegroundColor Cyan
+    Aplicar-Delta-Fracionados $delta $situacoes
 
-    $offset = 1; $lote = 1; $atualizados = 0; $novos = 0
-    while ($offset -le $total) {
-        Write-Host "  Lote $lote - atualizando $offset-$([math]::Min($offset + $BATCH - 1, $total)) de $total..." -ForegroundColor White -NoNewline
-        $registros = Executar-Query (Sql-ExtrairAlterados $desde $offset)
-        if ($registros.Count -eq 0) { Write-Host " (vazio)"; break }
+    # Atualiza timestamp de referencia para o proximo incremental
+    Gravar-Sidecar-GeradoEm
 
-        foreach ($r in $registros) {
-            $enriquecido = Enriquecer-Registro $r $situacoes.sai $situacoes.psai
-            $chave = [string]$enriquecido['i_psai']
-            if ($mapa.ContainsKey($chave)) { $atualizados++ } else { $novos++ }
-            $mapa[$chave] = $enriquecido
-        }
-
-        Write-Host " OK (+$novos novos, ~$atualizados atualizados)" -ForegroundColor Green
-        $offset += $BATCH; $lote++
-        Start-Sleep -Milliseconds $DELAY_MS
-    }
-
-    $registrosFinais = [System.Collections.ArrayList]::new()
-    foreach ($v in $mapa.Values) { [void]$registrosFinais.Add($v) }
-
-    Salvar-CacheFinal $registrosFinais
-
-    Write-Host "  Incremental: $atualizados atualizados, $novos novos. Total: $($registrosFinais.Count)" -ForegroundColor Green
-    return $registrosFinais.Count
+    Write-Host "  Incremental: $($delta.Count) registros delta aplicados. Fracionados atualizados." -ForegroundColor Green
+    return $delta.Count
 }
 
 # ── Smart-Write (so reescreve se conteudo mudou) ─────────────────────
@@ -534,6 +681,8 @@ function Salvar-CacheFinal($registros) {
     }
 
     Gravar-Fracionados $registros
+    # Grava sidecar leve com geradoEm para ser usado pelo modo incremental
+    Gravar-Sidecar-GeradoEm
 }
 
 # ── Gravar fracionados direto no OneDrive ─────────────────────────────
@@ -548,11 +697,23 @@ function Gravar-Fracionados($registros) {
     $tiposTodos = @("NE","SAM","SAL","SAIL")
     $escritos = 0; $pulados = 0
 
+    # Agrupa em uma unica passagem em vez de Where-Object por tipo+status
+    $grupos = @{}
     foreach ($tp in $tiposTodos) {
-        $porTipo = @($registros | Where-Object { $_.tipoSAI -eq $tp })
-        $pendentes = @($porTipo | Where-Object { -not $_.Liberacao -and -not $_.Descarte })
-        $liberadas = @($porTipo | Where-Object { $_.Liberacao })
-        $descartadas = @($porTipo | Where-Object { $_.Descarte })
+        $grupos[$tp] = @{ pendentes = [System.Collections.ArrayList]::new(); liberadas = [System.Collections.ArrayList]::new(); descartadas = [System.Collections.ArrayList]::new() }
+    }
+    foreach ($r in $registros) {
+        $tp = $r.tipoSAI
+        if (-not $grupos.ContainsKey($tp)) { continue }
+        if ($r.Liberacao) { [void]$grupos[$tp].liberadas.Add($r) }
+        elseif ($r.Descarte) { [void]$grupos[$tp].descartadas.Add($r) }
+        else { [void]$grupos[$tp].pendentes.Add($r) }
+    }
+
+    foreach ($tp in $tiposTodos) {
+        $pendentes = $grupos[$tp].pendentes
+        $liberadas = $grupos[$tp].liberadas
+        $descartadas = $grupos[$tp].descartadas
         $tpLower = $tp.ToLower()
 
         $splits = @(
@@ -569,9 +730,9 @@ function Gravar-Fracionados($registros) {
             $psaiContent = $psaiObj | ConvertTo-Json -Depth 5 -Compress
             if (Smart-Write (Join-Path $psaiOutDir $arquivo) $psaiContent) { $escritos++ } else { $pulados++ }
 
-            $grupos = $regs | Group-Object -Property i_sai
+            $gruposSai = $regs | Group-Object -Property i_sai
             $saiRegistros = @()
-            foreach ($g in $grupos) {
+            foreach ($g in $gruposSai) {
                 $maisRecente = $g.Group | Sort-Object {
                     if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue }
                 } -Descending | Select-Object -First 1

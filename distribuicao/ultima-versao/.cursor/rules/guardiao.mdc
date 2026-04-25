@@ -81,7 +81,6 @@ silenciosamente. So fale com o analista se encontrar problema.
    a. Prossiga normalmente com as verificacoes.
    b. Atualize o cache offline: copie os indices leves para `meu-trabalho/cache-offline/`:
       - `referencia/banco-dados/sais/indices/modulos/` -> `meu-trabalho/cache-offline/indices/modulos/`
-      - `referencia/banco-dados/sais/indices/rubricas/` -> `meu-trabalho/cache-offline/indices/rubricas/`
       **NUNCA** copie `referencia/banco-dados/dados-brutos/` para o cache (causa OOM).
       Essa atualizacao e silenciosa — nao informe o analista.
 3. Se o symlink NAO estiver acessivel (arquivo nao encontrado):

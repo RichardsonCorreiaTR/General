@@ -6,14 +6,16 @@
 # IMPORTANTE: Rodar em terminal SEPARADO (fora do Cursor)
 #
 # Exemplos:
-#   .\importar-sais.ps1                         Incremental via ODBC
-#   .\importar-sais.ps1 -Completo               Extracao completa via ODBC
-#   .\importar-sais.ps1 -FonteBuscaSai "C:\..."  Fallback para pasta BuscaSAI
+#   .\importar-sais.ps1                                      Incremental via ODBC (todas as areas do config)
+#   .\importar-sais.ps1 -Completo                            Extracao completa via ODBC
+#   .\importar-sais.ps1 -SomenteAreas "Contabil" -Completo  Extrai so a area indicada e mescla com cache existente
+#   .\importar-sais.ps1 -FonteBuscaSai "C:\..."              Fallback para pasta BuscaSAI
 
 param(
     [switch]$Incremental,
     [switch]$Completo,
-    [string]$FonteBuscaSai = ""
+    [string]$FonteBuscaSai = "",
+    [string[]]$SomenteAreas = @()
 )
 
 $ErrorActionPreference = "Stop"
@@ -37,41 +39,7 @@ Write-Host "Fracionados (OneDrive): $dadosBrutosDir"
 Write-Host "Indices (OneDrive): $indicesDir"
 Write-Host ""
 
-# ── Fonte primaria: ODBC direto ──────────────────────────────────────
-
-$extrairScript = Join-Path $scriptDir "extrair-sais.ps1"
-$configOdbc = Join-Path $projetoDir "config\conexao-odbc.json"
-$usouOdbc = $false
-
-if (-not $FonteBuscaSai -and (Test-Path $extrairScript) -and (Test-Path $configOdbc)) {
-    $dsnName = (Get-Content $configOdbc -Raw | ConvertFrom-Json).odbc.dsn
-    $dsnExiste = Get-OdbcDsn -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq $dsnName }
-    if ($dsnExiste) {
-        Write-Host "[ODBC] DSN '$dsnName' encontrado. Extraindo direto do banco..." -ForegroundColor Green
-        try {
-            if ($Completo) {
-                & $extrairScript -SemLock -Completo
-            } else {
-                & $extrairScript -SemLock
-            }
-            if ($LASTEXITCODE -and $LASTEXITCODE -ne 0) {
-                throw "extrair-sais.ps1 retornou exit code $LASTEXITCODE"
-            }
-            $cacheCheck = Join-Path $cacheDir "sai-psai-escrita.json"
-            if (-not (Test-Path $cacheCheck)) {
-                Write-Host "[ODBC] AVISO: Cache nao gerado apos extracao" -ForegroundColor Yellow
-            }
-            $usouOdbc = $true
-        } catch {
-            Write-Host "[ODBC] Falha na extracao: $($_.Exception.Message)" -ForegroundColor Red
-            Write-Host "[ODBC] Tentando fallback BuscaSAI..." -ForegroundColor Yellow
-        }
-    } else {
-        Write-Host "[ODBC] DSN '$dsnName' nao encontrado. Usando fallback BuscaSAI..." -ForegroundColor Yellow
-    }
-}
-
-# ── Fallback: BuscaSAI (mescla sai-psai-*.json de data/cache) ─────────
+# ── Funcoes auxiliares ────────────────────────────────────────────────
 
 function Merge-BuscaSaiJsons {
     param([string]$dirCache)
@@ -115,6 +83,113 @@ function Merge-BuscaSaiJsons {
         situacoesPath = Join-Path $dirCache "situacoes.json"
     }
 }
+
+# ── Fonte primaria: ODBC direto ──────────────────────────────────────
+
+$extrairScript = Join-Path $scriptDir "extrair-sais.ps1"
+$configOdbc = Join-Path $projetoDir "config\conexao-odbc.json"
+$usouOdbc = $false
+
+if (-not $FonteBuscaSai -and (Test-Path $extrairScript) -and (Test-Path $configOdbc)) {
+    $dsnName = (Get-Content $configOdbc -Raw | ConvertFrom-Json).odbc.dsn
+    $dsnExiste = Get-OdbcDsn -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq $dsnName }
+    if ($dsnExiste) {
+        Write-Host "[ODBC] DSN '$dsnName' encontrado. Extraindo direto do banco..." -ForegroundColor Green
+
+        # Modo -SomenteAreas: extrai areas especificas e mescla com cache existente
+        if ($SomenteAreas.Count -gt 0) {
+            Write-Host "[ODBC] Modo SomenteAreas: $($SomenteAreas -join ', ')" -ForegroundColor Cyan
+            $nomeAreasSlug = ($SomenteAreas | ForEach-Object { $_ -replace '\s+','-' -replace '[^a-zA-Z0-9\-]','' }) -join '-'
+            $cacheNovasAreas = Join-Path $cacheDir "sai-psai-novas-areas.json"
+            $cacheOriginal = Join-Path $cacheDir "sai-psai-original.json"
+
+            try {
+                # 1. Backup do cache existente
+                if (Test-Path $destinoJson) {
+                    Write-Host "  Backup do cache existente -> sai-psai-original.json" -ForegroundColor DarkCyan
+                    Copy-Item $destinoJson $cacheOriginal -Force
+                }
+
+                # 2. Extrair apenas as novas areas (resultado salvo em sai-psai-escrita.json temporariamente)
+                Write-Host "  Extraindo somente: $($SomenteAreas -join ', ')..." -ForegroundColor DarkCyan
+                if ($Completo) {
+                    & $extrairScript -SemLock -Completo -AreasOverride $SomenteAreas
+                } else {
+                    & $extrairScript -SemLock -AreasOverride $SomenteAreas
+                }
+                if ($LASTEXITCODE -and $LASTEXITCODE -ne 0) {
+                    throw "extrair-sais.ps1 retornou exit code $LASTEXITCODE"
+                }
+
+                # 3. Renomear resultado da extracao para arquivo de novas areas
+                if (Test-Path $destinoJson) {
+                    Move-Item $destinoJson $cacheNovasAreas -Force
+                    Write-Host "  Extracao das novas areas: OK" -ForegroundColor DarkCyan
+                } else {
+                    throw "Extracao nao gerou sai-psai-escrita.json"
+                }
+
+                # 4. Mesclar: sai-psai-original.json + sai-psai-novas-areas.json -> sai-psai-escrita.json
+                if (Test-Path $cacheOriginal) {
+                    Write-Host "  Mesclando original + novas areas..." -ForegroundColor DarkCyan
+                    $merged = Merge-BuscaSaiJsons -dirCache $cacheDir
+                    if ($merged) {
+                        $jsonOut = $merged.wrapper | ConvertTo-Json -Depth 5 -Compress
+                        Set-Content -Path $destinoJson -Value $jsonOut -Encoding UTF8
+                        $tamanho = [math]::Round((Get-Item $destinoJson).Length / 1MB, 1)
+                        Write-Host "  Merged: $($merged.wrapper.totalRegistros) registros | $tamanho MB" -ForegroundColor Green
+                    } else {
+                        Write-Host "  AVISO: Merge falhou. Usando apenas novas areas." -ForegroundColor Yellow
+                        Move-Item $cacheNovasAreas $destinoJson -Force
+                    }
+                } else {
+                    # Nao havia cache original — apenas renomear
+                    Move-Item $cacheNovasAreas $destinoJson -Force
+                    Write-Host "  Sem cache anterior. Usando apenas novas areas." -ForegroundColor Yellow
+                }
+
+                # 6. Limpar temporarios
+                Remove-Item $cacheOriginal -ErrorAction SilentlyContinue
+                Remove-Item $cacheNovasAreas -ErrorAction SilentlyContinue
+
+                $usouOdbc = $true
+            } catch {
+                Write-Host "[ODBC] Falha na extracao das areas extras: $($_.Exception.Message)" -ForegroundColor Red
+                # Restaurar backup se disponivel
+                if ((Test-Path $cacheOriginal) -and -not (Test-Path $destinoJson)) {
+                    Copy-Item $cacheOriginal $destinoJson -Force
+                    Write-Host "  Cache original restaurado." -ForegroundColor Yellow
+                }
+                Remove-Item $cacheOriginal -ErrorAction SilentlyContinue
+                Remove-Item $cacheNovasAreas -ErrorAction SilentlyContinue
+            }
+        } else {
+            # Modo normal: extrai todas as areas do config
+            try {
+                if ($Completo) {
+                    & $extrairScript -SemLock -Completo
+                } else {
+                    & $extrairScript -SemLock
+                }
+                if ($LASTEXITCODE -and $LASTEXITCODE -ne 0) {
+                    throw "extrair-sais.ps1 retornou exit code $LASTEXITCODE"
+                }
+                $cacheCheck = Join-Path $cacheDir "sai-psai-escrita.json"
+                if (-not (Test-Path $cacheCheck)) {
+                    Write-Host "[ODBC] AVISO: Cache nao gerado apos extracao" -ForegroundColor Yellow
+                }
+                $usouOdbc = $true
+            } catch {
+                Write-Host "[ODBC] Falha na extracao: $($_.Exception.Message)" -ForegroundColor Red
+                Write-Host "[ODBC] Tentando fallback BuscaSAI..." -ForegroundColor Yellow
+            }
+        }
+    } else {
+        Write-Host "[ODBC] DSN '$dsnName' nao encontrado. Usando fallback BuscaSAI..." -ForegroundColor Yellow
+    }
+}
+
+# ── Fallback: BuscaSAI (mescla sai-psai-*.json de data/cache) ─────────
 
 if (-not $usouOdbc) {
     $possiveisCaminhos = @(

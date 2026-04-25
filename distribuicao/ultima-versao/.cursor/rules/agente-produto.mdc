@@ -343,11 +343,18 @@ Leia os indices nesta ordem:
 
 ### Passo 2 -- Busca profunda (SEMPRE executar)
 
-SEMPRE rode a busca profunda via Shell, sem excecao:
+SEMPRE rode a busca profunda via Shell, sem excecao.
+
+**Antes de buscar**: leia `config/analista.json` e extraia o campo `areas`.
+Use esse array automaticamente no parametro `-Areas` da busca. Isso garante
+que os resultados sejam das areas do analista.
 
 ```
-powershell -File "scripts/buscar-sai.ps1" -Termo "<termo>" -Max 20
+powershell -File "scripts/buscar-sai.ps1" -Termo "<termo>" -Areas "Escrita","Importacao","Onvio Escrita" -Max 20
 ```
+
+Se o analista pedir explicitamente busca em outra area (ex: "busca no Contabil"),
+remova ou ajuste o `-Areas` para incluir a area solicitada.
 
 O script busca em **14 campos**: sai_descricao, comportamento, definicao,
 psai_descricao, sai_destaque, psai_destaque, textoCompleto, nomeArea,
@@ -366,6 +373,7 @@ resultados abaixo sao apenas dos indices, podem estar incompletos."
 
 Ao rodar `buscar-sai.ps1`, use flags contextuais automaticamente:
 
+- **Sempre** use: `-Areas` com as areas de `config/analista.json`
 - Se o analista esta em rota NE -> adicione: `-Tipo NE -Pendentes`
 - Se o analista mencionou modulo -> adicione: `-Modulo "<modulo>"`
 - Se o analista pediu "historico" ou "evolucao" -> adicione: `-VerPSAIs`
@@ -403,12 +411,11 @@ quantidade de resultados retornados. **Regra**: se uma busca retornar
 mais de 50 resultados, **recuse processar** e peca ao analista para
 refinar a pesquisa com filtros adicionais:
 - `-Modulo "<modulo>"` para filtrar por area
-- `-Rubrica "<rubrica>"` para filtrar por rubrica
 - `-DataDe "dd/MM/yyyy"` para filtrar por data
 
 Diga ao analista: "A busca retornou muitos resultados (>50). Para
 garantir qualidade, preciso que voce refine. Podemos filtrar por
-modulo, rubrica ou data. Qual voce prefere?"
+modulo ou data. Qual voce prefere?"
 
 Nunca processe mais de 50 resultados de uma vez.
 

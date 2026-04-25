@@ -1,8 +1,9 @@
 ﻿# SAIs da Versao ZDuvidas
 
-> Total: 1 registros
+> Total: 2 registros
 
 | SAI | PSAI | Tipo | Gravidade | Status | Cadastro | Descricao |
 |-----|------|------|-----------|--------|----------|-----------|
-| 89840 | 111467 | SAIL | Normal | Pendente | 29/07/2024 | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
+| 100618 | 127428 | NE | Normal | Pendente | 03/02/2026 | SC-Em alguns casos n�o est� sendo gerado o valor correto nos itens 040 e 199 do  |
+| 98705 | 123987 | SAM | Normal | Pendente | 04/11/2025 | N�o est� sendo gerada a base de cr�dito correta para os impostos PIS e COFINS, q |
 

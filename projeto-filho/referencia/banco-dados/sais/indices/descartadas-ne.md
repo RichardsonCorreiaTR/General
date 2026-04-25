@@ -1,14 +1,16 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 10/04/2026 02:04
-> Total SAIs unicas: 1239
+> Atualizado em: 24/04/2026 22:48
+> Total SAIs unicas: 1241
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 0 | 129840 |  | Normal | 06/04/2026 | ID 0 | - |
+| 0 | 130223 |  | Normal | 20/04/2026 | ID 0 | - |
+| 101181 | 130055 |  | Normal | 13/04/2026 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no M�dulo Folha quando real |
 | 100427 | 128943 |  | Normal | 10/03/2026 | SAI Aprovada | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
 | 100203 | 128585 |  | Normal | 27/02/2026 | SAI Aprovada | Em alguns casos est� ocorrendo erro ao gerar o relat�rio de Comprovante Eletr�ni |
 | 99885 | 127956 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
+| 99836 | 127623 |  | Normal | 05/02/2026 | SAI Aprovada | Est�o sendo demonstrados incorretamente os impostos 183-IBS e 184-CBS no relat�r |
 | 98904 | 125645 |  | Normal | 18/12/2025 | SAI Aprovada | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98356 | 124587 |  | Normal | 24/11/2025 | SAI Aprovada | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
 | 98043 | 124309 |  | Normal | 13/11/2025 | SAI Aprovada | SC-Em alguns casos est� ocorrendo erro na valida��o do informativo SPED Fiscal.  |

@@ -62,7 +62,7 @@ CursorEscrita - General/            ← PROJETO ADMIN (este)
 │   ├── gerar-indices-sais.ps1      ← Fraciona JSON e gera índices Markdown
 │   ├── atualizar-codigo.ps1        ← Atualiza código-fonte (local ou GitHub)
 │   ├── gerar-indice-codigo.ps1     ← Gera índice navegável de arquivos PB por PBL
-│   ├── buscar-sai.ps1              ← Busca SAIs no cache por termo/módulo/rubrica
+│   ├── buscar-sai.ps1              ← Busca SAIs no cache por termo/módulo
 │   ├── revisar-definicao.ps1       ← Fluxo de revisão: listar/aprovar/devolver
 │   ├── gerar-atualizacao.ps1       ← Gera pacote de atualização do projeto filho
 │   ├── instalar-projeto-filho.ps1  ← Instalador do projeto filho na máquina do analista

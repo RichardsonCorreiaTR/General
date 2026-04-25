@@ -1,0 +1,119 @@
+﻿{
+    "verificadoEm":  "2026-04-24T23:21:29",
+    "analista":  "Richardson Correia",
+    "email":  "richardson.correia@thomsonreuters.com",
+    "host":  "TR-3NLVT04",
+    "usuario_windows":  "0181286",
+    "versao":  "2.4.8",
+    "totalChecks":  17,
+    "checksOK":  16,
+    "obrigatoriosOK":  13,
+    "obrigatoriosTotal":  13,
+    "opcionaisOK":  3,
+    "opcionaisTotal":  4,
+    "resultado":  "OK",
+    "detalhes":  [
+                     {
+                         "ok":  true,
+                         "detalhe":  "C:\\Program Files\\cursor\\resources\\app\\bin\\cursor.cmd",
+                         "nome":  "Cursor instalado",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "git version 2.51.0.windows.2",
+                         "nome":  "Git instalado",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Processo OneDrive ativo",
+                         "nome":  "OneDrive rodando",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Preencha nome e email",
+                         "nome":  "config/analista.json preenchido",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "C:\\1 - A\\B\\Programas\\General",
+                         "nome":  "config/caminhos.json configurado",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Presente em config/",
+                         "nome":  "config/VERSION.json (v2.4.8)",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "C:\\1 - A\\B\\Programas\\General",
+                         "nome":  "OneDrive sincronizado",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Acessivel em C:\\1 - A\\B\\Programas\\General\\projeto-filho\\referencia\\banco-dados",
+                         "nome":  "referencia/banco-dados (symlink)",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Acessivel em C:\\1 - A\\B\\Programas\\General\\projeto-filho\\referencia\\logs",
+                         "nome":  "referencia/logs (symlink)",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Criterio atendido",
+                         "nome":  "Templates presentes (7 TEMPLATE-*.md, minimo 4)",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  ".cursor/rules com regras suficientes",
+                         "nome":  "Regras IA (7 .mdc)",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Arquivos suficientes em codigo_local",
+                         "nome":  "Codigo-fonte local (C:\\1 - A\\B\\Programas\\brtap-dominio\\escrita)",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "C:\\1 - A\\B\\Programas\\General\\projeto-filho\\referencia\\banco-dados\\mapa-sistema\\indice-arquivos.md",
+                         "nome":  "Indice de arquivos (mapa-sistema)",
+                         "nivel":  "opcional"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "SQL Anywhere 16",
+                         "nome":  "ODBC driver SQL Anywhere",
+                         "nivel":  "opcional"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "pbcvs9",
+                         "nome":  "ODBC DSN pbcvs9",
+                         "nivel":  "opcional"
+                     },
+                     {
+                         "ok":  true,
+                         "detalhe":  "Igual ao pacote ultima-versao (v2.4.8)",
+                         "nome":  "Versao atualizada",
+                         "nivel":  "obrigatorio"
+                     },
+                     {
+                         "ok":  false,
+                         "detalhe":  "versao_instalada=2.4.0 mas VERSION.json=2.4.8 - atualize apos atualizar-projeto.ps1",
+                         "nome":  "analista.json versao_instalada alinhada",
+                         "nivel":  "opcional"
+                     }
+                 ]
+}

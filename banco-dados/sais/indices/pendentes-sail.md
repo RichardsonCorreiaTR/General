@@ -1,21 +1,38 @@
 ﻿# SAIL Pendentes - Escrita Fiscal
 
-> Atualizado em: 10/04/2026 02:04
-> Total pendentes: 1542
+> Atualizado em: 24/04/2026 22:48
+> Total pendentes: 1554
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 129940 |  | 08/04/2026 | ID 0 | - |
-| 0 | 129936 |  | 08/04/2026 | ID 0 | - |
+| 0 | 130318 |  | 23/04/2026 | ID 0 | - |
+| 0 | 130264 |  | 22/04/2026 | ID 0 | - |
+| 0 | 130263 |  | 22/04/2026 | ID 0 | - |
+| 0 | 130262 |  | 22/04/2026 | ID 0 | - |
+| 0 | 130260 |  | 22/04/2026 | ID 0 | - |
+| 0 | 130258 |  | 22/04/2026 | ID 0 | - |
+| 0 | 130257 |  | 20/04/2026 | ID 0 | - |
+| 0 | 130224 |  | 20/04/2026 | ID 0 | - |
+| 0 | 130207 |  | 17/04/2026 | ID 0 | - |
+| 0 | 130202 |  | 17/04/2026 | ID 0 | - |
+| 101369 | 130191 |  | 17/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tributos federa |
+| 0 | 130185 |  | 17/04/2026 | ID 0 | - |
+| 0 | 130184 |  | 17/04/2026 | ID 0 | - |
+| 101310 | 130088 |  | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o arquivo de envio do 'Evento: 112140 - Fornecimento n�o realizado c |
+| 0 | 130060 |  | 14/04/2026 | ID 0 | - |
+| 101306 | 130042 |  | 13/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112150 - Atualiza��o da data de previ |
+| 0 | 130011 |  | 13/04/2026 | ID 0 | - |
+| 101157 | 129940 |  | 08/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
+| 101159 | 129936 |  | 08/04/2026 | Retorno de Teste | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
 | 0 | 129925 |  | 08/04/2026 | ID 0 | - |
 | 0 | 129842 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129836 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129688 |  | 31/03/2026 | ID 0 | - |
 | 0 | 129591 |  | 27/03/2026 | ID 0 | - |
 | 0 | 129552 |  | 26/03/2026 | ID 0 | - |
-| 100983 | 129508 |  | 25/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o arquivo de envio do 'Evento: 112130 - Perecimento, perda, roubo ou |
+| 100983 | 129508 |  | 25/03/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112130 - Perecimento, perda, roubo ou |
 | 0 | 129501 |  | 25/03/2026 | ID 0 | - |
-| 100987 | 129486 |  | 24/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda, roubo ou |
+| 100987 | 129486 |  | 24/03/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda, roubo ou |
 | 0 | 129397 |  | 23/03/2026 | ID 0 | - |
 | 0 | 129241 |  | 18/03/2026 | ID 0 | - |
 | 0 | 129176 |  | 17/03/2026 | ID 0 | - |
@@ -44,14 +61,13 @@
 | 0 | 128578 |  | 26/02/2026 | ID 0 | - |
 | 0 | 128451 |  | 25/02/2026 | ID 0 | - |
 | 0 | 128415 |  | 24/02/2026 | ID 0 | - |
-| 0 | 128412 |  | 24/02/2026 | ID 0 | - |
 | 0 | 128220 |  | 19/02/2026 | ID 0 | - |
-| 0 | 128218 |  | 19/02/2026 | ID 0 | - |
+| 101309 | 128218 |  | 19/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a escritura��o da Nota de D�bito do tipo '06-Pagamento antecipado' e |
 | 0 | 128137 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128135 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128132 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128050 |  | 16/02/2026 | ID 0 | - |
-| 99944 | 128045 |  | 14/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
+| 99944 | 128045 |  | 14/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma Tribut�ria |
 | 0 | 127967 |  | 12/02/2026 | ID 0 | - |
 | 0 | 127966 |  | 12/02/2026 | ID 0 | - |
 | 0 | 127962 |  | 12/02/2026 | ID 0 | - |
@@ -64,7 +80,7 @@
 | 0 | 127549 |  | 04/02/2026 | ID 0 | - |
 | 0 | 127548 |  | 04/02/2026 | ID 0 | - |
 | 0 | 127545 |  | 04/02/2026 | ID 0 | - |
-| 0 | 127448 |  | 03/02/2026 | ID 0 | - |
+| 101291 | 127448 |  | 03/02/2026 | Retorno de Teste | SC-Implementar sub-apura��o e limitador do Cr�dito Presumido de ICMS para abated |
 | 0 | 127446 |  | 03/02/2026 | ID 0 | - |
 | 0 | 127441 |  | 03/02/2026 | ID 0 | - |
 | 0 | 127363 |  | 02/02/2026 | ID 0 | - |
@@ -76,9 +92,8 @@
 | 0 | 126778 |  | 20/01/2026 | ID 0 | - |
 | 0 | 126504 |  | 15/01/2026 | ID 0 | - |
 | 0 | 126454 |  | 14/01/2026 | ID 0 | - |
-| 0 | 126447 |  | 14/01/2026 | ID 0 | - |
 | 0 | 126265 |  | 09/01/2026 | ID 0 | - |
-| 0 | 126219 |  | 08/01/2026 | ID 0 | - |
+| 101226 | 126219 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
 | 0 | 126211 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126192 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126100 |  | 07/01/2026 | ID 0 | - |
@@ -87,10 +102,9 @@
 | 0 | 126036 |  | 05/01/2026 | ID 0 | - |
 | 0 | 126035 |  | 05/01/2026 | ID 0 | - |
 | 0 | 126033 |  | 05/01/2026 | ID 0 | - |
-| 0 | 125948 |  | 30/12/2025 | ID 0 | - |
+| 101305 | 125948 |  | 30/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o de entrega' |
 | 0 | 125886 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125885 |  | 26/12/2025 | ID 0 | - |
-| 100555 | 125883 | 10.6A-04 | 26/12/2025 | Respondido Coordenador de Testes DEMO | Implementar o envio do 'Evento: 211124 - Perecimento, perda, roubo ou furto dura |
 | 0 | 125839 |  | 23/12/2025 | ID 0 | - |
 | 0 | 125694 |  | 19/12/2025 | ID 0 | - |
 | 0 | 125689 |  | 19/12/2025 | ID 0 | - |
@@ -99,7 +113,6 @@
 | 0 | 125683 |  | 19/12/2025 | ID 0 | - |
 | 0 | 125682 |  | 19/12/2025 | ID 0 | - |
 | 0 | 125681 |  | 19/12/2025 | ID 0 | - |
-| 100574 | 125613 | 10.6A-04 | 17/12/2025 | Respondido Coordenador de Testes DEMO | Implementar o novo 'Evento: 112130 - Perecimento, perda, roubo ou furto durante  |
 | 0 | 125538 |  | 16/12/2025 | ID 0 | - |
 | 0 | 125413 |  | 12/12/2025 | ID 0 | - |
 | 0 | 125354 |  | 11/12/2025 | ID 0 | - |
@@ -127,7 +140,6 @@
 | 0 | 123916 |  | 31/10/2025 | ID 0 | - |
 | 0 | 123915 |  | 31/10/2025 | ID 0 | - |
 | 0 | 123914 |  | 31/10/2025 | ID 0 | - |
-| 100526 | 123874 | 10.6A-04 | 30/10/2025 | Respondido Desenvolvimento | SP-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
 | 0 | 123873 |  | 30/10/2025 | ID 0 | - |
 | 0 | 123718 |  | 24/10/2025 | ID 0 | - |
 | 0 | 123665 |  | 23/10/2025 | ID 0 | - |
@@ -344,7 +356,7 @@
 | 0 | 111534 |  | 31/07/2024 | ID 0 | - |
 | 0 | 111533 |  | 31/07/2024 | ID 0 | - |
 | 0 | 111518 |  | 31/07/2024 | ID 0 | - |
-| 89840 | 111467 | ZDuvidas | 29/07/2024 | Aguardando Resposta do Gerente de Testes | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
+| 89840 | 111467 |  | 29/07/2024 | Retorno de Teste | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
 | 0 | 111423 |  | 26/07/2024 | ID 0 | - |
 | 0 | 111285 |  | 23/07/2024 | ID 0 | - |
 | 0 | 111201 |  | 18/07/2024 | ID 0 | - |
@@ -382,7 +394,7 @@
 | 0 | 109497 |  | 15/05/2024 | ID 0 | - |
 | 0 | 109492 |  | 15/05/2024 | ID 0 | - |
 | 0 | 109486 |  | 14/05/2024 | ID 0 | - |
-| 99255 | 109366 |  | 09/05/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar no sistema op��o para consultar e realizar a baixa dos impostos pela |
+| 99255 | 109366 |  | 09/05/2024 | Retorno de Teste | Implementar no sistema op��o para consultar e realizar a baixa dos impostos pela |
 | 0 | 109362 |  | 09/05/2024 | ID 0 | - |
 | 0 | 109361 |  | 09/05/2024 | ID 0 | - |
 | 0 | 109318 |  | 08/05/2024 | ID 0 | - |
@@ -463,7 +475,7 @@
 | 84304 | 105879 |  | 29/01/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar tela para visualizar o arquivo xml das NF-e modelo 55. |
 | 88919 | 105843 |  | 29/01/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o c�lculo dos Anexos I e II do Simples Nacional no Onvio. |
 | 0 | 105605 |  | 22/01/2024 | ID 0 | - |
-| 101021 | 105563 |  | 19/01/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | RS-Implementar o c�lculo do Cr�dito presumido sobre produtos farmac�uticos previ |
+| 101021 | 105563 |  | 19/01/2024 | Retorno de Teste | RS-Implementar o c�lculo do Cr�dito presumido sobre produtos farmac�uticos previ |
 | 0 | 105562 |  | 19/01/2024 | ID 0 | - |
 | 0 | 105496 |  | 18/01/2024 | ID 0 | - |
 | 0 | 105487 |  | 17/01/2024 | ID 0 | - |

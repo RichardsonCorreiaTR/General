@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Documentacao Escrita SDD: templates apresentacao e TEMPLATE-fluxo-processo; alinhamento CursorEscrita. Blueprint admin 2.5.",
-    "data":  "2026-04-10T14:02:41",
+    "changelog":  "verificar-ambiente.ps1 agora publica status-ambiente.json no OneDrive (logs/analistas/{pasta_log}/) com campos analista, email, host e usuario_windows; novo script scripts/relatorio-versoes-analistas.ps1 (admin) consolida os status publicados e gera relatorio centralizado em logs/relatorios/versoes-analistas.{md,json} comparando versao instalada de cada analista com a versao alvo de distribuicao/ultima-versao.",
+    "data":  "2026-04-24T23:27:20",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.2"
+    "versao":  "2.4.9"
 }

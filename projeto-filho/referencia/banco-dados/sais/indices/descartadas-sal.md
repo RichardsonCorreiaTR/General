@@ -1,11 +1,11 @@
 ﻿# SAL Descartadas - Escrita Fiscal
 
-> Atualizado em: 10/04/2026 02:04
+> Atualizado em: 24/04/2026 22:48
 > Total SAIs unicas: 87
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 129806 |  | 02/04/2026 | ID 0 | - |
+| 0 | 129981 |  | 10/04/2026 | ID 0 | - |
 | 100423 | 128936 |  | 10/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para que consiga seguir no captcha para emiss�o do DAS, DEFIS  |
 | 100115 | 128385 |  | 24/02/2026 | SAI Aprovada | Ajustar a transmiss�o da DEFIS observando as altera��es recentes da p�gina. |
 | 99201 | 126391 |  | 13/01/2026 | SAI Aprovada | SP-Alterar o sistema para gerar os registros referentes as parcelas de apropria� |

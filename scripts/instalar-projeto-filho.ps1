@@ -191,13 +191,27 @@ function Set-AnalystConfig {
         if (-not $email) { $email = Read-Host "  Seu email (@thomsonreuters.com)" }
     }
     $nomeKebab = ($nome -replace '[aàáâãä]','a' -replace '[eèéêë]','e' -replace '[iìíîï]','i' -replace '[oòóôõö]','o' -replace '[uùúûü]','u' -replace '[cç]','c' -replace '\s+','-' -replace '[^a-zA-Z0-9-]','').ToLower()
+
+    # Buscar areas do cadastro central (time-analistas.json no OneDrive)
+    $areasAnalista = @("Escrita", "Importação", "Onvio Escrita")
+    $timeFile = Join-Path $OneDrivePath "config\time-analistas.json"
+    if (Test-Path $timeFile) {
+        $timeData = Get-Content $timeFile -Raw -Encoding UTF8 | ConvertFrom-Json
+        $registro = $timeData | Where-Object { $_.email -eq $email -or $_.nome -eq $nome } | Select-Object -First 1
+        if ($registro -and $registro.areas) {
+            $areasAnalista = $registro.areas
+            Write-OK "Areas carregadas do cadastro central: $($areasAnalista -join ', ')"
+        }
+    }
+
     $analista = @{
         nome = $nome; email = $email
         data_setup = (Get-Date -Format "yyyy-MM-dd")
         versao_instalada = "1.0.0"; onboarding_completo = $false
-    } | ConvertTo-Json -Depth 2
+        areas = $areasAnalista
+    } | ConvertTo-Json -Depth 3
     Set-Content -Path (Join-Path $Destino "config\analista.json") -Value $analista -Encoding UTF8
-    Write-OK "Identidade salva: $nome"
+    Write-OK "Identidade salva: $nome (areas: $($areasAnalista -join ', '))"
     $logsPath = Join-Path $OneDrivePath "logs\analistas\$nomeKebab"
     $caminhos = @{
         projeto_local = $Destino; codigo_local = $CodigoDir

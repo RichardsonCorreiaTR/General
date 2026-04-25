@@ -1,11 +1,11 @@
 ﻿# SAIL Descartadas - Escrita Fiscal
 
-> Atualizado em: 10/04/2026 02:04
+> Atualizado em: 24/04/2026 22:48
 > Total SAIs unicas: 24
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 127977 |  | 13/02/2026 | ID 0 | - |
+| 0 | 128412 |  | 24/02/2026 | ID 0 | - |
 | 90935 | 114573 |  | 14/11/2024 | SAI Aprovada | RJ-Implementar a escritura��o do FECP por meio de sub-apura��o - Resolu��o SEFAZ |
 | 90675 | 107262 |  | 05/03/2024 | SAI Aprovada | RS-Implementar o c�lculo do Fundo de Reforma conforme Instru��o Normativa RE 30/ |
 | 80049 | 98489 |  | 26/06/2023 | SAI Aprovada | teste descri��o |

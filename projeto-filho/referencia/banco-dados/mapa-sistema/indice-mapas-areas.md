@@ -12,9 +12,10 @@ Este diretorio concentra o **mapa de produto e de codigo** usado pelos agentes e
 | [pbl-area-escrita.json](pbl-area-escrita.json) | **Hashtable PBL → area** (618 chaves reais do `pbcvsexp`); gerar com `gerar-mapa-pbl-escrita.ps1`. |
 | [mapa-escrita-lista-pbls.md](mapa-escrita-lista-pbls.md) | Lista tabular dos PBLs + contagem por area (mesmo gerador). |
 | [indice-arquivos.md](indice-arquivos.md) | Inventario por arquivo (regenerar com `gerar-indice-codigo.ps1`; coluna Area usa o JSON). |
+| [mapa-contabil.md](mapa-contabil.md) | Area PBCVS **Contabil** — modulos: Contabilidade, Patrimônio, Atualização, LALUR, Registros, Conteúdo Contábil Tributário. |
 | [mapa-folha.md](mapa-folha.md) | Legado **modulo Folha** — referencia historica; nao usar como fonte do Escrita SDD. |
 | [../config/README.md](../config/README.md) | `modulos-keywords.json` (slugs dominio Escrita) e comando para regerar `sais/indices/modulos/*.md`. |
 
 ## PBCVS e caches
 
-`config/conexao-odbc.json` define `extracao.areas` com os nomes **exatos** do PBCVS: **Escrita**, **Importação**, **Onvio Escrita**. Os caches BuscaSAI correspondentes: `sai-psai-escrita.json`, `sai-psai-importacao.json`, `sai-psai-onvio-escrita.json`; o `importar-sais.ps1` mescla todos no fluxo do projeto.
+`config/conexao-odbc.json` define `extracao.areas` com os nomes **exatos** do PBCVS: **Escrita**, **Importação**, **Onvio Escrita**, **Contabil**. Os caches BuscaSAI correspondentes: `sai-psai-escrita.json`, `sai-psai-importacao.json`, `sai-psai-onvio-escrita.json`; o `importar-sais.ps1` mescla todos no fluxo do projeto.

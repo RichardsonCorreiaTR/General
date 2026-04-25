@@ -51,9 +51,23 @@ $possiveisLocais = @(
     "D:\brtap-dominio_contabil"
 )
 
+function Test-RootDiscoExiste {
+    param([string]$Caminho)
+    if (-not $Caminho) { return $false }
+    if ($Caminho -match '^([A-Za-z]):') {
+        $raiz = "$($Matches[1]):\"
+        if (-not (Test-Path -LiteralPath $raiz -ErrorAction SilentlyContinue)) {
+            return $false
+        }
+    }
+    return $true
+}
+
 $repoLocalDir = $null
 foreach ($caminho in $possiveisLocais) {
-    if ($caminho -and (Test-Path (Join-Path $caminho "escrita"))) {
+    if (-not $caminho) { continue }
+    if (-not (Test-RootDiscoExiste $caminho)) { continue }
+    if (Test-Path (Join-Path $caminho "escrita")) {
         $branchLocal = (git -C $caminho branch --show-current 2>$null)
         if ($branchLocal -eq $Branch) {
             $repoLocalDir = $caminho

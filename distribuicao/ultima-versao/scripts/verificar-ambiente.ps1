@@ -208,8 +208,14 @@ if ($totalOK -lt $total) {
 
 # Salvar status
 $statusFile = Join-Path $projetoDir "config\status-ambiente.json"
-$status = @{
+$nomeAnalista = if (Test-Path $analistaFile) { (Get-Content $analistaFile -Raw | ConvertFrom-Json).nome } else { "" }
+$emailAnalista = if (Test-Path $analistaFile) { (Get-Content $analistaFile -Raw | ConvertFrom-Json).email } else { "" }
+$statusObj = [ordered]@{
     verificadoEm = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
+    analista = $nomeAnalista
+    email = $emailAnalista
+    host = $env:COMPUTERNAME
+    usuario_windows = $env:USERNAME
     versao = $versaoAtual
     totalChecks = $total
     checksOK = $totalOK
@@ -219,9 +225,22 @@ $status = @{
     opcionaisTotal = $opcionais.Count
     resultado = if ($obrigOK -eq $obrigatorios.Count) { "OK" } elseif ($obrigOK -ge ($obrigatorios.Count - 2)) { "PARCIAL" } else { "FALHA" }
     detalhes = $checks | ForEach-Object { @{ nome = $_.nome; ok = $_.ok; detalhe = $_.detalhe; nivel = $_.nivel } }
-} | ConvertTo-Json -Depth 3
+}
+$status = $statusObj | ConvertTo-Json -Depth 3
 Set-Content -Path $statusFile -Value $status -Encoding UTF8
 
 Write-Host ""
 Write-Host "  Status salvo em: config/status-ambiente.json" -ForegroundColor Gray
+
+# Publicar status no OneDrive (logs/analistas/{pasta_log}/status-ambiente.json)
+# para o relatorio centralizado de versoes (scripts/relatorio-versoes-analistas.ps1).
+if ($caminhosOK -and $caminhos.onedrive_logs -and (Test-Path $caminhos.onedrive_logs)) {
+    try {
+        $statusOneDrive = Join-Path $caminhos.onedrive_logs "status-ambiente.json"
+        Set-Content -Path $statusOneDrive -Value $status -Encoding UTF8 -ErrorAction Stop
+        Write-Host "  Status publicado no OneDrive: $statusOneDrive" -ForegroundColor Gray
+    } catch {
+        Write-Host "  [!] Nao foi possivel publicar status no OneDrive: $($_.Exception.Message)" -ForegroundColor DarkYellow
+    }
+}
 Write-Host ""

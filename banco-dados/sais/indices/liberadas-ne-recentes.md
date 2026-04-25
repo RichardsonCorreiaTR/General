@@ -1,25 +1,41 @@
 ﻿# NEs Liberadas - Recentes (2022+)
 
-> Atualizado em: 10/04/2026 02:04
-> Total SAIs unicas: 2332
+> Atualizado em: 24/04/2026 22:48
+> Total SAIs unicas: 2377
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 100985 | 129721 | 10.6A-04 | Grave | 31/03/2026 | Respondido Coordenador de Módulos DEMO | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
-| 100954 | 129718 | 10.6A-04 | Normal | 31/03/2026 | Respondido Coordenador de Módulos DEMO | Est� sendo apresentada indevidamente a mensagem "A soma do imposto PIS informado |
-| 100952 | 129631 | 10.6A-04 | Normal | 30/03/2026 | Respondido Coordenador de Módulos DEMO | N�o est� sendo gerado o valor correto dos impostos 110-CSLL/SCP e 111-IRPJ/SCP,  |
-| 100898 | 129624 | 10.6A-04 | Grave | 27/03/2026 | Respondido Coordenador de Módulos DEMO | MT-Est� desmarcando automaticamente a op��o "Acesso ao portal - SEFAZ" ao gravar |
-| 100873 | 129568 | 10.6A-04 | Normal | 26/03/2026 | Respondido Gerente de Testes | Est� sendo gerado o valor incorreto na linha "5.Lucros e dividendos, apurados a  |
-| 100841 | 129541 | 10.6A-04 | Normal | 25/03/2026 | Respondido Coordenador de Módulos DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao gravar um lan�amento na |
-| 100945 | 129521 | 10.6A-04 | Normal | 25/03/2026 | Respondido Gerente de Testes | SC-N�o est� sendo gerado o valor correto no item 198 do quadro 14 do informativo |
-| 100795 | 129490 | 10.6A-04 | Normal | 24/03/2026 | Respondido Coordenador de Módulos DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao atualizar o sistema par |
-| 100848 | 129436 | 10.6A-04 | Normal | 24/03/2026 | Respondido Coordenador de Módulos DEMO | Em alguns casos n�o est� sendo gerado corretamente o arquivo do SPED Fiscal. |
+| 101283 | 130181 | 10.6A-04 | Grave | 17/04/2026 | Em Teste DEMO | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
+| 101230 | 130119 | ONVIO Escrita - | Normal | 15/04/2026 | Liberado Antecipadamente | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
+| 101120 | 129965 | 10.6A-04 | Grave | 09/04/2026 | Em Teste DEMO | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, 33-IRPJ-P |
+| 101096 | 129861 | 10.6A-04 | Normal | 06/04/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao realizar a apura��o do  |
+| 101090 | 129858 | 10.6A-04 | Normal | 06/04/2026 | Em Teste DEMO | N�o est� sendo gerado o valor do imposto 38-COSIRF no relat�rio "Extrator da DIR |
+| 100985 | 129721 | 10.6A-04 | Grave | 31/03/2026 | Em Teste DEMO | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
+| 100954 | 129718 | 10.6A-04 | Normal | 31/03/2026 | Em Teste DEMO | Est� sendo apresentada indevidamente a mensagem "A soma do imposto PIS informado |
+| 100993 | 129714 | 10.6A-04 | Normal | 31/03/2026 | Em Teste DEMO | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, 110-CSLL/ |
+| 100912 | 129643 | 10.6A-04 | Normal | 30/03/2026 | Em Teste DEMO | Em alguns casos n�o est�o sendo gerados todos os registros D197 no arquivo do SP |
+| 100952 | 129631 | 10.6A-04 | Normal | 30/03/2026 | Em Teste DEMO | N�o est� sendo gerado o valor correto dos impostos 110-CSLL/SCP e 111-IRPJ/SCP,  |
+| 100996 | 129626 | 10.6A-04 | Normal | 27/03/2026 | Em Teste DEMO | N�o est� sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRPJ na integ |
+| 100898 | 129624 | 10.6A-04 | Grave | 27/03/2026 | Em Teste DEMO | MT-Est� desmarcando automaticamente a op��o "Acesso ao portal - SEFAZ" ao gravar |
+| 100873 | 129568 | 10.6A-04 | Normal | 26/03/2026 | Em Teste DEMO | Est� sendo gerado o valor incorreto na linha "5.Lucros e dividendos, apurados a  |
+| 100841 | 129541 | 10.6A-04 | Normal | 25/03/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao gravar um lan�amento na |
+| 100945 | 129521 | 10.6A-04 | Normal | 25/03/2026 | Em Teste DEMO | SC-N�o est� sendo gerado o valor correto no item 198 do quadro 14 do informativo |
+| 100955 | 129513 | 10.6A-04 | Normal | 25/03/2026 | Em Teste DEMO | PA-N�o est�o sendo gerados dos registros 0460, C195 e C197 no informativo SPED F |
+| 100795 | 129490 | 10.6A-04 | Normal | 24/03/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao atualizar o sistema par |
+| 100848 | 129436 | 10.6A-04 | Normal | 24/03/2026 | Em Teste DEMO | Em alguns casos n�o est� sendo gerado corretamente o arquivo do SPED Fiscal. |
+| 100803 | 129388 | 10.6A-04 | Normal | 23/03/2026 | Em Teste DEMO | RO-Est�o sendo gerados indevidamente valores nas colunas "Valores Cot�beis", "Ba |
+| 100804 | 129387 | 10.6A-04 | Normal | 23/03/2026 | Em Teste DEMO | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
+| 100806 | 129317 | 10.6A-04 | Normal | 20/03/2026 | Em Teste DEMO | DF-N�o est� sendo gerado corretamente o registro C197 com o c�digo de ajuste DF7 |
+| 100944 | 129274 | 10.6A-04 | Normal | 19/03/2026 | Em Teste DEMO | Em alguns casos est�o sendo sobrescritas contas patrimoniais de cliente e fornec |
+| 100808 | 129248 | 10.6A-04 | Normal | 18/03/2026 | Em Teste DEMO | MT-Est� sendo apresentada indevidamente a mensagem "C�digo de Ajuste no SPED n�o |
 | 100616 | 129151 | 10.6A-03 | Grave | 16/03/2026 | Em Teste DEMO | Em alguns casos n�o est� sendo feito o c�lculo correto do imposto 7-IRPJ. |
 | 100517 | 129061 | 10.6A-03 | Normal | 12/03/2026 | Em Teste DEMO | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
+| 100498 | 129001 | 10.6A-04 | Normal | 11/03/2026 | Em Teste DEMO | Est� sendo apresentada indevidamente a mensagem "A soma dos campos 'Valor fornec |
 | 100417 | 128896 | 10.6A-03 | Normal | 09/03/2026 | Em Teste DEMO | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
 | 100564 | 128809 | 10.6A-03 | Normal | 04/03/2026 | Em Teste DEMO | SC-N�o est� sendo gerado o registro 1921 com o c�digo de ajuste SC004001 no SPED |
 | 100338 | 128805 | 10.6A-03 | Normal | 04/03/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro ao realizar a atualiza��o do sistema para a  |
 | 100319 | 128756 | 10.6A-03 | Grave | 04/03/2026 | Em Teste DEMO | Est� sendo indevidamente considerada majora��o maior que 100% no c�lculo dos imp |
+| 100805 | 128731 | 10.6A-04 | Normal | 03/03/2026 | Em Teste DEMO | N�o est� sendo gerada a data correta no campo "Data" do relat�rio "Comprovante e |
 | 100342 | 128729 | 10.6A-03 | Normal | 03/03/2026 | Em Teste DEMO | N�o est�o sendo gerados os registros dos blocos C100, C300, C350, C500, D100, D3 |
 | 100284 | 128721 | 10.6A-03 | Normal | 03/03/2026 | Em Teste DEMO | BA/RS/SC/SP-Est�o sendo duplicados os registros D760 e D761 no informativo SPED  |
 | 100260 | 128637 | 10.6A-03 | Normal | 27/02/2026 | Em Teste DEMO | MA-Est� sendo apresentada indevidamente a mensagem "Para efetuar o c�lculo do cr |
@@ -30,8 +46,9 @@
 | 100166 | 128541 | 10.6A-03 | Normal | 26/02/2026 | Em Teste DEMO | N�o est� sendo feito o c�lculo correto dos impostos 6-CSLL, 7-IRPJ-LP, 110-CSLL/ |
 | 100156 | 128512 | 10.6A-03 | Grave | 25/02/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao realizar a apura��o do  |
 | 100184 | 128433 | 10.6A-03 | Normal | 25/02/2026 | Em Teste DEMO | Est�o sendo geradas indevidamente notas sem o imposto 63-IRRF-APF no Comprovante |
-| 100802 | 128431 | 10.6A-04 | Normal | 25/02/2026 | Aguardando Resposta do Desenvolvimento | SP-Est�o sendo gerados indevidamente os registros 0300 e 5220 no informativo e-C |
+| 100802 | 128431 | 10.6A-04 | Normal | 25/02/2026 | Em Teste DEMO | SP-Est�o sendo gerados indevidamente os registros 0300 e 5220 no informativo e-C |
 | 100230 | 128430 | 10.6A-03 | Normal | 25/02/2026 | Em Teste DEMO | N�o est�o sendo gerados os valores dos impostos CSLL e IRPJ calculados no m�dulo |
+| 100524 | 128426 | 10.6A-04 | Normal | 25/02/2026 | Em Teste DEMO | SP-Est� sendo direcionada para a janela de emiss�o da guia incorreta do ICMS, qu |
 | 100114 | 128389 | 10.6A-03 | Normal | 24/02/2026 | Em Teste DEMO | Em alguns casos est� sendo gerado incorretamente o valor na linha 'Rendimento N� |
 | 100053 | 128255 | 10.6A-03 | Normal | 20/02/2026 | Em Teste DEMO | SC-Ajustar os percentuais do Cr�dito Presumido ao estabelecimento abatedor de ga |
 | 100187 | 128253 | 10.6A-03 | Grave | 20/02/2026 | Em Teste DEMO | N�o est� sendo gerado corretamente o Comprovante Anual de Reten��o, quando os s� |
@@ -42,23 +59,30 @@
 | 100006 | 128185 | 10.6A-02 | Normal | 19/02/2026 | Em Teste DEMO | Est� sendo demonstrado indevidamente fornecedor com inscri��o CNPJ no relat�rio  |
 | 100046 | 128109 | 10.6A-03 | Normal | 18/02/2026 | Em Teste DEMO | Corrigir a mensagem de confirma��o de assinatura digital No Demonstrativo de Fat |
 | 99959 | 128103 | 10.6A-02 | Normal | 16/02/2026 | Em Teste DEMO | Est� sendo apresentada indevidamente a mensagem "A distribui��o de lucros e divi |
+| 100407 | 128040 | 10.6A-04 | Normal | 13/02/2026 | Em Teste DEMO | TO-Esta sendo permitido gravar nos par�metros a altera��o nos campos "Inicial" e |
 | 100065 | 128039 | 10.6A-03 | Normal | 13/02/2026 | Em Teste DEMO | RJ-Em alguns casos n�o est� sendo calculado corretamente o valor do cr�dito pres |
 | 99919 | 127960 | 10.6A-02 | Normal | 12/02/2026 | Em Teste DEMO | N�o est� sendo gerado o valor correto no campo 14-VL_SERV_NT do registro D700 do |
 | 99885 | 127956 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
+| 100016 | 127904 | 10.6A-04 | Normal | 11/02/2026 | Em Teste DEMO | Est� ocorrendo erro de banco de dados ao realizar importa��o de NFS-e substituta |
 | 99846 | 127852 | 10.6A-02 | Normal | 11/02/2026 | Em Teste DEMO | Est�o sendo exclu�das indevidamente as configura��es das guias "PIS/COFINS\Sa�da |
 | 99840 | 127851 | 10.6A-02 | Normal | 11/02/2026 | Em Teste DEMO | N�o est� sendo gerado o relat�rio do Classificador Tribut�rio, quando for inform |
 | 99801 | 127785 | ONVIO Escrita - | Normal | 10/02/2026 | Liberado Antecipadamente | N�o est� retornando o CNPJ do Contador que o cliente est� vinculado ao realizar  |
 | 99797 | 127773 | 10.6A-02 | Grave | 09/02/2026 | Em Teste DEMO | N�o est� sendo gerado o Comprovante Eletr�nico de Rendimentos e/ou Comprovante A |
+| 99816 | 127772 | 10.6A-04 | Normal | 09/02/2026 | Em Teste DEMO | Est� sendo aberta indevidamente a janela F2 no campo "Benefici�rio" da guia "Ren |
 | 99788 | 127767 | 10.6A-02 | Grave | 09/02/2026 | Em Teste DEMO | SP-Est�o sendo gerados indevidamente os registros 0460, C195 e C197 com c�digo d |
 | 99811 | 127744 | 10.6A-03 | Normal | 09/02/2026 | Em Teste DEMO | RJ-Est� importando incorretamente o valor do imposto 56-FECOP-SI (lan�ado por no |
 | 99764 | 127703 | 10.6A-02 | Normal | 06/02/2026 | Em Teste DEMO | N�o est�o sendo copiadas as informa��es do bot�o retic�ncias das op��es dos Par� |
 | 99758 | 127664 | 10.6A-02 | Grave | 06/02/2026 | Em Teste DEMO | N�o est�o sendo copiadas as informa��es do bot�o retic�ncias das op��es dos Par� |
 | 99833 | 127638 | 10.6A-03 | Normal | 05/02/2026 | Em Teste DEMO | Est� sendo demonstrada indevidamente a guia "IVA" no utilit�rio de "Alterar Nota |
+| 100368 | 127637 | 10.6A-04 | Normal | 05/02/2026 | Em Teste DEMO | N�o est� sendo gerado o valor dos produtos "Sem incid�ncia" de PIS/COFINS" no re |
 | 99690 | 127513 | 10.6A-02 | Normal | 04/02/2026 | Em Teste DEMO | Est� ocorrendo o erro de banco de dados ao alterar uma nota de servi�o atrav�s d |
 | 99674 | 127442 | 10.6A-03 | Normal | 03/02/2026 | Em Teste DEMO | SP-Est� sendo deduzido indevidamente as notas com esp�cie de comunica��o e telec |
 | 100063 | 127423 | 10.6A-03 | Normal | 02/02/2026 | Em Teste DEMO | Em alguns casos ocorre lentid�o na apura��o do per�odo. |
+| 99834 | 127393 | 10.6A-04 | Normal | 02/02/2026 | Em Teste DEMO | RS-Est� sendo considerada indevidamente a nota de apropria��o de cr�dito de ICMS |
+| 99832 | 127354 | 10.6A-04 | Normal | 30/01/2026 | Em Teste DEMO | Est� ocorrendo erro de sistema ao gravar uma nota de Entrada, quando na guia "Es |
 | 99624 | 127328 | 10.6A-02 | Grave | 30/01/2026 | Em Teste DEMO | SC-Est� sendo gerado indevidamente o 'Estorno do ICMS complementar' da apura��o  |
 | 99601 | 127274 | 10.6A-02 | Normal | 29/01/2026 | Em Teste DEMO | Est� gerando erro de banco de dados ao inserir um caminho inv�lido na gera��o do |
+| 99835 | 127269 | 10.6A-04 | Normal | 29/01/2026 | Em Teste DEMO | Est� sendo apresentada indevidamente a mensagem "N�o pode existir vig�ncias dife |
 | 99547 | 127220 | ONVIO Escrita - | Normal | 29/01/2026 | Liberado Antecipadamente | Est� chamando indevidamente o servi�o antigo de notifica��es ao ativa uma empres |
 | 99545 | 127206 | 10.6A-02 | Normal | 29/01/2026 | Em Teste DEMO | Ajustar o c�digo quanto a emiss�o de notas de entrada com modelo "Nota Fiscal Fa |
 | 99611 | 127121 | 10.6A-03 | Normal | 27/01/2026 | Em Teste DEMO | N�o est� sendo demonstrado corretamente o c�digo do CST de acordo com o cClassTr |
@@ -68,8 +92,14 @@
 | 99603 | 127001 | 10.6A-02 | Normal | 26/01/2026 | Em Teste DEMO | MG-Est� sendo gerado o valor incorreto do campo "07-VL_ICMS" do registro C197 co |
 | 99469 | 127000 | 10.6A-02 | Grave | 26/01/2026 | Em Teste DEMO | N�o est�o sendo mantidas as configura��es feitas na janela de Rotinas Autom�tica |
 | 99594 | 126999 | 10.6A-02 | Grave | 26/01/2026 | Em Teste DEMO | Est�o duplicando os valores das notas no evento R-2010 do informativo EFD Reinf  |
+| 99609 | 126998 | 10.6A-04 | Normal | 26/01/2026 | Em Teste DEMO | BA-N�o est� sendo emitido o relat�rio Demonstrativo do Cr�dito presumido de 20%  |
 | 99464 | 126990 | 10.6A-02 | Grave | 23/01/2026 | Em Teste DEMO | GO-N�o est� sendo calculado o valor do cr�dito presumido COMEXPRODUZIR, quando n |
+| 99606 | 126934 | 10.6A-04 | Normal | 23/01/2026 | Em Teste DEMO | RS-N�o est� sendo poss�vel alterar a Base de C�lculo do imposto 27-ICMSA, quando |
 | 99637 | 126782 | 10.6A-02 | Normal | 20/01/2026 | Em Teste DEMO | SC-Em alguns casos est� ocorrendo diferen�a entre a soma do valor do campo 07 do |
+| 99332 | 126724 | 10.6A-04 | Normal | 20/01/2026 | Em Teste DEMO | N�o est� sendo setada a al�quota correta para o imposto 28-FUNRURAL, quando no c |
+| 100061 | 126693 | 10.6A-04 | Normal | 19/01/2026 | Em Teste DEMO | BA-N�o est� sendo demonstrado na apura��o do imposto 1-ICMS a linha 'Estorno de  |
+| 99608 | 126617 | 10.6A-04 | Normal | 19/01/2026 | Em Teste DEMO | Est� sendo deduzido indevidamente o valor da devolu��o lan�ada na empresa incorr |
+| 99610 | 126616 | 10.6A-04 | Normal | 19/01/2026 | Em Teste DEMO | BA-N�o est� sendo demonstrado na janela de apura��o do imposto 1-ICMS a linha Re |
 | 99604 | 126614 | 10.6A-03 | Normal | 19/01/2026 | Em Teste DEMO | N�o est�o sendo considerados corretamente na emiss�o do relat�rio do Planejament |
 | 99360 | 126580 | 10.6A-02 | Normal | 16/01/2026 | Em Teste DEMO | Est� sendo gerado o valor incorreto no campo 03-VL_REC_BRT dos registros M210 e  |
 | 99367 | 126542 | 10.6A-03 | Normal | 15/01/2026 | Em Teste DEMO | Est� considerando documento(s) cancelado(s) para o c�lculo dos impostos 183-IBS  |
@@ -78,18 +108,28 @@
 | 99214 | 126498 | 10.6A-01 | Normal | 14/01/2026 | Em Teste DEMO | RO-Est� finalizando o processo de importa��o na etapa 1/7 quando nas configura�� |
 | 99203 | 126441 | 10.6A-02 | Normal | 14/01/2026 | Em Teste DEMO | N�o est� sendo informada a 'Al�quota' do IBS e CBS na guia IVA do acumulador, ao |
 | 99218 | 126417 | 10.6A-02 | Normal | 13/01/2026 | Em Teste DEMO | Est� sendo demonstrado incorretamente o '% Redu��o IBS' e '% Redu��o CBS' para a |
+| 99215 | 126358 | 10.6A-04 | Normal | 12/01/2026 | Em Teste DEMO | N�o est� sendo gerada informa��o no campo 19-COD_INF do registro D700 do SPED Fi |
 | 99247 | 126347 | 10.6A-02 | Normal | 12/01/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro na tabela 'EFTABELA_PAJ_SE_ALTERACAO' ao efe |
+| 100347 | 126290 | 10.6A-04 | Normal | 09/01/2026 | Em Teste DEMO | MG-Est� sendo gerado indevidamente o registro tipo 22 no informativo DAPI, quand |
+| 99289 | 126254 | 10.6A-04 | Normal | 08/01/2026 | Em Teste DEMO | Est� demonstrando indevidamente a cr�tica de estrutura "O produto "%s" n�o possu |
 | 99092 | 126238 | 10.6A-03 | Normal | 08/01/2026 | Em Teste DEMO | Est� ocorrendo o erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a |
+| 99153 | 126165 | 10.6A-04 | Normal | 07/01/2026 | Em Teste DEMO | Est� importando incorretamente o CFPS na nota quando o cliente � de outro munic� |
 | 99031 | 126163 | 10.6A-01 | Normal | 07/01/2026 | Em Teste DEMO | N�o est�o sendo replicadas as informa��es das defini��es dos impostos inclusos n |
+| 99187 | 126104 | 10.6A-04 | Normal | 07/01/2026 | Em Teste DEMO | Est� ocorrendo erro de sistema ao importar nota com produtos do tipo "Ve�culos U |
 | 99301 | 126094 | 10.6A-02 | Normal | 07/01/2026 | Em Teste DEMO | PA-N�o est� sendo gerado corretamente o registro C197 com o c�digo de ajuste PA7 |
+| 99359 | 126093 | 10.6A-04 | Normal | 07/01/2026 | Em Teste DEMO | N�o est� sendo atualizada a al�quota dos impostos PIS e COFINS, quando realizada |
 | 98974 | 126089 | 10.6A-01 | Normal | 05/01/2026 | Em Teste DEMO | Esta demonstrando a tela de gera��o do arquivo SPED Fiscal com resolu��o maior q |
 | 98953 | 126088 | 10.6A-01 | Normal | 05/01/2026 | Em Teste DEMO | N�o est� realizando download de servi�os cancelados no Padr�o Nacional atrav�s d |
+| 99414 | 126087 | ONVIO Escrita - | Normal | 05/01/2026 | Liberado Antecipadamente | N�o est�o sendo enviadas as notifica��es ao armazenar os arquivos no BOX-e. |
 | 98902 | 125972 | 10.6A-01 | Normal | 30/12/2025 | Em Teste DEMO | N�o est� sendo gerado o valor correto no campo "05-VL_OPR" do registro D730 do i |
+| 99308 | 125947 | 10.6A-04 | Normal | 30/12/2025 | Em Teste DEMO | N�o est� sendo contabilizado o pagamento dos Tributos Federais, quando � realiza |
 | 98866 | 125917 | 10.6A-01 | Normal | 29/12/2025 | Em Teste DEMO | Est� sendo apresentada indevidamente a mensagem "Expeting STRING expression" ao  |
 | 98865 | 125913 | 10.6A-03 | Normal | 29/12/2025 | Em Teste DEMO | Em alguns casos est�o sendo apresentadas mensagens indevidas ao gravar a baixa d |
 | 98856 | 125896 | 10.6A-01 | Normal | 29/12/2025 | Em Teste DEMO | Est� sendo alterada indevidamente a al�quota do IBS e CBS no cadastro de acumula |
+| 100066 | 125848 | 10.6A-04 | Normal | 26/12/2025 | Em Teste DEMO | N�o est� sendo demonstrada a guia DAS-MEI no calend�rio de vencimento do Portal  |
 | 98857 | 125847 | 10.6A-01 | Normal | 26/12/2025 | Em Teste DEMO | N�o est� sendo considerada a op��o "N�o calcular cr�dito de IVA nas aquisi��es c |
 | 98843 | 125841 | 10.6A-01 | Normal | 23/12/2025 | Em Teste DEMO | RJ-Est� calculando incorretamente o valor do imposto 56-FECOP-SI, quando no acum |
+| 99605 | 125725 | 10.6A-04 | Normal | 22/12/2025 | Em Teste DEMO | MT-N�o est�o sendo consideradas notas de compra e devolu��o de compras no relat� |
 | 98809 | 125719 | 10.6A-01 | Normal | 19/12/2025 | Em Teste DEMO | Est� sendo demonstrado indevidamente as cr�ticas de estrutura "N�o foi encontrad |
 | 98694 | 125692 | 10.5A-12 | Normal | 19/12/2025 | Em Teste DEMO | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 por�m n�o fo |
 | 98678 | 125650 | 10.5A-12 | Grave | 18/12/2025 | Em Teste DEMO | Est� importando incorretamente o "Valor Cont�bil" e "Valor fornecido/consumido"  |
@@ -104,6 +144,7 @@
 | 98807 | 125418 | 10.6A-01 | Normal | 12/12/2025 | Em Teste DEMO | Est� importando incorretamente o valor no campo "Outras" da linha do ICMS quando |
 | 98562 | 125375 | 10.5A-12 | Normal | 12/12/2025 | Em Teste DEMO | Testar os processos de regerar lan�amentos cont�beis atr�ves da importa��o confo |
 | 98540 | 125348 | 10.5A-12 | Normal | 11/12/2025 | Em Teste DEMO | Est� sendo alterado indevidamente os valores das guias "IBS" e "CBS" ao visualiz |
+| 98961 | 125322 | 10.6A-04 | Normal | 11/12/2025 | Em Teste DEMO | N�o est� sendo gerado o valor dos impostos federais ao emitir o dashboard de imp |
 | 98688 | 125321 | 10.6A-01 | Normal | 11/12/2025 | Em Teste DEMO | SC-N�o est� sendo gerado o valor correto do estorno de ICMS no registro C197 do  |
 | 98542 | 125254 | 10.6A-01 | Normal | 09/12/2025 | Em Teste DEMO | N�o est� sendo aplicada a redu��o nas al�quotas do IBS e CBS, quando alterada a  |
 | 98463 | 125197 | 10.5A-12 | Normal | 09/12/2025 | Em Teste DEMO | RJ-Est� ocorrendo erro de sistema ao alterar algum valor da gride "Impostos" das |
@@ -121,6 +162,7 @@
 | 98351 | 124778 | 10.6A-01 | Normal | 27/11/2025 | Em Teste DEMO | Est� solicitando indevidamente o relacionamento de produtos quando importado NF- |
 | 98470 | 124763 | 10.5A-12 | Normal | 27/11/2025 | Em Teste DEMO | Em alguns casos est� ocorrendo lentid�o ao regerar os lan�amentos cont�beis. |
 | 98251 | 124707 | 10.5A-12 | Grave | 26/11/2025 | Em Teste DEMO | Est� solicitando indevidamente a sele��o de certificado na importa��o NF-e SEFAZ |
+| 98546 | 124678 | 10.6A-04 | Normal | 25/11/2025 | Em Teste DEMO | SC-N�o est� sendo feito o lan�amento de zeramento do imposto 1-ICMS na Integra�� |
 | 98334 | 124677 | 10.6A-03 | Normal | 25/11/2025 | Em Teste DEMO | Est� sendo apresentada indevidamente a mensagem "� preciso informar o destinat�r |
 | 98235 | 124672 | 10.5A-12 | Normal | 25/11/2025 | Em Teste DEMO | DF-Est� apresentando a advert�ncia "Os valores do ICMS ST Retido n�o podem ser i |
 | 98281 | 124588 | 10.6A-03 | Normal | 24/11/2025 | Em Teste DEMO | Em alguns casos est� ocorrendo o erro "Nenhum valor de chave prim�ria para a cha |
@@ -181,6 +223,7 @@
 | 97913 | 123588 | 10.6A-02 | Normal | 21/10/2025 | Em Teste DEMO | Est� ocorrendo erro de banco de dados ao realizar a apura��o dos tributos federa |
 | 97668 | 123576 | 10.6A-02 | Normal | 21/10/2025 | Em Teste DEMO | Est� importando incorretamente o "Valor cont�bil" para o imposto 3-ISS quando na |
 | 97504 | 123567 | 10.5A-11 | Normal | 21/10/2025 | Em Teste DEMO | SC-N�o est�o sendo gerados os registros C195 e C197 no informativo SPED Fiscal,  |
+| 97474 | 123561 | 10.6A-04 | Normal | 20/10/2025 | Em Teste DEMO | Em alguns casos algumas notas enviadas pelo Busca NF-e Cliente n�o est�o chegand |
 | 97505 | 123550 | 10.5A-11 | Normal | 20/10/2025 | Em Teste DEMO | N�o est�o sendo importado o valor unit�rio dos produtos na coluna "Valor unit�ri |
 | 97467 | 123548 | 10.5A-10 | Normal | 20/10/2025 | Em Teste DEMO | Est� permitindo selecionar indevidamente mais de um tipo de importa��o no quadro |
 | 97706 | 123487 | 10.6A-01 | Normal | 16/10/2025 | Em Teste DEMO | N�o est� gerando o complemento de hist�rico quando realizada a baixa dos Tributo |
@@ -275,6 +318,7 @@
 | 96106 | 121837 | 10.5A-10 | Normal | 15/08/2025 | Em Teste DEMO | Em alguns casos n�o est� atualizando o banco de dados quando houver dados cadast |
 | 96456 | 121825 | 10.5A-10 | Normal | 15/08/2025 | Em Teste DEMO | Est� sendo gerado o valor incorreto no campo 04-VL_BC_RET do registro F600 do in |
 | 96118 | 121800 | 10.5A-10 | Normal | 14/08/2025 | Em Teste DEMO | Est� demonstrando indevidamente empresas que possuem inscri��es diferentes de CP |
+| 96304 | 121770 | ONVIO Escrita - | Normal | 14/08/2025 | Liberado Antecipadamente | Est� apresentando o erro "403 Forbidden" internamente nos navegadores Chrome e E |
 | 96064 | 121752 | 10.5A-09 | Normal | 13/08/2025 | Em Teste DEMO | MG-N�o est�o sendo gerandos os registros do bloco 1900 no informativo SPED Fisca |
 | 96858 | 121750 | 10.5A-11 | Normal | 13/08/2025 | Em Teste DEMO | Em alguns casos est�o sendo apresentadas mensagens indevidas ao gravar a baixa d |
 | 96404 | 121744 | 10.5A-11 | Normal | 13/08/2025 | Em Teste DEMO | PR-Est� gerando incorretamente o imposto 8-DIFALI nas notas de entradas sem o im |
@@ -469,6 +513,7 @@
 | 93253 | 118008 | 10.5A-05 | Normal | 26/03/2025 | Em Teste DEMO | N�o est� sendo informado o dado adicional conforme o cadastro da Opera��o ao rea |
 | 93138 | 117999 | 10.5A-05 | Normal | 25/03/2025 | Em Teste DEMO | Corrigir problema de escrit�rios antigos que ainda n�o foram criados alguma das  |
 | 93228 | 117969 | 10.5A-08 | Normal | 25/03/2025 | Em Teste DEMO | RO-Est� sendo importado valores para o imposto 57-FECOEP-N na guia principal da  |
+| 93184 | 117948 | 10.6A-04 | Normal | 24/03/2025 | Em Teste DEMO | Est� sendo considerado incorretamente os impostos informados no acumulador do CT |
 | 93373 | 117946 | 10.5A-07 | Normal | 24/03/2025 | Em Teste DEMO | MA-Em alguns casos est� sendo gerado o valor incorreto do cr�dito presumido esta |
 | 93167 | 117920 | 10.5A-06 | Normal | 21/03/2025 | Em Teste DEMO | O sistema est� dando acesso indevidamente ao usu�rio que tem controle de acesso  |
 | 93038 | 117906 | 10.5A-03 | Normal | 21/03/2025 | Em Teste DEMO | Est� retornando incorretamente a informa��o do status 401 ao acessar o Portal do |

@@ -403,12 +403,11 @@ quantidade de resultados retornados. **Regra**: se uma busca retornar
 mais de 50 resultados, **recuse processar** e peca ao analista para
 refinar a pesquisa com filtros adicionais:
 - `-Modulo "<modulo>"` para filtrar por area
-- `-Rubrica "<rubrica>"` para filtrar por rubrica
 - `-DataDe "dd/MM/yyyy"` para filtrar por data
 
 Diga ao analista: "A busca retornou muitos resultados (>50). Para
 garantir qualidade, preciso que voce refine. Podemos filtrar por
-modulo, rubrica ou data. Qual voce prefere?"
+modulo ou data. Qual voce prefere?"
 
 Nunca processe mais de 50 resultados de uma vez.
 

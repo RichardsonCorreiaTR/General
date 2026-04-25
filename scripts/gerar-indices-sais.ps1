@@ -6,7 +6,10 @@
 # Pico de RAM: ~550 MB (carrega fracionados sequencialmente)
 
 param(
-    [int]$MaxPorArquivo = 99999
+    [int]$MaxPorArquivo = 99999,
+    # Indices por-rubrica*.md: heuristica de 4 digitos nas descricoes (muito ligada a vocabulário Folha/rubricas).
+    # Por defeito NAO gera; use -IncluirIndiceRubrica se precisar desses ficheiros.
+    [switch]$IncluirIndiceRubrica
 )
 
 $ErrorActionPreference = "Stop"
@@ -65,6 +68,7 @@ foreach ($tp in $tiposTodos) {
                 i_sai = $item.i_sai
                 i_psai = $item.i_psai
                 tipoSAI = $item.tipoSAI
+                nomeArea = $item.nomeArea
                 sai_descricao = $item.sai_descricao
                 nomeVersao = $item.nomeVersao
                 gravidade_ne = $item.gravidade_ne
@@ -254,11 +258,19 @@ Write-Host "[B5] Carregando classificacao por dominio (modulos-keywords.json)...
 $kwFile = Join-Path $projetoDir "banco-dados\config\modulos-keywords.json"
 $moduloKeywords = @{}
 $moduloNomes = @{}
+$areaMod = @{}  # fallback nomeArea → slug de modulo
 if (Test-Path $kwFile) {
     $kwJson = Get-Content $kwFile -Raw -Encoding UTF8 | ConvertFrom-Json
     foreach ($prop in $kwJson.modulos.PSObject.Properties) {
-        $moduloKeywords[$prop.Name] = @($prop.Value.keywords)
+        $moduloKeywords[$prop.Name] = @($prop.Value.keywords | Where-Object { $_ -ne $null -and $_ -ne "" })
         $moduloNomes[$prop.Name] = $prop.Value.nome_exibicao
+    }
+    # Carregar mapeamento area_pbcvs → modulo padrao para fallback quando sai_descricao e nula
+    if ($kwJson.area_modulo_padrao) {
+        foreach ($ap in $kwJson.area_modulo_padrao.PSObject.Properties) {
+            $areaMod[$ap.Name] = $ap.Value
+        }
+        Write-Host "  Fallback area_modulo_padrao: $($areaMod.Keys -join ', ')"
     }
     Write-Host "  $($moduloKeywords.Count) dominios carregados de modulos-keywords.json"
 } else {
@@ -286,40 +298,66 @@ if (Test-Path $kwFile) {
 }
 
 # --- Classificacao multi-modulo (Nivel B / D9) ---
+# Keywords pre-normalizadas para evitar ToLower() repetido dentro do loop quente
 Write-Host "  Classificando SAIs (multi-dominio)..." -ForegroundColor Yellow
+$kwNorm = @{}
+foreach ($modSlug in $moduloKeywords.Keys) {
+    $kwNorm[$modSlug] = @($moduloKeywords[$modSlug] | ForEach-Object { $_.ToLower() })
+}
 $saiModulos = @{}
+$naoClassificadosList = [System.Collections.ArrayList]::new()
+$classificadosPorKeyword = 0
+$classificadosPorArea = 0
 foreach ($item in $dados) {
+    $modulosItem = [System.Collections.Generic.List[string]]::new()
+
+    # 1) Tentar classificacao por keyword na descricao
     $d = $item.sai_descricao
-    if (-not $d) { continue }
-    $dLower = $d.ToLower()
-    foreach ($modSlug in $moduloKeywords.Keys) {
-        foreach ($kw in $moduloKeywords[$modSlug]) {
-            if ($dLower.Contains($kw.ToLower())) {
-                if (-not $saiModulos.ContainsKey($item.i_psai)) {
-                    $saiModulos[$item.i_psai] = @()
+    if ($d) {
+        $dLower = $d.ToLower()
+        foreach ($modSlug in $kwNorm.Keys) {
+            foreach ($kw in $kwNorm[$modSlug]) {
+                if ($dLower.Contains($kw)) {
+                    if (-not $modulosItem.Contains($modSlug)) { $modulosItem.Add($modSlug) }
+                    break
                 }
-                if ($saiModulos[$item.i_psai] -notcontains $modSlug) {
-                    $saiModulos[$item.i_psai] += $modSlug
-                }
-                break
             }
         }
+        if ($modulosItem.Count -gt 0) { $classificadosPorKeyword++ }
+    }
+
+    # 2) Fallback: classificar por nomeArea quando descricao esta ausente ou nao houve match
+    if ($modulosItem.Count -eq 0 -and $item.nomeArea -and $areaMod.ContainsKey($item.nomeArea)) {
+        $defaultMod = $areaMod[$item.nomeArea]
+        if ($moduloKeywords.ContainsKey($defaultMod)) {
+            $modulosItem.Add($defaultMod)
+            $classificadosPorArea++
+        }
+    }
+
+    if ($modulosItem.Count -gt 0) {
+        $saiModulos[$item.i_psai] = $modulosItem.ToArray()
+    } else {
+        [void]$naoClassificadosList.Add($item)
     }
 }
-$classificadosCount = ($saiModulos.Keys | Measure-Object).Count
-$naoClassificadosList = @($dados | Where-Object { -not $saiModulos.ContainsKey($_.i_psai) })
-Write-Host "  $classificadosCount PSAIs classificadas, $($naoClassificadosList.Count) nao classificadas"
+$classificadosCount = $saiModulos.Count
+Write-Host "  $classificadosCount PSAIs classificadas ($classificadosPorKeyword por keyword, $classificadosPorArea por area), $($naoClassificadosList.Count) nao classificadas"
 
 # --- por-modulo.md (indice agregado por dominio) ---
 Write-Host "  Gerando por-modulo.md..."
-$mdModulo = "# SAIs por dominio - Escrita Fiscal`n`n> Atualizado em: $dataAtualizacao`n> Classificacao por palavras-chave (multi-dominio) | $($moduloKeywords.Count) dominios (`modulos-keywords.json`)`n"
+$mdModuloLines = [System.Collections.Generic.List[string]]::new()
+$mdModuloLines.Add("# SAIs por dominio - Escrita Fiscal")
+$mdModuloLines.Add("")
+$mdModuloLines.Add("> Atualizado em: $dataAtualizacao")
+$mdModuloLines.Add("> Classificacao por palavras-chave (multi-dominio) | $($moduloKeywords.Count) dominios (``modulos-keywords.json``)")
 foreach ($modSlug in ($moduloKeywords.Keys | Sort-Object)) {
     $nomeExib = if ($moduloNomes[$modSlug]) { $moduloNomes[$modSlug] } else { $modSlug }
     $itens = @($dados | Where-Object { $saiModulos.ContainsKey($_.i_psai) -and ($saiModulos[$_.i_psai] -contains $modSlug) })
     if ($itens.Count -eq 0) { continue }
     $pendentes = @($itens | Where-Object { -not $_.Liberacao -and -not $_.Descarte })
-    $mdModulo += "`n## $nomeExib ($($itens.Count) total, $($pendentes.Count) pendentes)`n`n"
-    $mdModulo += "| SAI | PSAI | Tipo | Status | Resumo |`n|-----|------|------|--------|--------|`n"
+    $mdModuloLines.Add(""); $mdModuloLines.Add("## $nomeExib ($($itens.Count) total, $($pendentes.Count) pendentes)"); $mdModuloLines.Add("")
+    $mdModuloLines.Add("| SAI | PSAI | Tipo | Status | Resumo |"); $mdModuloLines.Add("|-----|------|------|--------|--------|")
     $gruposMod = $itens | Group-Object -Property i_sai
     $saiMod = @($gruposMod | ForEach-Object {
         $_.Group | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | Select-Object -First 1
@@ -327,7 +365,7 @@ foreach ($modSlug in ($moduloKeywords.Keys | Sort-Object)) {
     $saiMod | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | ForEach-Object {
         $status = if ($_.Liberacao) { "Lib" } elseif ($_.Descarte) { "Desc" } else { "Pend" }
         $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(70, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
-        $mdModulo += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $status | $desc |`n"
+        $mdModuloLines.Add("| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $status | $desc |")
     }
 }
 if ($naoClassificadosList.Count -gt 0) {
@@ -336,15 +374,15 @@ if ($naoClassificadosList.Count -gt 0) {
         $_.Group | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | Select-Object -First 1
     })
     $pendNC = @($saiNC | Where-Object { -not $_.Liberacao -and -not $_.Descarte })
-    $mdModulo += "`n## Nao Classificado ($($saiNC.Count) SAIs unicas, $($pendNC.Count) pendentes)`n`n"
-    $mdModulo += "| SAI | PSAI | Tipo | Status | Resumo |`n|-----|------|------|--------|--------|`n"
+    $mdModuloLines.Add(""); $mdModuloLines.Add("## Nao Classificado ($($saiNC.Count) SAIs unicas, $($pendNC.Count) pendentes)"); $mdModuloLines.Add("")
+    $mdModuloLines.Add("| SAI | PSAI | Tipo | Status | Resumo |"); $mdModuloLines.Add("|-----|------|------|--------|--------|")
     $saiNC | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | ForEach-Object {
         $status = if ($_.Liberacao) { "Lib" } elseif ($_.Descarte) { "Desc" } else { "Pend" }
         $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(70, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
-        $mdModulo += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $status | $desc |`n"
+        $mdModuloLines.Add("| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $status | $desc |")
     }
 }
-$null = Smart-Write (Join-Path $indicesDir "por-modulo.md") $mdModulo
+$null = Smart-Write (Join-Path $indicesDir "por-modulo.md") ($mdModuloLines -join "`n")
 Write-Host "  por-modulo.md gerado ($($naoClassificadosList.Count) nao classificados)"
 
 # --- B5b: Um arquivo .md por dominio (indices/modulos/) ---
@@ -381,38 +419,39 @@ foreach ($modSlug in $allModSlugs) {
 
     if ($saiUnicas.Count -eq 0) { continue }
 
-    $md = "# $nomeExib`n`n"
-    $md += "> Dominio Escrita Fiscal | slug ``$modSlug```n"
-    $md += "> Atualizado em: $dataAtualizacao`n"
-    $md += "> Pendentes: $($modPend.Count) | Liberadas: $($modLib.Count) | Descartadas: $($modDesc.Count) | Total SAIs: $($saiUnicas.Count)`n"
+    $mdLines = [System.Collections.Generic.List[string]]::new()
+    $mdLines.Add("# $nomeExib"); $mdLines.Add("")
+    $mdLines.Add("> Dominio Escrita Fiscal | slug ``$modSlug``")
+    $mdLines.Add("> Atualizado em: $dataAtualizacao")
+    $mdLines.Add("> Pendentes: $($modPend.Count) | Liberadas: $($modLib.Count) | Descartadas: $($modDesc.Count) | Total SAIs: $($saiUnicas.Count)")
 
-    $md += "`n## Pendentes ($($modPend.Count))`n`n"
+    $mdLines.Add(""); $mdLines.Add("## Pendentes ($($modPend.Count))"); $mdLines.Add("")
     if ($modPend.Count -gt 0) {
-        $md += "| SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |`n|-----|------|------|-----------|----------|--------|`n"
+        $mdLines.Add("| SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |"); $mdLines.Add("|-----|------|------|-----------|----------|--------|")
         $modPend | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | ForEach-Object {
             $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(80, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
             $dt = if ($_.CadastroPSAI) { ([datetime]$_.CadastroPSAI).ToString("dd/MM/yyyy") } else { "-" }
             $grav = if ($_.gravidade_ne) { $_.gravidade_ne } else { "-" }
-            $md += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $grav | $dt | $desc |`n"
+            $mdLines.Add("| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $grav | $dt | $desc |")
         }
     } else {
-        $md += "Nenhuma SAI pendente neste dominio.`n"
+        $mdLines.Add("Nenhuma SAI pendente neste dominio.")
     }
 
-    $md += "`n## Liberadas Recentes (30 mais recentes)`n`n"
+    $mdLines.Add(""); $mdLines.Add("## Liberadas Recentes (30 mais recentes)"); $mdLines.Add("")
     if ($modLib.Count -gt 0) {
         $libTop = $modLib | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | Select-Object -First 30
-        $md += "| SAI | PSAI | Tipo | Cadastro | Resumo |`n|-----|------|------|----------|--------|`n"
+        $mdLines.Add("| SAI | PSAI | Tipo | Cadastro | Resumo |"); $mdLines.Add("|-----|------|------|----------|--------|")
         $libTop | ForEach-Object {
             $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(80, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
             $dt = if ($_.CadastroPSAI) { ([datetime]$_.CadastroPSAI).ToString("dd/MM/yyyy") } else { "-" }
-            $md += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $dt | $desc |`n"
+            $mdLines.Add("| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $dt | $desc |")
         }
     } else {
-        $md += "Nenhuma SAI liberada neste dominio.`n"
+        $mdLines.Add("Nenhuma SAI liberada neste dominio.")
     }
 
-    $md += "`n## Temas Frequentes`n`n"
+    $mdLines.Add(""); $mdLines.Add("## Temas Frequentes"); $mdLines.Add("")
     if ($modSlug -ne "nao-classificado" -and $modLib.Count -gt 0) {
         $temaCount = @{}
         foreach ($libItem in $modLib) {
@@ -428,29 +467,30 @@ foreach ($modSlug in $allModSlugs) {
         }
         $topTemas = $temaCount.GetEnumerator() | Sort-Object Value -Descending | Select-Object -First 5
         if ($topTemas) {
-            $md += "| Tema | Ocorrencias |`n|------|-------------|`n"
-            $topTemas | ForEach-Object { $md += "| $($_.Key) | $($_.Value) |`n" }
-        } else { $md += "Sem dados suficientes.`n" }
+            $mdLines.Add("| Tema | Ocorrencias |"); $mdLines.Add("|------|-------------|")
+            $topTemas | ForEach-Object { $mdLines.Add("| $($_.Key) | $($_.Value) |") }
+        } else { $mdLines.Add("Sem dados suficientes.") }
     } else {
-        $md += "Sem dados suficientes para analise tematica.`n"
+        $mdLines.Add("Sem dados suficientes para analise tematica.")
     }
 
-    $md += "`n## Descartadas Recentes (10 mais recentes)`n`n"
+    $mdLines.Add(""); $mdLines.Add("## Descartadas Recentes (10 mais recentes)"); $mdLines.Add("")
     if ($modDesc.Count -gt 0) {
         $descTop = $modDesc | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | Select-Object -First 10
-        $md += "| SAI | PSAI | Tipo | Cadastro | Resumo |`n|-----|------|------|----------|--------|`n"
+        $mdLines.Add("| SAI | PSAI | Tipo | Cadastro | Resumo |"); $mdLines.Add("|-----|------|------|----------|--------|")
         $descTop | ForEach-Object {
             $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(80, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
             $dt = if ($_.CadastroPSAI) { ([datetime]$_.CadastroPSAI).ToString("dd/MM/yyyy") } else { "-" }
-            $md += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $dt | $desc |`n"
+            $mdLines.Add("| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $dt | $desc |")
         }
     } else {
-        $md += "Nenhuma SAI descartada neste dominio.`n"
+        $mdLines.Add("Nenhuma SAI descartada neste dominio.")
     }
 
-    $md += "`n## Busca Completa`n`nPara lista completa: ``powershell -File scripts\buscar-sai.ps1 -Termo `"$nomeExib`"```n"
+    $mdLines.Add(""); $mdLines.Add("## Busca Completa"); $mdLines.Add("")
+    $mdLines.Add("Para lista completa: ``powershell -File scripts\buscar-sai.ps1 -Termo `"$nomeExib`"``")
 
-    $null = Smart-Write (Join-Path $modulosDir "$modSlug.md") $md
+    $null = Smart-Write (Join-Path $modulosDir "$modSlug.md") ($mdLines -join "`n")
 }
 
 # Arquivar MDs de slugs antigos (ex.: taxonomia Folha) para obsoleto/ **antes** de contar arquivos finais
@@ -495,37 +535,41 @@ $top20 | ForEach-Object {
 $null = Smart-Write (Join-Path $indicesDir "resumo-pendentes.md") $mdResumo
 Write-Host "  resumo-pendentes.md gerado ($totalPend pendentes)"
 
-# --- Por rubrica (detalhado) ---
-Write-Host "[B6] Gerando indice por rubrica..." -ForegroundColor Yellow
+# --- Por rubrica (detalhado) — opcional (vocabulário típico Folha; desativado por defeito) ---
 $rubricaMap = @{}
-$dados | ForEach-Object {
-    if ($_.sai_descricao -match '\b(\d{4})\b') {
-        $matches_found = [regex]::Matches($_.sai_descricao, '\b(\d{4})\b')
-        foreach ($m in $matches_found) {
-            $rub = $m.Value
-            $numRub = [int]$rub
-            if ($numRub -ge 1000 -and $numRub -le 9999) {
-                if (-not $rubricaMap.ContainsKey($rub)) { $rubricaMap[$rub] = @() }
-                $rubricaMap[$rub] += $_
+if ($IncluirIndiceRubrica) {
+    Write-Host "[B6] Gerando indice por rubrica..." -ForegroundColor Yellow
+    $dados | ForEach-Object {
+        if ($_.sai_descricao -match '\b(\d{4})\b') {
+            $matches_found = [regex]::Matches($_.sai_descricao, '\b(\d{4})\b')
+            foreach ($m in $matches_found) {
+                $rub = $m.Value
+                $numRub = [int]$rub
+                if ($numRub -ge 1000 -and $numRub -le 9999) {
+                    if (-not $rubricaMap.ContainsKey($rub)) { $rubricaMap[$rub] = @() }
+                    $rubricaMap[$rub] += $_
+                }
             }
         }
     }
-}
-$mdRubrica = "# SAIs por Rubrica - Escrita Fiscal`n`n> Atualizado em: $dataAtualizacao`n> Rubricas identificadas: $($rubricaMap.Count)`n> Classificacao por numeros de 4 digitos (1000-9999) encontrados nas descricoes`n"
-$rubricaMap.GetEnumerator() | Sort-Object { $_.Value.Count } -Descending | Select-Object -First 100 | ForEach-Object {
-    $rub = $_.Key
-    $itens = $_.Value
-    $pendentes = @($itens | Where-Object { -not $_.Liberacao -and -not $_.Descarte })
-    $mdRubrica += "`n## Rubrica $rub ($($itens.Count) SAIs, $($pendentes.Count) pendentes)`n`n"
-    $mdRubrica += "| SAI | PSAI | Tipo | Status | Resumo |`n|-----|------|------|--------|--------|`n"
-    $itens | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | Select-Object -First 30 | ForEach-Object {
-        $status = if ($_.Liberacao) { "Lib" } elseif ($_.Descarte) { "Desc" } else { "Pend" }
-        $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(70, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
-        $mdRubrica += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $status | $desc |`n"
+    $mdRubrica = "# SAIs por Rubrica - Escrita Fiscal`n`n> Atualizado em: $dataAtualizacao`n> Rubricas identificadas: $($rubricaMap.Count)`n> Classificacao por numeros de 4 digitos (1000-9999) encontrados nas descricoes`n"
+    $rubricaMap.GetEnumerator() | Sort-Object { $_.Value.Count } -Descending | Select-Object -First 100 | ForEach-Object {
+        $rub = $_.Key
+        $itens = $_.Value
+        $pendentes = @($itens | Where-Object { -not $_.Liberacao -and -not $_.Descarte })
+        $mdRubrica += "`n## Rubrica $rub ($($itens.Count) SAIs, $($pendentes.Count) pendentes)`n`n"
+        $mdRubrica += "| SAI | PSAI | Tipo | Status | Resumo |`n|-----|------|------|--------|--------|`n"
+        $itens | Sort-Object { if ($_.CadastroPSAI) { try { [datetime]$_.CadastroPSAI } catch { [datetime]::MinValue } } else { [datetime]::MinValue } } -Descending | Select-Object -First 30 | ForEach-Object {
+            $status = if ($_.Liberacao) { "Lib" } elseif ($_.Descarte) { "Desc" } else { "Pend" }
+            $desc = if ($_.sai_descricao) { $_.sai_descricao.Substring(0, [Math]::Min(70, $_.sai_descricao.Length)).Replace("|","").Replace("`n"," ").Replace("`r"," ") } else { "-" }
+            $mdRubrica += "| $($_.i_sai) | $($_.i_psai) | $($_.tipoSAI) | $status | $desc |`n"
+        }
     }
+    $null = Smart-Write (Join-Path $indicesDir "por-rubrica-detalhado.md") $mdRubrica
+    Write-Host "  $($rubricaMap.Count) rubricas identificadas"
+} else {
+    Write-Host "[B6] Indices por rubrica omitidos (use -IncluirIndiceRubrica para gerar)." -ForegroundColor DarkGray
 }
-$null = Smart-Write (Join-Path $indicesDir "por-rubrica-detalhado.md") $mdRubrica
-Write-Host "  $($rubricaMap.Count) rubricas identificadas"
 
 # --- B8a: indice-geral.md (orfao corrigido) ---
 Write-Host "[B8a] Gerando indice-geral.md..." -ForegroundColor Yellow
@@ -554,20 +598,24 @@ $dados | Group-Object -Property nomeVersao | Sort-Object Count -Descending | Sel
 }
 $null = Smart-Write (Join-Path $indicesDir "indice-geral.md") $mdGeral
 
-# --- B8b: por-rubrica.md (orfao corrigido, versao resumida) ---
-Write-Host "[B8b] Gerando por-rubrica.md (resumido)..." -ForegroundColor Yellow
-$mdRubSimp = "# Indice de SAIs por Rubrica Referenciada`n`n"
-$mdRubSimp += "> Atualizado em: $dataAtualizacao`n"
-$mdRubSimp += "> Rubricas citadas nas descricoes de NEs pendentes`n`n"
-$mdRubSimp += "## Rubricas mais citadas em NEs`n`n"
-$mdRubSimp += "| Rubrica | Total SAIs | Pendentes | Exemplo SAI |`n|---------|-----------|-----------|-------------|`n"
-$rubricaMap.GetEnumerator() | Sort-Object { $_.Value.Count } -Descending | Select-Object -First 20 | ForEach-Object {
-    $pendRub = @($_.Value | Where-Object { -not $_.Liberacao -and -not $_.Descarte }).Count
-    $exemploSai = ($_.Value | Select-Object -First 1).i_sai
-    $mdRubSimp += "| $($_.Key) | $($_.Value.Count) | $pendRub | $exemploSai |`n"
+# --- B8b: por-rubrica.md (resumido) — mesmo switch que B6 ---
+if ($IncluirIndiceRubrica) {
+    Write-Host "[B8b] Gerando por-rubrica.md (resumido)..." -ForegroundColor Yellow
+    $mdRubSimp = "# Indice de SAIs por Rubrica Referenciada`n`n"
+    $mdRubSimp += "> Atualizado em: $dataAtualizacao`n"
+    $mdRubSimp += "> Rubricas citadas nas descricoes de NEs pendentes`n`n"
+    $mdRubSimp += "## Rubricas mais citadas em NEs`n`n"
+    $mdRubSimp += "| Rubrica | Total SAIs | Pendentes | Exemplo SAI |`n|---------|-----------|-----------|-------------|`n"
+    $rubricaMap.GetEnumerator() | Sort-Object { $_.Value.Count } -Descending | Select-Object -First 20 | ForEach-Object {
+        $pendRub = @($_.Value | Where-Object { -not $_.Liberacao -and -not $_.Descarte }).Count
+        $exemploSai = ($_.Value | Select-Object -First 1).i_sai
+        $mdRubSimp += "| $($_.Key) | $($_.Value.Count) | $pendRub | $exemploSai |`n"
+    }
+    $mdRubSimp += "`n## Busca por rubrica`n`nPara buscar SAIs de uma rubrica especifica:`n``powershell -File scripts\buscar-sai.ps1 -Termo `"8214`"```n"
+    $null = Smart-Write (Join-Path $indicesDir "por-rubrica.md") $mdRubSimp
+} else {
+    Write-Host "[B8b] por-rubrica.md omitido." -ForegroundColor DarkGray
 }
-$mdRubSimp += "`n## Busca por rubrica`n`nPara buscar SAIs de uma rubrica especifica:`n``powershell -File scripts\buscar-sai.ps1 -Termo `"8214`"```n"
-$null = Smart-Write (Join-Path $indicesDir "por-rubrica.md") $mdRubSimp
 
 # --- B8c: por-cenario-complexo.md (orfao corrigido) ---
 Write-Host "[B8c] Gerando por-cenario-complexo.md..." -ForegroundColor Yellow
@@ -609,11 +657,27 @@ foreach ($cenario in $topCenarios) {
     $mdCenario += "`n"
 }
 $null = Smart-Write (Join-Path $indicesDir "por-cenario-complexo.md") $mdCenario
-Write-Host "  Indices orfaos gerados (indice-geral, por-rubrica, por-cenario-complexo)"
+Write-Host "  Indices orfaos gerados (indice-geral$(if ($IncluirIndiceRubrica) { ', por-rubrica' }), por-cenario-complexo)"
+
+if (-not $IncluirIndiceRubrica) {
+    foreach ($nome in @('por-rubrica.md', 'por-rubrica-detalhado.md')) {
+        $p = Join-Path $indicesDir $nome
+        if (Test-Path -LiteralPath $p) {
+            Remove-Item -LiteralPath $p -Force
+            Write-Host "  Removido indice por rubrica (nao usado): $nome" -ForegroundColor DarkYellow
+        }
+    }
+}
 
 # --- Pagina de navegacao (dominios Escrita / modulos-keywords.json) ---
 Write-Host "[B7] Gerando pagina de navegacao..." -ForegroundColor Yellow
 $kDominios = $moduloKeywords.Count
+$blocoLinksRubrica = if ($IncluirIndiceRubrica) {
+@"
+- [Por Rubrica](por-rubrica.md) - Top rubricas citadas (resumido)
+- [Por Rubrica Detalhado](por-rubrica-detalhado.md) - SAIs por numero de rubrica (top 100)
+"@
+} else { "" }
 $mdNav = @"
 # SAIs e PSAIs - Escrita Fiscal
 
@@ -632,8 +696,7 @@ Cada arquivo em [modulos/](modulos/) agrupa SAIs por **slug de dominio** (palavr
 - [Indice Geral](indice-geral.md) - Resumo com totais por tipo, status e versao
 - [Estatisticas](estatisticas.md) - Numeros por ano, gravidade
 - [Por Modulo](por-modulo.md) - Lista agregada por dominio (classificacao multi-dominio; ver ``modulos-keywords.json``)
-- [Por Rubrica](por-rubrica.md) - Top rubricas citadas (resumido)
-- [Por Rubrica Detalhado](por-rubrica-detalhado.md) - SAIs por numero de rubrica (top 100)
+$blocoLinksRubrica
 - [Por Cenario Complexo](por-cenario-complexo.md) - SAIs classificadas em 2+ dominios
 
 ## Pendentes

@@ -1,4 +1,4 @@
-﻿# PROMPT BLUEPRINT: Simplificacao da Arquitetura de Atualizacao do Projeto Folha
+﻿# PROMPT BLUEPRINT: Simplificacao da Arquitetura de Atualizacao do Projeto Escria
 
 ## 1. CONTEXTO DO PROBLEMA
 

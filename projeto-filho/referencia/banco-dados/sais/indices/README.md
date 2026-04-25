@@ -1,22 +1,21 @@
 ﻿# SAIs e PSAIs - Escrita Fiscal
 
 > Base de conhecimento de solicitacoes de alteracao da area Escrita Fiscal (PBCVS nomeArea = Escrita, Importacao, Onvio Escrita nos caches).
-> Atualizado em: 10/04/2026 02:04 | Total: 44516 registros
+> Atualizado em: 24/04/2026 22:48 | Total: 44631 registros
 
 ## Indices por dominio (modulos-keywords.json)
 
 Cada arquivo em [modulos/](modulos/) agrupa SAIs por **slug de dominio** (palavras-chave). Conteudo: pendentes, liberadas recentes, temas frequentes, descartadas.
 
 - [Resumo de Pendentes](resumo-pendentes.md) - Totais por dominio + top 20 novidades
-- [modulos/](modulos/) - Um `.md` por slug (8 dominios em `banco-dados/config/modulos-keywords.json` + `nao-classificado.md` para o restante)
+- [modulos/](modulos/) - Um `.md` por slug (14 dominios em `banco-dados/config/modulos-keywords.json` + `nao-classificado.md` para o restante)
 
 ## Indices Gerais
 
 - [Indice Geral](indice-geral.md) - Resumo com totais por tipo, status e versao
 - [Estatisticas](estatisticas.md) - Numeros por ano, gravidade
 - [Por Modulo](por-modulo.md) - Lista agregada por dominio (classificacao multi-dominio; ver `modulos-keywords.json`)
-- [Por Rubrica](por-rubrica.md) - Top rubricas citadas (resumido)
-- [Por Rubrica Detalhado](por-rubrica-detalhado.md) - SAIs por numero de rubrica (top 100)
+
 - [Por Cenario Complexo](por-cenario-complexo.md) - SAIs classificadas em 2+ dominios
 
 ## Pendentes
@@ -44,9 +43,9 @@ Cada arquivo em [modulos/](modulos/) agrupa SAIs por **slug de dominio** (palavr
 
 ## Por versao (ultimas 5)
 
-- [ZDuvidas](por-versao/ZDuvidas.md) - 1 registros
+- [ZDuvidas](por-versao/ZDuvidas.md) - 2 registros
 - [ParalelaPlatafo](por-versao/ParalelaPlatafo.md) - 1 registros
-- [ONVIO Escrita -](por-versao/ONVIO_Escrita_-.md) - 21 registros
+- [ONVIO Escrita -](por-versao/ONVIO_Escrita_-.md) - 29 registros
 - [Escrita -Tribut](por-versao/Escrita_-Tribut.md) - 3 registros
 - [AZ ONVIO - Escr](por-versao/AZ_ONVIO_-_Escr.md) - 1 registros
 

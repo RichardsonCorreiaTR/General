@@ -1,11 +1,11 @@
 ﻿# SAM Descartadas - Escrita Fiscal
 
-> Atualizado em: 10/04/2026 02:04
+> Atualizado em: 24/04/2026 22:48
 > Total SAIs unicas: 782
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 129489 |  | 24/03/2026 | ID 0 | - |
+| 0 | 130271 |  | 22/04/2026 | ID 0 | - |
 | 100722 | 129392 |  | 23/03/2026 | SAI Aprovada | Realizar testes no processo de Rotinas Autom�ticas na Escrita Fiscal. |
 | 100084 | 128354 |  | 23/02/2026 | SAI Aprovada | Adequar o uso definitivo de Certificado Digital A3 no Cont�bil. |
 | 98423 | 125124 |  | 05/12/2025 | SAI Aprovada | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Busca NF-e. |

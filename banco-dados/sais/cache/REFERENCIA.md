@@ -9,7 +9,7 @@ O Cursor NAO indexa essa pasta (excluida via `.cursorignore`).
 |---|---|---|
 | `dados-brutos/psai/` | 12 JSONs fracionados (todos os PSAIs por tipo+status) | buscar-sai.ps1 |
 | `dados-brutos/sai/` | 12 JSONs fracionados (SAIs unicas agrupadas) | buscar-sai.ps1 -VisualizarSai |
-| `dados-brutos/sai-psai-folha.json` | Cache completo (~165MB) | Backup e verificacao incremental |
+| `dados-brutos/sai-psai-escrita.json` | Cache completo (~165MB) | Backup e verificacao incremental |
 
 ## Arquivos fracionados
 

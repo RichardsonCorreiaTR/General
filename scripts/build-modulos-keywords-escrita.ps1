@@ -43,7 +43,7 @@ $exibir = @{
 
 $agrupamento = @{
     "apuracao-impostos"               = @("inss", "irrf", "fgts")
-    "escrituracao-movimento-fiscal"   = @("ferias", "rescisao", "calculo-mensal", "admissao", "beneficios", "afastamentos", "13o-salario", "rubricas-eventos", "retroativo-cct", "transferencia", "pensao-judicial")
+    "escrituracao-movimento-fiscal"   = @("ferias", "rescisao", "calculo-mensal", "admissao", "beneficios", "afastamentos", "13o-salario", "retroativo-cct", "transferencia", "pensao-judicial")
     "sped-documentos-eletronicos"     = @("esocial")
     "integracoes-canais-digitais"     = @("integracao")
     "obrigacoes-relatorios-estaduais" = @("relatorios", "rais-dirf", "dctfweb-guias")

@@ -59,7 +59,7 @@ LEIA TODOS antes de propor qualquer coisa:
 | anco-dados/dados-brutos/psai/*.json | 12 arquivos fracionados PSAI (~179 MB) |
 | anco-dados/dados-brutos/sai/*.json | 12 arquivos fracionados SAI (~8 MB) |
 | anco-dados/sais/indices/**/*.md | 51 indices MD (~19 MB total) |
-| scripts/cache/sai-psai-folha.json | Cache monolitico (~166 MB) |
+| scripts/cache/sai-psai-escrita.json | Cache monolitico (~166 MB) |
 | projeto-filho/.cursor/rules/agente-produto.mdc | Regras da IA do analista |
 | projeto-filho/.cursor/rules/guardiao.mdc | Guardiao do projeto-filho |
 | projeto-filho/scripts/buscar-sai.ps1 | Wrapper que delega ao original |
@@ -135,7 +135,8 @@ omeArea ao filtro de busca
   3. Substituir modulo_caminho por 
 omeArea no filtro por modulo
   4. Adicionar situacaoPsai ao filtro geral
-  5. Gerar relatorio de cobertura (evisao/mapa-cobertura-busca.md):
+  5. Gerar relatorio de cobertura (
+evisao/mapa-cobertura-busca.md):
      - Tabela: campo | tipo | buscado | presente nos indices | tamanho medio
      - Percentual de cobertura antes e depois
      - Exemplo de busca lotacao eSocial com resultado completo
@@ -148,7 +149,8 @@ omeArea
   [ ] Nenhum campo de texto fica fora da busca
 
 - **Arquivos alterados:** scripts/buscar-sai.ps1
-- **Arquivo criado:** evisao/mapa-cobertura-busca.md
+- **Arquivo criado:** 
+evisao/mapa-cobertura-busca.md
 - **Rollback:** Reverter alteracoes no buscar-sai.ps1 (campos anteriores)
 - **Delegacao:** [IA-CURSOR]
 - **Gate:** [HUMANO-VALIDA] Revisar mapa de cobertura
@@ -191,7 +193,8 @@ omeArea
      (wrapper) para o pacote
   2. Atualizar tualizacao/v1.1.0/input.md para incluir uscar-sai.ps1
   3. Melhorar o wrapper do projeto-filho: adicionar fallback que tenta
-     eferencia/scripts/buscar-sai.ps1 (caminho direto no shared folder)
+     
+eferencia/scripts/buscar-sai.ps1 (caminho direto no shared folder)
      quando caminhos.json nao existe
   4. Verificar que gente-produto.mdc atualizado (com busca profunda)
      esta no pacote
@@ -201,7 +204,8 @@ omeArea
   [ ] distribuicao/ultima-versao/scripts/buscar-sai.ps1 existe e e atual
   [ ] distribuicao/ultima-versao/.cursor/rules/agente-produto.mdc tem
       secao Busca profunda
-  [ ] Wrapper funciona com eferencia/scripts/ como fallback
+  [ ] Wrapper funciona com 
+eferencia/scripts/ como fallback
   [ ] No projeto-filho limpo, uscar-sai.ps1 -Termo FGTS retorna resultados
 
 - **Arquivos alterados:** projeto-filho/scripts/buscar-sai.ps1 (wrapper),
@@ -245,7 +249,8 @@ omeArea (novos campos buscaveis)
 - **Objetivo:** Entregar documentacao que prove a qualidade da busca.
 
 - **O que fazer:**
-  1. Gerar evisao/mapa-assertividade-busca-2026-03-08.md com:
+  1. Gerar 
+evisao/mapa-assertividade-busca-2026-03-08.md com:
      - Tabela completa de campos e cobertura
      - Exemplos de busca em cada campo BLOB com resultado
      - Comparacao antes/depois (6 campos -> 14 campos)
@@ -258,7 +263,8 @@ omeArea (novos campos buscaveis)
   [ ] Todas as 7 dores enderecadas com resposta concreta
   [ ] Nenhum arquivo critico fora do .cursorignore
 
-- **Arquivos criados:** evisao/mapa-assertividade-busca-2026-03-08.md
+- **Arquivos criados:** 
+evisao/mapa-assertividade-busca-2026-03-08.md
 - **Rollback:** N/A (apenas documentacao)
 - **Delegacao:** [IA-CURSOR] + [HUMANO-VALIDA]
 - **Gate:** [HUMANO-VALIDA] Aprovar mapa e encerrar
@@ -284,7 +290,8 @@ omeArea
 [ ] Campo 	extoCompleto incluido na busca
 [ ] scripts/cache/ no .cursorignore
 [ ] protecao-oom.mdc atualizada com limites documentados
-[ ] Wrapper do projeto-filho funciona com fallback eferencia/
+[ ] Wrapper do projeto-filho funciona com fallback 
+eferencia/
 [ ] v1.1.0 inclui buscar-sai.ps1 no manifesto
 [ ] agente-produto reporta cobertura e confianca da busca
 [ ] guardiao sugere busca profunda quando apropriado

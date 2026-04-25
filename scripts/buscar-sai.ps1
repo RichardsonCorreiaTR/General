@@ -14,7 +14,6 @@
 #   .\buscar-sai.ps1 -SAI 12345
 #   .\buscar-sai.ps1 -Termo "rescisao" -VerPSAIs
 #   .\buscar-sai.ps1 -Termo "sped" -Modulo "Escrita"
-#   .\buscar-sai.ps1 -Rubrica 8214
 #   .\buscar-sai.ps1 -Termo "FGTS" -Resumido -Max 50
 
 param(
@@ -23,7 +22,7 @@ param(
     [int]$PSAI = 0,
     [string]$Tipo = "",
     [string]$Modulo = "",
-    [int]$Rubrica = 0,
+    [string[]]$Areas = @(),
     [switch]$Pendentes,
     [switch]$VerPSAIs,
     [switch]$VisualizarSai,
@@ -44,7 +43,7 @@ $psaiDir = Join-Path $dadosBrutosDir "psai"
 $saiDir = Join-Path $dadosBrutosDir "sai"
 $cacheCompleto = Join-Path $dadosBrutosDir "sai-psai-escrita.json"
 
-if (-not $Termo -and $SAI -eq 0 -and $PSAI -eq 0 -and -not $Modulo -and $Rubrica -eq 0) {
+if (-not $Termo -and $SAI -eq 0 -and $PSAI -eq 0 -and -not $Modulo -and $Areas.Count -eq 0) {
     Write-Host "=== Busca de SAIs/PSAIs ===" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "Uso:" -ForegroundColor White
@@ -54,14 +53,14 @@ if (-not $Termo -and $SAI -eq 0 -and $PSAI -eq 0 -and -not $Modulo -and $Rubrica
     Write-Host "  .\buscar-sai.ps1 -Termo 'rescisao' -VerPSAIs      Mostra todas as PSAIs (sem agrupar)"
     Write-Host "  .\buscar-sai.ps1 -SAI 12345                       Busca por numero de SAI"
     Write-Host "  .\buscar-sai.ps1 -PSAI 67890                      Busca por numero de PSAI"
-    Write-Host "  .\buscar-sai.ps1 -Modulo 'Escrita'                Filtra nomeArea/descricao (ex.: Escrita, Importacao)"
-    Write-Host "  .\buscar-sai.ps1 -Rubrica 8214                    Busca por rubrica na descricao"
+    Write-Host "  .\buscar-sai.ps1 -Modulo 'Escrita'                Filtra nomeArea/descricao (ex.: Escrita, Importacao)
+  .\buscar-sai.ps1 -Termo 'ICMS' -Areas 'Escrita','Importacao'   Filtra por areas exatas (array)"
     Write-Host "  .\buscar-sai.ps1 -Termo 'FGTS' -Resumido          Saida compacta"
     Write-Host ""
     Write-Host "Parametros:" -ForegroundColor White
     Write-Host "  -Tipo NE|SAM|SAL|SAIL   Filtrar por tipo"
-    Write-Host "  -Modulo 'nome'          Filtrar por nomeArea/descricao (parcial; ex: 'Escrita', 'Onvio')"
-    Write-Host "  -Rubrica 8214           Buscar por numero de rubrica na descricao"
+    Write-Host "  -Modulo 'nome'          Filtrar por nomeArea/descricao (parcial; ex: 'Escrita', 'Onvio')
+  -Areas 'A','B'          Filtrar por multiplas areas exatas (array; ex: 'Escrita','Importacao')"
     Write-Host "  -Pendentes              Somente pendentes"
     Write-Host "  -VerPSAIs               Mostrar todas as PSAIs individuais (padrao: agrupa por SAI)"
     Write-Host "  -VisualizarSai          Usar arquivos SAI resumidos (sem BLOBs)"
@@ -152,14 +151,16 @@ if ($SAI -ne 0) {
         })
     }
 
-    # Filtro por rubrica (busca o numero na descricao e no textoCompleto)
-    if ($Rubrica -ne 0) {
-        $rubricaStr = $Rubrica.ToString()
+    # Filtro por areas exatas (array de nomeArea; respeita config/analista.json areas do analista)
+    if ($Areas.Count -gt 0) {
+        $areasLower = $Areas | ForEach-Object { $_.ToLower().Trim() }
         $resultado = @($resultado | Where-Object {
-            ((SafeStr $_.sai_descricao) -match "\b$rubricaStr\b") -or
-            ((SafeStr $_.textoCompleto) -match "\b$rubricaStr\b")
+            $nomeAreaLower = (SafeStr $_.nomeArea).ToLower().Trim()
+            $areasLower | Where-Object { $nomeAreaLower -eq $_ } | Select-Object -First 1
         })
+        Write-Host "  Filtro de areas aplicado: $($Areas -join ', ')" -ForegroundColor DarkCyan
     }
+
 }
 
 # --- DEDUPLICACAO POR SAI (padrao: mostra 1 resultado por SAI) ---

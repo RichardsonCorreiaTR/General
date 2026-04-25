@@ -1,9 +1,9 @@
-# Visão Geral — Projeto Folha SDD
+# Visão Geral — Projeto Escrita SDD
 
 ## Objetivo
 
-Estruturar o processo de definição de regras de negócio do Sistema de Folha
-de Pagamento usando Spec-Driven Development (SDD), garantindo padronização,
+Estruturar o processo de definição de regras de negócio do módulo **Escrita Fiscal**
+(Domínio Contábil) usando Spec-Driven Development (SDD), garantindo padronização,
 rastreabilidade e qualidade nas entregas do time de produto.
 
 ## Arquitetura de dois projetos
