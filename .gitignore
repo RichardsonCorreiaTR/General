@@ -24,6 +24,8 @@ config/conexao-odbc.json
 
 # Temporarios
 logs-consolidado-temp.json
+.commit-msg-tmp.txt
+*.commit-msg.tmp
 
 # Estado / temporarios da pipeline de extracao SAIs
 atualizacao/.stats-temp.json
