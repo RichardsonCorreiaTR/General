@@ -1,8 +1,12 @@
-﻿{
+{
     "email":  "richardson.correia@thomsonreuters.com",
     "onboarding_completo":  false,
     "nome":  "Richardson Correia",
-    "versao_instalada":  "2.4.0",
+    "versao_instalada":  "2.4.10",
     "data_setup":  "2026-04-09",
-    "areas":  ["Escrita", "Importação", "Onvio Escrita"]
+    "areas":  [
+                  "Escrita",
+                  "Importação",
+                  "Onvio Escrita"
+              ]
 }
