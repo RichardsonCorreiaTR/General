@@ -30,7 +30,19 @@ param(
     [int]$Max = 30
 )
 
+# URLs internas do SGSAI/SGD (clicaveis via Ctrl+Click no terminal)
+# Ajustar aqui se o dominio/path mudar.
+$URL_SAI_BASE  = "https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai="
+$URL_PSAI_BASE = "https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai="
+
 function SafeStr($v) { if ($null -eq $v) { return "" }; return [string]$v }
+
+function Get-UrlSai($numero) {
+    $n = 0; if ([int]::TryParse([string]$numero, [ref]$n) -and $n -gt 0) { return "$URL_SAI_BASE$n" } else { return "" }
+}
+function Get-UrlPsai($numero) {
+    $n = 0; if ([int]::TryParse([string]$numero, [ref]$n) -and $n -gt 0) { return "$URL_PSAI_BASE$n" } else { return "" }
+}
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
@@ -195,6 +207,9 @@ Write-Host "=== $totalResultados resultado(s) ===" -ForegroundColor Cyan
 if ($totalResultados -eq 0) { exit 0 }
 
 $resultado | Select-Object -First $Max | ForEach-Object {
+    $urlSai  = Get-UrlSai  $_.i_sai
+    $urlPsai = Get-UrlPsai $_.i_psai
+
     if ($Resumido) {
         # Saida compacta: 1 linha por resultado
         $saiNum = if ($VisualizarSai) { $_.i_sai } else { "$($_.i_sai)/$($_.i_psai)" }
@@ -206,13 +221,18 @@ $resultado | Select-Object -First $Max | ForEach-Object {
             $d = SafeStr $_.sai_descricao; $d.Substring(0, [Math]::Min(80, $d.Length)) -replace "`r|`n", " "
         } else { "-" }
         Write-Host "  $saiNum | $($_.tipoSAI) | $status | $grav | $desc" -ForegroundColor Gray
+        if ($urlSai)  { Write-Host "    SAI:  $urlSai"  -ForegroundColor Blue }
+        if ($urlPsai) { Write-Host "    PSAI: $urlPsai" -ForegroundColor Blue }
     } elseif ($VisualizarSai) {
         $dt = if ($_.ultimoCadastro) { try { ([datetime]$_.ultimoCadastro).ToString("dd/MM/yyyy") } catch { "-" } } else { "-" }
         $desc = if ($_.sai_descricao) {
             $d = SafeStr $_.sai_descricao; $d.Substring(0, [Math]::Min(120, $d.Length)) -replace "`r|`n", " "
         } else { "-" }
+        $urlPsaiUltima = Get-UrlPsai $_.ultimaPsai
         Write-Host ""
         Write-Host "--- SAI $($_.i_sai) ($($_.totalPsais) PSAIs) ---" -ForegroundColor White
+        if ($urlSai)        { Write-Host "  SAI:  $urlSai"         -ForegroundColor Blue }
+        if ($urlPsaiUltima) { Write-Host "  PSAI: $urlPsaiUltima"  -ForegroundColor Blue }
         Write-Host "  Tipo: $($_.tipoSAI) | Versao: $($_.nomeVersao) | Status: $($_.situacaoSai)" -ForegroundColor Gray
         Write-Host "  Ultima PSAI: $($_.ultimaPsai) | Cadastro: $dt | Gravidade: $($_.gravidade_ne)" -ForegroundColor Gray
         Write-Host "  $desc"
@@ -228,6 +248,8 @@ $resultado | Select-Object -First $Max | ForEach-Object {
         $area = if ($_.nomeArea) { " | Area: $($_.nomeArea)" } else { "" }
         Write-Host ""
         Write-Host "--- $rotulo ---" -ForegroundColor White
+        if ($urlSai)  { Write-Host "  SAI:  $urlSai"  -ForegroundColor Blue }
+        if ($urlPsai) { Write-Host "  PSAI: $urlPsai" -ForegroundColor Blue }
         Write-Host "  Tipo: $($_.tipoSAI) | Versao: $($_.nomeVersao) | Status: ${status}${area}" -ForegroundColor Gray
         Write-Host "  Cadastro: $dt | Gravidade: $($_.gravidade_ne)" -ForegroundColor Gray
         Write-Host "  $desc"

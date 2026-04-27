@@ -1,0 +1,20 @@
+feat(buscar-sai)+release: v2.4.12 URLs clicaveis SAI/PSAI
+
+scripts/buscar-sai.ps1: cada resultado agora exibe duas linhas em
+azul com URLs do SGSAI/SGD ao lado dos numeros de SAI e PSAI.
+Terminais modernos (Windows Terminal, VSCode/Cursor, pwsh) tornam
+as URLs clicaveis via Ctrl+Click. Funciona nos 3 modos: padrao,
+-Resumido e -VisualizarSai.
+
+URLs configuraveis via constantes no topo do script:
+  $URL_SAI_BASE  = https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=
+  $URL_PSAI_BASE = https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai=
+
+A logica vive no script admin (scripts/buscar-sai.ps1) e o
+projeto-filho/scripts/buscar-sai.ps1 segue como wrapper que delega
+via referencia/scripts (junction) ou caminhos.json/onedrive_base.
+Por isso a melhoria ja vale para todos os analistas imediatamente
+via OneDrive sync, sem precisar instalar a v2.4.12.
+
+Empacotamento v2.4.12 publicado em Canal 1, Canal 2 e ZIP para
+registro oficial, bump de VERSION.json e changelog rastreavel.
