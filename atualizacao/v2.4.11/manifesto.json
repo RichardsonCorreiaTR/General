@@ -1,12 +1,13 @@
 ﻿{
-    "data":  "2026-04-24",
-    "versao":  "2.4.10",
+    "data":  "2026-04-27",
+    "versao":  "2.4.11",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
     "arquivosAlterados":  [
+                              "CORRECAO-SYMLINKS.md",
                               ".cursor/rules/agente-codigo.mdc",
                               ".cursor/rules/agente-produto.mdc",
                               ".cursor/rules/guardiao.mdc",
@@ -37,7 +38,7 @@
                               "templates/TEMPLATE-sai.md",
                               "templates/TEMPLATE-task.json"
                           ],
-    "changelog":  "fix(privacidade): excluir status-ambiente.json dos pacotes de atualizacao (continha nome/email/host/usuario_windows do empacotador). gerar-atualizacao.ps1 agora limpa esse arquivo automaticamente, e .gitignore cobre tambem atualizacao/v*/arquivos/config/status-ambiente.json.",
+    "changelog":  "fix(distribuicao): incluir CORRECAO-SYMLINKS.md nos pacotes (Canal 1 e Canal 2). Antes ficava so no projeto-filho do admin; agora a IA do analista tem o guia para diagnosticar problemas de symlinks/acesso a referencia/. atualizar-projeto.ps1 tambem foi atualizado para copiar o arquivo.",
     "requerSymlink":  [
                           "atualizacao"
                       ],

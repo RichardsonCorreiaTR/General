@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "fix(privacidade): excluir status-ambiente.json dos pacotes de atualizacao (continha nome/email/host/usuario_windows do empacotador). gerar-atualizacao.ps1 agora limpa esse arquivo automaticamente, e .gitignore cobre tambem atualizacao/v*/arquivos/config/status-ambiente.json.",
-    "data":  "2026-04-24T23:48:33",
+    "changelog":  "fix(distribuicao): incluir CORRECAO-SYMLINKS.md nos pacotes (Canal 1 e Canal 2). Antes ficava so no projeto-filho do admin; agora a IA do analista tem o guia para diagnosticar problemas de symlinks/acesso a referencia/. atualizar-projeto.ps1 tambem foi atualizado para copiar o arquivo.",
+    "data":  "2026-04-27T15:22:57",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.10"
+    "versao":  "2.4.11"
 }

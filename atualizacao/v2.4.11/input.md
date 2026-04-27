@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.10 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.11 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-fix(privacidade): excluir status-ambiente.json dos pacotes de atualizacao (continha nome/email/host/usuario_windows do empacotador). gerar-atualizacao.ps1 agora limpa esse arquivo automaticamente, e .gitignore cobre tambem atualizacao/v*/arquivos/config/status-ambiente.json.
+fix(distribuicao): incluir CORRECAO-SYMLINKS.md nos pacotes (Canal 1 e Canal 2). Antes ficava so no projeto-filho do admin; agora a IA do analista tem o guia para diagnosticar problemas de symlinks/acesso a referencia/. atualizar-projeto.ps1 tambem foi atualizado para copiar o arquivo.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -17,6 +17,7 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 
 | Origem (neste pacote) | Destino (projeto local) |
 |----------------------|------------------------|
+| arquivos/CORRECAO-SYMLINKS.md | CORRECAO-SYMLINKS.md |
 | arquivos/.cursor/rules/agente-codigo.mdc | .cursor/rules/agente-codigo.mdc |
 | arquivos/.cursor/rules/agente-produto.mdc | .cursor/rules/agente-produto.mdc |
 | arquivos/.cursor/rules/guardiao.mdc | .cursor/rules/guardiao.mdc |
@@ -59,6 +60,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.10".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.11".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

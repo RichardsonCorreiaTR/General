@@ -111,7 +111,7 @@ foreach ($pasta in $pastasAtualizar) {
         Write-Host "  Atualizado: $pasta" -ForegroundColor Green
     }
 }
-foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", ".cursorignore")) {
+foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", ".cursorignore")) {
     $src = Join-Path $fonteDir $arq
     if (Test-Path $src) {
         Copy-Item -Path $src -Destination (Join-Path $projetoDir $arq) -Force

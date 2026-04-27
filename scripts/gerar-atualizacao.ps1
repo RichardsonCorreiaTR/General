@@ -69,7 +69,7 @@ foreach ($pasta in $pastasIncluir) {
         Copy-Item -Path $src -Destination (Join-Path $tempPack $pasta) -Recurse -Force
     }
 }
-foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", ".cursorignore")) {
+foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", ".cursorignore")) {
     $src = Join-Path $fonteDir $arq
     if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $tempPack $arq) -Force }
 }
@@ -132,6 +132,12 @@ foreach ($pasta in $pastasCanal2) {
     if (Test-Path $src) {
         Copy-Item -Path $src -Destination (Join-Path $atArquivosDir $pasta) -Recurse -Force
     }
+}
+# Arquivos individuais da raiz que a IA do analista precisa ter (guias).
+$arqsRaizCanal2 = @("CORRECAO-SYMLINKS.md")
+foreach ($arq in $arqsRaizCanal2) {
+    $src = Join-Path $tempPack $arq
+    if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $atArquivosDir $arq) -Force }
 }
 
 $manifestoIA = @{
