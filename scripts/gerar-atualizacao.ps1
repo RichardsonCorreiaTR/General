@@ -9,7 +9,9 @@ param(
     [string]$Versao,
     [string]$Changelog = "",
     # Manter alinhado a PROJETO.md secao 9 (versao do blueprint admin)
-    [string]$CompativelComAdmin = "2.5"
+    [string]$CompativelComAdmin = "2.5",
+    # Sincronizar release com pasta SharePoint (OneDrive Files On-Demand) ao final
+    [switch]$SemSync
 )
 
 $ErrorActionPreference = "Stop"
@@ -227,6 +229,23 @@ Write-Host "=== Concluido! ===" -ForegroundColor Green
 Write-Host "  ZIP:            $zipPath"
 Write-Host "  Canal 1 (Script): $ultimaVersaoDir"
 Write-Host "  Canal 2 (IA):     $atVersaoDir"
+
+# Sincronizacao automatica com pasta SharePoint (via OneDrive Files On-Demand)
+if (-not $SemSync) {
+    $syncScript = Join-Path $scriptDir "sincronizar-sharepoint.ps1"
+    if (Test-Path $syncScript) {
+        Write-Host ""
+        Write-Host "Sincronizando com SharePoint (OneDrive)..." -ForegroundColor Yellow
+        try {
+            & $syncScript
+        } catch {
+            Write-Host "AVISO: sincronizacao SharePoint falhou: $_" -ForegroundColor Yellow
+            Write-Host "       O release esta OK localmente e no GitHub. Rode manualmente:" -ForegroundColor Yellow
+            Write-Host "       .\scripts\sincronizar-sharepoint.ps1" -ForegroundColor Yellow
+        }
+    }
+}
+
 Write-Host ""
 Write-Host "Proximos passos:" -ForegroundColor White
 Write-Host "  1. Analistas com script: rodam .\scripts\atualizar-projeto.ps1"
