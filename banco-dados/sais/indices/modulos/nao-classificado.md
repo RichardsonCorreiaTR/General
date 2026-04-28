@@ -1,15 +1,15 @@
 ﻿# Nao Classificado
 
 > Dominio Escrita Fiscal | slug `nao-classificado`
-> Atualizado em: 24/04/2026 22:48
+> Atualizado em: 28/04/2026 15:46
 > Pendentes: 23 | Liberadas: 209 | Descartadas: 14 | Total SAIs: 245
 
 ## Pendentes (23)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130314 | NE | Normal | 23/04/2026 | - |
-| 101311 | 129630 | SAM | Normal | 30/03/2026 | Realizar a importa��o da Nota de D�bito do tipo '06-Pagamento antecipado'. |
+| 0 | 130428 | SAM | Normal | 27/04/2026 | - |
+| 101311 | 129630 | SAM | Normal | 30/03/2026 | Realizar a importa��o dos campos "Finalidade" e "Tipo de nota" da Nota de D�bito |
 | 99343 | 125356 | SAM | Normal | 11/12/2025 | Limitar a quantidade de notas enviadas para o Kolossus Auditor ao ativar uma emp |
 | 98233 | 124675 | SAM | Normal | 25/11/2025 | Auxiliar time do Cont�bil Plataforma nos retornos de importa��o na migra��o do P |
 | 96162 | 121921 | SAM | Normal | 20/08/2025 | Enviar dados da importa��o para o Datadog. |

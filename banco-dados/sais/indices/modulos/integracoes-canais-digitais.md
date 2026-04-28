@@ -1,10 +1,10 @@
 ﻿# Integracoes e canais digitais
 
 > Dominio Escrita Fiscal | slug `integracoes-canais-digitais`
-> Atualizado em: 24/04/2026 22:48
-> Pendentes: 74 | Liberadas: 1133 | Descartadas: 100 | Total SAIs: 1302
+> Atualizado em: 28/04/2026 15:46
+> Pendentes: 76 | Liberadas: 1419 | Descartadas: 130 | Total SAIs: 1620
 
-## Pendentes (74)
+## Pendentes (76)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
@@ -82,6 +82,8 @@
 | 55771 | 26017 | SAM | Normal | 19/10/2015 | SP-Importar o CF-e atrav�s do Web Service do estado de S�o Paulo. |
 | 37096 | 21036 | SAM | Normal | 26/05/2015 | Considerar o munic�pio da tag "CodigoMunicipio" filha da tag "PrestadorServico"  |
 | 36138 | 20290 | SAM | Normal | 06/05/2015 | Preencher o campo 'Al�q. Interest.' na importa��o das notas de entradas via port |
+| 39900 | 14615 | SAM | Normal | 09/10/2014 | Criar opcao para informar a filial no Utilitario de Exportacao de Lancamentos. |
+| 29424 | 3875 | SAM | Normal | 03/12/2012 | Efetuar o c�lculo do imposto 64-SIMEI em atraso e emitir a guia PGMEI interagind |
 
 ## Liberadas Recentes (30 mais recentes)
 
@@ -122,11 +124,11 @@
 
 | Tema | Ocorrencias |
 |------|-------------|
-| rest | 519 |
-| api | 293 |
-| web service | 119 |
-| e-cac | 83 |
-| webservice | 76 |
+| rest | 564 |
+| api | 347 |
+| web service | 217 |
+| webservice | 131 |
+| e-cac | 107 |
 
 ## Descartadas Recentes (10 mais recentes)
 
@@ -139,9 +141,9 @@
 | 95094 | 120327 | NE | 25/06/2025 | N�o est�o sendo escrituradas corretamente as notas de servi�os prestados da pref |
 | 94244 | 119198 | NE | 13/05/2025 | N�o est� importando a tabela de Al�quota Interestadual de ICMS conforme o perfil |
 | 93965 | 118989 | NE | 05/05/2025 | Est� sendo apresentada indevidamente a mensagem "O sistema n�o est� preparado pa |
+| 92781 | 117531 | SAM | 11/03/2025 | Testar a altera��o das URLs da API da Conta Azul para o envio de Contas Cont�bei |
 | 90476 | 114690 | NE | 21/11/2024 | N�o est� sendo gerado corretamente o valor da tag "valoresParaComparacao" da gui |
 | 90220 | 114248 | NE | 01/11/2024 | Em alguns casos o sistema est� travando ao realizar importa��o atrav�s do NF-e A |
-| 89976 | 113976 | NE | 22/10/2024 | Est� importando nota de servi�o com situa��o "Regular" ap�s j� estar importada c |
 
 ## Busca Completa
 

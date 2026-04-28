@@ -1,14 +1,16 @@
 ﻿# Parcelamento e planejamento tributario
 
 > Dominio Escrita Fiscal | slug `parcelamento-planejamento`
-> Atualizado em: 24/04/2026 22:48
-> Pendentes: 1 | Liberadas: 137 | Descartadas: 12 | Total SAIs: 150
+> Atualizado em: 28/04/2026 15:46
+> Pendentes: 3 | Liberadas: 162 | Descartadas: 19 | Total SAIs: 184
 
-## Pendentes (1)
+## Pendentes (3)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 101036 | 129802 | NE | Normal | 02/04/2026 | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na apura��o,  |
+| 45773 | 40384 | SAM | Normal | 17/10/2016 | Ajustar a importa��o dos impostos CSLL Lalur e IRPJ Lalur quando houver parcelam |
+| 45433 | 18568 | SAM | Normal | 12/03/2015 | Ajustar a importa��o do imposto Contribui��o Social do m�dulo Escrita Fiscal qua |
 
 ## Liberadas Recentes (30 mais recentes)
 
@@ -23,7 +25,9 @@
 | 88455 | 112155 | NE | 19/08/2024 | N�o est�o sendo parcelados os impostos municipais do Simples Nacional, quando ex |
 | 86768 | 109843 | SAL | 27/05/2024 | RS-Alterar o vencimento da guia DAS e das parcelas referente ao Parcelamento de  |
 | 85282 | 107682 | SAL | 18/03/2024 | Alterar o link de acesso ao portal do Simples Nacional via c�digo de acesso para |
+| 84425 | 106546 | NE | 14/02/2024 | Est� importando o valor incorreto do registro M010 do informativo SPED ECF, quan |
 | 83844 | 104310 | SAL | 18/12/2023 | SC-Alterar o sistema para informar um percentual com 6 casas decimais no quadro  |
+| 82369 | 102459 | NE | 18/10/2023 | Est� importando o valor incorreto do registro M010 do informativo SPED ECF, quan |
 | 80152 | 98564 | NE | 27/06/2023 | Est� sendo importado o valor incorreto no campo "INSS/CPP" da janela "Valor da F |
 | 79073 | 96910 | SAL | 18/04/2023 | Ajustar problema na emiss�o da guia DAS Parcelamento com o novo captcha "Sou hum |
 | 75918 | 91693 | NE | 09/08/2022 | N�o est� permitindo informar mais que 5 parcelas de entrada na guia "Parcelas da |
@@ -34,30 +38,29 @@
 | 73715 | 87998 | NE | 25/01/2022 | Est� sendo apresentada indevidamente a mensagem "Data inferior a data de fechame |
 | 73425 | 87310 | NE | 30/12/2021 | N�o est� sendo demonstrado o restante do d�bito em aberto na parcelamento do sim |
 | 73179 | 86933 | NE | 06/12/2021 | Est�o sendo geradas as informa��es incorretas na janela "Dados da parcela-Parcel |
+| 72675 | 86224 | SAM | 27/10/2021 | Considerar o parcelamento do imposto 01-ICMS na Central de Pagamento do Honor�ri |
+| 72589 | 86084 | NE | 19/10/2021 | Esta ocorre erro "Null object reference at line 18 in ue_edit event of object sl |
 | 72613 | 85868 | NE | 07/10/2021 | Est� apresentando o erro "O bico '11' informado n�o pertence ao produto '4'." ao |
 | 72487 | 85774 | SAL | 01/10/2021 | Alterar o parcelamento do Simples Nacional permitindo efetuar o parcelamento em  |
+| 72534 | 85698 | NE | 28/09/2021 | N�o est� sendo demonstrado na central de pagamentos o encargo, quando houver par |
 | 72224 | 85631 | NE | 24/09/2021 | Est� sendo gerado o valor incorreto nas colunas "Saldo devedor", "Em aberto" e " |
 | 72100 | 85342 | NE | 10/09/2021 | Est� sendo deduzido indevidamente o valor pago referente ao parcelamento do simp |
 | 72616 | 84031 | SAL | 06/07/2021 | SC-Alterar o sistema para permitir realizar o parcelamento do imposto 01-ICMS qu |
-| 70879 | 83453 | NE | 15/06/2021 | N�o est�o sendo gerados os registros R20, R30 e R31 no informativo DCTF Mensal,  |
-| 70887 | 83425 | NE | 14/06/2021 | Em alguns casos est� ocorrendo o erro "'O bico 'X' informado n�o pertence ao pro |
-| 70168 | 82143 | NE | 12/04/2021 | Est� demonstrando a mensagem de erro "O bico '5' informado n�o pertence ao produ |
-| 69993 | 82079 | NE | 08/04/2021 | Est�o sendo exclu�dos os lan�amentos cont�beis referentes ao encerramento do par |
-| 69996 | 82065 | NE | 07/04/2021 | Est� exclu�do a contabiliza��o do parcelamento do imposto 01-ICMS mesmo quando n |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| parcelamento | 116 |
-| pert | 25 |
-| refis | 1 |
+| parcelamento | 128 |
+| pert | 36 |
+| refis | 3 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 85948 | 108276 | SAL | 03/04/2024 | N�o est�o sendo parcelados os impostos municipais do Simples Nacional, quando ex |
+| 76007 | 91723 | NE | 10/08/2022 | Est� sendo apresentando erro ao gerar o relat�rio Comparativo de movimento, quan |
 | 69947 | 82034 | NE | 06/04/2021 | N�o est� sendo demonstrado o d�bito do imposto para parcelamento, quando no per� |
 | 69832 | 81819 | NE | 26/03/2021 | Est�o sendo gerados os valores incorretos no relat�rio de parcelamento, quando s |
 | 68373 | 79503 | NE | 10/12/2020 | Est� ocorrendo o erro "Run-time error '5'" ao gerar a guia DARF do imposto REFIS |
@@ -66,7 +69,6 @@
 | 57881 | 63487 | NE | 22/04/2019 | Em alguns casos est� apresentando mensagem "Executa thead, Error accessing exter |
 | 57011 | 61806 | NE | 25/02/2019 | Em alguns casos est� sendo demonstrada a mensagem "Contabil.exe parou de funcion |
 | 56679 | 61134 | NE | 05/02/2019 | Est�o sendo exclu�das indevidamente as informa��es da baixa de parcelas referent |
-| 46003 | 42769 | NE | 25/01/2017 | Est� sendo demonstrado em mais de uma compet�ncia o valor do saldo inicial na ja |
 
 ## Busca Completa
 

@@ -1,8 +1,8 @@
 ﻿# Patrimônio
 
 > Dominio Escrita Fiscal | slug `patrimonio`
-> Atualizado em: 24/04/2026 22:48
-> Pendentes: 1 | Liberadas: 97 | Descartadas: 4 | Total SAIs: 102
+> Atualizado em: 28/04/2026 15:46
+> Pendentes: 1 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 157
 
 ## Pendentes (1)
 
@@ -16,11 +16,14 @@
 |-----|------|------|----------|--------|
 | 97238 | 122900 | NE | 24/09/2025 | ES-Est� sendo gerado incorretamente o lan�amento de zeramento de ICMS na Integra |
 | 96308 | 121816 | SAL | 15/08/2025 | PR-Alterar comportamento do sistema para gerar o ajuste PR000040 no SPED Fiscal  |
+| 95494 | 120881 | SAL | 15/07/2025 | SC - Criar a op��o "Cr�dito de ICMS Ativo Imobilizado Ind�stria SN 7% - An2, Art |
 | 95126 | 120429 | NE | 30/06/2025 | Est� integrando incorretamente o valor do campo "Base de c�lculo mensal" da tela |
+| 94597 | 119413 | NE | 19/05/2025 | Est� integrando incorretamente o valor do campo "Base de c�lculo mensal" da tela |
 | 95588 | 117840 | SAL | 20/03/2025 | SC-Permitir calcular o imposto 32-FUNDOSOCIAL quando for realizada compra de emp |
 | 92817 | 116285 | SAL | 31/01/2025 | SC-Gerar o ajuste SC020065 para lan�amentos com opera��o 'Cr�dito Ativo Imobiliz |
 | 85316 | 106170 | SAL | 05/02/2024 | MT-Alterar o sistema para que o valor do cr�dito referente ao ativo imobilizado  |
 | 84824 | 105304 | SAL | 15/01/2024 | RR-Gerar o ajuste RR029999 no registro E111 quando possuir lan�amento de cr�dito |
+| 82474 | 102686 | NE | 27/10/2023 | Est� apresentando erro "Error calling method of a PBNI object" ao efetuar a inte |
 | 81078 | 100496 | SAL | 15/08/2023 | SP-Alterar o c�digo de ajuste do E111 para SP000299 quando possuir lan�amento co |
 | 79003 | 96729 | SAL | 10/04/2023 | SC-Alterar o sistema para gerar o arquivo DCIP de cr�dito do ativo imobilizado s |
 | 78517 | 95956 | NE | 09/03/2023 | Est� sendo gerada incorretamente a integra��o cont�bil dos impostos 17-PIS-MP66  |
@@ -37,30 +40,30 @@
 | 65527 | 74817 | SAL | 12/05/2020 | RS-Alterar a forma de gerar o Registro E111 do Sped Fiscal dos lan�amentos de cr |
 | 64262 | 73197 | SAL | 10/03/2020 | SC-Criar op��o no lan�amento de ajuste com opera��o 'Cr�dito Ativo Imobilizado'  |
 | 63305 | 72079 | NE | 06/02/2020 | N�o est� sendo gerado o registro 1010 no informativo EFD Contribui��es, quando f |
+| 63302 | 72009 | NE | 04/02/2020 | Est� ocorrendo erro de sistema ao realizar uma baixa de bem, quando o bem possui |
 | 62954 | 71428 | NE | 20/01/2020 | Est� ocorrendo erro no objeto "w_cad_credito_imobilizado" ao acessar a janela "O |
-| 62207 | 69953 | SAL | 18/11/2019 | AM-Ajustar a apura��o do imposto 1-ICMS quando possuir lan�amento de ajuste com  |
-| 61711 | 69492 | SAIL | 31/10/2019 | SP-Gerar o registro G126 do SPED Fiscal referente a cr�ditos de ICMS do ativo im |
-| 59158 | 65377 | NE | 25/06/2019 | Est� sendo duplicado o valor do imposto demonstrado no relat�rio "Demonstrativo  |
-| 59347 | 65125 | SAL | 13/06/2019 | Alterar o sistema para gerar o registro G125, G130 e G140 para Bens cadastrados  |
-| 56157 | 59979 | SAL | 14/12/2018 | BA-Habilitar a op��o "Opera��o n�o vinculada ao Projeto DESENVOLVE" ao realizar  |
-| 55132 | 58416 | NE | 09/10/2018 | N�o est� sendo gerado corretamente os valores dos cr�ditos de PIS e COFINS nos r |
+| 62743 | 71116 | NE | 07/01/2020 | Est� sendo gerado o valor incorreto no campo "Deprecia��o Societ�ria acumulada"  |
+| 62296 | 70412 | NE | 06/12/2019 | Est�o sendo gerados lan�amentos cont�beis indevidamente na janela "Cr�dito Sobre |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| imobilizado | 96 |
-| ativo imobilizado | 75 |
-| baixa de bem | 1 |
+| imobilizado | 141 |
+| ativo imobilizado | 109 |
+| valor residual | 6 |
+| baixa de bem | 3 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 83095 | 101876 | NE | 28/09/2023 | N�o est� calculando a deprecia��o societ�ria quando a data informada na op��o "C |
 | 71941 | 84933 | NE | 23/08/2021 | N�o est� integrando corretamente os cr�ditos de PIS e COFINS sobre ativo imobili |
 | 8615 | 32716 | SAM | 03/03/2016 | N�o abrir tela do bem quando editado nota fiscal de compra para o imobilizado co |
 | 5371 | 31904 | SAM | 03/03/2016 | Criar op��o para efetuar a baixa de um bem no Patrimonio quando for lan�ado a no |
 | 651 | 30459 | SAM | 03/03/2016 | Quando se faz uma compra de imobilizado com ICMS pelo acumulador a contabiliza�� |
+| 36939 | 23786 | SAM | 14/08/2015 | MG-Alterar a integra��o dos Cr�ditos de Ativo Imobilizado com a Escrita Fiscal p |
 
 ## Busca Completa
 

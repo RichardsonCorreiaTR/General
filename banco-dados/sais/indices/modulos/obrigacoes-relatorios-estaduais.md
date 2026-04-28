@@ -1,10 +1,10 @@
 ﻿# Obrigacoes e relatorios estaduais
 
 > Dominio Escrita Fiscal | slug `obrigacoes-relatorios-estaduais`
-> Atualizado em: 24/04/2026 22:48
-> Pendentes: 77 | Liberadas: 2643 | Descartadas: 298 | Total SAIs: 3016
+> Atualizado em: 28/04/2026 15:46
+> Pendentes: 83 | Liberadas: 3030 | Descartadas: 357 | Total SAIs: 3468
 
-## Pendentes (77)
+## Pendentes (83)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
@@ -30,6 +30,7 @@
 | 88560 | 112391 | SAM | Normal | 27/08/2024 | Realizar um estudo para redu��o de custos no processo de preenchimento do captch |
 | 92510 | 112209 | SAM | Normal | 20/08/2024 | Alterar o sistema para importar o tipo de inscri��o do cliente/fornecedor quando |
 | 89840 | 111467 | SAIL | Normal | 29/07/2024 | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
+| 85892 | 107031 | SAM | Normal | 26/02/2024 | Otimizar o bot�o "Buscar" da listagem de lan�amentos.   |
 | 82856 | 103397 | SAM | Normal | 17/11/2023 | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
 | 80832 | 99979 | NE | Normal | 02/08/2023 | ES-N�o est� sendo importado a base de cr�dito de PIS/COFINS conforme configura�� |
 | 80748 | 99716 | SAM | Normal | 27/07/2023 | Alterar o envio das notas ao BOX-e conforme novo link quando as notas forem baix |
@@ -60,6 +61,7 @@
 | 53967 | 54981 | SAM | Normal | 11/06/2018 | SC-Ajustar a tela de listagem de notas do SEFAZ SC para que a informa��o da colu |
 | 52924 | 54246 | SAM | Normal | 09/05/2018 | Alterar a importa��o Web Service SEFAZ RS para utilizar o protocolo HTTPS. |
 | 50919 | 50777 | SAM | Normal | 05/01/2018 | MS-Permitir o cont�bil efetuar a leitura de um arquivo HTML quando estiver em mo |
+| 84388 | 50325 | SAM | Normal | 21/12/2017 | Apresentar em negrito as contas cont�beis sint�ticas na janela "Vincular estrutu |
 | 50408 | 49398 | SAM | Normal | 23/11/2017 | RS-Preparar o sistema para realizar o download e importa��o das notas atrav�s do |
 | 52483 | 46448 | SAM | Normal | 26/06/2017 | Gerar a guia GNRE via WebService quando a UF Favorecida for Sergipe. |
 | 52482 | 46447 | SAM | Normal | 26/06/2017 | Gerar a guia GNRE via WebService quando a UF Favorecida for Rond�nia.   |
@@ -70,7 +72,10 @@
 | 47058 | 44852 | SAM | Normal | 11/04/2017 | Criar a ferramenta de autoupdate para o aplicativo do Web Service SEFAZ RS. |
 | 46734 | 44294 | SAM | Normal | 21/03/2017 | Implementar op��o para emitir a guia GNRE online para todos os Estados. |
 | 48523 | 44194 | SAM | Normal | 16/03/2017 | PB- Implementar no sistema a guia Estadual do ICMS para o Estado da Para�ba, par |
+| 48323 | 43703 | SAM | Normal | 23/02/2017 | Otimizar o tempo de listagem do plano de contas ao clicar na tecla de fun��o "F6 |
+| 46610 | 42447 | SAM | Normal | 13/01/2017 | Otimizar o processo de listagem dos lotes de lan�amentos. |
 | 57410 | 38849 | SAM | Normal | 11/08/2016 | RS-Implementar a importa��o do imposto 42 - ICMSFG ao realizar a importa��o de n |
+| 42266 | 36974 | SAM | Normal | 02/06/2016 | Alterar a forma de gerar o demonstrativo DRE anexado em RTF no SPED Cont�bil dem |
 | 61197 | 35110 | SAM | Normal | 30/03/2016 | PR-Criar a op��o para que seja poss�vel realizar a importa��o de NF-e pelo SEFAZ |
 | 37238 | 24463 | SAM | Normal | 01/09/2015 | SE - Importar bilhete de passagem para empresa com UF SE. |
 | 37208 | 24406 | SAM | Normal | 31/08/2015 | MS - Adequar a importa��o SEFAZ MS com windows 10. |
@@ -85,6 +90,7 @@
 | 31758 | 12128 | SAM | Normal | 24/06/2014 | MS-Adequar a importa��o padr�o SEFAZ MS para micros com a vers�o 11 do Internet  |
 | 28583 | 8844 | SAM | Normal | 14/11/2013 | GO-Importar do site SEFAZ as NF-e de entradas para empresas do Simples Nacional. |
 | 28824 | 6873 | SAM | Normal | 18/07/2013 | BA-Efetuar a importa��o de NF-e via SEFAZ. |
+| 41759 | 2881 | SAM | Normal | 23/10/2012 | Criar op��o para lan�ar valores manualmente na estrutura do demonstrativo DFC. |
 
 ## Liberadas Recentes (30 mais recentes)
 
@@ -97,6 +103,7 @@
 | 100417 | 128896 | NE | 09/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
 | 100464 | 128709 | SAL | 03/03/2026 | MT-Incluir data fim para o c�digo de ajuste MT002010 do SPED Fiscal da tela de " |
 | 100297 | 128624 | SAL | 27/02/2026 | TO-Ajustar o sistema para n�o gerar o segmento G no informativo DIF para os CNAE |
+| 100070 | 128307 | NE | 23/02/2026 | Filtro "Extrato Banc�rio" n�o funciona na listagem de lan�amentos |
 | 100046 | 128109 | NE | 18/02/2026 | Corrigir a mensagem de confirma��o de assinatura digital No Demonstrativo de Fat |
 | 99522 | 127124 | SAM | 27/01/2026 | RS-Adaptar o sistema para importa��o da NF-e conforme nova estrutura do site SEF |
 | 99609 | 126998 | NE | 26/01/2026 | BA-N�o est� sendo emitido o relat�rio Demonstrativo do Cr�dito presumido de 20%  |
@@ -119,17 +126,16 @@
 | 99395 | 124848 | SAL | 28/11/2025 | SC-Ajustar o SPED Fiscal para n�o gerar o registro E200 e filhos para o imposto  |
 | 98251 | 124707 | NE | 26/11/2025 | Est� solicitando indevidamente a sele��o de certificado na importa��o NF-e SEFAZ |
 | 98235 | 124672 | NE | 25/11/2025 | DF-Est� apresentando a advert�ncia "Os valores do ICMS ST Retido n�o podem ser i |
-| 98224 | 124642 | SAM | 25/11/2025 | Realizar um teste na importa��o Web Service SEFAZ RS ap�s homologa��o do Windows |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| sefaz | 475 |
-| demonstrativo | 465 |
-| gia | 442 |
-| estadual | 427 |
-| uf | 393 |
+| demonstrativo | 599 |
+| sefaz | 477 |
+| gia | 462 |
+| estadual | 459 |
+| uf | 402 |
 
 ## Descartadas Recentes (10 mais recentes)
 
@@ -142,9 +148,9 @@
 | 95101 | 119008 | NE | 06/05/2025 | Em alguns casos est� ocorrendo o erro "Ocorreu um erro ao unir os PDF's. Um dos  |
 | 92379 | 117020 | SAL | 24/02/2025 | Ajustar o sistema para n�o gerar a UF e o n�mero do CRC no arquivo 'jason" do in |
 | 91436 | 115787 | NE | 09/01/2025 | N�o est� replicando da configura��o de importa��o NF-e Arquivo XML para a import |
+| 91021 | 114973 | SAM | 29/11/2024 | Garantir o funcionamento da emiss�o da Guia DARF Online - Sicalcweb |
 | 90935 | 114573 | SAIL | 14/11/2024 | RJ-Implementar a escritura��o do FECP por meio de sub-apura��o - Resolu��o SEFAZ |
 | 89328 | 113208 | NE | 26/09/2024 | N�o est� sendo poss�vel visualizar a listagem de contas cont�beis na configura�� |
-| 87904 | 110638 | NE | 27/06/2024 | Est�o sendo demonstradas indevidamente notas na compet�ncia 12/XXXX no demonstra |
 
 ## Busca Completa
 
