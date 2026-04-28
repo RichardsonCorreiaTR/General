@@ -444,6 +444,24 @@ Busca realizada:
 Para cada SAI relevante, inclua o trecho do campo BLOB que deu match,
 nao apenas a descricao truncada. O analista precisa ver o contexto real.
 
+### Formatacao de resultados de SAIs (obrigatoria)
+
+SEMPRE apresente resultados de SAIs em **tabela Markdown com links clicaveis**.
+Agrupe por tipo (SAL, NE, SAM, SAIL). Use este formato:
+
+```
+| SAI | PSAI | Tipo | Versao | Status | Descricao resumida |
+|-----|------|------|--------|--------|--------------------|
+| [numero](https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=NUMERO) | [numero](https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai=NUMERO) | NE | 10.5A-06 | Liberada | Descricao curta |
+```
+
+URLs padrao:
+- SAI: `https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={numero}`
+- PSAI: `https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={numero}`
+
+NUNCA apresente SAIs como lista de texto corrido. A tabela com links
+permite ao analista abrir diretamente no navegador com um clique.
+
 ### Indicador de completude (M13/P5)
 
 Ao final de toda busca, mostre o checklist de fontes consultadas:
