@@ -1,6 +1,6 @@
 ﻿# Resumo de Pendentes - Escrita Fiscal
 
-> Atualizado em: 28/04/2026 18:02
+> Atualizado em: 29/04/2026 09:03
 > Total pendentes (SAIs unicas): 892
 
 ## Totais por dominio
@@ -10,7 +10,7 @@
 | Apuracao de impostos | 636 | 71.3% |
 | Escrituracao e movimento fiscal | 215 | 24.1% |
 | SPED e documentos eletronicos | 178 | 20% |
-| Onvio, importacao e dados | 159 | 17.8% |
+| Onvio, importacao e dados | 158 | 17.7% |
 | Contabilidade | 103 | 11.5% |
 | Obrigacoes e relatorios estaduais | 83 | 9.3% |
 | Integracoes e canais digitais | 76 | 8.5% |
@@ -27,7 +27,7 @@
 
 | SAI | PSAI | Tipo | Dominio(s) | Cadastro | Resumo |
 |-----|------|------|------------|----------|--------|
-| 0 | 130449 | NE | Escrituracao e movimento fiscal | 28/04/2026 | - |
+| 0 | 130458 | NE | Escrituracao e movimento fiscal | 29/04/2026 | - |
 | 101469 | 130424 | SAM | Escrituracao e movimento fiscal | 27/04/2026 | - |
 | 101468 | 130421 | NE | Escrituracao e movimento fiscal | 27/04/2026 | - |
 | 101452 | 130409 | SAM | Onvio, importacao e dados | 27/04/2026 | - |

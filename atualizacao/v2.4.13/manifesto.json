@@ -1,6 +1,6 @@
 ﻿{
-    "data":  "2026-04-27",
-    "versao":  "2.4.12",
+    "data":  "2026-04-29",
+    "versao":  "2.4.13",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -38,7 +38,7 @@
                               "templates/TEMPLATE-sai.md",
                               "templates/TEMPLATE-task.json"
                           ],
-    "changelog":  "feat(buscar-sai): adicionar URLs clicaveis para SAI/PSAI no resultado das buscas. Cada resultado agora exibe duas linhas em azul (SAI: https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={n} e PSAI: https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={n}), funcionando em todos os modos (padrao, -Resumido, -VisualizarSai). Terminais modernos (Windows Terminal, VSCode/Cursor, pwsh) tornam as URLs clicaveis via Ctrl+Click. URLs configuraveis via constantes no topo do script.",
+    "changelog":  "Indices SAIs: gerador tolera alias importao/importacao no modulo; nao-classificado.md sempre gerado (vazio quando nao houver). Keywords em modulos-keywords.json ampliadas para classificacao por dominio. Admin: agendar-atualizacao.ps1 (seg-sex), sincronizar-sharepoint.ps1 inclui scripts de agendamento e atualizacao silenciosa. Scripts buscar-sai e setup-odbc alinhados ao pacote do analista.",
     "requerSymlink":  [
                           "atualizacao"
                       ],

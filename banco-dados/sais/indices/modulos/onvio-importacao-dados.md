@@ -1,14 +1,13 @@
 ﻿# Onvio, importacao e dados
 
 > Dominio Escrita Fiscal | slug `onvio-importacao-dados`
-> Atualizado em: 28/04/2026 18:02
-> Pendentes: 159 | Liberadas: 2822 | Descartadas: 309 | Total SAIs: 3284
+> Atualizado em: 29/04/2026 09:03
+> Pendentes: 158 | Liberadas: 2822 | Descartadas: 310 | Total SAIs: 3284
 
-## Pendentes (159)
+## Pendentes (158)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130446 | SAM | Normal | 28/04/2026 | - |
 | 101452 | 130409 | SAM | Normal | 27/04/2026 | - |
 | 101319 | 130128 | NE | Normal | 15/04/2026 | Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a i |
 | 101279 | 130073 | NE | Normal | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
@@ -217,6 +216,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 0 | 130460 | SAM | 29/04/2026 | - |
 | 99854 | 127505 | NE | 03/02/2026 | Transa��es marcadas como Read no socket da Fintech n�o estao presentes na tabela |
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
@@ -226,7 +226,6 @@
 | 97241 | 123289 | SAM | 09/10/2025 | Permitir realizar o desvinculo de contas do Onvio Gest�o ap�s realizado o v�ncul |
 | 96821 | 122351 | NE | 04/09/2025 | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
 | 96277 | 122036 | NE | 25/08/2025 | N�o est� sendo demonstrado o campo "Buscar" na janela "Contas Cont�beis" abertas |
-| 95238 | 120608 | SAM | 07/07/2025 | Criar mecanismos para atuar em PROD |
 
 ## Busca Completa
 

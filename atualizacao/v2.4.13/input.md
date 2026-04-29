@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.12 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.13 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-feat(buscar-sai): adicionar URLs clicaveis para SAI/PSAI no resultado das buscas. Cada resultado agora exibe duas linhas em azul (SAI: https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={n} e PSAI: https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={n}), funcionando em todos os modos (padrao, -Resumido, -VisualizarSai). Terminais modernos (Windows Terminal, VSCode/Cursor, pwsh) tornam as URLs clicaveis via Ctrl+Click. URLs configuraveis via constantes no topo do script.
+Indices SAIs: gerador tolera alias importao/importacao no modulo; nao-classificado.md sempre gerado (vazio quando nao houver). Keywords em modulos-keywords.json ampliadas para classificacao por dominio. Admin: agendar-atualizacao.ps1 (seg-sex), sincronizar-sharepoint.ps1 inclui scripts de agendamento e atualizacao silenciosa. Scripts buscar-sai e setup-odbc alinhados ao pacote do analista.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -60,6 +60,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.12".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.13".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

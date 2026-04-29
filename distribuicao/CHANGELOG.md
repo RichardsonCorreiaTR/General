@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.13 - 29/04/2026
+
+Indices SAIs: gerador tolera alias importao/importacao no modulo; nao-classificado.md sempre gerado (vazio quando nao houver). Keywords em modulos-keywords.json ampliadas para classificacao por dominio. Admin: agendar-atualizacao.ps1 (seg-sex), sincronizar-sharepoint.ps1 inclui scripts de agendamento e atualizacao silenciosa. Scripts buscar-sai e setup-odbc alinhados ao pacote do analista.
+
+---
+
 ## v2.4.12 - 27/04/2026
 
 feat(buscar-sai): adicionar URLs clicaveis para SAI/PSAI no resultado das buscas. Cada resultado agora exibe duas linhas em azul (SAI: https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={n} e PSAI: https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={n}), funcionando em todos os modos (padrao, -Resumido, -VisualizarSai). Terminais modernos (Windows Terminal, VSCode/Cursor, pwsh) tornam as URLs clicaveis via Ctrl+Click. URLs configuraveis via constantes no topo do script.
@@ -136,6 +142,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

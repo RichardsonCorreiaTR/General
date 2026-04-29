@@ -1,14 +1,14 @@
 ﻿# Escrituracao e movimento fiscal
 
 > Dominio Escrita Fiscal | slug `escrituracao-movimento-fiscal`
-> Atualizado em: 28/04/2026 18:02
+> Atualizado em: 29/04/2026 09:03
 > Pendentes: 215 | Liberadas: 10761 | Descartadas: 1103 | Total SAIs: 12078
 
 ## Pendentes (215)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130449 | NE | Normal | 28/04/2026 | - |
+| 0 | 130458 | NE | Normal | 29/04/2026 | - |
 | 101469 | 130424 | SAM | Normal | 27/04/2026 | - |
 | 101468 | 130421 | NE | Normal | 27/04/2026 | - |
 | 101425 | 130331 | NE | Normal | 24/04/2026 | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simples Nacional |
