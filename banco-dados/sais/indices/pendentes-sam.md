@@ -1,19 +1,20 @@
 ﻿# SAM Pendentes - Escrita Fiscal
 
-> Atualizado em: 28/04/2026 15:46
-> Total pendentes: 14778
+> Atualizado em: 29/04/2026 09:03
+> Total pendentes: 14776
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 130446 |  | 28/04/2026 | ID 0 | - |
 | 0 | 130441 |  | 28/04/2026 | ID 0 | - |
 | 0 | 130431 |  | 28/04/2026 | ID 0 | - |
 | 0 | 130428 |  | 27/04/2026 | ID 0 | - |
-| 101469 | 130424 |  | 27/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 101469 | 130424 |  | 27/04/2026 |  | - |
 | 0 | 130419 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130416 |  | 27/04/2026 | ID 0 | - |
-| 101452 | 130409 | 10.6A-05 | 27/04/2026 | Respondido Gerente de Produto | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de M |
+| 101452 | 130409 | 10.6A-05 | 27/04/2026 |  | - |
 | 0 | 130390 |  | 27/04/2026 | ID 0 | - |
-| 101444 | 130388 | 10.6A-05 | 27/04/2026 | Respondido Gerente de Testes | Melhorar performance para evitar gargalos no DW |
+| 101444 | 130388 | 10.6A-05 | 27/04/2026 |  | - |
 | 0 | 130377 |  | 24/04/2026 | ID 0 | - |
 | 101416 | 130365 | 10.6A-05 | 24/04/2026 | Respondido Gerente de Produto | Realizar testes na ferramenta de IA para an�lise de relat�rios dentro do Cont�bi |
 | 101433 | 130364 | 10.6A-05 | 24/04/2026 | Respondido Gerente de Produto | Realizar testes na replica��o/importa��o de dados de outra empresa devido altera |
@@ -29,7 +30,6 @@
 | 0 | 130284 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130283 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130282 |  | 22/04/2026 | ID 0 | - |
-| 0 | 130281 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130277 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130261 |  | 22/04/2026 | ID 0 | - |
 | 101308 | 130231 | 10.6A-05 | 20/04/2026 | Respondido Gerente de Produto | Refatorar o c�lculo da majora��o do IRPJ e CSLL. |
@@ -43,7 +43,6 @@
 | 0 | 130157 |  | 16/04/2026 | ID 0 | - |
 | 0 | 130153 |  | 16/04/2026 | ID 0 | - |
 | 0 | 130148 |  | 16/04/2026 | ID 0 | - |
-| 0 | 130147 |  | 16/04/2026 | ID 0 | - |
 | 0 | 130146 |  | 16/04/2026 | ID 0 | - |
 | 101225 | 130117 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
 | 101222 | 130114 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
@@ -11419,7 +11418,6 @@
 | 0 | 27343 |  | 26/11/2015 | ID 0 | - |
 | 0 | 27338 |  | 26/11/2015 | ID 0 | - |
 | 0 | 27335 |  | 26/11/2015 | ID 0 | - |
-| 0 | 27313 |  | 25/11/2015 | ID 0 | - |
 | 0 | 27312 |  | 25/11/2015 | ID 0 | - |
 | 0 | 27308 |  | 25/11/2015 | ID 0 | - |
 | 0 | 27273 |  | 24/11/2015 | ID 0 | - |

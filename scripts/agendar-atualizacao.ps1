@@ -1,4 +1,4 @@
-﻿# agendar-atualizacao.ps1
+# agendar-atualizacao.ps1
 # Cria (ou remove) tarefa agendada no Windows Task Scheduler.
 # Executar UMA VEZ para configurar a automacao.
 #
@@ -8,7 +8,10 @@
 
 param(
     [switch]$Remover,
-    [string]$HoraInicial = "08:00"
+    [string]$HoraInicial = "09:00",
+    # Por defeito corre seg-sex (PBCVS/VPN frequentemente offline em sab/dom).
+    # Use -Diario para forcar comportamento legado (todos os dias).
+    [switch]$Diario
 )
 
 $ErrorActionPreference = "Stop"
@@ -32,12 +35,14 @@ if (-not (Test-Path $silenciosoPath)) {
     exit 1
 }
 
+$tipoExecucao = if ($Diario) { "diariamente (todos os dias)" } else { "segunda a sexta" }
+
 Write-Host "=== Configurando tarefa agendada ===" -ForegroundColor Cyan
 Write-Host "Nome: $taskName"
 Write-Host "Script: $silenciosoPath"
 Write-Host "Hora inicial: $HoraInicial"
-Write-Host "Repeticao: a cada 3h (ate 17h)"
-Write-Host "Dias: segunda a sexta"
+Write-Host "Repeticao: a cada 3h (ate ~17h)"
+Write-Host "Dias: $tipoExecucao"
 Write-Host ""
 
 $action = New-ScheduledTaskAction `
@@ -46,10 +51,14 @@ $action = New-ScheduledTaskAction `
 
 $triggerLogon = New-ScheduledTaskTrigger -AtLogOn
 
-$triggerDaily = New-ScheduledTaskTrigger -Daily -At $HoraInicial
-$triggerDaily.Repetition = (New-ScheduledTaskTrigger -Once -At $HoraInicial `
+if ($Diario) {
+    $triggerPrincipal = New-ScheduledTaskTrigger -Daily -At $HoraInicial
+} else {
+    $triggerPrincipal = New-ScheduledTaskTrigger -Weekly -At $HoraInicial -DaysOfWeek Monday,Tuesday,Wednesday,Thursday,Friday
+}
+$triggerPrincipal.Repetition = (New-ScheduledTaskTrigger -Once -At $HoraInicial `
     -RepetitionInterval (New-TimeSpan -Hours 3) `
-    -RepetitionDuration (New-TimeSpan -Hours 10)).Repetition
+    -RepetitionDuration (New-TimeSpan -Hours 9)).Repetition
 
 $settings = New-ScheduledTaskSettingsSet `
     -AllowStartIfOnBatteries `
@@ -67,9 +76,9 @@ if ($existing) {
 Register-ScheduledTask `
     -TaskName $taskName `
     -Action $action `
-    -Trigger $triggerLogon, $triggerDaily `
+    -Trigger $triggerLogon, $triggerPrincipal `
     -Settings $settings `
-    -Description "Escrita SDD - Atualizacao automatica de SAIs/PSAIs e indices (v1.1.0)" | Out-Null
+    -Description "Escrita SDD - Atualizacao automatica de SAIs/PSAIs e indices. Frequencia: $tipoExecucao a partir de $HoraInicial (repete a cada 3h ate ~17h). Modo: ODBC->BuscaSAI fallback." | Out-Null
 
 Write-Host ""
 Write-Host "=== Tarefa criada com sucesso! ===" -ForegroundColor Green

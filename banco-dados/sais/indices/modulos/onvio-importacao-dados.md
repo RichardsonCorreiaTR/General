@@ -1,13 +1,15 @@
 ﻿# Onvio, importacao e dados
 
 > Dominio Escrita Fiscal | slug `onvio-importacao-dados`
-> Atualizado em: 28/04/2026 15:46
-> Pendentes: 136 | Liberadas: 2612 | Descartadas: 295 | Total SAIs: 3038
+> Atualizado em: 28/04/2026 18:02
+> Pendentes: 159 | Liberadas: 2822 | Descartadas: 309 | Total SAIs: 3284
 
-## Pendentes (136)
+## Pendentes (159)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 0 | 130446 | SAM | Normal | 28/04/2026 | - |
+| 101452 | 130409 | SAM | Normal | 27/04/2026 | - |
 | 101319 | 130128 | NE | Normal | 15/04/2026 | Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a i |
 | 101279 | 130073 | NE | Normal | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101314 | 129992 | NE | Normal | 10/04/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
@@ -17,6 +19,7 @@
 | 101010 | 129811 | SAM | Normal | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 101141 | 129762 | NE | Normal | 01/04/2026 | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma combina��o  |
 | 101210 | 129698 | NE | Normal | 31/03/2026 | Em alguns casos n�o est� concluindo a grava��o da importa��o dos dados quando im |
+| 101311 | 129630 | SAM | Normal | 30/03/2026 | Realizar a importa��o dos campos "Finalidade" e "Tipo de nota" da Nota de D�bito |
 | 100940 | 129545 | NE | Normal | 26/03/2026 | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota � importad |
 | 101342 | 129540 | NE | Normal | 25/03/2026 | N�o est� sendo feita corretamente a importa��o das informa��es da janela "Outros |
 | 100941 | 129535 | NE | Normal | 25/03/2026 | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/AT por pro |
@@ -25,7 +28,6 @@
 | 100787 | 129158 | SAM | Normal | 16/03/2026 | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
 | 100454 | 128978 | SAM | Normal | 10/03/2026 | Realizar um levantamento do esfor�o para Integra��o com a Moldura Shell do novo  |
 | 101385 | 128876 | SAM | Normal | 06/03/2026 | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "cBenef" das n |
-| 0 | 128824 | SAM | Normal | 05/03/2026 | - |
 | 100609 | 128816 | SAM | Normal | 05/03/2026 | Importar as al�quotas do imposto 28-FUNRURAL aplicando a majora��o de 10% confor |
 | 100578 | 128734 | NE | Normal | 03/03/2026 | N�o est� gerando os valores de IPI para alguns produtos na guia "Estoque" quando |
 | 100389 | 128664 | NE | Normal | 02/03/2026 | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metros o "Fato |
@@ -37,6 +39,8 @@
 | 99310 | 126692 | NE | Normal | 19/01/2026 | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
 | 101300 | 126497 | SAM | Normal | 14/01/2026 | Permitir importar o tipo de isen��o 2-Di�ria de viagem na importa��o de entradas |
 | 99063 | 126047 | SAM | Normal | 05/01/2026 | Adequar o sistema para ao importar as informa��es do c�lculo do INSS Receita Bru |
+| 99343 | 125356 | SAM | Normal | 11/12/2025 | Limitar a quantidade de notas enviadas para o Kolossus Auditor ao ativar uma emp |
+| 98233 | 124675 | SAM | Normal | 25/11/2025 | Auxiliar time do Cont�bil Plataforma nos retornos de importa��o na migra��o do P |
 | 98907 | 124455 | SAM | Normal | 19/11/2025 | Criar API no Onvio para ser poss�vel que sistemas externos consultem NCM/NBS e s |
 | 98108 | 124396 | SAM | Normal | 18/11/2025 | Realizar estudo sobre a comunica��o entre DW x Onvio. |
 | 99872 | 124203 | SAM | Normal | 11/11/2025 | Incluir a op��o de importar os valores da folha de pagamento informados no extra |
@@ -44,6 +48,7 @@
 | 96799 | 122736 | SAM | Normal | 18/09/2025 | Realizar a migra��o do e-mail do BOX-e do DA para o Onvio |
 | 96928 | 122664 | NE | Normal | 16/09/2025 | RJ-Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado !" ao gravar |
 | 96819 | 122567 | SAM | Normal | 12/09/2025 | Retirar mensagem de retorno dos e-mails recebidos sem anexo do BOX-e. |
+| 96162 | 121921 | SAM | Normal | 20/08/2025 | Enviar dados da importa��o para o Datadog. |
 | 95843 | 121425 | SAM | Normal | 01/08/2025 | Realizar a atualiza��o do tomcat no BOX-e. |
 | 99525 | 121260 | SAM | Normal | 28/07/2025 | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e Onvio Conta |
 | 101133 | 121247 | SAM | Normal | 28/07/2025 | Realizar a importa��o do Cadastro do Benefici�rio para a tela de cadastro do cli |
@@ -87,9 +92,11 @@
 | 84304 | 105879 | SAIL | Normal | 29/01/2024 | Criar tela para visualizar o arquivo xml das NF-e modelo 55. |
 | 88919 | 105843 | SAIL | Normal | 29/01/2024 | Implementar o c�lculo dos Anexos I e II do Simples Nacional no Onvio. |
 | 83853 | 105103 | SAM | Normal | 10/01/2024 | Considerar a mesma conta cont�bil quando ocorrer mais de um cadastro de clientes |
+| 84440 | 104663 | SAM | Normal | 29/12/2023 | Gerar lan�amentos cont�beis de forma centralizada na empresas matriz e filial co |
 | 94840 | 103971 | SAM | Normal | 06/12/2023 | Permitir importar os valores dos produtos que possuem classifica��o iniciada em  |
 | 90331 | 103539 | SAIL | Normal | 22/11/2023 | Implementar a gera��o dos campos da DEFIS no Onvio referente a NF-e por meio da  |
 | 83595 | 100533 | SAM | Normal | 16/08/2023 | Padronizar o template de envio de e-mail. |
+| 80817 | 100004 | SAM | Normal | 02/08/2023 | Alterar a ferramenta Envia BOX-e conforme novo novo link de recebimento do BOX-e |
 | 90888 | 99407 | SAM | Normal | 20/07/2023 | Otimizar a importa��o atrav�s do BP-e Arquivo XML. |
 | 83330 | 99139 | SAM | Normal | 13/07/2023 | Alterar o Exporta/Importa (arquivo de regras) para n�o exportar/importar a tabel |
 | 90816 | 95760 | SAM | Normal | 02/03/2023 | Liberar no importador as tabelas para criar conjunto de dados e importar os dado |
@@ -97,13 +104,21 @@
 | 82761 | 92747 | SAM | Normal | 13/10/2022 | RO-Importar para o produto o ICMS Diferido devido na entrada e com benef�cio de  |
 | 76476 | 91386 | NE | Normal | 22/07/2022 | N�o est� sendo importado na coluna "Exclus�es" da guia "SPED Pis/Cofins" do "Mov |
 | 75267 | 90822 | SAM | Normal | 17/06/2022 | Realizar as notifica��es referente as importa��es da API quando a empresa utiliz |
+| 72898 | 86397 | SAM | Normal | 09/11/2021 | Alterar o link de pesquisa da Central de Solu��es para apresentar solu��es local |
+| 71811 | 83631 | SAM | Normal | 19/06/2021 | Permitir salvar em relat�rio o resultado da Auditoria Fiscal em Dashboads. |
 | 70759 | 83328 | SAM | Normal | 09/06/2021 | Refatorar parte do c�digo fonte onde � realizado a importa��o por Threads para N |
+| 69274 | 81128 | SAM | Normal | 19/02/2021 | Refatorar a implementa��o da SAI 67595.   |
 | 66595 | 77085 | SAM | Normal | 24/08/2020 | Considerar o adicional de INSS Retido na importa��o das parcelas para Portal NF- |
 | 95794 | 73657 | SAM | Normal | 24/03/2020 | Alterar o sistema para n�o somar o valor do ICMS ST ao valor cont�bil das notas  |
 | 95761 | 73247 | SAM | Normal | 10/03/2020 | Implementar no sistema a possibilidade de importar documentos cancelados nas sa� |
+| 62806 | 71313 | SAM | Normal | 14/01/2020 | Compilar o cont�bil em 64 Bits. |
+| 62463 | 70821 | SAM | Normal | 19/12/2019 | Compilar os recursos da Importa��o Padr�o em 64 bits. |
+| 61040 | 68453 | SAM | Normal | 01/10/2019 | Rotacionar o LOG do Dom�nio Web para que seja exclu�do ap�s determinado per�odo. |
 | 66100 | 66994 | SAM | Normal | 19/08/2019 | SP-Preparar o sistema para importar o imposto 116-ICMS Diferido na importa��o de |
+| 58153 | 64044 | SAM | Normal | 10/05/2019 | Modificar forma de manter o arquivo KEEP ALIVE e gerar log para erros de comunic |
 | 57690 | 63087 | SAM | Normal | 10/04/2019 | PGDAS ONVIO |
 | 56956 | 61757 | SAM | Normal | 22/02/2019 | Migra��o Escrita para ONVIO |
+| 55958 | 59958 | SAM | Normal | 13/12/2018 | Refazer a ferramenta de relacionamento de produtos nas importa��es do Conv�nio 1 |
 | 55255 | 58528 | SAM | Normal | 16/10/2018 | Alterar o sistema para que na importa��o de sa�das atrav�s do OnBalance a funcio |
 | 55157 | 57737 | SAM | Normal | 13/09/2018 | MT-Alterar o sistema para que seja poss�vel importar NF-e 4.0 sem informa��o do  |
 | 54640 | 57179 | SAM | Normal | 28/08/2018 | Alterar a forma de informar os valores de diferen�a entre o valor cont�bil e a b |
@@ -115,6 +130,7 @@
 | 94046 | 52202 | SAM | Normal | 26/02/2018 | Alterar o sistema para considerar a al�quota informada nas defini��es do imposto |
 | 61030 | 50822 | SAM | Normal | 08/01/2018 | SPED FISCAL-Otimizar o processo de "Importar", da importa��o padr�o do arquivo. |
 | 78955 | 46633 | SAM | Normal | 04/07/2017 | Importar nota fiscal de servi�o substitu�da como cancelada (tag "NfseSubstituido |
+| 47254 | 45198 | SAM | Normal | 27/04/2017 | Efetuar a importa��o da s�rie e sub-s�rie dos bilhetes de passagem, quando for e |
 | 46680 | 44178 | SAM | Normal | 15/03/2017 | Importar o campo "Ped�gio" para os lan�amento de entrada com CFOP 1-351 ou 2-351 |
 | 92616 | 43137 | SAM | Normal | 07/02/2017 | Criar op��o para gerar parcelas em NFS-e que n�o possuem parcelas e definir cond |
 | 45043 | 41601 | SAM | Normal | 08/12/2016 | Emitir mensagem ao importar um imposto informando que o sistema n�o est� prepara |
@@ -127,21 +143,28 @@
 | 47048 | 36845 | SAM | Normal | 27/05/2016 | Alterar o sistema para que seja considerado a data de entrada da nota na importa |
 | 41544 | 35686 | SAM | Normal | 15/04/2016 | Alterar o Importador para importar o estoque de notas fiscais de Entrada, Sa�da  |
 | 93388 | 28606 | SAM | Normal | 14/01/2016 | Ajustar o sistema para apresentar uma mensagem amig�vel na guia "Erros" quando h |
+| 39080 | 27881 | SAM | Normal | 11/12/2015 | Permitir realizar a importa��o de lan�amentos cont�beis e os demais processos qu |
+| 42019 | 27225 | SAM | Normal | 24/11/2015 | Implementar a possibilidade de criar uma nova vig�ncia pelo importador. |
 | 54374 | 26982 | SAM | Normal | 18/11/2015 | Criar o imposto DAE Simples Dom�stico no cadastro de itens e importar os valores |
+| 38249 | 26431 | SAM | Normal | 30/10/2015 | Alterar o Importador para buscar automaticamente o segmento nas notas para reali |
 | 38092 | 26141 | SAM | Normal | 22/10/2015 | Importar as informa��es do registro D161 na importa��o padr�o do SPED Fiscal. |
 | 55771 | 26017 | SAM | Normal | 19/10/2015 | SP-Importar o CF-e atrav�s do Web Service do estado de S�o Paulo. |
 | 37238 | 24463 | SAM | Normal | 01/09/2015 | SE - Importar bilhete de passagem para empresa com UF SE. |
+| 37322 | 24212 | SAM | Normal | 26/08/2015 | Disponibilizar o campo "Propag. e Public." na configura��o das defini��es de dad |
 | 37425 | 23909 | SAM | Normal | 19/08/2015 | Criar na tela configura��es de importa��o de CF-e Arquivo XML a guia Dados de PI |
 | 36995 | 23811 | SAM | Normal | 17/08/2015 | MG - Preencher o c�digo de recolhimento do imposto 27-ICMSA quando efetuado a im |
 | 36485 | 22874 | SAM | Normal | 20/07/2015 | Importar valor para os campos "B.C. Frete", "B.C. Seguro" e "B.C. Desp. Acess�ri |
+| 35484 | 20379 | SAM | Normal | 08/05/2015 | Prepara a Importa��o via importador para que importe os arquivos no formato UTF- |
 | 36138 | 20290 | SAM | Normal | 06/05/2015 | Preencher o campo 'Al�q. Interest.' na importa��o das notas de entradas via port |
 | 47083 | 19112 | SAM | Normal | 25/03/2015 | Importar para o Protocolo os impostos calculados no m�dulo LALUR.   |
 | 37455 | 18799 | SAM | Normal | 18/03/2015 | Importar a CST na aba "Situa��o Tribut�ria" dos lan�amentos de Redu��es Z confor |
+| 33833 | 16749 | SAM | Normal | 13/01/2015 | Gerar as contas e lan�amentos cont�beis em Contas de Compensa��o quando realizad |
 | 33815 | 16662 | SAM | Normal | 09/01/2015 | BA-Importar os dados do cr�dito ICMS na aquisi��o de fornecedor do Simples Nacio |
 | 33558 | 16290 | SAM | Normal | 19/12/2014 | Importar a UF para o quadro "Local de sa�da" dos dados do frete quando na nota f |
 | 33541 | 16229 | SAM | Normal | 17/12/2014 | Criar op��o para selecionar de onde deve importar as informa��es complementares  |
 | 33462 | 16211 | SAM | Normal | 16/12/2014 | Alterar a comunica��o do Envia BOX-e com o Dom�nio Atendimento para utilizar o p |
 | 93325 | 12425 | SAM | Normal | 07/07/2014 | RS-Importar os dados do imposto 95-FUNDESA atrav�s importa��o padr�o NF-e Arquiv |
+| 31275 | 11791 | SAM | Normal | 02/06/2014 | MG-Criar a op��o "Detalhamento de outros valores" no grupo Definir exce��o da gu |
 | 28583 | 8844 | SAM | Normal | 14/11/2013 | GO-Importar do site SEFAZ as NF-e de entradas para empresas do Simples Nacional. |
 | 54373 | 4099 | SAM | Normal | 17/12/2012 | Criar os impostos "Contribui��o Associativa" e "Mensalidade Sindical" no cadastr |
 
@@ -149,12 +172,17 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101432 | 130369 | NE | 24/04/2026 | - |
+| 101084 | 129917 | SAM | 08/04/2026 | Implementar o zeramento de NSU para o NFS-e no utilit�rio de zeramento de NSU. |
 | 100985 | 129721 | NE | 31/03/2026 | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
+| 100634 | 129270 | SAM | 18/03/2026 | Redefinir as senhas dos usu�rios utilizados para uso interno do Cont�bil. |
 | 100474 | 128991 | SAM | 10/03/2026 | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
 | 100557 | 128948 | SAM | 10/03/2026 | Realizar a importa��o dos impostos IBS e CBS para guia 'IVA' atrav�s da NFS-e Ar |
 | 100546 | 128818 | SAM | 05/03/2026 | Realizar a importa��o do Imposto Seletivo-IS conforme a reforma tribut�ria atrav |
 | 100784 | 128390 | SAM | 24/02/2026 | SP-Liberar as tabelas do "Estoque Substitui��o Tribut�ria - Produtos Exclu�dos d |
+| 100038 | 128205 | SAM | 19/02/2026 | Realizar o download da NFS-e cancelada quando o NSU do cancelamento for disponib |
 | 99992 | 128197 | SAM | 19/02/2026 | Realizar um estudo para mapear os principais processos pesados existentes na imp |
+| 99958 | 128070 | SAM | 16/02/2026 | Realizar a importa��o de NFS-e cancelada para servi�os tomados. |
 | 100527 | 128018 | SAM | 13/02/2026 | SP-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fiscais de en |
 | 99977 | 127931 | SAM | 11/02/2026 | Realizar a importa��o do Imposto Seletivo-IS conforme a reforma tribut�ria atrav |
 | 100016 | 127904 | NE | 11/02/2026 | Est� ocorrendo erro de banco de dados ao realizar importa��o de NFS-e substituta |
@@ -163,6 +191,7 @@
 | 99854 | 127505 | NE | 03/02/2026 | Transa��es marcadas como Read no socket da Fintech n�o estao presentes na tabela |
 | 99521 | 127099 | SAM | 27/01/2026 | Atualizar o BOX-e para aceitar NFS-e Padr�o Nacional vers�o 1.01 |
 | 99470 | 127010 | NE | 26/01/2026 | Est� importando incorretamente o "Valor Total Nota" quando as notas de sa�das s� |
+| 99407 | 126872 | SAM | 22/01/2026 | Cria��o de backlog de SAIs antigas na vers�o de Fevereiro de 2026. |
 | 99367 | 126542 | NE | 15/01/2026 | Est� considerando documento(s) cancelado(s) para o c�lculo dos impostos 183-IBS  |
 | 99214 | 126498 | NE | 14/01/2026 | RO-Est� finalizando o processo de importa��o na etapa 1/7 quando nas configura�� |
 | 99092 | 126238 | NE | 08/01/2026 | Est� ocorrendo o erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a |
@@ -171,14 +200,8 @@
 | 99187 | 126104 | NE | 07/01/2026 | Est� ocorrendo erro de sistema ao importar nota com produtos do tipo "Ve�culos U |
 | 99126 | 125925 | SAM | 29/12/2025 | Adequar o sistema para importar o cadastro da empresa com a nova op��o de empres |
 | 98845 | 125884 | SAM | 26/12/2025 | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a Lei N� 9.0 |
+| 98790 | 125798 | SAM | 23/12/2025 | Cria��o de backlog de SAIs antigas na vers�o de Janeiro de 2026. |
 | 98809 | 125719 | NE | 19/12/2025 | Est� sendo demonstrado indevidamente as cr�ticas de estrutura "N�o foi encontrad |
-| 98697 | 125690 | SAM | 19/12/2025 | Parar de sinalizar para o Onvio o consumo dos dados da Conta Azul. |
-| 98678 | 125650 | NE | 18/12/2025 | Est� importando incorretamente o "Valor Cont�bil" e "Valor fornecido/consumido"  |
-| 100624 | 125632 | SAM | 18/12/2025 | RJ-Implementar a op��o "Adicionar o valor do Fundo de Combate a Pobreza ao valor |
-| 98702 | 125427 | NE | 12/12/2025 | Est� demonstrando indevidamente as empresas como desabilitadas no menu ONVIO API |
-| 98807 | 125418 | NE | 12/12/2025 | Est� importando incorretamente o valor no campo "Outras" da linha do ICMS quando |
-| 98966 | 125363 | SAM | 11/12/2025 | Criar a op��o "Considerar como exce��o a op��o Todos das colunas para relacionam |
-| 99312 | 125161 | SAM | 08/12/2025 | Permitir importar extrato OFX com a tag DTPOSTED no formato 'AAAA-MM-DD'. |
 
 ## Temas Frequentes
 

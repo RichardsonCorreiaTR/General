@@ -1,8 +1,8 @@
 ﻿{
     "importadoPor":  "0181286",
     "cacheLocal":  "C:\\1 - A\\B\\Programas\\General\\scripts\\cache\\sai-psai-escrita.json",
-    "importadoEm":  "2026-04-28T15:46:54",
-    "fonte":  "BuscaSAI (sai-psai mesclado)",
+    "importadoEm":  "2026-04-29T09:04:45",
+    "fonte":  "ODBC multi-area",
     "modo":  "incremental",
     "fracionados":  12,
     "cacheMB":  573.2

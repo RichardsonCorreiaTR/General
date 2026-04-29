@@ -1,7 +1,7 @@
 ﻿# NEs Pendentes - Recentes (2025+)
 
-> Atualizado em: 28/04/2026 15:46
-> Total: 209 NEs
+> Atualizado em: 29/04/2026 09:03
+> Total: 215 NEs
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
@@ -205,13 +205,19 @@
 | 0 | 130334 |  | Normal | 24/04/2026 | ID 0 | - |
 | 0 | 130337 |  | Normal | 24/04/2026 | ID 0 | - |
 | 0 | 130339 |  | Normal | 24/04/2026 | ID 0 | - |
-| 0 | 130340 |  | Normal | 24/04/2026 | ID 0 | - |
 | 101471 | 130358 |  | Normal | 24/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Extrato Mensal da filial centralizada sempre gera os dados da matriz |
 | 0 | 130372 |  | Normal | 24/04/2026 | ID 0 | - |
 | 0 | 130374 |  | Normal | 24/04/2026 | ID 0 | - |
 | 0 | 130375 |  | Normal | 24/04/2026 | ID 0 | - |
 | 101480 | 130379 |  | Normal | 24/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est�o sendo apresentadas todas as empresas no quadro "Selecionar empresas" d |
 | 0 | 130413 |  | Normal | 27/04/2026 | ID 0 | - |
-| 101468 | 130421 | 10.6A-05 | Normal | 27/04/2026 | Respondido Gerente de Produto | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
+| 101468 | 130421 | 10.6A-05 | Normal | 27/04/2026 |  | - |
 | 0 | 130430 |  | Normal | 28/04/2026 | ID 0 | - |
+| 0 | 130434 |  | Normal | 28/04/2026 | ID 0 | - |
+| 0 | 130449 |  | Normal | 28/04/2026 | ID 0 | - |
+| 0 | 130453 |  | Normal | 29/04/2026 | ID 0 | - |
+| 0 | 130454 |  | Normal | 29/04/2026 | ID 0 | - |
+| 0 | 130455 |  | Normal | 29/04/2026 | ID 0 | - |
+| 0 | 130456 |  | Normal | 29/04/2026 | ID 0 | - |
+| 0 | 130458 |  | Normal | 29/04/2026 | ID 0 | - |
 

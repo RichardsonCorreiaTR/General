@@ -1,37 +1,37 @@
 ﻿# Resumo de Pendentes - Escrita Fiscal
 
-> Atualizado em: 28/04/2026 15:46
+> Atualizado em: 28/04/2026 18:02
 > Total pendentes (SAIs unicas): 892
 
 ## Totais por dominio
 
 | Dominio | Pendentes | % do Total |
 |---------|-----------|------------|
-| Apuracao de impostos | 639 | 71.6% |
-| Escrituracao e movimento fiscal | 213 | 23.9% |
+| Apuracao de impostos | 636 | 71.3% |
+| Escrituracao e movimento fiscal | 215 | 24.1% |
 | SPED e documentos eletronicos | 178 | 20% |
-| Onvio, importacao e dados | 136 | 15.2% |
+| Onvio, importacao e dados | 159 | 17.8% |
 | Contabilidade | 103 | 11.5% |
 | Obrigacoes e relatorios estaduais | 83 | 9.3% |
 | Integracoes e canais digitais | 76 | 8.5% |
 | Utilitarios e rotinas | 59 | 6.6% |
-| Nao Classificado | 23 | 2.6% |
 | LALUR | 17 | 1.9% |
 | Conteúdo Contábil Tributário | 11 | 1.2% |
 | Parcelamento e planejamento tributario | 3 | 0.3% |
 | Patrimônio | 1 | 0.1% |
 | Registros Contábeis | 1 | 0.1% |
 | Atualização Monetária | 0 | 0% |
+| Nao Classificado | 0 | 0% |
 
 ## Top 20 Novidades (pendentes mais recentes)
 
 | SAI | PSAI | Tipo | Dominio(s) | Cadastro | Resumo |
 |-----|------|------|------------|----------|--------|
-| 0 | 130441 | SAM | Contabilidade | 28/04/2026 | - |
-| 101469 | 130424 | SAM | Apuracao de impostos | 27/04/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
-| 101468 | 130421 | NE | Apuracao de impostos | 27/04/2026 | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
-| 101452 | 130409 | SAM | Apuracao de impostos | 27/04/2026 | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de M |
-| 101444 | 130388 | SAM | Contabilidade | 27/04/2026 | Melhorar performance para evitar gargalos no DW |
+| 0 | 130449 | NE | Escrituracao e movimento fiscal | 28/04/2026 | - |
+| 101469 | 130424 | SAM | Escrituracao e movimento fiscal | 27/04/2026 | - |
+| 101468 | 130421 | NE | Escrituracao e movimento fiscal | 27/04/2026 | - |
+| 101452 | 130409 | SAM | Onvio, importacao e dados | 27/04/2026 | - |
+| 101444 | 130388 | SAM | Contabilidade | 27/04/2026 | - |
 | 101480 | 130379 | NE | Apuracao de impostos | 24/04/2026 | N�o est�o sendo apresentadas todas as empresas no quadro "Selecionar empresas" d |
 | 101416 | 130365 | SAM | Apuracao de impostos | 24/04/2026 | Realizar testes na ferramenta de IA para an�lise de relat�rios dentro do Cont�bi |
 | 101433 | 130364 | SAM | Apuracao de impostos | 24/04/2026 | Realizar testes na replica��o/importa��o de dados de outra empresa devido altera |

@@ -1,7 +1,7 @@
 ﻿# Utilitarios e rotinas
 
 > Dominio Escrita Fiscal | slug `utilitarios-rotinas`
-> Atualizado em: 28/04/2026 15:46
+> Atualizado em: 28/04/2026 18:02
 > Pendentes: 59 | Liberadas: 662 | Descartadas: 88 | Total SAIs: 808
 
 ## Pendentes (59)

@@ -1,7 +1,7 @@
 ﻿# Conteúdo Contábil Tributário
 
 > Dominio Escrita Fiscal | slug `conteudo-contabil-tributario`
-> Atualizado em: 28/04/2026 15:46
+> Atualizado em: 29/04/2026 09:03
 > Pendentes: 11 | Liberadas: 912 | Descartadas: 71 | Total SAIs: 994
 
 ## Pendentes (11)

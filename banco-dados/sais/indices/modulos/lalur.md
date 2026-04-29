@@ -1,8 +1,8 @@
 ﻿# LALUR
 
 > Dominio Escrita Fiscal | slug `lalur`
-> Atualizado em: 28/04/2026 15:46
-> Pendentes: 17 | Liberadas: 708 | Descartadas: 63 | Total SAIs: 788
+> Atualizado em: 28/04/2026 18:02
+> Pendentes: 17 | Liberadas: 707 | Descartadas: 63 | Total SAIs: 787
 
 ## Pendentes (17)
 
@@ -31,7 +31,6 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
-| 101292 | 130173 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o do imposto 7-IRPJ, quando no |
 | 101120 | 129965 | NE | 09/04/2026 | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, 33-IRPJ-P |
 | 100993 | 129714 | NE | 31/03/2026 | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, 110-CSLL/ |
 | 100952 | 129631 | NE | 30/03/2026 | N�o est� sendo gerado o valor correto dos impostos 110-CSLL/SCP e 111-IRPJ/SCP,  |
@@ -60,12 +59,13 @@
 | 95403 | 120672 | NE | 09/07/2025 | N�o est� sendo considerada a devolu��o de venda com ve�culos usados no relat�rio |
 | 94792 | 120027 | NE | 11/06/2025 | N�o est� importando valor para o campo "29 - Cr�dito Fiscal de IRPJ - MP n� 1.18 |
 | 94177 | 119313 | SAM | 15/05/2025 | Criar o relat�rio do Planejamento Tribut�rio para os regimes Simples Nacional, L |
+| 94555 | 119031 | NE | 07/05/2025 | N�o est� sendo deduzido o valor do ped�gio no campo "Valor do CT-e" da guia "CT- |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| irpj | 465 |
+| irpj | 464 |
 | csll | 352 |
 | lalur | 127 |
 | lucro real | 84 |

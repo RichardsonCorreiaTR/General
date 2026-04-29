@@ -1,13 +1,13 @@
 ﻿# Indice de SAIs por Cenario Complexo
 
-> Atualizado em: 28/04/2026 15:46
+> Atualizado em: 28/04/2026 18:02
 > Cenarios que cruzam multiplos dominios (SAIs classificadas em 2+ dominios)
 
 ## Resumo por combinacao de dominios
 
 | Combinacao | SAIs | Pendentes |
 |-----------|------|-----------|
-| Apuracao de impostos + Escrituracao e movimento fiscal | 4965 | 61 |
+| Apuracao de impostos + Escrituracao e movimento fiscal | 4963 | 61 |
 | Apuracao de impostos + SPED e documentos eletronicos | 2763 | 51 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos | 1465 | 16 |
 | Apuracao de impostos + Obrigacoes e relatorios estaduais | 1021 | 21 |
@@ -17,7 +17,7 @@
 | Apuracao de impostos + Onvio, importacao e dados + SPED e documentos eletronicos | 568 | 18 |
 | Apuracao de impostos + Conteúdo Contábil Tributário + SPED e documentos eletronicos | 475 | 7 |
 | Apuracao de impostos + Integracoes e canais digitais | 433 | 18 |
-| Apuracao de impostos + LALUR | 406 | 8 |
+| Apuracao de impostos + LALUR | 405 | 8 |
 | Apuracao de impostos + Onvio, importacao e dados | 354 | 17 |
 | Apuracao de impostos + Utilitarios e rotinas | 264 | 21 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + Integracoes e canais digitais | 254 | 4 |
@@ -25,7 +25,7 @@
 
 ## Detalhamento dos maiores cenarios
 
-### Apuracao de impostos + Escrituracao e movimento fiscal (4965 SAIs, 61 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal (4963 SAIs, 61 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|

@@ -1,10 +1,12 @@
 ﻿# SAL Pendentes - Escrita Fiscal
 
-> Atualizado em: 28/04/2026 15:46
-> Total pendentes: 94
+> Atualizado em: 29/04/2026 09:03
+> Total pendentes: 96
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 130442 |  | 28/04/2026 | ID 0 | - |
+| 0 | 130433 |  | 28/04/2026 | ID 0 | - |
 | 0 | 130402 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130399 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130392 |  | 27/04/2026 | ID 0 | - |

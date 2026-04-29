@@ -1,7 +1,7 @@
 ﻿{
     "versao":  "3.0",
-    "atualizado_em":  "2026-04-24",
-    "nota":  "Dominios alinhados a Escrita Fiscal e Contabil. Keywords de Folha de Pagamento removidas. Adicionado area_modulo_padrao para fallback de classificacao quando sai_descricao e nula.",
+    "atualizado_em":  "2026-04-29",
+    "nota":  "Dominios alinhados a Escrita Fiscal e Contabil. Keywords de Folha de Pagamento removidas. area_modulo_padrao: fallback quando sai_descricao e nula. O script gerar-indices-sais.ps1 normaliza nomeArea (case, acentos, U+FFFD) e alias importao->importacao para dados ODBC com encoding corrompido.",
     "area_modulo_padrao": {
         "Escrita":       "escrituracao-movimento-fiscal",
         "Importação":    "onvio-importacao-dados",

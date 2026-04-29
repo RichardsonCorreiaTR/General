@@ -70,6 +70,8 @@ $arqsCopia = @(
     "scripts\importar-sais.ps1",
     "scripts\extrair-sais.ps1",
     "scripts\gerar-indices-sais.ps1",
+    "scripts\agendar-atualizacao.ps1",
+    "scripts\atualizar-silencioso.ps1",
     "config\time-analistas.json",
     "banco-dados\config\modulos-keywords.json",
     "projeto-filho\config\VERSION.json",

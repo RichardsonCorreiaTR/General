@@ -1,6 +1,6 @@
 ﻿# NEs Pendentes - Anteriores a 2025
 
-> Atualizado em: 28/04/2026 15:46
+> Atualizado em: 29/04/2026 09:03
 > Total: 22 NEs
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |

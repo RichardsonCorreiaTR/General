@@ -27,6 +27,9 @@ logs-consolidado-temp.json
 .commit-msg-tmp.txt
 *.commit-msg.tmp
 
+# Lock de atualizacao (evita execucoes concorrentes)
+scripts/.update-lock.json
+
 # Estado / temporarios da pipeline de extracao SAIs
 atualizacao/.stats-temp.json
 atualizacao/.extracao-temp.json

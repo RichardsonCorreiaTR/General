@@ -1,14 +1,16 @@
 ﻿# Escrituracao e movimento fiscal
 
 > Dominio Escrita Fiscal | slug `escrituracao-movimento-fiscal`
-> Atualizado em: 28/04/2026 15:46
-> Pendentes: 213 | Liberadas: 10761 | Descartadas: 1102 | Total SAIs: 12075
+> Atualizado em: 28/04/2026 18:02
+> Pendentes: 215 | Liberadas: 10761 | Descartadas: 1103 | Total SAIs: 12078
 
-## Pendentes (213)
+## Pendentes (215)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130431 | SAM | Normal | 28/04/2026 | - |
+| 0 | 130449 | NE | Normal | 28/04/2026 | - |
+| 101469 | 130424 | SAM | Normal | 27/04/2026 | - |
+| 101468 | 130421 | NE | Normal | 27/04/2026 | - |
 | 101425 | 130331 | NE | Normal | 24/04/2026 | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simples Nacional |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
 | 101061 | 129875 | NE | Normal | 07/04/2026 | Est� ocorrendo o erro "Erro realizando requisi��o: Erro ao realizar requisi��o:  |
@@ -226,9 +228,9 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 101432 | 130369 | NE | 24/04/2026 | N�o est�o sendo enviadas para o Busca NF-e Escrit�rio as NFS-e baixadas quando n |
-| 101388 | 130336 | NE | 24/04/2026 | Corrigir erros implementados no desenvolvimento da SAI 99330. |
-| 101321 | 130237 | NE | 20/04/2026 | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
+| 101388 | 130336 | NE | 24/04/2026 | - |
+| 101321 | 130237 | NE | 20/04/2026 | - |
+| 101292 | 130173 | NE | 17/04/2026 | - |
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
 | 100985 | 129721 | NE | 31/03/2026 | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
 | 100954 | 129718 | NE | 31/03/2026 | Est� sendo apresentada indevidamente a mensagem "A soma do imposto PIS informado |
@@ -261,8 +263,8 @@
 
 | Tema | Ocorrencias |
 |------|-------------|
-| icms | 3844 |
-| nf-e | 1634 |
+| icms | 3843 |
+| nf-e | 1633 |
 | nota fiscal | 1588 |
 | simples | 1292 |
 | simples nacional | 1138 |
@@ -271,6 +273,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101489 | 130444 | NE | 28/04/2026 | - |
 | 99213 | 126395 | SAL | 13/01/2026 | SP - Garantir funcionamento da integra��o do Cr�dito de ICMS com Escrita devido  |
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98423 | 125124 | SAM | 05/12/2025 | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Busca NF-e. |
@@ -280,7 +283,6 @@
 | 97918 | 123811 | NE | 28/10/2025 | Est� sendo gerado o valor incorreto do campo 04-VL_BC_RET do registro F600 do in |
 | 98841 | 123398 | SAM | 14/10/2025 | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a Lei N� 9.0 |
 | 97142 | 123028 | NE | 30/09/2025 | N�o est� somando o valor do frete no valor cont�bil da nota, quando n�o � import |
-| 97420 | 122935 | NE | 25/09/2025 | RS-N�o est� reconhecendo a "Restitui��o de ICMS ST" quando est� selecionado a op |
 
 ## Busca Completa
 

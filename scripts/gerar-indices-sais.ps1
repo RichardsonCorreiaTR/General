@@ -265,7 +265,7 @@ if (Test-Path $kwFile) {
         $moduloKeywords[$prop.Name] = @($prop.Value.keywords | Where-Object { $_ -ne $null -and $_ -ne "" })
         $moduloNomes[$prop.Name] = $prop.Value.nome_exibicao
     }
-    # Carregar mapeamento area_pbcvs → modulo padrao para fallback quando sai_descricao e nula
+    # Carregar mapeamento area_pbcvs -> modulo padrao para fallback quando sai_descricao e nula
     if ($kwJson.area_modulo_padrao) {
         foreach ($ap in $kwJson.area_modulo_padrao.PSObject.Properties) {
             $areaMod[$ap.Name] = $ap.Value
@@ -295,6 +295,38 @@ if (Test-Path $kwFile) {
         "onvio-importacao-dados" = "Onvio, importacao e dados"
         "utilitarios-rotinas" = "Utilitarios e rotinas"
     }
+}
+
+# --- Normalizacao tolerante de nomeArea (case + diacriticos + REPLACEMENT CHAR) ---
+# O extrator pode gravar caracteres acentuados como U+FFFD U+FFFD quando ODBC
+# nao especifica CharSet (ex.: "Importacao" vira "Importa<FFFD><FFFD>o").
+# Tambem vemos variantes case ("ONVIO ESCRITA" vs "Onvio Escrita").
+# Esta funcao remove diacriticos, REPLACEMENT CHAR e normaliza para lowercase.
+function Get-NomeAreaNormalizado([string]$s) {
+    if (-not $s) { return '' }
+    $nfd = $s.Normalize([Text.NormalizationForm]::FormD)
+    $sb = New-Object System.Text.StringBuilder
+    foreach ($ch in $nfd.ToCharArray()) {
+        $cat = [Globalization.CharUnicodeInfo]::GetUnicodeCategory($ch)
+        if ($cat -eq [Globalization.UnicodeCategory]::NonSpacingMark) { continue }
+        if ([int]$ch -eq 0xFFFD) { continue }
+        [void]$sb.Append($ch)
+    }
+    return $sb.ToString().ToLowerInvariant().Trim()
+}
+# Indice secundario por chave normalizada (tolerante).
+$areaModNorm = @{}
+foreach ($k in $areaMod.Keys) {
+    $kn = Get-NomeAreaNormalizado $k
+    if (-not $areaModNorm.ContainsKey($kn)) { $areaModNorm[$kn] = $areaMod[$k] }
+}
+# Corrupcao ODBC (U+FFFD): "Importacao" vira "Importa<FFFD><FFFD>o" -> normaliza "importao"
+# (perde "c" e "ao" acentuados). Deve cair no mesmo modulo que "importacao".
+if ($areaModNorm.ContainsKey('importacao') -and -not $areaModNorm.ContainsKey('importao')) {
+    $areaModNorm['importao'] = $areaModNorm['importacao']
+}
+if ($areaModNorm.Count -gt 0) {
+    Write-Host "  Fallback normalizado (case+acentos+U+FFFD): $($areaModNorm.Keys -join ', ')"
 }
 
 # --- Classificacao multi-modulo (Nivel B / D9) ---
@@ -327,11 +359,16 @@ foreach ($item in $dados) {
     }
 
     # 2) Fallback: classificar por nomeArea quando descricao esta ausente ou nao houve match
-    if ($modulosItem.Count -eq 0 -and $item.nomeArea -and $areaMod.ContainsKey($item.nomeArea)) {
-        $defaultMod = $areaMod[$item.nomeArea]
-        if ($moduloKeywords.ContainsKey($defaultMod)) {
-            $modulosItem.Add($defaultMod)
-            $classificadosPorArea++
+    #    Usa normalizacao tolerante (case+acentos+U+FFFD) para captar variantes
+    #    como "ONVIO ESCRITA", "Importa<FFFD><FFFD>o", "ONVIO Escrita", etc.
+    if ($modulosItem.Count -eq 0 -and $item.nomeArea) {
+        $naNorm = Get-NomeAreaNormalizado $item.nomeArea
+        if ($areaModNorm.ContainsKey($naNorm)) {
+            $defaultMod = $areaModNorm[$naNorm]
+            if ($moduloKeywords.ContainsKey($defaultMod)) {
+                $modulosItem.Add($defaultMod)
+                $classificadosPorArea++
+            }
         }
     }
 
@@ -417,7 +454,9 @@ foreach ($modSlug in $allModSlugs) {
 
     $moduloStats[$modSlug] = @{ nome=$nomeExib; pendentes=$modPend.Count; liberadas=$modLib.Count; descartadas=$modDesc.Count; total=$saiUnicas.Count }
 
-    if ($saiUnicas.Count -eq 0) { continue }
+    # Sempre gravar nao-classificado.md (mesmo vazio), para nao deixar MD obsoleto quando
+    # a classificacao por area/keyword passa a cobrir 100% dos registros.
+    if ($saiUnicas.Count -eq 0 -and $modSlug -ne "nao-classificado") { continue }
 
     $mdLines = [System.Collections.Generic.List[string]]::new()
     $mdLines.Add("# $nomeExib"); $mdLines.Add("")

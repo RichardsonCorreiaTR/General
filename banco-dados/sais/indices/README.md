@@ -1,7 +1,7 @@
 ﻿# SAIs e PSAIs - Escrita Fiscal
 
 > Base de conhecimento de solicitacoes de alteracao da area Escrita Fiscal (PBCVS nomeArea = Escrita, Importacao, Onvio Escrita nos caches).
-> Atualizado em: 28/04/2026 15:46 | Total: 64958 registros
+> Atualizado em: 28/04/2026 18:02 | Total: 64964 registros
 
 ## Indices por dominio (modulos-keywords.json)
 

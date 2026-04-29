@@ -1,16 +1,13 @@
 ﻿# Apuracao de impostos
 
 > Dominio Escrita Fiscal | slug `apuracao-impostos`
-> Atualizado em: 28/04/2026 15:46
-> Pendentes: 639 | Liberadas: 24838 | Descartadas: 2574 | Total SAIs: 28014
+> Atualizado em: 29/04/2026 09:03
+> Pendentes: 636 | Liberadas: 24834 | Descartadas: 2573 | Total SAIs: 28007
 
-## Pendentes (639)
+## Pendentes (636)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101469 | 130424 | SAM | Normal | 27/04/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
-| 101468 | 130421 | NE | Normal | 27/04/2026 | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
-| 101452 | 130409 | SAM | Normal | 27/04/2026 | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de M |
 | 101480 | 130379 | NE | Normal | 24/04/2026 | N�o est�o sendo apresentadas todas as empresas no quadro "Selecionar empresas" d |
 | 101416 | 130365 | SAM | Normal | 24/04/2026 | Realizar testes na ferramenta de IA para an�lise de relat�rios dentro do Cont�bi |
 | 101433 | 130364 | SAM | Normal | 24/04/2026 | Realizar testes na replica��o/importa��o de dados de outra empresa devido altera |
@@ -652,10 +649,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 101432 | 130369 | NE | 24/04/2026 | N�o est�o sendo enviadas para o Busca NF-e Escrit�rio as NFS-e baixadas quando n |
-| 101321 | 130237 | NE | 20/04/2026 | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
-| 101292 | 130173 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o do imposto 7-IRPJ, quando no |
 | 101233 | 130124 | SAM | 15/04/2026 | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas que tenta  |
 | 101230 | 130119 | NE | 15/04/2026 | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
 | 101120 | 129965 | NE | 09/04/2026 | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, 33-IRPJ-P |
@@ -682,14 +676,17 @@
 | 100841 | 129541 | NE | 25/03/2026 | Em alguns casos est� ocorrendo erro de banco de dados ao gravar um lan�amento na |
 | 100945 | 129521 | NE | 25/03/2026 | SC-N�o est� sendo gerado o valor correto no item 198 do quadro 14 do informativo |
 | 100955 | 129513 | NE | 25/03/2026 | PA-N�o est�o sendo gerados dos registros 0460, C195 e C197 no informativo SPED F |
+| 100890 | 129493 | NE | 24/03/2026 | Est� sendo realizada a compensa��o de lucro e preju�zo entre Matriz e Filial de  |
+| 100795 | 129490 | NE | 24/03/2026 | Em alguns casos est� ocorrendo erro de banco de dados ao atualizar o sistema par |
+| 100902 | 129482 | NE | 24/03/2026 | Est� gerando valores incorretos para os registros K155, K156 e L100 do informati |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| st | 22865 |
-| icms | 3844 |
-| iss | 2409 |
+| st | 22861 |
+| icms | 3843 |
+| iss | 2408 |
 | rat | 1782 |
 | pis | 1336 |
 

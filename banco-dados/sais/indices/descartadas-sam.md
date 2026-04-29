@@ -1,11 +1,11 @@
 ﻿# SAM Descartadas - Escrita Fiscal
 
-> Atualizado em: 28/04/2026 15:46
+> Atualizado em: 29/04/2026 09:03
 > Total SAIs unicas: 1295
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 130271 |  | 22/04/2026 | ID 0 | - |
+| 0 | 130460 |  | 29/04/2026 | ID 0 | - |
 | 100722 | 129392 |  | 23/03/2026 | SAI Aprovada | Realizar testes no processo de Rotinas Autom�ticas na Escrita Fiscal. |
 | 100263 | 128690 |  | 02/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Integrar o 'Banco STONE' �s op��es do Open Finance dispon�veis atualmente.   |
 | 100262 | 128681 |  | 02/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Integrar o Banco Mercado Pago �s op��es do Open Finance dispon�veis atualmente. |
