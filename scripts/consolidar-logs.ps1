@@ -72,7 +72,8 @@ function Parse-LogBlock {
         nivel = "rapido"
     }
 
-    if ($Bloco -match '## \d{2}:\d{2} - \[(\w+)\]\s*(.*)') {
+    # Cabecalho: ## HH:MM - [Tipo] ou ## HH:MM:SS - [Tipo] (alinhado ao guardiao.mdc do projeto-filho)
+    if ($Bloco -match '## \d{2}:\d{2}(?::\d{2})? - \[(\w+)\]\s*(.*)') {
         $resultado.tipo = $Matches[1]
         $resultado.titulo = $Matches[2]
     }
@@ -168,9 +169,9 @@ foreach ($dir in $analistas) {
         $conteudo = Get-Content $logFile.FullName -Raw -Encoding UTF8 -ErrorAction SilentlyContinue
         if (-not $conteudo) { continue }
 
-        $blocos = $conteudo -split '(?=## \d{2}:\d{2} - )'
+        $blocos = $conteudo -split '(?=## \d{2}:\d{2}(?::\d{2})? - )'
         foreach ($bloco in $blocos) {
-            if ($bloco -notmatch '## \d{2}:\d{2} - ') { continue }
+            if ($bloco -notmatch '## \d{2}:\d{2}(?::\d{2})? - ') { continue }
 
             $metricas[$nome].acoes++
             $parsed = Parse-LogBlock -Bloco $bloco -AnalistaNome $nome
@@ -253,6 +254,7 @@ $md = @"
 | Revisao | $($acoesPorTipo["Revisao"]) |
 | Conclusao | $($acoesPorTipo["Conclusao"]) |
 | Exploracao | $($acoesPorTipo["Exploracao"]) |
+| Atualizacao | $($acoesPorTipo["Atualizacao"]) |
 | Outro | $($acoesPorTipo["Outro"]) |
 
 ## Complexidade do trabalho

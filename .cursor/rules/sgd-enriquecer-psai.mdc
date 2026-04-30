@@ -1,0 +1,27 @@
+---
+description: PSAI sem comportamento ou definicao nos dados locais — consultar SGD e atualizar dados brutos
+alwaysApply: false
+---
+
+# PSAI com campos vazios — SGD e dados brutos
+
+Quando, na base local (`banco-dados/dados-brutos/psai/*.json`, `buscar-sai.ps1` ou indices), uma **PSAI** tiver **`comportamento`** e/ou **`definicao`** vazios ou nulos (ou **`psai_descricao`** vazio e precisar do texto resumido), **nao** concluir revisao ou parecer apenas com esse export.
+
+**Agente Cursor:** executar `Consultar-PSAI-SGD.ps1` (ou `consultar_psai.py`) via **terminal** na raiz do **General** **antes** de pedir ao utilizador para colar texto do SGD. Se falhar, documentar o erro e **entao** pedir link ou colagem.
+
+## Obrigatorio
+
+1. **Consultar o SGD** para obter o texto completo da PSAI:
+   - `.\scripts\Consultar-PSAI-SGD.ps1 <numero> --json` (ou `python scripts\sgd_consulta\consultar_psai.py <numero> --json`), **ou**
+2. **Atualizar os dados brutos** com os campos devolvidos pelo SGD, gravando nos fracionados:
+   - `.\scripts\Enriquecer-PSAI-DadosBrutos.ps1 <numero>` (pede credenciais; preenche so campos que estavam vazios).
+
+Use **Enriquecer-PSAI-DadosBrutos** quando a alteracao tiver de ficar **persistida** no OneDrive para o resto do time (`dados-brutos/psai`). Use **so Consultar-PSAI-SGD** quando bastar ler para o parecer sem gravar.
+
+## NE em particular
+
+Apos extracao SGD, o JSON pode ja trazer `comportamento` corrigido pelo reconciliador NE em `consultar_psai.py` (rotulo `Comportamento:` colado a `Definicao` vazia no HTML).
+
+## Lock
+
+O enriquecimento usa `scripts\.update-lock.json` — nao correr em paralelo com `importar-sais.ps1` / `atualizar-tudo` na mesma maquina.

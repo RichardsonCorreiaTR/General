@@ -7,6 +7,17 @@
 > - **Validação das NEs v1** — regras de NE → ver `GUIA-validacao-ne.md` (guia dedicado)
 >
 > Use como referência rápida durante a definição. Para detalhes e exemplos visuais, consulte o manual original de cada módulo.
+>
+> **SharePoint — biblioteca oficial dos manuais** (login Thomson Reuters; use o ficheiro da biblioteca, não cópias antigas):
+> - Site **Analisadores** → **Documentos Partilhados** → pasta **Manuais da Gerência de Produtos**  
+> - Atalho: [Abrir pasta no SharePoint](https://trten.sharepoint.com/sites/Analisadores/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAnalisadores%2FShared%20Documents%2FManuais%20da%20Ger%C3%AAncia%20de%20Produtos&sortField=LinkFilename&isAscending=true&viewid=d481c63d%2Debfa%2D4b75%2D90d9%2D0b27e28c52df)
+>
+> **Manutenção deste guia (processo sugerido)** quando a Gerência publicar nova versão de um manual:
+> 1. Na pasta acima, confirmar **nome do ficheiro**, **versão** e **data** (metadados SharePoint ou capa/rodapé do PDF).
+> 2. Atualizar o cabeçalho deste documento e a tabela da secção **10** (abaixo).
+> 3. Ajustar a secção **13 — Referência cruzada** se números de secção do manual oficial mudarem.
+> 4. Incluir a alteração no release do projeto-filho (`CHANGELOG` / pacote para analistas).
+> 5. Opcional: validar com o agente `revisar-psai.mdc` numa PSAI de exemplo.
 
 ---
 
@@ -190,6 +201,25 @@ Use a hierarquia do manual (seção 1.17) para definir alíquota **interna** e *
 | Novos utilitários/instaladores | Mensagem padrão de diretório raiz; já está subentendida |
 
 ---
+
+## 10. Fontes no SharePoint e inventário (preencher na revisão)
+
+A pasta **Manuais da Gerência de Produtos** pode conter outros documentos além dos quatro que sustentam este resumo. Mantenha a tabela alinhada à biblioteca após cada auditoria (nome exato do ficheiro como aparece no SharePoint).
+
+| Ficheiro na biblioteca (nome exato) | Versão / data no manual | Coberto neste guia (secções) | Última conferência |
+|-------------------------------------|-------------------------|------------------------------|--------------------|
+| *(preencher)* | Manual Pré-SAI/SAI Geral **v1.3.9** (16/10/2024) | 1–9, 13 | |
+| *(preencher)* | Manual Pré-SAI/SAI Importação **v1.5** | 11, 13 | |
+| *(preencher)* | Manual de interface desktop **v1.1** | 12, 13 | |
+| *(preencher)* | Validação das NEs **v1** | Guia dedicado: `GUIA-validacao-ne.md` | |
+
+**Melhorias de processo recomendadas**
+
+- **Inventário único**: designar um responsável (ex.: gerente de produto) para validar a tabela acima **a cada publicação** de manual na biblioteca.
+- **Sem drift silencioso**: se o SharePoint tiver versão mais nova que o cabeçalho deste ficheiro, **não** continuar a citar versão antiga no `TEMPLATE-psai.md` / checklists até o guia ser atualizado.
+- **Opcional OneDrive**: se a TI permitir, sincronizar só esta pasta para um caminho local read-only (ex.: atalho em `referencia/manuais-gerencia/`) para a IA citar excertos **sem** substituir o SharePoint como fonte normativa.
+- **Ligação ao revisor**: o `revisar-psai.mdc` deve continuar a apontar para **este** ficheiro; após mudar versões de manual, rode uma revisão de PSAI piloto para validar checklists.
+- **Auditoria aprofundada**: ver `README-auditoria-psai.md` e `PROMPT-auditoria-psai.md` na mesma pasta `templates/`.
 
 ---
 

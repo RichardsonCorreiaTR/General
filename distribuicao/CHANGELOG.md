@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.14 - 30/04/2026
+
+Revisao PSAI: fluxo obrigatorio de consulta ao SGD antes de pedir colagem (revisar-psai, sgd-enriquecer). consolidar-logs.ps1 aceita cabecalhos HH:MM:SS alinhados ao guardiao. Novos scripts Publicar-LogAnalista.ps1 (Admin) e Publicar-LogParaConsolidacao.ps1 (filho). logs/README.md com ponte referencia/logs e logs/analistas. guardiao e padroes atualizados. README validacoes-psai, scripts README, PROJETO filho e Admin.
+
+---
+
 ## v2.4.13 - 29/04/2026
 
 Indices SAIs: gerador tolera alias importao/importacao no modulo; nao-classificado.md sempre gerado (vazio quando nao houver). Keywords em modulos-keywords.json ampliadas para classificacao por dominio. Admin: agendar-atualizacao.ps1 (seg-sex), sincronizar-sharepoint.ps1 inclui scripts de agendamento e atualizacao silenciosa. Scripts buscar-sai e setup-odbc alinhados ao pacote do analista.
@@ -142,6 +148,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

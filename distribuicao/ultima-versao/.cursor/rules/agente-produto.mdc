@@ -493,6 +493,12 @@ transferencia entre empresas. Isso pode ser um gap."
 
 ---
 
+## Validacao de texto PSAI/SAI (manual de padroes)
+
+Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md`, `GUIA-validacao-ne.md`), seguir `@revisar-psai.mdc` ate o **Passo 6**: registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
+
+---
+
 ## Checklist estrategico (10 perguntas)
 
 Este checklist deve ser apresentado em dois momentos:

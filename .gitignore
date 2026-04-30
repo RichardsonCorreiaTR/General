@@ -15,6 +15,12 @@ Desktop.ini
 # Opcional: credenciais locais (se criar)
 .env
 *.local.json
+# SGD: credenciais só na sua máquina (consulta Playwright)
+scripts/sgd_consulta/.sgd-credentials.local
+# Projeto-filho: consultas SGD por analista (credenciais, saídas pesadas, sessão)
+projeto-filho/data/sgd-psai-consultas/.sgd-credentials.local
+projeto-filho/data/sgd-psai-consultas/session_state*.json
+projeto-filho/data/sgd-psai-consultas/consultas/
 
 # Credenciais locais (nunca commitar)
 config/conexao-odbc.json
@@ -30,11 +36,22 @@ logs-consolidado-temp.json
 # Lock de atualizacao (evita execucoes concorrentes)
 scripts/.update-lock.json
 
+# SGD Playwright: estado de sessao (cookies) — nao versionar
+scripts/sgd_consulta/data/session_state*.json
+# Consultas PSAI arquivadas (HTML, capturas — podem conter dados internos)
+scripts/sgd_consulta/data/consultas/arquivo/
+scripts/sgd_consulta/data/consultas/logs/
+# JSON de consultas PSAI locais (nao versionar saidas da ferramenta)
+scripts/sgd_consulta/data/consultas/psai_*.json
+
 # Estado / temporarios da pipeline de extracao SAIs
 atualizacao/.stats-temp.json
 atualizacao/.extracao-temp.json
 atualizacao/log-importacao.txt
 atualizacao/status.json
+
+# Apresentacoes acidentais dentro de pacotes de atualizacao (nao versionar)
+atualizacao/**/templates/*.pptx
 
 # Output de scripts de teste
 scripts/gerar-indices-output.txt

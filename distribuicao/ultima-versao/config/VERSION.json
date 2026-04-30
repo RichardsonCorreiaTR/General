@@ -1,7 +1,7 @@
 ﻿{
     "compativel_com_admin":  "2.5",
-    "changelog":  "Indices SAIs: gerador tolera alias importao/importacao no modulo; nao-classificado.md sempre gerado (vazio quando nao houver). Keywords em modulos-keywords.json ampliadas para classificacao por dominio. Admin: agendar-atualizacao.ps1 (seg-sex), sincronizar-sharepoint.ps1 inclui scripts de agendamento e atualizacao silenciosa. Scripts buscar-sai e setup-odbc alinhados ao pacote do analista.",
-    "data":  "2026-04-29",
-    "hash_validacao":  "EF5E333FC52F226E8DE12C52C008031C",
-    "versao":  "2.4.13"
+    "changelog":  "Revisao PSAI: fluxo obrigatorio de consulta ao SGD antes de pedir colagem (revisar-psai, sgd-enriquecer). consolidar-logs.ps1 aceita cabecalhos HH:MM:SS alinhados ao guardiao. Novos scripts Publicar-LogAnalista.ps1 (Admin) e Publicar-LogParaConsolidacao.ps1 (filho). logs/README.md com ponte referencia/logs e logs/analistas. guardiao e padroes atualizados. README validacoes-psai, scripts README, PROJETO filho e Admin.",
+    "data":  "2026-04-30",
+    "hash_validacao":  "34BCF4969CCDE62DCD266AF7EAB04580",
+    "versao":  "2.4.14"
 }

@@ -303,6 +303,15 @@ O gerente usa para: (1) entender como cada analista pensa e trabalha,
 - **Limite por arquivo**: maximo **25 entradas** por arquivo diario.
   Se atingir 25, crie `{AAAA-MM-DD}-2.md`, depois `-3.md`, etc.
 
+### Alinhamento com `consolidar-logs.ps1` (clone Admin / General)
+
+O gerente gera metricas com `General/scripts/consolidar-logs.ps1`, que le apenas ficheiros em **`General/logs/analistas/<slug-do-analista>/`** com nome **`AAAA-MM-DD.md`** (ou `-2.md`, `-3.md`).
+
+- **`referencia/logs/` aqui no projeto-filho** e o diario **local** desta maquina (OneDrive do analista). **Nao** e a mesma pasta que `logs/analistas/` do Admin.
+- Para as interacoes entrarem no consolidado semanal/mensal, o conteudo (ou copias) deve existir em `logs/analistas/<slug>/` no repositorio **General**, com o **mesmo** formato de entradas (`## HH:MM` ou `## HH:MM:SS` + `[Tipo]` uma palavra, secoes `###` como abaixo). Ver **`logs/README.md`** no General: exemplos de copia e convencao do `slug`.
+- O script de consolidacao aceita **HH:MM** e **HH:MM:SS** nos cabecalhos das entradas.
+- Automacao: na raiz do filho, `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>` (copia `referencia\logs\` para o General; ver `logs/README.md` no repositorio General).
+
 ### Dois niveis de log
 
 **NIVEL COMPLETO** -- para interacoes substanciais:

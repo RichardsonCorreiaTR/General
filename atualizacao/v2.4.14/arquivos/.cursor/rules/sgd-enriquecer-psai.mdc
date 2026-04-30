@@ -1,0 +1,34 @@
+---
+description: PSAI sem texto completo — consultar SGD no projeto-filho; enriquecer dados brutos so no General (GP)
+alwaysApply: false
+---
+
+# PSAI com campos vazios — SGD e dados brutos (projeto-filho)
+
+Quando, na base em `referencia/banco-dados/dados-brutos/psai/*.json` (ou indices em `referencia/banco-dados/sais/indices/`), uma **PSAI** tiver **`comportamento`** e/ou **`definicao`** ou **`psai_descricao`** vazios, **nao** concluir revisao ou parecer apenas com esse export.
+
+**Agente Cursor:** executar `.\scripts\Consultar-PSAI-SGD.ps1` via **terminal** (a partir da raiz `projeto-filho`) **antes** de pedir ao utilizador para colar texto ou de perguntar apenas o «tema» da PSAI. Se a consulta falhar, documentar o erro e **entao** pedir link ou colagem.
+
+## Obrigatorio para o analista
+
+1. **Consultar o SGD** para obter o texto completo:
+   - `.\scripts\Consultar-PSAI-SGD.ps1 <numero> --json`  
+   Saida local: `data/sgd-psai-consultas/consultas/psai_<numero>.json` (e pasta `arquivo/` se nao usar `--no-arquivo`).
+
+2. **Nao** modificar ficheiros em `referencia/` (guardiao — leitura apenas).
+
+## Enriquecer `dados-brutos` (escrita no OneDrive / clone Admin)
+
+Para **persistir** texto nos JSON fracionados partilhados (`banco-dados/dados-brutos/psai/`), quem tiver **escrita** no repositorio **General** (geralmente o GP) corre no clone Admin:
+
+- `.\scripts\Enriquecer-PSAI-DadosBrutos.ps1 <numero>`
+
+No PC do analista, se existir pasta **irma** `General` ao lado de `projeto-filho`, pode usar o wrapper equivalente:
+
+- `.\scripts\Enriquecer-PSAI-DadosBrutos.ps1 <numero>` (no filho; chama o Python do General)
+
+**Lock:** `scripts\.update-lock.json` no General — nao correr em paralelo com `importar-sais` / `atualizar-tudo`.
+
+## NE em particular
+
+Apos consulta SGD, o JSON pode trazer `comportamento` corrigido pelo reconciliador NE no `consultar_psai.py` do General (rotulo `Comportamento:` com `Definicao` vazia no HTML).

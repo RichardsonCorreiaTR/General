@@ -135,6 +135,7 @@ A IA NAO deve apresentar resultados baseados apenas nos indices MD.
 | `.\scripts\verificar-ambiente.ps1` | Diagnostico completo do ambiente |
 | `.\scripts\atualizar-projeto.ps1` | Atualiza para versao mais recente |
 | `.\scripts\atualizar-codigo.ps1` | Baixa codigo-fonte do git |
+| `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>` | Copia `referencia/logs/` diarios para o clone **General** em `logs/analistas/<slug>/` (metricas do gerente; ver `logs/README.md` no Admin). |
 
 ---
 

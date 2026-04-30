@@ -70,6 +70,8 @@ $arqsCopia = @(
     "scripts\importar-sais.ps1",
     "scripts\extrair-sais.ps1",
     "scripts\gerar-indices-sais.ps1",
+    "scripts\consolidar-logs.ps1",
+    "scripts\Publicar-LogAnalista.ps1",
     "scripts\agendar-atualizacao.ps1",
     "scripts\atualizar-silencioso.ps1",
     "config\time-analistas.json",
@@ -84,6 +86,7 @@ $arqsCopia = @(
     "projeto-filho\scripts\buscar-sai.ps1",
     "projeto-filho\scripts\verificar-ambiente.ps1",
     "projeto-filho\scripts\corrigir-symlinks.ps1",
+    "projeto-filho\scripts\Publicar-LogParaConsolidacao.ps1",
     "projeto-filho\scripts\setup-odbc.ps1",
     "projeto-filho\.cursor\rules\agente-codigo.mdc",
     "projeto-filho\.cursor\rules\agente-produto.mdc",
@@ -91,7 +94,9 @@ $arqsCopia = @(
     "projeto-filho\.cursor\rules\onboarding.mdc",
     "projeto-filho\.cursor\rules\padroes.mdc",
     "projeto-filho\.cursor\rules\projeto.mdc",
-    "projeto-filho\.cursor\rules\revisar-psai.mdc"
+    "projeto-filho\.cursor\rules\revisar-psai.mdc",
+    "projeto-filho\.cursor\rules\sgd-enriquecer-psai.mdc",
+    "logs\README.md"
 )
 
 # Pastas espelhadas seletivas (banco-dados/sais/indices, mas SEM dados-brutos pesados)

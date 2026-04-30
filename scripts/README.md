@@ -63,12 +63,21 @@
 - **Dependencias**: Dados brutos em `banco-dados/dados-brutos/` acessiveis (via symlink).
 - **Recuperacao**: Se symlink quebrado, rodar `corrigir-symlinks.ps1` no projeto filho. Se dados ausentes, executar extracao.
 
+### Publicar-LogAnalista.ps1
+
+- **Proposito**: Copia diarios `AAAA-MM-DD.md` (e `-2.md`, …) de `projeto-filho/referencia/logs` ou de `-OrigemDir` para `logs/analistas/<slug>/`, para o `consolidar-logs.ps1` contar interacoes.
+- **Parametros**: `-AnalistaSlug` (obrigatorio), `-Data` (opcional), `-ProjetoFilhoRoot` ou `-OrigemDir`, `-GeneralRoot` (opcional), `-SimularApenas`.
+- **Exemplo**: `.\Publicar-LogAnalista.ps1 -AnalistaSlug rafaela-gubert-ribeiro -ProjetoFilhoRoot "C:\CursorEscrita\projeto-filho"`
+- **No projeto-filho**: `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>` (chama este script).
+- **Dependencias**: Ficheiros fonte existentes no dia indicado.
+- **Recuperacao**: Ver mensagem de erro (origem ou slug).
+
 ### consolidar-logs.ps1
 
 - **Proposito**: Consolida logs diarios em relatorio resumido para revisao do gerente.
-- **Parametros**: Nenhum obrigatorio.
-- **Saida esperada**: Arquivo consolidado com resumo de atividades.
-- **Dependencias**: Logs em `referencia/logs/`.
+- **Parametros**: `-Periodo semana|mes`, opcional `-Analista <slug-pasta>`.
+- **Saida esperada**: `logs/consolidado/semana-AAAA-MM-DD.md` ou `mes-AAAA-MM-DD.md`.
+- **Dependencias**: Ficheiros `*.md` em `logs/analistas/<slug>/` (nomes `AAAA-MM-DD.md`). Formato das entradas: ver `logs/README.md` (ponte com `projeto-filho/referencia/logs/`).
 - **Recuperacao**: Re-executar. Nao altera logs originais.
 
 ### dashboard-extracao.ps1

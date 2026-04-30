@@ -76,8 +76,8 @@ CursorEscrita - General/            ← PROJETO ADMIN (este)
 │   ├── pendente/                   ← Aguardando revisão do gerente
 │   ├── aprovado/                   ← Aprovado (pronto para banco-dados)
 │   └── devolvido/                  ← Devolvido com feedback
-├── logs/                           ← Atividades do time
-│   ├── analistas/{nome}/           ← Log por analista por dia
+├── logs/                           ← Atividades do time (ver `logs/README.md`: ponte com `referencia/logs/` do filho)
+│   ├── analistas/{nome}/           ← Log por analista por dia (entrada do consolidar-logs.ps1)
 │   └── consolidado/               ← Resumos semanais
 ├── analises-ia/                    ← Análises sob demanda
 └── projeto-filho/                  ← Pacote para distribuir aos analistas
@@ -255,7 +255,7 @@ e ficam registrados em `config/caminhos.json`.
 5. Periodicamente rodar `atualizar-tudo.bat` para atualizar SAIs e codigo
 6. Revisar definicoes: `.\scripts\revisar-definicao.ps1 -Acao listar`
 7. Gerar pacote de atualizacao: `.\scripts\gerar-atualizacao.ps1 -Versao "X.Y.Z" -Changelog "desc"`
-8. Consolidar logs: `.\scripts\consolidar-logs.ps1 -Periodo semana`
+8. Consolidar logs: `.\scripts\consolidar-logs.ps1 -Periodo semana` (requer `.md` em `logs/analistas/`; formato em `logs/README.md`)
 9. Arquivar logs antigos: `.\scripts\arquivar-logs.ps1` (ou `-SimularApenas` para testar)
 
 ### Para o Analista (Projeto Filho)
@@ -265,6 +265,7 @@ e ficam registrados em `config/caminhos.json`.
 4. Uso diario: explorar base de conhecimento, analisar demandas, confrontar codigo
 5. A IA conduz a analise completa e gera PSAI/SAI no formato tradicional
 6. O analista finaliza no SGD (submissao real via especialista)
+7. (Opcional) Publicar o diario `referencia/logs/` para metricas do gerente: `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug-da-pasta-em-logs-analistas>` — ver `logs/README.md` no General; em monorepo o General e detetado automaticamente; fora dele, `-GeneralRoot` ou `GENERAL_REPO_ROOT`.
 
 ---
 
@@ -281,3 +282,4 @@ e ficam registrados em `config/caminhos.json`.
 | 2.4 | 2026-04-10 | Agente IA + Gerente | Republicacao pacote projeto-filho; distribuicao/ultima-versao alinhada Escrita; gerar-atualizacao.ps1: compativel_com_admin parametrizado + hash_validacao (MD5 guardiao) |
 | 2.5 | 2026-04-10 | Agente IA + Gerente | sdd-construcao.md v4.0 (Escrita SDD, BuscaSAI multi-area); sdd-verificacao + templates apresentacao/fluxo alinhados Escrita; pacote filho republicado |
 | 2.6 | 2026-04-10 | Agente IA + Gerente | Higiene documental: agente-projeto-sdd Escrita; CHANGELOG nota BuscaSAI; planejamento v1.1.0 -> obsoleto/planejamento-v1.1.0-2026-04-10; referencias ADR atualizadas |
+| 2.7 | 2026-04-30 | Agente IA + Gerente | Pacote projeto-filho **v2.4.14**: revisao PSAI com consulta SGD obrigatoria antes de colagem; consolidacao de logs (HH:MM:SS); scripts `Publicar-LogAnalista` / `Publicar-LogParaConsolidacao`; `logs/README.md`; sincronizar SharePoint inclui novos scripts e regras |

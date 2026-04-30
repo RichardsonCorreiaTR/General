@@ -7,6 +7,18 @@ alwaysApply: false
 
 Ativado quando o gerente ou analista pedir para **verificar**, **revisar** ou **checar** uma PSAI ou SAI.
 
+Para **auditoria aprofundada** (trâmites, nota numerica, checklists por manual PDF, modulo Processos quando houver `.md` de apoio), use tambem `@templates/PROMPT-auditoria-psai.md` e os ficheiros em `templates/README-auditoria-psai.md`.
+
+## Fluxo obrigatorio — export local sem texto suficiente
+
+Quando o pedido trouxer um **numero de PSAI** (ou SAI) e faltar texto necessario a revisao (`comportamento`, `definicao`, `psai_descricao` ou campos equivalentes no export):
+
+1. **Antes** de concluir «dados limitados na base» ou de **pedir colagem** manual do SGD, o agente deve **tentar** `.\scripts\Consultar-PSAI-SGD.ps1 <numero> --json` na raiz deste repositorio **General** (credenciais interativas) e **ler** o JSON em `scripts/sgd_consulta/data/consultas/psai_<numero>.json` e, se existir, o pacote em `.../consultas/arquivo/psai_<numero>/...`.
+2. Para **persistir** nos `dados-brutos` partilhados, seguir `@sgd-enriquecer-psai.mdc` e `scripts\Enriquecer-PSAI-DadosBrutos.ps1` quando aplicavel (geralmente GP).
+3. **So se** a consulta **falhar**: explicar a causa e pedir link ou colagem. Se o utilizador declarar impossibilidade de rede/credenciais, registar no parecer.
+
+**Nao** pedir apenas o «tema» ou colagem **sem** tentativa documentada do passo 1, salvo o caso do ponto 3.
+
 ## Passo 1 — Identificar o tipo
 
 Leia o campo **Origem** (ou contexto) e classifique:
@@ -20,11 +32,21 @@ Leia o campo **Origem** (ou contexto) e classifique:
 
 Informe o tipo identificado antes de continuar.
 
+## NE — Campos a revisar (prioridade)
+
+Para **NE** (e revisoes onde o tipo e NE), aplicar sempre esta ordem:
+
+1. **Comportamento** — e o **campo principal** da NE. Valide ortografia, estrutura (topicos MAIUSCULO + negrito, listas, menus/caminhos), ambiguidade, exemplos e conformidade com `GUIA-padroes-psai.md` e `GUIA-validacao-ne.md` **aqui em primeiro lugar**. A maioria do que o desenvolvimento e o teste precisam esta neste campo.
+2. **Definicao** — verifique **se existe conteudo** (texto/HTML significativo). Se **existir**, valide com os mesmos padroes. Se **estiver vazio ou ausente**, **nao exija** nem marque como nao conforme por omissao: e **normal** a maioria das NEs nao ter nada em definicao.
+3. **Descricao da PSAI** (`psai_descricao`, quando presente no export) — complementar; use para contexto e para qual/onde/quando quando nao estiver todo no comportamento.
+
+Se no export local faltar `comportamento` e/ou `definicao` e/ou `psai_descricao` **ou** a entrada for incompleta para revisar: cumprir a secao **«Fluxo obrigatorio — export local sem texto suficiente»**; para persistir em `banco-dados/dados-brutos`, usar `scripts\Enriquecer-PSAI-DadosBrutos.ps1` quando for politica da equipa (ver `sgd-enriquecer-psai.mdc`). So depois emitir parecer. **Nao** inferir «conforme» sem ler o conteudo real.
+
 ## Passo 2 — Verificar ortografia e gramatica
 
-- Verifique erros de ortografia, concordancia e pontuacao em todo o texto.
+- Verifique erros de ortografia, concordancia e pontuacao em **todos os campos com texto** relevantes ao tipo (para NE: sobretudo **comportamento**; depois definicao se houver; demais campos conforme existam).
 - Aponte cada ocorrencia com a correcao sugerida.
-- **NE**: a descricao nao pode ter quebra de linhas.
+- **NE**: a descricao resumida (quando existir) nao pode ter quebra de linhas indevidas; o mesmo raciocinio aplica-se a trechos normativos dentro do **comportamento**.
 - Sigla de UF: deve estar em maiusculo no inicio da descricao (quando aplicavel).
 
 ## Passo 3 — Verificar frases com duplo sentido ou ambiguidade
@@ -45,7 +67,7 @@ Informe o tipo identificado antes de continuar.
 Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para NE, `templates/GUIA-validacao-ne.md`):
 
 ### Para todos os tipos
-- [ ] Descricao contem as 3 informacoes obrigatorias (qual erro/situacao, onde, quando)?
+- [ ] Texto principal do pedido contem as 3 informacoes obrigatorias onde o manual exige (qual erro/situacao, onde, quando)? **NE:** exigir no **comportamento** (e em descricao PSAI se for onde estiver o resumo); nao exigir qual/onde/quando **dentro de definicao** se o campo estiver vazio.
 - [ ] Topicos em MAIUSCULO + negrito; subtopicos com primeira letra maiuscula + negrito?
 - [ ] Listas numeradas; reiniciadas a cada topico?
 - [ ] Telas: imagem abaixo do texto, explicacao dos campos abaixo da imagem?
@@ -55,7 +77,7 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para N
 - [ ] Checklist da secao 1.30 do Manual PSAI verificado?
 
 ### Especifico por tipo
-- **NE**: descricao com "qual/onde/quando"; banco de cliente usa "Em alguns casos..." sem "quando"; comportamento separado por topicos de Menu/Submenu; topico "Banco de Dados" presente se reproduzido em banco proprio; classificacao (Grave/Alta/Media) definida.
+- **NE**: **comportamento** e o foco da revisao (padroes completos). **Definicao:** avaliar se ha conteudo; se houver, validar; se vazio, aceitar. Qual/onde/quando; banco de cliente com "Em alguns casos..." sem "quando"; comportamento separado por topicos de Menu/Submenu; topico "Banco de Dados" presente se reproduzido em banco proprio; classificacao (Grave/Alta/Media) definida.
 - **SAM**: descricao clara da limitacao ou necessidade; cenarios de uso cobertos; impacto em outros modulos avaliado.
 - **SAL/SAIL**: base legal citada; data de vigencia informada; comportamento anterior x novo descrito.
 
@@ -68,6 +90,16 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para N
 - [ ] Nomenclatura de janela conforme Manual de Janelas v1.1?
 - [ ] Botoes (Novo/Editar/Gravar/Listagem/Fechar/OK) corretos?
 - [ ] Foco e maximizar definidos?
+
+## Passo 6 — Registo persistido por numero da PSAI (obrigatorio se houver numero)
+
+Antes do parecer final, quando existir **numero de PSAI** (ou SAI) no pedido:
+
+1. **Ler** `banco-dados/sais/validacoes/psai-<numero>.md` se existir (ver `banco-dados/sais/validacoes/README.md`).
+2. No parecer, incluir secao **«Evolucao vs validacao anterior»**: se havia ficheiro, indicar **melhoras** (pontos anteriormente nao conformes agora corrigidos), **pendente** (ainda nao resolvido) e **novos** achados. Se a situacao ou **tramites** no SGD mudaram (ex.: *Respondida pelo Coordenador*), relacionar essa mudanca com o texto da PSAI.
+3. **Gravar** no mesmo caminho: criar ou **atualizar** `psai-<numero>.md` com uma **nova** entrada `## AAAA-MM-DD — <autor>` no **topo** do historico (modelo: `templates/TEMPLATE-validacao-psai.md`). **Nao apagar** entradas antigas.
+
+Sem numero identificavel (consulta generica), o passo 6 nao aplica.
 
 ## Formato do parecer
 
@@ -90,7 +122,13 @@ Ao final, emita sempre neste formato:
 
 ### Conformidade com padroes
 - [itens nao conformes com referencia ao guia, ou "Conforme"]
+- **NE:** discriminar **Comportamento** (obrigatorio na analise) e **Definicao** (so se houver texto; se vazio, indicar "Definicao vazia — esperado / nao aplicavel").
+
+### Evolucao vs validacao anterior
+- [Se existir `banco-dados/sais/validacoes/psai-<N>.md`: melhoras, pendente, regressoes; senao: "Primeira validacao registada" apos gravar o ficheiro]
 
 ### Decisao sugerida
 APROVADO / DEVOLVER (com motivo) / ESCALAR
 ```
+
+Apos emitir o parecer no chat, **atualizar** `banco-dados/sais/validacoes/psai-<N>.md` conforme passo 6 (o conteudo do chat e a fonte da nova entrada).
