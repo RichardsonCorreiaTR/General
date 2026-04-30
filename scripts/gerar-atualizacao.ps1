@@ -55,6 +55,13 @@ $versionData = @{
 Set-Content -Path $versionFile -Value $versionData -Encoding UTF8
 Write-Host "[1/6] VERSION.json atualizado (v$Versao, admin $CompativelComAdmin, hash MD5 guardiao)" -ForegroundColor Green
 
+# Modulo Python SGD: Admin -> projeto-filho (repo) antes de empacotar
+$syncSgdScript = Join-Path $scriptDir "sync-sgd-consulta-para-projeto-filho.ps1"
+if (Test-Path -LiteralPath $syncSgdScript) {
+    Write-Host "[sync] scripts/sgd_consulta (Python) -> projeto-filho/scripts/sgd_consulta" -ForegroundColor DarkGray
+    & $syncSgdScript
+}
+
 # Preparar diretorio de distribuicao
 New-Item -ItemType Directory -Path $distDir -Force | Out-Null
 New-Item -ItemType Directory -Path $ultimaVersaoDir -Force | Out-Null

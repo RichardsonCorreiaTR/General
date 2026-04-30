@@ -91,6 +91,15 @@ else {
 
 $pkg = Split-Path -Parent $consultar
 $venvPy = Join-Path $pkg ".venv\Scripts\python.exe"
+$pythonDisponivel = (Test-Path -LiteralPath $venvPy) -or [bool](Get-Command python -ErrorAction SilentlyContinue)
+if (-not $pythonDisponivel) {
+    Write-Error @'
+Python nao encontrado (nem .venv em scripts\sgd_consulta).
+
+1) Instale Python 3.10+ (https://www.python.org/downloads/) e marque a opcao de adicionar ao PATH.
+2) Depois rode: .\scripts\setup-sgd-python.ps1
+'@
+}
 try {
     if (Test-Path $venvPy) {
         & $venvPy $consultar @ArgumentList
