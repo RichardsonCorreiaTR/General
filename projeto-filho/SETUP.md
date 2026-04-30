@@ -46,6 +46,21 @@ O instalador vai:
 2. A IA inicia o **wizard de onboarding** automaticamente
 3. Siga as orientacoes -- ela vai te apresentar o projeto e os comandos
 
+### Consulta PSAI no SGD (`Consultar-PSAI-SGD.ps1`)
+
+O modulo Python fica em **`projeto-filho\scripts\sgd_consulta\`** (incluido no pacote; nao precisa do repositorio General ao lado, salvo se quiser apontar `GENERAL_REPO_ROOT` para outro clone).
+
+Na **primeira vez**, num PowerShell:
+
+```
+cd C:\CursorEscrita\projeto-filho\scripts\sgd_consulta
+python -m venv .venv
+.\.venv\Scripts\pip install -r requirements.txt
+.\.venv\Scripts\python -m playwright install
+```
+
+Depois: `cd ..` e `.\Consultar-PSAI-SGD.ps1 <numero-psai> --json`
+
 ## Instalacao Manual (se o instalador falhar)
 
 ### Pre-requisitos

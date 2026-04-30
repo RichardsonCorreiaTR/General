@@ -22,6 +22,13 @@ projeto-filho/data/sgd-psai-consultas/.sgd-credentials.local
 projeto-filho/data/sgd-psai-consultas/session_state*.json
 projeto-filho/data/sgd-psai-consultas/consultas/
 
+# SGD embutido em projeto-filho/scripts (venv e saidas locais)
+projeto-filho/scripts/sgd_consulta/.venv/
+projeto-filho/scripts/sgd_consulta/__pycache__/
+projeto-filho/scripts/sgd_consulta/.sgd-credentials.local
+projeto-filho/scripts/sgd_consulta/data/session_state*.json
+projeto-filho/scripts/sgd_consulta/data/consultas/
+
 # Credenciais locais (nunca commitar)
 config/conexao-odbc.json
 

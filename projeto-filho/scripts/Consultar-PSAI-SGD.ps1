@@ -21,11 +21,23 @@ $ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
-$generalRoot = Split-Path -Parent $projetoDir
-$consultar = Join-Path $generalRoot "scripts\sgd_consulta\consultar_psai.py"
+. (Join-Path $scriptDir "lib-sgd-caminhos.ps1")
+$pkg = Get-SgdConsultaPkgDir -ProjetoFilhoRoot $projetoDir
+$consultar = if ($pkg) { Join-Path $pkg "consultar_psai.py" } else { "" }
 
-if (-not (Test-Path $consultar)) {
-    Write-Error "Não encontrado: $consultar (esperado General/scripts/sgd_consulta a partir de projeto-filho)."
+if (-not (Test-Path -LiteralPath $consultar)) {
+    Write-Error @"
+Nao foi encontrado consultar_psai.py (modulo SGD).
+
+Ordem de procura:
+  1) variavel de ambiente GENERAL_REPO_ROOT (raiz do clone General) + scripts\sgd_consulta
+  2) projeto-filho\scripts\sgd_consulta (pacote completo)
+  3) pasta irma do projeto-filho: ..\scripts\sgd_consulta (monorepo)
+  4) ..\General\scripts\sgd_consulta (instalacao CursorEscrita\General + projeto-filho)
+
+Atualize o projeto-filho (.\scripts\atualizar-projeto.ps1) para a ultima versao do pacote (inclui scripts\sgd_consulta),
+ou defina GENERAL_REPO_ROOT apontando para a raiz do repositorio General.
+"@
 }
 
 $dataRoot = Join-Path $projetoDir "data\sgd-psai-consultas"

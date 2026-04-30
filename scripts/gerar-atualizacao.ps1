@@ -71,6 +71,19 @@ foreach ($pasta in $pastasIncluir) {
         Copy-Item -Path $src -Destination (Join-Path $tempPack $pasta) -Recurse -Force
     }
 }
+# Modulo SGD: garantir copia a partir do Admin (fonte de verdade), para analistas sem General ao lado do filho
+$sgdAdmin = Join-Path (Split-Path -Parent $fonteDir) "scripts\sgd_consulta"
+$sgdPack = Join-Path $tempPack "scripts\sgd_consulta"
+if (Test-Path -LiteralPath $sgdAdmin) {
+    if (Test-Path -LiteralPath $sgdPack) { Remove-Item $sgdPack -Recurse -Force }
+    New-Item -ItemType Directory -Force -Path $sgdPack | Out-Null
+    Get-ChildItem -LiteralPath $sgdAdmin -File | Where-Object { $_.Name -notmatch '^\.sgd-credentials\.local$' } |
+        ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $sgdPack $_.Name) -Force }
+    $dataSgd = Join-Path $sgdPack "data"
+    New-Item -ItemType Directory -Force -Path $dataSgd | Out-Null
+    if (-not (Test-Path (Join-Path $dataSgd ".gitkeep"))) { Set-Content (Join-Path $dataSgd ".gitkeep") "" }
+    Write-Host "  sgd_consulta embutido no pacote (scripts/sgd_consulta)" -ForegroundColor DarkGray
+}
 foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", ".cursorignore")) {
     $src = Join-Path $fonteDir $arq
     if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $tempPack $arq) -Force }
