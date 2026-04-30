@@ -28,3 +28,46 @@ function Get-SgdConsultaPkgDir {
     }
     return $null
 }
+
+function Test-SgdCredentialsLocalFile {
+    <#
+    .SYNOPSIS
+      True se existir .sgd-credentials.local com linha SGD_USERNAME= (nao so comentarios).
+    #>
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$DataRootSgd
+    )
+    $p = Join-Path $DataRootSgd ".sgd-credentials.local"
+    if (-not (Test-Path -LiteralPath $p)) { return $false }
+    foreach ($line in Get-Content -LiteralPath $p -ErrorAction SilentlyContinue) {
+        $t = $line.Trim()
+        if ($t.Length -eq 0 -or $t.StartsWith("#")) { continue }
+        if ($t -match '^\s*SGD_USERNAME\s*=') { return $true }
+    }
+    return $false
+}
+
+function Save-SgdCredentialsLocalFile {
+    <#
+    .SYNOPSIS
+      Grava SGD_USERNAME / SGD_PASSWORD no formato esperado por env.py (igual ao instalador).
+    #>
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$DataRootSgd,
+        [Parameter(Mandatory = $true)]
+        [string]$UserName,
+        [Parameter(Mandatory = $true)]
+        [string]$PlainPassword
+    )
+    New-Item -ItemType Directory -Force -Path $DataRootSgd | Out-Null
+    $passEsc = $PlainPassword.Replace('\', '\\').Replace('"', '\"')
+    $credPath = Join-Path $DataRootSgd ".sgd-credentials.local"
+    $lines = @(
+        "# Credenciais SGD (local). Nao partilhar.",
+        "SGD_USERNAME=$($UserName.Trim())",
+        "SGD_PASSWORD=`"$passEsc`""
+    )
+    Set-Content -Path $credPath -Value ($lines -join "`n") -Encoding UTF8
+}

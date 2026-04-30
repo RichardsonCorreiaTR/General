@@ -1,7 +1,7 @@
 ﻿{
     "compativel_com_admin":  "2.5",
-    "changelog":  "v2.4.15: env.py le credenciais SGD em projeto-filho/data/sgd-psai-consultas quando o modulo Python esta em projeto-filho/scripts/sgd_consulta. Instalador: passo opcional apos verificacao para gravar utilizador e senha SGD (.sgd-credentials.local). atualizar-projeto.ps1: se nao existir credencial local, pergunta ao final. instalar-projeto-filho.ps1 incluido no sync SharePoint; parametro -PularSgdCredenciais.",
+    "changelog":  "v2.4.16: Consultar-PSAI-SGD e Enriquecer-PSAI-DadosBrutos pedem utilizador/senha SGD apenas na primeira vez (sem data/sgd-psai-consultas/.sgd-credentials.local); opcao gravar credenciais locais. lib-sgd-caminhos: Test-SgdCredentialsLocalFile, Save-SgdCredentialsLocalFile.",
     "data":  "2026-04-30",
     "hash_validacao":  "34BCF4969CCDE62DCD266AF7EAB04580",
-    "versao":  "2.4.15"
+    "versao":  "2.4.16"
 }

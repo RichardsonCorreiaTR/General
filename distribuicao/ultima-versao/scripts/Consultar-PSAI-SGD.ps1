@@ -1,8 +1,12 @@
 #Requires -Version 5.1
 <#
 .SYNOPSIS
-  Consulta PSAI no SGD via o script do repositório General. Pede **sempre** utilizador e senha SGD
-  (igual ao script na pasta scripts do General; não usa credenciais do ficheiro .env).
+  Consulta PSAI no SGD via o script do repositório General.
+
+  Na **primeira** utilização (sem `data/sgd-psai-consultas/.sgd-credentials.local` com utilizador),
+  pede utilizador e senha SGD; opcionalmente pode gravar nesse ficheiro para não voltar a pedir.
+  Se o ficheiro já existir (ex.: após instalação ou gravação anterior), as credenciais vêm dele
+  (não usa o .env geral do projeto).
 
   Define SGD_SGD_DATA_ROOT para gravar consultas, arquivo (HTML/grids), logs e sessão Playwright em
   projeto-filho/data/sgd-psai-consultas/ (dados por analista nesta cópia do projeto-filho).
@@ -45,29 +49,45 @@ New-Item -ItemType Directory -Force -Path $dataRoot | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $dataRoot "consultas") | Out-Null
 $env:SGD_SGD_DATA_ROOT = $dataRoot
 
-Write-Host ""
-Write-Host "Consulta SGD — indique as SUAS credenciais (não são lidas do .env)." -ForegroundColor Cyan
-$u = Read-Host "Utilizador SGD"
-if ([string]::IsNullOrWhiteSpace($u)) {
-    Write-Error "Utilizador vazio."
+$credFromShell = $false
+if (Test-SgdCredentialsLocalFile -DataRootSgd $dataRoot) {
+    Write-Host ""
+    Write-Host "Credenciais SGD: a usar ficheiro local (primeira consulta já configurada)." -ForegroundColor DarkGray
+    Write-Host "Dados locais (JSON, arquivo, logs, sessão): $dataRoot" -ForegroundColor DarkGray
+    Write-Host ""
 }
-$sec = Read-Host "Senha SGD" -AsSecureString
-if ($null -eq $sec -or $sec.Length -eq 0) {
-    Write-Error "Senha vazia."
+else {
+    Write-Host ""
+    Write-Host "SGD — primeira consulta neste projeto (ou sem credenciais gravadas)." -ForegroundColor Cyan
+    Write-Host "Indique o seu utilizador e senha do SGD para aceder à PSAI (não vêm do .env do projeto)." -ForegroundColor Cyan
+    Write-Host ""
+    $u = Read-Host "Utilizador SGD"
+    if ([string]::IsNullOrWhiteSpace($u)) {
+        Write-Error "Utilizador vazio."
+    }
+    $sec = Read-Host "Senha SGD" -AsSecureString
+    if ($null -eq $sec -or $sec.Length -eq 0) {
+        Write-Error "Senha vazia."
+    }
+    $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
+    try {
+        $plain = [Runtime.InteropServices.Marshal]::PtrToStringAuto($ptr)
+    }
+    finally {
+        [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr)
+    }
+    $env:SGD_USERNAME = $u.Trim()
+    $env:SGD_PASSWORD = $plain
+    $credFromShell = $true
+    $save = Read-Host "Gravar neste PC para não voltar a pedir? (S/N)"
+    if ($save -eq "S" -or $save -eq "s") {
+        Save-SgdCredentialsLocalFile -DataRootSgd $dataRoot -UserName $env:SGD_USERNAME -PlainPassword $plain
+        Write-Host "Credenciais gravadas em data\sgd-psai-consultas\.sgd-credentials.local" -ForegroundColor Green
+    }
+    Write-Host "A consultar o SGD como: $($env:SGD_USERNAME)" -ForegroundColor Green
+    Write-Host "Dados locais (JSON, arquivo, logs, sessão): $dataRoot" -ForegroundColor DarkGray
+    Write-Host ""
 }
-$ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
-try {
-    $plain = [Runtime.InteropServices.Marshal]::PtrToStringAuto($ptr)
-}
-finally {
-    [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr)
-}
-$env:SGD_USERNAME = $u.Trim()
-$env:SGD_PASSWORD = $plain
-
-Write-Host "A consultar o SGD como: $($env:SGD_USERNAME)" -ForegroundColor Green
-Write-Host "Dados locais (JSON, arquivo, logs, sessão): $dataRoot" -ForegroundColor DarkGray
-Write-Host ""
 
 $pkg = Split-Path -Parent $consultar
 $venvPy = Join-Path $pkg ".venv\Scripts\python.exe"
@@ -80,7 +100,9 @@ try {
     }
 }
 finally {
-    Remove-Item Env:SGD_USERNAME -ErrorAction SilentlyContinue
-    Remove-Item Env:SGD_PASSWORD -ErrorAction SilentlyContinue
+    if ($credFromShell) {
+        Remove-Item Env:SGD_USERNAME -ErrorAction SilentlyContinue
+        Remove-Item Env:SGD_PASSWORD -ErrorAction SilentlyContinue
+    }
     Remove-Item Env:SGD_SGD_DATA_ROOT -ErrorAction SilentlyContinue
 }

@@ -32,17 +32,35 @@ ou use o clone General ao lado do filho. Ver mensagem de Consultar-PSAI-SGD.ps1 
 "@
 }
 
+$dataRoot = Join-Path $projetoDir "data\sgd-psai-consultas"
+New-Item -ItemType Directory -Force -Path $dataRoot | Out-Null
+$env:SGD_SGD_DATA_ROOT = $dataRoot
+
+$credFromShell = $false
+if (Test-SgdCredentialsLocalFile -DataRootSgd $dataRoot) {
+    Write-Host ""
+    Write-Host "Credenciais SGD: a usar ficheiro local." -ForegroundColor DarkGray
+}
+else {
+    Write-Host ""
+    Write-Host "SGD — indique utilizador e senha (primeira vez ou sem ficheiro .sgd-credentials.local)." -ForegroundColor Cyan
+    $u = Read-Host "Utilizador SGD"
+    if ([string]::IsNullOrWhiteSpace($u)) { Write-Error "Utilizador vazio." }
+    $sec = Read-Host "Senha SGD" -AsSecureString
+    if ($null -eq $sec -or $sec.Length -eq 0) { Write-Error "Senha vazia." }
+    $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
+    try { $plain = [Runtime.InteropServices.Marshal]::PtrToStringAuto($ptr) }
+    finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
+    $env:SGD_USERNAME = $u.Trim()
+    $env:SGD_PASSWORD = $plain
+    $credFromShell = $true
+    $save = Read-Host "Gravar neste PC para não voltar a pedir? (S/N)"
+    if ($save -eq "S" -or $save -eq "s") {
+        Save-SgdCredentialsLocalFile -DataRootSgd $dataRoot -UserName $env:SGD_USERNAME -PlainPassword $plain
+        Write-Host "Credenciais gravadas em data\sgd-psai-consultas\.sgd-credentials.local" -ForegroundColor Green
+    }
+}
 Write-Host ""
-Write-Host "Enriquecer PSAI — credenciais SGD (não lidas do .env geral)." -ForegroundColor Cyan
-$u = Read-Host "Utilizador SGD"
-if ([string]::IsNullOrWhiteSpace($u)) { Write-Error "Utilizador vazio." }
-$sec = Read-Host "Senha SGD" -AsSecureString
-if ($null -eq $sec -or $sec.Length -eq 0) { Write-Error "Senha vazia." }
-$ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
-try { $plain = [Runtime.InteropServices.Marshal]::PtrToStringAuto($ptr) }
-finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
-$env:SGD_USERNAME = $u.Trim()
-$env:SGD_PASSWORD = $plain
 
 $pkg = Split-Path -Parent $pyScript
 $venvPy = Join-Path $pkg ".venv\Scripts\python.exe"
@@ -59,6 +77,9 @@ try {
     else { & python $pyScript @args }
 }
 finally {
-    Remove-Item Env:SGD_USERNAME -ErrorAction SilentlyContinue
-    Remove-Item Env:SGD_PASSWORD -ErrorAction SilentlyContinue
+    if ($credFromShell) {
+        Remove-Item Env:SGD_USERNAME -ErrorAction SilentlyContinue
+        Remove-Item Env:SGD_PASSWORD -ErrorAction SilentlyContinue
+    }
+    Remove-Item Env:SGD_SGD_DATA_ROOT -ErrorAction SilentlyContinue
 }
