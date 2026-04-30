@@ -65,6 +65,7 @@ $arqsCopia = @(
     "DELEGACAO-ATUALIZACAO.md",
     "scripts\buscar-sai.ps1",
     "scripts\gerar-atualizacao.ps1",
+    "scripts\instalar-projeto-filho.ps1",
     "scripts\sincronizar-sharepoint.ps1",
     "scripts\relatorio-versoes-analistas.ps1",
     "scripts\importar-sais.ps1",

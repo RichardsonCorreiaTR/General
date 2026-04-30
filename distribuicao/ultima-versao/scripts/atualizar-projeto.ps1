@@ -147,3 +147,31 @@ Write-Host ""
 Write-Host "=== Atualizado para v$novaVersaoFinal! ===" -ForegroundColor Green
 Write-Host "Backup mantido em: $backupDir"
 Write-Host "Reabra o Cursor para carregar as novas regras."
+
+$credSgd = Join-Path $projetoDir "data\sgd-psai-consultas\.sgd-credentials.local"
+if (-not (Test-Path -LiteralPath $credSgd)) {
+    Write-Host ""
+    Write-Host "=== Credenciais SGD (opcional) ===" -ForegroundColor Cyan
+    Write-Host "Nao ha ficheiro data\sgd-psai-consultas\.sgd-credentials.local — Consultar-PSAI-SGD.ps1 pedira login a cada execucao." -ForegroundColor DarkGray
+    $r = Read-Host "Gravar utilizador e senha do SGD neste PC agora? (S/N)"
+    if ($r -eq "S" -or $r -eq "s") {
+        $dataSgd = Split-Path -Parent $credSgd
+        New-Item -ItemType Directory -Force -Path $dataSgd | Out-Null
+        $u = Read-Host "Utilizador SGD"
+        if (-not [string]::IsNullOrWhiteSpace($u)) {
+            $sec = Read-Host "Senha SGD" -AsSecureString
+            if ($null -ne $sec -and $sec.Length -gt 0) {
+                $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
+                try { $plain = [Runtime.InteropServices.Marshal]::PtrToStringAuto($ptr) }
+                finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
+                $passEsc = $plain.Replace('\', '\\').Replace('"', '\"')
+                @(
+                    "# Credenciais SGD (local). Nao partilhar.",
+                    "SGD_USERNAME=$($u.Trim())",
+                    "SGD_PASSWORD=`"$passEsc`""
+                ) -join "`n" | Set-Content -Path $credSgd -Encoding UTF8
+                Write-Host "Credenciais gravadas em data\sgd-psai-consultas\.sgd-credentials.local" -ForegroundColor Green
+            }
+        }
+    }
+}

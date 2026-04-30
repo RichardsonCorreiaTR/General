@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Revisao PSAI: fluxo obrigatorio de consulta ao SGD antes de pedir colagem (revisar-psai, sgd-enriquecer). consolidar-logs.ps1 aceita cabecalhos HH:MM:SS alinhados ao guardiao. Novos scripts Publicar-LogAnalista.ps1 (Admin) e Publicar-LogParaConsolidacao.ps1 (filho). logs/README.md com ponte referencia/logs e logs/analistas. guardiao e padroes atualizados. README validacoes-psai, scripts README, PROJETO filho e Admin.",
-    "data":  "2026-04-30T16:13:36",
+    "changelog":  "v2.4.15: env.py le credenciais SGD em projeto-filho/data/sgd-psai-consultas quando o modulo Python esta em projeto-filho/scripts/sgd_consulta. Instalador: passo opcional apos verificacao para gravar utilizador e senha SGD (.sgd-credentials.local). atualizar-projeto.ps1: se nao existir credencial local, pergunta ao final. instalar-projeto-filho.ps1 incluido no sync SharePoint; parametro -PularSgdCredenciais.",
+    "data":  "2026-04-30T16:44:17",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.14"
+    "versao":  "2.4.15"
 }

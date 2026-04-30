@@ -1,8 +1,8 @@
 ﻿# Changelog - Projeto Filho
 
-## v2.4.14 - 30/04/2026
+## v2.4.15 - 30/04/2026
 
-Revisao PSAI: fluxo obrigatorio de consulta ao SGD antes de pedir colagem (revisar-psai, sgd-enriquecer). consolidar-logs.ps1 aceita cabecalhos HH:MM:SS alinhados ao guardiao. Novos scripts Publicar-LogAnalista.ps1 (Admin) e Publicar-LogParaConsolidacao.ps1 (filho). logs/README.md com ponte referencia/logs e logs/analistas. guardiao e padroes atualizados. README validacoes-psai, scripts README, PROJETO filho e Admin.
+v2.4.15: env.py le credenciais SGD em projeto-filho/data/sgd-psai-consultas quando o modulo Python esta em projeto-filho/scripts/sgd_consulta. Instalador: passo opcional apos verificacao para gravar utilizador e senha SGD (.sgd-credentials.local). atualizar-projeto.ps1: se nao existir credencial local, pergunta ao final. instalar-projeto-filho.ps1 incluido no sync SharePoint; parametro -PularSgdCredenciais.
 
 ---
 

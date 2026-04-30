@@ -19,11 +19,17 @@ $ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
-$generalRoot = Split-Path -Parent $projetoDir
-$pyScript = Join-Path $generalRoot "scripts\sgd_consulta\enriquecer_psai_dados_brutos.py"
+. (Join-Path $scriptDir "lib-sgd-caminhos.ps1")
+$pkg = Get-SgdConsultaPkgDir -ProjetoFilhoRoot $projetoDir
+$pyScript = if ($pkg) { Join-Path $pkg "enriquecer_psai_dados_brutos.py" } else { "" }
 
-if (-not (Test-Path $pyScript)) {
-    Write-Error "Não encontrado: $pyScript (esperado pasta General ao lado de projeto-filho, ou ajuste o clone)."
+if (-not (Test-Path -LiteralPath $pyScript)) {
+    Write-Error @"
+Nao foi encontrado enriquecer_psai_dados_brutos.py (modulo SGD).
+
+Defina GENERAL_REPO_ROOT, ou atualize o projeto-filho para incluir scripts\sgd_consulta,
+ou use o clone General ao lado do filho. Ver mensagem de Consultar-PSAI-SGD.ps1 para a mesma ordem de pastas.
+"@
 }
 
 Write-Host ""
@@ -45,7 +51,7 @@ foreach ($n in $Numeros) { $args += "$n" }
 if ($DryRun) { $args += "--dry-run" }
 if ($ArquivoSgd) { $args += "--arquivo-sgd" }
 
-Write-Host "A usar General em: $generalRoot" -ForegroundColor DarkGray
+Write-Host "A usar modulo SGD em: $pkg" -ForegroundColor DarkGray
 Write-Host ""
 
 try {

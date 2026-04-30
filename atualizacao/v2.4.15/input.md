@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.14 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.15 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-Revisao PSAI: fluxo obrigatorio de consulta ao SGD antes de pedir colagem (revisar-psai, sgd-enriquecer). consolidar-logs.ps1 aceita cabecalhos HH:MM:SS alinhados ao guardiao. Novos scripts Publicar-LogAnalista.ps1 (Admin) e Publicar-LogParaConsolidacao.ps1 (filho). logs/README.md com ponte referencia/logs e logs/analistas. guardiao e padroes atualizados. README validacoes-psai, scripts README, PROJETO filho e Admin.
+v2.4.15: env.py le credenciais SGD em projeto-filho/data/sgd-psai-consultas quando o modulo Python esta em projeto-filho/scripts/sgd_consulta. Instalador: passo opcional apos verificacao para gravar utilizador e senha SGD (.sgd-credentials.local). atualizar-projeto.ps1: se nao existir credencial local, pergunta ao final. instalar-projeto-filho.ps1 incluido no sync SharePoint; parametro -PularSgdCredenciais.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -36,9 +36,20 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 | arquivos/scripts/Consultar-PSAI-SGD.ps1 | scripts/Consultar-PSAI-SGD.ps1 |
 | arquivos/scripts/corrigir-symlinks.ps1 | scripts/corrigir-symlinks.ps1 |
 | arquivos/scripts/Enriquecer-PSAI-DadosBrutos.ps1 | scripts/Enriquecer-PSAI-DadosBrutos.ps1 |
+| arquivos/scripts/lib-sgd-caminhos.ps1 | scripts/lib-sgd-caminhos.ps1 |
 | arquivos/scripts/Publicar-LogParaConsolidacao.ps1 | scripts/Publicar-LogParaConsolidacao.ps1 |
 | arquivos/scripts/setup-odbc.ps1 | scripts/setup-odbc.ps1 |
 | arquivos/scripts/verificar-ambiente.ps1 | scripts/verificar-ambiente.ps1 |
+| arquivos/scripts/sgd_consulta/.env.example | scripts/sgd_consulta/.env.example |
+| arquivos/scripts/sgd_consulta/.sgd-credentials.local.example | scripts/sgd_consulta/.sgd-credentials.local.example |
+| arquivos/scripts/sgd_consulta/consultar_psai.py | scripts/sgd_consulta/consultar_psai.py |
+| arquivos/scripts/sgd_consulta/enriquecer_psai_dados_brutos.py | scripts/sgd_consulta/enriquecer_psai_dados_brutos.py |
+| arquivos/scripts/sgd_consulta/env.py | scripts/sgd_consulta/env.py |
+| arquivos/scripts/sgd_consulta/psai_arquivo.py | scripts/sgd_consulta/psai_arquivo.py |
+| arquivos/scripts/sgd_consulta/README.md | scripts/sgd_consulta/README.md |
+| arquivos/scripts/sgd_consulta/requirements.txt | scripts/sgd_consulta/requirements.txt |
+| arquivos/scripts/sgd_consulta/session.py | scripts/sgd_consulta/session.py |
+| arquivos/scripts/sgd_consulta/data/.gitkeep | scripts/sgd_consulta/data/.gitkeep |
 | arquivos/templates/apresentacao-slides-corrigidos.txt | templates/apresentacao-slides-corrigidos.txt |
 | arquivos/templates/CHECKLIST-auditoria-importacao-1.5.md | templates/CHECKLIST-auditoria-importacao-1.5.md |
 | arquivos/templates/CHECKLIST-auditoria-janelas-1.1.md | templates/CHECKLIST-auditoria-janelas-1.1.md |
@@ -71,6 +82,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.14".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.15".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

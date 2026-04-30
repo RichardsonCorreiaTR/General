@@ -20,7 +20,8 @@ param(
     [switch]$PularOneDrive,
     [string]$Nome,
     [string]$Email,
-    [string]$ZipPath
+    [string]$ZipPath,
+    [switch]$PularSgdCredenciais
 )
 
 $ErrorActionPreference = "Stop"
@@ -389,6 +390,52 @@ function Install-GitCode {
     if ($tempDir -and (Test-Path $tempDir)) { Remove-Item -Recurse -Force $tempDir -ErrorAction SilentlyContinue }
 }
 
+function Invoke-SgdCredentialsStep {
+    param([string]$Destino)
+    if ($PularSgdCredenciais) {
+        Write-Warn "Passo SGD credenciais pulado (-PularSgdCredenciais)."
+        return
+    }
+    if ($script:NaoInterativo) {
+        Write-Warn "Modo nao interativo: defina SGD_USERNAME/SGD_PASSWORD no ambiente ou crie data\sgd-psai-consultas\.sgd-credentials.local depois."
+        return
+    }
+    $dataSgd = Join-Path $Destino "data\sgd-psai-consultas"
+    New-Item -ItemType Directory -Force -Path $dataSgd | Out-Null
+    Write-Host ""
+    Write-Host "  === Credenciais SGD (consulta PSAI no browser) ===" -ForegroundColor Cyan
+    Write-Host "  Opcional: gravar aqui evita digitar a cada execucao de Consultar-PSAI-SGD.ps1." -ForegroundColor DarkGray
+    Write-Host "  O ficheiro fica em data\sgd-psai-consultas\.sgd-credentials.local (nao vai para o Git)." -ForegroundColor DarkGray
+    Write-Host ""
+    $r = Read-Host "  Gravar utilizador e senha do SGD neste PC? (S/N)"
+    if ($r -ne "S" -and $r -ne "s") {
+        Write-Warn "Sem gravacao local. Na primeira consulta o script pedira utilizador e senha."
+        return
+    }
+    $u = Read-Host "  Utilizador SGD"
+    if ([string]::IsNullOrWhiteSpace($u)) {
+        Write-Warn "Utilizador vazio — passo SGD cancelado."
+        return
+    }
+    $sec = Read-Host "  Senha SGD" -AsSecureString
+    if ($null -eq $sec -or $sec.Length -eq 0) {
+        Write-Warn "Senha vazia — passo SGD cancelado."
+        return
+    }
+    $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
+    try { $plain = [Runtime.InteropServices.Marshal]::PtrToStringAuto($ptr) }
+    finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
+    $passEsc = $plain.Replace('\', '\\').Replace('"', '\"')
+    $credPath = Join-Path $dataSgd ".sgd-credentials.local"
+    $lines = @(
+        "# Credenciais SGD (local). Nao partilhar. Gerado pelo instalador.",
+        "SGD_USERNAME=$($u.Trim())",
+        "SGD_PASSWORD=`"$passEsc`""
+    )
+    Set-Content -Path $credPath -Value ($lines -join "`n") -Encoding UTF8
+    Write-OK "Credenciais SGD gravadas: data\sgd-psai-consultas\.sgd-credentials.local"
+}
+
 function Test-Installation {
     param([string]$Destino)
     $checks = @(
@@ -424,13 +471,13 @@ function Test-Installation {
 
 Write-Banner
 
-Write-Step 1 8 "Verificando pre-requisitos"
+Write-Step 1 9 "Verificando pre-requisitos"
 if (-not (Test-Prerequisites)) {
     Write-Host ""; Write-Host "  Corrija os pre-requisitos e rode novamente." -ForegroundColor Red
     Read-Host "  Pressione Enter para sair"; exit 1
 }
 
-Write-Step 2 8 "Detectando OneDrive"
+Write-Step 2 9 "Detectando OneDrive"
 $onedrivePath = Find-OneDrivePath
 if ($onedrivePath) { Write-OK "OneDrive encontrado: $onedrivePath" }
 elseif (-not $PularOneDrive) {
@@ -441,7 +488,7 @@ elseif (-not $PularOneDrive) {
     }
 }
 
-Write-Step 3 8 "Criando estrutura do projeto"
+Write-Step 3 9 "Criando estrutura do projeto"
 if (Test-Path $ProjetoDir) {
     Write-Warn "Pasta ja existe: $ProjetoDir"
     if (-not $script:NaoInterativo) {
@@ -459,19 +506,22 @@ if (-not (Install-ProjectFiles -OneDrivePath $onedrivePath -Destino $ProjetoDir)
     Read-Host "  Pressione Enter para sair"; exit 1
 }
 
-Write-Step 4 8 "Configurando identidade do analista"
+Write-Step 4 9 "Configurando identidade do analista"
 $nomeKebab = Set-AnalystConfig -Destino $ProjetoDir -OneDrivePath $onedrivePath -NomeParam $Nome -EmailParam $Email
 
-Write-Step 5 8 "Criando links para OneDrive"
+Write-Step 5 9 "Criando links para OneDrive"
 New-Symlinks -Destino $ProjetoDir -OneDrivePath $onedrivePath -NomeKebab $nomeKebab
 
-Write-Step 6 8 "Baixando codigo-fonte do sistema"
+Write-Step 6 9 "Baixando codigo-fonte do sistema"
 Install-GitCode
 
-Write-Step 7 8 "Verificando instalacao"
+Write-Step 7 9 "Verificando instalacao"
 Test-Installation -Destino $ProjetoDir
 
-Write-Step 8 8 "Finalizando"
+Write-Step 8 9 "Credenciais SGD (consulta PSAI)"
+Invoke-SgdCredentialsStep -Destino $ProjetoDir
+
+Write-Step 9 9 "Finalizando"
 Write-Host ""
 if ($script:erros.Count -gt 0) {
     Write-Host "  Instalacao concluida com $($script:erros.Count) aviso(s):" -ForegroundColor Yellow

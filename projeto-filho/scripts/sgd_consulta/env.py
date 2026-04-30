@@ -59,17 +59,22 @@ _merge_dotenv_no_sgd_creds(PROJECT_ROOT / ".env")
 
 
 def _credential_file_candidates() -> list[Path]:
-    """Ordem: ficheiro explícito → projeto-filho (analista) → pasta do script General."""
+    """Ordem: ficheiro explícito → data do filho (monorepo ou pacote) → pasta do módulo."""
     paths: list[Path] = []
     explicit = os.getenv("SGD_CREDENTIALS_FILE", "").strip()
     if explicit:
         paths.append(Path(explicit))
+    # Monorepo General: PROJECT_ROOT = .../General → .../General/projeto-filho/data/...
     paths.append(
         PROJECT_ROOT
         / "projeto-filho"
         / "data"
         / "sgd-psai-consultas"
         / ".sgd-credentials.local"
+    )
+    # Pacote filho: PROJECT_ROOT = raiz do projeto-filho → data/sgd-psai-consultas/...
+    paths.append(
+        PROJECT_ROOT / "data" / "sgd-psai-consultas" / ".sgd-credentials.local"
     )
     paths.append(PACKAGE_DIR / ".sgd-credentials.local")
     return paths
