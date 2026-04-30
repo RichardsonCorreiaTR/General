@@ -1,6 +1,6 @@
 ﻿{
     "data":  "2026-04-30",
-    "versao":  "2.4.16",
+    "versao":  "2.4.17",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -29,6 +29,7 @@
                               "scripts/lib-sgd-caminhos.ps1",
                               "scripts/Publicar-LogParaConsolidacao.ps1",
                               "scripts/setup-odbc.ps1",
+                              "scripts/setup-sgd-python.ps1",
                               "scripts/verificar-ambiente.ps1",
                               "scripts/sgd_consulta/.env.example",
                               "scripts/sgd_consulta/.sgd-credentials.local.example",
@@ -60,7 +61,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "v2.4.16: Consultar-PSAI-SGD e Enriquecer-PSAI-DadosBrutos pedem utilizador/senha SGD apenas na primeira vez (sem data/sgd-psai-consultas/.sgd-credentials.local); opcao gravar credenciais locais. lib-sgd-caminhos: Test-SgdCredentialsLocalFile, Save-SgdCredentialsLocalFile.",
+    "changelog":  "v2.4.17: sync scripts/sgd_consulta (Python) Admin para projeto-filho antes do pacote (sync-sgd-consulta-para-projeto-filho.ps1). setup-sgd-python.ps1: venv + pip + Playwright chromium. verificar-ambiente: Python, modulo sgd_consulta, .venv. Consultar/Enriquecer: mensagem se Python ausente. sincronizar-sharepoint: novos scripts.",
     "requerSymlink":  [
                           "atualizacao"
                       ],

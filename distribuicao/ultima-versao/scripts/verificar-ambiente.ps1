@@ -176,6 +176,20 @@ if (Test-Path $analistaFile) {
 }
 Add-Check "analista.json versao_instalada alinhada" $versaoInstaladaOK $versaoInstaladaMsg "opcional"
 
+# 17. Python (consulta SGD)
+$pythonCmd = Get-Command python -ErrorAction SilentlyContinue
+Add-Check "Python no PATH (consulta SGD)" ([bool]$pythonCmd) $(if ($pythonCmd) { (& python --version 2>&1 | Out-String).Trim() } else { "Instale Python 3.10+ e rode .\scripts\setup-sgd-python.ps1" }) "opcional"
+
+# 18. Modulo scripts/sgd_consulta
+$sgdConsultar = Join-Path $projetoDir "scripts\sgd_consulta\consultar_psai.py"
+$sgdModuloOK = Test-Path -LiteralPath $sgdConsultar
+Add-Check "scripts/sgd_consulta (consultar_psai.py)" $sgdModuloOK $(if ($sgdModuloOK) { "Presente" } else { "Atualize o projeto-filho (pacote inclui o modulo Python)" }) "opcional"
+
+# 19. venv SGD + Playwright (opcional)
+$venvSgd = Join-Path $projetoDir "scripts\sgd_consulta\.venv\Scripts\python.exe"
+$venvSgdOK = Test-Path -LiteralPath $venvSgd
+Add-Check "venv SGD (.venv em scripts/sgd_consulta)" $venvSgdOK $(if ($venvSgdOK) { "Use Consultar-PSAI-SGD.ps1" } else { "Rode: .\scripts\setup-sgd-python.ps1" }) "opcional"
+
 # Resumo
 Write-Host ""
 Write-Host ("-" * 50) -ForegroundColor DarkGray

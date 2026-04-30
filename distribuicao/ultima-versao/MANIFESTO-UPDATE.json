@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "v2.4.16: Consultar-PSAI-SGD e Enriquecer-PSAI-DadosBrutos pedem utilizador/senha SGD apenas na primeira vez (sem data/sgd-psai-consultas/.sgd-credentials.local); opcao gravar credenciais locais. lib-sgd-caminhos: Test-SgdCredentialsLocalFile, Save-SgdCredentialsLocalFile.",
-    "data":  "2026-04-30T16:57:12",
+    "changelog":  "v2.4.17: sync scripts/sgd_consulta (Python) Admin para projeto-filho antes do pacote (sync-sgd-consulta-para-projeto-filho.ps1). setup-sgd-python.ps1: venv + pip + Playwright chromium. verificar-ambiente: Python, modulo sgd_consulta, .venv. Consultar/Enriquecer: mensagem se Python ausente. sincronizar-sharepoint: novos scripts.",
+    "data":  "2026-04-30T17:22:49",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.16"
+    "versao":  "2.4.17"
 }

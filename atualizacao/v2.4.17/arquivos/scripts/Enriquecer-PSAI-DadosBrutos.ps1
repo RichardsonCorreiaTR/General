@@ -64,6 +64,12 @@ Write-Host ""
 
 $pkg = Split-Path -Parent $pyScript
 $venvPy = Join-Path $pkg ".venv\Scripts\python.exe"
+$pythonDisponivel = (Test-Path -LiteralPath $venvPy) -or [bool](Get-Command python -ErrorAction SilentlyContinue)
+if (-not $pythonDisponivel) {
+    Write-Error @'
+Python nao encontrado. Instale Python 3.10+ no PATH e rode: .\scripts\setup-sgd-python.ps1
+'@
+}
 $args = @()
 foreach ($n in $Numeros) { $args += "$n" }
 if ($DryRun) { $args += "--dry-run" }
