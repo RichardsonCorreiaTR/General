@@ -389,6 +389,8 @@ Variacoes uteis adicionais:
 (Agrupado por SAI: 8 SAIs unicas de 23 PSAIs. Use -VerPSAIs para ver todas)
 
 --- SAI 56789 (PSAI 128881 - Liberada) ---
+  SAI:  https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=56789
+  PSAI: https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai=128881
   Tipo: NE | Versao: 13.1.2 | Status: Liberada | Area: Escrita
   Cadastro: 05/03/2026 | Gravidade: Critica
   Lotacao do eSocial gerando erro na integracao quando...
@@ -443,6 +445,19 @@ Busca realizada:
 
 Para cada SAI relevante, inclua o trecho do campo BLOB que deu match,
 nao apenas a descricao truncada. O analista precisa ver o contexto real.
+
+### Links SAI e PSAI (obrigatorio na resposta ao analista)
+
+Ao citar qualquer SAI ou PSAI na resposta, inclua **sempre** o link clicavel.
+Nunca cite apenas o numero isolado — o analista precisa abrir com um clique.
+
+URLs padrao:
+- SAI: `https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={numero}`
+- PSAI: `https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={numero}`
+
+Exemplos em markdown:
+- `[SAI 56789](https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=56789)`
+- `[PSAI 128881](https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai=128881)`
 
 ### Formatacao de resultados de SAIs (obrigatoria)
 

@@ -23,6 +23,17 @@ Toda consulta sobre SAIs/PSAIs REQUER busca profunda via Shell:
 Indices MD contem descricoes truncadas (80 chars). NUNCA use apenas indices
 para responder ao analista. O protocolo completo esta em agente-produto.mdc.
 
+## Ao citar SAIs ou PSAIs — links obrigatorios
+
+Ao citar SAIs ou PSAIs por numero na conversa, inclua **sempre** as URLs
+completas em markdown. Nunca liste apenas numeros isolados.
+
+- SAI: `https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={numero}`
+- PSAI: `https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={numero}`
+
+Exemplo correto: [SAI 56789](https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=56789)
+Exemplo errado: SAI 56789 (sem link)
+
 ## Cursor Agent (menos confirmacoes Run)
 
 Este pacote inclui `.cursor/sandbox.json`. Para menos prompts ao executar comandos: **Settings > Agents > Auto-Run** > **Run in Sandbox** (recomendado) ou **Run Everything** (sem perguntas; maior risco). Windows: **WSL2** ajuda o sandbox. Opcional: `.\scripts\configurar-cursor-auto-run.ps1`.
