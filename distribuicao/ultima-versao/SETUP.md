@@ -31,14 +31,18 @@ Set-ExecutionPolicy Bypass -Scope Process
 ```
 
 O instalador vai:
-1. Verificar pre-requisitos (Cursor, OneDrive, Git)
+1. Verificar pre-requisitos (Cursor, OneDrive, Git, Python)
 2. Criar a estrutura em `C:\CursorEscrita\projeto-filho\`
 3. Pedir seu nome e email
 4. Criar links para a base de dados no OneDrive
 5. Baixar o codigo-fonte do sistema (se Git disponivel)
-6. Oferecer configurar ODBC (se driver encontrado)
-7. Verificar se tudo esta OK
-8. Abrir o Cursor
+6. Verificar se tudo esta OK
+7. Salvar credenciais SGD (opcional)
+8. Configurar ambiente Python/Playwright para consulta PSAI (se Python encontrado)
+9. Abrir o Cursor
+
+> **Python obrigatorio para consulta PSAI no SGD.** Instale Python 3.10+ antes de rodar o instalador:
+> https://www.python.org/downloads/ — marque **"Add python.exe to PATH"** durante a instalacao.
 
 ### Passo 3 -- Primeiro uso
 
@@ -48,18 +52,18 @@ O instalador vai:
 
 ### Consulta PSAI no SGD (`Consultar-PSAI-SGD.ps1`)
 
-O modulo Python fica em **`projeto-filho\scripts\sgd_consulta\`** (incluido no pacote; nao precisa do repositorio General ao lado, salvo se quiser apontar `GENERAL_REPO_ROOT` para outro clone).
+O modulo Python fica em **`projeto-filho\scripts\sgd_consulta\`** (incluido no pacote).
 
-Na **primeira vez**, num PowerShell:
+O instalador configura o ambiente Python automaticamente. Se precisar refazer (ou o instalador pulou por Python ausente), rode:
 
 ```
-cd C:\CursorEscrita\projeto-filho\scripts\sgd_consulta
-python -m venv .venv
-.\.venv\Scripts\pip install -r requirements.txt
-.\.venv\Scripts\python -m playwright install
+cd C:\CursorEscrita\projeto-filho
+.\scripts\setup-sgd-python.ps1
 ```
 
-Depois: `cd ..` e `.\Consultar-PSAI-SGD.ps1 <numero-psai> --json`
+O script cria o `.venv`, instala dependencias e faz `playwright install chromium`.
+
+Depois: `.\scripts\Consultar-PSAI-SGD.ps1 <numero-psai>`
 
 ## Instalacao Manual (se o instalador falhar)
 

@@ -91,7 +91,7 @@ if (Test-Path -LiteralPath $sgdAdmin) {
     if (-not (Test-Path (Join-Path $dataSgd ".gitkeep"))) { Set-Content (Join-Path $dataSgd ".gitkeep") "" }
     Write-Host "  sgd_consulta embutido no pacote (scripts/sgd_consulta)" -ForegroundColor DarkGray
 }
-foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", ".cursorignore")) {
+foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", "PROMPT-INSTALACAO.md", ".cursorignore")) {
     $src = Join-Path $fonteDir $arq
     if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $tempPack $arq) -Force }
 }

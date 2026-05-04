@@ -1,4 +1,4 @@
-# instalar-projeto-filho.ps1
+﻿# instalar-projeto-filho.ps1
 # Instalador Automatizado - Projeto Filho Escrita v1.0.0
 #
 # USO:
@@ -65,6 +65,13 @@ function Test-Prerequisites {
     $gitCmd = Get-Command git -ErrorAction SilentlyContinue
     if ($gitCmd) { Write-OK "Git encontrado: $(git --version 2>$null)" }
     else { Write-Warn "Git nao encontrado. Codigo-fonte nao sera baixado." }
+    $pyCmd = Get-Command python -ErrorAction SilentlyContinue
+    if ($pyCmd) {
+        $pyVer = (python --version 2>&1) -replace "Python ", ""
+        Write-OK "Python encontrado: $pyVer (necessario para consulta PSAI no SGD)"
+    } else {
+        Write-Warn "Python nao encontrado no PATH. O setup do SGD sera pulado. Instale depois em https://www.python.org/downloads/ (marque 'Add python.exe to PATH') e rode: .\scripts\setup-sgd-python.ps1"
+    }
     $onedriveProc = Get-Process OneDrive -ErrorAction SilentlyContinue
     if ($onedriveProc) {
         Write-OK "OneDrive esta rodando"
@@ -161,7 +168,7 @@ function Install-ProjectFiles {
         $dst = Join-Path $Destino $pasta
         if (Test-Path $src) { Copy-Item -Path $src -Destination $dst -Recurse -Force; $itens++ }
     }
-    foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", ".cursorignore")) {
+    foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "PROMPT-INSTALACAO.md", ".cursorignore")) {
         $src = Join-Path $fonteProjetoFilho $arq
         if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $Destino $arq) -Force; $itens++ }
     }
@@ -471,13 +478,13 @@ function Test-Installation {
 
 Write-Banner
 
-Write-Step 1 9 "Verificando pre-requisitos"
+Write-Step 1 10 "Verificando pre-requisitos"
 if (-not (Test-Prerequisites)) {
     Write-Host ""; Write-Host "  Corrija os pre-requisitos e rode novamente." -ForegroundColor Red
     Read-Host "  Pressione Enter para sair"; exit 1
 }
 
-Write-Step 2 9 "Detectando OneDrive"
+Write-Step 2 10 "Detectando OneDrive"
 $onedrivePath = Find-OneDrivePath
 if ($onedrivePath) { Write-OK "OneDrive encontrado: $onedrivePath" }
 elseif (-not $PularOneDrive) {
@@ -488,7 +495,7 @@ elseif (-not $PularOneDrive) {
     }
 }
 
-Write-Step 3 9 "Criando estrutura do projeto"
+Write-Step 3 10 "Criando estrutura do projeto"
 if (Test-Path $ProjetoDir) {
     Write-Warn "Pasta ja existe: $ProjetoDir"
     if (-not $script:NaoInterativo) {
@@ -506,22 +513,39 @@ if (-not (Install-ProjectFiles -OneDrivePath $onedrivePath -Destino $ProjetoDir)
     Read-Host "  Pressione Enter para sair"; exit 1
 }
 
-Write-Step 4 9 "Configurando identidade do analista"
+Write-Step 4 10 "Configurando identidade do analista"
 $nomeKebab = Set-AnalystConfig -Destino $ProjetoDir -OneDrivePath $onedrivePath -NomeParam $Nome -EmailParam $Email
 
-Write-Step 5 9 "Criando links para OneDrive"
+Write-Step 5 10 "Criando links para OneDrive"
 New-Symlinks -Destino $ProjetoDir -OneDrivePath $onedrivePath -NomeKebab $nomeKebab
 
-Write-Step 6 9 "Baixando codigo-fonte do sistema"
+Write-Step 6 10 "Baixando codigo-fonte do sistema"
 Install-GitCode
 
-Write-Step 7 9 "Verificando instalacao"
+Write-Step 7 10 "Verificando instalacao"
 Test-Installation -Destino $ProjetoDir
 
-Write-Step 8 9 "Credenciais SGD (consulta PSAI)"
+Write-Step 8 10 "Credenciais SGD (consulta PSAI)"
 Invoke-SgdCredentialsStep -Destino $ProjetoDir
 
-Write-Step 9 9 "Finalizando"
+Write-Step 9 10 "Setup Python SGD (Playwright para consulta PSAI)"
+$setupSgdScript = Join-Path $ProjetoDir "scripts\setup-sgd-python.ps1"
+$pyCmd2 = Get-Command python -ErrorAction SilentlyContinue
+if (-not $pyCmd2) {
+    Write-Warn "Python nao encontrado — passo ignorado. Instale Python 3.10+ e rode .\scripts\setup-sgd-python.ps1 depois."
+} elseif (-not (Test-Path $setupSgdScript)) {
+    Write-Warn "setup-sgd-python.ps1 nao encontrado em $ProjetoDir\scripts. Sera necessario rodar manualmente apos instalacao."
+} else {
+    Write-Host "  Criando .venv e instalando Playwright (pode demorar ~2 min)..." -ForegroundColor Cyan
+    try {
+        & $setupSgdScript
+        Write-OK "Ambiente Python SGD configurado com sucesso."
+    } catch {
+        Write-Warn "Setup Python SGD falhou: $_. Rode .\scripts\setup-sgd-python.ps1 manualmente apos a instalacao."
+    }
+}
+
+Write-Step 10 10 "Finalizando"
 Write-Host ""
 if ($script:erros.Count -gt 0) {
     Write-Host "  Instalacao concluida com $($script:erros.Count) aviso(s):" -ForegroundColor Yellow
@@ -549,3 +573,4 @@ Write-Host "  |   Bom trabalho!                             |" -ForegroundColor 
 Write-Host "  =============================================" -ForegroundColor Cyan
 Write-Host ""
 if (-not $script:NaoInterativo) { Read-Host "  Pressione Enter para fechar" }
+
