@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.18 - 04/05/2026
+
+v2.4.18: Cursor Agent — .cursor/sandbox.json (rede permitida no sandbox, enableSharedBuildCache), permissions.json.example, scripts/configurar-cursor-auto-run.ps1; onboarding e projeto.mdc com Auto-Run/WSL2; sincronizar-sharepoint inclui configurar-cursor-auto-run.
+
+---
+
 ## v2.4.17 - 30/04/2026
 
 v2.4.17: sync scripts/sgd_consulta (Python) Admin para projeto-filho antes do pacote (sync-sgd-consulta-para-projeto-filho.ps1). setup-sgd-python.ps1: venv + pip + Playwright chromium. verificar-ambiente: Python, modulo sgd_consulta, .venv. Consultar/Enriquecer: mensagem se Python ausente. sincronizar-sharepoint: novos scripts.
@@ -160,6 +166,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

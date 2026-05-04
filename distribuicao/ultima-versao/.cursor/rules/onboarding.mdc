@@ -54,6 +54,15 @@ Verifique silenciosamente se o ambiente esta funcionando:
 - `config/caminhos.json` existe?
 - `templates/TEMPLATE-psai.md` existe?
 
+### Cursor (menos cliques em "Run" no Agent)
+
+Este projeto inclui `.cursor/sandbox.json` (rede permitida no sandbox, alinhado ao repositorio General).
+
+Para o analista reduzir confirmacoes ao pedir comandos ao Agent:
+1. **Cursor** > **Settings** (Ctrl+,) > **Agents** > **Auto-Run** > escolha **Run in Sandbox** (recomendado) ou **Run Everything** (sem perguntas; maior risco).
+2. No **Windows**, o sandbox do Agent usa **WSL2** — sem WSL, o Cursor pode pedir aprovacao com mais frequencia.
+3. Opcional: na raiz do projeto, rode `.\scripts\configurar-cursor-auto-run.ps1` (cria `%USERPROFILE%\.cursor\permissions.json` a partir do exemplo, so se ainda nao existir).
+
 Se algo falhar, gere **Mensagem Prioritaria** (ver guardiao.mdc)
 em vez de pedir ao analista para rodar scripts.
 

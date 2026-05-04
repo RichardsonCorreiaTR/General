@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.17 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.18 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-v2.4.17: sync scripts/sgd_consulta (Python) Admin para projeto-filho antes do pacote (sync-sgd-consulta-para-projeto-filho.ps1). setup-sgd-python.ps1: venv + pip + Playwright chromium. verificar-ambiente: Python, modulo sgd_consulta, .venv. Consultar/Enriquecer: mensagem se Python ausente. sincronizar-sharepoint: novos scripts.
+v2.4.18: Cursor Agent — .cursor/sandbox.json (rede permitida no sandbox, enableSharedBuildCache), permissions.json.example, scripts/configurar-cursor-auto-run.ps1; onboarding e projeto.mdc com Auto-Run/WSL2; sincronizar-sharepoint inclui configurar-cursor-auto-run.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -18,6 +18,8 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 | Origem (neste pacote) | Destino (projeto local) |
 |----------------------|------------------------|
 | arquivos/CORRECAO-SYMLINKS.md | CORRECAO-SYMLINKS.md |
+| arquivos/.cursor/permissions.json.example | .cursor/permissions.json.example |
+| arquivos/.cursor/sandbox.json | .cursor/sandbox.json |
 | arquivos/.cursor/rules/agente-codigo.mdc | .cursor/rules/agente-codigo.mdc |
 | arquivos/.cursor/rules/agente-produto.mdc | .cursor/rules/agente-produto.mdc |
 | arquivos/.cursor/rules/guardiao.mdc | .cursor/rules/guardiao.mdc |
@@ -33,6 +35,7 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 | arquivos/scripts/atualizar-codigo.ps1 | scripts/atualizar-codigo.ps1 |
 | arquivos/scripts/atualizar-projeto.ps1 | scripts/atualizar-projeto.ps1 |
 | arquivos/scripts/buscar-sai.ps1 | scripts/buscar-sai.ps1 |
+| arquivos/scripts/configurar-cursor-auto-run.ps1 | scripts/configurar-cursor-auto-run.ps1 |
 | arquivos/scripts/Consultar-PSAI-SGD.ps1 | scripts/Consultar-PSAI-SGD.ps1 |
 | arquivos/scripts/corrigir-symlinks.ps1 | scripts/corrigir-symlinks.ps1 |
 | arquivos/scripts/Enriquecer-PSAI-DadosBrutos.ps1 | scripts/Enriquecer-PSAI-DadosBrutos.ps1 |
@@ -83,6 +86,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.17".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.18".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

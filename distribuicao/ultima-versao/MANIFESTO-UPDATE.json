@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "v2.4.17: sync scripts/sgd_consulta (Python) Admin para projeto-filho antes do pacote (sync-sgd-consulta-para-projeto-filho.ps1). setup-sgd-python.ps1: venv + pip + Playwright chromium. verificar-ambiente: Python, modulo sgd_consulta, .venv. Consultar/Enriquecer: mensagem se Python ausente. sincronizar-sharepoint: novos scripts.",
-    "data":  "2026-04-30T17:22:49",
+    "changelog":  "v2.4.18: Cursor Agent — .cursor/sandbox.json (rede permitida no sandbox, enableSharedBuildCache), permissions.json.example, scripts/configurar-cursor-auto-run.ps1; onboarding e projeto.mdc com Auto-Run/WSL2; sincronizar-sharepoint inclui configurar-cursor-auto-run.",
+    "data":  "2026-05-04T09:32:59",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.17"
+    "versao":  "2.4.18"
 }
