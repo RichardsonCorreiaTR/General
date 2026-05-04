@@ -30,3 +30,5 @@ Este pacote inclui `.cursor/sandbox.json`. Para menos prompts ao executar comand
 ## Verificar regras Cursor (analistas)
 
 Linha de comando para conferir ficheiros `.cursor/rules` face ao manifesto oficial: `.\scripts\verificar-regras-cursor.ps1` (ou `.\scripts\verificar-ambiente.ps1 -IncluirRegrasCursor`). Para gerar texto a colar no chat da IA: `.\scripts\verificar-regras-cursor.ps1 -GerarPrompt`.
+
+O `atualizar-projeto.ps1` copia tambem `config/cursor-rules-manifest.json` a partir do pacote (alem de `.cursor/`, `scripts/`, `VERSION.json`), para o manifesto nao ficar defasado apos atualizar.
