@@ -57,18 +57,18 @@ Siga estes passos na ordem:
   - Me avise: "Python nao encontrado. Instale em https://www.python.org/downloads/ marcando 'Add python.exe to PATH', depois rode: .\scripts\setup-sgd-python.ps1"
   - Continue para o proximo passo mesmo assim.
 
-**7. CREDENCIAIS SGD (OBRIGATORIO para consulta PSAI)**
-- Me pergunte: "Deseja salvar seu usuario e senha do SGD neste PC para nao precisar digitar a cada consulta? (S/N)"
-- Se SIM:
-  - Me pergunte meu usuario do SGD
-  - Me pergunte minha senha do SGD (avise que ficara salva localmente, nunca vai para o Git)
-  - Crie a pasta: C:\CursorEscrita\projeto-filho\data\sgd-psai-consultas\
-  - Crie o arquivo C:\CursorEscrita\projeto-filho\data\sgd-psai-consultas\.sgd-credentials.local com o conteudo:
-    SGD_USERNAME={meu-usuario-sgd}
-    SGD_PASSWORD="{minha-senha-sgd}"
-  - Confirme: "Credenciais salvas. A consulta PSAI usara essas credenciais automaticamente."
-- Se NAO:
-  - Informe: "OK. Na primeira consulta de PSAI o sistema vai pedir seu usuario e senha. Voce pode salvar depois rodando: .\scripts\Consultar-PSAI-SGD.ps1 <numero>"
+**7. CREDENCIAIS SGD (OBRIGATORIO - sem isso a consulta de PSAI nao funciona)**
+- Informe claramente: "Para consultar PSAIs no SGD e necessario configurar suas credenciais de acesso agora."
+- Me pergunte: "Qual e o seu usuario de acesso ao SGD?"
+- Aguarde minha resposta com o usuario.
+- Me pergunte: "Qual e a sua senha do SGD? (sera salva localmente apenas neste PC, nunca enviada para nenhum servidor)"
+- Aguarde minha resposta com a senha.
+- Crie a pasta: C:\CursorEscrita\projeto-filho\data\sgd-psai-consultas\
+- Crie o arquivo C:\CursorEscrita\projeto-filho\data\sgd-psai-consultas\.sgd-credentials.local com exatamente este conteudo (sem espacos extras):
+  SGD_USERNAME={usuario-informado}
+  SGD_PASSWORD="{senha-informada}"
+- Confirme: "Credenciais SGD salvas. A consulta de PSAI usara essas credenciais automaticamente."
+- IMPORTANTE: se eu nao souber minha senha agora, crie o arquivo apenas com o usuario e deixe a senha em branco. Oriente a preencher depois editando o arquivo diretamente.
 
 **8. VERIFICAR AMBIENTE**
 - Rode: powershell -File "C:\CursorEscrita\projeto-filho\scripts\verificar-ambiente.ps1"

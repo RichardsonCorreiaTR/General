@@ -410,23 +410,24 @@ function Invoke-SgdCredentialsStep {
     $dataSgd = Join-Path $Destino "data\sgd-psai-consultas"
     New-Item -ItemType Directory -Force -Path $dataSgd | Out-Null
     Write-Host ""
-    Write-Host "  === Credenciais SGD (consulta PSAI no browser) ===" -ForegroundColor Cyan
-    Write-Host "  Opcional: gravar aqui evita digitar a cada execucao de Consultar-PSAI-SGD.ps1." -ForegroundColor DarkGray
-    Write-Host "  O ficheiro fica em data\sgd-psai-consultas\.sgd-credentials.local (nao vai para o Git)." -ForegroundColor DarkGray
+    Write-Host "  === Credenciais SGD (OBRIGATORIO para consulta de PSAI) ===" -ForegroundColor Cyan
+    Write-Host "  Sem essas credenciais nao e possivel consultar PSAIs no SGD." -ForegroundColor Yellow
+    Write-Host "  O arquivo fica em data\sgd-psai-consultas\.sgd-credentials.local (nao vai para o Git)." -ForegroundColor DarkGray
     Write-Host ""
-    $r = Read-Host "  Gravar utilizador e senha do SGD neste PC? (S/N)"
-    if ($r -ne "S" -and $r -ne "s") {
-        Write-Warn "Sem gravacao local. Na primeira consulta o script pedira utilizador e senha."
-        return
-    }
-    $u = Read-Host "  Utilizador SGD"
+    $u = Read-Host "  Usuario SGD"
     if ([string]::IsNullOrWhiteSpace($u)) {
-        Write-Warn "Utilizador vazio — passo SGD cancelado."
+        Write-Warn "Usuario vazio. Crie o arquivo manualmente depois:"
+        Write-Host "  data\sgd-psai-consultas\.sgd-credentials.local" -ForegroundColor DarkGray
+        Write-Host "  Conteudo: SGD_USERNAME=seu-usuario" -ForegroundColor DarkGray
+        Write-Host "            SGD_PASSWORD=`"sua-senha`"" -ForegroundColor DarkGray
         return
     }
     $sec = Read-Host "  Senha SGD" -AsSecureString
     if ($null -eq $sec -or $sec.Length -eq 0) {
-        Write-Warn "Senha vazia — passo SGD cancelado."
+        Write-Warn "Senha vazia. O arquivo sera criado apenas com o usuario — edite depois para adicionar a senha."
+        $credPath = Join-Path $dataSgd ".sgd-credentials.local"
+        Set-Content -Path $credPath -Value ("# Credenciais SGD (local). Nao partilhar.`nSGD_USERNAME=$($u.Trim())`nSGD_PASSWORD=`"`"") -Encoding UTF8
+        Write-OK "Arquivo criado com usuario. Edite e preencha SGD_PASSWORD."
         return
     }
     $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($sec)
@@ -440,7 +441,7 @@ function Invoke-SgdCredentialsStep {
         "SGD_PASSWORD=`"$passEsc`""
     )
     Set-Content -Path $credPath -Value ($lines -join "`n") -Encoding UTF8
-    Write-OK "Credenciais SGD gravadas: data\sgd-psai-consultas\.sgd-credentials.local"
+    Write-OK "Credenciais SGD salvas: data\sgd-psai-consultas\.sgd-credentials.local"
 }
 
 function Test-Installation {

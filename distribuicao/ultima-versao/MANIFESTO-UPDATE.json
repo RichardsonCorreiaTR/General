@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Atualizacao v2.4.22",
-    "data":  "2026-05-04T11:11:09",
+    "changelog":  "Atualizacao v2.4.23",
+    "data":  "2026-05-04T11:21:37",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.22"
+    "versao":  "2.4.23"
 }
