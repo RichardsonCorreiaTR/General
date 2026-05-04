@@ -1,0 +1,6 @@
+{
+  "networkPolicy": {
+    "default": "allow"
+  },
+  "enableSharedBuildCache": true
+}

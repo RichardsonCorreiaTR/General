@@ -44,3 +44,7 @@ O arquivo `PROJETO.md` na raiz é o blueprint mestre. Consulte por seção:
 
 URL: https://trten.sharepoint.com/sites/CursorEscrita/Shared%20Documents/General
 Local: `C:\Users\{usuario}\Thomson Reuters Incorporated\CursorEscrita - General`
+
+## Cursor Agent (menos confirmacoes Run)
+
+Este repositorio inclui `.cursor/sandbox.json` (rede permitida no sandbox). Para menos prompts: **Settings > Agents > Auto-Run** > **Run in Sandbox** (ou **Run Everything** com risco). Windows: **WSL2** melhora o sandbox. Opcional: `.\scripts\configurar-cursor-auto-run.ps1` cria `%USERPROFILE%\.cursor\permissions.json` a partir do exemplo se ainda nao existir. O mesmo padrao esta em `projeto-filho/.cursor/` e `projeto-filho/scripts/`.
