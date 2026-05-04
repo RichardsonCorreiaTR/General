@@ -26,3 +26,7 @@ para responder ao analista. O protocolo completo esta em agente-produto.mdc.
 ## Cursor Agent (menos confirmacoes Run)
 
 Este pacote inclui `.cursor/sandbox.json`. Para menos prompts ao executar comandos: **Settings > Agents > Auto-Run** > **Run in Sandbox** (recomendado) ou **Run Everything** (sem perguntas; maior risco). Windows: **WSL2** ajuda o sandbox. Opcional: `.\scripts\configurar-cursor-auto-run.ps1`.
+
+## Verificar regras Cursor (analistas)
+
+Linha de comando para conferir ficheiros `.cursor/rules` face ao manifesto oficial: `.\scripts\verificar-regras-cursor.ps1` (ou `.\scripts\verificar-ambiente.ps1 -IncluirRegrasCursor`). Para gerar texto a colar no chat da IA: `.\scripts\verificar-regras-cursor.ps1 -GerarPrompt`.

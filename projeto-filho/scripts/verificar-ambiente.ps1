@@ -2,6 +2,10 @@
 # Valida todos os componentes do ambiente do analista.
 # Gera relatorio colorido + config/status-ambiente.json
 
+param(
+    [switch]$IncluirRegrasCursor
+)
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
 
@@ -257,4 +261,13 @@ if ($caminhosOK -and $caminhos.onedrive_logs -and (Test-Path $caminhos.onedrive_
         Write-Host "  [!] Nao foi possivel publicar status no OneDrive: $($_.Exception.Message)" -ForegroundColor DarkYellow
     }
 }
+
+if ($IncluirRegrasCursor) {
+    $vr = Join-Path $scriptDir "verificar-regras-cursor.ps1"
+    if (Test-Path -LiteralPath $vr) {
+        Write-Host ""
+        & $vr
+    }
+}
+
 Write-Host ""

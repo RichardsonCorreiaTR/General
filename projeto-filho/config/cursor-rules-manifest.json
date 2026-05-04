@@ -1,0 +1,18 @@
+{
+  "descricao": "Lista oficial de regras Cursor do pacote projeto-filho (atualizar ao acrescentar/remover .mdc).",
+  "versaoManifesto": "1",
+  "regrasObrigatorias": [
+    "agente-codigo.mdc",
+    "agente-produto.mdc",
+    "guardiao.mdc",
+    "onboarding.mdc",
+    "padroes.mdc",
+    "projeto.mdc",
+    "revisar-psai.mdc",
+    "sgd-enriquecer-psai.mdc"
+  ],
+  "arquivosCursorOpcionais": [
+    ".cursor/sandbox.json",
+    ".cursor/permissions.json.example"
+  ]
+}

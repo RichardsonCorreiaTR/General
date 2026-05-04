@@ -93,6 +93,7 @@ $arqsCopia = @(
     "projeto-filho\scripts\setup-odbc.ps1",
     "projeto-filho\scripts\setup-sgd-python.ps1",
     "projeto-filho\scripts\configurar-cursor-auto-run.ps1",
+    "projeto-filho\scripts\verificar-regras-cursor.ps1",
     "projeto-filho\.cursor\rules\agente-codigo.mdc",
     "projeto-filho\.cursor\rules\agente-produto.mdc",
     "projeto-filho\.cursor\rules\guardiao.mdc",
