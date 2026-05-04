@@ -45,6 +45,24 @@ Outros arquivos .mdc referenciam este — nao duplicam.
 - Formato de entrada: `## HH:MM:SS - [Tipo] Descricao`
 - Registrar apos cada interacao substancial
 
+## Formatacao de resultados de SAIs/PSAIs (obrigatoria, sem excecao)
+
+SEMPRE apresente resultados de SAIs em **tabela Markdown com links clicaveis**.
+Agrupe por tipo (SAL, NE, SAM, SAIL). Formato obrigatorio:
+
+```
+| SAI | PSAI | Tipo | Versao | Status | Descricao resumida |
+|-----|------|------|--------|--------|--------------------|
+| [numero](https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=NUMERO) | [numero](https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai=NUMERO) | NE | 10.5A-06 | Liberada | Descricao curta |
+```
+
+URLs padrao:
+- SAI: `https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai={numero}`
+- PSAI: `https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai={numero}`
+
+NUNCA apresente SAIs como lista de texto corrido. A tabela com links permite ao
+analista abrir diretamente no navegador com um clique.
+
 ## Formatacao geral
 
 - Arquivos Markdown: UTF-8, sem BOM

@@ -99,6 +99,8 @@ silenciosamente. So fale com o analista se encontrar problema.
    O script busca em 14 campos (incluindo BLOBs completos) e agrupa por SAI.
    NUNCA apresente resultados de SAIs baseados apenas nos indices MD.
    Os indices contem descricoes truncadas (80 chars) -- insuficientes para analise.
+5. SEMPRE apresente resultados em tabela Markdown com links clicaveis (ver padroes.mdc
+   secao "Formatacao de resultados de SAIs/PSAIs"). NUNCA liste SAIs como texto corrido.
 
 **Nota sobre cache offline**: O script `atualizar-projeto.ps1` tambem regenera
 o cache em `meu-trabalho/cache-offline/` ao final de cada atualizacao.

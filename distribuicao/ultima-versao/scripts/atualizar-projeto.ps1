@@ -124,6 +124,19 @@ if (Test-Path $srcVersion) {
     Copy-Item -Path $srcVersion -Destination $versionFile -Force
 }
 
+# Config do pacote (nao personalizavel pelo analista); antes faltava e o manifesto/regras ficavam defasados
+$configPacote = @(
+    "cursor-rules-manifest.json"
+)
+foreach ($nome in $configPacote) {
+    $srcCfg = Join-Path $fonteDir "config\$nome"
+    $dstCfg = Join-Path $projetoDir "config\$nome"
+    if (Test-Path -LiteralPath $srcCfg) {
+        Copy-Item -LiteralPath $srcCfg -Destination $dstCfg -Force
+        Write-Host "  Atualizado: config\$nome" -ForegroundColor Green
+    }
+}
+
 # Restaurar dados do analista
 Write-Host "[3/3] Restaurando seus dados..." -ForegroundColor Yellow
 foreach ($item in @("config\analista.json", "config\caminhos.json", "config\status-ambiente.json")) {
@@ -152,7 +165,7 @@ $credSgd = Join-Path $projetoDir "data\sgd-psai-consultas\.sgd-credentials.local
 if (-not (Test-Path -LiteralPath $credSgd)) {
     Write-Host ""
     Write-Host "=== Credenciais SGD (opcional) ===" -ForegroundColor Cyan
-    Write-Host "Nao ha ficheiro data\sgd-psai-consultas\.sgd-credentials.local — Consultar-PSAI-SGD.ps1 pedira login a cada execucao." -ForegroundColor DarkGray
+    Write-Host "Nao ha ficheiro data\sgd-psai-consultas\.sgd-credentials.local - Consultar-PSAI-SGD.ps1 pedira login a cada execucao." -ForegroundColor DarkGray
     $r = Read-Host "Gravar utilizador e senha do SGD neste PC agora? (S/N)"
     if ($r -eq "S" -or $r -eq "s") {
         $dataSgd = Split-Path -Parent $credSgd

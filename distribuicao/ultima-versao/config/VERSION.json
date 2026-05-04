@@ -1,7 +1,7 @@
 ﻿{
     "compativel_com_admin":  "2.5",
-    "changelog":  "v2.4.18: Cursor Agent — .cursor/sandbox.json (rede permitida no sandbox, enableSharedBuildCache), permissions.json.example, scripts/configurar-cursor-auto-run.ps1; onboarding e projeto.mdc com Auto-Run/WSL2; sincronizar-sharepoint inclui configurar-cursor-auto-run.",
+    "changelog":  "Atualizacao v2.4.19",
     "data":  "2026-05-04",
-    "hash_validacao":  "34BCF4969CCDE62DCD266AF7EAB04580",
-    "versao":  "2.4.18"
+    "hash_validacao":  "78AA0423BD6D5F1388B2B20E55A1B506",
+    "versao":  "2.4.19"
 }
