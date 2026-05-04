@@ -57,11 +57,24 @@ Siga estes passos na ordem:
   - Me avise: "Python nao encontrado. Instale em https://www.python.org/downloads/ marcando 'Add python.exe to PATH', depois rode: .\scripts\setup-sgd-python.ps1"
   - Continue para o proximo passo mesmo assim.
 
-**7. VERIFICAR AMBIENTE**
+**7. CREDENCIAIS SGD (OBRIGATORIO para consulta PSAI)**
+- Me pergunte: "Deseja salvar seu usuario e senha do SGD neste PC para nao precisar digitar a cada consulta? (S/N)"
+- Se SIM:
+  - Me pergunte meu usuario do SGD
+  - Me pergunte minha senha do SGD (avise que ficara salva localmente, nunca vai para o Git)
+  - Crie a pasta: C:\CursorEscrita\projeto-filho\data\sgd-psai-consultas\
+  - Crie o arquivo C:\CursorEscrita\projeto-filho\data\sgd-psai-consultas\.sgd-credentials.local com o conteudo:
+    SGD_USERNAME={meu-usuario-sgd}
+    SGD_PASSWORD="{minha-senha-sgd}"
+  - Confirme: "Credenciais salvas. A consulta PSAI usara essas credenciais automaticamente."
+- Se NAO:
+  - Informe: "OK. Na primeira consulta de PSAI o sistema vai pedir seu usuario e senha. Voce pode salvar depois rodando: .\scripts\Consultar-PSAI-SGD.ps1 <numero>"
+
+**8. VERIFICAR AMBIENTE**
 - Rode: powershell -File "C:\CursorEscrita\projeto-filho\scripts\verificar-ambiente.ps1"
 - Me mostre o resultado.
 
-**8. INSTRUCOES FINAIS**
+**9. INSTRUCOES FINAIS**
 - Me diga para fechar esta janela do Cursor
 - Me diga para abrir o Cursor de novo em: File > Open Folder > C:\CursorEscrita\projeto-filho
 - Ao abrir, a IA vai me receber com o wizard de onboarding automaticamente
