@@ -1,6 +1,6 @@
 ﻿{
     "data":  "2026-05-06",
-    "versao":  "2.4.25",
+    "versao":  "2.4.26",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -68,7 +68,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "Correcao: ALERTA PROJETO FOLHA -\u003e PROJETO ESCRITA no guardiao.mdc",
+    "changelog":  "Correcao: contato de escalonamento atualizado para Richardson Picinini Correia",
     "requerSymlink":  [
                           "atualizacao"
                       ],

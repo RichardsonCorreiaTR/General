@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Correcao: ALERTA PROJETO FOLHA -\u003e PROJETO ESCRITA no guardiao.mdc",
-    "data":  "2026-05-06T11:39:19",
+    "changelog":  "Correcao: contato de escalonamento atualizado para Richardson Picinini Correia",
+    "data":  "2026-05-06T11:46:26",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.25"
+    "versao":  "2.4.26"
 }
