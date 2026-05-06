@@ -1,4 +1,4 @@
----
+﻿---
 description: Checklist obrigatoria para o analista -- protecao e padronizacao
 alwaysApply: true
 ---
@@ -166,7 +166,7 @@ atencao do gerente. Copie a mensagem abaixo e envie para
 Vitor Justino via Teams:
 
 ---
-ALERTA PROJETO FOLHA - [Analista: {nome do analista.json}]
+ALERTA PROJETO ESCRITA - [Analista: {nome do analista.json}]
 Problema: {descricao clara do problema}
 Detectado em: {data e hora}
 Impacto: {o que o analista nao consegue fazer}
@@ -212,7 +212,7 @@ lista de problemas. Nao gere mensagens separadas para cada falha.
 Use o formato:
 
 ```
-ALERTA PROJETO FOLHA - [Analista: {nome}]
+ALERTA PROJETO ESCRITA - [Analista: {nome}]
 Problemas detectados ({N}):
 1. {problema 1} - {descricao}
 2. {problema 2} - {descricao}

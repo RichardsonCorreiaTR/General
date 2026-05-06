@@ -1,11 +1,27 @@
 ﻿# SAL Pendentes - Escrita Fiscal
 
-> Atualizado em: 29/04/2026 09:03
-> Total pendentes: 96
+> Atualizado em: 06/05/2026 09:02
+> Total pendentes: 110
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 130442 |  | 28/04/2026 | ID 0 | - |
+| 0 | 130592 |  | 06/05/2026 | ID 0 | - |
+| 0 | 130591 |  | 06/05/2026 | ID 0 | - |
+| 0 | 130585 |  | 05/05/2026 | ID 0 | - |
+| 0 | 130566 |  | 05/05/2026 | ID 0 | - |
+| 0 | 130556 |  | 05/05/2026 | ID 0 | - |
+| 0 | 130554 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130540 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130535 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130522 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130518 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130517 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130483 |  | 29/04/2026 | ID 0 | - |
+| 0 | 130481 |  | 29/04/2026 | ID 0 | - |
+| 0 | 130479 |  | 29/04/2026 | ID 0 | - |
+| 0 | 130478 |  | 29/04/2026 | ID 0 | - |
+| 0 | 130470 |  | 29/04/2026 | ID 0 | - |
+| 0 | 130465 |  | 29/04/2026 | ID 0 | - |
 | 0 | 130433 |  | 28/04/2026 | ID 0 | - |
 | 0 | 130402 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130399 |  | 27/04/2026 | ID 0 | - |
@@ -20,7 +36,7 @@
 | 0 | 130179 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130178 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130149 |  | 16/04/2026 | ID 0 | - |
-| 101313 | 130132 | 10.6A-05 | 15/04/2026 | Aguardando Resposta do Desenvolvimento | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
+| 101313 | 130132 | 10.6A-04.03 | 15/04/2026 | Aguardando Resposta do Desenvolvimento | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
 | 0 | 130033 |  | 13/04/2026 | ID 0 | - |
 | 0 | 130028 |  | 13/04/2026 | ID 0 | - |
 | 0 | 130026 |  | 13/04/2026 | ID 0 | - |
@@ -33,7 +49,6 @@
 | 0 | 129878 |  | 07/04/2026 | ID 0 | - |
 | 0 | 129835 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129834 |  | 06/04/2026 | ID 0 | - |
-| 0 | 129817 |  | 02/04/2026 | ID 0 | - |
 | 0 | 129815 |  | 02/04/2026 | ID 0 | - |
 | 0 | 129812 |  | 02/04/2026 | ID 0 | - |
 | 0 | 129769 |  | 01/04/2026 | ID 0 | - |
@@ -54,7 +69,6 @@
 | 101011 | 129356 |  | 20/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | SP-Adequar o sistema para permitir realizar lan�amentos de ajustes de 'Outros d� |
 | 0 | 129278 |  | 19/03/2026 | ID 0 | - |
 | 0 | 129216 |  | 18/03/2026 | ID 0 | - |
-| 0 | 129166 |  | 17/03/2026 | ID 0 | - |
 | 0 | 129165 |  | 17/03/2026 | ID 0 | - |
 | 0 | 129142 |  | 16/03/2026 | ID 0 | - |
 | 0 | 129110 |  | 13/03/2026 | ID 0 | - |
@@ -67,7 +81,7 @@
 | 0 | 129024 |  | 11/03/2026 | ID 0 | - |
 | 0 | 128940 |  | 10/03/2026 | ID 0 | - |
 | 0 | 128939 |  | 10/03/2026 | ID 0 | - |
-| 101354 | 128938 |  | 10/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Estaduais, q |
+| 101354 | 128938 | 10.6A-05 | 10/03/2026 | Respondido Gerente de Produto | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Estaduais, q |
 | 0 | 128895 |  | 09/03/2026 | ID 0 | - |
 | 0 | 128859 |  | 06/03/2026 | ID 0 | - |
 | 101384 | 128845 |  | 05/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | SC-Atualizar os c�digos de ajuste de ICMS da Tabela 5.2, conforme Correio Eletr� |
@@ -77,10 +91,10 @@
 | 0 | 128714 |  | 03/03/2026 | ID 0 | - |
 | 101058 | 128657 | 10.6A-05 | 02/03/2026 | Respondido Gerente de Produto | Ajustar o comprovante anual para que gere os rendimentos isentos de distribui��o |
 | 0 | 128540 |  | 26/02/2026 | ID 0 | - |
-| 100608 | 128452 | 10.6A-05 | 25/02/2026 | Respondido Gerente de Produto | Alterar a al�quota do imposto 28-FUNRURAL aplicando a majora��o de 10% conforme  |
-| 100853 | 128376 |  | 24/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | RS-Alterar o sistema para que seja gerado o registro E311 do SPED Fiscal pelo la |
+| 100608 | 128452 | 10.6A-05 | 25/02/2026 | Aguardando Resposta do Gerente de Produto | Alterar a al�quota do imposto 28-FUNRURAL aplicando a majora��o de 10% conforme  |
+| 100853 | 128376 | 10.6A-05 | 24/02/2026 | Respondido Gerente de Produto | RS-Alterar o sistema para que seja gerado o registro E311 do SPED Fiscal pelo la |
 | 0 | 128374 |  | 24/02/2026 | ID 0 | - |
-| 100847 | 128299 | 10.6A-05 | 23/02/2026 | Respondido Gerente de Produto | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
+| 100847 | 128299 | 10.6A-05 | 23/02/2026 | Aguardando Resposta do Gerente de Produto | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
 | 0 | 128238 |  | 20/02/2026 | ID 0 | - |
 | 0 | 128200 |  | 19/02/2026 | ID 0 | - |
 | 0 | 127975 |  | 13/02/2026 | ID 0 | - |
@@ -93,7 +107,7 @@
 | 99852 | 126630 |  | 19/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Incluir o CNAE 8220-2/00 nos par�metros para c�lculo do INSS Receita Bruta. |
 | 99799 | 126559 |  | 16/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o sistema para que seja poss�vel informar a chave das notas modelo 62 no |
 | 100979 | 126557 |  | 16/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | RS-Ajustar a gera��o do SPED Fiscal referente a anula��o de CT-e/CT-eOS quando o |
-| 101293 | 126447 | 10.6A-05 | 14/01/2026 | Aguardando Resposta do Gerente de Testes | Ajustar o PIS e COFINS para calcular a redu��o linear de 10% nos incentivos e be |
+| 101293 | 126447 | 10.6A-05 | 14/01/2026 | Respondido Gerente de Produto | Ajustar o PIS e COFINS para calcular a redu��o linear de 10% nos incentivos e be |
 | 99437 | 126341 |  | 12/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os lan�ament |
 | 0 | 126108 |  | 07/01/2026 | ID 0 | - |
 | 0 | 125794 |  | 23/12/2025 | ID 0 | - |

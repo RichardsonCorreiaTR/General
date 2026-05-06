@@ -1,7 +1,7 @@
 ﻿# NEs Pendentes - Recentes (2025+)
 
-> Atualizado em: 29/04/2026 09:03
-> Total: 215 NEs
+> Atualizado em: 06/05/2026 09:02
+> Total: 220 NEs
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
@@ -32,7 +32,7 @@
 | 95735 | 121299 |  | Normal | 29/07/2025 | Retorno de Teste | Em alguns casos as rotinas que fazem a paralisa��o dos Utilit�rios WebService SE |
 | 95883 | 121350 |  | Normal | 31/07/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� apresentando erro de banco de dados ao realizar a importa��o no Dom�nio Cli |
 | 0 | 121351 |  | Normal | 31/07/2025 | ID 0 | - |
-| 95994 | 121389 |  | Normal | 01/08/2025 | Retorno de Teste | Esta sendo demonstrada indevidamente a descri��o da mensagem de valida��o nas op |
+| 95994 | 121389 | 10.6A-05 | Normal | 01/08/2025 | Respondido Gerente de Produto | Esta sendo demonstrada indevidamente a descri��o da mensagem de valida��o nas op |
 | 96406 | 121838 |  | Normal | 15/08/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� replicando corretamente as informa��es de per�odo do bot�o "Vari�veis.. |
 | 96211 | 121862 |  | Normal | 18/08/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | RS - N�o est� calculando o cr�dito de ICMS, quando efetuado o rec�lculo para os  |
 | 96980 | 121875 |  | Normal | 19/08/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� ficando com a situa��o 'Em processamento' travada quando for solicitada a g |
@@ -48,7 +48,7 @@
 | 98290 | 124811 |  | Normal | 28/11/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | MG-Em alguns casos o sistema est� fechando ao emitir o relat�rio Cr�dito Presumi |
 | 0 | 125004 |  | Normal | 03/12/2025 | ID 0 | - |
 | 98686 | 125616 | 10.6A-05 | Normal | 18/12/2025 | Respondido Gerente de Produto | N�o est� sendo gerado o valor correto referente ao zeramento dos impostos 17-PIS |
-| 98860 | 125617 |  | Normal | 18/12/2025 | Retorno de Teste | Em alguns casos n�o est�o sendo geradas algumas notas no registro 1011 do inform |
+| 98860 | 125617 | 10.6A-05 | Normal | 18/12/2025 | Aguardando Resposta do Desenvolvimento | Em alguns casos n�o est�o sendo geradas algumas notas no registro 1011 do inform |
 | 98939 | 125748 |  | Normal | 22/12/2025 | Retorno de Teste | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nome do licen |
 | 98801 | 125760 |  | Normal | 22/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� sendo processado corretamente o recebimento de baixa de impostos que s� |
 | 0 | 125781 |  | Normal | 22/12/2025 | ID 0 | - |
@@ -64,12 +64,12 @@
 | 99479 | 127026 |  | Normal | 26/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� gerando o Status do consentimento corretamente no cont�bil quando ao al |
 | 100346 | 127261 | 10.6A-05 | Normal | 29/01/2026 | Respondido Gerente de Produto | Est� sendo apresentado indevidamente os valores da receita bruta acumulada dos s |
 | 100021 | 127375 | 10.6A-05 | Normal | 02/02/2026 | Respondido Gerente de Produto | Est� apresentando o n�mero de parcelas incorreto no relat�rio "ICMS Creditado",  |
-| 100618 | 127428 | ZDuvidas | Normal | 03/02/2026 | Aguardando Resposta do Gerente de Produto | SC-Em alguns casos n�o est� sendo gerado o valor correto nos itens 040 e 199 do  |
+| 100618 | 127428 | ZDuvidas | Normal | 03/02/2026 | Aguardando Resposta do Gerente de Testes | SC-Em alguns casos n�o est� sendo gerado o valor correto nos itens 040 e 199 do  |
 | 99878 | 127508 | 10.6A-05 | Normal | 03/02/2026 | Respondido Gerente de Produto | SP-Est� importando incorretamente a base de c�lculo e o valor do imposto 8-DIFAL |
 | 99786 | 127641 | 10.6A-05 | Normal | 06/02/2026 | Aguardando Resposta do Desenvolvimento | N�o est� deduzindo o valor das devolu��o do valor das receitas na ferramenta Com |
 | 99777 | 127665 | 10.6A-05 | Normal | 06/02/2026 | Respondido Gerente de Produto | N�o carrega transa��o para Concilia��o manual de filial |
-| 0 | 127844 |  | Normal | 10/02/2026 | ID 0 | - |
-| 100076 | 127937 | 10.6A-05 | Normal | 12/02/2026 | Respondido Gerente de Produto | Est� sendo apresentada indevidamente a mensagem de erro "C�digo de atividade n�o |
+| 101501 | 127844 | 10.6A-05 | Normal | 10/02/2026 | Respondido Gerente de Produto | N�o est�o sendo gerados corretamente os valores de compensa��o nos campos da jan |
+| 100076 | 127937 | 10.6A-05 | Normal | 12/02/2026 | Aguardando Resposta do Gerente de Produto | Est� sendo apresentada indevidamente a mensagem de erro "C�digo de atividade n�o |
 | 100034 | 127938 | 10.6A-05 | Normal | 12/02/2026 | Respondido Gerente de Produto | N�o est� sendo apresentado no relat�rio "Controle de Incentivos Fiscais" o "Valo |
 | 99972 | 127951 | 10.6A-05 | Normal | 12/02/2026 | Respondido Gerente de Produto | Em alguns casos est� ocorrendo erro na execu��o do exporta/importa referente a t |
 | 100062 | 128101 | 10.6A-05 | Normal | 16/02/2026 | Respondido Gerente de Produto | RS-N�o est� sendo gerado corretamente o registro E113 e n�o est� sendo gerado o  |
@@ -106,7 +106,7 @@
 | 100740 | 128850 | 10.6A-05 | Normal | 05/03/2026 | Respondido Gerente de Produto | N�o est� habilitando a op��o "N�o imprimir a express�o consolidado no cabe�alho" |
 | 101100 | 128886 | 10.6A-05 | Normal | 06/03/2026 | Respondido Gerente de Produto | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lculo" do re |
 | 100410 | 128890 | 10.6A-05 | Normal | 06/03/2026 | Respondido Gerente de Produto | N�o est�o ficando gravadas as contas cont�beis no bot�o "Outros Dados" do inform |
-| 0 | 128897 |  | Normal | 09/03/2026 | ID 0 | - |
+| 101485 | 128897 |  | Normal | 09/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informativo SPED Fi |
 | 100789 | 128903 |  | Normal | 09/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� apresentando erro de banco de dados ao gravar a tela "Informa��es da Pessoa |
 | 0 | 128956 |  | Normal | 10/03/2026 | ID 0 | - |
 | 101340 | 128957 | 10.6A-05 | Normal | 10/03/2026 | Respondido Gerente de Produto | N�o est� sendo demonstrado as receitas da filial no relat�rio Simples Nacional - |
@@ -122,7 +122,7 @@
 | 101318 | 129157 |  | Normal | 16/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o atualiza a tooltip das transa��es quando possuir um processo de CREATED, con |
 | 101192 | 129179 | 10.6A-05 | Normal | 17/03/2026 | Respondido Gerente de Produto | N�o est� sendo gerada na compet�ncia correta o valor do imposto 18-ISS-RET na ja |
 | 0 | 129273 |  | Normal | 19/03/2026 | ID 0 | - |
-| 101164 | 129275 |  | Normal | 19/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos, n�o est� sendo gerado o valor correto da linha "3. Cr�dito outo |
+| 101164 | 129275 | 10.6A-05 | Normal | 19/03/2026 | Respondido Gerente de Produto | Em alguns casos, n�o est� sendo gerado o valor correto da linha "3. Cr�dito outo |
 | 0 | 129308 |  | Normal | 19/03/2026 | ID 0 | - |
 | 0 | 129320 |  | Normal | 20/03/2026 | ID 0 | - |
 | 0 | 129380 |  | Normal | 20/03/2026 | ID 0 | - |
@@ -132,7 +132,7 @@
 | 101035 | 129512 |  | Normal | 25/03/2026 | Retorno de Teste | Em alguns casos est� ocorrendo o erro "uo_carrega_empresas_relat�rio" ao executa |
 | 100941 | 129535 | 10.6A-05 | Normal | 25/03/2026 | Respondido Gerente de Produto | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/AT por pro |
 | 101342 | 129540 |  | Normal | 25/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� sendo feita corretamente a importa��o das informa��es da janela "Outros |
-| 100940 | 129545 | 10.6A-05 | Normal | 26/03/2026 | Respondido Gerente de Produto | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota � importad |
+| 100940 | 129545 | 10.6A-05 | Normal | 26/03/2026 | Respondido Gerente de Testes | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota � importad |
 | 0 | 129601 |  | Normal | 27/03/2026 | ID 0 | - |
 | 101154 | 129604 |  | Normal | 27/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� sendo feita corretamente a contabiliza��o das notas de Entrada e Sa�da, |
 | 0 | 129632 |  | Normal | 30/03/2026 | ID 0 | - |
@@ -154,8 +154,7 @@
 | 101039 | 129826 |  | Normal | 02/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos, est� gerando indevidamente o valor da Receita L�quida para as D |
 | 101184 | 129830 |  | Normal | 02/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� ocorrendo o erro de sistema "N�mero do Erro...: 6" ao reali |
 | 0 | 129860 |  | Normal | 06/04/2026 | ID 0 | - |
-| 0 | 129874 |  | Normal | 07/04/2026 | ID 0 | - |
-| 101061 | 129875 |  | Normal | 07/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� ocorrendo o erro "Erro realizando requisi��o: Erro ao realizar requisi��o:  |
+| 101502 | 129874 |  | Normal | 07/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� sendo alterada a al�quota de PIS e COFINS na guia "Estoque" das notas f |
 | 101139 | 129879 | 10.6A-05 | Normal | 07/04/2026 | Respondido Gerente de Produto | Est� gerando o saldo anterior incorreto no DFC em RTF no informativo SPED Cont�b |
 | 101069 | 129891 |  | Normal | 07/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Lentid�o ao realizar a grava��o de lan�amentos no Contabilidade Digital |
 | 0 | 129914 |  | Normal | 08/04/2026 | ID 0 | - |
@@ -171,7 +170,7 @@
 | 0 | 130053 |  | Normal | 13/04/2026 | ID 0 | - |
 | 0 | 130058 |  | Normal | 14/04/2026 | ID 0 | - |
 | 0 | 130059 |  | Normal | 14/04/2026 | ID 0 | - |
-| 101279 | 130073 | 10.6A-04.03 | Normal | 14/04/2026 | Respondido Gerente de Produto | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
+| 101279 | 130073 | 10.6A-04.03 | Normal | 14/04/2026 | Respondido Coordenador de Módulos DEMO | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101378 | 130092 |  | Normal | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos, n�o est� carregando as transa��es para o extrato se possui m�lt |
 | 101285 | 130095 |  | Normal | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� ocorrendo erro ao regerar lan�amentos cont�beis atrav�s do  |
 | 0 | 130096 |  | Normal | 15/04/2026 | ID 0 | - |
@@ -179,7 +178,7 @@
 | 101286 | 130098 |  | Normal | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� sendo gerado valor negativo no campo 06-VL_CRED_DIF do regi |
 | 0 | 130122 |  | Normal | 15/04/2026 | ID 0 | - |
 | 101319 | 130128 | 10.6A-05 | Normal | 15/04/2026 | Respondido Gerente de Produto | Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a i |
-| 101278 | 130133 | 10.6A-05 | Normal | 15/04/2026 | Aguardando Resposta do Desenvolvimento | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
+| 101278 | 130133 | 10.6A-05 | Normal | 15/04/2026 | Respondido Gerente de Testes | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
 | 101414 | 130134 |  | Normal | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� importando incorretamente o valor da opera��o do contrato de factoring quan |
 | 101256 | 130136 |  | Normal | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est�o sendo disponibilizadas para o Cont�bil as notas armazenadas no BOX-e. |
 | 0 | 130141 |  | Normal | 16/04/2026 | ID 0 | - |
@@ -192,8 +191,8 @@
 | 0 | 130209 |  | Normal | 20/04/2026 | ID 0 | - |
 | 101460 | 130212 |  | Normal | 20/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table 'CTCONTAS_A |
 | 0 | 130213 |  | Normal | 20/04/2026 | ID 0 | - |
-| 101341 | 130238 | 10.6A-05 | Normal | 20/04/2026 | Respondido Gerente de Produto | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
-| 0 | 130247 |  | Normal | 20/04/2026 | ID 0 | - |
+| 101341 | 130238 | 10.6A-05 | Normal | 20/04/2026 | Aguardando Resposta do Gerente de Produto | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
+| 101492 | 130247 |  | Normal | 20/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | SC-N�o est� sendo gerado o item 999 do quadro 11 na DIME da Filial, quando a apu |
 | 0 | 130255 |  | Normal | 20/04/2026 | ID 0 | - |
 | 0 | 130256 |  | Normal | 20/04/2026 | ID 0 | - |
 | 0 | 130265 |  | Normal | 22/04/2026 | ID 0 | - |
@@ -202,7 +201,7 @@
 | 0 | 130327 |  | Normal | 23/04/2026 | ID 0 | - |
 | 101425 | 130331 |  | Normal | 24/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simples Nacional |
 | 0 | 130332 |  | Normal | 24/04/2026 | ID 0 | - |
-| 0 | 130334 |  | Normal | 24/04/2026 | ID 0 | - |
+| 101487 | 130334 | 10.6A-05 | Normal | 24/04/2026 | Respondido Gerente de Produto | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
 | 0 | 130337 |  | Normal | 24/04/2026 | ID 0 | - |
 | 0 | 130339 |  | Normal | 24/04/2026 | ID 0 | - |
 | 101471 | 130358 |  | Normal | 24/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Extrato Mensal da filial centralizada sempre gera os dados da matriz |
@@ -210,14 +209,20 @@
 | 0 | 130374 |  | Normal | 24/04/2026 | ID 0 | - |
 | 0 | 130375 |  | Normal | 24/04/2026 | ID 0 | - |
 | 101480 | 130379 |  | Normal | 24/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est�o sendo apresentadas todas as empresas no quadro "Selecionar empresas" d |
-| 0 | 130413 |  | Normal | 27/04/2026 | ID 0 | - |
-| 101468 | 130421 | 10.6A-05 | Normal | 27/04/2026 |  | - |
+| 101468 | 130421 | 10.6A-04.03 | Normal | 27/04/2026 | Aguardando Resposta do Desenvolvimento | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
 | 0 | 130430 |  | Normal | 28/04/2026 | ID 0 | - |
-| 0 | 130434 |  | Normal | 28/04/2026 | ID 0 | - |
-| 0 | 130449 |  | Normal | 28/04/2026 | ID 0 | - |
 | 0 | 130453 |  | Normal | 29/04/2026 | ID 0 | - |
 | 0 | 130454 |  | Normal | 29/04/2026 | ID 0 | - |
 | 0 | 130455 |  | Normal | 29/04/2026 | ID 0 | - |
 | 0 | 130456 |  | Normal | 29/04/2026 | ID 0 | - |
-| 0 | 130458 |  | Normal | 29/04/2026 | ID 0 | - |
+| 101508 | 130467 | 10.6A-05 | Normal | 29/04/2026 | Respondido Gerente de Produto | N�o est� sendo demonstrado o Lucro e Dividendo Isento (natureza 12001) informado |
+| 0 | 130475 |  | Normal | 29/04/2026 | ID 0 | - |
+| 0 | 130530 |  | Normal | 04/05/2026 | ID 0 | - |
+| 101549 | 130532 |  | Normal | 04/05/2026 |  | - |
+| 0 | 130536 |  | Normal | 04/05/2026 | ID 0 | - |
+| 0 | 130537 |  | Normal | 04/05/2026 | ID 0 | - |
+| 0 | 130538 |  | Normal | 04/05/2026 | ID 0 | - |
+| 0 | 130550 |  | Normal | 04/05/2026 | ID 0 | - |
+| 0 | 130552 |  | Normal | 04/05/2026 | ID 0 | - |
+| 0 | 130577 |  | Normal | 05/05/2026 | ID 0 | - |
 

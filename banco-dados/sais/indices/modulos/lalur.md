@@ -1,13 +1,14 @@
 ﻿# LALUR
 
 > Dominio Escrita Fiscal | slug `lalur`
-> Atualizado em: 29/04/2026 09:03
-> Pendentes: 17 | Liberadas: 707 | Descartadas: 63 | Total SAIs: 787
+> Atualizado em: 06/05/2026 09:02
+> Pendentes: 18 | Liberadas: 708 | Descartadas: 63 | Total SAIs: 789
 
-## Pendentes (17)
+## Pendentes (18)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101487 | 130334 | NE | Normal | 24/04/2026 | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
 | 101374 | 130288 | NE | Normal | 22/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
 | 101341 | 130238 | NE | Normal | 20/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
 | 101308 | 130231 | SAM | Normal | 20/04/2026 | Refatorar o c�lculo da majora��o do IRPJ e CSLL. |
@@ -31,6 +32,7 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
+| 101292 | 130173 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o do imposto 7-IRPJ, quando no |
 | 101120 | 129965 | NE | 09/04/2026 | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, 33-IRPJ-P |
 | 100993 | 129714 | NE | 31/03/2026 | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, 110-CSLL/ |
 | 100952 | 129631 | NE | 30/03/2026 | N�o est� sendo gerado o valor correto dos impostos 110-CSLL/SCP e 111-IRPJ/SCP,  |
@@ -59,13 +61,12 @@
 | 95403 | 120672 | NE | 09/07/2025 | N�o est� sendo considerada a devolu��o de venda com ve�culos usados no relat�rio |
 | 94792 | 120027 | NE | 11/06/2025 | N�o est� importando valor para o campo "29 - Cr�dito Fiscal de IRPJ - MP n� 1.18 |
 | 94177 | 119313 | SAM | 15/05/2025 | Criar o relat�rio do Planejamento Tribut�rio para os regimes Simples Nacional, L |
-| 94555 | 119031 | NE | 07/05/2025 | N�o est� sendo deduzido o valor do ped�gio no campo "Valor do CT-e" da guia "CT- |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| irpj | 464 |
+| irpj | 465 |
 | csll | 352 |
 | lalur | 127 |
 | lucro real | 84 |

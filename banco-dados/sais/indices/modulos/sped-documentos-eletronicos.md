@@ -1,13 +1,14 @@
 ﻿# SPED e documentos eletronicos
 
 > Dominio Escrita Fiscal | slug `sped-documentos-eletronicos`
-> Atualizado em: 29/04/2026 09:03
-> Pendentes: 178 | Liberadas: 7557 | Descartadas: 645 | Total SAIs: 8377
+> Atualizado em: 06/05/2026 09:02
+> Pendentes: 180 | Liberadas: 7557 | Descartadas: 645 | Total SAIs: 8379
 
-## Pendentes (178)
+## Pendentes (180)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101513 | 130476 | SAM | Normal | 29/04/2026 | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
 | 101278 | 130133 | NE | Normal | 15/04/2026 | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
 | 101319 | 130128 | NE | Normal | 15/04/2026 | Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a i |
 | 101286 | 130098 | NE | Normal | 15/04/2026 | Em alguns casos est� sendo gerado valor negativo no campo 06-VL_CRED_DIF do regi |
@@ -32,6 +33,7 @@
 | 101150 | 129343 | SAM | Normal | 20/03/2026 | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cadastro do ac |
 | 100647 | 129305 | SAM | Normal | 19/03/2026 | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui��es. |
 | 100741 | 129097 | SAL | Normal | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
+| 101485 | 128897 | NE | Normal | 09/03/2026 | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informativo SPED Fi |
 | 101299 | 128827 | SAL | Normal | 05/03/2026 | Alterar o sistema para permitir a utiliza��o do tipo de isen��o 2 - Di�ria de vi |
 | 100345 | 128813 | NE | Normal | 04/03/2026 | Est� ocorrendo erro de sistema ao gravar o bot�o "Outros Dados" do informativo " |
 | 100525 | 128811 | NE | Normal | 04/03/2026 | Em alguns casos est� ocorrendo lentid�o ao gerar o informativo EFD Contribui��es |

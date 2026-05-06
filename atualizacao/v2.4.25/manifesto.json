@@ -1,6 +1,6 @@
 ﻿{
-    "data":  "2026-05-04",
-    "versao":  "2.4.23",
+    "data":  "2026-05-06",
+    "versao":  "2.4.25",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -28,6 +28,7 @@
                               "scripts/buscar-sai.ps1",
                               "scripts/configurar-cursor-auto-run.ps1",
                               "scripts/Consultar-PSAI-SGD.ps1",
+                              "scripts/Consultar-SAI-SGD.ps1",
                               "scripts/corrigir-symlinks.ps1",
                               "scripts/Enriquecer-PSAI-DadosBrutos.ps1",
                               "scripts/lib-sgd-caminhos.ps1",
@@ -39,6 +40,7 @@
                               "scripts/sgd_consulta/.env.example",
                               "scripts/sgd_consulta/.sgd-credentials.local.example",
                               "scripts/sgd_consulta/consultar_psai.py",
+                              "scripts/sgd_consulta/consultar_sai.py",
                               "scripts/sgd_consulta/enriquecer_psai_dados_brutos.py",
                               "scripts/sgd_consulta/env.py",
                               "scripts/sgd_consulta/psai_arquivo.py",
@@ -66,7 +68,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "Atualizacao v2.4.23",
+    "changelog":  "Correcao: ALERTA PROJETO FOLHA -\u003e PROJETO ESCRITA no guardiao.mdc",
     "requerSymlink":  [
                           "atualizacao"
                       ],

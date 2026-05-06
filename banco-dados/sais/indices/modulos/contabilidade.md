@@ -1,15 +1,15 @@
 ﻿# Contabilidade
 
 > Dominio Escrita Fiscal | slug `contabilidade`
-> Atualizado em: 29/04/2026 09:03
-> Pendentes: 103 | Liberadas: 2610 | Descartadas: 326 | Total SAIs: 3028
+> Atualizado em: 06/05/2026 09:02
+> Pendentes: 103 | Liberadas: 2610 | Descartadas: 325 | Total SAIs: 3028
 
 ## Pendentes (103)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130442 | SAL | Normal | 28/04/2026 | - |
-| 101444 | 130388 | SAM | Normal | 27/04/2026 | - |
+| 0 | 130585 | SAL | Normal | 05/05/2026 | - |
+| 101444 | 130388 | SAM | Normal | 27/04/2026 | Melhorar performance para evitar gargalos no DW |
 | 101381 | 130316 | SAM | Normal | 23/04/2026 | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
 | 101460 | 130212 | NE | Normal | 20/04/2026 | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table 'CTCONTAS_A |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
@@ -135,7 +135,6 @@
 | 99548 | 127176 | NE | 28/01/2026 | O sistema n�o est� respeitando o filtro "Ocultar contas cont�beis vinculadas ao  |
 | 99568 | 127111 | SAL | 27/01/2026 | Alterar o cabe�alho do arquivo DIOPS de 2026. |
 | 99643 | 126712 | NE | 20/01/2026 | Em alguns casos est� duplicando contas do relat�rio Plano de Contas, ao salver e |
-| 99315 | 126696 | NE | 19/01/2026 | - |
 | 99336 | 126669 | SAM | 19/01/2026 | Incluir logs para melhorar os atendimentos |
 | 99297 | 126661 | NE | 19/01/2026 | Transa��es anteriores ao �ltimo consentimento n�o s�o processadas |
 | 99394 | 126639 | NE | 19/01/2026 | N�o est� considerando o filtro do bot�o "Centros de Custos" do Balancete, quando |
@@ -146,12 +145,13 @@
 | 99125 | 126229 | NE | 08/01/2026 | Est� importando incorretamente os valores na tela "Altera��o plano de contas" do |
 | 99038 | 126226 | SAM | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-04. |
 | 99037 | 126225 | SAM | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-03. |
+| 98990 | 126054 | SAM | 05/01/2026 | Informar ao usu�rio a necessidade de refazer o consentimento do parceiro Belvo p |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| contabilidade | 574 |
+| contabilidade | 575 |
 | plano de contas | 227 |
 | centro de custo | 184 |
 | dre | 168 |
@@ -163,7 +163,6 @@
 |-----|------|------|----------|--------|
 | 100262 | 128681 | SAM | 02/03/2026 | Integrar o Banco Mercado Pago �s op��es do Open Finance dispon�veis atualmente. |
 | 100105 | 128377 | SAM | 24/02/2026 | Integrar o banco C6 �s op��es do Open Finance dispon�veis atualmente.   |
-| 99315 | 126696 | NE | 19/01/2026 | - |
 | 98821 | 125844 | SAM | 23/12/2025 | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 por�m n�o fo |
 | 97823 | 124005 | SAM | 04/11/2025 | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es na Contab |
 | 99334 | 123986 | NE | 04/11/2025 | Em alguns casos, ao regerar as baixas de notas de entradas, sa�das e servi�os da |
@@ -171,6 +170,7 @@
 | 97596 | 123692 | SAM | 23/10/2025 | Contabilidade Digital: Permitir a integra��o de mais de uma conta banc�ria para  |
 | 97595 | 123691 | SAM | 23/10/2025 | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es na Contab |
 | 97012 | 122965 | SAM | 26/09/2025 | Contabilidade Digital: Ignorar transa��es com messageOrigin "OPEN_BANKING" e/ou  |
+| 96343 | 122102 | NE | 27/08/2025 | Contabilidade Digital: Em alguns casos, o tipo "Aplica��o Financeira" est� fora  |
 
 ## Busca Completa
 

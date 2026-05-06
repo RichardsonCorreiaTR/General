@@ -1,7 +1,7 @@
 ﻿# Patrimônio
 
 > Dominio Escrita Fiscal | slug `patrimonio`
-> Atualizado em: 29/04/2026 09:03
+> Atualizado em: 06/05/2026 09:02
 > Pendentes: 1 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 157
 
 ## Pendentes (1)

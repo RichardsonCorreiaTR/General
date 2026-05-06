@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Atualizacao v2.4.23",
-    "data":  "2026-05-04T11:21:37",
+    "changelog":  "Correcao: ALERTA PROJETO FOLHA -\u003e PROJETO ESCRITA no guardiao.mdc",
+    "data":  "2026-05-06T11:39:19",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.23"
+    "versao":  "2.4.25"
 }

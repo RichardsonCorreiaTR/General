@@ -1,10 +1,12 @@
 ﻿# SAIL Pendentes - Escrita Fiscal
 
-> Atualizado em: 29/04/2026 09:03
-> Total pendentes: 1645
+> Atualizado em: 06/05/2026 09:02
+> Total pendentes: 1647
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 130519 |  | 04/05/2026 | ID 0 | - |
+| 0 | 130464 |  | 29/04/2026 | ID 0 | - |
 | 0 | 130318 |  | 23/04/2026 | ID 0 | - |
 | 0 | 130264 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130263 |  | 22/04/2026 | ID 0 | - |
@@ -15,7 +17,7 @@
 | 0 | 130224 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130207 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130202 |  | 17/04/2026 | ID 0 | - |
-| 101369 | 130191 |  | 17/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tributos federa |
+| 101369 | 130191 | 10.6A-05 | 17/04/2026 | Respondido Gerente de Produto | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tributos federa |
 | 0 | 130185 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130184 |  | 17/04/2026 | ID 0 | - |
 | 101310 | 130088 |  | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o arquivo de envio do 'Evento: 112140 - Fornecimento n�o realizado c |

@@ -22,6 +22,25 @@ Use **Enriquecer-PSAI-DadosBrutos** quando a alteracao tiver de ficar **persisti
 
 Apos extracao SGD, o JSON pode ja trazer `comportamento` corrigido pelo reconciliador NE em `consultar_psai.py` (rotulo `Comportamento:` colado a `Definicao` vazia no HTML).
 
+## SAI gerada — consultar definicao diretamente
+
+Quando a PSAI ja tiver uma SAI gerada (campo `sai` no cabecalho ou numero conhecido), a **definicao definitiva esta na SAI**, nao na PSAI. A SAI pode conter alteracoes e complementacoes feitas apos a aprovacao.
+
+**Fluxo obrigatorio para SAIs (General/GP):**
+
+1. Verificar se existe cache local em `scripts/sgd_consulta/data/consultas/sai_<numero>.json`
+2. Se existir, usar o cache (lido diretamente via Python/Shell)
+3. Se **nao existir ou definicao estiver vazia**, executar:
+   `python scripts\sgd_consulta\consultar_sai.py <numero> --json`
+   Saida: `scripts/sgd_consulta/data/consultas/sai_<numero>.json`
+
+**Quando acionar automaticamente:**
+- Ao resumir ou revisar uma SAI com numero conhecido
+- Ao usar `buscar-sai.ps1` e o resultado tiver `definicao` ou `comportamento` vazios
+- Ao criar uma PSAI baseada em SAI existente
+
+O dominio do SGSAI (`sgsai.dominiosistemas.com.br`) e separado do SGD — o script cuida do login com as mesmas credenciais.
+
 ## Lock
 
 O enriquecimento usa `scripts\.update-lock.json` — nao correr em paralelo com `importar-sais.ps1` / `atualizar-tudo` na mesma maquina.

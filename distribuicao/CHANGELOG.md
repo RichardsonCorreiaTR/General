@@ -1,5 +1,17 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.25 - 06/05/2026
+
+Correcao: ALERTA PROJETO FOLHA -> PROJETO ESCRITA no guardiao.mdc
+
+---
+
+## v2.4.24 - 05/05/2026
+
+Consulta SAI no SGSAI: script consultar_sai.py, wrapper Consultar-SAI-SGD.ps1 e regra de auto-acesso ao SGSAI
+
+---
+
 ## v2.4.23 - 04/05/2026
 
 Atualizacao de rotina.
@@ -196,6 +208,8 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
+
 
 
 

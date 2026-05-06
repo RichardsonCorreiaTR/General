@@ -1,14 +1,17 @@
 ﻿# Onvio, importacao e dados
 
 > Dominio Escrita Fiscal | slug `onvio-importacao-dados`
-> Atualizado em: 29/04/2026 09:03
-> Pendentes: 158 | Liberadas: 2822 | Descartadas: 310 | Total SAIs: 3284
+> Atualizado em: 06/05/2026 09:02
+> Pendentes: 161 | Liberadas: 2823 | Descartadas: 309 | Total SAIs: 3287
 
-## Pendentes (158)
+## Pendentes (161)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101452 | 130409 | SAM | Normal | 27/04/2026 | - |
+| 0 | 130590 | SAM | Normal | 05/05/2026 | - |
+| 101572 | 130569 | SAM | Normal | 05/05/2026 | - |
+| 101571 | 130564 | SAM | Normal | 05/05/2026 | - |
+| 101513 | 130476 | SAM | Normal | 29/04/2026 | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
 | 101319 | 130128 | NE | Normal | 15/04/2026 | Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a i |
 | 101279 | 130073 | NE | Normal | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101314 | 129992 | NE | Normal | 10/04/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
@@ -171,8 +174,8 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 101432 | 130369 | NE | 24/04/2026 | - |
 | 101084 | 129917 | SAM | 08/04/2026 | Implementar o zeramento de NSU para o NFS-e no utilit�rio de zeramento de NSU. |
+| 101061 | 129875 | NE | 07/04/2026 | - |
 | 100985 | 129721 | NE | 31/03/2026 | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
 | 100634 | 129270 | SAM | 18/03/2026 | Redefinir as senhas dos usu�rios utilizados para uso interno do Cont�bil. |
 | 100474 | 128991 | SAM | 10/03/2026 | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
@@ -197,10 +200,10 @@
 | 99205 | 126237 | SAM | 08/01/2026 | MA-Importar para o produto o cr�dito presumido estabelecimento atacadista por pr |
 | 99153 | 126165 | NE | 07/01/2026 | Est� importando incorretamente o CFPS na nota quando o cliente � de outro munic� |
 | 99187 | 126104 | NE | 07/01/2026 | Est� ocorrendo erro de sistema ao importar nota com produtos do tipo "Ve�culos U |
+| 98868 | 125910 | SAM | 29/12/2025 | - |
 | 99126 | 125925 | SAM | 29/12/2025 | Adequar o sistema para importar o cadastro da empresa com a nova op��o de empres |
 | 98845 | 125884 | SAM | 26/12/2025 | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a Lei N� 9.0 |
 | 98790 | 125798 | SAM | 23/12/2025 | Cria��o de backlog de SAIs antigas na vers�o de Janeiro de 2026. |
-| 98809 | 125719 | NE | 19/12/2025 | Est� sendo demonstrado indevidamente as cr�ticas de estrutura "N�o foi encontrad |
 
 ## Temas Frequentes
 
@@ -216,7 +219,6 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 0 | 130460 | SAM | 29/04/2026 | - |
 | 99854 | 127505 | NE | 03/02/2026 | Transa��es marcadas como Read no socket da Fintech n�o estao presentes na tabela |
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
@@ -226,6 +228,7 @@
 | 97241 | 123289 | SAM | 09/10/2025 | Permitir realizar o desvinculo de contas do Onvio Gest�o ap�s realizado o v�ncul |
 | 96821 | 122351 | NE | 04/09/2025 | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
 | 96277 | 122036 | NE | 25/08/2025 | N�o est� sendo demonstrado o campo "Buscar" na janela "Contas Cont�beis" abertas |
+| 95238 | 120608 | SAM | 07/07/2025 | Criar mecanismos para atuar em PROD |
 
 ## Busca Completa
 

@@ -1,23 +1,23 @@
 ﻿# Indice de SAIs por Cenario Complexo
 
-> Atualizado em: 29/04/2026 09:03
+> Atualizado em: 06/05/2026 09:02
 > Cenarios que cruzam multiplos dominios (SAIs classificadas em 2+ dominios)
 
 ## Resumo por combinacao de dominios
 
 | Combinacao | SAIs | Pendentes |
 |-----------|------|-----------|
-| Apuracao de impostos + Escrituracao e movimento fiscal | 4963 | 61 |
+| Apuracao de impostos + Escrituracao e movimento fiscal | 4965 | 61 |
 | Apuracao de impostos + SPED e documentos eletronicos | 2763 | 51 |
-| Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos | 1465 | 16 |
+| Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos | 1466 | 17 |
 | Apuracao de impostos + Obrigacoes e relatorios estaduais | 1021 | 21 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + Onvio, importacao e dados + SPED e documentos eletronicos | 912 | 21 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + Obrigacoes e relatorios estaduais | 890 | 6 |
-| Apuracao de impostos + Contabilidade | 799 | 32 |
+| Apuracao de impostos + Contabilidade | 800 | 32 |
 | Apuracao de impostos + Onvio, importacao e dados + SPED e documentos eletronicos | 568 | 18 |
 | Apuracao de impostos + Conteúdo Contábil Tributário + SPED e documentos eletronicos | 475 | 7 |
 | Apuracao de impostos + Integracoes e canais digitais | 433 | 18 |
-| Apuracao de impostos + LALUR | 405 | 8 |
+| Apuracao de impostos + LALUR | 407 | 9 |
 | Apuracao de impostos + Onvio, importacao e dados | 354 | 17 |
 | Apuracao de impostos + Utilitarios e rotinas | 264 | 21 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + Integracoes e canais digitais | 254 | 4 |
@@ -25,12 +25,11 @@
 
 ## Detalhamento dos maiores cenarios
 
-### Apuracao de impostos + Escrituracao e movimento fiscal (4963 SAIs, 61 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal (4965 SAIs, 61 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
 | 101425 | 130331 | NE | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simple |
-| 101061 | 129875 | NE | Est� ocorrendo o erro "Erro realizando requisi��o: Erro ao realizar re |
 | 101013 | 129761 | NE | N�o est�o sendo armazenadas as notas enviadas pelo Busca NF-e para o B |
 | 101277 | 129722 | SAM | Implementar a gera��o do relat�rio de precifica��o de produtos e servi |
 | 101136 | 129109 | NE | Est� ocorrendo o erro: "O(s) arquivo(s) selecionado(s) n�o existe(m)!" |
@@ -39,6 +38,7 @@
 | 101354 | 128938 | SAL | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Es |
 | 101384 | 128845 | SAL | SC-Atualizar os c�digos de ajuste de ICMS da Tabela 5.2, conforme Corr |
 | 101166 | 128812 | NE | Est� sendo gerada a vig�ncia incorreta na replica��o dos "Dados de Imp |
+| 101055 | 128810 | NE | Em alguns casos, est� sendo demonstrada indevidamente a unidade vendid |
 
 ### Apuracao de impostos + SPED e documentos eletronicos (2763 SAIs, 51 pendentes)
 
@@ -55,11 +55,12 @@
 | 100345 | 128813 | NE | Est� ocorrendo erro de sistema ao gravar o bot�o "Outros Dados" do inf |
 | 100525 | 128811 | NE | Em alguns casos est� ocorrendo lentid�o ao gerar o informativo EFD Con |
 
-### Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos (1465 SAIs, 16 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos (1466 SAIs, 17 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
 | 100943 | 129661 | NE | Est� habilitando indevidamente a guia "Relacionamento de produtos" no  |
+| 101485 | 128897 | NE | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informati |
 | 100287 | 128438 | NE | Est� sendo importado incorretamente o valor da "Diferen�a entre o valo |
 | 100751 | 126795 | SAL | Alterar o sistema para considerar a dedu��o do CT-e substituto no c�lc |
 | 99437 | 126341 | SAL | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os |
@@ -68,7 +69,6 @@
 | 81980 | 97803 | NE | Est� ocorrendo erro de importa��o quando selecionado a op��o "Gerar CS |
 | 78635 | 96008 | NE | RJ-Est� importando incorretamente a al�quota do imposto '57-FECP-DIFAL |
 | 77106 | 93171 | NE | Ao realizar a importa��o de CT-e, o sistema parou de demonstrar valor  |
-| 62665 | 71129 | SAM | Ajustar a ferramenta de inclus�o de XML no cat�logo (NF-e e NFC-e), pa |
 
 ### Apuracao de impostos + Obrigacoes e relatorios estaduais (1021 SAIs, 21 pendentes)
 

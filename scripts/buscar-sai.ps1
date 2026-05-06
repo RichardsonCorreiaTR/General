@@ -211,18 +211,18 @@ $resultado | Select-Object -First $Max | ForEach-Object {
     $urlPsai = Get-UrlPsai $_.i_psai
 
     if ($Resumido) {
-        # Saida compacta: 1 linha por resultado
+        # Saida compacta: 1 linha por resultado (URLs no fim da mesma linha para facil copia)
         $saiNum = if ($VisualizarSai) { $_.i_sai } else { "$($_.i_sai)/$($_.i_psai)" }
         $status = if ($VisualizarSai) { $_.situacaoSai } else {
             if ($_.Liberacao) { "Lib" } elseif ($_.Descarte) { "Desc" } else { "Pend" }
         }
         $grav = if ($_.gravidade_ne) { $g = SafeStr $_.gravidade_ne; $g.Substring(0, [Math]::Min(4, $g.Length)) } else { "-" }
         $desc = if ($_.sai_descricao) {
-            $d = SafeStr $_.sai_descricao; $d.Substring(0, [Math]::Min(80, $d.Length)) -replace "`r|`n", " "
+            $d = SafeStr $_.sai_descricao; $d.Substring(0, [Math]::Min(60, $d.Length)) -replace "`r|`n", " "
         } else { "-" }
-        Write-Host "  $saiNum | $($_.tipoSAI) | $status | $grav | $desc" -ForegroundColor Gray
-        if ($urlSai)  { Write-Host "    SAI:  $urlSai"  -ForegroundColor Blue }
-        if ($urlPsai) { Write-Host "    PSAI: $urlPsai" -ForegroundColor Blue }
+        $linksSai  = if ($urlSai)  { " | SAI: $urlSai" }  else { "" }
+        $linksPsai = if ($urlPsai) { " | PSAI: $urlPsai" } else { "" }
+        Write-Host "  $saiNum | $($_.tipoSAI) | $status | $grav | $desc${linksSai}${linksPsai}" -ForegroundColor Gray
     } elseif ($VisualizarSai) {
         $dt = if ($_.ultimoCadastro) { try { ([datetime]$_.ultimoCadastro).ToString("dd/MM/yyyy") } catch { "-" } } else { "-" }
         $desc = if ($_.sai_descricao) {

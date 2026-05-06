@@ -1,12 +1,12 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 29/04/2026 09:03
+> Atualizado em: 06/05/2026 09:02
 > Total SAIs unicas: 1654
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 101489 | 130444 |  | Normal | 28/04/2026 |  | - |
-| 0 | 130340 |  | Normal | 24/04/2026 | ID 0 | - |
+| 0 | 130497 |  | Normal | 30/04/2026 | ID 0 | - |
+| 101489 | 130444 |  | Normal | 28/04/2026 | SAI Aprovada | N�o est�o sendo gerados todos os s�cios no relat�rio "Comprovante Anual de Reten |
 | 101181 | 130055 |  | Normal | 13/04/2026 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no M�dulo Folha quando real |
 | 100427 | 128943 |  | Normal | 10/03/2026 | SAI Aprovada | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
 | 100203 | 128585 |  | Normal | 27/02/2026 | SAI Aprovada | Em alguns casos est� ocorrendo erro ao gerar o relat�rio de Comprovante Eletr�ni |
@@ -14,7 +14,7 @@
 | 99781 | 127722 |  | Normal | 09/02/2026 | SAI Aprovada | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Regime Tribu |
 | 99836 | 127623 |  | Normal | 05/02/2026 | SAI Aprovada | Est�o sendo demonstrados incorretamente os impostos 183-IBS e 184-CBS no relat�r |
 | 99854 | 127505 |  | Normal | 03/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Transa��es marcadas como Read no socket da Fintech n�o estao presentes na tabela |
-| 99315 | 126696 |  | Normal | 19/01/2026 |  | - |
+| 99315 | 126696 |  | Normal | 19/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� habilitado para filtrar no campo "Inscri��o" e n�o funciona multi-filtr |
 | 99313 | 126695 |  | Normal | 19/01/2026 | SAI Aprovada | N�o est� permitindo copiar os campos Transa��o e Inscri��o. |
 | 99242 | 126552 |  | Normal | 15/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos n�o est� atribuindo corretamente as permiss�es ao administrador  |
 | 99095 | 126320 |  | Normal | 09/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Transa��es com mesmo transaction_id est�o duplicando |
@@ -64,7 +64,7 @@
 | 95094 | 120327 |  | Normal | 25/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | N�o est�o sendo escrituradas corretamente as notas de servi�os prestados da pref |
 | 94977 | 120235 |  | Normal | 20/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Contabilidade Digital: Est� apresentando erro de banco de dados ao utilizar a te |
 | 94935 | 120199 |  | Normal | 18/06/2025 | SAI Aprovada | CE-Est� apurando incorretamente o ICMS Monof�sico mesmo sem a informa��o no esto |
-| 94861 | 120143 |  | Normal | 16/06/2025 |  | - |
+| 94861 | 120143 |  | Normal | 16/06/2025 | SAI Aprovada | Contabilidade Digital: Alterar o controle interno da contabilidade digital quand |
 | 94733 | 120030 |  | Normal | 11/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Contabilidade Digital: Em alguns casos, contabiliza��o de pagamento de folha est |
 | 94537 | 119747 |  | Normal | 02/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos est� ocorrendo lentid�o e n�o apresenta as notas armazenadas no  |
 | 94467 | 119603 |  | Normal | 26/05/2025 | SAI Aprovada | Est� ocorrendo o erro "Erro ao remover dados temporarios da CTTMP_LANCTO" ao cli |

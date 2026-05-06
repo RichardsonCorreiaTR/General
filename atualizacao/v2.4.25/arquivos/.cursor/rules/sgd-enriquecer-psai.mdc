@@ -32,3 +32,22 @@ No PC do analista, se existir pasta **irma** `General` ao lado de `projeto-filho
 ## NE em particular
 
 Apos consulta SGD, o JSON pode trazer `comportamento` corrigido pelo reconciliador NE no `consultar_psai.py` do General (rotulo `Comportamento:` com `Definicao` vazia no HTML).
+
+## SAI gerada — consultar definicao diretamente
+
+Quando a PSAI ja tiver uma SAI gerada (campo `sai` no cabecalho ou numero conhecido), a **definicao definitiva esta na SAI**, nao na PSAI. A SAI pode conter alteracoes e complementacoes feitas apos a aprovacao.
+
+**Fluxo obrigatorio para SAIs:**
+
+1. Verificar se existe cache local em `data/sgd-sai-consultas/consultas/sai_<numero>.json`
+2. Se existir, usar o cache (lido diretamente pelo agente via Shell/Python)
+3. Se **nao existir ou definicao estiver vazia**, executar:
+   `.\scripts\Consultar-SAI-SGD.ps1 <numero> --json`
+   Saida local: `data/sgd-sai-consultas/consultas/sai_<numero>.json`
+
+**Quando acionar automaticamente (sem pedir ao analista):**
+- Ao resumir ou revisar uma SAI com numero conhecido
+- Ao usar `buscar-sai.ps1` e o resultado tiver `definicao` ou `comportamento` vazios
+- Ao criar uma PSAI baseada em SAI existente
+
+O dominio do SGSAI (`sgsai.dominiosistemas.com.br`) e separado do SGD — o script `Consultar-SAI-SGD.ps1` cuida do login automaticamente com as mesmas credenciais.

@@ -1,18 +1,21 @@
 ﻿# NEs Liberadas - Recentes (2022+)
 
-> Atualizado em: 29/04/2026 09:03
-> Total SAIs unicas: 3361
+> Atualizado em: 06/05/2026 09:02
+> Total SAIs unicas: 3364
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 101432 | 130369 | 10.6A-05 | Normal | 24/04/2026 |  | - |
-| 101388 | 130336 | 10.6A-05 | Normal | 24/04/2026 |  | - |
-| 101321 | 130237 | 10.6A-05 | Normal | 20/04/2026 |  | - |
-| 101292 | 130173 | 10.6A-05 | Normal | 17/04/2026 |  | - |
+| 101519 | 130458 | 10.6A-05 | Normal | 29/04/2026 |  | - |
+| 101512 | 130449 | 10.6A-05 | Normal | 28/04/2026 |  | - |
+| 101432 | 130369 | 10.6A-05 | Normal | 24/04/2026 | Respondido Coordenador de Módulos DEMO | N�o est�o sendo enviadas para o Busca NF-e Escrit�rio as NFS-e baixadas quando n |
+| 101388 | 130336 | 10.6A-05 | Normal | 24/04/2026 | Aguardando Resposta do Desenvolvimento | Corrigir erros implementados no desenvolvimento da SAI 99330. |
+| 101321 | 130237 | 10.6A-05 | Normal | 20/04/2026 | Respondido Gerente de Produto | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
 | 101283 | 130181 | 10.6A-04 | Grave | 17/04/2026 | Em Teste DEMO | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
+| 101292 | 130173 | 10.6A-05 | Normal | 17/04/2026 | Aguardando Resposta do Desenvolvimento | N�o est� sendo feito o c�lculo correto da majora��o do imposto 7-IRPJ, quando no |
 | 101230 | 130119 | ONVIO Escrita - | Normal | 15/04/2026 | Liberado Antecipadamente | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
 | 101120 | 129965 | 10.6A-04 | Grave | 09/04/2026 | Em Teste DEMO | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, 33-IRPJ-P |
 | 101071 | 129901 | 10.6A-04 | Normal | 07/04/2026 | Em Teste DEMO | Est� lendo v�rias vezes mesma transa��o quando ocorre erro na consulta |
+| 101061 | 129875 | ONVIO Escrita - | Normal | 07/04/2026 |  | - |
 | 101096 | 129861 | 10.6A-04 | Normal | 06/04/2026 | Em Teste DEMO | Em alguns casos est� ocorrendo erro de banco de dados ao realizar a apura��o do  |
 | 101090 | 129858 | 10.6A-04 | Normal | 06/04/2026 | Em Teste DEMO | N�o est� sendo gerado o valor do imposto 38-COSIRF no relat�rio "Extrator da DIR |
 | 101080 | 129838 | 10.6A-04 | Normal | 06/04/2026 | Em Teste DEMO | Est� apresentando erro de banco de dados ao gravar a tela "Outros Dados" do info |
@@ -134,7 +137,7 @@
 | 99637 | 126782 | 10.6A-02 | Normal | 20/01/2026 | Em Teste DEMO | SC-Em alguns casos est� ocorrendo diferen�a entre a soma do valor do campo 07 do |
 | 99332 | 126724 | 10.6A-04 | Normal | 20/01/2026 | Em Teste DEMO | N�o est� sendo setada a al�quota correta para o imposto 28-FUNRURAL, quando no c |
 | 99643 | 126712 | 10.6A-04 | Normal | 20/01/2026 | Em Teste DEMO | Em alguns casos est� duplicando contas do relat�rio Plano de Contas, ao salver e |
-| 99315 | 126696 |  | Normal | 19/01/2026 |  | - |
+| 99315 | 126696 |  | Normal | 19/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� habilitado para filtrar no campo "Inscri��o" e n�o funciona multi-filtr |
 | 100061 | 126693 | 10.6A-04 | Normal | 19/01/2026 | Em Teste DEMO | BA-N�o est� sendo demonstrado na apura��o do imposto 1-ICMS a linha 'Estorno de  |
 | 99396 | 126672 | 10.6A-03 | Normal | 19/01/2026 | Em Teste DEMO | N�o est� gerando a numera��o da folha/p�gina da Declara��o de Conformidade emiti |
 | 99297 | 126661 | 10.6A-02 | Normal | 19/01/2026 | Em Teste DEMO | Transa��es anteriores ao �ltimo consentimento n�o s�o processadas |
