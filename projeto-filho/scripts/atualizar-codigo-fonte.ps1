@@ -53,7 +53,7 @@ function Write-MensagemEscalacao {
     Write-Host "  |  FALHA COMPLETA NA ATUALIZACAO DO CODIGO-FONTE    |" -ForegroundColor Red
     Write-Host "  =====================================================" -ForegroundColor Red
     Write-Host ""
-    Write-Host "  Copie a mensagem abaixo e envie para Vitor Justino via Teams:" -ForegroundColor Yellow
+    Write-Host "  Copie a mensagem abaixo e envie para Richardson Picinini Correia via Teams:" -ForegroundColor Yellow
     Write-Host ""
 
     $mensagem = @"

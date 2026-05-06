@@ -12,13 +12,10 @@ param(
     [string]$DadosDir = ""
 )
 
-# Determinar diretorio de dados: prioridade para C:\CursorEscrita, fallback para legado Folha (migracao)
+# Determinar diretorio de dados: padrao C:\CursorEscrita, fallback legado EscritaSDD
 if (-not $DadosDir) {
     $novoPadrao = "C:\CursorEscrita\codigo-sistema"
     $legado = Join-Path $env:USERPROFILE "EscritaSDD-dados-pesados"
-    if (-not (Test-Path (Join-Path $legado "versao-atual"))) {
-        $legado = Join-Path $env:USERPROFILE "FolhaSDD-dados-pesados"
-    }
     if (Test-Path (Join-Path $legado "versao-atual")) {
         $DadosDir = $legado
     } else {
@@ -30,11 +27,8 @@ $ErrorActionPreference = "Stop"
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
 $destinoDir = Join-Path $DadosDir "versao-atual"
-$changelogDir = Join-Path $projetoDir "banco-dados\codigo-sistema\changelog"
-$metaFile = Join-Path $projetoDir "banco-dados\codigo-sistema\META.json"
-
-. (Join-Path $scriptDir "lib-lock.ps1")
-if (-not (Request-Lock $projetoDir "atualizar-codigo")) { exit 1 }
+$changelogDir = Join-Path $DadosDir "changelog"
+$metaFile = Join-Path $DadosDir "META.json"
 
 New-Item -ItemType Directory -Path $DadosDir -Force | Out-Null
 
@@ -93,7 +87,6 @@ if ($repoLocalDir) {
     git clone --depth 1 --branch $Branch --single-branch $RepoUrl $tempDir 2>&1 | Out-Host
     if ($LASTEXITCODE -ne 0) {
         Write-Host "ERRO: Falha no clone." -ForegroundColor Red
-        Release-Lock $projetoDir
         exit 1
     }
     $origemEscrita = Join-Path $tempDir "escrita"
@@ -112,7 +105,6 @@ if (Test-Path $metaFile) {
         Write-Host ""
         Write-Host "Codigo ja esta atualizado (mesmo commit)." -ForegroundColor Green
         if ($tempDir -and (Test-Path $tempDir)) { Remove-Item -Recurse -Force $tempDir }
-        Release-Lock $projetoDir
         exit 0
     }
 }
@@ -184,8 +176,6 @@ if (Test-Path $geradorIndice) {
     Write-Host "[Extra] Gerando indice de arquivos..." -ForegroundColor Yellow
     & $geradorIndice -CodigoDir $destinoDir
 }
-
-Release-Lock $projetoDir
 
 Write-Host ""
 Write-Host "=== Concluido! ===" -ForegroundColor Green

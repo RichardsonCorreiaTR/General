@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.27 - 06/05/2026
+
+Fix: atualizar-codigo.ps1 lib-lock ausente e caminho META.json errado; contato de escalonamento atualizado
+
+---
+
 ## v2.4.26 - 06/05/2026
 
 Correcao: contato de escalonamento atualizado para Richardson Picinini Correia
@@ -214,6 +220,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

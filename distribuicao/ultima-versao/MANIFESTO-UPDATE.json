@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Correcao: contato de escalonamento atualizado para Richardson Picinini Correia",
-    "data":  "2026-05-06T11:46:26",
+    "changelog":  "Fix: atualizar-codigo.ps1 lib-lock ausente e caminho META.json errado; contato de escalonamento atualizado",
+    "data":  "2026-05-06T11:54:23",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.26"
+    "versao":  "2.4.27"
 }
