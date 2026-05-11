@@ -43,9 +43,6 @@ silenciosamente. So fale com o analista se encontrar problema.
 4. Se os hashes divergirem, emita alerta:
    *"Versao declarada como {versao} mas arquivos de regras parecem desatualizados.
    Tente rodar a atualizacao novamente ou acione o gerente."*
-   **Nota**: o script `gerar-atualizacao.ps1` grava `VERSION.json` somente ao final
-   de todos os arquivos copiados com sucesso (atomico, usando `try/finally`), para
-   evitar estado inconsistente em caso de interrupcao.
 5. Verifique se existe `referencia/atualizacao/` (symlink).
 6. Se existir, procure a pasta de versao mais recente (ex: `v1.3.0/`).
 7. Se a versao disponivel for maior que a local:
@@ -99,8 +96,13 @@ silenciosamente. So fale com o analista se encontrar problema.
    O script busca em 14 campos (incluindo BLOBs completos) e agrupa por SAI.
    NUNCA apresente resultados de SAIs baseados apenas nos indices MD.
    Os indices contem descricoes truncadas (80 chars) -- insuficientes para analise.
-5. SEMPRE apresente resultados em tabela Markdown com links clicaveis (ver padroes.mdc
-   secao "Formatacao de resultados de SAIs/PSAIs"). NUNCA liste SAIs como texto corrido.
+5. SEMPRE apresente resultados de SAIs em **tabela Markdown com links clicaveis**.
+   Agrupe por tipo (SAL, NE, SAM, SAIL). NUNCA liste SAIs como texto corrido.
+   Formato obrigatorio (sem excecao, inclusive em consultas avulsas):
+
+   | SAI | PSAI | Tipo | Versao | Status | Descricao resumida |
+   |-----|------|------|--------|--------|--------------------|
+   | [num](https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=NUM) | [num](https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai=NUM) | NE | 10.5A-06 | Liberada | Descricao curta |
 
 **Nota sobre cache offline**: O script `atualizar-projeto.ps1` tambem regenera
 o cache em `meu-trabalho/cache-offline/` ao final de cada atualizacao.
@@ -142,7 +144,29 @@ o cache em `meu-trabalho/cache-offline/` ao final de cada atualizacao.
    NAO pergunte ativamente sobre submissao ao concluir tasks —
    apenas liste na inicializacao.
 
-### 6. Deteccao de similaridade (alinhamentos pendentes)
+### 6. Publicacao automatica de logs no General
+
+1. Leia `config/analista.json` campo `nome`. Derive o slug via Shell:
+   `$n=$nome.ToLower();'áàãâä','éèêë','íìîï','óòõôö','úùûü','ç' | ... `
+   Ou use diretamente:
+   ```powershell
+   $slug = ((Get-Content config/analista.json -Raw | ConvertFrom-Json).nome).ToLower() `
+     -replace '[áàãâä]','a' -replace '[éèêë]','e' -replace '[íìîï]','i' `
+     -replace '[óòõôö]','o' -replace '[úùûü]','u' -replace '[ç]','c' `
+     -replace '\s+','-' -replace '[^a-z0-9\-]',''
+   ```
+2. Leia `config/ultimo-log-publicado.json` campo `data` (se existir). Se nao existir, assuma `"nunca"`.
+3. Se `data` for diferente de hoje (ou "nunca"):
+   a. Execute via Shell:
+      `powershell -File scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>`
+   b. **Sucesso**: grave `{"data":"AAAA-MM-DD","slug":"<slug>"}` em `config/ultimo-log-publicado.json`. Nao informe o analista.
+   c. **Falha**: calcule dias desde `$ultimaPublicacao`. Se > 7 dias (ou "nunca"):
+      Avise o analista:
+      *"Aviso: nao foi possivel publicar os logs automaticamente ha mais de 7 dias.
+      Execute no terminal uma vez: `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>`"*
+      Se < 7 dias, silencioso — tentara novamente amanha.
+
+### 7. Deteccao de similaridade (alinhamentos pendentes)
 
 1. Na inicializacao, verifique tasks que possuam:
    `alinhamento_sugerido` = `true` E `alinhamento_realizado` = `false`
@@ -236,38 +260,8 @@ SS (resposta ao suporte) e segue a rota adequada:
 Para consultas simples (glossario, busca de SAIs, perguntas sobre o
 sistema), atenda diretamente sem o processo completo.
 
-## Antes de criar qualquer definicao
 
-1. Pergunte o codigo (PSAI/SAI/NE) e o assunto.
-2. Busque definicoes existentes em `referencia/banco-dados/regras-negocio/{dominio}/` (ver `regras-negocio/README.md`).
-3. Busque SAIs relacionadas nos indices `referencia/banco-dados/sais/indices/`.
-4. Liste o que encontrou para o analista verificar.
-5. Carregue o template correto de `templates/`.
 
-## Depois de criar qualquer definicao
-
-1. Verifique se todos os campos obrigatorios estao preenchidos.
-2. Verifique se cenarios e exemplos estao completos.
-3. Verifique se areas de impacto foram marcadas.
-4. Registre a atividade no log (proativamente, sem pedir).
-
-## Escopo do projeto
-
-Este projeto e uma **ferramenta de analise e exploracao**. O analista usa para:
-- Explorar a base de conhecimento (SAIs, regras, glossario, codigo)
-- Analisar demandas com apoio do parceiro de analise
-- Gerar rascunhos de PSAIs e SAIs com cobertura completa de cenarios
-- Controlar seu trabalho localmente
-
-A **submissao oficial** das PSAIs/SAIs e feita no SGD pelo especialista.
-Os artefatos gerados aqui servem de insumo para esse processo.
-
-## Protecao de contexto
-
-- **NUNCA** leia PROJETO.md inteiro. Busque por secao.
-- **NUNCA** leia toda a referencia/banco-dados/. Apenas o modulo necessario.
-- **NUNCA** abra arquivos de referencia/banco-dados/dados-brutos/ (JSON pesado, causa OOM).
-- **Prefira busca** (Grep) em vez de leitura completa de arquivos.
 
 ## Protecao de arquitetura
 
@@ -305,14 +299,12 @@ O gerente usa para: (1) entender como cada analista pensa e trabalha,
 - **Limite por arquivo**: maximo **25 entradas** por arquivo diario.
   Se atingir 25, crie `{AAAA-MM-DD}-2.md`, depois `-3.md`, etc.
 
-### Alinhamento com `consolidar-logs.ps1` (clone Admin / General)
+### Publicacao para o gerente
 
-O gerente gera metricas com `General/scripts/consolidar-logs.ps1`, que le apenas ficheiros em **`General/logs/analistas/<slug-do-analista>/`** com nome **`AAAA-MM-DD.md`** (ou `-2.md`, `-3.md`).
-
-- **`referencia/logs/` aqui no projeto-filho** e o diario **local** desta maquina (OneDrive do analista). **Nao** e a mesma pasta que `logs/analistas/` do Admin.
-- Para as interacoes entrarem no consolidado semanal/mensal, o conteudo (ou copias) deve existir em `logs/analistas/<slug>/` no repositorio **General**, com o **mesmo** formato de entradas (`## HH:MM` ou `## HH:MM:SS` + `[Tipo]` uma palavra, secoes `###` como abaixo). Ver **`logs/README.md`** no General: exemplos de copia e convencao do `slug`.
-- O script de consolidacao aceita **HH:MM** e **HH:MM:SS** nos cabecalhos das entradas.
-- Automacao: na raiz do filho, `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>` (copia `referencia\logs\` para o General; ver `logs/README.md` no repositorio General).
+`referencia/logs/` e o diario local desta maquina. A publicacao e feita
+**automaticamente** na verificacao 6 (acima) a cada primeiro acesso do dia.
+Se falhar, o agente avisara apos 7 dias. Para publicar manualmente:
+`.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>`
 
 ### Dois niveis de log
 
@@ -424,15 +416,6 @@ Apenas novos logs usam HH:MM:SS.
 7. **Use o nivel certo.** Consulta rapida = log rapido. Analise completa
    = log completo. Nao infle consultas simples com campos vazios.
 
-### Estimativa de tamanho
-
-| Cenario | Interacoes/dia | Tamanho estimado/dia |
-|---------|----------------|---------------------|
-| Dia leve (consultas) | 10 rapidas + 2 completas | ~5 KB |
-| Dia normal | 20 rapidas + 5 completas | ~12 KB |
-| Dia intenso | 25 rapidas + 15 completas | ~28 KB |
-
-Arquivos diarios ficam entre 5-30 KB. Aceitavel para OneDrive.
 
 ## Idioma
 

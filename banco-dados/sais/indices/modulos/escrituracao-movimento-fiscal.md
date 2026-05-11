@@ -1,19 +1,20 @@
 ﻿# Escrituracao e movimento fiscal
 
 > Dominio Escrita Fiscal | slug `escrituracao-movimento-fiscal`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 216 | Liberadas: 10763 | Descartadas: 1102 | Total SAIs: 12080
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 220 | Liberadas: 10762 | Descartadas: 1103 | Total SAIs: 12084
 
-## Pendentes (216)
+## Pendentes (220)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130592 | SAL | Normal | 06/05/2026 | - |
-| 101549 | 130532 | NE | Normal | 04/05/2026 | - |
+| 0 | 130610 | NE | Normal | 07/05/2026 | - |
 | 101521 | 130484 | SAM | Normal | 29/04/2026 | Utilizar a Intelig�ncia Artificial (IA) para emitir um relat�rio gerencial no si |
+| 101594 | 130428 | SAM | Normal | 27/04/2026 | GO-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fiscais de en |
 | 101425 | 130331 | NE | Normal | 24/04/2026 | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simples Nacional |
+| 101593 | 130263 | SAIL | Normal | 22/04/2026 | GO-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
-| 101010 | 129811 | SAM | Normal | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
+| 101605 | 130149 | SAL | Normal | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
 | 101052 | 129803 | NE | Normal | 02/04/2026 | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
 | 101307 | 129788 | SAM | Normal | 01/04/2026 | Realizar a importa��o do campo "Entrega" no lan�amento de nota fiscal de sa�da. |
 | 101141 | 129762 | NE | Normal | 01/04/2026 | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma combina��o  |
@@ -28,6 +29,7 @@
 | 101136 | 129109 | NE | Normal | 13/03/2026 | Est� ocorrendo o erro: "O(s) arquivo(s) selecionado(s) n�o existe(m)!" seguido d |
 | 101168 | 129047 | NE | Normal | 12/03/2026 | Esta sendo calculado incorretamente a RBT12 para o c�lculo do Simples Nacional n |
 | 101340 | 128957 | NE | Normal | 10/03/2026 | N�o est� sendo demonstrado as receitas da filial no relat�rio Simples Nacional - |
+| 101551 | 128956 | NE | Normal | 10/03/2026 | SP-Est� sendo demonstrado indevidamente o submenu DARE ICMS Antecipado (Atacadis |
 | 101354 | 128938 | SAL | Normal | 10/03/2026 | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Estaduais, q |
 | 101485 | 128897 | NE | Normal | 09/03/2026 | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informativo SPED Fi |
 | 101385 | 128876 | SAM | Normal | 06/03/2026 | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "cBenef" das n |
@@ -49,6 +51,8 @@
 | 101291 | 127448 | SAIL | Normal | 03/02/2026 | SC-Implementar sub-apura��o e limitador do Cr�dito Presumido de ICMS para abated |
 | 100021 | 127375 | NE | Normal | 02/02/2026 | Est� apresentando o n�mero de parcelas incorreto no relat�rio "ICMS Creditado",  |
 | 100346 | 127261 | NE | Normal | 29/01/2026 | Est� sendo apresentado indevidamente os valores da receita bruta acumulada dos s |
+| 101591 | 127197 | SAM | Normal | 28/01/2026 | PB-Alterar a importa��o do DIFALI para n�o excluir o ICMS da base de c�lculo qua |
+| 101590 | 126798 | SAL | Normal | 21/01/2026 | PB-Alterar o c�lculo do DIFALI para n�o excluir o ICMS da base de c�lculo quando |
 | 100691 | 126797 | SAM | Normal | 21/01/2026 | Remover todas as refer�ncias do Dom�nio Atendimento no Dom�nio Escrita. |
 | 100751 | 126795 | SAL | Normal | 21/01/2026 | Alterar o sistema para considerar a dedu��o do CT-e substituto no c�lculo do Sim |
 | 99852 | 126630 | SAL | Normal | 19/01/2026 | Incluir o CNAE 8220-2/00 nos par�metros para c�lculo do INSS Receita Bruta. |
@@ -229,12 +233,11 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 101519 | 130458 | NE | 29/04/2026 | - |
-| 101512 | 130449 | NE | 28/04/2026 | - |
 | 101432 | 130369 | NE | 24/04/2026 | N�o est�o sendo enviadas para o Busca NF-e Escrit�rio as NFS-e baixadas quando n |
 | 101388 | 130336 | NE | 24/04/2026 | Corrigir erros implementados no desenvolvimento da SAI 99330. |
 | 101321 | 130237 | NE | 20/04/2026 | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
+| 101061 | 129875 | NE | 07/04/2026 | Est� ocorrendo o erro "Erro realizando requisi��o: Erro ao realizar requisi��o:  |
 | 100985 | 129721 | NE | 31/03/2026 | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
 | 100954 | 129718 | NE | 31/03/2026 | Est� sendo apresentada indevidamente a mensagem "A soma do imposto PIS informado |
 | 100945 | 129521 | NE | 25/03/2026 | SC-N�o est� sendo gerado o valor correto no item 198 do quadro 14 do informativo |
@@ -259,13 +262,14 @@
 | 100524 | 128426 | NE | 25/02/2026 | SP-Est� sendo direcionada para a janela de emiss�o da guia incorreta do ICMS, qu |
 | 100476 | 128282 | SAM | 20/02/2026 | Ajustar a ferramenta de envio de documentos para o cat�logo para ser poss�vel en |
 | 100042 | 128277 | SAM | 20/02/2026 | Realizar os testes no Web Service e Busca NF-e ap�s a migra��o do SO dos servido |
+| 100373 | 128211 | NE | 19/02/2026 | Est� ocorrendo o erro de sistema "N�mero do Erro...: 6" quando a empresa n�o pos |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
 | icms | 3844 |
-| nf-e | 1634 |
+| nf-e | 1635 |
 | nota fiscal | 1588 |
 | simples | 1292 |
 | simples nacional | 1138 |
@@ -274,6 +278,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101010 | 129811 | SAM | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 99213 | 126395 | SAL | 13/01/2026 | SP - Garantir funcionamento da integra��o do Cr�dito de ICMS com Escrita devido  |
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98423 | 125124 | SAM | 05/12/2025 | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Busca NF-e. |
@@ -283,7 +288,6 @@
 | 97918 | 123811 | NE | 28/10/2025 | Est� sendo gerado o valor incorreto do campo 04-VL_BC_RET do registro F600 do in |
 | 98841 | 123398 | SAM | 14/10/2025 | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a Lei N� 9.0 |
 | 97142 | 123028 | NE | 30/09/2025 | N�o est� somando o valor do frete no valor cont�bil da nota, quando n�o � import |
-| 97420 | 122935 | NE | 25/09/2025 | RS-N�o est� reconhecendo a "Restitui��o de ICMS ST" quando est� selecionado a op |
 
 ## Busca Completa
 

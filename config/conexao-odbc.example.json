@@ -11,7 +11,9 @@
     "areas": [
       "Escrita",
       "Importação",
-      "Onvio Escrita"
+      "Onvio Escrita",
+      "Contabil",
+      "ONVIO CONTABIL"
     ],
     "batch_size": 50,
     "ano_inicial": 2002,

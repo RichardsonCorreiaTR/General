@@ -1,14 +1,16 @@
 ﻿# Integracoes e canais digitais
 
 > Dominio Escrita Fiscal | slug `integracoes-canais-digitais`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 76 | Liberadas: 1419 | Descartadas: 130 | Total SAIs: 1620
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 78 | Liberadas: 1419 | Descartadas: 131 | Total SAIs: 1623
 
-## Pendentes (76)
+## Pendentes (78)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101010 | 129811 | SAM | Normal | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
+| 101574 | 130190 | SAM | Normal | 17/04/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "Consulta |
+| 101605 | 130149 | SAL | Normal | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
+| 101578 | 129935 | SAM | Normal | 08/04/2026 | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
 | 101043 | 129701 | NE | Normal | 31/03/2026 | Em alguns casos est� ocorrendo encerramento do sistema quando importado grande v |
 | 101342 | 129540 | NE | Normal | 25/03/2026 | N�o est� sendo feita corretamente a importa��o das informa��es da janela "Outros |
 | 100741 | 129097 | SAL | Normal | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
@@ -134,6 +136,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101010 | 129811 | SAM | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 97420 | 122935 | NE | 25/09/2025 | RS-N�o est� reconhecendo a "Restitui��o de ICMS ST" quando est� selecionado a op |
 | 96693 | 122576 | SAM | 12/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e, CF-e e CT-e e  |
 | 96028 | 121607 | NE | 07/08/2025 | Est� sendo aceito indevidamente arquivos de NFC-e com valores negativos na API. |
@@ -143,7 +146,6 @@
 | 93965 | 118989 | NE | 05/05/2025 | Est� sendo apresentada indevidamente a mensagem "O sistema n�o est� preparado pa |
 | 92781 | 117531 | SAM | 11/03/2025 | Testar a altera��o das URLs da API da Conta Azul para o envio de Contas Cont�bei |
 | 90476 | 114690 | NE | 21/11/2024 | N�o est� sendo gerado corretamente o valor da tag "valoresParaComparacao" da gui |
-| 90220 | 114248 | NE | 01/11/2024 | Em alguns casos o sistema est� travando ao realizar importa��o atrav�s do NF-e A |
 
 ## Busca Completa
 

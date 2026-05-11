@@ -1,14 +1,14 @@
 ﻿# Conteúdo Contábil Tributário
 
 > Dominio Escrita Fiscal | slug `conteudo-contabil-tributario`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 11 | Liberadas: 912 | Descartadas: 71 | Total SAIs: 994
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 11 | Liberadas: 913 | Descartadas: 71 | Total SAIs: 995
 
 ## Pendentes (11)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101278 | 130133 | NE | Normal | 15/04/2026 | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
+| 101592 | 130556 | SAL | Normal | 05/05/2026 | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de 30/04/2026 |
 | 101040 | 129818 | NE | Normal | 02/04/2026 | Est� importando incorretamente os valores do registro Y730 do informativo SPED E |
 | 100814 | 129461 | SAM | Normal | 24/03/2026 | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED ECF para  |
 | 98621 | 125438 | SAM | Normal | 15/12/2025 | Ajustar a gera��o do informativo SPED ECF para buscar os saldos das contas cont� |
@@ -24,6 +24,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101278 | 130133 | NE | 15/04/2026 | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
 | 101080 | 129838 | NE | 06/04/2026 | Est� apresentando erro de banco de dados ao gravar a tela "Outros Dados" do info |
 | 101048 | 129824 | SAL | 02/04/2026 | Atualizar tabelas do informativo SPED ECF. |
 | 101044 | 129794 | SAL | 01/04/2026 | Atualizar tabelas do informativo SPED ECF. |
@@ -53,13 +54,12 @@
 | 95667 | 121021 | NE | 21/07/2025 | Est� importando o saldo incorreto no registro M010 do Outros dados do SPED ECF q |
 | 97698 | 120865 | SAM | 15/07/2025 | Ajustar o comportamento da importa��o do registro M410 do SPED ECF para que a co |
 | 97381 | 120696 | SAM | 09/07/2025 | Criar valida��o para n�o permitir vincular conta referencial do SPED ECF/ECD com |
-| 95170 | 120517 | SAM | 03/07/2025 | Alterar a solu��o do bot�o "Solu��es" da tela principal do SPED ECF. |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| ecf | 785 |
+| ecf | 786 |
 | lucro presumido | 119 |
 | dipj | 33 |
 | lucro arbitrado | 8 |

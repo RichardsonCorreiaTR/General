@@ -214,5 +214,53 @@
     "codigo_id": "0181375",
     "pasta_log": "victor-ferreira",
     "areas": ["Escrita", "Importação", "Onvio Escrita"]
+  },
+  {
+    "nome": "Patricia Kuerten Guizoni",
+    "email": "Patricia.Guizoni@thomsonreuters.com",
+    "github": "PatriciaGuizoniTR",
+    "codigo_id": "6120882",
+    "pasta_log": "patricia-kuerten-guizoni",
+    "areas": ["Contabilidade", "Patrimônio", "Atualizar", "Lalur", "Registro", "Conteúdo Contábil Tributário", "ONVIO CONTABIL"]
+  },
+  {
+    "nome": "Cláudia Neubert Savóis",
+    "email": "claudia.savois@thomsonreuters.com",
+    "github": "ClaudiaSavoisTR",
+    "codigo_id": "6030889",
+    "pasta_log": "claudia-neubert-savois",
+    "areas": ["Contabilidade", "Patrimônio", "Atualizar", "Lalur", "Registro", "Conteúdo Contábil Tributário", "ONVIO CONTABIL"]
+  },
+  {
+    "nome": "Kassiane Mesquita",
+    "email": "kassiane.mesquita@thomsonreuters.com",
+    "github": "KassianeMesquitaTR",
+    "codigo_id": "6104712",
+    "pasta_log": "kassiane-mesquita",
+    "areas": ["Contabilidade", "Patrimônio", "Atualizar", "Lalur", "Registro", "Conteúdo Contábil Tributário", "ONVIO CONTABIL"]
+  },
+  {
+    "nome": "Aline Mezzari",
+    "email": "aline.mezzari@thomsonreuters.com",
+    "github": "AlineMezzariTR",
+    "codigo_id": "0180781",
+    "pasta_log": "aline-mezzari",
+    "areas": ["Contabilidade", "Patrimônio", "Atualizar", "Lalur", "Registro", "Conteúdo Contábil Tributário", "ONVIO CONTABIL"]
+  },
+  {
+    "nome": "Bruna Tayt-Sohn Nogueira Lima",
+    "email": "Bruna.NogueiraLima@thomsonreuters.com",
+    "github": "brunanogueiralima",
+    "codigo_id": "6119886",
+    "pasta_log": "bruna-tayt-sohn-nogueira-lima",
+    "areas": ["Contabilidade", "Patrimônio", "Atualizar", "Lalur", "Registro", "Conteúdo Contábil Tributário", "ONVIO CONTABIL"]
+  },
+  {
+    "nome": "Harieli Tournier",
+    "email": "Harieli.Tournier@thomsonreuters.com",
+    "github": "HarieliTournierTR",
+    "codigo_id": "6116400",
+    "pasta_log": "harieli-tournier",
+    "areas": ["Contabilidade", "Patrimônio", "Atualizar", "Lalur", "Registro", "Conteúdo Contábil Tributário", "ONVIO CONTABIL"]
   }
 ]

@@ -1,36 +1,50 @@
 ﻿# Apuracao de impostos
 
 > Dominio Escrita Fiscal | slug `apuracao-impostos`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 643 | Liberadas: 24839 | Descartadas: 2575 | Total SAIs: 28020
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 667 | Liberadas: 24846 | Descartadas: 2575 | Total SAIs: 28051
 
-## Pendentes (643)
+## Pendentes (667)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101572 | 130569 | SAM | Normal | 05/05/2026 | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa��o no DW. |
+| 101570 | 130550 | NE | Normal | 04/05/2026 | JSON de DELETED est� alterando transa��o para 1900-01-01 |
+| 101549 | 130532 | NE | Normal | 04/05/2026 | Est� ocorrendo erro de banco de dados 'EFSDOIMP_RECEITA_IMPOSTOS_MAJORACAO_SCP'  |
+| 101547 | 130513 | NE | Normal | 30/04/2026 | Est� sendo calculado incorretamente o valor dos impostos 6-CSLL e 7-IRPJ, quando |
+| 101542 | 130511 | NE | Normal | 30/04/2026 | Est� ocorrendo indevidamente a cr�tica de estrutura "Erro processando arquivo XM |
+| 101556 | 130509 | NE | Normal | 30/04/2026 | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o plano de con |
+| 101562 | 130508 | NE | Normal | 30/04/2026 | Em alguns casos est� sendo gerado o lan�amento de zeramento sem a conta de contr |
 | 101508 | 130467 | NE | Normal | 29/04/2026 | N�o est� sendo demonstrado o Lucro e Dividendo Isento (natureza 12001) informado |
+| 101584 | 130433 | SAL | Normal | 28/04/2026 | RO-Gerar o registro E112 no SPED Fiscal para lan�amentos de ajustes gerados no r |
+| 101594 | 130428 | SAM | Normal | 27/04/2026 | GO-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fiscais de en |
 | 101469 | 130424 | SAM | Normal | 27/04/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
-| 101468 | 130421 | NE | Normal | 27/04/2026 | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
 | 101452 | 130409 | SAM | Normal | 27/04/2026 | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de M |
 | 101480 | 130379 | NE | Normal | 24/04/2026 | N�o est�o sendo apresentadas todas as empresas no quadro "Selecionar empresas" d |
+| 101528 | 130372 | NE | Normal | 24/04/2026 | Est� sendo considerado a natureza do saldo da conta ao inv�s da natureza do sald |
 | 101416 | 130365 | SAM | Normal | 24/04/2026 | Realizar testes na ferramenta de IA para an�lise de relat�rios dentro do Cont�bi |
 | 101433 | 130364 | SAM | Normal | 24/04/2026 | Realizar testes na replica��o/importa��o de dados de outra empresa devido altera |
 | 101471 | 130358 | NE | Normal | 24/04/2026 | Extrato Mensal da filial centralizada sempre gera os dados da matriz |
+| 101555 | 130339 | NE | Normal | 24/04/2026 | Est� sendo demonstrado o n�mero do documento e o CNPJ do fornecedor incorretos n |
 | 101487 | 130334 | NE | Normal | 24/04/2026 | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
 | 101425 | 130331 | NE | Normal | 24/04/2026 | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simples Nacional |
+| 101523 | 130327 | NE | Normal | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
+| 101595 | 130326 | NE | Normal | 23/04/2026 | Est� ocorrendo um problema ao atualizar os dados do extrato no reprocessamento d |
 | 101396 | 130324 | SAM | Normal | 23/04/2026 | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita - Refatora��o. |
 | 101373 | 130303 | SAM | Normal | 23/04/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 101374 | 130288 | NE | Normal | 22/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
+| 101535 | 130255 | NE | Normal | 20/04/2026 | N�o est� exibindo algumas contas sint�ticas do grupo Passivo no Balan�o quando e |
 | 101492 | 130247 | NE | Normal | 20/04/2026 | SC-N�o est� sendo gerado o item 999 do quadro 11 na DIME da Filial, quando a apu |
 | 101341 | 130238 | NE | Normal | 20/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
 | 101308 | 130231 | SAM | Normal | 20/04/2026 | Refatorar o c�lculo da majora��o do IRPJ e CSLL. |
 | 101460 | 130212 | NE | Normal | 20/04/2026 | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table 'CTCONTAS_A |
 | 101369 | 130191 | SAIL | Normal | 17/04/2026 | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tributos federa |
+| 101574 | 130190 | SAM | Normal | 17/04/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "Consulta |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
 | 101275 | 130155 | NE | Normal | 16/04/2026 | N�o est�o sendo enviadas as atualiza��es das contas cont�beis para Conta Azul qu |
+| 101605 | 130149 | SAL | Normal | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
 | 101256 | 130136 | NE | Normal | 15/04/2026 | N�o est�o sendo disponibilizadas para o Cont�bil as notas armazenadas no BOX-e. |
 | 101414 | 130134 | NE | Normal | 15/04/2026 | Est� importando incorretamente o valor da opera��o do contrato de factoring quan |
-| 101278 | 130133 | NE | Normal | 15/04/2026 | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
 | 101319 | 130128 | NE | Normal | 15/04/2026 | Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado!" ao gravar a i |
 | 101225 | 130117 | SAM | Normal | 15/04/2026 | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
 | 101222 | 130114 | SAM | Normal | 15/04/2026 | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
@@ -50,16 +64,18 @@
 | 101198 | 130079 | SAM | Normal | 14/04/2026 | [TECH] Realizar testes funcionais da nova FARM RA1 do sistema Dom�nio no Dom�nio |
 | 101282 | 130077 | SAM | Normal | 14/04/2026 | Efetuar baixa de impostos em atraso e/ou com pagamento parcial existente |
 | 101281 | 130076 | SAM | Normal | 14/04/2026 | Efetuar baixa de impostos atrav�s da description |
-| 101279 | 130073 | NE | Normal | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101306 | 130042 | SAIL | Normal | 13/04/2026 | Implementar o arquivo de envio do 'Evento: 112150 - Atualiza��o da data de previ |
 | 101343 | 130015 | NE | Normal | 13/04/2026 | Em alguns casos est� ocorrendo diferen�a no valor de "Valor do estorno de cr�dit |
 | 101165 | 130014 | NE | Normal | 13/04/2026 | N�o est� sendo feita corretamente a importa��o dos lan�amentos cont�beis na jane |
 | 101144 | 129997 | SAM | Normal | 10/04/2026 | Adequar o sistema para contabiliza��o de estorno de Pagamento de Contas da Conta |
 | 101143 | 129996 | SAM | Normal | 10/04/2026 | Adequar o sistema para contabiliza��o de estorno de Pix da Conta PJ no Dom�nio C |
 | 101314 | 129992 | NE | Normal | 10/04/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
+| 101607 | 129991 | NE | Normal | 10/04/2026 | Est� ocorrendo travamento durante a importa��o quando a empresa possui atividade |
 | 101326 | 129954 | NE | Normal | 09/04/2026 | N�o est� processando novo consentimento quando antigo est� inv�lido e possui tra |
+| 101559 | 129946 | NE | Normal | 09/04/2026 | Est� sendo gerado um saldo em aberto indevidamente na baixa de parcelas de entra |
 | 101157 | 129940 | SAIL | Normal | 08/04/2026 | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
 | 101159 | 129936 | SAIL | Normal | 08/04/2026 | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
+| 101578 | 129935 | SAM | Normal | 08/04/2026 | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
 | 101280 | 129923 | SAM | Normal | 08/04/2026 | Efetuar a baixa de impostos sempre que possui operation_type CONVENIO_ARRECADACA |
 | 101316 | 129919 | NE | Normal | 08/04/2026 | Est� ocorrendo o erro de sistema "Algum dado n�o cadastrado!" ao gravar a import |
 | 101294 | 129902 | SAM | Normal | 07/04/2026 | Importar para o produto e para os lan�amentos de sa�das as op��es relacionadas � |
@@ -94,6 +110,7 @@
 | 100899 | 129457 | NE | Normal | 24/03/2026 | Est� gerando valor incorreto na coluna "RB Demais Atividades" do Comparativo do  |
 | 101011 | 129356 | SAL | Normal | 20/03/2026 | SP-Adequar o sistema para permitir realizar lan�amentos de ajustes de 'Outros d� |
 | 101150 | 129343 | SAM | Normal | 20/03/2026 | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cadastro do ac |
+| 101575 | 129338 | SAM | Normal | 20/03/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "EnviarLo |
 | 100647 | 129305 | SAM | Normal | 19/03/2026 | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui��es. |
 | 100904 | 129302 | SAM | Normal | 19/03/2026 | Otimizar a apura��o do imposto 69-ST-TRANS por nota. |
 | 101164 | 129275 | NE | Normal | 19/03/2026 | Em alguns casos, n�o est� sendo gerado o valor correto da linha "3. Cr�dito outo |
@@ -107,6 +124,7 @@
 | 101168 | 129047 | NE | Normal | 12/03/2026 | Esta sendo calculado incorretamente a RBT12 para o c�lculo do Simples Nacional n |
 | 100472 | 128992 | SAM | Normal | 11/03/2026 | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita. |
 | 101340 | 128957 | NE | Normal | 10/03/2026 | N�o est� sendo demonstrado as receitas da filial no relat�rio Simples Nacional - |
+| 101551 | 128956 | NE | Normal | 10/03/2026 | SP-Est� sendo demonstrado indevidamente o submenu DARE ICMS Antecipado (Atacadis |
 | 101354 | 128938 | SAL | Normal | 10/03/2026 | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Estaduais, q |
 | 100422 | 128930 | SAM | Normal | 09/03/2026 | Realizar um estudo e testes no agente de comunica��o referente ao consumo da nov |
 | 100789 | 128903 | NE | Normal | 09/03/2026 | Est� apresentando erro de banco de dados ao gravar a tela "Informa��es da Pessoa |
@@ -132,6 +150,7 @@
 | 100296 | 128741 | SAM | Normal | 03/03/2026 | Realizar a importa��o da baixa de pagamento de impostos pelo Conta Azul referent |
 | 100578 | 128734 | NE | Normal | 03/03/2026 | N�o est� gerando os valores de IPI para alguns produtos na guia "Estoque" quando |
 | 100737 | 128718 | NE | Normal | 03/03/2026 | Est� ocorrendo o erro 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao realizar a i |
+| 101603 | 128714 | SAL | Normal | 03/03/2026 | Alterar a base de c�lculo dos impostos 183-IBS e 184-CBS para considerar o valor |
 | 100707 | 128705 | NE | Normal | 02/03/2026 | Est� ocorrendo erro de banco de dados na tela de "Concilia��o de Lan�amentos" ao |
 | 100389 | 128664 | NE | Normal | 02/03/2026 | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metros o "Fato |
 | 100582 | 128660 | NE | Normal | 02/03/2026 | N�o est� sendo demonstrado a sigla do imposto no relat�rio de reten��es a recolh |
@@ -177,13 +196,16 @@
 | 99654 | 127405 | SAM | Normal | 02/02/2026 | Realizar estudos a fim de minimizar crescimento dos arquivos tempor�rios de banc |
 | 100021 | 127375 | NE | Normal | 02/02/2026 | Est� apresentando o n�mero de parcelas incorreto no relat�rio "ICMS Creditado",  |
 | 100346 | 127261 | NE | Normal | 29/01/2026 | Est� sendo apresentado indevidamente os valores da receita bruta acumulada dos s |
+| 101591 | 127197 | SAM | Normal | 28/01/2026 | PB-Alterar a importa��o do DIFALI para n�o excluir o ICMS da base de c�lculo qua |
 | 99526 | 127128 | SAM | Normal | 28/01/2026 | Realizar testes no bot�o 'Empresas' da tela do 'Extrator da DIRF' no m�dulo Escr |
+| 101554 | 127063 | SAM | Normal | 26/01/2026 | Ajustar a importa��o das naturezas de rendimento do imposto 63-IRRF-APF, conside |
 | 99479 | 127026 | NE | Normal | 26/01/2026 | N�o est� gerando o Status do consentimento corretamente no cont�bil quando ao al |
 | 99892 | 127005 | SAM | Normal | 26/01/2026 | Realizar testes em todos os processos/servi�os da escrita que utilizam certifica |
 | 99996 | 126938 | NE | Normal | 23/01/2026 | Est� importando incorretamente a al�quota do ISS na guia "Itens" da nota quando  |
 | 101161 | 126935 | NE | Normal | 23/01/2026 | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no relat�rio demo |
 | 99607 | 126845 | NE | Normal | 21/01/2026 | Em alguns casos est� fechando o sistema ao emitir o demonstrativo do imposto 9-S |
 | 99427 | 126810 | SAM | Normal | 21/01/2026 | Criar uma rotina para desativa��o das caixas de e-mail do BOX-e quando o cliente |
+| 101590 | 126798 | SAL | Normal | 21/01/2026 | PB-Alterar o c�lculo do DIFALI para n�o excluir o ICMS da base de c�lculo quando |
 | 100751 | 126795 | SAL | Normal | 21/01/2026 | Alterar o sistema para considerar a dedu��o do CT-e substituto no c�lculo do Sim |
 | 99323 | 126700 | NE | Normal | 19/01/2026 | N�o est� exportando os dados do campo inscri��o do relat�rio para o excel |
 | 99310 | 126692 | NE | Normal | 19/01/2026 | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
@@ -202,6 +224,7 @@
 | 99039 | 126227 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o e estimativas vers�o 10.6A-05. |
 | 101226 | 126219 | SAIL | Normal | 08/01/2026 | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
 | 99086 | 126206 | SAM | Normal | 08/01/2026 | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut�ria atrav |
+| 101553 | 126108 | SAL | Normal | 07/01/2026 | Incluir as naturezas de rendimento 10011 e 11008 para envio na EFD-Reinf conform |
 | 99324 | 126096 | SAM | Normal | 07/01/2026 | Permitir a emiss�o do relat�rio extrator da DIRF por benefici�rio. |
 | 99063 | 126047 | SAM | Normal | 05/01/2026 | Adequar o sistema para ao importar as informa��es do c�lculo do INSS Receita Bru |
 | 98888 | 125949 | SAM | Normal | 30/12/2025 | Realizar testes conforme nova funcionalidade de gerenciamento de certificados di |
@@ -325,6 +348,7 @@
 | 94257 | 115214 | SAM | Normal | 10/12/2024 | Contabilidade Digital: Criar a op��o "Subtrai/Soma/Ambos" na configura��o por pa |
 | 94566 | 115090 | SAM | Normal | 05/12/2024 | Contabilidade Digital: Implementar no sistema para que n�o apare�a no extrato ba |
 | 90787 | 115000 | NE | Normal | 02/12/2024 | Est� ocorrendo erro de banco de dados na tela "Receita Bruta", quando clicado no |
+| 101525 | 114858 | SAM | Normal | 27/11/2024 | Criar a op��o "Considerar as defini��es das contribui��es retidas na fonte (PIS, |
 | 90580 | 114749 | SAM | Normal | 25/11/2024 | Permitir que o sistema realiza a importa��o e Escritura��o das NFS-e do Padr�o N |
 | 90445 | 114691 | SAM | Normal | 21/11/2024 | Realizar um estudo para melhorar o processo de acesso ao e-CAC.   |
 | 91251 | 114546 | SAM | Normal | 13/11/2024 | Contabilidade Digital: Incluir filtro de compet�ncia inicial e final, demonstrar |
@@ -656,15 +680,21 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101519 | 130458 | NE | 29/04/2026 | N�o est� sendo feito o c�lculo da majora��o dos impostos 6-CSLL, 7-IRPJ, 33-IRPJ |
+| 101512 | 130449 | NE | 28/04/2026 | ES-Em alguns casos est� sendo demonstrada indevidamente a mensagem "Falta apurar |
+| 101468 | 130421 | NE | 27/04/2026 | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
 | 101432 | 130369 | NE | 24/04/2026 | N�o est�o sendo enviadas para o Busca NF-e Escrit�rio as NFS-e baixadas quando n |
 | 101321 | 130237 | NE | 20/04/2026 | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
 | 101292 | 130173 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o do imposto 7-IRPJ, quando no |
+| 101278 | 130133 | NE | 15/04/2026 | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
 | 101233 | 130124 | SAM | 15/04/2026 | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas que tenta  |
 | 101230 | 130119 | NE | 15/04/2026 | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
+| 101279 | 130073 | NE | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101120 | 129965 | NE | 09/04/2026 | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, 33-IRPJ-P |
 | 101071 | 129901 | NE | 07/04/2026 | Est� lendo v�rias vezes mesma transa��o quando ocorre erro na consulta |
 | 101067 | 129893 | SAM | 07/04/2026 | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de A |
+| 101061 | 129875 | NE | 07/04/2026 | Est� ocorrendo o erro "Erro realizando requisi��o: Erro ao realizar requisi��o:  |
 | 101096 | 129861 | NE | 06/04/2026 | Em alguns casos est� ocorrendo erro de banco de dados ao realizar a apura��o do  |
 | 101090 | 129858 | NE | 06/04/2026 | N�o est� sendo gerado o valor do imposto 38-COSIRF no relat�rio "Extrator da DIR |
 | 101080 | 129838 | NE | 06/04/2026 | Est� apresentando erro de banco de dados ao gravar a tela "Outros Dados" do info |
@@ -680,18 +710,12 @@
 | 100952 | 129631 | NE | 30/03/2026 | N�o est� sendo gerado o valor correto dos impostos 110-CSLL/SCP e 111-IRPJ/SCP,  |
 | 100996 | 129626 | NE | 27/03/2026 | N�o est� sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRPJ na integ |
 | 100898 | 129624 | NE | 27/03/2026 | MT-Est� desmarcando automaticamente a op��o "Acesso ao portal - SEFAZ" ao gravar |
-| 100942 | 129610 | NE | 27/03/2026 | Est� gerando o relacionamento do M300 e M350 do SPED ECF de forma incorreta quan |
-| 100873 | 129568 | NE | 26/03/2026 | Est� sendo gerado o valor incorreto na linha "5.Lucros e dividendos, apurados a  |
-| 100836 | 129542 | SAM | 26/03/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
-| 100841 | 129541 | NE | 25/03/2026 | Em alguns casos est� ocorrendo erro de banco de dados ao gravar um lan�amento na |
-| 100945 | 129521 | NE | 25/03/2026 | SC-N�o est� sendo gerado o valor correto no item 198 do quadro 14 do informativo |
-| 100955 | 129513 | NE | 25/03/2026 | PA-N�o est�o sendo gerados dos registros 0460, C195 e C197 no informativo SPED F |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| st | 22865 |
+| st | 22872 |
 | icms | 3844 |
 | iss | 2409 |
 | rat | 1783 |

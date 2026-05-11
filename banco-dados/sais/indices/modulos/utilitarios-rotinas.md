@@ -1,17 +1,17 @@
 ﻿# Utilitarios e rotinas
 
 > Dominio Escrita Fiscal | slug `utilitarios-rotinas`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 59 | Liberadas: 662 | Descartadas: 88 | Total SAIs: 808
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 59 | Liberadas: 663 | Descartadas: 89 | Total SAIs: 810
 
 ## Pendentes (59)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101572 | 130569 | SAM | Normal | 05/05/2026 | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa��o no DW. |
+| 101571 | 130564 | SAM | Normal | 05/05/2026 | Incluir os comandos SQL referente aos problemas de travamento no agente de comun |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
-| 101279 | 130073 | NE | Normal | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101070 | 129900 | SAM | Normal | 07/04/2026 | Reduzir quantidade de mensagens repetidas no agente de comunica��o |
-| 101010 | 129811 | SAM | Normal | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 101035 | 129512 | NE | Normal | 25/03/2026 | Em alguns casos est� ocorrendo o erro "uo_carrega_empresas_relat�rio" ao executa |
 | 100830 | 129205 | SAM | Normal | 17/03/2026 | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
 | 100787 | 129158 | SAM | Normal | 16/03/2026 | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
@@ -74,6 +74,7 @@
 |-----|------|------|----------|--------|
 | 101233 | 130124 | SAM | 15/04/2026 | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas que tenta  |
 | 101230 | 130119 | NE | 15/04/2026 | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
+| 101279 | 130073 | NE | 14/04/2026 | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado nas Rotinas |
 | 101007 | 129819 | SAM | 02/04/2026 | Realizar testes nas rotinas autom�ticas devido a altera��es feitas pelo m�dulo F |
 | 101000 | 129810 | SAM | 02/04/2026 | Rotinas Autom�ticas - Compet�ncia seguinte � execu��o - Mudan�as Cr�dito do Trab |
 | 100544 | 129130 | SAM | 13/03/2026 | Realizar melhorias nas rotinas de grava��o do XML no banco de dados visando a co |
@@ -101,13 +102,12 @@
 | 97589 | 123137 | SAM | 03/10/2025 | Implementar no Sistema op��o para gerar o arquivo SPED Fiscal via Rotinas Autom� |
 | 97275 | 123133 | NE | 03/10/2025 | Est� sendo gerado incorretamente apenas os relat�rios do �ltimo lote de arquivos |
 | 97007 | 122954 | SAM | 26/09/2025 | Inserir informa��o para separa��o por lote nas importa��es CT-e/CT-eOS API e nas |
-| 96741 | 122658 | SAM | 16/09/2025 | Realizar testes de conex�o do Dom�nio Cont�bil e Agente de Comunica��o com o Onv |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| rotina | 435 |
+| rotina | 436 |
 | certificado | 144 |
 | agente | 76 |
 | certificado digital | 74 |
@@ -117,6 +117,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101010 | 129811 | SAM | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 100722 | 129392 | SAM | 23/03/2026 | Realizar testes no processo de Rotinas Autom�ticas na Escrita Fiscal. |
 | 100427 | 128943 | NE | 10/03/2026 | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
 | 100084 | 128354 | SAM | 23/02/2026 | Adequar o uso definitivo de Certificado Digital A3 no Cont�bil. |
@@ -126,7 +127,6 @@
 | 96693 | 122576 | SAM | 12/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e, CF-e e CT-e e  |
 | 95910 | 121538 | NE | 05/08/2025 | Est� sendo considerado o certificado digital incorreto na gera��o da guia DAS vi |
 | 94304 | 119498 | SAM | 21/05/2025 | Preparar o BOX-e para receber as notas do Dom�nio Cont�bil atrav�s do Agente de  |
-| 93294 | 117944 | NE | 24/03/2025 | Est� apresentando o erro "String was not recognized as a valid DateTime" no agen |
 
 ## Busca Completa
 

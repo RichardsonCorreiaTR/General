@@ -50,6 +50,13 @@ if ($env:BUSCAR_SAI_DADOS_DIR -and (Test-Path $env:BUSCAR_SAI_DADOS_DIR)) {
     $dadosBrutosDir = $env:BUSCAR_SAI_DADOS_DIR
 } else {
     $dadosBrutosDir = Join-Path $projetoDir "banco-dados\dados-brutos"
+    # Fallback para projeto-filho onde os dados ficam em referencia\banco-dados\dados-brutos (symlink OneDrive)
+    if (-not (Test-Path (Join-Path $dadosBrutosDir "psai"))) {
+        $referenciaDir = Join-Path $projetoDir "referencia\banco-dados\dados-brutos"
+        if (Test-Path (Join-Path $referenciaDir "psai")) {
+            $dadosBrutosDir = $referenciaDir
+        }
+    }
 }
 $psaiDir = Join-Path $dadosBrutosDir "psai"
 $saiDir = Join-Path $dadosBrutosDir "sai"

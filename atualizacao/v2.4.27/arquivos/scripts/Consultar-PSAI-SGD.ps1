@@ -1,4 +1,4 @@
-#Requires -Version 5.1
+﻿#Requires -Version 5.1
 <#
 .SYNOPSIS
   Consulta PSAI no SGD via o script do repositório General.
@@ -57,6 +57,20 @@ if (Test-SgdCredentialsLocalFile -DataRootSgd $dataRoot) {
     Write-Host ""
 }
 else {
+    if ([Console]::IsInputRedirected) {
+        Write-Error @"
+Credenciais SGD nao configuradas e execucao nao-interativa detectada.
+
+Para configurar as credenciais, execute o script UMA VEZ manualmente no terminal:
+
+    cd <pasta-projeto-filho>
+    .\scripts\Consultar-PSAI-SGD.ps1 <numero-psai> --json
+
+Na primeira execucao interativa o script pedira usuario/senha e oferecera gravar
+em data\sgd-psai-consultas\.sgd-credentials.local.
+Apos isso o agente Cursor podera rodar automaticamente sem interrupcao.
+"@
+    }
     Write-Host ""
     Write-Host "SGD — primeira consulta neste projeto (ou sem credenciais gravadas)." -ForegroundColor Cyan
     Write-Host "Indique o seu utilizador e senha do SGD para aceder à PSAI (não vêm do .env do projeto)." -ForegroundColor Cyan

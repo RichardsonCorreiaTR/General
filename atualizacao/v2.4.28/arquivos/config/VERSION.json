@@ -1,0 +1,7 @@
+﻿{
+    "compativel_com_admin":  "2.5",
+    "changelog":  "Fix: buscar-sai.ps1 fallback para referencia\\banco-dados\\dados-brutos no projeto-filho; Consultar-PSAI-SGD.ps1 detecta execucao nao-interativa e orienta configurar credenciais",
+    "data":  "2026-05-11",
+    "hash_validacao":  "05211D5D9AD33100F9F339A40DEB39D7",
+    "versao":  "2.4.28"
+}

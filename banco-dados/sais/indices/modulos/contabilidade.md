@@ -1,19 +1,20 @@
 ﻿# Contabilidade
 
 > Dominio Escrita Fiscal | slug `contabilidade`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 103 | Liberadas: 2610 | Descartadas: 325 | Total SAIs: 3028
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 104 | Liberadas: 2612 | Descartadas: 325 | Total SAIs: 3031
 
-## Pendentes (103)
+## Pendentes (104)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130585 | SAL | Normal | 05/05/2026 | - |
-| 101444 | 130388 | SAM | Normal | 27/04/2026 | Melhorar performance para evitar gargalos no DW |
+| 0 | 130604 | NE | Normal | 06/05/2026 | - |
+| 101556 | 130509 | NE | Normal | 30/04/2026 | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o plano de con |
+| 101528 | 130372 | NE | Normal | 24/04/2026 | Est� sendo considerado a natureza do saldo da conta ao inv�s da natureza do sald |
+| 101523 | 130327 | NE | Normal | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
 | 101381 | 130316 | SAM | Normal | 23/04/2026 | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
 | 101460 | 130212 | NE | Normal | 20/04/2026 | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table 'CTCONTAS_A |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
-| 101313 | 130132 | SAL | Normal | 15/04/2026 | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
 | 101320 | 129969 | SAM | Normal | 09/04/2026 | Reimplementar o relat�rio Controle de Incentivos Fiscais. |
 | 101069 | 129891 | NE | Normal | 07/04/2026 | Lentid�o ao realizar a grava��o de lan�amentos no Contabilidade Digital |
 | 101049 | 129862 | SAM | Normal | 06/04/2026 | Ler e utilizar a tag updated_at no consentimento |
@@ -116,6 +117,8 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101444 | 130388 | SAM | 27/04/2026 | Melhorar performance para evitar gargalos no DW |
+| 101313 | 130132 | SAL | 15/04/2026 | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
 | 100902 | 129482 | NE | 24/03/2026 | Est� gerando valores incorretos para os registros K155, K156 e L100 do informati |
 | 100733 | 129406 | SAM | 23/03/2026 | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
 | 100732 | 129405 | SAM | 23/03/2026 | Implementar IA para an�lise de relat�rios dentro do Cont�bil. |
@@ -144,8 +147,6 @@
 | 99225 | 126528 | NE | 15/01/2026 | Est� sendo apresentado de forma incorreta os centros de custos no Balancete e Ba |
 | 99125 | 126229 | NE | 08/01/2026 | Est� importando incorretamente os valores na tela "Altera��o plano de contas" do |
 | 99038 | 126226 | SAM | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-04. |
-| 99037 | 126225 | SAM | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-03. |
-| 98990 | 126054 | SAM | 05/01/2026 | Informar ao usu�rio a necessidade de refazer o consentimento do parceiro Belvo p |
 
 ## Temas Frequentes
 

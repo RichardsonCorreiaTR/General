@@ -1,13 +1,14 @@
 ﻿# Registros Contábeis
 
 > Dominio Escrita Fiscal | slug `registros-contabeis`
-> Atualizado em: 06/05/2026 09:02
-> Pendentes: 1 | Liberadas: 36 | Descartadas: 3 | Total SAIs: 40
+> Atualizado em: 11/05/2026 15:39
+> Pendentes: 2 | Liberadas: 36 | Descartadas: 3 | Total SAIs: 41
 
-## Pendentes (1)
+## Pendentes (2)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101523 | 130327 | NE | Normal | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
 | 65138 | 75133 | SAM | Normal | 26/05/2020 | Otimizar o Script na gera��o do arquivo SPED Cont�bil(ECD). |
 
 ## Liberadas Recentes (30 mais recentes)

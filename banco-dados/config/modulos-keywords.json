@@ -3,10 +3,11 @@
     "atualizado_em":  "2026-04-29",
     "nota":  "Dominios alinhados a Escrita Fiscal e Contabil. Keywords de Folha de Pagamento removidas. area_modulo_padrao: fallback quando sai_descricao e nula. O script gerar-indices-sais.ps1 normaliza nomeArea (case, acentos, U+FFFD) e alias importao->importacao para dados ODBC com encoding corrompido.",
     "area_modulo_padrao": {
-        "Escrita":       "escrituracao-movimento-fiscal",
-        "Importação":    "onvio-importacao-dados",
-        "Onvio Escrita": "onvio-importacao-dados",
-        "Contabil":      "contabilidade"
+        "Escrita":          "escrituracao-movimento-fiscal",
+        "Importação":       "onvio-importacao-dados",
+        "Onvio Escrita":    "onvio-importacao-dados",
+        "Contabil":         "contabilidade",
+        "ONVIO CONTABIL":   "onvio-contabil"
     },
     "modulos":  {
         "escrituracao-movimento-fiscal":  {
@@ -588,6 +589,30 @@
                 "registros contabeis",
                 "registros contábeis",
                 "sped contabil"
+            ]
+        },
+        "onvio-contabil": {
+            "nome_exibicao":  "Onvio Contábil",
+            "area_pbcvs":  "ONVIO CONTABIL",
+            "tags_origem":  [
+                "Onvio Contabil",
+                "Onvio Contábil",
+                "Importacao Contabil",
+                "Importação Contábil",
+                "Carga Contabil",
+                "Layout Contabil"
+            ],
+            "keywords":  [
+                "onvio contabil",
+                "onvio contábil",
+                "importacao contabil",
+                "importação contábil",
+                "carga contabil",
+                "carga contábil",
+                "layout contabil",
+                "layout contábil",
+                "importar contabil",
+                "importar contábil"
             ]
         },
         "conteudo-contabil-tributario": {
