@@ -1,210 +1,89 @@
 ﻿# Onvio Contábil
 
 > Dominio Escrita Fiscal | slug `onvio-contabil`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 140 | Liberadas: 381 | Descartadas: 127 | Total SAIs: 594
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 19 | Liberadas: 57 | Descartadas: 12 | Total SAIs: 83
 
-## Pendentes (140)
+## Pendentes (19)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 0 | 130491 | NE | Normal | 29/04/2026 | - |
-| 101491 | 130440 | SAM | Normal | 28/04/2026 | - |
-| 101334 | 130038 | SAM | Normal | 13/04/2026 | - |
-| 101258 | 129994 | NE | Normal | 10/04/2026 | - |
-| 101124 | 129978 | NE | Normal | 09/04/2026 | - |
-| 101357 | 129974 | SAM | Normal | 09/04/2026 | - |
-| 101356 | 129973 | SAM | Normal | 09/04/2026 | - |
-| 101195 | 129906 | NE | Normal | 07/04/2026 | - |
-| 101453 | 129870 | SAM | Normal | 07/04/2026 | - |
-| 101085 | 129751 | NE | Normal | 01/04/2026 | - |
-| 101103 | 129703 | SAM | Normal | 31/03/2026 | - |
-| 101450 | 129665 | SAM | Normal | 30/03/2026 | - |
-| 101189 | 129627 | SAM | Normal | 27/03/2026 | - |
-| 101397 | 129620 | SAM | Normal | 27/03/2026 | - |
-| 101094 | 129609 | SAM | Normal | 27/03/2026 | - |
-| 101599 | 129573 | SAM | Normal | 26/03/2026 | - |
-| 100956 | 129531 | NE | Normal | 25/03/2026 | - |
-| 101257 | 129506 | SAM | Normal | 25/03/2026 | - |
-| 101107 | 129460 | SAM | Normal | 24/03/2026 | - |
-| 101104 | 129438 | SAM | Normal | 24/03/2026 | - |
-| 100901 | 129307 | NE | Normal | 19/03/2026 | - |
-| 100597 | 129150 | NE | Normal | 16/03/2026 | - |
-| 100963 | 129050 | NE | Normal | 12/03/2026 | - |
-| 100488 | 129035 | NE | Normal | 11/03/2026 | - |
-| 100530 | 128925 | SAM | Normal | 09/03/2026 | - |
-| 100589 | 128887 | NE | Normal | 06/03/2026 | - |
-| 100519 | 128739 | SAM | Normal | 03/03/2026 | - |
-| 100327 | 128582 | NE | Normal | 26/02/2026 | - |
-| 100325 | 128581 | NE | Normal | 26/02/2026 | - |
-| 100571 | 128355 | SAIL | Normal | 23/02/2026 | - |
-| 100593 | 128283 | SAM | Normal | 20/02/2026 | - |
-| 100094 | 128069 | SAM | Normal | 16/02/2026 | - |
-| 100095 | 128065 | SAM | Normal | 16/02/2026 | - |
-| 99863 | 127848 | SAM | Normal | 10/02/2026 | - |
-| 99891 | 127768 | SAM | Normal | 09/02/2026 | - |
-| 99890 | 127267 | SAM | Normal | 29/01/2026 | - |
-| 99572 | 126629 | SAM | Normal | 19/01/2026 | - |
-| 99955 | 126446 | SAM | Normal | 14/01/2026 | - |
-| 99067 | 126176 | SAM | Normal | 07/01/2026 | - |
-| 99862 | 125994 | SAM | Normal | 02/01/2026 | - |
-| 99946 | 125731 | SAM | Normal | 22/12/2025 | - |
-| 100529 | 125723 | SAIL | Normal | 19/12/2025 | - |
-| 100879 | 125653 | SAM | Normal | 18/12/2025 | - |
-| 98682 | 125492 | SAM | Normal | 15/12/2025 | - |
-| 99873 | 125374 | SAM | Normal | 12/12/2025 | - |
-| 99954 | 125365 | SAIL | Normal | 11/12/2025 | - |
-| 99952 | 125364 | SAIL | Normal | 11/12/2025 | - |
-| 98511 | 125179 | SAL | Normal | 08/12/2025 | - |
-| 98477 | 125080 | SAM | Normal | 05/12/2025 | - |
-| 98472 | 125057 | SAM | Normal | 05/12/2025 | - |
-| 98777 | 124899 | SAM | Normal | 01/12/2025 | - |
-| 98609 | 124894 | SAM | Normal | 01/12/2025 | - |
-| 99947 | 124829 | SAIL | Normal | 28/11/2025 | - |
-| 98247 | 124515 | NE | Normal | 19/11/2025 | - |
-| 98574 | 124071 | SAM | Normal | 06/11/2025 | - |
-| 97437 | 123318 | SAL | Normal | 10/10/2025 | - |
-| 97859 | 123288 | SAM | Normal | 09/10/2025 | - |
-| 98471 | 123281 | SAM | Normal | 09/10/2025 | - |
-| 97822 | 123277 | SAM | Normal | 09/10/2025 | - |
-| 98443 | 123223 | SAM | Normal | 07/10/2025 | - |
-| 98381 | 123188 | SAM | Normal | 06/10/2025 | - |
-| 98367 | 123186 | SAL | Normal | 06/10/2025 | - |
-| 98368 | 123185 | SAM | Normal | 06/10/2025 | - |
-| 98340 | 123183 | SAL | Normal | 06/10/2025 | - |
-| 97418 | 123030 | SAM | Normal | 30/09/2025 | - |
+| 100593 | 128283 | SAM | Normal | 20/02/2026 | Incluir vigências na parametrização. |
+| 99890 | 127267 | SAM | Normal | 29/01/2026 | Integração Onvio x DW - Realizar a integração dos lançamentos contábeis das nota |
+| 98777 | 124899 | SAM | Normal | 01/12/2025 | Integração Onvio x DW - Criar e integrar as contas contábeis e históricos entre  |
+| 98609 | 124894 | SAM | Normal | 01/12/2025 | Integração Onvio x DW - Listar as contas contábeis e históricos do Onvio Contabi |
+| 97437 | 123318 | SAL | Normal | 10/10/2025 | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
+| 98443 | 123223 | SAM | Normal | 07/10/2025 | Criar tela para consultar detalhes dos lançamentos da DMPL. |
+| 98367 | 123186 | SAL | Normal | 06/10/2025 | Gerar DMPL para matriz e filial. |
 | 98079 | 122821 | SAM | Normal | 23/09/2025 | Listar as contas cont�beis e hist�ricos do Onvio Contabilidade no DW Escrita. |
-| 97395 | 122742 | SAM | Normal | 19/09/2025 | - |
-| 101098 | 122558 | SAM | Normal | 12/09/2025 | - |
-| 96682 | 122357 | SAM | Normal | 04/09/2025 | - |
-| 97030 | 122246 | SAM | Normal | 02/09/2025 | - |
-| 97340 | 122172 | SAM | Normal | 28/08/2025 | - |
-| 97524 | 122171 | SAL | Normal | 28/08/2025 | - |
-| 97336 | 122170 | SAL | Normal | 28/08/2025 | - |
-| 97341 | 122169 | SAM | Normal | 28/08/2025 | - |
-| 97302 | 122168 | SAM | Normal | 28/08/2025 | - |
-| 96743 | 122166 | SAL | Normal | 28/08/2025 | - |
-| 97482 | 122114 | SAL | Normal | 27/08/2025 | - |
+| 96682 | 122357 | SAM | Normal | 04/09/2025 | Preparar o módulo para fornecer informações para as monitorias. |
+| 97524 | 122171 | SAL | Normal | 28/08/2025 | Gerar DLPA para matriz e filial. |
+| 96743 | 122166 | SAL | Normal | 28/08/2025 | Transferir automaticamente o valor de lucro ou prejuízo do período para o lucro  |
 | 99525 | 121260 | SAM | Normal | 28/07/2025 | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e Onvio Conta |
-| 96303 | 120710 | SAM | Normal | 09/07/2025 | - |
-| 96036 | 120635 | NE | Normal | 07/07/2025 | - |
-| 96171 | 120543 | SAM | Normal | 03/07/2025 | - |
-| 95127 | 120404 | NE | Normal | 27/06/2025 | - |
-| 95083 | 120272 | SAM | Normal | 23/06/2025 | - |
-| 100927 | 119731 | SAM | Normal | 30/05/2025 | - |
-| 98466 | 119542 | SAIL | Normal | 22/05/2025 | - |
-| 97772 | 119540 | SAIL | Normal | 22/05/2025 | - |
-| 97385 | 119122 | SAIL | Normal | 08/05/2025 | - |
-| 92732 | 117443 | SAM | Normal | 10/03/2025 | - |
-| 93083 | 116793 | SAL | Normal | 18/02/2025 | - |
-| 91601 | 115687 | NE | Normal | 07/01/2025 | - |
-| 90752 | 115102 | SAM | Normal | 05/12/2024 | - |
-| 92023 | 114795 | SAM | Normal | 26/11/2024 | - |
-| 92024 | 114794 | SAM | Normal | 26/11/2024 | - |
-| 91949 | 114793 | SAM | Normal | 26/11/2024 | - |
-| 91948 | 114792 | SAM | Normal | 26/11/2024 | - |
-| 92003 | 114791 | SAM | Normal | 26/11/2024 | - |
-| 91940 | 114790 | SAM | Normal | 26/11/2024 | - |
-| 91939 | 114788 | SAM | Normal | 26/11/2024 | - |
-| 91931 | 114787 | SAM | Normal | 26/11/2024 | - |
-| 91930 | 114786 | SAM | Normal | 26/11/2024 | - |
-| 91924 | 114785 | SAM | Normal | 26/11/2024 | - |
-| 91923 | 114784 | SAM | Normal | 26/11/2024 | - |
-| 91875 | 114782 | SAM | Normal | 26/11/2024 | - |
-| 91873 | 114779 | SAM | Normal | 26/11/2024 | - |
-| 91862 | 114776 | SAM | Normal | 26/11/2024 | - |
-| 91844 | 114775 | SAM | Normal | 26/11/2024 | - |
-| 91788 | 114774 | SAM | Normal | 26/11/2024 | - |
-| 91864 | 114759 | SAM | Normal | 25/11/2024 | - |
-| 91280 | 114756 | SAM | Normal | 25/11/2024 | - |
-| 91274 | 114753 | SAM | Normal | 25/11/2024 | - |
-| 91258 | 114741 | SAM | Normal | 25/11/2024 | - |
-| 90666 | 114734 | SAM | Normal | 25/11/2024 | - |
-| 93088 | 114586 | SAM | Normal | 14/11/2024 | - |
-| 93561 | 114582 | SAM | Normal | 14/11/2024 | - |
-| 92885 | 114560 | SAM | Normal | 14/11/2024 | - |
-| 90324 | 114492 | SAM | Normal | 12/11/2024 | - |
-| 93541 | 114468 | SAM | Normal | 11/11/2024 | - |
-| 89774 | 113848 | SAM | Normal | 17/10/2024 | - |
-| 90742 | 113746 | SAM | Normal | 14/10/2024 | - |
-| 89797 | 113524 | SAIL | Normal | 08/10/2024 | - |
-| 90115 | 113164 | SAM | Normal | 25/09/2024 | - |
-| 88344 | 112100 | SAM | Normal | 15/08/2024 | - |
-| 88077 | 111514 | SAM | Normal | 30/07/2024 | - |
-| 87207 | 110457 | SAM | Normal | 20/06/2024 | - |
-| 87056 | 110257 | SAM | Normal | 12/06/2024 | - |
-| 87331 | 110114 | SAM | Normal | 05/06/2024 | - |
-| 87569 | 109683 | SAM | Normal | 21/05/2024 | - |
-| 86793 | 109285 | SAM | Normal | 07/05/2024 | - |
-| 94296 | 109171 | SAM | Normal | 30/04/2024 | - |
-| 86166 | 108673 | SAM | Normal | 12/04/2024 | - |
-| 84741 | 105830 | SAM | Normal | 26/01/2024 | - |
-| 83888 | 105367 | SAM | Normal | 15/01/2024 | - |
-| 97280 | 103491 | SAIL | Normal | 21/11/2023 | - |
-| 98297 | 103490 | SAIL | Normal | 21/11/2023 | - |
-| 84233 | 103487 | SAM | Normal | 21/11/2023 | - |
-| 82883 | 103164 | SAM | Normal | 10/11/2023 | - |
-| 83854 | 103058 | SAM | Normal | 08/11/2023 | - |
-| 82769 | 102965 | SAM | Normal | 06/11/2023 | - |
-| 82930 | 102961 | SAM | Normal | 06/11/2023 | - |
-| 81547 | 100537 | SAM | Normal | 16/08/2023 | - |
+| 96171 | 120543 | SAM | Normal | 03/07/2025 | Sugerir por meio da IA, lançamentos contábeis para transações bancárias importad |
+| 95083 | 120272 | SAM | Normal | 23/06/2025 | Sugerir contas referenciais às contas contábeis utilizando a IA |
+| 92732 | 117443 | SAM | Normal | 10/03/2025 | Incluir ícone da Central de soluções no cabeçalho do Onvio Contabilidade. |
+| 89774 | 113848 | SAM | Normal | 17/10/2024 | Exportar todos os dados das grids em XLSX (Excel). |
+| 88344 | 112100 | SAM | Normal | 15/08/2024 | Reformular a seção de "Novidades", criar a seção de "Notícias" nos dashboards do |
+| 82883 | 103164 | SAM | Normal | 10/11/2023 | Criar a opção 'Selecionar todos' nas combobox de múltipla seleção |
 
 ## Liberadas Recentes (30 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 100008 | 128043 | NE | 13/02/2026 | - |
-| 100000 | 128009 | NE | 13/02/2026 | - |
-| 99999 | 128002 | NE | 13/02/2026 | - |
-| 100003 | 127992 | NE | 13/02/2026 | - |
-| 99998 | 127968 | NE | 12/02/2026 | - |
-| 99984 | 127961 | NE | 12/02/2026 | - |
-| 99982 | 127955 | NE | 12/02/2026 | - |
-| 99969 | 127953 | NE | 12/02/2026 | - |
-| 99967 | 127948 | NE | 12/02/2026 | - |
-| 99842 | 127896 | NE | 11/02/2026 | - |
-| 99861 | 127718 | NE | 06/02/2026 | - |
-| 99815 | 127594 | SAM | 04/02/2026 | - |
-| 99538 | 127147 | NE | 28/01/2026 | - |
-| 98811 | 125801 | NE | 23/12/2025 | - |
-| 98818 | 125785 | NE | 22/12/2025 | - |
-| 98810 | 125784 | NE | 22/12/2025 | - |
-| 98842 | 125783 | NE | 22/12/2025 | - |
-| 98770 | 125775 | NE | 22/12/2025 | - |
-| 98780 | 125641 | NE | 18/12/2025 | - |
-| 98779 | 125640 | NE | 18/12/2025 | - |
-| 98510 | 125260 | NE | 10/12/2025 | - |
+| 99815 | 127594 | SAM | 04/02/2026 | Verificar template dos e-mails enviados pelo Onvio Contabilidade após ajuste da  |
 | 98405 | 125084 | NE | 05/12/2025 | Est� sendo realizado de forma incorreta o envio de requisi��es para o Onvio Cont |
-| 97933 | 124141 | NE | 07/11/2025 | - |
-| 98189 | 124136 | SAM | 07/11/2025 | - |
-| 97459 | 123532 | NE | 17/10/2025 | - |
-| 97205 | 123261 | SAM | 08/10/2025 | - |
-| 97311 | 123175 | NE | 06/10/2025 | - |
-| 96837 | 122758 | NE | 19/09/2025 | - |
-| 96737 | 122539 | NE | 11/09/2025 | - |
-| 96749 | 122535 | NE | 11/09/2025 | - |
+| 96219 | 120713 | SAM | 09/07/2025 | Apresentar no menu "Início" um dashboard com a quantidade de transações importad |
+| 96142 | 120240 | SAM | 23/06/2025 | Incluir a conciliação automática na interface de conciliação de lançamentos cont |
+| 94927 | 120223 | SAM | 20/06/2025 | Melhorar a performance na exclusão de Lançamentos contábeis. |
+| 96137 | 119843 | SAM | 04/06/2025 | Criar a função de fechar contas contábeis na interface de conciliação de lançame |
+| 95695 | 118893 | SAM | 30/04/2025 | Criar a conciliação de lançamentos contábeis. |
+| 92961 | 117811 | NE | 19/03/2025 | Não está executando o vídeo de boas-vindas no Onvio Contabilidade. |
+| 89352 | 113217 | SAM | 26/09/2024 | Criar monitoria do envio das contas contábeis para a Conta Azul. |
+| 89351 | 113207 | SAM | 26/09/2024 | Criar monitoria dos lançamentos contábeis da Conta Azul. |
+| 88903 | 112734 | SAIL | 09/09/2024 | Disponibilizar informações dos lançamentos contábeis e saldo de contas contábeis |
+| 88813 | 112630 | SAM | 04/09/2024 | Permitir a inclusão de validações externas no componente seletor de arquivos. |
+| 87552 | 110912 | SAM | 08/07/2024 | Padronizar a formatação dos componentes Month Datepicker e DatePicker Input na p |
+| 87696 | 110689 | SAM | 28/06/2024 | Receber todos os lançamentos da Conta Azul independente da situação |
+| 87187 | 110395 | SAM | 18/06/2024 | Alterar a nomenclatura do card "Fique de Olho" para "Agenda Tributária" no menu  |
+| 86999 | 110284 | SAM | 12/06/2024 | Lançar os tempos não computados de versões anteriores. |
+| 86660 | 109735 | SAM | 22/05/2024 | Remover o ícone 'Home' da barra superior do Onvio Contabilidade. |
+| 86611 | 109696 | SAM | 21/05/2024 | Alterar o BRClient para receber o campo CNPJ do Produtor Rural para empresas vin |
+| 86610 | 109680 | SAM | 21/05/2024 | Atualizar automaticamente a quantidade de lançamentos pendentes no ícone. |
+| 86137 | 109118 | NE | 29/04/2024 | Est� sendo feita de forma incorreta a importa��o dos s�cios na janela "Importar  |
+| 86126 | 109107 | NE | 26/04/2024 | Est� sendo importado incorretamente o saldo das contas na janela "Importar Conta |
+| 85453 | 108067 | SAM | 27/03/2024 | Permitir a criação de empresas com até 7 dígitos no campo código |
+| 86295 | 107181 | SAM | 01/03/2024 | Apresentar o filtro na coluna 'Empresa' na tela de lançamentos contábeis somente |
+| 84738 | 107067 | SAM | 27/02/2024 | Permitir receber e-mails inválidos através da Carga Inicial para Empresas e Resp |
+| 84540 | 106702 | NE | 19/02/2024 | Ao editar uma conta que foi enviada para a Conta Azul, o arquivo do update envia |
+| 83885 | 105422 | SAM | 16/01/2024 | Exibir uma mensagem de confirmação para empresas sem o campo Regime ao realizar  |
+| 83868 | 105409 | SAM | 16/01/2024 | Atualizar o card "Fique de olho" com os itens requeridos. |
+| 83881 | 105404 | SAM | 16/01/2024 | Ignorar alguns campos da carga inicial para empresas inativas. |
+| 83871 | 105347 | SAM | 15/01/2024 | Transformar os módulos gerenciados pela plataforma em projetos micro front-end,  |
+| 83843 | 105337 | SAM | 15/01/2024 | Alterar o notification para permitir o uso do WebSocket por outros serviços |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
+| onvio contabil | 4 |
 | importar contabil | 2 |
-| onvio contabil | 1 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 100008 | 128043 | NE | 13/02/2026 | - |
-| 100000 | 128009 | NE | 13/02/2026 | - |
-| 99999 | 128002 | NE | 13/02/2026 | - |
-| 100003 | 127992 | NE | 13/02/2026 | - |
-| 99998 | 127968 | NE | 12/02/2026 | - |
-| 99984 | 127961 | NE | 12/02/2026 | - |
-| 99982 | 127955 | NE | 12/02/2026 | - |
-| 99969 | 127953 | NE | 12/02/2026 | - |
-| 99967 | 127948 | NE | 12/02/2026 | - |
-| 99842 | 127896 | NE | 11/02/2026 | - |
+| 99815 | 127594 | SAM | 04/02/2026 | Verificar template dos e-mails enviados pelo Onvio Contabilidade após ajuste da  |
+| 96219 | 120713 | SAM | 09/07/2025 | Apresentar no menu "Início" um dashboard com a quantidade de transações importad |
+| 96142 | 120240 | SAM | 23/06/2025 | Incluir a conciliação automática na interface de conciliação de lançamentos cont |
+| 96137 | 119843 | SAM | 04/06/2025 | Criar a função de fechar contas contábeis na interface de conciliação de lançame |
+| 95695 | 118893 | SAM | 30/04/2025 | Criar a conciliação de lançamentos contábeis. |
+| 92776 | 117526 | NE | 11/03/2025 | Está exibindo incorretamente uma tooltip exibida no menu hambúrguer do Onvio Con |
+| 92772 | 117522 | SAM | 11/03/2025 | Atualizar fontes do cabeçalho do módulo Onvio Contabilidade para a nova marca da |
+| 92763 | 117506 | SAM | 11/03/2025 | Exibir os próximos eventos do card da Agenda Tributária em linhas separadas quan |
+| 91221 | 115625 | SAM | 02/01/2025 | Incluir prazos e feriados no card de Agenda Tributária para 2025. |
+| 94475 | 115549 | SAM | 26/12/2024 | Criar um novo componente para realizar carregamento de arquivos. |
 
 ## Busca Completa
 

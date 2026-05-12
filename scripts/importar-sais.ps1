@@ -130,18 +130,40 @@ if (-not $FonteBuscaSai -and (Test-Path $extrairScript) -and (Test-Path $configO
                 }
 
                 # 4. Mesclar: sai-psai-original.json + sai-psai-novas-areas.json -> sai-psai-escrita.json
+                # IMPORTANTE: novas-areas deve ser processado por ULTIMO para sobrescrever registros
+                # do original (que podem ter campos null de uma extracao anterior com bug).
+                # Merge-BuscaSaiJsons usa ordem alfabetica: "novas-areas" (n) < "original" (o),
+                # entao o original sobrescreveria as novas areas. Fazemos merge manual aqui.
                 if (Test-Path $cacheOriginal) {
-                    Write-Host "  Mesclando original + novas areas..." -ForegroundColor DarkCyan
-                    $merged = Merge-BuscaSaiJsons -dirCache $cacheDir
-                    if ($merged) {
-                        $jsonOut = $merged.wrapper | ConvertTo-Json -Depth 5 -Compress
-                        Set-Content -Path $destinoJson -Value $jsonOut -Encoding UTF8
-                        $tamanho = [math]::Round((Get-Item $destinoJson).Length / 1MB, 1)
-                        Write-Host "  Merged: $($merged.wrapper.totalRegistros) registros | $tamanho MB" -ForegroundColor Green
-                    } else {
-                        Write-Host "  AVISO: Merge falhou. Usando apenas novas areas." -ForegroundColor Yellow
-                        Move-Item $cacheNovasAreas $destinoJson -Force
+                    Write-Host "  Mesclando original + novas areas (novas-areas tem prioridade)..." -ForegroundColor DarkCyan
+                    $porPsai = @{}
+                    # 1. Carregar original primeiro (base)
+                    $jOrig = Get-Content $cacheOriginal -Raw -Encoding UTF8 | ConvertFrom-Json
+                    foreach ($item in $jOrig.dados) {
+                        $k = [string]$item.i_psai
+                        if ($k) { $porPsai[$k] = $item }
                     }
+                    $jOrig = $null
+                    # 2. Carregar novas areas por cima (sobrescreve registros existentes com dados frescos)
+                    $jNovo = Get-Content $cacheNovasAreas -Raw -Encoding UTF8 | ConvertFrom-Json
+                    $atualizados = 0
+                    foreach ($item in $jNovo.dados) {
+                        $k = [string]$item.i_psai
+                        if ($k) { $porPsai[$k] = $item; $atualizados++ }
+                    }
+                    $jNovo = $null
+                    $lista = [System.Collections.ArrayList]::new()
+                    foreach ($v in $porPsai.Values) { [void]$lista.Add($v) }
+                    $wrapper = [ordered]@{
+                        geradoEm = (Get-Date -Format o)
+                        totalRegistros = $lista.Count
+                        dados = $lista.ToArray()
+                        fontesMescladas = @("sai-psai-original.json","sai-psai-novas-areas.json")
+                    }
+                    $jsonOut = $wrapper | ConvertTo-Json -Depth 5 -Compress
+                    Set-Content -Path $destinoJson -Value $jsonOut -Encoding UTF8
+                    $tamanho = [math]::Round((Get-Item $destinoJson).Length / 1MB, 1)
+                    Write-Host "  Merged: $($lista.Count) registros ($atualizados atualizados de novas areas) | $tamanho MB" -ForegroundColor Green
                 } else {
                     # Nao havia cache original — apenas renomear
                     Move-Item $cacheNovasAreas $destinoJson -Force

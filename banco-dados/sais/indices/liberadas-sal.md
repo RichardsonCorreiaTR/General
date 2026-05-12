@@ -1,10 +1,11 @@
 ﻿# SAL Liberadas - Escrita Fiscal
 
-> Atualizado em: 06/05/2026 09:02
-> Total SAIs unicas: 7101
+> Atualizado em: 12/05/2026 13:31
+> Total SAIs unicas: 7103
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 101313 | 130132 | 10.6A-05 | 15/04/2026 | Respondido Coordenador de Módulos DEMO | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
 | 101048 | 129824 | 10.6A-04 | 02/04/2026 | Em Teste DEMO | Atualizar tabelas do informativo SPED ECF. |
 | 101044 | 129794 | 10.6A-04 | 01/04/2026 | Em Teste DEMO | Atualizar tabelas do informativo SPED ECF. |
 | 101046 | 129742 | 10.6A-04 | 01/04/2026 | Em Teste DEMO | Adequar a tela de ajustes de PIS/COFINS incluindo as novas origens observando a  |
@@ -488,6 +489,7 @@
 | 88513 | 112329 | 10.4A-09 | 23/08/2024 | Em Teste DEMO | MT-Alterar o arquivo XML para gerar a tag "InscricaoEstadual" para os clientes d |
 | 88544 | 112296 | 10.4A-09 | 22/08/2024 | Em Teste DEMO | RJ-Atualizar os c�digos da tabela 5.2 Valores Declarat�rios do ICMS conforme Por |
 | 91376 | 112295 | 10.5A-02 | 22/08/2024 | Em Teste DEMO | Alterar a f�rmula de c�lculo do valor do ICMS Monof�sico para os produtos com B1 |
+| 88877 | 112266 | 10.4A-11 | 21/08/2024 | Em Teste DEMO | Permitir gerar o SPED Contábil consolidado entre matriz e filiais |
 | 91465 | 112244 | 10.5A-02 | 21/08/2024 | Em Teste DEMO | Alterar o sistema para habilitar o campo de chave de acesso para as notas com es |
 | 89042 | 112235 | 10.4A-12 | 20/08/2024 | Em Teste DEMO | RS-Alterar o comportamento do arquivo XML quando o tomador for do exterior na em |
 | 90847 | 112214 | 10.5A-03 | 20/08/2024 | Em Teste DEMO | SC-Alterar o sistema para gerar o registro E111 com o c�digo SC020083 quando pos |

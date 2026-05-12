@@ -1,6 +1,6 @@
 ﻿# Estatisticas de SAIs - Escrita Fiscal
 
-> Atualizado em: 11/05/2026 15:39
+> Atualizado em: 12/05/2026 13:31
 > Total geral: 65891 registros
 
 ## Por ano (ultimos 5)

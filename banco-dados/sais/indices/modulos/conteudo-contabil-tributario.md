@@ -1,17 +1,28 @@
 ﻿# Conteúdo Contábil Tributário
 
 > Dominio Escrita Fiscal | slug `conteudo-contabil-tributario`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 11 | Liberadas: 913 | Descartadas: 71 | Total SAIs: 995
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 22 | Liberadas: 914 | Descartadas: 72 | Total SAIs: 1007
 
-## Pendentes (11)
+## Pendentes (22)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 101592 | 130556 | SAL | Normal | 05/05/2026 | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de 30/04/2026 |
+| 101357 | 129974 | SAM | Normal | 09/04/2026 | Gerar o SPED ECF considerando o plano de contas vigente no período do informativ |
 | 101040 | 129818 | NE | Normal | 02/04/2026 | Est� importando incorretamente os valores do registro Y730 do informativo SPED E |
 | 100814 | 129461 | SAM | Normal | 24/03/2026 | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED ECF para  |
+| 100519 | 128739 | SAM | Normal | 03/03/2026 | Alterar a guia Informativos da Parametrização no modo Visualizar parametrização  |
+| 100571 | 128355 | SAIL | Normal | 23/02/2026 | Implementar a geração do bloco Y para empresas do Lucro Presumido na geração do  |
+| 99955 | 126446 | SAM | Normal | 14/01/2026 | Criar um relatório de conferência do bloco P do SPED ECF. |
+| 99862 | 125994 | SAM | Normal | 02/01/2026 | Ajustar o SPED Contábil para usar o toggle 'Gerar o SPED ECF' nas validações de  |
+| 99946 | 125731 | SAM | Normal | 22/12/2025 | Realizar melhorias no plano referencial para atender as necessidade do SPED ECF. |
+| 100529 | 125723 | SAIL | Normal | 19/12/2025 | Implementar a geração dos registros P130, P230 e X280 para o Lucro Presumido par |
 | 98621 | 125438 | SAM | Normal | 15/12/2025 | Ajustar a gera��o do informativo SPED ECF para buscar os saldos das contas cont� |
+| 99873 | 125374 | SAM | Normal | 12/12/2025 | Criar as regras de permissões no menu SPED ECF. |
+| 99954 | 125365 | SAIL | Normal | 11/12/2025 | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
+| 99952 | 125364 | SAIL | Normal | 11/12/2025 | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivos gerados. |
+| 99947 | 124829 | SAIL | Normal | 28/11/2025 | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9. |
 | 94897 | 120108 | NE | Normal | 13/06/2025 | Est� importando o valor da adi��o da CSLL da atividade Rural na linha da adi��o  |
 | 89835 | 113534 | SAM | Normal | 08/10/2024 | Otimizar a gera��o do informativo SPED ECF referente a tabela "dw_sped_ecf_balan |
 | 97373 | 110998 | SAM | Normal | 10/07/2024 | Considerar as informa��es da guia Plano Referencial dos par�metros para gerar as |
@@ -60,7 +71,7 @@
 | Tema | Ocorrencias |
 |------|-------------|
 | ecf | 786 |
-| lucro presumido | 119 |
+| lucro presumido | 120 |
 | dipj | 33 |
 | lucro arbitrado | 8 |
 
@@ -70,6 +81,7 @@
 |-----|------|------|----------|--------|
 | 88462 | 112268 | SAM | 21/08/2024 | Realizar estudo para avaliar o motivo de alguns registros do informativo SPED EC |
 | 84787 | 107103 | NE | 28/02/2024 | Est� gerando a informa��o incorreta no campo 4 da linha 48.05 do registro N600 d |
+| 94398 | 104002 | SAIL | 07/12/2023 | Criar a interface 'Plano referencial' e o vínculo do plano referencial PJ Geral  |
 | 82749 | 103008 | SAM | 07/11/2023 | Otimizar a emiss�o do SPED ECF para empresas com centro de custos. |
 | 76038 | 91865 | NE | 17/08/2022 | Est� gerando incorretamente o campo 5 - IND_VL_CTA do registro M310 no arquivo d |
 | 73647 | 87362 | NE | 03/01/2022 | N�o est� tributando as notas de sa�das quando houve troca do regime de simples n |
@@ -77,7 +89,6 @@
 | 71566 | 84575 | NE | 05/08/2021 | N�o est� sendo importado os registros do bloco P200 e P400 SPED ECF quando houve |
 | 70610 | 82965 | NE | 20/05/2021 | Em alguns casos est� sendo demostrado a devolu��o no relat�rio do EFD PIS COFINS |
 | 68492 | 79596 | NE | 15/12/2020 | Est� apresentando a mensagem de erro "Para produto com CST '05' s� � permitido l |
-| 65817 | 75870 | NE | 02/07/2020 | Em alguns casos est� ocorrendo erro na tabela "CTTMP_CTLANCTO_SPED_ECF" ao reali |
 
 ## Busca Completa
 

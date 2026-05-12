@@ -1,10 +1,10 @@
 ﻿# Integracoes e canais digitais
 
 > Dominio Escrita Fiscal | slug `integracoes-canais-digitais`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 78 | Liberadas: 1419 | Descartadas: 131 | Total SAIs: 1623
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 87 | Liberadas: 1451 | Descartadas: 139 | Total SAIs: 1671
 
-## Pendentes (78)
+## Pendentes (87)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
@@ -12,6 +12,8 @@
 | 101605 | 130149 | SAL | Normal | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
 | 101578 | 129935 | SAM | Normal | 08/04/2026 | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
 | 101043 | 129701 | NE | Normal | 31/03/2026 | Em alguns casos est� ocorrendo encerramento do sistema quando importado grande v |
+| 101397 | 129620 | SAM | Normal | 27/03/2026 | Realizar a conversão das configurações de integração contábil após o cadastro do |
+| 101599 | 129573 | SAM | Normal | 26/03/2026 | Realizar um estudo para criar a integração por API com ERPs Externos para recebi |
 | 101342 | 129540 | NE | Normal | 25/03/2026 | N�o est� sendo feita corretamente a importa��o das informa��es da janela "Outros |
 | 100741 | 129097 | SAL | Normal | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 100422 | 128930 | SAM | Normal | 09/03/2026 | Realizar um estudo e testes no agente de comunica��o referente ao consumo da nov |
@@ -20,7 +22,10 @@
 | 101262 | 128584 | NE | Normal | 27/02/2026 | Est� ocorrendo erro de sistema ao emitir o MIT via API Integra Contador, quando  |
 | 99944 | 128045 | SAIL | Normal | 14/02/2026 | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma Tribut�ria |
 | 101227 | 127420 | SAM | Normal | 02/02/2026 | Implementar a API da apura��o assistida da CBS. |
+| 99890 | 127267 | SAM | Normal | 29/01/2026 | Integração Onvio x DW - Realizar a integração dos lançamentos contábeis das nota |
 | 101161 | 126935 | NE | Normal | 23/01/2026 | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no relat�rio demo |
+| 98777 | 124899 | SAM | Normal | 01/12/2025 | Integração Onvio x DW - Criar e integrar as contas contábeis e históricos entre  |
+| 98609 | 124894 | SAM | Normal | 01/12/2025 | Integração Onvio x DW - Listar as contas contábeis e históricos do Onvio Contabi |
 | 98907 | 124455 | SAM | Normal | 19/11/2025 | Criar API no Onvio para ser poss�vel que sistemas externos consultem NCM/NBS e s |
 | 97017 | 122961 | SAM | Normal | 26/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e ABRASF XML/NFS- |
 | 96991 | 122936 | SAM | Normal | 25/09/2025 | Enviar dados do download de notas da API para o Datadog. |
@@ -40,6 +45,8 @@
 | 90580 | 114749 | SAM | Normal | 25/11/2024 | Permitir que o sistema realiza a importa��o e Escritura��o das NFS-e do Padr�o N |
 | 90445 | 114691 | SAM | Normal | 21/11/2024 | Realizar um estudo para melhorar o processo de acesso ao e-CAC.   |
 | 90382 | 114599 | SAM | Normal | 18/11/2024 | Realizar a importa��o da NFC-e com parcelas atrav�s da API. |
+| 90324 | 114492 | SAM | Normal | 12/11/2024 | Criar mensagens mais intuitivas na integração contábil referente a transferência |
+| 93541 | 114468 | SAM | Normal | 11/11/2024 | Contabilidade digital: Realizar busca e baixa de impostos federais na Central de |
 | 90200 | 114399 | SAM | Normal | 07/11/2024 | Realizar um estudo para identificar em alguns casos n�o s�o retornadas notas da  |
 | 89330 | 113210 | SAM | Normal | 26/09/2024 | Realizar um estudo para viabilizar a cria��o de uma API n�o autenticada com fina |
 | 92752 | 113176 | SAM | Normal | 25/09/2024 | Alterar o sistema para que seja poss�vel fazer a auditoria atrav�s do Kolossus A |
@@ -51,10 +58,12 @@
 | 90365 | 110317 | SAM | Normal | 13/06/2024 | Aceitar NFC-e com parcelas atrav�s de um arquivo complementa via API. |
 | 99255 | 109366 | SAIL | Normal | 09/05/2024 | Implementar no sistema op��o para consultar e realizar a baixa dos impostos pela |
 | 87593 | 109236 | SAM | Normal | 03/05/2024 | Alterar a API de notas para realizar recebimentos de arquivos em lote. |
+| 94296 | 109171 | SAM | Normal | 30/04/2024 | Realizar a integração da Contabilidade no Onvio com o Processos. |
 | 84587 | 106816 | SAM | Normal | 21/02/2024 | Realizar um estudo para mitigar bloqueios na gera��o da PGDAS e Pagamento via e- |
 | 88138 | 105949 | SAM | Normal | 30/01/2024 | Enviar cadastros de Fornecedores, Clientes e Produtos para a Conta Azul via API. |
 | 90331 | 103539 | SAIL | Normal | 22/11/2023 | Implementar a gera��o dos campos da DEFIS no Onvio referente a NF-e por meio da  |
 | 82856 | 103397 | SAM | Normal | 17/11/2023 | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
+| 81547 | 100537 | SAM | Normal | 16/08/2023 | Enviar o plano de contas via API Conta Azul com o vínculo do cadastro de partici |
 | 80748 | 99716 | SAM | Normal | 27/07/2023 | Alterar o envio das notas ao BOX-e conforme novo link quando as notas forem baix |
 | 79777 | 97880 | SAIL | Normal | 31/05/2023 | MG-Implementar rotina no sistema para calcular os impostos estaduais e gerar os  |
 | 99154 | 91987 | SAM | Normal | 24/08/2022 | Incluir uma coluna na listagem de notas da API para demonstrar se a nota j� est� |
@@ -127,7 +136,7 @@
 | Tema | Ocorrencias |
 |------|-------------|
 | rest | 564 |
-| api | 347 |
+| api | 353 |
 | web service | 217 |
 | webservice | 131 |
 | e-cac | 107 |
@@ -144,8 +153,8 @@
 | 95094 | 120327 | NE | 25/06/2025 | N�o est�o sendo escrituradas corretamente as notas de servi�os prestados da pref |
 | 94244 | 119198 | NE | 13/05/2025 | N�o est� importando a tabela de Al�quota Interestadual de ICMS conforme o perfil |
 | 93965 | 118989 | NE | 05/05/2025 | Est� sendo apresentada indevidamente a mensagem "O sistema n�o est� preparado pa |
+| 93034 | 117911 | NE | 21/03/2025 | Está apresentando erro na rotina de integração contábil da Escrita Fiscal mesmo  |
 | 92781 | 117531 | SAM | 11/03/2025 | Testar a altera��o das URLs da API da Conta Azul para o envio de Contas Cont�bei |
-| 90476 | 114690 | NE | 21/11/2024 | N�o est� sendo gerado corretamente o valor da tag "valoresParaComparacao" da gui |
 
 ## Busca Completa
 

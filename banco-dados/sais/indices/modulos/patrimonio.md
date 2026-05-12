@@ -1,14 +1,15 @@
 ﻿# Patrimônio
 
 > Dominio Escrita Fiscal | slug `patrimonio`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 1 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 157
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 2 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 158
 
-## Pendentes (1)
+## Pendentes (2)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 100847 | 128299 | SAL | Normal | 23/02/2026 | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
+| 98297 | 103490 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração das Mutações do Patrimônio Líquido |
 
 ## Liberadas Recentes (30 mais recentes)
 

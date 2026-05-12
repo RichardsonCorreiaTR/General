@@ -1,7 +1,7 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 06/05/2026 09:02
-> Total SAIs unicas: 1654
+> Atualizado em: 12/05/2026 13:31
+> Total SAIs unicas: 1725
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
@@ -10,40 +10,69 @@
 | 101181 | 130055 |  | Normal | 13/04/2026 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no M�dulo Folha quando real |
 | 100427 | 128943 |  | Normal | 10/03/2026 | SAI Aprovada | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
 | 100203 | 128585 |  | Normal | 27/02/2026 | SAI Aprovada | Em alguns casos est� ocorrendo erro ao gerar o relat�rio de Comprovante Eletr�ni |
+| 100008 | 128043 |  | Normal | 13/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está exibindo incorretamente os arquivos OFX/OFC importados na tela de Consulta  |
+| 100000 | 128009 |  | Normal | 13/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está validando corretamente o campo 'Histórico' do lançamento pendente dentr |
+| 99999 | 128002 |  | Normal | 13/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está apresentando corretamente as informações quando a competência filtrada  |
+| 100003 | 127992 |  | Normal | 13/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não estão alinhadas corretamente as colunas 'Lote' e 'Débito' da modal 'Todos os |
+| 99998 | 127968 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não estão sendo apresentados corretamente os botões na tela de Lançamentos de ex |
+| 99984 | 127961 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está apresentando o número do Lote indevidamente na transação quando possui dois |
+| 99982 | 127955 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está respeitando o botão refresh da tela de Lançamentos de extrato bancário, |
+| 99969 | 127953 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está permitindo excluir lançamentos pendentes. |
 | 99885 | 127956 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
+| 99967 | 127948 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está demonstrando incorretamente o campo 'Histórico' na tela de Lançamento contá |
+| 99842 | 127896 |  | Grave | 11/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está ocorrendo o zeramento das contas ou está zerando contas que não possuem |
+| 99858 | 127770 |  | Normal | 09/02/2026 | SAI Aprovada | Não está validando erro em alerta quando se trata de uma única empresa e um únic |
 | 99781 | 127722 |  | Normal | 09/02/2026 | SAI Aprovada | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Regime Tribu |
+| 99861 | 127718 |  | Normal | 06/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está validando corretamente na tela de Lançamentos de extrato bancário, quan |
 | 99836 | 127623 |  | Normal | 05/02/2026 | SAI Aprovada | Est�o sendo demonstrados incorretamente os impostos 183-IBS e 184-CBS no relat�r |
 | 99854 | 127505 |  | Normal | 03/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Transa��es marcadas como Read no socket da Fintech n�o estao presentes na tabela |
+| 99538 | 127147 |  | Normal | 28/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está apresentando o traço da grid do lançamento dentro da transação, quando  |
 | 99315 | 126696 |  | Normal | 19/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� habilitado para filtrar no campo "Inscri��o" e n�o funciona multi-filtr |
 | 99313 | 126695 |  | Normal | 19/01/2026 | SAI Aprovada | N�o est� permitindo copiar os campos Transa��o e Inscri��o. |
 | 99242 | 126552 |  | Normal | 15/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos n�o est� atribuindo corretamente as permiss�es ao administrador  |
 | 99095 | 126320 |  | Normal | 09/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Transa��es com mesmo transaction_id est�o duplicando |
 | 98944 | 126014 |  | Normal | 02/01/2026 | SAI Aprovada | Est� mesclando indevidamente as c�lulas do relat�rio Raz�o em Excel. |
+| 98811 | 125801 |  | Normal | 23/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está listando as entidades no filtro da guia 'Entidades' do botão 'Outros da |
+| 98818 | 125785 |  | Normal | 22/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está listando no ano incorreto os 'Arquivos gerados' do SPED Contábil. |
+| 98810 | 125784 |  | Normal | 22/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está gerando o badge azul no filtro 'Empresa' quando está selecionado 'Selec |
+| 98842 | 125783 |  | Normal | 22/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está exibindo o erro 'Falha ao executar o processamento. Tente novamente em algu |
+| 98770 | 125775 |  | Normal | 22/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos os lançamentos da Conta Azul não estão chegando no Onvio ou cheg |
+| 98780 | 125641 |  | Normal | 18/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está exibindo a 'badge' com a quantidade de lançamentos com pendência no Íco |
+| 98779 | 125640 |  | Normal | 18/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está sumindo o alert 'Existem inconsistências. Verifique o preenchimento' ao tro |
 | 98904 | 125645 |  | Normal | 18/12/2025 | SAI Aprovada | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98715 | 125624 |  | Normal | 18/12/2025 | SAI Aprovada | Em alguns casos est� apresentando erro ao tentar gerar o Comparativo Regime Trib |
+| 98510 | 125260 |  | Normal | 10/12/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está selecionando o menu incorreto ao clicar no submenu 'Consulta importação de  |
 | 98357 | 124610 |  | Normal | 24/11/2025 | SAI Aprovada | Est� validando ag�ncia e conta na transa��o quando Pluggy |
 | 98356 | 124587 |  | Normal | 24/11/2025 | SAI Aprovada | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
 | 98044 | 124312 |  | Normal | 14/11/2025 | Aguardando Resposta do Desenvolvimento DEMO | Reprocessamento n�o funciona quando institui��o n�o possui ag�ncia banc�ria. |
 | 98043 | 124309 |  | Normal | 13/11/2025 | SAI Aprovada | SC-Em alguns casos est� ocorrendo erro na valida��o do informativo SPED Fiscal.  |
+| 97933 | 124141 |  | Normal | 07/11/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está exibindo com resolução incorreta o ícone de lixeira na opção de remover vín |
 | 98238 | 124148 |  | Normal | 07/11/2025 | SAI Aprovada | Em alguns casos est�o sendo gerados diferentes de uma compet�ncia para outra no  |
 | 97898 | 124052 |  | Normal | 05/11/2025 | SAI Aprovada | Em alguns caso est� fechando o sistema ao copiar e colar um novo registro nas no |
 | 99334 | 123986 |  | Normal | 04/11/2025 | SAI Aprovada | Em alguns casos, ao regerar as baixas de notas de entradas, sa�das e servi�os da |
 | 98335 | 123856 |  | Normal | 30/10/2025 | SAI Aprovada | N�o est� sendo gerado o valor correto na coluna "Rend. Tribut�vel" do informativ |
 | 97918 | 123811 |  | Normal | 28/10/2025 | SAI Aprovada | Est� sendo gerado o valor incorreto do campo 04-VL_BC_RET do registro F600 do in |
+| 97459 | 123532 |  | Normal | 17/10/2025 | Aguardando Resposta do Desenvolvimento DEMO | Estão sumindo as informações nas abas 'Plano de contas anterior' e 'Entidades' n |
 | 97430 | 123455 |  | Normal | 15/10/2025 | SAI Aprovada | N�o est�o sendo importados todos os registros de transa��es do extrato, quando u |
+| 97311 | 123175 |  | Normal | 06/10/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não estão sendo apresentadas por inteiro as informações Insc. Junta Comercial e  |
 | 97143 | 123119 |  | Normal | 03/10/2025 | SAI Aprovada | Est� ocorrendo atraso nos recebimentos de lan�amentos cont�beis do Conta Azul. |
 | 98848 | 123044 |  | Normal | 01/10/2025 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� sendo gerado a contabiliza��o das transa��es quando empresa filial rece |
 | 97142 | 123028 |  | Normal | 30/09/2025 | SAI Aprovada | N�o est� somando o valor do frete no valor cont�bil da nota, quando n�o � import |
 | 97431 | 122980 |  | Normal | 29/09/2025 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no processo de apura��o do  |
 | 97420 | 122935 |  | Normal | 25/09/2025 | SAI Aprovada | RS-N�o est� reconhecendo a "Restitui��o de ICMS ST" quando est� selecionado a op |
+| 96837 | 122758 |  | Normal | 19/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para quando for enviado uma informação a conta Azul como por e |
 | 96881 | 122707 |  | Normal | 17/09/2025 | SAI Aprovada | Em alguns casos o relat�rio "Cliente/Tempo Gasto" do m�dulo Administrar est� con |
 | 96770 | 122687 |  | Normal | 17/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos est� sendo apresentada a mensagem "Compet�ncias em processamento |
 | 97054 | 122578 |  | Normal | 12/09/2025 | SAI Aprovada | Em alguns casos est� fechando o sistema ao gerar os lan�amentos cont�beis nas ba |
 | 97028 | 122565 |  | Normal | 12/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Est� gerando incorretamente o resultado da Consulta regra tribut�ria ao pesquisa |
+| 96737 | 122539 |  | Normal | 11/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está gerando o relatório do DRE na sequência da estrutura salva. |
+| 96749 | 122535 |  | Normal | 11/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está gerando inconsistência na rotina, ou está gerando a inconsistência erra |
+| 96630 | 122410 |  | Normal | 08/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está substituindo a variável do nome da empresa na notificação enviada para  |
 | 96821 | 122351 |  | Normal | 04/09/2025 | SAI Aprovada | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
 | 96343 | 122102 |  | Normal | 27/08/2025 | SAI Aprovada | Contabilidade Digital: Em alguns casos, o tipo "Aplica��o Financeira" est� fora  |
 | 96288 | 122045 |  | Normal | 25/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Contabilidade Digital: Em alguns casos, est� sendo alterado o status na treeview |
 | 96277 | 122036 |  | Normal | 25/08/2025 | SAI Aprovada | N�o est� sendo demonstrado o campo "Buscar" na janela "Contas Cont�beis" abertas |
+| 96234 | 121860 |  | Normal | 18/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não estão sendo substituídas corretamente as variáveis de histórico utilizadas p |
 | 96220 | 121846 |  | Normal | 15/08/2025 | SAI Aprovada | Esta sendo apresentado em branco o campo 'Natureza Jur�dica' est� sendo apresent |
 | 96028 | 121607 |  | Normal | 07/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Est� sendo aceito indevidamente arquivos de NFC-e com valores negativos na API. |
 | 95992 | 121586 |  | Normal | 07/08/2025 | SAI Aprovada | RS-N�o est� sendo gerado o registro C197 no informativo SPED Fiscal, quando a em |
@@ -52,10 +81,14 @@
 | 95949 | 121422 |  | Normal | 01/08/2025 | SAI Aprovada | N�o est� importando corretamente o relacionamento dos registros M300/M350, quand |
 | 95865 | 121363 |  | Normal | 31/07/2025 | SAI Aprovada | Em alguns casos est� demonstrando indevidamente contas que n�o possuem saldo no  |
 | 95837 | 121263 |  | Normal | 28/07/2025 | SAI Aprovada | Em alguns casos esta ocorrendo erro na execu��o do exporta/importa referente as  |
+| 95909 | 121251 |  | Normal | 28/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está demonstrando corretamente as validações de campos na modal de Outros da |
 | 95702 | 121235 |  | Grave | 25/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Est� ocorrendo erro ao tentar consultar/baixar notas que foram armazenadas no Bo |
+| 95525 | 121035 |  | Normal | 21/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não estão integrando os lançamentos contábeis na Conta azul devido a queda do Ra |
 | 95509 | 120964 |  | Normal | 18/07/2025 | SAI Aprovada | Est� desconfigurado o quadro "Op��es" na tela do Balancete quando os par�metros  |
 | 95557 | 120869 |  | Normal | 15/07/2025 | SAI Aprovada | N�o est� importando automaticamente a "Nota Devolvida" no quadro "Devolu��o por  |
 | 99309 | 120832 |  | Normal | 15/07/2025 | SAI Aprovada | N�o est� sendo setada a al�quota correta para o imposto 28-FUNRURAL, quando no c |
+| 95539 | 120795 |  | Normal | 14/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está atualizando a assinatura quando há troca do signatário na parametrizaçã |
+| 95336 | 120719 |  | Normal | 09/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Não está cancelando o zeramento quando clica em 'Cancelar processo', demonstrand |
 | 95248 | 120621 |  | Normal | 07/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Contabilidade Digital: N�o est� gerando a contabiliza��o de forma autom�tica qua |
 | 95303 | 120555 |  | Normal | 04/07/2025 | SAI Aprovada | N�o est�o sendo importadas as informa��es da folha na guia "Rendimentos Isentos" |
 | 95180 | 120529 |  | Normal | 03/07/2025 | SAI Aprovada | Esta sendo apresentada indevidamente a mensagem "O seu sistema est� desatualizad |
@@ -67,6 +100,7 @@
 | 94861 | 120143 |  | Normal | 16/06/2025 | SAI Aprovada | Contabilidade Digital: Alterar o controle interno da contabilidade digital quand |
 | 94733 | 120030 |  | Normal | 11/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Contabilidade Digital: Em alguns casos, contabiliza��o de pagamento de folha est |
 | 94537 | 119747 |  | Normal | 02/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos est� ocorrendo lentid�o e n�o apresenta as notas armazenadas no  |
+| 94588 | 119643 |  | Normal | 27/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está ocorrendo erro na comunicação com o Conta azul, quando enviada a exclusão d |
 | 94467 | 119603 |  | Normal | 26/05/2025 | SAI Aprovada | Est� ocorrendo o erro "Erro ao remover dados temporarios da CTTMP_LANCTO" ao cli |
 | 94463 | 119575 |  | Normal | 26/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� atualizando a p�gina quando clicado no bot�o 'Nova Simula��o' na tela d |
 | 94397 | 119547 |  | Normal | 23/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos, o sistema est� fechando ao clicar no lan�amento da tela de Conc |
@@ -79,6 +113,7 @@
 | 93878 | 118828 |  | Grave | 29/04/2025 | SAI Aprovada | Em alguns casos o sistema lista duas vezes a transa��o (mesmo transaction_id), d |
 | 93974 | 118798 |  | Normal | 28/04/2025 | SAI Aprovada | Contabilidade Digital: Em alguns casos, o valor de juros e multa no recebimento  |
 | 93752 | 118679 |  | Normal | 24/04/2025 | SAI Aprovada | Contabilidade Digital: Alterar comportamento do status "Aguardando transa��o na  |
+| 93554 | 118435 |  | Normal | 14/04/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está ocorrendo erro ao sincronizar Clientes do escritório quando são empresas Ma |
 | 93648 | 118270 |  | Normal | 07/04/2025 | SAI Aprovada | RS-Est� sendo gerado o valor incorreto no campo "Devolu��o" do imposto 27-ICMSA, |
 | 93427 | 118220 |  | Normal | 03/04/2025 | SAI Aprovada | Em alguns casos est� ocorrendo indevidamente o erro de importa��o "O acumulador  |
 | 93236 | 118072 |  | Normal | 28/03/2025 | Aguardando Resposta do Desenvolvimento DEMO | N�o est�o chegando os lan�amentos cont�beis da Conta Azul no Cont�bil. |
@@ -86,9 +121,13 @@
 | 93211 | 118030 |  | Normal | 26/03/2025 | SAI Aprovada | N�o est� excluindo empresas nas configura��es do Busca NF-e Cliente quando reali |
 | 93442 | 118004 |  | Normal | 26/03/2025 | SAI Aprovada | RJ-N�o est� sendo feito o c�lculo correto do imposto 8-DIFALI, quando o mesmo po |
 | 93294 | 117944 |  | Normal | 24/03/2025 | SAI Aprovada | Est� apresentando o erro "String was not recognized as a valid DateTime" no agen |
+| 93034 | 117911 |  | Normal | 21/03/2025 | SAI Aprovada | Está apresentando erro na rotina de integração contábil da Escrita Fiscal mesmo  |
+| 93020 | 117898 |  | Normal | 21/03/2025 | SAI Aprovada | Não está mantendo a configuração de assinaturas ao trocar as opções de signatári |
 | 93004 | 117812 |  | Normal | 19/03/2025 | SAI Aprovada | Contabilidade Digital: Preenchimento das contas est� sendo feito pela empresa ac |
+| 92776 | 117526 |  | Normal | 11/03/2025 | Aguardando Resposta do Desenvolvimento DEMO | Está exibindo incorretamente uma tooltip exibida no menu hambúrguer do Onvio Con |
 | 92780 | 117471 |  | Normal | 10/03/2025 | SAI Aprovada | DF-N�o est� preenchendo a data de vencimento da guia DAR dos impostos PROUNIV e  |
 | 92270 | 116872 |  | Normal | 19/02/2025 | SAI Aprovada | Est� ocorrendo uma quebra de linha no e-mail do contador ao gerar o arquivo do M |
+| 92241 | 116850 |  | Normal | 19/02/2025 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos está sendo exibida indevidamente uma barra lateral na grid de al |
 | 92356 | 116809 |  | Normal | 18/02/2025 | SAI Aprovada | N�o est� sendo encontrado o acumulador quando selecionado op��o "Considerar como |
 | 92779 | 116708 |  | Normal | 14/02/2025 | SAI Aprovada | Est� apresentando erro "Existe diferen�a entre o valor de d�bito '0,00' e o valo |
 | 92133 | 116609 |  | Normal | 12/02/2025 | SAI Aprovada | Em alguns casos est� fechando o sistema ao emitir o Livro de ICMS. |
@@ -105,8 +144,13 @@
 | 91436 | 115787 |  | Normal | 09/01/2025 | SAI Aprovada | N�o est� replicando da configura��o de importa��o NF-e Arquivo XML para a import |
 | 91397 | 115755 |  | Normal | 08/01/2025 | SAI Aprovada | Est� gerando a assinatura do contador desalinhada no Balancete, quando utilizada |
 | 91149 | 115525 |  | Normal | 26/12/2024 | SAI Aprovada | MG-N�o est� deduzindo o desconto na composi��o da base de c�lculo do imposto 31- |
+| 90829 | 115222 |  | Normal | 10/12/2024 | Aguardando Resposta do Desenvolvimento DEMO | Não está demonstrando as variáveis de histórico substituídas com origem das nota |
 | 90818 | 115188 |  | Normal | 09/12/2024 | SAI Aprovada | Em alguns casos est� fechando o sistema ao efetuar o processo de gera��o do SPED |
+| 90736 | 115127 |  | Normal | 05/12/2024 | SAI Aprovada | Não está notificando a Conta Azul quando uma chave de integração for excluída. |
 | 90814 | 115080 |  | Normal | 05/12/2024 | SAI Aprovada | Est� permitindo importar lan�amento cont�bil com conta conciliada indevidamente  |
+| 90723 | 115069 |  | Normal | 03/12/2024 | SAI Aprovada | Não está gerando o arquivo RTF no SPED Contábil, quando carregado arquivos grand |
+| 90710 | 115066 |  | Normal | 03/12/2024 | SAI Aprovada | Está ocorrendo lentidão ao salvar arquivos selecionados no componente de seleção |
+| 90708 | 115055 |  | Normal | 03/12/2024 | SAI Aprovada | Está exibindo incorretamente a mensagem de arquivo substituído no componente de  |
 | 90632 | 114760 |  | Normal | 25/11/2024 | SAI Aprovada | Em alguns casos est� ocorrendo erro de banco de dados no momento da importa��o q |
 | 90476 | 114690 |  | Normal | 21/11/2024 | SAI Aprovada | N�o est� sendo gerado corretamente o valor da tag "valoresParaComparacao" da gui |
 | 90468 | 114683 |  | Normal | 21/11/2024 | SAI Aprovada | Est� apresentando indevidamente o erro de importa��o "A situa��o tribut�ria N�o  |
@@ -136,9 +180,13 @@
 | 88975 | 112703 |  | Normal | 06/09/2024 | SAI Aprovada | Em alguns casos est� ocorrendo erro de banco de dados ao importar baixa de parce |
 | 88854 | 112702 |  | Normal | 06/09/2024 | Aguardando Resposta do Desenvolvimento DEMO | Esta sendo demonstrado "N�o" no campo detalhar do item "20 - Contabiliza��o por  |
 | 88767 | 112578 |  | Normal | 03/09/2024 | SAI Aprovada | Est� sendo gerado incorretamente o DFC em rtf no informativo SPED Cont�bil, quan |
+| 89191 | 112546 |  | Normal | 02/09/2024 | SAI Aprovada | Em alguns casos está apresentando indevidamente a mensagem "A competência final  |
 | 88835 | 112506 |  | Normal | 30/08/2024 | SAI Aprovada | Esta ocorrendo o erro "CFOP xxxx � inv�lido para fornecedor de fora do estado" i |
+| 88593 | 112373 |  | Normal | 26/08/2024 | SAI Aprovada | Em alguns casos o componente de seleção de arquivos está desconfigurando modais  |
 | 88443 | 112186 |  | Normal | 19/08/2024 | SAI Aprovada | Est� gerando a data da Carta de Responsabilidade da Administra��o incorreta no R |
+| 88482 | 112172 |  | Normal | 19/08/2024 | SAI Aprovada | Não está apresentando o código da conta que está inativa na modal de visualizaçã |
 | 88375 | 112163 |  | Normal | 19/08/2024 | SAI Aprovada | Em alguns casos o componente de sele��o de arquivos est� desconfigurando modais  |
+| 89188 | 112005 |  | Normal | 13/08/2024 | SAI Aprovada | Está apresentando indevidamente inconsistência na execução da integração contábi |
 | 88192 | 111775 |  | Normal | 07/08/2024 | SAI Aprovada | MG-Est� gerando o valor incorreto da tag "ValorServicos" quando possuir desconto |
 | 87957 | 111469 |  | Normal | 29/07/2024 | Aguardando Resposta do Desenvolvimento DEMO | A API est� recebendo notas com data incorreta "xx/xx/xxxxx" indevidamente.   |
 | 87918 | 111414 |  | Normal | 25/07/2024 | SAI Aprovada | SC-Em alguns casos n�o est� apresentado a advert�ncia "N�o � permitido informar  |
@@ -147,9 +195,11 @@
 | 89151 | 110656 |  | Normal | 27/06/2024 | SAI Aprovada | N�o est� sendo gerada informa��o no campo "25-COD_MUN_DEST" do registro D100 do  |
 | 87904 | 110638 |  | Normal | 27/06/2024 | SAI Aprovada | Est�o sendo demonstradas indevidamente notas na compet�ncia 12/XXXX no demonstra |
 | 87394 | 110578 |  | Normal | 25/06/2024 | SAI Aprovada | Est� apresentando erro de banco de dados ao efetuar a baixa do Tributo Federal d |
+| 87255 | 110560 |  | Normal | 25/06/2024 | SAI Aprovada | Não está sendo possível fazer uma pesquisa em uma combobox quando texto a ser pe |
 | 87314 | 110562 |  | Normal | 25/06/2024 | Aguardando Resposta do Desenvolvimento DEMO | Est� ocorrendo a mensagem de erro "E-mail Box-e invalido, verifique e-mail infor |
 | 87245 | 110535 |  | Normal | 24/06/2024 | SAI Aprovada | Est� apresentando a data do desconto incorreta para o boleto do Digital Banking, |
 | 87199 | 110469 |  | Normal | 20/06/2024 | SAI Aprovada | AL-N�o est� somando o valor de FCP ST ao valor da SUBTRI quando selecionado a op |
+| 87149 | 110393 |  | Normal | 18/06/2024 | SAI Aprovada | Não está enquadrando corretamente o loader na tela de processamento ao salvar a  |
 | 87098 | 110401 |  | Normal | 18/06/2024 | SAI Aprovada | N�o est� enquadrando corretamente o loader na tela de processamento ao salvar a  |
 | 87121 | 110312 |  | Normal | 13/06/2024 | SAI Aprovada | Em alguns casos, n�o est� salvando as configura��es em Acesso portais externos n |
 | 87137 | 110297 |  | Normal | 13/06/2024 | SAI Aprovada | Em alguns casos o sistema est� fechando ao tentar reemitir os boletos para v�rio |
@@ -158,16 +208,21 @@
 | 86898 | 110052 |  | Normal | 04/06/2024 | SAI Aprovada | N�o est� ocorrendo a subtra��o de saldos de d�bitos e cr�ditos no relat�rio de " |
 | 86724 | 109824 |  | Normal | 24/05/2024 | SAI Aprovada | Em alguns casos n�o est� permitindo alterar o vencimento da parcela com data de  |
 | 86688 | 109577 |  | Normal | 17/05/2024 | SAI Aprovada | Est� sendo apresentado erro de banco de dados no detalhamento dos lan�amentos co |
+| 86499 | 109540 |  | Normal | 16/05/2024 | SAI Aprovada | Ao aplicar perfil na Contabilidade e Folha simultaneamente as informações da cen |
 | 86442 | 109506 |  | Normal | 15/05/2024 | SAI Aprovada | Em alguns casos est� ocorrendo erro de sistema ao realizar importa��o de notas d |
+| 86429 | 109477 |  | Normal | 14/05/2024 | SAI Aprovada | Não está sendo exibido os campos da opção Executar na data ao editar a rotina pr |
 | 86224 | 109173 |  | Normal | 30/04/2024 | SAI Aprovada | Est� sendo realizado requisi��es para a SIEG indevidamente quando o cliente n�o  |
 | 86501 | 109093 |  | Normal | 26/04/2024 | SAI Aprovada | CE/SP-N�o est� sendo deduzido o valor do ICMS da base de c�lculo de PIS e COFINS |
 | 86067 | 108980 |  | Normal | 24/04/2024 | SAI Aprovada | SP-Est� importando incorretamente os valores de ICMS ST no quadro "Totais" da no |
+| 86176 | 108945 |  | Normal | 23/04/2024 | SAI Aprovada | Está sendo apresentada uma modal abaixo da tela de processamento caso o usuário  |
 | 85967 | 108817 |  | Normal | 17/04/2024 | SAI Aprovada | Em alguns casos est� duplicando o registro I050 do informativo SPED Cont�bil par |
+| 85971 | 108751 |  | Normal | 16/04/2024 | SAI Aprovada | Em alguns casos está apresentando indevidamente a tela em branco ao realizar o p |
 | 85831 | 108430 |  | Normal | 08/04/2024 | SAI Aprovada | Est�o sendo emitidas de forma incorreta as mensagem de valida��o na emiss�o da g |
 | 85960 | 108393 |  | Normal | 05/04/2024 | SAI Aprovada | Est� sendo alterado indevidamente o per�odo atual da empresa, quando o usu�rio c |
 | 85619 | 108337 |  | Normal | 04/04/2024 | SAI Aprovada | TESTE |
 | 85636 | 108313 |  | Normal | 04/04/2024 | SAI Aprovada | Est� sendo demonstrada a mensagem "Carregando portal e-Cac" ao realizar a baixa  |
 | 85574 | 108242 |  | Normal | 02/04/2024 | SAI Aprovada | SP - Est� gerando incorretamente o c�lculo de juros para o imposto "SUBTRI" na j |
+| 86352 | 107945 |  | Normal | 25/03/2024 | SAI Aprovada | Está apresentando indevidamente contas contábeis nos campos 'Cliente' e 'Fornece |
 | 86528 | 107750 |  | Normal | 19/03/2024 | SAI Aprovada | Est� sendo considerado incorretamente o valor dos juros para o campo Valor deduz |
 | 85218 | 107675 |  | Normal | 18/03/2024 | SAI Aprovada | SP-N�o est� calculando corretamente o MVA Ajustado do imposto 31-ST/AT quando na |
 | 85208 | 107664 |  | Normal | 18/03/2024 | SAI Aprovada | N�o esta demonstrando o numero do lote na contabiliza��o dos impostos. |
@@ -177,16 +232,22 @@
 | 85056 | 107437 |  | Normal | 11/03/2024 | SAI Aprovada | Demonstra��o indevida do lan�amento no Extrato do Digital Banking - Baixa de Pag |
 | 85134 | 107112 |  | Normal | 28/02/2024 | SAI Aprovada | Est� ocorrendo o erro na tabela 'HRCONSULTANDO_LOTE', ao realizar Exporta/Import |
 | 84787 | 107103 |  | Normal | 28/02/2024 | Aguardando Resposta do Desenvolvimento DEMO | Est� gerando a informa��o incorreta no campo 4 da linha 48.05 do registro N600 d |
+| 84790 | 107043 |  | Normal | 27/02/2024 | SAI Aprovada | O link da parametrização está encaminhando o usuário para o menu Início. |
 | 85723 | 107024 |  | Normal | 26/02/2024 | SAI Aprovada | DF- N�o est� sendo gerado o QR Code na impress�o de NFS-e quando o lote for proc |
 | 84575 | 106812 |  | Normal | 21/02/2024 | SAI Aprovada | N�o est� habilitando o bot�o 'Emitir guia' e 'Pagar imposto' em 'Consulta apura� |
+| 84823 | 106742 |  | Normal | 20/02/2024 | SAI Aprovada | Está sendo apresentada barra de rolagem sem necessidade na parametrização, quand |
 | 85570 | 106754 |  | Normal | 20/02/2024 | SAI Aprovada | Em alguns casos algumas notas com origem do Busca NF-e n�o est�o sendo armazenad |
+| 84542 | 106732 |  | Normal | 19/02/2024 | SAI Aprovada | Não estão sendo apresentados os campos da opção 'Executar na data' na edição da  |
 | 84431 | 106331 |  | Normal | 07/02/2024 | SAI Aprovada | RJ-N�o est� sendo gerado o nome do grupo "ICMS Diferido" da guia "Estoque" da ja |
 | 85225 | 106249 |  | Normal | 06/02/2024 | SAI Aprovada | Est� demonstrando a coluna 'Nat. de rendimentos' na nota 'Fiscal de servi�o pres |
+| 84315 | 106195 |  | Normal | 05/02/2024 | SAI Aprovada | Não estão sendo apresentadas as notificações de erro na comunicação entre Onvio  |
 | 84311 | 106205 |  | Normal | 05/02/2024 | SAI Aprovada | Ap�s importar as NFC-e em lote no banco do cliente, no momento de fechar a tela  |
+| 84286 | 106179 |  | Normal | 05/02/2024 | SAI Aprovada | O Onvio não está enviando para a conta azul a informação das naturezas das conta |
 | 84368 | 106154 |  | Normal | 02/02/2024 | SAI Aprovada | Est� gerando o relat�rio REINF em Excel com falta de informa��es dos eventos R-4 |
 | 84216 | 106064 |  | Normal | 31/01/2024 | SAI Aprovada | Est�o ocorrendo erros nas tabelas 'PRMOVITENS_QUOTA' e 'GEATENDIMENTO_PLANO_CONT |
 | 84148 | 105873 |  | Normal | 29/01/2024 | SAI Aprovada | N�o est�o sendo consideradas as parcelas n�o baixadas, quando ocorre a troca de  |
 | 84079 | 105764 |  | Normal | 25/01/2024 | SAI Aprovada | N�o est�o sendo calculados os impostos PIS e COFINS sobre entradas de bonifica�� |
+| 84034 | 105669 |  | Normal | 23/01/2024 | SAI Aprovada | Está sendo apresentada a mensagem errada na edição de contas ao tentar alterar u |
 | 84047 | 105674 |  | Normal | 23/01/2024 | SAI Aprovada | Est�o sendo gerados indevidamente os lan�amentos cont�beis de baixa de parcela r |
 | 83990 | 105611 |  | Normal | 22/01/2024 | SAI Aprovada | Ocorre erro de banco de dados quando fechada a tela de apura��o normal e clicado |
 | 84013 | 105532 |  | Normal | 18/01/2024 | SAI Aprovada | N�o est� sendo gerado para o campo 10 do registro 1320 do SPED Fiscal o valor da |
@@ -194,6 +255,8 @@
 | 83787 | 105101 |  | Normal | 10/01/2024 | SAI Aprovada | Est� ocorrendo erro de sistema ao emitir a guia GRU. |
 | 83776 | 105020 |  | Normal | 08/01/2024 | SAI Aprovada | Realizar testes explorat�rios em decorr�ncia da libera��o da SAI 83715. |
 | 84032 | 104827 |  | Normal | 03/01/2024 | SAI Aprovada | Est� considerando indevidamente nota de sa�das sem configura��o no c�lculo do cr |
+| 83629 | 104737 |  | Normal | 29/12/2023 | SAI Aprovada | Não está sendo apresentada a linha inferior das combobox de contas do destino do |
+| 83441 | 104417 |  | Normal | 20/12/2023 | SAI Aprovada | Não está apresentando o feedback no processo de integração quando não há dados p |
 | 83546 | 104420 |  | Normal | 20/12/2023 | SAI Aprovada | N�o est� calculando o imposto 25-CRF quando importado via Leiaute Dom�nio Sistem |
 | 83352 | 104254 |  | Normal | 15/12/2023 | SAI Aprovada | N�o est� sendo poss�vel ativar as empresa no Onvio, quando o campo "Regime" esti |
 | 83349 | 104243 |  | Normal | 15/12/2023 | SAI Aprovada | [Tech API] Corrigir problema "The attribute [field] is not present in the manage |
@@ -205,6 +268,7 @@
 | 82995 | 103390 |  | Normal | 17/11/2023 | SAI Aprovada | Em alguns casos est� emitindo a advert�ncia "O NCM s% do produto s% da nota � di |
 | 82805 | 103273 |  | Normal | 14/11/2023 | SAI Aprovada | Est� importando incorretamente o valor de ICMS ST do Registro C197 com o c�digo  |
 | 82899 | 103166 |  | Normal | 10/11/2023 | SAI Aprovada | Em alguns casos est� ocorrendo o erro "WebException ao efetuar upload: The opera |
+| 82564 | 102672 |  | Normal | 26/10/2023 | SAI Aprovada | Não está exibindo o nome da empresa correto no cadastro de novo lançamento para  |
 | 82843 | 102610 |  | Normal | 25/10/2023 | SAI Aprovada | Em alguns casos est� ocorrendo travamento ao marcar ou desmarcar itens no bot�o  |
 | 82528 | 102574 |  | Normal | 24/10/2023 | SAI Aprovada | Est� sendo poss�vel gravar notas com mais de 9 d�gitos no campo "C�digo", quando |
 | 82402 | 102541 |  | Normal | 24/10/2023 | SAI Aprovada | Em alguns casos est� ocorrendo erro de banco de dados ao gerar o Relat�rio Demon |
@@ -231,14 +295,18 @@
 | 81417 | 101163 |  | Grave | 05/09/2023 | Aguardando Resposta do Desenvolvimento DEMO | N�o est�o sendo setadas as regras de escri��o ao realizar a aplica��o de um perf |
 | 82825 | 101057 |  | Normal | 31/08/2023 | SAI Aprovada | N�o esta demonstrando a hora no campo compet�ncia ao consultar o XML da nota.  |
 | 81272 | 100968 |  | Normal | 29/08/2023 | SAI Aprovada | Est� sendo gerado o valor incorreto na coluna "Devolu��o" da janela "Baixa Parce |
+| 81236 | 100935 |  | Normal | 28/08/2023 | SAI Aprovada | Esta importando valores duplicados na Importação de Lançamentos Contábeis da Con |
 | 82581 | 100907 |  | Normal | 28/08/2023 | SAI Aprovada | Est� sendo gerado o valor incorreto na apura��o do PIS e COFINS, quando efetuado |
 | 81192 | 100851 |  | Normal | 24/08/2023 | SAI Aprovada | Est� apresentando erro ao importar os lan�amentos da Conta Azul, quando utilizad |
 | 81273 | 100767 |  | Normal | 23/08/2023 | SAI Aprovada | N�o est� sendo gerada de forma correta a apura��o do imposto 44-SIMPLESN, quando |
 | 81100 | 100692 |  | Grave | 21/08/2023 | Aguardando Resposta do Desenvolvimento DEMO | N�o est�o sendo demonstradas corretamente as informa��es no Dashboard de Apura�� |
+| 81065 | 100672 |  | Normal | 18/08/2023 | SAI Aprovada | O processamento em segundo plano não está ocorrendo de forma correta em PROD. |
 | 81046 | 100610 |  | Critica | 17/08/2023 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� gerando a linha do Simples Nacional na tela de Emiss�o da PGDAS. |
 | 81043 | 100603 |  | Grave | 17/08/2023 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� direcionando para interface de 'Central de pagamentos', quando clicado  |
 | 81041 | 100591 |  | Grave | 17/08/2023 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� sendo poss�vel realizar o fechamento do per�odo, quando o per�odo j� te |
 | 81044 | 100577 |  | Grave | 17/08/2023 | Aguardando Resposta do Desenvolvimento DEMO | Est� sendo exclu�da indevidamente a descri��o do cadastro de Dados adicionais ao |
+| 80734 | 99754 |  | Normal | 27/07/2023 | SAI Aprovada | Otimizar o tempo de processamento do vínculo das contas na estrutura do DRE. |
+| 80826 | 99607 |  | Normal | 26/07/2023 | Aguardando Resposta do Desenvolvimento DEMO | Não está apresentando todas as opções no filtro das colunas quando o filtro é um |
 | 80814 | 99583 |  | Normal | 25/07/2023 | SAI Aprovada | Esta sendo calculando incorretamente o cr�dito de ICMS na transfer�ncia do bem e |
 | 80593 | 99425 |  | Normal | 20/07/2023 | SAI Aprovada | BA-Est� calculando o valor do imposto 27-ICMSA incorretamente quando o "Tipo" fo |
 | 80650 | 99320 |  | Normal | 18/07/2023 | SAI Aprovada | Est� apresentando a numera��o da p�gina incorreta do termo de transfer�ncia emit |
@@ -246,7 +314,9 @@
 | 80544 | 99017 |  | Normal | 11/07/2023 | SAI Aprovada | N�o est� enviando a exclus�o dos boletos para o Digital Banking quando exclu�do  |
 | 80568 | 98963 |  | Normal | 10/07/2023 | SAI Aprovada | RS-Est� sendo gerada a data de vencimento incorreta do imposto 42-ICMSFG, quando |
 | 80564 | 98894 |  | Normal | 07/07/2023 | SAI Aprovada | Est� sendo gerado apenas um registro M400/M800 no informativo EFD Contribui��es, |
+| 82020 | 98771 |  | Normal | 04/07/2023 | SAI Aprovada | Está sendo possível acessar o menu 'Históricos contábeis' mesmo quando a empresa |
 | 80224 | 98764 |  | Normal | 04/07/2023 | SAI Aprovada | Teste integra��o com imagens |
+| 80513 | 98746 |  | Normal | 04/07/2023 | SAI Aprovada | Não está apresentando o feedback quando a empresa não possui parâmetros para ser |
 | 80246 | 98607 |  | Normal | 29/06/2023 | SAI Aprovada | Est� sendo apresentada indevidamente a mensagem "O c�digo de acesso foi desconti |
 | 79988 | 98339 |  | Normal | 20/06/2023 | SAI Aprovada | N�o est� sendo gerado nenhum valor no campo 07-VL_TOT_REC do registro 1900 do in |
 | 80134 | 98265 |  | Normal | 19/06/2023 | SAI Aprovada | N�o est� sendo importado os valores de IPI quando configurado "Por produto" e a  |
@@ -258,6 +328,7 @@
 | 80302 | 97914 |  | Normal | 01/06/2023 | SAI Aprovada | N�o est� sendo atualizado o CST de PIS e COFINS atrav�s do utilit�rio "Alterar D |
 | 79721 | 97913 |  | Normal | 01/06/2023 | SAI Aprovada | Est� cortando as informa��es da assinatura digital do contador dos termos de abe |
 | 79797 | 97866 |  | Normal | 31/05/2023 | SAI Aprovada | N�o est� sendo gerado o registro R10 no informativo DCTF Mensal, quando o impost |
+| 79554 | 97716 |  | Normal | 23/05/2023 | SAI Aprovada | NE TESTE |
 | 79624 | 97642 |  | Normal | 19/05/2023 | SAI Aprovada | Est� ocorrendo erro de banco de dados ao gravar a importa��o quando realizado re |
 | 79425 | 97463 |  | Normal | 10/05/2023 | SAI Aprovada | Est� apresentando indevidamente as contas de resultado no Balan�o emitido por �n |
 | 79413 | 97373 |  | Normal | 08/05/2023 | SAI Aprovada | PR-Est� gerando incorretamente o relat�rio mem�ria de c�lculo do DIFALI quando h |

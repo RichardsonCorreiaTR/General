@@ -1,4 +1,4 @@
-# extrair-sais.ps1
+﻿# extrair-sais.ps1
 # Extrator de SAIs/PSAIs direto do banco pbcvs9 via ODBC (System.Data.Odbc).
 # Substitui o fallback BuscaSAI (Node) por PowerShell puro quando ODBC disponivel.
 #
@@ -170,6 +170,18 @@ function Limpar-Html {
     param([string]$texto)
     if (-not $texto) { return $null }
     $t = $texto
+    # 1. Remover atributos src com base64 (data:image/...) antes de tudo —
+    #    podem ter centenas de KB e corromper o SUBSTRING do SQL.
+    #    Regex nao-gulosa [^"]* nao funciona bem em .NET para base64 longo;
+    #    usa substituicao iterativa por seguranca.
+    while ($t -match 'src\s*=\s*"data:[^"]{200,}') {
+        $t = $t -replace 'src\s*=\s*"data:[^"]*"', 'src=""'
+    }
+    # 2. Remover tags <img> inteiras (incluindo as que restaram sem src ou com src="")
+    $t = $t -replace '<img[^>]*/?>', ''
+    # 3. Remover blocos <style> e <script> que tambem podem ser grandes
+    $t = $t -replace '(?s)<style[^>]*>.*?</style>', ''
+    $t = $t -replace '(?s)<script[^>]*>.*?</script>', ''
     $t = $t -replace '<br\s*/?>', "`n"
     $t = $t -replace '</?(?:div|p|li|ol|ul|tr|td|th|table|strong|em|b|i|span|font|a|h[1-6])[^>]*>', ' '
     $t = $t -replace '<[^>]+>', ''
@@ -182,12 +194,12 @@ function Limpar-Html {
 # ── Queries SQL ───────────────────────────────────────────────────────
 
 $SQL_SITUACOES_SAI = @"
-SELECT i_sai_situacoes, CAST(descricao AS LONG BINARY) as descricao
+SELECT i_sai_situacoes, CAST(SUBSTRING(descricao, 1, 500) AS VARCHAR(500)) as descricao
 FROM bethadba.sai_situacoes ORDER BY i_sai_situacoes
 "@
 
 $SQL_SITUACOES_PSAI = @"
-SELECT i_situacoes, CAST(descricao AS LONG BINARY) as descricao
+SELECT i_situacoes, CAST(SUBSTRING(descricao, 1, 500) AS VARCHAR(500)) as descricao
 FROM bethadba.psai_situacoes ORDER BY i_situacoes
 "@
 
@@ -214,12 +226,12 @@ SELECT TOP $BATCH
     sp.i_psai_situacoes, sp.i_sistemas, sp.i_modulos,
     sp.ultima_modificacao, sp.liberacaoOficial, sp.qtde_ssc,
     sp.qtde_sane, s.pontuacao, p.nivel_alteracao, p.i_produto_grupo,
-    CAST(s.descricao AS LONG BINARY) as sai_descricao,
-    CAST(s.comportamento AS LONG BINARY) as comportamento,
-    CAST(s.definicao AS LONG BINARY) as definicao,
-    CAST(s.descricao_destaque AS LONG BINARY) as sai_destaque,
-    CAST(p.descricao AS LONG BINARY) as psai_descricao,
-    CAST(p.descricao_destaque AS LONG BINARY) as psai_destaque
+    CAST(SUBSTRING(s.descricao, 1, 2000) AS VARCHAR(2000)) as sai_descricao,
+    CAST(SUBSTRING(s.comportamento, 1, 20000) AS VARCHAR(20000)) as comportamento,
+    CAST(SUBSTRING(s.definicao, 1, 30000) AS VARCHAR(30000)) as definicao,
+    CAST(SUBSTRING(s.descricao_destaque, 1, 10000) AS VARCHAR(10000)) as sai_destaque,
+    CAST(SUBSTRING(p.descricao, 1, 2000) AS VARCHAR(2000)) as psai_descricao,
+    CAST(SUBSTRING(p.descricao_destaque, 1, 10000) AS VARCHAR(10000)) as psai_destaque
 FROM UP.SAI_PSAI sp
 LEFT JOIN bethadba.sai s ON sp.i_sai = s.i_sai
 LEFT JOIN bethadba.psai p ON sp.i_psai = p.i_psai
@@ -255,12 +267,12 @@ SELECT TOP $BATCH
     sp.i_psai_situacoes, sp.i_sistemas, sp.i_modulos,
     sp.ultima_modificacao, sp.liberacaoOficial, sp.qtde_ssc,
     sp.qtde_sane, s.pontuacao, p.nivel_alteracao, p.i_produto_grupo,
-    CAST(s.descricao AS LONG BINARY) as sai_descricao,
-    CAST(s.comportamento AS LONG BINARY) as comportamento,
-    CAST(s.definicao AS LONG BINARY) as definicao,
-    CAST(s.descricao_destaque AS LONG BINARY) as sai_destaque,
-    CAST(p.descricao AS LONG BINARY) as psai_descricao,
-    CAST(p.descricao_destaque AS LONG BINARY) as psai_destaque
+    CAST(SUBSTRING(s.descricao, 1, 2000) AS VARCHAR(2000)) as sai_descricao,
+    CAST(SUBSTRING(s.comportamento, 1, 20000) AS VARCHAR(20000)) as comportamento,
+    CAST(SUBSTRING(s.definicao, 1, 30000) AS VARCHAR(30000)) as definicao,
+    CAST(SUBSTRING(s.descricao_destaque, 1, 10000) AS VARCHAR(10000)) as sai_destaque,
+    CAST(SUBSTRING(p.descricao, 1, 2000) AS VARCHAR(2000)) as psai_descricao,
+    CAST(SUBSTRING(p.descricao_destaque, 1, 10000) AS VARCHAR(10000)) as psai_destaque
 FROM UP.SAI_PSAI sp
 LEFT JOIN bethadba.sai s ON sp.i_sai = s.i_sai
 LEFT JOIN bethadba.psai p ON sp.i_psai = p.i_psai
@@ -280,12 +292,12 @@ SELECT TOP $BATCH
     sp.i_psai_situacoes, sp.i_sistemas, sp.i_modulos,
     sp.ultima_modificacao, sp.liberacaoOficial, sp.qtde_ssc,
     sp.qtde_sane, s.pontuacao, p.nivel_alteracao, p.i_produto_grupo,
-    CAST(s.descricao AS LONG BINARY) as sai_descricao,
-    CAST(s.comportamento AS LONG BINARY) as comportamento,
-    CAST(s.definicao AS LONG BINARY) as definicao,
-    CAST(s.descricao_destaque AS LONG BINARY) as sai_destaque,
-    CAST(p.descricao AS LONG BINARY) as psai_descricao,
-    CAST(p.descricao_destaque AS LONG BINARY) as psai_destaque
+    CAST(SUBSTRING(s.descricao, 1, 2000) AS VARCHAR(2000)) as sai_descricao,
+    CAST(SUBSTRING(s.comportamento, 1, 20000) AS VARCHAR(20000)) as comportamento,
+    CAST(SUBSTRING(s.definicao, 1, 30000) AS VARCHAR(30000)) as definicao,
+    CAST(SUBSTRING(s.descricao_destaque, 1, 10000) AS VARCHAR(10000)) as sai_destaque,
+    CAST(SUBSTRING(p.descricao, 1, 2000) AS VARCHAR(2000)) as psai_descricao,
+    CAST(SUBSTRING(p.descricao_destaque, 1, 10000) AS VARCHAR(10000)) as psai_destaque
 FROM UP.SAI_PSAI sp
 LEFT JOIN bethadba.sai s ON sp.i_sai = s.i_sai
 LEFT JOIN bethadba.psai p ON sp.i_psai = p.i_psai
@@ -826,3 +838,8 @@ try {
 }
 
 if (-not $SemLock) { Release-Lock $projetoDir }
+
+
+
+
+

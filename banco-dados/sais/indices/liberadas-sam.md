@@ -1,10 +1,11 @@
 ﻿# SAM Liberadas - Escrita Fiscal
 
-> Atualizado em: 06/05/2026 09:02
-> Total SAIs unicas: 8149
+> Atualizado em: 12/05/2026 13:31
+> Total SAIs unicas: 8334
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 101444 | 130388 | 10.6A-05 | 27/04/2026 | Respondido Gerente de Produto | Melhorar performance para evitar gargalos no DW |
 | 101233 | 130124 | 10.6A-04 | 15/04/2026 | Em Teste DEMO | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas que tenta  |
 | 101084 | 129917 | 10.6A-04 | 08/04/2026 | Em Teste DEMO | Implementar o zeramento de NSU para o NFS-e no utilit�rio de zeramento de NSU. |
 | 101067 | 129893 | 10.6A-04 | 07/04/2026 | Em Teste DEMO | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de A |
@@ -75,6 +76,7 @@
 | 99921 | 127717 | 10.6A-03 | 06/02/2026 | Em Teste DEMO | Alterar o sistema para aceitar o arquivo da NFS-e Padr�o Nacional quando possuir |
 | 99931 | 127691 | 10.6A-03 | 06/02/2026 | Em Teste DEMO | Gerar as informa��es dos impostos 183-IBS e 184-CBS na inclus�o do item nas nota |
 | 99927 | 127629 | 10.6A-03 | 05/02/2026 | Em Teste DEMO | Otimizar a apura��o do imposto 145-ICMS DIFAL - N�o Contribuinte por nota. |
+| 99815 | 127594 |  | 04/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Verificar template dos e-mails enviados pelo Onvio Contabilidade após ajuste da  |
 | 99714 | 127579 | 10.6A-02 | 04/02/2026 | Em Teste DEMO | Realizar testes na importa��o de baixa de impostos da conta azul ap�s as corre�� |
 | 99702 | 127552 | 10.6A-02 | 04/02/2026 | Em Teste DEMO | Realizar testes nas integra��es com o Conta Azul. |
 | 99707 | 127547 | 10.6A-02 | 04/02/2026 | Em Teste DEMO | Garantir a corre��o do problema na reidrata��o de lan�amentos cont�beis do Conta |
@@ -117,9 +119,9 @@
 | 98990 | 126054 | 10.6A-02 | 05/01/2026 | Em Teste DEMO | Informar ao usu�rio a necessidade de refazer o consentimento do parceiro Belvo p |
 | 98946 | 126026 | 10.6A-01 | 02/01/2026 | Em Teste DEMO | Melhorar o processo de telemetria quanto a atualiza��o da tabela de saldos cont� |
 | 98879 | 125941 | 10.6A-01 | 29/12/2025 | Em Teste DEMO | Excluir do cat�logo os lan�amentos da Conta Azul que est�o com o c�digo de empre |
-| 98868 | 125910 | ONVIO Escrita - | 29/12/2025 |  | - |
 | 98874 | 125926 | 10.6A-02 | 29/12/2025 | Em Teste DEMO | Corrigir as pend�ncias de vulnerabilidade no servidor do Busca NF-e. |
 | 99126 | 125925 | 10.6A-04 | 29/12/2025 | Em Teste DEMO | Adequar o sistema para importar o cadastro da empresa com a nova op��o de empres |
+| 98868 | 125910 | ONVIO Escrita - | 29/12/2025 | Liberado Antecipadamente | Alterar os servi�os que se comunicam com o SocketServices para se comunicar com  |
 | 98855 | 125889 | 10.6A-01 | 29/12/2025 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 98845 | 125884 | 10.6A-02 | 26/12/2025 | Em Teste DEMO | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a Lei N� 9.0 |
 | 98839 | 125881 | 10.6A-02 | 26/12/2025 | Em Teste DEMO | Liberar tempo de automa��o vers�o 10.6A-02. |
@@ -179,6 +181,7 @@
 | 98473 | 124199 | 10.5A-12 | 11/11/2025 | Em Teste DEMO | Alterar a forma de importar o campo "Valor do Servi�o" para que seja considerado |
 | 97954 | 124192 | 10.6A-03 | 11/11/2025 | Em Teste DEMO | Otimizar processos-chave (c�lculo da folha, apura��o fiscal e importa��es de not |
 | 97935 | 124163 | 10.5A-11 | 10/11/2025 | Em Teste DEMO | Ordenar transa��es atrav�s da tag order |
+| 98189 | 124136 |  | 07/11/2025 | Aguardando Resposta do Desenvolvimento DEMO | Criar regras de contabilização para o extrato bancário OFX/OFC. |
 | 97942 | 124142 | 10.5A-11 | 07/11/2025 | Em Teste DEMO | Realizar testes para avaliar o comportamento do sistema nas altera��es da forma  |
 | 98430 | 124111 | 10.6A-01 | 06/11/2025 | Em Teste DEMO | Criar tela para emiss�o da guia DARF do 161-IOF de acordo com a periodicidade de |
 | 97981 | 124060 | 10.5A-12 | 05/11/2025 | Em Teste DEMO | Permitir cadastrar contas cont�beis utilizando o menor c�digo dispon�vel dentro  |
@@ -219,6 +222,7 @@
 | 97537 | 123276 | 10.5A-12 | 08/10/2025 | Em Teste DEMO | Exportar em Excel o Comparativo de Movimento sem mesclar as c�lulas. |
 | 97522 | 123275 | 10.5A-11 | 08/10/2025 | Em Teste DEMO | Exportar em Excel o Balan�o sem mesclar as c�lulas. |
 | 97409 | 123274 | 10.5A-11 | 08/10/2025 | Em Teste DEMO | PA-Importar op��o no produto para o cr�dito presumido cesta b�sica Art. 126 do R |
+| 97205 | 123261 |  | 08/10/2025 | Aguardando Resposta do Desenvolvimento DEMO | Permitir realizar o desvínculo de contas do Onvio Gestão após realizado o víncul |
 | 97411 | 123231 | 10.5A-12 | 07/10/2025 | Em Teste DEMO | Permitir excluir empresas sem validar o fechamento e per�odo de trabalho, remove |
 | 98003 | 123228 | 10.5A-12 | 07/10/2025 | Em Teste DEMO | Incluir a op��o de importar a Receita Bruta Acumulada dos �ltimos doze meses dir |
 | 97194 | 123225 | 10.5A-11 | 07/10/2025 | Em Teste DEMO | Incluir chave em modo "Automa��o" para permitir c�lculos futuros se o banco poss |
@@ -284,6 +288,7 @@
 | 97327 | 122314 | ONVIO Escrita - | 03/09/2025 | Liberado Antecipadamente | Demonstrar os dados de IBS e CBS na visualiza��o de NFC-e conforme altera��es da |
 | 99424 | 122301 | 10.6A-04 | 03/09/2025 | Em Teste DEMO | Implementar importa��o do imposto 38-COSIRF nas importa��es NFCom Arquivo XML. |
 | 97326 | 122280 | ONVIO Escrita - | 02/09/2025 | Liberado Antecipadamente | Demonstrar os dados de IBS e CBS na visualiza��o de NF-e conforme altera��es da  |
+| 96747 | 122248 |  | 02/09/2025 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar ícone de edição nas telas de conclusões de cadastro de contas, histórico |
 | 97648 | 122249 | 10.5A-12 | 02/09/2025 | Em Teste DEMO | Demonstrar sempre a descri��o da Transa��o conforme enviado pela institui��o par |
 | 96686 | 122234 | 10.5A-10 | 01/09/2025 | Em Teste DEMO | Ajustar valida��es referente a utiliza��o do utilit�rio Altera��o Contas Cont�be |
 | 97270 | 122219 | 10.5A-11 | 01/09/2025 | Em Teste DEMO | Atualizar os par�metros e criar utilit�rio para atualizar os acumuladores com os |
@@ -295,6 +300,7 @@
 | 96551 | 122150 | 10.5A-09 | 28/08/2025 | Em Teste DEMO | Realizar a importa��o dos registros de CT-e e CT-eOS para o simulador do Planeja |
 | 96372 | 122145 | 10.6A-01 | 28/08/2025 | Em Teste DEMO | Criar monitorias de desenvolvimento e enviar dados para o DataDog referente as i |
 | 96371 | 122144 | 10.5A-09 | 28/08/2025 | Em Teste DEMO | Em alguns casos n�o est� concluindo a apura��o do per�odo quando a empresa possu |
+| 96587 | 122113 |  | 27/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Remover as linhas que separam as opções nos menus do módulo Contabilidade. |
 | 99208 | 122098 | 10.6A-04 | 27/08/2025 | Em Teste DEMO | Adequar o sistema para considerar a nova op��o de empresa centralizadora, devido |
 | 96779 | 122085 | 10.5A-10 | 26/08/2025 | Em Teste DEMO | Incluir um filtro na janela 'Contas Cont�beis' e realizar o preenchimento autom� |
 | 96311 | 122076 | 10.5A-09 | 26/08/2025 | Em Teste DEMO | Alterar o Agente de Comunica��o para atender a altera��o do parceiro CIAM. |
@@ -343,12 +349,16 @@
 | 95749 | 121314 | 10.5A-08 | 30/07/2025 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 95746 | 121311 | 10.5A-08 | 30/07/2025 | Em Teste DEMO | Registrar os tempos atuados nas pesquisas de inova��es com IA. |
 | 95734 | 121286 | 10.5A-08 | 29/07/2025 | Em Teste DEMO | Realizar testes de importa��o de lan�amentos cont�beis do Conta Azul. |
+| 95681 | 121209 | 10.5A-08 | 25/07/2025 | Liberado Antecipadamente | Incluir um loader na replicação do plano de contas e dos históricos. |
 | 95960 | 121220 | 10.5A-09 | 25/07/2025 | Em Teste DEMO | Contabilizar os impostos 183-IBS e 184-CBS no per�odo teste. |
 | 95654 | 121179 | 10.5A-08 | 24/07/2025 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 95640 | 121163 | 10.5A-08 | 23/07/2025 | Em Teste DEMO | Testar a atualiza��o da vers�o do Microsoft Visual C++ que � distribu�da junto c |
 | 98021 | 121161 | 10.6A-02 | 23/07/2025 | Em Teste DEMO | Permitir informar contas cont�beis no cadastro de incentivos fiscais, para impor |
+| 95886 | 121138 |  | 23/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Incluir novas variáveis no cadastro de histórico para contabilizar as transações |
+| 96557 | 121130 |  | 23/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Apresentar o saldo contábil na tela de Lançamentos de extrato bancário. |
 | 95620 | 121142 | 10.5A-07 | 23/07/2025 | Em Teste DEMO | Registrar os tempos trabalhados nos estudos do certificado A3 da EFD-Reinf. |
 | 97189 | 121120 | 10.6A-01 | 23/07/2025 | Em Teste DEMO | Criar no quadro "Filtros" da tela "Consulta e Lan�amentos" uma op��o para filtra |
+| 96196 | 121101 |  | 22/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Aplicar permissões do menu Conciliação de lançamentos contábeis. |
 | 95599 | 121111 | 10.5A-09 | 22/07/2025 | Em Teste DEMO | Analisar os objetos que foram criados localmente e n�o foram destru�dos da forma |
 | 95598 | 121110 | 10.5A-09 | 22/07/2025 | Em Teste DEMO | Analisar objetos que foram criados localmente e n�o foram destru�dos da forma co |
 | 95665 | 121083 | 10.5A-08 | 22/07/2025 | Em Teste DEMO | Criar o m�dulo Reforma Tribut�ria na barra de m�dulos e interagir as pesquisas d |
@@ -374,6 +384,8 @@
 | 95496 | 120756 | 10.5A-08 | 11/07/2025 | Em Teste DEMO | Realizar a importa��o dos dados do SPED Fiscal para o Simulador do Planejamento  |
 | 95349 | 120751 | 10.5A-07 | 10/07/2025 | Em Teste DEMO | Registrar os tempos atuados nas pesquisas de inova��es com IA. |
 | 95339 | 120744 | 10.5A-10 | 10/07/2025 | Em Teste DEMO | Contabilidade Digital: Contabilizar juros, multa e descontos dos eventos de paga |
+| 96219 | 120713 |  | 09/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Apresentar no menu "Início" um dashboard com a quantidade de transações importad |
+| 96172 | 120711 |  | 09/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Incluir um ícone no header para apresentar a quantidade de transações da importa |
 | 97381 | 120696 | 10.6A-01 | 09/07/2025 | Em Teste DEMO | Criar valida��o para n�o permitir vincular conta referencial do SPED ECF/ECD com |
 | 95327 | 120659 | 10.5A-10 | 08/07/2025 | Em Teste DEMO | Contabilidade Digital: Demonstrar status da conex�o da tela da Contabilidade Dig |
 | 95253 | 120623 |  | 07/07/2025 | Aguardando Resposta do Desenvolvimento DEMO | Criar um local onde seja poss�vel verificar quais notas foram recebidas na API e |
@@ -393,12 +405,14 @@
 | 95009 | 120315 | 10.5A-07 | 24/06/2025 | Em Teste DEMO | Avaliar a�exclus�o de dados e tabelas da Escrita Fiscal do banco de dados. |
 | 96059 | 120306 | 10.5A-09 | 24/06/2025 | Em Teste DEMO | MG-Realizar a importa��o do imposto 27-ICMSA por produto, com percentual de redu |
 | 95401 | 120280 | 10.5A-10 | 24/06/2025 | Em Teste DEMO | Realizar o c�lculo da CBS e IBS por produto no utilit�rio 'Planejamento Tribut�r |
+| 96142 | 120240 |  | 23/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Incluir a conciliação automática na interface de conciliação de lançamentos cont |
 | 94965 | 120258 | 10.5A-07 | 23/06/2025 | Em Teste DEMO | Ajustar as telas response remanescentes da migra��o do PB na escrita. |
 | 95189 | 120250 | 10.5A-09 | 23/06/2025 | Em Teste DEMO | Atualizar o campo "Regime de apura��o" no cadastro de fornecedores conforme info |
 | 94967 | 120247 | 10.5A-07 | 23/06/2025 | Em Teste DEMO | MA-Realizar a baixa de pagamento de impostos pelo "Importador" referente ao ICMS |
 | 94957 | 120246 | 10.5A-07 | 23/06/2025 | Em Teste DEMO | Adicionar coment�rios em todas as tabelas do banco de dados. |
 | 94955 | 120244 | 10.5A-07 | 23/06/2025 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 95188 | 120241 | 10.5A-09 | 23/06/2025 | Em Teste DEMO | Criar um campo no cadastro de clientes e fornecedores para informar a forma e a  |
+| 94927 | 120223 | 10.5A-08 | 20/06/2025 | Liberado Antecipadamente | Melhorar a performance na exclusão de Lançamentos contábeis. |
 | 94902 | 120196 | 10.5A-07 | 18/06/2025 | Em Teste DEMO | Efetuar testes de funcionalidade do informativo DIRBI. |
 | 94997 | 120190 | 10.5A-09 | 18/06/2025 | Em Teste DEMO | Ajustar a contabiliza��o de PIS e COFINS sobre receitas financeiras lan�adas atr |
 | 94855 | 120141 | 10.5A-08 | 16/06/2025 | Em Teste DEMO | Externalizar endpoint exclusivo para recebeimento de NFS-e sem qualquer padr�o p |
@@ -407,6 +421,7 @@
 | 94834 | 120087 | 10.5A-07 | 13/06/2025 | Em Teste DEMO | SC-Otimizar processamento da DW "dws_sc_credito_presumido_leite_proporcao" e "dw |
 | 94790 | 120083 | 10.5A-07 | 12/06/2025 | Em Teste DEMO | Adicionar coment�rios em todas as tabelas da escrita fiscal do banco de dados do |
 | 94783 | 120080 | 10.5A-08 | 12/06/2025 | Em Teste DEMO | Adicionar coment�rios em todas as tabelas do banco de dados do Dom�nio. |
+| 96599 | 120073 |  | 12/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Aplicar permissões nos menus 'Importação de extrato bancário', 'Consulta importa |
 | 94769 | 120061 | 10.5A-07 | 12/06/2025 | Em Teste DEMO | Retornado a NFS-e como NFS-e Padr�o Nacional para o Agente de Comunica��o. |
 | 95088 | 120055 | 10.5A-08 | 11/06/2025 | Em Teste DEMO | Otimizar a importa��o de informa��es para c�lculo de ICMS no m�dulo Patrim�nio. |
 | 96739 | 119949 | 10.5A-10 | 09/06/2025 | Em Teste DEMO | Realizar a importa��o das informa��es dos dos impostos IBS e CBS atrav�s do arqu |
@@ -414,6 +429,7 @@
 | 95171 | 119902 | 10.5A-09 | 06/06/2025 | Em Teste DEMO | Alterar a importa��o para n�o somar o valor da TAG "vComp" referente ao ICMS ST  |
 | 94780 | 119898 | 10.5A-07 | 06/06/2025 | Em Teste DEMO | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan�amentos j |
 | 94838 | 119895 | 10.5A-08 | 06/06/2025 | Em Teste DEMO | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "CBenef" das n |
+| 96137 | 119843 |  | 04/06/2025 | Aguardando Resposta do Desenvolvimento DEMO | Criar a função de fechar contas contábeis na interface de conciliação de lançame |
 | 94536 | 119782 | 10.5A-06 | 02/06/2025 | Em Teste DEMO | Alterar a solu��o do bot�o "Solu��es" da tela principal do SPED ECD.  |
 | 94524 | 119772 | 10.5A-07 | 02/06/2025 | Em Teste DEMO | Alterar o comando SQL que atualiza o registro do OFFSET no websockets do Dom�nio |
 | 94521 | 119770 | 10.5A-07 | 02/06/2025 | Em Teste DEMO | Realizar os testes na ferramenta ap�s atualiza��o do java corretto para Web Serv |
@@ -453,9 +469,11 @@
 | 94126 | 119250 | 10.5A-06 | 14/05/2025 | Em Teste DEMO | Alterar o sistema para aceitar o arquivo do CT-e Simplificado quando possuir a t |
 | 94101 | 119231 | 10.5A-05 | 13/05/2025 | Em Teste DEMO | Liberar tempo automa��o. |
 | 94672 | 119229 | 10.5A-07 | 13/05/2025 | Em Teste DEMO | GO-Ajustar a importa��o da Base de c�lculo do imposto 27-ICMSA no c�lculo 'Lan�a |
+| 96505 | 119177 |  | 12/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar validações na geração do arquivo e alterar a tela 'Arquivos gerados' |
 | 94121 | 119046 | 10.5A-06 | 07/05/2025 | Em Teste DEMO | SC-Alterar para que seja poss�vel gerar o arquivo da DCIP em ambiente Dom�nio We |
 | 95299 | 118971 | 10.5A-10 | 05/05/2025 | Em Teste DEMO | Inserir informa��o para separa��o por lote nas importa��es NF-e e NFC-e por API  |
 | 94396 | 118927 | 10.5A-07 | 02/05/2025 | Em Teste DEMO | DF-Realizar a importa��o do imposto 27-ICMSA aplicando o MVA ou o valor da Pauta |
+| 95695 | 118893 |  | 30/04/2025 | Aguardando Resposta do Desenvolvimento DEMO | Criar a conciliação de lançamentos contábeis. |
 | 94107 | 118892 | 10.5A-06 | 30/04/2025 | Em Teste DEMO | Criar bot�o "Solu��es" em mensagens relacionadas aos SPED ECD e lan�amentos refe |
 | 93890 | 118841 | 10.5A-05 | 29/04/2025 | Em Teste DEMO | Criar controle de idepot�ncia pelo TransactionID para eventos da Contabilidade D |
 | 94093 | 118838 | 10.5A-06 | 29/04/2025 | Em Teste DEMO | Alterar para que seja utilizado o certificado digital informado no menu Acesso p |
@@ -472,8 +490,10 @@
 | 97725 | 118597 | 10.5A-12 | 22/04/2025 | Em Teste DEMO | Criar relat�rio de controle de saldo de dedu��es do IRPJ e CSLL. |
 | 93677 | 118591 | 10.5A-05 | 22/04/2025 | Em Teste DEMO | Ajustar o sistema seja poss�vel reenviar as notas do Busca NF-e Cliente ao Escri |
 | 93676 | 118560 | 10.5A-05 | 17/04/2025 | Em Teste DEMO | Criar op��o na importa��o do SPED Fiscal para importar o valor do imposto 3-ISS  |
+| 93645 | 118537 | 10.5A-06 | 16/04/2025 | Liberado Antecipadamente | Disponibilizar informações de saldos e lançamentos contábeis para a Escrita Fisc |
 | 94023 | 118517 | 10.5A-06 | 16/04/2025 | Em Teste DEMO | Criar no utilit�rios a busca de notas pelos campos de observa��es e informa��es  |
 | 93610 | 118508 | 10.5A-04 | 16/04/2025 | Em Teste DEMO | ES-Alterar a importa��o conforme a nova mudan�a no site atrav�s do SEFAZ ES. |
+| 93574 | 118470 |  | 15/04/2025 | Aguardando Resposta do Desenvolvimento DEMO | Permitir logar no Kolossus Auditor com o mesmo usuário e senha do ONVIO diretame |
 | 93564 | 118459 | 10.5A-06 | 14/04/2025 | Em Teste DEMO | Alterar o comando SQL que atualiza o registro do OFFSET no websockets do Dom�nio |
 | 93496 | 118382 | 10.5A-06 | 10/04/2025 | Em Teste DEMO | Implementar no sistema novos logs no servidor do Busca NF-e para quando a nota f |
 | 93495 | 118381 | 10.5A-04 | 10/04/2025 | Em Teste DEMO | Liberar tempo automa��o. |
@@ -485,6 +505,7 @@
 | 93517 | 118297 | 10.5A-05 | 07/04/2025 | Em Teste DEMO | Contabilidade Digital: Permitir utilizar a importa��o via arquivo OFX/OFX/padr�o |
 | 93417 | 118279 |  | 07/04/2025 | Aguardando Resposta do Desenvolvimento DEMO | Permitir logar no Kolossus Auditor com o mesmo usu�rio e senha do ONVIO diretame |
 | 93397 | 118245 | 10.5A-04 | 04/04/2025 | Em Teste DEMO | Permitir informar conta sint�tica de �ltimo n�vel na tela de Concilia��o de Lan� |
+| 94793 | 118184 |  | 02/04/2025 | Aguardando Resposta do Desenvolvimento DEMO | Criar as permissões do menu 'Plano referencial'. |
 | 93352 | 118175 | 10.5A-05 | 02/04/2025 | Em Teste DEMO | MT-Importar o valor do FETHAB nas parcelas para notas de entrada atrav�s da NF-e |
 | 94390 | 118164 | 10.5A-07 | 02/04/2025 | Em Teste DEMO | Otimizar a abertura da tela "Consulta de Documentos Fiscais Enviados ao Kolossus |
 | 93278 | 118152 | 10.5A-04 | 01/04/2025 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
@@ -607,10 +628,15 @@
 | 90831 | 115224 | 10.5A-07 | 10/12/2024 | Em Teste DEMO | Realizar estudos para diminuir tamanho no banco de coluna do tipo BLOB. |
 | 90809 | 115209 | 10.4A-12 | 10/12/2024 | Em Teste DEMO | Otimizar a tabela dws_soma_simples_nacional_competencia_saida_apos_2013 da apura |
 | 100195 | 115197 | 10.6A-03 | 10/12/2024 | Em Teste DEMO | Implementar a op��o 'N�o verificar a exist�ncia dos documentos nos lan�amentos'  |
+| 90784 | 115176 | 10.5A-01 | 09/12/2024 | Em Teste DEMO | Liberar tempo trabalhado nas ações de Performance do Onvio na versão 10.5A-01. |
+| 90782 | 115175 | 10.5A-01 | 09/12/2024 | Em Teste DEMO | Liberar tempo da automação de teste da versão 10.5A-01. |
 | 90921 | 115164 | 10.5A-02 | 06/12/2024 | Em Teste DEMO | SP-Criar um controle din�mico na gera��o do relat�rio "Controle de Estoque Porta |
 | 90772 | 115159 | 10.4A-12 | 06/12/2024 | Em Teste DEMO | Otimizar a importa��o NF-e quando h� informa��es na tag NFeRef. |
+| 93339 | 115151 | 10.5A-08 | 06/12/2024 | Liberado Antecipadamente | Avaliar a Performance geral do módulo Contabilidade. |
 | 90757 | 115148 | 10.5A-01 | 06/12/2024 | Em Teste DEMO | Permitir c�lculo do Comparativo Regime Tribut�rio referente ao ano de 2025. |
+| 91599 | 115120 | 10.5A-02 | 05/12/2024 | Em Teste DEMO | Alterar as URLs da API e receber o token de produção de envio de contas para a C |
 | 90712 | 115067 | 10.5A-01 | 03/12/2024 | Em Teste DEMO | Criar o relat�rio de confer�ncia da DEFIS e as permiss�es do informativo. |
+| 90659 | 115009 | 10.4A-12 | 02/12/2024 | Em Teste DEMO | Computar o tempo trabalhado em ações de Performance do Onvio. |
 | 91445 | 114950 | 10.5A-04 | 28/11/2024 | Em Teste DEMO | Realizar a importa��o de "NFCom - Nota Fiscal Fatura de Servi�o de Comunica��o E |
 | 90984 | 114946 | 10.5A-01 | 28/11/2024 | Em Teste DEMO | Ajustar os links de acesso das ferramentas do CCT. |
 | 90975 | 114917 | 10.5A-03 | 28/11/2024 | Em Teste DEMO | Criar as telas de importa��o de "NFCom - Nota Fiscal Fatura de Servi�o de Comuni |
@@ -639,6 +665,7 @@
 | 90955 | 114489 | 10.5A-01 | 12/11/2024 | Em Teste DEMO | Alterar o utilit�rio "Elimina per�odo".    |
 | 90310 | 114487 | 10.5A-06 | 12/11/2024 | Em Teste DEMO | Criar "Utilit�rios" para realizar a limpeza dos movimentos sem retornar o per�od |
 | 90422 | 114481 | 10.4A-12 | 12/11/2024 | Em Teste DEMO | Importar a base de c�lculo do PIS/COFINS quando informado o CST 06-Opera��o Trib |
+| 90740 | 114419 | 10.5A-03 | 07/11/2024 | Em Teste DEMO | Otimizar a abertura do Livro razão pelo Balancete. |
 | 95357 | 114385 | 10.5A-11 | 07/11/2024 | Em Teste DEMO | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es na Contab |
 | 90181 | 114361 | 10.4A-12 | 06/11/2024 | Em Teste DEMO | Alterar a janela de cadastro de clientes e Fornecedores, para que n�o apresentar |
 | 90360 | 114342 | 10.4A-11 | 06/11/2024 | Em Teste DEMO | Contabilidade Digital: Incluir novos bancos para serem integrados. |
@@ -646,6 +673,7 @@
 | 90274 | 114297 | 10.4A-12 | 04/11/2024 | Em Teste DEMO | Alterar a importa��o/escritura��o para aceitar Notas de Servi�o com Participante |
 | 90109 | 114285 | 10.4A-12 | 04/11/2024 | Em Teste DEMO | Criar casos de testes para a automa��o em Dezembro/2024. |
 | 90574 | 114268 | 10.5A-01 | 04/11/2024 | Em Teste DEMO | Demonstrar no relat�rio do Simulador da Reforma Tribut�ria que o c�lculo do IVA  |
+| 90087 | 114252 | 10.4A-12 | 01/11/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-12. |
 | 90077 | 114225 | 10.4A-11 | 31/10/2024 | Em Teste DEMO | Permitir importar NF-e cancelado quando no arquivo existir as tags 'procCancNFe/ |
 | 90064 | 114213 | 10.4A-11 | 31/10/2024 | Em Teste DEMO | Realizar a migra��o do utilit�rio VPBINCLUIXMLCATALOGO e EnviaNotasAPI para o Gi |
 | 90136 | 114187 | 10.4A-12 | 30/10/2024 | Em Teste DEMO | Importar o valor da base de c�lculo de PIS e COFINS deduzindo o valor do ISS som |
@@ -661,12 +689,15 @@
 | 90085 | 114045 | 10.5A-01 | 24/10/2024 | Em Teste DEMO | Alterar a interface de Emiss�es PGMEI para sempre ser demonstrada para as empres |
 | 89954 | 114033 | 10.4A-12 | 24/10/2024 | Em Teste DEMO | Alterar o sistema para emitir a guia DARF Online - Sicalcweb" sem demonstrar err |
 | 89945 | 114027 | 10.4A-11 | 24/10/2024 | Em Teste DEMO | Alterar para que a funcionalidade implementada na SAI 88942 n�o tenha reflexo qu |
+| 89935 | 114019 | 10.4A-12 | 23/10/2024 | Em Teste DEMO | Criar opção para ocultar empresas inativas na listagem de empresas e no seletor  |
 | 95224 | 113980 | 10.5A-12 | 23/10/2024 | Em Teste DEMO | MA-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
 | 89965 | 113965 | 10.4A-12 | 22/10/2024 | Em Teste DEMO | Permitir ocultar empresas inativas na listagem de empresas e no seletor de empre |
 | 89880 | 113947 | 10.4A-12 | 22/10/2024 | Em Teste DEMO | Garantir funcionamento os m�dulos Lalur e Atualizar com as altera��es de preench |
 | 89875 | 113940 | 10.4A-11 | 21/10/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 89858 | 113879 | 10.4A-11 | 18/10/2024 | Em Teste DEMO | Permitir importar notas de Sa�das e Servi�os com esp�cie "Documento N�o Fiscal"  |
+| 89814 | 113862 | 10.4A-11 | 17/10/2024 | Em Teste DEMO | Testar impactos da alteração feita pela Folha no filtro lateral. |
 | 90135 | 113866 | 10.4A-11 | 17/10/2024 | Em Teste DEMO | RS-Permitir importar o imposto 31-ST/AT "Por nota" quando o CSOSN for 101 ou 102 |
+| 89933 | 113856 | 10.5A-02 | 17/10/2024 | Em Teste DEMO | Demonstrar da esquerda para direita os cards dos menus mais acessados pelo usuár |
 | 89734 | 113787 | 10.4A-11 | 15/10/2024 | Em Teste DEMO | Preparar o m�dulo Escrita para enviar as guias de impostos para o Dom�nio Conta  |
 | 89753 | 113785 | 10.4A-11 | 15/10/2024 | Em Teste DEMO | Contabilidade Digital: Ajustar o status das empresas sem configura��o e alterar  |
 | 89732 | 113781 | 10.4A-11 | 15/10/2024 | Em Teste DEMO | Liberar no m�dulo Honor�rios o envio dos boletos para o Dom�nio Conta Digital |
@@ -695,8 +726,11 @@
 | 89388 | 113275 | 10.4A-11 | 30/09/2024 | Em Teste DEMO | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a importa��o NFS |
 | 89387 | 113274 | 10.4A-11 | 30/09/2024 | Em Teste DEMO | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a importa��o NFS |
 | 89386 | 113273 | 10.4A-11 | 30/09/2024 | Em Teste DEMO | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a importa��o CF- |
+| 89360 | 113246 | 10.4A-11 | 27/09/2024 | Em Teste DEMO | Possibilitar o bloqueio/desbloqueio da ação de excluir vigência no cadastro de E |
 | 91201 | 113231 | 10.5A-02 | 27/09/2024 | Em Teste DEMO | Importar as al�quotas do imposto 28-FUNRURAL nas notas de entrada, sa�da e redu� |
 | 89502 | 113225 | 10.4A-10 | 27/09/2024 | Em Teste DEMO | Realizar testes na emiss�o do 'Dashboard Gerencial' para considerar a nova palet |
+| 89352 | 113217 | 10.4A-11 | 26/09/2024 | Em Teste DEMO | Criar monitoria do envio das contas contábeis para a Conta Azul. |
+| 89351 | 113207 | 10.4A-11 | 26/09/2024 | Em Teste DEMO | Criar monitoria dos lançamentos contábeis da Conta Azul. |
 | 89321 | 113205 | 10.4A-10 | 26/09/2024 | Em Teste DEMO | Alterar a forma de exclus�o dos lan�amentos com mais de 60 dias no cat�logo do C |
 | 89366 | 113202 | 10.4A-10 | 26/09/2024 | Em Teste DEMO | Contabilidade Digital: Considerar o CNPJ da Receita Federal para o pagamento de  |
 | 89424 | 113201 | 10.4A-11 | 26/09/2024 | Em Teste DEMO | Contabilidade Digital: Alterar a descri��o da transa��o "Dep�sito por boleto" pa |
@@ -709,11 +743,13 @@
 | 89261 | 113127 | 10.4A-10 | 24/09/2024 | Em Teste DEMO | Testar os pontos do sistema do Dom�nio que utilizam a fun��o "ShellExecute32". |
 | 89260 | 113126 | 10.4A-10 | 24/09/2024 | Em Teste DEMO | Testar os pontos do sistema do Dom�nio que utilizam a fun��o "ShellExecute32" no |
 | 89318 | 113122 | 10.4A-10 | 24/09/2024 | Em Teste DEMO | PENTEST-Testar os pontos do sistema da Escrita Fiscal que utilizam o CMD e Power |
+| 94611 | 113100 |  | 24/09/2024 | Aguardando Resposta do Desenvolvimento DEMO | Incluir a aba 'Arquivos RTF' na modal 'Outros dados' do SPED Contábil e permitir |
 | 89305 | 113089 | 10.4A-11 | 23/09/2024 | Em Teste DEMO | Contabilidade Digital: Inativar o bot�o "Gravar" durante o processo de registro  |
 | 89230 | 113081 | 10.4A-10 | 23/09/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 89221 | 113075 | 10.4A-12 | 23/09/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 89220 | 113073 | 10.4A-11 | 23/09/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 89219 | 113072 | 10.4A-10 | 23/09/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 89727 | 113045 | 10.4A-12 | 20/09/2024 | Em Teste DEMO | Contabilidade digital: Criar as regras de contabilização da contabilidade digita |
 | 89824 | 113040 | 10.5A-07 | 20/09/2024 | Em Teste DEMO | Implementar a rotina de importa��o dos fundos e clubes de investimentos atrav�s  |
 | 89179 | 113039 | 10.4A-10 | 20/09/2024 | Em Teste DEMO | Ajustar o agente de comunica��o para receber sem erros transa��es do openfinance |
 | 89245 | 113020 | 10.4A-11 | 19/09/2024 | Em Teste DEMO | Otimizar a DW ds_sped_blococ_regc197_sc_2 na gera��o do arquivo SPED Fiscal. |
@@ -722,6 +758,7 @@
 | 91119 | 112998 | 10.5A-01 | 18/09/2024 | Em Teste DEMO | SE-Alterar a base de c�lculo do imposto 8-DIFALI quando houver junto o imposto 5 |
 | 89129 | 112996 | 10.4A-10 | 18/09/2024 | Em Teste DEMO | Implementar o destaque dos impostos 133-PIS-I e 134-COFINS-I na importa��o de NF |
 | 91278 | 112993 | 10.5A-02 | 18/09/2024 | Em Teste DEMO | RN-Alterar a importa��o do imposto 8-DIFALI conforme IN SEI N� 001/2024-CAT/SEFA |
+| 89320 | 112976 | 10.5A-02 | 18/09/2024 | Em Teste DEMO | Contabilidade digital: Criar o menu para informar qual conta contábil deve receb |
 | 89170 | 112986 | 10.4A-10 | 18/09/2024 | Em Teste DEMO | Contabilidade Digital: Alterar a forma de contabilizar por parte do hist�rico. |
 | 89137 | 112980 | 10.4A-10 | 18/09/2024 | Em Teste DEMO | Contabilidade Digital: Alterar a visualiza��o dos lan�amentos cont�beis na tela  |
 | 89105 | 112968 | 10.4A-10 | 18/09/2024 | Em Teste DEMO | Atualizar lib e testar a inclus�o nas rotinas programadas do m�dulo folha o envi |
@@ -735,6 +772,7 @@
 | 89062 | 112916 | 10.5A-10 | 16/09/2024 | Em Teste DEMO | Realizar estudo quanto a forma de realizar a importa��o dos valores de IRPJ e CS |
 | 89117 | 112880 | 10.4A-10 | 13/09/2024 | Em Teste DEMO | Otimizar a tela "Extrato Banc�rio do Dom�nio Conta Digital". |
 | 91343 | 112859 | 10.5A-02 | 13/09/2024 | Em Teste DEMO | MT-Ajustar as condi��es para a importa��o dos valores do ICMS monof�sico. |
+| 89310 | 112851 | 10.5A-02 | 13/09/2024 | Em Teste DEMO | Atualizar o cabeçalho dos módulos do Onvio para a nova marca da Thomson Reuters. |
 | 91402 | 112856 | 10.5A-02 | 13/09/2024 | Em Teste DEMO | Importar dados nas notas fiscais de entradas e sa�das para atender o informativo |
 | 89624 | 112849 | 10.4A-12 | 13/09/2024 | Em Teste DEMO | SP-Implementar na rotina de importa��o Leiaute Dom�nio Sistemas com Separador a  |
 | 88986 | 112833 | 10.4A-12 | 12/09/2024 | Em Teste DEMO | Alterar para que os cadastro de produtos seja carregado em cache quando a quanti |
@@ -752,6 +790,8 @@
 | 89077 | 112650 | 10.4A-10 | 05/09/2024 | Em Teste DEMO | Contabilidade Digital: Rever transa��es da tela de configura��es. |
 | 88778 | 112637 | 10.4A-12 | 05/09/2024 | Em Teste DEMO | Corrigir pend�ncias High do Snyk no servidor do Busca NF-e. |
 | 88775 | 112636 | 10.4A-12 | 05/09/2024 | Em Teste DEMO | Corrigir pend�ncias High do Snyk. |
+| 88813 | 112630 | 10.4A-10 | 04/09/2024 | Em Teste DEMO | Permitir a inclusão de validações externas no componente seletor de arquivos. |
+| 88754 | 112612 | 10.4A-10 | 04/09/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-10. |
 | 88738 | 112594 | 10.4A-10 | 04/09/2024 | Em Teste DEMO | Adaptar o sistema para as novas medidas de seguran�a do captcha na importa��o de |
 | 88787 | 112584 | 10.5A-01 | 03/09/2024 | Em Teste DEMO | RN-Realizar a baixa de pagamento de impostos pelo Importador referente ao ICMS a |
 | 88786 | 112583 | 10.5A-01 | 03/09/2024 | Em Teste DEMO | RN-Realizar a baixa de pagamento de impostos feitos pelo TR Digital Banking e Co |
@@ -763,14 +803,19 @@
 | 88619 | 112481 | 10.4A-09 | 29/08/2024 | Em Teste DEMO | Efetuar estudo para verificar o uso de mem�ria alocado ap�s um c�lculo conclu�do |
 | 88616 | 112472 | 10.4A-09 | 29/08/2024 | Em Teste DEMO | Efetuar estudo para verificar o uso de mem�ria alocado ap�s uma importa��o concl |
 | 88610 | 112462 | 10.4A-09 | 29/08/2024 | Em Teste DEMO | Efetuar estudo para verificar o uso de mem�ria alocado ap�s um c�lculo conclu�do |
+| 90697 | 112451 | 10.5A-01 | 28/08/2024 | Em Teste DEMO | Alterar alguns comportamentos da tela "Arquivos gerados" do "SPED Contábil". |
 | 88595 | 112446 | 10.4A-09 | 28/08/2024 | Em Teste DEMO | Realizar testes explorat�rios nos relat�rios da Contabilidade quando reemitidos. |
 | 88589 | 112438 | 10.4A-09 | 28/08/2024 | Em Teste DEMO | Alterar a emiss�o de NFSe do fornecedor IPM Eletron, IPM Eletron V2 e IPM Eletro |
+| 88563 | 112404 | 10.4A-10 | 27/08/2024 | Em Teste DEMO | Incluir no Header de envio da API de Lançamentos da Conta Azul o clientID. |
 | 88793 | 112420 | 10.4A-11 | 27/08/2024 | Em Teste DEMO | Contabilidade Digital: Utilizar a mesma configura��o para empresas que utilizam  |
 | 88559 | 112401 | 10.4A-11 | 27/08/2024 | Em Teste DEMO | Realizar a migra��o do app do Webservice SEFAZ para o Github (novo reposit�rio). |
+| 88594 | 112384 | 10.4A-10 | 27/08/2024 | Em Teste DEMO | Desabilitar o ícone e coluna de publicação para o Portal do cliente no visualiza |
 | 88558 | 112383 | 10.4A-10 | 27/08/2024 | Em Teste DEMO | Permitir a inclus�o de valida��es externas no componente seletor de arquivos. |
 | 88564 | 112377 | 10.4A-10 | 26/08/2024 | Em Teste DEMO | Considerar o ClientID do Header de lan�amentos cont�beis via API da Conta Azul.  |
+| 88668 | 112363 | 10.4A-11 | 26/08/2024 | Em Teste DEMO | Considerar os arquivos apresentados na grid 'Defina o tipo do arquivo RTF' da ab |
 | 88700 | 112369 | 10.4A-10 | 26/08/2024 | Em Teste DEMO | Incluir o bot�o solu��es em mensagens de opera��es com revenda de ve�culos. |
 | 88699 | 112367 | 10.4A-10 | 26/08/2024 | Em Teste DEMO | Incluir o bot�o solu��es em mensagens da DIRBI. |
+| 88672 | 112356 | 10.4A-11 | 26/08/2024 | Em Teste DEMO | Apresentar 'D' ou 'C' de acordo com a natureza da conta, quando na aba 'Plano de |
 | 89844 | 112358 | 10.4A-12 | 26/08/2024 | Em Teste DEMO | Criar uma op��o para permitir integrar o pagamento dos impostos federais de form |
 | 88531 | 112351 | 10.4A-09 | 26/08/2024 | Em Teste DEMO | Liberar tempo automa��o. |
 | 88812 | 112347 | 10.4A-09 | 23/08/2024 | Em Teste DEMO | Contabilidade Digital: Considerar o CNPJ da Caixa Econ�mica Federal para o pagam |
@@ -787,6 +832,8 @@
 | 88337 | 112134 | 10.4A-10 | 16/08/2024 | Em Teste DEMO | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a importa��o NF- |
 | 88329 | 112126 | 10.4A-09 | 16/08/2024 | Em Teste DEMO | Realizar os testes ao salvar os relat�rios de importa��o referente a SAI 88310. |
 | 88319 | 112123 | 10.4A-09 | 16/08/2024 | Em Teste DEMO | Realizar estudo para atualizar a vers�o do navegador CefSharp/Chromium no Domini |
+| 88348 | 112107 | 10.5A-08 | 15/08/2024 | Liberado Antecipadamente | Aplicar regras de permissões nos menus Importação de lançamentos e Consulta Impo |
+| 88345 | 112102 |  | 15/08/2024 | Aguardando Resposta do Desenvolvimento DEMO | Criar uma integração do card Agenda Tributária do Onvio com SGD |
 | 88310 | 112108 | 10.4A-09 | 15/08/2024 | Em Teste DEMO | Criar uma op��o para o usu�rio escolher se os arquivos em PDF ser�o abertos auto |
 | 88257 | 112052 | 10.4A-12 | 14/08/2024 | Em Teste DEMO | Obter a informa��o de cadastro de empresas CAEPF para utiliza��o das valida��es  |
 | 88241 | 112026 | 10.4A-08 | 14/08/2024 | Em Teste DEMO | Verificar a cria��o das threads do Digital banking no momento de inicializa��o d |
@@ -812,11 +859,13 @@
 | 88093 | 111722 | 10.4A-09 | 06/08/2024 | Em Teste DEMO | Realizar estudo para atualizar a vers�o do navegador CefSharp/Chromium no Domini |
 | 90141 | 111702 | 10.4A-12 | 05/08/2024 | Em Teste DEMO | MT-Alterar a importa��o do imposto 8-DIFALI conforme a Nota T�cnica UDCR/UNERC n |
 | 88074 | 111693 | 10.4A-09 | 05/08/2024 | Em Teste DEMO | Criar casos de testes para a automa��o em Setembro/2024. |
+| 88056 | 111672 | 10.4A-09 | 05/08/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-09. |
 | 88043 | 111639 | 10.4A-08 | 02/08/2024 | Em Teste DEMO | Realizar um teste de atualiza��o do banco de dados em decorrencia da SAI 88033. |
 | 88022 | 111605 | 10.5A-02 | 01/08/2024 | Em Teste DEMO | Realizar estudos para verificar todos os pontos do sistema que utilizam campos d |
 | 88021 | 111602 | 10.4A-10 | 01/08/2024 | Em Teste DEMO | Realizar estudo para alterar a forma de executar a aplica��o que realiza a conve |
 | 92957 | 111596 | 10.5A-05 | 01/08/2024 | Em Teste DEMO | RJ-Disponibilizar a op��o para alterar o produto para n�o calcular FECP-ICMS Nor |
 | 88112 | 111561 | 10.4A-08 | 01/08/2024 | Em Teste DEMO | Alterar a descri��o "Dom�nio Atendimento" para "Portal do Cliente" na janela das |
+| 88497 | 111538 |  | 31/07/2024 | Aguardando Resposta do Desenvolvimento DEMO | Alterar a verificação dos lançamentos pendentes na realização do zeramento pelo  |
 | 87977 | 111495 | 10.4A-09 | 30/07/2024 | Em Teste DEMO | Implementar tratamento para o retorno 509 no envio de notas para o Kolossus Audi |
 | 89398 | 111486 | 10.4A-11 | 30/07/2024 | Em Teste DEMO | RJ-Implementar a importa��o do imposto 57-FECP-DI quando estiver configurado com |
 | 87973 | 111477 | 10.4A-08 | 29/07/2024 | Em Teste DEMO | Ajustar o SPED ECF para demonstrar as mensagens quando o sistema estiver em modo |
@@ -831,6 +880,7 @@
 | 87825 | 111319 | 10.4A-08 | 23/07/2024 | Em Teste DEMO | Ajustar os pontos de dependencia da API com o DA ap�s desativa��o dos servi�o Bo |
 | 88070 | 111252 | 10.4A-10 | 19/07/2024 | Em Teste DEMO | Alterar o sistema para que ao abrir a tela de Lan�amentos Cont�beis Extrato Banc |
 | 87881 | 111251 | 10.4A-08 | 19/07/2024 | Em Teste DEMO | Otimizar abertura e navega��o da tela de Lan�amentos Extrato Banc�rio Dom�nio Co |
+| 87758 | 111239 | 10.4A-09 | 19/07/2024 | Em Teste DEMO | Testar performance da importação dos lançamentos contábeis da Conta Azul via API |
 | 87748 | 111234 | 10.4A-08 | 19/07/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 87747 | 111233 | 10.4A-07 | 19/07/2024 | Em Teste DEMO | Testar o Busca NF-e para garantir o funcionamento da ferramenta nos ambientes QE |
 | 87714 | 111205 | 10.4A-09 | 18/07/2024 | Em Teste DEMO | Migrar contas de e-mail inativas ou de cliente ativo por�m n�o migrado do DA par |
@@ -845,6 +895,7 @@
 | 89025 | 111031 | 10.4A-11 | 11/07/2024 | Em Teste DEMO | MG-Alterar a emiss�o da guia DAE Online dos impostos 21-RECALI, 27-ICMS Antecipa |
 | 88347 | 111029 | 10.4A-10 | 11/07/2024 | Em Teste DEMO | Implementar o simulador de c�lculo da Reforma Tribut�ria para os anos de 2027 e  |
 | 87608 | 111016 | 10.4A-09 | 10/07/2024 | Em Teste DEMO | Demonstrar o novo encargo FGTS 13� Integral conforme altera��es do m�dulo Folha. |
+| 87552 | 110912 | 10.4A-09 | 08/07/2024 | Em Teste DEMO | Padronizar a formatação dos componentes Month Datepicker e DatePicker Input na p |
 | 87624 | 110877 | 10.4A-07 | 08/07/2024 | Em Teste DEMO | Ajustar o sistema para quando retornado a mensagem em um encoding diferente do p |
 | 87518 | 110873 | 10.4A-08 | 08/07/2024 | Em Teste DEMO | Gerar o vencimento da guia para o campo 'Vencimento' do Documents quando realiza |
 | 88917 | 110841 | 10.4A-11 | 04/07/2024 | Em Teste DEMO | GO-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
@@ -852,10 +903,12 @@
 | 87427 | 110786 | 10.4A-09 | 03/07/2024 | Em Teste DEMO | Alterar mecanismo de conex�o do banco de dados no Box-e. |
 | 87419 | 110778 | 10.4A-08 | 02/07/2024 | Em Teste DEMO | Armazenar os arquivos recebidos na API que apresentaram erro. |
 | 87596 | 110772 | 10.4A-09 | 02/07/2024 | Em Teste DEMO | Permitir mover as colunas do quadro "Lan�amentos" da tela de Concilia��o de Lan� |
+| 87404 | 110761 | 10.4A-08 | 02/07/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-08. |
 | 87408 | 110765 | 10.4A-08 | 02/07/2024 | Em Teste DEMO | Criar casos de testes para a automa��o em Agosto/2024. |
 | 87403 | 110760 | 10.4A-07 | 02/07/2024 | Em Teste DEMO | Liberar tempo automa��o. |
 | 87383 | 110733 | 10.4A-09 | 01/07/2024 | Em Teste DEMO | Reavaliar a implementa��o do log no Agente de Comunica��o referente as notas pro |
 | 87431 | 110725 | 10.4A-10 | 01/07/2024 | Em Teste DEMO | Criar a coluna 'Origem' na Listagem de notas. |
+| 87696 | 110689 | 10.4A-09 | 28/06/2024 | Em Teste DEMO | Receber todos os lançamentos da Conta Azul independente da situação |
 | 88394 | 110645 | 10.5A-09 | 27/06/2024 | Em Teste DEMO | Incluir nos par�metros as configura��es de forma de tributa��o do lucro, per�odo |
 | 87437 | 110644 | 10.4A-08 | 27/06/2024 | Em Teste DEMO | Realizar estudo no sistema para avaliar uma melhor forma de importa��o dos valor |
 | 87522 | 110634 | 10.5A-03 | 26/06/2024 | Em Teste DEMO | Otimizar o processo de download das notas fiscais da API no agente de comunica�� |
@@ -866,22 +919,29 @@
 | 89074 | 110575 | 10.4A-10 | 25/06/2024 | Em Teste DEMO | Salvar as informa��es dos boletos do Dom�nio Conta Digital na base de dados. |
 | 87248 | 110574 | 10.4A-07 | 25/06/2024 | Em Teste DEMO | Ajuste da descri��o da guia e op��o dentro dos parametros da contabilidade. |
 | 88259 | 110554 | 10.4A-09 | 25/06/2024 | Em Teste DEMO | RS-Importar para o produto o cr�dito presumido nas sa�das de com�rcio de produto |
+| 87633 | 110531 | 10.4A-10 | 24/06/2024 | Em Teste DEMO | Permitir importar o plano de contas pelo arquivo do SPED ECD identificando as co |
 | 87240 | 110534 | 10.4A-08 | 24/06/2024 | Em Teste DEMO | Alterar a nomenclatura do card "Fique de Olho" para "Agenda Tribut�ria". |
 | 87176 | 110468 | 10.4A-07 | 20/06/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 87225 | 110467 | 10.4A-09 | 20/06/2024 | Em Teste DEMO | Otimizar a apura��o da empresa que possui as dws: dws_pis_cofins_ge_soma_retenco |
 | 87175 | 110465 | 10.4A-06 | 20/06/2024 | Em Teste DEMO | SAI criada para testes no informativo EFD Reinf conforme nova DLL criada na SAI  |
 | 87118 | 110412 | 10.4A-06 | 18/06/2024 | Em Teste DEMO | Remover o tempo de espera ao realizar as buscar de notas na API quando houver ma |
+| 87187 | 110395 | 10.4A-08 | 18/06/2024 | Em Teste DEMO | Alterar a nomenclatura do card "Fique de Olho" para "Agenda Tributária" no menu  |
 | 87102 | 110406 | 10.4A-06 | 18/06/2024 | Em Teste DEMO | MG-Criar DLL para assinatura dos RPS do munic�pio de Uberl�ndia. |
+| 87150 | 110385 | 10.4A-08 | 18/06/2024 | Em Teste DEMO | Permitir manter os cadastros de Responsáveis Legais, Sócios e Contadores sincron |
+| 87146 | 110384 | 10.4A-08 | 18/06/2024 | Em Teste DEMO | Possibilitar o cadastro de contadores PJ e selecionar um contador PJ dentro do c |
 | 87094 | 110378 | 10.4A-07 | 17/06/2024 | Em Teste DEMO | Garantir que o envio de notas para o BOX-e atrav�s do Busca NF-e e Web Service S |
 | 87057 | 110332 | 10.4A-06 | 14/06/2024 | Em Teste DEMO | SAI para computar os tempos de teste e estudo da SAI de NE 86469. |
 | 87472 | 110330 | 10.4A-09 | 14/06/2024 | Em Teste DEMO | Atualizar a guia "Centro de Custo" da tela de lan�amentos, quando for alterado o |
 | 91353 | 110315 | 10.5A-02 | 13/06/2024 | Em Teste DEMO | Alterar a forma de indicar o ambiente selecionado nas interfaces de envio da EFD |
+| 86999 | 110284 | 10.4A-06 | 12/06/2024 | Em Teste DEMO | Lançar os tempos não computados de versões anteriores. |
 | 87155 | 110272 | 10.5A-10 | 12/06/2024 | Em Teste DEMO | Contabilidade Digital: Permitir a integra��o de mais de uma conta banc�ria para  |
+| 86956 | 110222 | 10.4A-07 | 11/06/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-07. |
 | 86983 | 110232 | 10.4A-08 | 11/06/2024 | Em Teste DEMO | Possibilitar o cadastro de contadores PJ e selecionar um contador PJ dentro do c |
 | 92136 | 110227 | 10.5A-03 | 11/06/2024 | Em Teste DEMO | Alterar a importa��o de notas para separar a op��o "Deduzir o valor do DIFAL-NC  |
 | 86926 | 110185 | 10.4A-08 | 07/06/2024 | Em Teste DEMO | Criar os itens do relat�rio do EFD-Reinf referente ao imposto 26-INSS Retido. |
 | 86981 | 110152 | 10.4A-07 | 06/06/2024 | Em Teste DEMO | CE-Alterar a importa��o do imposto 8-DIFALI conforme Nota de execu��o N� 01/2024 |
 | 88753 | 110142 | 10.4A-11 | 06/06/2024 | Em Teste DEMO | Ajustar a importa��o para considerar at� tr�s casas decimais na al�quota do impo |
+| 86870 | 110108 | 10.4A-07 | 05/06/2024 | Em Teste DEMO | Realizar o filtro por regime nos perfis de empresas e importação de dados de out |
 | 86883 | 110098 | 10.4A-07 | 05/06/2024 | Em Teste DEMO | Alterar nome e local para salvar os arquivos ".json" do informativo e-Sfinge, qu |
 | 86884 | 110097 | 10.4A-07 | 05/06/2024 | Em Teste DEMO | Alterar o nome e local para salvar o arquivo do informativo DIOPS e ignorar o ja |
 | 86893 | 110096 | 10.4A-07 | 05/06/2024 | Em Teste DEMO | Ajustar para que n�o seja solicitado o certificado digital ao gerar o DPS e ao c |
@@ -894,6 +954,7 @@
 | 87196 | 110009 | 10.4A-10 | 31/05/2024 | Em Teste DEMO | Alterar o sistema para registrar o cancelamento de nota emitida com cancelamento |
 | 86800 | 110007 | 10.4A-06 | 31/05/2024 | Em Teste DEMO | Gerar mais informa��es no log do agente de comunica��o para conseguir identifica |
 | 86815 | 109976 | 10.4A-06 | 29/05/2024 | Em Teste DEMO | RS- Demonstrar o vencimento da guia DAS, conforme prorroga��o da Portaria CGSN N |
+| 86767 | 109964 | 10.4A-06 | 29/05/2024 | Em Teste DEMO | Permitir receber inscrições de sócios, contadores e responsáveis legais inválida |
 | 86772 | 109966 | 10.4A-06 | 29/05/2024 | Em Teste DEMO | Realizar um teste de envio de notas para o BOX-e de notas das ferramentas do leg |
 | 86963 | 109965 | 10.4A-08 | 29/05/2024 | Em Teste DEMO | Permitir importar todas as guias do imposto 9 - SUBITRI por periodicidade.  |
 | 87501 | 109962 | 10.4A-08 | 29/05/2024 | Em Teste DEMO | PR-Somar o valor do Fundo de Combate a Pobreza - FCP ao valor do campo "ICMS ST" |
@@ -904,16 +965,21 @@
 | 86704 | 109858 | 10.4A-06 | 27/05/2024 | Em Teste DEMO | Liberar tempo automa��o. |
 | 86707 | 109846 | 10.4A-06 | 27/05/2024 | Em Teste DEMO | Realizar um teste na importa��o Web Service SEFAZ RS ap�s as implementa��es da S |
 | 86739 | 109845 | 10.4A-06 | 27/05/2024 | Em Teste DEMO | Garantir que os ajustes em empresas do Lucro Presumido com Regime de Caixa para  |
+| 86669 | 109829 | 10.4A-07 | 24/05/2024 | Em Teste DEMO | Gravar a data inicial e final do Balancete aberto pela notificação, para que o L |
 | 87711 | 109817 | 10.4A-08 | 24/05/2024 | Em Teste DEMO | SC-Alterar o sistema para que seja desconsiderado a TAG "distNFeSC" e "distCTeSC |
 | 86630 | 109759 | 10.4A-06 | 23/05/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 86660 | 109735 | 10.4A-07 | 22/05/2024 | Em Teste DEMO | Remover o ícone 'Home' da barra superior do Onvio Contabilidade. |
 | 86784 | 109729 | 10.4A-06 | 22/05/2024 | Em Teste DEMO | Alterar em todos os pontos do sistema o nome "Digital Banking" para "Dom�nio Con |
 | 86785 | 109727 | 10.4A-06 | 22/05/2024 | Em Teste DEMO | Alterar em todos os pontos do sistema o nome "Digital Banking" para "Dom�nio Con |
 | 87028 | 109721 | 10.4A-07 | 22/05/2024 | Em Teste DEMO | CE-Adicionar o valor de FCP ao valor do ICMS ST em notas de entrada (opera��o in |
 | 86990 | 109720 | 10.4A-12 | 22/05/2024 | Em Teste DEMO | Implementar no sistema logs no servidor do Busca NF-e para quando a nota for env |
 | 86700 | 109719 | 10.4A-08 | 22/05/2024 | Em Teste DEMO | GO - Demonstrar o imposto 9-SUBITRI considerando o valor da "Substitui��o Tribut |
+| 86715 | 109698 | 10.4A-08 | 21/05/2024 | Em Teste DEMO | Alterar automaticamente a vigência ao realizar uma retificação na data de abertu |
+| 86611 | 109696 | 10.4A-07 | 21/05/2024 | Em Teste DEMO | Alterar o BRClient para receber o campo CNPJ do Produtor Rural para empresas vin |
 | 86649 | 109708 | 10.4A-08 | 21/05/2024 | Em Teste DEMO | Criar a op��o de informar no cadastro da rotina autom�tica, o contador que ser�  |
 | 86565 | 109702 | 10.4A-06 | 21/05/2024 | Em Teste DEMO | Realizar teste com o recebimento do CF-e vers�o 0.09 atrav�s da API. |
 | 86699 | 109693 | 10.4A-06 | 21/05/2024 | Em Teste DEMO | Ajustar a integra��o com a Escrita fiscal para que na tela da nota de entrada e  |
+| 86610 | 109680 | 10.4A-08 | 21/05/2024 | Em Teste DEMO | Atualizar automaticamente a quantidade de lançamentos pendentes no ícone. |
 | 87016 | 109671 | 10.4A-07 | 21/05/2024 | Em Teste DEMO | Efetuar a importa��o de CF-e Arquivo XML conforme CFOP informado no cadastro do  |
 | 86573 | 109666 | 10.4A-06 | 21/05/2024 | Em Teste DEMO | Definir um prazo limite para execu��o das Rotinas Programadas e apresentar mensa |
 | 86535 | 109652 | 10.4A-06 | 21/05/2024 | Em Teste DEMO | Realizar testes funcionais da nova FARM 23 do sistema Dom�nio no Dom�nio Web em  |
@@ -932,10 +998,15 @@
 | 90095 | 109260 | 10.4A-12 | 06/05/2024 | Em Teste DEMO | Criar um relat�rio na janela de Consulta Apura��o de Tributos Federais. |
 | 86294 | 109258 | 10.4A-06 | 06/05/2024 | Em Teste DEMO | Permitir ao usu�rio a op��o da emiss�o da guia DAS, se vai ser via API Integra C |
 | 86914 | 109257 | 10.4A-07 | 06/05/2024 | Em Teste DEMO | RS-Alterar o sistema para considerar a op��o marcada no acumulador e n�o importa |
+| 86201 | 109214 | 10.4A-06 | 03/05/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-06. |
 | 86239 | 109226 | 10.4A-07 | 03/05/2024 | Em Teste DEMO | Atualizar as formas de pagamento conforme Informe T�cnico 2024.002 - v.1.00 atra |
 | 86249 | 109220 | 10.4A-05 | 03/05/2024 | Em Teste DEMO | Ajustar o c�digo de conclus�o de atividade no Gestta Processos ao publicar a gui |
+| 86942 | 109197 | 10.4A-09 | 02/05/2024 | Em Teste DEMO | Criar filtro que permita selecionar conta contábil para emitir o 'Livro razão'. |
 | 87032 | 109169 | 10.4A-07 | 30/04/2024 | Em Teste DEMO | Automatizar contabiliza��es do Open Finance e criar a busca de configura��es da  |
 | 86465 | 109159 | 10.4A-12 | 30/04/2024 | Em Teste DEMO | ES-Importar o imposto 31-ST/AT quando configurado "Por produto" atrav�s do SPED  |
+| 86142 | 109147 | 10.4A-06 | 29/04/2024 | Em Teste DEMO | Ajustar o comportamento de preenchimento dos componentes "Monthpicker" e "Datepi |
+| 86129 | 109128 | 10.4A-07 | 29/04/2024 | Em Teste DEMO | Ajustar o comportamento do componente File Selector. |
+| 86124 | 109126 | 10.4A-06 | 29/04/2024 | Em Teste DEMO | Permitir o cadastro e ativação de empresas que se enquadram em MEI. |
 | 86839 | 109078 | 10.4A-08 | 25/04/2024 | Em Teste DEMO | PI-Importar os valores de IPI quando o imposto 2-IPI n�o estiver no acumulador o |
 | 86287 | 109071 | 10.4A-06 | 25/04/2024 | Em Teste DEMO | Permitir realizar a importa��o de CF-e Arquivo XML em lote. |
 | 86071 | 109068 | 10.4A-05 | 25/04/2024 | Em Teste DEMO | Liberar tempo automa��o. |
@@ -944,6 +1015,7 @@
 | 87566 | 108911 | 10.4A-08 | 22/04/2024 | Em Teste DEMO | Adaptar o sistema para que o Demonstrativo do Imposto 8-DIFALI, tenha a op��o de |
 | 96772 | 108866 | 10.6A-01 | 19/04/2024 | Em Teste DEMO | Criar op��o para replicar a configura��o da coluna "Idiomas" na estrutura dos De |
 | 85940 | 108858 | 10.4A-04 | 19/04/2024 | Em Teste DEMO | Liberar tempos de desenvolvimento e testes referente a implementa��o da SAI-8222 |
+| 85925 | 108838 | 10.4A-09 | 18/04/2024 | Em Teste DEMO | Testar performance da importação do plano de contas pelo arquivo SPED Contábil. |
 | 85919 | 108830 | 10.4A-07 | 18/04/2024 | Em Teste DEMO | Ajustar o comportamento do componente File Selector na importa��o de notas. |
 | 86260 | 108795 | 10.5A-10 | 17/04/2024 | Em Teste DEMO | Alterar o link de homologa��o do TCE para o informativo e-Sfinge. |
 | 85863 | 108769 | 10.4A-06 | 16/04/2024 | Em Teste DEMO | Criar um novo modelo de relat�rio de reten��es para o imposto 16-IRRF, agrupando |
@@ -958,6 +1030,7 @@
 | 85755 | 108615 | 10.4A-07 | 11/04/2024 | Em Teste DEMO | Realizar testes nas ferramentas do Dom�nio para garantir o funcionamento ap�s mi |
 | 96071 | 108608 | 10.5A-12 | 11/04/2024 | Em Teste DEMO | Criar o relat�rio Declara��o de Conformidade.      |
 | 85754 | 108607 | 10.4A-05 | 11/04/2024 | Em Teste DEMO | Realizar testes nas ferramentas do Dom�nio para garantir o funcionamento ap�s mi |
+| 85753 | 108584 | 10.4A-06 | 10/04/2024 | Em Teste DEMO | Parar de receber lançamentos da Conta Azul quando a empresa estiver sendo usada  |
 | 85973 | 108528 | 10.5A-09 | 09/04/2024 | Em Teste DEMO | Remover tabelas liberadas para importa��o "De Tabelas". |
 | 85710 | 108512 | 10.4A-05 | 09/04/2024 | Em Teste DEMO | Enviar dados referente as integra��es e contabiliza��es do Digital Banking. |
 | 85704 | 108502 | 10.5A-05 | 09/04/2024 | Em Teste DEMO | Realizar altera��es para que aconte�a a migra��o do login OnePass para CIAM no m |
@@ -968,6 +1041,7 @@
 | 86214 | 108428 | 10.4A-07 | 08/04/2024 | Em Teste DEMO | GO-Implementar o destaque do imposto FUNDEINFRA na importa��o de NF-e via XML. |
 | 85667 | 108421 | 10.4A-04 | 08/04/2024 | Em Teste DEMO | Gravar a informa��o se a contabiliza��o do Digital Banking aconteceu de forma ma |
 | 85649 | 108352 | 10.4A-05 | 04/04/2024 | Em Teste DEMO | Efetuar testes nos processos da Rotina Autom�tica ap�s implementa��o do filtro " |
+| 85626 | 108331 | 10.4A-07 | 04/04/2024 | Em Teste DEMO | Permitir que o Livro razão seja emitido pelo Balancete |
 | 86209 | 108336 | 10.4A-06 | 04/04/2024 | Em Teste DEMO | Incluir op��o para publicar e salvar a declara��o mensal/recibo DAS pela API Int |
 | 85656 | 108314 | 10.4A-05 | 04/04/2024 | Em Teste DEMO | Criar campo para informar o contador na emiss�o da guia DAS pela API Integra Con |
 | 85765 | 108296 | 10.4A-06 | 03/04/2024 | Em Teste DEMO | Alterar o sistema para importar o valor da base de c�lculo do imposto 16-IRRF pa |
@@ -975,6 +1049,7 @@
 | 85668 | 108270 | 10.4A-05 | 03/04/2024 | Em Teste DEMO | Considerar os "Tributos Federais" dos m�dulos Folha e/ou Escrita na emiss�o de P |
 | 85598 | 108248 | 10.4A-06 | 02/04/2024 | Em Teste DEMO | Ajustar a ferramenta de envio de documentos para o cat�logo para que seja poss�v |
 | 85655 | 108247 | 10.4A-04 | 02/04/2024 | Em Teste DEMO | Preparar o sistema para publicar e salvar a guia/extrato DAS pela API Integra Co |
+| 85552 | 108226 | 10.4A-05 | 02/04/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-05. |
 | 85577 | 108238 | 10.4A-05 | 02/04/2024 | Em Teste DEMO | DF-Alterar a forma de impress�o para o munic�pio de NFS-e de Bras�lia. |
 | 85555 | 108231 | 10.4A-04 | 02/04/2024 | Em Teste DEMO | Retornar a emiss�o de boleto com QRCode no Digital Banking. |
 | 85644 | 108218 | 10.4A-05 | 02/04/2024 | Em Teste DEMO | Garantir que na integra��o das notas de entrada, sa�da e servi�os seja sugerido  |
@@ -983,7 +1058,9 @@
 | 85481 | 108137 | 10.4A-04 | 28/03/2024 | Em Teste DEMO | Realizar a migra��o do Busca NF-e para o GitHub e Visual Studio 2022. |
 | 88585 | 108131 | 10.4A-11 | 28/03/2024 | Em Teste DEMO | Alterar o comportamento de acesso na rotina autom�tica "Pagamento de Impostos vi |
 | 85556 | 108126 | 10.4A-04 | 28/03/2024 | Em Teste DEMO | SP-Alterar o m�todo de envio na emiss�o de NFS-e do munic�pio de Indaiatuba. |
+| 85453 | 108067 | 10.4A-05 | 27/03/2024 | Em Teste DEMO | Permitir a criação de empresas com até 7 dígitos no campo código |
 | 85470 | 108057 | 10.4A-05 | 27/03/2024 | Em Teste DEMO | Permitir a cria��o de empresas com at� 7 d�gitos no campo c�digo. |
+| 85410 | 107985 | 10.4A-05 | 26/03/2024 | Em Teste DEMO | Permitir o usuário definir o código das empresas no momento do cadastro no Onvio |
 | 87185 | 107964 | 10.4A-07 | 25/03/2024 | Em Teste DEMO | Ajustar a contabiliza��o dos Tributos Federais para que mantenha o lan�amento pe |
 | 85488 | 107946 | 10.4A-06 | 25/03/2024 | Em Teste DEMO | Ajustar a importa��o padr�o para que o sistema importe as notas com o menor sequ |
 | 85355 | 107897 | 10.4A-04 | 22/03/2024 | Em Teste DEMO | Refatorar tela de notas de entradas.   |
@@ -1001,6 +1078,8 @@
 | 85365 | 107807 | 10.4A-10 | 20/03/2024 | Em Teste DEMO | Otimizar o processo de "Gravar" as altera��es de dados de PIS e COFINS no Movime |
 | 87600 | 107802 | 10.4A-08 | 20/03/2024 | Em Teste DEMO | Implementar nova vari�vel somente com a descri��o da "Natureza Jur�dica" nas not |
 | 88985 | 107801 | 10.4A-10 | 20/03/2024 | Em Teste DEMO | Ajustar a importa��o para empresas que possuem o mesmo CNPJ quando configurada p |
+| 85340 | 107753 | 10.4A-05 | 19/03/2024 | Em Teste DEMO | Demonstrar o menu de Novidades. |
+| 85381 | 107740 | 10.4A-05 | 19/03/2024 | Em Teste DEMO | Incluir no arquivo do plano de contas enviado para Conta Azul o sistema origem d |
 | 85279 | 107751 | 10.4A-08 | 19/03/2024 | Em Teste DEMO | Garantir funcionamento do Honor�rios e do Protocolo com a libera��o para empresa |
 | 85278 | 107748 | 10.4A-04 | 19/03/2024 | Em Teste DEMO | Demonstrar o novo imposto FUNCEP Incentivos conforme altera��es da Escrita.  |
 | 85277 | 107747 | 10.4A-04 | 19/03/2024 | Em Teste DEMO | Demonstrar os novos impostos FDI-MA e IDH-MA conforme altera��es da Escrita.  |
@@ -1019,18 +1098,26 @@
 | 85076 | 107393 | 10.4A-04 | 08/03/2024 | Em Teste DEMO | Ajustar o comportamento dos relat�rios do Simples Nacional e Reten��es para apre |
 | 87387 | 107345 | 10.4A-09 | 07/03/2024 | Em Teste DEMO | Criar op��o para importar as notas de produtor rural com valor zerado. |
 | 85460 | 107342 | 10.4A-05 | 07/03/2024 | Em Teste DEMO | Emitir uma mensagem quando o regime de apura��o do Simples Nacional na RFB/PGDAS |
+| 85232 | 107305 | 10.4A-07 | 06/03/2024 | Em Teste DEMO | Alterar a frase da aba Zeramento > Contas Zeradas, na parametrização manual, apl |
+| 84954 | 107304 | 10.4A-03 | 06/03/2024 | Em Teste DEMO | Parar de enviar o plano de contas para a Conta Azul |
+| 84984 | 107278 | 10.4A-05 | 05/03/2024 | Em Teste DEMO | Copiar a estrutura do DRE ao aplicar perfil ou importar dados de outra empresa |
 | 96209 | 107249 | 10.5A-10 | 04/03/2024 | Em Teste DEMO | Ajustar as inconsist�ncias referente aos centros de custos para todos os cliente |
+| 84842 | 107221 | 10.4A-04 | 04/03/2024 | Em Teste DEMO | Alterar o recebimento do Responsável Legal, Sócios e Contadores para validar som |
 | 84971 | 107229 | 10.4A-05 | 04/03/2024 | Em Teste DEMO | Permitir o usu�rio definir o c�digo das empresas no momento do cadastro no Onvio |
 | 84837 | 107222 | 10.4A-04 | 04/03/2024 | Em Teste DEMO | Alterar o recebimento do Respons�vel Legal, S�cios e Contadores para validar som |
 | 84829 | 107214 | 10.4A-03 | 04/03/2024 | Em Teste DEMO | Alterar o processo de exclus�o de boletos e renegocia��o para boletos com data d |
 | 84811 | 107192 | 10.4A-06 | 01/03/2024 | Em Teste DEMO | Atualizar vulnerabilidades do Veracode no BOX-e. |
+| 86295 | 107181 | 10.4A-12 | 01/03/2024 | Em Teste DEMO | Apresentar o filtro na coluna 'Empresa' na tela de lançamentos contábeis somente |
 | 85077 | 107159 | 10.4A-05 | 29/02/2024 | Em Teste DEMO | Incluir a consulta de rotinas programadas no menu "Consultas". |
+| 88166 | 107115 | 10.5A-08 | 28/02/2024 | Liberado Antecipadamente | Permitir a importação de lançamentos contábeis via arquivo TXT. |
 | 84844 | 107110 | 10.4A-05 | 28/02/2024 | Em Teste DEMO | Alterar o nome da tela de 'Central de contabiliza��es' para 'Configura��es integ |
+| 84738 | 107067 | 10.4A-04 | 27/02/2024 | Em Teste DEMO | Permitir receber e-mails inválidos através da Carga Inicial para Empresas e Resp |
 | 86086 | 107069 | 10.4A-06 | 27/02/2024 | Em Teste DEMO | MT-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
 | 86559 | 107057 | 10.4A-08 | 27/02/2024 | Em Teste DEMO | Implementar uma rotina no sistema onde seja poss�vel criar uma vig�ncia no produ |
 | 84772 | 107056 | 10.4A-05 | 27/02/2024 | Em Teste DEMO | Alterar o sistema para que seja poss�vel desbloquear a apura��o e regerar lan�am |
 | 84725 | 107047 | 10.4A-04 | 27/02/2024 | Em Teste DEMO | N�o executar a rotina programada para empresas que estiverem em uso no Dom�nio D |
 | 84736 | 107042 | 10.4A-03 | 27/02/2024 | Em Teste DEMO | Implementar uma verifica��o referente ao n�mero de NSU que est� sendo retornado  |
+| 84706 | 107028 | 10.4A-04 | 26/02/2024 | Em Teste DEMO | Criar a coluna 'Em uso por' na lista de empresas. |
 | 84765 | 107039 | 10.4A-04 | 26/02/2024 | Em Teste DEMO | Acrescentar ao utilit�rio agrupar SPED Fiscal a gera��o do registro 0221. |
 | 98417 | 107036 | 10.6A-02 | 26/02/2024 | Em Teste DEMO | PE-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
 | 84720 | 107026 | 10.4A-04 | 26/02/2024 | Em Teste DEMO | Permitir receber e-mails inv�lidos atrav�s da Carga Inicial para Empresas e Resp |
@@ -1039,6 +1126,7 @@
 | 84699 | 106997 | 10.4A-05 | 26/02/2024 | Em Teste DEMO | Alterar o comportamento da listagem de notas fiscais de servi�o tomado e prestad |
 | 84663 | 106996 | 10.4A-03 | 26/02/2024 | Em Teste DEMO | Liberar tempo automa��o. |
 | 85614 | 106946 | 10.4A-05 | 23/02/2024 | Em Teste DEMO | RS-Importar para o produto o cr�dito presumido nas sa�das internas de lingui�as, |
+| 84753 | 106897 | 10.4A-05 | 22/02/2024 | Em Teste DEMO | Alterar o título da tela, botão e cards de acesso rápido da 'Central de contabil |
 | 85217 | 106879 | 10.4A-04 | 22/02/2024 | Em Teste DEMO | Criar uma valida��o quando o usu�rio utilizar uma Natureza de Rendimento iniciad |
 | 84598 | 106873 | 10.4A-03 | 22/02/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 84588 | 106866 | 10.4A-03 | 21/02/2024 | Em Teste DEMO | Refatorar tela de notas de entradas. |
@@ -1054,12 +1142,18 @@
 | 84513 | 106558 | 10.4A-03 | 14/02/2024 | Em Teste DEMO | Avaliar altera��es nos pagamentos dos Tributos Federais. |
 | 99432 | 106456 | 10.6A-03 | 08/02/2024 | Em Teste DEMO | Criar rotina autom�tica para emiss�o do Balancete, Balan�o e DRE em Excel (forma |
 | 84509 | 106453 | 10.4A-03 | 08/02/2024 | Em Teste DEMO | RS-Alterar importa��o dos dados da nota de compra pelo registro C176 do SPED Fis |
+| 84357 | 106385 | 10.4A-03 | 08/02/2024 | Em Teste DEMO | Liberar tempo da automação de teste versão 10.4A-03. |
 | 84347 | 106341 | 10.4A-02 | 07/02/2024 | Em Teste DEMO | Garantir a devida al�quota na importa��o de valores do INSS Receita Bruta para o |
 | 85424 | 106318 | 10.4A-04 | 07/02/2024 | Em Teste DEMO | Permitir agrupar receitas no relat�rio "Consolida��o de Receitas e Despesas" do  |
 | 84309 | 106254 | 10.4A-02 | 06/02/2024 | Em Teste DEMO | Garantir a funcionalidade de integra��o do plano de contas com a Conta azul |
+| 84299 | 106215 | 10.4A-02 | 05/02/2024 | Em Teste DEMO | Desbloquear a rotina para que outros módulos possam selecionar seus processos em |
+| 84495 | 106212 | 10.4A-04 | 05/02/2024 | Em Teste DEMO | Acrescentar contas contábeis referente aos Tributos Federais no plano de contas  |
 | 84396 | 106186 | 10.4A-03 | 05/02/2024 | Em Teste DEMO | Importar as informa��es dos itens correlacionados registro 0221 do SPED Fiscal. |
+| 84305 | 106160 | 10.4A-03 | 02/02/2024 | Em Teste DEMO | Remover a obrigatoriedade do campo Nome Fantasia no cadastro e edição de empresa |
 | 90849 | 106134 | 10.5A-03 | 02/02/2024 | Em Teste DEMO | Criar uma op��o para o usu�rio escolher se os arquivos em Excel ser�o abertos au |
 | 85935 | 106083 | 10.4A-06 | 01/02/2024 | Em Teste DEMO | SP-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
+| 84961 | 106045 | 10.4A-05 | 31/01/2024 | Em Teste DEMO | Copiar configuração de integração contábil dos tributos federais na aplicação do |
+| 84175 | 106004 | 10.4A-02 | 30/01/2024 | Em Teste DEMO | Alterar a quantidade de caracteres do campo Razão Social. |
 | 84177 | 105973 | 10.4A-02 | 30/01/2024 | Em Teste DEMO | Liberar tempo automa��o. |
 | 84265 | 105954 | 10.4A-03 | 30/01/2024 | Em Teste DEMO | Remover a obrigatoriedade do campo 'Nome Fantasia' no cadastro e edi��o de empre |
 | 85443 | 105951 | 10.4A-09 | 30/01/2024 | Em Teste DEMO | AC-Gerar a guia GRNE normal e GNRE avulsa para a UF Favorecida AC com o c�digo 1 |
@@ -1076,21 +1170,32 @@
 | 83950 | 105604 | 10.4A-02 | 22/01/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 84237 | 105592 | 10.4A-03 | 19/01/2024 | Em Teste DEMO | Ajustar o relat�rio de confer�ncia da EFD-Reinf do evento R-4020 para que n�o ge |
 | 83932 | 105571 | 10.4A-04 | 19/01/2024 | Em Teste DEMO | Efetuar testes dos itens da Escrita nas Rotinas Programadas.  |
+| 83927 | 105559 | 10.4A-04 | 18/01/2024 | Em Teste DEMO | Efetuar testes dos itens da Contabilidade nas rotinas programadas. |
 | 83907 | 105523 | 10.4A-01 | 18/01/2024 | Em Teste DEMO | Alterar o proxy do ambiente Dom�nio Web para 'Nacional' no acesso aos Portais do |
 | 83895 | 105473 | 10.4A-02 | 17/01/2024 | Em Teste DEMO | Integrar os recebimentos de boleto do TR Digital Banking  |
+| 84068 | 105450 | 10.4A-05 | 17/01/2024 | Em Teste DEMO | Bloquear a exclusão de lançamentos integrados de outro módulos e sistemas. |
+| 84066 | 105448 | 10.4A-03 | 17/01/2024 | Em Teste DEMO | Alterar a mensagem de bloqueio de exclusão de vários lançamentos que pertencerem |
 | 84018 | 105459 | 10.4A-02 | 17/01/2024 | Em Teste DEMO | Ajustar o sistema para importar o total da nota como Base de c�lculo de PIS e CO |
 | 83894 | 105456 | 10.4A-01 | 17/01/2024 | Em Teste DEMO | Alterar o proxy do ambiente Dom�nio Web para 'Nacional' no acesso aos Portais do |
 | 85400 | 105442 | 10.4A-05 | 17/01/2024 | Em Teste DEMO | Criar op��o de relacionar o CST com a situa��o tribut�ria no cadastro do produto |
+| 83885 | 105422 | 10.4A-02 | 16/01/2024 | Em Teste DEMO | Exibir uma mensagem de confirmação para empresas sem o campo Regime ao realizar  |
+| 83884 | 105418 | 10.4A-02 | 16/01/2024 | Em Teste DEMO | Desabilitar o botão "Ativar empresa" quando a carga ainda não estiver concluída. |
+| 83868 | 105409 | 10.4A-02 | 16/01/2024 | Em Teste DEMO | Atualizar o card "Fique de olho" com os itens requeridos. |
+| 83881 | 105404 | 10.4A-02 | 16/01/2024 | Em Teste DEMO | Ignorar alguns campos da carga inicial para empresas inativas. |
 | 84203 | 105419 | 10.4A-03 | 16/01/2024 | Em Teste DEMO | Alterar o comportamento dos relat�rios do Simples Nacional e de Reten��es para a |
 | 86247 | 105417 | 10.4A-08 | 16/01/2024 | Em Teste DEMO | Liberar as tabelas "bethadba.EFDESPESA_PLANO_SAUDE", "EFDESPESA_PLANO_SAUDE_DEPE |
 | 84232 | 105403 | 10.4A-04 | 16/01/2024 | Em Teste DEMO | PE-Importar o imposto 27-ICMSA na sistem�tica dos estabelecimentos comerciais at |
 | 83962 | 105387 | 10.4A-02 | 16/01/2024 | Em Teste DEMO | Criar campos para importar o tipo de dedu��o do imposto 63-IRRF-APF atrav�s do L |
+| 83871 | 105347 | 10.4A-07 | 15/01/2024 | Em Teste DEMO | Transformar os módulos gerenciados pela plataforma em projetos micro front-end,  |
+| 83843 | 105337 | 10.4A-02 | 15/01/2024 | Em Teste DEMO | Alterar o notification para permitir o uso do WebSocket por outros serviços |
 | 85133 | 105338 | 10.4A-04 | 15/01/2024 | Em Teste DEMO | Incluir na Rotina Autom�tica a importa��o atrav�s do Conv�nio 115/03. |
+| 83829 | 105308 | 10.4A-03 | 15/01/2024 | Em Teste DEMO | Ajustar a ativação de empresas para obter os dados atualizados de Responsável Le |
 | 83816 | 105284 | 10.4A-06 | 12/01/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o em Junho/2024. |
 | 83815 | 105283 | 10.4A-05 | 12/01/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o em Maio/2024. |
 | 83814 | 105281 | 10.4A-04 | 12/01/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o em Abril/2024. |
 | 83813 | 105278 | 10.4A-03 | 12/01/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o em Mar�o/2024.  |
 | 83812 | 105277 | 10.4A-02 | 12/01/2024 | Em Teste DEMO | Cria��o de casos de testes para a automa��o em Fevereiro/2024. |
+| 85625 | 105233 | 10.4A-08 | 12/01/2024 | Em Teste DEMO | Permitir que o lançamento contábil seja visualizado e editado pelo Livro razão |
 | 99381 | 105227 | 10.6A-02 | 12/01/2024 | Em Teste DEMO | Alterar a importa��o do imposto 25-CRF conforme a tag "tpRetPisCofins" do arquiv |
 | 83799 | 105210 | 10.4A-02 | 12/01/2024 | Em Teste DEMO | Atualizar o card "Fique de olho" com os itens requeridos. |
 | 84105 | 105168 | 10.4A-03 | 11/01/2024 | Em Teste DEMO | MT-Alterar o sistema na importa��o conforme para o c�lculo do 8-DIFALI conforme  |
@@ -1099,12 +1204,18 @@
 | 83751 | 105054 | 10.4A-02 | 09/01/2024 | Em Teste DEMO | Testar a gera��o da DIOPS para o ano de 2024. |
 | 84451 | 104984 | 10.4A-04 | 08/01/2024 | Em Teste DEMO | Otimizar a gera��o do Relat�rio de confer�ncia do Livro Caixa Digital do Produto |
 | 83770 | 104959 | 10.4A-04 | 08/01/2024 | Em Teste DEMO | Otimizar processamento da DW dws_pis_cofins_c_soma_debitos_dados na apura��o dos |
+| 85599 | 104940 | 10.4A-05 | 05/01/2024 | Em Teste DEMO | Parar de enviar contas do Onvio para Conta Azul quando a empresa estiver sendo u |
 | 83982 | 104939 | 10.4A-02 | 05/01/2024 | Em Teste DEMO | MT-Alterar emiss�o da nota fiscal de servi�o eletr�nica para o munic�pio de Cuia |
 | 83689 | 104818 | 10.4A-02 | 03/01/2024 | Em Teste DEMO | Ajustar o fluxo de ativa��o de empresas no Onvio |
+| 83651 | 104812 | 10.4A-02 | 03/01/2024 | Em Teste DEMO | Ajustar o fluxo de ativação de empresas no Onvio. |
 | 83738 | 104817 | 10.4A-02 | 03/01/2024 | Em Teste DEMO | Alterar o comportamento da busca de produtos da tela "Conv�nio/Protocolo de Subs |
 | 83643 | 104811 | 10.4A-02 | 03/01/2024 | Em Teste DEMO | MT-Criar op��o na janela 'Arquivos/Dados de impostos por NCM/CEST' para importar |
+| 96082 | 104769 |  | 02/01/2024 | Aguardando Resposta do Desenvolvimento DEMO | Permitir a importação de extrato bancário no formato OFC e OFX. |
 | 87856 | 104637 | 10.4A-09 | 28/12/2023 | Em Teste DEMO | Incluir um filtro no utilit�rio "Excluir Parcelas" para permitir filtrar as parc |
 | 83541 | 104588 | 10.4A-01 | 27/12/2023 | Em Teste DEMO | Liberar tempo automa��o. |
+| 83548 | 104575 | 10.4A-03 | 26/12/2023 | Em Teste DEMO | Cadastrar contador e vincular na empresa ao receber as empresas do Domínio Contá |
+| 83580 | 104565 | 10.4A-03 | 26/12/2023 | Em Teste DEMO | Cadastrar responsável legal e vincular na empresa ao receber as empresas do Domí |
+| 83529 | 104552 | 10.4A-03 | 26/12/2023 | Em Teste DEMO | Cadastrar sócios e quadro societário e vincular na empresa ao receber as empresa |
 | 83712 | 104580 | 10.4A-02 | 26/12/2023 | Em Teste DEMO | Criar valida��o ao gerar os informativos SPED Cont�bil e SPED ECF e n�o possuir  |
 | 83521 | 104527 | 10.4A-02 | 26/12/2023 | Em Teste DEMO | ES-Demonstrar o ICMS considerando o ICMS COMPETE-ES e o Adicional COMPETE/ES con |
 | 83480 | 104505 | 10.4A-01 | 22/12/2023 | Em Teste DEMO | Realizar testes explorat�rios do envio do plano de contas, Lan�amentos e Contas  |
@@ -1122,6 +1233,7 @@
 | 83411 | 104429 | 10.3A-12 | 20/12/2023 | Em Teste DEMO | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2023 por�m n�o fo |
 | 83451 | 104427 | 10.4A-02 | 20/12/2023 | Em Teste DEMO | Criar um bot�o Solu��es na tela de importa��o do Lucro antes da CSLL e IRPJ. |
 | 83560 | 104424 | 10.4A-01 | 20/12/2023 | Em Teste DEMO | Validar altera��es da DARF Reclamat�ria Trabalhista da Folha. |
+| 83389 | 104385 | 10.4A-01 | 19/12/2023 | Em Teste DEMO | TECH - Ajustar a performance da consulta dos lançamentos do dashboard |
 | 84391 | 104398 | 10.4A-07 | 19/12/2023 | Em Teste DEMO | SC-Importar o c�digo de benef�cios fiscais na guia Estoque para produtos com CSO |
 | 83431 | 104387 | 10.4A-07 | 19/12/2023 | Em Teste DEMO | Transformar os m�dulos gerenciados pela plataforma em projetos micro front-end,  |
 | 83429 | 104379 | 10.4A-03 | 19/12/2023 | Em Teste DEMO | Ajustar a ativa��o de empresas para obter os dados atualizados de Respons�vel Le |
@@ -1130,12 +1242,14 @@
 | 83420 | 104356 | 10.4A-03 | 19/12/2023 | Em Teste DEMO | Cadastrar respons�vel legal e vincular na empresa ao receber as empresas do Dom� |
 | 83584 | 104338 | 10.4A-02 | 18/12/2023 | Em Teste DEMO | Ajustar o arquivo remessa do Banco do Brasil de 240 posi��es para gerar nos camp |
 | 83419 | 104333 | 10.4A-02 | 18/12/2023 | Em Teste DEMO | Desabilitar o bot�o "Ativar empresa no Onvio", em empresas com origem 'Dom�nio'  |
+| 83549 | 104320 | 10.4A-04 | 18/12/2023 | Em Teste DEMO | Verificar se para os três módulos existe uma rotina após o fechamento agendada. |
 | 95310 | 104301 | 10.5A-09 | 18/12/2023 | Em Teste DEMO | Permitir atualizar os dados do contador da guia "Signat�rios" sub guias "SPED EC |
 | 84647 | 104295 | 10.4A-07 | 16/12/2023 | Em Teste DEMO | GO-Importar os valores referente ao PROTEGE para o dispositivo 63. |
 | 85847 | 104289 | 10.4A-05 | 15/12/2023 | Em Teste DEMO | Liberar algumas tabelas da escrita para importa��o "De sistemas concorrentes". |
 | 83447 | 104288 | 10.4A-03 | 15/12/2023 | Em Teste DEMO | Liberar tabelas para importa��o "De Tabelas" e "De sistemas concorrentes". |
 | 83449 | 104287 | 10.4A-03 | 15/12/2023 | Em Teste DEMO | Liberar tabelas para importa��o "De Tabelas" e "De sistemas concorrentes". |
 | 84599 | 104275 | 10.6A-01 | 15/12/2023 | Em Teste DEMO | Otimizar a emiss�o do plano de contas. |
+| 83723 | 104208 | 10.4A-04 | 14/12/2023 | Em Teste DEMO | Não executar a rotina programada para empresas que estiverem em uso no Domínio D |
 | 83741 | 104189 | 10.4A-03 | 14/12/2023 | Em Teste DEMO | Bloquear processos autom�ticos do Onvio quando a empresa for habilitada no Dom�n |
 | 84784 | 104151 | 10.4A-05 | 13/12/2023 | Em Teste DEMO | Alterar o local do sistema para utiliza��o do certificado digital na importa��o  |
 | 83304 | 104134 | 10.3A-12 | 12/12/2023 | Em Teste DEMO | Realizar testes explorat�rios do envio do plano de contas, Lan�amentos e Contas  |
@@ -1143,9 +1257,11 @@
 | 84507 | 104109 | 10.5A-07 | 11/12/2023 | Em Teste DEMO | Permitir copiar as configura��es das contas do ano base anterior da guia "Contab |
 | 83414 | 104099 | 10.4A-02 | 11/12/2023 | Em Teste DEMO | Ignorar alguns campos da carga inicial para empresas inativas |
 | 83267 | 104084 | 10.4A-01 | 11/12/2023 | Em Teste DEMO | Demonstrar uma mensagem bloqueando a importa��o de cadastros de empresas para es |
+| 86231 | 104065 | 10.4A-06 | 08/12/2023 | Em Teste DEMO | Permitir a integração contábil dos tributos federais pela rotina programada. |
 | 83241 | 104050 | 10.5A-01 | 08/12/2023 | Em Teste DEMO | Alterar a importa��o SEFAZ MT para utilizar o Chromium. |
 | 83240 | 104045 | 10.4A-01 | 08/12/2023 | Em Teste DEMO | Alterar o tamanho do campo referente ao c�digo de verifica��o de NFS-e para 50 c |
 | 83522 | 104035 | 10.4A-02 | 08/12/2023 | Em Teste DEMO | Alterar a importa��o padr�o CF-e arquivo XML para que nas empresas do Simples Na |
+| 83329 | 104012 | 10.4A-02 | 07/12/2023 | Em Teste DEMO | Permitir a ativação de empresas do Onvio no Domínio. |
 | 83302 | 103997 | 10.4A-02 | 07/12/2023 | Em Teste DEMO | Gerar o relat�rio do imposto 173-Tributos Federais. |
 | 83664 | 103991 | 10.4A-03 | 07/12/2023 | Em Teste DEMO | Incluir bot�o solu��es na mensagem 'A data informada para o rendimento isento n� |
 | 83197 | 103966 | 10.3A-12 | 06/12/2023 | Em Teste DEMO | Alterar a data da mensagem ao realizar a importa��o do Dominio Atendimento para  |
@@ -1162,10 +1278,12 @@
 | 83072 | 103764 | 10.4A-01 | 29/11/2023 | Em Teste DEMO | Exibir uma mensagem de confirma��o para empresas sem o campo Regime ao realizar  |
 | 83109 | 103762 | 10.4A-01 | 29/11/2023 | Em Teste DEMO | SE-Implementar o destaque do imposto 55-FECOEP-N na importa��o de NFC-e via XML. |
 | 83071 | 103761 | 10.4A-01 | 29/11/2023 | Em Teste DEMO | Aplicar as regras de empresas centralizadoras ao realizar a ativa��o de empresas |
+| 83063 | 103745 | 10.4A-12 | 29/11/2023 | Em Teste DEMO | Atualizar a lib para que as alterações feitas pela plataforma reflitam na contab |
 | 83061 | 103749 | 10.4A-01 | 29/11/2023 | Em Teste DEMO | Liberar emiss�o de boletos no TR Digital Banking |
 | 83029 | 103703 | 10.3A-12 | 28/11/2023 | Em Teste DEMO | Acompanhar testes da SAI-82983. |
 | 83156 | 103659 | 10.4A-03 | 27/11/2023 | Em Teste DEMO | Implementar campo no relat�rio de reten��es a recolher a natureza de rendimento  |
 | 84651 | 103658 | 10.4A-04 | 27/11/2023 | Em Teste DEMO | Incluir campo com filtro para localizar as empresas na apura��o de impostos e na |
+| 83005 | 103643 | 10.3A-11 | 27/11/2023 | Em Teste DEMO | TECH - Ajustar o processo de messageprocessor pra quando a conta azul não recebe |
 | 83025 | 103636 | 10.4A-03 | 27/11/2023 | Em Teste DEMO | Abrir em modal a interface 'Central de pagamentos', ao clicar em 'Pagar impostos |
 | 82989 | 103618 | 10.3A-12 | 24/11/2023 | Em Teste DEMO | Remover altera��es criadas no Agente de Comunica��o oriundas das an�lises do Pen |
 | 82981 | 103607 | 10.3A-12 | 24/11/2023 | Em Teste DEMO | Otimizar as requisi��es no banco de dados para a importa��o de CF-e Arquivo XML. |
@@ -1194,6 +1312,7 @@
 | 82943 | 103221 | 10.3A-12 | 13/11/2023 | Em Teste DEMO | Criar op��o para imprimir local e data no Balan�o Demonstra��o. |
 | 92274 | 103197 | 10.5A-05 | 13/11/2023 | Em Teste DEMO | Efetuar a importa��o de notas de sa�das NF-e Arquivo XML conforme CFOP informado |
 | 87546 | 103154 | 10.4A-08 | 10/11/2023 | Em Teste DEMO | Criar op��o "Determinar os dados de PIS/COFINS conforme o CFOP" na guia "Entrada |
+| 82931 | 103110 | 10.4A-04 | 09/11/2023 | Em Teste DEMO | Não permitir selecionar a integração contábil da folha na rotina do módulo conta |
 | 82763 | 103117 | 10.3A-11 | 09/11/2023 | Em Teste DEMO | NFS-e Nacional - Ajustar o XML para n�o gerar a tag de Inscri��o Municipal do pr |
 | 82827 | 103105 | 10.3A-12 | 09/11/2023 | Em Teste DEMO | Incluir bot�es 'Solu��es" em algumas op��es nas telas de configura��o das import |
 | 82730 | 103066 | 10.3A-11 | 08/11/2023 | Em Teste DEMO | NFS-e Nacional - Ajustar nomes de campos para estar no substantivo feminino DPS  |
@@ -1204,6 +1323,7 @@
 | 82691 | 103013 | 10.3A-11 | 07/11/2023 | Em Teste DEMO | Efetuar estudo para avaliar uma forma de demonstrar o PDF da NFS-e Modelo Nacion |
 | 82942 | 103009 | 10.3A-12 | 07/11/2023 | Em Teste DEMO | Demonstrar o imposto "Contribui��o Previdenci�ria 13�" calculado pelos m�dulos E |
 | 82935 | 103007 | 10.4A-02 | 07/11/2023 | Em Teste DEMO | RS-Importar no cadastro do produto a op��o pelo cr�dito presumido aos estabeleci |
+| 82729 | 102995 | 10.4A-05 | 07/11/2023 | Em Teste DEMO | Apresentar mensagem de link expirado quando o link da notificação for acessado a |
 | 83164 | 103003 | 10.4A-02 | 07/11/2023 | Em Teste DEMO | Atualizar na Escrita Fiscal as altera��es feitas pelo m�dulo Folha no acesso 'e- |
 | 82793 | 102976 | 10.3A-11 | 07/11/2023 | Em Teste DEMO | Implementar a emiss�o da Nota Fiscal Nacional por dentro do sistema utilizando o |
 | 85879 | 102973 | 10.5A-02 | 07/11/2023 | Em Teste DEMO | Emitir modal de confirma��o ao cadastrar uma contabiliza��o sem vincular opera�� |
@@ -1211,6 +1331,7 @@
 | 82721 | 102962 | 10.3A-11 | 06/11/2023 | Em Teste DEMO | NFS-e Nacional - Est� apresentando diferen�a no nome da janela de Consulta NFS-e |
 | 82796 | 102956 | 10.5A-07 | 06/11/2023 | Em Teste DEMO | MA-Importar o c�digo de recolhimento do imposto 27-ICMSA na importa��o padr�o (P |
 | 92995 | 102953 | 10.5A-04 | 06/11/2023 | Em Teste DEMO | Alterar o sistema para que seja poss�vel informado itens de servi�o com at� 10 d |
+| 83040 | 102937 | 10.4A-04 | 06/11/2023 | Em Teste DEMO | Permitir importar o plano de contas pelo arquivo do SPED Contábil. |
 | 82699 | 102948 | 10.3A-11 | 06/11/2023 | Em Teste DEMO | NFS-e Nacional: Ajustar ordena��o de n�mero de RPS na tela de Consulta NFS-e de  |
 | 84876 | 102940 | 10.4A-05 | 06/11/2023 | Em Teste DEMO | Copiar as configura��es da Central de contabiliza��es do m�dulo 'Tributos Federa |
 | 82649 | 102917 | 10.3A-11 | 03/11/2023 | Em Teste DEMO | NFS-e Nacional - Ajustar descri��o do campo "C�digo de Tributa��o Nacional" na t |
@@ -1218,6 +1339,13 @@
 | 82808 | 102909 | 10.3A-12 | 03/11/2023 | Em Teste DEMO | Realizar a importa��o da NFS-e de cancelamento atrav�s da NFS-e Padr�o Nacional. |
 | 82651 | 102906 | 10.3A-11 | 03/11/2023 | Em Teste DEMO | NFS-e Nacional: Ajustar os relat�rios de DPS e notas emitidas. |
 | 82652 | 102885 | 10.3A-11 | 03/11/2023 | Em Teste DEMO | Incluir valida��es nos campos "N�mero da NFS-e" e "Chave de Acesso" na tela "Con |
+| 82624 | 102844 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - BRAccountingReportProcessorServices |
+| 82622 | 102841 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - BE - BRAccoutingEntryIntegrationServices |
+| 82621 | 102839 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - BE - BRPlanOfAccountingFacadeServices |
+| 82620 | 102837 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - FE - BRAccountingApplication |
+| 82619 | 102835 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - BE - BRPlanOfAccountingFacadeServices - Atualizar a dependência auth0:1.1 |
+| 82618 | 102833 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - BE - Atualizar as communs (quando a plataforma terminar a correção das vu |
+| 82616 | 102829 | 10.4A-01 | 01/11/2023 | Em Teste DEMO | TECH - BE - Tirar o R2DBC do Journal para que possamos atualizar a communs. |
 | 82578 | 102821 | 10.3A-11 | 01/11/2023 | Em Teste DEMO | Incluir op��o para selecionar o tipo de ambiente para envio da EFD-Reinf |
 | 82610 | 102817 | 10.3A-11 | 31/10/2023 | Em Teste DEMO | Ajustar campos da tela "Municipal" nos Par�metros para a emiss�o de notas no pad |
 | 82540 | 102782 | 10.3A-11 | 31/10/2023 | Em Teste DEMO | Bloquear emiss�o de boletos e documento de cobran�a do Digital Banking com data  |
@@ -1241,6 +1369,7 @@
 | 82471 | 102405 | 10.3A-12 | 17/10/2023 | Em Teste DEMO | Incluir linha totalizadora no relat�rio "Consolida��o de Receitas e Despesas LCD |
 | 82508 | 102403 | 10.4A-08 | 17/10/2023 | Em Teste DEMO | Incluir bot�o de Busca Avan�ada na tela da "Concilia��o Banc�ria".  |
 | 88763 | 102374 | 10.4A-11 | 17/10/2023 | Em Teste DEMO | BA-Implementar comportamento para importar o imposto 27-ICMSA "lan�ado por produ |
+| 82274 | 102341 | 10.4A-01 | 16/10/2023 | Em Teste DEMO | Incluir a consulta de rotinas programadas no menu "Consultas". |
 | 82237 | 102360 | 10.4A-02 | 16/10/2023 | Em Teste DEMO | Ajustar o comportamento do sistema na 'Aplica��o de perfil de empresa' dos m�dul |
 | 82239 | 102357 | 10.4A-01 | 16/10/2023 | Em Teste DEMO | Refatorar tela de Apura��o. |
 | 82242 | 102353 | 10.3A-11 | 16/10/2023 | Em Teste DEMO | [TECH] Remover comportamentos no BrEscritaServices e que foram aplicados no serv |
@@ -1252,6 +1381,8 @@
 | 82234 | 102324 | 10.3A-11 | 16/10/2023 | Em Teste DEMO | Emitir uma mensagem de aviso indicando que deve fechar a DCTFWeb at� a compet�nc |
 | 82225 | 102312 | 10.3A-11 | 13/10/2023 | Em Teste DEMO | Otimizar a gera��o do Registro D197 e das Contas Anal�ticas no Sped Fiscal para  |
 | 82191 | 102298 | 10.4A-02 | 13/10/2023 | Em Teste DEMO | Ajustar o sistema para quando atualizar a conta patrimonial no cadastro de clien |
+| 82181 | 102279 | 10.3A-10 | 11/10/2023 | Em Teste DEMO | Atualizar a lib para a versão "@blue/ng-base": "1.0.0-beta.46-15" |
+| 82164 | 102278 | 10.3A-10 | 11/10/2023 | Em Teste DEMO | Realizar um HotFix com a versão @onviobr 4.7.607-3 |
 | 82681 | 102265 | 10.3A-12 | 11/10/2023 | Em Teste DEMO | Permitir informar o imposto vinculado a Contribui��o Previdenci�ria 13� na guia  |
 | 87460 | 102239 | 10.4A-08 | 10/10/2023 | Em Teste DEMO | CE-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
 | 84259 | 102214 | 10.4A-03 | 10/10/2023 | Em Teste DEMO | Permitir que os reflexos de alterar informa��es de Anexo e Situa��o no 'Cadastro |
@@ -1259,6 +1390,7 @@
 | 82272 | 102124 | 10.5A-11 | 06/10/2023 | Em Teste DEMO | Validar a data de in�cio de lan�amentos ao "Sobrescrever" Par�metros. |
 | 82084 | 102114 | 10.4A-01 | 06/10/2023 | Em Teste DEMO | Ajustar a ordem do menu hamb�rguer e remover algumas op��es |
 | 82069 | 102092 | 10.3A-10 | 05/10/2023 | Em Teste DEMO | Acrescentar mais op��es na combobox 'Qualifica��o' do cadastro/edi��o de respons |
+| 82051 | 102070 | 10.3A-11 | 05/10/2023 | Em Teste DEMO | Tech - Refatorar a utilização do webclient para sanar problemas de timeoutdos en |
 | 82059 | 102082 | 10.3A-10 | 05/10/2023 | Em Teste DEMO | Ajuste no envio da carga inicial da Conta Azul. |
 | 82311 | 102079 | 10.3A-12 | 05/10/2023 | Em Teste DEMO | SC-Realizar a importa��o dos valores das tags do ICMS monof�sico conforme Nota T |
 | 82050 | 102067 | 10.3A-12 | 05/10/2023 | Em Teste DEMO | Efetuar cancelamento de boletos no parceiro Celcoin |
@@ -1271,6 +1403,7 @@
 | 82054 | 101951 | 10.4A-01 | 02/10/2023 | Em Teste DEMO | Ocultar o bot�o 'Exportar' da Grid das interfaces 'Lista de participantes', 'Lis |
 | 81955 | 101916 | 10.3A-10 | 29/09/2023 | Em Teste DEMO | SP-Importar no cadastro do produto a op��o Fator de Corre��o de Volume do ICMS M |
 | 83018 | 101894 | 10.4A-06 | 29/09/2023 | Em Teste DEMO | Otimizar a importa��o de NF-e Arquivo XML. |
+| 82230 | 101888 | 10.4A-01 | 28/09/2023 | Em Teste DEMO | Alterar as etapas da tela de parametrização. |
 | 82037 | 101822 | 10.4A-01 | 27/09/2023 | Em Teste DEMO | Ajustar Comparativo Regime Tribut�rio para novas se��es e tabelas. |
 | 82032 | 101816 | 10.3A-12 | 27/09/2023 | Em Teste DEMO | Alterar a gera��o dos boletos do Digital Banking, para a gera��o ass�ncrona.  |
 | 81966 | 101812 | 10.3A-11 | 27/09/2023 | Em Teste DEMO | Realizar a concilia��o autom�tica de lan�amentos quando marcado o crit�rio "N�me |
@@ -1294,6 +1427,7 @@
 | 81977 | 101665 | 10.4A-01 | 22/09/2023 | Em Teste DEMO | Alterar o comportamento do sistema para que liste todas as natureza de rendiment |
 | 81949 | 101664 | 10.3A-10 | 22/09/2023 | Em Teste DEMO | Incluir o bot�o "Solu��es" para algumas mensagens do sistema, relacionadas a EFD |
 | 81774 | 101656 | 10.3A-10 | 21/09/2023 | Em Teste DEMO | Refatorar tela de notas de sa�das. |
+| 81730 | 101601 | 10.3A-10 | 20/09/2023 | Em Teste DEMO | TECH - Atualizar a versão do spring-kafka nos projetos da contabilidade para a v |
 | 81751 | 101614 | 10.3A-10 | 20/09/2023 | Em Teste DEMO | Enviar informa��o de que o processo de importa��o do Extrato Banc�rio est� em an |
 | 82226 | 101608 | 10.4A-06 | 20/09/2023 | Em Teste DEMO | Reconhecer leiaute de callback's exclusivo TR Digital Banking, para receber o ex |
 | 88565 | 101599 | 10.5A-02 | 20/09/2023 | Em Teste DEMO | Desabilitar o bot�o 'Pagar imposto' da interface 'Consulta apura��o' de todos os |
@@ -1306,29 +1440,43 @@
 | 81808 | 101542 | 10.3A-10 | 18/09/2023 | Em Teste DEMO | EFD-Otimizar a dw_sped_piscofins_bloco_d_regd200 na gera��o do arquivo do EFD Co |
 | 81930 | 101526 | 10.4A-06 | 18/09/2023 | Em Teste DEMO | Otimizar a importa��o do extrato banc�rio quando o arquivo possui um n�mero expr |
 | 81677 | 101524 | 10.3A-10 | 18/09/2023 | Em Teste DEMO | Ajustar a regra de importar a natureza de rendimento nas notas considerando prim |
+| 81653 | 101513 | 10.3A-10 | 15/09/2023 | Em Teste DEMO | TECH - Ajustes de performance. |
 | 82083 | 101510 | 10.3A-12 | 15/09/2023 | Em Teste DEMO | Alterar a importa��o das notas referenciadas e da nota que acoberta a carga atra |
 | 81720 | 101509 | 10.3A-10 | 15/09/2023 | Em Teste DEMO | Incluir uma mensagem de valida��o na apura��o caso n�o tenha natureza de rendime |
 | 81620 | 101453 | 10.3A-09 | 15/09/2023 | Em Teste DEMO | Armazenar o c�digo do banco ao cadastrar a conta financeira do Digital Banking. |
 | 81718 | 101445 | 10.3A-10 | 14/09/2023 | Em Teste DEMO | Retirar a mensagem de bloqueio de envio dos arquivos da Reinf em menos de 5 minu |
 | 83345 | 101443 | 10.4A-02 | 14/09/2023 | Em Teste DEMO | Alterar o sistema para importar as informa��es do Bloco K quando o cliente utili |
+| 82021 | 101421 | 10.3A-11 | 14/09/2023 | Em Teste DEMO | Alterar a forma de gerar e apresentar o Lucro Líquido/Prejuízo do Exercício na D |
+| 81586 | 101398 | 10.3A-09 | 13/09/2023 | Em Teste DEMO | TECH - Corrigir problemas de performance das integrações com os outros módulos. |
 | 81723 | 101394 | 10.3A-10 | 13/09/2023 | Em Teste DEMO | SP-Alterar a importa��o dos valores do registro C197 ajuste SP90090278 para os c |
+| 81530 | 101335 | 10.3A-10 | 12/09/2023 | Em Teste DEMO | Testar a performance da exclusão dos lançamentos. |
 | 81649 | 101341 | 10.3A-10 | 12/09/2023 | Em Teste DEMO | Enviar a informa��o de que o processo est� em andamento para o servidor e n�o en |
 | 81650 | 101331 | 10.3A-10 | 12/09/2023 | Em Teste DEMO | Enviar informa��o de que o processo da integra��o dos Cr�ditos de PIS e COFINS c |
+| 81518 | 101306 | 10.3A-10 | 11/09/2023 | Em Teste DEMO | Atualizar a lib para versão "@blue/profile-screen": "10.4.0" |
 | 81525 | 101256 | 10.3A-09 | 08/09/2023 | Em Teste DEMO | Otimizar a integra��o de cr�dito de PIS e Cofins com o m�dulo Escrita Fiscal. |
 | 81589 | 101197 | 10.3A-11 | 06/09/2023 | Em Teste DEMO | Alterar tela de lan�amentos extrato banc�rio TR Banking. |
 | 82055 | 101193 | 10.4A-03 | 06/09/2023 | Em Teste DEMO | Permitir gravar uma edi��o de nota quando o per�odo da contabilidade estiver fec |
+| 81516 | 101154 | 10.3A-10 | 05/09/2023 | Em Teste DEMO | Copiar informações de 'Livro caixa', 'Padrões' e 'Assinatura>Relatórios' da empr |
 | 81386 | 101126 | 10.3A-09 | 04/09/2023 | Em Teste DEMO | Adaptar a importa��o de cadastro de empresas, clientes, fornecedores, remetente  |
 | 81588 | 101109 | 10.3A-11 | 04/09/2023 | Em Teste DEMO | Enviar o plano de contas via API Conta Azul com o v�nculo do cadastro de Cliente |
 | 88741 | 101108 | 10.5A-02 | 04/09/2023 | Em Teste DEMO | Retirar o campo 'Conta d�bito' para a configura��o de contabiliza��o com o tipo  |
 | 82227 | 101098 | 10.4A-06 | 01/09/2023 | Em Teste DEMO | Integrar extrato banc�rio dos bancos via Open Finance no cont�bil. |
 | 81339 | 101087 | 10.3A-09 | 01/09/2023 | Em Teste DEMO | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a API continu |
 | 81522 | 101059 | 10.3A-09 | 31/08/2023 | Em Teste DEMO | RS-Alterar o sistema para realizar a importa��o conforme a nova estrutura do por |
+| 81841 | 101043 | 10.4A-02 | 31/08/2023 | Em Teste DEMO | Copiar configuração de integração contábil na aplicação do perfil e na importaçã |
+| 81344 | 101040 | 10.3A-10 | 31/08/2023 | Em Teste DEMO | Criar novo menu "Consultas" e ajustar opções "Consulta integração contábil" e "C |
 | 82437 | 101009 | 10.4A-01 | 30/08/2023 | Em Teste DEMO | RJ-Alterar a importa��o dos valores da linha do imposto 154-FOT do Portal e Arqu |
 | 81283 | 100994 | 10.3A-10 | 29/08/2023 | Em Teste DEMO | Ajustar a gera��o do XML para alguns fornecedores em modo automa��o. |
 | 81675 | 100965 | 10.3A-10 | 29/08/2023 | Em Teste DEMO | Permitir configurar a natureza de rendimento no cadastro do fornecedor para seta |
+| 81397 | 100927 | 10.3A-10 | 28/08/2023 | Em Teste DEMO | Apresentar mensagem de link expirado quando a notificação ultrapassar o 30º dia. |
+| 81262 | 100911 | 10.3A-10 | 28/08/2023 | Em Teste DEMO | TECH - Mover o módulo de Scheduled Routines para @onviobr/scheduled-routines |
+| 81261 | 100910 | 10.3A-10 | 28/08/2023 | Em Teste DEMO | TECH - Mover o módulo de Accouting Center para @onviobr/accounting-center |
+| 81260 | 100909 | 10.3A-10 | 28/08/2023 | Em Teste DEMO | TECH - Mover o módulo de Accouting Integration para @onviobr/accounting-integrat |
 | 81383 | 100913 | 10.3A-10 | 28/08/2023 | Em Teste DEMO | Permitir importar NFS-e de Sub-contrata��o de Frete com Base de cr�dito 14-Ativi |
 | 81194 | 100865 | 10.3A-09 | 25/08/2023 | Em Teste DEMO | Liberar tempo automa��o. |
 | 81169 | 100829 | 10.3A-09 | 24/08/2023 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 81146 | 100788 | 10.3A-08 - POC  | 23/08/2023 | Em Teste DEMO | TECH - Ajustar consumer do topico accountingentryintegration.fct.document.1. |
+| 81147 | 100782 | 10.3A-08 - POC  | 23/08/2023 | Em Teste DEMO | Ocultar card 'Importação de dados de outra empresa' da tela inicial da parametri |
 | 82891 | 100768 | 10.4A-04 | 23/08/2023 | Em Teste DEMO | SC-Importar para o produto o cr�dito presumido na sa�da interna de caf� torrado  |
 | 81124 | 100764 | 10.3A-08 | 22/08/2023 | Em Teste DEMO | Demonstrar o imposto "Tributos Federais" calculado pelos m�dulos Escrita e Folha |
 | 87987 | 100683 | 10.4A-10 | 21/08/2023 | Em Teste DEMO | Alterar mensagem de sucesso exibida ao concluir um cadastro de 'Opera��o' atrav� |
@@ -1344,9 +1492,15 @@
 | 89957 | 100569 | 10.5A-02 | 16/08/2023 | Em Teste DEMO | Alterar o filtro da coluna "Documento" da interface de listagem de notas para n� |
 | 81015 | 100516 | 10.3A-09 | 15/08/2023 | Em Teste DEMO | Alterar a importa��o SEFAZ RS para utilizar o Chromium. |
 | 85561 | 100421 | 10.4A-05 | 11/08/2023 | Em Teste DEMO | Alterar a mensagem do relat�rio de erros e avisos das rotinas autom�ticas quando |
+| 81011 | 100297 | 10.3A-09 | 10/08/2023 | Em Teste DEMO | Aumentar a capacidade do campo do filtro da coluna Código na "Lista de Contas" p |
+| 81994 | 100290 | 10.4A-02 | 10/08/2023 | Em Teste DEMO | Alterar tela do Fechamento para deixar as informações mais claras. |
+| 83076 | 100282 | 10.4A-01 | 09/08/2023 | Em Teste DEMO | Criar uma opção na parametrização para permitir alterar os lançamentos com orige |
 | 81173 | 100206 | 10.3A-10 | 08/08/2023 | Em Teste DEMO | GO-Importar os valores referente ao PROTEGE para o dispositivo 62.  |
 | 87570 | 100196 | 10.4A-09 | 08/08/2023 | Em Teste DEMO | Incluir filtro "Data de Vig�ncia" no utilit�rio "Excluir Vig�ncia dos Impostos d |
 | 80902 | 100181 | 10.3A-09 | 08/08/2023 | Em Teste DEMO | RS-Otimizar a DS "ds_sped_blocoC_regC190_e_RS" na gera��o do arquivo do SPED Fis |
+| 81707 | 100165 | 10.3A-11 | 07/08/2023 | Em Teste DEMO | Alterar o processamento do zeramento para ser possível escolher entre aguardar o |
+| 81996 | 100145 | 10.3A-11 | 07/08/2023 | Em Teste DEMO | Apresentar as empresas zeradas na conclusão do zeramento da Matriz e filial. |
+| 81989 | 100143 | 10.3A-11 | 07/08/2023 | Em Teste DEMO | Bloquear o menu "Inicio" quando não possuir empresas cadastradas no escritório. |
 | 81695 | 100168 | 10.4A-05 | 07/08/2023 | Em Teste DEMO | Realizar o relacionamento de clientes e fornacedores aos acumuladores atrav�s do |
 | 80895 | 100166 | 10.3A-08 | 07/08/2023 | Em Teste DEMO | Realizar Testes no Busca NF-e no ambiente do DW, ap�s a instala��o do agente de  |
 | 80894 | 100164 | 10.3A-08 | 07/08/2023 | Em Teste DEMO | Realizar Testes no Web Service SEFAZ no ambiente do DW, ap�s a instala��o do age |
@@ -1357,10 +1511,19 @@
 | 93474 | 100113 | 10.5A-06 | 04/08/2023 | Em Teste DEMO | Incluir o filtro "Buscar" na tela de sele��o de Centros de Custos. |
 | 85210 | 100098 | 10.4A-09 | 04/08/2023 | Em Teste DEMO | Importar dados nas notas fiscais de entradas e sa�das para atender o informativo |
 | 81581 | 100092 | 10.3A-10 | 04/08/2023 | Em Teste DEMO | MT-Considerar a Inscri��o Estadual do destinat�rio para importar a NF-e de entra |
+| 80909 | 100075 | 10.3A-09 | 04/08/2023 | Em Teste DEMO | Alterar a mensagem apresentada ao destinatário do e-mail do relatório quando lin |
 | 80952 | 100081 | 10.3A-09 | 04/08/2023 | Em Teste DEMO | Alterar o quadro "Multa" posi��o 66 (campo 14.3R) para gera��o do arquivo de rem |
+| 81195 | 100064 | 10.3A-08 - POC  | 03/08/2023 | Em Teste DEMO | Buscar dados para gerar as informações no rodapé dos Relatórios. |
+| 81995 | 100059 | 10.4A-01 | 03/08/2023 | Em Teste DEMO | Buscar o endereço principal do cadastro da empresa para os termos. |
+| 80844 | 100036 | 10.3A-08 - POC  | 03/08/2023 | Em Teste DEMO | Incluir mensagem para o usuário ao clicar no 'Cadastro de contabilização' quando |
+| 80835 | 100015 | 10.3A-08 - POC  | 03/08/2023 | Em Teste DEMO | Alterar informações da tela do Fechamento multiempresas |
 | 81769 | 100019 | 10.5A-08 | 03/08/2023 | Em Teste DEMO | Alterar o sistema para que a configura��o do identificador do plano de contas pa |
 | 84208 | 100008 | 10.5A-07 | 03/08/2023 | Em Teste DEMO | Permitir salvar o relat�rio 'Balancete' com a extens�o ".xlsx" no bot�o "Salvar  |
+| 81009 | 99998 | 10.3A-10 | 02/08/2023 | Em Teste DEMO | Criar a coluna 'Código' das empresas nas modais dos dashboards. |
+| 80828 | 99984 | 10.3A-09 | 02/08/2023 | Em Teste DEMO | Alterar a tela dos cards do cadastro de contas e ocultar o botão pesquisar no ca |
 | 80813 | 99992 | 10.3A-08 | 02/08/2023 | Em Teste DEMO | Realizar Testes no Busca NF-e utilizando os ambientes nonprod (DEMO e QED) e o a |
+| 80810 | 99973 | 10.3A-08 - POC  | 02/08/2023 | Em Teste DEMO | Realizar o merge do sprint 2023.08.03.x |
+| 80829 | 99939 | 10.3A-09 | 01/08/2023 | Em Teste DEMO | Padronizar o template de envio de e-mail. |
 | 86867 | 99941 | 10.4A-08 | 01/08/2023 | Em Teste DEMO | MG-Permitir gerar mais de uma nota na mesma guia DAE para os impostos 27-ICMS An |
 | 86215 | 99940 | 10.4A-06 | 01/08/2023 | Em Teste DEMO | Criar a op��o no relat�rio de reten��es a recolher a op��o para separar a apura� |
 | 80782 | 99903 | 10.3A-08 | 01/08/2023 | Em Teste DEMO | Realizar testes nas ferramentas que utilizam o navegador Chromium devido as alte |
@@ -1372,17 +1535,39 @@
 | 80735 | 99762 | 10.3A-08 | 28/07/2023 | Em Teste DEMO | Parar o agende do Busca NF-e do sistema ao realizar o processo de migra��o para  |
 | 80736 | 99761 | 10.3A-11 | 28/07/2023 | Em Teste DEMO | Parar o agente do Web Service SEFAZ do sistema ao realizar o processo de migra�� |
 | 80731 | 99760 | 10.3A-11 | 28/07/2023 | Em Teste DEMO | Realizar ajustes no MODO_DESENV. |
+| 80732 | 99741 | 10.3A-08 - POC  | 27/07/2023 | Em Teste DEMO | Ajustar as telas de relatórios para utilizar o mesmo componente criado para conf |
+| 80686 | 99640 | 10.3A-11 | 26/07/2023 | Em Teste DEMO | Criar a importação de dados de outra empresa. |
 | 80790 | 99653 | 10.4A-04 | 26/07/2023 | Em Teste DEMO | SP-Implementar rotina no sistema para gerar a guia DARE Online, com c�digo de ba |
+| 80672 | 99628 | 10.4A-04 | 26/07/2023 | Em Teste DEMO | Remover os módulos da Contabilidade da lib de Platarforma. |
+| 80671 | 99626 | 10.3A-10 | 26/07/2023 | Em Teste DEMO | Mover o módulo de Relatórios para a Lib da Contabilidade. |
+| 80670 | 99618 | 10.3A-10 | 26/07/2023 | Em Teste DEMO | Mover o módulo de Contas para a Lib da Contabilidade. |
+| 80669 | 99615 | 10.3A-10 | 26/07/2023 | Em Teste DEMO | Mover o módulo de Históricos para a Lib da Contabilidade. |
+| 80675 | 99612 | 10.3A-08 - POC  | 26/07/2023 | Em Teste DEMO | Criar uma rotina para executar na data o processo de Zeramento, Fechamento do pe |
+| 80673 | 99610 | 10.3A-08 - POC  | 26/07/2023 | Em Teste DEMO | Ajustar o journal para realizar a exclusão lógica. |
 | 86116 | 99609 | 10.4A-06 | 26/07/2023 | Em Teste DEMO | Acrescentar coluna c�digo na modal dos Widgets da interface 'Dashboard' acessada |
 | 80662 | 99606 | 10.3A-08 | 25/07/2023 | Em Teste DEMO | Liberar tempo automa��o. |
 | 80772 | 99603 | 10.3A-09 | 25/07/2023 | Em Teste DEMO | RS-Importar os dados da nota de compra pelo registro C176 do SPED Fiscal ao calc |
 | 80694 | 99571 | 10.3A-08 | 25/07/2023 | Em Teste DEMO | Ajustar no relat�rio "Cliente/Tempo Gasto" para que os usu�rios sejam apresentad |
+| 80830 | 99530 | 10.4A-06 | 24/07/2023 | Em Teste DEMO | Permitir receber os lançamentos contábeis da Conta Azul via API |
 | 90412 | 99529 | 10.4A-12 | 24/07/2023 | Em Teste DEMO | Alterar comportamento do Busca NF-e quando no campo "Requerente" do certificado  |
+| 80837 | 99513 | 10.3A-11 | 24/07/2023 | Em Teste DEMO | Criar opção para realizar a Integração Contábil nas rotinas programadas. |
 | 80621 | 99505 | 10.3A-08 | 24/07/2023 | Em Teste DEMO | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 80609 | 99494 | 10.3A-08 - POC  | 21/07/2023 | Em Teste DEMO | Solucionar problemas de performance encontrados na emissão do Livro Caixa. |
+| 80608 | 99493 | 10.3A-10 | 21/07/2023 | Em Teste DEMO | Solucionar problemas de performance encontrados no processo de Zeramento das con |
+| 80607 | 99490 | 10.3A-08 - POC  | 21/07/2023 | Em Teste DEMO | Solucionar problemas de performance encontrados na emissão do Livro Razão. |
+| 80606 | 99489 | 10.3A-08 - POC  | 21/07/2023 | Em Teste DEMO | Solucionar problemas de performance encontrados na emissão do Livro Diário. |
+| 80605 | 99487 | 10.3A-08 - POC  | 21/07/2023 | Em Teste DEMO | Solucionar problemas de performance encontrados na emissão do Balancete. |
+| 80604 | 99486 | 10.3A-08 - POC  | 21/07/2023 | Em Teste DEMO | Solucionar problemas de performance encontrados na emissão do Balanço. |
+| 80610 | 99455 | 10.3A-08 - POC  | 21/07/2023 | Em Teste DEMO | Permitir definir o plano de contas antes da parametrização. |
 | 81035 | 99470 | 10.3A-11 | 21/07/2023 | Em Teste DEMO | SE-Implementar o destaque dos impostos 55-FECOEP-N e 56-FECOEPST na importa��o d |
+| 81721 | 99439 | 10.4A-01 | 20/07/2023 | Em Teste DEMO | Criar nas rotinas programadas a execução após o fechamento do período. |
+| 80588 | 99433 | 10.4A-01 | 20/07/2023 | Em Teste DEMO | Enviar o plano de contas para a Conta Azul via API. |
 | 82238 | 99443 | 10.4A-02 | 20/07/2023 | Em Teste DEMO | RS-Importar o valor do campo "02-VL_FCP_OP" do registro C191 na coluna "Fundo Am |
+| 80580 | 99406 | 10.3A-10 | 20/07/2023 | Em Teste DEMO | Rever arquitetura da emissão dos relatórios. |
 | 80578 | 99429 | 10.3A-08 | 20/07/2023 | Em Teste DEMO | Efetuar estudo no sistema para avaliar uma forma quando a gera��o do arquivo for |
+| 80581 | 99402 | 10.3A-10 | 20/07/2023 | Em Teste DEMO | Rever arquitetura do serviço de agregação dos saldos. |
 | 80574 | 99397 | 10.3A-10 | 20/07/2023 | Em Teste DEMO | Corrigir vulnerabilidade devido aos endpoints do spring actuator estarem exposto |
+| 81115 | 99282 | 10.4A-04 | 17/07/2023 | Em Teste DEMO | Validar e-mail duplicado quando enviado pela visualização dos relatórios. |
 | 80549 | 99243 | 10.3A-08 | 14/07/2023 | Em Teste DEMO | Alterar esp�cie do t�tulo na gera��o do arquivo de remessa de CNAB 400 posi��es  |
 | 80548 | 99241 | 10.3A-10 | 14/07/2023 | Em Teste DEMO | Alterar boleto modelo Banrisul do banco 41-Banrisul.     |
 | 80424 | 99143 | 10.4A-03 | 13/07/2023 | Em Teste DEMO | Considerar a empresa que est� sendo importado o arquivo na importa��o manual de  |
@@ -4239,1500 +4424,1500 @@
 | 48201 | 34233 | 10.1A-03 | 07/03/2016 | Em Teste DEMO | Criar rotina para que na importa��o padr�o Ato Cotepe, seja poss�vel importar a  |
 | 43237 | 34227 | 10.0A-02 | 07/03/2016 | Em Teste DEMO | Gerar o nosso n�mero do boleto na impress�o da nota fiscal de servi�o eletr�nica |
 | 45977 | 34183 | 10.1A-06 | 04/03/2016 | Em Teste DEMO | Criar as op��es "Gerar informa��es complementares na nota conforme informado no( |
-| 34900 | 34173 | 8.1A-13 | 03/03/2016 | Em Teste DEMO | Atualizar o Dom�nio Cliente conforme altera��es nos m�dulos do Cont�bil. |
 | 35259 | 34176 | 8.2C-01 | 03/03/2016 | Em Teste DEMO | Alterar o processo de envio de  informa��es para o Dom�nio Atendimento. |
 | 36437 | 34179 | 8.2B-01 | 03/03/2016 | Em Teste DEMO | Atualizar o Dom�nio Cliente conforme altera��es nos m�dulos do Cont�bil. |
+| 34900 | 34173 | 8.1A-13 | 03/03/2016 | Em Teste DEMO | Atualizar o Dom�nio Cliente conforme altera��es nos m�dulos do Cont�bil. |
 | 34074 | 34170 | 8.2C-01 | 03/03/2016 | Em Teste DEMO | Alterar o processo de envio de informa��es para o Dom�nio Atendimento. |
-| 32745 | 34163 | 8.1A-10 | 03/03/2016 | Em Teste DEMO | Importar o cadastro de produtos e preencher na guia Impostos os valores dos grup |
 | 33706 | 34168 | 8.1A-11 | 03/03/2016 | Em Teste DEMO | Alterar a mensagem exibida sobre a exclus�o de registros de segmentos para que o |
-| 31466 | 34141 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 32745 | 34163 | 8.1A-10 | 03/03/2016 | Em Teste DEMO | Importar o cadastro de produtos e preencher na guia Impostos os valores dos grup |
 | 31290 | 34138 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31289 | 34137 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31270 | 34132 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31291 | 34139 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31286 | 34134 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31270 | 34132 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31289 | 34137 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31466 | 34141 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31285 | 34133 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30808 | 34108 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31268 | 34130 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31136 | 34114 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31138 | 34116 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31224 | 34128 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31268 | 34130 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30809 | 34109 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30802 | 34102 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30723 | 34097 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30235 | 34089 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30239 | 34093 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31136 | 34114 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30808 | 34108 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 29908 | 34082 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
-| 30783 | 34101 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 29911 | 34084 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
-| 29909 | 34083 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 30235 | 34089 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30234 | 34088 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 29907 | 34081 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 30802 | 34102 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30804 | 34104 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 29909 | 34083 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
 | 30807 | 34107 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 29911 | 34084 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
 | 30483 | 34095 | 8.1A-05 | 03/03/2016 | Em Teste DEMO | Criar uma op��o no sistema para informar por dia o 'Valor Unit�rio' para produto |
+| 30723 | 34097 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30239 | 34093 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30803 | 34103 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30258 | 34094 | 8.1A-05 | 03/03/2016 | Em Teste DEMO | Corrigir error encontrados em bancos migrados para o DB2 |
 | 29912 | 34085 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 30783 | 34101 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30237 | 34091 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30258 | 34094 | 8.1A-05 | 03/03/2016 | Em Teste DEMO | Corrigir error encontrados em bancos migrados para o DB2 |
 | 29904 | 34078 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em banco convertidos para o DB2 |
-| 28773 | 34065 | 8.0A-10 | 03/03/2016 | Em Teste DEMO | Parar de enviar informa��es para o Dom�nio atendimento a partir de uma informa�� |
-| 29032 | 34068 | 8.1A-01 | 03/03/2016 | Em Teste DEMO | Alterar a importa��o do NF-e Portal conforme nova estrutura. |
-| 29268 | 34070 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos convertidos para o DB2 |
 | 29863 | 34076 | 8.1A-05 | 03/03/2016 | Em Teste DEMO | Melhorar o controle de erros na troca de informa��o entre o Dom�nio Atendimento  |
-| 26995 | 34056 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
-| 26406 | 34041 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o DB2.   |
-| 26994 | 34055 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
-| 26610 | 34046 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Gerar o n�mero do documento conforme o n�mero da nota fiscal, documento de cobra |
-| 27262 | 34060 | 8.0A-06 | 03/03/2016 | Em Teste DEMO | Otimizar a busca de 'parcelas em aberto' na baixa de Sa�das e Entradas e tamb�m  |
-| 26609 | 34045 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Gerar o n�mero do documento conforme o n�mero da nota fiscal, documento de cobra |
-| 26992 | 34053 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
-| 27796 | 34062 | 8.0A-08 | 03/03/2016 | Em Teste DEMO | Gerar a Observa��o de interesse do fisco e do contribuinte do cadastro do acumul |
-| 26640 | 34050 | 8.0A-08 | 03/03/2016 | Em Teste DEMO | Criar recurso para desabilitar/habilitar manualmente o envio de informa��es do D |
-| 26993 | 34054 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
+| 29032 | 34068 | 8.1A-01 | 03/03/2016 | Em Teste DEMO | Alterar a importa��o do NF-e Portal conforme nova estrutura. |
+| 28773 | 34065 | 8.0A-10 | 03/03/2016 | Em Teste DEMO | Parar de enviar informa��es para o Dom�nio atendimento a partir de uma informa�� |
+| 29268 | 34070 | 8.1A-03 | 03/03/2016 | Em Teste DEMO | Corrigir erros encontrados em bancos convertidos para o DB2 |
 | 26632 | 34049 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o DB2 |
-| 24520 | 34026 | 7.5C-05 | 03/03/2016 | Em Teste DEMO | Gerar o relat�rio de acompanhamento de entradas em modo retrato |
+| 26992 | 34053 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
+| 26406 | 34041 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o DB2.   |
+| 27796 | 34062 | 8.0A-08 | 03/03/2016 | Em Teste DEMO | Gerar a Observa��o de interesse do fisco e do contribuinte do cadastro do acumul |
+| 26994 | 34055 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
+| 26609 | 34045 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Gerar o n�mero do documento conforme o n�mero da nota fiscal, documento de cobra |
+| 26995 | 34056 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
+| 27262 | 34060 | 8.0A-06 | 03/03/2016 | Em Teste DEMO | Otimizar a busca de 'parcelas em aberto' na baixa de Sa�das e Entradas e tamb�m  |
+| 26610 | 34046 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Gerar o n�mero do documento conforme o n�mero da nota fiscal, documento de cobra |
+| 26993 | 34054 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensitive |
+| 26640 | 34050 | 8.0A-08 | 03/03/2016 | Em Teste DEMO | Criar recurso para desabilitar/habilitar manualmente o envio de informa��es do D |
+| 25970 | 34035 | 8.0A-03 | 03/03/2016 | Em Teste DEMO | Otimizar a demonstra��o dos avisos de vencimento |
 | 25537 | 34032 | 8.0A-01 | 03/03/2016 | Em Teste DEMO | Permitir importar o extrato banc�rio da compet�ncia informada mesmo quando no ar |
+| 24520 | 34026 | 7.5C-05 | 03/03/2016 | Em Teste DEMO | Gerar o relat�rio de acompanhamento de entradas em modo retrato |
 | 26405 | 34040 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o DB2.   |
 | 26403 | 34038 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o DB2.   |
-| 25970 | 34035 | 8.0A-03 | 03/03/2016 | Em Teste DEMO | Otimizar a demonstra��o dos avisos de vencimento |
-| 23347 | 34010 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | PR-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa��es. |
-| 23879 | 34019 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
 | 23877 | 34017 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
 | 23935 | 34024 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
+| 23347 | 34010 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | PR-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa��es. |
+| 23880 | 34020 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
+| 23850 | 34016 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | N�o gravar mais as redu��es Z na tela de sa�das ao realizar as importa��es |
+| 23882 | 34022 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
+| 23345 | 34009 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | MG-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa��es. |
+| 23820 | 34015 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar a tela de cadastro de �ndices. |
+| 23505 | 34012 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | RN-N�o gravar as redu��es Z na tabela de sa�das. |
 | 23881 | 34021 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
 | 23878 | 34018 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
-| 23850 | 34016 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | N�o gravar mais as redu��es Z na tela de sa�das ao realizar as importa��es |
-| 23505 | 34012 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | RN-N�o gravar as redu��es Z na tabela de sa�das. |
-| 23345 | 34009 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | MG-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa��es. |
-| 23882 | 34022 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
-| 23880 | 34020 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
-| 23820 | 34015 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar a tela de cadastro de �ndices. |
+| 23879 | 34019 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Alterar sistema para rodar em banco DB2 |
 | 22265 | 33998 | 7.5B-06 | 03/03/2016 | Em Teste DEMO | Unificar a tela de importa��o da receita bruta para o c�lculo do INSS com o m�du |
-| 21360 | 33994 | 7.5B-04 | 03/03/2016 | Em Teste DEMO | Alterar Help e Manual da tela de lan�amentos cont�beis para que fique conforme a |
-| 21281 | 33993 | 8.0A-10 | 03/03/2016 | Em Teste DEMO | Incluir detalhamento por nota ou acumulador no relat�rio demonstrativo dos impos |
 | 20958 | 33992 | 7.5B-03 | 03/03/2016 | Em Teste DEMO | Ocorre erro na transfer�ncia do Dom�nio Atendimento para o Dom�nio Cont�bil quan |
-| 19989 | 33985 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para ajustar diferen�a que ocorre entre o valor do impostos ICMS da  |
+| 21360 | 33994 | 7.5B-04 | 03/03/2016 | Em Teste DEMO | Alterar Help e Manual da tela de lan�amentos cont�beis para que fique conforme a |
 | 19737 | 33984 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o de NF-e via portal para empresas do estado PE, buscando a |
-| 18662 | 33973 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Implantar novo logotipo do Banco Sicredi no Boleto.   |
-| 18686 | 33976 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Criar vari�vel de f�rmula de evento que retorne o valor do sal�rio m�nimo cadast |
+| 19989 | 33985 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para ajustar diferen�a que ocorre entre o valor do impostos ICMS da  |
+| 21281 | 33993 | 8.0A-10 | 03/03/2016 | Em Teste DEMO | Incluir detalhamento por nota ou acumulador no relat�rio demonstrativo dos impos |
 | 18604 | 33970 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Cadastrar os Fornecedores, Clientes e Remetentes/Destinat�rios somente se estive |
-| 18685 | 33975 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar a tabela "Notas Fiscais de Sa�das - PIS/COFINS (EFSAIDAS_PIS_COFI |
-| 18743 | 33980 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Conciliar somente a conta e n�o todo o lan�amento, ao efetuar a concilia��o banc |
-| 18740 | 33979 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar a concilia��o de lan�amentos cont�beis. |
-| 18752 | 33983 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a inclus�o de um par�metro para especificar a compet�ncia no uso da |
-| 18747 | 33981 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Atualizar os leiautes Completo Dom�nio e 19 de notas de sa�das para importar as  |
-| 18557 | 33966 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para excluir as informa��es de uma nota automaticamente quando a mes |
 | 18677 | 33974 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar a op��o Incluir, Alterar e Excluir nas op��es Lan�amentos, Consulta e Lan� |
-| 18729 | 33978 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Emitir aviso quando alterado lan�amento em lote que j� esteja conciliado. |
+| 18752 | 33983 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a inclus�o de um par�metro para especificar a compet�ncia no uso da |
+| 18686 | 33976 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Criar vari�vel de f�rmula de evento que retorne o valor do sal�rio m�nimo cadast |
+| 18747 | 33981 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Atualizar os leiautes Completo Dom�nio e 19 de notas de sa�das para importar as  |
+| 18685 | 33975 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar a tabela "Notas Fiscais de Sa�das - PIS/COFINS (EFSAIDAS_PIS_COFI |
+| 18662 | 33973 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Implantar novo logotipo do Banco Sicredi no Boleto.   |
 | 18751 | 33982 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Criar a op��o de transportar valores da �ltima tabela para as tabelas de IRRF |
-| 18429 | 33951 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de extrato banc�rio do banco do Brasil, quando as linh |
-| 18231 | 33935 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de listagem de boletos emitidos. |
-| 18470 | 33959 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Atualizar a gera��o do arquivo de remessa de 240 posi��es para o banco Santander |
+| 18743 | 33980 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Conciliar somente a conta e n�o todo o lan�amento, ao efetuar a concilia��o banc |
+| 18729 | 33978 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Emitir aviso quando alterado lan�amento em lote que j� esteja conciliado. |
+| 18740 | 33979 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar a concilia��o de lan�amentos cont�beis. |
+| 18557 | 33966 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para excluir as informa��es de uma nota automaticamente quando a mes |
+| 18256 | 33941 | 7.5B-02 | 03/03/2016 | Em Teste DEMO | DF - Gerar valores na subguia "Situa��o Tribut�ria", da guia "Cupons fiscais" da |
 | 18363 | 33946 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Gerar o boleto banc�rio e o arquivo de remessa de 400 posi��es para o banco Bane |
+| 18539 | 33963 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Alterar as informa��es do Aceite na emiss�o de boletos banc�rios e arquivos de r |
 | 18356 | 33945 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Possibilitar a abertura da tela de lan�amentos cont�beis ao pressionar a tecla E |
+| 18470 | 33959 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Atualizar a gera��o do arquivo de remessa de 240 posi��es para o banco Santander |
+| 18429 | 33951 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de extrato banc�rio do banco do Brasil, quando as linh |
 | 18233 | 33936 | 7.5B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para indentificar a exist�ncia de produtos pelo c�digo de barras nas |
+| 18231 | 33935 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de listagem de boletos emitidos. |
+| 18430 | 33952 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Criar op��o no utilit�rios de altera��o de produtos para marcar a op��o Produto  |
 | 18440 | 33955 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar campo para informar se o cliente autoriza o d�bito em conta.   |
 | 18469 | 33958 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de lan�amentos de movimento de estoque quando o produto poss |
-| 18430 | 33952 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Criar op��o no utilit�rios de altera��o de produtos para marcar a op��o Produto  |
-| 18539 | 33963 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Alterar as informa��es do Aceite na emiss�o de boletos banc�rios e arquivos de r |
-| 18256 | 33941 | 7.5B-02 | 03/03/2016 | Em Teste DEMO | DF - Gerar valores na subguia "Situa��o Tribut�ria", da guia "Cupons fiscais" da |
-| 17897 | 33909 | 7.4C-01 | 03/03/2016 | Em Teste DEMO | BA - Criar op��o de gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
-| 18120 | 33928 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Reorganizar tela de par�metros do m�dulo Contabilidade. |
-| 18045 | 33921 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Deduzir das coluna Sa�das o valor do imposto 9-Subtri no relat�rio Demonstrativo |
-| 17911 | 33910 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar o n�mero sequencial de remessa no arquivo de cobran�a  |
-| 18084 | 33924 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Atualizar as importa��es para importar os dados necess�rios para o calculo do PI |
-| 18055 | 33922 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Mostrar no lan�amento de eventos mensais somente os contratos que estejam vigent |
 | 18194 | 33932 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Permitir gerar o arquivo de remessa do Banco Bradesco sem informa��es de descont |
+| 18045 | 33921 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Deduzir das coluna Sa�das o valor do imposto 9-Subtri no relat�rio Demonstrativo |
+| 17897 | 33909 | 7.4C-01 | 03/03/2016 | Em Teste DEMO | BA - Criar op��o de gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
+| 18055 | 33922 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Mostrar no lan�amento de eventos mensais somente os contratos que estejam vigent |
+| 18120 | 33928 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Reorganizar tela de par�metros do m�dulo Contabilidade. |
+| 17911 | 33910 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar o n�mero sequencial de remessa no arquivo de cobran�a  |
 | 18098 | 33927 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o padr�o para o leiaute do SPED PIS e COFINS |
+| 18084 | 33924 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Atualizar as importa��es para importar os dados necess�rios para o calculo do PI |
 | 18068 | 33923 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar os lan�amentos para contas referenciais em grupo. |
-| 17818 | 33905 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Gerar arquivo de remessa de 400 posi��es para o banco Ita�. |
 | 17878 | 33908 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para alterar os informa��es do SPED no cadastro de produtos pelo uti |
-| 17444 | 33872 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Demonstrar o c�digo e o CNPJ da empresa no relat�rio de inconsist�ncia de para c |
-| 17494 | 33881 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Permitir gravar as notas de devolu��o sem a informa��o da nota devolvida, mesmo  |
-| 17604 | 33890 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o de notas de entradas. |
-| 17482 | 33880 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | GO - Incluir na Importa��o Padr�o do Leiaute Dom�nio Sistemas ? Completo, o regi |
+| 17818 | 33905 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Gerar arquivo de remessa de 400 posi��es para o banco Ita�. |
 | 17582 | 33888 | 7.4C-01 | 03/03/2016 | Em Teste DEMO | Desenvolver relat�rio que demonstre a quantidade de NFes lan�adas por empresa. |
+| 17494 | 33881 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Permitir gravar as notas de devolu��o sem a informa��o da nota devolvida, mesmo  |
+| 17444 | 33872 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Demonstrar o c�digo e o CNPJ da empresa no relat�rio de inconsist�ncia de para c |
+| 17358 | 33867 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para ajustar diferen�a que ocorre entre o valor do impostos ICMS da  |
 | 17496 | 33882 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Criar campo para informar nota devolvida nos leiautes completo e 19 do importado |
 | 17609 | 33891 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar notas canceladas no importador padr�o NFe XML. |
-| 17358 | 33867 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para ajustar diferen�a que ocorre entre o valor do impostos ICMS da  |
+| 17604 | 33890 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o de notas de entradas. |
+| 17482 | 33880 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | GO - Incluir na Importa��o Padr�o do Leiaute Dom�nio Sistemas ? Completo, o regi |
 | 17419 | 33869 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | BA - Criar op��o de gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
+| 17216 | 33851 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gerar arquivo de remessa de 400 posi��es para o banco Bradesco. |
 | 17187 | 33845 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Permitir a exclus�o do faturamento de clientes que possuem mais de um contrato n |
 | 17192 | 33846 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Criar relat�rios de inconsist�ncias para c�lculo do PIS e COFINS por produto. |
-| 17216 | 33851 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gerar arquivo de remessa de 400 posi��es para o banco Bradesco. |
-| 17218 | 33853 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Alterar a gera��o do arquivo de remessa do Banco do Brasil nos registros do Segm |
-| 17186 | 33844 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco Santander no modelo Completo - Detalhado |
-| 17174 | 33843 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gerar o n�mero do endere�o e o complemento do endere�o, no segmento Q do arquivo |
-| 17219 | 33854 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Criar vari�veis para serem utilizadas no complemento de eventos. |
+| 17217 | 33852 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Permitir gerar o arquivo de remessa do Banco do Brasil sem informa��es de baixa  |
 | 17138 | 33839 | 7.4C-01 | 03/03/2016 | Em Teste DEMO | Permitir configurar mais de uma situa��o tribut�ria para CFOP e acumuladores dif |
-| 17224 | 33856 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para lan�ar descontos informando o per�odo inicial e final. |
 | 17209 | 33847 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Otimizar a emiss�o de documento de combran�a quando possuem sub relat�rios. |
-| 17211 | 33849 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Otimizar a emiss�o e notas fiscais quando possuem sub relat�rios. |
 | 17221 | 33855 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gravar a data de recebimento do boleto informada no arquivo de retorno do banco, |
 | 17168 | 33841 | 7.5B-06 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de aviso de excedentes. |
-| 17217 | 33852 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Permitir gerar o arquivo de remessa do Banco do Brasil sem informa��es de baixa  |
+| 17224 | 33856 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para lan�ar descontos informando o per�odo inicial e final. |
+| 17218 | 33853 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Alterar a gera��o do arquivo de remessa do Banco do Brasil nos registros do Segm |
+| 17211 | 33849 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Otimizar a emiss�o e notas fiscais quando possuem sub relat�rios. |
+| 17219 | 33854 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Criar vari�veis para serem utilizadas no complemento de eventos. |
+| 17174 | 33843 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gerar o n�mero do endere�o e o complemento do endere�o, no segmento Q do arquivo |
+| 17186 | 33844 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco Santander no modelo Completo - Detalhado |
 | 17098 | 33832 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Criar relat�rios para confer�ncia do calculo do Pis e Cofins para empresa que ef |
 | 16891 | 33822 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Disponibilizar os lan�amentos de bilhetes de passagem e exportar os lan�amentos  |
 | 16897 | 33823 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Considerar c�digo de ocorr�ncia 5 e 6 para importar boletos recebidos do Banco S |
-| 16724 | 33813 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Possibilitar a gera��o do arquivo de remessa do Banco do Brasil, especificando s |
 | 16723 | 33812 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar arquivo de remessa para Cobran�a com Registro no padr�o S |
-| 16718 | 33807 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco SICREDI no modelo Completo - Detalhado     |
-| 16787 | 33819 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Considerar c�digo de ocorr�ncia 02 e 04 para importar boletos recebidos do Banco |
-| 16721 | 33810 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco HSBC no modelo Completo - Detalhado   |
 | 16720 | 33809 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco BANCOOB no modelo Completo - Detalhado   |
-| 16788 | 33820 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Alterar as informa��es do Aceite e da Esp�cie do Documento na emiss�o de boletos |
 | 16722 | 33811 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Alterar a gera��o do arquivo de remessa do Banco do Brasil nos registros Trailer |
+| 16788 | 33820 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Alterar as informa��es do Aceite e da Esp�cie do Documento na emiss�o de boletos |
+| 16787 | 33819 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Considerar c�digo de ocorr�ncia 02 e 04 para importar boletos recebidos do Banco |
 | 16725 | 33814 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco Mercantil no modelo Completo - Detalhado   |
-| 16365 | 33777 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o espec�fica para arquivo no formato Ato Cotepe 17/Cat 52. |
+| 16724 | 33813 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Possibilitar a gera��o do arquivo de remessa do Banco do Brasil, especificando s |
+| 16718 | 33807 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco SICREDI no modelo Completo - Detalhado     |
+| 16721 | 33810 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar o boleto do banco HSBC no modelo Completo - Detalhado   |
 | 16447 | 33789 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Gerar arquivo de remessa para o banco Santander.     |
-| 16366 | 33778 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o espec�fica para arquivo no formato SPED fiscal |
+| 16445 | 33788 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Permitir alterar uma vig�ncia no cadastro do produto mesmo que n�o exista os imp |
+| 16365 | 33777 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o espec�fica para arquivo no formato Ato Cotepe 17/Cat 52. |
 | 16364 | 33776 | 7.4C-01 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o espec�fica para arquivo XML de NFe. |
 | 16428 | 33780 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para listar tamb�m os produtos com informa��o para o c�lculo do PIS  |
-| 16445 | 33788 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Permitir alterar uma vig�ncia no cadastro do produto mesmo que n�o exista os imp |
+| 16366 | 33778 | 7.4B-08 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o espec�fica para arquivo no formato SPED fiscal |
 | 16424 | 33779 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Criar op��o para n�o imprimir o balancete acumulado na emiss�o dos livros cont�b |
-| 16359 | 33775 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Criar filtro para selecionar por 'C�digo de Acumulador' e 'CFOP' no utilit�rio ' |
 | 16335 | 33774 | 7.4B-07 | 03/03/2016 | Em Teste DEMO | Incluir novas op��es no utilit�rio de Altera��o de Produtos. |
-| 16262 | 33771 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Gravar somente por empresa as informa��es do importador.   |
+| 16359 | 33775 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Criar filtro para selecionar por 'C�digo de Acumulador' e 'CFOP' no utilit�rio ' |
 | 16065 | 33762 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
 | 15988 | 33758 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Prorrogar a obriga��o do uso da nova tela de lan�amentos de redu��es Z para 01/0 |
 | 15847 | 33748 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | AL-Disponibilizar as colunas IPI e Subtri na linha do ICMS das notas de entradas |
-| 15933 | 33754 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Em alguma situa��es ocorre lentid�o ao acessar a guia estoque das notas de sa�da |
-| 16141 | 33767 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�edulo conforme altera��es no m�dulo Escrita Fiscal. |
 | 15930 | 33753 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Em alguma situa��es ocorre lentid�o ao acessar a guia estoque das notas de sa�da |
-| 15764 | 33743 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Permitir importar Redu��es Z, mesmo com diferen�a nas somas dos acumuladores com |
-| 15818 | 33746 | 7.4B-03 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabiliade |
+| 15933 | 33754 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Em alguma situa��es ocorre lentid�o ao acessar a guia estoque das notas de sa�da |
+| 16262 | 33771 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Gravar somente por empresa as informa��es do importador.   |
+| 16141 | 33767 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�edulo conforme altera��es no m�dulo Escrita Fiscal. |
+| 15817 | 33745 | 7.4B-03 | 03/03/2016 | Em Teste DEMO | Otimizar processo de apura��o para empresas optantes do Simples Nacional |
 | 15643 | 33731 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar quais campos ser�o utilizados para identificar clien |
+| 15818 | 33746 | 7.4B-03 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabiliade |
 | 15622 | 33730 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | ALterar importa��o de NFe diretamente do portal conforme nova vers�o do portal.  |
 | 15619 | 33729 | 7.4B-03 | 03/03/2016 | Em Teste DEMO | ALterar a formata��o dos campos Ag�ncia, C�digo Cedente e Nosso N�mero do boleto |
-| 15817 | 33745 | 7.4B-03 | 03/03/2016 | Em Teste DEMO | Otimizar processo de apura��o para empresas optantes do Simples Nacional |
-| 15473 | 33723 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Alterar nome do campo "Conta cont�bil do bem" na tela de lan�amentos de cr�dito  |
-| 15307 | 33715 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar importa��o entre os m�dulos se a vers�o for menor que a 74 |
-| 15018 | 33700 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Incluir o campo localizador na listagem da tela de lan�amentos em lote. |
-| 15055 | 33702 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para calcular o adicional de IRPJ mensalmente.     |
-| 15229 | 33708 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Liberar no importador a tabela para detalhamento da DFC. |
+| 15764 | 33743 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Permitir importar Redu��es Z, mesmo com diferen�a nas somas dos acumuladores com |
 | 15004 | 33697 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o de emitir a declara��o final do balan�o e DRE pelo menu Livros Cont� |
-| 15384 | 33719 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Trazer as op��es "N�o Listar Clientes Inativos e N�o Listar Clientes em Constitu |
-| 15386 | 33720 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para gerar no hist�rico do pagamento do relat�rio "Conta Corrent |
-| 15264 | 33712 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir o nome do licenciado no rodap� dos livros.   |
 | 15017 | 33699 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Permitir alterar a data de lan�amentos em lotes para tipos diferente de Um d�bit |
 | 15005 | 33698 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Liberar os dados da guia �tens das notas fiscais de Servi�os para serem utilizad |
-| 15060 | 33703 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Buscar os dados referente aos ECFs da nova tela de lan�amento de redu��es Z para |
-| 15478 | 33724 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Prorrogar o prazo para o la�amento de redu��es Z pela tela de sa�das at� 30/06/2 |
+| 15018 | 33700 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Incluir o campo localizador na listagem da tela de lan�amentos em lote. |
 | 15518 | 33726 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme atualiza��o do m�dulos Escrita Fiscal |
+| 15386 | 33720 | 7.5A-02 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para gerar no hist�rico do pagamento do relat�rio "Conta Corrent |
 | 15383 | 33718 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Listar nas consultas F2 os clientes inativos e em constitui��o somente quando as |
-| 14876 | 33691 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Retirar campo Intervalo de dias do lan�amento de contas a pagar a prazo.      |
-| 14845 | 33687 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Enviar para a Dom�nio a quantidade de NFes de entradas e sa�das lan�adas no sist |
+| 15060 | 33703 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Buscar os dados referente aos ECFs da nova tela de lan�amento de redu��es Z para |
+| 15384 | 33719 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Trazer as op��es "N�o Listar Clientes Inativos e N�o Listar Clientes em Constitu |
+| 15229 | 33708 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Liberar no importador a tabela para detalhamento da DFC. |
+| 15473 | 33723 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Alterar nome do campo "Conta cont�bil do bem" na tela de lan�amentos de cr�dito  |
+| 15264 | 33712 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir o nome do licenciado no rodap� dos livros.   |
+| 15055 | 33702 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para calcular o adicional de IRPJ mensalmente.     |
+| 15307 | 33715 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar importa��o entre os m�dulos se a vers�o for menor que a 74 |
+| 15478 | 33724 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Prorrogar o prazo para o la�amento de redu��es Z pela tela de sa�das at� 30/06/2 |
 | 14944 | 33694 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Criar modelo de documento que n�o tenha nenhum vinculo com os livros e informati |
+| 14845 | 33687 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Enviar para a Dom�nio a quantidade de NFes de entradas e sa�das lan�adas no sist |
+| 14949 | 33695 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Importar boletos recebidos que possuem nosso n�mero com 17 posi��es do banco Cai |
+| 14820 | 33686 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para emitir a guia DARF CRF por fornecedor. |
 | 14848 | 33689 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Enviar para a Dom�nio a quantidade de empresa que geram o informativo SPED Cont� |
 | 14892 | 33693 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Comparar com o CPF do respons�vel a inscri��o das NFes do portal, quando a inscr |
-| 14949 | 33695 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Importar boletos recebidos que possuem nosso n�mero com 17 posi��es do banco Cai |
-| 14879 | 33692 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de impress�o dos boletos do tipo Completo - Detalhado |
-| 14866 | 33690 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar os boletos da CAIXA do tipo 17 posi��es SIGCB com carteir |
-| 14820 | 33686 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para emitir a guia DARF CRF por fornecedor. |
+| 14876 | 33691 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Retirar campo Intervalo de dias do lan�amento de contas a pagar a prazo.      |
 | 14846 | 33688 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Enviar para a Dominio a quantidade de empresas que geram o informativo SPED Fisc |
+| 14866 | 33690 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar os boletos da CAIXA do tipo 17 posi��es SIGCB com carteir |
+| 14879 | 33692 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de impress�o dos boletos do tipo Completo - Detalhado |
 | 14578 | 33675 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Permitir selecionar mais de um arquivo TXT ao realizar importa��o pelo Importado |
+| 14508 | 33667 | 7.4A-03 | 03/03/2016 | Em Teste DEMO | Converter como boletos n�o emitidos os faturamentos que n�o possuirem a informa� |
 | 14541 | 33670 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | DB2-N�o � poss�vel acessar nenhuma fun��o que dependa dos par�metros da empresa. |
 | 14509 | 33668 | 7.4A-03 | 03/03/2016 | Em Teste DEMO | Converter a compet�ncia de encerramento dos contratos sempre no dia 01. |
-| 14508 | 33667 | 7.4A-03 | 03/03/2016 | Em Teste DEMO | Converter como boletos n�o emitidos os faturamentos que n�o possuirem a informa� |
-| 14385 | 33640 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | DF-Disponibilizar o campo Itens Decreto das notas de sa�da para ser utilizado no |
 | 14383 | 33639 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | Cadastrar clientes e fornecedores como contribuintes do ICMS na importa��o de no |
+| 14385 | 33640 | 7.4B-02 | 03/03/2016 | Em Teste DEMO | DF-Disponibilizar o campo Itens Decreto das notas de sa�da para ser utilizado no |
+| 14410 | 33642 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Criar filtro por acumulador na tela de emiss�o dos relat�rios de contas a pagar  |
 | 14465 | 33655 | 7.4A-03 | 03/03/2016 | Em Teste DEMO | Alterar a disposi��o do menu relat�rio/informativos/federais separando os inform |
 | 14353 | 33636 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Considerar tipo 17 para importar boletos recebidos do Banco do Brasil |
-| 14410 | 33642 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Criar filtro por acumulador na tela de emiss�o dos relat�rios de contas a pagar  |
-| 14348 | 33634 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Habilitar a tecla de atalho F7 para cadastrar contas cont�beis e hist�ricos no c |
-| 14296 | 33629 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir local e data nos relat�rios an�lise do DRE e do Balan� |
-| 14330 | 33631 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Otimizar o Processo de Grava��o de Notas Fiscais.   |
-| 14083 | 33600 | 7.5C-01 | 03/03/2016 | Em Teste DEMO | Alterar relat�rio acompanhamento de entradas, sa�das e servi�os para demonstrar  |
 | 14261 | 33622 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Permitir que seja utilizada as vers�es do Honor�rios 3 e Honor�rios 4, quando n� |
+| 14296 | 33629 | 7.4B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir local e data nos relat�rios an�lise do DRE e do Balan� |
+| 14348 | 33634 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Habilitar a tecla de atalho F7 para cadastrar contas cont�beis e hist�ricos no c |
+| 14330 | 33631 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Otimizar o Processo de Grava��o de Notas Fiscais.   |
 | 14313 | 33630 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de regerar lan�amentos cont�beis.     |
 | 14094 | 33601 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Transcrever a chave NFe da nota de sa�da para a nota de entrada em outra empresa |
-| 13848 | 33578 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de contas a pagar e receber que demonstre mais de uma compet�nci |
-| 13853 | 33583 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novos modelos de boletos que listem os eventos faturados e a rela��o |
-| 14038 | 33599 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar a convers�o do Honr�rios 3 para o Honor�rios 4. |
+| 14083 | 33600 | 7.5C-01 | 03/03/2016 | Em Teste DEMO | Alterar relat�rio acompanhamento de entradas, sa�das e servi�os para demonstrar  |
 | 13852 | 33582 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de informar uma imagem para ser utilizada nos relat�rios personaliza |
+| 13853 | 33583 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novos modelos de boletos que listem os eventos faturados e a rela��o |
 | 13849 | 33579 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar a op��o de informar o nome da pessoa que recebeu na emiss�o do recibo. |
-| 13850 | 33580 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar s�rie e sub s�rie para notas fiscais. |
-| 13944 | 33594 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | N�o est� sendo permitido relacionar produtos com unidades difentes na importa��o |
 | 13836 | 33576 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Habilitar as op��es para gerar parcelas na configura��o de importa��o de NFe par |
-| 13892 | 33588 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
+| 14038 | 33599 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar a convers�o do Honr�rios 3 para o Honor�rios 4. |
+| 13944 | 33594 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | N�o est� sendo permitido relacionar produtos com unidades difentes na importa��o |
+| 13848 | 33578 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de contas a pagar e receber que demonstre mais de uma compet�nci |
 | 13851 | 33581 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar o processo de lan�amentos or�ados por categoria para contas a pagar e rece |
-| 13711 | 33564 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Importar informa��es do arquivo sped fiscal(txt), para a guia complementar II da |
+| 13892 | 33588 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
+| 13850 | 33580 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar s�rie e sub s�rie para notas fiscais. |
 | 13515 | 33544 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gerar no relat�rio de inconsist�ncias do utilit�rios de regerar os lan�amentos q |
-| 13315 | 33519 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de gera��o do informativo SPED Fiscal |
-| 13413 | 33522 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de NFe com vers�o do XML 2.00.         |
-| 13202 | 33515 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gerar para o informativos SPED a espress�o "S/N" no campo n�mero do endere�o qua |
-| 13164 | 33511 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de importa��o de NFe via arquivo XML.     |
-| 13088 | 33504 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | SP - Disponibilizar imposto DIFALI para o c�lculo dos impostos em atraso.     |
+| 13711 | 33564 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Importar informa��es do arquivo sped fiscal(txt), para a guia complementar II da |
 | 13437 | 33526 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Otimizar a apura��o dos impostos federais de empresas que apuraram pelo regime d |
-| 13017 | 33499 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita fiscal e Contabilid |
-| 13407 | 33521 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita e Contabilidade. |
-| 13251 | 33517 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
 | 13040 | 33502 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver nova tela de lan�amentos onde na mesma tela possa ser consultado os  |
+| 13413 | 33522 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de NFe com vers�o do XML 2.00.         |
+| 13017 | 33499 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita fiscal e Contabilid |
+| 13251 | 33517 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
+| 13407 | 33521 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita e Contabilidade. |
+| 13315 | 33519 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de gera��o do informativo SPED Fiscal |
+| 13164 | 33511 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de importa��o de NFe via arquivo XML.     |
+| 13202 | 33515 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gerar para o informativos SPED a espress�o "S/N" no campo n�mero do endere�o qua |
 | 13016 | 33498 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Otimizar o preocesso de emiss�o do Livro de Sa�das. |
-| 12975 | 33495 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Incluir o item "CT-e Substituto" no campo 'Tipo CT-e' na guia Complementar das n |
-| 12852 | 33478 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabilidade |
-| 12808 | 33477 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Permitir usar um campo tempor�rio nas condi��es de uma regra nas defini��es de i |
+| 13088 | 33504 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | SP - Disponibilizar imposto DIFALI para o c�lculo dos impostos em atraso.     |
 | 12900 | 33480 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | MT-Considerar somente os �ltimos 9 digitos da inscri��o estadual para verficar s |
+| 12975 | 33495 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Incluir o item "CT-e Substituto" no campo 'Tipo CT-e' na guia Complementar das n |
 | 12740 | 33473 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabilidade |
-| 12864 | 33479 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Ignorar a informa��o do campo "Data" do estoque das Notas Fiscais de entrada e s |
+| 12735 | 33472 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | SP-Criar op��o para importar os valores para as Tabelas municipais na importa��o |
 | 12974 | 33494 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Incluir a tabela de Pa�ses para realiza��o de consulta nas tabelas estrangeiras  |
 | 12729 | 33469 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar os lan�amentos or�ados por filial |
-| 12735 | 33472 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | SP-Criar op��o para importar os valores para as Tabelas municipais na importa��o |
-| 12603 | 33457 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | N�o est� sendo poss�vel realizar a impora��o de extrato no ambiente web. |
-| 12600 | 33456 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Criar leiaute padr�o em XML para Importa��o de Conhecimento de Transporte Eletr� |
+| 12864 | 33479 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Ignorar a informa��o do campo "Data" do estoque das Notas Fiscais de entrada e s |
+| 12808 | 33477 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Permitir usar um campo tempor�rio nas condi��es de uma regra nas defini��es de i |
+| 12852 | 33478 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabilidade |
 | 12676 | 33460 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | N�o atualizar as p�ginas da receita federal quando clicado F5 na empiss�o dos in |
 | 12686 | 33464 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar a data de entrada/sa�da das NFe importadas diretamente |
-| 12535 | 33453 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de importa��o de NFe pelo importador quando existir muitas c |
 | 12537 | 33454 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar relacionamento com o Demonstrativo Fluxo de Caixa nos lan�amentos |
-| 12448 | 33426 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar a op��o de agrupar por cliente no relat�rio de lan�amentos |
-| 12208 | 33409 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio onde sejam demonstrado os adiantamentos dos clientes. |
-| 12210 | 33411 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gravar as configura��es das telas de relat�rios por empresa e usu�rio no banco d |
+| 12600 | 33456 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Criar leiaute padr�o em XML para Importa��o de Conhecimento de Transporte Eletr� |
+| 12603 | 33457 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | N�o est� sendo poss�vel realizar a impora��o de extrato no ambiente web. |
+| 12535 | 33453 | 7.3B-09 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de importa��o de NFe pelo importador quando existir muitas c |
 | 12207 | 33408 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Emitir o evento do contrato no relat�rio de lan�amentos. |
-| 12321 | 33416 | 7.3B-07 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
-| 12451 | 33428 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para impress�o de recibo do Adiantamento.   |
-| 12246 | 33412 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | N�o abrir a tela de detalhamento anexo VB quando o valor da coluna outras for ig |
-| 12417 | 33422 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
+| 12208 | 33409 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio onde sejam demonstrado os adiantamentos dos clientes. |
 | 12418 | 33423 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Alterar o nome da janela de rateio da DFC de "Fluxo de caixa" para "DFC" |
-| 12449 | 33427 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para filtrar os clientes por tipo de cobran�a. |
+| 12417 | 33422 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
 | 12209 | 33410 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir informar hist�rio na baixa de parcelas ao importar boletos recebidos |
-| 11805 | 33387 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Integrar o Honor�rios com a contabilidade dos clientes. |
-| 11803 | 33385 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir buscar contratos pelo nome do cliente na listagem de contratos. |
-| 11772 | 33381 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de selecionar todas as parcelas na baixa de faturamento. |
-| 11829 | 33388 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar tamb�m a movimenta��o de produtos diretamento do Porta |
-| 11769 | 33380 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de gerar uma faturamento parcelado em mais de um vencimento |
-| 12141 | 33406 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | SC-Desenvolver Help para a tela de detalhamento no pagamento do imposto 45. |
-| 11834 | 33389 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar atalho na barra de ferramentas para acessar a baixa de contas a receber. |
-| 11836 | 33390 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ajustar o Bloqueto do Banco Unibanco para imprimir a Ag�ncia + o C�digo do Ceden |
-| 11841 | 33394 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar op��o de dia �til na forma de vencimento dos par�metros. |
-| 11842 | 33395 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Importar bloquetos recebidos da Caixa Economica Federal - CNAB 240 SIGCB.   |
-| 11757 | 33378 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Criar leiaute para importar arquivos gerados conforme Portaria CAT 52. |
-| 11798 | 33384 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de faturar taxa adicional de final de ano (13� sal�rio) |
-| 11843 | 33396 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Parmitir definir o tempo gasto por m�dulo para emiss�o de avisos de contrato. |
-| 12028 | 33401 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Aumentar o campo observa��es da tela de gera��o do livro de ICMS. |
-| 12108 | 33403 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Criar um campo "Localizador" na tela de lan�amentos em lote.         |
-| 11839 | 33392 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para consolidar contas financeiras na op��o "Saldo de Conta". |
-| 11766 | 33379 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir pr� configurar um lan�amento de contas a pgar |
-| 11793 | 33383 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
-| 11804 | 33386 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar Todas, nenhum e inverter sele��o na emiss�o de notas |
+| 12448 | 33426 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar a op��o de agrupar por cliente no relat�rio de lan�amentos |
+| 12210 | 33411 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gravar as configura��es das telas de relat�rios por empresa e usu�rio no banco d |
+| 12246 | 33412 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | N�o abrir a tela de detalhamento anexo VB quando o valor da coluna outras for ig |
+| 12321 | 33416 | 7.3B-07 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
+| 12449 | 33427 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para filtrar os clientes por tipo de cobran�a. |
+| 12451 | 33428 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para impress�o de recibo do Adiantamento.   |
 | 11840 | 33393 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver Bloqueto Pr�-Impresso do Banco Bradesco     |
-| 11774 | 33382 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar, ao realizar um lan�amento de evento, se o mesmo foi p |
-| 11837 | 33391 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Exibir aviso de confirma��o, quando informado data de emiss�o da nota diferente  |
+| 11804 | 33386 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar Todas, nenhum e inverter sele��o na emiss�o de notas |
+| 11772 | 33381 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de selecionar todas as parcelas na baixa de faturamento. |
+| 11803 | 33385 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir buscar contratos pelo nome do cliente na listagem de contratos. |
 | 11845 | 33398 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar cadastro de categorias de contas a pagar. |
+| 11798 | 33384 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de faturar taxa adicional de final de ano (13� sal�rio) |
+| 11757 | 33378 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Criar leiaute para importar arquivos gerados conforme Portaria CAT 52. |
+| 11839 | 33392 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para consolidar contas financeiras na op��o "Saldo de Conta". |
+| 11774 | 33382 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar, ao realizar um lan�amento de evento, se o mesmo foi p |
 | 12000 | 33399 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novo m�dulo Honor�rios |
+| 11834 | 33389 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar atalho na barra de ferramentas para acessar a baixa de contas a receber. |
+| 11766 | 33379 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir pr� configurar um lan�amento de contas a pgar |
+| 11836 | 33390 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ajustar o Bloqueto do Banco Unibanco para imprimir a Ag�ncia + o C�digo do Ceden |
+| 12141 | 33406 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | SC-Desenvolver Help para a tela de detalhamento no pagamento do imposto 45. |
+| 11841 | 33394 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar op��o de dia �til na forma de vencimento dos par�metros. |
+| 11843 | 33396 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Parmitir definir o tempo gasto por m�dulo para emiss�o de avisos de contrato. |
+| 11769 | 33380 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de gerar uma faturamento parcelado em mais de um vencimento |
+| 11829 | 33388 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar tamb�m a movimenta��o de produtos diretamento do Porta |
+| 11842 | 33395 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Importar bloquetos recebidos da Caixa Economica Federal - CNAB 240 SIGCB.   |
+| 12028 | 33401 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Aumentar o campo observa��es da tela de gera��o do livro de ICMS. |
 | 12010 | 33400 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Atualiza��o esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
-| 11752 | 33374 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de estornar um cancelamento de nota fiscal. |
-| 11748 | 33370 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de fluxo de caixa. |
-| 11745 | 33367 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar processo de renegocia��o. |
-| 11747 | 33369 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para contabilizar ou n�o um evento. |
-| 11750 | 33372 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Listar os clientes n�o faturados e o motivo no final do faturamento. |
-| 11715 | 33357 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Contabilizar o valor bruto do faturamento quando houver aproveitamento por adian |
+| 11805 | 33387 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Integrar o Honor�rios com a contabilidade dos clientes. |
+| 11837 | 33391 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Exibir aviso de confirma��o, quando informado data de emiss�o da nota diferente  |
+| 12108 | 33403 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Criar um campo "Localizador" na tela de lan�amentos em lote.         |
+| 11793 | 33383 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contabilidade. |
+| 11716 | 33358 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver boleto completo do banco Santander |
+| 11751 | 33373 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir a altera��o do dia de vencimento no contrato quando a empresa possui re |
 | 11648 | 33354 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de regerar lan�amentos cont�beis. |
+| 11753 | 33375 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para definir o vencimento do contrato no segundo m�s subsequente a c |
+| 11747 | 33369 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para contabilizar ou n�o um evento. |
+| 11752 | 33374 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de estornar um cancelamento de nota fiscal. |
+| 11715 | 33357 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Contabilizar o valor bruto do faturamento quando houver aproveitamento por adian |
+| 11717 | 33359 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver boleto completo do banco Sudameris. |
+| 11755 | 33377 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para que ao receber uma adiantamento o sistema j� verifique se tem p |
 | 11720 | 33362 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para inativar e reativar um contrato |
 | 11749 | 33371 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar faturamento de clientes sem contrato. |
-| 11661 | 33355 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | O sistema est� gerando lan�amento em lote com c�digo sequ�ncial fora da sequ�nci |
-| 11717 | 33359 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver boleto completo do banco Sudameris. |
-| 11744 | 33366 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar sele��o de clientes semelhante a sele��o de empregados da Folha |
-| 11751 | 33373 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir a altera��o do dia de vencimento no contrato quando a empresa possui re |
-| 11722 | 33364 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver processo para mostrar o conta corrente do cliente e do escrit�rio. |
-| 11718 | 33360 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Desenvolver boleto do banco de Bras�lia. |
-| 11754 | 33376 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco HSBC no padr�o CNAB 400 |
-| 11714 | 33356 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Criar novo leiaute para importa��o de produtos aumentando para dois d�gitos o c� |
-| 11753 | 33375 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para definir o vencimento do contrato no segundo m�s subsequente a c |
-| 11418 | 33345 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Validar o CNPJ/CPF/CEI para definir o tipo de inscri��o utilizada no cadastro de |
-| 11721 | 33363 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar o inicio do faturamento e inicio do contrato, desde que ainda n |
-| 11452 | 33349 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Ajustar a impress�o dos livros de Entradas e Sa�das para imprimir os 9 caractere |
+| 11748 | 33370 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de fluxo de caixa. |
 | 11746 | 33368 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir campo para informar o celular no cadastro de clientes. |
-| 11755 | 33377 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para que ao receber uma adiantamento o sistema j� verifique se tem p |
-| 11716 | 33358 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver boleto completo do banco Santander |
-| 11356 | 33337 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do banco Sicoob. |
-| 11354 | 33335 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar a possibilidade de lan�ar adiantamento, mesmo existindo valores em aberto  |
-| 11398 | 33342 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar os dados de NFe diretamente do site de Receita Federal |
-| 11357 | 33338 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar uma op��o no sistema onde liste o contas a pagar do escrit�rio incluindo i |
-| 11399 | 33343 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar os dados de clientes, fornecedores e remetentes/destin |
-| 11371 | 33340 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gerar um PDF para cada cliente ao salvar notas fiscais, boletos e documentos de  |
+| 11418 | 33345 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Validar o CNPJ/CPF/CEI para definir o tipo de inscri��o utilizada no cadastro de |
+| 11714 | 33356 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Criar novo leiaute para importa��o de produtos aumentando para dois d�gitos o c� |
+| 11754 | 33376 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco HSBC no padr�o CNAB 400 |
+| 11721 | 33363 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar o inicio do faturamento e inicio do contrato, desde que ainda n |
+| 11745 | 33367 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar processo de renegocia��o. |
+| 11718 | 33360 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | Desenvolver boleto do banco de Bras�lia. |
+| 11452 | 33349 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Ajustar a impress�o dos livros de Entradas e Sa�das para imprimir os 9 caractere |
+| 11744 | 33366 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar sele��o de clientes semelhante a sele��o de empregados da Folha |
+| 11722 | 33364 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver processo para mostrar o conta corrente do cliente e do escrit�rio. |
+| 11750 | 33372 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Listar os clientes n�o faturados e o motivo no final do faturamento. |
+| 11661 | 33355 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | O sistema est� gerando lan�amento em lote com c�digo sequ�ncial fora da sequ�nci |
 | 11395 | 33341 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | N�o permitir inserir/importar inscri��o estadual com menos de 11 d�gitos nos cad |
-| 11188 | 33307 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para gerar autom�ticamente parcelas para as notas. |
-| 11265 | 33320 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Liberar para importa��o de dados no uitilit�rio de importa��o, as tabelas do sis |
+| 11357 | 33338 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar uma op��o no sistema onde liste o contas a pagar do escrit�rio incluindo i |
+| 11398 | 33342 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar os dados de NFe diretamente do site de Receita Federal |
+| 11371 | 33340 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gerar um PDF para cada cliente ao salvar notas fiscais, boletos e documentos de  |
+| 11354 | 33335 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar a possibilidade de lan�ar adiantamento, mesmo existindo valores em aberto  |
+| 11399 | 33343 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar os dados de clientes, fornecedores e remetentes/destin |
+| 11356 | 33337 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do banco Sicoob. |
 | 11235 | 33311 | 7.5B-06 | 03/03/2016 | Em Teste DEMO | O sistema n�o est� filtrando corretamente quando utilizado os filtros tipo de re |
-| 11070 | 33283 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | SP-Utilizar a data da NFe se a data do RPS estiver em branco quando selecionado  |
-| 11116 | 33289 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar a ordem dos clientes para emiss�o das notas fiscais. |
-| 11159 | 33296 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | N�o efetuar o controle de AIDF no lan�amento de notas fiscais modelo 55 e 57. |
-| 10982 | 33281 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo para informar a "Quantidade Inicial" e "Quantidade F |
-| 11135 | 33290 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Ocorre o erro "Chave NF-e Inv�lida! Data de Emiss�o da Chave Nota Fiscal � difer |
+| 11265 | 33320 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Liberar para importa��o de dados no uitilit�rio de importa��o, as tabelas do sis |
+| 11188 | 33307 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para gerar autom�ticamente parcelas para as notas. |
 | 11071 | 33284 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | SP-Criar op��o para importar o c�digo do servi�o prestado para o campo da observ |
-| 10845 | 33268 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver modelo de bloqueto do Banco do Nordeste do Brasil |
-| 10857 | 33269 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Retirar da tela de configura��o de hist�rios os �cones e o texto explicativo par |
+| 11135 | 33290 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Ocorre o erro "Chave NF-e Inv�lida! Data de Emiss�o da Chave Nota Fiscal � difer |
+| 11116 | 33289 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar a ordem dos clientes para emiss�o das notas fiscais. |
+| 11070 | 33283 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | SP-Utilizar a data da NFe se a data do RPS estiver em branco quando selecionado  |
+| 10982 | 33281 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo para informar a "Quantidade Inicial" e "Quantidade F |
+| 11159 | 33296 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | N�o efetuar o controle de AIDF no lan�amento de notas fiscais modelo 55 e 57. |
 | 10867 | 33270 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir informar data de vencimento de eventos com o formato DD/MM/AAAA. |
-| 10791 | 33262 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Sugerir no campo data base da tela de emiss�o do relat�rio cadastral de contas a |
+| 10845 | 33268 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver modelo de bloqueto do Banco do Nordeste do Brasil |
+| 10868 | 33271 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Considerar a data de faturamento para listar na tela de lan�amentos os eventos e |
+| 10857 | 33269 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Retirar da tela de configura��o de hist�rios os �cones e o texto explicativo par |
+| 10835 | 33267 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para calcular descontos autom�ticos para clientes adimplentes. |
 | 10830 | 33266 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo Cliente altera��es feitas no Dominio Cont�bil.   |
 | 10737 | 33261 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | MG-Aumentar para 60 caracteres o campo arquivo da tela de gera��o do informativo |
+| 10791 | 33262 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Sugerir no campo data base da tela de emiss�o do relat�rio cadastral de contas a |
 | 10666 | 33255 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Permitir lan�ar notas com modelo 55 sem informar a Chave NF-e quando a empresa n |
-| 10868 | 33271 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Considerar a data de faturamento para listar na tela de lan�amentos os eventos e |
-| 10835 | 33267 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para calcular descontos autom�ticos para clientes adimplentes. |
 | 10493 | 33230 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir a op��o "Quebra de p�gina por cliente" na emiss�o do Relat�rio Previs�o  |
-| 10485 | 33224 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir n�mero do documento no relatorio de contas a pagar. |
-| 10494 | 33231 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Listar clientes sem contrato na consulta F2 do cadastro de clientes. |
-| 10489 | 33226 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na guia "Avisos de contrato" do cadastro de contrato para avisar qua |
-| 10550 | 33233 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Listar notas com vencimento posteriores a data informada no campo "posi��o em" n |
-| 10488 | 33225 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gravar a informa��o do �ltimo caminho selecionado na importa��o de bloquetos rec |
-| 10555 | 33234 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal e Contabilida |
 | 10490 | 33227 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Ordenar as informa��es das colunas conforme clicado no cabe�alho da listagem na  |
+| 10485 | 33224 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir n�mero do documento no relatorio de contas a pagar. |
+| 10488 | 33225 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gravar a informa��o do �ltimo caminho selecionado na importa��o de bloquetos rec |
+| 10550 | 33233 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Listar notas com vencimento posteriores a data informada no campo "posi��o em" n |
 | 10492 | 33229 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar coluna Compet�ncia no relat�rio de Contas a Receber.       |
 | 10491 | 33228 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para interromper o faturamento de um contrato. |
-| 10377 | 33197 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Efetuar controle das vers�es dos sites do PGDAS e DASN sem precisar a libera��o  |
+| 10494 | 33231 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Listar clientes sem contrato na consulta F2 do cadastro de clientes. |
+| 10489 | 33226 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na guia "Avisos de contrato" do cadastro de contrato para avisar qua |
+| 10555 | 33234 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal e Contabilida |
 | 10477 | 33217 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir campo n�mero ao lado do endere�o no relat�rio cadastral de clientes. |
-| 10484 | 33223 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Implantar novo logotipo Banco Real no Boleto. |
-| 10479 | 33219 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de excluir sele��es gravadas na tela de sele��o de clientes. |
-| 10483 | 33222 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar descri��o do campo "Local de Pagamento" do Boleto Completo Bansicredi pa |
-| 10481 | 33221 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Bloquear lan�amentos em contas cont�beis sint�ticas. |
-| 10478 | 33218 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de ordenar o relat�rio de posi��o por ordem alfab�tica de clientes. |
-| 10480 | 33220 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para ordenar e quebrar os eventos por compet�ncia no relat�rio de La |
+| 10377 | 33197 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Efetuar controle das vers�es dos sites do PGDAS e DASN sem precisar a libera��o  |
 | 10411 | 33200 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Detalhar as baixas parciais feitas no relat�rio de contas a pagar.     |
-| 10309 | 33188 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | N�o permitir informar manualmente o nosso n�mero mais de uma vez. |
-| 10212 | 33170 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar coluna que demonstre a compet�ncia do faturamento no relat�rio de Posi��o. |
+| 10480 | 33220 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para ordenar e quebrar os eventos por compet�ncia no relat�rio de La |
+| 10478 | 33218 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de ordenar o relat�rio de posi��o por ordem alfab�tica de clientes. |
+| 10484 | 33223 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Implantar novo logotipo Banco Real no Boleto. |
+| 10481 | 33221 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Bloquear lan�amentos em contas cont�beis sint�ticas. |
+| 10483 | 33222 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar descri��o do campo "Local de Pagamento" do Boleto Completo Bansicredi pa |
+| 10479 | 33219 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de excluir sele��es gravadas na tela de sele��o de clientes. |
+| 10216 | 33174 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir informar zero nos campos "Ulrapassar a:" da guia avisos de contrato do  |
+| 10268 | 33178 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir excluir um contrato sem faturamento vinculado, mesmo que exista evento  |
+| 10271 | 33180 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo observa��es na emiss�o dos bloquetos. |
+| 10204 | 33163 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar adiantamento por evento. |
 | 10215 | 33173 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar a contabiliza��o na tela de movimenta��o. |
+| 10205 | 33164 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar vari�veis para serem utilizadas no complemento de eventos. |
+| 10274 | 33183 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar campo para informar um hist�rico na importa��o de bloqutos recebido. |
+| 10212 | 33170 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar coluna que demonstre a compet�ncia do faturamento no relat�rio de Posi��o. |
+| 10310 | 33189 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir baixar pagamento da mesma parcela mais de uma vez com a mesma data e me |
+| 10206 | 33165 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar vari�vel para buscar a compet�ncia do recebimento na guia Recebimento da c |
+| 10287 | 33185 | 7.5C-04 | 03/03/2016 | Em Teste DEMO | Criar modelo de Coeficiente de An�lises em modo gr�fico.     |
+| 10209 | 33168 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir excluir em grupo eventos lan�ados |
+| 10309 | 33188 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | N�o permitir informar manualmente o nosso n�mero mais de uma vez. |
 | 10213 | 33171 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Trazer automaticamente a conta financeira e os demais dados ao efetuar uma reimp |
 | 10277 | 33184 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar campo que demonstre o "valor pago da parcela" na tela de baixa de parcelas |
-| 10268 | 33178 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir excluir um contrato sem faturamento vinculado, mesmo que exista evento  |
-| 10216 | 33174 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir informar zero nos campos "Ulrapassar a:" da guia avisos de contrato do  |
-| 10311 | 33190 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir selecionar mais de um evento no relat�rio Rela��o de Lan�amentos. |
-| 10272 | 33181 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio que demonstre os totais por eventos recebidos. |
-| 10287 | 33185 | 7.5C-04 | 03/03/2016 | Em Teste DEMO | Criar modelo de Coeficiente de An�lises em modo gr�fico.     |
-| 10271 | 33180 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo observa��es na emiss�o dos bloquetos. |
-| 10310 | 33189 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir baixar pagamento da mesma parcela mais de uma vez com a mesma data e me |
-| 10274 | 33183 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar campo para informar um hist�rico na importa��o de bloqutos recebido. |
-| 10205 | 33164 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar vari�veis para serem utilizadas no complemento de eventos. |
-| 10202 | 33161 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para lan�amento de eventos fixos onde possa ser informado os meses p |
-| 10207 | 33166 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir nova guia chamada "Impostos" no complemento de hist�ricos com a vari�vel |
-| 10270 | 33179 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um cadastro de hist�ricos para ser utilizado nas baixas e na tela de movme |
-| 10206 | 33165 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar vari�vel para buscar a compet�ncia do recebimento na guia Recebimento da c |
-| 10209 | 33168 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir excluir em grupo eventos lan�ados |
 | 10273 | 33182 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de ordena��o por "Nosso N�mero" no relat�rio Bloquetos Emitidos. |
-| 10204 | 33163 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar adiantamento por evento. |
+| 10272 | 33181 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio que demonstre os totais por eventos recebidos. |
+| 10202 | 33161 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para lan�amento de eventos fixos onde possa ser informado os meses p |
+| 10311 | 33190 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir selecionar mais de um evento no relat�rio Rela��o de Lan�amentos. |
+| 10270 | 33179 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um cadastro de hist�ricos para ser utilizado nas baixas e na tela de movme |
+| 10207 | 33166 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir nova guia chamada "Impostos" no complemento de hist�ricos com a vari�vel |
 | 10192 | 33152 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10075  |
+| 10189 | 33149 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 9252 |
 | 10190 | 33150 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10102 |
-| 10197 | 33157 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10117  |
+| 10195 | 33155 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10114  |
+| 10196 | 33156 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10115 |
 | 10198 | 33158 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10119  |
+| 10193 | 33153 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10092  |
+| 10197 | 33157 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10117  |
 | 10194 | 33154 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10108  |
 | 10191 | 33151 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10071  |
-| 10193 | 33153 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10092  |
-| 10189 | 33149 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 9252 |
-| 10196 | 33156 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10115 |
-| 10195 | 33155 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | SAI para transfer�ncia e testes da SAI 10114  |
-| 10180 | 33143 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de de selecionar todos, nenhum e de inverter na tela de reajuste de  |
 | 10183 | 33146 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o nos parametros para somente avisar ou avisar e n�o faturar clientes  |
-| 10044 | 33117 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do leiaute 040 da CEF |
+| 10180 | 33143 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de de selecionar todos, nenhum e de inverter na tela de reajuste de  |
+| 10172 | 33136 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Otimizar a emiss�o do Livro de Apura��o de ICMS.   |
+| 10046 | 33119 | 7.3A-03 | 03/03/2016 | Em Teste DEMO | Em empresas onde a apura��o do Simples Nacional � pelo regime de caixa, no lan�a |
+| 10149 | 33133 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibbilizar os mesmos campos utilizados na emiss�o dos bloquetos no cadastro |
+| 10151 | 33135 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Fazer com que os eventos que n�o tenham contas cont�beis n�o sejam contabilizado |
+| 10175 | 33138 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um campo no cadastro da conta financeira para informar o in�cio do nosso n |
+| 10174 | 33137 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de cliente para selecionar o tipo de cobran�a |
+| 10176 | 33139 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir ordena��o, clicando sobre o t�tulo da coluna, na tela de emiss�o de not |
+| 10150 | 33134 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar o vencimento de um faturamento. |
+| 10179 | 33142 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitirr informar quantidade/valor diferente por cliente na tela de lan�amentos |
+| 10076 | 33131 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Habilitar o bot�o para Rateio por Centro de Custos na tela de baixa de pagamento |
 | 10016 | 33112 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | N�o exibir a mensagem se deseja alterar todos os clientes, fornecedores, remeten |
 | 10045 | 33118 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para ordenar por nome ou c�digo do cliente/fornecedor, independente  |
-| 10179 | 33142 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitirr informar quantidade/valor diferente por cliente na tela de lan�amentos |
-| 10175 | 33138 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um campo no cadastro da conta financeira para informar o in�cio do nosso n |
-| 10149 | 33133 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibbilizar os mesmos campos utilizados na emiss�o dos bloquetos no cadastro |
-| 10176 | 33139 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir ordena��o, clicando sobre o t�tulo da coluna, na tela de emiss�o de not |
-| 10076 | 33131 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Habilitar o bot�o para Rateio por Centro de Custos na tela de baixa de pagamento |
 | 10178 | 33141 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para ordenar por n�mero de documento o relat�rio de contas a receber |
 | 10177 | 33140 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um cadastro de categorias de contas a pagar para pagamento e contabiliza�� |
-| 10174 | 33137 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de cliente para selecionar o tipo de cobran�a |
-| 10172 | 33136 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Otimizar a emiss�o do Livro de Apura��o de ICMS.   |
-| 10150 | 33134 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar o vencimento de um faturamento. |
-| 10046 | 33119 | 7.3A-03 | 03/03/2016 | Em Teste DEMO | Em empresas onde a apura��o do Simples Nacional � pelo regime de caixa, no lan�a |
-| 10151 | 33135 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Fazer com que os eventos que n�o tenham contas cont�beis n�o sejam contabilizado |
+| 10044 | 33117 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do leiaute 040 da CEF |
+| 9884 | 33082 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar processo de importa��o de notas. |
+| 9992 | 33107 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Trazer o mesmo valor do campo Regime Federal definido nos par�metros da Escrita  |
 | 9911 | 33089 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para alterar a descri��o do t�tulo do Livro Caixa. |
-| 9922 | 33095 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de busca na listagem dos lan�amentos cont�beis. |
-| 9916 | 33093 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Exportar para a Escrita Fiscal as informa��o dos dados do frete. |
+| 9917 | 33094 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Criar novo layout de importa��o de notas com registro para ser informado os dado |
 | 9887 | 33084 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar a emiss�o do livro de sa�das |
 | 9886 | 33083 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | SP-Otimizar a gera��o do informativo Nova GIA |
-| 9917 | 33094 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Criar novo layout de importa��o de notas com registro para ser informado os dado |
-| 9912 | 33090 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para imprimir o c�digo ou a classifica��o da conta no di�rio. |
+| 9916 | 33093 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Exportar para a Escrita Fiscal as informa��o dos dados do frete. |
 | 9910 | 33088 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Otimizar a gera��o do informativo Sinco Cont�beis |
-| 9923 | 33096 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Corrigir o utilit�rio de limpeza notas. |
-| 9992 | 33107 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Trazer o mesmo valor do campo Regime Federal definido nos par�metros da Escrita  |
-| 9884 | 33082 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar processo de importa��o de notas. |
 | 9960 | 33102 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | RS-Trazer como sugest�o o per�odo do ano anterior ao per�odo atual na GMB. |
-| 9773 | 33051 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Emitir a guia DAS diretamente pelo sistema interagindo com o site da receita fed |
-| 9780 | 33053 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Melhorar a performance da integra��o cont�bil. |
-| 9814 | 33061 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Criar totalizadores nos relat�rios or�ament�rios: Acompanhamento Mensal e Acompa |
-| 9852 | 33074 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a integra��o desse m�dulo com o Office 2007. |
-| 9779 | 33052 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Melhorar a performance no processo de "Consulta dos Saldos(F6)".     |
-| 9819 | 33065 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Gravar os lan�amentos cont�beis importados via arquivo texto com o tipo de lan�a |
-| 9835 | 33067 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Limitar o valor da deprecia��o ao valor original do bem no ultimo m�s calculado. |
-| 9813 | 33060 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o de emiss�o por centro de custo no relat�rio Comparativo de Movimento |
-| 9818 | 33064 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | N�o selecionar o primeiro lan�amento ao efetuar uma busca no utilit�rio de alter |
-| 9810 | 33057 | 8.0A-09 | 03/03/2016 | Em Teste DEMO | Criar op��o para detalhar as contas por centro de custo no Balancete. |
+| 9922 | 33095 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de busca na listagem dos lan�amentos cont�beis. |
+| 9923 | 33096 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Corrigir o utilit�rio de limpeza notas. |
+| 9912 | 33090 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para imprimir o c�digo ou a classifica��o da conta no di�rio. |
 | 9812 | 33059 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Criar op��o de emitir o Livro Di�rio por centro de custos. |
+| 9814 | 33061 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Criar totalizadores nos relat�rios or�ament�rios: Acompanhamento Mensal e Acompa |
+| 9780 | 33053 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Melhorar a performance da integra��o cont�bil. |
 | 9836 | 33068 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar a gera��o do arquivo Sintegra quando marcado a op��o para gerar o regis |
+| 9773 | 33051 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Emitir a guia DAS diretamente pelo sistema interagindo com o site da receita fed |
+| 9818 | 33064 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | N�o selecionar o primeiro lan�amento ao efetuar uma busca no utilit�rio de alter |
+| 9779 | 33052 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Melhorar a performance no processo de "Consulta dos Saldos(F6)".     |
+| 9835 | 33067 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Limitar o valor da deprecia��o ao valor original do bem no ultimo m�s calculado. |
+| 9852 | 33074 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a integra��o desse m�dulo com o Office 2007. |
+| 9810 | 33057 | 8.0A-09 | 03/03/2016 | Em Teste DEMO | Criar op��o para detalhar as contas por centro de custo no Balancete. |
+| 9819 | 33065 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Gravar os lan�amentos cont�beis importados via arquivo texto com o tipo de lan�a |
+| 9813 | 33060 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o de emiss�o por centro de custo no relat�rio Comparativo de Movimento |
 | 9745 | 33044 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Emitir aviso de diferen�as entre o valor cont�bil e base somente no final da imp |
 | 9749 | 33047 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar op��o de emitir valores negativos entre parenteses na emiss�o do  |
-| 9634 | 33026 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Reincluir a op��o de salvar relat�rios no formato "Excel com cabe�alhos". |
-| 9567 | 33005 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Permitir acesso total ao cadastro de hist�ricos nas empresas que utilizam hist�r |
-| 9488 | 32996 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Ignorar a informa��o do fato gerador IRRF e CRF na importa��o de notas e gravar  |
-| 9604 | 33015 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Buscar a taxa Selic informada no m�dulo Atualizar ao emitir a 3� parcela do darf |
 | 9561 | 33000 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | MG-N�o transferir a diferen�a ao alterar o valor de uma campo do quadro de detal |
+| 9604 | 33015 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Buscar a taxa Selic informada no m�dulo Atualizar ao emitir a 3� parcela do darf |
 | 9568 | 33006 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Disponibilizar no Balan�o Demonstra��o, relat�rio de lan�amentos Comparativo de  |
+| 9488 | 32996 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Ignorar a informa��o do fato gerador IRRF e CRF na importa��o de notas e gravar  |
 | 9632 | 33025 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de emiss�o do balancete por centros de custos. |
 | 9492 | 32997 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Demonstrar na estrutura do balan�o demonstra��o as contas de ativo e passivo con |
+| 9567 | 33005 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Permitir acesso total ao cadastro de hist�ricos nas empresas que utilizam hist�r |
+| 9634 | 33026 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Reincluir a op��o de salvar relat�rios no formato "Excel com cabe�alhos". |
 | 9384 | 32975 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de gera��o do informativo DACON. |
-| 9356 | 32964 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Criar op��o de replicar o cadastro de produtos. |
 | 9451 | 32985 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Realizar a importa��o de notas mesmo que existam impostos n�o definidos no acumu |
-| 9316 | 32940 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Trazer sempre selecionada a conta quando repatido da partida anterior. |
-| 9303 | 32935 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Imprimir o CNAE 2.0 na guia GARE. |
-| 9315 | 32939 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar os relat�rios para o formato padr�o e somente modelo gr�fico. |
-| 9332 | 32951 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | N�o permitir alterar o per�odo de trabalho com a tela de lan�amentos em lote abe |
-| 9325 | 32948 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | N�o excluir os parcelamentos e os pagamentos do CSOC e IPRJ ao reapurar o per�od |
-| 9323 | 32947 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Posicionar o foco na linha do lan�amento selecionado na listagem do lan�amento e |
+| 9356 | 32964 | 8.1A-07 | 03/03/2016 | Em Teste DEMO | Criar op��o de replicar o cadastro de produtos. |
 | 9283 | 32931 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | N�o listar notas sem valor de IRRF na guia DARF. |
+| 9332 | 32951 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | N�o permitir alterar o per�odo de trabalho com a tela de lan�amentos em lote abe |
+| 9303 | 32935 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Imprimir o CNAE 2.0 na guia GARE. |
+| 9323 | 32947 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Posicionar o foco na linha do lan�amento selecionado na listagem do lan�amento e |
+| 9316 | 32940 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Trazer sempre selecionada a conta quando repatido da partida anterior. |
+| 9325 | 32948 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | N�o excluir os parcelamentos e os pagamentos do CSOC e IPRJ ao reapurar o per�od |
+| 9315 | 32939 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar os relat�rios para o formato padr�o e somente modelo gr�fico. |
 | 9212 | 32909 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Alterar a tela de exporta��o de lan�amentos cont�beis para permitir selecionar p |
 | 9281 | 32929 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Permitir a altera��o do c�digo da filial nos lan�amentos com tipo fiferente de u |
 | 9260 | 32917 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Permitir selecionar/buscar os c�digos de recolhimento informados no cadastro do  |
-| 9113 | 32871 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para controlar o vencimento das notas no cadastro de AIDF |
-| 9105 | 32864 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Incluir a hora de emiss�o em todos os relat�rios. |
 | 9130 | 32875 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Repetir n�mero da chave da NF-e na guia "Complementar" em todos os segmentos da  |
-| 9154 | 32885 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Ajustar a Base de calculo dos cr�ditos do PIS e COFINS para as empresa que n�o c |
-| 9103 | 32862 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco do Brasil no padr�o CNA |
 | 9104 | 32863 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco Real conforme layout CN |
 | 9138 | 32876 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | SP-Emitir guia GARE referente ao DIFALI para empresas optantes pelo Simples Naci |
+| 9103 | 32862 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco do Brasil no padr�o CNA |
 | 9109 | 32867 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco Sicredi, conforme layou |
 | 9102 | 32861 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de arquivo de retorno do Banco Ita�. |
-| 9100 | 32860 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Permitir a  importa��o de bloquetos recebidos do banco HSBC conforme leiaute cna |
-| 9089 | 32859 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Criar a op��o para repetir os dados ap�s gravas as notas |
+| 9113 | 32871 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para controlar o vencimento das notas no cadastro de AIDF |
+| 9154 | 32885 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Ajustar a Base de calculo dos cr�ditos do PIS e COFINS para as empresa que n�o c |
+| 9105 | 32864 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Incluir a hora de emiss�o em todos os relat�rios. |
 | 9065 | 32853 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de omitir grupos de contas nos relat�rios or�ament�rios de Acompanha |
 | 9072 | 32858 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de emitir apenas as contas com movimento nos relat�rios or�ament�rio |
-| 8982 | 32825 | 7.5C-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para demonstrar a m�scara da conta contabil quando o lan�amento em l |
-| 9029 | 32845 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar remetentes e destinat�rios por nome, c�digo ou inscri� |
-| 8978 | 32821 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Veirificar o regime federal do m�dulo Folha se est� diferente do selecionado na  |
-| 8979 | 32822 | 10.0A-14 | 03/03/2016 | Em Teste DEMO | Alterar a tela de retorno de protocolo para que seja poss�vel efetuar a sele��o  |
-| 8980 | 32823 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Permitir a inclus�o de um novo remetente/destinat�rio por meio da tecla de atalh |
+| 9100 | 32860 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Permitir a  importa��o de bloquetos recebidos do banco HSBC conforme leiaute cna |
+| 9089 | 32859 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Criar a op��o para repetir os dados ap�s gravas as notas |
 | 8984 | 32827 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Criar campo para demonstrar o dia da semana ao lado do campo Data da tela de lan |
-| 8983 | 32826 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para repetir dados a cada partida de lan�amentos.   |
+| 8980 | 32823 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Permitir a inclus�o de um novo remetente/destinat�rio por meio da tecla de atalh |
+| 8979 | 32822 | 10.0A-14 | 03/03/2016 | Em Teste DEMO | Alterar a tela de retorno de protocolo para que seja poss�vel efetuar a sele��o  |
 | 8995 | 32834 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Criar op��o de eliminar o cadastro de remetentes e destinat�rios no utilit�rio d |
+| 8978 | 32821 | 7.5A-03 | 03/03/2016 | Em Teste DEMO | Veirificar o regime federal do m�dulo Folha se est� diferente do selecionado na  |
+| 8982 | 32825 | 7.5C-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para demonstrar a m�scara da conta contabil quando o lan�amento em l |
+| 8983 | 32826 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para repetir dados a cada partida de lan�amentos.   |
+| 9029 | 32845 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para informar remetentes e destinat�rios por nome, c�digo ou inscri� |
 | 8926 | 32796 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
-| 8788 | 32760 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar demonstrativo DMPL nos Livros Cont�beis. |
-| 8874 | 32787 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis referente aos pagamentos da Folha em lotes. |
-| 8826 | 32764 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Criar novo leiaute de importa��o de notas com op��o para importa��o de cadastro  |
 | 8799 | 32762 | 7.4A-02 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo Nome do fornecedor do cadastro de bens. |
+| 8788 | 32760 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar demonstrativo DMPL nos Livros Cont�beis. |
+| 8826 | 32764 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Criar novo leiaute de importa��o de notas com op��o para importa��o de cadastro  |
+| 8874 | 32787 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis referente aos pagamentos da Folha em lotes. |
 | 8865 | 32783 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de gravar o cadastro de clientes e fornecedores quando exist |
 | 8798 | 32761 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Permitir gravar lan�amento sem informa��o nos "campos livres" da guia Municipais |
+| 8776 | 32752 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ordenar conforme clicado sobre o t�tulo da coluna na consulta F2 de clientes na  |
+| 8707 | 32739 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Abrir a tela de lan�amentos em lote quando editado os lan�amentos pela tela de c |
+| 8645 | 32724 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Padronizar mensagens referente a contas cont�beis no cadastro de contas patrimon |
+| 8694 | 32738 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Aumentar para 6 casas decimais o campo "Valor unit�rio" no cadastro de produtos. |
+| 8779 | 32753 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Realizar o mesmo controle de verifica��o de nota existente do lan�amento de nota |
+| 8781 | 32755 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir a baixa de parcelas a pagar em grupo. |
 | 8772 | 32748 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar vari�vel para o campo "Identidade Profissional" no Word.       |
 | 8768 | 32744 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Gerar o campo "Data de Abertura da Matriz" do relat�rio DASN com base no campo " |
-| 8779 | 32753 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Realizar o mesmo controle de verifica��o de nota existente do lan�amento de nota |
-| 8645 | 32724 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Padronizar mensagens referente a contas cont�beis no cadastro de contas patrimon |
-| 8707 | 32739 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Abrir a tela de lan�amentos em lote quando editado os lan�amentos pela tela de c |
-| 8694 | 32738 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Aumentar para 6 casas decimais o campo "Valor unit�rio" no cadastro de produtos. |
-| 8776 | 32752 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ordenar conforme clicado sobre o t�tulo da coluna na consulta F2 de clientes na  |
-| 8781 | 32755 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir a baixa de parcelas a pagar em grupo. |
-| 8638 | 32718 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | BA- Vincular help a tela de gera��o do informativo DMA.       |
-| 8613 | 32715 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Formatar e validar a chave da NFe informada no lan�amento das notas da sa�das. |
-| 8544 | 32702 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Emitir mensagens quando cadastrado um bem sem descri��o, conta ou centro de cust |
-| 8605 | 32712 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a integra��o do sistema com o office 2007. |
-| 8545 | 32703 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Tratar mensagem de erro ao efetuar importa��o de contas patrimoniais quando a em |
-| 8547 | 32705 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a integra��o |
-| 8542 | 32700 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis de baixa no momento que a mesma for efetuada. |
-| 8602 | 32709 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Alterar a ordem dos campos "C�d Acesso" e "CPF Respons�vel" na emiss�o do relat� |
-| 8540 | 32698 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Criar relat�rio que demonstre os valores de cr�dito de PIS e COFINS referente a  |
-| 8639 | 32719 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Vincular help na janela de importa��o de lan�amentos de outra empresa.     |
 | 8637 | 32717 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Vincular help na tela de rateio por centro de custos no cadastro de contas cont� |
-| 8447 | 32671 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Alterar o utilit�rio de exporta��o de lan�amentos para que o mesmo exporte dados |
+| 8602 | 32709 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Alterar a ordem dos campos "C�d Acesso" e "CPF Respons�vel" na emiss�o do relat� |
+| 8545 | 32703 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Tratar mensagem de erro ao efetuar importa��o de contas patrimoniais quando a em |
+| 8638 | 32718 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | BA- Vincular help a tela de gera��o do informativo DMA.       |
+| 8605 | 32712 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar a integra��o do sistema com o office 2007. |
+| 8639 | 32719 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Vincular help na janela de importa��o de lan�amentos de outra empresa.     |
+| 8542 | 32700 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis de baixa no momento que a mesma for efetuada. |
+| 8544 | 32702 | 7.4B-06 | 03/03/2016 | Em Teste DEMO | Emitir mensagens quando cadastrado um bem sem descri��o, conta ou centro de cust |
+| 8547 | 32705 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a integra��o |
+| 8540 | 32698 | 7.3B-06 | 03/03/2016 | Em Teste DEMO | Criar relat�rio que demonstre os valores de cr�dito de PIS e COFINS referente a  |
+| 8613 | 32715 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Formatar e validar a chave da NFe informada no lan�amento das notas da sa�das. |
+| 8411 | 32663 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Atualizar utilit�rio de altera��o de lan�amentos conforme controles efetuado na  |
 | 8410 | 32662 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar importa��o de lan�amentos de partidas simples que n�o seja |
-| 8418 | 32666 | 7.2A-04 | 03/03/2016 | Em Teste DEMO | Atualizar o m�dulo Cliente conforme altera��es da vers�o 7.2A-04 do Cont�bil. |
+| 8413 | 32665 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Gerar em lote, os lan�amentos de saldo gerados pelo utilit�rio "Elimina per�odo" |
+| 8447 | 32671 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | Alterar o utilit�rio de exporta��o de lan�amentos para que o mesmo exporte dados |
 | 8514 | 32685 | 8.2C-05 | 03/03/2016 | Em Teste DEMO | Permitir importar e efetuar o c�lculo do INSS em atraso de empregados dom�sticos |
 | 8407 | 32660 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | N�o permitir alterar lan�amentos em lote pela tela de lan�amentos de caixa. |
+| 8499 | 32678 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | N�o listar na DASN CNPJs de filiais inativas em ano anterior ao da declara��o. |
+| 8409 | 32661 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | N�o permitir incluir lan�amentos pela tela de lan�amentos normais. |
+| 8412 | 32664 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Retirar a op��o de "Permite mudar a data com diferen�a de d�bito e cr�dito" dos  |
+| 8446 | 32670 | 7.5B-07 | 03/03/2016 | Em Teste DEMO | Demonstrar as contas de contra partida no relat�rio raz�o quando efetuados lan�a |
+| 8418 | 32666 | 7.2A-04 | 03/03/2016 | Em Teste DEMO | Atualizar o m�dulo Cliente conforme altera��es da vers�o 7.2A-04 do Cont�bil. |
 | 8505 | 32680 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio de coeficientes de an� |
 | 8455 | 32672 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto de cobran�a modelo completo do banco Bancoob. |
-| 8446 | 32670 | 7.5B-07 | 03/03/2016 | Em Teste DEMO | Demonstrar as contas de contra partida no relat�rio raz�o quando efetuados lan�a |
-| 8411 | 32663 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Atualizar utilit�rio de altera��o de lan�amentos conforme controles efetuado na  |
-| 8499 | 32678 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | N�o listar na DASN CNPJs de filiais inativas em ano anterior ao da declara��o. |
-| 8412 | 32664 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Retirar a op��o de "Permite mudar a data com diferen�a de d�bito e cr�dito" dos  |
-| 8458 | 32673 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e Contabili |
-| 8413 | 32665 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Gerar em lote, os lan�amentos de saldo gerados pelo utilit�rio "Elimina per�odo" |
 | 8403 | 32657 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Aumentar tamanho do campo para informar valores na estrutura da DLPA.     |
-| 8409 | 32661 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | N�o permitir incluir lan�amentos pela tela de lan�amentos normais. |
-| 8394 | 32648 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para demonstrar o n�mero do lote nos livro Raz�o, Di�rio e Caixa. |
-| 8323 | 32635 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Emitir aviso quando informado data de pagamento em um dia n�o �til. |
-| 8309 | 32633 | 7.2A-04 | 03/03/2016 | Em Teste DEMO | Alterar a ficha 39 da DIPJ para ser relacionada com as contas cont�beis |
-| 8396 | 32650 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Desenvolver consulta de movimento mensal. |
-| 8373 | 32641 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para configurar o resumo do balancete no pr�pria tela de emiss�o do  |
-| 8383 | 32644 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Para os lan�amentos realizado em lote abrir a tela de lan�amentos em lote quando |
-| 8387 | 32647 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o de reinclus�o de lan�amentos no utilit�rio de exclus�o de lan�amento |
-| 8300 | 32627 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para efetuar quebra de p�gina conforme agrupamento no relat�rio de c |
+| 8458 | 32673 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e Contabili |
 | 8357 | 32640 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis em lotes |
-| 8301 | 32628 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar processo para exclus�o de lan�amentos em grupo. |
-| 8382 | 32643 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Levar em considera��o as op��es dos par�metros para repetir ap�s gravar o lan�am |
+| 8323 | 32635 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Emitir aviso quando informado data de pagamento em um dia n�o �til. |
+| 8383 | 32644 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Para os lan�amentos realizado em lote abrir a tela de lan�amentos em lote quando |
+| 8401 | 32655 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para importa��o de lan�amentos em lote de outra empresa. |
+| 8300 | 32627 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para efetuar quebra de p�gina conforme agrupamento no relat�rio de c |
+| 8309 | 32633 | 7.2A-04 | 03/03/2016 | Em Teste DEMO | Alterar a ficha 39 da DIPJ para ser relacionada com as contas cont�beis |
 | 8306 | 32632 | 7.2A-04 | 03/03/2016 | Em Teste DEMO | Gerar o email do respons�vel legal para a DIPJ. |
-| 8398 | 32652 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o "Descri��o da pagina��o" na emiss�o das notas explicativa |
 | 8304 | 32631 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver gr�fico Comnparativo de recebimento. |
 | 8395 | 32649 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Incluir o c�digo de acesso e o CPF do respons�vel no relat�rio DASN. |
-| 8385 | 32645 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir o n�mero do lote no relat�rios de Lan�amentos. |
+| 8382 | 32643 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Levar em considera��o as op��es dos par�metros para repetir ap�s gravar o lan�am |
+| 8398 | 32652 | 7.4C-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o "Descri��o da pagina��o" na emiss�o das notas explicativa |
+| 8301 | 32628 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar processo para exclus�o de lan�amentos em grupo. |
+| 8396 | 32650 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Desenvolver consulta de movimento mensal. |
 | 8302 | 32629 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir op��o de sele�ao por pagamento no relat�rio de contas a pagar. |
-| 8401 | 32655 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para importa��o de lan�amentos em lote de outra empresa. |
+| 8387 | 32647 | 7.3B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o de reinclus�o de lan�amentos no utilit�rio de exclus�o de lan�amento |
+| 8373 | 32641 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para configurar o resumo do balancete no pr�pria tela de emiss�o do  |
+| 8394 | 32648 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para demonstrar o n�mero do lote nos livro Raz�o, Di�rio e Caixa. |
+| 8385 | 32645 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir o n�mero do lote no relat�rios de Lan�amentos. |
+| 8258 | 32608 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es no m�dulo Escrita e Contabilidade. |
 | 8273 | 32612 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Est� ficando um espa�o em branco muito grande entre o final do balan�o e as assi |
 | 8291 | 32621 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Demonstrar o n�mero da nota que n�o foi importada no relat�rio de inconsist�ncia |
-| 8258 | 32608 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es no m�dulo Escrita e Contabilidade. |
+| 8229 | 32598 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Incluir o CNPJ ao lado do nome do cliente no relat�rios de Reten��es a Compensar |
 | 8221 | 32591 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Gerar a raz�o social da empresa para o informativo DCTF. |
 | 8243 | 32602 | 7.2A-04 | 03/03/2016 | Em Teste DEMO | Considerar tamb�m as empresas filiais com cadastros separados da matriz, quando  |
-| 8229 | 32598 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Incluir o CNPJ ao lado do nome do cliente no relat�rios de Reten��es a Compensar |
-| 8187 | 32576 | 8.1A-01 | 03/03/2016 | Em Teste DEMO | N�o listar as notas que foram lan�adas como Entradas cujo o emitente � pr�prio,  |
-| 8190 | 32579 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | Realizar o controle de AIDF tamb�m pela notas de servi�os. |
-| 8206 | 32585 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de integra��o cont�bil dos impostos ICMS, PIS e COFINS n�o c |
 | 8189 | 32578 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Gerar em ordem alfab�tica os relat�rios de contas a pagar/receber quando agrupad |
+| 8190 | 32579 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | Realizar o controle de AIDF tamb�m pela notas de servi�os. |
+| 8187 | 32576 | 8.1A-01 | 03/03/2016 | Em Teste DEMO | N�o listar as notas que foram lan�adas como Entradas cujo o emitente � pr�prio,  |
 | 8143 | 32560 | 8.0A-10 | 03/03/2016 | Em Teste DEMO | Permitir informar mais de uma conta nos coeficientes de an�lise. |
+| 8206 | 32585 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de integra��o cont�bil dos impostos ICMS, PIS e COFINS n�o c |
 | 8109 | 32552 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto de cobran�a modelo completo do banco SECOVICRED.            |
-| 8084 | 32540 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Cont�bil e Escrita Fiscal |
-| 8094 | 32542 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Desconsiderar as contas sint�ticas nas an�lises vertical e horizontal do DRE qua |
-| 8086 | 32541 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Trazer o valor da parcela no campo valor pago ao realizar uma baixa de pagamento |
-| 8034 | 32524 | 7.5B-06 | 03/03/2016 | Em Teste DEMO | Permitir informar conta com 7 d�gitos nas consulta F5 e F6. |
-| 8039 | 32527 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Repetir a data do �ltimo lan�amento ao lan�ar no processo de movimenta��o |
 | 8038 | 32526 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para quando importar clientes ou fornecedores o sistema possa re |
-| 7971 | 32500 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Ordenar os itens das tabelas municipais por "Valor do item" na guia municipais d |
+| 8086 | 32541 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Trazer o valor da parcela no campo valor pago ao realizar uma baixa de pagamento |
+| 8039 | 32527 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Repetir a data do �ltimo lan�amento ao lan�ar no processo de movimenta��o |
+| 8094 | 32542 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | Desconsiderar as contas sint�ticas nas an�lises vertical e horizontal do DRE qua |
+| 8084 | 32540 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Cont�bil e Escrita Fiscal |
+| 8034 | 32524 | 7.5B-06 | 03/03/2016 | Em Teste DEMO | Permitir informar conta com 7 d�gitos nas consulta F5 e F6. |
 | 7959 | 32497 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no Dom�nio Cont�bil e Dom�nio Escrita  |
+| 7971 | 32500 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Ordenar os itens das tabelas municipais por "Valor do item" na guia municipais d |
 | 7853 | 32461 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Considerar sempre o GT final do ultimo dia anterior para calcular o GT inicial n |
-| 7758 | 32440 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informada a conta caixa na tela de baixa parcial e baixa to |
-| 7776 | 32441 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para "Digita��o obrigat�ria de centro de custos" nos lan�amentos com |
-| 7847 | 32456 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informado o hist�rico do imposto a compensar nos impostos P |
-| 7745 | 32435 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Gerar o lan�amento cont�bil referente ao imposto ICMS lan�ado no cadastro de ben |
 | 7786 | 32443 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | SC-Considerar o valor do imposto DIFALI para realizar o lan�amento de fechamento |
+| 7745 | 32435 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Gerar o lan�amento cont�bil referente ao imposto ICMS lan�ado no cadastro de ben |
+| 7847 | 32456 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informado o hist�rico do imposto a compensar nos impostos P |
+| 7776 | 32441 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para "Digita��o obrigat�ria de centro de custos" nos lan�amentos com |
+| 7758 | 32440 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informada a conta caixa na tela de baixa parcial e baixa to |
 | 7757 | 32439 | 7.2A-03 | 03/03/2016 | Em Teste DEMO | Atualizar a tela de rateio por centro de custos conforme defini��es feitas no ca |
-| 7694 | 32421 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para exclus�o de lan�amentos em lote. |
-| 7639 | 32411 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Considerar o valor do imposto IPI para fechar os valores de ICMS com o valor con |
-| 7613 | 32403 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ordenar o gr�fico de faturamento por compet�ncia. |
-| 7698 | 32422 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de zeramento quando a empresa efetua rateio por centro de cu |
-| 7614 | 32404 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de adi��es e exclus�es da Contribui�ao Social grupos para sere |
-| 7611 | 32401 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar baixa parcial em baixas em grupo. |
 | 7622 | 32409 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | MG - Habilitar a emiss�o da guia DAE para Substitui��o Tribut�ria. |
-| 7706 | 32424 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de posi��o para o contas a pagar. |
+| 7639 | 32411 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Considerar o valor do imposto IPI para fechar os valores de ICMS com o valor con |
 | 7612 | 32402 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um utilit�rio para poder regerar os lan�amentos cont�beis |
-| 7702 | 32423 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de c�lculo, pois em algumas situa��es o processo fica muito  |
 | 7650 | 32412 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Acrescentar todos os impostos na op��o "impostos" no quadro "empresas que possue |
-| 7576 | 32392 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Exportar os lan�amentos efetuados em lotes conforme leiaute para importa��o de l |
-| 7458 | 32369 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | N�o permitir incluir lan�amentos pela tela de lan�amentos se a empresa gera o in |
-| 7606 | 32396 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | SC-Quando realizado importa��o do m�dulo Folha para gerar a DIME, considerar na  |
-| 7454 | 32365 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Permitir nos lan�amentos em lote que possa se repetido a conta nos lan�amentos d |
-| 7502 | 32384 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir tamb�m as contas sem or�amento nos relat�rios or�ament |
-| 7456 | 32367 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar o rateio gerencial na tela de lan�amentos em lotes. |
-| 7459 | 32370 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar a importa��o de lan�amentos se a empresa gera o informativ |
-| 7605 | 32395 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar cadastro de observa��es para serem utilizadas na emiss�o da nota fiscal. |
-| 7457 | 32368 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar a DMPL na tela de lan�amentos em lotes. |
-| 7468 | 32372 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de lan�amentos em lotes. |
-| 7554 | 32386 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Alterar a tela de lan�amentos em lotes para que seja permitido lan�ar v�rios d�b |
-| 7559 | 32390 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar campo pata identificar a origem dos lan�amentos na tela de lan�amentos em  |
-| 7556 | 32387 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar leiaute de importa��o de lan�amentos em lotes. |
+| 7694 | 32421 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para exclus�o de lan�amentos em lote. |
+| 7706 | 32424 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de posi��o para o contas a pagar. |
+| 7613 | 32403 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ordenar o gr�fico de faturamento por compet�ncia. |
+| 7614 | 32404 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de adi��es e exclus�es da Contribui�ao Social grupos para sere |
+| 7702 | 32423 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de c�lculo, pois em algumas situa��es o processo fica muito  |
+| 7698 | 32422 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de zeramento quando a empresa efetua rateio por centro de cu |
+| 7611 | 32401 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar baixa parcial em baixas em grupo. |
 | 7558 | 32389 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Efetuar os lan�amentos de zeramento em lotes |
-| 7557 | 32388 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis em lotes. |
+| 7606 | 32396 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | SC-Quando realizado importa��o do m�dulo Folha para gerar a DIME, considerar na  |
 | 7455 | 32366 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Levar em considera��o as op��es dos par�metros quando realizado lan�amentos em l |
-| 7453 | 32364 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Alterar tela de lan�amentos em lote permitindo que possa ser realizado lan�ament |
-| 7367 | 32346 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar o cadastro de testemunhas nesse m�dulo. |
-| 7450 | 32363 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar o Configura��o de historiocos individualizada por empresa. |
-| 7355 | 32342 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Considerar a data de pagamento na emiss�o do relat�rio de reten��es a compensar  |
-| 7358 | 32344 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da GIA. |
-| 7357 | 32343 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Demonstrar os valores das notas de sa�das com cfop 5933/6933 na coluna servi�os  |
-| 7400 | 32356 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Permitir gravar somente as notas v�lidas na importa��o de notas quando ocorrer i |
+| 7554 | 32386 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Alterar a tela de lan�amentos em lotes para que seja permitido lan�ar v�rios d�b |
+| 7459 | 32370 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar a importa��o de lan�amentos se a empresa gera o informativ |
+| 7502 | 32384 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir tamb�m as contas sem or�amento nos relat�rios or�ament |
+| 7605 | 32395 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar cadastro de observa��es para serem utilizadas na emiss�o da nota fiscal. |
+| 7559 | 32390 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar campo pata identificar a origem dos lan�amentos na tela de lan�amentos em  |
+| 7458 | 32369 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | N�o permitir incluir lan�amentos pela tela de lan�amentos se a empresa gera o in |
+| 7576 | 32392 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Exportar os lan�amentos efetuados em lotes conforme leiaute para importa��o de l |
+| 7468 | 32372 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de lan�amentos em lotes. |
+| 7457 | 32368 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar a DMPL na tela de lan�amentos em lotes. |
+| 7454 | 32365 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Permitir nos lan�amentos em lote que possa se repetido a conta nos lan�amentos d |
+| 7556 | 32387 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Criar leiaute de importa��o de lan�amentos em lotes. |
+| 7557 | 32388 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Gerar os lan�amentos cont�beis em lotes. |
+| 7456 | 32367 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar o rateio gerencial na tela de lan�amentos em lotes. |
 | 7345 | 32333 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Ordenar os lan�amento na consulta F6 conforme clicado no cabe�alho de cada colun |
-| 7352 | 32339 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Quando efetuado uma baixa de faturamento com o valor de juros, multa e desconto  |
-| 7373 | 32347 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto do banco Nossa Caixa. |
-| 7418 | 32358 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do extrato de cliente para considerar a data de recebimen |
 | 7448 | 32362 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o na guia contas das defini��es do imposto no cadastro do acumulador p |
+| 7367 | 32346 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar o cadastro de testemunhas nesse m�dulo. |
+| 7358 | 32344 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da GIA. |
+| 7400 | 32356 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Permitir gravar somente as notas v�lidas na importa��o de notas quando ocorrer i |
+| 7450 | 32363 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar o Configura��o de historiocos individualizada por empresa. |
 | 7335 | 32332 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | SP-Disponibilizar na guia DARE a op��o "Substituti��o Tribut�ria". |
-| 7250 | 32319 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Incluir o Balancete como anexo do Raz�o nos Livros Cont�beis. |
-| 7214 | 32309 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Alterar a tela de lan�amentos padr�es para efetuar os lan�amentos em lotes. |
-| 7202 | 32305 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a emiss�o do Livro de ICMS para empresas optantes do Simples Naci |
+| 7357 | 32343 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Demonstrar os valores das notas de sa�das com cfop 5933/6933 na coluna servi�os  |
+| 7355 | 32342 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Considerar a data de pagamento na emiss�o do relat�rio de reten��es a compensar  |
+| 7453 | 32364 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Alterar tela de lan�amentos em lote permitindo que possa ser realizado lan�ament |
+| 7373 | 32347 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto do banco Nossa Caixa. |
+| 7352 | 32339 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Quando efetuado uma baixa de faturamento com o valor de juros, multa e desconto  |
+| 7418 | 32358 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do extrato de cliente para considerar a data de recebimen |
 | 7252 | 32321 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para configurar assinaturas para o relat�rio de coeficiente de an�li |
-| 7299 | 32327 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novo modelo de livro caixa. |
-| 7271 | 32325 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Na consulta F6, quando a tela de lan�amentos estiver aberta, ao selecionar um la |
 | 7251 | 32320 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Alterar a mensagem na tela de lan�amento padr�es para contas inexistentes para " |
-| 7218 | 32313 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Criar vari�veis no WORD com o nome do Pai e M�e do s�cio. |
-| 7247 | 32317 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Gerar a descri��o do tipo do endere�o existente no cadastro da empresa para o ca |
-| 7305 | 32329 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Gerar a integra��o cont�bil da baixa dos bens individualmente. |
 | 7174 | 32303 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal. |
-| 7249 | 32318 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Quando efetuado lan�amentos cont�beis trazer sempre selecionado o dia no campo d |
-| 7240 | 32316 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | N�o listar na tela de reajuste de contratos, os contratos j� finalizados. |
-| 7286 | 32326 | 7.1A-07 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e Contabili |
-| 7320 | 32331 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Na integra��o cont�bil do simples nacional considerar o valor fixo de ISS. |
 | 7270 | 32324 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Na consulta F6 quando as contas tiverem a mesma classifica��o listar em ordem al |
+| 7305 | 32329 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Gerar a integra��o cont�bil da baixa dos bens individualmente. |
+| 7202 | 32305 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a emiss�o do Livro de ICMS para empresas optantes do Simples Naci |
+| 7214 | 32309 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Alterar a tela de lan�amentos padr�es para efetuar os lan�amentos em lotes. |
+| 7320 | 32331 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Na integra��o cont�bil do simples nacional considerar o valor fixo de ISS. |
+| 7299 | 32327 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novo modelo de livro caixa. |
+| 7240 | 32316 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | N�o listar na tela de reajuste de contratos, os contratos j� finalizados. |
+| 7218 | 32313 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Criar vari�veis no WORD com o nome do Pai e M�e do s�cio. |
+| 7271 | 32325 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Na consulta F6, quando a tela de lan�amentos estiver aberta, ao selecionar um la |
+| 7247 | 32317 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Gerar a descri��o do tipo do endere�o existente no cadastro da empresa para o ca |
+| 7249 | 32318 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Quando efetuado lan�amentos cont�beis trazer sempre selecionado o dia no campo d |
+| 7250 | 32319 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Incluir o Balancete como anexo do Raz�o nos Livros Cont�beis. |
+| 7286 | 32326 | 7.1A-07 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e Contabili |
 | 7211 | 32307 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o "Desconsiderar saldo anterior" no relat�rio de comparativo de movime |
-| 6914 | 32264 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informado o c�digo de acesso do Simples Nacional. |
-| 6913 | 32263 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o no relat�rio Simples Nacional para demonstrar as receitas brutas e o |
-| 7163 | 32297 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Na listagem dos lan�amentos padr�es n�o est� sendo transferido o lan�amento sele |
-| 7027 | 32276 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Quando realizado importa��o de notas gravar como o usu�rio o mesmo que realizou  |
-| 7029 | 32278 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ao realizar a importa��o de baixa de parcelas permitir que seja informado no reg |
+| 7121 | 32283 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de itens das tabelas municipais, para que os mesmos poss |
 | 7161 | 32295 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Demonstrar o foco do cursor na lista de filiais da tela de escolha de filial ati |
-| 7160 | 32294 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Incluir o �ndice de liquidez imediata nos coeficientes de an�lises. |
-| 7004 | 32270 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Quando efetuado lan�amento em contas configuradas para permitir rateio n�o permi |
-| 7045 | 32280 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Desenvolver Bloqueto de cobran�a completo para o banco Blucredi. |
 | 7039 | 32279 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | SP-S�o Paulo-Criar op��o para importa��o de notas fiscais eletr�nicas. |
 | 7145 | 32288 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o na importa��o de baixa de parcelas para sobrescrever registros exist |
 | 7135 | 32286 | 7.1A-07 | 03/03/2016 | Em Teste DEMO | Quando realizado a importa��o do n�mero de empregados para a PJSI, considerar ta |
-| 7028 | 32277 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de baixa de parcelas, se ocorrer erro, ter a op��o de imp |
+| 6913 | 32263 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o no relat�rio Simples Nacional para demonstrar as receitas brutas e o |
 | 7134 | 32285 | 7.1A-07 | 03/03/2016 | Em Teste DEMO | Quando gerado a PJSI para o campo do CRC do contador deve ser gerado somente o n |
+| 7163 | 32297 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Na listagem dos lan�amentos padr�es n�o est� sendo transferido o lan�amento sele |
+| 7004 | 32270 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Quando efetuado lan�amento em contas configuradas para permitir rateio n�o permi |
+| 7026 | 32275 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar na tela de importa��o de notas uma op��o para imprimir o relat�rio das not |
+| 7028 | 32277 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de baixa de parcelas, se ocorrer erro, ter a op��o de imp |
 | 7025 | 32274 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | O sistema n�o deve permitir importar um cadastro de Produto com c�digo de grupo  |
 | 7143 | 32287 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Criar a op��o para realizar lan�amentos em lotes. |
+| 7045 | 32280 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Desenvolver Bloqueto de cobran�a completo para o banco Blucredi. |
+| 6914 | 32264 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informado o c�digo de acesso do Simples Nacional. |
 | 6960 | 32267 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Normal. |
-| 7026 | 32275 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar na tela de importa��o de notas uma op��o para imprimir o relat�rio das not |
-| 7121 | 32283 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de itens das tabelas municipais, para que os mesmos poss |
-| 6733 | 32251 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Atualiza��o Dom�nio Cliente conforme altera��es do Dom�nio Cont�bil vers�o 71A01 |
+| 7029 | 32278 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ao realizar a importa��o de baixa de parcelas permitir que seja informado no reg |
+| 7027 | 32276 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Quando realizado importa��o de notas gravar como o usu�rio o mesmo que realizou  |
+| 7160 | 32294 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Incluir o �ndice de liquidez imediata nos coeficientes de an�lises. |
+| 6672 | 32233 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Tratar a mensagem que ocorre ao importar uma nota j� existente pelo utilit�rio i |
+| 6823 | 32256 | 7.1A-03 | 03/03/2016 | Em Teste DEMO | Quando gerado a integra��o cont�bil dos impostos de periodos anteriores, levar e |
+| 6693 | 32241 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Ajustar a gera��o do n�mero da nota que acoberta a carga de transportes ao gerar |
+| 6715 | 32248 | 7.1A-02 | 03/03/2016 | Em Teste DEMO | SE-Quando gerado o DIC, para notas de entradas e sa�das de dentro do estado, se  |
+| 6824 | 32257 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar o valor de receita bruta acumulada para periodos posteriores  |
+| 6857 | 32260 | 7.1A-04 | 03/03/2016 | Em Teste DEMO | Quando no cadastro da empresa o tipo de inscri��o for CEI, ao gerar o Sintegra c |
+| 6643 | 32229 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | MG-Implementar guia DAE avulsa. |
+| 6703 | 32247 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Criar campo no cadastro de s�cios para ser informado o c�digo do pa�s. |
+| 6634 | 32228 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de devolu��o de vendas com ICMS e IPI em que o Fornecedor n |
 | 6800 | 32254 | 7.1A-02 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es na vers�o 7.1A-02 do M�dulo Escrita Fi |
 | 6689 | 32237 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | BA-Quando digitado outros dados no informativo DMA sistema esta gravando essas i |
-| 6693 | 32241 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Ajustar a gera��o do n�mero da nota que acoberta a carga de transportes ao gerar |
 | 6878 | 32262 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Quando realizado importa��o de notas de entradas com os impostos CRF, PIS retido |
-| 6634 | 32228 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de devolu��o de vendas com ICMS e IPI em que o Fornecedor n |
-| 6724 | 32250 | 7.1A-02 | 03/03/2016 | Em Teste DEMO | Gerar a ficha 54 da DIPJ mesmo se a empresa n�o tenha os impostos IRPJ e Contrib |
-| 6656 | 32231 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Incluir nesse m�dulo o Relatorio Raz�o. |
-| 6857 | 32260 | 7.1A-04 | 03/03/2016 | Em Teste DEMO | Quando no cadastro da empresa o tipo de inscri��o for CEI, ao gerar o Sintegra c |
-| 6672 | 32233 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Tratar a mensagem que ocorre ao importar uma nota j� existente pelo utilit�rio i |
-| 6824 | 32257 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar o valor de receita bruta acumulada para periodos posteriores  |
+| 6733 | 32251 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Atualiza��o Dom�nio Cliente conforme altera��es do Dom�nio Cont�bil vers�o 71A01 |
 | 6843 | 32258 | 7.1A-03 | 03/03/2016 | Em Teste DEMO | SP-Otimizar processo de gera��o da GIA em relat�rio e arquivo.   |
-| 6643 | 32229 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | MG-Implementar guia DAE avulsa. |
 | 6720 | 32249 | 7.1A-04 | 03/03/2016 | Em Teste DEMO | Quando selecionado apenas um centro de custos na emiss�o do DRE, gerar no relat� |
-| 6715 | 32248 | 7.1A-02 | 03/03/2016 | Em Teste DEMO | SE-Quando gerado o DIC, para notas de entradas e sa�das de dentro do estado, se  |
-| 6703 | 32247 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Criar campo no cadastro de s�cios para ser informado o c�digo do pa�s. |
-| 6823 | 32256 | 7.1A-03 | 03/03/2016 | Em Teste DEMO | Quando gerado a integra��o cont�bil dos impostos de periodos anteriores, levar e |
+| 6656 | 32231 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Incluir nesse m�dulo o Relatorio Raz�o. |
+| 6724 | 32250 | 7.1A-02 | 03/03/2016 | Em Teste DEMO | Gerar a ficha 54 da DIPJ mesmo se a empresa n�o tenha os impostos IRPJ e Contrib |
+| 6552 | 32217 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar parcelas a partir do faturamento. |
+| 6598 | 32222 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Quando realizado a importa��o de clientes e fornecedores deve ser considerado co |
+| 6548 | 32215 | 8.1A-08 | 03/03/2016 | Em Teste DEMO | Inserir a vari�vel "Natureza Jur�dica" para documentos do WORD. |
+| 6597 | 32221 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | MG- Retirar a op��o "MICRO GERAES" do cadastro de acumuladores. |
+| 6536 | 32203 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Allterar a descri��o do campo "Recebido Por" na tela de emiss�o do protocolo con |
+| 6609 | 32223 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Criar layout de importa��o de notas onde possa ser informado qual o tipo de incr |
 | 6592 | 32220 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Gerar o lan�amento cont�bil do estorno de cr�dito gerado, baseado na informa��o  |
 | 6627 | 32227 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Quando efetuado uma altera��o no campo valor dos produtos no movimento de estoqu |
 | 6554 | 32218 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o no DRE para consolidar empresas. |
-| 6609 | 32223 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Criar layout de importa��o de notas onde possa ser informado qual o tipo de incr |
-| 6598 | 32222 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Quando realizado a importa��o de clientes e fornecedores deve ser considerado co |
-| 6536 | 32203 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Allterar a descri��o do campo "Recebido Por" na tela de emiss�o do protocolo con |
-| 6597 | 32221 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | MG- Retirar a op��o "MICRO GERAES" do cadastro de acumuladores. |
-| 6552 | 32217 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar parcelas a partir do faturamento. |
-| 6548 | 32215 | 8.1A-08 | 03/03/2016 | Em Teste DEMO | Inserir a vari�vel "Natureza Jur�dica" para documentos do WORD. |
 | 6495 | 32167 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Otimizar telas de c�lculo de Imposto de renda e Contribui��o Social. |
 | 6498 | 32169 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar a receita das filiais no c�lculo estimado. |
 | 6497 | 32168 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Quando realizado a importa��o na guia Ganhos no c�lculo da Contribui��o Social E |
 | 6499 | 32170 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Quando efetuado o lan�amento de compensa��o de Per�odos Anteriores e no per�odo  |
-| 6481 | 32156 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Incluir o imposto INSS na rela��o de impostos a serem selecionados no relatorio  |
-| 6487 | 32162 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Permitir que o relat�rio de Previs�o para pagamento seja gerado com datas de ano |
 | 6478 | 32153 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Quando efetuado altera��o cadastral em um cliente ou fornecedor verificar se o m |
 | 6486 | 32161 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Incluir o imposto ICMS na rela��o de impostos a serem selecionados no relatorio  |
-| 6402 | 32142 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de saidas com modelo 07, somente abrir a tela dados do fret |
 | 6477 | 32152 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Quando efetuado o lan�amento de notas de entradas, sa�das e servi�os e o valor d |
-| 6274 | 32112 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar a redu��o no valor do imposto em forma de estorno. |
-| 6243 | 32111 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar o bot�o listagem na tela de Adiantamentos. |
-| 6200 | 32101 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Criar campo nas defini��es do imposto no cadastro de acumulador para definir um  |
-| 6336 | 32121 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de entradas somente com ICMS com valor de IPI e SUBTRI, ao  |
-| 6199 | 32100 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | RS-Ao realizar a importa��o do total de despesas para a GIS, o saldo das contas  |
-| 6195 | 32097 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | RS-Quando o valor de devolu��o de vendas for maior que o valor de vendas, ao ger |
-| 6324 | 32118 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir que as empresas que utilizam o plano de contas de outras possam realiza |
-| 6191 | 32094 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Quando realizado a exporta��o de baixas, deve ser exportado todas as baixas do p |
-| 6328 | 32119 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Quando um usu�rio efetua um lan�amento de notas fora do per�odo de fechamento da |
-| 6329 | 32120 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio cadastral de contas e  |
-| 6241 | 32109 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar na guia Baixa da Configura��o de historico campo para gerar o c�d |
-| 6196 | 32098 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das lan�adas com |
-| 6242 | 32110 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Quando gerado lan�amento cont�bil da baixa do bem, gerar esse lan�amento com a d |
+| 6487 | 32162 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Permitir que o relat�rio de Previs�o para pagamento seja gerado com datas de ano |
+| 6481 | 32156 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Incluir o imposto INSS na rela��o de impostos a serem selecionados no relatorio  |
+| 6402 | 32142 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de saidas com modelo 07, somente abrir a tela dados do fret |
 | 6339 | 32124 | 7.5B-07 | 03/03/2016 | Em Teste DEMO | Individualizar por empresa o t�tulo do balan�o e o t�tulo do balan�o demonstra�� |
+| 6242 | 32110 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Quando gerado lan�amento cont�bil da baixa do bem, gerar esse lan�amento com a d |
+| 6336 | 32121 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de entradas somente com ICMS com valor de IPI e SUBTRI, ao  |
+| 6195 | 32097 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | RS-Quando o valor de devolu��o de vendas for maior que o valor de vendas, ao ger |
+| 6241 | 32109 | 7.1B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar na guia Baixa da Configura��o de historico campo para gerar o c�d |
+| 6274 | 32112 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para gerar a redu��o no valor do imposto em forma de estorno. |
+| 6196 | 32098 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das lan�adas com |
+| 6199 | 32100 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | RS-Ao realizar a importa��o do total de despesas para a GIS, o saldo das contas  |
+| 6324 | 32118 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir que as empresas que utilizam o plano de contas de outras possam realiza |
+| 6200 | 32101 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Criar campo nas defini��es do imposto no cadastro de acumulador para definir um  |
+| 6329 | 32120 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio cadastral de contas e  |
+| 6328 | 32119 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Quando um usu�rio efetua um lan�amento de notas fora do per�odo de fechamento da |
+| 6191 | 32094 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Quando realizado a exporta��o de baixas, deve ser exportado todas as baixas do p |
+| 6243 | 32111 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar o bot�o listagem na tela de Adiantamentos. |
+| 6042 | 32083 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Mudar a op��o de N�o imprimir contas com saldo zero na emiss�o do balancete, par |
 | 6083 | 32090 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Atualizar esse m�dulo conforme altera��es nos M�dulos Contabilidade e Escrita Fi |
-| 6004 | 32070 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Habilitar a op��o de Lan�amento com partida simples nas baixas de parcelas e imp |
+| 6044 | 32085 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Criar um modelo de livro de IPI com seja demonstrado separadamente por folha ent |
+| 6043 | 32084 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de sa�das com CFOP 5933 e 6933 na emiss�o do livro de sa�da |
+| 6002 | 32068 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar a tela de emiss�o de documento de cobran�a para listar os ducumentos par |
+| 5998 | 32064 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | No relat�rio de usu�rio tempo gasto agrupar por usu�rio desconsiderando letras m |
+| 6066 | 32088 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Realizar as mesmas considera��es na convers�o da S�rie da AIDF que foi realizada |
+| 6074 | 32089 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | No relat�rio previs�o de pagamento listar tamb�m os impostos que foram pagos par |
 | 5991 | 32059 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | No relat�rio de previs�o para recebimento colocar um total geral que soma os val |
 | 6003 | 32069 | 7.3B-05 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo arquivo/caminho da tela de emiss�o do Sintegra |
-| 6000 | 32066 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no utilit�rio Altera��o de lan�amentos para alterar o hist�rico do l |
-| 6066 | 32088 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Realizar as mesmas considera��es na convers�o da S�rie da AIDF que foi realizada |
-| 6002 | 32068 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar a tela de emiss�o de documento de cobran�a para listar os ducumentos par |
-| 6044 | 32085 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Criar um modelo de livro de IPI com seja demonstrado separadamente por folha ent |
-| 5998 | 32064 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | No relat�rio de usu�rio tempo gasto agrupar por usu�rio desconsiderando letras m |
-| 6042 | 32083 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Mudar a op��o de N�o imprimir contas com saldo zero na emiss�o do balancete, par |
-| 6074 | 32089 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | No relat�rio previs�o de pagamento listar tamb�m os impostos que foram pagos par |
-| 6043 | 32084 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de sa�das com CFOP 5933 e 6933 na emiss�o do livro de sa�da |
+| 6004 | 32070 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Habilitar a op��o de Lan�amento com partida simples nas baixas de parcelas e imp |
 | 5995 | 32061 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo Cliente de acordo com altera��es feitas para vers�o 7.0E-03 do  |
-| 5985 | 32053 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para que na importa��o de ECFs seja informado o numero de s�rie da m |
+| 6000 | 32066 | 8.0A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no utilit�rio Altera��o de lan�amentos para alterar o hist�rico do l |
 | 5941 | 32028 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Alterar a ordem dos campos dos impostos nos lan�amentos de notas de entradas par |
-| 5982 | 32050 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de excluir a impress�o de boletos e documentos de cobran�a. |
-| 5984 | 32052 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de aviso de vencimentos ao acessar o sistema. |
-| 5936 | 32026 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Na tela de notas de entradas, sa�das e servi�o quando utilizado a op��o de digit |
-| 5988 | 32056 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | Criar no relat�rio de correspond�ncia uma caixa de texto para que seja impresso  |
-| 5983 | 32051 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar o cadastro de categorias para contas a pagar |
 | 5935 | 32025 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar bot�o selecionar clientes na tela de reajustes. |
-| 5968 | 32041 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter na tela de faturamento, na emiss�o de notas, bloquetos e documento de cobran |
-| 5974 | 32047 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Incluir a op��o para regerar lan�amentos cont�beis dos outros movimentos de impo |
-| 5963 | 32036 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | RS-Ao digitar nota de entrada com modelo de esp�cie 6 deve habilitar um campo na |
+| 5984 | 32052 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de aviso de vencimentos ao acessar o sistema. |
 | 5959 | 32033 | 7.3A-04 | 03/03/2016 | Em Teste DEMO | RS-Habilitar no cadastro de acumulador uma op��o para informar um c�digo padr�o  |
-| 5912 | 32011 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | RS-Quando gerar a GIA modelo B, gerar o campos das exclus�es do anexo 5 de acord |
-| 5932 | 32022 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir na configura��o de hist�rico na guia Recebimento a var�avel do Per�odo d |
-| 5913 | 32012 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Alterar a descri��o Natureza para CFOP nos lan�amentos de notas e em todas os re |
+| 5985 | 32053 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para que na importa��o de ECFs seja informado o numero de s�rie da m |
+| 5968 | 32041 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter na tela de faturamento, na emiss�o de notas, bloquetos e documento de cobran |
+| 5936 | 32026 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Na tela de notas de entradas, sa�das e servi�o quando utilizado a op��o de digit |
+| 5982 | 32050 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de excluir a impress�o de boletos e documentos de cobran�a. |
+| 5974 | 32047 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Incluir a op��o para regerar lan�amentos cont�beis dos outros movimentos de impo |
+| 5983 | 32051 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar o cadastro de categorias para contas a pagar |
+| 5963 | 32036 | 7.3B-08 | 03/03/2016 | Em Teste DEMO | RS-Ao digitar nota de entrada com modelo de esp�cie 6 deve habilitar um campo na |
+| 5988 | 32056 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | Criar no relat�rio de correspond�ncia uma caixa de texto para que seja impresso  |
 | 5897 | 31996 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de elaborar os contratos no Microsoft Word. |
-| 5929 | 32019 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ter uma op��o para que na apura��o do ISS com ISS retido n�o fa�a a contabiliza� |
-| 5910 | 32009 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de acumuladores no campo Diferen�a entre valor cont�bil e base |
+| 5912 | 32011 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | RS-Quando gerar a GIA modelo B, gerar o campos das exclus�es do anexo 5 de acord |
 | 5914 | 32013 | 7.1A-01 | 03/03/2016 | Em Teste DEMO | Gerar Bloqueto da Caixa Econonica Federal com carteira tipo 12 cobran�a r�pida p |
-| 5891 | 31992 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar o F2 no campo c�digo da conta cont�bil na consulta de contas x la |
+| 5929 | 32019 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ter uma op��o para que na apura��o do ISS com ISS retido n�o fa�a a contabiliza� |
+| 5932 | 32022 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir na configura��o de hist�rico na guia Recebimento a var�avel do Per�odo d |
 | 5903 | 32002 | 7.4C-02 | 03/03/2016 | Em Teste DEMO | Criar um campo na tela de concilia��o banc�ria para totalizar os lan�amentos con |
 | 5911 | 32010 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Otimizar a tela de lan�amento de notas de modo que todos os campos dos impostos  |
-| 5909 | 32008 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver relat�rio de acompanhameno de redu��es Z. |
+| 5891 | 31992 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar o F2 no campo c�digo da conta cont�bil na consulta de contas x la |
 | 5930 | 32020 | 7.5C-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar o fechamento de per�odo. |
-| 5883 | 31984 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Na tela de consulta de bens trocar o nome de conta cont�bil para conta patrimoni |
-| 5849 | 31960 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Demonstrar na consulta do cadastro de bem o valor da taxa de deprecia��o alterna |
-| 5862 | 31967 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Habilitar as telas de centro de custo, DFC, Gerencial, DMPL nas telas de lan�ame |
-| 5882 | 31983 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Ter op��o de realizar o calculo de mais de um per�odo |
-| 5888 | 31989 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir acesso total ao cadastro de contas nas empresas que utilizam plano de c |
+| 5913 | 32012 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Alterar a descri��o Natureza para CFOP nos lan�amentos de notas e em todas os re |
+| 5910 | 32009 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de acumuladores no campo Diferen�a entre valor cont�bil e base |
+| 5909 | 32008 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver relat�rio de acompanhameno de redu��es Z. |
 | 5870 | 31972 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Alterar a posicao do campo acumulador para que fique antes do campo CFOP. |
-| 5876 | 31977 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Disponibilizar as Guias de DARF no Gerador de Relat�rios |
-| 5868 | 31970 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Ter op��o de gerar lan�amento para a contabilidade por centro de custo. |
-| 5877 | 31978 | 8.0A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de multi empresa no Controle Fechamento. |
 | 5861 | 31966 | 8.1A-02 | 03/03/2016 | Em Teste DEMO | Validar as datas dos campos data inicial e final do Controle Fechamento. |
-| 5843 | 31954 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na baixa de contas a receber para jogar o saldo a menor para outro f |
-| 5656 | 31943 | 7.0E-02 | 03/03/2016 | Em Teste DEMO | RS-Quando realizado importa��o da folha nos outros dados da GIS, considerar na f |
-| 5632 | 31940 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio demonstrativo mensal de um imposto trimestral, deve g |
-| 5594 | 31933 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | SC-Florian�polis-Desenvolver modelos de livros de ISS.   |
-| 5626 | 31935 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Gerar lan�amento cont�bil do IPI mesmo que o acumulador utilizado no lan�amento  |
-| 5560 | 31929 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | RS-Criar op��o na tela de exclus�o da receita bruta para ser informado os valore |
-| 5845 | 31956 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | AL-Criar nos livros registro de ICMS op��o, para Imprimir Demonstrativo Simples/ |
-| 5796 | 31950 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para n�o imprimir estrutura com saldo zero na emiss�o do DRE. |
-| 5580 | 31932 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Criar na estrutura da DLPA op��o para buscar Total de d�bito, Total de Cr�dito o |
-| 5844 | 31955 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para reajustar contrato por indice |
-| 5627 | 31936 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Efetuar a contabiliza��o da apura��o mesmo que ocorra a situa��o de os d�bitos e |
+| 5877 | 31978 | 8.0A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de multi empresa no Controle Fechamento. |
+| 5876 | 31977 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Disponibilizar as Guias de DARF no Gerador de Relat�rios |
+| 5888 | 31989 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir acesso total ao cadastro de contas nas empresas que utilizam plano de c |
+| 5849 | 31960 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Demonstrar na consulta do cadastro de bem o valor da taxa de deprecia��o alterna |
+| 5883 | 31984 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Na tela de consulta de bens trocar o nome de conta cont�bil para conta patrimoni |
+| 5882 | 31983 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Ter op��o de realizar o calculo de mais de um per�odo |
+| 5868 | 31970 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Ter op��o de gerar lan�amento para a contabilidade por centro de custo. |
+| 5862 | 31967 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Habilitar as telas de centro de custo, DFC, Gerencial, DMPL nas telas de lan�ame |
 | 5529 | 31925 | 7.0D-03 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es nos m�dulos Contabilidade e Escrita Fiscal. |
+| 5626 | 31935 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Gerar lan�amento cont�bil do IPI mesmo que o acumulador utilizado no lan�amento  |
 | 5820 | 31952 | 7.0E-03 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto completo com c�digo de barras para o banco Banrisul. |
-| 5758 | 31946 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Permitir alterar o d�bito, cr�dito e o hist�rio na lan�amento de outros impostos |
+| 5844 | 31955 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para reajustar contrato por indice |
+| 5843 | 31954 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na baixa de contas a receber para jogar o saldo a menor para outro f |
 | 5634 | 31942 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Gerar lan�amento cont�bil de fechamento para o IPI. |
 | 5551 | 31928 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo Cliente conforme altera��es nos m�dulos Contabilidade e Escrita |
-| 5398 | 31913 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para regerar os pagamentos de impostos. |
-| 5360 | 31897 | 8.2C-05 | 03/03/2016 | Em Teste DEMO | Realizar o c�lculo em atraso dos impostos calculados pelo LALUR. |
-| 5364 | 31898 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
-| 5394 | 31910 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Exibir mensagem pedindo confirma��o quando uma nota fiscal for alterado e per�od |
-| 5399 | 31914 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para "N�o regerar lan�amentos alterados manualmente" no utilitario R |
-| 5476 | 31918 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando ocorrer erros de informa��es nos lan�amentos durante o faturamento, ident |
-| 5365 | 31899 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Ordenar listagem de empresas nos outros dados da DIPJ conforme clicado nos cabe� |
-| 5393 | 31909 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando no cadastro do imposto IPI estiver definido conta no campo Imp.Compras, e |
-| 5370 | 31903 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para regerar a contabiliza��o das baixas das parcelas. |
-| 5479 | 31919 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | N�o permitir a baixa de parcelas em data menor que a emiss�o da nota fiscal. |
-| 5397 | 31912 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar rotina para gerar Integracao com o Honor�rios |
-| 5407 | 31915 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de devolu��o de compras, se o campo devolucao de compras do |
+| 5656 | 31943 | 7.0E-02 | 03/03/2016 | Em Teste DEMO | RS-Quando realizado importa��o da folha nos outros dados da GIS, considerar na f |
+| 5580 | 31932 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Criar na estrutura da DLPA op��o para buscar Total de d�bito, Total de Cr�dito o |
+| 5560 | 31929 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | RS-Criar op��o na tela de exclus�o da receita bruta para ser informado os valore |
+| 5758 | 31946 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Permitir alterar o d�bito, cr�dito e o hist�rio na lan�amento de outros impostos |
+| 5796 | 31950 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para n�o imprimir estrutura com saldo zero na emiss�o do DRE. |
+| 5845 | 31956 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | AL-Criar nos livros registro de ICMS op��o, para Imprimir Demonstrativo Simples/ |
+| 5632 | 31940 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio demonstrativo mensal de um imposto trimestral, deve g |
+| 5594 | 31933 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | SC-Florian�polis-Desenvolver modelos de livros de ISS.   |
+| 5627 | 31936 | 7.0F-02 | 03/03/2016 | Em Teste DEMO | Efetuar a contabiliza��o da apura��o mesmo que ocorra a situa��o de os d�bitos e |
 | 5452 | 31917 | 7.0D-03 | 03/03/2016 | Em Teste DEMO | Criar a fun��o de replicar contas cont�beis nos outros dados da DIPJ 2006. |
-| 5413 | 31916 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o na importa��o de notas para sobrescrever registros existentes ou imp |
-| 5367 | 31901 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando realizado a baixa duplicatas em grupo, gerar lan�amentos cont�beis de par |
-| 5355 | 31895 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Disponibilizar a vari�vel para o tipo de endere�o no Word. |
 | 5485 | 31921 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | N�o fazer o lan�amento do ICMS (devolu��o de vendas) caso n�o esteja preenchida  |
+| 5407 | 31915 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de devolu��o de compras, se o campo devolucao de compras do |
+| 5476 | 31918 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando ocorrer erros de informa��es nos lan�amentos durante o faturamento, ident |
+| 5367 | 31901 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando realizado a baixa duplicatas em grupo, gerar lan�amentos cont�beis de par |
+| 5397 | 31912 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar rotina para gerar Integracao com o Honor�rios |
+| 5394 | 31910 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Exibir mensagem pedindo confirma��o quando uma nota fiscal for alterado e per�od |
+| 5360 | 31897 | 8.2C-05 | 03/03/2016 | Em Teste DEMO | Realizar o c�lculo em atraso dos impostos calculados pelo LALUR. |
+| 5355 | 31895 | 7.4B-09 | 03/03/2016 | Em Teste DEMO | Disponibilizar a vari�vel para o tipo de endere�o no Word. |
+| 5399 | 31914 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para "N�o regerar lan�amentos alterados manualmente" no utilitario R |
+| 5479 | 31919 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | N�o permitir a baixa de parcelas em data menor que a emiss�o da nota fiscal. |
+| 5364 | 31898 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5398 | 31913 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para regerar os pagamentos de impostos. |
+| 5370 | 31903 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para regerar a contabiliza��o das baixas das parcelas. |
+| 5413 | 31916 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o na importa��o de notas para sobrescrever registros existentes ou imp |
+| 5393 | 31909 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando no cadastro do imposto IPI estiver definido conta no campo Imp.Compras, e |
 | 5395 | 31911 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Efetuar a contabiliza��o do zeramento do ICMS na apura��o, mesmo quando n�o tenh |
+| 5365 | 31899 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Ordenar listagem de empresas nos outros dados da DIPJ conforme clicado nos cabe� |
 | 5341 | 31890 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na tela de posi��o do usu�rio para mostrar a diferen�a por data e po |
 | 5353 | 31893 | 7.3A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para emiss�o dos relatorios cont�beis em outro idioma. |
-| 5323 | 31875 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | SC-Criar mais uma op��o no campo Simples/SC dos par�metros chamada Estabelecimen |
-| 5335 | 31886 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando realizado uma baixa de entradas, saidas ou servi�os, ao gerar os lan�amen |
-| 5308 | 31869 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Permitir o acesso de usu�rios comuns a este m�dulo. |
-| 5325 | 31877 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | No relatorio de contas a receber, quando selecionado um agrupamento diferente de |
-| 5319 | 31872 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Aumentar o numero de caracteres no cadastro e moivimentos de adi��es e exclus�es |
 | 5328 | 31879 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir no relat�rio Rela��o de Contratos um totalizador de contratos listados. |
 | 5336 | 31887 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao lan�ar notas com CFOP 5933 ou 6933 com ISS, no relatorio Saldo dos impostos o |
-| 5157 | 31845 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | RS-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados se deve s |
-| 5256 | 31855 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Permitir c�lculo dos impostos PIS e COFINS cumulativos com mais de uma al�quota. |
-| 5243 | 31852 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5308 | 31869 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Permitir o acesso de usu�rios comuns a este m�dulo. |
+| 5325 | 31877 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | No relatorio de contas a receber, quando selecionado um agrupamento diferente de |
+| 5335 | 31886 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando realizado uma baixa de entradas, saidas ou servi�os, ao gerar os lan�amen |
+| 5323 | 31875 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | SC-Criar mais uma op��o no campo Simples/SC dos par�metros chamada Estabelecimen |
+| 5319 | 31872 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Aumentar o numero de caracteres no cadastro e moivimentos de adi��es e exclus�es |
 | 5034 | 31833 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o na impress�o do relat�rio de Contribui��o Social para ordenar os lan |
-| 5031 | 31832 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando configurado os impostos PIS e COFINS para efetuar o c�lculo como Lan�ado, |
 | 5259 | 31857 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas de saidas com CFOPs 5929 ou 6929, n�o exibir mensagem de va |
-| 5050 | 31834 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Permitir exportar e importar dados do Dominio Cliente para o Dominio Cont�bil ou |
-| 5258 | 31856 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar campo valor de produtos na tela de lan�amento de notas de entradas. |
-| 5261 | 31858 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | BA-Ao efetuar o lan�amento de entradas com o imposto 31, quando alterado os valo |
-| 5109 | 31837 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Desabilitar o acesso ao relatorio de atividades realizadas � usu�rios que n�o se |
 | 5028 | 31831 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | RS-Quando lan�ado notas com CFOP 5933 e 6933 devem ser gerados no campo 11 da GI |
+| 5112 | 31838 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | PR-Criar op��o nos par�metros para deduzir os valores de ISENTAS da Base de Calc |
+| 5261 | 31858 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | BA-Ao efetuar o lan�amento de entradas com o imposto 31, quando alterado os valo |
+| 5243 | 31852 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5050 | 31834 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Permitir exportar e importar dados do Dominio Cliente para o Dominio Cont�bil ou |
+| 5031 | 31832 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando configurado os impostos PIS e COFINS para efetuar o c�lculo como Lan�ado, |
 | 5185 | 31846 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Permitir que possa ser definido a al�quota do imposto IRRF no cadastro de acumul |
-| 5076 | 31835 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de apura��o de empresas que n�o possuem e nem s�o filiais. |
 | 5283 | 31860 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar modelos gr�ficos dos relatorios acompanhamento Di�rio e Mensal. |
+| 5186 | 31847 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5242 | 31851 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | CE/MA-N�o est�o sendo listado no livro de ICMS modelo Normal, os movimentos de a |
 | 5095 | 31836 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Alterar layout de importa��o de parcelas de saidas, para permitir o lan�a�mentro |
 | 5004 | 31828 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Quando efetuar os lan�amentos cont�beis, mesmo que o fechamento esteja configura |
+| 5157 | 31845 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | RS-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados se deve s |
+| 5258 | 31856 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar campo valor de produtos na tela de lan�amento de notas de entradas. |
+| 5076 | 31835 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de apura��o de empresas que n�o possuem e nem s�o filiais. |
 | 5273 | 31859 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Gerar para a PJSI os campos FAX, Total de Rendimentos e Ganhos de Aplica��es Fin |
-| 5186 | 31847 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
-| 5112 | 31838 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | PR-Criar op��o nos par�metros para deduzir os valores de ISENTAS da Base de Calc |
-| 5242 | 31851 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | CE/MA-N�o est�o sendo listado no livro de ICMS modelo Normal, os movimentos de a |
 | 5144 | 31843 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Ao emitir o relatorio demonstrativo dos impostos PIS-66 e COFINS-NC de uma empre |
-| 4972 | 31814 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Habilitar a digita��o de dados das tabelas municipais nas notas de sa�das. |
-| 4992 | 31822 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando gerar a DIRF gerar tamb�m com os valores pagos pelas filiais. |
-| 4951 | 31810 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Desenvolver rotina para gerar lan�amentos cont�beis. |
-| 4889 | 31800 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | SE-Sistema n�o est� efetuando a contabiliza��o do ICMS para empresas optante pel |
-| 4857 | 31794 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Ao emitir o relatorio CLIENTE/TEMPO GASTO, n�o habilitar bot�o sele��o quando fo |
-| 4886 | 31799 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | RS-Criar opera��o de ajuste para ser lan�ado no campo 17 da GIS (d�bitos Respons |
+| 5109 | 31837 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Desabilitar o acesso ao relatorio de atividades realizadas � usu�rios que n�o se |
+| 5256 | 31855 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Permitir c�lculo dos impostos PIS e COFINS cumulativos com mais de uma al�quota. |
 | 4932 | 31804 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para incluir historicos manualmente no contrato. |
+| 4992 | 31822 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando gerar a DIRF gerar tamb�m com os valores pagos pelas filiais. |
 | 4914 | 31803 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Alterar vers�o Validador Sintegra de 5.1.0 para 5.2.0 |
-| 4945 | 31809 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Aumemntar o campo No do livro para 5 casas. |
-| 4969 | 31813 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado uma NF de entrada, sa�da ou servi�o, e no momento do lan�amento � |
-| 4952 | 31811 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando nos parametros de uma empresa estiver marcado a op��o de informar contas  |
-| 4978 | 31815 | 7.0C-03 | 03/03/2016 | Em Teste DEMO | SC-Na tela de emiss�o da DARE, n�o gravar os percentuais de juros e multas infro |
-| 4936 | 31806 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar o regime e |
-| 4994 | 31823 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio de reten��es a recolher deve somar os saldos das fili |
+| 4951 | 31810 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Desenvolver rotina para gerar lan�amentos cont�beis. |
 | 4933 | 31805 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no contrato para configurar avisos no faturamento. |
-| 4755 | 31761 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Em Movimentos/Estoque/Saldo final do produtos n�o permitir que seja lan�ado um p |
-| 4762 | 31765 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Ao efetuar lan�amentos de notas seguimentadas de entradas ou saidas, em que o ac |
+| 4945 | 31809 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Aumemntar o campo No do livro para 5 casas. |
+| 4857 | 31794 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Ao emitir o relatorio CLIENTE/TEMPO GASTO, n�o habilitar bot�o sele��o quando fo |
+| 4994 | 31823 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio de reten��es a recolher deve somar os saldos das fili |
+| 4978 | 31815 | 7.0C-03 | 03/03/2016 | Em Teste DEMO | SC-Na tela de emiss�o da DARE, n�o gravar os percentuais de juros e multas infro |
+| 4969 | 31813 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | Quando lan�ado uma NF de entrada, sa�da ou servi�o, e no momento do lan�amento � |
+| 4972 | 31814 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Habilitar a digita��o de dados das tabelas municipais nas notas de sa�das. |
+| 4889 | 31800 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | SE-Sistema n�o est� efetuando a contabiliza��o do ICMS para empresas optante pel |
+| 4952 | 31811 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando nos parametros de uma empresa estiver marcado a op��o de informar contas  |
+| 4936 | 31806 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar o regime e |
+| 4886 | 31799 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | RS-Criar opera��o de ajuste para ser lan�ado no campo 17 da GIS (d�bitos Respons |
 | 4757 | 31763 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar mais de um respons�vel pelas informa��es. |
-| 4782 | 31775 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do Balan�o e Balancete para imprimir os valores negativos |
-| 4839 | 31789 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Habilitar a consulta F2 na tela do utilit�rio de altera��o de lan�amentos. |
-| 4771 | 31771 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | PE-Incluir o campo email no cadastro do respons�vel legal e gerar esta informa�� |
 | 4840 | 31790 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver rotina para gerar as notas ficais no m�dulo Escrita Fiscal. |
-| 4750 | 31758 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Quando emitido os livros contabeis com o balan�o e balancete anexo, o periodo do |
+| 4782 | 31775 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do Balan�o e Balancete para imprimir os valores negativos |
 | 4798 | 31782 | 7.3B-04 | 03/03/2016 | Em Teste DEMO | Criar campo Conta cliente no cadastro de fornecedor e Conta fornecedor no cadast |
-| 4786 | 31778 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novo modelo de Mapa resumo de ECF |
-| 4765 | 31767 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar consulta F2 no campo filial na tela de lan�amentos trazendo na li |
-| 4742 | 31756 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando for emitido uma guia e a mesma j� estiver totalmente paga, exibir mensage |
-| 4764 | 31766 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Aumentar o limite do numero do lan�amento cont�bil para 999.999.999 |
 | 4785 | 31777 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar campo para informar o c�digo do hist�rico, nos lan�amentos cont�beis dos l |
-| 4780 | 31774 | 8.3A-05 | 03/03/2016 | Em Teste DEMO | Criar uma barra de progress�o na apura��o da Escrita Fiscal. |
 | 4754 | 31760 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao efetuar o lan�amento de notas em que esteja marcado no acumulador a op��o de  |
+| 4755 | 31761 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Em Movimentos/Estoque/Saldo final do produtos n�o permitir que seja lan�ado um p |
+| 4771 | 31771 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | PE-Incluir o campo email no cadastro do respons�vel legal e gerar esta informa�� |
+| 4839 | 31789 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Habilitar a consulta F2 na tela do utilit�rio de altera��o de lan�amentos. |
 | 4842 | 31792 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Incluir nos dois modelos de etiquetas o n�mero do endere�o. |
-| 4644 | 31728 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | N�o permitir gravar um bloqueto sem a informa��o do nosso n�mero. |
-| 4659 | 31736 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Gravar a Descri��o Final do Balancete por Empresa. |
-| 4683 | 31739 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Efetuar o lan�amento automatico da CSLL a pagar, nas adi��es do IRPJ.   |
+| 4750 | 31758 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Quando emitido os livros contabeis com o balan�o e balancete anexo, o periodo do |
+| 4786 | 31778 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Desenvolver novo modelo de Mapa resumo de ECF |
+| 4742 | 31756 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando for emitido uma guia e a mesma j� estiver totalmente paga, exibir mensage |
+| 4765 | 31767 | 7.5A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar consulta F2 no campo filial na tela de lan�amentos trazendo na li |
+| 4780 | 31774 | 8.3A-05 | 03/03/2016 | Em Teste DEMO | Criar uma barra de progress�o na apura��o da Escrita Fiscal. |
+| 4764 | 31766 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Aumentar o limite do numero do lan�amento cont�bil para 999.999.999 |
+| 4762 | 31765 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Ao efetuar lan�amentos de notas seguimentadas de entradas ou saidas, em que o ac |
+| 4632 | 31724 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o de trazer automaticamente todas as adi��es ou exclus�es diferentes d |
+| 4681 | 31737 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o de emitir o Livro, termos e anexos juntos. |
 | 4728 | 31752 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Quando realizado a importa��o do Dominio Cont�bil de cadastros que somente s�o c |
 | 4648 | 31731 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Criar campo para ser informado o codigo de recolhimento, no pagamento de imposto |
 | 4641 | 31726 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | No Relatorio/Contribui??o Social, quando existe exclus?es e adi??es com a descri |
-| 4642 | 31727 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | No Relatorio/Imposto de Renda, quando existe exclus?es e adi??es com a descri??o |
-| 4725 | 31750 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Criar layout para importa��o dos rateios de centro de custos nos lan�amentos de  |
-| 4654 | 31735 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | PR-Aumentar as colunas nas Saidas no Relat�rio GI para caberem valores at� 999.9 |
-| 4681 | 31737 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o de emitir o Livro, termos e anexos juntos. |
-| 4721 | 31747 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Na tela de pagamento de impostos colocar a coluna de multa antes da coluna de ju |
 | 4652 | 31734 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Incluir o CNPJ da Empresa nos Relat�rios.   |
-| 4726 | 31751 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Permitir Usar o Dominio Cliente Empresas que usam contabilidade por centro de cu |
-| 4632 | 31724 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o de trazer automaticamente todas as adi��es ou exclus�es diferentes d |
+| 4644 | 31728 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | N�o permitir gravar um bloqueto sem a informa��o do nosso n�mero. |
+| 4642 | 31727 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | No Relatorio/Imposto de Renda, quando existe exclus?es e adi??es com a descri??o |
 | 4649 | 31732 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | SC-Quando efetuado o cadastro de clientes e fornecedores com inscri��o de produt |
 | 4651 | 31733 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de cliente e fornecedores um tipo de incri��o Outros. |
-| 4568 | 31700 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | PE-Gerar e-mail do contador para o campo correspondente no arquivo SEF.   |
-| 4520 | 31684 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Gravar a op��o de gerar lan�amentos cont�beis na tela de faturar. |
-| 4584 | 31707 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Ordenar a listagem na tela de baixa de faturamento conforme clicado no cabe�alho |
-| 4597 | 31711 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Quando efetuar um lan�amento cont�bil, ao passar pelo campo data selecionar some |
+| 4659 | 31736 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Gravar a Descri��o Final do Balancete por Empresa. |
+| 4683 | 31739 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Efetuar o lan�amento automatico da CSLL a pagar, nas adi��es do IRPJ.   |
+| 4654 | 31735 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | PR-Aumentar as colunas nas Saidas no Relat�rio GI para caberem valores at� 999.9 |
+| 4725 | 31750 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Criar layout para importa��o dos rateios de centro de custos nos lan�amentos de  |
+| 4726 | 31751 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Permitir Usar o Dominio Cliente Empresas que usam contabilidade por centro de cu |
+| 4721 | 31747 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Na tela de pagamento de impostos colocar a coluna de multa antes da coluna de ju |
 | 4529 | 31686 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Permitir a emiss�a do relatorio de Acompanhamento/Impostos/Resumo Trimestral,  s |
-| 4556 | 31696 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando emitido o relat�rio de faturamento, marcando a op��o de emitir somente o  |
+| 4569 | 31701 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | PE-Gerar o n�mero do Fax informado no cadastro da empresa e no cadastro do conta |
 | 4537 | 31688 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Incluir a op��o de exportar temb�m Cadastro de M�quinas ECF para o m�dulo Client |
 | 4619 | 31718 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Disponibilizar op��o para parcelamento de impostos trimestrais e a emiss�o da gu |
+| 4597 | 31711 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | Quando efetuar um lan�amento cont�bil, ao passar pelo campo data selecionar some |
 | 4530 | 31687 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Exportar para dominio cliente o cadastro de conficura��o de historicos. |
-| 4542 | 31691 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | SC-Alterar formata��o do campo Inscri��o Estadual na impress�o da DIME. |
-| 4617 | 31716 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | SC-Quando realizado importa��o de notas de entrada com modelo de esp�cie 08 ou 0 |
 | 4583 | 31706 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar variavel do n� da Nota Fiscal, na guia recebimento da configura�� |
 | 4615 | 31715 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | Desenvolver novo m�dulo Dominio Cliente. |
+| 4556 | 31696 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando emitido o relat�rio de faturamento, marcando a op��o de emitir somente o  |
+| 4584 | 31707 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Ordenar a listagem na tela de baixa de faturamento conforme clicado no cabe�alho |
+| 4617 | 31716 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | SC-Quando realizado importa��o de notas de entrada com modelo de esp�cie 08 ou 0 |
+| 4542 | 31691 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | SC-Alterar formata��o do campo Inscri��o Estadual na impress�o da DIME. |
+| 4568 | 31700 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | PE-Gerar e-mail do contador para o campo correspondente no arquivo SEF.   |
+| 4520 | 31684 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Gravar a op��o de gerar lan�amentos cont�beis na tela de faturar. |
 | 4587 | 31709 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Na tela de baixa de faturamento em grupo, alterar a descri��o da coluna de Nota  |
-| 4569 | 31701 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | PE-Gerar o n�mero do Fax informado no cadastro da empresa e no cadastro do conta |
-| 4414 | 31659 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | N�o permitir desmarcar a op��o de gerar lan�amentos cont�beis se j� foi gerado a |
-| 4452 | 31666 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4491 | 31681 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | Ao digitar os dados do conhecimento, quando o estado do destinat�rio for Exterio |
-| 4453 | 31667 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4398 | 31656 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Validar as incri��es estaduais na importa��o de clientes e fornecedores. |
-| 4382 | 31651 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ter a op��o de per�odicidade Semanal nos itens para o impostos IRRF - Escrita Fi |
-| 4457 | 31671 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4459 | 31673 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Criar op��o para sele��o de centro de custos, nas an�lises horizontais e vertica |
+| 4381 | 31650 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir no Filtro da Manuten��o de Protocolo, op��o de selecionar somente um ite |
 | 4454 | 31668 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4457 | 31671 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4455 | 31669 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4451 | 31665 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4491 | 31681 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | Ao digitar os dados do conhecimento, quando o estado do destinat�rio for Exterio |
+| 4414 | 31659 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | N�o permitir desmarcar a op��o de gerar lan�amentos cont�beis se j� foi gerado a |
+| 4398 | 31656 | 7.2A-06 | 03/03/2016 | Em Teste DEMO | Validar as incri��es estaduais na importa��o de clientes e fornecedores. |
+| 4452 | 31666 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4458 | 31672 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4441 | 31663 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | BA-Efetuar a contabiliza��o do SIMBAHIA   |
+| 4383 | 31652 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Alterar a op��o no relatorio de notas emitidas para selecionar data de emiss�o i |
+| 4382 | 31651 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ter a op��o de per�odicidade Semanal nos itens para o impostos IRRF - Escrita Fi |
 | 4397 | 31655 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Alterar a posi��o do bot�es Gravar e Fechar na tela de lan�amentos. |
 | 4485 | 31678 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ao realizar a busca no utilit�rio de cancelamento de notas fiscais, n�o trazer n |
-| 4458 | 31672 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4381 | 31650 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir no Filtro da Manuten��o de Protocolo, op��o de selecionar somente um ite |
-| 4459 | 31673 | 8.0A-07 | 03/03/2016 | Em Teste DEMO | Criar op��o para sele��o de centro de custos, nas an�lises horizontais e vertica |
-| 4455 | 31669 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4441 | 31663 | 7.0B-03 | 03/03/2016 | Em Teste DEMO | BA-Efetuar a contabiliza��o do SIMBAHIA   |
-| 4451 | 31665 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4383 | 31652 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Alterar a op��o no relatorio de notas emitidas para selecionar data de emiss�o i |
-| 4316 | 31622 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos livros fiscais criar campo para ser informada a date de emiss�o d |
-| 4355 | 31641 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | SE-Quando selecionado o campo Optante do Tare, nos parametros, abrir um campo de |
-| 4346 | 31637 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a veri�vel Numero do Documento nas guias Faturamento e Recebiment |
-| 4319 | 31623 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Nos lan�amentos dos dados de ECF, quando alterado o valor do GT atual, o cursor  |
-| 4331 | 31628 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o do relat�rio de concilia��o banc�ria permitir que se possa selecionar |
+| 4453 | 31667 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4342 | 31633 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar lan�amentos com valor negativo. |
+| 4351 | 31639 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ao utilizar a vari�vel, d�gito verificador da conta corrente em um bloqueto pelo |
 | 4378 | 31648 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Permitir que e tela da concilia��o banc�ria possa ser redimencionada e que esta  |
 | 4315 | 31621 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o dos bloquetos de agrupar por cliente e vencimento. |
-| 4320 | 31624 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | No relatorio de reten��es a recolher, listar tamb�m o FUNRURAL lan�ado nas entra |
-| 4330 | 31627 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o de notas fiscais, modelo completo matricial pereencher os campos Dupl |
-| 4340 | 31631 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de eventos para ser lan�ado por quantidade e percentual. |
-| 4342 | 31633 | 7.5B-05 | 03/03/2016 | Em Teste DEMO | N�o permitir realizar lan�amentos com valor negativo. |
-| 4326 | 31626 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Ao efetuar a apura��o Real do IR e CS, deve buscar para o campo "Compensa��o de  |
 | 4343 | 31634 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o nos lan�amentos para mostrar ou n�o os eventos fixos j� encerrados. |
-| 4321 | 31625 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar no relatorio Saldo dos impostos op��o para selecionar somente um imposto. |
-| 4351 | 31639 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ao utilizar a vari�vel, d�gito verificador da conta corrente em um bloqueto pelo |
-| 4344 | 31635 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Desenvolver Relatorio de Custo Benef�cio |
-| 4312 | 31619 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Desenvolver relatorio de Bloquetos Emitidos. |
+| 4320 | 31624 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | No relatorio de reten��es a recolher, listar tamb�m o FUNRURAL lan�ado nas entra |
+| 4331 | 31628 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o do relat�rio de concilia��o banc�ria permitir que se possa selecionar |
 | 4374 | 31647 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | RS-Quando lan�ado notas de entradas com valor lan�ado no campo Sub Trib, deve se |
-| 4242 | 31600 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar campos para serem informados contas para contabilizar os cancelamentos e d |
-| 4276 | 31608 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Quando for realizada uma altera��o contratual, permitir que no campo objeto soci |
-| 4281 | 31611 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para replicar a estrutura dos coeficientes de an�lises. |
-| 4194 | 31589 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar bot�o para sele��o de clientes na emiss�o dos graficos. |
+| 4346 | 31637 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a veri�vel Numero do Documento nas guias Faturamento e Recebiment |
+| 4330 | 31627 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o de notas fiscais, modelo completo matricial pereencher os campos Dupl |
+| 4321 | 31625 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar no relatorio Saldo dos impostos op��o para selecionar somente um imposto. |
+| 4326 | 31626 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Ao efetuar a apura��o Real do IR e CS, deve buscar para o campo "Compensa��o de  |
+| 4312 | 31619 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Desenvolver relatorio de Bloquetos Emitidos. |
+| 4319 | 31623 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Nos lan�amentos dos dados de ECF, quando alterado o valor do GT atual, o cursor  |
+| 4355 | 31641 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | SE-Quando selecionado o campo Optante do Tare, nos parametros, abrir um campo de |
+| 4340 | 31631 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de eventos para ser lan�ado por quantidade e percentual. |
+| 4344 | 31635 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Desenvolver Relatorio de Custo Benef�cio |
+| 4316 | 31622 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos livros fiscais criar campo para ser informada a date de emiss�o d |
+| 4169 | 31574 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir efetuar uma baixa de pagamento com valor zero. |
 | 4182 | 31582 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando digitado um extrato trazer padr�o o mesmo dia do lan�amento anterior. |
-| 4185 | 31585 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar vari�vel da data da inscri��o na junta e data incio de atividade  |
+| 4259 | 31604 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Em relat�rios/c�lculos/resumo da deprecia��o no campo onde � efetuada a sele��o  |
 | 4256 | 31603 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao emitir o Cadastros Banc�rio modelo Caixa Econ�mica Federal, no campo numero d |
 | 4177 | 31580 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Quando efetuada a importa��o de clientes/fornecedores mostrar a mensagem de incr |
-| 4251 | 31602 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de clientes, uma nova guia chamada Honor�rios com os campos qu |
-| 4259 | 31604 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Em relat�rios/c�lculos/resumo da deprecia��o no campo onde � efetuada a sele��o  |
-| 4169 | 31574 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir efetuar uma baixa de pagamento com valor zero. |
-| 4193 | 31588 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos livros caixas listar sempre em ordem de dia e tipo, sendo primeir |
-| 4228 | 31596 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando for lan�ado Cupom Fiscal permitir informar numero documento final menor q |
-| 4241 | 31599 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar op��o de Trocar senha. |
-| 4175 | 31578 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para faturar empresas inativas e em constitui��o. |
-| 4164 | 31572 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar vari�vel a ser utilizada no cadastro de hist�ricos que retorne o periodo a |
 | 4229 | 31597 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | SC-Ao lan�ar notas de entrada com o imposto ICMSA(27), sistema n�o est� trazendo |
-| 4130 | 31560 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | SC-Sistema est� habilitando na tela de apura��o a op��o de n�o efetuar c�lculo d |
-| 4123 | 31553 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de Faturamento op��o de emitir somente o Relat�rio com o Resu |
-| 4131 | 31561 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ao cadastrar uma empresa se o campo CNPJ for preenchido errado, sistema n�o perm |
-| 4146 | 31567 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Na tela de sele��o de duplicatas a serem baixadas, ordenar pela coluna quando cl |
-| 4111 | 31546 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na impress�o do plano de contas para imprimir o numero do livro.   |
+| 4281 | 31611 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Criar op��o para replicar a estrutura dos coeficientes de an�lises. |
+| 4241 | 31599 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar op��o de Trocar senha. |
+| 4251 | 31602 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de clientes, uma nova guia chamada Honor�rios com os campos qu |
+| 4193 | 31588 | 7.0B-04 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos livros caixas listar sempre em ordem de dia e tipo, sendo primeir |
+| 4175 | 31578 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para faturar empresas inativas e em constitui��o. |
+| 4276 | 31608 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Quando for realizada uma altera��o contratual, permitir que no campo objeto soci |
+| 4194 | 31589 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar bot�o para sele��o de clientes na emiss�o dos graficos. |
+| 4228 | 31596 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando for lan�ado Cupom Fiscal permitir informar numero documento final menor q |
+| 4164 | 31572 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar vari�vel a ser utilizada no cadastro de hist�ricos que retorne o periodo a |
+| 4242 | 31600 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar campos para serem informados contas para contabilizar os cancelamentos e d |
+| 4185 | 31585 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar vari�vel da data da inscri��o na junta e data incio de atividade  |
 | 4129 | 31559 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando cadastrado um cliente/fornecedor verificar se a matriz ou a filial deste  |
-| 4127 | 31557 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a vari�vel nro do documento na guia recebimento na configura��o d |
-| 4118 | 31549 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Permitir que uma empresa filial acesse este m�dulo. |
-| 4134 | 31564 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao realizar a importa��o de notas, o sistema n�o est� considerando as restri��es |
-| 4108 | 31543 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | No processo de reajuste de contrato e reajuste de eventos fixos, ordenar de acor |
-| 4122 | 31552 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Imprimir no cabe�alho dos relat�rios de contas a pagar e receber o periodo selec |
-| 4135 | 31565 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Quando n�o possui contas configuradas para os Grupos do IR e CSLL o sistema emit |
-| 4110 | 31545 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que possui fili |
+| 4146 | 31567 | 7.3B-03 | 03/03/2016 | Em Teste DEMO | Na tela de sele��o de duplicatas a serem baixadas, ordenar pela coluna quando cl |
+| 4123 | 31553 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de Faturamento op��o de emitir somente o Relat�rio com o Resu |
 | 4124 | 31554 | 7.5B-07 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de imprimir somente contas sint�ticas na emiss�o do balan |
+| 4110 | 31545 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que possui fili |
+| 4118 | 31549 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Permitir que uma empresa filial acesse este m�dulo. |
+| 4127 | 31557 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar a vari�vel nro do documento na guia recebimento na configura��o d |
+| 4111 | 31546 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na impress�o do plano de contas para imprimir o numero do livro.   |
 | 4119 | 31550 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Nos relat�rios Tempo de Servi�o e Usu�rio/Tempo Gasto no campo Sistema trazer pa |
-| 4100 | 31535 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para poder definir a descri��o de Lucro e Prejuizo ne emiss�o do DRE |
+| 4130 | 31560 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | SC-Sistema est� habilitando na tela de apura��o a op��o de n�o efetuar c�lculo d |
+| 4108 | 31543 | 7.3A-01 | 03/03/2016 | Em Teste DEMO | No processo de reajuste de contrato e reajuste de eventos fixos, ordenar de acor |
+| 4131 | 31561 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ao cadastrar uma empresa se o campo CNPJ for preenchido errado, sistema n�o perm |
+| 4135 | 31565 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Quando n�o possui contas configuradas para os Grupos do IR e CSLL o sistema emit |
+| 4122 | 31552 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Imprimir no cabe�alho dos relat�rios de contas a pagar e receber o periodo selec |
+| 4134 | 31564 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao realizar a importa��o de notas, o sistema n�o est� considerando as restri��es |
+| 3934 | 31510 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar um totalizador no final do relatorio de notas emitidas. |
 | 3937 | 31513 | 7.3B-10 | 03/03/2016 | Em Teste DEMO | Disponibilizar na guia Balan�o dos Livros Cont�beis a op��o de Grau m�ximo. |
 | 4101 | 31536 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Na impress�o dos livros de entradas modelo jato de tinta, somente imprimir as li |
-| 4107 | 31542 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar modelo de relatorio para impressoras Laser e Deskjet do relatorio de lan�a |
-| 4080 | 31532 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Incluir variavel com a data de emiss�o da Identidade do Socio. |
-| 3972 | 31517 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para discriminar os centros de custos dos lan�amentos cont�beis nos  |
-| 4078 | 31530 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/impostos  na  |
 | 4075 | 31529 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Aumentar para 14 Digitos o campo Org�o Emissor da Cart. de Identidade, no  Cadas |
-| 4023 | 31523 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Alterar o tamanho da tela de concilia��o banc�ria para suportar a resolu��o 800x |
+| 4080 | 31532 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Incluir variavel com a data de emiss�o da Identidade do Socio. |
+| 4100 | 31535 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para poder definir a descri��o de Lucro e Prejuizo ne emiss�o do DRE |
+| 4107 | 31542 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar modelo de relatorio para impressoras Laser e Deskjet do relatorio de lan�a |
+| 4078 | 31530 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/impostos  na  |
 | 4102 | 31537 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando importado notas de entrada com modelo de esp�cie 08 ou 09, n�o realizar a |
-| 3934 | 31510 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar um totalizador no final do relatorio de notas emitidas. |
-| 3899 | 31489 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar sele��o no relatorio de tarefas realizadas para considerar a data do lan�a |
-| 3917 | 31500 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar no di�rio op��o para imprimir conta cr�dito e d�bto na mesma linha. |
-| 3903 | 31491 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar na guia Pagto Parcelas da configura��o de hist�ricos as vari�veis |
-| 3889 | 31481 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | SC-Gravar as informa��es digitadas na tela de emiss�o da DARE. |
-| 3890 | 31482 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Incluir no cadastro da testemunha o campo para CPF e tamb�m a vari�vel para util |
+| 3972 | 31517 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para discriminar os centros de custos dos lan�amentos cont�beis nos  |
+| 4023 | 31523 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Alterar o tamanho da tela de concilia��o banc�ria para suportar a resolu��o 800x |
+| 3898 | 31488 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas com PIS(17) e COFINS(19) do tipo lan�ado diminuir da base t |
 | 3932 | 31508 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos livros fiscais gravar a pagina inicial por periodo. |
+| 3907 | 31493 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Criar no op�o para gerar os lan�amentos para a escrita e contabildade de v�rias  |
+| 3904 | 31492 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Quando fianalizado um processo de constiui��o atualizar o cadastro de empresa co |
+| 3900 | 31490 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o no relatorio de tarefas realizadas para selecionar um ou mais usu�ri |
 | 3893 | 31484 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Desnvolver rotina para importa��o de Grupo de Produtos. |
 | 3914 | 31499 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Ao imprimir o livro parte B em modo retrato sistema corta colunas do relatorio. |
-| 3898 | 31488 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Quando lan�ado notas com PIS(17) e COFINS(19) do tipo lan�ado diminuir da base t |
-| 3913 | 31498 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Criar na baixa de parcelas entradas, sa�das, servi�os e Cupons Fiscais a coluna  |
+| 3890 | 31482 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Incluir no cadastro da testemunha o campo para CPF e tamb�m a vari�vel para util |
 | 3885 | 31479 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Permitir que os Livros Cont�beis sejam enviados por Email. |
-| 3931 | 31507 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Ao alterar a esp�cie de um cupom fiscal para nota fiscal, exibir mensagem e excl |
-| 3923 | 31503 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar da Escrita os valores de receita bruta para c�lculo do |
+| 3913 | 31498 | 8.0A-04 | 03/03/2016 | Em Teste DEMO | Criar na baixa de parcelas entradas, sa�das, servi�os e Cupons Fiscais a coluna  |
+| 3876 | 31476 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Na emiss�o do DARF da contribui��o social, alterar a descri��o da sigla do impos |
+| 3917 | 31500 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Criar no di�rio op��o para imprimir conta cr�dito e d�bto na mesma linha. |
+| 3896 | 31487 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | PR-Ao gerar DFC eliminar todos os caracteres diferentes de numeros e letras do C |
 | 3869 | 31472 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Desenvolver relatorio Comparativo de movimento. |
 | 3887 | 31480 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Ao gravar o relat�rio Raz�o em arquivo, a coluna saldo do exercicio n�o � consid |
-| 3907 | 31493 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Criar no op�o para gerar os lan�amentos para a escrita e contabildade de v�rias  |
-| 3900 | 31490 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o no relatorio de tarefas realizadas para selecionar um ou mais usu�ri |
-| 3896 | 31487 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | PR-Ao gerar DFC eliminar todos os caracteres diferentes de numeros e letras do C |
 | 3933 | 31509 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | No utilit�rio de limpeza criar op��o para excluir fornecedores e clientes. |
-| 3892 | 31483 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar a importa��o de bloquetos recebidos do banco Bradesco. |
-| 3904 | 31492 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Quando fianalizado um processo de constiui��o atualizar o cadastro de empresa co |
+| 3903 | 31491 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar na guia Pagto Parcelas da configura��o de hist�ricos as vari�veis |
+| 3923 | 31503 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar da Escrita os valores de receita bruta para c�lculo do |
+| 3931 | 31507 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Ao alterar a esp�cie de um cupom fiscal para nota fiscal, exibir mensagem e excl |
+| 3889 | 31481 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | SC-Gravar as informa��es digitadas na tela de emiss�o da DARE. |
 | 3930 | 31506 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do extrato de clientes para quebrar p�gina por cliente. |
-| 3876 | 31476 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Na emiss�o do DARF da contribui��o social, alterar a descri��o da sigla do impos |
-| 3832 | 31444 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando na guia contabilidade do acumulador estiver marcado a op��o de mostrar se |
-| 3852 | 31459 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de fornecedores campo para ser informado o complemento. |
+| 3899 | 31489 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar sele��o no relatorio de tarefas realizadas para considerar a data do lan�a |
+| 3892 | 31483 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar a importa��o de bloquetos recebidos do banco Bradesco. |
+| 3868 | 31471 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Quando for clicado F2 em um campo que n�o existem cadastros, sistema emite mensa |
+| 3812 | 31436 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar no acumulador op��o para informar contas cont�beis diferentes do cadastro  |
+| 3851 | 31458 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de lan�amentos op��o para selecionar o tipo. |
+| 3821 | 31439 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o da GPS criar op��o para imprimir data do vencimento e nas observa��es |
+| 3860 | 31464 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Criar no raz�o op��o para omitir a coluna Saldo Exerc�cio. |
 | 3850 | 31457 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Ao lan�ar um conhecimento de frete, nos dados do conhecimento trazer no campo da |
-| 3849 | 31456 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | AL-Na impress�o do livro de ICMS modelo P9 deixar uma linha em branco entre os c |
-| 3816 | 31438 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver Relat�rio de Reten��es a compensar. |
-| 3844 | 31451 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na impress�o do relatorio de faturamento para separar clientes com u |
+| 3832 | 31444 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Quando na guia contabilidade do acumulador estiver marcado a op��o de mostrar se |
 | 3865 | 31468 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de acompanhamento de entradas colunas com valores de IPI e Su |
 | 3858 | 31462 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | Tratar mensagem de erro quando no rateio gerencial de um lan�amento cont�bil for |
 | 3831 | 31443 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Desenvolver Relatorio para verificar a falta de lan�amento de alguma nota de sai |
-| 3868 | 31471 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Quando for clicado F2 em um campo que n�o existem cadastros, sistema emite mensa |
-| 3821 | 31439 | 7.3A-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o da GPS criar op��o para imprimir data do vencimento e nas observa��es |
-| 3810 | 31435 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao emitir os DARF''s modelos Jato de Tinta, destacar em negrito as datas de apur |
+| 3849 | 31456 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | AL-Na impress�o do livro de ICMS modelo P9 deixar uma linha em branco entre os c |
 | 3867 | 31470 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Na tela de estornar faturamento, quando clicado nos cabe�alhos das colunas orden |
-| 3851 | 31458 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de lan�amentos op��o para selecionar o tipo. |
-| 3860 | 31464 | 7.3B-11 | 03/03/2016 | Em Teste DEMO | Criar no raz�o op��o para omitir a coluna Saldo Exerc�cio. |
+| 3816 | 31438 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver Relat�rio de Reten��es a compensar. |
 | 3842 | 31449 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Na impress�o do protocolo sistema est� cortando as observa��es. |
-| 3812 | 31436 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar no acumulador op��o para informar contas cont�beis diferentes do cadastro  |
-| 3763 | 31418 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar no lay out de importa��o de clientes e fornecedores o campo DDD. |
-| 3768 | 31421 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do protocolo em grupo de salvar a sele��o realizada. |
-| 3762 | 31417 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de lan�amentos, n�o permitir lan�amentos com conta d�bito |
-| 3633 | 31402 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | N�o permitir que nos par�metros da Escrita, na guia Contabilidade no campo class |
-| 3747 | 31412 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | MT-Aumentar o tamanho dos campos Saldo inicial e final de caixa/banco nos outros |
-| 3756 | 31416 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | PE-Criar no lay out de importa��o de produtos das notas de saidas os campos Ince |
-| 3808 | 31433 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Quando clicado na consulta F6, posicionar o cursor no campo do codigo da conta. |
-| 3726 | 31410 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do livro de entradas para ordenar por Data de emiss�o ou  |
-| 3754 | 31414 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Criar a op��o de efetuar a Reten��o de INSS e ISS. |
-| 3774 | 31425 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a vari�vel do n�mero da altera��o ordinal por extenso. |
+| 3810 | 31435 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao emitir os DARF''s modelos Jato de Tinta, destacar em negrito as datas de apur |
+| 3844 | 31451 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na impress�o do relatorio de faturamento para separar clientes com u |
+| 3852 | 31459 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de fornecedores campo para ser informado o complemento. |
 | 3769 | 31422 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao fazer um lan�amento de saidas e servi�os com valor cont�bil igual a zero e ca |
+| 3763 | 31418 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar no lay out de importa��o de clientes e fornecedores o campo DDD. |
 | 3778 | 31428 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar novas v�ri�veis no Word. |
-| 3750 | 31413 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o na importa��o de clientes/fornecedores para importar somente cliente |
+| 3747 | 31412 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | MT-Aumentar o tamanho dos campos Saldo inicial e final de caixa/banco nos outros |
 | 3632 | 31401 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | SC-Trazer na lista de empresas para digita��o dos dados mensais e dados anuais d |
-| 3755 | 31415 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Alterar os lay-outs de importa��o de notas com as altera��es, com os novos campo |
-| 3742 | 31411 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as imforma�� |
 | 3669 | 31407 | 7.0A-02 | 03/03/2016 | Em Teste DEMO | Incluir HELP na Integra��o com o EXCEL, estrutura do DRE e emiss�o do Demonstrat |
+| 3768 | 31421 | 7.0A-06 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do protocolo em grupo de salvar a sele��o realizada. |
+| 3726 | 31410 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o do livro de entradas para ordenar por Data de emiss�o ou  |
+| 3633 | 31402 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | N�o permitir que nos par�metros da Escrita, na guia Contabilidade no campo class |
+| 3742 | 31411 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as imforma�� |
+| 3756 | 31416 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | PE-Criar no lay out de importa��o de produtos das notas de saidas os campos Ince |
+| 3750 | 31413 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o na importa��o de clientes/fornecedores para importar somente cliente |
+| 3808 | 31433 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Quando clicado na consulta F6, posicionar o cursor no campo do codigo da conta. |
+| 3754 | 31414 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Criar a op��o de efetuar a Reten��o de INSS e ISS. |
+| 3755 | 31415 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Alterar os lay-outs de importa��o de notas com as altera��es, com os novos campo |
+| 3774 | 31425 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a vari�vel do n�mero da altera��o ordinal por extenso. |
 | 3766 | 31419 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Na impress�o de um DARF imprimir a data para pagamento no campo das observa��es. |
+| 3762 | 31417 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de lan�amentos, n�o permitir lan�amentos com conta d�bito |
 | 3622 | 31398 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver m�dulo que possibilite a emiss�o e controle de contratos sociais bem |
 | 3556 | 31392 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Criar nos acumuladores campo para ser informada a conta do ICMS sobre compras. |
-| 3434 | 31339 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de gerar a DCTF de v�rias empresas ao mesmo tempo. |
-| 3454 | 31347 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | Na importa��o do arquivo de Baixa de Parcelas, quando a NF (Entrada ou  Saida) � |
-| 3430 | 31336 | 7.0A-03 | 03/03/2016 | Em Teste DEMO | PR-Criar nos livros de saidas op��o para imprimir as linhas verticais no modelo  |
-| 3429 | 31335 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Criar uma nova base de dados para a instala��o do sistema. |
-| 3444 | 31343 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | SP-Criar op��o de emitir a Guia GARE/DR- Avulsa.  |
 | 3456 | 31348 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Em Movimento/Imposto de Renda - Quando utilizar o F2 no campo c�digo dos lan�ame |
-| 3405 | 31321 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | Quando for alterado o per�odo inicial nos Par�metros n�o considerar o movimento  |
-| 3419 | 31330 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de fornecedores sistema est� completando o campo Inscri�� |
-| 3299 | 31310 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Permitir gerar a DIRF de v�rias empresas ao mesmo tempo, gerando um arquivo para |
-| 3249 | 31302 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Ao emitir o livro de ISS, quando em m�s der mais de uma p�gina n�o est� sendo im |
+| 3454 | 31347 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | Na importa��o do arquivo de Baixa de Parcelas, quando a NF (Entrada ou  Saida) � |
+| 3444 | 31343 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | SP-Criar op��o de emitir a Guia GARE/DR- Avulsa.  |
+| 3434 | 31339 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Disponibilizar a op��o de gerar a DCTF de v�rias empresas ao mesmo tempo. |
+| 3429 | 31335 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Criar uma nova base de dados para a instala��o do sistema. |
+| 3430 | 31336 | 7.0A-03 | 03/03/2016 | Em Teste DEMO | PR-Criar nos livros de saidas op��o para imprimir as linhas verticais no modelo  |
 | 3327 | 31316 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | SC-Permitir que ao emitir o livro de ICMS as observa��es possam ser gravadas por |
-| 3309 | 31312 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar o cadastro de Socios e Contadores. |
 | 3308 | 31311 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | SC-No PRODEC criar op��o para informar o Montante do Incentivo e a Base M�dia Ge |
-| 3155 | 31274 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Quando clicado F2 no campo codigo do munic�pio do cadastro de clientes e fornece |
-| 3185 | 31285 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o de bloquetos pagos para o banco BESC no layout de 400 pos |
-| 3151 | 31272 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | No relatorio cadastral de eventos criar sele��o de somente os eventos que somam  |
-| 3224 | 31295 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Permitir digitar contas com 7 digitos |
-| 3142 | 31268 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar a ordem de impress�o dos bloquetos. |
-| 3226 | 31297 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | No utilit�rios de Gerar contas para clientes/fornecedor o sistema n�o est� obede |
-| 3143 | 31269 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | RS-Na tela de movimentos/outros/empregados quando clicar no bot�o importar, ter  |
+| 3249 | 31302 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Ao emitir o livro de ISS, quando em m�s der mais de uma p�gina n�o est� sendo im |
+| 3405 | 31321 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | Quando for alterado o per�odo inicial nos Par�metros n�o considerar o movimento  |
+| 3299 | 31310 | 7.0C-01 | 03/03/2016 | Em Teste DEMO | Permitir gerar a DIRF de v�rias empresas ao mesmo tempo, gerando um arquivo para |
+| 3309 | 31312 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar o cadastro de Socios e Contadores. |
+| 3419 | 31330 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de fornecedores sistema est� completando o campo Inscri�� |
 | 3203 | 31289 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | PR-Aumentar o tamanho do campo Valor da Folha nos outros dados da GIA. |
-| 3154 | 31273 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar lan�amento cont�bil a prazo para parcelas pagas � vist |
-| 3160 | 31276 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Aumentar o campo descri��o na baixa de faturamento. |
 | 3225 | 31296 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Permitir digitar contas cont�beis com 7 d�gito no cadastro de clientes e fornece |
-| 3141 | 31267 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ter op��o de alterar a descri��o da denomina��o Lucro ou Prejuizo nas an�lizes v |
-| 3092 | 31255 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Aumentar o campo "Autoriza��o numero" movimento de Utiliza��o de Documentos Fisc |
+| 3185 | 31285 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver importa��o de bloquetos pagos para o banco BESC no layout de 400 pos |
+| 3160 | 31276 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Aumentar o campo descri��o na baixa de faturamento. |
+| 3224 | 31295 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Permitir digitar contas com 7 digitos |
+| 3143 | 31269 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | RS-Na tela de movimentos/outros/empregados quando clicar no bot�o importar, ter  |
+| 3226 | 31297 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | No utilit�rios de Gerar contas para clientes/fornecedor o sistema n�o est� obede |
+| 3154 | 31273 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para realizar lan�amento cont�bil a prazo para parcelas pagas � vist |
+| 3151 | 31272 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | No relatorio cadastral de eventos criar sele��o de somente os eventos que somam  |
+| 3142 | 31268 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para selecionar a ordem de impress�o dos bloquetos. |
+| 3155 | 31274 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Quando clicado F2 no campo codigo do munic�pio do cadastro de clientes e fornece |
+| 3026 | 31240 | 6.1D-04 | 03/03/2016 | Em Teste DEMO | Quando fato gerador do CRF for emiss�o considerar todas as notas emitidas no m�s |
 | 3133 | 31264 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Criar um cadastro de s�cios unico para todas as empresas e nas empresas criar um |
-| 3137 | 31266 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | MT-Criar op��o nos livros de entradas modelo P1 e P1/A, op��o para discriminar o |
-| 3053 | 31249 | 6.1D-04 | 03/03/2016 | Em Teste DEMO | Ao emitir livro raz�o, mostrar zero nas colunas D�bito e Cr�dito somente quando  |
 | 3027 | 31241 | 6.1D-04 | 03/03/2016 | Em Teste DEMO | Na emiss�o do Livro de ISS criar bot�o outros dados para ser preenchido os campo |
 | 3050 | 31248 | 6.1D-04 | 03/03/2016 | Em Teste DEMO | Otimizar o tempo de gera��o do arquivo para o SINTEGRA. |
+| 3053 | 31249 | 6.1D-04 | 03/03/2016 | Em Teste DEMO | Ao emitir livro raz�o, mostrar zero nas colunas D�bito e Cr�dito somente quando  |
+| 3092 | 31255 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Aumentar o campo "Autoriza��o numero" movimento de Utiliza��o de Documentos Fisc |
+| 3137 | 31266 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | MT-Criar op��o nos livros de entradas modelo P1 e P1/A, op��o para discriminar o |
+| 3141 | 31267 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Ter op��o de alterar a descri��o da denomina��o Lucro ou Prejuizo nas an�lizes v |
 | 3118 | 31259 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | N�o permitir alterar o periodo inicial nos par�metros para um per�odo maior ao q |
-| 3026 | 31240 | 6.1D-04 | 03/03/2016 | Em Teste DEMO | Quando fato gerador do CRF for emiss�o considerar todas as notas emitidas no m�s |
+| 2957 | 31219 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o pela selecionar o usu�rio no relatorio de Usu�rio Tempo Gasto. |
+| 2985 | 31230 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gravar a sele��o de clientes por usu�rio e por empresa |
+| 2925 | 31208 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o dos documentos de cobran�a para sele��o da ordem. |
+| 2990 | 31231 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | MT-Criar modelo de Livros de Entradas e Saidas onde as observa��es sejam impress |
+| 2938 | 31213 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Na guia DARF Simples modelos matricial e matricial c/vencto no quadro 01, item 0 |
 | 2912 | 31203 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo. |
+| 2921 | 31206 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de acompanhamento a op��o de selecionar mais de uma conta. |
 | 2926 | 31209 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Criar na emiss�o do Balancete op��o para imprimir ou n�o o n�mero do Livro. |
 | 2943 | 31216 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ao realizar um lan�amento em grupo nos lan�amentos habilitar o campo valor para  |
-| 2938 | 31213 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Na guia DARF Simples modelos matricial e matricial c/vencto no quadro 01, item 0 |
-| 2957 | 31219 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Criar op��o pela selecionar o usu�rio no relatorio de Usu�rio Tempo Gasto. |
 | 2939 | 31214 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ao lan�ar um pagamento e divid-lo em parcelas, se o valor da primeira parcela fo |
-| 2985 | 31230 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Gravar a sele��o de clientes por usu�rio e por empresa |
-| 2921 | 31206 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar no relatorio de acompanhamento a op��o de selecionar mais de uma conta. |
-| 2990 | 31231 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | MT-Criar modelo de Livros de Entradas e Saidas onde as observa��es sejam impress |
-| 2925 | 31208 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o na emiss�o dos documentos de cobran�a para sele��o da ordem. |
-| 2903 | 31198 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo. |
-| 2854 | 31187 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Na impress�o do DARF normal mostrar os impostos PIS-66 e COFINS-NC, mesmo sendo  |
-| 2823 | 31172 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Ao gerar o arquivo para o SINTEGRA o registro 51 s� pode ser gerado para notas d |
-| 2831 | 31175 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar na guia saldo final do cadastro de produtos campo com valor unit�rio. |
-| 2852 | 31186 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Vincular novo Help a este m�dulo. |
-| 2847 | 31182 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para que no relatorio Pedido de Uso, no campos que se referem ao loc |
-| 2884 | 31194 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | No relat�rio Rela��o de Contrato, criar op��o para n�o emitir os contratos encer |
-| 2890 | 31195 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Quando clicar F2 no campo do CFOP das entradas trazer somente as naturezas de en |
 | 2848 | 31183 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Criar op��o na impress�o dos termos para imprimir periodo inicial e final. |
+| 2890 | 31195 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Quando clicar F2 no campo do CFOP das entradas trazer somente as naturezas de en |
+| 2854 | 31187 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Na impress�o do DARF normal mostrar os impostos PIS-66 e COFINS-NC, mesmo sendo  |
+| 2852 | 31186 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Vincular novo Help a este m�dulo. |
+| 2903 | 31198 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo. |
+| 2831 | 31175 | 7.0D-02 | 03/03/2016 | Em Teste DEMO | Criar na guia saldo final do cadastro de produtos campo com valor unit�rio. |
+| 2847 | 31182 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para que no relatorio Pedido de Uso, no campos que se referem ao loc |
 | 2844 | 31180 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | Nos relatorios de acompanhamento de entradas, saidas e servi�os listar somente o |
+| 2884 | 31194 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | No relat�rio Rela��o de Contrato, criar op��o para n�o emitir os contratos encer |
 | 2821 | 31171 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Gerar arquivo DNF conforme novo layout |
-| 2795 | 31161 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para emitir o relat�rio de Extrato de Clientes por ordem alfabetica. |
-| 2798 | 31162 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver modelo de carta de cobran�a. |
-| 2759 | 31141 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Permitir que seja lan�ado mais de uma parcela com o mesmo vecimento. |
-| 2790 | 31157 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto do banco Mercantil do Brasil completo com c�digo de barras. |
-| 2760 | 31142 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar um contrato com valor = 0,00. |
-| 2765 | 31145 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo |
-| 2770 | 31148 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | PR-Ao gerar o livro de entradas modelo P1/A ordenar por data/fornecedor/numero d |
-| 2793 | 31159 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Inserir no relatorio Rela��o de Contratos somatoria das colunas Valor atual e va |
-| 2756 | 31138 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando for emitido um documento de cobran�a e o numero de itens ultrapassar o li |
-| 2779 | 31151 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | No lan�amento das adi��es e exlcus�es do imposto de renda, permitir que seja lan |
-| 2758 | 31140 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir que seja lan�ado o mesmo evento mais de uma vez. |
-| 2766 | 31146 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo. |
-| 2783 | 31154 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | No tela de lan�amento de notas de entradas e saidas, listar sempre o IPI e a Sub |
+| 2823 | 31172 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Ao gerar o arquivo para o SINTEGRA o registro 51 s� pode ser gerado para notas d |
 | 2789 | 31156 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | N�o permitir que sejam incluidas contas em empresas que s�o filiais, cujo lan�am |
-| 2737 | 31132 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Desenvolver modelo de bloqueto BESC Completo com c�digo de barras. |
-| 2785 | 31155 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Otimizar tempo de gera��o do arquivo Sintegra. |
-| 2739 | 31133 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Poder complementar as descri��es das adi��es e exclus�es no calculo da Contribui |
+| 2765 | 31145 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo |
+| 2758 | 31140 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir que seja lan�ado o mesmo evento mais de uma vez. |
+| 2795 | 31161 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para emitir o relat�rio de Extrato de Clientes por ordem alfabetica. |
 | 2772 | 31149 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ar notas com parcelas no campo vencimento inicial, posicionar o curso |
-| 2728 | 31128 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Permitir selecionar centro de custo ao gerar dados para o Excel |
-| 2729 | 31129 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar nos relat�rios Balan�o, Balancete e Raz�o a op��o de selecionar C |
-| 2726 | 31126 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | MT-Na emiss�o dos livros de Entradas, Saidas, ISS e IPI n�o est� sendo gravada a |
+| 2798 | 31162 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver modelo de carta de cobran�a. |
+| 2760 | 31142 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar um contrato com valor = 0,00. |
+| 2785 | 31155 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Otimizar tempo de gera��o do arquivo Sintegra. |
+| 2766 | 31146 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Vincular novo HELP a este m�dulo. |
+| 2756 | 31138 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Quando for emitido um documento de cobran�a e o numero de itens ultrapassar o li |
+| 2793 | 31159 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Inserir no relatorio Rela��o de Contratos somatoria das colunas Valor atual e va |
+| 2739 | 31133 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Poder complementar as descri��es das adi��es e exclus�es no calculo da Contribui |
+| 2770 | 31148 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | PR-Ao gerar o livro de entradas modelo P1/A ordenar por data/fornecedor/numero d |
+| 2783 | 31154 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | No tela de lan�amento de notas de entradas e saidas, listar sempre o IPI e a Sub |
+| 2737 | 31132 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Desenvolver modelo de bloqueto BESC Completo com c�digo de barras. |
+| 2790 | 31157 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto do banco Mercantil do Brasil completo com c�digo de barras. |
+| 2779 | 31151 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | No lan�amento das adi��es e exlcus�es do imposto de renda, permitir que seja lan |
+| 2759 | 31141 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Permitir que seja lan�ado mais de uma parcela com o mesmo vecimento. |
 | 2724 | 31125 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | PR-Desenvolver calculo para empresas com regime de Credito Presumido.    |
+| 2728 | 31128 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Permitir selecionar centro de custo ao gerar dados para o Excel |
+| 2726 | 31126 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | MT-Na emiss�o dos livros de Entradas, Saidas, ISS e IPI n�o est� sendo gravada a |
+| 2729 | 31129 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar nos relat�rios Balan�o, Balancete e Raz�o a op��o de selecionar C |
 | 2727 | 31127 | 8.0A-10 | 03/03/2016 | Em Teste DEMO | Ajustar o relat�rio do Diferencial de Al�quotas para emitir em modo gr�fico e in |
+| 2659 | 31098 | 7.0A-03 | 03/03/2016 | Em Teste DEMO | SP-Retirar a op��o de Relatorios/Informativos/GIA. |
 | 2654 | 31093 | 10.0A-14 | 03/03/2016 | Em Teste DEMO | Na emiss�o e retorno de protocolo utilizar o usu�rio logado como funcion�rio. |
 | 2667 | 31099 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Na emiss�o do DRE criar op��o de informar o n�mero do livro. |
-| 2656 | 31095 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de gerar somente um recibo discrimando os eventos cobrados, quando f |
 | 2668 | 31100 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar o relatorio de lan�amentos fiscais quando nos par�metros estiver  |
+| 2656 | 31095 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o de gerar somente um recibo discrimando os eventos cobrados, quando f |
 | 2670 | 31102 | 7.0F-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos DRE, Balan�o e Balancete quando selecionado apenas um centro de c |
 | 2680 | 31107 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Na configura��o de historico disponibilizar em uma unica vari�vel o numero inici |
-| 2659 | 31098 | 7.0A-03 | 03/03/2016 | Em Teste DEMO | SP-Retirar a op��o de Relatorios/Informativos/GIA. |
+| 2627 | 31080 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Utilizar o mesmo cadastro de fornecedores da Escrita Fiscal. |
+| 2633 | 31083 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | TO-Ao emitir o livro de entrada ou saida de um periodo do m�s sistema emite de t |
+| 2616 | 31073 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Quando tiver lan�amentos com valor zero(0,00),no di�rio e raz�o deve sair na col |
+| 2629 | 31082 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo "Codigo", no cadastro de Conta Patrimonial. |
 | 2623 | 31078 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar um campo para informar hist�rico na tela de lan�amento de pagamentos. |
-| 2637 | 31086 | 8.1A-14 | 03/03/2016 | Em Teste DEMO | PR-Realizar c�lculo do ICMS em atraso. |
-| 2638 | 31087 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao realizar a concilia��o manual, levar em considera��o o que foi marcado nos cr |
 | 2628 | 31081 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Quando emitir relatorio de concilia��o banc�ria ordenar sempre em ordem de data. |
+| 2637 | 31086 | 8.1A-14 | 03/03/2016 | Em Teste DEMO | PR-Realizar c�lculo do ICMS em atraso. |
+| 2595 | 31058 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Permitir que possa ser importado baixa de bloquetos utilizando o arquivo de 400  |
 | 2634 | 31084 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | Vincular novo Help a este m�dulo. |
 | 2622 | 31077 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | No demonstrativo ISSQN possui no texto final a palavra "seguinte" escrita "segui |
+| 2638 | 31087 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Ao realizar a concilia��o manual, levar em considera��o o que foi marcado nos cr |
 | 2604 | 31067 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar no Lay out de importa��o de notas de Saidas e Servi�os o campo Ca |
-| 2595 | 31058 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Permitir que possa ser importado baixa de bloquetos utilizando o arquivo de 400  |
-| 2629 | 31082 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo "Codigo", no cadastro de Conta Patrimonial. |
-| 2627 | 31080 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Utilizar o mesmo cadastro de fornecedores da Escrita Fiscal. |
-| 2600 | 31063 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando for faturar um periodo em que o periodo anterior ainda n�o foi faturado o |
-| 2653 | 31092 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | Nas an�lises horizontais de DRE e balan�o, aumentar o numero de colunas de 6 par |
-| 2633 | 31083 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | TO-Ao emitir o livro de entrada ou saida de um periodo do m�s sistema emite de t |
 | 2609 | 31069 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Quando existe varios lan�amentos no mesmo dia com saldo diferente da natureza da |
-| 2616 | 31073 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Quando tiver lan�amentos com valor zero(0,00),no di�rio e raz�o deve sair na col |
-| 2621 | 31076 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Permitir efetuar lan�amentos mesmo com mais de uma filial selecionada. |
+| 2600 | 31063 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando for faturar um periodo em que o periodo anterior ainda n�o foi faturado o |
 | 2619 | 31075 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Possibilitar a importa��o de extratos no formato ofx. |
-| 2551 | 31032 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar o sistema a trabalhar com mais de uma empresa. |
-| 2554 | 31035 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Criar outro campo no cadastro de bens para identifica��o. |
-| 2553 | 31034 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de notas quando no arquivo tiver um fornecedor/cliente n� |
-| 2577 | 31043 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Criar layout de importa��o de notas em que possa ser informado o codigo das obse |
+| 2621 | 31076 | 7.4B-01 | 03/03/2016 | Em Teste DEMO | Permitir efetuar lan�amentos mesmo com mais de uma filial selecionada. |
+| 2653 | 31092 | 7.5C-02 | 03/03/2016 | Em Teste DEMO | Nas an�lises horizontais de DRE e balan�o, aumentar o numero de colunas de 6 par |
 | 2580 | 31046 | 7.0A-01 | 03/03/2016 | Em Teste DEMO | Salvar a ordem escolhida na listagem de empresas que traz no canto superior dire |
-| 2579 | 31045 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar campo nos par�metros para informar conta do preju�zo. |
+| 2593 | 31056 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o do plano de contas, na op��o Grupo, se for informada uma conta anal�t |
 | 2587 | 31052 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o individual de protocolo criar campo para ser informado o nome do rece |
+| 2577 | 31043 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Criar layout de importa��o de notas em que possa ser informado o codigo das obse |
+| 2554 | 31035 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Criar outro campo no cadastro de bens para identifica��o. |
+| 2592 | 31055 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando for regerado um lan�amento cont�bil, e o mesmo j� estiver conciliado deve |
+| 2551 | 31032 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar o sistema a trabalhar com mais de uma empresa. |
+| 2553 | 31034 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Ao realizar importa��o de notas quando no arquivo tiver um fornecedor/cliente n� |
+| 2537 | 31030 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para regerar os lan�amentos de tabelas municipais. |
 | 2550 | 31031 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar mais de uma baixa parcial no mesmo dia, para o mesmo t�tulo/fo |
 | 2586 | 31051 | 7.0D-01 | 03/03/2016 | Em Teste DEMO | Incluir a op��o para selecionar se deve lan�ar a diferen�a entre base de c�lculo |
-| 2537 | 31030 | 7.5B-01 | 03/03/2016 | Em Teste DEMO | Criar utilit�rio para regerar os lan�amentos de tabelas municipais. |
-| 2593 | 31056 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o do plano de contas, na op��o Grupo, se for informada uma conta anal�t |
-| 2592 | 31055 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando for regerado um lan�amento cont�bil, e o mesmo j� estiver conciliado deve |
-| 2457 | 31000 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar o campo digito verificador do cadastro de conta financeira e do n�mero d |
+| 2579 | 31045 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar campo nos par�metros para informar conta do preju�zo. |
 | 2429 | 30994 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | No relatorio raz�o n�o permitir que o usuario selecione a mesma conta no campo s |
-| 2507 | 31015 | 7.5C-04 | 03/03/2016 | Em Teste DEMO | No utilit�rio de exclus�o de contas criar op��o para selecionar por classifica�� |
-| 2501 | 31014 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | SC: Incluir campo para informar classe de vencimento no cadastro do imposto. |
+| 2446 | 30999 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar um fechamento para uma data igual ao periodo inicial da empres |
 | 2494 | 31011 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Na tela de concilia��o banc�ria quando der um duplo clique em um lan�amento cont |
-| 2488 | 31008 | 7.5C-01 | 03/03/2016 | Em Teste DEMO | Ao excluir uma linha da estrutura do DRE, DRA, DLPA, DMPL ou DOAR, apresentar me |
+| 2518 | 31022 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Criar op��o no balancete de n�o imprimir contas com saldo zero. |
+| 2457 | 31000 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Alterar o campo digito verificador do cadastro de conta financeira e do n�mero d |
 | 2508 | 31016 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Ao clicar F2 para selecionar um cliente trazer ao lado da raz�o social o CNPJ. |
 | 2493 | 31010 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Ter op��o de cadastrar e importar as inscri��es estaduais canceladas para que po |
-| 2518 | 31022 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Criar op��o no balancete de n�o imprimir contas com saldo zero. |
-| 2446 | 30999 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Permitir realizar um fechamento para uma data igual ao periodo inicial da empres |
-| 2367 | 30963 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Quando est� sendo realizado lan�amentos e digita-se uma conta inv�lida cursor de |
-| 2421 | 30989 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Desenvolver relat�rios para demonstrar o Lucro Presumido Liquido. |
-| 2369 | 30965 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando no acumulador for marcado para mostrar sempre o lan�amento contabil e se  |
-| 2414 | 30983 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Quando nas op��es estiver selecionada a op��o usar como Livro Caixa, disponibili |
-| 2361 | 30961 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | No cadastro de lan�amentos padr�es criar uma op��o para posicionar o cursor no c |
-| 2397 | 30976 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de imprimir bloquetos do banco UNIBANCO com codigo de barras. |
-| 2394 | 30974 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | SC-Ter op��o de gerar arquivo e relatorios para guia DARE-SC, para o imposto sub |
-| 2393 | 30973 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando estiver sendo lan�ado uma conta a pagar ter op��o de baixar a parcela nes |
-| 2410 | 30980 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | No relatorio de cliente tempo gasto modelo completo e resumido ter no final um t |
-| 2412 | 30981 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir que o campo serie fique em branco no lan�amento de contas a pagar. |
-| 2359 | 30960 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | SC-Disponibilizar no atualizar op��o de exportar arquivo para DARE. |
-| 2372 | 30968 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | AL-Permitir que seja cadastrado AIDF com a mesma serie e numera��o e com modelo  |
-| 2371 | 30967 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Ter op��o no relatorio de plano de contas e no balancete de quebrar pagina na tr |
-| 2340 | 30958 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Em relatorio Acompanhamento/ecf colocar a data do lan�amento. |
+| 2507 | 31015 | 7.5C-04 | 03/03/2016 | Em Teste DEMO | No utilit�rio de exclus�o de contas criar op��o para selecionar por classifica�� |
+| 2501 | 31014 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | SC: Incluir campo para informar classe de vencimento no cadastro do imposto. |
+| 2488 | 31008 | 7.5C-01 | 03/03/2016 | Em Teste DEMO | Ao excluir uma linha da estrutura do DRE, DRA, DLPA, DMPL ou DOAR, apresentar me |
 | 2407 | 30978 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Quando emitido o relatorio de saldos, sistema n�o est� considerando o movimento  |
-| 2362 | 30962 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Na consulta F6 quando o saldo for maior que 999.999.999,99 sistema esta cortando |
 | 2425 | 30992 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Quando � definida natureza permitida por acumulador, nos lan�amentos se altera-s |
-| 2396 | 30975 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Gravar as op��es usadas para emiss�o do Di�rio, Raz�o, Balan�o e Balancete. |
-| 2413 | 30982 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao realizar uma baixa sem realizar o lan�amento contabil emitir mensagem de avis |
-| 2374 | 30969 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Quando na concilia��o banc�ria a op��o historico for marcada, o sistema deve pro |
+| 2359 | 30960 | 8.1A-04 | 03/03/2016 | Em Teste DEMO | SC-Disponibilizar no atualizar op��o de exportar arquivo para DARE. |
+| 2421 | 30989 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Desenvolver relat�rios para demonstrar o Lucro Presumido Liquido. |
 | 2418 | 30986 | 7.4A-04 | 03/03/2016 | Em Teste DEMO | Quando for efetuada uma baixa e n�o estiver defino conta para recebimento/pagame |
-| 2188 | 30929 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | SC-Na impress�o do livro de entradas ter op��o de imprimir ou n�o a Raz�o Social |
-| 2200 | 30934 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No cadastro da ag�ncia ter um campo para o c�digo sequencial e outro para o n�me |
+| 2371 | 30967 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Ter op��o no relatorio de plano de contas e no balancete de quebrar pagina na tr |
+| 2412 | 30981 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir que o campo serie fique em branco no lan�amento de contas a pagar. |
+| 2361 | 30961 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | No cadastro de lan�amentos padr�es criar uma op��o para posicionar o cursor no c |
+| 2394 | 30974 | 6.1E-04 | 03/03/2016 | Em Teste DEMO | SC-Ter op��o de gerar arquivo e relatorios para guia DARE-SC, para o imposto sub |
+| 2414 | 30983 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Quando nas op��es estiver selecionada a op��o usar como Livro Caixa, disponibili |
+| 2372 | 30968 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | AL-Permitir que seja cadastrado AIDF com a mesma serie e numera��o e com modelo  |
+| 2367 | 30963 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | Quando est� sendo realizado lan�amentos e digita-se uma conta inv�lida cursor de |
+| 2397 | 30976 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de imprimir bloquetos do banco UNIBANCO com codigo de barras. |
+| 2362 | 30962 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | Na consulta F6 quando o saldo for maior que 999.999.999,99 sistema esta cortando |
+| 2374 | 30969 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Quando na concilia��o banc�ria a op��o historico for marcada, o sistema deve pro |
+| 2410 | 30980 | 7.2A-01 | 03/03/2016 | Em Teste DEMO | No relatorio de cliente tempo gasto modelo completo e resumido ter no final um t |
+| 2393 | 30973 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Quando estiver sendo lan�ado uma conta a pagar ter op��o de baixar a parcela nes |
+| 2413 | 30982 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao realizar uma baixa sem realizar o lan�amento contabil emitir mensagem de avis |
+| 2340 | 30958 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Em relatorio Acompanhamento/ecf colocar a data do lan�amento. |
+| 2369 | 30965 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Quando no acumulador for marcado para mostrar sempre o lan�amento contabil e se  |
+| 2396 | 30975 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Gravar as op��es usadas para emiss�o do Di�rio, Raz�o, Balan�o e Balancete. |
 | 2213 | 30936 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | No utilit�rio Altera��o de Lan�amento ter op��o para altera��o da Data. |
 | 2187 | 30928 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | BA-Na impress�o do livro de entradas ter op��o de imprimir a Raz�o Social e o CN |
-| 2295 | 30950 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | N�o permitir lan�ar nos campos base de calculo, isentas, outras e valores de imp |
-| 2320 | 30953 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Se a empresa estiver parametrizada para controlar contas a pagar e a receber e o |
-| 2197 | 30932 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Quando emitido o livro de ICMS modelo P9 sem movimento sistema deve emitir ap |
-| 2199 | 30933 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Transferir para a conta financeira o codigo cendente que hoje est� no cadastro d |
 | 2189 | 30930 | 7.4B-05 | 03/03/2016 | Em Teste DEMO | Discriminar nos relatorios de acompanhamento de Entradas, saidas e servi�os o CN |
-| 2244 | 30941 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Quando emitido o balan�o e balancete com a op��o de modelo que totaliza no final |
-| 2318 | 30952 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Na tela de sele��o de filial ativa ter op��o de poder selecionar todas, nenhuma  |
-| 2322 | 30955 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Mesmo com fechamento de um determinado per�odo o sistema est� permitindo alterar |
 | 2214 | 30937 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Gerar o bloqueto do banco SICREDI com codigo de barras. |
-| 2130 | 30909 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Possibilitar importar valores de receita bruta para c�lculo do IRPJ com op��o es |
+| 2244 | 30941 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Quando emitido o balan�o e balancete com a op��o de modelo que totaliza no final |
+| 2197 | 30932 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Quando emitido o livro de ICMS modelo P9 sem movimento sistema deve emitir ap |
+| 2188 | 30929 | 7.0B-02 | 03/03/2016 | Em Teste DEMO | SC-Na impress�o do livro de entradas ter op��o de imprimir ou n�o a Raz�o Social |
+| 2199 | 30933 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Transferir para a conta financeira o codigo cendente que hoje est� no cadastro d |
+| 2295 | 30950 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | N�o permitir lan�ar nos campos base de calculo, isentas, outras e valores de imp |
+| 2322 | 30955 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Mesmo com fechamento de um determinado per�odo o sistema est� permitindo alterar |
+| 2318 | 30952 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Na tela de sele��o de filial ativa ter op��o de poder selecionar todas, nenhuma  |
+| 2320 | 30953 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Se a empresa estiver parametrizada para controlar contas a pagar e a receber e o |
+| 2200 | 30934 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No cadastro da ag�ncia ter um campo para o c�digo sequencial e outro para o n�me |
 | 2121 | 30904 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | PR-Ter op��o de informar o codigo do municipio nos lan�amentos das notas para ge |
-| 2143 | 30912 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | No relatorio cadastral de bens ter op��o de imprimir tamb�m o historico. |
+| 2140 | 30910 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | AL-Ter op��o de informar valores de Despesa e do Balan�o Patrimonial para ser ex |
 | 2147 | 30915 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | RS-No relatorio, acompanhamento, Sumario Entradas/Saidas modelo 1 aparecer o num |
 | 2182 | 30926 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Atualizar os valores das demais parcelas ao alterar a primeira parcela do contas |
-| 2117 | 30901 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Nos livros Registro de Entradas e Registro de Saidas alterar a coluna Serie p |
 | 2178 | 30923 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Permitir informar uma conta sint�tica na emiss�o do relat�rio de acompanhamento  |
-| 2140 | 30910 | 6.1E-02 | 03/03/2016 | Em Teste DEMO | AL-Ter op��o de informar valores de Despesa e do Balan�o Patrimonial para ser ex |
-| 2159 | 30920 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | PR-Ter op��o de discriminar no livro de saidas a Substitui��o Tribut�ria. |
-| 2123 | 30905 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando for cadastrado um fornecedor verificar em outra empresa tambem no cadastr |
 | 2119 | 30902 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Ter opcao de quando lancar uma nota de tranferencia de prudutos, realizar tambem |
-| 2099 | 30895 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando definido a variavel #C no evento do honorarios, ao faturar sistema deve c |
-| 1969 | 30867 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Incluir o modelo de bloqueto do Banco Bradesco com codigo de barras. |
-| 1968 | 30866 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Incluir o bot�o replicar no cadastro de historicos. |
-| 2061 | 30889 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Disbponibilizar na busca avan�ada da baixa de parcelas de entrada,saidas e servi |
-| 1986 | 30873 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Alterar o campo saida do escritorio para Tipo, com as op��es de Entrada ou Saida |
-| 2040 | 30884 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Quando nos acumuladores estiver marcado para mostrar sempre o lan�amento cont�bi |
-| 1992 | 30876 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando o modelo do gr�fico � pizza a fonte os valores de percentuais est� muito  |
-| 1979 | 30871 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Ter no relatorio de usuario tempo gasto, a op��o de agrupar por sistema. |
-| 1980 | 30872 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Permitir alterar a data de aquisi��o do bem se o periodo atual for o mesmo desta |
-| 2062 | 30890 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar um novo layout de importa��o de arquivos para lan�amenos cont�beis, com a  |
-| 2107 | 30897 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de recebimento por per�odo. |
-| 1990 | 30875 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Na tela de gera��o da DIEF trazer sempre a �ltima configura��o realizada pelo |
-| 2100 | 30896 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando definido a variavel #C em um evento fixo, ao faturar deve complementar es |
-| 2005 | 30877 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Desenvolver os dois modelos de contrato de servi�os cont�beis padr�es do CFC. |
-| 2035 | 30882 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | MS - Aumentar o espa�o para informar o nome do arquivo da GIA |
-| 2042 | 30886 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o completo com c |
-| 1974 | 30870 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar nos relatorios de acompanhamento de entradas e saidas, a op��o de somente  |
-| 2115 | 30900 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Desenvolver relatorio de acompanhamento dos valores de CRF,PIS Retido, COIFNS Re |
+| 2143 | 30912 | 7.5C-03 | 03/03/2016 | Em Teste DEMO | No relatorio cadastral de bens ter op��o de imprimir tamb�m o historico. |
+| 2117 | 30901 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Nos livros Registro de Entradas e Registro de Saidas alterar a coluna Serie p |
+| 2159 | 30920 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | PR-Ter op��o de discriminar no livro de saidas a Substitui��o Tribut�ria. |
+| 2130 | 30909 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Possibilitar importar valores de receita bruta para c�lculo do IRPJ com op��o es |
+| 2123 | 30905 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando for cadastrado um fornecedor verificar em outra empresa tambem no cadastr |
 | 2089 | 30894 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Permitir que um item seja incluso mais de uma vez no mesmo protocolo. |
+| 1974 | 30870 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar nos relatorios de acompanhamento de entradas e saidas, a op��o de somente  |
+| 2107 | 30897 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar relat�rio de recebimento por per�odo. |
+| 2099 | 30895 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando definido a variavel #C no evento do honorarios, ao faturar sistema deve c |
+| 2040 | 30884 | 7.0C-04 | 03/03/2016 | Em Teste DEMO | Quando nos acumuladores estiver marcado para mostrar sempre o lan�amento cont�bi |
 | 2109 | 30898 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Ter op��o nos demonstrativos DOAR e DLPA de informar o numero do livro. |
-| 1965 | 30864 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | MT-Ao imprimir um livro de icms modelo P9 com a data inicial de 09/03/2003 � 30/ |
-| 1930 | 30854 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | SP-S�o Paulo-A impress�o do livro de ISS modelo 51, deve ser ordenada por data e |
-| 1832 | 30833 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | SC-Quando gerar a DIME, criar op��o para importar o numero de empregados de vari |
-| 1931 | 30855 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Ao exportar lan�amentos gerar o codigo da filial. |
-| 1877 | 30845 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | AL-Sistema deve permitir cadastrar mais de uma AIDF com o mesmo n�mero. |
-| 1854 | 30839 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Incluir no balancete o campo para descri�ao final igual a do balan�o patrimonial |
-| 1925 | 30851 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Quando lan�ado uma nota com acumulador com PIS66 e COFINS-NC, com base de calcul |
-| 1837 | 30835 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o do balan�o quando for marcado a op��o para imprimir saldo anterior, i |
+| 1980 | 30872 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Permitir alterar a data de aquisi��o do bem se o periodo atual for o mesmo desta |
+| 1968 | 30866 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Incluir o bot�o replicar no cadastro de historicos. |
+| 2035 | 30882 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | MS - Aumentar o espa�o para informar o nome do arquivo da GIA |
+| 1992 | 30876 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando o modelo do gr�fico � pizza a fonte os valores de percentuais est� muito  |
+| 2061 | 30889 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Disbponibilizar na busca avan�ada da baixa de parcelas de entrada,saidas e servi |
+| 2042 | 30886 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o completo com c |
+| 1979 | 30871 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Ter no relatorio de usuario tempo gasto, a op��o de agrupar por sistema. |
+| 1990 | 30875 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Na tela de gera��o da DIEF trazer sempre a �ltima configura��o realizada pelo |
+| 2005 | 30877 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Desenvolver os dois modelos de contrato de servi�os cont�beis padr�es do CFC. |
+| 1969 | 30867 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Incluir o modelo de bloqueto do Banco Bradesco com codigo de barras. |
+| 2062 | 30890 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar um novo layout de importa��o de arquivos para lan�amenos cont�beis, com a  |
+| 1986 | 30873 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Alterar o campo saida do escritorio para Tipo, com as op��es de Entrada ou Saida |
+| 2100 | 30896 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando definido a variavel #C em um evento fixo, ao faturar deve complementar es |
+| 2115 | 30900 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Desenvolver relatorio de acompanhamento dos valores de CRF,PIS Retido, COIFNS Re |
+| 1963 | 30862 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No DARF SImples Avulso, quando desmarcado a op��o Imprimir Total do Darf, zerar  |
 | 1961 | 30860 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | SC-Aumentar para 10 linhas o espa�o para digita��o das informa��es adicionais na |
 | 1852 | 30838 | 6.1C-01 | 03/03/2016 | Em Teste DEMO | Aumentar o espa�o para contas cont�beis vinculadas a tabela de despesas para DIE |
-| 1848 | 30837 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando a op��o mentem tela de consulta estiver marcada, se pedir a mesma consult |
-| 1839 | 30836 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | SC-Alterar arquivo GIA conforme novo layout. |
-| 1963 | 30862 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No DARF SImples Avulso, quando desmarcado a op��o Imprimir Total do Darf, zerar  |
-| 1923 | 30850 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o do balancete ter op��o de n�o imprimir codigo das contas. |
-| 1867 | 30844 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar o campo M�s do vencimento depois de um contrato gravado. |
-| 1964 | 30863 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando um cadastro de produtos � editado pela listagem, ao altera a quantidade i |
-| 1878 | 30846 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | RS- Na tela do detalhamento do VA ou VB, quando o valor total fechar com o valor |
-| 1834 | 30834 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | PR-Disponibilizar a op��o de despesas no bot�o outros dados da GIA. |
-| 1926 | 30852 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | RS-Ter op��o de informar o C�digo para entrega da GIA. |
-| 1962 | 30861 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | RS-Inserir no layout de importacao de notas os detalhamentos anexo VA e VB. |
 | 1934 | 30856 | 6.1C-01 | 03/03/2016 | Em Teste DEMO | AL-Permitir gerar DAC sem cadastro de AIDF. |
+| 1964 | 30863 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando um cadastro de produtos � editado pela listagem, ao altera a quantidade i |
+| 1925 | 30851 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Quando lan�ado uma nota com acumulador com PIS66 e COFINS-NC, com base de calcul |
+| 1839 | 30836 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | SC-Alterar arquivo GIA conforme novo layout. |
+| 1930 | 30854 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | SP-S�o Paulo-A impress�o do livro de ISS modelo 51, deve ser ordenada por data e |
+| 1867 | 30844 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir alterar o campo M�s do vencimento depois de um contrato gravado. |
+| 1832 | 30833 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | SC-Quando gerar a DIME, criar op��o para importar o numero de empregados de vari |
+| 1962 | 30861 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | RS-Inserir no layout de importacao de notas os detalhamentos anexo VA e VB. |
+| 1931 | 30855 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Ao exportar lan�amentos gerar o codigo da filial. |
+| 1878 | 30846 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | RS- Na tela do detalhamento do VA ou VB, quando o valor total fechar com o valor |
+| 1965 | 30864 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | MT-Ao imprimir um livro de icms modelo P9 com a data inicial de 09/03/2003 � 30/ |
+| 1837 | 30835 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o do balan�o quando for marcado a op��o para imprimir saldo anterior, i |
+| 1834 | 30834 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | PR-Disponibilizar a op��o de despesas no bot�o outros dados da GIA. |
+| 1854 | 30839 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Incluir no balancete o campo para descri�ao final igual a do balan�o patrimonial |
+| 1848 | 30837 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Quando a op��o mentem tela de consulta estiver marcada, se pedir a mesma consult |
 | 1892 | 30847 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar grafico da evolu��o do faturamento em formato de barras e que somem soment |
-| 1815 | 30823 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Na emiss�o do plano de contas ter op��o de emitir a data e hora. |
-| 1743 | 30799 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No cadastro do banco ter um campo para o codigo sequencial e outro para o numero |
-| 1805 | 30821 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | RS-Quando a empresa for EPP ou ME, na tela de apura��o mostrar os valores de inc |
+| 1923 | 30850 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o do balancete ter op��o de n�o imprimir codigo das contas. |
+| 1926 | 30852 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | RS-Ter op��o de informar o C�digo para entrega da GIA. |
+| 1877 | 30845 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | AL-Sistema deve permitir cadastrar mais de uma AIDF com o mesmo n�mero. |
 | 1757 | 30808 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Criar layout para importa��o de movimentos de produtos que utilize a incri��o do |
-| 1823 | 30826 | 7.1A-07 | 03/03/2016 | Em Teste DEMO | Criar rotinas para realizar lan�amentos or�ados. |
 | 1771 | 30813 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar mais de um contrato por cliente. |
-| 1817 | 30824 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Ter op��o para selecionar v�rias duplicatas de uma s� vez para dar baixa. |
+| 1805 | 30821 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | RS-Quando a empresa for EPP ou ME, na tela de apura��o mostrar os valores de inc |
+| 1823 | 30826 | 7.1A-07 | 03/03/2016 | Em Teste DEMO | Criar rotinas para realizar lan�amentos or�ados. |
+| 1748 | 30804 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Na rotina de reimpress�o de notas fiscais n�o aparecer as notas canceladas. |
 | 1745 | 30801 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Incluir na grade de sele��o para baixa do faturamento o apelido do cliente. |
 | 1742 | 30798 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o dos documentos de cobran�a ter op��o de selecionar somente faturado c |
-| 1786 | 30816 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Ao editar uma nota pela listagem o lado esquerdo da nota fica cinza. |
-| 1829 | 30831 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Criar a op��o de sele��o por acumulador no relat�rio de acompanhamento de servi� |
+| 1746 | 30802 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar importa��o de recebimentos do Banco do Brasil. |
+| 1825 | 30827 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | Desenvolver os relat�rios raz�o, di�rio, balan�o, balancete e termos, para impre |
 | 1747 | 30803 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar endere�o de cobran�a no cadastro de clientes. |
 | 1755 | 30807 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Ao imprimir o livro LALUR PARTE B sair em modo retrato. |
-| 1746 | 30802 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Disponibilizar importa��o de recebimentos do Banco do Brasil. |
-| 1748 | 30804 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Na rotina de reimpress�o de notas fiscais n�o aparecer as notas canceladas. |
-| 1825 | 30827 | 6.1D-01 | 03/03/2016 | Em Teste DEMO | Desenvolver os relat�rios raz�o, di�rio, balan�o, balancete e termos, para impre |
-| 1736 | 30794 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de baixar ou n�o a parcela a vista de uma nota. |
-| 1720 | 30787 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para replicar a  estrutura do DRE, DLPA, DOAR e DMPL. |
-| 1649 | 30763 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | SP - Retirar do menu Movimentos/outros a op��o Despesa. |
-| 1653 | 30765 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Mudar a descri��o do bot�o compartilhamento na tela de par�metros, para Replicar |
-| 1692 | 30777 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Ter a op��o de informar o n�mero tipogr�fico ao inv�s do n�mero do documento no  |
-| 1697 | 30778 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao realizar pagamento de mais de um imposto ao mesmo tempo, o lan�amento cont�bi |
-| 1689 | 30775 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MT - No livro de entrada ao lado da raz�o social do forncedor sair a Insc. Estad |
-| 1734 | 30793 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ada uma nota de compra de imobilizado, ao digitar os bens, se deixar  |
-| 1726 | 30789 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Se nos par�metros da contabilidade estiver marcado para permitir gravar lan�amen |
+| 1743 | 30799 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | No cadastro do banco ter um campo para o codigo sequencial e outro para o numero |
+| 1817 | 30824 | 6.1D-03 | 03/03/2016 | Em Teste DEMO | Ter op��o para selecionar v�rias duplicatas de uma s� vez para dar baixa. |
+| 1815 | 30823 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Na emiss�o do plano de contas ter op��o de emitir a data e hora. |
+| 1829 | 30831 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Criar a op��o de sele��o por acumulador no relat�rio de acompanhamento de servi� |
+| 1786 | 30816 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Ao editar uma nota pela listagem o lado esquerdo da nota fica cinza. |
+| 1690 | 30776 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Tem op��o no modelo do balancete para totalizar todos os n�veis. |
 | 1684 | 30772 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MT/PR/RS-Colocar na nova sistem�tica os livros de ICMS P9 do MT e RS e Normal do |
 | 1685 | 30773 | 7.0F-01 | 03/03/2016 | Em Teste DEMO | Ter uma op��o para selecionar se deseja imprimir Folha ou P�gina no Di�rio, Raz� |
-| 1698 | 30779 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Fazer com que o cadastro de adi��es e exclus�es do IR e CSLL sejam por empresas  |
-| 1718 | 30786 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Permitir no cadastro de produtos informar a data � que se referem os saldos digi |
-| 1690 | 30776 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Tem op��o no modelo do balancete para totalizar todos os n�veis. |
+| 1720 | 30787 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Criar op��o para replicar a  estrutura do DRE, DLPA, DOAR e DMPL. |
+| 1736 | 30794 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de baixar ou n�o a parcela a vista de uma nota. |
+| 1734 | 30793 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Quando lan�ada uma nota de compra de imobilizado, ao digitar os bens, se deixar  |
 | 1721 | 30788 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Nos relatorios de acompanhamento de entradas e saidas, incluir a sele��o: Soment |
+| 1689 | 30775 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MT - No livro de entrada ao lado da raz�o social do forncedor sair a Insc. Estad |
+| 1698 | 30779 | 7.1A-05 | 03/03/2016 | Em Teste DEMO | Fazer com que o cadastro de adi��es e exclus�es do IR e CSLL sejam por empresas  |
 | 1654 | 30766 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Criar op��o nos par�metros para informar a classifica��o contabil dos fornecedor |
 | 1738 | 30796 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Ter op��o na concilia��o banc�ria de mostrar somente lan�amentos n�o conciliados |
+| 1718 | 30786 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Permitir no cadastro de produtos informar a data � que se referem os saldos digi |
+| 1649 | 30763 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | SP - Retirar do menu Movimentos/outros a op��o Despesa. |
+| 1697 | 30778 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao realizar pagamento de mais de um imposto ao mesmo tempo, o lan�amento cont�bi |
+| 1653 | 30765 | 6.1B-06 | 03/03/2016 | Em Teste DEMO | Mudar a descri��o do bot�o compartilhamento na tela de par�metros, para Replicar |
+| 1692 | 30777 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Ter a op��o de informar o n�mero tipogr�fico ao inv�s do n�mero do documento no  |
+| 1726 | 30789 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Se nos par�metros da contabilidade estiver marcado para permitir gravar lan�amen |
 | 1715 | 30785 | 7.0C-02 | 03/03/2016 | Em Teste DEMO | Criar relatorio que conste os clientes que excederam os valores informados cadas |
-| 1580 | 30743 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | PR-Disponibilizar no relat�rio DAE(Estadual)Avulso os campos 18, 19 e 20 para �  |
-| 1581 | 30744 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar o bot�o replicar no cadastro de contas. |
-| 1619 | 30752 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | O sistema est� permitindo colocar data inicial maior que data final. |
-| 1551 | 30730 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para contabilizar a baixa do bem. |
-| 1631 | 30754 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MS-Realizar calculo de empresas enquadradas com Estimativa Fixa. |
-| 1647 | 30761 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de fornecedores o campo incri��o municipal. |
 | 1571 | 30736 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | No cadastro de fornecedores e clientes permitir cadastrar dois com o mesmo CGC/C |
-| 1643 | 30759 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MT/RS/PR-Na emiss�o do livro de ICMS normal e P9 ter a op��o de digitar observa� |
-| 1591 | 30747 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | RS - Permitir lan�ar Anexo VA e VB no momento do lan�amento da nota de sa�da. |
 | 1574 | 30739 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar na grade de sele��o para baixa de parcela a inscri��o do forneced |
-| 1550 | 30729 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Nos lan�amentos de notas, quando est� marcado a op��o por CNPJ, e for digitado u |
-| 1575 | 30740 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Na importa��o de Clientes e fornecedores trazer no final da importa��o um relat� |
+| 1647 | 30761 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Criar no cadastro de fornecedores o campo incri��o municipal. |
 | 1608 | 30748 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Ter no relatorio de contas a receber, opcao de agrupamento geral. |
-| 1646 | 30760 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri��o forneced |
 | 1648 | 30762 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Criar o campo bairro no cadastro de fornecedores e clientes. |
+| 1591 | 30747 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | RS - Permitir lan�ar Anexo VA e VB no momento do lan�amento da nota de sa�da. |
+| 1631 | 30754 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MS-Realizar calculo de empresas enquadradas com Estimativa Fixa. |
+| 1619 | 30752 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | O sistema est� permitindo colocar data inicial maior que data final. |
+| 1550 | 30729 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Nos lan�amentos de notas, quando est� marcado a op��o por CNPJ, e for digitado u |
+| 1643 | 30759 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | MT/RS/PR-Na emiss�o do livro de ICMS normal e P9 ter a op��o de digitar observa� |
+| 1646 | 30760 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri��o forneced |
 | 1576 | 30741 | 7.1A-02 | 03/03/2016 | Em Teste DEMO | Ao gerar DIPJ gerar os impostos retidos por �rg�o publicos. |
 | 1572 | 30737 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Em alguns relatorios quando o tempo ultrapassa a 100 minutos, sistema est� corta |
+| 1568 | 30735 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Uma nota, mesmo depois de cancelada, continua sendo emitida nos documentos de co |
 | 1582 | 30745 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar tranporte de valores da calculadora para tela de lan�amentos. |
 | 1579 | 30742 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Possibilitar que nas consultas F2 e F3 o sistema interprete tambem os caracteres |
-| 1568 | 30735 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Uma nota, mesmo depois de cancelada, continua sendo emitida nos documentos de co |
+| 1581 | 30744 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar o bot�o replicar no cadastro de contas. |
+| 1551 | 30730 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para contabilizar a baixa do bem. |
+| 1575 | 30740 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Na importa��o de Clientes e fornecedores trazer no final da importa��o um relat� |
+| 1580 | 30743 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | PR-Disponibilizar no relat�rio DAE(Estadual)Avulso os campos 18, 19 e 20 para �  |
 | 1609 | 30749 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar na grade de sele��o para baixa do faturamento a raz�o social do c |
-| 1516 | 30719 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Na impress�o dos termos nos livros contabeis, no termo de abertura imprimir a da |
-| 1470 | 30696 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo de % de multa e juros na tela de emiss�o de Guia de  |
-| 1465 | 30693 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Na tela de cadastro de contratos onde diz dia de faturamento deveria dizer dia d |
-| 1467 | 30695 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar eventos com f�rmulas |
 | 1474 | 30698 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Ter uma op��o se deseja ou n�o mostrar a mensagem de ociosidade para o usu�rio. |
-| 1496 | 30709 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Alterar tela de cadastro de impostos conforme segue:  01 - Quando imposto for do |
-| 1549 | 30728 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Fazer com que a calculadora possa ficar em segundo plano. |
-| 1510 | 30715 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | No relatorio de concilia��o bancaria, mostrar o saldo final do extrato e tambem  |
+| 1470 | 30696 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Aumentar o tamanho do campo de % de multa e juros na tela de emiss�o de Guia de  |
 | 1513 | 30717 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Criar op��o de Intervalo e Ordem de Departamento, no relatorio cadastral de Bens |
-| 1463 | 30692 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Quando no acumulador estiver marcado para descriminar natureza para lan�amentos  |
-| 1293 | 30663 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Gerar DIPJ para empresas lucro real. |
+| 1467 | 30695 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar eventos com f�rmulas |
+| 1465 | 30693 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Na tela de cadastro de contratos onde diz dia de faturamento deveria dizer dia d |
+| 1510 | 30715 | 7.1B-03 | 03/03/2016 | Em Teste DEMO | No relatorio de concilia��o bancaria, mostrar o saldo final do extrato e tambem  |
+| 1549 | 30728 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Fazer com que a calculadora possa ficar em segundo plano. |
+| 1516 | 30719 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Na impress�o dos termos nos livros contabeis, no termo de abertura imprimir a da |
+| 1496 | 30709 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Alterar tela de cadastro de impostos conforme segue:  01 - Quando imposto for do |
 | 1355 | 30678 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto do cobran�a para Caixa Economica Federal com codigo de barr |
-| 1319 | 30671 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Permiti que o usu�rio possa incluir uma tarefa informando a quantidade de tempo  |
-| 1316 | 30670 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Alterar tela de sele��o do livro Registro de saidas, para que os campos fiquem n |
-| 1310 | 30668 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Totalizr a coluna valor original,no relario contas a pagar com agrupamento Data  |
-| 1390 | 30683 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Diminuir a largura do Relat�rio Raz�o. |
+| 1463 | 30692 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Quando no acumulador estiver marcado para descriminar natureza para lan�amentos  |
 | 1321 | 30673 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Permitir o cadastro de observa��es padr�es que poderiam ser aplicadas no ato da  |
 | 1337 | 30676 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No cadastro de contrato mudar os campos tipo de contrato e evento honorarios, pa |
+| 1293 | 30663 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | Gerar DIPJ para empresas lucro real. |
+| 1319 | 30671 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Permiti que o usu�rio possa incluir uma tarefa informando a quantidade de tempo  |
+| 1316 | 30670 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Alterar tela de sele��o do livro Registro de saidas, para que os campos fiquem n |
 | 1313 | 30669 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Criar modelo completo matricial para guia GPS. |
-| 1253 | 30647 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | No Relat�rio/Contas a pagar criar uma coluna para a data do pagamento. |
-| 1249 | 30644 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | No cadastro de contrato, quando � editado ter op��o da consulta F2 para listar t |
-| 1231 | 30641 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Ter a op��o nos relatorios de contas a pagar e receber de informar uma data para |
-| 1224 | 30637 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Na tela do Cadastro de Empresas em + Dados, na guia Respons�vel Legal, habilitar |
-| 1258 | 30650 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Agilizar a busca de dados necess�rios aos lan�amentos cont�beis durante a digita |
-| 1213 | 30630 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | RS-Criar ajuste para que some somente no campo 02(Creditos por Importa��o) da GI |
+| 1390 | 30683 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Diminuir a largura do Relat�rio Raz�o. |
+| 1310 | 30668 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Totalizr a coluna valor original,no relario contas a pagar com agrupamento Data  |
 | 1186 | 30619 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Implementar a impress�o do boleto com c�digo de barras do Banco Real/ABN. |
-| 1261 | 30653 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis das notas de |
-| 1251 | 30646 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de reajuste proporcional dos contratos. |
-| 1259 | 30651 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis das notas de |
-| 1184 | 30617 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No final do relatorio Extrato de Clientes, ter um Total Geral. |
-| 1198 | 30624 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Existe a op��o de informar o Nosso n� na impress�o do bloqueto, mas para a CAIXA |
-| 1185 | 30618 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relatorio extrato de clientes n�o emitir clientes sem movimento no periodo es |
 | 1260 | 30652 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis das notas de |
+| 1253 | 30647 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | No Relat�rio/Contas a pagar criar uma coluna para a data do pagamento. |
 | 1268 | 30654 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Gravar o caminho informado de todos os informativos gerados pelo sistema. |
+| 1224 | 30637 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Na tela do Cadastro de Empresas em + Dados, na guia Respons�vel Legal, habilitar |
+| 1261 | 30653 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis das notas de |
+| 1184 | 30617 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No final do relatorio Extrato de Clientes, ter um Total Geral. |
+| 1251 | 30646 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de reajuste proporcional dos contratos. |
+| 1185 | 30618 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relatorio extrato de clientes n�o emitir clientes sem movimento no periodo es |
 | 1222 | 30635 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Permitir que o titulo do balancete possa ser configurado por empresa. |
+| 1213 | 30630 | 7.0A-04 | 03/03/2016 | Em Teste DEMO | RS-Criar ajuste para que some somente no campo 02(Creditos por Importa��o) da GI |
+| 1231 | 30641 | 7.3A-05 | 03/03/2016 | Em Teste DEMO | Ter a op��o nos relatorios de contas a pagar e receber de informar uma data para |
 | 1221 | 30634 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | No relatorio previs�o para pagamento, sistema deve considerar o valor minimo par |
-| 1102 | 30590 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Implementar Modelo Deskjet para guia de ISS. |
+| 1259 | 30651 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis das notas de |
+| 1198 | 30624 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Existe a op��o de informar o Nosso n� na impress�o do bloqueto, mas para a CAIXA |
+| 1258 | 30650 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Agilizar a busca de dados necess�rios aos lan�amentos cont�beis durante a digita |
+| 1249 | 30644 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | No cadastro de contrato, quando � editado ter op��o da consulta F2 para listar t |
 | 1129 | 30596 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Na importa��o de tabelas, ver a possibilidade de fazer separador tab, desprezar  |
-| 1134 | 30599 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Importar os valores dos impostos da escrita fiscal para o sistema Novo honor�rio |
-| 1127 | 30594 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar baixa parcial da nota por eventos, para que se possa saber o que fo |
+| 1179 | 30613 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando efetuar um recebimento com valor de juros,multa e desconto, sistema dever |
 | 1171 | 30608 | 7.1B-02 | 03/03/2016 | Em Teste DEMO | Disponibilizar a mesma consulta F4 da contabilidade.(Contas em ordem de Classifi |
+| 1122 | 30592 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar uma nova guia nos Par�metros chamada Apura��o, que deve conter todos os da |
+| 1140 | 30600 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Fazer com que o sistema regere automaticamente o lan�amento contabil de uma NF q |
 | 1113 | 30591 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Em Processo na op��o Movimenta��o permitir fazer um d�bito para v�rios cr�ditos  |
 | 1180 | 30614 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar op��o para imprimir o relat�rio contas a receber em ordem alfab�tica. |
+| 1134 | 30599 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Importar os valores dos impostos da escrita fiscal para o sistema Novo honor�rio |
 | 1183 | 30616 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relatorio Extrato de Clientes criar op��o para sar analitico, discriminando t |
-| 1122 | 30592 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar uma nova guia nos Par�metros chamada Apura��o, que deve conter todos os da |
-| 1179 | 30613 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando efetuar um recebimento com valor de juros,multa e desconto, sistema dever |
-| 1178 | 30612 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao excluir um recebimento com adiantamento, o sistema deve excluir tamb�m a movi |
-| 1130 | 30597 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Nos lan�amentos cont�beis do Honor�rios permitir informar o c�digo do hist�rico  |
-| 1140 | 30600 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Fazer com que o sistema regere automaticamente o lan�amento contabil de uma NF q |
-| 1146 | 30601 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Na baixa de Faturamento permitir que possa selecionar mais de uma competencia. |
+| 1127 | 30594 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar baixa parcial da nota por eventos, para que se possa saber o que fo |
 | 1182 | 30615 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relatorio contas a receber ter op��o para sair o saldo at� uma determinada da |
+| 1178 | 30612 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao excluir um recebimento com adiantamento, o sistema deve excluir tamb�m a movi |
+| 1146 | 30601 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Na baixa de Faturamento permitir que possa selecionar mais de uma competencia. |
+| 1102 | 30590 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Implementar Modelo Deskjet para guia de ISS. |
+| 1130 | 30597 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Nos lan�amentos cont�beis do Honor�rios permitir informar o c�digo do hist�rico  |
+| 1012 | 30570 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Aumentar o Campo Endere�o no Cadastro de Empresas em + Dados na op��o S�cios. |
 | 990 | 30560 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar cadastro de Centro de Custos, com op��o de dividir os lan�amentos cont�bei |
-| 988 | 30558 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao lan�ar um Cupom Fiscal, e na tela da Nota, no campo "Isentos" do ICMS houver  |
-| 1009 | 30567 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao cadastrar uma empresa o sistema deveria realizar a valida��o da Inscri��o Est |
-| 1011 | 30569 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar lay-out das importa��es para que possam ser enviados por e-mail. |
-| 992 | 30562 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Mudar a tela emiss�o de protocolo fazer a sele��o de itens do protolo por meio d |
-| 987 | 30557 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relat�rio contas a receber aparecer tambem o n�mero da parcela. |
+| 981 | 30553 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto banc�rio com codigo de barras dos Bancos ITAU e Banco do Br |
 | 982 | 30554 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Aumentar o espa�o para impress�o do titulo do Balan�o.  O espa�o para digita��o  |
 | 978 | 30552 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando utilizo no hist�rico as vari�veis e nas op��es est� marcado para repetir  |
 | 969 | 30551 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando digito uma cta invalida na contabilidade e volto para digitar a correta,  |
-| 981 | 30553 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Desenvolver bloqueto banc�rio com codigo de barras dos Bancos ITAU e Banco do Br |
 | 986 | 30556 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Gravar as �ltimas sele��es utilizadas na emiss�o de todos os Livros. |
+| 988 | 30558 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao lan�ar um Cupom Fiscal, e na tela da Nota, no campo "Isentos" do ICMS houver  |
+| 1011 | 30569 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Disponibilizar lay-out das importa��es para que possam ser enviados por e-mail. |
 | 1010 | 30568 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Permitir que na impress�o do raz�o seja selecionada contas por classifica��o e p |
-| 1012 | 30570 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Aumentar o Campo Endere�o no Cadastro de Empresas em + Dados na op��o S�cios. |
+| 1009 | 30567 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao cadastrar uma empresa o sistema deveria realizar a valida��o da Inscri��o Est |
 | 996 | 30564 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | O sistema s� abre a op��o para ECF quando chega no �ltimo seguimento de nota, pa |
+| 987 | 30557 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relat�rio contas a receber aparecer tambem o n�mero da parcela. |
+| 992 | 30562 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Mudar a tela emiss�o de protocolo fazer a sele��o de itens do protolo por meio d |
+| 890 | 30525 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No Relat�rio de An�lises - Coeficientes  O segundo coeficiente diz  "�ndice de L |
+| 934 | 30540 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando baixar uma duplicata com adiantamento ao mesmo tempo, o sistema n�o impri |
 | 960 | 30549 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Habilitar a possibilidade de Importar estruturas DLPA e DOAR de outra empresa |
-| 954 | 30543 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando clicar a consulta F6, trazer so o periodo que esta definido no Fechamento |
+| 922 | 30537 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Permitir alterar a Taxa de Deprecia��o Alternativa no Cadastro de bens. |
+| 887 | 30523 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Em Acompanhamento/Servi�os ter a op��o de ordenar o relat�rio por Municipio, con |
+| 957 | 30546 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar uma maneira de colocar um hist�rico na baixa das parcelas para poder ident |
+| 956 | 30545 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando trabalho com empresas Matriz X Filiais - Ao definir uma filial ativa no m |
+| 907 | 30536 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar opcao para gerar lancamentos contabeis do valor calculado de IRPJ E CSOC. |
+| 902 | 30531 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar em par�metro uma op��o para aceitar lan�amentos zerados, inclusive na impo |
+| 955 | 30544 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar mais de uma vez o mesmo banco. |
+| 883 | 30520 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando estorna uma baixa com adiantamento a baixa estorna correto mas o adiantam |
+| 891 | 30526 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando existe uma redu��o na base de calculo de ICMS para Nota Fiscal com IPI o  |
+| 905 | 30534 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Em Baixas de parcelas quando o valor for a menor que o valor principal ter a op� |
+| 899 | 30529 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Cliente de Tocantins com CNPJ 38.127.916/0001-80 com Inscri��o Estadual 290.479. |
+| 903 | 30532 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Na op��o - movimento - outros - impostos lan�ados, se no ajuste deixamos uma con |
+| 951 | 30542 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o no gr�fico de Custo/Beneficio para omitir coluna outros. |
+| 901 | 30530 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando se est� comprando um bem via a escrita fiscal, quando abre a tela de cada |
+| 930 | 30539 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para replicar lan�amentos padr�es. |
+| 892 | 30527 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Na hora de emitir grafico de faturamento ter op��o de emitr junto o valor das fi |
+| 889 | 30524 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Se for calculado um imposto de 8/00, por exemplo, e a taxa Selic estiver desatua |
+| 885 | 30522 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Em Par�metros-Contabilidade, no campo "Classifica��o" (sob Fornecedores ou Clien |
 | 906 | 30535 | 6.1C-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para importar extratos banc�rios via arquivo txt. |
 | 884 | 30521 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Onde houver lotes de empresa, trocar para sele��o de empresas. |
-| 930 | 30539 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o para replicar lan�amentos padr�es. |
-| 903 | 30532 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Na op��o - movimento - outros - impostos lan�ados, se no ajuste deixamos uma con |
-| 902 | 30531 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar em par�metro uma op��o para aceitar lan�amentos zerados, inclusive na impo |
-| 891 | 30526 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando existe uma redu��o na base de calculo de ICMS para Nota Fiscal com IPI o  |
-| 887 | 30523 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Em Acompanhamento/Servi�os ter a op��o de ordenar o relat�rio por Municipio, con |
-| 907 | 30536 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Criar opcao para gerar lancamentos contabeis do valor calculado de IRPJ E CSOC. |
-| 955 | 30544 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar mais de uma vez o mesmo banco. |
-| 934 | 30540 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando baixar uma duplicata com adiantamento ao mesmo tempo, o sistema n�o impri |
-| 951 | 30542 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar op��o no gr�fico de Custo/Beneficio para omitir coluna outros. |
-| 892 | 30527 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Na hora de emitir grafico de faturamento ter op��o de emitr junto o valor das fi |
-| 958 | 30547 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Acrescentar coluna filial na consulta F6. (modo consolidado) |
-| 883 | 30520 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando estorna uma baixa com adiantamento a baixa estorna correto mas o adiantam |
-| 957 | 30546 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar uma maneira de colocar um hist�rico na baixa das parcelas para poder ident |
-| 968 | 30550 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Dar op��o de escolher quais filiais queremos consolidar para emiss�o de relat�ri |
 | 928 | 30538 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar uma op��o no acumulador para selecionar os itens daquele acumulador e dize |
-| 889 | 30524 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Se for calculado um imposto de 8/00, por exemplo, e a taxa Selic estiver desatua |
+| 968 | 30550 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Dar op��o de escolher quais filiais queremos consolidar para emiss�o de relat�ri |
+| 958 | 30547 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Acrescentar coluna filial na consulta F6. (modo consolidado) |
 | 875 | 30519 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Na digita��o dos valores das diferentes situa��es tribut�rias, na parte de ECF,  |
-| 905 | 30534 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Em Baixas de parcelas quando o valor for a menor que o valor principal ter a op� |
-| 885 | 30522 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Em Par�metros-Contabilidade, no campo "Classifica��o" (sob Fornecedores ou Clien |
-| 922 | 30537 | 7.2A-02 | 03/03/2016 | Em Teste DEMO | Permitir alterar a Taxa de Deprecia��o Alternativa no Cadastro de bens. |
-| 956 | 30545 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando trabalho com empresas Matriz X Filiais - Ao definir uma filial ativa no m |
-| 901 | 30530 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando se est� comprando um bem via a escrita fiscal, quando abre a tela de cada |
-| 899 | 30529 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Cliente de Tocantins com CNPJ 38.127.916/0001-80 com Inscri��o Estadual 290.479. |
-| 890 | 30525 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No Relat�rio de An�lises - Coeficientes  O segundo coeficiente diz  "�ndice de L |
 | 959 | 30548 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Incluir utilit�rio para altera��o de lan�amentos cont�beis em grupo. Este utilit |
-| 794 | 30497 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar os termos de abertura e encerramento no gerador de relatorios, e  |
-| 867 | 30517 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Sistema n�o est� permitindo alterar lan�amentos seguimentados de ECF, realizados |
-| 792 | 30495 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | N�o permitir fazer um adiantamento se o cliente estiver com parcelas em aberto. |
-| 793 | 30496 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Ao fazer um adiantamento e n�o gerar lan�amentos, os sistema grava sua movimenta |
-| 802 | 30499 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando for efetuar uma baixa no faturamento, criar op��o para selecionar-mos mai |
-| 844 | 30508 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No lan�amento de estoque, quando informo o codigo do produto, alterar para que o |
-| 850 | 30513 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | SC-Incluir o nome e codigo da empresa no relatorio da GIA emitido pelo Dominio E |
-| 739 | 30484 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No faturamento avisar os contratos que possuem reajustes vencidos. |
-| 814 | 30503 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Incluir no Balancete a op��o imprimir classifica��o. |
+| 954 | 30543 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando clicar a consulta F6, trazer so o periodo que esta definido no Fechamento |
 | 846 | 30510 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Quando emitir O livro de entradas com a op��o de Resumo por natureza, somente de |
-| 843 | 30507 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Incluir comprovante de recebimento de adiantamento quando um cliente do escrit�r |
+| 814 | 30503 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Incluir no Balancete a op��o imprimir classifica��o. |
+| 778 | 30491 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para puxar automaticamente o cadastro de um cliente para fornece |
+| 757 | 30488 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No ajuste 31 (cr�ditos por transfer�ncia da mesma empresa) torna-se desnecess�ri |
 | 776 | 30490 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Relatorio Resumo dos Impostos, fazer um quebra para totalizar por imposto quando |
 | 807 | 30500 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Se nas op��es estiver marcado, lan�amentos por mascara, sistema est� permitindo  |
-| 845 | 30509 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar um relatorio,Extrato de Clientes, onde possa imprimir o saldo anterior os  |
-| 810 | 30501 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar uma op��o no cadastro do acumulador e para marcar que refere-se � transfer |
-| 783 | 30494 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Sistema n�o est� obedecendo data de vencimento de IPI decendial cfe. configurado |
-| 839 | 30505 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ter op��o de gerar o arquivo (sintegra) somente de Entradas ou somente de Saidas |
-| 842 | 30506 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No acumulador existe a op��o de zerar a aliquota ou informar uma aliquota pr� de |
-| 757 | 30488 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No ajuste 31 (cr�ditos por transfer�ncia da mesma empresa) torna-se desnecess�ri |
-| 778 | 30491 | 6.1C-03 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para puxar automaticamente o cadastro de um cliente para fornece |
+| 793 | 30496 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Ao fazer um adiantamento e n�o gerar lan�amentos, os sistema grava sua movimenta |
 | 863 | 30516 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Nos lay-outs de importa��o de notas n�o existe o campo contador de reinicio, na  |
+| 843 | 30507 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Incluir comprovante de recebimento de adiantamento quando um cliente do escrit�r |
+| 802 | 30499 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Quando for efetuar uma baixa no faturamento, criar op��o para selecionar-mos mai |
+| 842 | 30506 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No acumulador existe a op��o de zerar a aliquota ou informar uma aliquota pr� de |
 | 798 | 30498 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | O sistema n�o tem a op��o de finalidade da apresenta��o � 3 (retifica��o aditiva |
+| 810 | 30501 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar uma op��o no cadastro do acumulador e para marcar que refere-se � transfer |
 | 870 | 30518 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar uma op��o de agrupamento por data de entrada no Relat�rio de Cont |
+| 844 | 30508 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No lan�amento de estoque, quando informo o codigo do produto, alterar para que o |
+| 783 | 30494 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Sistema n�o est� obedecendo data de vencimento de IPI decendial cfe. configurado |
+| 850 | 30513 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | SC-Incluir o nome e codigo da empresa no relatorio da GIA emitido pelo Dominio E |
+| 794 | 30497 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Disponibilizar os termos de abertura e encerramento no gerador de relatorios, e  |
+| 867 | 30517 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Sistema n�o est� permitindo alterar lan�amentos seguimentados de ECF, realizados |
+| 839 | 30505 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ter op��o de gerar o arquivo (sintegra) somente de Entradas ou somente de Saidas |
 | 830 | 30504 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Fazer que o sistema da Dom�nio gere var�aveis que possam ser utilizadas em plani |
+| 739 | 30484 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No faturamento avisar os contratos que possuem reajustes vencidos. |
 | 813 | 30502 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | A op��o alterar notas, s� podemos alterar s�rie com algum item informado!  Permi |
+| 845 | 30509 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar um relatorio,Extrato de Clientes, onde possa imprimir o saldo anterior os  |
+| 792 | 30495 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | N�o permitir fazer um adiantamento se o cliente estiver com parcelas em aberto. |
+| 709 | 30475 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Implementar segmenta��o aliquota ISS, igual foi feito com o icms. |
 | 713 | 30478 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Liberar este realt�rio DOAR para ser reconfigurado pelo gerador de relatorios. |
 | 706 | 30472 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | O sistema controla a digita��o de notas de mesmo n�mero, informando esta nota j� |
-| 731 | 30482 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir alterar dia do faturamento. |
-| 714 | 30479 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ter uma op��o no acumulador de definir para qual c�digo de Natureza ser� utiliza |
-| 722 | 30481 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | quando a empresa tiver v�rios fornecedores (Matriz e Filiais) o sistema fa�a uma |
-| 708 | 30474 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No caminho a ser gravado o sintegra, memorizar o ultimo caminho colocado. |
-| 709 | 30475 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Implementar segmenta��o aliquota ISS, igual foi feito com o icms. |
 | 711 | 30477 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ver possibilidade de aumentar a quantidade de caracteres por linha no raz�o. |
-| 733 | 30483 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Criar uma fun��o que exclua os lotes de sele��o de empresas definidos na EF. |
+| 722 | 30481 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | quando a empresa tiver v�rios fornecedores (Matriz e Filiais) o sistema fa�a uma |
 | 721 | 30480 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No Cadastro de Clientes quando vai cadastrar um cliente no campo do estado digit |
-| 657 | 30461 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | A op��o alterar notas, somente � permitido alterar s�rie e esp�cie  da notas fis |
-| 677 | 30465 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Incluir o imposto n� 17 (PIS-MP66) na sele��o dos impostos em "Controle - Empres |
-| 655 | 30460 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ao gerar duplicatas por exemplo de R$ 1.000,00 (total) e a primeira parcela for  |
+| 714 | 30479 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ter uma op��o no acumulador de definir para qual c�digo de Natureza ser� utiliza |
+| 733 | 30483 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Criar uma fun��o que exclua os lotes de sele��o de empresas definidos na EF. |
+| 708 | 30474 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No caminho a ser gravado o sintegra, memorizar o ultimo caminho colocado. |
+| 731 | 30482 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir alterar dia do faturamento. |
 | 650 | 30458 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Contabilizar o tempo gasto por funcion�rio na utiliza��o dos m�dulos Protocolos  |
-| 699 | 30471 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No relat�rio de faturamento destacar os impostos deduzidos no faturamento (IRRF) |
-| 668 | 30462 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Poderia ter um campo espec�fico para informar o valor do IRRF. Talvez com op��o  |
-| 679 | 30467 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Desconsiderar zeramento ao importar saldo das contas para o LALUR. |
+| 657 | 30461 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | A op��o alterar notas, somente � permitido alterar s�rie e esp�cie  da notas fis |
 | 645 | 30457 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ter op��o no relatorio resumo dos impostos, de ser sintetico(como sai hoje) e an |
+| 677 | 30465 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Incluir o imposto n� 17 (PIS-MP66) na sele��o dos impostos em "Controle - Empres |
+| 679 | 30467 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Desconsiderar zeramento ao importar saldo das contas para o LALUR. |
+| 668 | 30462 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Poderia ter um campo espec�fico para informar o valor do IRRF. Talvez com op��o  |
+| 655 | 30460 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ao gerar duplicatas por exemplo de R$ 1.000,00 (total) e a primeira parcela for  |
+| 699 | 30471 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | No relat�rio de faturamento destacar os impostos deduzidos no faturamento (IRRF) |
+| 571 | 30431 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Colocar uma op��o no livro raz�o para emitir somente as contas que tem movimento |
+| 609 | 30448 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | N�o permitir gravar lan�amentos cont�beis com a mesma conta a D�bito e a Cr�dito |
+| 604 | 30447 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Importar tamb�m o codigo do municipio no layout de notas fiscais saida. |
+| 635 | 30455 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar um relat�rio somente com o valor demonstrando o faturamento, ou seja somen |
+| 610 | 30449 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Habilitar campos da guia contabilidade em Movimentos/Pagamentos de Impostos para |
 | 585 | 30438 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o para exclus�o de historicos padr�es. |
-| 566 | 30427 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o da DARF simples avulso, no campo da data, o ano est� saindo com dois  |
-| 588 | 30440 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o de resumido, no relatorio Cliente tempo Gasto, onde apare�a somente  |
-| 600 | 30446 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao gerar DCTF gerar o IRRF e PIS s/ folha de pagamento. |
+| 564 | 30425 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | em Utilit�rios -> Limpeza, a sele��o dos registros deveria ser tamb�m por numero |
+| 599 | 30445 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar rotina para criar contas na contabilidade de clientes e fornecedores que n |
+| 569 | 30429 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando um bem � trocado de conta, nos relat�rios Resumo da Deprecia��o e Valores |
+| 615 | 30452 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | No Utilit�rios Regerar quando seleciono um periodo grande, o sistema avisa quand |
 | 572 | 30432 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No sistema a partir da vers�o 6D deixou de aparecer a mensagem que ao cadastrar  |
 | 580 | 30436 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Criar uma rotina onde pode ser configurado lan�amentos habituais. Exemplo : Pgto |
-| 609 | 30448 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | N�o permitir gravar lan�amentos cont�beis com a mesma conta a D�bito e a Cr�dito |
-| 615 | 30452 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | No Utilit�rios Regerar quando seleciono um periodo grande, o sistema avisa quand |
-| 589 | 30441 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | O cadastro de clientes e fornecedores permite o cadastramento com 7 d�gitos, por |
+| 566 | 30427 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Na emiss�o da DARF simples avulso, no campo da data, o ano est� saindo com dois  |
 | 632 | 30454 | 6.1C-02 | 03/03/2016 | Em Teste DEMO | Ao lan�ar um evento ter op��o de complementa-lo, com descri��o livre ou com uma  |
-| 604 | 30447 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Importar tamb�m o codigo do municipio no layout de notas fiscais saida. |
-| 597 | 30443 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para impress�o do livro do IPI por dec�ndio. |
-| 565 | 30426 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Incluir modelo darf/ trimestral/matricial.Para formularios branco. |
-| 579 | 30435 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | No menu da Escrita Fiscal alterar Descri��o de Gia Mensal em Disquete para GIA. |
-| 610 | 30449 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Habilitar campos da guia contabilidade em Movimentos/Pagamentos de Impostos para |
-| 618 | 30453 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar rotina que possibilite o cadastro de tabelas municipais para  a digita��o  |
-| 577 | 30434 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Gerar Dirf pela Escrita Fiscal das notas onde foram lan�ados o IRRF |
-| 582 | 30437 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Na rotina de regerar lan�amentos contabeis criar op��o de impostos lan�ados e ca |
-| 635 | 30455 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar um relat�rio somente com o valor demonstrando o faturamento, ou seja somen |
-| 569 | 30429 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando um bem � trocado de conta, nos relat�rios Resumo da Deprecia��o e Valores |
-| 567 | 30428 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Incluir o CNPJ e Inscri��o Estadual no relatorio de  Impostos Calculados.  Relat |
+| 589 | 30441 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | O cadastro de clientes e fornecedores permite o cadastramento com 7 d�gitos, por |
 | 574 | 30433 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar campo para digita��o de observa��o nas darf�s do atualizar |
-| 564 | 30425 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | em Utilit�rios -> Limpeza, a sele��o dos registros deveria ser tamb�m por numero |
-| 571 | 30431 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Colocar uma op��o no livro raz�o para emitir somente as contas que tem movimento |
-| 599 | 30445 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar rotina para criar contas na contabilidade de clientes e fornecedores que n |
+| 565 | 30426 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Incluir modelo darf/ trimestral/matricial.Para formularios branco. |
+| 582 | 30437 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | Na rotina de regerar lan�amentos contabeis criar op��o de impostos lan�ados e ca |
+| 567 | 30428 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Incluir o CNPJ e Inscri��o Estadual no relatorio de  Impostos Calculados.  Relat |
+| 618 | 30453 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar rotina que possibilite o cadastro de tabelas municipais para  a digita��o  |
+| 588 | 30440 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Criar op��o de resumido, no relatorio Cliente tempo Gasto, onde apare�a somente  |
 | 612 | 30450 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | RS: Quando  lan�amos notas de venda fora do estabelecimento e apenas averbamos n |
-| 559 | 30422 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | O sistema atualmente est� permitindo fazer lan�amentos pelas filiais quando a em |
-| 553 | 30418 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando se lan�a uma nota fiscal de compra de imobilizado e nesta nota existe mai |
-| 557 | 30421 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Importa��o de Notas: Permitir  importar somente as baixas(pagamento e/ou recebim |
-| 543 | 30412 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Ao buscar as notas fiscais de sa�da, localizamos atrav�s das setas (<<) uma nota |
-| 488 | 30400 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Inclus�o do campo "Nome fantasia" no cadastro da empresa.Este � um dado que cons |
-| 513 | 30402 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Criar vig�ncia no cadastro de par�metros, impostos e acumuladores. |
-| 546 | 30414 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Ao Consultar Produtos sendo este referente a veiculos, a consulta esta trazendo  |
-| 516 | 30404 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Calcular todos os impostos federais centralizados na matriz, com op��o de contab |
-| 512 | 30401 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Implementar na escrita fiscal modelo de guia dar 19 avulso em relatorios/guias. |
+| 579 | 30435 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | No menu da Escrita Fiscal alterar Descri��o de Gia Mensal em Disquete para GIA. |
+| 600 | 30446 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Ao gerar DCTF gerar o IRRF e PIS s/ folha de pagamento. |
+| 577 | 30434 | 6.1B-03 | 03/03/2016 | Em Teste DEMO | Gerar Dirf pela Escrita Fiscal das notas onde foram lan�ados o IRRF |
+| 597 | 30443 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar op��o para impress�o do livro do IPI por dec�ndio. |
+| 538 | 30408 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar Nas Analises do DRE item para o valor do Resultado do Exerc�cio (lucro ou  |
+| 552 | 30417 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Na cofigura��o de assinaturas criar variaveis para poder selecionar os s�cios de |
 | 515 | 30403 | 7.4A-01 | 03/03/2016 | Em Teste DEMO | Criar op��o no cadastro de cliente para dizer se ele � um cliente eventual ou fi |
+| 513 | 30402 | 7.3B-01 | 03/03/2016 | Em Teste DEMO | Criar vig�ncia no cadastro de par�metros, impostos e acumuladores. |
+| 559 | 30422 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | O sistema atualmente est� permitindo fazer lan�amentos pelas filiais quando a em |
+| 525 | 30405 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando fa�o uma transferencia de um bens de um centro de custo para outro, No re |
 | 547 | 30415 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Aumentar o numero de casas, do campo Produtos Primarios em Outros Dados da Gia d |
 | 526 | 30406 | 7.5C-06 | 03/03/2016 | Em Teste DEMO | Criar op��o de contabilizar automaticamente ao importar um extrato banc�rio. |
-| 552 | 30417 | 6.1D-02 | 03/03/2016 | Em Teste DEMO | Na cofigura��o de assinaturas criar variaveis para poder selecionar os s�cios de |
-| 544 | 30413 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Controlar acesso de usu�rios por sistema e por empresa. |
+| 557 | 30421 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Importa��o de Notas: Permitir  importar somente as baixas(pagamento e/ou recebim |
+| 543 | 30412 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Ao buscar as notas fiscais de sa�da, localizamos atrav�s das setas (<<) uma nota |
 | 539 | 30409 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar a possibilidade de informar a numera��o das p�ginas no relat�rio Base Nega |
-| 538 | 30408 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Criar Nas Analises do DRE item para o valor do Resultado do Exerc�cio (lucro ou  |
-| 548 | 30416 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ver a possibilidade de incluir no sistema as seguintes formulas de coeficientes: |
+| 544 | 30413 | 7.0E-01 | 03/03/2016 | Em Teste DEMO | Controlar acesso de usu�rios por sistema e por empresa. |
+| 546 | 30414 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Ao Consultar Produtos sendo este referente a veiculos, a consulta esta trazendo  |
 | 528 | 30407 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Este relat�rio, modelo completo + s�cios, n�o possibilita colocar em ordem |
-| 525 | 30405 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando fa�o uma transferencia de um bens de um centro de custo para outro, No re |
-| 487 | 30399 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | IMPORTA��O DAS EMPRESAS CADASTRADAS NO SISTEMA DOMSIS PARA SISTEMA GIA  - MS VER |
-| 442 | 30395 | 6.1A-02 | 03/03/2016 | Em Teste DEMO | N�o permitir alterar o valor do contrato no cadastro se j� existir faturamento p |
+| 548 | 30416 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Ver a possibilidade de incluir no sistema as seguintes formulas de coeficientes: |
+| 553 | 30418 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando se lan�a uma nota fiscal de compra de imobilizado e nesta nota existe mai |
+| 512 | 30401 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Implementar na escrita fiscal modelo de guia dar 19 avulso em relatorios/guias. |
+| 488 | 30400 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Inclus�o do campo "Nome fantasia" no cadastro da empresa.Este � um dado que cons |
+| 516 | 30404 | 6.1E-01 | 03/03/2016 | Em Teste DEMO | Calcular todos os impostos federais centralizados na matriz, com op��o de contab |
 | 475 | 30398 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando se emite o relatorio cadastral de bens, a descri�ao dos bens (quando esta |
-| 400 | 30388 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de informar o percentual de juros e multas por atraso e ter um relator |
 | 444 | 30397 | 6.1A-02 | 03/03/2016 | Em Teste DEMO | Quando � feito reajuste de contrato que n�o seja por percentual, e sim valor inf |
+| 400 | 30388 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Ter op��o de informar o percentual de juros e multas por atraso e ter um relator |
 | 404 | 30391 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Nos termos de abertura e encerramento possibilitar digitar o nome da empresa, da |
 | 401 | 30389 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Desenvolver um novo sistema de honor�rios, que possua controle de contratos, emi |
+| 487 | 30399 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | IMPORTA��O DAS EMPRESAS CADASTRADAS NO SISTEMA DOMSIS PARA SISTEMA GIA  - MS VER |
 | 440 | 30394 | 6.1A-02 | 03/03/2016 | Em Teste DEMO | Criar uma op��o para excluir reajustes de contrato. |
+| 442 | 30395 | 6.1A-02 | 03/03/2016 | Em Teste DEMO | N�o permitir alterar o valor do contrato no cadastro se j� existir faturamento p |
 | 443 | 30396 | 6.1A-02 | 03/03/2016 | Em Teste DEMO | Permitir fazer reajuste apenas para alguns contratos que s�o listados na compet� |
 | 391 | 30384 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Inserir novos coeficientes no m�dulo Contabilidade:  - �ndice de Endividamento G |
-| 389 | 30382 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Op��o para incluir os produtos na nota pelo c�digo NCM. |
-| 398 | 30386 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Nas notas fiscais emitidas pelos escrit�rios cont�beis, existe o destaque do IRR |
 | 399 | 30387 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Permitir ao sistema imprimir os bloquetos com c�digo de barras para Deskjet. |
-| 387 | 30381 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Restringir a  exclus�o de lan�amentos de outros sistemas, caso n�o esteja marcad |
-| 299 | 30374 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | No lan�amento de entrada de imobilizado o sistema permite cadastrar bens para o  |
-| 382 | 30379 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Nos Par�metros da Escrita Fiscal, na guia Personaliza, a �ltima op��o � direita  |
 | 390 | 30383 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Incluir uma op��o para imprimir contratos de presta��o de servi�os a serem firma |
-| 256 | 30361 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Realizar na apura��o o lan�amento de fechamento para PIS e COFINS n�o cumulativo |
-| 259 | 30364 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando utilizar a op��o de REPLICAR dar um aviso que ir� sobrepor o que j� est�  |
-| 195 | 30351 | 6.0F-05 | 03/03/2016 | Em Teste DEMO | Permitir informar nos acumuladores al�quotas pre-definidas para que quando for l |
+| 299 | 30374 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | No lan�amento de entrada de imobilizado o sistema permite cadastrar bens para o  |
+| 387 | 30381 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Restringir a  exclus�o de lan�amentos de outros sistemas, caso n�o esteja marcad |
+| 398 | 30386 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Nas notas fiscais emitidas pelos escrit�rios cont�beis, existe o destaque do IRR |
+| 382 | 30379 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Nos Par�metros da Escrita Fiscal, na guia Personaliza, a �ltima op��o � direita  |
+| 389 | 30382 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Op��o para incluir os produtos na nota pelo c�digo NCM. |
 | 288 | 30371 | 6.0F-05 | 03/03/2016 | Em Teste DEMO | No rel�t�rio de tarefas realizadas criar a possibilidade de quebrar por usu�rio. |
+| 256 | 30361 | 7.0F-04 | 03/03/2016 | Em Teste DEMO | Realizar na apura��o o lan�amento de fechamento para PIS e COFINS n�o cumulativo |
+| 195 | 30351 | 6.0F-05 | 03/03/2016 | Em Teste DEMO | Permitir informar nos acumuladores al�quotas pre-definidas para que quando for l |
+| 259 | 30364 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Quando utilizar a op��o de REPLICAR dar um aviso que ir� sobrepor o que j� est�  |
+| 102 | 30327 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | SE: Fazer o informativo DIC em arquivo e relat�rio, para o estado do Sergipe. |
 | 109 | 30331 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Incluir rotina de pagamento de impostos no Lalur. |
-| 100 | 30326 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar um cadastro de observa��es para serem informadas no lan�amento das notas f |
 | 105 | 30329 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Na rotina de exporta��o de lan�amentos de uma contabilidade para outra (sistemas |
 | 103 | 30328 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | No leiaute para importa��o de notas, incluir informa��o do emitente da nota de e |
-| 102 | 30327 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | SE: Fazer o informativo DIC em arquivo e relat�rio, para o estado do Sergipe. |
-| 91 | 30319 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Contabilizar a baixa dos bens |
+| 100 | 30326 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Criar um cadastro de observa��es para serem informadas no lan�amento das notas f |
+| 97 | 30323 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relat�rio Resumo - Trimestral, antes do campo Base de c�lculo deveria demonst |
+| 92 | 30320 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | TO: A partir de abril/2002 a guia para recolhimento de ICMS de Tocantins passa a |
 | 98 | 30324 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Op��o para somar valor das filiais no resumo dos impostos (mensal e trimestral). |
 | 94 | 30321 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Incluir no Patrim�nio configura��o de hist�ricos para os lan�amentos a serem exp |
-| 92 | 30320 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | TO: A partir de abril/2002 a guia para recolhimento de ICMS de Tocantins passa a |
-| 97 | 30323 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | No relat�rio Resumo - Trimestral, antes do campo Base de c�lculo deveria demonst |
-| 83 | 30313 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Integrar Honor�rios com a Contabilidade |
-| 51 | 30307 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | SC: Possibilidade de copiar o enquadramento das contas de ativo, passivo e resul |
-| 82 | 30312 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Colocar op��o nos eventos do Honor�rios para dizer se o mesmo comp�e o faturamen |
-| 89 | 30318 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar informar observa�oes nos recibos do Honorarios |
-| 62 | 30309 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar na Escrita Fiscal Importa��o de Produtos, semelhante a fornecedores e clie |
+| 91 | 30319 | 7.0B-01 | 03/03/2016 | Em Teste DEMO | Contabilizar a baixa dos bens |
 | 49 | 30305 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | No relat�rio de contas a pagar e receber, permitir fazer agrupamento por data de |
+| 82 | 30312 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Colocar op��o nos eventos do Honor�rios para dizer se o mesmo comp�e o faturamen |
 | 50 | 30306 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | No relat�rio acompanhamento de sa�das ou entrada por acumulador, incluir a cada  |
-| 84 | 30314 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Ao lan�ar evento calculado o sistema calcula sobre todos os outros. Ex: IRRF. O  |
+| 51 | 30307 | 6.1B-05 | 03/03/2016 | Em Teste DEMO | SC: Possibilidade de copiar o enquadramento das contas de ativo, passivo e resul |
+| 89 | 30318 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Possibilitar informar observa�oes nos recibos do Honorarios |
 | 81 | 30311 | 7.1A-06 | 03/03/2016 | Em Teste DEMO | Integrar o Atualizar com a Folha permitindo importar valores de INSS, IRRF e PIS |
+| 83 | 30313 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Integrar Honor�rios com a Contabilidade |
 | 87 | 30317 | 8.1A-06 | 03/03/2016 | Em Teste DEMO | Como existe relat�rio de CS e IRPJ com op��o de real ou estimado, seria interess |
+| 84 | 30314 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Ao lan�ar evento calculado o sistema calcula sobre todos os outros. Ex: IRRF. O  |
+| 62 | 30309 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Criar na Escrita Fiscal Importa��o de Produtos, semelhante a fornecedores e clie |
+| 47 | 30304 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Op��o para imprimir o n�mero de inscri��o na junta comercial no balan�o. |
 | 37 | 30299 | 6.1B-04 | 03/03/2016 | Em Teste DEMO | Clientes que tem suas cobran�as vinculadas num determinado Banco, geralmente rec |
+| 45 | 30302 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Nos gr�ficos de saldos da consulta F6 o sistema sempre gera o valor acumulado. E |
 | 40 | 30300 | 6.0F-05 | 03/03/2016 | Em Teste DEMO | O Administrar hoje mostra em tarefas realizadas os lan�amentos de um determinado |
 | 46 | 30303 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Incluir op��o no livro raz�o de especificar o n�mero m�ximo folhas por livro, ig |
-| 45 | 30302 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Nos gr�ficos de saldos da consulta F6 o sistema sempre gera o valor acumulado. E |
-| 47 | 30304 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Op��o para imprimir o n�mero de inscri��o na junta comercial no balan�o. |
 | 44 | 30301 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Na baixa das parcelas trazer tamb�m o nome do fornecedor/cliente, inclusive na b |
-| 35 | 30297 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Ao tentar cadastrar uma inscri��o estadual iniciando com 241..., o sistema acusa |
 | 36 | 30298 | 6.0F-05 | 03/03/2016 | Em Teste DEMO | No relat�rio de tarefas realizadas, lan�amentos cont�beis, poderia ter como visu |
+| 35 | 30297 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Ao tentar cadastrar uma inscri��o estadual iniciando com 241..., o sistema acusa |
 | 30 | 30293 | 7.2A-05 | 03/03/2016 | Em Teste DEMO | Desenvolver cadastro de remetente/destinat�rio. |
 | 18 | 30290 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Na emiss�o do livro de entradas e sa�das gravar sempre as �ltimas sele��es utili |
 | 17 | 30289 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Desenvolver uma guia para recolhimento de ICMS avulsa para o Estado de S�o Paulo |
 | 13 | 30287 | 6.1A-05 | 03/03/2016 | Em Teste DEMO | Permitir fazer a integra��o em lotes (ex: mensal). Fazer exporta��o de lanctos p |
 | 12 | 30286 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | O sistema s� faz a valida��o da natureza quando passa por este campo se ela for  |
 | 11 | 30285 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Ao contabilizar os impostos incidentes sobre as NF de entrada e sa�da, quando a  |
+| 6 | 30282 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Quando existe a situa��o de ICMS � recuperar deve-se ser feito um lancto similar |
 | 10 | 30284 | 6.1A-04 | 03/03/2016 | Em Teste DEMO | Permitir cadastrar produtos informando no c�digo letras e n�meros (alfanum�rico) |
 | 8 | 30283 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Identificar de alguma forma as empresas que est�o marcadas como INATIVAS. |
-| 6 | 30282 | 7.0A-05 | 03/03/2016 | Em Teste DEMO | Quando existe a situa��o de ICMS � recuperar deve-se ser feito um lancto similar |
 | 5 | 30281 | 6.1A-03 | 03/03/2016 | Em Teste DEMO | Fazer a mesma cr�tica que faz quando gera o arquivo para o sintegra, na hora do  |
 | 4 | 30280 | 6.1B-01 | 03/03/2016 | Em Teste DEMO | Na janela de concilia��o banc�ria mostrar a coluna VALOR ap�s a coluna j� existe |
 | 3 | 30279 | 6.1A-01 | 03/03/2016 | Em Teste DEMO | Ter uma relatorio de contas a receber que apareca o total faturado, o total rece |
@@ -6457,8 +6642,8 @@
 | 32602 | 14887 | 8.1A-10 | 21/10/2014 | Em Teste DEMO | RS-Criar op��o para imprimir o relat�rio de notas lan�adas e notas n�o lan�adas  |
 | 32764 | 14874 | 8.3A-04 | 20/10/2014 | Em Teste DEMO | Criar op��o "Gerar a diferen�a entre valor cont�bil e base de c�lculo conforme d |
 | 32584 | 14864 | 8.3A-04 | 20/10/2014 | Em Teste DEMO | Importar na guia "Documentos referenciados" as informa��es do grupo Documentos F |
-| 32621 | 14844 | 8.2C-03 | 17/10/2014 | Em Teste DEMO | Importar os dados de documentos referenciados da guia complementar a partir da t |
 | 33934 | 14843 | 1.1 | 17/10/2014 | Em Teste DEMO | Preparar o Envia Box-e para enviar arquivos XML na vers�o 3.10. |
+| 32621 | 14844 | 8.2C-03 | 17/10/2014 | Em Teste DEMO | Importar os dados de documentos referenciados da guia complementar a partir da t |
 | 34098 | 14837 | 8.1A-12 | 17/10/2014 | Em Teste DEMO | Emitir o total por conta patrimonial ou centro de custo no relat�rio de c�lculo  |
 | 32551 | 14829 | 8.2C-04 | 16/10/2014 | Em Teste DEMO | SE-Preencher o campo CFOP estendido quando realizado a importa��o de NF-e. |
 | 32685 | 14822 | 8.2B-01 | 16/10/2014 | Em Teste DEMO | SP-Importar as NFTS com a situa��o cancelada quando a nota possuir data de cance |

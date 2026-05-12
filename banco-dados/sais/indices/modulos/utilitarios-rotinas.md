@@ -1,16 +1,18 @@
 ﻿# Utilitarios e rotinas
 
 > Dominio Escrita Fiscal | slug `utilitarios-rotinas`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 59 | Liberadas: 663 | Descartadas: 89 | Total SAIs: 810
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 68 | Liberadas: 693 | Descartadas: 99 | Total SAIs: 857
 
-## Pendentes (59)
+## Pendentes (68)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 101572 | 130569 | SAM | Normal | 05/05/2026 | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa��o no DW. |
 | 101571 | 130564 | SAM | Normal | 05/05/2026 | Incluir os comandos SQL referente aos problemas de travamento no agente de comun |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
+| 101334 | 130038 | SAM | Normal | 13/04/2026 | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
+| 101195 | 129906 | NE | Normal | 07/04/2026 | Não estão sendo apresentadas todas as mensagens de inconsistências encontradas n |
 | 101070 | 129900 | SAM | Normal | 07/04/2026 | Reduzir quantidade de mensagens repetidas no agente de comunica��o |
 | 101035 | 129512 | NE | Normal | 25/03/2026 | Em alguns casos est� ocorrendo o erro "uo_carrega_empresas_relat�rio" ao executa |
 | 100830 | 129205 | SAM | Normal | 17/03/2026 | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
@@ -22,14 +24,19 @@
 | 99812 | 127707 | SAM | Normal | 06/02/2026 | Realizar testes nas importa��es que utilizam certificado digital ap�s a implemen |
 | 99892 | 127005 | SAM | Normal | 26/01/2026 | Realizar testes em todos os processos/servi�os da escrita que utilizam certifica |
 | 99427 | 126810 | SAM | Normal | 21/01/2026 | Criar uma rotina para desativa��o das caixas de e-mail do BOX-e quando o cliente |
+| 99572 | 126629 | SAM | Normal | 19/01/2026 | Permitir somente o cadastro de empresas Ativas no Onvio e interromper rotinas pr |
 | 99463 | 126635 | SAM | Normal | 19/01/2026 | Criar rotina autom�tica para emiss�o da DLPA em PDF e Excel. |
 | 100121 | 126442 | NE | Normal | 14/01/2026 | Em alguns casos n�o est� finalizando o processo de apura��o pelas Rotinas autom� |
 | 99650 | 126338 | SAM | Normal | 12/01/2026 | Emitir o demonstrativo dos impostos e demonstrativo EFD PIS e COFINS nas rotinas |
 | 98888 | 125949 | SAM | Normal | 30/12/2025 | Realizar testes conforme nova funcionalidade de gerenciamento de certificados di |
 | 98939 | 125748 | NE | Normal | 22/12/2025 | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nome do licen |
 | 99030 | 125672 | SAL | Normal | 19/12/2025 | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes Sinief n� 2 |
+| 98472 | 125057 | SAM | Normal | 05/12/2025 | Permitir que o DFC indireto seja gerado e enviado pelas Rotinas programadas. |
+| 98471 | 123281 | SAM | Normal | 09/10/2025 | Permitir que o DFC direto seja gerado e enviado pelas Rotinas programadas. |
+| 98368 | 123185 | SAM | Normal | 06/10/2025 | Permitir que a DMPL seja gerada e enviada pelas Rotinas programadas. |
 | 97017 | 122961 | SAM | Normal | 26/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e ABRASF XML/NFS- |
 | 96849 | 122228 | SAM | Normal | 01/09/2025 | Implementar no sistema para n�o ser exibido mensagem de aten��o exigindo que ten |
+| 97341 | 122169 | SAM | Normal | 28/08/2025 | Permitir que a DLPA seja gerada e enviada pelas Rotinas programadas. |
 | 96112 | 121850 | SAM | Normal | 15/08/2025 | Implementar Logs no Agente de Comunica��o para capturar as informa��es referente |
 | 95735 | 121299 | NE | Normal | 29/07/2025 | Em alguns casos as rotinas que fazem a paralisa��o dos Utilit�rios WebService SE |
 | 95617 | 121139 | SAM | Normal | 23/07/2025 | Preparar o BOX-e para receber as notas do Dom�nio Cont�bil atrav�s do Agente de  |
@@ -42,10 +49,12 @@
 | 93003 | 117683 | SAM | Normal | 14/03/2025 | Contabilidade Digital: Criar rotina para editar o lan�amento de extrato na conta |
 | 91691 | 116141 | SAM | Normal | 27/01/2025 | Contabilidade Digital: Melhorar o controle das altera��es das configura��es de c |
 | 93649 | 116053 | SAM | Normal | 22/01/2025 | Gerar a DEFIS API Integra Contador pelas rotinas autom�ticas. |
+| 91601 | 115687 | NE | Normal | 07/01/2025 | Está apresentando indevidamente a mesma rotina em dois status: 'Em andamento ago |
 | 88900 | 112776 | SAM | Normal | 11/09/2024 | Implementar os ajustes necess�rios para realizar a importa��o de notas via Porta |
 | 95092 | 111563 | SAIL | Normal | 01/08/2024 | BA-Implementar no sistema rotina para escritura��o de documento extempor�neo de  |
 | 85435 | 107404 | SAM | Normal | 08/03/2024 | Remover a mensagem de "Atualiza��o da tabela Selic" no servidor de "Agente de Ex |
 | 85899 | 104133 | SAIL | Normal | 12/12/2023 | Implementar a emiss�o do relat�rio dos Tributos Federais e alterar o comportamen |
+| 84233 | 103487 | SAM | Normal | 21/11/2023 | Criar assinatura com o certificado digital nos relatórios da contabilidade. |
 | 79777 | 97880 | SAIL | Normal | 31/05/2023 | MG-Implementar rotina no sistema para calcular os impostos estaduais e gerar os  |
 | 71085 | 83897 | SAM | Normal | 30/06/2021 | Emitir a guia DARF no Gestta Processos atrav�s das rotinas autom�ticas |
 | 70727 | 83267 | SAM | Normal | 04/06/2021 | Criar op��o na rotina autom�tica para que seja conclu�da automaticamente a ativi |
@@ -107,9 +116,9 @@
 
 | Tema | Ocorrencias |
 |------|-------------|
-| rotina | 436 |
+| rotina | 464 |
 | certificado | 144 |
-| agente | 76 |
+| agente | 77 |
 | certificado digital | 74 |
 | certificado a3 | 25 |
 
@@ -125,8 +134,8 @@
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98258 | 123498 | SAM | 16/10/2025 | Efetuar testes nos pontos impactados devido � altera��o do time de Plataforma no |
 | 96693 | 122576 | SAM | 12/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e, CF-e e CT-e e  |
+| 96749 | 122535 | NE | 11/09/2025 | Não está gerando inconsistência na rotina, ou está gerando a inconsistência erra |
 | 95910 | 121538 | NE | 05/08/2025 | Est� sendo considerado o certificado digital incorreto na gera��o da guia DAS vi |
-| 94304 | 119498 | SAM | 21/05/2025 | Preparar o BOX-e para receber as notas do Dom�nio Cont�bil atrav�s do Agente de  |
 
 ## Busca Completa
 

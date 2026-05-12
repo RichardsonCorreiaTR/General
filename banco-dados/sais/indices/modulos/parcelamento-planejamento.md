@@ -1,8 +1,8 @@
 ﻿# Parcelamento e planejamento tributario
 
 > Dominio Escrita Fiscal | slug `parcelamento-planejamento`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 3 | Liberadas: 162 | Descartadas: 19 | Total SAIs: 184
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 3 | Liberadas: 163 | Descartadas: 19 | Total SAIs: 185
 
 ## Pendentes (3)
 
@@ -26,6 +26,7 @@
 | 86768 | 109843 | SAL | 27/05/2024 | RS-Alterar o vencimento da guia DAS e das parcelas referente ao Parcelamento de  |
 | 85282 | 107682 | SAL | 18/03/2024 | Alterar o link de acesso ao portal do Simples Nacional via c�digo de acesso para |
 | 84425 | 106546 | NE | 14/02/2024 | Est� importando o valor incorreto do registro M010 do informativo SPED ECF, quan |
+| 84066 | 105448 | SAM | 17/01/2024 | Alterar a mensagem de bloqueio de exclusão de vários lançamentos que pertencerem |
 | 83844 | 104310 | SAL | 18/12/2023 | SC-Alterar o sistema para informar um percentual com 6 casas decimais no quadro  |
 | 82369 | 102459 | NE | 18/10/2023 | Est� importando o valor incorreto do registro M010 do informativo SPED ECF, quan |
 | 80152 | 98564 | NE | 27/06/2023 | Est� sendo importado o valor incorreto no campo "INSS/CPP" da janela "Valor da F |
@@ -45,14 +46,13 @@
 | 72534 | 85698 | NE | 28/09/2021 | N�o est� sendo demonstrado na central de pagamentos o encargo, quando houver par |
 | 72224 | 85631 | NE | 24/09/2021 | Est� sendo gerado o valor incorreto nas colunas "Saldo devedor", "Em aberto" e " |
 | 72100 | 85342 | NE | 10/09/2021 | Est� sendo deduzido indevidamente o valor pago referente ao parcelamento do simp |
-| 72616 | 84031 | SAL | 06/07/2021 | SC-Alterar o sistema para permitir realizar o parcelamento do imposto 01-ICMS qu |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
 | parcelamento | 128 |
-| pert | 36 |
+| pert | 37 |
 | refis | 3 |
 
 ## Descartadas Recentes (10 mais recentes)

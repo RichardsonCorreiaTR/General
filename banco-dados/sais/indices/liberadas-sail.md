@@ -1,7 +1,7 @@
 ﻿# SAIL Liberadas - Escrita Fiscal
 
-> Atualizado em: 06/05/2026 09:02
-> Total SAIs unicas: 1700
+> Atualizado em: 12/05/2026 13:31
+> Total SAIs unicas: 1707
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
@@ -45,13 +45,16 @@
 | 90153 | 113851 | 10.5A-01 | 17/10/2024 | Em Teste DEMO | Implementar plano referencial para o Banco Central a partir de 2025. |
 | 89756 | 113824 | 10.5A-01 | 16/10/2024 | Em Teste DEMO | Implementar a gera��o da DEFIS via API Integra Contador nas rotinas programadas  |
 | 89853 | 112965 | 10.5A-01 | 18/09/2024 | Em Teste DEMO | Implementar o envio do informativo DIRBI via API |
+| 88903 | 112734 | 10.4A-12 | 09/09/2024 | Em Teste DEMO | Disponibilizar informações dos lançamentos contábeis e saldo de contas contábeis |
 | 88972 | 112681 | 10.4A-10 | 06/09/2024 | Em Teste DEMO | Implementar a gera��o dos Benef�cios na Dirbi conforme IN 2.216/2024 |
 | 95556 | 112431 | 10.5A-09 | 28/08/2024 | Em Teste DEMO | MS-Implementar o c�lculo do cr�dito presumido aos estabelecimentos frigor�ficos  |
 | 88400 | 112136 | 10.5A-04 | 16/08/2024 | Em Teste DEMO | Implementar a gera��o da guia DAS por meio da API Integra Contador nas rotinas p |
 | 90924 | 112081 | 10.5A-09 | 15/08/2024 | Em Teste DEMO | Alterar o sistema para considerar as devolu��es de vendas no c�lculo de PIS e CO |
 | 88265 | 112034 | 10.4A-08 | 14/08/2024 | Em Teste DEMO | SP-Criar op��o para gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
 | 88140 | 111761 | 10.4A-10 | 07/08/2024 | Em Teste DEMO | Implementar a gera��o da guia DASMEI via API Integra Contador nas rotinas progra |
+| 88139 | 111741 | 10.4A-11 | 06/08/2024 | Em Teste DEMO | Aplicar regras de permissões no menu SPED Contábil |
 | 96805 | 111707 | 10.5A-11 | 06/08/2024 | Em Teste DEMO | SC-Implementar o c�lculo do Cr�dito Presumido Concedido a Estabelecimentos de Ab |
+| 88076 | 111631 | 10.4A-10 | 02/08/2024 | Em Teste DEMO | Criar as origens 'Entradas EF' e 'Saídas EF' para contabilizar lançamentos de No |
 | 88032 | 111511 | 10.4A-09 | 30/07/2024 | Em Teste DEMO | PR-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 95462 | 111424 | 10.5A-11 | 26/07/2024 | Em Teste DEMO | ES-Implementar op��o para gerar os c�digos de benef�cio conforme Decreto n� 5.63 |
 | 89154 | 111405 | 10.5A-05 | 25/07/2024 | Em Teste DEMO | Implementar o lan�amento de 'Documento N�o Fiscal' no movimento de Sa�das, para  |
@@ -62,6 +65,7 @@
 | 87663 | 110727 | 10.4A-08 | 01/07/2024 | Em Teste DEMO | Implementar a Declara��o de Incentivos, Ren�ncias, Benef�cios e Imunidades de Na |
 | 87599 | 110424 | 10.4A-08 | 19/06/2024 | Em Teste DEMO | SC-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 87350 | 110409 | 10.4A-07 | 18/06/2024 | Em Teste DEMO | Implementar a Declara��o de Incentivos, Ren�ncias, Benef�cios e Imunidades de Na |
+| 86856 | 110047 | 10.4A-07 | 04/06/2024 | Em Teste DEMO | Realizar a integração contábil do imposto SIMEI. |
 | 87377 | 110025 | 10.4A-10 | 03/06/2024 | Em Teste DEMO | PR-Implementar o c�lculo do cr�dito presumido transportadoras 20% sobre o recolh |
 | 86709 | 109655 | 10.4A-09 | 21/05/2024 | Em Teste DEMO | SC-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 90265 | 109425 | 10.5A-01 | 13/05/2024 | Em Teste DEMO | Enviar os arquivos 4010 e 4016 do Banco Central via webservice a partir de 2025. |
@@ -95,6 +99,8 @@
 | 86415 | 104149 | 10.4A-06 | 13/12/2023 | Em Teste DEMO | ES-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 85370 | 104144 | 10.4A-05 | 13/12/2023 | Em Teste DEMO | RJ-Implementar o c�lculo do cr�dito presumido sobre as sa�das internas de estabe |
 | 83276 | 104059 | 10.4A-01 | 08/12/2023 | Em Teste DEMO | Criar tela para pagamento do imposto 173-Tributos Federais |
+| 83283 | 104036 | 10.4A-01 | 08/12/2023 | Em Teste DEMO | Realizar a integração contábil do módulo 'Tributos Federais'. |
+| 94398 | 104002 |  | 07/12/2023 | Aguardando Resposta do Desenvolvimento DEMO | Criar a interface 'Plano referencial' e o vínculo do plano referencial PJ Geral  |
 | 84450 | 103738 | 10.4A-04 | 29/11/2023 | Em Teste DEMO | RJ-Implementar o c�lculo do Complemento/Restitui��o do ICMS-ST conforme Resolu�� |
 | 88039 | 103395 | 10.4A-10 | 17/11/2023 | Em Teste DEMO | RS-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 85152 | 103022 | 10.4A-10 | 08/11/2023 | Em Teste DEMO | Definir m�scara e valida��es para chave NF-e. |
@@ -138,6 +144,7 @@
 | 80667 | 99605 | 10.3A-09 | 25/07/2023 | Em Teste DEMO | RS-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 80644 | 99522 | 10.3A-09 | 24/07/2023 | Em Teste DEMO | Implementar a gera��o do Bloco H no SPED Fiscal para os produtos inclu�dos no re |
 | 85838 | 99488 | 10.4A-04 | 21/07/2023 | Em Teste DEMO | MG-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
+| 82708 | 99299 | 10.4A-10 | 18/07/2023 | Em Teste DEMO | Gerar SPED Contábil |
 | 80501 | 99260 | 10.3A-08 | 17/07/2023 | Em Teste DEMO | ES-Criar op��o para gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
 | 81919 | 99018 | 10.4A-01 | 11/07/2023 | Em Teste DEMO | Criar o imposto 173-Tributos Federais, e realizar a apura��o consolidada entre m |
 | 87459 | 98933 | 10.4A-08 | 10/07/2023 | Em Teste DEMO | CE-Implementar o c�lculo do cr�dito do ICMS monof�sico para os produtos Diesel,  |

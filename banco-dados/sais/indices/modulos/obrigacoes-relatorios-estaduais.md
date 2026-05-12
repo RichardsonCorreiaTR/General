@@ -1,10 +1,10 @@
 ﻿# Obrigacoes e relatorios estaduais
 
 > Dominio Escrita Fiscal | slug `obrigacoes-relatorios-estaduais`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 85 | Liberadas: 3030 | Descartadas: 357 | Total SAIs: 3470
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 97 | Liberadas: 3060 | Descartadas: 361 | Total SAIs: 3512
 
-## Pendentes (85)
+## Pendentes (97)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
@@ -19,21 +19,33 @@
 | 100539 | 128808 | NE | Normal | 04/03/2026 | Est� sendo gerado indevidamente a mensagem 'O relat�rio deve ser emitido na empr |
 | 101161 | 126935 | NE | Normal | 23/01/2026 | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no relat�rio demo |
 | 99607 | 126845 | NE | Normal | 21/01/2026 | Em alguns casos est� fechando o sistema ao emitir o demonstrativo do imposto 9-S |
+| 99955 | 126446 | SAM | Normal | 14/01/2026 | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99650 | 126338 | SAM | Normal | 12/01/2026 | Emitir o demonstrativo dos impostos e demonstrativo EFD PIS e COFINS nas rotinas |
 | 98302 | 124798 | SAM | Normal | 27/11/2025 | MG-Otimizar as DWs 'dw_mg_demonstrativo_credito_presumido_ret_dados_saidas' e 'd |
 | 97350 | 123136 | SAM | Normal | 03/10/2025 | GO-Atualizar a forma de gerar a guia DARE online conforme nova estrutura do site |
 | 98484 | 122663 | SAM | Normal | 16/09/2025 | Implementar filtros e relat�rios na tela de listagem de NFS-e API para visualiza |
+| 97302 | 122168 | SAM | Normal | 28/08/2025 | Permitir que as configurações dos relatórios da parametrização e as assinaturas  |
 | 96166 | 121932 | SAM | Normal | 20/08/2025 | Realizar um estudo para que seja poss�vel utilizar o Proxy do Windows (Navegador |
 | 95735 | 121299 | NE | Normal | 29/07/2025 | Em alguns casos as rotinas que fazem a paralisa��o dos Utilit�rios WebService SE |
+| 95127 | 120404 | NE | Normal | 27/06/2025 | Não está funcionando a ação de 'Imprimir' na barra de ferramentas dos relatórios |
 | 96900 | 120264 | SAM | Normal | 23/06/2025 | Criar a op��o de "Exporta��o" nas Rotinas Autom�ticas para os arquivos armazenad |
 | 94818 | 119876 | NE | Normal | 06/06/2025 | Est� sendo gerado o c�digo incorreto do CT-e substituto no demonstrativo da CSLL |
 | 94478 | 119661 | NE | Normal | 28/05/2025 | Em alguns casos n�o est� sendo demonstrando na ordem correta a listagem de notas |
+| 98466 | 119542 | SAIL | Normal | 22/05/2025 | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
+| 97772 | 119540 | SAIL | Normal | 22/05/2025 | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
 | 90515 | 113628 | SAM | Normal | 10/10/2024 | Otimizar a DW 'dw_dados_imposto_lancado_produto_difal_nc' na gera��o do relat�ri |
 | 88560 | 112391 | SAM | Normal | 27/08/2024 | Realizar um estudo para redu��o de custos no processo de preenchimento do captch |
 | 92510 | 112209 | SAM | Normal | 20/08/2024 | Alterar o sistema para importar o tipo de inscri��o do cliente/fornecedor quando |
 | 89840 | 111467 | SAIL | Normal | 29/07/2024 | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
+| 87569 | 109683 | SAM | Normal | 21/05/2024 | Limitar data para que movimentos, consultas e relatórios só possam ser feitos e/ |
+| 86166 | 108673 | SAM | Normal | 12/04/2024 | Possibilitar o envio de relatórios da Contabilidade pelo Onvio Messenger. |
 | 85892 | 107031 | SAM | Normal | 26/02/2024 | Otimizar o bot�o "Buscar" da listagem de lan�amentos.   |
+| 83888 | 105367 | SAM | Normal | 15/01/2024 | Permitir a Folha indicar o status do eSocial na listagem e cadastro de empresa. |
+| 97280 | 103491 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
+| 98297 | 103490 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração das Mutações do Patrimônio Líquido |
+| 84233 | 103487 | SAM | Normal | 21/11/2023 | Criar assinatura com o certificado digital nos relatórios da contabilidade. |
 | 82856 | 103397 | SAM | Normal | 17/11/2023 | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
+| 82930 | 102961 | SAM | Normal | 06/11/2023 | Permitir exportar os relatórios contábeis em Excel |
 | 80832 | 99979 | NE | Normal | 02/08/2023 | ES-N�o est� sendo importado a base de cr�dito de PIS/COFINS conforme configura�� |
 | 80748 | 99716 | SAM | Normal | 27/07/2023 | Alterar o envio das notas ao BOX-e conforme novo link quando as notas forem baix |
 | 79777 | 97880 | SAIL | Normal | 31/05/2023 | MG-Implementar rotina no sistema para calcular os impostos estaduais e gerar os  |
@@ -145,14 +157,14 @@
 |-----|------|------|----------|--------|
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
 | 97627 | 123713 | SAM | 23/10/2025 | Ajustar o sistema para que consiga seguir no captcha 'Sou humano' no momento da  |
+| 97311 | 123175 | NE | 06/10/2025 | Não estão sendo apresentadas por inteiro as informações Insc. Junta Comercial e  |
 | 97028 | 122565 | NE | 12/09/2025 | Est� gerando incorretamente o resultado da Consulta regra tribut�ria ao pesquisa |
+| 96737 | 122539 | NE | 11/09/2025 | Não está gerando o relatório do DRE na sequência da estrutura salva. |
+| 96749 | 122535 | NE | 11/09/2025 | Não está gerando inconsistência na rotina, ou está gerando a inconsistência erra |
 | 94244 | 119198 | NE | 13/05/2025 | N�o est� importando a tabela de Al�quota Interestadual de ICMS conforme o perfil |
 | 95101 | 119008 | NE | 06/05/2025 | Em alguns casos est� ocorrendo o erro "Ocorreu um erro ao unir os PDF's. Um dos  |
 | 92379 | 117020 | SAL | 24/02/2025 | Ajustar o sistema para n�o gerar a UF e o n�mero do CRC no arquivo 'jason" do in |
 | 91436 | 115787 | NE | 09/01/2025 | N�o est� replicando da configura��o de importa��o NF-e Arquivo XML para a import |
-| 91021 | 114973 | SAM | 29/11/2024 | Garantir o funcionamento da emiss�o da Guia DARF Online - Sicalcweb |
-| 90935 | 114573 | SAIL | 14/11/2024 | RJ-Implementar a escritura��o do FECP por meio de sub-apura��o - Resolu��o SEFAZ |
-| 89328 | 113208 | NE | 26/09/2024 | N�o est� sendo poss�vel visualizar a listagem de contas cont�beis na configura�� |
 
 ## Busca Completa
 

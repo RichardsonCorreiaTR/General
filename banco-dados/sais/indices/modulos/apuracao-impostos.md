@@ -1,10 +1,10 @@
 ﻿# Apuracao de impostos
 
 > Dominio Escrita Fiscal | slug `apuracao-impostos`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 667 | Liberadas: 24846 | Descartadas: 2575 | Total SAIs: 28051
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 736 | Liberadas: 25108 | Descartadas: 2676 | Total SAIs: 28439
 
-## Pendentes (667)
+## Pendentes (736)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
@@ -16,6 +16,7 @@
 | 101556 | 130509 | NE | Normal | 30/04/2026 | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o plano de con |
 | 101562 | 130508 | NE | Normal | 30/04/2026 | Em alguns casos est� sendo gerado o lan�amento de zeramento sem a conta de contr |
 | 101508 | 130467 | NE | Normal | 29/04/2026 | N�o est� sendo demonstrado o Lucro e Dividendo Isento (natureza 12001) informado |
+| 101491 | 130440 | SAM | Normal | 28/04/2026 | Alterar o sistema para enviar o Plano de contas compactado em GZIP para a Conta  |
 | 101584 | 130433 | SAL | Normal | 28/04/2026 | RO-Gerar o registro E112 no SPED Fiscal para lan�amentos de ajustes gerados no r |
 | 101594 | 130428 | SAM | Normal | 27/04/2026 | GO-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fiscais de en |
 | 101469 | 130424 | SAM | Normal | 27/04/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
@@ -67,10 +68,13 @@
 | 101306 | 130042 | SAIL | Normal | 13/04/2026 | Implementar o arquivo de envio do 'Evento: 112150 - Atualiza��o da data de previ |
 | 101343 | 130015 | NE | Normal | 13/04/2026 | Em alguns casos est� ocorrendo diferen�a no valor de "Valor do estorno de cr�dit |
 | 101165 | 130014 | NE | Normal | 13/04/2026 | N�o est� sendo feita corretamente a importa��o dos lan�amentos cont�beis na jane |
+| 101258 | 129994 | NE | Normal | 10/04/2026 | Não estão sendo enviadas as atualizações das contas contábeis para Conta Azul qu |
 | 101144 | 129997 | SAM | Normal | 10/04/2026 | Adequar o sistema para contabiliza��o de estorno de Pagamento de Contas da Conta |
 | 101143 | 129996 | SAM | Normal | 10/04/2026 | Adequar o sistema para contabiliza��o de estorno de Pix da Conta PJ no Dom�nio C |
 | 101314 | 129992 | NE | Normal | 10/04/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
 | 101607 | 129991 | NE | Normal | 10/04/2026 | Est� ocorrendo travamento durante a importa��o quando a empresa possui atividade |
+| 101124 | 129978 | NE | Normal | 09/04/2026 | Está demonstrando indevidamente o submenu da DMPL no menu Emissões. |
+| 101356 | 129973 | SAM | Normal | 09/04/2026 | Criar a permissão para o menu Novo plano de contas |
 | 101326 | 129954 | NE | Normal | 09/04/2026 | N�o est� processando novo consentimento quando antigo est� inv�lido e possui tra |
 | 101559 | 129946 | NE | Normal | 09/04/2026 | Est� sendo gerado um saldo em aberto indevidamente na baixa de parcelas de entra |
 | 101157 | 129940 | SAIL | Normal | 08/04/2026 | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
@@ -78,6 +82,7 @@
 | 101578 | 129935 | SAM | Normal | 08/04/2026 | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
 | 101280 | 129923 | SAM | Normal | 08/04/2026 | Efetuar a baixa de impostos sempre que possui operation_type CONVENIO_ARRECADACA |
 | 101316 | 129919 | NE | Normal | 08/04/2026 | Est� ocorrendo o erro de sistema "Algum dado n�o cadastrado!" ao gravar a import |
+| 101195 | 129906 | NE | Normal | 07/04/2026 | Não estão sendo apresentadas todas as mensagens de inconsistências encontradas n |
 | 101294 | 129902 | SAM | Normal | 07/04/2026 | Importar para o produto e para os lan�amentos de sa�das as op��es relacionadas � |
 | 101139 | 129879 | NE | Normal | 07/04/2026 | Est� gerando o saldo anterior incorreto no DFC em RTF no informativo SPED Cont�b |
 | 101502 | 129874 | NE | Normal | 07/04/2026 | N�o est� sendo alterada a al�quota de PIS e COFINS na guia "Estoque" das notas f |
@@ -86,18 +91,25 @@
 | 101040 | 129818 | NE | Normal | 02/04/2026 | Est� importando incorretamente os valores do registro Y730 do informativo SPED E |
 | 101052 | 129803 | NE | Normal | 02/04/2026 | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
 | 101036 | 129802 | NE | Normal | 02/04/2026 | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na apura��o,  |
+| 101085 | 129751 | NE | Normal | 01/04/2026 | Está listando indevidamente as contas e os históricos da empresa corrente em tod |
 | 101141 | 129762 | NE | Normal | 01/04/2026 | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma combina��o  |
 | 101013 | 129761 | NE | Normal | 01/04/2026 | N�o est�o sendo armazenadas as notas enviadas pelo Busca NF-e para o BOX-e.     |
 | 101153 | 129729 | NE | Normal | 01/04/2026 | Em alguns casos est� fechando o sistema e n�o est� sendo gerado o arquivo do SPE |
 | 101212 | 129727 | NE | Normal | 01/04/2026 | N�o est� sendo feita a contabiliza��o correta do imposto 26-INSS-RET no lan�amen |
 | 101276 | 129723 | SAM | Normal | 31/03/2026 | Implementar a gera��o do relat�rio de precifica��o de produtos e servi�os para a |
 | 101277 | 129722 | SAM | Normal | 31/03/2026 | Implementar a gera��o do relat�rio de precifica��o de produtos e servi�os para a |
+| 101103 | 129703 | SAM | Normal | 31/03/2026 | Realizar a conversão dos vínculos do plano referencial após o cadastro do novo p |
 | 101043 | 129701 | NE | Normal | 31/03/2026 | Em alguns casos est� ocorrendo encerramento do sistema quando importado grande v |
 | 101210 | 129698 | NE | Normal | 31/03/2026 | Em alguns casos n�o est� concluindo a grava��o da importa��o dos dados quando im |
 | 100995 | 129683 | NE | Normal | 30/03/2026 | Em alguns casos, est� apresentando erro de banco de dados ao emitir a Carta de R |
+| 101450 | 129665 | SAM | Normal | 30/03/2026 | Criar a tela de bloqueio para quando o novo plano de contas estiver sendo cadast |
 | 100943 | 129661 | NE | Normal | 30/03/2026 | Est� habilitando indevidamente a guia "Relacionamento de produtos" no resumo de  |
+| 101189 | 129627 | SAM | Normal | 27/03/2026 | Realizar a conversão das contas vinculadas nas estruturas do DRE, DLPA, DMPL, DF |
+| 101397 | 129620 | SAM | Normal | 27/03/2026 | Realizar a conversão das configurações de integração contábil após o cadastro do |
 | 101154 | 129604 | NE | Normal | 27/03/2026 | N�o est� sendo feita corretamente a contabiliza��o das notas de Entrada e Sa�da, |
+| 101599 | 129573 | SAM | Normal | 26/03/2026 | Realizar um estudo para criar a integração por API com ERPs Externos para recebi |
 | 100940 | 129545 | NE | Normal | 26/03/2026 | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota � importad |
+| 100956 | 129531 | NE | Normal | 25/03/2026 | Não está gerando o SPED Contábil quando há contas sem movimento/saldo não vincul |
 | 101342 | 129540 | NE | Normal | 25/03/2026 | N�o est� sendo feita corretamente a importa��o das informa��es da janela "Outros |
 | 100825 | 129536 | SAM | Normal | 25/03/2026 | Realizar estudos e avaliar arquitetura para implementa��o da nova tabela de sald |
 | 100941 | 129535 | NE | Normal | 25/03/2026 | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/AT por pro |
@@ -106,11 +118,14 @@
 | 100816 | 129511 | SAM | Normal | 25/03/2026 | Registrar no banco de dados o tempo de gera��o do Balan�o e Balancete para auxil |
 | 100983 | 129508 | SAIL | Normal | 25/03/2026 | Implementar o arquivo de envio do 'Evento: 112130 - Perecimento, perda, roubo ou |
 | 100987 | 129486 | SAIL | Normal | 24/03/2026 | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda, roubo ou |
+| 101107 | 129460 | SAM | Normal | 24/03/2026 | Realizar a conversão das regras de contabilização de extrato após o cadastro do  |
+| 101104 | 129438 | SAM | Normal | 24/03/2026 | Criar uma nova vigência na parametrização ao concluir o cadastro de um novo plan |
 | 100814 | 129461 | SAM | Normal | 24/03/2026 | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED ECF para  |
 | 100899 | 129457 | NE | Normal | 24/03/2026 | Est� gerando valor incorreto na coluna "RB Demais Atividades" do Comparativo do  |
 | 101011 | 129356 | SAL | Normal | 20/03/2026 | SP-Adequar o sistema para permitir realizar lan�amentos de ajustes de 'Outros d� |
 | 101150 | 129343 | SAM | Normal | 20/03/2026 | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cadastro do ac |
 | 101575 | 129338 | SAM | Normal | 20/03/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "EnviarLo |
+| 100901 | 129307 | NE | Normal | 19/03/2026 | Não está preenchendo automaticamente a conta referencial da nova conta contábil  |
 | 100647 | 129305 | SAM | Normal | 19/03/2026 | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui��es. |
 | 100904 | 129302 | SAM | Normal | 19/03/2026 | Otimizar a apura��o do imposto 69-ST-TRANS por nota. |
 | 101164 | 129275 | NE | Normal | 19/03/2026 | Em alguns casos, n�o est� sendo gerado o valor correto da linha "3. Cr�dito outo |
@@ -118,17 +133,22 @@
 | 101192 | 129179 | NE | Normal | 17/03/2026 | N�o est� sendo gerada na compet�ncia correta o valor do imposto 18-ISS-RET na ja |
 | 101318 | 129157 | NE | Normal | 16/03/2026 | N�o atualiza a tooltip das transa��es quando possuir um processo de CREATED, con |
 | 100585 | 129155 | NE | Normal | 16/03/2026 | N�o est� realizando a baixa do pagamento quando a transa��o est� com uma data de |
+| 100597 | 129150 | NE | Normal | 16/03/2026 | Não está sendo exibido o CNPJ de empresas cadastradas com CNPJ alfanumérico no S |
 | 101136 | 129109 | NE | Normal | 13/03/2026 | Est� ocorrendo o erro: "O(s) arquivo(s) selecionado(s) n�o existe(m)!" seguido d |
 | 100741 | 129097 | SAL | Normal | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
+| 100963 | 129050 | NE | Normal | 12/03/2026 | Não está atualizando corretamente o número no ícone de transações pendentes, qua |
 | 100807 | 129048 | NE | Normal | 12/03/2026 | N�o est�o sendo considerados os valores da empresa filial no Comprovante Anual d |
 | 101168 | 129047 | NE | Normal | 12/03/2026 | Esta sendo calculado incorretamente a RBT12 para o c�lculo do Simples Nacional n |
+| 100488 | 129035 | NE | Normal | 11/03/2026 | Não está sendo respeitado o parâmetro "Enviar individualmente aos clientes um li |
 | 100472 | 128992 | SAM | Normal | 11/03/2026 | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita. |
 | 101340 | 128957 | NE | Normal | 10/03/2026 | N�o est� sendo demonstrado as receitas da filial no relat�rio Simples Nacional - |
 | 101551 | 128956 | NE | Normal | 10/03/2026 | SP-Est� sendo demonstrado indevidamente o submenu DARE ICMS Antecipado (Atacadis |
 | 101354 | 128938 | SAL | Normal | 10/03/2026 | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Estaduais, q |
 | 100422 | 128930 | SAM | Normal | 09/03/2026 | Realizar um estudo e testes no agente de comunica��o referente ao consumo da nov |
+| 100530 | 128925 | SAM | Normal | 09/03/2026 | Remover o botão refresh da tela de Lançamentos de extrato bancário. |
 | 100789 | 128903 | NE | Normal | 09/03/2026 | Est� apresentando erro de banco de dados ao gravar a tela "Informa��es da Pessoa |
 | 101485 | 128897 | NE | Normal | 09/03/2026 | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informativo SPED Fi |
+| 100589 | 128887 | NE | Normal | 06/03/2026 | Não está consolidando corretamente o saldo anterior nos Livros Razão e Caixa, qu |
 | 100410 | 128890 | NE | Normal | 06/03/2026 | N�o est�o ficando gravadas as contas cont�beis no bot�o "Outros Dados" do inform |
 | 101100 | 128886 | NE | Normal | 06/03/2026 | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lculo" do re |
 | 100620 | 128880 | SAM | Normal | 06/03/2026 | Adequar o sistema para considerar a nova op��o de empresa centralizadora no subm |
@@ -160,6 +180,8 @@
 | 100241 | 128645 | SAM | Normal | 28/02/2026 | [TECH] Realizar testes funcionais da nova FARM 37 do sistema Dom�nio no Dom�nio  |
 | 100281 | 128605 | NE | Normal | 27/02/2026 | Corrigir o sistema para que a reten��o referente a rotina de distribui��o de luc |
 | 101262 | 128584 | NE | Normal | 27/02/2026 | Est� ocorrendo erro de sistema ao emitir o MIT via API Integra Contador, quando  |
+| 100327 | 128582 | NE | Normal | 26/02/2026 | Está validando indevidamente a coluna 'Checkbox' como obrigatória quando há algu |
+| 100325 | 128581 | NE | Normal | 26/02/2026 | Não está abrindo o calendário dos campos 'Arquivamento dos atos constitutivos *' |
 | 100697 | 128580 | NE | Normal | 26/02/2026 | Est� sendo setada uma op��o inv�lida no campo "Tipo de Lan�amento" da guia LCDPR |
 | 100575 | 128542 | NE | Normal | 26/02/2026 | SC-Est� sendo gerado incorretamente a integra��o cont�bil do zeramento do impost |
 | 100357 | 128465 | NE | Normal | 25/02/2026 | N�o est� sendo atualizado corretamente o cat�logo de notas do Busca NF-e no Cont |
@@ -177,6 +199,8 @@
 | 99966 | 128146 | NE | Normal | 18/02/2026 | N�o est� respeitando centraliza��o da matriz com filial para carregamento de con |
 | 100002 | 128123 | SAM | Normal | 18/02/2026 | Alterar o tratamento para o retorno 500 nos envios para o Kolossus Auditor para  |
 | 100062 | 128101 | NE | Normal | 16/02/2026 | RS-N�o est� sendo gerado corretamente o registro E113 e n�o est� sendo gerado o  |
+| 100094 | 128069 | SAM | Normal | 16/02/2026 | Apresentar lançamentos encontrados para todas as transações pendentes que possue |
+| 100095 | 128065 | SAM | Normal | 16/02/2026 | Remover a coluna 'Cód. Hist.' dos lançamentos encontrados na tela de Lançamentos |
 | 100147 | 128037 | SAM | Normal | 13/02/2026 | Efetuar testes referente ao ExecutionGroup LancamentoIceberg |
 | 99916 | 128034 | SAM | Normal | 13/02/2026 | Alterar a arquitetura do processo de execu��o das Rotinas Autom�ticas para opera |
 | 99972 | 127951 | NE | Normal | 12/02/2026 | Em alguns casos est� ocorrendo erro na execu��o do exporta/importa referente a t |
@@ -211,6 +235,7 @@
 | 99310 | 126692 | NE | Normal | 19/01/2026 | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
 | 99306 | 126691 | NE | Normal | 19/01/2026 | N�o est� sendo demonstrado completamente a descri��o da transa��o no parceiro Be |
 | 99304 | 126689 | NE | Normal | 19/01/2026 | Descri��o est� se sobrepondo a inscri��o no relat�rio |
+| 99572 | 126629 | SAM | Normal | 19/01/2026 | Permitir somente o cadastro de empresas Ativas no Onvio e interromper rotinas pr |
 | 99463 | 126635 | SAM | Normal | 19/01/2026 | Criar rotina autom�tica para emiss�o da DLPA em PDF e Excel. |
 | 99799 | 126559 | SAL | Normal | 16/01/2026 | Alterar o sistema para que seja poss�vel informar a chave das notas modelo 62 no |
 | 100979 | 126557 | SAL | Normal | 16/01/2026 | RS-Ajustar a gera��o do SPED Fiscal referente a anula��o de CT-e/CT-eOS quando o |
@@ -224,9 +249,11 @@
 | 99039 | 126227 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o e estimativas vers�o 10.6A-05. |
 | 101226 | 126219 | SAIL | Normal | 08/01/2026 | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
 | 99086 | 126206 | SAM | Normal | 08/01/2026 | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut�ria atrav |
+| 99067 | 126176 | SAM | Normal | 07/01/2026 | Possibilitar o cadastro de uma empresa com o mesmo CNPJ caso as existentes estej |
 | 101553 | 126108 | SAL | Normal | 07/01/2026 | Incluir as naturezas de rendimento 10011 e 11008 para envio na EFD-Reinf conform |
 | 99324 | 126096 | SAM | Normal | 07/01/2026 | Permitir a emiss�o do relat�rio extrator da DIRF por benefici�rio. |
 | 99063 | 126047 | SAM | Normal | 05/01/2026 | Adequar o sistema para ao importar as informa��es do c�lculo do INSS Receita Bru |
+| 99862 | 125994 | SAM | Normal | 02/01/2026 | Ajustar o SPED Contábil para usar o toggle 'Gerar o SPED ECF' nas validações de  |
 | 98888 | 125949 | SAM | Normal | 30/12/2025 | Realizar testes conforme nova funcionalidade de gerenciamento de certificados di |
 | 98837 | 125878 | NE | Normal | 26/12/2025 | O Consentimento est� sendo cancelado no cont�bil quando possui dois v�nculos dif |
 | 98805 | 125823 | SAM | Normal | 23/12/2025 | Realizar estudos para controlar o crescimento do arquivo tempor�rio de alguns cl |
@@ -234,6 +261,7 @@
 | 98801 | 125760 | NE | Normal | 22/12/2025 | N�o est� sendo processado corretamente o recebimento de baixa de impostos que s� |
 | 98939 | 125748 | NE | Normal | 22/12/2025 | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nome do licen |
 | 99980 | 125734 | SAM | Normal | 22/12/2025 | Preparar o sistema para implementar a ferramenta de precifica��o de produtos e s |
+| 100529 | 125723 | SAIL | Normal | 19/12/2025 | Implementar a geração dos registros P130, P230 e X280 para o Lucro Presumido par |
 | 99030 | 125672 | SAL | Normal | 19/12/2025 | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes Sinief n� 2 |
 | 100590 | 125652 | SAM | Normal | 18/12/2025 | Permitir a importa��o dos impostos IBS e CBS para as notas de entrada e sa�da vi |
 | 98666 | 125642 | SAM | Normal | 18/12/2025 | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do servidor d |
@@ -242,17 +270,25 @@
 | 98860 | 125617 | NE | Normal | 18/12/2025 | Em alguns casos n�o est�o sendo geradas algumas notas no registro 1011 do inform |
 | 98686 | 125616 | NE | Normal | 18/12/2025 | N�o est� sendo gerado o valor correto referente ao zeramento dos impostos 17-PIS |
 | 98652 | 125612 | SAM | Normal | 17/12/2025 | Efetuar estudo de viabilidade e funcionamento da retirada de processos de alto c |
+| 98682 | 125492 | SAM | Normal | 15/12/2025 | Ajustar o vídeo de boas-vindas da Contabilidade para ser demonstrado a partir do |
 | 98624 | 125450 | SAM | Normal | 15/12/2025 | Ajustar a emiss�o do relat�rio DFC para buscar os saldos da nova tabela de saldo |
 | 98625 | 125447 | SAM | Normal | 15/12/2025 | Ajustar a emiss�o dos relat�rios DLPA e DMPL para buscar os saldos da nova tabel |
 | 98627 | 125440 | SAM | Normal | 15/12/2025 | Criar tabela de saldos das contas referenciais para otimizar a emiss�o de relat� |
 | 98621 | 125438 | SAM | Normal | 15/12/2025 | Ajustar a gera��o do informativo SPED ECF para buscar os saldos das contas cont� |
 | 98601 | 125436 | SAM | Normal | 15/12/2025 | Ajustar a emiss�o dos relat�rios Raz�o e DRE para buscar os saldos da nova tabel |
+| 99873 | 125374 | SAM | Normal | 12/12/2025 | Criar as regras de permissões no menu SPED ECF. |
+| 98511 | 125179 | SAL | Normal | 08/12/2025 | Gerar o registro J210 no SPED Contábil com referência de notas explicativas |
 | 100988 | 125146 | SAL | Normal | 08/12/2025 | Alterar o sistema para calcular o valor dos contratos de Empresas Simples de Cr� |
+| 98477 | 125080 | SAM | Normal | 05/12/2025 | Criar as permissões para o menu DFC - Método indireto. |
 | 98656 | 125063 | SAM | Normal | 05/12/2025 | Realizar a baixa de pagamento de impostos pelo Importador referente ao Imposto S |
 | 98655 | 125062 | SAM | Normal | 05/12/2025 | Realizar a baixa de pagamento de impostos feitos pelo Conta Azul referente ao Im |
+| 98777 | 124899 | SAM | Normal | 01/12/2025 | Integração Onvio x DW - Criar e integrar as contas contábeis e históricos entre  |
+| 98609 | 124894 | SAM | Normal | 01/12/2025 | Integração Onvio x DW - Listar as contas contábeis e históricos do Onvio Contabi |
+| 99947 | 124829 | SAIL | Normal | 28/11/2025 | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9. |
 | 98290 | 124811 | NE | Normal | 28/11/2025 | MG-Em alguns casos o sistema est� fechando ao emitir o relat�rio Cr�dito Presumi |
 | 98302 | 124798 | SAM | Normal | 27/11/2025 | MG-Otimizar as DWs 'dw_mg_demonstrativo_credito_presumido_ret_dados_saidas' e 'd |
 | 100078 | 124540 | SAM | Normal | 19/11/2025 | Retirar do servidor de sess�o as Threads respons�veis por inserir os XMLs no ban |
+| 98247 | 124515 | NE | Normal | 19/11/2025 | Está apresentando indevidamente o alert "Falha ao realizar o cadastro. Tente nov |
 | 98907 | 124455 | SAM | Normal | 19/11/2025 | Criar API no Onvio para ser poss�vel que sistemas externos consultem NCM/NBS e s |
 | 98906 | 124453 | SAM | Normal | 19/11/2025 | Criar ferramenta para receber os dados para defini��o de cClasstrib |
 | 98108 | 124396 | SAM | Normal | 18/11/2025 | Realizar estudo sobre a comunica��o entre DW x Onvio. |
@@ -260,6 +296,7 @@
 | 98103 | 124318 | NE | Normal | 14/11/2025 | Est� exibindo com resolu��o incorreta o �cone de lixeira na op��o de remover v�n |
 | 99872 | 124203 | SAM | Normal | 11/11/2025 | Incluir a op��o de importar os valores da folha de pagamento informados no extra |
 | 97902 | 124114 | SAM | Normal | 06/11/2025 | Ajustar logs com novas estruturas quando ocorrer erros na comunica��o com o Cont |
+| 98574 | 124071 | SAM | Normal | 06/11/2025 | Criar uma modal para consultar as contas contábeis sem vínculo na estrutura da D |
 | 97883 | 124075 | SAM | Normal | 06/11/2025 | Realizar estudos a fim de minimizar crescimento dos arquivos tempor�rios de banc |
 | 98705 | 123987 | SAM | Normal | 04/11/2025 | N�o est� sendo gerada a base de cr�dito correta para os impostos PIS e COFINS, q |
 | 97740 | 123880 | SAM | Normal | 30/10/2025 | Incluir a forma de pagamento "c�digo 91 = Pagamento Posterior" conforme Informe  |
@@ -268,17 +305,24 @@
 | 97807 | 123586 | SAM | Normal | 21/10/2025 | Contabilidade Digital: Contabilizar juros, multa e descontos dos eventos de paga |
 | 97572 | 123491 | SAM | Normal | 16/10/2025 | Estudar as etapas da atualiza��o a vers�o do PowerBuilder para 2022 R3. |
 | 98061 | 123490 | SAM | Normal | 16/10/2025 | Contabilidade Digital: Efetuar testes nos pontos impactados pela atualiza��o da  |
+| 97859 | 123288 | SAM | Normal | 09/10/2025 | Alterar interface e comportamentos do fluxo da estrutura do DRE |
+| 97822 | 123277 | SAM | Normal | 09/10/2025 | Criar as permissões para o menu DFC - Método direto. |
+| 98381 | 123188 | SAM | Normal | 06/10/2025 | Criar as permissões no menu DMPL. |
 | 97153 | 123168 | SAM | Normal | 06/10/2025 | Realizar testes na tabela "GEINFORMATIVOS_AUDITOR" em algum outro tipo de proces |
 | 97350 | 123136 | SAM | Normal | 03/10/2025 | GO-Atualizar a forma de gerar a guia DARE online conforme nova estrutura do site |
+| 97418 | 123030 | SAM | Normal | 30/09/2025 | Incluir botão de configurar saldos de contas contábeis no cadastro/edição das no |
 | 101095 | 123007 | SAM | Normal | 30/09/2025 | Incluir no processo de replica��o de Perfis de Empresa a Configura��o de Hist�ri |
 | 98079 | 122821 | SAM | Normal | 23/09/2025 | Listar as contas cont�beis e hist�ricos do Onvio Contabilidade no DW Escrita. |
+| 97395 | 122742 | SAM | Normal | 19/09/2025 | Incluir botão de inserir variáveis no cadastro/edição das notas explicativas. |
 | 96811 | 122735 | NE | Normal | 18/09/2025 | N�o est� retornando com o e-mail informando que os arquivos s�o inv�lidos e n�o  |
 | 96928 | 122664 | NE | Normal | 16/09/2025 | RJ-Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado !" ao gravar |
 | 98484 | 122663 | SAM | Normal | 16/09/2025 | Implementar filtros e relat�rios na tela de listagem de NFS-e API para visualiza |
 | 97641 | 122446 | SAL | Normal | 09/09/2025 | Criar op��o para escolher a origem dos d�bitos na emiss�o da guia DCTFWeb via AP |
+| 97030 | 122246 | SAM | Normal | 02/09/2025 | Aplicar permissões do menu Notas explicativas |
 | 96849 | 122228 | SAM | Normal | 01/09/2025 | Implementar no sistema para n�o ser exibido mensagem de aten��o exigindo que ten |
 | 96554 | 122220 | NE | Normal | 01/09/2025 | Est� sendo gerado indevidamente no Balancete Referencial do Banco Central 2025,  |
 | 96476 | 122199 | NE | Normal | 29/08/2025 | N�o est� desabilitando o bot�o "Centro de Custos" quando o bot�o "Consolidar Emp |
+| 97340 | 122172 | SAM | Normal | 28/08/2025 | Criar permissões no menu DLPA. |
 | 99348 | 122135 | SAM | Normal | 28/08/2025 | Alterar o sistema para demonstrar na tela "Resumo dos dados" e no relat�rio da g |
 | 96405 | 121992 | NE | Normal | 22/08/2025 | Est� sendo permitido gravar o mesmo c�digo de adi��o nos campos "Adi��o c�lculo  |
 | 96166 | 121932 | SAM | Normal | 20/08/2025 | Realizar um estudo para que seja poss�vel utilizar o Proxy do Windows (Navegador |
@@ -295,7 +339,9 @@
 | 101133 | 121247 | SAM | Normal | 28/07/2025 | Realizar a importa��o do Cadastro do Benefici�rio para a tela de cadastro do cli |
 | 95872 | 121065 | NE | Normal | 21/07/2025 | Em alguns casos est� ocorrendo erro ao tentar gerar o Relat�rio de Documentos Ar |
 | 101438 | 120749 | NE | Normal | 10/07/2025 | Est� gerando valores incorretos para a baixa do ICMS, quando realizada mais de u |
+| 96303 | 120710 | SAM | Normal | 09/07/2025 | Incluir validações no zeramento e fechamento quando existirem transações bancári |
 | 95283 | 120661 | SAM | Normal | 08/07/2025 | Reduzir o consumo de mem�ria carregando apenas as estruturas necess�rias no in�c |
+| 96036 | 120635 | NE | Normal | 07/07/2025 | Não está exibindo o ano no MonthPicker ao utilizar o componente dentro de um fil |
 | 95249 | 120627 | SAM | Normal | 07/07/2025 | Implementar no sistema um retry autom�tico e aviso para os cliente em casos onde |
 | 95250 | 120626 | SAM | Normal | 07/07/2025 | Implementar logs controlados pelo desenvolvimento para armazenar conte�dos das r |
 | 95251 | 120625 | SAM | Normal | 07/07/2025 | Fazer com que o hist�rico de notas recebidas na API e enviadas ao BOX-e seja man |
@@ -306,6 +352,7 @@
 | 95130 | 120463 | SAM | Normal | 01/07/2025 | Realizar um estudo para avaliar a possibilidade de criar uma op��o para redireci |
 | 95441 | 120428 | SAM | Normal | 30/06/2025 | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan�amentos j |
 | 95109 | 120419 | NE | Normal | 30/06/2025 | Est� sendo gerada a natureza de rendimento incorreta no informativo Reinf, quand |
+| 95127 | 120404 | NE | Normal | 27/06/2025 | Não está funcionando a ação de 'Imprimir' na barra de ferramentas dos relatórios |
 | 94964 | 120257 | NE | Normal | 23/06/2025 | CE-Est� apurando incorretamente o ICMS Monof�sico mesmo sem a informa��o no esto |
 | 99751 | 120226 | SAM | Normal | 20/06/2025 | Ajustar a Altera��o de Lan�amentos via Utilit�rios para n�o permitir a troca par |
 | 94875 | 120175 | NE | Normal | 17/06/2025 | Contabilidade Digital: N�o est� atualizando as contas de lan�amento composto qua |
@@ -322,10 +369,13 @@
 | 94538 | 119786 | SAM | Normal | 02/06/2025 | Realizar os testes na ferramenta ap�s atualiza��o do java corretto. |
 | 94644 | 119712 | NE | Normal | 30/05/2025 | Est� abrindo automaticamente os modelos de contrato mesmo quando a op��o "N�o ab |
 | 94478 | 119661 | NE | Normal | 28/05/2025 | Em alguns casos n�o est� sendo demonstrando na ordem correta a listagem de notas |
+| 98466 | 119542 | SAIL | Normal | 22/05/2025 | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
+| 97772 | 119540 | SAIL | Normal | 22/05/2025 | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
 | 94190 | 119340 | NE | Normal | 16/05/2025 | Est� fechando o sistema ao gerar o SPED Fiscal quando a empresa possui mais de 4 |
 | 94180 | 119293 | SAM | Normal | 14/05/2025 | Realizar a baixa de pagamento de impostos feitos pelo "Importador" referente ao  |
 | 94322 | 119271 | NE | Normal | 14/05/2025 | Est� apresentando erro de banco de dados ao gerar o Carn� Le�o Web, quando o arq |
 | 94179 | 119251 | SAM | Normal | 14/05/2025 | Realizar a baixa de pagamento de impostos feitos pela "Conta Azul" referente ao  |
+| 97385 | 119122 | SAIL | Normal | 08/05/2025 | Implementar o cadastro de Notas Explicativas. |
 | 93847 | 118715 | NE | Normal | 25/04/2025 | Em alguns casos, uma mesma rotina programada est� sendo apresentada em duas situ |
 | 93845 | 118714 | NE | Normal | 25/04/2025 | Em alguns casos o servi�o de endere�os n�o est� disponibilizando todos os c�digo |
 | 93177 | 118056 | SAM | Normal | 27/03/2025 | Realizar um estudo para implementar a leitura por Threads na importa��o SPED Fis |
@@ -336,23 +386,31 @@
 | 93003 | 117683 | SAM | Normal | 14/03/2025 | Contabilidade Digital: Criar rotina para editar o lan�amento de extrato na conta |
 | 94258 | 117409 | SAM | Normal | 07/03/2025 | Contabilidade Digital: Separar a tela de Configura��o para Contabilizar Extrato  |
 | 98672 | 116961 | SAM | Normal | 21/02/2025 | Contabilidade digital: Integrar o banco Nordeste �s op��es do Open Finance dispo |
+| 93083 | 116793 | SAL | Normal | 18/02/2025 | Alterar o sistema para aceitar o novo CNPJ com o formato alfanumérico conforme I |
 | 92043 | 116611 | SAM | Normal | 12/02/2025 | Reagistar mais informa��es referente ao recebimento de arquivos na API para que  |
 | 93629 | 116438 | SAM | Normal | 06/02/2025 | Contabilidade Digital: Replicar configura��es para contabilizar Extrato Banc�rio |
 | 91691 | 116141 | SAM | Normal | 27/01/2025 | Contabilidade Digital: Melhorar o controle das altera��es das configura��es de c |
 | 91964 | 115993 | NE | Normal | 21/01/2025 | N�o est� apresentando o valor do pago em meses anteriores na tela de dedu��es da |
 | 92410 | 115762 | NE | Normal | 09/01/2025 | Est� sendo deduzindo duas vezes o valor do desconto da base de c�lculo do 103-IN |
 | 91711 | 115713 | SAIL | Normal | 07/01/2025 | Alterar o sistema com a atualiza��o da tabela de NCM, conforme Informe T�cnico 2 |
+| 91601 | 115687 | NE | Normal | 07/01/2025 | Está apresentando indevidamente a mesma rotina em dois status: 'Em andamento ago |
 | 92527 | 115385 | SAM | Normal | 17/12/2024 | Implementar uma mensagem de aviso quando o usu�rio realizar importa��o de arquiv |
 | 90910 | 115309 | SAM | Normal | 13/12/2024 | Realizar testes para realizar o envio da DIOPs utilizando o JAVA 8 instalado dir |
 | 90857 | 115253 | SAM | Normal | 11/12/2024 | Realizar um estudo e implementa��o de uma nova tabela para o cat�logo de notas,  |
 | 94257 | 115214 | SAM | Normal | 10/12/2024 | Contabilidade Digital: Criar a op��o "Subtrai/Soma/Ambos" na configura��o por pa |
+| 90752 | 115102 | SAM | Normal | 05/12/2024 | Possibilitar o cadastro de novo contador e novo responsável legal pelas combobox |
 | 94566 | 115090 | SAM | Normal | 05/12/2024 | Contabilidade Digital: Implementar no sistema para que n�o apare�a no extrato ba |
 | 90787 | 115000 | NE | Normal | 02/12/2024 | Est� ocorrendo erro de banco de dados na tela "Receita Bruta", quando clicado no |
 | 101525 | 114858 | SAM | Normal | 27/11/2024 | Criar a op��o "Considerar as defini��es das contribui��es retidas na fonte (PIS, |
 | 90580 | 114749 | SAM | Normal | 25/11/2024 | Permitir que o sistema realiza a importa��o e Escritura��o das NFS-e do Padr�o N |
+| 90666 | 114734 | SAM | Normal | 25/11/2024 | Contabilidade digital: Incluir um ícone no header para apresentar a quantidade d |
 | 90445 | 114691 | SAM | Normal | 21/11/2024 | Realizar um estudo para melhorar o processo de acesso ao e-CAC.   |
+| 93088 | 114586 | SAM | Normal | 14/11/2024 | Contabilidade digital: Contabilizar as transações que ocorrerem entre contas da  |
+| 93561 | 114582 | SAM | Normal | 14/11/2024 | Contabilidade digital: Realizar busca e baixa de impostos na Central de pagament |
 | 91251 | 114546 | SAM | Normal | 13/11/2024 | Contabilidade Digital: Incluir filtro de compet�ncia inicial e final, demonstrar |
 | 90839 | 114517 | SAM | Normal | 13/11/2024 | Ajustar as telas de exporta��o de arquivos. |
+| 90324 | 114492 | SAM | Normal | 12/11/2024 | Criar mensagens mais intuitivas na integração contábil referente a transferência |
+| 93541 | 114468 | SAM | Normal | 11/11/2024 | Contabilidade digital: Realizar busca e baixa de impostos federais na Central de |
 | 101022 | 114414 | SAM | Normal | 07/11/2024 | RS-Importar para o produto o cr�dito presumido sobre produtos farmac�uticos prev |
 | 90200 | 114399 | SAM | Normal | 07/11/2024 | Realizar um estudo para identificar em alguns casos n�o s�o retornadas notas da  |
 | 96826 | 114127 | SAM | Normal | 29/10/2024 | Alterar o sistema para emitir uma mensagem mais explicativa quando tivermos inst |
@@ -362,6 +420,7 @@
 | 89330 | 113210 | SAM | Normal | 26/09/2024 | Realizar um estudo para viabilizar a cria��o de uma API n�o autenticada com fina |
 | 90972 | 113192 | SAM | Normal | 26/09/2024 | Contabilidade Digital: Criar separador das transa��es na tela de extrato. |
 | 92752 | 113176 | SAM | Normal | 25/09/2024 | Alterar o sistema para que seja poss�vel fazer a auditoria atrav�s do Kolossus A |
+| 90115 | 113164 | SAM | Normal | 25/09/2024 | Contabilidade digital: Criar a tela para apresentar os lançamentos de extrato ba |
 | 89266 | 113133 | SAM | Normal | 24/09/2024 | Realizar testes na Escrita Fiscal conforme a compila��o criada do Dom�nio na ver |
 | 89024 | 112900 | SAM | Normal | 16/09/2024 | Realizar estudos e monitorias para identificar os problemas que ocorrem quando a |
 | 88983 | 112855 | SAM | Normal | 13/09/2024 | Efetuar testes nas telas "Sele��o de empresas" ap�s implementa��o do filtro "Bus |
@@ -376,14 +435,18 @@
 | 88176 | 111897 | SAM | Normal | 09/08/2024 | Enviar cadastros de Fornecedores, Clientes e Produtos para a Conta Azul via API. |
 | 88024 | 111606 | SAM | Normal | 01/08/2024 | Verificar estrutura do banco de dados do DW em alguns clientes que est�o diferen |
 | 95092 | 111563 | SAIL | Normal | 01/08/2024 | BA-Implementar no sistema rotina para escritura��o de documento extempor�neo de  |
+| 88077 | 111514 | SAM | Normal | 30/07/2024 | Aumentar o filtro de pesquisa da 'Lista de lançamentos contábeis' para 24 meses. |
 | 87976 | 111505 | NE | Normal | 30/07/2024 | Est� sendo apresentado produtos na guia "Relacionamento de produtos" indevidamen |
 | 89840 | 111467 | SAIL | Normal | 29/07/2024 | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
 | 88279 | 110948 | SAM | Normal | 09/07/2024 | Efetuar testes nas telas "Sele��o de empresas" ap�s implementa��o do filtro "Bus |
 | 87471 | 110781 | NE | Normal | 03/07/2024 | Est� demonstrando o "Saldo Anterior" incorreto no relat�rio "Altera��o Plano de  |
 | 88761 | 110580 | SAM | Normal | 25/06/2024 | Criar mensagens mais intuitivas na integra��o cont�bil referente a transfer�ncia |
 | 87641 | 110427 | SAM | Normal | 19/06/2024 | Importar notas fiscais canceladas quando o arquivo possuir a Tag "NfseSubstituid |
+| 87056 | 110257 | SAM | Normal | 12/06/2024 | Aumentar os anos apresentados no filtro da lista de lançamentos contábeis |
 | 87997 | 110235 | SAM | Normal | 11/06/2024 | Criar valida��es para n�o permitir a altera��o ou exclus�o de cadastros quando e |
+| 87331 | 110114 | SAM | Normal | 05/06/2024 | Ajustar os processos de abandono nas telas de processamento. |
 | 86751 | 109836 | NE | Normal | 24/05/2024 | N�o est� demonstrando a quantidade de empresas n�o apuradas no dashboard de Apur |
+| 87569 | 109683 | SAM | Normal | 21/05/2024 | Limitar data para que movimentos, consultas e relatórios só possam ser feitos e/ |
 | 99255 | 109366 | SAIL | Normal | 09/05/2024 | Implementar no sistema op��o para consultar e realizar a baixa dos impostos pela |
 | 86315 | 109275 | SAM | Normal | 07/05/2024 | PR-Adaptar o sistema para gerar a guia GR-PR conforme nova estrutura do site.  |
 | 98024 | 108644 | SAM | Normal | 12/04/2024 | Permitir inserir de uma vez todas as contas filhas da sint�tica de �ltimo n�vel  |
@@ -407,18 +470,23 @@
 | 84261 | 105955 | SAM | Normal | 30/01/2024 | Atualizar o design de permiss�es de usu�rio e implementar controle de acesso por |
 | 88138 | 105949 | SAM | Normal | 30/01/2024 | Enviar cadastros de Fornecedores, Clientes e Produtos para a Conta Azul via API. |
 | 88919 | 105843 | SAIL | Normal | 29/01/2024 | Implementar o c�lculo dos Anexos I e II do Simples Nacional no Onvio. |
+| 84741 | 105830 | SAM | Normal | 26/01/2024 | Atualizar o design das permissões de usuário e criar permissões por empresa. |
 | 101021 | 105563 | SAIL | Normal | 19/01/2024 | RS-Implementar o c�lculo do Cr�dito presumido sobre produtos farmac�uticos previ |
 | 84210 | 105430 | SAM | Normal | 16/01/2024 | Contabilizar os bens mantidos para venda por centro de custos. |
+| 83888 | 105367 | SAM | Normal | 15/01/2024 | Permitir a Folha indicar o status do eSocial na listagem e cadastro de empresa. |
 | 83853 | 105103 | SAM | Normal | 10/01/2024 | Considerar a mesma conta cont�bil quando ocorrer mais de um cadastro de clientes |
 | 83360 | 104219 | SAM | Normal | 14/12/2023 | Realizar testes explorat�rios dos envios para a Conta Azul. |
 | 84301 | 104157 | SAIL | Normal | 13/12/2023 | Criar o step 'Escritura��o' no Cadastro de produtos |
 | 85899 | 104133 | SAIL | Normal | 12/12/2023 | Implementar a emiss�o do relat�rio dos Tributos Federais e alterar o comportamen |
 | 83232 | 104021 | SAM | Normal | 08/12/2023 | Alterar para o navegador Chromium a op��o "Guia Avulso" da tela de emiss�o do DA |
 | 83206 | 103910 | NE | Normal | 05/12/2023 | Em alguns casos o sistema fecha ao realizar a exclus�o de contas referenciais pe |
+| 97280 | 103491 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
+| 98297 | 103490 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração das Mutações do Patrimônio Líquido |
 | 82856 | 103397 | SAM | Normal | 17/11/2023 | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
 | 83721 | 103207 | SAM | Normal | 13/11/2023 | Otimizar a importa��o do registro L210 do Sped ECF. |
 | 83041 | 103199 | NE | Normal | 13/11/2023 | N�o est� habilitando o campo "Natureza Jur�dica" na altera��o contratual, quando |
 | 82737 | 103108 | SAM | Normal | 09/11/2023 | Otimizar a gera��o do SCRIPT do registro D190 do Sped Fiscal para a movimenta��o |
+| 83854 | 103058 | SAM | Normal | 08/11/2023 | Permitir exportar as listagens em Excel. |
 | 85199 | 103020 | SAM | Normal | 08/11/2023 | Realizar valida��es ao Excluir o cadastro de um ou v�rios produtos vinculados �  |
 | 88623 | 102987 | SAM | Normal | 07/11/2023 | Ajustar o sistema para atualizar a vers�o do Chrome via SGD. |
 | 83039 | 102770 | NE | Normal | 31/10/2023 | Est� apresentando erro de banco de dados ao tentar gravar um lan�amento de adi�� |
@@ -432,6 +500,7 @@
 | 84283 | 100716 | SAM | Normal | 21/08/2023 | Criar op��o "Emitir contas com saldo zero" no relat�rio "Comparativo de Moviment |
 | 91906 | 100575 | SAM | Normal | 17/08/2023 | Alterar os t�tulos do plural para o singular de algumas telas do sistema conform |
 | 91945 | 100571 | SAM | Normal | 17/08/2023 | Efetuar ajustes das mensagens de valida��o em rela��o as altera��es das datas de |
+| 81547 | 100537 | SAM | Normal | 16/08/2023 | Enviar o plano de contas via API Conta Azul com o vínculo do cadastro de partici |
 | 80832 | 99979 | NE | Normal | 02/08/2023 | ES-N�o est� sendo importado a base de cr�dito de PIS/COFINS conforme configura�� |
 | 81856 | 99268 | SAM | Normal | 17/07/2023 | Exibir o percentual de Ganho/Perda dos Combust�veis por data na tela Movimentos/ |
 | 80822 | 98662 | SAM | Normal | 30/06/2023 | CE-Atualizar a emiss�o da guia 'DAE - ICMS Online' no navegador Chromium. |
@@ -715,10 +784,10 @@
 
 | Tema | Ocorrencias |
 |------|-------------|
-| st | 22872 |
+| st | 23111 |
 | icms | 3844 |
-| iss | 2409 |
-| rat | 1783 |
+| iss | 2432 |
+| rat | 1799 |
 | pis | 1336 |
 
 ## Descartadas Recentes (10 mais recentes)

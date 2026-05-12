@@ -1,10 +1,10 @@
 ﻿# Escrituracao e movimento fiscal
 
 > Dominio Escrita Fiscal | slug `escrituracao-movimento-fiscal`
-> Atualizado em: 11/05/2026 15:39
-> Pendentes: 220 | Liberadas: 10762 | Descartadas: 1103 | Total SAIs: 12084
+> Atualizado em: 12/05/2026 13:31
+> Pendentes: 226 | Liberadas: 10763 | Descartadas: 1104 | Total SAIs: 12092
 
-## Pendentes (220)
+## Pendentes (226)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
@@ -42,6 +42,7 @@
 | 100357 | 128465 | NE | Normal | 25/02/2026 | N�o est� sendo atualizado corretamente o cat�logo de notas do Busca NF-e no Cont |
 | 100287 | 128438 | NE | Normal | 25/02/2026 | Est� sendo importado incorretamente o valor da "Diferen�a entre o valor cont�bil |
 | 101186 | 128436 | NE | Normal | 25/02/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
+| 100571 | 128355 | SAIL | Normal | 23/02/2026 | Implementar a geração do bloco Y para empresas do Lucro Presumido na geração do  |
 | 100847 | 128299 | SAL | Normal | 23/02/2026 | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
 | 100139 | 128280 | SAM | Normal | 20/02/2026 | Implementar ferramenta para precifica��o de produtos e servi�os. |
 | 101309 | 128218 | SAIL | Normal | 19/02/2026 | Implementar a escritura��o da Nota de D�bito do tipo '06-Pagamento antecipado' e |
@@ -57,12 +58,16 @@
 | 100751 | 126795 | SAL | Normal | 21/01/2026 | Alterar o sistema para considerar a dedu��o do CT-e substituto no c�lculo do Sim |
 | 99852 | 126630 | SAL | Normal | 19/01/2026 | Incluir o CNAE 8220-2/00 nos par�metros para c�lculo do INSS Receita Bruta. |
 | 101300 | 126497 | SAM | Normal | 14/01/2026 | Permitir importar o tipo de isen��o 2-Di�ria de viagem na importa��o de entradas |
+| 99955 | 126446 | SAM | Normal | 14/01/2026 | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99437 | 126341 | SAL | Normal | 12/01/2026 | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os lan�ament |
 | 98888 | 125949 | SAM | Normal | 30/12/2025 | Realizar testes conforme nova funcionalidade de gerenciamento de certificados di |
 | 101305 | 125948 | SAIL | Normal | 30/12/2025 | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o de entrega' |
 | 98666 | 125642 | SAM | Normal | 18/12/2025 | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do servidor d |
 | 98793 | 125639 | SAM | Normal | 18/12/2025 | Otimizar as DWs 'dws_pis_cofins_nc_soma_debitos_dados_entradas' e 'dws_pis_cofin |
+| 99954 | 125365 | SAIL | Normal | 11/12/2025 | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
+| 99952 | 125364 | SAIL | Normal | 11/12/2025 | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivos gerados. |
 | 100988 | 125146 | SAL | Normal | 08/12/2025 | Alterar o sistema para calcular o valor dos contratos de Empresas Simples de Cr� |
+| 99947 | 124829 | SAIL | Normal | 28/11/2025 | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9. |
 | 98302 | 124798 | SAM | Normal | 27/11/2025 | MG-Otimizar as DWs 'dw_mg_demonstrativo_credito_presumido_ret_dados_saidas' e 'd |
 | 98907 | 124455 | SAM | Normal | 19/11/2025 | Criar API no Onvio para ser poss�vel que sistemas externos consultem NCM/NBS e s |
 | 98095 | 124328 | SAM | Normal | 14/11/2025 | Realizar um estudo para realizar a emiss�o da nota fiscal de ajuste e gera��o do |
@@ -86,6 +91,7 @@
 | 93436 | 117901 | SAM | Normal | 21/03/2025 | Criar relat�rios detalhados de Clientes e Fornecedores por regime de apura��o no |
 | 91711 | 115713 | SAIL | Normal | 07/01/2025 | Alterar o sistema com a atualiza��o da tabela de NCM, conforme Informe T�cnico 2 |
 | 101022 | 114414 | SAM | Normal | 07/11/2024 | RS-Importar para o produto o cr�dito presumido sobre produtos farmac�uticos prev |
+| 89797 | 113524 | SAIL | Normal | 08/10/2024 | Criar as origens 'Entradas EF' e 'Saídas EF' para contabilizar lançamentos de No |
 | 90610 | 113115 | SAM | Normal | 24/09/2024 | Incluir na apresenta��o do dashboard 'Importa��o de notas' o fluxo de importa��o |
 | 96124 | 112936 | SAM | Normal | 17/09/2024 | Criar as op��es de sele��o "Todos", "Nenhum" e "Inverter" para selecionar todas  |
 | 87976 | 111505 | NE | Normal | 30/07/2024 | Est� sendo apresentado produtos na guia "Relacionamento de produtos" indevidamen |

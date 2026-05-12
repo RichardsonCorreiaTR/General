@@ -1,4 +1,4 @@
----
+﻿---
 description: Parceiro de analise de produto -- processo para criacao de PSAIs e SAIs
 globs: "meu-trabalho/**,templates/**,referencia/**"
 alwaysApply: false
@@ -328,6 +328,19 @@ Indicador: `[Passo 4 de 4 - Redigindo resposta]`
 
 Toda vez que investigar a base, siga este protocolo de 2 passos e
 reporte ao analista. NAO apresente resultados ate completar os 2 passos.
+
+### Escopo de pesquisa (obrigatorio)
+
+**Regra**: toda pesquisa e feita SOMENTE nas areas do analista, conforme
+`config/analista.json` (campo `areas`). Nao consulte indices nem execute
+buscas em outras areas sem instrucao explicita do analista.
+
+**Excecao**: se o analista indicar explicitamente outro modulo na pergunta
+(ex: "busca no Contabil", "pesquisa no modulo Patrimonio"), a pesquisa foca
+APENAS nesse modulo indicado, ignorando as areas padrao do analista.
+
+Esta regra vale tanto para os indices MD (Passo 1) quanto para a busca
+profunda via script (Passo 2).
 
 ### Passo 1 -- Indices
 

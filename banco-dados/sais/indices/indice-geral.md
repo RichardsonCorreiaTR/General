@@ -1,30 +1,30 @@
 ﻿# Indice de SAIs/PSAIs - Escrita Fiscal
 
-> Atualizado em: 06/05/2026 09:02
-> Total: 65016 registros
+> Atualizado em: 12/05/2026 13:31
+> Total: 65891 registros
 
 ## Por tipo
 
 | Tipo | Quantidade |
 |------|-----------|
-| NE | 21311 |
-| SAM | 27498 |
-| SAL | 12042 |
-| SAIL | 4165 |
+| NE | 21649 |
+| SAM | 27991 |
+| SAL | 12056 |
+| SAIL | 4195 |
 
 ## Por status
 
 | Status | Quantidade |
 |--------|-----------|
-| Liberada | 29930 |
-| Descartada | 18386 |
-| Pendente | 16788 |
+| Liberada | 30367 |
+| Descartada | 18706 |
+| Pendente | 17014 |
 
 ## Versoes recentes (ultimas 10)
 
 | Versao | Total | NE | SAM | SAL | SAIL |
 |--------|-------|----|-----|-----|------|
-|  | 35037 | 8341 | 19305 | 4929 | 2462 |
+|  | 35580 | 8520 | 19633 | 4941 | 2486 |
 | 8.2C-04 | 286 | 162 | 43 | 67 | 14 |
 | 10.0A-03 | 279 | 147 | 52 | 73 | 7 |
 | 10.0A-01 | 272 | 135 | 53 | 76 | 8 |
