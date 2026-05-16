@@ -1,13 +1,16 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 12/05/2026 13:31
-> Total SAIs unicas: 1725
+> Atualizado em: 16/05/2026 00:10
+> Total SAIs unicas: 1729
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 0 | 130497 |  | Normal | 30/04/2026 | ID 0 | - |
+| 0 | 130636 |  | Normal | 11/05/2026 | ID 0 | - |
+| 101549 | 130532 |  | Normal | 04/05/2026 | SAI Aprovada | Est� ocorrendo erro de banco de dados 'EFSDOIMP_RECEITA_IMPOSTOS_MAJORACAO_SCP'  |
 | 101489 | 130444 |  | Normal | 28/04/2026 | SAI Aprovada | N�o est�o sendo gerados todos os s�cios no relat�rio "Comprovante Anual de Reten |
+| 101275 | 130155 |  | Normal | 16/04/2026 | SAI Aprovada | N�o est�o sendo enviadas as atualiza��es das contas cont�beis para Conta Azul qu |
 | 101181 | 130055 |  | Normal | 13/04/2026 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no M�dulo Folha quando real |
+| 100943 | 129661 |  | Normal | 30/03/2026 | SAI Aprovada | Est� habilitando indevidamente a guia "Relacionamento de produtos" no resumo de  |
 | 100427 | 128943 |  | Normal | 10/03/2026 | SAI Aprovada | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
 | 100203 | 128585 |  | Normal | 27/02/2026 | SAI Aprovada | Em alguns casos est� ocorrendo erro ao gerar o relat�rio de Comprovante Eletr�ni |
 | 100008 | 128043 |  | Normal | 13/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está exibindo incorretamente os arquivos OFX/OFC importados na tela de Consulta  |
@@ -20,6 +23,7 @@
 | 99969 | 127953 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está permitindo excluir lançamentos pendentes. |
 | 99885 | 127956 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
 | 99967 | 127948 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está demonstrando incorretamente o campo 'Histórico' na tela de Lançamento contá |
+| 100076 | 127937 |  | Normal | 12/02/2026 | SAI Aprovada | Est� sendo apresentada indevidamente a mensagem de erro "C�digo de atividade n�o |
 | 99842 | 127896 |  | Grave | 11/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está ocorrendo o zeramento das contas ou está zerando contas que não possuem |
 | 99858 | 127770 |  | Normal | 09/02/2026 | SAI Aprovada | Não está validando erro em alerta quando se trata de uma única empresa e um únic |
 | 99781 | 127722 |  | Normal | 09/02/2026 | SAI Aprovada | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Regime Tribu |

@@ -1,20 +1,21 @@
 ﻿# Obrigacoes e relatorios estaduais
 
 > Dominio Escrita Fiscal | slug `obrigacoes-relatorios-estaduais`
-> Atualizado em: 12/05/2026 13:31
-> Pendentes: 97 | Liberadas: 3060 | Descartadas: 361 | Total SAIs: 3512
+> Atualizado em: 16/05/2026 00:10
+> Pendentes: 98 | Liberadas: 3063 | Descartadas: 361 | Total SAIs: 3516
 
-## Pendentes (97)
+## Pendentes (98)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101705 | 130704 | SAM | Normal | 12/05/2026 | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL adotado pelo |
+| 101675 | 130664 | SAM | Normal | 11/05/2026 | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para zerar o NSU  |
+| 101686 | 130530 | NE | Normal | 04/05/2026 | N�o est� sendo gerada a linha "(-) Divulga��o Eleitoral e Partid�ria Gratuita" n |
 | 101555 | 130339 | NE | Normal | 24/04/2026 | Est� sendo demonstrado o n�mero do documento e o CNPJ do fornecedor incorretos n |
-| 101374 | 130288 | NE | Normal | 22/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
-| 101341 | 130238 | NE | Normal | 20/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
+| 101713 | 130208 | NE | Normal | 20/04/2026 | Est� sendo demonstrado incorretamente o valor de "Al�quota Efetiva por imposto"  |
 | 101561 | 130179 | SAL | Normal | 17/04/2026 | MS-Alterar a escritura��o do Cr�dito Presumido de Hortifrutigranjeiros, conforme |
 | 101314 | 129992 | NE | Normal | 10/04/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
 | 101011 | 129356 | SAL | Normal | 20/03/2026 | SP-Adequar o sistema para permitir realizar lan�amentos de ajustes de 'Outros d� |
-| 100741 | 129097 | SAL | Normal | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 101100 | 128886 | NE | Normal | 06/03/2026 | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lculo" do re |
 | 100539 | 128808 | NE | Normal | 04/03/2026 | Est� sendo gerado indevidamente a mensagem 'O relat�rio deve ser emitido na empr |
 | 101161 | 126935 | NE | Normal | 23/01/2026 | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no relat�rio demo |
@@ -110,8 +111,11 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101374 | 130288 | NE | 22/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
+| 101341 | 130238 | NE | 20/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
 | 100898 | 129624 | NE | 27/03/2026 | MT-Est� desmarcando automaticamente a op��o "Acesso ao portal - SEFAZ" ao gravar |
 | 100873 | 129568 | NE | 26/03/2026 | Est� sendo gerado o valor incorreto na linha "5.Lucros e dividendos, apurados a  |
+| 100741 | 129097 | SAL | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 100517 | 129061 | NE | 12/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
 | 100498 | 129001 | NE | 11/03/2026 | Est� sendo apresentada indevidamente a mensagem "A soma dos campos 'Valor fornec |
 | 100417 | 128896 | NE | 09/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
@@ -137,16 +141,13 @@
 | 98507 | 124961 | NE | 02/12/2025 | Est� apresentando indevidamente o erro de importa��o "Destinat�rio do CT-e � dif |
 | 100020 | 124951 | SAL | 02/12/2025 | GO-Alterar o sistema para que o 'Cr�dito presumido PROTEGE' e os lan�amentos rea |
 | 98816 | 124849 | SAL | 28/11/2025 | MG-Atualizar os dados da empresa desenvolvedora no relat�rio de pedido de uso mo |
-| 99395 | 124848 | SAL | 28/11/2025 | SC-Ajustar o SPED Fiscal para n�o gerar o registro E200 e filhos para o imposto  |
-| 98251 | 124707 | NE | 26/11/2025 | Est� solicitando indevidamente a sele��o de certificado na importa��o NF-e SEFAZ |
-| 98235 | 124672 | NE | 25/11/2025 | DF-Est� apresentando a advert�ncia "Os valores do ICMS ST Retido n�o podem ser i |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| demonstrativo | 599 |
-| sefaz | 477 |
+| demonstrativo | 601 |
+| sefaz | 478 |
 | gia | 462 |
 | estadual | 459 |
 | uf | 402 |

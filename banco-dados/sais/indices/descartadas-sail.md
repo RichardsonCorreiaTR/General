@@ -1,6 +1,6 @@
 ﻿# SAIL Descartadas - Escrita Fiscal
 
-> Atualizado em: 12/05/2026 13:31
+> Atualizado em: 16/05/2026 00:10
 > Total SAIs unicas: 82
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |

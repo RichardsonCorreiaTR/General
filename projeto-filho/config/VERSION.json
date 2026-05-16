@@ -1,1 +1,1 @@
-﻿{"compativel_com_admin":"2.5","changelog":"Fix: busca SGD automatica para comportamento/definicao vazios com i_sai\u003e0; regra guardiao atualizada com deteccao correta de PSAIs sem SAI vinculada","data":"2026-05-12","hash_validacao":"","versao":"2.4.30"}
+﻿{"compativel_com_admin":"2.5","changelog":"Fix: extracao por area/sistema (merge preserva areas existentes); pausa automatica ao cair zScaler; SKIP de PSAIs com erro (batch=1); agente-produto publica log automaticamente","data":"2026-05-16","hash_validacao":"","versao":"2.4.32"}

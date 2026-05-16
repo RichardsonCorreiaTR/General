@@ -1,16 +1,18 @@
 ﻿# Contabilidade
 
 > Dominio Escrita Fiscal | slug `contabilidade`
-> Atualizado em: 12/05/2026 13:31
-> Pendentes: 162 | Liberadas: 2707 | Descartadas: 352 | Total SAIs: 3202
+> Atualizado em: 16/05/2026 00:10
+> Pendentes: 166 | Liberadas: 2709 | Descartadas: 352 | Total SAIs: 3208
 
-## Pendentes (162)
+## Pendentes (166)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 130604 | NE | Normal | 06/05/2026 | - |
+| 0 | 130779 | NE | Normal | 14/05/2026 | - |
+| 101749 | 130552 | NE | Normal | 04/05/2026 | Est� filtrando incorretamente as contas na tela 'Consulta Class F4' quando a emp |
 | 101556 | 130509 | NE | Normal | 30/04/2026 | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o plano de con |
 | 101491 | 130440 | SAM | Normal | 28/04/2026 | Alterar o sistema para enviar o Plano de contas compactado em GZIP para a Conta  |
+| 101617 | 130441 | SAM | Normal | 28/04/2026 | Testar o envio do plano de contas e o recebimento de lan�amentos do Conta Azul. |
 | 101528 | 130372 | NE | Normal | 24/04/2026 | Est� sendo considerado a natureza do saldo da conta ao inv�s da natureza do sald |
 | 101523 | 130327 | NE | Normal | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
 | 101381 | 130316 | SAM | Normal | 23/04/2026 | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
@@ -40,8 +42,8 @@
 | 100737 | 128718 | NE | Normal | 03/03/2026 | Est� ocorrendo o erro 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao realizar a i |
 | 101186 | 128436 | NE | Normal | 25/02/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
 | 99863 | 127848 | SAM | Normal | 10/02/2026 | Disponibilizar para a Plataforma a informação de que a empresa tem ou não a para |
-| 99777 | 127665 | NE | Normal | 06/02/2026 | N�o carrega transa��o para Concilia��o manual de filial |
 | 99890 | 127267 | SAM | Normal | 29/01/2026 | Integração Onvio x DW - Realizar a integração dos lançamentos contábeis das nota |
+| 101634 | 126597 | SAM | Normal | 16/01/2026 | Otimizar o c�lculo da Deprecia��o Societ�ria. |
 | 99047 | 126236 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-12. |
 | 99046 | 126235 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-11. |
 | 99044 | 126234 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-10. |
@@ -130,6 +132,7 @@
 | 84673 | 106107 | SAM | Normal | 01/02/2024 | Criar a op��o "Emitir valores negativos entre par�nteses", no relat�rio "Rateio  |
 | 84387 | 105602 | SAM | Normal | 19/01/2024 | Permitir visualizar valores com at� um bilh�o nas colunas "D�bito" e "Cr�dito" e |
 | 84210 | 105430 | SAM | Normal | 16/01/2024 | Contabilizar os bens mantidos para venda por centro de custos. |
+| 101642 | 104337 | SAM | Normal | 18/12/2023 | Permitir informar de 1 a 12 colunas nos relat�rios de An�lise horizontal do bala |
 | 83355 | 104139 | SAM | Normal | 12/12/2023 | Otimizar processo de emitir o raz�o em tela. |
 | 84233 | 103487 | SAM | Normal | 21/11/2023 | Criar assinatura com o certificado digital nos relatórios da contabilidade. |
 | 81547 | 100537 | SAM | Normal | 16/08/2023 | Enviar o plano de contas via API Conta Azul com o vínculo do cadastro de partici |
@@ -143,6 +146,7 @@
 | 83997 | 67931 | SAIL | Normal | 18/09/2019 | Permitir centralizar empresas matriz e filial com inscri��o CAEPF. |
 | 80554 | 58129 | SAM | Normal | 27/09/2018 | Criar bot�o "Replicar" na tela  "Configurar integra��o por centro de custos".    |
 | 81542 | 55833 | SAM | Normal | 06/07/2018 | Criar utilit�rio de altera��o da taxa de deprecia��o fiscal alternativa. |
+| 101646 | 54587 | SAM | Normal | 22/05/2018 | Criar op��o para emiss�o do DRE de forma mensal e trimestral dentro do per�odo i |
 | 52079 | 52974 | SAIL | Normal | 21/03/2018 | Implementar op��o para inutilizar o espa�o em branco nas p�ginas nos relat�rios  |
 | 70203 | 52499 | SAM | Normal | 09/03/2018 | Otimizar o processo de gera��o do relat�rio balancete. |
 | 51905 | 52430 | SAM | Normal | 07/03/2018 | Criar op��o para visualizar a Agenda de Obriga��es do Integra considerando as co |
@@ -175,6 +179,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101685 | 130604 | NE | 06/05/2026 | Est� exibindo a mensagem 'Sem dados para emitir' ao emitir o Balan�o com o model |
 | 101444 | 130388 | SAM | 27/04/2026 | Melhorar performance para evitar gargalos no DW |
 | 101313 | 130132 | SAL | 15/04/2026 | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
 | 100902 | 129482 | NE | 24/03/2026 | Est� gerando valores incorretos para os registros K155, K156 e L100 do informati |
@@ -194,6 +199,7 @@
 | 100001 | 128015 | NE | 13/02/2026 | Em alguns casos est� apresentando erro de banco de dados na tabela 'CTSPED_CONTA |
 | 99967 | 127948 | NE | 12/02/2026 | Está demonstrando incorretamente o campo 'Histórico' na tela de Lançamento contá |
 | 99806 | 127809 | NE | 10/02/2026 | Est� ocorrendo erro Maleta Vermelha "Contabilidade Digital Baixa Parcela NF" |
+| 99777 | 127665 | NE | 06/02/2026 | N�o carrega transa��o para Concilia��o manual de filial |
 | 99815 | 127594 | SAM | 04/02/2026 | Verificar template dos e-mails enviados pelo Onvio Contabilidade após ajuste da  |
 | 99548 | 127176 | NE | 28/01/2026 | O sistema n�o est� respeitando o filtro "Ocultar contas cont�beis vinculadas ao  |
 | 99568 | 127111 | SAL | 27/01/2026 | Alterar o cabe�alho do arquivo DIOPS de 2026. |
@@ -203,8 +209,6 @@
 | 99394 | 126639 | NE | 19/01/2026 | N�o est� considerando o filtro do bot�o "Centros de Custos" do Balancete, quando |
 | 99269 | 126605 | SAM | 16/01/2026 | Identificar clientes locais que usam Centro de Custos e exclu�ram empresa ap�s a |
 | 99311 | 126586 | NE | 16/01/2026 | Em alguns casos, as contas n�o s�o ordenadas alfabeticamente no Balancete quando |
-| 99236 | 126538 | NE | 15/01/2026 | Est� sendo exclu�do o centro de custo dos lan�amentos de todas as empresas, quan |
-| 99225 | 126528 | NE | 15/01/2026 | Est� sendo apresentado de forma incorreta os centros de custos no Balancete e Ba |
 
 ## Temas Frequentes
 
@@ -212,7 +216,7 @@
 |------|-------------|
 | contabilidade | 598 |
 | plano de contas | 251 |
-| centro de custo | 184 |
+| centro de custo | 185 |
 | dre | 178 |
 | balancete | 167 |
 

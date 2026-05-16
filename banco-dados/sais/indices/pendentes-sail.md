@@ -1,6 +1,6 @@
 ﻿# SAIL Pendentes - Escrita Fiscal
 
-> Atualizado em: 12/05/2026 13:31
+> Atualizado em: 16/05/2026 00:10
 > Total pendentes: 1666
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
@@ -26,7 +26,7 @@
 | 101306 | 130042 |  | 13/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112150 - Atualiza��o da data de previ |
 | 0 | 130011 |  | 13/04/2026 | ID 0 | - |
 | 101157 | 129940 |  | 08/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
-| 101159 | 129936 | 10.6A-05 | 08/04/2026 | Respondido Gerente de Testes | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
+| 101159 | 129936 | 10.6A-05 | 08/04/2026 | Aguardando Resposta do Desenvolvimento | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
 | 0 | 129925 |  | 08/04/2026 | ID 0 | - |
 | 0 | 129842 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129836 |  | 06/04/2026 | ID 0 | - |
@@ -112,7 +112,7 @@
 | 0 | 126036 |  | 05/01/2026 | ID 0 | - |
 | 0 | 126035 |  | 05/01/2026 | ID 0 | - |
 | 0 | 126033 |  | 05/01/2026 | ID 0 | - |
-| 101305 | 125948 |  | 30/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o de entrega' |
+| 101305 | 125948 |  | 30/12/2025 | Retorno de Teste | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o de entrega' |
 | 0 | 125886 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125885 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125839 |  | 23/12/2025 | ID 0 | - |

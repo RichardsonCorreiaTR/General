@@ -1,13 +1,14 @@
 ﻿# Utilitarios e rotinas
 
 > Dominio Escrita Fiscal | slug `utilitarios-rotinas`
-> Atualizado em: 12/05/2026 13:31
-> Pendentes: 68 | Liberadas: 693 | Descartadas: 99 | Total SAIs: 857
+> Atualizado em: 16/05/2026 00:10
+> Pendentes: 69 | Liberadas: 693 | Descartadas: 99 | Total SAIs: 858
 
-## Pendentes (68)
+## Pendentes (69)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101718 | 130663 | NE | Normal | 11/05/2026 | Est�o sendo corrompidos os arquivos XML com o atributo de namespace inserido inc |
 | 101572 | 130569 | SAM | Normal | 05/05/2026 | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa��o no DW. |
 | 101571 | 130564 | SAM | Normal | 05/05/2026 | Incluir os comandos SQL referente aos problemas de travamento no agente de comun |
 | 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |

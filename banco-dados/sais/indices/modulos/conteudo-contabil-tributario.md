@@ -1,14 +1,15 @@
 ﻿# Conteúdo Contábil Tributário
 
 > Dominio Escrita Fiscal | slug `conteudo-contabil-tributario`
-> Atualizado em: 12/05/2026 13:31
-> Pendentes: 22 | Liberadas: 914 | Descartadas: 72 | Total SAIs: 1007
+> Atualizado em: 16/05/2026 00:10
+> Pendentes: 24 | Liberadas: 914 | Descartadas: 72 | Total SAIs: 1009
 
-## Pendentes (22)
+## Pendentes (24)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 101592 | 130556 | SAL | Normal | 05/05/2026 | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de 30/04/2026 |
+| 101758 | 130507 | NE | Normal | 30/04/2026 | Est� importando os valores do registro Y570 do informativo SPED ECF incorretamen |
 | 101357 | 129974 | SAM | Normal | 09/04/2026 | Gerar o SPED ECF considerando o plano de contas vigente no período do informativ |
 | 101040 | 129818 | NE | Normal | 02/04/2026 | Est� importando incorretamente os valores do registro Y730 do informativo SPED E |
 | 100814 | 129461 | SAM | Normal | 24/03/2026 | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED ECF para  |
@@ -29,6 +30,7 @@
 | 83721 | 103207 | SAM | Normal | 13/11/2023 | Otimizar a importa��o do registro L210 do Sped ECF. |
 | 82688 | 80716 | SAM | Normal | 01/02/2021 | Otimizar a abertura do bot�o 'Outros Dados' do informativo SPED ECF.  |
 | 86314 | 59298 | SAM | Normal | 14/11/2018 | Incluir barra de progress�o na emiss�o dos informativos SPED Cont�bil e SPED ECF |
+| 101746 | 51698 | SAM | Normal | 31/01/2018 | Criar cadastro de Dirigentes e Conselheiros para preenchimento do registro Y612  |
 | 36273 | 22184 | SAM | Normal | 29/06/2015 | Alterar o sistema para que seja poss�vel realizar a importa��o do plano referenc |
 
 ## Liberadas Recentes (30 mais recentes)

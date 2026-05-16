@@ -1,4 +1,15 @@
-﻿# Changelog - Projeto Filho
+﻿## v2.4.32 — 2026-05-16
+
+- Fix: extracao por area/sistema — modo merge preserva fracionados das demais areas ao usar -SomenteAreas
+- Fix: pausa automatica com Enter ao cair zScaler (retoma sem reiniciar)
+- Fix: modo batch=1 com SKIP de PSAIs com erro para diagnostico
+- Fix: agente-produto.mdc publica log automaticamente apos cada interacao
+- Fix: encoding UTF-8 limpo nos scripts (elimina caracteres invisiveis)
+
+## v2.4.31 — 2026-05-13
+
+- Fix: gente-produto.mdc agora publica log automaticamente em eferencia/logs/YYYY-MM-DD.md e executa Publicar-LogParaConsolidacao.ps1 ao final de cada interacao substancial, sem exigir acao do analista.
+# Changelog - Projeto Filho
 
 ## v2.4.27 - 06/05/2026
 
@@ -220,6 +231,8 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
+
 
 
 

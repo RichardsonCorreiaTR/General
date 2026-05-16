@@ -1,11 +1,11 @@
 ﻿# SAL Descartadas - Escrita Fiscal
 
-> Atualizado em: 12/05/2026 13:31
+> Atualizado em: 16/05/2026 00:10
 > Total SAIs unicas: 137
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 130307 |  | 23/04/2026 | ID 0 | - |
+| 0 | 130651 |  | 11/05/2026 | ID 0 | - |
 | 100423 | 128936 |  | 10/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para que consiga seguir no captcha para emiss�o do DAS, DEFIS  |
 | 100115 | 128385 |  | 24/02/2026 | SAI Aprovada | Ajustar a transmiss�o da DEFIS observando as altera��es recentes da p�gina. |
 | 99213 | 126395 |  | 13/01/2026 | SAI Aprovada | SP - Garantir funcionamento da integra��o do Cr�dito de ICMS com Escrita devido  |

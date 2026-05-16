@@ -329,6 +329,19 @@ Indicador: `[Passo 4 de 4 - Redigindo resposta]`
 Toda vez que investigar a base, siga este protocolo de 2 passos e
 reporte ao analista. NAO apresente resultados ate completar os 2 passos.
 
+### Escopo de pesquisa (obrigatorio)
+
+**Regra**: toda pesquisa e feita SOMENTE nas areas do analista, conforme
+`config/analista.json` (campo `areas`). Nao consulte indices nem execute
+buscas em outras areas sem instrucao explicita do analista.
+
+**Excecao**: se o analista indicar explicitamente outro modulo na pergunta
+(ex: "busca no Contabil", "pesquisa no modulo Patrimonio"), a pesquisa foca
+APENAS nesse modulo indicado, ignorando as areas padrao do analista.
+
+Esta regra vale tanto para os indices MD (Passo 1) quanto para a busca
+profunda via script (Passo 2).
+
 ### Passo 1 -- Indices
 
 Leia os indices nesta ordem:
@@ -730,8 +743,41 @@ retomar, leia o JSON da task. Use `achados_resumo`, `historico` e
 
 ## Log de atividades
 
-Apos cada interacao substancial, registre no log seguindo o formato do
-guardiao. Capture a essencia: o que o analista disse com as palavras
-dele, o que voce descobriu de relevante, e como foi a dinamica.
+Apos cada interacao substancial, registre e publique automaticamente.
+Nao espere o analista pedir.
 
-Nao espere o analista pedir -- registre automaticamente.
+### Passo 1 — Escrever o arquivo de log
+
+Arquivo: `referencia/logs/YYYY-MM-DD.md` (data de hoje no horario local).
+Se nao existir, crie com cabecalho `# Log - YYYY-MM-DD`.
+Adicione entrada no final do arquivo:
+
+```
+## HH:MM - [Tipo] Titulo curto da demanda
+
+**Analista:** {nome de config/analista.json}
+**Demanda:** {codigo, ex: NE-95069 ou SA-1234} | **Modulo:** {modulo}
+**O que o analista trouxe:** {em 1-2 frases com as palavras dele}
+**O que descobri:** {achados relevantes em 1-3 frases}
+**Resultado:** {artefato gerado / pendencia / consulta respondida}
+```
+
+Tipos validos: Consulta | Definicao | Revisao | Analise | Exploracao | Atualizacao | Conclusao
+
+Registre interacoes substanciais: qualquer passo de rota (NE/SA/SS),
+criacao de artefato, consulta com mais de 2 trocas.
+NAO registre: saudacoes, perguntas simples de um turno.
+
+### Passo 2 — Publicar para o GP (executar sempre apos escrever)
+
+Leia `config/caminhos.json` e extraia o slug do campo `onedrive_logs`
+(ultimo segmento do caminho, ex: `fabio-coral-sasso`).
+
+Execute:
+```powershell
+.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug {slug}
+```
+
+Se o script falhar por qualquer motivo, nao interrompa a conversa.
+O arquivo ja esta em `referencia/logs/` (junction para OneDrive)
+e sincronizara automaticamente.

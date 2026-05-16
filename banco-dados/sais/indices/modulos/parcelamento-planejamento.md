@@ -1,13 +1,14 @@
 ﻿# Parcelamento e planejamento tributario
 
 > Dominio Escrita Fiscal | slug `parcelamento-planejamento`
-> Atualizado em: 12/05/2026 13:31
-> Pendentes: 3 | Liberadas: 163 | Descartadas: 19 | Total SAIs: 185
+> Atualizado em: 16/05/2026 00:10
+> Pendentes: 4 | Liberadas: 163 | Descartadas: 19 | Total SAIs: 186
 
-## Pendentes (3)
+## Pendentes (4)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 101726 | 130453 | NE | Normal | 29/04/2026 | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao Ativo Imob |
 | 101036 | 129802 | NE | Normal | 02/04/2026 | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na apura��o,  |
 | 45773 | 40384 | SAM | Normal | 17/10/2016 | Ajustar a importa��o dos impostos CSLL Lalur e IRPJ Lalur quando houver parcelam |
 | 45433 | 18568 | SAM | Normal | 12/03/2015 | Ajustar a importa��o do imposto Contribui��o Social do m�dulo Escrita Fiscal qua |

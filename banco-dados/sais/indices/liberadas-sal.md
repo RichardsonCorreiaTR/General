@@ -1,7 +1,7 @@
 ﻿# SAL Liberadas - Escrita Fiscal
 
-> Atualizado em: 12/05/2026 13:31
-> Total SAIs unicas: 7103
+> Atualizado em: 16/05/2026 00:10
+> Total SAIs unicas: 7105
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
@@ -11,6 +11,7 @@
 | 101046 | 129742 | 10.6A-04 | 01/04/2026 | Em Teste DEMO | Adequar a tela de ajustes de PIS/COFINS incluindo as novas origens observando a  |
 | 100726 | 129393 | 10.6A-04 | 23/03/2026 | Em Teste DEMO | Ajustar o sistema para que consiga seguir no captcha do portal na DEFIS no Dom�n |
 | 100757 | 129164 | 10.6A-04 | 17/03/2026 | Em Teste DEMO | Atualizar a tabela de NCM conforme Ato Declarat�rio Executivo RFB N� 001, de 30  |
+| 100741 | 129097 | 10.6A-05 | 13/03/2026 | Respondido Coordenador de Módulos DEMO | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 100423 | 128936 |  | 10/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para que consiga seguir no captcha para emiss�o do DAS, DEFIS  |
 | 100418 | 128885 | 10.6A-04 | 06/03/2026 | Em Teste DEMO | SC-Atualizar os c�digos de ajuste do SPED Fiscal referente Cr�dito Presumido ao  |
 | 100445 | 128857 | 10.6A-04 | 05/03/2026 | Em Teste DEMO | MG-Ajustar o sistema para atender a prorroga��o dos prazos tribut�rios para empr |
@@ -18,6 +19,7 @@
 | 100297 | 128624 | 10.6A-03 | 27/02/2026 | Em Teste DEMO | TO-Ajustar o sistema para n�o gerar o segmento G no informativo DIF para os CNAE |
 | 100499 | 128590 | 10.6A-04 | 27/02/2026 | Em Teste DEMO | MS-Alterar o sistema para adequa��o �s novas IE's do estado do Mato Grosso do Su |
 | 100773 | 128556 | 10.6A-04 | 26/02/2026 | Em Teste DEMO | Criar novas al�quotas de CSLL a partir de 04/2026 conforme Lei Complementar 224/ |
+| 100608 | 128452 | 10.6A-05 | 25/02/2026 | Respondido Coordenador de Módulos DEMO | Alterar a al�quota do imposto 28-FUNRURAL aplicando a majora��o de 10% conforme  |
 | 100110 | 128384 | 10.6A-03 | 24/02/2026 | Em Teste DEMO | Atualizar a vers�o do programa de envio da DIOPS. |
 | 100104 | 128116 | 10.6A-04 | 18/02/2026 | Em Teste DEMO | Atualizar as bases legais dos Comprovantes Anuais de Reten��o, substituindo a re |
 | 100658 | 128115 | 10.6A-04 | 18/02/2026 | Em Teste DEMO | Adequar o sistema ao encerramento do benef�cio fiscal PERSE a partir de 04/2025, |

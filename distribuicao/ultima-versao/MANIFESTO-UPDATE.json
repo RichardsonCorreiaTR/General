@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "Fix: atualizar-codigo.ps1 lib-lock ausente e caminho META.json errado; contato de escalonamento atualizado",
-    "data":  "2026-05-06T11:54:23",
+    "changelog":  "Fix: extracao por area/sistema (merge preserva areas existentes); pausa automatica ao cair zScaler; SKIP de PSAIs com erro (batch=1); agente-produto publica log automaticamente",
+    "data":  "2026-05-16T16:25:05",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.27"
+    "versao":  "2.4.32"
 }

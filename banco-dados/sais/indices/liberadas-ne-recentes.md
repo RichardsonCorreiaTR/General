@@ -1,16 +1,23 @@
 ﻿# NEs Liberadas - Recentes (2022+)
 
-> Atualizado em: 12/05/2026 13:31
-> Total SAIs unicas: 3553
+> Atualizado em: 16/05/2026 00:10
+> Total SAIs unicas: 3561
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 101519 | 130458 | 10.6A-05 | Normal | 29/04/2026 | Respondido Gerente de Testes | N�o est� sendo feito o c�lculo da majora��o dos impostos 6-CSLL, 7-IRPJ, 33-IRPJ |
-| 101512 | 130449 | 10.6A-05 | Normal | 28/04/2026 | Aguardando Resposta do Desenvolvimento | ES-Em alguns casos est� sendo demonstrada indevidamente a mensagem "Falta apurar |
-| 101468 | 130421 | 10.6A-05 | Normal | 27/04/2026 | Respondido Gerente de Testes | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
+| 101685 | 130604 | 10.6A-05 | Normal | 06/05/2026 | Respondido Gerente de Produto | Est� exibindo a mensagem 'Sem dados para emitir' ao emitir o Balan�o com o model |
+| 101547 | 130513 | 10.6A-05 | Normal | 30/04/2026 | Respondido Coordenador de Módulos DEMO | Est� sendo calculado incorretamente o valor dos impostos 6-CSLL e 7-IRPJ, quando |
+| 101542 | 130511 | 10.6A-05 | Normal | 30/04/2026 | Respondido Coordenador de Módulos DEMO | Est� ocorrendo indevidamente a cr�tica de estrutura "Erro processando arquivo XM |
+| 101508 | 130467 | 10.6A-05 | Normal | 29/04/2026 | Respondido Desenvolvimento | N�o est� sendo demonstrado o Lucro e Dividendo Isento (natureza 12001) informado |
+| 101519 | 130458 | 10.6A-05 | Normal | 29/04/2026 | Respondido Coordenador de Módulos DEMO | N�o est� sendo feito o c�lculo da majora��o dos impostos 6-CSLL, 7-IRPJ, 33-IRPJ |
+| 101512 | 130449 | 10.6A-05 | Normal | 28/04/2026 | Respondido Coordenador de Módulos DEMO | ES-Em alguns casos est� sendo demonstrada indevidamente a mensagem "Falta apurar |
+| 101468 | 130421 | 10.6A-05 | Normal | 27/04/2026 | Respondido Coordenador de Módulos DEMO | Em alguns casos est� ocorrendo erro de sistema ao realizar a apura��o do per�odo |
 | 101432 | 130369 | 10.6A-05 | Normal | 24/04/2026 | Respondido Coordenador de Módulos DEMO | N�o est�o sendo enviadas para o Busca NF-e Escrit�rio as NFS-e baixadas quando n |
-| 101388 | 130336 | 10.6A-05 | Normal | 24/04/2026 | Respondido Gerente de Testes | Corrigir erros implementados no desenvolvimento da SAI 99330. |
-| 101321 | 130237 | 10.6A-05 | Normal | 20/04/2026 | Respondido Gerente de Testes | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
+| 101388 | 130336 | 10.6A-05 | Normal | 24/04/2026 | Respondido Coordenador de Módulos DEMO | Corrigir erros implementados no desenvolvimento da SAI 99330. |
+| 101487 | 130334 | 10.6A-05 | Normal | 24/04/2026 | Respondido Gerente de Produto | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
+| 101374 | 130288 | 10.6A-05 | Normal | 22/04/2026 | Respondido Coordenador de Módulos DEMO | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
+| 101341 | 130238 | 10.6A-05 | Normal | 20/04/2026 | Respondido Coordenador de Módulos DEMO | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
+| 101321 | 130237 | 10.6A-05 | Normal | 20/04/2026 | Respondido Coordenador de Módulos DEMO | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
 | 101283 | 130181 | 10.6A-04 | Grave | 17/04/2026 | Em Teste DEMO | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
 | 101292 | 130173 | 10.6A-05 | Normal | 17/04/2026 | Respondido Coordenador de Módulos DEMO | N�o est� sendo feito o c�lculo correto da majora��o do imposto 7-IRPJ, quando no |
 | 101278 | 130133 | 10.6A-05 | Normal | 15/04/2026 | Respondido Coordenador de Módulos DEMO | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
@@ -115,6 +122,7 @@
 | 99782 | 127726 | 10.6A-02 | Normal | 09/02/2026 | Em Teste DEMO | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Regime Tribu |
 | 99861 | 127718 |  | Normal | 06/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está validando corretamente na tela de Lançamentos de extrato bancário, quan |
 | 99764 | 127703 | 10.6A-02 | Normal | 06/02/2026 | Em Teste DEMO | N�o est�o sendo copiadas as informa��es do bot�o retic�ncias das op��es dos Par� |
+| 99777 | 127665 | 10.6A-05 | Normal | 06/02/2026 | Respondido Gerente de Produto | N�o carrega transa��o para Concilia��o manual de filial |
 | 99758 | 127664 | 10.6A-02 | Grave | 06/02/2026 | Em Teste DEMO | N�o est�o sendo copiadas as informa��es do bot�o retic�ncias das op��es dos Par� |
 | 99833 | 127638 | 10.6A-03 | Normal | 05/02/2026 | Em Teste DEMO | Est� sendo demonstrada indevidamente a guia "IVA" no utilit�rio de "Alterar Nota |
 | 100368 | 127637 | 10.6A-04 | Normal | 05/02/2026 | Em Teste DEMO | N�o est� sendo gerado o valor dos produtos "Sem incid�ncia" de PIS/COFINS" no re |

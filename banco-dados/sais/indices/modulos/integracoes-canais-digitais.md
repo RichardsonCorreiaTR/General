@@ -1,21 +1,23 @@
 ﻿# Integracoes e canais digitais
 
 > Dominio Escrita Fiscal | slug `integracoes-canais-digitais`
-> Atualizado em: 12/05/2026 13:31
-> Pendentes: 87 | Liberadas: 1451 | Descartadas: 139 | Total SAIs: 1671
+> Atualizado em: 16/05/2026 00:10
+> Pendentes: 89 | Liberadas: 1453 | Descartadas: 139 | Total SAIs: 1675
 
-## Pendentes (87)
+## Pendentes (89)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101574 | 130190 | SAM | Normal | 17/04/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "Consulta |
+| 101705 | 130704 | SAM | Normal | 12/05/2026 | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL adotado pelo |
+| 101675 | 130664 | SAM | Normal | 11/05/2026 | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para zerar o NSU  |
+| 101718 | 130663 | NE | Normal | 11/05/2026 | Est�o sendo corrompidos os arquivos XML com o atributo de namespace inserido inc |
 | 101605 | 130149 | SAL | Normal | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
 | 101578 | 129935 | SAM | Normal | 08/04/2026 | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
+| 101645 | 129795 | SAM | Normal | 01/04/2026 | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do acesso ao |
 | 101043 | 129701 | NE | Normal | 31/03/2026 | Em alguns casos est� ocorrendo encerramento do sistema quando importado grande v |
 | 101397 | 129620 | SAM | Normal | 27/03/2026 | Realizar a conversão das configurações de integração contábil após o cadastro do |
 | 101599 | 129573 | SAM | Normal | 26/03/2026 | Realizar um estudo para criar a integração por API com ERPs Externos para recebi |
 | 101342 | 129540 | NE | Normal | 25/03/2026 | N�o est� sendo feita corretamente a importa��o das informa��es da janela "Outros |
-| 100741 | 129097 | SAL | Normal | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 100422 | 128930 | SAM | Normal | 09/03/2026 | Realizar um estudo e testes no agente de comunica��o referente ao consumo da nov |
 | 100371 | 128848 | SAM | Normal | 05/03/2026 | Adequar as autentica��o da API e BOX-e ap�s a migra��o dos EndPoints alternativo |
 | 100348 | 128819 | SAM | Normal | 05/03/2026 | Realizar os testes de autentica��o do Agente de Comunica��o com a API de notas a |
@@ -100,10 +102,12 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 101574 | 130190 | SAM | 17/04/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "Consulta |
 | 101233 | 130124 | SAM | 15/04/2026 | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas que tenta  |
 | 101230 | 130119 | NE | 15/04/2026 | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
 | 101065 | 129649 | SAM | 30/03/2026 | Adequar o sistema para as mudan�as do portal e-CAC no processo de "Pagamento de  |
 | 100725 | 129399 | SAM | 23/03/2026 | Realizar os testes no Web Service e Busca NF-e ap�s a migra��o do SO dos servido |
+| 100741 | 129097 | SAL | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 100517 | 129061 | NE | 12/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
 | 100417 | 128896 | NE | 09/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
 | 100476 | 128282 | SAM | 20/02/2026 | Ajustar a ferramenta de envio de documentos para o cat�logo para ser poss�vel en |
@@ -128,14 +132,12 @@
 | 98224 | 124642 | SAM | 25/11/2025 | Realizar um teste na importa��o Web Service SEFAZ RS ap�s homologa��o do Windows |
 | 98228 | 124627 | SAL | 24/11/2025 | Ajustar a comunica��o com o webservice no envio do MIT e DEFIS via API Integra C |
 | 98858 | 124613 | SAM | 24/11/2025 | Apresentar uma mensagem espec�fica quando n�o for poss�vel concluir a emiss�o da |
-| 98196 | 124434 | NE | 19/11/2025 | N�o est� sendo demonstrado no ONVIO a listagem de notas "NFS-e Padr�o Nacional"  |
-| 98280 | 124372 | NE | 18/11/2025 | RS-Est� importando notas que possuem situa��o regular com os valores zerados ind |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| rest | 564 |
+| rest | 566 |
 | api | 353 |
 | web service | 217 |
 | webservice | 131 |
