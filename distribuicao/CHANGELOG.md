@@ -1,4 +1,21 @@
-﻿## v2.4.32 — 2026-05-16
+﻿# Changelog - Projeto Filho
+
+## v2.4.33 - 18/05/2026
+
+- feat: analise de legislacao via Claude AI (claude-sonnet-4-6)
+  * Novo script Python: scripts/sgd_consulta/consultar_legislacao.py
+  * Novo wrapper PowerShell: scripts/Consultar-Legislacao.ps1
+  * Nova regra Cursor: .cursor/rules/consultar-legislacao.mdc
+  * Analista fornece URL ou arquivo (PDF/DOCX/TXT) de lei, decreto, portaria ou IN
+  * Claude retorna resumo estruturado (identificacao, objetivo, obrigacoes, prazos, pontos de atencao)
+  * Suporte a perguntas especificas sobre a legislacao
+  * Resultados salvos em data/legislacao/ como JSON
+  * Requer: ANTHROPIC_API_KEY em scripts/sgd_consulta/.env (instruções no .env.example)
+  * Dependencias novas: anthropic, httpx, beautifulsoup4, pdfplumber (requirements.txt atualizado)
+
+---
+
+## v2.4.32 — 2026-05-16
 
 - Fix: extracao por area/sistema — modo merge preserva fracionados das demais areas ao usar -SomenteAreas
 - Fix: pausa automatica com Enter ao cair zScaler (retoma sem reiniciar)
@@ -231,6 +248,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

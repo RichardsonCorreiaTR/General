@@ -102,6 +102,8 @@ $arqsCopia = @(
     "projeto-filho\.cursor\rules\projeto.mdc",
     "projeto-filho\.cursor\rules\revisar-psai.mdc",
     "projeto-filho\.cursor\rules\sgd-enriquecer-psai.mdc",
+    "projeto-filho\.cursor\rules\consultar-legislacao.mdc",
+    "projeto-filho\scripts\Consultar-Legislacao.ps1",
     "logs\README.md"
 )
 

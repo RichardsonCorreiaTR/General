@@ -1,0 +1,53 @@
+---
+description: PSAI sem texto completo — consultar SGD no projeto-filho; enriquecer dados brutos so no General (GP)
+alwaysApply: false
+---
+
+# PSAI com campos vazios — SGD e dados brutos (projeto-filho)
+
+Quando, na base em `referencia/banco-dados/dados-brutos/psai/*.json` (ou indices em `referencia/banco-dados/sais/indices/`), uma **PSAI** tiver **`comportamento`** e/ou **`definicao`** ou **`psai_descricao`** vazios, **nao** concluir revisao ou parecer apenas com esse export.
+
+**Agente Cursor:** executar `.\scripts\Consultar-PSAI-SGD.ps1` via **terminal** (a partir da raiz `projeto-filho`) **antes** de pedir ao utilizador para colar texto ou de perguntar apenas o «tema» da PSAI. Se a consulta falhar, documentar o erro e **entao** pedir link ou colagem.
+
+## Obrigatorio para o analista
+
+1. **Consultar o SGD** para obter o texto completo:
+   - `.\scripts\Consultar-PSAI-SGD.ps1 <numero> --json`  
+   Saida local: `data/sgd-psai-consultas/consultas/psai_<numero>.json` (e pasta `arquivo/` se nao usar `--no-arquivo`).
+
+2. **Nao** modificar ficheiros em `referencia/` (guardiao — leitura apenas).
+
+## Enriquecer `dados-brutos` (escrita no OneDrive / clone Admin)
+
+Para **persistir** texto nos JSON fracionados partilhados (`banco-dados/dados-brutos/psai/`), quem tiver **escrita** no repositorio **General** (geralmente o GP) corre no clone Admin:
+
+- `.\scripts\Enriquecer-PSAI-DadosBrutos.ps1 <numero>`
+
+No PC do analista, se existir pasta **irma** `General` ao lado de `projeto-filho`, pode usar o wrapper equivalente:
+
+- `.\scripts\Enriquecer-PSAI-DadosBrutos.ps1 <numero>` (no filho; chama o Python do General)
+
+**Lock:** `scripts\.update-lock.json` no General — nao correr em paralelo com `importar-sais` / `atualizar-tudo`.
+
+## NE em particular
+
+Apos consulta SGD, o JSON pode trazer `comportamento` corrigido pelo reconciliador NE no `consultar_psai.py` do General (rotulo `Comportamento:` com `Definicao` vazia no HTML).
+
+## SAI gerada — consultar definicao diretamente
+
+Quando a PSAI ja tiver uma SAI gerada (campo `sai` no cabecalho ou numero conhecido), a **definicao definitiva esta na SAI**, nao na PSAI. A SAI pode conter alteracoes e complementacoes feitas apos a aprovacao.
+
+**Fluxo obrigatorio para SAIs:**
+
+1. Verificar se existe cache local em `data/sgd-sai-consultas/consultas/sai_<numero>.json`
+2. Se existir, usar o cache (lido diretamente pelo agente via Shell/Python)
+3. Se **nao existir ou definicao estiver vazia**, executar:
+   `.\scripts\Consultar-SAI-SGD.ps1 <numero> --json`
+   Saida local: `data/sgd-sai-consultas/consultas/sai_<numero>.json`
+
+**Quando acionar automaticamente (sem pedir ao analista):**
+- Ao resumir ou revisar uma SAI com numero conhecido
+- Ao usar `buscar-sai.ps1` e o resultado tiver `definicao` ou `comportamento` vazios
+- Ao criar uma PSAI baseada em SAI existente
+
+O dominio do SGSAI (`sgsai.dominiosistemas.com.br`) e separado do SGD — o script `Consultar-SAI-SGD.ps1` cuida do login automaticamente com as mesmas credenciais.
