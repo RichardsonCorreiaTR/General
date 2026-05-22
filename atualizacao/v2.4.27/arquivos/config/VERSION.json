@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "Fix: atualizar-codigo.ps1 lib-lock ausente e caminho META.json errado; contato de escalonamento atualizado",
-    "data":  "2026-05-06",
-    "hash_validacao":  "F5CC6B121EE9DD609654D08BBA057899",
-    "versao":  "2.4.27"
-}

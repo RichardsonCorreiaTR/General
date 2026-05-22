@@ -23,9 +23,9 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-from env import settings
+from env import pedir_credenciais_sgd, settings
 from psai_arquivo import salvar_pacote_consulta
-from session import sessao_sgd
+from session import LoginError, sessao_sgd
 
 logger = logging.getLogger(__name__)
 
@@ -288,12 +288,21 @@ async def consultar_psai(numero: str, *, arquivo: bool = True) -> dict:
 
     async with sessao_sgd() as session:
         page = await session.nova_pagina()
+
+        # JSF exige que a navegação parta de dentro do app — vai para home antes de acessar a PSAI.
+        home_url = f"{settings.SGD_URL}/sgsa/faces/home.html"
+        await page.goto(home_url, wait_until="domcontentloaded", timeout=settings.SCRAPER_TIMEOUT_MS)
+        if "login" in page.url.lower():
+            logger.warning("Sessão inválida ao acessar home. URL atual: %s", page.url)
+            raise LoginError("Sessão expirada ou credenciais incorretas.")
+
         logger.info(f"Acessando: {url}")
         await page.goto(url, wait_until="domcontentloaded")
         await page.wait_for_load_state("domcontentloaded")
 
         if "login" in page.url.lower():
-            raise RuntimeError("Sessao expirada — refaca o login.")
+            logger.warning("Redirecionado para login após navegar para PSAI. URL atual: %s", page.url)
+            raise LoginError("Sessão expirada ou credenciais incorretas.")
 
         corpo = await page.inner_text("body")
         html = await page.content()
@@ -463,8 +472,26 @@ async def main() -> None:
         parser.error("--quiet exige --json")
 
     numero = args.numero.strip()
-    logger.info(f"Consultando PSAI #{numero}...")
-    dados = await consultar_psai(numero, arquivo=not args.no_arquivo)
+
+    MAX_TENTATIVAS = 3
+    dados: dict = {}
+    for tentativa in range(MAX_TENTATIVAS):
+        try:
+            logger.info(f"Consultando PSAI #{numero}... (tentativa {tentativa + 1})")
+            dados = await consultar_psai(numero, arquivo=not args.no_arquivo)
+            break
+        except LoginError as exc:
+            if tentativa >= MAX_TENTATIVAS - 1:
+                logger.error("Número máximo de tentativas de login atingido.")
+                raise
+            import sys as _sys
+            if not _sys.stdin.isatty():
+                logger.error(
+                    "Credenciais inválidas e terminal não-interativo. "
+                    "Execute o script manualmente uma vez para redefinir as credenciais."
+                )
+                raise
+            pedir_credenciais_sgd(str(exc))
 
     json_path: Path | None = None
     if args.json:

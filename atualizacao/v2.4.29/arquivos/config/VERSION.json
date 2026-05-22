@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "Feat: publicacao automatica de logs no General a cada primeiro acesso do dia; aviso semanal se publicacao falhar ha mais de 7 dias",
-    "data":  "2026-05-11",
-    "hash_validacao":  "66C09488B33D12A63D58DBF67AD90F2F",
-    "versao":  "2.4.29"
-}

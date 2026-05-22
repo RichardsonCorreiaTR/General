@@ -1,5 +1,28 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.34 - 22/05/2026
+
+- fix: validacao robusta de credenciais SGD ao consultar PSAI
+  * Detecta senha incorreta mesmo quando SGD faz redirect breve antes de voltar ao login
+  * Nova excecao LoginError (tipo especifico) em session.py
+  * Novas funcoes em env.py: pedir_credenciais_sgd, atualizar_credenciais, _gravar_credenciais_local
+  * Retry automatico ate 3x com prompt de novas credenciais em terminal interativo
+  * Em terminal nao-interativo (Cursor/agente): mensagem clara pedindo para rodar manualmente
+
+- feat: novo script sincronizar-areas.ps1
+  * Re-le o cadastro central (config/time-analistas.json no OneDrive) e atualiza config/analista.json local
+  * Compara areas locais x centrais e pede confirmacao antes de sobrescrever
+  * Faz backup automatico em config/analista.json.bak
+  * Util quando o gerente reclassifica areas fora do ciclo de release
+
+- feat: buscar-sai.ps1 com paridade ao General
+  * Novo parametro -Termos (array OR entre varios termos)
+  * Novo parametro -PalavraIsolada (regex \b<termo>\b)
+  * Novo parametro -SomenteDescricao (limita ao campo sai_descricao)
+  * Normalizacao automatica de acentos (Contabil <-> Contábil)
+  * Permite reproduzir exatamente o mesmo criterio dos relatorios PDF gerados no General
+
+---
 ## v2.4.33 - 18/05/2026
 
 - feat: analise de legislacao via Claude AI (claude-sonnet-4-6)
@@ -248,6 +271,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

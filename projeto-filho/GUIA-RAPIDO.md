@@ -70,10 +70,25 @@ Os indices estao em `referencia/banco-dados/sais/indices/`.
 Para busca detalhada, rode em terminal separado (fora do Cursor):
 
 ```
-cd "C:\Users\{seu-usuario}\Thomson Reuters Incorporated\CursorEscrita - General"
+# Busca simples (compativel com versoes anteriores)
 powershell -File scripts\buscar-sai.ps1 -Termo "INSS"
 powershell -File scripts\buscar-sai.ps1 -Termo "ferias" -Tipo NE -Pendentes
+
+# Busca avancada (paridade com relatorios PDF do General)
+$termos = @("SPED Contabil","ECD")
+$areas  = @("Contabilidade","ONVIO CONTABIL")
+.\scripts\buscar-sai.ps1 -Termos $termos -PalavraIsolada -SomenteDescricao -Areas $areas -Max 100
 ```
+
+**Parametros novos (v2.4.34):**
+
+| Parametro | O que faz |
+|---|---|
+| `-Termos 'a','b'` | OR entre varios termos (ex.: "SPED Contabil" OU "ECD") |
+| `-PalavraIsolada` | Aplica `\b<termo>\b` para evitar match dentro de outras palavras |
+| `-SomenteDescricao` | Restringe a busca ao campo `sai_descricao` |
+
+Acentos sao normalizados automaticamente: `"Contabil"` casa com `"Contábil"`.
 
 ### Pesquisar em varias areas (PBCVS)
 
@@ -128,6 +143,7 @@ Rode estes comandos em um terminal:
 | `.\scripts\verificar-ambiente.ps1` | Verifica se tudo esta OK |
 | `.\scripts\atualizar-projeto.ps1` | Atualiza para versao mais recente |
 | `.\scripts\atualizar-codigo.ps1` | Baixa codigo-fonte mais recente do git |
+| `.\scripts\sincronizar-areas.ps1` | Re-sincroniza suas areas com o cadastro central (apos o gerente reclassificar) |
 
 ---
 

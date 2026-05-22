@@ -17,6 +17,11 @@ from env import settings
 
 logger = logging.getLogger(__name__)
 
+
+class LoginError(RuntimeError):
+    """Falha de autenticação no SGD (usuário/senha incorretos ou sessão encerrada)."""
+
+
 _LOGIN_SELECTORS = {
     "username": "input[name='usuario'], #usuario, input[type='text']",
     "password": "input[name='senha'], #senha, input[type='password']",
@@ -123,8 +128,24 @@ class SGDSession:
             await self._aguardar_pos_login(page)
 
             if "login" in page.url.lower():
-                raise RuntimeError(
-                    "Login falhou — verifique SGD_USERNAME e SGD_PASSWORD no .env"
+                raise LoginError(
+                    "Usuário ou senha incorretos. Verifique suas credenciais do SGD."
+                )
+
+            # Navega para a home para validar a sessão e estabelecer o contexto JSF.
+            # Alguns cenários com credenciais erradas passam pela checagem de URL acima
+            # (redirect breve para URL sem "login"), mas a home expõe a sessão inválida.
+            await page.goto(
+                f"{settings.SGD_URL}/sgsa/faces/home.html",
+                wait_until="domcontentloaded",
+                timeout=settings.SCRAPER_TIMEOUT_MS,
+            )
+            await page.wait_for_load_state("domcontentloaded")
+
+            if "login" in page.url.lower():
+                raise LoginError(
+                    "Usuário ou senha incorretos — a sessão não foi estabelecida. "
+                    "Verifique suas credenciais do SGD."
                 )
 
             settings.SESSION_FILE.parent.mkdir(parents=True, exist_ok=True)

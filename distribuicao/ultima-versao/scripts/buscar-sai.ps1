@@ -18,6 +18,9 @@
 
 param(
     [string]$Termo = "",
+    [string[]]$Termos = @(),
+    [switch]$PalavraIsolada,
+    [switch]$SomenteDescricao,
     [int]$SAI = 0,
     [int]$PSAI = 0,
     [string]$Tipo = "",
@@ -36,6 +39,21 @@ $URL_SAI_BASE  = "https://sgsai.dominiosistemas.com.br/sgsai/faces/sai.html?sai=
 $URL_PSAI_BASE = "https://sgd.dominiosistemas.com.br/sgsa/faces/psai.html?psai="
 
 function SafeStr($v) { if ($null -eq $v) { return "" }; return [string]$v }
+
+# Remove acentos para comparacao tolerante: "Contábil" -> "Contabil"
+function Remove-Acentos {
+    param([string]$s)
+    if (-not $s) { return "" }
+    $normalizado = $s.Normalize([System.Text.NormalizationForm]::FormD)
+    $sb = New-Object System.Text.StringBuilder
+    foreach ($c in $normalizado.ToCharArray()) {
+        $cat = [System.Globalization.CharUnicodeInfo]::GetUnicodeCategory($c)
+        if ($cat -ne [System.Globalization.UnicodeCategory]::NonSpacingMark) {
+            [void]$sb.Append($c)
+        }
+    }
+    return $sb.ToString().Normalize([System.Text.NormalizationForm]::FormC)
+}
 
 function Get-UrlSai($numero) {
     $n = 0; if ([int]::TryParse([string]$numero, [ref]$n) -and $n -gt 0) { return "$URL_SAI_BASE$n" } else { return "" }
@@ -62,11 +80,14 @@ $psaiDir = Join-Path $dadosBrutosDir "psai"
 $saiDir = Join-Path $dadosBrutosDir "sai"
 $cacheCompleto = Join-Path $dadosBrutosDir "sai-psai-escrita.json"
 
-if (-not $Termo -and $SAI -eq 0 -and $PSAI -eq 0 -and -not $Modulo -and $Areas.Count -eq 0) {
+if (-not $Termo -and $Termos.Count -eq 0 -and $SAI -eq 0 -and $PSAI -eq 0 -and -not $Modulo -and $Areas.Count -eq 0) {
     Write-Host "=== Busca de SAIs/PSAIs ===" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "Uso:" -ForegroundColor White
     Write-Host "  .\buscar-sai.ps1 -Termo 'palavra'                Busca em todos os campos (14 campos + BLOBs)"
+    Write-Host "  .\buscar-sai.ps1 -Termos 'sped contabil','ecd'   OR entre varios termos (substitui -Termo)"
+    Write-Host "  .\buscar-sai.ps1 -Termo 'ECD' -PalavraIsolada    Evita match dentro de outras palavras"
+    Write-Host "  .\buscar-sai.ps1 -Termo 'sped' -SomenteDescricao Limita a busca a sai_descricao"
     Write-Host "  .\buscar-sai.ps1 -Termo 'INSS' -Tipo NE          Filtra por tipo"
     Write-Host "  .\buscar-sai.ps1 -Termo 'ferias' -Pendentes       So pendentes"
     Write-Host "  .\buscar-sai.ps1 -Termo 'rescisao' -VerPSAIs      Mostra todas as PSAIs (sem agrupar)"
@@ -76,7 +97,15 @@ if (-not $Termo -and $SAI -eq 0 -and $PSAI -eq 0 -and -not $Modulo -and $Areas.C
   .\buscar-sai.ps1 -Termo 'ICMS' -Areas 'Escrita','Importacao'   Filtra por areas exatas (array)"
     Write-Host "  .\buscar-sai.ps1 -Termo 'FGTS' -Resumido          Saida compacta"
     Write-Host ""
+    Write-Host "  EXEMPLO COMBINADO (igual ao do PDF/General):" -ForegroundColor White
+    Write-Host "  .\buscar-sai.ps1 -Termos 'SPED Contabil','ECD' -PalavraIsolada -SomenteDescricao ``" -ForegroundColor Gray
+    Write-Host "                   -Areas 'Contabilidade','ONVIO CONTABIL' -Max 100" -ForegroundColor Gray
+    Write-Host ""
     Write-Host "Parametros:" -ForegroundColor White
+    Write-Host "  -Termo 'texto'          Busca um unico termo (modo simples; usa Contains)"
+    Write-Host "  -Termos 'a','b'         OR entre varios termos (Contains; substitui -Termo)"
+    Write-Host "  -PalavraIsolada         Aplica regex \\b<termo>\\b (evita match dentro de palavras)"
+    Write-Host "  -SomenteDescricao       Restringe a busca ao campo sai_descricao"
     Write-Host "  -Tipo NE|SAM|SAL|SAIL   Filtrar por tipo"
     Write-Host "  -Modulo 'nome'          Filtrar por nomeArea/descricao (parcial; ex: 'Escrita', 'Onvio')
   -Areas 'A','B'          Filtrar por multiplas areas exatas (array; ex: 'Escrita','Importacao')"
@@ -140,25 +169,71 @@ if ($SAI -ne 0) {
     $campo = if ($VisualizarSai) { "ultimaPsai" } else { "i_psai" }
     $resultado = @($resultado | Where-Object { $_.$campo -eq $PSAI })
 } else {
-    # Filtro por termo (busca em 14 campos: texto + BLOBs + metadados)
-    if ($Termo) {
-        $termoLower = $Termo.ToLower()
+    # Filtro por termo(s): -Termos (array OR) tem prioridade sobre -Termo (string)
+    # Os termos sao normalizados (sem acentos + lowercase) para tolerancia a acentuacao
+    $termosBusca = @()
+    if ($Termos -and $Termos.Count -gt 0) {
+        $termosBusca = @($Termos | Where-Object { $_ -and $_.Trim() } | ForEach-Object { (Remove-Acentos $_).ToLower().Trim() })
+    } elseif ($Termo) {
+        $termosBusca = @((Remove-Acentos $Termo).ToLower())
+    }
+
+    if ($termosBusca.Count -gt 0) {
+        # Compilar regex se -PalavraIsolada (uma vez por termo)
+        $regexTermos = @()
+        if ($PalavraIsolada) {
+            foreach ($t in $termosBusca) {
+                $escapado = [Regex]::Escape($t)
+                $regexTermos += [Regex]::new("\b$escapado\b", [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+            }
+        }
+
+        # Funcao local: termo bate em texto?
+        # Normaliza acentos do texto antes de comparar.
+        function Test-TermoMatch($texto, $idxTermo) {
+            $s = SafeStr $texto
+            if (-not $s) { return $false }
+            $sNorm = (Remove-Acentos $s).ToLower()
+            if ($PalavraIsolada) {
+                return $regexTermos[$idxTermo].IsMatch($sNorm)
+            } else {
+                return $sNorm.Contains($termosBusca[$idxTermo])
+            }
+        }
+
         $resultado = @($resultado | Where-Object {
-            (SafeStr $_.sai_descricao).ToLower().Contains($termoLower) -or
-            (SafeStr $_.comportamento).ToLower().Contains($termoLower) -or
-            (SafeStr $_.definicao).ToLower().Contains($termoLower) -or
-            (SafeStr $_.psai_descricao).ToLower().Contains($termoLower) -or
-            (SafeStr $_.sai_destaque).ToLower().Contains($termoLower) -or
-            (SafeStr $_.psai_destaque).ToLower().Contains($termoLower) -or
-            (SafeStr $_.textoCompleto).ToLower().Contains($termoLower) -or
-            (SafeStr $_.nomeArea).ToLower().Contains($termoLower) -or
-            (SafeStr $_.nomeVersao).ToLower().Contains($termoLower) -or
-            (SafeStr $_.tipoSAI).ToLower().Contains($termoLower) -or
-            (SafeStr $_.gravidade_ne).ToLower().Contains($termoLower) -or
-            (SafeStr $_.situacaoSai).ToLower().Contains($termoLower) -or
-            (SafeStr $_.situacaoPsai).ToLower().Contains($termoLower) -or
-            (SafeStr $_.nivel_alteracao).ToLower().Contains($termoLower)
+            $reg = $_
+            # Para cada termo, ver se bate em ALGUM dos campos. OR entre termos.
+            $bateAlgumTermo = $false
+            for ($i = 0; $i -lt $termosBusca.Count; $i++) {
+                if ($SomenteDescricao) {
+                    # Restringe a sai_descricao
+                    if (Test-TermoMatch $reg.sai_descricao $i) { $bateAlgumTermo = $true; break }
+                } else {
+                    if ( (Test-TermoMatch $reg.sai_descricao $i)  -or
+                         (Test-TermoMatch $reg.comportamento  $i) -or
+                         (Test-TermoMatch $reg.definicao      $i) -or
+                         (Test-TermoMatch $reg.psai_descricao $i) -or
+                         (Test-TermoMatch $reg.sai_destaque   $i) -or
+                         (Test-TermoMatch $reg.psai_destaque  $i) -or
+                         (Test-TermoMatch $reg.textoCompleto  $i) -or
+                         (Test-TermoMatch $reg.nomeArea       $i) -or
+                         (Test-TermoMatch $reg.nomeVersao     $i) -or
+                         (Test-TermoMatch $reg.tipoSAI        $i) -or
+                         (Test-TermoMatch $reg.gravidade_ne   $i) -or
+                         (Test-TermoMatch $reg.situacaoSai    $i) -or
+                         (Test-TermoMatch $reg.situacaoPsai   $i) -or
+                         (Test-TermoMatch $reg.nivel_alteracao $i)
+                    ) { $bateAlgumTermo = $true; break }
+                }
+            }
+            $bateAlgumTermo
         })
+
+        $modoBusca = if ($Termos.Count -gt 0) { "OR entre $($termosBusca.Count) termos" } else { "termo unico" }
+        if ($PalavraIsolada) { $modoBusca += ", palavra isolada" }
+        if ($SomenteDescricao) { $modoBusca += ", so descricao" }
+        Write-Host "  Filtro de termo aplicado: $modoBusca" -ForegroundColor DarkCyan
     }
 
     # Filtro por modulo (busca em nomeArea e sai_descricao)
@@ -261,8 +336,12 @@ $resultado | Select-Object -First $Max | ForEach-Object {
         Write-Host "  Cadastro: $dt | Gravidade: $($_.gravidade_ne)" -ForegroundColor Gray
         Write-Host "  $desc"
 
-        if ($Termo) {
-            $tl = $Termo.ToLower()
+        # Highlight de trechos: usa o primeiro termo de -Termos OU o -Termo unico
+        $termoHighlight = ""
+        if ($Termos -and $Termos.Count -gt 0) { $termoHighlight = $Termos[0] }
+        elseif ($Termo) { $termoHighlight = $Termo }
+        if ($termoHighlight -and -not $SomenteDescricao) {
+            $tl = $termoHighlight.ToLower()
             $camposBLOB = @(
                 @{ nome = "comportamento";  valor = $_.comportamento },
                 @{ nome = "definicao";      valor = $_.definicao },
@@ -277,7 +356,7 @@ $resultado | Select-Object -First $Max | ForEach-Object {
                 if ($sv -and $sv.ToLower().Contains($tl)) {
                     $idx = $sv.ToLower().IndexOf($tl)
                     $ini = [Math]::Max(0, $idx - 50)
-                    $fim = [Math]::Min($sv.Length, $idx + $Termo.Length + 50)
+                    $fim = [Math]::Min($sv.Length, $idx + $termoHighlight.Length + 50)
                     $trecho = $sv.Substring($ini, $fim - $ini) -replace "`r|`n", " "
                     if ($ini -gt 0) { $trecho = "...$trecho" }
                     if ($fim -lt $sv.Length) { $trecho = "${trecho}..." }

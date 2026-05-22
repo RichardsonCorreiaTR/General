@@ -127,6 +127,67 @@ def _ensure_sgd_credentials() -> None:
 _ensure_sgd_credentials()
 
 
+def _gravar_credenciais_local(username: str, password: str) -> "Path | None":
+    """Grava SGD_USERNAME/SGD_PASSWORD em .sgd-credentials.local. Retorna o Path gravado ou None."""
+    root = _sgd_data_root()
+    candidates: list[Path] = []
+    if root is not None:
+        candidates.append(root / ".sgd-credentials.local")
+    for p in _credential_file_candidates():
+        if p not in candidates:
+            candidates.append(p)
+    pass_esc = password.replace("\\", "\\\\").replace('"', '\\"')
+    content = "\n".join([
+        "# Credenciais SGD (local). Nao partilhar.",
+        f"SGD_USERNAME={username.strip()}",
+        f'SGD_PASSWORD="{pass_esc}"',
+    ])
+    for path in candidates:
+        try:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding="utf-8")
+            return path
+        except OSError:
+            continue
+    return None
+
+
+def atualizar_credenciais(username: str, password: str) -> None:
+    """Atualiza credenciais em memória (os.environ e settings) e recalcula session file."""
+    os.environ["SGD_USERNAME"] = username
+    os.environ["SGD_PASSWORD"] = password
+    settings.SGD_USERNAME = username
+    settings.SGD_PASSWORD = password
+    settings.SESSION_FILE = _session_file_path()
+
+
+def pedir_credenciais_sgd(motivo: str = "") -> None:
+    """Exibe motivo, pede novas credenciais SGD no terminal e salva no arquivo local."""
+    if not sys.stdin.isatty():
+        raise ValueError(
+            (f"[SGD] {motivo} " if motivo else "")
+            + "Execute o script manualmente para redefinir as credenciais."
+        )
+    print("", file=sys.stderr)
+    if motivo:
+        print(f"[SGD] {motivo}", file=sys.stderr)
+    print("[SGD] Informe suas credenciais do SGD:", file=sys.stderr)
+    print("", file=sys.stderr)
+    u = input("  Usuário SGD: ").strip()
+    if not u:
+        raise ValueError("Usuário SGD vazio.")
+    p = getpass.getpass("  Senha SGD: ")
+    if not p:
+        raise ValueError("Senha SGD vazia.")
+    saved = _gravar_credenciais_local(u, p)
+    atualizar_credenciais(u, p)
+    if saved:
+        print(f"\n  Credenciais salvas em: {saved}", file=sys.stderr)
+    else:
+        print("\n  Credenciais atualizadas na sessão (não foi possível salvar em arquivo).", file=sys.stderr)
+    print("", file=sys.stderr)
+
+
 def _session_file_path() -> Path:
     override = os.getenv("SCRAPER_SESSION_FILE", "").strip()
     if override:

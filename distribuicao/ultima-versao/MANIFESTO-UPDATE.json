@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "- feat: analise de legislacao via Claude AI (claude-sonnet-4-6)\n  * Novo script Python: scripts/sgd_consulta/consultar_legislacao.py\n  * Novo wrapper PowerShell: scripts/Consultar-Legislacao.ps1\n  * Nova regra Cursor: .cursor/rules/consultar-legislacao.mdc\n  * Analista fornece URL ou arquivo (PDF/DOCX/TXT) de lei, decreto, portaria ou IN\n  * Claude retorna resumo estruturado (identificacao, objetivo, obrigacoes, prazos, pontos de atencao)\n  * Suporte a perguntas especificas sobre a legislacao\n  * Resultados salvos em data/legislacao/ como JSON\n  * Requer: ANTHROPIC_API_KEY em scripts/sgd_consulta/.env (instruções no .env.example)\n  * Dependencias novas: anthropic, httpx, beautifulsoup4, pdfplumber (requirements.txt atualizado)",
-    "data":  "2026-05-18T10:03:09",
+    "changelog":  "- fix: validacao robusta de credenciais SGD ao consultar PSAI\n- feat: novo script sincronizar-areas.ps1 (re-sincroniza areas com cadastro central)\n- feat: buscar-sai.ps1 com paridade ao General (-Termos, -PalavraIsolada, -SomenteDescricao, normalizacao de acentos)",
+    "data":  "2026-05-22T08:28:44",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.33"
+    "versao":  "2.4.34"
 }
