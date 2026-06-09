@@ -1,6 +1,6 @@
 ﻿{
     "data":  "2026-06-09",
-    "versao":  "2.4.36",
+    "versao":  "2.4.37",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -60,6 +60,7 @@
                               "templates/GUIA-padroes-psai.md",
                               "templates/GUIA-validacao-calculos-negativos.md",
                               "templates/GUIA-validacao-ne.md",
+                              "templates/GUIA-validacao-sal.md",
                               "templates/Novo(a) Apresentação do Microsoft PowerPoint.pptx",
                               "templates/PROMPT-auditoria-psai.md",
                               "templates/README-auditoria-psai.md",
@@ -73,7 +74,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "- feat: GUIA-validacao-calculos-negativos.md - novo guia de validacao de calculos com possibilidade de valor negativo (SAM/SAL/SAIL apenas; NAO aplicavel a NE)\n  * 3 etapas: analise preventiva (classificar formula), tratamento (definir regra explicita) e validacao em tempo de execucao\n  * Modelo de secao \"Tratamento de valor negativo\" para preencher na PSAI/SAI\n  * Checklist de qualidade + exemplos no dominio Escrita (ICMS, DARF, lucro real, estoque)\n  * Mensagem de alerta padrao quando faltar regra: bloqueia conclusao da PSAI ate o analista definir\n- docs: integracao do guia em revisar-psai.mdc (Passo 5 - Conformidade) e agente-produto.mdc (Rota SA Passos 4 e 5)\n- docs: GUIA-padroes-psai.md com referencia cruzada ao novo guia (cabecalho e secao 9)",
+    "changelog":  "- feat: GUIA-validacao-sal.md - guia dedicado para validacao de SAL (Solicitacao de Alteracao Legal)\n  * 9 etapas: identificacao da norma, datas (publicacao/vigencia/eficacia/retroatividade), comportamento anterior x novo, versao de liberacao, CCT (Checkpoint), calculos, reflexos, comunicacao externa, analise estrategica\n  * Distincao clara SAL vs SAIL vs SAM vs NE\n  * Checklist final com decisao APROVADO/DEVOLVER/ESCALAR\n  * Margem de seguranca minima de 5 dias uteis antes da vigencia\n  * Integracao com GUIA-validacao-calculos-negativos.md e GUIA-padroes-psai.md\n- docs: revisar-psai.mdc aponta para GUIA-validacao-sal.md no Passo 5 (Conformidade)\n  * SAL agora usa guia dedicado; SAIL mantem regras inline (guia dedicado em desenvolvimento)\n- docs: agente-produto.mdc Rota SA Passo 5 cita o novo guia para SAL\n- docs: GUIA-padroes-psai.md cabecalho atualizado com referencia ao novo guia\n- (proximos): GUIA-validacao-sam.md e GUIA-validacao-sail.md (separados por tipo, facilita evolucao independente)",
     "requerSymlink":  [
                           "atualizacao"
                       ],

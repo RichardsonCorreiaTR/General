@@ -1,5 +1,21 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.37 - 09/06/2026
+
+- feat: GUIA-validacao-sal.md - guia dedicado para validacao de SAL (Solicitacao de Alteracao Legal)
+  * 9 etapas: identificacao da norma, datas (publicacao/vigencia/eficacia/retroatividade), comportamento anterior x novo, versao de liberacao, CCT (Checkpoint), calculos, reflexos, comunicacao externa, analise estrategica
+  * Distincao clara SAL vs SAIL vs SAM vs NE
+  * Checklist final com decisao APROVADO/DEVOLVER/ESCALAR
+  * Margem de seguranca minima de 5 dias uteis antes da vigencia
+  * Integracao com GUIA-validacao-calculos-negativos.md e GUIA-padroes-psai.md
+- docs: revisar-psai.mdc aponta para GUIA-validacao-sal.md no Passo 5 (Conformidade)
+  * SAL agora usa guia dedicado; SAIL mantem regras inline (guia dedicado em desenvolvimento)
+- docs: agente-produto.mdc Rota SA Passo 5 cita o novo guia para SAL
+- docs: GUIA-padroes-psai.md cabecalho atualizado com referencia ao novo guia
+- (proximos): GUIA-validacao-sam.md e GUIA-validacao-sail.md (separados por tipo, facilita evolucao independente)
+
+---
+
 ## v2.4.36 - 09/06/2026
 
 - feat: GUIA-validacao-calculos-negativos.md - novo guia de validacao de calculos com possibilidade de valor negativo (SAM/SAL/SAIL apenas; NAO aplicavel a NE)
@@ -298,6 +314,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

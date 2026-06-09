@@ -64,7 +64,7 @@ Se no export local faltar `comportamento` e/ou `definicao` e/ou `psai_descricao`
 
 ## Passo 5 — Conformidade com os padroes estabelecidos
 
-Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para NE, `templates/GUIA-validacao-ne.md`). Quando a PSAI/SAI for **SAM, SAL ou SAIL** e envolver **calculo, subtracao, desconto, abatimento, ajuste, credito/debito, retroativo ou formula com entradas variaveis**, validar tambem com `templates/GUIA-validacao-calculos-negativos.md`. **Nao aplicar a NE** (NE corrige comportamento ja definido — o tratamento de negativos esta herdado da SAI original):
+Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` (geral); para NE: `templates/GUIA-validacao-ne.md`; para SAL: `templates/GUIA-validacao-sal.md`). Quando a PSAI/SAI for **SAM, SAL ou SAIL** e envolver **calculo, subtracao, desconto, abatimento, ajuste, credito/debito, retroativo ou formula com entradas variaveis**, validar tambem com `templates/GUIA-validacao-calculos-negativos.md`. **Nao aplicar a NE** (NE corrige comportamento ja definido — o tratamento de negativos esta herdado da SAI original):
 
 ### Para todos os tipos
 - [ ] Texto principal do pedido contem as 3 informacoes obrigatorias onde o manual exige (qual erro/situacao, onde, quando)? **NE:** exigir no **comportamento** (e em descricao PSAI se for onde estiver o resumo); nao exigir qual/onde/quando **dentro de definicao** se o campo estiver vazio.
@@ -80,7 +80,8 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para N
 ### Especifico por tipo
 - **NE**: **comportamento** e o foco da revisao (padroes completos). **Definicao:** avaliar se ha conteudo; se houver, validar; se vazio, aceitar. Qual/onde/quando; banco de cliente com "Em alguns casos..." sem "quando"; comportamento separado por topicos de Menu/Submenu; topico "Banco de Dados" presente se reproduzido em banco proprio; classificacao (Grave/Alta/Media) definida.
 - **SAM**: descricao clara da limitacao ou necessidade; cenarios de uso cobertos; impacto em outros modulos avaliado.
-- **SAL/SAIL**: base legal citada; data de vigencia informada; comportamento anterior x novo descrito.
+- **SAL**: aplicar `templates/GUIA-validacao-sal.md` (guia dedicado — identificacao da norma, datas de publicacao/vigencia/eficacia/retroatividade, comportamento anterior x novo, plano de liberacao, reflexos e comunicacao externa).
+- **SAIL**: base legal citada; data de vigencia informada; comportamento anterior x novo descrito (guia dedicado em desenvolvimento).
 
 ### Importacao (se aplicavel)
 - [ ] XML e Portal definidos juntos?

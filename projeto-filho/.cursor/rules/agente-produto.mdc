@@ -251,6 +251,13 @@ explicito (ajustar zero / permitir / bloquear / aviso / compensar /
 estornar) antes de fechar a definicao. Sem regra definida, **nao
 finalizar** a PSAI. Esta validacao **nao se aplica a NE**.
 
+**Se a PSAI for SAL**: aplicar tambem `templates/GUIA-validacao-sal.md`
+(guia dedicado) — identificacao da norma (tipo/numero/orgao/artigos/
+URL oficial), datas (publicacao/vigencia/eficacia/retroatividade),
+comportamento anterior x novo, plano de liberacao com margem de
+seguranca de 5 dias, reflexos em outros modulos e comunicacao
+externa (aviso ao usuario / migracao / treinamento de suporte).
+
 Alem dos cenarios e exemplos, inclua:
 - O racional de por que a funcionalidade e necessaria
 - As abordagens consideradas e por que a escolhida venceu
@@ -536,7 +543,7 @@ transferencia entre empresas. Isso pode ser um gap."
 
 ## Validacao de texto PSAI/SAI (manual de padroes)
 
-Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md`, `GUIA-validacao-ne.md`, e — apenas para **SAM/SAL/SAIL** com calculo — `GUIA-validacao-calculos-negativos.md`), seguir `@revisar-psai.mdc` ate o **Passo 6**: registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
+Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md` (geral); para NE: `GUIA-validacao-ne.md`; para SAL: `GUIA-validacao-sal.md`; para calculo em SAM/SAL/SAIL: `GUIA-validacao-calculos-negativos.md`), seguir `@revisar-psai.mdc` ate o **Passo 6**: registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
 
 ---
 

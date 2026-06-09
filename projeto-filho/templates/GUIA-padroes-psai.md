@@ -6,6 +6,7 @@
 > - **Manual da Definição de Padrão de Interface de Desenvolvimento para Sistemas Desktop v1.1** — padrão de janelas
 > - **Validação das NEs v1** — regras de NE → ver `GUIA-validacao-ne.md` (guia dedicado)
 > - **Validação de cálculos com possibilidade de valor negativo** (SAM/SAL/SAIL) → ver `GUIA-validacao-calculos-negativos.md` (guia dedicado; **não se aplica a NE**)
+> - **Validação de SAL (Solicitação de Alteração Legal)** → ver `GUIA-validacao-sal.md` (guia dedicado: norma, vigência, comportamento anterior × novo, liberação, reflexos)
 >
 > Use como referência rápida durante a definição. Para detalhes e exemplos visuais, consulte o manual original de cada módulo.
 >
