@@ -42,6 +42,29 @@ Antes de responder perguntas sobre SAIs/PSAIs, verifique `atualizacao/status.jso
 - Campo `totalNoBanco` vs `registrosProcessados`: se divergentes (diferenca > 50), mencione a lacuna. Pequenas diferencas (< 50) sao normais por registros novos entre ciclos.
 - Campo `resultado`: se `falha`, avise que a última importação falhou.
 
+## Validacao de areas do analista (v2.4.35)
+
+Na **primeira interacao do dia** com o analista (ou apos detectar mensagem
+ambigua sobre area/modulo), verifique se as areas locais batem com o central.
+
+**Como verificar (silencioso):**
+1. Leia `config/analista.json` -> campo `areas` (local).
+2. Tente ler `referencia/banco-dados/.../time-analistas.json` ou o symlink do
+   OneDrive `config/time-analistas.json` se disponivel.
+3. Compare com o registro do analista (match por email).
+
+**Se divergentes:** informe uma vez por sessao, de forma curta:
+
+> "Suas areas locais (`{areas_locais}`) estao diferentes do cadastro central
+> (`{areas_centrais}`). Rode `.\scripts\sincronizar-areas.ps1` para corrigir.
+> Sem isso, eu posso buscar SAIs/PSAIs nas areas erradas."
+
+**Se o central nao estiver acessivel:** nao force a verificacao. Apenas siga
+com as areas locais.
+
+**Nunca rode** `sincronizar-areas.ps1` automaticamente -- e decisao do analista
+(o script faz backup, mas sobrescreve o arquivo).
+
 ## Tasks no projeto-filho (v1.2.0)
 
 O projeto-filho agora rastreia demandas via tasks em `meu-trabalho/tasks/`.

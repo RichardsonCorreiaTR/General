@@ -5,6 +5,7 @@
 > - **Manual de Padrão de Pré-SAI e SAI de Importação v1.5** — módulo Importação
 > - **Manual da Definição de Padrão de Interface de Desenvolvimento para Sistemas Desktop v1.1** — padrão de janelas
 > - **Validação das NEs v1** — regras de NE → ver `GUIA-validacao-ne.md` (guia dedicado)
+> - **Validação de cálculos com possibilidade de valor negativo** (SAM/SAL/SAIL) → ver `GUIA-validacao-calculos-negativos.md` (guia dedicado; **não se aplica a NE**)
 >
 > Use como referência rápida durante a definição. Para detalhes e exemplos visuais, consulte o manual original de cada módulo.
 >
@@ -179,7 +180,7 @@ Use a hierarquia do manual (seção 1.17) para definir alíquota **interna** e *
 | F2 (listagem do cadastro padrão) | Gerada automaticamente; só definir se a listagem for diferente do padrão |
 | F7 | Sempre permitido, exceto em telas "response" (nesse caso, informar na SAI) |
 | Vigências em Escrita/Patrimônio | Mensagem padrão automática; só informar se o comportamento for diferente |
-| Campos somente com valores positivos | Padrão; só informar se aceitar negativos |
+| Campos somente com valores positivos | Padrão; só informar se aceitar negativos. Para SAM/SAL/SAIL com **cálculo** que pode gerar negativo: aplicar `GUIA-validacao-calculos-negativos.md` (não aplicável a NE) |
 | Sigla UF no início da descrição | Já indica que é específico daquele Estado |
 | Tamanho dos campos nos relatórios — truncamento | Alfanumérico: primeiros caracteres; numérico: últimos. Só informar se diferente |
 | Data inválida → "Data inválida." | Validação padrão automática |

@@ -1,0 +1,12 @@
+{
+  "terminalAllowlist": [
+    "powershell",
+    "pwsh",
+    "git",
+    "python",
+    "pip",
+    "npm",
+    "node",
+    "npx"
+  ]
+}

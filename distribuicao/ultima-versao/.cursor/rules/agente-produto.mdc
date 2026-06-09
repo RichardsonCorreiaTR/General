@@ -228,6 +228,12 @@ cair no mesmo periodo de ferias?"
 Nao se limite. Se tem 3 cenarios, sao 3. Se tem 15, sao 15. Cada
 cenario nao coberto e um bug futuro.
 
+**Calculos com possibilidade de valor negativo**: se a SAM/SAL/SAIL
+envolver formula, subtracao, desconto, abatimento ou retroativo,
+incluir cenarios extremos que possam levar a resultado negativo e
+seguir `templates/GUIA-validacao-calculos-negativos.md` para
+classificar e definir tratamento.
+
 Indicador: `[Passo 4 de 6 - Cenarios]`
 
 ### Passo 5: Gerar definicao
@@ -237,6 +243,13 @@ Carregue o template correto e preencha com toda a riqueza do discovery.
 **Antes de preencher o template**, execute o Checklist Estrategico
 (se ainda nao foi executado no inicio da rota) para alimentar a secao
 "Analise Estrategica" da PSAI.
+
+**Se a SAM/SAL/SAIL envolver calculo**: aplicar tambem
+`templates/GUIA-validacao-calculos-negativos.md` para classificar
+cada calculo (pode/nao pode gerar negativo) e definir o tratamento
+explicito (ajustar zero / permitir / bloquear / aviso / compensar /
+estornar) antes de fechar a definicao. Sem regra definida, **nao
+finalizar** a PSAI. Esta validacao **nao se aplica a NE**.
 
 Alem dos cenarios e exemplos, inclua:
 - O racional de por que a funcionalidade e necessaria
@@ -523,7 +536,7 @@ transferencia entre empresas. Isso pode ser um gap."
 
 ## Validacao de texto PSAI/SAI (manual de padroes)
 
-Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md`, `GUIA-validacao-ne.md`), seguir `@revisar-psai.mdc` ate o **Passo 6**: registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
+Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md`, `GUIA-validacao-ne.md`, e — apenas para **SAM/SAL/SAIL** com calculo — `GUIA-validacao-calculos-negativos.md`), seguir `@revisar-psai.mdc` ate o **Passo 6**: registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
 
 ---
 

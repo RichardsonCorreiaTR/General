@@ -152,6 +152,18 @@ if (Test-Path $analistaFile) {
     $analista | ConvertTo-Json -Depth 2 | Set-Content -Path $analistaFile -Encoding UTF8
 }
 
+# Sincronizar areas a partir do cadastro central (silencioso; nao interrompe se falhar)
+$syncAreasScript = Join-Path $projetoDir "scripts\sincronizar-areas.ps1"
+if (Test-Path $syncAreasScript) {
+    Write-Host "  Verificando areas com cadastro central (time-analistas.json)..." -ForegroundColor Yellow
+    try {
+        & $syncAreasScript -Confirmar:$false
+    } catch {
+        Write-Host "  (Aviso) Nao foi possivel sincronizar areas agora: $($_.Exception.Message)" -ForegroundColor DarkYellow
+        Write-Host "  Voce pode rodar manualmente: .\scripts\sincronizar-areas.ps1" -ForegroundColor DarkGray
+    }
+}
+
 # Limpeza
 if ($fonteDir -like "*$($env:TEMP)*") { Remove-Item -Recurse -Force $fonteDir -ErrorAction SilentlyContinue }
 

@@ -1,11 +1,11 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "- fix: validacao robusta de credenciais SGD ao consultar PSAI\n- feat: novo script sincronizar-areas.ps1 (re-sincroniza areas com cadastro central)\n- feat: buscar-sai.ps1 com paridade ao General (-Termos, -PalavraIsolada, -SomenteDescricao, normalizacao de acentos)",
-    "data":  "2026-05-22T08:28:44",
+    "changelog":  "- feat: GUIA-validacao-calculos-negativos.md - novo guia de validacao de calculos com possibilidade de valor negativo (SAM/SAL/SAIL apenas; NAO aplicavel a NE)\n  * 3 etapas: analise preventiva (classificar formula), tratamento (definir regra explicita) e validacao em tempo de execucao\n  * Modelo de secao \"Tratamento de valor negativo\" para preencher na PSAI/SAI\n  * Checklist de qualidade + exemplos no dominio Escrita (ICMS, DARF, lucro real, estoque)\n  * Mensagem de alerta padrao quando faltar regra: bloqueia conclusao da PSAI ate o analista definir\n- docs: integracao do guia em revisar-psai.mdc (Passo 5 - Conformidade) e agente-produto.mdc (Rota SA Passos 4 e 5)\n- docs: GUIA-padroes-psai.md com referencia cruzada ao novo guia (cabecalho e secao 9)",
+    "data":  "2026-06-09T16:53:06",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
                       "meu-trabalho"
                   ],
-    "versao":  "2.4.34"
+    "versao":  "2.4.36"
 }

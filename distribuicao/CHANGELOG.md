@@ -1,5 +1,31 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.36 - 09/06/2026
+
+- feat: GUIA-validacao-calculos-negativos.md - novo guia de validacao de calculos com possibilidade de valor negativo (SAM/SAL/SAIL apenas; NAO aplicavel a NE)
+  * 3 etapas: analise preventiva (classificar formula), tratamento (definir regra explicita) e validacao em tempo de execucao
+  * Modelo de secao "Tratamento de valor negativo" para preencher na PSAI/SAI
+  * Checklist de qualidade + exemplos no dominio Escrita (ICMS, DARF, lucro real, estoque)
+  * Mensagem de alerta padrao quando faltar regra: bloqueia conclusao da PSAI ate o analista definir
+- docs: integracao do guia em revisar-psai.mdc (Passo 5 - Conformidade) e agente-produto.mdc (Rota SA Passos 4 e 5)
+- docs: GUIA-padroes-psai.md com referencia cruzada ao novo guia (cabecalho e secao 9)
+
+---
+
+## v2.4.35 - 09/06/2026
+
+- fix: areas do analista re-sincronizadas automaticamente em toda atualizacao (corrige problema do time contabil)
+  * atualizar-projeto.ps1 agora chama sincronizar-areas.ps1 -Confirmar:$false ao final
+  * Resolve o problema de analistas reclassificadas (ex.: contabil) que apareciam como Escrita
+  * Causa raiz: instalador antigo gravou um default codificado e o ciclo de atualizacao nao re-lia o time-analistas.json
+  * Falhas de sincronizacao (sem OneDrive) viram avisos -- a atualizacao continua
+  * Backup automatico em config/analista.json.bak antes de sobrescrever
+- docs: regra de validacao de areas no projeto-filho (guardiao.mdc)
+  * IA alerta o analista na primeira interacao do dia se as areas locais estiverem diferentes do central
+  * Sugere rodar sincronizar-areas.ps1 quando detecta divergencia
+
+---
+
 ## v2.4.34 - 22/05/2026
 
 - fix: validacao robusta de credenciais SGD ao consultar PSAI
@@ -48,7 +74,8 @@
 
 ## v2.4.31 — 2026-05-13
 
-- Fix: gente-produto.mdc agora publica log automaticamente em eferencia/logs/YYYY-MM-DD.md e executa Publicar-LogParaConsolidacao.ps1 ao final de cada interacao substancial, sem exigir acao do analista.
+- Fix: gente-produto.mdc agora publica log automaticamente em 
+eferencia/logs/YYYY-MM-DD.md e executa Publicar-LogParaConsolidacao.ps1 ao final de cada interacao substancial, sem exigir acao do analista.
 # Changelog - Projeto Filho
 
 ## v2.4.27 - 06/05/2026
@@ -271,6 +298,8 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
+
 
 
 

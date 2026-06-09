@@ -64,7 +64,7 @@ Se no export local faltar `comportamento` e/ou `definicao` e/ou `psai_descricao`
 
 ## Passo 5 — Conformidade com os padroes estabelecidos
 
-Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para NE, `templates/GUIA-validacao-ne.md`):
+Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para NE, `templates/GUIA-validacao-ne.md`). Quando a PSAI/SAI for **SAM, SAL ou SAIL** e envolver **calculo, subtracao, desconto, abatimento, ajuste, credito/debito, retroativo ou formula com entradas variaveis**, validar tambem com `templates/GUIA-validacao-calculos-negativos.md`. **Nao aplicar a NE** (NE corrige comportamento ja definido — o tratamento de negativos esta herdado da SAI original):
 
 ### Para todos os tipos
 - [ ] Texto principal do pedido contem as 3 informacoes obrigatorias onde o manual exige (qual erro/situacao, onde, quando)? **NE:** exigir no **comportamento** (e em descricao PSAI se for onde estiver o resumo); nao exigir qual/onde/quando **dentro de definicao** se o campo estiver vazio.
@@ -75,6 +75,7 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` e, para N
 - [ ] Campos novos: comportamento na atualizacao definido (combobox, checkbox, valor, data)?
 - [ ] Areas de Impacto marcadas corretamente (Escrita/Importacao/Contabilidade)?
 - [ ] Checklist da secao 1.30 do Manual PSAI verificado?
+- [ ] **Calculos** (SAM/SAL/SAIL apenas — nao aplicavel a NE): cada calculo classificado quanto a possibilidade de gerar negativo + tratamento explicito definido (ver `GUIA-validacao-calculos-negativos.md`)?
 
 ### Especifico por tipo
 - **NE**: **comportamento** e o foco da revisao (padroes completos). **Definicao:** avaliar se ha conteudo; se houver, validar; se vazio, aceitar. Qual/onde/quando; banco de cliente com "Em alguns casos..." sem "quando"; comportamento separado por topicos de Menu/Submenu; topico "Banco de Dados" presente se reproduzido em banco proprio; classificacao (Grave/Alta/Media) definida.
@@ -123,6 +124,7 @@ Ao final, emita sempre neste formato:
 ### Conformidade com padroes
 - [itens nao conformes com referencia ao guia, ou "Conforme"]
 - **NE:** discriminar **Comportamento** (obrigatorio na analise) e **Definicao** (so se houver texto; se vazio, indicar "Definicao vazia — esperado / nao aplicavel").
+- **Calculos** (somente SAM/SAL/SAIL — omitir para NE): classificacao SIM/NAO de cada calculo + tratamento definido (ver `GUIA-validacao-calculos-negativos.md`); se faltar regra, decisao deve ser **DEVOLVER**.
 
 ### Evolucao vs validacao anterior
 - [Se existir `banco-dados/sais/validacoes/psai-<N>.md`: melhoras, pendente, regressoes; senao: "Primeira validacao registada" apos gravar o ficheiro]
