@@ -60,9 +60,18 @@ $pastasMir = @(
 
 # Arquivos individuais (configs e scripts core que mudam frequente)
 $arqsCopia = @(
+    # --- General root ---
     ".gitignore",
     "PROJETO.md",
     "DELEGACAO-ATUALIZACAO.md",
+    "arquitetura\acesso-github-codigo.md",          # v2.4.38: doc canonico do processo GitHub
+    "config\time-analistas.json",
+    "config\codigo-fonte-branches.json",            # v2.4.38: branches declaradas pelo gestor
+    "banco-dados\config\modulos-keywords.json",
+    "banco-dados\codigo-sistema\REFERENCIA.md",     # v2.4.38: branch via config + acesso Team
+    "banco-dados\codigo-sistema\META.json",
+    "agentes\agente-codigo.md",                     # v2.4.38: Modo B (gh api) documentado
+    # --- General/scripts ---
     "scripts\buscar-sai.ps1",
     "scripts\gerar-atualizacao.ps1",
     "scripts\sync-sgd-consulta-para-projeto-filho.ps1",
@@ -77,12 +86,19 @@ $arqsCopia = @(
     "scripts\Publicar-LogAnalista.ps1",
     "scripts\agendar-atualizacao.ps1",
     "scripts\atualizar-silencioso.ps1",
-    "config\time-analistas.json",
-    "banco-dados\config\modulos-keywords.json",
+    "scripts\atualizar-codigo.ps1",                 # v2.4.38: -BranchConceito + config
+    # --- Projeto-filho config ---
     "projeto-filho\config\VERSION.json",
     "projeto-filho\config\analista.json",
     "projeto-filho\config\codigo-fonte.json",
+    "projeto-filho\config\codigo-fonte-branches.json", # v2.4.38: branches via config (filho)
+    "projeto-filho\config\cursor-rules-manifest.json",  # v2.4.38: inclui acesso-github.mdc
+    # --- Projeto-filho docs (raiz) ---
     "projeto-filho\CORRECAO-SYMLINKS.md",
+    "projeto-filho\SETUP.md",                       # v2.4.38: pre-requisitos gh CLI
+    "projeto-filho\SETUP-GITHUB.md",                # v2.4.38: guia setup gh do analista
+    "projeto-filho\PROMPT-INSTALACAO.md",           # v2.4.38: passo 8b GitHub no instalador
+    # --- Projeto-filho scripts ---
     "projeto-filho\scripts\atualizar-projeto.ps1",
     "projeto-filho\scripts\atualizar-codigo.ps1",
     "projeto-filho\scripts\atualizar-codigo-fonte.ps1",
@@ -94,6 +110,9 @@ $arqsCopia = @(
     "projeto-filho\scripts\setup-sgd-python.ps1",
     "projeto-filho\scripts\configurar-cursor-auto-run.ps1",
     "projeto-filho\scripts\verificar-regras-cursor.ps1",
+    "projeto-filho\scripts\Consultar-Legislacao.ps1",
+    # --- Projeto-filho regras .mdc ---
+    "projeto-filho\.cursor\rules\acesso-github.mdc",  # v2.4.38: regra dedicada de seguranca GitHub
     "projeto-filho\.cursor\rules\agente-codigo.mdc",
     "projeto-filho\.cursor\rules\agente-produto.mdc",
     "projeto-filho\.cursor\rules\guardiao.mdc",
@@ -103,7 +122,7 @@ $arqsCopia = @(
     "projeto-filho\.cursor\rules\revisar-psai.mdc",
     "projeto-filho\.cursor\rules\sgd-enriquecer-psai.mdc",
     "projeto-filho\.cursor\rules\consultar-legislacao.mdc",
-    "projeto-filho\scripts\Consultar-Legislacao.ps1",
+    # --- Outros ---
     "logs\README.md"
 )
 
