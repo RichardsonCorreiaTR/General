@@ -24,45 +24,48 @@ Se encontrar algo inesperado no codigo -- uma logica estranha, um
 calculo que parece errado, uma duplicacao -- traga para a conversa.
 O analista precisa saber.
 
-## Onde buscar
+## Onde buscar (unico modo: GitHub via `gh api`)
 
-**Modo A - codigo local (preferido):**
-1. Leia `config/caminhos.json` para obter `codigo_local`.
-   Padrao: `C:\CursorEscrita\codigo-sistema\versao-atual\`.
-2. Se `referencia/banco-dados/mapa-sistema/indice-arquivos.md` existir,
-   use para localizar arquivos por PBL (muito mais rapido).
-3. Se nao existir, use `mapa-escrita.md` como guia e busque com Grep
-   direto no codigo-fonte.
-4. `referencia/banco-dados/mapa-sistema/mapa-escrita.md` mapeia areas de
-   negocio, PBLs e agrupamentos reais do modulo Escrita Fiscal.
-   Para area PBCVS **Importação** ou **Onvio Escrita**, consulte
-   `mapa-importacao.md` e `mapa-onvio-escrita.md` (ver `indice-mapas-areas.md`).
+O analista NAO mantem o codigo-fonte clonado localmente. Toda
+consulta ao codigo do BR Contabil (`tr/brtap-dominio_contabil`)
+acontece via `gh CLI` sob demanda. Nao tente ler de
+`C:\CursorEscrita\codigo-sistema` nem de outras pastas locais.
 
-Se o codigo-fonte local nao estiver disponivel (pasta vazia ou
-ausente), tente o **Modo B (fallback via gh api)** antes de gerar
-Mensagem Prioritaria.
+**Pre-requisito (setup do analista):** `SETUP-GITHUB.md` na raiz do
+projeto-filho. Se `gh auth status` falhar OU `gh repo view
+tr/brtap-dominio_contabil` der 404, gere **Mensagem Prioritaria**
+seguindo `acesso-github.mdc` e continue a analise com SAIs/regras
+enquanto o acesso nao chega.
 
-## Modo B - Fallback via `gh api` (sem clonar)
+**Branch:** sempre use o conceito do gestor declarado em
+`config/codigo-fonte-branches.json`. Padrao: `vigente`. Em demandas
+SAL/SAIL, clientes podem estar em `vigente_anterior`. Para mudancas
+NOVAS que ainda nao estao em producao, use `em_dev`.
 
-Quando o codigo local esta vazio/desatualizado, OU voce precisa olhar
-outra branch (ex.: `em_dev`) sem trocar o local do analista:
+**Comandos basicos:**
 
 ```
-# Listar branches
-gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100"
+# Listar branches (use com filtro - sao centenas)
+gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100" --jq ".[].name" | findstr VC106
 
-# Ler um arquivo (use a branch declarada em config/codigo-fonte-branches.json)
-gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH"
+# Listar conteudo de uma pasta na branch vigente
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita?ref=BRANCH" --jq ".[].name"
+
+# Ler um arquivo (texto curto)
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH" --jq ".content" -H "Accept: application/vnd.github.raw"
+
+# Buscar no codigo (Code Search - GitHub-side, MUITO mais rapido que clone)
+gh api "search/code?q=NOME_FUNCAO+repo:tr/brtap-dominio_contabil"
 ```
 
-A branch real e declarada em `config/codigo-fonte-branches.json`.
-Sempre confirme qual e a `vigente` antes de tirar conclusao sobre
-"como o sistema calcula hoje". Em demandas SAL/SAIL, clientes podem
-estar em `vigente_anterior`.
+**Mapas guia (continuam validos para localizar o arquivo certo):**
+- `referencia/banco-dados/mapa-sistema/mapa-escrita.md` (Escrita Fiscal)
+- `referencia/banco-dados/mapa-sistema/indice-arquivos.md` (PBL -> arquivo)
+- Importação / Onvio Escrita: `mapa-importacao.md`, `mapa-onvio-escrita.md`
+  (ver `indice-mapas-areas.md`).
 
-Se ambos os modos falharem (sem codigo local E `gh repo view` der 404),
-ai sim gere **Mensagem Prioritaria** seguindo `acesso-github.mdc`.
-Continue a analise usando apenas a base de SAIs e regras enquanto isso.
+Use o mapa para descobrir QUAL arquivo ler, depois use `gh api` para
+ler o conteudo dele.
 
 ## Limite de resultados de busca (R6)
 
@@ -152,7 +155,13 @@ e intencional ou e um bug?"
 
 ## Protecao de contexto
 
-- NAO leia arquivos de codigo maiores que 500 linhas inteiros.
-- Use Grep para localizar funcoes e trechos relevantes.
-- Se o codigo for extenso, resuma as partes relevantes.
+- NAO leia arquivos de codigo maiores que 500 linhas inteiros via
+  `gh api contents`. Prefira `gh api "search/code?q=..."` para
+  localizar trechos relevantes na propria API.
+- Se o arquivo for extenso, peca um range de linhas ao analista ou
+  use `gh api ".../contents/CAMINHO?ref=BRANCH" --jq ".content" -H "Accept: application/vnd.github.raw"`
+  combinado com `Select-String` no PowerShell para grepar so a parte
+  que importa.
 - Consulte o mapa do sistema antes de sair buscando no escuro.
+- Cada `gh api` consome rate limit (5000 req/h por usuario). Evite
+  varreduras cegas: sempre comece pelo mapa.

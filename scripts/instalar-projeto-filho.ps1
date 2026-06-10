@@ -13,8 +13,10 @@
 
 param(
     [string]$ProjetoDir = "C:\CursorEscrita\projeto-filho",
-    [string]$CodigoDir = "C:\CursorEscrita\codigo-sistema\versao-atual",
-    [string]$Branch = "VC106A02",
+    # v2.4.39: CodigoDir/Branch/RepoUrl/ZipPath mantidos por compatibilidade
+    # com chamadas antigas, mas NAO usados mais. IA consulta GitHub via gh CLI.
+    [string]$CodigoDir = "",
+    [string]$Branch = "",
     [string]$RepoUrl = "https://github.com/tr/brtap-dominio_contabil",
     [switch]$PularCodigo,
     [switch]$PularOneDrive,
@@ -221,8 +223,9 @@ function Set-AnalystConfig {
     Set-Content -Path (Join-Path $Destino "config\analista.json") -Value $analista -Encoding UTF8
     Write-OK "Identidade salva: $nome (areas: $($areasAnalista -join ', '))"
     $logsPath = Join-Path $OneDrivePath "logs\analistas\$nomeKebab"
+    # v2.4.39: codigo_local removido - IA usa gh CLI; nao clona o codigo localmente.
     $caminhos = @{
-        projeto_local = $Destino; codigo_local = $CodigoDir
+        projeto_local = $Destino
         onedrive_base = $OneDrivePath
         onedrive_logs = $logsPath
     } | ConvertTo-Json -Depth 2
@@ -269,132 +272,42 @@ function New-Symlinks {
     }
 }
 
-function Install-FromZip {
-    param([string]$ZipFilePath, [string]$DestinoCodigo)
-    if (-not (Test-Path $ZipFilePath)) {
-        Write-Fail "Arquivo ZIP nao encontrado: $ZipFilePath"
-        return $false
-    }
-    $tempDir = Join-Path $env:TEMP "brtap-extract-$(Get-Random)"
-    try {
-        Write-Host "  Extraindo ZIP..." -ForegroundColor Cyan
-        Expand-Archive -Path $ZipFilePath -DestinationPath $tempDir -Force
-        $moduloPath = $null
-        foreach ($candidato in @("escrita", "brtap-dominio_contabil\escrita", "brtap-dominio_contabil-VC106A02\escrita")) {
-            $p = Join-Path $tempDir $candidato
-            if (Test-Path $p) { $moduloPath = $p; break }
-        }
-        if (-not $moduloPath) {
-            $subdirs = Get-ChildItem -Path $tempDir -Directory -Recurse -Depth 2 -ErrorAction SilentlyContinue
-            $moduloPath = $subdirs | Where-Object { $_.Name -eq "escrita" } | Select-Object -First 1 -ExpandProperty FullName
-        }
-        if (-not $moduloPath -or -not (Test-Path $moduloPath)) {
-            Write-Fail "Pasta 'escrita' nao encontrada no ZIP. Esperado: brtap-dominio_contabil/escrita (ou equivalente)."
-            return $false
-        }
-        New-Item -ItemType Directory -Path $DestinoCodigo -Force | Out-Null
-        Copy-Item -Path "$moduloPath\*" -Destination $DestinoCodigo -Recurse -Force
-        $total = (Get-ChildItem -Recurse -File $DestinoCodigo -ErrorAction SilentlyContinue | Measure-Object).Count
-        Write-OK "Codigo extraido do ZIP: $total arquivos em $DestinoCodigo"
-        $metaDir = Split-Path $DestinoCodigo
-        $meta = @{
-            branch = $Branch
-            origem = "ZIP"
-            zipFile = $ZipFilePath
-            atualizadoEm = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
-            arquivos = $total
-        } | ConvertTo-Json -Depth 2
-        Set-Content -Path (Join-Path $metaDir "META.json") -Value $meta -Encoding UTF8
-        return $true
-    } finally {
-        if (Test-Path $tempDir) { Remove-Item -Recurse -Force $tempDir -ErrorAction SilentlyContinue }
-    }
-}
+function Test-GitHubAccess {
+    # v2.4.39: a IA usa o GitHub direto via gh CLI. Sem clone local.
+    # Este passo apenas verifica/orienta. Se faltar gh ou autenticacao,
+    # o analista resolve depois com `gh auth login --web` (ver SETUP-GITHUB.md).
+    if ($PularCodigo) { Write-Warn "Verificacao GitHub pulada (-PularCodigo)"; return }
 
-function Install-GitCode {
-    if ($PularCodigo) { Write-Warn "Download de codigo pulado (-PularCodigo)"; return }
-    if ($ZipPath) {
-        $resolvedZip = $ZipPath
-        if (-not [System.IO.Path]::IsPathRooted($ZipPath)) {
-            $resolvedZip = Join-Path $env:USERPROFILE "Downloads\$ZipPath"
-        }
-        if (Test-Path $resolvedZip) {
-            if (Install-FromZip -ZipFilePath $resolvedZip -DestinoCodigo $CodigoDir) { return }
-            Write-Warn "Falha ao usar ZIP; tentando Git se disponivel."
-        } else {
-            Write-Warn "ZIP nao encontrado: $resolvedZip"
-        }
+    $ghCmd = Get-Command gh -ErrorAction SilentlyContinue
+    if (-not $ghCmd) {
+        Write-Warn "gh CLI nao encontrado no PATH."
+        Write-Host "  Instalar com: winget install --id GitHub.cli" -ForegroundColor Yellow
+        Write-Host "  Depois reabra o PowerShell e rode: gh auth login --web --hostname github.com" -ForegroundColor Yellow
+        Write-Host "  Detalhes: $ProjetoDir\SETUP-GITHUB.md" -ForegroundColor DarkGray
+        return
     }
-    $gitCmd = Get-Command git -ErrorAction SilentlyContinue
-    if (-not $gitCmd) { Write-Warn "Git nao disponivel. Pulando codigo-fonte."; return }
-    if (Test-Path $CodigoDir) {
-        $n = (Get-ChildItem -Path $CodigoDir -File -Recurse -ErrorAction SilentlyContinue | Measure-Object).Count
-        if ($n -gt 100) {
-            Write-OK "Codigo-fonte ja presente ($n arquivos)"
-            $metaDir = Split-Path $CodigoDir
-            $metaPath = Join-Path $metaDir "META.json"
-            if (-not (Test-Path $metaPath)) {
-                Write-Warn "META.json ausente. Criando registro de rastreamento..."
-                $meta = @{
-                    branch = $Branch
-                    atualizadoEm = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
-                    atualizadoPor = $env:USERNAME
-                    arquivos = $n
-                    origem = "pre-existente"
-                    nota = "Codigo ja existia antes da instalacao; rodar atualizar-codigo.ps1 para sincronizar com o repo."
-                } | ConvertTo-Json -Depth 2
-                Set-Content -Path $metaPath -Value $meta -Encoding UTF8
-                Write-OK "META.json criado em $metaPath"
-            }
-            return
-        }
+    Write-OK "gh CLI: $(& gh --version 2>$null | Select-Object -First 1)"
+
+    & gh auth status 2>&1 | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        Write-Warn "gh nao esta autenticado."
+        Write-Host "  Rode: gh auth login --web --hostname github.com (conta TR)" -ForegroundColor Yellow
+        Write-Host "  Detalhes: $ProjetoDir\SETUP-GITHUB.md" -ForegroundColor DarkGray
+        return
     }
-    New-Item -ItemType Directory -Path $CodigoDir -Force | Out-Null
-    $repoLocalDir = $null
-    $tempDir = $null
-    foreach ($c in @("C:\1 - A\B\Programas\brtap-dominio", "C:\Users\$($env:USERNAME)\brtap-dominio_contabil", "D:\brtap-dominio_contabil")) {
-        if (-not (Test-Path $c -ErrorAction SilentlyContinue)) { continue }
-        if (-not (Test-Path (Join-Path $c "escrita"))) { continue }
-        if ((git -C $c branch --show-current 2>$null) -eq $Branch) {
-            $repoLocalDir = $c; break
-        }
-    }
-    if ($repoLocalDir) {
-        Write-Host "  Usando repo local: $repoLocalDir" -ForegroundColor Green
-        git -C $repoLocalDir pull origin $Branch 2>&1 | Out-Null
-        $origemModulo = Join-Path $repoLocalDir "escrita"
-        if (-not (Test-Path $origemModulo)) {
-            Write-Fail "Pasta 'escrita' nao encontrada em $repoLocalDir"
-            return
-        }
-        $commitSrc = $repoLocalDir
+    Write-OK "gh autenticado (conta TR)"
+
+    $repoOut = & gh repo view tr/brtap-dominio_contabil --json name 2>&1 | Out-String
+    if ($LASTEXITCODE -eq 0 -and $repoOut -match '"name"') {
+        Write-OK "Acesso ao repo tr/brtap-dominio_contabil OK (Read)"
+    } elseif ($repoOut -match "Could not resolve to a Repository|HTTP 404|Not Found") {
+        Write-Warn "Sem acesso ao repo (404). Falta liberacao no Team 'fiscont-gp-codigo-leitura' (Fernando Pizzetti)."
+        Write-Host "  Fale com o gestor (Richardson)." -ForegroundColor Yellow
+    } elseif ($repoOut -match "SAML|SSO") {
+        Write-Warn "SSO da TR exigido. Rode: gh auth refresh -h github.com -s read:org"
     } else {
-        Write-Host "  Clonando do GitHub (shallow clone, pode demorar)..." -ForegroundColor Yellow
-        $tempDir = Join-Path $env:TEMP "escrita-sdd-clone-$(Get-Random)"
-        git clone --depth 1 --branch $Branch --single-branch $RepoUrl $tempDir 2>&1 | Out-Host
-        if ($LASTEXITCODE -ne 0) { Write-Fail "Falha ao clonar repositorio."; return }
-        $origemModulo = Join-Path $tempDir "escrita"
-        if (-not (Test-Path $origemModulo)) {
-            Write-Fail "Clone nao contem a pasta 'escrita'. Verifique branch e repositorio."
-            if (Test-Path $tempDir) { Remove-Item -Recurse -Force $tempDir -ErrorAction SilentlyContinue }
-            return
-        }
-        $commitSrc = $tempDir
+        Write-Warn "Nao foi possivel confirmar acesso ao repo. Saida: $($repoOut.Trim())"
     }
-    Write-Host "  Copiando modulo Escrita..." -ForegroundColor Cyan
-    Copy-Item -Path "$origemModulo\*" -Destination $CodigoDir -Recurse -Force
-    $total = (Get-ChildItem -Recurse -File $CodigoDir | Measure-Object).Count
-    Write-OK "Codigo copiado: $total arquivos"
-    $meta = @{
-        branch = $Branch
-        commit = (git -C $commitSrc log -1 --format="%H" 2>$null)
-        commitDate = (git -C $commitSrc log -1 --format="%ci" 2>$null)
-        atualizadoEm = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
-        arquivos = $total
-    } | ConvertTo-Json -Depth 2
-    $metaDir = Split-Path $CodigoDir
-    Set-Content -Path (Join-Path $metaDir "META.json") -Value $meta -Encoding UTF8
-    if ($tempDir -and (Test-Path $tempDir)) { Remove-Item -Recurse -Force $tempDir -ErrorAction SilentlyContinue }
 }
 
 function Invoke-SgdCredentialsStep {
@@ -520,8 +433,8 @@ $nomeKebab = Set-AnalystConfig -Destino $ProjetoDir -OneDrivePath $onedrivePath 
 Write-Step 5 10 "Criando links para OneDrive"
 New-Symlinks -Destino $ProjetoDir -OneDrivePath $onedrivePath -NomeKebab $nomeKebab
 
-Write-Step 6 10 "Baixando codigo-fonte do sistema"
-Install-GitCode
+Write-Step 6 10 "Verificando acesso ao GitHub (codigo-fonte via gh CLI)"
+Test-GitHubAccess
 
 Write-Step 7 10 "Verificando instalacao"
 Test-Installation -Destino $ProjetoDir

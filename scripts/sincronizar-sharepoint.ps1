@@ -90,7 +90,6 @@ $arqsCopia = @(
     # --- Projeto-filho config ---
     "projeto-filho\config\VERSION.json",
     "projeto-filho\config\analista.json",
-    "projeto-filho\config\codigo-fonte.json",
     "projeto-filho\config\codigo-fonte-branches.json", # v2.4.38: branches via config (filho)
     "projeto-filho\config\cursor-rules-manifest.json",  # v2.4.38: inclui acesso-github.mdc
     # --- Projeto-filho docs (raiz) ---

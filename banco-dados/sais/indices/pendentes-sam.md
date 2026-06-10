@@ -1,10 +1,15 @@
 ﻿# SAM Pendentes - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 12:02
-> Total pendentes: 14881
+> Atualizado em: 10/06/2026 15:03
+> Total pendentes: 14885
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 102385 | 131533 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102381 | 131530 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102380 | 131528 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102379 | 131527 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 0 | 131526 |  | 10/06/2026 | ID 0 | - |
 | 0 | 131516 |  | 10/06/2026 | ID 0 | - |
 | 0 | 131482 |  | 09/06/2026 | ID 0 | - |
 | 0 | 131460 |  | 08/06/2026 | ID 0 | - |
@@ -95,7 +100,6 @@
 | 0 | 130736 |  | 13/05/2026 | ID 0 | - |
 | 101723 | 130731 |  | 13/05/2026 | Retorno de Teste | Corrigir as pend�ncias de vulnerabilidade no servidor do Busca NF-e. |
 | 101797 | 130730 |  | 13/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Importar para as Bases de Impostos por Parcela op��o relacionada � n�o aplica��o |
-| 0 | 130716 |  | 12/05/2026 | ID 0 | - |
 | 0 | 130715 |  | 12/05/2026 | ID 0 | - |
 | 101754 | 130691 |  | 12/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar compacta��o em zip no envio de notas do Busca NF-e Cliente para o Busca |
 | 0 | 130690 |  | 12/05/2026 | ID 0 | - |

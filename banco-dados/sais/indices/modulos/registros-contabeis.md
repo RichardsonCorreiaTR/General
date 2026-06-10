@@ -1,7 +1,7 @@
 ﻿# Registros Contábeis
 
 > Dominio Escrita Fiscal | slug `registros-contabeis`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 3 | Liberadas: 36 | Descartadas: 3 | Total SAIs: 42
 
 ## Pendentes (3)

@@ -1,6 +1,6 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Total SAIs unicas: 1673
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |

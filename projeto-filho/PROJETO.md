@@ -44,7 +44,7 @@ projeto-filho/
 +-- scripts/
 |   +-- verificar-ambiente.ps1   <-- Diagnostico do ambiente
 |   +-- atualizar-projeto.ps1    <-- Atualiza para versao mais recente
-|   +-- atualizar-codigo.ps1     <-- Baixa codigo-fonte do git
+|   +-- (codigo do BR Contabil: consulta direta via gh CLI - sem clone local. Ver SETUP-GITHUB.md)
 +-- referencia/             <-- Links para pastas do OneDrive (somente leitura)
     +-- banco-dados/        <-- (sincronizado do OneDrive)
     +-- logs/               <-- (seus logs no OneDrive)
@@ -132,10 +132,12 @@ A IA NAO deve apresentar resultados baseados apenas nos indices MD.
 
 | Script | O que faz |
 |--------|-----------|
-| `.\scripts\verificar-ambiente.ps1` | Diagnostico completo do ambiente |
+| `.\scripts\verificar-ambiente.ps1` | Diagnostico completo do ambiente (inclui gh CLI e acesso ao repo) |
 | `.\scripts\atualizar-projeto.ps1` | Atualiza para versao mais recente |
-| `.\scripts\atualizar-codigo.ps1` | Baixa codigo-fonte do git |
 | `.\scripts\Publicar-LogParaConsolidacao.ps1 -AnalistaSlug <slug>` | Copia `referencia/logs/` diarios para o clone **General** em `logs/analistas/<slug>/` (metricas do gerente; ver `logs/README.md` no Admin). |
+
+> NOTA v2.4.39: Os scripts `atualizar-codigo.ps1` e `atualizar-codigo-fonte.ps1`
+> foram REMOVIDOS. A IA consulta o codigo direto no GitHub via `gh CLI` (ver `SETUP-GITHUB.md`).
 
 ---
 

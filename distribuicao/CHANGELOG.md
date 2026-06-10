@@ -1,5 +1,21 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.39 - 10/06/2026
+
+- breaking: GitHub-only no projeto-filho. Analista NAO clona mais o codigo do BR Contabil; toda consulta vai via gh CLI sob demanda.
+- remove: scripts/atualizar-codigo.ps1 e scripts/atualizar-codigo-fonte.ps1 (nao mais necessarios no filho).
+- remove: config/codigo-fonte.json (consumido pelos scripts removidos).
+- breaking: campo "codigo_local" removido de config/caminhos.json. Instalador (General) nao escreve mais esse campo.
+- feat: .cursor/rules/agente-codigo.mdc reescrito - "Onde buscar" agora documenta apenas gh api (sem clone local). Inclui comandos basicos (branches, contents, search/code) e protecao de rate limit.
+- feat: .cursor/rules/acesso-github.mdc enfatiza que gh api e o UNICO modo de consulta (sem mais "Modo A/Modo B").
+- feat: scripts/verificar-ambiente.ps1 sem checagem "Codigo-fonte local" (checagens 2b/2c/2d ja cobrem gh + auth + acesso ao repo).
+- feat: scripts/instalar-projeto-filho.ps1 (General) - Install-GitCode/Install-FromZip substituidos por Test-GitHubAccess (verifica gh, auth, acesso a tr/brtap-dominio_contabil); Passo 6 do instalador renomeado "Verificando acesso ao GitHub".
+- docs: SETUP.md (pre-requisitos sem Git opcional), SETUP-GITHUB.md (secao "Como a IA usa" reescrita), PROMPT-INSTALACAO.md (passo 4 sem codigo_local), PROJETO.md (estrutura sem atualizar-codigo.ps1; tabela de scripts atualizada), GUIA-RAPIDO.md (FAQ "Onde vejo o codigo-fonte" reescrita), CORRECAO-SYMLINKS.md (sem codigo_local).
+- docs: corrigir-symlinks.ps1 - codigo_local removido da reconstrucao automatica.
+- nota: General MANTEM Modo A (gestor tem clone local em C:\1 - A\B\Programas\brtap-dominio; scripts/atualizar-codigo.ps1 e atualizar-tudo.bat continuam validos para o admin).
+
+---
+
 ## v2.4.38 - 10/06/2026
 
 - feat: SETUP-GITHUB.md - guia do analista para acesso ao codigo-fonte do BR Contabil via gh CLI (autenticacao, troubleshooting, regras de seguranca)
@@ -345,6 +361,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

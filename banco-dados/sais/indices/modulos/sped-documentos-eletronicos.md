@@ -1,7 +1,7 @@
 ﻿# SPED e documentos eletronicos
 
 > Dominio Escrita Fiscal | slug `sped-documentos-eletronicos`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 214 | Liberadas: 7581 | Descartadas: 653 | Total SAIs: 8440
 
 ## Pendentes (214)

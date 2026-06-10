@@ -1,14 +1,14 @@
 ﻿# Contabilidade
 
 > Dominio Escrita Fiscal | slug `contabilidade`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 118 | Liberadas: 2621 | Descartadas: 326 | Total SAIs: 3054
 
 ## Pendentes (118)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 131520 | NE | Normal | 10/06/2026 | - |
+| 0 | 131526 | SAM | Normal | 10/06/2026 | - |
 | 102266 | 131346 | NE | Normal | 03/06/2026 | Em alguns casos está apresentando erro de banco de dados ao emitir o Balanço qua |
 | 102192 | 131254 | NE | Normal | 01/06/2026 | Não está preenchendo os códigos de configuração ao contratar a Contabilidade Dig |
 | 102188 | 131176 | NE | Normal | 27/05/2026 | Replicação de configuração das contas não funciona ao infornar a conta contábil. |

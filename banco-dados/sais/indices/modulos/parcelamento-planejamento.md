@@ -1,7 +1,7 @@
 ﻿# Parcelamento e planejamento tributario
 
 > Dominio Escrita Fiscal | slug `parcelamento-planejamento`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 5 | Liberadas: 163 | Descartadas: 19 | Total SAIs: 187
 
 ## Pendentes (5)

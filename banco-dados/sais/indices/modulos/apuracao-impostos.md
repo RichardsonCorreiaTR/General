@@ -1,13 +1,17 @@
 ﻿# Apuracao de impostos
 
 > Dominio Escrita Fiscal | slug `apuracao-impostos`
-> Atualizado em: 10/06/2026 12:02
-> Pendentes: 726 | Liberadas: 24913 | Descartadas: 2606 | Total SAIs: 28189
+> Atualizado em: 10/06/2026 15:03
+> Pendentes: 730 | Liberadas: 24913 | Descartadas: 2606 | Total SAIs: 28193
 
-## Pendentes (726)
+## Pendentes (730)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 102385 | 131533 | SAM | Normal | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102381 | 131530 | SAM | Normal | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102380 | 131528 | SAM | Normal | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102379 | 131527 | SAM | Normal | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
 | 102319 | 131461 | NE | Normal | 08/06/2026 | Não está importando os dados do beneficiário para a nota de serviço quando reali |
 | 102302 | 131434 | SAM | Normal | 08/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
 | 102309 | 131407 | NE | Normal | 05/06/2026 | Está importando os valores do registro L210 do SPED ECF de forma acumulada para  |

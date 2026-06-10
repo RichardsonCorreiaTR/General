@@ -58,11 +58,12 @@ Se nao existir, preencher manualmente:
 ```json
 {
   "projeto_local": "C:\\CursorEscrita\\projeto-filho",
-  "codigo_local": "C:\\CursorEscrita\\codigo-sistema\\versao-atual",
   "onedrive_base": "C:\\Users\\{USUARIO}\\Thomson Reuters Incorporated\\CursorEscrita - General",
   "onedrive_logs": "C:\\Users\\{USUARIO}\\Thomson Reuters Incorporated\\CursorEscrita - General\\logs\\analistas\\{nome-kebab}"
 }
 ```
+
+> NOTA v2.4.39: `codigo_local` foi removido. A IA consulta o codigo direto no GitHub via `gh CLI`.
 
 Substituir {USUARIO} pelo usuario do Windows e {nome-kebab} pelo nome
 do analista em kebab-case sem acentos (ex: ana-ligia-silva).

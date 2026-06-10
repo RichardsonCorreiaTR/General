@@ -147,28 +147,8 @@ if (Test-Path $rulesDir) {
 }
 Add-Check "Regras IA ($nRules .mdc)" $rulesOK $(if ($rulesOK) { ".cursor/rules com regras suficientes" } else { "Regras ausentes ou insuficientes em .cursor/rules" })
 
-# 12. Codigo-fonte local (com fallback legado)
-$codigoOK = $false
-$codigoPath = ""
-if ($caminhosOK) {
-    $codigoPath = $caminhos.codigo_local
-    if (-not (Test-Path $codigoPath)) {
-        foreach ($legado in @(
-            (Join-Path $env:USERPROFILE "EscritaSDD-dados-pesados\versao-atual")
-        )) {
-            if (Test-Path $legado) {
-                $codigoPath = $legado
-                Write-Host "  [i]  Codigo encontrado no caminho legado: $legado" -ForegroundColor DarkYellow
-                break
-            }
-        }
-    }
-    if (Test-Path $codigoPath) {
-        $nArqs = (Get-ChildItem $codigoPath -File -Recurse -ErrorAction SilentlyContinue | Measure-Object).Count
-        $codigoOK = $nArqs -gt 100
-    }
-}
-Add-Check "Codigo-fonte local ($codigoPath)" $codigoOK $(if ($codigoOK) { "Arquivos suficientes em codigo_local" } else { "Rode: .\scripts\atualizar-codigo.ps1" })
+# 12. (REMOVIDO v2.4.39) Codigo-fonte local nao se aplica mais; analista acessa via gh CLI.
+#     Ver checagens 2b, 2c, 2d (gh, gh auth status, acesso ao repo).
 
 # 12b. Indice de arquivos
 $indiceArquivosOK = $false

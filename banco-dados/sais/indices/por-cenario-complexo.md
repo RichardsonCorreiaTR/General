@@ -1,6 +1,6 @@
 ﻿# Indice de SAIs por Cenario Complexo
 
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Cenarios que cruzam multiplos dominios (SAIs classificadas em 2+ dominios)
 
 ## Resumo por combinacao de dominios

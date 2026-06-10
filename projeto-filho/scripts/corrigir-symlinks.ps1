@@ -72,13 +72,13 @@ $caminhosFile = Join-Path $projetoDir "config\caminhos.json"
 $logsPath = Join-Path $onedrivePath "logs\analistas\$nomeKebab"
 $caminhos = @{
     projeto_local = $projetoDir
-    codigo_local = "C:\CursorEscrita\codigo-sistema\versao-atual"
+    # codigo_local: removido na v2.4.39 (IA usa gh CLI; sem clone local)
     onedrive_base = $onedrivePath
     onedrive_logs = $logsPath
 }
 if (Test-Path $caminhosFile) {
     $atual = Get-Content $caminhosFile -Raw | ConvertFrom-Json
-    if ($atual.codigo_local) { $caminhos.codigo_local = $atual.codigo_local }
+    # codigo_local removido na v2.4.39; ignorar se existir em caminhos.json antigos
 }
 $caminhos | ConvertTo-Json -Depth 2 | Set-Content -Path $caminhosFile -Encoding UTF8
 Write-Host "  [OK] caminhos.json atualizado" -ForegroundColor Green

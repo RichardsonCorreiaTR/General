@@ -1,7 +1,7 @@
 ﻿# LALUR
 
 > Dominio Escrita Fiscal | slug `lalur`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 23 | Liberadas: 719 | Descartadas: 64 | Total SAIs: 806
 
 ## Pendentes (23)

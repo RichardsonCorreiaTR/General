@@ -1,11 +1,11 @@
 ﻿# SAM Descartadas - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Total SAIs unicas: 1306
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 130590 |  | 05/05/2026 | ID 0 | - |
+| 0 | 130716 |  | 12/05/2026 | ID 0 | - |
 | 101010 | 129811 |  | 02/04/2026 | SAI Aprovada | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 101599 | 129573 |  | 26/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar um estudo para criar a integração por API com ERPs Externos para recebi |
 | 100722 | 129392 |  | 23/03/2026 | SAI Aprovada | Realizar testes no processo de Rotinas Autom�ticas na Escrita Fiscal. |

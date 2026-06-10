@@ -1,7 +1,7 @@
 ﻿# Escrituracao e movimento fiscal
 
 > Dominio Escrita Fiscal | slug `escrituracao-movimento-fiscal`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 239 | Liberadas: 10775 | Descartadas: 1107 | Total SAIs: 12120
 
 ## Pendentes (239)

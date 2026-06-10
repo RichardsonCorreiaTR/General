@@ -36,11 +36,11 @@ Siga estes passos na ordem:
 - Crie o arquivo config\caminhos.json com:
   {
     "projeto_local": "C:\\CursorEscrita\\projeto-filho",
-    "codigo_local": "C:\\CursorEscrita\\codigo-sistema\\versao-atual",
     "onedrive_base": "C:\\Users\\{MEU-USUARIO}\\Thomson Reuters Incorporated\\CursorEscrita - General",
     "onedrive_logs": "C:\\Users\\{MEU-USUARIO}\\Thomson Reuters Incorporated\\CursorEscrita - General\\logs\\analistas\\{meu-nome-kebab}"
   }
   (substitua {MEU-USUARIO} pelo meu usuario Windows e {meu-nome-kebab} pelo meu nome em kebab-case sem acentos)
+  NOTA v2.4.39: NAO inclua "codigo_local" - a IA consulta o codigo direto no GitHub via gh CLI (passo 8b).
 
 **5. CRIAR LINKS SIMBOLICOS**
 - Rode estes comandos:

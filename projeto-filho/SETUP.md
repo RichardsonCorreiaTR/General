@@ -6,9 +6,9 @@ Voce precisa de:
 - **Cursor** instalado (https://cursor.sh)
 - **OneDrive** instalado e logado na conta corporativa
 - **Acesso ao SharePoint** do CursorEscrita (o gerente vai te adicionar)
-- **Git** instalado (https://git-scm.com) -- opcional, para baixar o codigo-fonte
 - **GitHub CLI (`gh`)** instalado e autenticado na conta TR -- ver `SETUP-GITHUB.md`
-  (necessario para a IA investigar o codigo-fonte do BR Contabil)
+  (a IA usa o `gh` para investigar o codigo-fonte direto no GitHub,
+  sem clonar nada localmente)
 
 ## Instalacao Automatica (Recomendado)
 
@@ -101,11 +101,13 @@ Edite `config/caminhos.json` com seus paths:
 ```json
 {
   "projeto_local": "C:\\CursorEscrita\\projeto-filho",
-  "codigo_local": "C:\\CursorEscrita\\codigo-sistema\\versao-atual",
   "onedrive_base": "C:\\Users\\SEU-USUARIO\\Thomson Reuters Incorporated\\CursorEscrita - General",
   "onedrive_logs": "C:\\Users\\SEU-USUARIO\\Thomson Reuters Incorporated\\CursorEscrita - General\\logs\\analistas\\seu-nome"
 }
 ```
+
+> NOTA v2.4.39: O campo `codigo_local` foi removido. A IA consulta o codigo-fonte
+> diretamente no GitHub via `gh CLI` -- nao ha mais clone local. Veja `SETUP-GITHUB.md`.
 
 ### Passo 4 -- Sincronizar OneDrive
 

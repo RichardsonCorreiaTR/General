@@ -1,6 +1,6 @@
 ﻿# SAL Liberadas - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Total SAIs unicas: 7115
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |

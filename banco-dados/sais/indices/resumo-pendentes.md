@@ -1,19 +1,19 @@
 ﻿# Resumo de Pendentes - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 12:02
-> Total pendentes (SAIs unicas): 1003
+> Atualizado em: 10/06/2026 15:03
+> Total pendentes (SAIs unicas): 1007
 
 ## Totais por dominio
 
 | Dominio | Pendentes | % do Total |
 |---------|-----------|------------|
-| Apuracao de impostos | 726 | 72.4% |
-| Escrituracao e movimento fiscal | 239 | 23.8% |
+| Apuracao de impostos | 730 | 72.5% |
+| Escrituracao e movimento fiscal | 239 | 23.7% |
 | SPED e documentos eletronicos | 214 | 21.3% |
 | Onvio, importacao e dados | 177 | 17.6% |
-| Contabilidade | 118 | 11.8% |
-| Obrigacoes e relatorios estaduais | 96 | 9.6% |
-| Integracoes e canais digitais | 87 | 8.7% |
+| Contabilidade | 118 | 11.7% |
+| Obrigacoes e relatorios estaduais | 96 | 9.5% |
+| Integracoes e canais digitais | 87 | 8.6% |
 | Utilitarios e rotinas | 65 | 6.5% |
 | LALUR | 23 | 2.3% |
 | Conteúdo Contábil Tributário | 15 | 1.5% |
@@ -28,7 +28,11 @@
 
 | SAI | PSAI | Tipo | Dominio(s) | Cadastro | Resumo |
 |-----|------|------|------------|----------|--------|
-| 0 | 131520 | NE | Contabilidade | 10/06/2026 | - |
+| 102385 | 131533 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102381 | 131530 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102380 | 131528 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 102379 | 131527 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
+| 0 | 131526 | SAM | Contabilidade | 10/06/2026 | - |
 | 102319 | 131461 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Apuracao de impostos | 08/06/2026 | Não está importando os dados do beneficiário para a nota de serviço quando reali |
 | 102302 | 131434 | SAM | Apuracao de impostos, Integracoes e canais digitais | 08/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
 | 102309 | 131407 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Conteúdo Contábil Tributário, Apuracao de impostos | 05/06/2026 | Está importando os valores do registro L210 do SPED ECF de forma acumulada para  |
@@ -44,8 +48,4 @@
 | 102185 | 131271 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Escrituracao e movimento fiscal, Apuracao de impostos | 01/06/2026 | Está considerando indevidamente documentos cancelados para o cálculo dos imposto |
 | 102138 | 131267 | SAM | Utilitarios e rotinas, Apuracao de impostos | 01/06/2026 | Realizar testes no processo das Rotinas Automáticas devido a alteração na config |
 | 102206 | 131265 | NE | Apuracao de impostos | 01/06/2026 | Está apresentando a mensagem 'A conta referencial deve ser analítica' quando sel |
-| 102192 | 131254 | NE | Contabilidade, Apuracao de impostos | 01/06/2026 | Não está preenchendo os códigos de configuração ao contratar a Contabilidade Dig |
-| 102247 | 131237 | NE | Apuracao de impostos, Patrimônio, Integracoes e canais digitais | 01/06/2026 | Está gerando incorretamente o Ganho/perda de Capital ao realizar a baixa total,  |
-| 102066 | 131211 | SAM | Apuracao de impostos | 28/05/2026 | Registrar os tempos atuados nas pesquisas de inovações com IA na versão de Junho |
-| 102046 | 131184 | NE | SPED e documentos eletronicos, Apuracao de impostos | 27/05/2026 | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRATO_BANCARI |
 

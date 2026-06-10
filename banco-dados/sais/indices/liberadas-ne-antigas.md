@@ -1,6 +1,6 @@
 ﻿# NEs Liberadas - Anteriores a 2022
 
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Total SAIs unicas: 9572
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |

@@ -1,6 +1,6 @@
 ﻿{
     "data":  "2026-06-10",
-    "versao":  "2.4.38",
+    "versao":  "2.4.39",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -23,11 +23,8 @@
                               ".cursor/rules/sgd-enriquecer-psai.mdc",
                               "config/analista.json",
                               "config/codigo-fonte-branches.json",
-                              "config/codigo-fonte.json",
                               "config/cursor-rules-manifest.json",
                               "config/VERSION.json",
-                              "scripts/atualizar-codigo-fonte.ps1",
-                              "scripts/atualizar-codigo.ps1",
                               "scripts/atualizar-projeto.ps1",
                               "scripts/buscar-sai.ps1",
                               "scripts/configurar-cursor-auto-run.ps1",
@@ -77,7 +74,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "- feat: SETUP-GITHUB.md - guia do analista para acesso ao codigo-fonte do BR Contabil via gh CLI (autenticacao, troubleshooting, regras de seguranca)\n- feat: .cursor/rules/acesso-github.mdc - regra dedicada para acesso seguro ao GitHub (alwaysApply): NUNCA pedir token no chat, NUNCA gravar token em arquivo do projeto, preferir gh auth login (keyring) ou GITHUB_TOKEN em env var\n- feat: config/codigo-fonte-branches.json - branches declaradas pelo gestor (vigente, vigente_anterior, em_dev); scripts agora leem dela em vez de hardcoded VC106A02\n- feat: scripts/atualizar-codigo.ps1 - parametro -BranchConceito (vigente/vigente_anterior/em_dev) que le config/codigo-fonte-branches.json; -Branch (explicito) mantem precedencia para override manual\n- feat: scripts/verificar-ambiente.ps1 - checagens novas: gh CLI instalado, gh auth status, acesso ao tr/brtap-dominio_contabil, config/codigo-fonte-branches.json valido; mensagem orientativa em caso de 404 (Team / Fernando Pizetti) ou SSO\n- feat: agente-codigo.mdc - Modo B (fallback via gh api) documentado para quando codigo local indisponivel ou para olhar outra branch\n- feat: scripts/atualizar-projeto.ps1 - passa a copiar SETUP-GITHUB.md e PROMPT-INSTALACAO.md no upgrade\n- docs: guardiao.mdc (General + filho) - bloco resumo \"Acesso ao GitHub\" apontando para regra dedicada acesso-github.mdc\n- docs: PROMPT-INSTALACAO.md - novo passo 8b orienta IA a verificar gh CLI, autenticacao e acesso ao repo durante a instalacao\n- docs: SETUP.md - pre-requisitos atualizados com gh CLI + referencia a SETUP-GITHUB.md\n- config: cursor-rules-manifest.json - inclui acesso-github.mdc na lista de regras obrigatorias",
+    "changelog":  "- breaking: GitHub-only no projeto-filho. Analista NAO clona mais o codigo do BR Contabil; toda consulta vai via gh CLI sob demanda.\n- remove: scripts/atualizar-codigo.ps1 e scripts/atualizar-codigo-fonte.ps1 (nao mais necessarios no filho).\n- remove: config/codigo-fonte.json (consumido pelos scripts removidos).\n- breaking: campo \"codigo_local\" removido de config/caminhos.json. Instalador (General) nao escreve mais esse campo.\n- feat: .cursor/rules/agente-codigo.mdc reescrito - \"Onde buscar\" agora documenta apenas gh api (sem clone local). Inclui comandos basicos (branches, contents, search/code) e protecao de rate limit.\n- feat: .cursor/rules/acesso-github.mdc enfatiza que gh api e o UNICO modo de consulta (sem mais \"Modo A/Modo B\").\n- feat: scripts/verificar-ambiente.ps1 sem checagem \"Codigo-fonte local\" (checagens 2b/2c/2d ja cobrem gh + auth + acesso ao repo).\n- feat: scripts/instalar-projeto-filho.ps1 (General) - Install-GitCode/Install-FromZip substituidos por Test-GitHubAccess (verifica gh, auth, acesso a tr/brtap-dominio_contabil); Passo 6 do instalador renomeado \"Verificando acesso ao GitHub\".\n- docs: SETUP.md (pre-requisitos sem Git opcional), SETUP-GITHUB.md (secao \"Como a IA usa\" reescrita), PROMPT-INSTALACAO.md (passo 4 sem codigo_local), PROJETO.md (estrutura sem atualizar-codigo.ps1; tabela de scripts atualizada), GUIA-RAPIDO.md (FAQ \"Onde vejo o codigo-fonte\" reescrita), CORRECAO-SYMLINKS.md (sem codigo_local).\n- docs: corrigir-symlinks.ps1 - codigo_local removido da reconstrucao automatica.\n- nota: General MANTEM Modo A (gestor tem clone local em C:\\1 - A\\B\\Programas\\brtap-dominio; scripts/atualizar-codigo.ps1 e atualizar-tudo.bat continuam validos para o admin).",
     "requerSymlink":  [
                           "atualizacao"
                       ],

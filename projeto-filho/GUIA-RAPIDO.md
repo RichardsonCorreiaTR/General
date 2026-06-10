@@ -140,9 +140,8 @@ Rode estes comandos em um terminal:
 
 | Comando | O que faz |
 |---------|-----------|
-| `.\scripts\verificar-ambiente.ps1` | Verifica se tudo esta OK |
+| `.\scripts\verificar-ambiente.ps1` | Verifica se tudo esta OK (inclui gh CLI e acesso ao repo) |
 | `.\scripts\atualizar-projeto.ps1` | Atualiza para versao mais recente |
-| `.\scripts\atualizar-codigo.ps1` | Baixa codigo-fonte mais recente do git |
 | `.\scripts\sincronizar-areas.ps1` | Re-sincroniza suas areas com o cadastro central (apos o gerente reclassificar) |
 
 ---
@@ -185,8 +184,10 @@ R: A PSAI e a pre-analise (entender o problema e planejar). A SAI e a
 definicao detalhada com todas as secoes (GERAL, PROCESSOS, ARQUIVO, etc.).
 
 **P: Onde vejo o codigo-fonte do sistema?**
-R: Em `C:\CursorEscrita\codigo-sistema\versao-atual\` (se instalado; ou conforme `codigo_local` em `config/caminhos.json`).
-Rode `.\scripts\atualizar-codigo.ps1` para baixar/atualizar.
+R: A partir da v2.4.39, o codigo NAO e mais clonado localmente. A IA consulta
+direto no GitHub via `gh CLI` quando precisa investigar uma funcao/tela/PBL.
+Setup do acesso em `SETUP-GITHUB.md`. Se quiser ler manualmente, abra
+https://github.com/tr/brtap-dominio_contabil no navegador.
 
 ---
 

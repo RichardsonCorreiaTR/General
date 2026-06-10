@@ -1,7 +1,7 @@
 ﻿# Obrigacoes e relatorios estaduais
 
 > Dominio Escrita Fiscal | slug `obrigacoes-relatorios-estaduais`
-> Atualizado em: 10/06/2026 12:02
+> Atualizado em: 10/06/2026 15:03
 > Pendentes: 96 | Liberadas: 3039 | Descartadas: 360 | Total SAIs: 3491
 
 ## Pendentes (96)

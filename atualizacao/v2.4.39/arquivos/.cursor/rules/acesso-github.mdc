@@ -30,22 +30,29 @@ Setup completo do analista: ver `SETUP-GITHUB.md` na raiz do projeto.
    scope minimo `repo`, validade <= 90 dias.
 3. PAT em arquivo de projeto -- proibido.
 
-## Padrao de consulta ao codigo
+## Padrao de consulta ao codigo (v2.4.39: unico modo)
 
-**Modo A -- Codigo local** (preferido): caminho em
-`config/caminhos.json -> codigo_local`. Para popular, o analista roda
-`.\scripts\atualizar-codigo.ps1` em terminal SEPARADO.
-
-**Modo B -- Fallback via `gh api`**: usar quando local nao existe ou
-para investigar outra branch sem mexer no local.
+O analista NAO clona o codigo. Toda consulta vai direto ao GitHub via
+`gh CLI`, sob demanda. Nao tente ler de
+`C:\CursorEscrita\codigo-sistema` nem de outras pastas locais.
 
 ```
-gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100"
-gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH"
+# Branches (centenas - filtrar)
+gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100" --jq ".[].name" | findstr VC
+
+# Listar pasta
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita?ref=BRANCH" --jq ".[].name"
+
+# Ler arquivo (texto cru)
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH" -H "Accept: application/vnd.github.raw"
+
+# Busca de codigo (GitHub Code Search - rapido)
+gh api "search/code?q=NOME_FUNCAO+repo:tr/brtap-dominio_contabil"
 ```
 
-Para arquivos grandes, prefira `--jq '.content'` + decode base64
-(comando que a IA mostra ao analista).
+Branch sempre lida de `config/codigo-fonte-branches.json` (conceitos
+`vigente`, `vigente_anterior`, `em_dev`). Detalhes na regra
+`agente-codigo.mdc`.
 
 ## Branches declaradas pelo gestor
 
