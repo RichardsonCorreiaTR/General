@@ -1,0 +1,27 @@
+﻿{
+  "_comentario": "Branches do repositorio tr/brtap-dominio_contabil declaradas pelo gestor. Atualizar quando a versao vigente mudar. Documento de referencia: arquitetura/acesso-github-codigo.md",
+  "repositorio": {
+    "owner": "tr",
+    "name": "brtap-dominio_contabil",
+    "url_https": "https://github.com/tr/brtap-dominio_contabil",
+    "team_leitura": "fiscont-gp-codigo-leitura"
+  },
+  "vigente": {
+    "branch": "main",
+    "descricao": "Como o sistema CALCULA HOJE (branch default do repo)",
+    "atualizado_em": "2026-06-10",
+    "atualizado_por": "RichardsonCorreiaTR"
+  },
+  "vigente_anterior": {
+    "branch": null,
+    "descricao": "Branch usada por clientes em release anterior (a confirmar)",
+    "atualizado_em": null,
+    "atualizado_por": null
+  },
+  "em_dev": {
+    "branch": "VC106A06",
+    "descricao": "Onde a mudanca nova vai aterrissar (geracao corrente)",
+    "atualizado_em": "2026-06-10",
+    "atualizado_por": "RichardsonCorreiaTR"
+  }
+}

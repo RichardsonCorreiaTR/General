@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "- feat: GUIA-validacao-sal.md - guia dedicado para validacao de SAL (Solicitacao de Alteracao Legal)\n  * 9 etapas: identificacao da norma, datas (publicacao/vigencia/eficacia/retroatividade), comportamento anterior x novo, versao de liberacao, CCT (Checkpoint), calculos, reflexos, comunicacao externa, analise estrategica\n  * Distincao clara SAL vs SAIL vs SAM vs NE\n  * Checklist final com decisao APROVADO/DEVOLVER/ESCALAR\n  * Margem de seguranca minima de 5 dias uteis antes da vigencia\n  * Integracao com GUIA-validacao-calculos-negativos.md e GUIA-padroes-psai.md\n- docs: revisar-psai.mdc aponta para GUIA-validacao-sal.md no Passo 5 (Conformidade)\n  * SAL agora usa guia dedicado; SAIL mantem regras inline (guia dedicado em desenvolvimento)\n- docs: agente-produto.mdc Rota SA Passo 5 cita o novo guia para SAL\n- docs: GUIA-padroes-psai.md cabecalho atualizado com referencia ao novo guia\n- (proximos): GUIA-validacao-sam.md e GUIA-validacao-sail.md (separados por tipo, facilita evolucao independente)",
-    "data":  "2026-06-09",
-    "hash_validacao":  "C17D121F82385E917E663E755229C2DC",
-    "versao":  "2.4.37"
-}

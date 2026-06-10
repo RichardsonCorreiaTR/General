@@ -74,6 +74,15 @@ Siga estes passos na ordem:
 - Rode: powershell -File "C:\CursorEscrita\projeto-filho\scripts\verificar-ambiente.ps1"
 - Me mostre o resultado.
 
+**8b. ACESSO AO GITHUB (BR Contabil / codigo-fonte)**
+- Verifique se o `gh CLI` esta instalado: gh --version
+- Se nao estiver: oriente `winget install --id GitHub.cli` e reabrir o PowerShell.
+- Verifique autenticacao: gh auth status
+- Se nao autenticado, oriente: gh auth login --web --hostname github.com (com conta TR corporativa).
+- Teste o acesso ao repo: gh repo view tr/brtap-dominio_contabil --json name
+- Se voltar 404, informe que falta liberacao no Team `fiscont-gp-codigo-leitura` (Fernando Pizetti).
+- NUNCA pedir token/PAT no chat. Setup completo em: C:\CursorEscrita\projeto-filho\SETUP-GITHUB.md
+
 **9. INSTRUCOES FINAIS**
 - Me diga para fechar esta janela do Cursor
 - Me diga para abrir o Cursor de novo em: File > Open Folder > C:\CursorEscrita\projeto-filho

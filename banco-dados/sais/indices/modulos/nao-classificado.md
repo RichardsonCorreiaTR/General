@@ -1,7 +1,7 @@
 ﻿# Nao Classificado
 
 > Dominio Escrita Fiscal | slug `nao-classificado`
-> Atualizado em: 16/05/2026 00:10
+> Atualizado em: 10/06/2026 12:02
 > Pendentes: 0 | Liberadas: 0 | Descartadas: 0 | Total SAIs: 0
 
 ## Pendentes (0)

@@ -26,6 +26,7 @@ O analista precisa saber.
 
 ## Onde buscar
 
+**Modo A - codigo local (preferido):**
 1. Leia `config/caminhos.json` para obter `codigo_local`.
    Padrao: `C:\CursorEscrita\codigo-sistema\versao-atual\`.
 2. Se `referencia/banco-dados/mapa-sistema/indice-arquivos.md` existir,
@@ -37,10 +38,31 @@ O analista precisa saber.
    Para area PBCVS **Importação** ou **Onvio Escrita**, consulte
    `mapa-importacao.md` e `mapa-onvio-escrita.md` (ver `indice-mapas-areas.md`).
 
-Se o codigo-fonte nao estiver disponivel (pasta vazia ou ausente),
-gere **Mensagem Prioritaria** (ver guardiao.mdc) para o analista
-enviar ao gerente. Continue a analise usando apenas a base de SAIs
-e regras.
+Se o codigo-fonte local nao estiver disponivel (pasta vazia ou
+ausente), tente o **Modo B (fallback via gh api)** antes de gerar
+Mensagem Prioritaria.
+
+## Modo B - Fallback via `gh api` (sem clonar)
+
+Quando o codigo local esta vazio/desatualizado, OU voce precisa olhar
+outra branch (ex.: `em_dev`) sem trocar o local do analista:
+
+```
+# Listar branches
+gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100"
+
+# Ler um arquivo (use a branch declarada em config/codigo-fonte-branches.json)
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH"
+```
+
+A branch real e declarada em `config/codigo-fonte-branches.json`.
+Sempre confirme qual e a `vigente` antes de tirar conclusao sobre
+"como o sistema calcula hoje". Em demandas SAL/SAIL, clientes podem
+estar em `vigente_anterior`.
+
+Se ambos os modos falharem (sem codigo local E `gh repo view` der 404),
+ai sim gere **Mensagem Prioritaria** seguindo `acesso-github.mdc`.
+Continue a analise usando apenas a base de SAIs e regras enquanto isso.
 
 ## Limite de resultados de busca (R6)
 

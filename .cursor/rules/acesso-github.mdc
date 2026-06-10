@@ -1,0 +1,63 @@
+﻿---
+description: Acesso ao GitHub (codigo-fonte tr/brtap-dominio_contabil) - regras de seguranca e padrao de consulta
+alwaysApply: true
+---
+
+# Acesso ao GitHub - Seguranca e padrao de consulta (General)
+
+## Quando ativada
+
+Sempre que a IA precisar:
+- Acessar o codigo-fonte do BR Contabil (`tr/brtap-dominio_contabil`).
+- Orientar o gestor sobre Team, conta TR, ou `gh CLI`.
+- Atualizar/ler o codigo-fonte local via `scripts/atualizar-codigo.ps1`.
+
+## Regras duras de seguranca
+
+**NUNCA:**
+- Pedir ao usuario para colar token (PAT), senha, secret ou cookie no chat.
+- Usar token de uma pessoa para outra (quebra de auditoria).
+- Gravar token em arquivo do projeto (`.env`, `config/`, comentario em
+  script, log, cache ou backup). Se ver token gravado, AVISE para remover
+  e regerar.
+- Sugerir PAT com scope amplo (`Full access`, `admin:*`) ou validade longa.
+
+**Preferencia (mais seguro -> menos seguro):**
+1. `gh auth login --web` -- token no keyring do Windows.
+2. PAT em variavel de ambiente da maquina (`setx GITHUB_TOKEN ...`),
+   scope minimo `repo`, validade <= 90 dias.
+3. PAT em arquivo de projeto -- proibido.
+
+## Padrao de consulta
+
+A IA NAO precisa clonar tudo. Dois modos:
+
+**Modo A -- Codigo local** (preferido para investigacao profunda):
+- Padrao: `C:\1 - A\B\Programas\brtap-dominio\escrita` (tree completa do
+  Dominio Contabil) ou pastas legacy do gestor.
+- Atualizado via `scripts/atualizar-codigo.ps1` (ja le branch do config).
+
+**Modo B -- `gh api` (sem clonar)**: fallback quando local indisponivel
+ou para olhar outra branch.
+
+```
+gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100"
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH"
+```
+
+## Branches declaradas pelo gestor
+
+A branch real e declarada em `config/codigo-fonte-branches.json` (campos
+`vigente.branch`, `vigente_anterior.branch`, `em_dev.branch`). Sempre
+confirme qual e a `vigente` antes de tirar conclusoes sobre "como o
+sistema calcula hoje".
+
+## Em caso de falha de acesso
+
+Se `gh repo view tr/brtap-dominio_contabil` voltar 404:
+1. Confirme `gh auth status` (logado com conta TR?).
+2. Confirme convite no Team `fiscont-gp-codigo-leitura` (Active).
+3. Confirme com o Fernando Pizetti se ele ja liberou `Read` no repo.
+4. Doc do processo completo: `arquitetura/acesso-github-codigo.md`.
+
+A IA conduz; quem executa e o usuario.

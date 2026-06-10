@@ -7,6 +7,8 @@ Voce precisa de:
 - **OneDrive** instalado e logado na conta corporativa
 - **Acesso ao SharePoint** do CursorEscrita (o gerente vai te adicionar)
 - **Git** instalado (https://git-scm.com) -- opcional, para baixar o codigo-fonte
+- **GitHub CLI (`gh`)** instalado e autenticado na conta TR -- ver `SETUP-GITHUB.md`
+  (necessario para a IA investigar o codigo-fonte do BR Contabil)
 
 ## Instalacao Automatica (Recomendado)
 

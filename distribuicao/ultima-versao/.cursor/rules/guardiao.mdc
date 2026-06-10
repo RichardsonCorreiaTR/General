@@ -42,6 +42,13 @@ Antes de responder perguntas sobre SAIs/PSAIs, verifique `atualizacao/status.jso
 - Campo `totalNoBanco` vs `registrosProcessados`: se divergentes (diferenca > 50), mencione a lacuna. Pequenas diferencas (< 50) sao normais por registros novos entre ciclos.
 - Campo `resultado`: se `falha`, avise que a última importação falhou.
 
+## Acesso ao GitHub (v2.4.38)
+
+Regras dedicadas em `acesso-github.mdc` (alwaysApply). Resumo:
+- NUNCA pedir token/PAT/senha no chat; NUNCA gravar token em arquivo do projeto.
+- Usar `gh auth login --web` (keyring) ou `GITHUB_TOKEN` em env var.
+- Setup do analista: `SETUP-GITHUB.md` na raiz do projeto-filho.
+
 ## Validacao de areas do analista (v2.4.35)
 
 Na **primeira interacao do dia** com o analista (ou apos detectar mensagem

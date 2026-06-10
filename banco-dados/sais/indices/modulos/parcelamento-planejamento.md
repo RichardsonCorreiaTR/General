@@ -1,13 +1,14 @@
 ﻿# Parcelamento e planejamento tributario
 
 > Dominio Escrita Fiscal | slug `parcelamento-planejamento`
-> Atualizado em: 16/05/2026 00:10
-> Pendentes: 4 | Liberadas: 163 | Descartadas: 19 | Total SAIs: 186
+> Atualizado em: 10/06/2026 12:02
+> Pendentes: 5 | Liberadas: 163 | Descartadas: 19 | Total SAIs: 187
 
-## Pendentes (4)
+## Pendentes (5)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 102020 | 131120 | NE | Normal | 26/05/2026 | Está ocorrendo um erro de banco de dados ao replicar as configurações do "Planej |
 | 101726 | 130453 | NE | Normal | 29/04/2026 | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao Ativo Imob |
 | 101036 | 129802 | NE | Normal | 02/04/2026 | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na apura��o,  |
 | 45773 | 40384 | SAM | Normal | 17/10/2016 | Ajustar a importa��o dos impostos CSLL Lalur e IRPJ Lalur quando houver parcelam |
@@ -17,6 +18,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102071 | 131216 | NE | 28/05/2026 | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRPJ na integ |
 | 99860 | 127928 | SAM | 11/02/2026 | Apoio em auxilio na demanda da POC do visual expert ao time do Plataforma. |
 | 96731 | 122427 | NE | 08/09/2025 | Est� ocorrendo erro de banco de dados ao realizar o pagamento de parcelas dos im |
 | 94549 | 119027 | NE | 06/05/2025 | Est� sendo demonstrada a data de pagamento incorreta no relat�rio de Parcelament |
@@ -27,7 +29,6 @@
 | 86768 | 109843 | SAL | 27/05/2024 | RS-Alterar o vencimento da guia DAS e das parcelas referente ao Parcelamento de  |
 | 85282 | 107682 | SAL | 18/03/2024 | Alterar o link de acesso ao portal do Simples Nacional via c�digo de acesso para |
 | 84425 | 106546 | NE | 14/02/2024 | Est� importando o valor incorreto do registro M010 do informativo SPED ECF, quan |
-| 84066 | 105448 | SAM | 17/01/2024 | Alterar a mensagem de bloqueio de exclusão de vários lançamentos que pertencerem |
 | 83844 | 104310 | SAL | 18/12/2023 | SC-Alterar o sistema para informar um percentual com 6 casas decimais no quadro  |
 | 82369 | 102459 | NE | 18/10/2023 | Est� importando o valor incorreto do registro M010 do informativo SPED ECF, quan |
 | 80152 | 98564 | NE | 27/06/2023 | Est� sendo importado o valor incorreto no campo "INSS/CPP" da janela "Valor da F |
@@ -53,8 +54,9 @@
 | Tema | Ocorrencias |
 |------|-------------|
 | parcelamento | 128 |
-| pert | 37 |
+| pert | 36 |
 | refis | 3 |
+| provisão | 1 |
 
 ## Descartadas Recentes (10 mais recentes)
 

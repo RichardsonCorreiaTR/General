@@ -1,16 +1,18 @@
 ﻿# Patrimônio
 
 > Dominio Escrita Fiscal | slug `patrimonio`
-> Atualizado em: 16/05/2026 00:10
-> Pendentes: 3 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 159
+> Atualizado em: 10/06/2026 12:02
+> Pendentes: 5 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 161
 
-## Pendentes (3)
+## Pendentes (5)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 102293 | 131283 | NE | Normal | 01/06/2026 | Está calculando incorretamente a depreciação de períodos anteriores à transferên |
+| 102247 | 131237 | NE | Normal | 01/06/2026 | Está gerando incorretamente o Ganho/perda de Capital ao realizar a baixa total,  |
+| 101807 | 130597 | NE | Normal | 06/05/2026 | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao importar  |
 | 101726 | 130453 | NE | Normal | 29/04/2026 | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao Ativo Imob |
 | 100847 | 128299 | SAL | Normal | 23/02/2026 | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
-| 98297 | 103490 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração das Mutações do Patrimônio Líquido |
 
 ## Liberadas Recentes (30 mais recentes)
 

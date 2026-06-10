@@ -1,14 +1,16 @@
 ﻿# LALUR
 
 > Dominio Escrita Fiscal | slug `lalur`
-> Atualizado em: 16/05/2026 00:10
-> Pendentes: 21 | Liberadas: 714 | Descartadas: 63 | Total SAIs: 798
+> Atualizado em: 10/06/2026 12:02
+> Pendentes: 23 | Liberadas: 719 | Descartadas: 64 | Total SAIs: 806
 
-## Pendentes (21)
+## Pendentes (23)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101752 | 130652 | NE | Normal | 11/05/2026 | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
+| 102265 | 131323 | NE | Normal | 02/06/2026 | Em alguns casos está importando incorretamente os valores da CSLL Retida no regi |
+| 102207 | 131282 | NE | Normal | 01/06/2026 | Está importando incorretamente o valor do 'Lucro antes da CSLL e IRPJ', quando p |
+| 102172 | 131273 | NE | Normal | 01/06/2026 | Não está sendo feito o cálculo correto da majoração dos impostos 6-CSLL, 7-IRPJ, |
 | 101673 | 130619 | NE | Normal | 07/05/2026 | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, 33-IRPJ-P |
 | 101686 | 130530 | NE | Normal | 04/05/2026 | N�o est� sendo gerada a linha "(-) Divulga��o Eleitoral e Partid�ria Gratuita" n |
 | 101308 | 130231 | SAM | Normal | 20/04/2026 | Refatorar o c�lculo da majora��o do IRPJ e CSLL. |
@@ -34,6 +36,11 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102071 | 131216 | NE | 28/05/2026 | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRPJ na integ |
+| 102018 | 131149 | NE | 26/05/2026 | Não está sendo calculado corretamente o valor de majoração dos impostos "6-CSLL" |
+| 101966 | 131029 | NE | 22/05/2026 | Não está sendo feito o cálculo da majoração dos impostos 6-CSLL, 7-IRPJ e 33-IRP |
+| 101752 | 130652 | NE | 11/05/2026 | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integração |
+| 101772 | 130635 | NE | 11/05/2026 | Está sendo gerado o valor incorreto no Relatório "Resumo dos Impostos Calculados |
 | 101547 | 130513 | NE | 30/04/2026 | Est� sendo calculado incorretamente o valor dos impostos 6-CSLL e 7-IRPJ, quando |
 | 101519 | 130458 | NE | 29/04/2026 | N�o est� sendo feito o c�lculo da majora��o dos impostos 6-CSLL, 7-IRPJ, 33-IRPJ |
 | 101487 | 130334 | NE | 24/04/2026 | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integra��o |
@@ -59,18 +66,13 @@
 | 98859 | 125567 | NE | 17/12/2025 | N�o est� sendo demonstrado o hist�rico correto para os impostos 6-CSLL e 7-IRPJ  |
 | 98330 | 124582 | NE | 24/11/2025 | N�o est� sendo gerado o valor correto de integra��o do imposto 111-IRPJ/SCP, qua |
 | 97274 | 123145 | NE | 03/10/2025 | Est� importando incorretamente os valores dos campos "Rendimento bruto/receita"  |
-| 98570 | 122437 | SAM | 09/09/2025 | Incluir op��o para importar saldo das contas cont�beis informadas nos acumulador |
-| 96756 | 122370 | SAM | 05/09/2025 | Alterar o c�lculo da CSLL e IRPJ do Luco Real no utilit�rio 'Planejamento Tribut |
-| 96187 | 121927 | NE | 20/08/2025 | N�o est� sendo listada a op��o "PIS/COFINS" no campo "Atualizar somente o impost |
-| 96095 | 121487 | SAL | 04/08/2025 | Importar os valores dos registros P200 e P400 do SPED ECF deduzindo os valores d |
-| 95945 | 121316 | NE | 30/07/2025 | Est� importando para o campo incorreto os valores de juros e multa no P200/P400  |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| irpj | 470 |
-| csll | 358 |
+| irpj | 475 |
+| csll | 363 |
 | lalur | 127 |
 | lucro real | 84 |
 | lacs | 1 |
@@ -79,6 +81,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102143 | 131102 | NE | 26/05/2026 | Está sendo calculado incorretamente o valor da majoração dos impostos 6-CSLL, 7- |
 | 86528 | 107750 | NE | 19/03/2024 | Est� sendo considerado incorretamente o valor dos juros para o campo Valor deduz |
 | 82402 | 102541 | NE | 24/10/2023 | Em alguns casos est� ocorrendo erro de banco de dados ao gerar o Relat�rio Demon |
 | 72150 | 85508 | NE | 17/09/2021 | N�o est� importando o hist�rico do LALUR no registro M300/M350 dos outros dados  |
@@ -88,7 +91,6 @@
 | 67148 | 77593 | NE | 11/09/2020 | N�o est� sendo reconhecida a nota de compra para gerar o custo de aquisi��o no r |
 | 66224 | 76494 | NE | 30/07/2020 | N�o est� sendo demonstrado entre par�nteses o valor cont�bil e base de c�lculo n |
 | 65735 | 75526 | NE | 12/06/2020 | Est� gerando indevidamente os registros 0110 e 0111, quando realizado o lan�amen |
-| 64335 | 73635 | NE | 24/03/2020 | N�o est�o sendo gerados os modelos no relat�rio de impostos PIS e COFINS, quando |
 
 ## Busca Completa
 

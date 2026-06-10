@@ -45,6 +45,7 @@ scripts/.update-lock.json
 
 # SGD Playwright: estado de sessao (cookies) — nao versionar
 scripts/sgd_consulta/data/session_state*.json
+scripts/sgd_consulta/data/sai_session_state*.json
 # Consultas PSAI arquivadas (HTML, capturas — podem conter dados internos)
 scripts/sgd_consulta/data/consultas/arquivo/
 scripts/sgd_consulta/data/consultas/logs/
@@ -75,3 +76,6 @@ atualizacao/**/arquivos/config/status-ambiente.json
 projeto-filho/referencia/banco-dados/
 projeto-filho/referencia/atualizacao/
 projeto-filho/referencia/logs/
+
+# Pasta de saidas temporarias (logs operacionais, drafts de mensagens)
+tmp/

@@ -1,20 +1,37 @@
 ﻿# SPED e documentos eletronicos
 
 > Dominio Escrita Fiscal | slug `sped-documentos-eletronicos`
-> Atualizado em: 16/05/2026 00:10
-> Pendentes: 218 | Liberadas: 7599 | Descartadas: 659 | Total SAIs: 8465
+> Atualizado em: 10/06/2026 12:02
+> Pendentes: 214 | Liberadas: 7581 | Descartadas: 653 | Total SAIs: 8440
 
-## Pendentes (218)
+## Pendentes (214)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 102319 | 131461 | NE | Normal | 08/06/2026 | Não está importando os dados do beneficiário para a nota de serviço quando reali |
+| 102309 | 131407 | NE | Normal | 05/06/2026 | Está importando os valores do registro L210 do SPED ECF de forma acumulada para  |
+| 102221 | 131359 | NE | Normal | 03/06/2026 | SP-Não está importando o Código do Benefício Fiscal na guia Estoque das notas fi |
+| 102232 | 131327 | NE | Normal | 02/06/2026 | Está ocorrendo indevidamente os erros de importação: "CNPJ do emitente da NFS-e  |
+| 102185 | 131271 | NE | Normal | 01/06/2026 | Está considerando indevidamente documentos cancelados para o cálculo dos imposto |
+| 102046 | 131184 | NE | Normal | 27/05/2026 | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRATO_BANCARI |
+| 102044 | 131166 | SAM | Normal | 27/05/2026 | MG- Otimizar as DW's 'ds_sped_blocoC_regC190_s_MG' e 'ds_sped_blocoE_regE510' na |
+| 102171 | 131156 | NE | Normal | 27/05/2026 | Está atribuindo indevidamente a situação "Equivalente entre os planos", quando n |
+| 102197 | 131151 | NE | Normal | 27/05/2026 | Estão sendo gerados indevidamente os registros 0460 e D195 no informativo SPED F |
+| 102215 | 131134 | NE | Normal | 26/05/2026 | Não está sendo zerada a guia "IVA" das notas canceladas de saídas de CT-e, quand |
+| 102067 | 131128 | NE | Normal | 26/05/2026 | Está apresentado o erro "Expression is not valid" ao informar uma conta na tela  |
+| 102141 | 131104 | NE | Normal | 26/05/2026 | Em alguns casos está travando o sistema ao executar as Rotinas automáticas quand |
+| 102034 | 131072 | NE | Normal | 25/05/2026 | Não estão sendo importados os registros Y570, Y600 e Y612 do informativo SPED EC |
+| 102294 | 131039 | NE | Normal | 25/05/2026 | ES-Está sendo gerado incorretamente o registro C197 com o código de ajuste "ES10 |
+| 101823 | 130820 | NE | Normal | 18/05/2026 | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro D700 do SP |
+| 101793 | 130807 | NE | Normal | 15/05/2026 | Est� replicando indevidamente os acumuladores que possuem CNAE informado nas con |
 | 101762 | 130769 | SAM | Normal | 14/05/2026 | Contabilizar na importa��o de notas, como "Sint�tico por dia" ou "Sint�tico por  |
-| 101718 | 130663 | NE | Normal | 11/05/2026 | Est�o sendo corrompidos os arquivos XML com o atributo de namespace inserido inc |
+| 101821 | 130766 | NE | Normal | 14/05/2026 | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metros o "Fato |
+| 101837 | 130642 | SAM | Normal | 11/05/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na tela de No |
 | 101698 | 130610 | NE | Normal | 07/05/2026 | N�o est� sendo poss�vel informar caracteres alfanum�ricos no campo "N�mero NIF"  |
+| 101807 | 130597 | NE | Normal | 06/05/2026 | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao importar  |
+| 101800 | 130594 | NE | Normal | 06/05/2026 | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui mais de 80  |
 | 101592 | 130556 | SAL | Normal | 05/05/2026 | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de 30/04/2026 |
 | 101691 | 130537 | NE | Normal | 04/05/2026 | Em alguns casos o sistema fecha ao gerar o arquivo Excel do Relat�rio de Confer� |
-| 101556 | 130509 | NE | Normal | 30/04/2026 | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o plano de con |
-| 101758 | 130507 | NE | Normal | 30/04/2026 | Est� importando os valores do registro Y570 do informativo SPED ECF incorretamen |
 | 101513 | 130476 | SAM | Normal | 29/04/2026 | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
 | 101761 | 130469 | SAM | Normal | 29/04/2026 | Criar op��es nos par�metros para contabilizar como "Sint�tico por dia" ou "Sint� |
 | 101668 | 130465 | SAL | Normal | 29/04/2026 | Considerar as devolu��es de vendas e os devidos valores dos CT-es substitutos e  |
@@ -29,7 +46,6 @@
 | 101165 | 130014 | NE | Normal | 13/04/2026 | N�o est� sendo feita corretamente a importa��o dos lan�amentos cont�beis na jane |
 | 101314 | 129992 | NE | Normal | 10/04/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
 | 101607 | 129991 | NE | Normal | 10/04/2026 | Est� ocorrendo travamento durante a importa��o quando a empresa possui atividade |
-| 101357 | 129974 | SAM | Normal | 09/04/2026 | Gerar o SPED ECF considerando o plano de contas vigente no período do informativ |
 | 101316 | 129919 | NE | Normal | 08/04/2026 | Est� ocorrendo o erro de sistema "Algum dado n�o cadastrado!" ao gravar a import |
 | 101139 | 129879 | NE | Normal | 07/04/2026 | Est� gerando o saldo anterior incorreto no DFC em RTF no informativo SPED Cont�b |
 | 101184 | 129830 | NE | Normal | 02/04/2026 | Em alguns casos est� ocorrendo o erro de sistema "N�mero do Erro...: 6" ao reali |
@@ -38,40 +54,33 @@
 | 101153 | 129729 | NE | Normal | 01/04/2026 | Em alguns casos est� fechando o sistema e n�o est� sendo gerado o arquivo do SPE |
 | 101210 | 129698 | NE | Normal | 31/03/2026 | Em alguns casos n�o est� concluindo a grava��o da importa��o dos dados quando im |
 | 100940 | 129545 | NE | Normal | 26/03/2026 | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota � importad |
-| 100956 | 129531 | NE | Normal | 25/03/2026 | Não está gerando o SPED Contábil quando há contas sem movimento/saldo não vincul |
 | 100941 | 129535 | NE | Normal | 25/03/2026 | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/AT por pro |
-| 101257 | 129506 | SAM | Normal | 25/03/2026 | Preencher automaticamente a aba 'Plano de contas anterior' na modal Outros dados |
 | 100814 | 129461 | SAM | Normal | 24/03/2026 | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED ECF para  |
 | 100774 | 129458 | SAM | Normal | 24/03/2026 | Gravar no banco de dados o tempo de gera��o do SPED Fiscal para auxiliar nas an� |
 | 100899 | 129457 | NE | Normal | 24/03/2026 | Est� gerando valor incorreto na coluna "RB Demais Atividades" do Comparativo do  |
 | 101150 | 129343 | SAM | Normal | 20/03/2026 | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cadastro do ac |
 | 100647 | 129305 | SAM | Normal | 19/03/2026 | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui��es. |
+| 101777 | 129273 | NE | Normal | 19/03/2026 | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta cont�bil do f |
 | 101485 | 128897 | NE | Normal | 09/03/2026 | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informativo SPED Fi |
 | 101299 | 128827 | SAL | Normal | 05/03/2026 | Alterar o sistema para permitir a utiliza��o do tipo de isen��o 2 - Di�ria de vi |
 | 100345 | 128813 | NE | Normal | 04/03/2026 | Est� ocorrendo erro de sistema ao gravar o bot�o "Outros Dados" do informativo " |
 | 100525 | 128811 | NE | Normal | 04/03/2026 | Em alguns casos est� ocorrendo lentid�o ao gerar o informativo EFD Contribui��es |
 | 100779 | 128806 | NE | Normal | 04/03/2026 | Est� apresentando indevidamente a tela "Configurar Emiss�o de Relat�rios" na ger |
+| 101878 | 128794 | SAL | Normal | 04/03/2026 | Alterar o c�digo de ajuste gerado no registro E311 no SPED Fiscal para lan�ament |
 | 100383 | 128759 | SAM | Normal | 04/03/2026 | Otimizar a gera��o do informativo SPED Cont�bil. |
-| 100519 | 128739 | SAM | Normal | 03/03/2026 | Alterar a guia Informativos da Parametrização no modo Visualizar parametrização  |
 | 100578 | 128734 | NE | Normal | 03/03/2026 | N�o est� gerando os valores de IPI para alguns produtos na guia "Estoque" quando |
 | 100737 | 128718 | NE | Normal | 03/03/2026 | Est� ocorrendo o erro 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao realizar a i |
 | 100707 | 128705 | NE | Normal | 02/03/2026 | Est� ocorrendo erro de banco de dados na tela de "Concilia��o de Lan�amentos" ao |
 | 100389 | 128664 | NE | Normal | 02/03/2026 | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metros o "Fato |
 | 101058 | 128657 | SAL | Normal | 02/03/2026 | Ajustar o comprovante anual para que gere os rendimentos isentos de distribui��o |
-| 100327 | 128582 | NE | Normal | 26/02/2026 | Está validando indevidamente a coluna 'Checkbox' como obrigatória quando há algu |
-| 100325 | 128581 | NE | Normal | 26/02/2026 | Não está abrindo o calendário dos campos 'Arquivamento dos atos constitutivos *' |
 | 100182 | 128563 | SAM | Normal | 26/02/2026 | Realizar a importa��o a importa��o de NF-e e NFC-e fora do servidor de sess�o no |
 | 100287 | 128438 | NE | Normal | 25/02/2026 | Est� sendo importado incorretamente o valor da "Diferen�a entre o valor cont�bil |
 | 101186 | 128436 | NE | Normal | 25/02/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
 | 100523 | 128427 | NE | Normal | 25/02/2026 | SC-N�o est� sendo gerado o registro C197 com c�digo de ajuste "SC50000002" no in |
 | 101002 | 128421 | SAM | Normal | 24/02/2026 | Otimizar importa��o NFC-e Arquivo XML. |
 | 100853 | 128376 | SAL | Normal | 24/02/2026 | RS-Alterar o sistema para que seja gerado o registro E311 do SPED Fiscal pelo la |
-| 100571 | 128355 | SAIL | Normal | 23/02/2026 | Implementar a geração do bloco Y para empresas do Lucro Presumido na geração do  |
 | 100012 | 128179 | NE | Normal | 18/02/2026 | Em alguns casos est� ocorrendo erro na execu��o do exporta/importa referente a t |
 | 100062 | 128101 | NE | Normal | 16/02/2026 | RS-N�o est� sendo gerado corretamente o registro E113 e n�o est� sendo gerado o  |
-| 100094 | 128069 | SAM | Normal | 16/02/2026 | Apresentar lançamentos encontrados para todas as transações pendentes que possue |
-| 100763 | 127922 | SAM | Normal | 11/02/2026 | Ajustar a importa��o do CT-e e CT-eOS quando o CT-e Substituto for com compet�nc |
-| 99891 | 127768 | SAM | Normal | 09/02/2026 | Alterar a apresentação da modal de validações e das notificações do SPED Contábi |
 | 99878 | 127508 | NE | Normal | 03/02/2026 | Est� importando incorretamente a base de c�lculo e o valor do imposto 8-DIFALI q |
 | 99654 | 127405 | SAM | Normal | 02/02/2026 | Realizar estudos a fim de minimizar crescimento dos arquivos tempor�rios de banc |
 | 99996 | 126938 | NE | Normal | 23/01/2026 | Est� importando incorretamente a al�quota do ISS na guia "Itens" da nota quando  |
@@ -79,29 +88,18 @@
 | 99310 | 126692 | NE | Normal | 19/01/2026 | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente atrav�s d |
 | 99799 | 126559 | SAL | Normal | 16/01/2026 | Alterar o sistema para que seja poss�vel informar a chave das notas modelo 62 no |
 | 100979 | 126557 | SAL | Normal | 16/01/2026 | RS-Ajustar a gera��o do SPED Fiscal referente a anula��o de CT-e/CT-eOS quando o |
-| 99955 | 126446 | SAM | Normal | 14/01/2026 | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99437 | 126341 | SAL | Normal | 12/01/2026 | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os lan�ament |
 | 99650 | 126338 | SAM | Normal | 12/01/2026 | Emitir o demonstrativo dos impostos e demonstrativo EFD PIS e COFINS nas rotinas |
 | 99086 | 126206 | SAM | Normal | 08/01/2026 | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut�ria atrav |
 | 101553 | 126108 | SAL | Normal | 07/01/2026 | Incluir as naturezas de rendimento 10011 e 11008 para envio na EFD-Reinf conform |
-| 99862 | 125994 | SAM | Normal | 02/01/2026 | Ajustar o SPED Contábil para usar o toggle 'Gerar o SPED ECF' nas validações de  |
-| 99946 | 125731 | SAM | Normal | 22/12/2025 | Realizar melhorias no plano referencial para atender as necessidade do SPED ECF. |
-| 100529 | 125723 | SAIL | Normal | 19/12/2025 | Implementar a geração dos registros P130, P230 e X280 para o Lucro Presumido par |
 | 99030 | 125672 | SAL | Normal | 19/12/2025 | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes Sinief n� 2 |
 | 98666 | 125642 | SAM | Normal | 18/12/2025 | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do servidor d |
 | 98860 | 125617 | NE | Normal | 18/12/2025 | Em alguns casos n�o est�o sendo geradas algumas notas no registro 1011 do inform |
 | 98621 | 125438 | SAM | Normal | 15/12/2025 | Ajustar a gera��o do informativo SPED ECF para buscar os saldos das contas cont� |
-| 99873 | 125374 | SAM | Normal | 12/12/2025 | Criar as regras de permissões no menu SPED ECF. |
-| 99954 | 125365 | SAIL | Normal | 11/12/2025 | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
-| 99952 | 125364 | SAIL | Normal | 11/12/2025 | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivos gerados. |
-| 98511 | 125179 | SAL | Normal | 08/12/2025 | Gerar o registro J210 no SPED Contábil com referência de notas explicativas |
-| 99947 | 124829 | SAIL | Normal | 28/11/2025 | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9. |
 | 100078 | 124540 | SAM | Normal | 19/11/2025 | Retirar do servidor de sess�o as Threads respons�veis por inserir os XMLs no ban |
-| 98340 | 123183 | SAL | Normal | 06/10/2025 | Gerar a DMPL no SPED Contábil. |
+| 101874 | 124238 | SAM | Normal | 12/11/2025 | Implementar op��o para importar os produtos rateados entre os segmentos na impor |
 | 97017 | 122961 | SAM | Normal | 26/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e ABRASF XML/NFS- |
 | 96928 | 122664 | NE | Normal | 16/09/2025 | RJ-Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado !" ao gravar |
-| 97336 | 122170 | SAL | Normal | 28/08/2025 | Gerar a DLPA no SPED Contábil |
-| 97482 | 122114 | SAL | Normal | 27/08/2025 | Incluir o relacionamento de contas contábeis nas notas explicativas, e gerar no  |
 | 101729 | 122105 | SAM | Normal | 27/08/2025 | Considerar a tag 'xEvento' na importa��o de cancelamento atrav�s do NFCom Arquiv |
 | 101133 | 121247 | SAM | Normal | 28/07/2025 | Realizar a importa��o do Cadastro do Benefici�rio para a tela de cadastro do cli |
 | 95283 | 120661 | SAM | Normal | 08/07/2025 | Reduzir o consumo de mem�ria carregando apenas as estruturas necess�rias no in�c |
@@ -117,7 +115,6 @@
 | 93177 | 118056 | SAM | Normal | 27/03/2025 | Realizar um estudo para implementar a leitura por Threads na importa��o SPED Fis |
 | 93252 | 118018 | NE | Normal | 26/03/2025 | N�o est� sendo importado corretamente os saldos das contas cont�beis informadas  |
 | 92527 | 115385 | SAM | Normal | 17/12/2024 | Implementar uma mensagem de aviso quando o usu�rio realizar importa��o de arquiv |
-| 90752 | 115102 | SAM | Normal | 05/12/2024 | Possibilitar o cadastro de novo contador e novo responsável legal pelas combobox |
 | 90382 | 114599 | SAM | Normal | 18/11/2024 | Realizar a importa��o da NFC-e com parcelas atrav�s da API. |
 | 90271 | 114466 | SAM | Normal | 11/11/2024 | Alterar a tela de sele��o de arquivos para particionamento do SPED Fiscal e na i |
 | 100602 | 113876 | SAM | Normal | 18/10/2024 | Importar as informa��es do Profissional-parceiro atrav�s da importa��o NFS-e Arq |
@@ -128,7 +125,6 @@
 | 90593 | 110515 | SAIL | Normal | 21/06/2024 | Criar tela para visualizar o arquivo xml da NFS-e Padr�o Nacional |
 | 90365 | 110317 | SAM | Normal | 13/06/2024 | Aceitar NFC-e com parcelas atrav�s de um arquivo complementa via API. |
 | 87017 | 109684 | SAM | Normal | 21/05/2024 | Otimizar gera��o do informativo Sped Cont�bil.  |
-| 86793 | 109285 | SAM | Normal | 07/05/2024 | Permitir a importação de caracteres especiais em arquivos TXT no formato UTF-8 n |
 | 85643 | 108201 | NE | Normal | 01/04/2024 | N�o est� considerando os registros C321/C370/C510/D110 quando realizado filtro p |
 | 84304 | 105879 | SAIL | Normal | 29/01/2024 | Criar tela para visualizar o arquivo xml das NF-e modelo 55. |
 | 83853 | 105103 | SAM | Normal | 10/01/2024 | Considerar a mesma conta cont�bil quando ocorrer mais de um cadastro de clientes |
@@ -231,6 +227,17 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102048 | 131148 | NE | 26/05/2026 | Está importando incorretamente a opção do campo "Calcular redução conf. LC 224/2 |
+| 102008 | 131112 | NE | 26/05/2026 | Está apresentando indevidamente caracteres indevidos e comportamento incorreto n |
+| 101948 | 131006 | NE | 22/05/2026 | Está sendo gerada mais de uma vez a tag ideDep/cpfDep no evento R-4010 do inform |
+| 101887 | 130882 | NE | 19/05/2026 | Está apresentando indevidamente o aviso de vigência não cadastrada ao clicar no  |
+| 101853 | 130794 | SAL | 15/05/2026 | Remover linhas de cálculo referente ao Programa Perse no registro N610 do SPED E |
+| 101809 | 130767 | NE | 14/05/2026 | Os valores do registro P300 não estão sendo exibidos na tela Outros Dados do SPE |
+| 101810 | 130657 | SAL | 11/05/2026 | Atualizar os códigos de Natureza da Receita para o CST 07, conforme versão 1.0.4 |
+| 101718 | 130663 | NE | 11/05/2026 | Est�o sendo corrompidos os arquivos XML com o atributo de namespace inserido inc |
+| 101855 | 130630 | SAL | 08/05/2026 | Gerar a TAG 'rendIsento' no informativo EFD-Reinf, para rendimentos isentos que  |
+| 101556 | 130509 | NE | 30/04/2026 | Está sendo apresentado erro ao gerar o relatório na guia "Alteração plano de con |
+| 101758 | 130507 | NE | 30/04/2026 | Está importando os valores do registro Y570 do informativo SPED ECF incorretamen |
 | 101542 | 130511 | NE | 30/04/2026 | Est� ocorrendo indevidamente a cr�tica de estrutura "Erro processando arquivo XM |
 | 101574 | 130190 | SAM | 17/04/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "Consulta |
 | 101278 | 130133 | NE | 15/04/2026 | Est� calculando incorretamente o valor da linha 4-Adicional no registro N620 do  |
@@ -241,6 +248,7 @@
 | 100985 | 129721 | NE | 31/03/2026 | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
 | 100912 | 129643 | NE | 30/03/2026 | Em alguns casos n�o est�o sendo gerados todos os registros D197 no arquivo do SP |
 | 100942 | 129610 | NE | 27/03/2026 | Est� gerando o relacionamento do M300 e M350 do SPED ECF de forma incorreta quan |
+| 100956 | 129531 | NE | 25/03/2026 | Não está gerando o SPED Contábil quando há contas sem movimento/saldo não vincul |
 | 100955 | 129513 | NE | 25/03/2026 | PA-N�o est�o sendo gerados dos registros 0460, C195 e C197 no informativo SPED F |
 | 100902 | 129482 | NE | 24/03/2026 | Est� gerando valores incorretos para os registros K155, K156 e L100 do informati |
 | 100848 | 129436 | NE | 24/03/2026 | Em alguns casos n�o est� sendo gerado corretamente o arquivo do SPED Fiscal. |
@@ -249,43 +257,31 @@
 | 100808 | 129248 | NE | 18/03/2026 | MT-Est� sendo apresentada indevidamente a mensagem "C�digo de Ajuste no SPED n�o |
 | 100544 | 129130 | SAM | 13/03/2026 | Realizar melhorias nas rotinas de grava��o do XML no banco de dados visando a co |
 | 100741 | 129097 | SAL | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
-| 100517 | 129061 | NE | 12/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
-| 100474 | 128991 | SAM | 10/03/2026 | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
-| 100557 | 128948 | SAM | 10/03/2026 | Realizar a importa��o dos impostos IBS e CBS para guia 'IVA' atrav�s da NFS-e Ar |
-| 100418 | 128885 | SAL | 06/03/2026 | SC-Atualizar os c�digos de ajuste do SPED Fiscal referente Cr�dito Presumido ao  |
-| 100546 | 128818 | SAM | 05/03/2026 | Realizar a importa��o do Imposto Seletivo-IS conforme a reforma tribut�ria atrav |
-| 100564 | 128809 | NE | 04/03/2026 | SC-N�o est� sendo gerado o registro 1921 com o c�digo de ajuste SC004001 no SPED |
-| 100342 | 128729 | NE | 03/03/2026 | N�o est�o sendo gerados os registros dos blocos C100, C300, C350, C500, D100, D3 |
-| 100284 | 128721 | NE | 03/03/2026 | BA/RS/SC/SP-Est�o sendo duplicados os registros D760 e D761 no informativo SPED  |
-| 100464 | 128709 | SAL | 03/03/2026 | MT-Incluir data fim para o c�digo de ajuste MT002010 do SPED Fiscal da tela de " |
-| 99997 | 128201 | SAM | 19/02/2026 | Liberar tempos de desenvolvedores envolvidos em demanda do EFD-Reinf. |
-| 99992 | 128197 | SAM | 19/02/2026 | Realizar um estudo para mapear os principais processos pesados existentes na imp |
-| 100011 | 128189 | NE | 19/02/2026 | RS-N�o est� sendo gerado corretamente o totalizador referente ao registro C113 n |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| sped | 3725 |
+| sped | 3706 |
 | sped fiscal | 2358 |
-| xml | 1763 |
-| efd | 1126 |
-| ecf | 786 |
+| xml | 1766 |
+| efd | 1128 |
+| ecf | 790 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102021 | 131032 | NE | 22/05/2026 | Está sendo demonstrado o valor incorreto de "Redução referente à alíquota zero d |
 | 101010 | 129811 | SAM | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 100943 | 129661 | NE | 30/03/2026 | Est� habilitando indevidamente a guia "Relacionamento de produtos" no resumo de  |
+| 100956 | 129531 | NE | 25/03/2026 | Não está gerando o SPED Contábil quando há contas sem movimento/saldo não vincul |
+| 100327 | 128582 | NE | 26/02/2026 | Está validando indevidamente a coluna 'Checkbox' como obrigatória quando há algu |
+| 100325 | 128581 | NE | 26/02/2026 | Não está abrindo o calendário dos campos 'Arquivamento dos atos constitutivos *' |
 | 99885 | 127956 | NE | 12/02/2026 | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
-| 99858 | 127770 | NE | 09/02/2026 | Não está validando erro em alerta quando se trata de uma única empresa e um únic |
-| 98811 | 125801 | NE | 23/12/2025 | Não está listando as entidades no filtro da guia 'Entidades' do botão 'Outros da |
-| 98818 | 125785 | NE | 22/12/2025 | Está listando no ano incorreto os 'Arquivos gerados' do SPED Contábil. |
-| 98842 | 125783 | NE | 22/12/2025 | Está exibindo o erro 'Falha ao executar o processamento. Tente novamente em algu |
-| 98779 | 125640 | NE | 18/12/2025 | Está sumindo o alert 'Existem inconsistências. Verifique o preenchimento' ao tro |
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
+| 98043 | 124309 | NE | 13/11/2025 | SC-Em alguns casos est� ocorrendo erro na valida��o do informativo SPED Fiscal.  |
 
 ## Busca Completa
 

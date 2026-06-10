@@ -1,32 +1,42 @@
 ﻿# SAIL Pendentes - Escrita Fiscal
 
-> Atualizado em: 16/05/2026 00:10
-> Total pendentes: 1666
+> Atualizado em: 10/06/2026 12:02
+> Total pendentes: 1657
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 131441 |  | 08/06/2026 | ID 0 | - |
+| 0 | 131309 |  | 02/06/2026 | ID 0 | - |
+| 0 | 131197 |  | 28/05/2026 | ID 0 | - |
+| 0 | 131105 |  | 26/05/2026 | ID 0 | - |
+| 0 | 131065 |  | 25/05/2026 | ID 0 | - |
+| 0 | 131009 |  | 22/05/2026 | ID 0 | - |
+| 0 | 131007 |  | 22/05/2026 | ID 0 | - |
+| 0 | 130917 |  | 20/05/2026 | ID 0 | - |
+| 0 | 130910 |  | 20/05/2026 | ID 0 | - |
+| 0 | 130909 |  | 20/05/2026 | ID 0 | - |
+| 0 | 130874 |  | 19/05/2026 | ID 0 | - |
+| 0 | 130869 |  | 19/05/2026 | ID 0 | - |
+| 0 | 130864 |  | 18/05/2026 | ID 0 | - |
 | 0 | 130519 |  | 04/05/2026 | ID 0 | - |
 | 0 | 130496 |  | 30/04/2026 | ID 0 | - |
 | 0 | 130464 |  | 29/04/2026 | ID 0 | - |
 | 0 | 130318 |  | 23/04/2026 | ID 0 | - |
 | 0 | 130264 |  | 22/04/2026 | ID 0 | - |
-| 101593 | 130263 |  | 22/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | GO-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
-| 0 | 130262 |  | 22/04/2026 | ID 0 | - |
-| 0 | 130260 |  | 22/04/2026 | ID 0 | - |
+| 101593 | 130263 |  | 22/04/2026 | Retorno de Teste | GO-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
 | 0 | 130258 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130257 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130224 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130207 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130202 |  | 17/04/2026 | ID 0 | - |
-| 101369 | 130191 | 10.6A-05 | 17/04/2026 | Respondido Gerente de Produto | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tributos federa |
 | 0 | 130185 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130184 |  | 17/04/2026 | ID 0 | - |
-| 101310 | 130088 |  | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o arquivo de envio do 'Evento: 112140 - Fornecimento n�o realizado c |
+| 101310 | 130088 |  | 14/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112140 - Fornecimento n�o realizado c |
 | 0 | 130060 |  | 14/04/2026 | ID 0 | - |
 | 101306 | 130042 |  | 13/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112150 - Atualiza��o da data de previ |
 | 0 | 130011 |  | 13/04/2026 | ID 0 | - |
 | 101157 | 129940 |  | 08/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
-| 101159 | 129936 | 10.6A-05 | 08/04/2026 | Aguardando Resposta do Desenvolvimento | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
+| 101159 | 129936 | 10.6A-05 | 08/04/2026 | Respondido Coordenador de Módulos DEMO | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
 | 0 | 129925 |  | 08/04/2026 | ID 0 | - |
 | 0 | 129842 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129836 |  | 06/04/2026 | ID 0 | - |
@@ -37,7 +47,6 @@
 | 0 | 129501 |  | 25/03/2026 | ID 0 | - |
 | 100987 | 129486 |  | 24/03/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda, roubo ou |
 | 0 | 129397 |  | 23/03/2026 | ID 0 | - |
-| 0 | 129386 |  | 20/03/2026 | ID 0 | - |
 | 0 | 129241 |  | 18/03/2026 | ID 0 | - |
 | 0 | 129176 |  | 17/03/2026 | ID 0 | - |
 | 0 | 129139 |  | 16/03/2026 | ID 0 | - |
@@ -46,7 +55,7 @@
 | 0 | 128999 |  | 11/03/2026 | ID 0 | - |
 | 0 | 128997 |  | 11/03/2026 | ID 0 | - |
 | 0 | 128995 |  | 11/03/2026 | ID 0 | - |
-| 0 | 128974 |  | 10/03/2026 | ID 0 | - |
+| 101789 | 128974 |  | 10/03/2026 | Retorno de Teste | Implementar o c�lculo dos impostos 183-IBS e 184-CBS na aliena��o de bem im�vel  |
 | 0 | 128944 |  | 10/03/2026 | ID 0 | - |
 | 0 | 128902 |  | 09/03/2026 | ID 0 | - |
 | 0 | 128901 |  | 09/03/2026 | ID 0 | - |
@@ -67,13 +76,11 @@
 | 0 | 128578 |  | 26/02/2026 | ID 0 | - |
 | 0 | 128451 |  | 25/02/2026 | ID 0 | - |
 | 0 | 128415 |  | 24/02/2026 | ID 0 | - |
-| 100571 | 128355 |  | 23/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a geração do bloco Y para empresas do Lucro Presumido na geração do  |
 | 0 | 128220 |  | 19/02/2026 | ID 0 | - |
-| 101309 | 128218 |  | 19/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a escritura��o da Nota de D�bito do tipo '06-Pagamento antecipado' e |
+| 101309 | 128218 |  | 19/02/2026 | Retorno de Teste | Implementar a escritura��o da Nota de D�bito do tipo '06-Pagamento antecipado' e |
 | 0 | 128137 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128135 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128132 |  | 18/02/2026 | ID 0 | - |
-| 0 | 128106 |  | 16/02/2026 | ID 0 | - |
 | 0 | 128050 |  | 16/02/2026 | ID 0 | - |
 | 99944 | 128045 |  | 14/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma Tribut�ria |
 | 0 | 127967 |  | 12/02/2026 | ID 0 | - |
@@ -103,7 +110,7 @@
 | 0 | 126492 |  | 14/01/2026 | ID 0 | - |
 | 0 | 126454 |  | 14/01/2026 | ID 0 | - |
 | 0 | 126265 |  | 09/01/2026 | ID 0 | - |
-| 101226 | 126219 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
+| 101226 | 126219 |  | 08/01/2026 | Retorno de Teste | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
 | 0 | 126211 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126192 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126100 |  | 07/01/2026 | ID 0 | - |
@@ -116,7 +123,6 @@
 | 0 | 125886 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125885 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125839 |  | 23/12/2025 | ID 0 | - |
-| 100529 | 125723 |  | 19/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a geração dos registros P130, P230 e X280 para o Lucro Presumido par |
 | 0 | 125694 |  | 19/12/2025 | ID 0 | - |
 | 0 | 125689 |  | 19/12/2025 | ID 0 | - |
 | 0 | 125687 |  | 19/12/2025 | ID 0 | - |
@@ -126,15 +132,12 @@
 | 0 | 125681 |  | 19/12/2025 | ID 0 | - |
 | 0 | 125538 |  | 16/12/2025 | ID 0 | - |
 | 0 | 125413 |  | 12/12/2025 | ID 0 | - |
-| 99954 | 125365 |  | 11/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
-| 99952 | 125364 |  | 11/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivos gerados. |
 | 0 | 125354 |  | 11/12/2025 | ID 0 | - |
 | 0 | 125284 |  | 10/12/2025 | ID 0 | - |
 | 0 | 125166 |  | 08/12/2025 | ID 0 | - |
 | 0 | 125127 |  | 08/12/2025 | ID 0 | - |
 | 0 | 124959 |  | 02/12/2025 | ID 0 | - |
 | 0 | 124958 |  | 02/12/2025 | ID 0 | - |
-| 99947 | 124829 |  | 28/11/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9. |
 | 0 | 124826 |  | 28/11/2025 | ID 0 | - |
 | 0 | 124772 |  | 27/11/2025 | ID 0 | - |
 | 0 | 124657 |  | 25/11/2025 | ID 0 | - |
@@ -157,7 +160,6 @@
 | 0 | 123873 |  | 30/10/2025 | ID 0 | - |
 | 0 | 123718 |  | 24/10/2025 | ID 0 | - |
 | 0 | 123665 |  | 23/10/2025 | ID 0 | - |
-| 0 | 123649 |  | 22/10/2025 | ID 0 | - |
 | 0 | 123640 |  | 22/10/2025 | ID 0 | - |
 | 0 | 123421 |  | 15/10/2025 | ID 0 | - |
 | 0 | 123379 |  | 14/10/2025 | ID 0 | - |
@@ -171,9 +173,7 @@
 | 0 | 122986 |  | 29/09/2025 | ID 0 | - |
 | 0 | 122818 |  | 23/09/2025 | ID 0 | - |
 | 0 | 122816 |  | 23/09/2025 | ID 0 | - |
-| 0 | 122679 |  | 16/09/2025 | ID 0 | - |
 | 0 | 122600 |  | 15/09/2025 | ID 0 | - |
-| 0 | 122550 |  | 12/09/2025 | ID 0 | - |
 | 0 | 122521 |  | 11/09/2025 | ID 0 | - |
 | 0 | 122492 |  | 10/09/2025 | ID 0 | - |
 | 0 | 122339 |  | 04/09/2025 | ID 0 | - |
@@ -223,9 +223,6 @@
 | 0 | 119554 |  | 23/05/2025 | ID 0 | - |
 | 0 | 119552 |  | 23/05/2025 | ID 0 | - |
 | 0 | 119550 |  | 23/05/2025 | ID 0 | - |
-| 98466 | 119542 |  | 22/05/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
-| 97772 | 119540 |  | 22/05/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
-| 0 | 119530 |  | 22/05/2025 | ID 0 | - |
 | 0 | 119441 |  | 20/05/2025 | ID 0 | - |
 | 0 | 119440 |  | 20/05/2025 | ID 0 | - |
 | 0 | 119354 |  | 16/05/2025 | ID 0 | - |
@@ -233,8 +230,6 @@
 | 0 | 119197 |  | 13/05/2025 | ID 0 | - |
 | 0 | 119189 |  | 13/05/2025 | ID 0 | - |
 | 0 | 119175 |  | 12/05/2025 | ID 0 | - |
-| 0 | 119151 |  | 12/05/2025 | ID 0 | - |
-| 97385 | 119122 |  | 08/05/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar o cadastro de Notas Explicativas. |
 | 0 | 118955 |  | 05/05/2025 | ID 0 | - |
 | 0 | 118952 |  | 05/05/2025 | ID 0 | - |
 | 0 | 118944 |  | 05/05/2025 | ID 0 | - |
@@ -327,7 +322,7 @@
 | 0 | 114915 |  | 28/11/2024 | ID 0 | - |
 | 0 | 114765 |  | 26/11/2024 | ID 0 | - |
 | 0 | 114698 |  | 22/11/2024 | ID 0 | - |
-| 0 | 114629 |  | 19/11/2024 | ID 0 | - |
+| 101804 | 114629 |  | 19/11/2024 | Retorno de Teste | Implementar rotina para reconhecer a receita pelo POC com valor atualizado do co |
 | 0 | 114591 |  | 18/11/2024 | ID 0 | - |
 | 0 | 114590 |  | 18/11/2024 | ID 0 | - |
 | 0 | 114475 |  | 12/11/2024 | ID 0 | - |
@@ -343,7 +338,6 @@
 | 0 | 114109 |  | 29/10/2024 | ID 0 | - |
 | 0 | 114048 |  | 24/10/2024 | ID 0 | - |
 | 0 | 113633 |  | 10/10/2024 | ID 0 | - |
-| 89797 | 113524 |  | 08/10/2024 | Retorno de Teste | Criar as origens 'Entradas EF' e 'Saídas EF' para contabilizar lançamentos de No |
 | 0 | 113531 |  | 08/10/2024 | ID 0 | - |
 | 0 | 113474 |  | 07/10/2024 | ID 0 | - |
 | 0 | 113473 |  | 07/10/2024 | ID 0 | - |
@@ -430,7 +424,6 @@
 | 0 | 109794 |  | 24/05/2024 | ID 0 | - |
 | 0 | 109715 |  | 22/05/2024 | ID 0 | - |
 | 0 | 109650 |  | 21/05/2024 | ID 0 | - |
-| 0 | 109569 |  | 17/05/2024 | ID 0 | - |
 | 0 | 109498 |  | 15/05/2024 | ID 0 | - |
 | 0 | 109497 |  | 15/05/2024 | ID 0 | - |
 | 0 | 109492 |  | 15/05/2024 | ID 0 | - |
@@ -556,8 +549,6 @@
 | 0 | 103582 |  | 24/11/2023 | ID 0 | - |
 | 90331 | 103539 |  | 22/11/2023 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar a gera��o dos campos da DEFIS no Onvio referente a NF-e por meio da  |
 | 0 | 103505 |  | 22/11/2023 | ID 0 | - |
-| 97280 | 103491 |  | 21/11/2023 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
-| 98297 | 103490 |  | 21/11/2023 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a estrutura e relatório da Demonstração das Mutações do Patrimônio Líquido |
 | 0 | 103361 |  | 17/11/2023 | ID 0 | - |
 | 0 | 103360 |  | 17/11/2023 | ID 0 | - |
 | 0 | 103359 |  | 17/11/2023 | ID 0 | - |

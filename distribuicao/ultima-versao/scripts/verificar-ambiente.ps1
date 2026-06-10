@@ -41,6 +41,44 @@ if ($cursorCmd) {
 $gitCmd = Get-Command git -ErrorAction SilentlyContinue
 Add-Check "Git instalado" ([bool]$gitCmd) $(if ($gitCmd) { (git --version 2>$null).Trim() } else { "Instale em https://git-scm.com" })
 
+# 2b. GitHub CLI (gh)
+$ghCmd = Get-Command gh -ErrorAction SilentlyContinue
+Add-Check "GitHub CLI (gh) instalado" ([bool]$ghCmd) $(if ($ghCmd) { (& gh --version 2>$null | Select-Object -First 1) } else { "Instale: winget install --id GitHub.cli (depois reabra o PowerShell). Ver SETUP-GITHUB.md" })
+
+# 2c. gh auth status (autenticado com conta TR)
+$ghAuthOk = $false
+$ghAuthDet = "gh nao instalado"
+if ($ghCmd) {
+    $ghAuthOut = & gh auth status 2>&1 | Out-String
+    if ($LASTEXITCODE -eq 0 -and $ghAuthOut -match "Logged in") {
+        $ghAuthOk = $true
+        $linha = ($ghAuthOut -split "`n" | Where-Object { $_ -match "Logged in" } | Select-Object -First 1)
+        $ghAuthDet = $linha.Trim()
+    } else {
+        $ghAuthDet = "Rode: gh auth login --web --hostname github.com (conta TR). Ver SETUP-GITHUB.md"
+    }
+}
+Add-Check "gh autenticado (conta TR)" $ghAuthOk $ghAuthDet
+
+# 2d. Acesso ao repo tr/brtap-dominio_contabil
+$ghRepoOk = $false
+$ghRepoDet = "gh nao autenticado"
+if ($ghAuthOk) {
+    $ghRepoOut = & gh repo view tr/brtap-dominio_contabil --json name 2>&1 | Out-String
+    if ($LASTEXITCODE -eq 0 -and $ghRepoOut -match '"name"') {
+        $ghRepoOk = $true
+        $ghRepoDet = "tr/brtap-dominio_contabil acessivel"
+    } elseif ($ghRepoOut -match "Could not resolve to a Repository|HTTP 404|Not Found") {
+        $ghRepoDet = "404: falta liberacao. Confirme com gestor: Team 'fiscont-gp-codigo-leitura' (Active) e Read do Fernando Pizetti. Ver SETUP-GITHUB.md"
+    } elseif ($ghRepoOut -match "SAML|SSO") {
+        $ghRepoDet = "SSO da TR exigido. Rode: gh auth refresh -h github.com -s read:org"
+    } else {
+        $ghRepoDet = ($ghRepoOut -replace '\s+', ' ').Trim()
+        if (-not $ghRepoDet) { $ghRepoDet = "Erro desconhecido ao consultar repo" }
+    }
+}
+Add-Check "Acesso ao repo tr/brtap-dominio_contabil" $ghRepoOk $ghRepoDet "opcional"
+
 # 3. OneDrive rodando
 $odProc = Get-Process OneDrive -ErrorAction SilentlyContinue
 Add-Check "OneDrive rodando" ([bool]$odProc) $(if ($odProc) { "Processo OneDrive ativo" } else { "Inicie o OneDrive" })
@@ -137,6 +175,26 @@ $indiceArquivosOK = $false
 $indiceArquivosPath = Join-Path $projetoDir "referencia\banco-dados\mapa-sistema\indice-arquivos.md"
 if (Test-Path $indiceArquivosPath) { $indiceArquivosOK = $true }
 Add-Check "Indice de arquivos (mapa-sistema)" $indiceArquivosOK $(if ($indiceArquivosOK) { $indiceArquivosPath } else { "O gerente precisa rodar: scripts\gerar-indice-codigo.ps1" }) "opcional"
+
+# 12c. Config de branches do codigo-fonte
+$cfgBranchesFile = Join-Path $projetoDir "config\codigo-fonte-branches.json"
+$cfgBranchesOK = $false
+$cfgBranchesDet = "Arquivo ausente. Atualize o projeto (v2.4.38+): .\scripts\atualizar-projeto.ps1"
+if (Test-Path -LiteralPath $cfgBranchesFile) {
+    try {
+        $cfgBranches = Get-Content -LiteralPath $cfgBranchesFile -Raw -Encoding UTF8 | ConvertFrom-Json
+        $vigBr = $cfgBranches.vigente.branch
+        if ($vigBr) {
+            $cfgBranchesOK = $true
+            $cfgBranchesDet = "vigente=$vigBr"
+        } else {
+            $cfgBranchesDet = "Campo vigente.branch vazio - pedir ao gestor para declarar"
+        }
+    } catch {
+        $cfgBranchesDet = "JSON invalido: $($_.Exception.Message)"
+    }
+}
+Add-Check "config/codigo-fonte-branches.json" $cfgBranchesOK $cfgBranchesDet "opcional"
 
 # 13. ODBC - Driver SQL Anywhere
 $odbcDriverOK = $false

@@ -1,5 +1,36 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.38 - 10/06/2026
+
+- feat: SETUP-GITHUB.md - guia do analista para acesso ao codigo-fonte do BR Contabil via gh CLI (autenticacao, troubleshooting, regras de seguranca)
+- feat: .cursor/rules/acesso-github.mdc - regra dedicada para acesso seguro ao GitHub (alwaysApply): NUNCA pedir token no chat, NUNCA gravar token em arquivo do projeto, preferir gh auth login (keyring) ou GITHUB_TOKEN em env var
+- feat: config/codigo-fonte-branches.json - branches declaradas pelo gestor (vigente, vigente_anterior, em_dev); scripts agora leem dela em vez de hardcoded VC106A02
+- feat: scripts/atualizar-codigo.ps1 - parametro -BranchConceito (vigente/vigente_anterior/em_dev) que le config/codigo-fonte-branches.json; -Branch (explicito) mantem precedencia para override manual
+- feat: scripts/verificar-ambiente.ps1 - checagens novas: gh CLI instalado, gh auth status, acesso ao tr/brtap-dominio_contabil, config/codigo-fonte-branches.json valido; mensagem orientativa em caso de 404 (Team / Fernando Pizetti) ou SSO
+- feat: agente-codigo.mdc - Modo B (fallback via gh api) documentado para quando codigo local indisponivel ou para olhar outra branch
+- feat: scripts/atualizar-projeto.ps1 - passa a copiar SETUP-GITHUB.md e PROMPT-INSTALACAO.md no upgrade
+- docs: guardiao.mdc (General + filho) - bloco resumo "Acesso ao GitHub" apontando para regra dedicada acesso-github.mdc
+- docs: PROMPT-INSTALACAO.md - novo passo 8b orienta IA a verificar gh CLI, autenticacao e acesso ao repo durante a instalacao
+- docs: SETUP.md - pre-requisitos atualizados com gh CLI + referencia a SETUP-GITHUB.md
+- config: cursor-rules-manifest.json - inclui acesso-github.mdc na lista de regras obrigatorias
+
+---
+
+## v2.4.38 - 10/06/2026
+
+- feat: SETUP-GITHUB.md - guia do analista para acesso ao codigo-fonte do BR Contabil via gh CLI (autenticacao, troubleshooting, regras de seguranca)
+- feat: .cursor/rules/acesso-github.mdc - regra dedicada para acesso seguro ao GitHub (alwaysApply): NUNCA pedir token no chat, NUNCA gravar token em arquivo do projeto, preferir gh auth login (keyring) ou GITHUB_TOKEN em env var
+- feat: config/codigo-fonte-branches.json - branches declaradas pelo gestor (vigente, vigente_anterior, em_dev); scripts agora leem dela em vez de hardcoded VC106A02
+- feat: scripts/atualizar-codigo.ps1 - parametro -BranchConceito (vigente/vigente_anterior/em_dev) que le config/codigo-fonte-branches.json; -Branch (explicito) mantem precedencia para override manual
+- feat: scripts/verificar-ambiente.ps1 - checagens novas: gh CLI instalado, gh auth status, acesso ao tr/brtap-dominio_contabil, config/codigo-fonte-branches.json valido; mensagem orientativa em caso de 404 (Team / Fernando Pizetti) ou SSO
+- feat: agente-codigo.mdc - Modo B (fallback via gh api) documentado para quando codigo local indisponivel ou para olhar outra branch
+- docs: guardiao.mdc (General + filho) - bloco resumo "Acesso ao GitHub" apontando para regra dedicada acesso-github.mdc
+- docs: PROMPT-INSTALACAO.md - novo passo 8b orienta IA a verificar gh CLI, autenticacao e acesso ao repo durante a instalacao
+- docs: SETUP.md - pre-requisitos atualizados com gh CLI + referencia a SETUP-GITHUB.md
+- config: cursor-rules-manifest.json - inclui acesso-github.mdc na lista de regras obrigatorias
+
+---
+
 ## v2.4.37 - 09/06/2026
 
 - feat: GUIA-validacao-sal.md - guia dedicado para validacao de SAL (Solicitacao de Alteracao Legal)
@@ -314,6 +345,8 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
+
 
 
 

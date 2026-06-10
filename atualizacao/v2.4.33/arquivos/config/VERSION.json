@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "- feat: analise de legislacao via Claude AI (claude-sonnet-4-6)\n  * Novo script Python: scripts/sgd_consulta/consultar_legislacao.py\n  * Novo wrapper PowerShell: scripts/Consultar-Legislacao.ps1\n  * Nova regra Cursor: .cursor/rules/consultar-legislacao.mdc\n  * Analista fornece URL ou arquivo (PDF/DOCX/TXT) de lei, decreto, portaria ou IN\n  * Claude retorna resumo estruturado (identificacao, objetivo, obrigacoes, prazos, pontos de atencao)\n  * Suporte a perguntas especificas sobre a legislacao\n  * Resultados salvos em data/legislacao/ como JSON\n  * Requer: ANTHROPIC_API_KEY em scripts/sgd_consulta/.env (instruções no .env.example)\n  * Dependencias novas: anthropic, httpx, beautifulsoup4, pdfplumber (requirements.txt atualizado)",
-    "data":  "2026-05-18",
-    "hash_validacao":  "7E4BE5EF93634E0FA605D1A939D3EDF1",
-    "versao":  "2.4.33"
-}

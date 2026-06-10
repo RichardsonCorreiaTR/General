@@ -42,6 +42,14 @@ Antes de responder perguntas sobre SAIs/PSAIs, verifique `atualizacao/status.jso
 - Campo `totalNoBanco` vs `registrosProcessados`: se divergentes (diferenca > 50), mencione a lacuna. Pequenas diferencas (< 50) sao normais por registros novos entre ciclos.
 - Campo `resultado`: se `falha`, avise que a última importação falhou.
 
+## Acesso ao GitHub (v2.4.38)
+
+Regras dedicadas em `acesso-github.mdc` (alwaysApply). Resumo:
+- NUNCA pedir token/PAT/senha no chat; NUNCA gravar token em arquivo do projeto.
+- Usar `gh auth login --web` (keyring) ou `GITHUB_TOKEN` em env var.
+- Branches declaradas em `config/codigo-fonte-branches.json`.
+- Doc completo: `arquitetura/acesso-github-codigo.md`.
+
 ## Tasks no projeto-filho (v1.2.0)
 
 O projeto-filho agora rastreia demandas via tasks em `meu-trabalho/tasks/`.

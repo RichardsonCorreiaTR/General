@@ -1,7 +1,7 @@
 ﻿# SAIs e PSAIs - Escrita Fiscal
 
 > Base de conhecimento de solicitacoes de alteracao da area Escrita Fiscal (PBCVS nomeArea = Escrita, Importacao, Onvio Escrita nos caches).
-> Atualizado em: 16/05/2026 00:10 | Total: 65907 registros
+> Atualizado em: 10/06/2026 12:02 | Total: 65423 registros
 
 ## Indices por dominio (modulos-keywords.json)
 
@@ -43,11 +43,11 @@ Cada arquivo em [modulos/](modulos/) agrupa SAIs por **slug de dominio** (palavr
 
 ## Por versao (ultimas 5)
 
-- [ZDuvidas](por-versao/ZDuvidas.md) - 3 registros
+- [ZDuvidas](por-versao/ZDuvidas.md) - 2 registros
 - [ParalelaPlatafo](por-versao/ParalelaPlatafo.md) - 2 registros
-- [ONVIO Escrita -](por-versao/ONVIO_Escrita_-.md) - 31 registros
-- [ONVIO BR - Cont](por-versao/ONVIO_BR_-_Cont.md) - 1 registros
+- [ONVIO Escrita -](por-versao/ONVIO_Escrita_-.md) - 32 registros
 - [Escrita -Tribut](por-versao/Escrita_-Tribut.md) - 3 registros
+- [AZ ONVIO - Escr](por-versao/AZ_ONVIO_-_Escr.md) - 1 registros
 
 
 ## Regenerar indices

@@ -6,11 +6,38 @@
 # IMPORTANTE: Rodar em terminal SEPARADO (fora do Cursor)
 
 param(
-    [string]$Branch = "VC106A02",
+    [string]$Branch = "",
     [string]$RepoUrl = "https://github.com/tr/brtap-dominio_contabil",
     [string]$RepoLocal = "",
-    [string]$DadosDir = ""
+    [string]$DadosDir = "",
+    # Conceito de branch declarado pelo gestor em config/codigo-fonte-branches.json.
+    # Aceita: vigente, vigente_anterior, em_dev. Default = vigente.
+    [ValidateSet("vigente", "vigente_anterior", "em_dev")]
+    [string]$BranchConceito = "vigente"
 )
+
+# Carregar branch declarada pelo gestor (precedencia: -Branch explicito > config > VC106A02 legado).
+if (-not $Branch) {
+    $scriptDirEarly = Split-Path -Parent $MyInvocation.MyCommand.Path
+    $projDirEarly = Split-Path -Parent $scriptDirEarly
+    $cfgBranchesFile = Join-Path $projDirEarly "config\codigo-fonte-branches.json"
+    if (Test-Path -LiteralPath $cfgBranchesFile) {
+        try {
+            $cfgBranches = Get-Content -LiteralPath $cfgBranchesFile -Raw -Encoding UTF8 | ConvertFrom-Json
+            $branchDoCfg = $cfgBranches.$BranchConceito.branch
+            if ($branchDoCfg) {
+                $Branch = $branchDoCfg
+                Write-Host "[config] Branch '$BranchConceito' = $Branch (de config/codigo-fonte-branches.json)" -ForegroundColor DarkGray
+            }
+        } catch {
+            Write-Host "[aviso] Falha ao ler $cfgBranchesFile. Usando default." -ForegroundColor DarkYellow
+        }
+    }
+}
+if (-not $Branch) {
+    $Branch = "VC106A02"
+    Write-Host "[default] Branch nao declarada no config; usando VC106A02 (legado)." -ForegroundColor DarkYellow
+}
 
 # Determinar diretorio de dados: padrao C:\CursorEscrita, fallback legado EscritaSDD
 if (-not $DadosDir) {

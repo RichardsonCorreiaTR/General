@@ -91,7 +91,7 @@ if (Test-Path -LiteralPath $sgdAdmin) {
     if (-not (Test-Path (Join-Path $dataSgd ".gitkeep"))) { Set-Content (Join-Path $dataSgd ".gitkeep") "" }
     Write-Host "  sgd_consulta embutido no pacote (scripts/sgd_consulta)" -ForegroundColor DarkGray
 }
-foreach ($arq in @("PROJETO.md", "SETUP.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", "PROMPT-INSTALACAO.md", ".cursorignore")) {
+foreach ($arq in @("PROJETO.md", "SETUP.md", "SETUP-GITHUB.md", "PILOTO.md", "GUIA-RAPIDO.md", "CORRECAO-SYMLINKS.md", "PROMPT-INSTALACAO.md", ".cursorignore")) {
     $src = Join-Path $fonteDir $arq
     if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $tempPack $arq) -Force }
 }
@@ -156,7 +156,7 @@ foreach ($pasta in $pastasCanal2) {
     }
 }
 # Arquivos individuais da raiz que a IA do analista precisa ter (guias).
-$arqsRaizCanal2 = @("CORRECAO-SYMLINKS.md")
+$arqsRaizCanal2 = @("CORRECAO-SYMLINKS.md", "SETUP-GITHUB.md")
 foreach ($arq in $arqsRaizCanal2) {
     $src = Join-Path $tempPack $arq
     if (Test-Path $src) { Copy-Item -Path $src -Destination (Join-Path $atArquivosDir $arq) -Force }

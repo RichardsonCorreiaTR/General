@@ -1,40 +1,116 @@
 ﻿# SAIs por dominio - Escrita Fiscal
 
-> Atualizado em: 16/05/2026 00:10
+> Atualizado em: 10/06/2026 12:02
 > Classificacao por palavras-chave (multi-dominio) | 15 dominios (`modulos-keywords.json`)
 
-## Apuracao de impostos (28507 total, 750 pendentes)
+## Apuracao de impostos (28245 total, 726 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
+| 102319 | 131461 | NE | Pend | Não está importando os dados do beneficiário para a nota de serviço qu |
+| 102302 | 131434 | SAM | Pend | Realizar os testes de fluxo completo da API quando as notas foram rece |
+| 102309 | 131407 | NE | Pend | Está importando os valores do registro L210 do SPED ECF de forma acumu |
+| 102259 | 131404 | NE | Pend | Está sendo gerada indevidamente a tag "rendIsento" no evento R-4010 do |
+| 102221 | 131359 | NE | Pend | SP-Não está importando o Código do Benefício Fiscal na guia Estoque da |
+| 102266 | 131346 | NE | Pend | Em alguns casos está apresentando erro de banco de dados ao emitir o B |
+| 102182 | 131337 | NE | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102232 | 131327 | NE | Pend | Está ocorrendo indevidamente os erros de importação: "CNPJ do emitente |
+| 102265 | 131323 | NE | Pend | Em alguns casos está importando incorretamente os valores da CSLL Reti |
+| 102293 | 131283 | NE | Pend | Está calculando incorretamente a depreciação de períodos anteriores à  |
+| 102207 | 131282 | NE | Pend | Está importando incorretamente o valor do 'Lucro antes da CSLL e IRPJ' |
+| 102172 | 131273 | NE | Pend | Não está sendo feito o cálculo correto da majoração dos impostos 6-CSL |
+| 102185 | 131271 | NE | Pend | Está considerando indevidamente documentos cancelados para o cálculo d |
+| 102138 | 131267 | SAM | Pend | Realizar testes no processo das Rotinas Automáticas devido a alteração |
+| 102206 | 131265 | NE | Pend | Está apresentando a mensagem 'A conta referencial deve ser analítica'  |
+| 102192 | 131254 | NE | Pend | Não está preenchendo os códigos de configuração ao contratar a Contabi |
+| 102247 | 131237 | NE | Pend | Está gerando incorretamente o Ganho/perda de Capital ao realizar a bai |
+| 102071 | 131216 | NE | Lib | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
+| 102066 | 131211 | SAM | Pend | Registrar os tempos atuados nas pesquisas de inovações com IA na versã |
+| 102046 | 131184 | NE | Pend | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRA |
+| 102057 | 131171 | NE | Lib | Não está sendo gerado o Razão, quando na guia "Contas" possui informad |
+| 102171 | 131156 | NE | Pend | Está atribuindo indevidamente a situação "Equivalente entre os planos" |
+| 102197 | 131151 | NE | Pend | Estão sendo gerados indevidamente os registros 0460 e D195 no informat |
+| 102018 | 131149 | NE | Lib | Não está sendo calculado corretamente o valor de majoração dos imposto |
+| 102048 | 131148 | NE | Lib | Está importando incorretamente a opção do campo "Calcular redução conf |
+| 102033 | 131136 | SAM | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102215 | 131134 | NE | Pend | Não está sendo zerada a guia "IVA" das notas canceladas de saídas de C |
+| 102154 | 131130 | NE | Pend | Está realizando a contabilização da baixa do bem nas contas contábeis  |
+| 102067 | 131128 | NE | Pend | Está apresentado o erro "Expression is not valid" ao informar uma cont |
+| 102080 | 131127 | SAM | Pend | Permitir a emissão do encargo "Adicional ao SENAI" na guia da DCTFWeb  |
+| 102020 | 131120 | NE | Pend | Está ocorrendo um erro de banco de dados ao replicar as configurações  |
+| 102008 | 131112 | NE | Lib | Está apresentando indevidamente caracteres indevidos e comportamento i |
+| 102141 | 131104 | NE | Pend | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102264 | 131103 | NE | Pend | Não está sendo salvo corretamente os relatórios do Simples Nacional na |
+| 102143 | 131102 | NE | Desc | Está sendo calculado incorretamente o valor da majoração dos impostos  |
+| 101997 | 131100 | NE | Lib | Em alguns casos, não está exibindo o saldo anterior na emissão do Razã |
+| 101994 | 131098 | NE | Lib | Está apresentando o erro 'Syntax error near '(end of line)' on line 36 |
+| 101989 | 131097 | SAM | Pend | Testar as funcionalidades de IA para o pergunte ao seu relatório na Es |
+| 101988 | 131096 | SAM | Pend | Testar as funcionalidades de IA para o pergunte ao seu relatório na Es |
+| 102014 | 131095 | NE | Lib | Não está sendo setada a informação correta na coluna "Calcular redução |
+| 102019 | 131093 | NE | Lib | Está sendo demonstrado indevidamente sócio com inscrição CNPJ no relat |
+| 102034 | 131072 | NE | Pend | Não estão sendo importados os registros Y570, Y600 e Y612 do informati |
+| 102068 | 131055 | SAL | Lib | Ajustar a comunicação com o webservice no envio da DIRBI via API. |
+| 101969 | 131050 | SAM | Pend | Criação de casos de testes para a automação e registro de tempos com a |
+| 102294 | 131039 | NE | Pend | ES-Está sendo gerado incorretamente o registro C197 com o código de aj |
+| 102021 | 131032 | NE | Desc | Está sendo demonstrado o valor incorreto de "Redução referente à alíqu |
+| 101966 | 131029 | NE | Lib | Não está sendo feito o cálculo da majoração dos impostos 6-CSLL, 7-IRP |
+| 101933 | 131011 | NE | Lib | Em alguns casos, está ocorrendo erro de atualização "Primary key for t |
+| 101948 | 131006 | NE | Lib | Está sendo gerada mais de uma vez a tag ideDep/cpfDep no evento R-4010 |
+| 101932 | 130996 | NE | Pend | Não está sendo calculado corretamente o limite da majoração, quando em |
+| 101862 | 130908 | NE | Pend | Transa��o n�o concilia quando existe mais de um lan�amento do mesmo ti |
+| 101854 | 130900 | SAM | Pend | Liberar tempo gasto nos testes das SAIs de IA. |
+| 101851 | 130899 | SAM | Pend | Possibilitar a emiss�o do extrato PDF do Dom�nio Conta PJ dentro do Do |
+| 101881 | 130897 | SAM | Pend | Adequar a importa��o de cadastros da RFB conforme altera��es do site n |
+| 101887 | 130882 | NE | Lib | Está apresentando indevidamente o aviso de vigência não cadastrada ao  |
+| 101846 | 130892 | SAM | Pend | Liberar tempo gasto nos testes das SAIs de IA. |
+| 101839 | 130873 | SAM | Pend | Realizar testes no processo das Rotinas Autom�ticas devido a altera��o |
+| 101806 | 130832 | SAL | Lib | Ajustar o envio da guia DAS conforme as altera��es ocorridas no Captch |
+| 101823 | 130820 | NE | Pend | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro  |
+| 101793 | 130807 | NE | Pend | Est� replicando indevidamente os acumuladores que possuem CNAE informa |
+| 101853 | 130794 | SAL | Lib | Remover linhas de cálculo referente ao Programa Perse no registro N610 |
+| 101781 | 130796 | SAM | Pend | Realizar testes de importa��o atrav�s da API e BOX-e ap�s a atualiza�� |
+| 101783 | 130789 | NE | Pend | Em alguns casos est� ocorrendo erro de sistema ao gerar o arquivo do i |
+| 101801 | 130776 | NE | Desc | Não está calculando corretamente o saldo na apuração dos impostos 4-PI |
+| 101886 | 130779 | NE | Pend | Est� apresentando valor incorreto na tela "Saldos" do informativo Arqu |
+| 101809 | 130767 | NE | Lib | Os valores do registro P300 não estão sendo exibidos na tela Outros Da |
+| 101821 | 130766 | NE | Pend | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metr |
 | 101732 | 130739 | SAM | Pend | Realizar um estudo no sistema para que n�o ocorra o bloqueio de usu�ri |
-| 101705 | 130704 | SAM | Pend | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL ad |
-| 101738 | 130702 | NE | Pend | Est� apresentando erro de banco de dados na concilia��o de lan�amentos |
+| 101797 | 130730 | SAM | Pend | Importar para as Bases de Impostos por Parcela op��o relacionada � n�o |
+| 101705 | 130704 | SAM | Lib | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL ad |
+| 101738 | 130702 | NE | Lib | Est� apresentando erro de banco de dados na concilia��o de lan�amentos |
+| 101779 | 130698 | NE | Pend | Est� ocorrendo erro na emiss�o do Raz�o e do Di�rio quando a op��o "Se |
+| 101825 | 130670 | NE | Lib | Está importando para as linhas incorretas dos registros P300 e P500 os |
+| 101810 | 130657 | SAL | Lib | Atualizar os códigos de Natureza da Receita para o CST 07, conforme ve |
 | 101730 | 130665 | SAM | Pend | Realizar um estudo no sistema para que n�o ocorra o bloqueio na ctlanc |
-| 101718 | 130663 | NE | Pend | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
-| 101752 | 130652 | NE | Pend | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
-| 101655 | 130637 | SAM | Pend | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita - Refatora��o  |
+| 101718 | 130663 | NE | Lib | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101752 | 130652 | NE | Lib | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
+| 101655 | 130637 | SAM | Lib | Realizar testes no 'Extrator da DIRF' no módulo Escrita - Refatoração  |
+| 101772 | 130635 | NE | Lib | Está sendo gerado o valor incorreto no Relatório "Resumo dos Impostos  |
+| 101855 | 130630 | SAL | Lib | Gerar a TAG 'rendIsento' no informativo EFD-Reinf, para rendimentos is |
 | 101678 | 130623 | SAM | Pend | Importar nos lan�amentos de entradas de devolu��o a op��o relacionada  |
 | 101673 | 130619 | NE | Pend | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, |
 | 101698 | 130610 | NE | Pend | N�o est� sendo poss�vel informar caracteres alfanum�ricos no campo "N� |
 | 101685 | 130604 | NE | Lib | Est� exibindo a mensagem 'Sem dados para emitir' ao emitir o Balan�o c |
+| 101807 | 130597 | NE | Pend | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao |
+| 101800 | 130594 | NE | Pend | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui m |
 | 101572 | 130569 | SAM | Pend | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa |
+| 101570 | 130550 | NE | Lib | JSON de DELETED está alterando transação para 1900-01-01 |
 | 101749 | 130552 | NE | Pend | Est� filtrando incorretamente as contas na tela 'Consulta Class F4' qu |
-| 101570 | 130550 | NE | Pend | JSON de DELETED est� alterando transa��o para 1900-01-01 |
 | 101691 | 130537 | NE | Pend | Em alguns casos o sistema fecha ao gerar o arquivo Excel do Relat�rio  |
+| 101808 | 130536 | NE | Pend | Est� sendo gerado indevidamente o destinat�rio trocado na guia GNRE do |
 | 101549 | 130532 | NE | Desc | Est� ocorrendo erro de banco de dados 'EFSDOIMP_RECEITA_IMPOSTOS_MAJOR |
 | 101686 | 130530 | NE | Pend | N�o est� sendo gerada a linha "(-) Divulga��o Eleitoral e Partid�ria G |
+| 101556 | 130509 | NE | Lib | Está sendo apresentado erro ao gerar o relatório na guia "Alteração pl |
+| 101758 | 130507 | NE | Lib | Está importando os valores do registro Y570 do informativo SPED ECF in |
 | 101547 | 130513 | NE | Lib | Est� sendo calculado incorretamente o valor dos impostos 6-CSLL e 7-IR |
+| 101863 | 130512 | NE | Pend | Data das Transa��es Incorreta quando institui��o manda com fuso hor�ri |
 | 101542 | 130511 | NE | Lib | Est� ocorrendo indevidamente a cr�tica de estrutura "Erro processando  |
-| 101556 | 130509 | NE | Pend | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o pl |
 | 101562 | 130508 | NE | Pend | Em alguns casos est� sendo gerado o lan�amento de zeramento sem a cont |
-| 101758 | 130507 | NE | Pend | Est� importando os valores do registro Y570 do informativo SPED ECF in |
 | 101508 | 130467 | NE | Lib | N�o est� sendo demonstrado o Lucro e Dividendo Isento (natureza 12001) |
 | 101668 | 130465 | SAL | Pend | Considerar as devolu��es de vendas e os devidos valores dos CT-es subs |
 | 101519 | 130458 | NE | Lib | N�o est� sendo feito o c�lculo da majora��o dos impostos 6-CSLL, 7-IRP |
 | 101690 | 130456 | NE | Pend | Em alguns casos ocorre o fechamento do sistema ao gerar Relat�rio de C |
 | 101726 | 130453 | NE | Pend | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao  |
-| 101491 | 130440 | SAM | Pend | Alterar o sistema para enviar o Plano de contas compactado em GZIP par |
 | 101512 | 130449 | NE | Lib | ES-Em alguns casos est� sendo demonstrada indevidamente a mensagem "Fa |
 | 101489 | 130444 | NE | Desc | N�o est�o sendo gerados todos os s�cios no relat�rio "Comprovante Anua |
 | 101617 | 130441 | SAM | Pend | Testar o envio do plano de contas e o recebimento de lan�amentos do Co |
@@ -52,12 +128,14 @@
 | 101555 | 130339 | NE | Pend | Est� sendo demonstrado o n�mero do documento e o CNPJ do fornecedor in |
 | 101487 | 130334 | NE | Lib | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
 | 101425 | 130331 | NE | Pend | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simple |
+| 101595 | 130326 | NE | Lib | Está ocorrendo um problema ao atualizar os dados do extrato no reproce |
 | 101523 | 130327 | NE | Pend | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para rea |
-| 101595 | 130326 | NE | Pend | Est� ocorrendo um problema ao atualizar os dados do extrato no reproce |
 | 101396 | 130324 | SAM | Pend | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita - Refatora��o  |
 | 101373 | 130303 | SAM | Pend | Cria��o de casos de testes para a automa��o e registro de tempos com a |
+| 101790 | 130298 | SAL | Pend | Adequar os informativos aos reflexos decorrentes das altera��es na red |
 | 101374 | 130288 | NE | Lib | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstra |
 | 101767 | 130265 | NE | Pend | Est� exibindo valores incorretos nos relat�rios ICMS Creditado e Resum |
+| 101865 | 130256 | NE | Pend | Lan�amento cont�bil da transa��o est� duplicando ao pagar folha parcia |
 | 101535 | 130255 | NE | Pend | N�o est� exibindo algumas contas sint�ticas do grupo Passivo no Balan� |
 | 101492 | 130247 | NE | Pend | SC-N�o est� sendo gerado o item 999 do quadro 11 na DIME da Filial, qu |
 | 101341 | 130238 | NE | Lib | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstra |
@@ -66,7 +144,8 @@
 | 101460 | 130212 | NE | Pend | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table ' |
 | 101727 | 130209 | NE | Pend | SP-Est� sendo gerada incorretamente a descri��o no campo "Tipo de d�bi |
 | 101713 | 130208 | NE | Pend | Est� sendo demonstrado incorretamente o valor de "Al�quota Efetiva por |
-| 101369 | 130191 | SAIL | Pend | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tribu |
+| 101811 | 130201 | NE | Pend | Est� sendo realizado indevidamente consulta/download de notas fora do  |
+| 101369 | 130191 | SAIL | Lib | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apuração de Tribu |
 | 101574 | 130190 | SAM | Lib | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz |
 | 101283 | 130181 | NE | Lib | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRP |
 | 101352 | 130176 | NE | Pend | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_aut |
@@ -103,22 +182,20 @@
 | 101706 | 130025 | SAL | Pend | PR-Ajustar o sistema para que seja poss�vel gerar o registro E113 para |
 | 101343 | 130015 | NE | Pend | Em alguns casos est� ocorrendo diferen�a no valor de "Valor do estorno |
 | 101165 | 130014 | NE | Pend | N�o est� sendo feita corretamente a importa��o dos lan�amentos cont�be |
-| 101258 | 129994 | NE | Pend | Não estão sendo enviadas as atualizações das contas contábeis para Con |
 | 101144 | 129997 | SAM | Pend | Adequar o sistema para contabiliza��o de estorno de Pagamento de Conta |
 | 101143 | 129996 | SAM | Pend | Adequar o sistema para contabiliza��o de estorno de Pix da Conta PJ no |
 | 101314 | 129992 | NE | Pend | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primar |
 | 101607 | 129991 | NE | Pend | Est� ocorrendo travamento durante a importa��o quando a empresa possui |
-| 101124 | 129978 | NE | Pend | Está demonstrando indevidamente o submenu da DMPL no menu Emissões. |
-| 101356 | 129973 | SAM | Pend | Criar a permissão para o menu Novo plano de contas |
+| 101124 | 129978 | NE | Lib | Está demonstrando indevidamente o submenu da DMPL no menu Emissões. |
 | 101120 | 129965 | NE | Lib | N�o est�o sendo calculados corretamente os impostos 6-CSLL, 7-IRPJ-LP, |
 | 101326 | 129954 | NE | Pend | N�o est� processando novo consentimento quando antigo est� inv�lido e  |
 | 101559 | 129946 | NE | Pend | Est� sendo gerado um saldo em aberto indevidamente na baixa de parcela |
 | 101157 | 129940 | SAIL | Pend | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item |
 | 101159 | 129936 | SAIL | Pend | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de it |
 | 101578 | 129935 | SAM | Pend | Realizar estudo para adequar o sistema ao processamento de grande volu |
+| 101796 | 129931 | SAL | Pend | Calcular a redu��o linear de 10% nos incentivos e benef�cios tribut�ri |
 | 101280 | 129923 | SAM | Pend | Efetuar a baixa de impostos sempre que possui operation_type CONVENIO_ |
 | 101316 | 129919 | NE | Pend | Est� ocorrendo o erro de sistema "Algum dado n�o cadastrado!" ao grava |
-| 101195 | 129906 | NE | Pend | Não estão sendo apresentadas todas as mensagens de inconsistências enc |
 | 101294 | 129902 | SAM | Pend | Importar para o produto e para os lan�amentos de sa�das as op��es rela |
 | 101071 | 129901 | NE | Lib | Est� lendo v�rias vezes mesma transa��o quando ocorre erro na consulta |
 | 101067 | 129893 | SAM | Lib | Registrar os tempos atuados nas pesquisas de inova��es com IA para a v |
@@ -136,11 +213,11 @@
 | 101052 | 129803 | NE | Pend | Em alguns casos est� apresentando a mensagem "Data inferior a data de  |
 | 101036 | 129802 | NE | Pend | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na  |
 | 101645 | 129795 | SAM | Pend | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do |
-| 101085 | 129751 | NE | Pend | Está listando indevidamente as contas e os históricos da empresa corre |
+| 101013 | 129761 | NE | Lib | Não estão sendo armazenadas as notas enviadas pelo Busca NF-e para o B |
+| 101085 | 129751 | NE | Lib | Está listando indevidamente as contas e os históricos da empresa corre |
 | 101141 | 129762 | NE | Pend | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma c |
-| 101013 | 129761 | NE | Pend | N�o est�o sendo armazenadas as notas enviadas pelo Busca NF-e para o B |
+| 101695 | 129731 | NE | Desc | TO-Não estão sendo gerados corretamente os quadros 3 e 4 do informativ |
 | 101046 | 129742 | SAL | Lib | Adequar a tela de ajustes de PIS/COFINS incluindo as novas origens obs |
-| 101695 | 129731 | NE | Pend | TO-N�o est�o sendo gerados corretamente os quadros 3 e 4 do informativ |
 | 101153 | 129729 | NE | Pend | Em alguns casos est� fechando o sistema e n�o est� sendo gerado o arqu |
 | 101212 | 129727 | NE | Pend | N�o est� sendo feita a contabiliza��o correta do imposto 26-INSS-RET n |
 | 101276 | 129723 | SAM | Pend | Implementar a gera��o do relat�rio de precifica��o de produtos e servi |
@@ -148,28 +225,24 @@
 | 100985 | 129721 | NE | Lib | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador |
 | 100954 | 129718 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "A soma do imposto PIS |
 | 100993 | 129714 | NE | Lib | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, |
-| 101103 | 129703 | SAM | Pend | Realizar a conversão dos vínculos do plano referencial após o cadastro |
 | 101043 | 129701 | NE | Pend | Em alguns casos est� ocorrendo encerramento do sistema quando importad |
 | 101210 | 129698 | NE | Pend | Em alguns casos n�o est� concluindo a grava��o da importa��o dos dados |
 | 100995 | 129683 | NE | Pend | Em alguns casos, est� apresentando erro de banco de dados ao emitir a  |
-| 101450 | 129665 | SAM | Pend | Criar a tela de bloqueio para quando o novo plano de contas estiver se |
 | 100918 | 129662 | SAM | Lib | [TECH] Realizar testes funcionais da nova FARM 37 do sistema Dom�nio n |
 | 100943 | 129661 | NE | Desc | Est� habilitando indevidamente a guia "Relacionamento de produtos" no  |
 | 100917 | 129660 | SAM | Lib | [TECH] Realizar testes funcionais da nova FARM 38 do sistema Dom�nio n |
 | 101065 | 129649 | SAM | Lib | Adequar o sistema para as mudan�as do portal e-CAC no processo de "Pag |
 | 100912 | 129643 | NE | Lib | Em alguns casos n�o est�o sendo gerados todos os registros D197 no arq |
 | 100952 | 129631 | NE | Lib | N�o est� sendo gerado o valor correto dos impostos 110-CSLL/SCP e 111- |
-| 101189 | 129627 | SAM | Pend | Realizar a conversão das contas vinculadas nas estruturas do DRE, DLPA |
-| 101397 | 129620 | SAM | Pend | Realizar a conversão das configurações de integração contábil após o c |
 | 100996 | 129626 | NE | Lib | N�o est� sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
 | 100898 | 129624 | NE | Lib | MT-Est� desmarcando automaticamente a op��o "Acesso ao portal - SEFAZ" |
 | 100942 | 129610 | NE | Lib | Est� gerando o relacionamento do M300 e M350 do SPED ECF de forma inco |
 | 101154 | 129604 | NE | Pend | N�o est� sendo feita corretamente a contabiliza��o das notas de Entrad |
-| 101599 | 129573 | SAM | Pend | Realizar um estudo para criar a integração por API com ERPs Externos p |
+| 101599 | 129573 | SAM | Lib | Realizar um estudo para criar a integração por API com ERPs Externos p |
 | 100873 | 129568 | NE | Lib | Est� sendo gerado o valor incorreto na linha "5.Lucros e dividendos, a |
 | 100940 | 129545 | NE | Pend | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota  |
 | 100836 | 129542 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
-| 100956 | 129531 | NE | Pend | Não está gerando o SPED Contábil quando há contas sem movimento/saldo  |
+| 100956 | 129531 | NE | Lib | Não está gerando o SPED Contábil quando há contas sem movimento/saldo  |
 | 100841 | 129541 | NE | Lib | Em alguns casos est� ocorrendo erro de banco de dados ao gravar um lan |
 | 101342 | 129540 | NE | Pend | N�o est� sendo feita corretamente a importa��o das informa��es da jane |
 | 100825 | 129536 | SAM | Pend | Realizar estudos e avaliar arquitetura para implementa��o da nova tabe |
@@ -184,8 +257,6 @@
 | 100795 | 129490 | NE | Lib | Em alguns casos est� ocorrendo erro de banco de dados ao atualizar o s |
 | 100987 | 129486 | SAIL | Pend | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda |
 | 100902 | 129482 | NE | Lib | Est� gerando valores incorretos para os registros K155, K156 e L100 do |
-| 101107 | 129460 | SAM | Pend | Realizar a conversão das regras de contabilização de extrato após o ca |
-| 101104 | 129438 | SAM | Pend | Criar uma nova vigência na parametrização ao concluir o cadastro de um |
 | 100814 | 129461 | SAM | Pend | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED |
 | 100899 | 129457 | NE | Pend | Est� gerando valor incorreto na coluna "RB Demais Atividades" do Compa |
 | 100848 | 129436 | NE | Lib | Em alguns casos n�o est� sendo gerado corretamente o arquivo do SPED F |
@@ -204,12 +275,13 @@
 | 101150 | 129343 | SAM | Pend | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cada |
 | 101575 | 129338 | SAM | Lib | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz |
 | 100806 | 129317 | NE | Lib | DF-N�o est� sendo gerado corretamente o registro C197 com o c�digo de  |
-| 100901 | 129307 | NE | Pend | Não está preenchendo automaticamente a conta referencial da nova conta |
+| 100901 | 129307 | NE | Lib | Não está preenchendo automaticamente a conta referencial da nova conta |
 | 101657 | 129308 | NE | Pend | N�o est� sendo habilitada a op��o 'Aplicar o percentual de presun��o d |
 | 100647 | 129305 | SAM | Pend | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui�� |
 | 100904 | 129302 | SAM | Pend | Otimizar a apura��o do imposto 69-ST-TRANS por nota. |
 | 101164 | 129275 | NE | Pend | Em alguns casos, n�o est� sendo gerado o valor correto na apura��o do  |
 | 100944 | 129274 | NE | Lib | Em alguns casos est�o sendo sobrescritas contas patrimoniais de client |
+| 101777 | 129273 | NE | Pend | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta con |
 | 100808 | 129248 | NE | Lib | MT-Est� sendo apresentada indevidamente a mensagem "C�digo de Ajuste n |
 | 100601 | 129214 | SAM | Lib | Alterar o processo de sugest�o de configura��o para transa��es com o s |
 | 100596 | 129213 | NE | Lib | Esta sendo demonstrado o erro '-1' ao atualizar o sistema quando o cli |
@@ -218,20 +290,23 @@
 | 100757 | 129164 | SAL | Lib | Atualizar a tabela de NCM conforme Ato Declarat�rio Executivo RFB N� 0 |
 | 101318 | 129157 | NE | Pend | N�o atualiza a tooltip das transa��es quando possuir um processo de CR |
 | 100585 | 129155 | NE | Pend | N�o est� realizando a baixa do pagamento quando a transa��o est� com u |
-| 100597 | 129150 | NE | Pend | Não está sendo exibido o CNPJ de empresas cadastradas com CNPJ alfanum |
+| 100597 | 129150 | NE | Lib | Não está sendo exibido o CNPJ de empresas cadastradas com CNPJ alfanum |
 | 100616 | 129151 | NE | Lib | Em alguns casos n�o est� sendo feito o c�lculo correto do imposto 7-IR |
 | 100544 | 129130 | SAM | Lib | Realizar melhorias nas rotinas de grava��o do XML no banco de dados vi |
 | 100542 | 129127 | SAM | Lib | Realizar melhorias nas rotinas de baixa, inser��o e consulta de notas  |
 | 101136 | 129109 | NE | Pend | Est� ocorrendo o erro: "O(s) arquivo(s) selecionado(s) n�o existe(m)!" |
 | 100741 | 129097 | SAL | Lib | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SP |
-| 100963 | 129050 | NE | Pend | Não está atualizando corretamente o número no ícone de transações pend |
+| 101803 | 129074 | NE | Pend | Est� sendo exclu�do indevidamente o centro de custo referente a contab |
+| 100963 | 129050 | NE | Lib | Não está atualizando corretamente o número no ícone de transações pend |
+| 101802 | 129062 | NE | Pend | RS-N�o est� sendo limitando o saldo credor do cr�dito presumido nas sa |
 | 100517 | 129061 | NE | Lib | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas |
 | 100807 | 129048 | NE | Pend | N�o est�o sendo considerados os valores da empresa filial no Comprovan |
 | 101168 | 129047 | NE | Pend | Esta sendo calculado incorretamente a RBT12 para o c�lculo do Simples  |
-| 100488 | 129035 | NE | Pend | Não está sendo respeitado o parâmetro "Enviar individualmente aos clie |
+| 100488 | 129035 | NE | Lib | Não está sendo respeitado o parâmetro "Enviar individualmente aos clie |
 | 100480 | 129003 | NE | Lib | N�o est� reprocessando transa��es de consentimento anterior ao atual |
 | 100498 | 129001 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "A soma dos campos 'Va |
 | 100472 | 128992 | SAM | Pend | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita. |
+| 101789 | 128974 | SAIL | Pend | Implementar o c�lculo dos impostos 183-IBS e 184-CBS na aliena��o de b |
 | 101340 | 128957 | NE | Pend | N�o est� sendo demonstrado as receitas da filial no relat�rio Simples  |
 | 101551 | 128956 | NE | Pend | SP-Est� sendo demonstrado indevidamente o submenu DARE ICMS Antecipado |
 | 100557 | 128948 | SAM | Lib | Realizar a importa��o dos impostos IBS e CBS para guia 'IVA' atrav�s d |
@@ -239,11 +314,10 @@
 | 101354 | 128938 | SAL | Pend | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Es |
 | 100423 | 128936 | SAL | Lib | Ajustar o sistema para que consiga seguir no captcha para emiss�o do D |
 | 100422 | 128930 | SAM | Pend | Realizar um estudo e testes no agente de comunica��o referente ao cons |
-| 100530 | 128925 | SAM | Pend | Remover o botão refresh da tela de Lançamentos de extrato bancário. |
 | 100789 | 128903 | NE | Pend | Est� apresentando erro de banco de dados ao gravar a tela "Informa��es |
 | 101485 | 128897 | NE | Pend | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informati |
 | 100417 | 128896 | NE | Lib | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas |
-| 100589 | 128887 | NE | Pend | Não está consolidando corretamente o saldo anterior nos Livros Razão e |
+| 100589 | 128887 | NE | Lib | Não está consolidando corretamente o saldo anterior nos Livros Razão e |
 | 100410 | 128890 | NE | Pend | N�o est�o ficando gravadas as contas cont�beis no bot�o "Outros Dados" |
 | 101100 | 128886 | NE | Pend | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lc |
 | 100418 | 128885 | SAL | Lib | SC-Atualizar os c�digos de ajuste do SPED Fiscal referente Cr�dito Pre |
@@ -269,10 +343,11 @@
 | 100338 | 128805 | NE | Lib | Em alguns casos est� ocorrendo erro ao realizar a atualiza��o do siste |
 | 100337 | 128804 | SAM | Lib | Realizar testes no processo de Rotinas Autom�ticas na Escrita Fiscal. |
 | 100334 | 128801 | SAM | Lib | Realizar testes no processo de Rotinas Autom�ticas no m�dulo Contabili |
+| 101878 | 128794 | SAL | Pend | Alterar o c�digo de ajuste gerado no registro E311 no SPED Fiscal para |
 | 100343 | 128779 | NE | Pend | Est� sendo apresentada indevidamente a mensagem "Para empresas com apu |
 | 100319 | 128756 | NE | Lib | Est� sendo indevidamente considerada majora��o maior que 100% no c�lcu |
-| 100295 | 128742 | SAM | Pend | Realizar a importa��o da baixa de pagamento de impostos pelo Importado |
-| 100296 | 128741 | SAM | Pend | Realizar a importa��o da baixa de pagamento de impostos pelo Conta Azu |
+| 100295 | 128742 | SAM | Desc | Realizar a importa��o da baixa de pagamento de impostos pelo Importado |
+| 100296 | 128741 | SAM | Desc | Realizar a importa��o da baixa de pagamento de impostos pelo Conta Azu |
 | 100578 | 128734 | NE | Pend | N�o est� gerando os valores de IPI para alguns produtos na guia "Estoq |
 | 100805 | 128731 | NE | Lib | N�o est� sendo gerada a data correta no campo "Data" do relat�rio "Com |
 | 100342 | 128729 | NE | Lib | N�o est�o sendo gerados os registros dos blocos C100, C300, C350, C500 |
@@ -298,14 +373,14 @@
 | 100260 | 128637 | NE | Lib | MA-Est� sendo apresentada indevidamente a mensagem "Para efetuar o c�l |
 | 100297 | 128624 | SAL | Lib | TO-Ajustar o sistema para n�o gerar o segmento G no informativo DIF pa |
 | 100222 | 128618 | NE | Lib | N�o est� sendo gerado o c�digo de recolhimento do imposto 16-IRRF no r |
-| 100281 | 128605 | NE | Pend | Corrigir o sistema para que a reten��o referente a rotina de distribui |
+| 100281 | 128605 | NE | Desc | Corrigir o sistema para que a reten��o referente a rotina de distribui |
 | 100200 | 128595 | NE | Lib | Contabilidade Digital: Em alguns casos est� ocorrendo o erro na emiss� |
 | 100499 | 128590 | SAL | Lib | MS-Alterar o sistema para adequa��o �s novas IE's do estado do Mato Gr |
 | 100221 | 128589 | NE | Lib | N�o est� sendo setado o c�digo de recolhimento correto no Comprovante  |
 | 100203 | 128585 | NE | Desc | Em alguns casos est� ocorrendo erro ao gerar o relat�rio de Comprovant |
 | 101262 | 128584 | NE | Pend | Est� ocorrendo erro de sistema ao emitir o MIT via API Integra Contado |
-| 100327 | 128582 | NE | Pend | Está validando indevidamente a coluna 'Checkbox' como obrigatória quan |
-| 100325 | 128581 | NE | Pend | Não está abrindo o calendário dos campos 'Arquivamento dos atos consti |
+| 100327 | 128582 | NE | Lib | Está validando indevidamente a coluna 'Checkbox' como obrigatória quan |
+| 100325 | 128581 | NE | Lib | Não está abrindo o calendário dos campos 'Arquivamento dos atos consti |
 | 100697 | 128580 | NE | Pend | Est� sendo setada uma op��o inv�lida no campo "Tipo de Lan�amento" da  |
 | 100176 | 128558 | NE | Lib | Est� ocorrendo erro "Cannot convert 'XX/XX/XXXX' to timestamp " na atu |
 | 100170 | 128549 | NE | Lib | Realizar testes na Escrita Fiscal no relat�rio do Extratos de DIRF. |
@@ -324,6 +399,7 @@
 | 101424 | 128428 | NE | Pend | Em alguns casos est� apresentando indevidamente a mensagem "Existe c�d |
 | 100523 | 128427 | NE | Pend | SC-N�o est� sendo gerado o registro C197 com c�digo de ajuste "SC50000 |
 | 100524 | 128426 | NE | Lib | SP-Est� sendo direcionada para a janela de emiss�o da guia incorreta d |
+| 101820 | 128425 | NE | Pend | N�o est� sendo feita corretamente a contabiliza��o das Notas de Entrad |
 | 100132 | 128420 | NE | Pend | Est� gerando incorretamente o aviso "Os valores de detalhamento dos la |
 | 100125 | 128417 | NE | Lib | Est� sendo exclu�do lan�amento cont�bil conciliado manualmente com tra |
 | 100990 | 128410 | SAM | Pend | Adequar o sistema para considerar a nova op��o de empresa centralizado |
@@ -363,33 +439,21 @@
 | 100046 | 128109 | NE | Lib | Corrigir a mensagem de confirma��o de assinatura digital No Demonstrat |
 | 99959 | 128103 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "A distribui��o de luc |
 | 100062 | 128101 | NE | Pend | RS-N�o est� sendo gerado corretamente o registro E113 e n�o est� sendo |
-| 100094 | 128069 | SAM | Pend | Apresentar lançamentos encontrados para todas as transações pendentes  |
-| 100095 | 128065 | SAM | Pend | Remover a coluna 'Cód. Hist.' dos lançamentos encontrados na tela de L |
-| 100008 | 128043 | NE | Lib | Está exibindo incorretamente os arquivos OFX/OFC importados na tela de |
 | 100023 | 128042 | NE | Lib | N�o est� validando corretamente a correspond�ncia de contas com c�digo |
-| 100000 | 128009 | NE | Lib | Não está validando corretamente o campo 'Histórico' do lançamento pend |
-| 99999 | 128002 | NE | Lib | Não está apresentando corretamente as informações quando a competência |
 | 100407 | 128040 | NE | Lib | TO-Esta sendo permitido gravar nos par�metros a altera��o nos campos " |
 | 100065 | 128039 | NE | Lib | RJ-Em alguns casos n�o est� sendo calculado corretamente o valor do cr |
 | 100147 | 128037 | SAM | Pend | Efetuar testes referente ao ExecutionGroup LancamentoIceberg |
 | 99916 | 128034 | SAM | Pend | Alterar a arquitetura do processo de execu��o das Rotinas Autom�ticas  |
 | 100527 | 128018 | SAM | Lib | SP-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fis |
-| 100003 | 127992 | NE | Lib | Não estão alinhadas corretamente as colunas 'Lote' e 'Débito' da modal |
 | 100001 | 128015 | NE | Lib | Em alguns casos est� apresentando erro de banco de dados na tabela 'CT |
-| 99998 | 127968 | NE | Lib | Não estão sendo apresentados corretamente os botões na tela de Lançame |
-| 99984 | 127961 | NE | Lib | Está apresentando o número do Lote indevidamente na transação quando p |
-| 99982 | 127955 | NE | Lib | Não está respeitando o botão refresh da tela de Lançamentos de extrato |
-| 99969 | 127953 | NE | Lib | Não está permitindo excluir lançamentos pendentes. |
 | 99919 | 127960 | NE | Lib | N�o est� sendo gerado o valor correto no campo 14-VL_SERV_NT do regist |
 | 99885 | 127956 | NE | Lib | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com desc |
-| 99967 | 127948 | NE | Lib | Está demonstrando incorretamente o campo 'Histórico' na tela de Lançam |
 | 99972 | 127951 | NE | Pend | Em alguns casos est� ocorrendo erro na execu��o do exporta/importa ref |
 | 100225 | 127949 | SAM | Desc | Realizar os ajustes e testes necess�rios para atender a unifica��o do  |
 | 100034 | 127938 | NE | Pend | N�o est� sendo apresentado no relat�rio "Controle de Incentivos Fiscai |
 | 100076 | 127937 | NE | Desc | Est� sendo apresentada indevidamente a mensagem de erro "C�digo de ati |
+| 100763 | 127922 | SAM | Lib | Ajustar a importação do CT-e e CT-eOS quando o CT-e Substituto for com |
 | 99977 | 127931 | SAM | Lib | Realizar a importa��o do Imposto Seletivo-IS conforme a reforma tribut |
-| 100763 | 127922 | SAM | Pend | Ajustar a importa��o do CT-e e CT-eOS quando o CT-e Substituto for com |
-| 99842 | 127896 | NE | Lib | Não está ocorrendo o zeramento das contas ou está zerando contas que n |
 | 100016 | 127904 | NE | Lib | Est� ocorrendo erro de banco de dados ao realizar importa��o de NFS-e  |
 | 99881 | 127900 | SAM | Lib | Ajustar a mensagem emitida na guia "Rendimentos isentos" da EFD Reinf  |
 | 100049 | 127853 | SAM | Lib | Alterar comportamento do sistema na emiss�o do relat�rio do classifica |
@@ -399,14 +463,12 @@
 | 100029 | 127842 | SAM | Lib | Adequar a importa��o dos impostos retidos conforme a NT N� 007 para NF |
 | 99806 | 127809 | NE | Lib | Est� ocorrendo erro Maleta Vermelha "Contabilidade Digital Baixa Parce |
 | 99801 | 127785 | NE | Lib | N�o est� retornando o CNPJ do Contador que o cliente est� vinculado ao |
-| 99858 | 127770 | NE | Desc | Não está validando erro em alerta quando se trata de uma única empresa |
 | 99797 | 127773 | NE | Lib | N�o est� sendo gerado o Comprovante Eletr�nico de Rendimentos e/ou Com |
 | 99816 | 127772 | NE | Lib | Est� sendo aberta indevidamente a janela F2 no campo "Benefici�rio" da |
 | 99788 | 127767 | NE | Lib | SP-Est�o sendo gerados indevidamente os registros 0460, C195 e C197 co |
 | 99811 | 127744 | NE | Lib | RJ-Est� importando incorretamente o valor do imposto 56-FECOP-SI (lan� |
 | 99782 | 127726 | NE | Lib | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Re |
 | 99781 | 127722 | NE | Desc | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Re |
-| 99861 | 127718 | NE | Lib | Não está validando corretamente na tela de Lançamentos de extrato banc |
 | 99921 | 127717 | SAM | Lib | Alterar o sistema para aceitar o arquivo da NFS-e Padr�o Nacional quan |
 | 100858 | 127709 | SAL | Lib | Adequar SPED ECF ao encerramento do Programa PERSE a partir de 04/2025 |
 | 99812 | 127707 | SAM | Pend | Realizar testes nas importa��es que utilizam certificado digital ap�s  |
@@ -423,7 +485,6 @@
 | 99836 | 127623 | NE | Desc | Est�o sendo demonstrados incorretamente os impostos 183-IBS e 184-CBS  |
 | 101116 | 127620 | SAM | Pend | Adequar o sistema para considerar a nova op��o de empresa centralizado |
 | 99772 | 127605 | SAL | Lib | SC-Alterar os percentuais do Cr�dito Presumido ao estabelecimento abat |
-| 99815 | 127594 | SAM | Lib | Verificar template dos e-mails enviados pelo Onvio Contabilidade após  |
 | 99753 | 127589 | NE | Lib | N�o est� replicando hist�rico ap�s preenchimento do c�digo |
 | 99714 | 127579 | SAM | Lib | Realizar testes na importa��o de baixa de impostos da conta azul ap�s  |
 | 99702 | 127552 | SAM | Lib | Realizar testes nas integra��es com o Conta Azul. |
@@ -460,7 +521,6 @@
 | 99545 | 127206 | NE | Lib | Ajustar o c�digo quanto a emiss�o de notas de entrada com modelo "Nota |
 | 99744 | 127205 | SAL | Lib | RJ-Incluir data fim e alterar a descri��o de alguns c�digos de ajuste  |
 | 101591 | 127197 | SAM | Pend | PB-Alterar a importa��o do DIFALI para n�o excluir o ICMS da base de c |
-| 99538 | 127147 | NE | Lib | Não está apresentando o traço da grid do lançamento dentro da transaçã |
 | 99548 | 127176 | NE | Lib | O sistema n�o est� respeitando o filtro "Ocultar contas cont�beis vinc |
 | 99526 | 127128 | SAM | Pend | Realizar testes no bot�o 'Empresas' da tela do 'Extrator da DIRF' no m |
 | 99522 | 127124 | SAM | Lib | RS-Adaptar o sistema para importa��o da NF-e conforme nova estrutura d |
@@ -479,7 +539,6 @@
 | 99469 | 127000 | NE | Lib | N�o est�o sendo mantidas as configura��es feitas na janela de Rotinas  |
 | 99594 | 126999 | NE | Lib | Est�o duplicando os valores das notas no evento R-2010 do informativo  |
 | 99609 | 126998 | NE | Lib | BA-N�o est� sendo emitido o relat�rio Demonstrativo do Cr�dito presumi |
-| 99448 | 126994 | SAM | Desc | Realizar testes no serviço "Accounting Journal". |
 | 99533 | 126997 | NE | Lib | N�o est� destacando a descri��o das contas sint�ticas no relat�rio Com |
 | 100015 | 126993 | SAL | Lib | Alterar o sistema para realizar os ajustes referente a majora��o de 10 |
 | 99464 | 126990 | NE | Lib | GO-N�o est� sendo calculado o valor do cr�dito presumido COMEXPRODUZIR |
@@ -514,7 +573,6 @@
 | 99306 | 126691 | NE | Pend | N�o est� sendo demonstrado completamente a descri��o da transa��o no p |
 | 99304 | 126689 | NE | Pend | Descri��o est� se sobrepondo a inscri��o no relat�rio |
 | 99396 | 126672 | NE | Lib | N�o est� gerando a numera��o da folha/p�gina da Declara��o de Conformi |
-| 99572 | 126629 | SAM | Pend | Permitir somente o cadastro de empresas Ativas no Onvio e interromper  |
 | 99394 | 126639 | NE | Lib | N�o est� considerando o filtro do bot�o "Centros de Custos" do Balance |
 | 99463 | 126635 | SAM | Pend | Criar rotina autom�tica para emiss�o da DLPA em PDF e Excel. |
 | 99569 | 126632 | SAL | Lib | SP-Alterar o sistema para que permita incluir at� 60 caracteres no cam |
@@ -571,7 +629,6 @@
 | 99086 | 126206 | SAM | Pend | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut |
 | 99085 | 126183 | SAM | Lib | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut |
 | 99022 | 126181 | SAM | Lib | Refatorar e otimizar a gera��o dos arquivos de confer�ncia R4010, R402 |
-| 99067 | 126176 | SAM | Pend | Possibilitar o cadastro de uma empresa com o mesmo CNPJ caso as existe |
 | 99153 | 126165 | NE | Lib | Est� importando incorretamente o CFPS na nota quando o cliente � de ou |
 | 99031 | 126163 | NE | Lib | N�o est�o sendo replicadas as informa��es das defini��es dos impostos  |
 | 98975 | 126118 | NE | Lib | Est� sendo atualizada incorretamente a nova tabela de saldos. |
@@ -584,10 +641,9 @@
 | 98974 | 126089 | NE | Lib | Esta demonstrando a tela de gera��o do arquivo SPED Fiscal com resolu� |
 | 98953 | 126088 | NE | Lib | N�o est� realizando download de servi�os cancelados no Padr�o Nacional |
 | 99414 | 126087 | NE | Lib | N�o est�o sendo enviadas as notifica��es ao armazenar os arquivos no B |
-| 99063 | 126047 | SAM | Pend | Adequar o sistema para ao importar as informa��es do c�lculo do INSS R |
+| 99063 | 126047 | SAM | Lib | Adequar o sistema para ao importar as informações do cálculo do INSS R |
 | 99016 | 126015 | NE | Lib | N�o est� demonstrando a descri��o do detalhamento do centro de custos  |
 | 98944 | 126014 | NE | Desc | Est� mesclando indevidamente as c�lulas do relat�rio Raz�o em Excel. |
-| 99862 | 125994 | SAM | Pend | Ajustar o SPED Contábil para usar o toggle 'Gerar o SPED ECF' nas vali |
 | 99136 | 125986 | SAL | Lib | Preparar o sistema para gerar a DEFIS 2026. |
 | 98902 | 125972 | NE | Lib | N�o est� sendo gerado o valor correto no campo "05-VL_OPR" do registro |
 | 98899 | 125966 | NE | Lib | N�o est� gerando o hist�rico dos lan�amentos no Raz�o em Excel, quando |
@@ -612,24 +668,18 @@
 | 100066 | 125848 | NE | Lib | N�o est� sendo demonstrada a guia DAS-MEI no calend�rio de vencimento  |
 | 98857 | 125847 | NE | Lib | N�o est� sendo considerada a op��o "N�o calcular cr�dito de IVA nas aq |
 | 98843 | 125841 | NE | Lib | RJ-Est� calculando incorretamente o valor do imposto 56-FECOP-SI, quan |
-| 98811 | 125801 | NE | Lib | Não está listando as entidades no filtro da guia 'Entidades' do botão  |
 | 99099 | 125824 | SAM | Lib | Alterar a forma do sistema buscar no SGD a confirma��o se o cliente te |
 | 98805 | 125823 | SAM | Pend | Realizar estudos para controlar o crescimento do arquivo tempor�rio de |
 | 98795 | 125814 | SAM | Lib | Realizar testes na emiss�o de relat�rios em formato XLS ou XLSX quando |
 | 99257 | 125812 | SAM | Lib | Atualizar a 'Tabela de V�nculo de NCM/NBS por cClassTrib' e o 'Classif |
 | 98789 | 125796 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 99844 | 125791 | SAL | Lib | RS-Alterar o c�lculo do imposto 27-ICMSA com fornecedor optante pelo S |
-| 98818 | 125785 | NE | Lib | Está listando no ano incorreto os 'Arquivos gerados' do SPED Contábil. |
-| 98810 | 125784 | NE | Lib | Não está gerando o badge azul no filtro 'Empresa' quando está selecion |
-| 98842 | 125783 | NE | Lib | Está exibindo o erro 'Falha ao executar o processamento. Tente novamen |
-| 98770 | 125775 | NE | Lib | Em alguns casos os lançamentos da Conta Azul não estão chegando no Onv |
 | 98772 | 125779 | SAM | Pend | Realizar estudo para rever a arquitetura do Conta Azul. |
 | 98782 | 125778 | NE | Lib | N�o est�o chegando os lan�amentos da Conta Azul ou est�o chegando de f |
 | 98801 | 125760 | NE | Pend | N�o est� sendo processado corretamente o recebimento de baixa de impos |
 | 98939 | 125748 | NE | Pend | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nom |
 | 99980 | 125734 | SAM | Pend | Preparar o sistema para implementar a ferramenta de precifica��o de pr |
 | 99605 | 125725 | NE | Lib | MT-N�o est�o sendo consideradas notas de compra e devolu��o de compras |
-| 100529 | 125723 | SAIL | Pend | Implementar a geração dos registros P130, P230 e X280 para o Lucro Pre |
 | 98809 | 125719 | NE | Lib | Est� sendo demonstrado indevidamente as cr�ticas de estrutura "N�o foi |
 | 99340 | 125709 | SAL | Lib | Permitir gerar a guia DARF via Sicalcweb referente as impostos retidos |
 | 99030 | 125672 | SAL | Pend | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
@@ -639,8 +689,6 @@
 | 100590 | 125652 | SAM | Pend | Permitir a importa��o dos impostos IBS e CBS para as notas de entrada  |
 | 98678 | 125650 | NE | Lib | Est� importando incorretamente o "Valor Cont�bil" e "Valor fornecido/c |
 | 98685 | 125649 | NE | Lib | Est� sendo demonstrada a apura��o da empresa incorreta na apura��o de  |
-| 98780 | 125641 | NE | Lib | Não está exibindo a 'badge' com a quantidade de lançamentos com pendên |
-| 98779 | 125640 | NE | Lib | Está sumindo o alert 'Existem inconsistências. Verifique o preenchimen |
 | 98904 | 125645 | NE | Desc | Em alguns casos est� travando o sistema ao executar as "Rotinas autom� |
 | 98666 | 125642 | SAM | Pend | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do  |
 | 98793 | 125639 | SAM | Pend | Otimizar as DWs 'dws_pis_cofins_nc_soma_debitos_dados_entradas' e 'dws |
@@ -664,7 +712,6 @@
 | 98687 | 125542 | NE | Lib | SC-Est�o sendo gerados indevidamente os registros E240 e E250 no infor |
 | 98948 | 125540 | SAM | Lib | BA/RS/SC/SP-Ajustar a importa��o das notas modelo 'Nota Fiscal Fatura  |
 | 98622 | 125539 | SAM | Lib | Testar aplica��o Busca NF-e p�s migra��o dos servidores do balanceador |
-| 98682 | 125492 | SAM | Pend | Ajustar o vídeo de boas-vindas da Contabilidade para ser demonstrado a |
 | 98607 | 125495 | NE | Lib | Em alguns casos ocorre lentid�o na gera��o do informativo EFD-Reinf. |
 | 98598 | 125461 | NE | Lib | Em alguns casos est� sendo exclu�da parte da contabiliza��o da baixa d |
 | 98624 | 125450 | SAM | Pend | Ajustar a emiss�o do relat�rio DFC para buscar os saldos da nova tabel |
@@ -675,7 +722,6 @@
 | 98589 | 125433 | SAM | Lib | Registrar os tempos atuados nas pesquisas de inova��es com IA. |
 | 98702 | 125427 | NE | Lib | Est� demonstrando indevidamente as empresas como desabilitadas no menu |
 | 98807 | 125418 | NE | Lib | Est� importando incorretamente o valor no campo "Outras" da linha do I |
-| 99873 | 125374 | SAM | Pend | Criar as regras de permissões no menu SPED ECF. |
 | 98577 | 125377 | NE | Lib | N�o est� realizando o envio de todas as contas para a Conta Azul da Fi |
 | 98562 | 125375 | NE | Lib | Testar os processos de regerar lan�amentos cont�beis atr�ves da import |
 | 98643 | 125367 | NE | Lib | Est� gerando erro de banco ao salvar em pdf o Relat�rio de Concilia��o |
@@ -686,13 +732,11 @@
 | 98961 | 125322 | NE | Lib | N�o est� sendo gerado o valor dos impostos federais ao emitir o dashbo |
 | 98688 | 125321 | NE | Lib | SC-N�o est� sendo gerado o valor correto do estorno de ICMS no registr |
 | 98495 | 125291 | SAM | Lib | Realizar testes explorat�rios no recebimento de lan�amentos do Conta A |
-| 98510 | 125260 | NE | Lib | Está selecionando o menu incorreto ao clicar no submenu 'Consulta impo |
 | 99141 | 125288 | SAM | Lib | Criar os relat�rios, tratar a contabiliza��o e atualizar os acumulador |
 | 98947 | 125271 | SAL | Lib | BA/RS/SC/SP-Alterar o sistema para gerar a escritura��o consolidada no |
 | 98542 | 125254 | NE | Lib | N�o est� sendo aplicada a redu��o nas al�quotas do IBS e CBS, quando a |
 | 98451 | 125202 | NE | Lib | N�o est� funcionando status "Aguardando NF" em dezembro |
 | 98463 | 125197 | NE | Lib | RJ-Est� ocorrendo erro de sistema ao alterar algum valor da gride "Imp |
-| 98511 | 125179 | SAL | Pend | Gerar o registro J210 no SPED Contábil com referência de notas explica |
 | 99312 | 125161 | SAM | Lib | Permitir importar extrato OFX com a tag DTPOSTED no formato 'AAAA-MM-D |
 | 100988 | 125146 | SAL | Pend | Alterar o sistema para calcular o valor dos contratos de Empresas Simp |
 | 99942 | 125133 | SAIL | Lib | Implementar a tela para envio do 'Evento: 211120 - Destina��o de item  |
@@ -700,7 +744,6 @@
 | 98423 | 125124 | SAM | Desc | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Busc |
 | 98576 | 125114 | NE | Lib | N�o est� sendo demonstrado a data correta da nota devolvida na guia es |
 | 98419 | 125107 | NE | Lib | N�o est�o sendo gerados valores de IBS e CSB nas notas fiscais, quando |
-| 98477 | 125080 | SAM | Pend | Criar as permissões para o menu DFC - Método indireto. |
 | 98538 | 125104 | NE | Lib | Est� excluindo indevidamente a classifica��o das contas cont�beis, qua |
 | 98405 | 125084 | NE | Lib | Est� sendo realizado de forma incorreta o envio de requisi��es para o  |
 | 98664 | 125077 | SAL | Lib | MT-Alterar o sistema para tornar opcionais os campos referentes � GIA- |
@@ -719,12 +762,9 @@
 | 100020 | 124951 | SAL | Lib | GO-Alterar o sistema para que o 'Cr�dito presumido PROTEGE' e os lan�a |
 | 98342 | 124945 | SAL | Lib | RJ-Incluir c�digos de itens para IPM na tela de valores agregados do S |
 | 98320 | 124936 | NE | Lib | Manter comportamento da janela "Consulta Tributos federais" consideran |
-| 98777 | 124899 | SAM | Pend | Integração Onvio x DW - Criar e integrar as contas contábeis e históri |
-| 98609 | 124894 | SAM | Pend | Integração Onvio x DW - Listar as contas contábeis e históricos do Onv |
 | 98364 | 124887 | NE | Lib | N�o est� replicando as contas cont�beis quando, na sele��o das empresa |
 | 98317 | 124877 | NE | Lib | Em alguns casos est� ocorrendo erro ao regerar os lan�amentos cont�bei |
 | 99351 | 124865 | SAIL | Lib | Implementar rotina de distribui��o de lucros e dividendos com reten��o |
-| 99947 | 124829 | SAIL | Pend | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9 |
 | 98296 | 124860 | NE | Lib | Esta duplicando transa��o quando alterado parceiro de Belvo para Plugg |
 | 98564 | 124853 | SAL | Lib | Ajustar o c�lculo do imposto 63-IRRF-APF para aplicar a redu��o previs |
 | 99395 | 124848 | SAL | Lib | SC-Ajustar o SPED Fiscal para n�o gerar o registro E200 e filhos para  |
@@ -758,7 +798,6 @@
 | 98187 | 124553 | SAM | Lib | Implementar utilit�rio para identificar o CclassTrib. |
 | 98160 | 124546 | NE | Lib | Em alguns casos est� duplicando as transa��es na Contabilidade Digital |
 | 100078 | 124540 | SAM | Pend | Retirar do servidor de sess�o as Threads respons�veis por inserir os X |
-| 98247 | 124515 | NE | Pend | Está apresentando indevidamente o alert "Falha ao realizar o cadastro. |
 | 98148 | 124539 | SAM | Lib | Criar telemetria para medir os tempos de emiss�o do balan�o e balancet |
 | 98504 | 124516 | NE | Lib | Est� demonstrando indevidamente a mensagem 'Conta Cont�bil XX n�o cada |
 | 98126 | 124473 | SAM | Lib | Realizar testes da altera��o do Onvio no endpoint de monitoria do Cont |
@@ -789,6 +828,7 @@
 | 100541 | 124275 | SAM | Lib | Alterar o c�lculo dos impostos 183-IBS e 184-CBS para os lan�amentos d |
 | 98002 | 124268 | SAM | Lib | Validar consentimento por meio de hist�rico das transa��es |
 | 98016 | 124265 | NE | Lib | Est� sendo demonstrado indevidamente a op��o "Configura��o" do menu BO |
+| 101874 | 124238 | SAM | Pend | Implementar op��o para importar os produtos rateados entre os segmento |
 | 98069 | 124231 | NE | Lib | RJ-N�o est� sendo gerada a informa��o correta do campo 07-VL_ICMS do r |
 | 98236 | 124230 | NE | Lib | Est� sendo gerado o valor incorreto para os impostos PIS e COFINS no r |
 | 98011 | 124224 | SAM | Lib | Atualizar a tabela cClassTrib em todos os pontos do sistema. |
@@ -803,10 +843,8 @@
 | 97957 | 124202 | NE | Lib | [Parceiro] Transa��es duplicadas no extrato do cliente |
 | 98053 | 124164 | NE | Lib | Est� incorreto o texto na tela de Inclus�o de Grupos nas configura��es |
 | 98037 | 124154 | NE | Lib | N�o est� listando corretamente as informa��es da tela "Apura��o do Cus |
-| 97933 | 124141 | NE | Lib | Está exibindo com resolução incorreta o ícone de lixeira na opção de r |
 | 98238 | 124148 | NE | Desc | Em alguns casos est�o sendo gerados diferentes de uma compet�ncia para |
 | 98176 | 124144 | NE | Lib | N�o est� sendo preenchido o c�digo SCP nos lan�amentos cont�beis quand |
-| 98189 | 124136 | SAM | Lib | Criar regras de contabilização para o extrato bancário OFX/OFC. |
 | 97942 | 124142 | SAM | Lib | Realizar testes para avaliar o comportamento do sistema nas altera��es |
 | 97950 | 124138 | NE | Lib | ES-N�o est� sendo gerada a linha "Estorno Cr�dito Presumido-Benef�cio  |
 | 98653 | 124127 | SAIL | Lib | Preparar os movimentos e implementar a apura��o do Imposto Seletivo-IS |
@@ -816,7 +854,6 @@
 | 98430 | 124111 | SAM | Lib | Criar tela para emiss�o da guia DARF do 161-IOF de acordo com a period |
 | 97900 | 124103 | NE | Lib | Contabilidade Digital: Transa��es duplicadas no extrato do cliente |
 | 98059 | 124091 | NE | Lib | Em alguns casos n�o est� sendo poss�vel importar notas da API quando h |
-| 98574 | 124071 | SAM | Pend | Criar uma modal para consultar as contas contábeis sem vínculo na estr |
 | 98698 | 124087 | SAL | Lib | MG-Gerar o registro E113 no SPED Fiscal, identificando os documentos f |
 | 97883 | 124075 | SAM | Pend | Realizar estudos a fim de minimizar crescimento dos arquivos tempor�ri |
 | 98113 | 124066 | SAL | Lib | RO-Incluir o c�digo de ajuste RO010023 no sistema para gera��o do regi |
@@ -911,7 +948,6 @@
 | 97467 | 123548 | NE | Lib | Est� permitindo selecionar indevidamente mais de um tipo de importa��o |
 | 99234 | 123546 | SAL | Lib | SP-Alterar o sistema para excluir o valor do IPI da base de c�lculo do |
 | 97540 | 123540 | NE | Lib | N�o est�o sendo demonstradas as informa��es da guia referencial do Ban |
-| 97459 | 123532 | NE | Lib | Estão sumindo as informações nas abas 'Plano de contas anterior' e 'En |
 | 97571 | 123510 | SAM | Lib | Efetuar testes nos pontos impactados da Escrita ao atualizar o release |
 | 98080 | 123500 | SAM | Lib | Alterar comportamento do sistema para permitir incluir al�quota zero p |
 | 98258 | 123498 | SAM | Desc | Efetuar testes nos pontos impactados devido � altera��o do time de Pla |
@@ -944,16 +980,13 @@
 | 97499 | 123299 | NE | Lib | N�o est� considerando os cr�ditos de PIS e COFINS das notas importadas |
 | 97429 | 123295 | NE | Lib | Em alguns casos est� ocorrendo erro de banco de dados ao realizar a ap |
 | 97432 | 123294 | NE | Lib | GO-Est� sendo gerada a informa��o incorreta no campo 13-IND_PGTO do re |
-| 97859 | 123288 | SAM | Pend | Alterar interface e comportamentos do fluxo da estrutura do DRE |
 | 97241 | 123289 | SAM | Lib | Permitir realizar o desvinculo de contas do Onvio Gest�o ap�s realizad |
-| 97822 | 123277 | SAM | Pend | Criar as permissões para o menu DFC - Método direto. |
 | 97236 | 123285 | NE | Lib | SP-Em alguns casos est� ocorrendo lentid�o ao gerar o informativo e-Cr |
 | 97394 | 123284 | SAM | Lib | CE-Alterar a importa��o do imposto 8-DIFALI conforme a Norma de Execu� |
 | 97244 | 123283 | NE | Lib | Est� ocorrendo o encerramento do sistema quando a empresa possui os im |
 | 98434 | 123278 | NE | Lib | Est� apresentando erro na tabela 'ctparmto' ao excluir a empresa via U |
 | 97537 | 123276 | SAM | Lib | Exportar em Excel o Comparativo de Movimento sem mesclar as c�lulas. |
 | 97409 | 123274 | SAM | Lib | PA-Importar op��o no produto para o cr�dito presumido cesta b�sica Art |
-| 97205 | 123261 | SAM | Lib | Permitir realizar o desvínculo de contas do Onvio Gestão após realizad |
 | 97293 | 123268 | NE | Lib | Est� sendo informado o c�digo "CST" ao realizar a importa��o de docume |
 | 97433 | 123254 | NE | Lib | BA-N�o est� sendo importado os dados de valores agregados no informati |
 | 97254 | 123253 | NE | Lib | Em alguns casos n�o est� sendo gerado o valor correto do saldo credor  |
@@ -963,8 +996,6 @@
 | 97181 | 123214 | SAM | Lib | Realizar testes no download de notas da API ap�s a corre��o da NE 9717 |
 | 97878 | 123203 | SAM | Lib | Preencher o campo de 'Capacidade nominal' quando realizado a importa�� |
 | 97176 | 123202 | NE | Lib | Est� ocorrendo um travamento no download de notas da API ao utilizar o |
-| 98381 | 123188 | SAM | Pend | Criar as permissões no menu DMPL. |
-| 97311 | 123175 | NE | Lib | Não estão sendo apresentadas por inteiro as informações Insc. Junta Co |
 | 98104 | 123180 | SAM | Lib | Implementar no sistema as configura��es de importa��o de Nota Fiscal d |
 | 97228 | 123170 | SAL | Lib | SC-Alterar o sistema para gerar o c�digo de ajuste SC10000135 no SPED  |
 | 97153 | 123168 | SAM | Pend | Realizar testes na tabela "GEINFORMATIVOS_AUDITOR" em algum outro tipo |
@@ -991,7 +1022,7 @@
 | 99049 | 123041 | SAL | Lib | Ajustar a gera��o do arquivo MIT para que n�o sejam considerados os d� |
 | 97507 | 123038 | NE | Lib | MG-N�o est�o sendo geradas corretamente as informa��es no informativo  |
 | 97079 | 123036 | SAM | Lib | [POC] Realizar estudo para utilizar a IA para realizar v�nculos entre  |
-| 97418 | 123030 | SAM | Pend | Incluir botão de configurar saldos de contas contábeis no cadastro/edi |
+| 97418 | 123030 | SAM | Lib | Incluir botão de configurar saldos de contas contábeis no cadastro/edi |
 | 97142 | 123028 | NE | Desc | N�o est� somando o valor do frete no valor cont�bil da nota, quando n� |
 | 97039 | 123012 | NE | Lib | Est�o sendo enviadas m�ltiplas notifica��es de envio de contas para a  |
 | 98869 | 123011 | SAL | Lib | Alterar o sistema para importar o rendimento bruto na 'ficha de loca�� |
@@ -1039,12 +1070,11 @@
 | 98414 | 122767 | SAM | Lib | Contabilizar as notas de entrada e sa�da, quando a nota possuir parcel |
 | 97253 | 122764 | NE | Lib | N�o est� sendo atualizado o campo 'Exclus�es' da guia 'SPED/PIS COFINS |
 | 97216 | 122763 | NE | Lib | Est� sendo gerada indevidamente a linha 'INSS Retido (Escrita Fiscal)' |
-| 96837 | 122758 | NE | Lib | Ajustar o sistema para quando for enviado uma informação a conta Azul  |
 | 96972 | 122752 | SAM | Lib | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "cBe |
 | 96921 | 122751 | SAM | Lib | Criar regra de valida��o para impedir acesso ao Outros Dados do SPED E |
 | 96834 | 122750 | NE | Lib | Em alguns casos est� ocorrendo o erro 'GEINFORMATIVOS_AUDITOR' ao audi |
 | 96818 | 122749 | SAM | Lib | Ajustar o XML de envio do WebService alterando a vers�o para "2.00" no |
-| 97395 | 122742 | SAM | Pend | Incluir botão de inserir variáveis no cadastro/edição das notas explic |
+| 97395 | 122742 | SAM | Lib | Incluir botão de inserir variáveis no cadastro/edição das notas explic |
 | 96860 | 122743 | NE | Lib | SE-N�o est� sendo gerado o Demonstrativo do imposto 8-DIFALI, quando n |
 | 96811 | 122735 | NE | Pend | N�o est� retornando com o e-mail informando que os arquivos s�o inv�li |
 | 96825 | 122728 | SAM | Lib | Importar para o produto a op��o de utilizar a tabela de cClassTrib por |
@@ -1090,8 +1120,6 @@
 | 96719 | 122551 | NE | Lib | N�o est� traduzindo as colunas 'C�digo' e 'Classifica��o' na emiss�o d |
 | 96679 | 122548 | SAM | Lib | Analisar os objetos que foram criados localmente e n�o foram destru�do |
 | 96688 | 122544 | NE | Lib | Est� ocorrendo erro ao regerar os lan�amentos cont�beis no ambiente Do |
-| 96737 | 122539 | NE | Lib | Não está gerando o relatório do DRE na sequência da estrutura salva. |
-| 96749 | 122535 | NE | Lib | Não está gerando inconsistência na rotina, ou está gerando a inconsist |
 | 96724 | 122538 | NE | Lib | Est� importando valor para o imposto "18-ISS Retido" indevidamente qua |
 | 96666 | 122527 | NE | Lib | RS-N�o est� sendo gerado o registro E115 no informativo SPED Fiscal, q |
 | 97781 | 122526 | SAL | Lib | Ajustar importa��o do M300/M350 do informativo SPED ECF para realizar  |
@@ -1113,7 +1141,6 @@
 | 96731 | 122427 | NE | Lib | Est� ocorrendo erro de banco de dados ao realizar o pagamento de parce |
 | 96831 | 122423 | SAL | Lib | PR - Importar os valores dos CFOPs 5.932 e 6.932 como Sa�das Isentas p |
 | 96586 | 122422 | NE | Lib | Est� ocorrendo erro no Agente de Comunica��o nos envios do Kolossus Au |
-| 96630 | 122410 | NE | Lib | Não está substituindo a variável do nome da empresa na notificação env |
 | 96684 | 122404 | NE | Lib | N�o est�o sendo mantidas as posi��es das colunas da tela Consulta x La |
 | 96855 | 122398 | NE | Lib | Est� sendo gerado indevidamente o registro tipo 45 no informativo SCAN |
 | 97037 | 122390 | SAM | Lib | RJ-Importar no cadastro do produto a op��o pelo cr�dito presumido sobr |
@@ -1146,8 +1173,7 @@
 | 98420 | 122273 | SAL | Lib | SC-Alterar o sistema para calcular o cr�dito presumido de inform�tica  |
 | 96548 | 122269 | NE | Lib | Est� gerando informa��es incorretas de Saldos para o Balancete Referen |
 | 96583 | 122265 | NE | Lib | Est� ocorrendo erro ao buscar as parcelas do contrato de venda de empr |
-| 96747 | 122248 | SAM | Lib | Ajustar ícone de edição nas telas de conclusões de cadastro de contas, |
-| 97030 | 122246 | SAM | Pend | Aplicar permissões do menu Notas explicativas |
+| 97030 | 122246 | SAM | Lib | Aplicar permissões do menu Notas explicativas |
 | 96610 | 122260 | NE | Lib | RS-Est� importando incorretamente o valor do imposto 8-DIFALI quando c |
 | 97648 | 122249 | SAM | Lib | Demonstrar sempre a descri��o da Transa��o conforme enviado pela insti |
 | 96862 | 122235 | NE | Lib | SP/CE - N�o est�o sendo atualizados os campos 'Base c�lculo' do PIS e  |
@@ -1164,7 +1190,7 @@
 | 96506 | 122185 | NE | Lib | N�o est� abrindo o lan�amento cont�bil quando acessado o Balancete pel |
 | 96745 | 122178 | SAM | Lib | Alterar o m�dulo Reforma Tribut�ria para que a Tria seja acessada por  |
 | 97428 | 122174 | SAM | Lib | DF-Realizar a importa��o do ICMS ST Retido nas Entradas na importa��o  |
-| 97340 | 122172 | SAM | Pend | Criar permissões no menu DLPA. |
+| 97340 | 122172 | SAM | Lib | Criar permissões no menu DLPA. |
 | 96437 | 122165 | SAM | Lib | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "CBe |
 | 96550 | 122164 | NE | Lib | Est� sendo gerado saldo anterior do PAT incorreto no relat�rio Control |
 | 96449 | 122155 | NE | Lib | Contabilidade Digital: Est� apagando incorretamente o hist�rico inseri |
@@ -1212,7 +1238,6 @@
 | 96490 | 121872 | SAL | Lib | Alterar a gera��o do evento R-2010 da EFD-Reinf, para a matriz e as fi |
 | 98081 | 121871 | SAL | Lib | SP-Ajustar a escritura��o do SPED Fiscal conforme Portaria SRE n� 044/ |
 | 96189 | 121866 | NE | Lib | N�o est� sendo somado os valores no campo "Valor Total Nota" das notas |
-| 96234 | 121860 | NE | Lib | Não estão sendo substituídas corretamente as variáveis de histórico ut |
 | 96454 | 121864 | NE | Lib | Est� sendo gerado indevidamente o registro 0150 para a empresa matriz  |
 | 96211 | 121862 | NE | Pend | RS - N�o est� calculando o cr�dito de ICMS, quando efetuado o rec�lcul |
 | 96197 | 121858 | SAL | Lib | PB-Incluir o c�digo de ajuste PB020021 em 'Movimentos/Outros/Impostos  |
@@ -1310,14 +1335,12 @@
 | 95749 | 121314 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 95746 | 121311 | SAM | Lib | Registrar os tempos atuados nas pesquisas de inova��es com IA. |
 | 95735 | 121299 | NE | Pend | Em alguns casos as rotinas que fazem a paralisa��o dos Utilit�rios Web |
-| 95743 | 121283 | NE | Lib | Está ficando em processamento travado indevidamente quando realizado u |
 | 95734 | 121286 | SAM | Lib | Realizar testes de importa��o de lan�amentos cont�beis do Conta Azul. |
 | 96089 | 121280 | NE | Lib | Est� sendo setada a al�quota incorreta no lan�amento de notas, quando  |
 | 95737 | 121272 | NE | Lib | SC-N�o est�o sendo gerados os quadros 15 e 16 no informativo DIME, qua |
 | 95742 | 121267 | SAM | Desc | Alterar o sistema para que gere o mesmo valor de PIS e COFINS nos bloc |
 | 95837 | 121263 | NE | Desc | Em alguns casos esta ocorrendo erro na execu��o do exporta/importa ref |
 | 99525 | 121260 | SAM | Pend | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e O |
-| 95909 | 121251 | NE | Lib | Não está demonstrando corretamente as validações de campos na modal de |
 | 101133 | 121247 | SAM | Pend | Realizar a importa��o do Cadastro do Benefici�rio para a tela de cadas |
 | 95703 | 121246 | NE | Lib | Esta sendo demonstrada indevidamente desabilidade a op��o "Gerar conta |
 | 95698 | 121244 | NE | Lib | Contabilidade Digital: Est� ocorrendo erro quando conciliado transa��o |
@@ -1328,7 +1351,6 @@
 | 95702 | 121235 | NE | Lib | Est� ocorrendo erro ao tentar consultar/baixar notas que foram armazen |
 | 95706 | 121234 | NE | Lib | Contabilidade Digital: N�o est� gerando a configura��o para o tipo 20  |
 | 95720 | 121224 | NE | Lib | PR-N�o est� sendo habilitado o campo "Valores declarat�rios" da guia " |
-| 95681 | 121209 | SAM | Lib | Incluir um loader na replicação do plano de contas e dos históricos. |
 | 95960 | 121220 | SAM | Lib | Contabilizar os impostos 183-IBS e 184-CBS no per�odo teste. |
 | 95759 | 121214 | NE | Lib | N�o est�o sendo listadas no bot�o "Estrutura do Balan�o..." do Relat�r |
 | 95753 | 121207 | SAL | Lib | RS-Criar op��o para n�o reduzir a quantidade de parcelas do cr�dito de |
@@ -1337,15 +1359,12 @@
 | 96192 | 121203 | NE | Lib | Est� sendo duplicado os valores de alguns impostos na janela "Consulta |
 | 95721 | 121197 | NE | Lib | Est�o sendo apresentadas as contas sint�ticas zeradas no Balancete Ref |
 | 95690 | 121196 | NE | Lib | Est� apresentando erro de banco de dados ao gerar a DRE, quando a tela |
-| 95754 | 121187 | NE | Lib | Não está substituindo a variável do histórico no arquivo do SPED Contá |
 | 95694 | 121186 | NE | Lib | Contabilidade Digital: N�o est� contabilizando automaticamente quando  |
 | 97424 | 121185 | SAL | Lib | RO-Alterar o c�lculo do imposto 8-DIFALI observando a Lei N� 6.050/202 |
 | 95654 | 121179 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 95937 | 121172 | NE | Lib | Est� gerando erro em algumas tabelas ao excluir empresas pelo menu Uti |
 | 95640 | 121163 | SAM | Lib | Testar a atualiza��o da vers�o do Microsoft Visual C++ que � distribu� |
 | 98021 | 121161 | SAM | Lib | Permitir informar contas cont�beis no cadastro de incentivos fiscais,  |
-| 95886 | 121138 | SAM | Lib | Incluir novas variáveis no cadastro de histórico para contabilizar as  |
-| 96557 | 121130 | SAM | Lib | Apresentar o saldo contábil na tela de Lançamentos de extrato bancário |
 | 95772 | 121149 | NE | Lib | N�o est�o sendo demonstradas as notas fiscais de sa�da e servi�o no de |
 | 96463 | 121148 | NE | Lib | RS-N�o est� sendo feito o c�lculo correto do imposto 8-DIFALI, quando  |
 | 95691 | 121147 | NE | Lib | BA-N�o est� sendo feita a contabiliza��o do imposto 27-ICMSA, quando o |
@@ -1353,7 +1372,6 @@
 | 95620 | 121142 | SAM | Lib | Registrar os tempos trabalhados nos estudos do certificado A3 da EFD-R |
 | 96887 | 121136 | SAL | Lib | ES-Alterar o c�lculo do cr�dito presumido do Art. 530-L-R-I do RICMS p |
 | 95636 | 121124 | NE | Lib | Est� gerando valor incorreto para o registro K155 do informativo SPED  |
-| 96196 | 121101 | SAM | Lib | Aplicar permissões do menu Conciliação de lançamentos contábeis. |
 | 95599 | 121111 | SAM | Lib | Analisar os objetos que foram criados localmente e n�o foram destru�do |
 | 95598 | 121110 | SAM | Lib | Analisar objetos que foram criados localmente e n�o foram destru�dos d |
 | 95618 | 121105 | NE | Lib | RS-N�o est� sendo gerado o registro E240 por produto no informativo SP |
@@ -1367,7 +1385,6 @@
 | 95612 | 121064 | NE | Lib | Est� demonstrando indevidamente a cr�tica de estrutura "N�o foi encont |
 | 95559 | 121060 | NE | Lib | N�o est� demonstrando o c�digo/descri��o dos produtos em duplicidade n |
 | 95577 | 121057 | NE | Lib | N�o est�o sendo gerados os registros referentes as quotas dos impostos |
-| 95525 | 121035 | NE | Lib | Não estão integrando os lançamentos contábeis na Conta azul devido a q |
 | 97419 | 121037 | SAM | Lib | Implementar a op��o "Efetuar a transmiss�o imediata da DCTFWeb" na rot |
 | 95667 | 121021 | NE | Lib | Est� importando o saldo incorreto no registro M010 do Outros dados do  |
 | 95619 | 121009 | NE | Lib | Est� ocorrendo o erro "Existe atividade com folha de sal�rio obrigat�r |
@@ -1407,7 +1424,6 @@
 | 95566 | 120820 | NE | Lib | Est� ocorrendo erro de banco de dados ao gravar os produtos, quando no |
 | 95447 | 120817 | SAM | Lib | Alterar o sistema para ser gravado internamente por nota os valores ca |
 | 96579 | 120813 | SAM | Lib | Alterar a mensagem de aviso quando n�o gerado o Extrato do DAS na roti |
-| 95539 | 120795 | NE | Lib | Não está atualizando a assinatura quando há troca do signatário na par |
 | 95450 | 120788 | NE | Lib | Em alguns casos est� apresentando erro de comunica��o "Exception of ty |
 | 95373 | 120786 | NE | Lib | RJ-Est� ocorrendo erro de banco de dados ao realizar a apura��o, quand |
 | 95368 | 120785 | NE | Lib | Contabilidade Digital: Est� sendo demonstrado como "Tarifa transfer�nc |
@@ -1426,16 +1442,11 @@
 | 96975 | 120733 | SAL | Lib | Alterar o sistema para gerar as TAGs 'recEmprExt' e 'nmEmprExt' no eve |
 | 95323 | 120728 | NE | Lib | Contabilidade Digital: Est� sendo carregado no saldo banc�rio final em |
 | 95406 | 120726 | NE | Lib | Est� sendo importado o n�mero do boletim financeiro incorreto na guia  |
-| 95393 | 120724 | NE | Lib | Não está enviando a notificação ao Agente de comunicação do Contábil d |
-| 95336 | 120719 | NE | Lib | Não está cancelando o zeramento quando clica em 'Cancelar processo', d |
-| 96172 | 120711 | SAM | Lib | Incluir um ícone no header para apresentar a quantidade de transações  |
-| 96303 | 120710 | SAM | Pend | Incluir validações no zeramento e fechamento quando existirem transaçõ |
 | 95403 | 120672 | NE | Lib | N�o est� sendo considerada a devolu��o de venda com ve�culos usados no |
 | 95351 | 120662 | NE | Lib | Em alguns casos est� fechando o sistema ao realizar a gera��o do infor |
 | 95283 | 120661 | SAM | Pend | Reduzir o consumo de mem�ria carregando apenas as estruturas necess�ri |
 | 95327 | 120659 | SAM | Lib | Contabilidade Digital: Demonstrar status da conex�o da tela da Contabi |
 | 97827 | 120642 | SAL | Lib | RJ-Alterar o sistema para que o Regime Especial de Recupera��o Industr |
-| 96036 | 120635 | NE | Pend | Não está exibindo o ano no MonthPicker ao utilizar o componente dentro |
 | 95264 | 120633 | NE | Lib | N�o est� iniciando a ferramenta do Busca NF-e Escrit�rio corretamente  |
 | 95249 | 120627 | SAM | Pend | Implementar no sistema um retry autom�tico e aviso para os cliente em  |
 | 95250 | 120626 | SAM | Pend | Implementar logs controlados pelo desenvolvimento para armazenar conte |
@@ -1457,7 +1468,6 @@
 | 95207 | 120559 | NE | Pend | N�o est� respeitando o filtro por munic�pio na emiss�o do relat�rio de |
 | 95303 | 120555 | NE | Desc | N�o est�o sendo importadas as informa��es da folha na guia "Rendimento |
 | 97230 | 120549 | SAL | Lib | RJ-Alterar o sistema para somar o IPI na base de c�lculo dos impostos  |
-| 95179 | 120531 | SAM | Desc | TESTE PSAI ADO |
 | 95191 | 120541 | NE | Lib | Contabilidade Digital: N�o est� validando parte do hist�rico quando po |
 | 95200 | 120532 | NE | Lib | N�o est� alterando corretamente o CFOP e Acumulador pelo utilit�rio de |
 | 95383 | 120530 | NE | Lib | Contabilidade Digital: Em alguns casos, n�o est� sendo realizada a bai |
@@ -1472,7 +1482,6 @@
 | 95304 | 120470 | NE | Lib | N�o est� sendo gerado corretamente o evento R-4020 do informativo Rein |
 | 95574 | 120468 | SAM | Lib | MS-Alterar o sistema para importar as devolu��es dos impostos FUNDERSU |
 | 95130 | 120463 | SAM | Pend | Realizar um estudo para avaliar a possibilidade de criar uma op��o par |
-| 95129 | 120452 | NE | Lib | Em alguns casos, após ajustar os motivos de pendência de um lançamento |
 | 96748 | 120460 | SAL | Lib | Alterar o quadro 'Juros' da guia 'Contabilidade/Recebimento' do cadast |
 | 95210 | 120448 | NE | Lib | Em alguns casos est� ocorrendo encerramento do sistema ao ajustar e gr |
 | 95226 | 120446 | NE | Lib | Est� importando incorretamente as receitas dos registros P200/P300/P40 |
@@ -1483,7 +1492,6 @@
 | 95441 | 120428 | SAM | Pend | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan |
 | 95305 | 120425 | NE | Lib | RO-N�o est� sendo feita a contabiliza��o do cr�dito presumido referent |
 | 95109 | 120419 | NE | Pend | Est� sendo gerada a natureza de rendimento incorreta no informativo Re |
-| 95127 | 120404 | NE | Pend | Não está funcionando a ação de 'Imprimir' na barra de ferramentas dos  |
 | 99048 | 120399 | SAM | Lib | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan |
 | 95075 | 120392 | NE | Lib | Contabilidade Digital: Ao chegar novos consentimento est� ocorrendo er |
 | 95573 | 120384 | SAL | Lib | MS-Alterar o sistema para considerar as devolu��es dos impostos FUNDER |
@@ -1495,7 +1503,6 @@
 | 95104 | 120370 | NE | Lib | N�o est� sendo demonstrada a empresa corrente no bot�o "Outros Dados"  |
 | 95103 | 120369 | NE | Lib | PR-Est� sendo gerado o valor incorreto na linha "Devolu��o de compra"  |
 | 95767 | 120359 | SAL | Lib | PA-Alterar o sistema conforme as mudan�as ocorridas na IE das empresas |
-| 95046 | 120354 | NE | Lib | Está apresentando indevidamente o botão 'Importação de lançamentos' na |
 | 95043 | 120355 | NE | Lib | Contabilidade Digital: Ao reprocessar est� gerando acusando que n�o ex |
 | 95036 | 120345 | NE | Lib | Contabilidade Digital: Ao efetuar o reprocessamento est� ocorrendo o e |
 | 95047 | 120341 | NE | Lib | Est� ocorrendo indevidamente o erro de importa��o "CNPJ da chave � dif |
@@ -1562,8 +1569,6 @@
 | 94782 | 120079 | NE | Lib | Contabilidade Digital: Est� gravando o tipo de inscri��o internamente  |
 | 94947 | 120078 | NE | Lib | MG-N�o est� sendo atualizado o valor gerado no campo "Valor total de o |
 | 94784 | 120077 | SAM | Pend | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan |
-| 96599 | 120073 | SAM | Lib | Aplicar permissões nos menus 'Importação de extrato bancário', 'Consul |
-| 94958 | 120060 | NE | Lib | Está demonstrando indevidamente o erro de 'Falha ao executar o process |
 | 95108 | 120062 | SAL | Lib | PR-Alterar o sistema para que seja poss�vel efetuar um lan�amento de a |
 | 95088 | 120055 | SAM | Lib | Otimizar a importa��o de informa��es para c�lculo de ICMS no m�dulo Pa |
 | 94761 | 120051 | SAM | Desc | Contabilidade Digital: Alterar a vari�vel de complemento <<HisExtBan>> |
@@ -1643,7 +1648,6 @@
 | 94525 | 119654 | NE | Lib | N�o est� listando os lan�amentos de outra empresa na tela "Contas x La |
 | 94485 | 119653 | NE | Lib | N�o est� aparecendo a barra de rolagem na tela de 'Saldos' do informat |
 | 94550 | 119649 | NE | Lib | N�o est�o sendo gerados os quadros "Identifica��o da Operadora do Plan |
-| 94588 | 119643 | NE | Desc | Está ocorrendo erro na comunicação com o Conta azul, quando enviada a  |
 | 94673 | 119640 | SAM | Lib | Alterar o comportamento da op��o "Zerar os campos base de c�lculo, al� |
 | 94496 | 119637 | NE | Lib | Contabilidade Digital: N�o est�o sendo gravados os lan�amentos cont�be |
 | 96440 | 119623 | SAIL | Lib | Aumentar a quantidade de caracteres da guia "Saldo inicial" do par�met |
@@ -1653,7 +1657,6 @@
 | 94436 | 119604 | NE | Lib | N�o est� recalculando os valores das colunas 'Saldo' e 'Saldo-Exerc�ci |
 | 94467 | 119603 | NE | Desc | Est� ocorrendo o erro "Erro ao remover dados temporarios da CTTMP_LANC |
 | 94393 | 119601 | NE | Lib | TO-Corrigir a l�gica de gera��o do livro registro de ICMS. |
-| 94387 | 119587 | NE | Lib | Em alguns casos não está demonstrando a visualização do cadastro de co |
 | 94458 | 119589 | NE | Lib | Est�o sendo regerados indevidamente os lan�amentos cont�beis que foram |
 | 94408 | 119588 | NE | Lib | Est� armazenando indevidamente como entrada as notas que possuem o mes |
 | 94376 | 119584 | NE | Lib | N�o est� sendo enviado o cadastro de empresas para o Kolossus. |
@@ -1669,8 +1672,6 @@
 | 94898 | 119555 | SAM | Lib | Alterar a solu��o apresentada na emiss�o do Balan�o quando h� diferen� |
 | 94397 | 119547 | NE | Lib | Em alguns casos, o sistema est� fechando ao clicar no lan�amento da te |
 | 94464 | 119546 | NE | Lib | Est� replicando indevidamente a vari�vel "S�cios" com as informa��es d |
-| 98466 | 119542 | SAIL | Pend | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa ( |
-| 97772 | 119540 | SAIL | Pend | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa ( |
 | 94324 | 119527 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 94548 | 119526 | NE | Lib | Est� ocorrendo erro de banco de dados ao atualizar o produto com a con |
 | 94399 | 119511 | NE | Lib | N�o est� deduzindo corretamente a reten��o de IRRF, quando no c�lculo  |
@@ -1739,10 +1740,9 @@
 | 94095 | 119142 | NE | Lib | Est� sendo gerado incorretamente os valores das colunas "Saldo" e "Sal |
 | 94233 | 119137 | NE | Lib | PA-N�o est� importando o c�digo de recolhimento para o imposto 31-ST/A |
 | 94192 | 119132 | NE | Lib | AL-N�o est� importando a Descri��o do c�digo de recolhimento do impost |
-| 97385 | 119122 | SAIL | Pend | Implementar o cadastro de Notas Explicativas. |
+| 97385 | 119122 | SAIL | Lib | Implementar o cadastro de Notas Explicativas. |
 | 94144 | 119118 | NE | Lib | N�o est� sendo apresentada mensagem de valida��o ao tentar importar um |
 | 94794 | 119108 | SAL | Lib | RN-Alterar o c�lculo do Regime Atacadista considerando a al�quota para |
-| 94015 | 119041 | NE | Lib | Em alguns casos está demonstrando indevidamente a mensagem 'Falha ao e |
 | 94115 | 119039 | NE | Lib | RJ/RO/CE/RS/MS/MG/PR-Est� sendo gerado o c�digo do produto no registro |
 | 94430 | 119037 | SAL | Lib | MG-Atualizar a descri��o gerada na observa��o dos Livros Fiscais, refe |
 | 94099 | 119036 | NE | Lib | Est� gerando zerado o relat�rio An�lise de Coeficientes, quando a clas |
@@ -1817,7 +1817,6 @@
 | 93780 | 118559 | NE | Lib | Est�o sendo enviados os cancelamentos de NF-e apenas para uma empresa  |
 | 95148 | 118555 | SAL | Lib | SC-Ajustar o sistema para considerar o saldo credor anterior do 32-FUN |
 | 94169 | 118548 | SAL | Lib | MG-Indicar a vig�ncia final do c�digo MG71000501, na guia "Recolhiment |
-| 93645 | 118537 | SAM | Lib | Disponibilizar informações de saldos e lançamentos contábeis para a Es |
 | 93852 | 118522 | NE | Lib | Est� ocorrendo erro de banco de dados ao cadastrar um bem de forma aut |
 | 93647 | 118521 | NE | Lib | Est� sendo gerada a descri��o incorreta dos impostos 133-PIS-I e 134-C |
 | 95641 | 118512 | SAL | Lib | RS-Alterar o sistema para possibilitar realizar o c�lculo do imposto 2 |
@@ -1834,16 +1833,13 @@
 | 93567 | 118455 | NE | Lib | Contabilidade Digital: Em alguns casos, est� duplicando institui��o e  |
 | 93560 | 118451 | NE | Lib | Est� sendo listado os lan�amentos conciliados mesmo quando selecionada |
 | 93559 | 118450 | NE | Lib | Est� listando incorretamente as contas de contrapartida para lan�ament |
-| 93554 | 118435 | NE | Desc | Está ocorrendo erro ao sincronizar Clientes do escritório quando são e |
 | 93616 | 118434 | NE | Lib | Est� sendo apresentado indevidamente o erro 'Expression is not valid', |
 | 93990 | 118417 | NE | Lib | N�o est� sendo gerado o Centro de Custo no lan�amento cont�bil, quando |
 | 94981 | 118388 | SAL | Lib | RJ-Ajustar o c�lculo do imposto '154-FOT' referente aos benef�cios de  |
 | 94824 | 118384 | SAL | Lib | SP-Alterar o sistema para que seja disponibilizado op��o para que o us |
 | 93496 | 118382 | SAM | Lib | Implementar no sistema novos logs no servidor do Busca NF-e para quand |
-| 93481 | 118355 | NE | Lib | Não está salvando corretamente uma rotina de integração contábil ao ed |
 | 94176 | 118360 | SAM | Lib | Incluir o c�lculo do Simples Nacional no simulador de planejamento tri |
 | 93491 | 118359 | NE | Lib | Em alguns casos, algumas notas enviadas para o BOX-e n�o constam na fi |
-| 93457 | 118328 | NE | Lib | Não está filtrando os lançamentos contábeis no filtro principal após a |
 | 93461 | 118334 | SAM | Lib | Testar pontos da importa��o que ser�o impactados pela implementa��o da |
 | 93512 | 118329 | NE | Lib | Est� duplicando o valor da Adi��o da CSLL no c�lculo do ajuste anual,  |
 | 93584 | 118304 | SAL | Lib | RN-Alterar comportamento do sistema para gerar o registro E112 ou o re |
@@ -1862,10 +1858,8 @@
 | 93427 | 118220 | NE | Desc | Em alguns casos est� ocorrendo indevidamente o erro de importa��o "O a |
 | 93850 | 118217 | NE | Lib | RJ-Est� sendo gerada a base de c�lculo incorreta do imposto 56-FECOP-S |
 | 93526 | 118207 | NE | Lib | Est� sendo gerado incorretamente o Balancete referencial do Banco Cent |
-| 94793 | 118184 | SAM | Lib | Criar as permissões do menu 'Plano referencial'. |
 | 93504 | 118181 | NE | Lib | Esta demonstrando incorretamente a m�scara da conta referencial nos la |
 | 93347 | 118174 | NE | Lib | Contabilidade Digital: Est� ocorrendo demora no processamento das oper |
-| 93314 | 118165 | NE | Lib | Não estão chegando os lançamentos contábeis da Conta Azul. |
 | 93345 | 118169 | NE | Lib | Contabilidade Digital: Em alguns casos, est� ocorrendo erro no process |
 | 93308 | 118160 | NE | Lib | Est�o sendo demonstrados indevidamente desabilitados os campos "IOF" e |
 | 93358 | 118155 | NE | Lib | Contabilidade Digital: Em alguns casos, est� aparecendo m�ltiplas veze |
@@ -1930,21 +1924,15 @@
 | 93154 | 117941 | NE | Lib | Contabilidade Digital: Em alguns casos, est� sendo demonstrado erro de |
 | 95382 | 117939 | SAM | Lib | Incluir a op��o de calcular conforme valores informados manualmente e  |
 | 93074 | 117930 | SAM | Lib | Incluir o bot�o "Solu��es" na mensagem da emiss�o DARF DCTFweb relacio |
-| 93158 | 117923 | NE | Lib | Não está validando os quadros de processos e envios no cadastro da rot |
-| 93115 | 117921 | NE | Lib | Está ocorrendo erro ao tentar emitir um Balancete com 50 mil lançament |
-| 93034 | 117911 | NE | Desc | Está apresentando erro na rotina de integração contábil da Escrita Fis |
 | 93167 | 117920 | NE | Lib | O sistema est� dando acesso indevidamente ao usu�rio que tem controle  |
 | 93043 | 117918 | NE | Lib | N�o est� atualizando automaticamente o DW por causa de threads que n�o |
 | 93035 | 117915 | SAM | Lib | Implementar a altera��o proveniente do estudo da SAI 92013, ajustando  |
-| 93020 | 117898 | NE | Desc | Não está mantendo a configuração de assinaturas ao trocar as opções de |
 | 93038 | 117906 | NE | Lib | Est� retornando incorretamente a informa��o do status 401 ao acessar o |
-| 93016 | 117896 | NE | Lib | Está apontando erro indevidamente ao clicar em Avançar no cadastro de  |
 | 93148 | 117902 | NE | Lib | Est� sendo demonstrado indevidamente desabilitada a op��o "Emitir guia |
 | 93600 | 117871 | NE | Lib | MT-N�o est� sendo regerado corretamente o lan�amento cont�bil da nota  |
 | 93046 | 117863 | NE | Lib | N�o est� sendo habilitado o bot�o 'Emitir guia' na tela de apura��o do |
 | 95588 | 117840 | SAL | Lib | SC-Permitir calcular o imposto 32-FUNDOSOCIAL quando for realizada com |
 | 93155 | 117825 | NE | Lib | Contabilidade Digital: Em alguns casos, est� sendo gravado a conta con |
-| 92961 | 117811 | NE | Lib | Não está executando o vídeo de boas-vindas no Onvio Contabilidade. |
 | 94428 | 117821 | SAM | Lib | Demonstrar saldo anterior no Balan�o e Balancete com plano referencial |
 | 93086 | 117818 | NE | Lib | Est� sendo demonstrado o saldo inicial diferente do saldo final do per |
 | 92964 | 117815 | NE | Lib | N�o est� executando o v�deo de boas-vindas no Onvio Escrita. |
@@ -1974,7 +1962,6 @@
 | 92981 | 117567 | NE | Lib | Est� sendo apresentada indevidamente a mensagem 'Esta empresa n�o poss |
 | 92823 | 117539 | NE | Lib | RO-Est� gerando valor de 'ICMS Normal' a recolher negativo, no livro f |
 | 92875 | 117538 | NE | Lib | N�o est� sendo habilitada a guia 'Detalhamento/Informa��es Adicionais  |
-| 92776 | 117526 | NE | Desc | Está exibindo incorretamente uma tooltip exibida no menu hambúrguer do |
 | 92796 | 117535 | NE | Lib | Est� ocorrendo erro de sistema quando a empresa calcula FUNRURAL confo |
 | 92781 | 117531 | SAM | Desc | Testar a altera��o das URLs da API da Conta Azul para o envio de Conta |
 | 92940 | 117528 | NE | Lib | BA-Est� calculado o valor do imposto 8-DIFALI incorretamente atrav�s d |
@@ -1985,7 +1972,6 @@
 | 92780 | 117471 | NE | Desc | DF-N�o est� preenchendo a data de vencimento da guia DAR dos impostos  |
 | 93144 | 117450 | SAIL | Lib | TO, SE, RJ e PI - Implementar o c�lculo do cr�dito de ICMS monof�sico  |
 | 92793 | 117440 | NE | Lib | A apura��o est� sendo conclu�da com erros quando selecionado todas as  |
-| 92662 | 117410 | NE | Lib | Não está funcionando corretamente a função "Permanecer na página" do n |
 | 93271 | 117416 | NE | Lib | ES-N�o est� sendo gerada de forma correta a contabiliza��o do ICMS ref |
 | 92729 | 117413 | SAL | Lib | Est� sendo gerada incorretamente a sequ�ncia de d�bitos e informa��o n |
 | 94258 | 117409 | SAM | Pend | Contabilidade Digital: Separar a tela de Configura��o para Contabiliza |
@@ -2020,7 +2006,6 @@
 | 93178 | 117236 | NE | Lib | Est� sendo gerado indevidamente o contrato imobili�rio na DIMOB, quand |
 | 92715 | 117224 | NE | Lib | MG-Est� sendo gerada indevidamente a mensagem 'N�o � permitido realiza |
 | 92572 | 117223 | NE | Lib | TO- Est� sendo gerado indevidamente dois registros F para a mesma UF n |
-| 92494 | 117202 | NE | Lib | Está ocultando indevidamente o menu Informativos ao alterar a Empresa  |
 | 92512 | 117211 | NE | Lib | MT-Est�o sendo indevidamente exclu�das as informa��es do ICMS na guia  |
 | 92504 | 117209 | SAM | Lib | Realizar a importa��o do CT-e Simplificado e substituto atrav�s da API |
 | 92482 | 117193 | NE | Lib | Est� sendo demonstrado o �cone incorreto na p�gina do navegador para o |
@@ -2061,16 +2046,14 @@
 | 92371 | 116890 | SAL | Lib | RS-Permitir a utiliza��o do cr�dito de ICMS em parcela �nica conforme  |
 | 94146 | 116875 | SAM | Lib | Criar op��o de alterar o campo "Tipo inscri��o" do cadastro de cliente |
 | 92270 | 116872 | NE | Desc | Est� ocorrendo uma quebra de linha no e-mail do contador ao gerar o ar |
-| 92241 | 116850 | NE | Desc | Em alguns casos está sendo exibida indevidamente uma barra lateral na  |
 | 92396 | 116858 | NE | Lib | AC-Est�o sendo gerados indevidamente mais de uma registro E112 no info |
 | 92334 | 116853 | NE | Lib | Est� sendo realizado valida��es indevidas ao emitir o relat�rio de con |
 | 92403 | 116849 | NE | Lib | Contabilidade Digital: Em alguns casos, est�o sendo demonstrados indev |
 | 92242 | 116843 | NE | Lib | Est� sendo apresentada a situa��o 'Erro Onvio' ao enviar os eventos de |
 | 92397 | 116840 | NE | Lib | Est� ocorrendo erro de banco de dados ao replicar um acumulador para o |
 | 92295 | 116833 | NE | Lib | Em alguns casos est� ocorrendo o erro "Campo 'isen��o/valor inv�lido"  |
-| 93083 | 116793 | SAL | Pend | Alterar o sistema para aceitar o novo CNPJ com o formato alfanumérico  |
+| 93083 | 116793 | SAL | Lib | Alterar o sistema para aceitar o novo CNPJ com o formato alfanumérico  |
 | 92356 | 116809 | NE | Desc | N�o est� sendo encontrado o acumulador quando selecionado op��o "Consi |
-| 92168 | 116777 | NE | Lib | Não está salvando alterações ao editar a configuração de assinaturas d |
 | 92313 | 116791 | NE | Lib | Contabilidade Digital: Em alguns casos, n�o est�o sendo integradas as  |
 | 92404 | 116790 | SAM | Desc | Realizar testes no DW para garantir que todos os pontos do sistema que |
 | 92311 | 116783 | SAM | Lib | GO-Em "Movimentos/Sa�das", preencher de forma autom�tica na guia "Esta |
@@ -2239,7 +2222,6 @@
 | 91536 | 115901 | NE | Lib | Est� gravando indevidamente de maneira interna as informa��es para os  |
 | 92519 | 115896 | SAL | Lib | MS-Alterar o sistema para que no cadastro de produtos permita informar |
 | 91541 | 115892 | NE | Lib | Em alguns casos est� ocorrendo erro na tabela 'BETHADBA.EFDAS_API_TOKE |
-| 91624 | 115887 | NE | Lib | Está validando incorretamente a capacidade máxima de caracteres no cam |
 | 91480 | 115863 | NE | Lib | Est� gerando valores incorretos para os campos "IR pago em meses anter |
 | 91463 | 115859 | NE | Lib | N�o est�o devidamente alinhadas as colunas com os campos, e a descri�� |
 | 91449 | 115852 | NE | Lib | Contabilidade Digital: Est� apresentando indevidamente a mensagem "Dat |
@@ -2267,7 +2249,6 @@
 | 91331 | 115728 | NE | Lib | Est� apresentando erro de banco de dados ao gravar o per�odo de trabal |
 | 91420 | 115717 | SAL | Lib | Ajustar o envio da guia DAS pois est� apresentando a mensagem 'Nosso s |
 | 91711 | 115713 | SAIL | Pend | Alterar o sistema com a atualiza��o da tabela de NCM, conforme Informe |
-| 91601 | 115687 | NE | Pend | Está apresentando indevidamente a mesma rotina em dois status: 'Em and |
 | 91503 | 115686 | NE | Lib | Em alguns casos est� ocorrendo erro no banco de dados ao realizar impo |
 | 91319 | 115685 | NE | Lib | Est� gerando incorretamente o valor no campo 07 do registro C197 (SP41 |
 | 91398 | 115683 | NE | Lib | Est� ocorrendo travamento ao gravar importa��o quando possuir relacion |
@@ -2288,12 +2269,10 @@
 | 91253 | 115595 | SAM | Lib | Alterar o nome "Dom�nio Conta Digital" para "Dom�nio Conta PJ" em todo |
 | 93398 | 115593 | SAL | Lib | BA-Alterar o sistema para considerar o valor pago do imposto 27-ICMS A |
 | 91355 | 115591 | NE | Lib | Est� sendo gerado indevidamente o registro 0175 no informativo SPED Fi |
-| 91188 | 115577 | NE | Lib | Está ocorrendo erro no Fechamento do período quando a empresa possui l |
 | 91171 | 115584 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 91170 | 115583 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 91169 | 115582 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 92991 | 115579 | SAM | Lib | Contabilidade Digital: Criar op��o para desconsiderar transa��es na te |
-| 91191 | 115564 | NE | Lib | Não está contabilizando automaticamente os lançamentos pendentes após  |
 | 91224 | 115568 | NE | Lib | Contabilidade Digital: Realizar ajuste no Agente de Comunica��o para e |
 | 92518 | 115565 | SAM | Lib | Ajustar o sistema para identificar e apresentar mensagem de aviso quan |
 | 91182 | 115562 | NE | Lib | N�o est�o sendo substitu�das as vari�veis dos hist�ricos nos lan�ament |
@@ -2323,14 +2302,12 @@
 | 91114 | 115413 | SAM | Lib | Contabilidade Digital: Aumentar o tamanho do campo "Hist�rico" da tela |
 | 91104 | 115412 | SAM | Lib | Contabilidade Digital: Manter o v�nculo ao editar lan�amento cont�bil  |
 | 92658 | 115410 | SAL | Lib | SC-Ajustar o sistema para estornar o ICMS de nota fiscal complementar  |
-| 90982 | 115370 | NE | Lib | Não está acontecendo o bloqueio na troca do tipo de conta de analítica |
 | 91595 | 115387 | NE | Lib | N�o est� apurando valor para o imposto 44-Simples Nacional quando exis |
 | 92527 | 115385 | SAM | Pend | Implementar uma mensagem de aviso quando o usu�rio realizar importa��o |
 | 91126 | 115379 | SAIL | Lib | Ajustar o sistema para apresentar os valores dos tributos federais uni |
 | 94255 | 115378 | SAM | Lib | Contabilidade Digital: Criar relat�rio com a lista de lan�amentos/tran |
 | 98670 | 115374 | SAM | Lib | Integrar extrato do banco INTER via Open Finance.   |
 | 91550 | 115356 | NE | Lib | N�o est� gerando corretamente a guia PGDAS para empresas com matriz e  |
-| 90950 | 115327 | NE | Lib | Não está encaminhando para o menu "Início" quando pela tela do SPED Co |
 | 90942 | 115330 | NE | Lib | Contabilidade Digital: Est� permitindo gravar indevidamente lan�amento |
 | 90974 | 115329 | NE | Lib | Est� demonstrando indevidamente a mensagem de aten��o "Per�odo de vig� |
 | 90963 | 115322 | NE | Lib | Contabilidade Digital: Est� integrando de forma incorreta as transa��e |
@@ -2354,7 +2331,6 @@
 | 92173 | 115231 | SAL | Lib | RJ- Gerar no registro E115 do SPED Fiscal as informa��es com o process |
 | 93455 | 115229 | SAL | Lib | RS-Alterar o sistema para que o cr�dito presumido de microcervejaria s |
 | 90920 | 115226 | NE | Lib | RJ-Em alguns casos est�o sendo demonstradas informa��es indevidas na a |
-| 90829 | 115222 | NE | Desc | Não está demonstrando as variáveis de histórico substituídas com orige |
 | 90831 | 115224 | SAM | Lib | Realizar estudos para diminuir tamanho no banco de coluna do tipo BLOB |
 | 90826 | 115220 | SAL | Desc | Atualizar o User Agent e garantir que siga na emiss�o do DAS e na DEFI |
 | 90820 | 115218 | NE | Lib | Contabilidade Digital: N�o est� atualizando automaticamente o DW. |
@@ -2366,7 +2342,6 @@
 | 100195 | 115197 | SAM | Lib | Implementar a op��o 'N�o verificar a exist�ncia dos documentos nos lan |
 | 90808 | 115190 | NE | Lib | N�o est� sendo recebido na API as notas de empresas cadastradas como C |
 | 90818 | 115188 | NE | Desc | Em alguns casos est� fechando o sistema ao efetuar o processo de gera� |
-| 90782 | 115175 | SAM | Lib | Liberar tempo da automação de teste da versão 10.5A-01. |
 | 92605 | 115170 | SAL | Lib | RN-Permitir lan�ar os ajustes RN026009 e RN026008 em 'Movimentos/Outro |
 | 90928 | 115166 | NE | Lib | Contabilidade Digital: N�o est� permitindo informar a contrapartida na |
 | 90921 | 115164 | SAM | Lib | SP-Criar um controle din�mico na gera��o do relat�rio "Controle de Est |
@@ -2376,9 +2351,7 @@
 | 90757 | 115148 | SAM | Lib | Permitir c�lculo do Comparativo Regime Tribut�rio referente ao ano de  |
 | 93594 | 115147 | SAL | Lib | PR-Alterar o sistema para que seja gerado o valor dos fundos 152-FECOP |
 | 90813 | 115143 | NE | Lib | SP-Est� considerando indevidamente a al�quota interestadual da tag "pC |
-| 90736 | 115127 | NE | Desc | Não está notificando a Conta Azul quando uma chave de integração for e |
 | 90768 | 115128 | NE | Lib | Contabilidade Digital: Em alguns casos est� apresentando indevidamente |
-| 90752 | 115102 | SAM | Pend | Possibilitar o cadastro de novo contador e novo responsável legal pela |
 | 90758 | 115119 | SAL | Desc | Ajustar o envio da guia DAS nas Rotinas Autom�ticas.   |
 | 90728 | 115113 | NE | Lib | Est� ocorrendo demora no processamento dos movimenta��es da Contabilid |
 | 90727 | 115110 | SAM | Desc | Teste integra��o ADO. |
@@ -2389,9 +2362,6 @@
 | 94566 | 115090 | SAM | Pend | Contabilidade Digital: Implementar no sistema para que n�o apare�a no  |
 | 90830 | 115082 | SAL | Lib | AL-Alterar a receita da faixa de isen��o do ICMS da Tabela do Simples  |
 | 90814 | 115080 | NE | Desc | Est� permitindo importar lan�amento cont�bil com conta conciliada inde |
-| 90723 | 115069 | NE | Desc | Não está gerando o arquivo RTF no SPED Contábil, quando carregado arqu |
-| 90710 | 115066 | NE | Desc | Está ocorrendo lentidão ao salvar arquivos selecionados no componente  |
-| 90708 | 115055 | NE | Desc | Está exibindo incorretamente a mensagem de arquivo substituído no comp |
 | 90890 | 115073 | NE | Lib | N�o est� sendo destacado em vermelho o campo "Endere�o" no cadastro do |
 | 90786 | 115072 | SAL | Lib | Ignorar diferen�as de arredondamento e n�o gerar a tag "FolhaSalario"  |
 | 90712 | 115067 | SAM | Lib | Criar o relat�rio de confer�ncia da DEFIS e as permiss�es do informati |
@@ -2420,7 +2390,6 @@
 | 91180 | 114912 | SAIL | Lib | Implementar a gera��o do arquivo do informativo MIT - M�dulo de Inclus |
 | 92014 | 114906 | SAL | Lib | SP-Alterar o sistema para considerar o ICMS Monof�sico no c�lculo do e |
 | 90576 | 114890 | NE | Lib | MT-Em alguns casos est� ocorrendo erro de sistema ao emitir o relat�ri |
-| 90578 | 114864 | NE | Lib | Não está finalizando o processo de integração contábil quando existe a |
 | 90741 | 114874 | NE | Lib | N�o est� emitindo as assinaturas em relat�rios quando o par�metro � co |
 | 92227 | 114866 | SAL | Lib | PR-Alterar o c�digo de ajuste gerado no E111 para o c�lculo do Cr�dito |
 | 101525 | 114858 | SAM | Lib | Criar a op��o "Considerar as defini��es das contribui��es retidas na f |
@@ -2433,7 +2402,6 @@
 | 90554 | 114814 | NE | Lib | Contabilidade Digital: Est� mantendo indevidamente o lan�amento como " |
 | 90533 | 114811 | SAM | Lib | Realizar testes de envio de notas ao BOX-e atrav�s do Web Service SEFA |
 | 90530 | 114804 | NE | Lib | N�o est� atualizando corretamente o saldo das adi��es e exclus�es ao a |
-| 90565 | 114762 | NE | Lib | Não está atualizando a quantidade de lançamentos no badge de Lançament |
 | 90532 | 114800 | NE | Lib | Contabilidade Digital: N�o est�o sendo contabilizadas algumas transa�� |
 | 90630 | 114796 | NE | Lib | Est� importando indevidamente a al�quota interestadual da tag "pCredSN |
 | 90518 | 114780 | NE | Lib | Est�o sendo demonstradas indevidamente algumas empresas que ainda est� |
@@ -2445,7 +2413,6 @@
 | 90580 | 114749 | SAM | Pend | Permitir que o sistema realiza a importa��o e Escritura��o das NFS-e d |
 | 90506 | 114748 | NE | Lib | Est� ocorrendo lentid�o no processamento das transa��es da Contabilida |
 | 91002 | 114745 | NE | Lib | ES-Est� sendo demonstrada indevidamente a mensagem "Falta apurar saldo |
-| 90666 | 114734 | SAM | Pend | Contabilidade digital: Incluir um ícone no header para apresentar a qu |
 | 90800 | 114722 | NE | Lib | Est� sendo apresentado o erro "Specified criterion is invalid" ao info |
 | 90886 | 114721 | NE | Lib | RO-N�o est� sendo gerado o registro C197 com o c�digo de ajuste RO1000 |
 | 90629 | 114715 | NE | Lib | AL-Est� importando incorretamente a base de c�lculo do imposto 49-FECO |
@@ -2459,16 +2426,14 @@
 | 90559 | 114671 | NE | Lib | RS-N�o est� sendo gerado o registro C180 no informativo SPED Fiscal, q |
 | 90469 | 114670 | NE | Lib | Est� demonstrando a mensagem "Existe a mesma combina��o de itens de se |
 | 91200 | 114661 | SAL | Lib | Realizar o c�lculo do imposto 28-FUNRURAL considerando as al�quotas co |
-| 90472 | 114646 | NE | Lib | Não está emitindo o SPED Contábil quando na parametrização está config |
 | 91428 | 114656 | NE | Lib | Em alguns casos n�o est� atualizando o banco de dados na tabela 'EFIMP |
 | 90486 | 114655 | NE | Lib | Est� fechando a tela "Progresso de importa��o" quando selecionado para |
 | 90413 | 114650 | NE | Desc | Dom�nio Servi�os Digitais-N�o est�o sendo listadas todas as contas env |
 | 90409 | 114648 | NE | Lib | Est� sendo alterado indevidamente o nome do usu�rio administrador no O |
+| 101804 | 114629 | SAIL | Pend | Implementar rotina para reconhecer a receita pelo POC com valor atuali |
 | 92310 | 114613 | SAL | Lib | GO-Preencher de forma autom�tica a informa��o do estorno do ICMS e tam |
 | 90620 | 114610 | SAL | Lib | RS-Alterar a gera��o do campo 'VL_UNIT_CONV' do registro C180, campo " |
 | 90405 | 114588 | NE | Lib | Em alguns casos est� ocorrendo erro de sistema ao gerar o informativo  |
-| 93088 | 114586 | SAM | Pend | Contabilidade digital: Contabilizar as transações que ocorrerem entre  |
-| 93561 | 114582 | SAM | Pend | Contabilidade digital: Realizar busca e baixa de impostos na Central d |
 | 91012 | 114581 | NE | Lib | N�o est� gerando no relat�rio as informa��es de Isen��o e Redu��o para |
 | 90467 | 114578 | NE | Lib | Esta ocorrendo indevidamente a mensagem de aviso "O CNPJ informado n�o |
 | 92659 | 114570 | SAL | Lib | Alterar o sistema para que os valores das receitas financeiras dos lan |
@@ -2485,20 +2450,15 @@
 | 90839 | 114517 | SAM | Pend | Ajustar as telas de exporta��o de arquivos. |
 | 90342 | 114515 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "Receita Bruta Acumula |
 | 90316 | 114512 | SAM | Desc | Realizar estudo e melhoria dos �ndices duplicados em todas as tabelas  |
-| 90324 | 114492 | SAM | Pend | Criar mensagens mais intuitivas na integração contábil referente a tra |
 | 90422 | 114481 | SAM | Lib | Importar a base de c�lculo do PIS/COFINS quando informado o CST 06-Ope |
 | 90367 | 114479 | NE | Lib | Est� marcando indevidamente a op��o "Realizar a integra��o do plano de |
 | 92400 | 114476 | SAL | Lib | RS-Incluir no sistema o dispositivo "235" no detalhamento dos ajustes  |
-| 93541 | 114468 | SAM | Pend | Contabilidade digital: Realizar busca e baixa de impostos federais na  |
-| 90259 | 114460 | NE | Lib | Está permitindo atribuir apenas o número 0 para código da conta e tamb |
 | 90255 | 114462 | SAL | Lib | Alterar o sistema conforme altera��o da RFB referente ao acesso ao e-C |
 | 90881 | 114461 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "N�o � permitido grava |
-| 90258 | 114453 | NE | Lib | Não está apresentando feedback ao tentar cadastrar uma conta com a cla |
 | 91089 | 114459 | SAL | Lib | Ajustar importa��o das informa��es do Lalur para a DIRBI. |
 | 90251 | 114440 | NE | Lib | CE-Est�o sendo exclu�das indevidamente as informa��es da guia "Al�quot |
 | 90361 | 114436 | NE | Lib | Est� ocorrendo indevidamente o erro "Para notas com modelo 'Documento  |
 | 90216 | 114428 | NE | Lib | N�o est� retornando os c�digos de erros do Dom�nio Conta Digital |
-| 90260 | 114417 | NE | Lib | Em alguns casos as contas contábeis não estão sendo apresentadas em or |
 | 101022 | 114414 | SAM | Pend | RS-Importar para o produto o cr�dito presumido sobre produtos farmac�u |
 | 90224 | 114410 | NE | Lib | Em alguns casos est� ocorrendo travamento ao realizar altera��o por me |
 | 90207 | 114407 | SAL | Desc | Alterar o sistema para considerar os bloqueios da RFB ao gerar o infor |
@@ -2511,7 +2471,6 @@
 | 90231 | 114363 | NE | Lib | Contabilidade Digital: N�o est�o sendo integradas as transa��es do tip |
 | 90431 | 114362 | SAL | Lib | RN-Alterar comportamento do sistema para gerar o registro E113 para o  |
 | 90181 | 114361 | SAM | Lib | Alterar a janela de cadastro de clientes e Fornecedores, para que n�o  |
-| 90176 | 114319 | NE | Lib | Não estão sendo listadas as empresas e nem sendo apresentadas as abas  |
 | 90356 | 114321 | NE | Lib | SC-Est� sendo gerado de forma incorreta os valores na Integra��o Cont� |
 | 90244 | 114320 | NE | Lib | N�o est� sendo setada a data de pagamento correta no campo "Pagamento" |
 | 90660 | 114305 | SAL | Lib | Importar os valores do novo encargo 'FGTS 13�' no menu 'Movimentos\Out |
@@ -2527,7 +2486,6 @@
 | 90098 | 114260 | SAL | Lib | SC-Alterar o endere�o do webservice para emiss�o de Notas Fiscais de S |
 | 90229 | 114259 | SAL | Lib | Atualizar a tabela de CFPS no sistema Dom�nio Escrita na Nuvem. |
 | 90093 | 114256 | NE | Lib | Contabilidade Digital: Est� sendo buscado de forma incorreta os dados  |
-| 90087 | 114252 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-12. |
 | 92135 | 114254 | SAL | Lib | Alterar o sistema para ser poss�vel deduzir de forma individual o DIFA |
 | 90128 | 114251 | SAL | Lib | Alterar descri��o da "Natureza de Opera��o" dos c�digos 22301 e 22318  |
 | 90187 | 114250 | SAL | Lib | Alterar o sistema para n�o gerar o registro 0145 e o Bloco P da EFD Co |
@@ -2575,7 +2533,6 @@
 | 89954 | 114033 | SAM | Lib | Alterar o sistema para emitir a guia DARF Online - Sicalcweb" sem demo |
 | 89945 | 114027 | SAM | Lib | Alterar para que a funcionalidade implementada na SAI 88942 n�o tenha  |
 | 89998 | 114024 | NE | Lib | Est� apresentando as mensagens de retorno de per�odo de trabalho ao ed |
-| 89935 | 114019 | SAM | Lib | Criar opção para ocultar empresas inativas na listagem de empresas e n |
 | 90101 | 114015 | SAL | Lib | RS-Alterar o sistema emissor de Notas Fiscais de Servi�o Eletr�nicas p |
 | 89985 | 114011 | NE | Lib | Est� sendo calculado incorretamente o valor a recolher dos impostos PI |
 | 90036 | 114007 | NE | Lib | Est� ocorrendo erro na importa��o de determinados arquivos. |
@@ -2608,11 +2565,7 @@
 | 89858 | 113879 | SAM | Lib | Permitir importar notas de Sa�das e Servi�os com esp�cie "Documento N� |
 | 91033 | 113877 | SAL | Lib | MG-Alterar o sistema para gerar o registro 1923 no SPED Fiscal para em |
 | 100602 | 113876 | SAM | Pend | Importar as informa��es do Profissional-parceiro atrav�s da importa��o |
-| 89814 | 113862 | SAM | Lib | Testar impactos da alteração feita pela Folha no filtro lateral. |
-| 89781 | 113861 | NE | Lib | Em alguns casos não está sendo possível pesquisar no componente combob |
 | 90135 | 113866 | SAM | Lib | RS-Permitir importar o imposto 31-ST/AT "Por nota" quando o CSOSN for  |
-| 89778 | 113858 | NE | Lib | Não está sendo demonstrada a tooltip ao passar o mouse sobre eventos d |
-| 89933 | 113856 | SAM | Lib | Demonstrar da esquerda para direita os cards dos menus mais acessados  |
 | 89842 | 113860 | NE | Lib | Est� deduzindo de forma incorreta o valor da devolu��o para as colunas |
 | 89805 | 113850 | SAL | Lib | Adaptar o sistema para ser poss�vel o envio do DAS MEI sem que ocorra  |
 | 89931 | 113842 | NE | Lib | Est� ocorrendo erro indevidamente ao importar cadastro de empresa com  |
@@ -2661,7 +2614,6 @@
 | 91542 | 113566 | SAL | Lib | MT-Alterar o sistema para gerar o ajuste MT030001 nas opera��es de dev |
 | 89773 | 113553 | NE | Lib | RS-Est� gerando indevidamente o registro C191 no informativo SPED Fisc |
 | 89598 | 113547 | NE | Lib | Est� importando incorretamente o valor da Receita Bruta, quando no acu |
-| 89581 | 113529 | NE | Lib | Em alguns casos não está realizando o zeramento das contas contábeis. |
 | 89634 | 113539 | NE | Lib | PR-Pato Branco-N�o est� sendo considerada a al�quota m�nima de 2% na a |
 | 89629 | 113538 | NE | Lib | PI-Est� gerando o registro E111 com o c�digo de ajuste incorreto "PI05 |
 | 89597 | 113537 | NE | Lib | N�o est� sobrescrevendo os lan�amentos cont�beis no m�dulo "Escrita Fi |
@@ -2694,7 +2646,6 @@
 | 90626 | 113363 | NE | Lib | N�o est� excluindo a apura��o dos impostos quando realizado importa��o |
 | 89483 | 113357 | NE | Lib | Est� importando os dados PIS e COFINS incorretamente quando a empresa  |
 | 89501 | 113344 | NE | Lib | N�o est� realizando a concilia��o autom�tica de lan�amentos de forma c |
-| 89643 | 113327 | NE | Lib | Está apresentando indevidamente a combobox de cadastro de um novo cont |
 | 91575 | 113338 | SAL | Lib | PB-Alterar o sistema para gerar o registro E113 no SPED Fiscal para la |
 | 90544 | 113337 | SAL | Lib | SP-Alterar o sistema emissor de Notas Fiscais de Servi�o Eletr�nicas p |
 | 89444 | 113336 | NE | Lib | Est� ocorrendo erro ao tentar enviar um documento/nota pela API de not |
@@ -2703,7 +2654,6 @@
 | 89433 | 113323 | SAL | Lib | Ajustar o DAS e a DEFIS para que consiga seguir nos captchas.   |
 | 89416 | 113308 | SAM | Lib | Criar casos de testes para a automa��o em Novembro/2024. |
 | 89423 | 113301 | NE | Lib | N�o est� sendo efetuado a assinatura digitalmente do arquivo de "Trans |
-| 89644 | 113281 | NE | Lib | Não estão sendo demonstrados o destaque em vermelho e a tooltip com a  |
 | 89439 | 113282 | NE | Desc | SC-Esta gerando indevidamente valor a recolher no campo 'ICMS a recolh |
 | 89663 | 113280 | SAL | Lib | PR-Alterar o campo "03-DESCR_COMPL_AJ" do registo E111 quando no lan�a |
 | 89388 | 113275 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
@@ -2711,7 +2661,6 @@
 | 89386 | 113273 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
 | 89523 | 113266 | NE | Lib | TO-Est� deduzindo incorretamente o IPI da base de c�lculo do imposto 2 |
 | 89395 | 113262 | NE | Lib | Esta travando o relat�rio demonstrativo dos impostos 133-PIS-I e 134-C |
-| 89360 | 113246 | SAM | Lib | Possibilitar o bloqueio/desbloqueio da ação de excluir vigência no cad |
 | 89377 | 113248 | SAL | Lib | Ajustar o sistema para enviar as informa��es para a DIRBI conforme as  |
 | 89381 | 113247 | NE | Lib | PR-Est� gerando valor incorreto para o campo 07 do registro D197 do SP |
 | 89442 | 113238 | NE | Desc | RS-N�o est� gerando lan�amento de zeramento do imposto 1-ICMS na integ |
@@ -2738,7 +2687,6 @@
 | 89325 | 113183 | NE | Lib | Est� demonstrando a tela em branco ao editar o cadastro de participant |
 | 92752 | 113176 | SAM | Pend | Alterar o sistema para que seja poss�vel fazer a auditoria atrav�s do  |
 | 89331 | 113171 | NE | Lib | N�o est� substituindo as vari�veis no hist�rico do pagamento dos impos |
-| 90115 | 113164 | SAM | Pend | Contabilidade digital: Criar a tela para apresentar os lançamentos de  |
 | 89298 | 113170 | NE | Lib | N�o est� sendo demonstrado no menu In�cio, o submenu 'Novidades', quan |
 | 89296 | 113169 | NE | Lib | Est� ocorrendo erro na gera��o da guia DASMEI, quando a empresa � Micr |
 | 89333 | 113163 | NE | Lib | N�o est� sendo poss�vel lan�ar uma nota quando quando possuir uma cont |
@@ -2756,7 +2704,6 @@
 | 89318 | 113122 | SAM | Lib | PENTEST-Testar os pontos do sistema da Escrita Fiscal que utilizam o C |
 | 89256 | 113118 | SAM | Desc | PENTEST-Remover os pontos do sistema do Dom�nio que utilizam CMD e Pow |
 | 89278 | 113114 | NE | Lib | SC-N�o est�o sendo gerados os registros 080 e 090 no informativo DCIP, |
-| 94611 | 113100 | SAM | Lib | Incluir a aba 'Arquivos RTF' na modal 'Outros dados' do SPED Contábil  |
 | 89417 | 113111 | NE | Lib | Contabilidade Digital: Em alguns casos est� classificando incorretamen |
 | 89257 | 113094 | NE | Lib | N�o est� sendo poss�vel gerar contas patrimoniais e de compensa��o atr |
 | 89305 | 113089 | SAM | Lib | Contabilidade Digital: Inativar o bot�o "Gravar" durante o processo de |
@@ -2769,15 +2716,12 @@
 | 92829 | 113064 | SAL | Lib | SC-Alterar o sistema para gerar valor complementar de ICMS para o TTD  |
 | 89272 | 113062 | NE | Lib | Est� sendo indevidamente desabilitada a op��o "Deduzir o valor de desp |
 | 89273 | 113061 | NE | Lib | N�o est� sendo conclu�da a atividade nem anexada a guia DARF Normal no |
-| 89645 | 113055 | NE | Lib | Estão ocorrendo erros na exibição de lançamentos pendentes da Conta Az |
 | 89824 | 113040 | SAM | Lib | Implementar a rotina de importa��o dos fundos e clubes de investimento |
-| 89372 | 113032 | NE | Lib | Está apresentando indevidamente a mensagem "Existem contas em processo |
 | 89179 | 113039 | SAM | Lib | Ajustar o agente de comunica��o para receber sem erros transa��es do o |
 | 89177 | 113031 | NE | Lib | Est� excluindo o lan�amento de notas com lan�amento cont�bil indevidam |
 | 89361 | 113029 | NE | Lib | Esta sendo gerado valor incorreto na coluna 'V. Parcela' da linha tota |
 | 89357 | 113028 | NE | Lib | Esta emitindo mensagem indevida ao gerar o SPED Fiscal multiempresas q |
 | 89216 | 113018 | NE | Lib | Em alguns casos est� ocorrendo encerramento do sistema ao realizar imp |
-| 89240 | 113017 | NE | Lib | Não está sendo demonstrado habilitado o campo "Estrutura da classifica |
 | 89267 | 113016 | SAL | Lib | Permitir informar a varia��o de al�quota do imposto 16-IRRF no cadastr |
 | 89150 | 113012 | SAM | Lib | Atualizar a informa��o do Respons�vel Legal das empresas na API cadast |
 | 89215 | 113011 | NE | Lib | N�o est� importando reten��es quando na configura��o de importa��o est |
@@ -2817,7 +2761,6 @@
 | 89324 | 112886 | NE | Lib | RS-N�o est� sendo considerada a nota de devolu��o de compra no c�lculo |
 | 89152 | 112885 | NE | Lib | N�o est� sendo gerado corretamente o registro 1900 no informativo EFD  |
 | 89464 | 112884 | NE | Lib | N�o est� demonstrando as notas de entrada com impostos 133-PIS-I e 134 |
-| 89185 | 112875 | NE | Lib | Está apresentando indevidamente a mensagem "Esse código já foi atribuí |
 | 89117 | 112880 | SAM | Lib | Otimizar a tela "Extrato Banc�rio do Dom�nio Conta Digital". |
 | 89143 | 112872 | NE | Lib | PR-Est� sendo gerado o c�digo de ajuste incorreto no registro E220 no  |
 | 89035 | 112871 | NE | Lib | Est� ocorrendo erro de banco de dados ao gravar contratos de venda com |
@@ -2849,9 +2792,7 @@
 | 88892 | 112767 | NE | Lib | RS-N�o est�o sendo gerados os registros 0190, 0200, 0460, C195 e C197  |
 | 88976 | 112763 | NE | Lib | N�o est� importando o valor de Despesas Acess�rias quando a nota � seg |
 | 88868 | 112751 | NE | Lib | Est� ocorrendo erro e encerramento do sistema ao realizar importa��o c |
-| 89189 | 112736 | NE | Lib | Os relatórios estão sendo emitidos com valores errados porque a agrega |
 | 88867 | 112735 | SAL | Lib | Ajustar o sistema para que consiga seguir no captcha do portal do DAS  |
-| 89190 | 112722 | NE | Lib | Os valores do período comparativo no DRE estão sendo apresentados '0,0 |
 | 88855 | 112720 | SAM | Lib | Validar se o envio de notas ao BOX-e atrav�s do Web Service SEFAZ e Bu |
 | 91617 | 112708 | SAL | Lib | RS-Gerar zerado o campo 17 do registro C181 quando escriturado uma ent |
 | 89928 | 112707 | SAL | Lib | PA-Habilitar a guia 'Detalhamento' para o c�digo de ajuste PA020014, p |
@@ -2867,7 +2808,6 @@
 | 88827 | 112649 | SAL | Lib | RS-Ajustar a emiss�o do SPED Fiscal quando realizado o c�lculo do cr�d |
 | 89182 | 112635 | SAL | Lib | AC-Gerar as compras de fornecedores do Simples Nacional no informativo |
 | 88893 | 112632 | NE | Lib | MS-N�o est�o sendo geradas corretamente as notas fiscais no relat�rio  |
-| 88754 | 112612 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-10. |
 | 88772 | 112611 | NE | Pend | Est� apresentando o saldo incorreto no relat�rio de Controle de Incent |
 | 88773 | 112609 | NE | Lib | SC-Est� ocorrendo erro ao enviar RPS para o munic�pio de Herval D'Oest |
 | 88748 | 112602 | NE | Lib | N�o est� excluindo arquivos da pasta tempor�ria do Windows quando � en |
@@ -2885,7 +2825,6 @@
 | 90312 | 112558 | SAM | Lib | SC-Importar para o produto o cr�dito presumido ao estabelecimento fabr |
 | 89123 | 112557 | SAM | Lib | Ajustar a gera��o do SPED Cont�bil Invent�rio e Contas a pagar e receb |
 | 88733 | 112547 | NE | Lib | MG-Est� sendo apresentada indevidamente a mensagem "A data do deferime |
-| 89191 | 112546 | NE | Desc | Em alguns casos está apresentando indevidamente a mensagem "A competên |
 | 89147 | 112537 | NE | Lib | N�o est� demonstrando o campo Lote com a cor e linha corretamente na a |
 | 88678 | 112532 | NE | Lib | Em alguns casos n�o est�o sendo demonstrados os impostos na configura� |
 | 89031 | 112528 | NE | Lib | N�o est� exibindo os lan�amentos ao realizar a consulta pelo utilit�ri |
@@ -2911,18 +2850,12 @@
 | 91379 | 112429 | SAL | Lib | SC-Alterar o c�lculo do TTD 409, 410 ou 411 para estornar cr�ditos de  |
 | 88638 | 112414 | NE | Lib | Est� sendo demonstrado o erro "CFOP 'xxxx' inv�lido para Fornecedor de |
 | 88584 | 112410 | NE | Lib | Esta sendo demonstrado erro de sistema ao emitir o relat�rio Acompanha |
-| 88594 | 112384 | SAM | Lib | Desabilitar o ícone e coluna de publicação para o Portal do cliente no |
 | 88560 | 112391 | SAM | Pend | Realizar um estudo para redu��o de custos no processo de preenchimento |
 | 90424 | 112388 | SAL | Lib | Alterar o sistema para permitir lan�ar notas de Sub-contrata��o de Fre |
 | 88745 | 112386 | NE | Lib | N�o est� permanecendo marcado a sele��o realizada no bot�o "Centro de  |
 | 88557 | 112385 | NE | Lib | N�o est� sendo demonstrada a barra de rolagem na gride "Impostos" da j |
-| 88593 | 112373 | NE | Desc | Em alguns casos o componente de seleção de arquivos está desconfiguran |
-| 88592 | 112372 | NE | Lib | Em alguns casos o componente de seleção de arquivos está exibindo inco |
 | 88590 | 112371 | NE | Lib | Est� ocorrendo erro de sistema ao abrir a tela de docs fiscais e da im |
-| 88668 | 112363 | SAM | Lib | Considerar os arquivos apresentados na grid 'Defina o tipo do arquivo  |
-| 88667 | 112362 | NE | Lib | Está acontecendo a substituição da modal 'Outros dados' do SPED Contáb |
 | 88777 | 112368 | SAL | Lib | ES - Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�ni |
-| 88547 | 112357 | NE | Lib | Não estão sendo apresentados na lista de lançamentos contábeis os lanç |
 | 89844 | 112358 | SAM | Lib | Criar uma op��o para permitir integrar o pagamento dos impostos federa |
 | 88534 | 112354 | NE | Lib | N�o est� salvando o redimensionamento da tela de listagem e da tela de |
 | 91277 | 112350 | SAL | Lib | RN-Alterar o c�lculo do imposto 8-DIFALI conforme IN SEI N� 001/2024-C |
@@ -2945,7 +2878,6 @@
 | 88507 | 112278 | NE | Lib | Esta demonstrando notas de outras compet�ncias indevidamente na listag |
 | 88462 | 112268 | SAM | Desc | Realizar estudo para avaliar o motivo de alguns registros do informati |
 | 88461 | 112260 | NE | Lib | Algumas notas importadas via API n�o est�o sendo recepcionadas pelo On |
-| 88655 | 112246 | NE | Lib | Está exibindo incorretamente a estrutura da classificação no cadastro  |
 | 88463 | 112254 | NE | Lib | Est� gerando a contabiliza��o incorreta na nota fiscal de servi�o pres |
 | 88458 | 112245 | SAM | Lib | Desabilitar o �cone e coluna de publica��o para o Portal do cliente no |
 | 91465 | 112244 | SAL | Lib | Alterar o sistema para habilitar o campo de chave de acesso para as no |
@@ -2959,8 +2891,6 @@
 | 92510 | 112209 | SAM | Pend | Alterar o sistema para importar o tipo de inscri��o do cliente/fornece |
 | 88443 | 112186 | NE | Desc | Est� gerando a data da Carta de Responsabilidade da Administra��o inco |
 | 88445 | 112185 | NE | Lib | Est� calculando incorretamente o valor do adicional anual sobre o even |
-| 88545 | 112173 | NE | Lib | File Selector não está apresentando o tamanho máximo correto do arquiv |
-| 88482 | 112172 | NE | Desc | Não está apresentando o código da conta que está inativa na modal de v |
 | 88439 | 112179 | SAM | Lib | Emitir uma mensagem explicativa quando apresentado a mensagem 'XML com |
 | 88379 | 112175 | NE | Lib | Est� sendo realizada a tradu��o incorreta da tooltip de publica��o no  |
 | 88409 | 112171 | SAL | Lib | SP-Alterar o sistema emissor de Notas Fiscais de Servi�o Eletr�nicas p |
@@ -2979,16 +2909,12 @@
 | 88319 | 112123 | SAM | Lib | Realizar estudo para atualizar a vers�o do navegador CefSharp/Chromium |
 | 88312 | 112118 | NE | Lib | Est� ocorrendo erro de sistema ao emitir o informativo DIRB, quando no |
 | 91342 | 112117 | SAL | Lib | MT-Ajustar o sistema para que seja poss�vel informar o ICMS Monof�sico |
-| 88346 | 112111 | NE | Lib | Está sendo realizada a tradução incorreta da tooltip de publicação no  |
-| 88348 | 112107 | SAM | Lib | Aplicar regras de permissões nos menus Importação de lançamentos e Con |
 | 88852 | 112112 | SAL | Lib | Ajustar a considera��o para compor o valor das adi��es e exclus�es. |
 | 88309 | 112103 | NE | Lib | Em alguns casos est� ficando travada a requisi��o da guia DAS como 'Em |
 | 88300 | 112095 | NE | Lib | N�o est�o sendo disponibilizadas os cancelanentos de NFC-e recebidas p |
 | 88302 | 112088 | NE | Lib | Est� ocorrendo o erro 'uo_imp_fixo_parser_xml' ao realizar importa��o  |
 | 88962 | 112085 | SAL | Lib | SC-Gerar o registro 2130 do informativo DRCST referente ao levantament |
 | 90924 | 112081 | SAIL | Lib | Alterar o sistema para considerar as devolu��es de vendas no c�lculo d |
-| 88384 | 112070 | NE | Lib | Não estão sendo apresentados os códigos das contas de contrapartida na |
-| 88408 | 112057 | NE | Lib | Ao adicionar linha na última página na modal 'Informar contas anterior |
 | 88413 | 112069 | SAL | Lib | MT-Ajustar op��es dos par�metros do munic�pio de Primavera do Leste. |
 | 88322 | 112068 | NE | Lib | Est� ocorrendo o erro 'Ocorreu erro na requisi��o da DAS. Tente novame |
 | 88731 | 112063 | NE | Lib | N�o est� sendo feito o c�lculo correto do adicional de IRPJ, quando a  |
@@ -2998,12 +2924,10 @@
 | 88369 | 112024 | SAM | Lib | Realizar testes referente a op��o para o usu�rio escolher se os arquiv |
 | 88261 | 112022 | SAM | Lib | SC-Integrar com o m�dulo Honor�rios referente � sub-apura��o do impost |
 | 90749 | 112013 | SAL | Lib | RO-Alterar a rotina de Anula��o de CTe e CT-eOS conforme Ajustes Sinie |
-| 89188 | 112005 | NE | Desc | Está apresentando indevidamente inconsistência na execução da integraç |
 | 88338 | 112010 | NE | Lib | Est� ocorrendo erro no arquivo ao salvar as An�lises vertical e horizo |
 | 96174 | 111984 | SAM | Lib | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut |
 | 90790 | 111971 | SAL | Lib | Alterar o sistema para ser poss�vel realizar a rotina de Anula��o de C |
 | 88336 | 111946 | SAL | Lib | RS-Alterar o sistema para atualizar as vig�ncias dos c�digos do anexo  |
-| 89364 | 111907 | NE | Lib | Está apresentando incorretamente duas mensagens de alerta ao realizar  |
 | 88236 | 111930 | NE | Lib | PE-Est� sendo gerada a informa��o incorreta no campo 07-DT_DOC do regi |
 | 88212 | 111922 | NE | Lib | Est� ocorrendo o erro 'CNPJ do arquivo diferente do CNPJ da empresa at |
 | 89054 | 111919 | SAL | Lib | SC-Alterar o sistema para gerar o c�digo de ajuste SC20000009 para NFC |
@@ -3032,7 +2956,6 @@
 | 88116 | 111768 | SAM | Lib | RJ-Ajustar URLs de a��o do munic�pio de Cabo Frio. |
 | 88401 | 111767 | NE | Lib | Esta apresentando indevidamente a mensagem "A chave de integra��o n�o  |
 | 88194 | 111760 | NE | Lib | Est� importando incorretamente os registros P200/P300/P400/P500 do inf |
-| 88139 | 111741 | SAIL | Lib | Aplicar regras de permissões no menu SPED Contábil |
 | 88199 | 111755 | SAM | Lib | Ajustar o comportamento de valida��o para inser��o de valores na colun |
 | 88135 | 111742 | NE | Lib | Est� ocorrendo erro ao fazer upload dos arquivos, quando selecionado p |
 | 88099 | 111735 | SAM | Lib | Realizar estudo para atualizar a vers�o do navegador CefSharp/Chromium |
@@ -3042,12 +2965,9 @@
 | 88146 | 111721 | NE | Lib | BA-N�o est� sendo considerando o MVA corretamente para o imposto "31-S |
 | 88134 | 111715 | NE | Lib | N�o est� carregando a interface 'Outros dados' da EFD-Reinf quando sel |
 | 96805 | 111707 | SAIL | Lib | SC-Implementar o c�lculo do Cr�dito Presumido Concedido a Estabelecime |
-| 88117 | 111705 | NE | Lib | Está duplicando o e-mail quando preenchido pelo autocomplete na etapa  |
-| 88115 | 111704 | NE | Lib | Componente Month datepicker está permitindo digitar mais caracteres do |
 | 90141 | 111702 | SAM | Lib | MT-Alterar a importa��o do imposto 8-DIFALI conforme a Nota T�cnica UD |
 | 88124 | 111696 | NE | Lib | Est� gerando indevidamente o envio do 'R-4099'de Fechamento, quando a  |
 | 88074 | 111693 | SAM | Lib | Criar casos de testes para a automa��o em Setembro/2024. |
-| 88056 | 111672 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-09. |
 | 88064 | 111685 | NE | Lib | N�o est� sendo feito a comunica��o com webservice da EFD-Reinf, ficand |
 | 88108 | 111665 | SAL | Lib | Atualizar a lista de bancos utilizados para o LCDPR nos Par�metros.   |
 | 88103 | 111648 | NE | Lib | Est� importando incorretamente o "Indicador do saldo inicial" do regis |
@@ -3068,7 +2988,6 @@
 | 87998 | 111550 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 87995 | 111528 | NE | Lib | N�o est� sendo gerado valor na apura��o do imposto 33-IRPJ-PO, quando  |
 | 90134 | 111520 | SAL | Lib | Alterar o sistema para deduzir o valor do ISS da base de c�lculo de PI |
-| 88077 | 111514 | SAM | Pend | Aumentar o filtro de pesquisa da 'Lista de lançamentos contábeis' para |
 | 87992 | 111515 | NE | Lib | CE-N�o est� importando o imposto 8-DIFALI corretamente quando o percen |
 | 88106 | 111512 | NE | Lib | N�o est�o sendo importados corretamente os valores para os registros P |
 | 87976 | 111505 | NE | Pend | Est� sendo apresentado produtos na guia "Relacionamento de produtos" i |
@@ -3103,14 +3022,12 @@
 | 87981 | 111410 | SAL | Lib | Limitar a utiliza��o do Lucro da Explora��o nos registros N620 e N630  |
 | 89154 | 111405 | SAIL | Lib | Implementar o lan�amento de 'Documento N�o Fiscal' no movimento de Sa� |
 | 87919 | 111404 | NE | Lib | Em alguns casos est� apresentando o erro "Valores lan�ados diferem do  |
-| 88075 | 111378 | SAM | Desc | Alterar o título das notificações dos lançamentos da Conta Azul quando |
 | 87892 | 111391 | SAM | Lib | Ocultar o �cone "Perguntas e Respostas" do M�dulo Conte�do. |
 | 90067 | 111375 | SAL | Lib | RN-Alterar o sistema para realizar o estorno de d�bitos e cr�ditos pel |
 | 88810 | 111370 | SAL | Lib | RO-Incluir o c�digo de ajuste RO020039 na tela de Impostos Lan�ados Es |
 | 87870 | 111363 | SAM | Lib | Ordenar as opera��es do extrato Dom�nio Conta Digital e Contabilidade  |
 | 88036 | 111355 | NE | Lib | CE-N�o est� sendo habilitado a guia "Al�quota" nas defini��es do impos |
 | 88154 | 111346 | SAL | Lib | AL-Atualizar a descri��o do C�digo de Item para IPM 1151 e incluir o c |
-| 87964 | 111328 | NE | Lib | Está apresentando o erro gramatical: "O zeramento será realizado para  |
 | 87846 | 111331 | NE | Desc | RS-Em alguns casos est� ocorrendo erro ao realizar a apura��o do per�o |
 | 88101 | 111321 | NE | Lib | Est� apresentando os valores da "Deprecia��o acumulada" e "Saldo a dep |
 | 87825 | 111319 | SAM | Lib | Ajustar os pontos de dependencia da API com o DA ap�s desativa��o dos  |
@@ -3131,7 +3048,6 @@
 | 87785 | 111253 | NE | Lib | Em alguns casos n�o est� sendo importado o valor correto no campo "Val |
 | 88070 | 111252 | SAM | Lib | Alterar o sistema para que ao abrir a tela de Lan�amentos Cont�beis Ex |
 | 87881 | 111251 | SAM | Lib | Otimizar abertura e navega��o da tela de Lan�amentos Extrato Banc�rio  |
-| 87758 | 111239 | SAM | Lib | Testar performance da importação dos lançamentos contábeis da Conta Az |
 | 87793 | 111248 | NE | Lib | Est� sendo gerado incorretamente os valores dos registros M210 e M610  |
 | 87794 | 111240 | NE | Lib | N�o est� gerando o Registro E531 no SPED Fiscal, quando realizado lan� |
 | 87748 | 111234 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
@@ -3152,11 +3068,9 @@
 | 87761 | 111183 | NE | Lib | N�o est� gerando a nota de entrada em outra empresa quando existe nota |
 | 87874 | 111177 | NE | Lib | MG-Est�o sendo demonstradas URLs de a��o incorretas para o munic�pio d |
 | 90374 | 111175 | SAL | Lib | Alterar o sistema para n�o importar o valor do "IRRF Folha" e "PIS Fol |
-| 87961 | 111163 | NE | Lib | Não está ocorrendo corretamente o filtro do ícone de "Lançamentos pend |
 | 87719 | 111169 | SAL | Lib | SC - Alterar o endere�o do web service de produ��o para emiss�o de Not |
 | 88519 | 111166 | SAL | Lib | MG-Alterar o comportamento da tag "ResponsavelRetencao" para gerar no  |
 | 87980 | 111164 | NE | Lib | N�o est� sendo exibido o imposto '25-CRF' na janela 'Baixas de parcela |
-| 87707 | 111152 | NE | Lib | Não estão sendo exibidos os campos da opção "Executar na data" ao edit |
 | 88630 | 111151 | SAL | Lib | Importar os registros N620, N630, N660 e N670 conforme o Lalur.  |
 | 88122 | 111150 | NE | Lib | Est� demonstrando uma informa��o incorreta no campo 'Ocorr�ncia', ao e |
 | 87717 | 111130 | NE | Lib | Em alguns casos n�o est�o sendo demonstrados todos os c�digos do regis |
@@ -3164,13 +3078,11 @@
 | 87645 | 111109 | NE | Lib | SC-Est�o sendo indevidamente exclu�das as informa��es de al�quotas da  |
 | 87671 | 111108 | NE | Lib | Est� sendo exclu�do indevidamente o valor do ICMS deduzido da base de  |
 | 87637 | 111106 | NE | Lib | Est� sendo exibida incorretamente a op��o "Desmarcar todos" no combobo |
-| 87831 | 111093 | NE | Lib | Não estão sendo executadas rotinas programadas de zeramento quando vin |
 | 87626 | 111103 | NE | Lib | N�o est�o sendo realizadas as valida��es corretas no campo de compet�n |
 | 87623 | 111102 | NE | Lib | N�o est� sendo realizado o redirecionamento correto do usu�rio ap�s re |
 | 87678 | 111099 | SAL | Lib | MG-Alterar o comportamento da al�quota quando for Simples Nacional par |
 | 87620 | 111097 | SAM | Lib | Alterar o endpoint de verifica��o de caixas existentes do BoxeSetupLeg |
 | 88018 | 111094 | SAL | Lib | MG-Ajustar a emiss�o do SPED Fiscal quando apropriado o cr�dito de ICM |
-| 87679 | 111076 | NE | Lib | Página à esquerda do transferbox de vínculo na estrutura do DRE está s |
 | 87879 | 111087 | SAM | Lib | Importar o fornecedor com regime de apura��o "ME-Simples Nacional" qua |
 | 87644 | 111081 | NE | Lib | N�o est� sendo considerado o valor da reten��o do imposto 25-CRF ao ge |
 | 88853 | 111078 | SAL | Lib | Ajustar a considera��o para compor o valor das adi��es e exclus�es dos |
@@ -3182,8 +3094,6 @@
 | 87617 | 111052 | SAL | Lib | Incluir e atualizar as Naturezas da Receita para o CST 06 conforme atu |
 | 88038 | 111049 | NE | Lib | RS-Est�o sendo geradas indevidamente notas sem infoma��o do imposto 42 |
 | 87590 | 111048 | NE | Lib | RS-N�o est� sendo calculado corretamente o FAF quando a empresa possui |
-| 87612 | 111046 | NE | Lib | Não está sendo realizado o redirecionamento correto do usuário após re |
-| 87610 | 111045 | NE | Lib | Não estão sendo realizadas as validações corretas no campo de competên |
 | 87880 | 111041 | NE | Lib | Est� permitindo que usu�rio realize a parametriza��o da empresa quando |
 | 87579 | 111038 | SAL | Lib | SP-Ajustar a emiss�o do SPED Fiscal quando utilizar o cr�dito de ICMS  |
 | 87574 | 111036 | NE | Lib | Em alguns casos, o arquivo SPED ECF n�o est� sendo gerado.  |
@@ -3231,7 +3141,6 @@
 | 87484 | 110782 | NE | Lib | Em alguns casos n�o est� baixando todas as notas dispon�veis quando o  |
 | 87471 | 110781 | NE | Pend | Est� demonstrando o "Saldo Anterior" incorreto no relat�rio "Altera��o |
 | 87470 | 110768 | NE | Lib | SP-Est� sendo gerado indevidamente a observa��o referente ao imposto 2 |
-| 87404 | 110761 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-08. |
 | 87533 | 110767 | NE | Lib | SC-Est� sendo gerada a informa��o incorreta do campo 03-DESCRI_COMPL_A |
 | 87408 | 110765 | SAM | Lib | Criar casos de testes para a automa��o em Agosto/2024. |
 | 87441 | 110764 | NE | Lib | Est� ocorrendo erro na cess�o de direitos quando o cliente utiliza o B |
@@ -3241,7 +3150,6 @@
 | 87443 | 110748 | NE | Lib | Est� apresentando erro no objeto w_consultar_contas_adicao_lr na janel |
 | 87405 | 110746 | NE | Lib | RS-Em alguns casos est� sendo gerado o valor incorreto referente ao cr |
 | 87400 | 110741 | NE | Lib | A tela "Contas Referenciais Vinculadas as Contas Cont�beis" do Utilit� |
-| 87376 | 110730 | NE | Lib | Não está enviando a data final da penúltima vigência ao criar uma nova |
 | 87375 | 110726 | NE | Lib | Est� ocorrendo o erro de banco de dados ao editar um lan�amento na jan |
 | 87431 | 110725 | SAM | Lib | Criar a coluna 'Origem' na Listagem de notas. |
 | 87397 | 110724 | NE | Lib | N�o est� sendo apresentada a mensagem 'Quando o resultado de algum tri |
@@ -3262,8 +3170,6 @@
 | 87437 | 110644 | SAM | Lib | Realizar estudo no sistema para avaliar uma melhor forma de importa��o |
 | 87904 | 110638 | NE | Desc | Est�o sendo demonstradas indevidamente notas na compet�ncia 12/XXXX no |
 | 87381 | 110637 | NE | Lib | N�o est� sendo habilitada a guia "SPED\PIS/COFINS\Demais regimes\Sa�da |
-| 87318 | 110618 | NE | Lib | Não está gerando os relatórios quando o tipo do lançamento vindo da Co |
-| 87359 | 110610 | NE | Lib | Não está gerando os relatórios quando a empresa possui lançamentos com |
 | 87313 | 110619 | NE | Lib | Em alguns casos n�o est�o sendo demonstrados os impostos para baixa na |
 | 87374 | 110615 | NE | Lib | Est� importando o valor incorreto do campo "Remunera��o" do registro Y |
 | 87310 | 110613 | SAM | Lib | Ajustar os pontos de dependencia do BOX-e com o DA ap�s desativa��o do |
@@ -3275,7 +3181,6 @@
 | 88761 | 110580 | SAM | Pend | Criar mensagens mais intuitivas na integra��o cont�bil referente a tra |
 | 87394 | 110578 | NE | Desc | Est� apresentando erro de banco de dados ao efetuar a baixa do Tributo |
 | 87248 | 110574 | SAM | Lib | Ajuste da descri��o da guia e op��o dentro dos parametros da contabili |
-| 87255 | 110560 | NE | Desc | Não está sendo possível fazer uma pesquisa em uma combobox quando text |
 | 87315 | 110570 | NE | Lib | Est� importando incorretamente os valores das adi��es do M350 do infor |
 | 87278 | 110569 | NE | Lib | N�o est� permitindo consultar e efetuar o pagamento restante do impost |
 | 87314 | 110562 | NE | Desc | Est� ocorrendo a mensagem de erro "E-mail Box-e invalido, verifique e- |
@@ -3290,9 +3195,6 @@
 | 87244 | 110533 | NE | Lib | N�o est� enviando a data final da pen�ltima vig�ncia ao criar uma nova |
 | 87279 | 110527 | SAL | Lib | MG-Alterar o sistema emissor de Notas Fiscais de Servi�o Eletr�nicas p |
 | 87246 | 110523 | NE | Lib | Est� importando incorretamente os registros P200/P300 do informativo S |
-| 87323 | 110514 | NE | Lib | Não está notificando a contabilização dos lançamentos vindos da Conta  |
-| 87325 | 110508 | NE | Lib | Não está apresentando as validações de erros nos campos débito/crédito |
-| 87208 | 110499 | NE | Lib | Não está sendo possível emitir os relatórios da contabilidade. |
 | 87238 | 110510 | NE | Lib | Em alguns casos est� ocorrendo erro de sistema ao importar notas atrav |
 | 87199 | 110469 | NE | Desc | AL-N�o est� somando o valor de FCP ST ao valor da SUBTRI quando seleci |
 | 87176 | 110468 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
@@ -3308,10 +3210,6 @@
 | 87195 | 110419 | NE | Lib | Em alguns casos est� ocorrendo encerramento de sistema ao importar CT- |
 | 87144 | 110411 | NE | Lib | Est� apresentando o saldo invertido na coluna "D/C" da tela "Lan�ament |
 | 87197 | 110408 | NE | Lib | Est� ocorrendo erro de sistema indevidamente ao realizar relacionament |
-| 87186 | 110394 | NE | Lib | Está aparecendo duplicado o item "Condomínio" na combobox "Tipo de log |
-| 87149 | 110393 | NE | Desc | Não está enquadrando corretamente o loader na tela de processamento ao |
-| 87150 | 110385 | SAM | Lib | Permitir manter os cadastros de Responsáveis Legais, Sócios e Contador |
-| 87146 | 110384 | SAM | Lib | Possibilitar o cadastro de contadores PJ e selecionar um contador PJ d |
 | 87098 | 110401 | NE | Desc | N�o est� enquadrando corretamente o loader na tela de processamento ao |
 | 87093 | 110400 | NE | Lib | Est� sendo demonstrado duplicada a op��o "Condom�nio" na combobox "Tip |
 | 87373 | 110398 | SAL | Lib | RS-Ajustar a gera��o do registro E210 quando h� valor de Ampara-ICMS S |
@@ -3342,7 +3240,6 @@
 | 87005 | 110281 | SAL | Lib | NFS-e Nacional - Remover do arquivo XML a tag 'cTribMun' para emiss�o  |
 | 87147 | 110277 | NE | Lib | PR-Est�o sendo geradas as informa��es incorretas nos campos 04-DT_VCTO |
 | 87378 | 110271 | NE | Lib | RN-Est� ocorrendo erro de banco de dados ao informar uma conta cont�bi |
-| 87056 | 110257 | SAM | Pend | Aumentar os anos apresentados no filtro da lista de lançamentos contáb |
 | 86998 | 110267 | NE | Lib | Em alguns casos est� ocorrendo erro de sistema ao realizar importa��o  |
 | 87108 | 110261 | NE | Lib | Est� sendo indevidamente exclu�da a informa��o da guia "Dados adiciona |
 | 89646 | 110255 | NE | Desc | Empresas n�o est�o sendo listadas para criar chave API ou habilitar Bo |
@@ -3353,7 +3250,6 @@
 | 87044 | 110240 | NE | Lib | Em alguns casos o sistema est� fechando ao importar os registros M300  |
 | 87043 | 110237 | NE | Lib | Est� ocorrendo erro de banco de dados na gera��o do SPED Cont�bil quan |
 | 87997 | 110235 | SAM | Pend | Criar valida��es para n�o permitir a altera��o ou exclus�o de cadastro |
-| 86956 | 110222 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-07. |
 | 86983 | 110232 | SAM | Lib | Possibilitar o cadastro de contadores PJ e selecionar um contador PJ d |
 | 86982 | 110230 | SAM | Desc | Permitir manter os cadastros de Respons�veis Legais, S�cios e Contador |
 | 92136 | 110227 | SAM | Lib | Alterar a importa��o de notas para separar a op��o "Deduzir o valor do |
@@ -3372,7 +3268,6 @@
 | 86997 | 110146 | NE | Lib | Esta sendo calculado ICMS monof�sico incorretamente para alguns produt |
 | 88753 | 110142 | SAM | Lib | Ajustar a importa��o para considerar at� tr�s casas decimais na al�quo |
 | 87571 | 110125 | SAL | Lib | RS-Realizar o levantamento de estoque de mercadorias exclu�das do regi |
-| 87331 | 110114 | SAM | Pend | Ajustar os processos de abandono nas telas de processamento. |
 | 87215 | 110112 | NE | Lib | N�o est� permitindo editar ou excluir c�digo de recolhimento do impost |
 | 87646 | 110102 | NE | Lib | Est� sendo gerado indevidamente valor para o c�digo de recolhimento in |
 | 86873 | 110101 | NE | Lib | N�o est�o sendo gerados corretamente os registro I550 e I555 no inform |
@@ -3381,7 +3276,6 @@
 | 86893 | 110096 | SAM | Lib | Ajustar para que n�o seja solicitado o certificado digital ao gerar o  |
 | 86869 | 110076 | NE | Lib | BA-Est� calculando incorretamente o valor do imposto 27-ICMSA quando c |
 | 86872 | 110071 | SAL | Lib | Alterar os munic�pios eleg�veis a altera��o da data de vencimento dos  |
-| 86856 | 110047 | SAIL | Lib | Realizar a integração contábil do imposto SIMEI. |
 | 86850 | 110068 | SAL | Desc | Atualizar as datas de vencimentos do imposto 173-Tributos Federais nas |
 | 86939 | 110064 | NE | Desc | N�o est� excluindo o lan�amento cont�bil de nota cancelada quando sele |
 | 86844 | 110055 | SAM | Lib | Criar casos de testes para a automa��o em Julho/2024. |
@@ -3411,7 +3305,6 @@
 | 86901 | 109984 | SAL | Lib | MG-Alterar a descri��o dos c�digos de ajuste "MG020007", "MG71000506"  |
 | 86853 | 109982 | NE | Lib | Est� apresentando erro de banco de dados ao gravar a importa��o da alt |
 | 86815 | 109976 | SAM | Lib | RS- Demonstrar o vencimento da guia DAS, conforme prorroga��o da Porta |
-| 86767 | 109964 | SAM | Lib | Permitir receber inscrições de sócios, contadores e responsáveis legai |
 | 86813 | 109972 | NE | Lib | Em alguns casos n�o est� deduzindo o ICMS da base de c�lculo de PIS/CO |
 | 86772 | 109966 | SAM | Lib | Realizar um teste de envio de notas para o BOX-e de notas das ferramen |
 | 86963 | 109965 | SAM | Lib | Permitir importar todas as guias do imposto 9 - SUBITRI por periodicid |
@@ -3425,7 +3318,6 @@
 | 86739 | 109845 | SAM | Lib | Garantir que os ajustes em empresas do Lucro Presumido com Regime de C |
 | 86768 | 109843 | SAL | Lib | RS-Alterar o vencimento da guia DAS e das parcelas referente ao Parcel |
 | 86979 | 109842 | SAL | Lib | CE-Alterar o c�lculo do imposto 8-DIFALI conforme Nota de execu��o N�  |
-| 86663 | 109831 | NE | Lib | Não subiram os serviços JournalConnector e EntryIntegration na liberaç |
 | 86695 | 109839 | NE | Lib | Em alguns casos n�o est� importando os impostos "PIS-Ret" e "COFINS-Re |
 | 86751 | 109836 | NE | Pend | N�o est� demonstrando a quantidade de empresas n�o apuradas no dashboa |
 | 86799 | 109833 | SAL | Lib | Alterar o cadastro do imposto 44-SIMPLES NACIONAL para que seja poss�v |
@@ -3452,16 +3344,9 @@
 | 86990 | 109720 | SAM | Lib | Implementar no sistema logs no servidor do Busca NF-e para quando a no |
 | 86700 | 109719 | SAM | Lib | GO - Demonstrar o imposto 9-SUBITRI considerando o valor da "Substitui |
 | 86685 | 109717 | NE | Lib | Est� gerando indevidamente o centro de custo no campo 02 do registro I |
-| 86721 | 109700 | NE | Lib | Não está sendo possível importar os dados de distritos e povoados quan |
-| 86720 | 109699 | NE | Lib | Está sendo apresentando uma mensagem de erro de quantidade máxima de c |
-| 86715 | 109698 | SAM | Lib | Alterar automaticamente a vigência ao realizar uma retificação na data |
-| 86608 | 109697 | NE | Lib | Não está sendo possível fazer uma pesquisa em uma combobox e multisele |
 | 86969 | 109711 | SAL | Lib | SC-Alterar o c�digo gerado no campo 02 do registro 1926 de "090" para  |
-| 86607 | 109691 | NE | Lib | Está sendo preenchido incorretamente o campo endereço quando utilizado |
 | 86649 | 109708 | SAM | Lib | Criar a op��o de informar no cadastro da rotina autom�tica, o contador |
 | 86565 | 109702 | SAM | Lib | Realizar teste com o recebimento do CF-e vers�o 0.09 atrav�s da API. |
-| 86605 | 109689 | NE | Lib | Em alguns casos não está sendo replicado o ID sequencial das vigências |
-| 87569 | 109683 | SAM | Pend | Limitar data para que movimentos, consultas e relatórios só possam ser |
 | 86699 | 109693 | SAM | Lib | Ajustar a integra��o com a Escrita fiscal para que na tela da nota de  |
 | 86552 | 109687 | NE | Lib | N�o est� sendo exibida a inconsist�ncia correta na integra��o cont�bil |
 | 87016 | 109671 | SAM | Lib | Efetuar a importa��o de CF-e Arquivo XML conforme CFOP informado no ca |
@@ -3491,7 +3376,6 @@
 | 86409 | 109493 | NE | Lib | N�o est� sendo poss�vel fazer uma pesquisa em uma combobox quando text |
 | 86434 | 109491 | NE | Lib | Est� ocorrendo o erro na tabela:"HRRENEGOCIACAO_FATURAMENTO" ao realiz |
 | 86447 | 109490 | NE | Lib | Est� sendo gerado indevidamente dados lan�ados na empresa Filial no Li |
-| 86429 | 109477 | NE | Desc | Não está sendo exibido os campos da opção Executar na data ao editar a |
 | 86417 | 109487 | NE | Lib | N�o est� considerando o saldo anterior no relat�rio Livro Caixa Digita |
 | 86397 | 109485 | NE | Lib | N�o est� sendo gerado o PDF da DAS mensal e extrato da DAS, quando na  |
 | 86423 | 109484 | NE | Lib | Est� apresentando erro de sistema ao realizar importa��o de extrato ba |
@@ -3508,7 +3392,6 @@
 | 86380 | 109429 | SAL | Lib | RJ-Atualizar os c�digos da tabela 5.2 Valores Declarat�rios do ICMS co |
 | 86459 | 109414 | NE | Lib | SC-Est� excluindo idevidamente o valor informado na coluna "Valor Ress |
 | 86370 | 109411 | NE | Lib | ES-Est� sendo enviada incorretamente a consulta do o lote para um forn |
-| 86445 | 109388 | NE | Lib | Ao clicar no card 'Configuração de empresa' na tela de conclusão de ed |
 | 86356 | 109407 | SAM | Lib | Efetuar testes explorat�rios nas funcionalidades do sistema Escrita qu |
 | 86687 | 109401 | NE | Lib | N�o est� trazendo os valores corretamente na fun��o 'QTNFIMPSAIDA()' d |
 | 86439 | 109396 | NE | Lib | Est� ocorrendo o erro: "w_pagamento_imposto_hr_pagar" ao efetuar um pa |
@@ -3540,7 +3423,6 @@
 | 86242 | 109243 | NE | Lib | RJ-Est� sendo calculado restitui��o e complemento na apura��o do ICMS  |
 | 86279 | 109240 | NE | Lib | N�o est�o dispon�veis para baixar no cont�bil as notas armazenadas no  |
 | 86240 | 109239 | NE | Lib | Em alguns casos est� encerrando o sistema ao gravar e fechar a tela de |
-| 86201 | 109214 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-06. |
 | 86241 | 109223 | NE | Lib | Em alguns casos est� sendo importado clientes com conta patrimonial in |
 | 86249 | 109220 | SAM | Lib | Ajustar o c�digo de conclus�o de atividade no Gestta Processos ao publ |
 | 86205 | 109206 | NE | Lib | N�o est�o sendo exibidas informa��es na listagem da coluna "Identifica |
@@ -3556,20 +3438,11 @@
 | 86197 | 109162 | SAL | Lib | Alterar a descri��o de CFOPs conforme Ajuste SINIEF 03/2024. |
 | 86465 | 109159 | SAM | Lib | ES-Importar o imposto 31-ST/AT quando configurado "Por produto" atrav� |
 | 88313 | 109157 | SAL | Lib | RJ-Ajustar o preenchimento do informativo DECLAN-IPM conforme manual d |
-| 86146 | 109150 | NE | Lib | Não está permitindo utilizar o atalho 'Vincular empresas' na lista de  |
-| 86144 | 109149 | NE | Lib | Está apresentando incorretamente o alert-warning a modal de classifica |
-| 86142 | 109147 | SAM | Lib | Ajustar o comportamento de preenchimento dos componentes "Monthpicker" |
-| 86133 | 109139 | NE | Lib | Está sendo exibido incorretamente o ícone de erro na mensagem de ativa |
 | 86145 | 109146 | NE | Lib | Est� ocorrendo erro de sistema no momento da importa��o ao clicar em " |
-| 86130 | 109136 | NE | Lib | Ao deixarmos o sistema em inglês e cadastramos um representante legal  |
 | 86422 | 109137 | NE | Lib | N�o est� listando as empresas ao clicar no indicativo das empresas apu |
-| 86129 | 109128 | SAM | Lib | Ajustar o comportamento do componente File Selector. |
-| 86124 | 109126 | SAM | Lib | Permitir o cadastro e ativação de empresas que se enquadram em MEI. |
-| 86123 | 109124 | SAM | Desc | Ajustar a regra de recebimento do campo data de abertura quando é feit |
 | 86236 | 109120 | SAL | Lib | MG-Alterar o sistema emissor para a emiss�o de Notas Fiscais de Servi� |
 | 86137 | 109118 | NE | Lib | Est� sendo feita de forma incorreta a importa��o dos s�cios na janela  |
 | 86428 | 109117 | SAIL | Lib | GO-Implementar o c�lculo do ICMS sobre estoques de mercadoria relativo |
-| 86110 | 109108 | NE | Lib | Sistema está deslogando quando o usuário tem acesso as telas que envol |
 | 87025 | 109111 | SAL | Lib | RS-Alterar o comportamento do c�lculo do cr�dito presumido aos estabel |
 | 86108 | 109110 | NE | Lib | Em alguns casos o sistema est� fechando ao gerar o SPED ECF. |
 | 86126 | 109107 | NE | Lib | Est� sendo importado incorretamente o saldo das contas na janela "Impo |
@@ -3596,8 +3469,6 @@
 | 85999 | 108975 | NE | Lib | Est� ocorrendo erro de banco de dados ao calcular os Tributos Federais |
 | 99962 | 108973 | SAIL | Lib | RO-Implementar a transfer�ncia de cr�ditos gerando o c�digo de ajuste  |
 | 86073 | 108970 | NE | Lib | Est� sendo gerado incorretamente o Saldo anterior inicial referencial  |
-| 86176 | 108945 | NE | Desc | Está sendo apresentada uma modal abaixo da tela de processamento caso  |
-| 86244 | 108944 | NE | Lib | Não está sendo demonstrado desabilitado o campo 'Estrutura da classifi |
 | 85994 | 108958 | NE | Lib | Est� sendo demonstrado indevidamente a mensagem "Todos os boletos sele |
 | 86151 | 108953 | NE | Lib | PR-N�o est� sendo gerado o c�digo de verifica��o da NFS-e quando envia |
 | 86421 | 108948 | SAM | Lib | Ajustar a importa��o da Distribui��o de Lucros do m�dulo Contabilidade |
@@ -3632,7 +3503,6 @@
 | 87728 | 108855 | SAL | Lib | SP-Alterar o sistema para gerar valor de IPI lan�ado em "Outras" na li |
 | 86299 | 108853 | SAL | Lib | Alterar o sistema para que seja poss�vel a emiss�o de guia DAS para cl |
 | 86420 | 108851 | NE | Lib | N�o est� considerando o cadastro de feriados para o vencimento do impo |
-| 85925 | 108838 | SAM | Lib | Testar performance da importação do plano de contas pelo arquivo SPED  |
 | 85919 | 108830 | SAM | Lib | Ajustar o comportamento do componente File Selector na importa��o de n |
 | 88004 | 108823 | SAL | Lib | MA-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 87688 | 108820 | SAL | Lib | Deduzir o valor do ICMS da compra no custo de aquisi��o na devolu��o d |
@@ -3647,7 +3517,6 @@
 | 85863 | 108769 | SAM | Lib | Criar um novo modelo de relat�rio de reten��es para o imposto 16-IRRF, |
 | 85858 | 108766 | NE | Lib | Em alguns casos est� ocorrendo encerramento do sistema/estouro de mem� |
 | 85848 | 108765 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
-| 85971 | 108751 | NE | Desc | Em alguns casos está apresentando indevidamente a tela em branco ao re |
 | 85876 | 108760 | NE | Lib | SC-N�o est� sendo gerada a linha "Compensa��o do ICMS devolu��es de co |
 | 86265 | 108749 | SAL | Lib | RS-Incluir no sistema os dispositivos de cr�dito presumido de c�digo " |
 | 85835 | 108742 | NE | Lib |  	  Est�o sendo emitidas de forma incorreta as mensagem de valida��o n |
@@ -3680,11 +3549,8 @@
 | 96695 | 108599 | SAM | Pend | Realizar estudo para ajustar a gera��o de macros no Excel gerado pelo  |
 | 89163 | 108598 | SAL | Lib | DF-Alterar o comportamento do sistema para calcular o valor do Frete n |
 | 85781 | 108596 | NE | Lib | N�o est� sendo feito o c�lculo corretamente do imposto 103-INSS, quand |
-| 86366 | 108593 | NE | Lib | Está permitindo realizar alterações nas parametrizações mesmo com as p |
-| 85753 | 108584 | SAM | Lib | Parar de receber lançamentos da Conta Azul quando a empresa estiver se |
 | 85784 | 108595 | NE | Lib | Est� sendo exclu�do indevidamente o centro de custo referente a contab |
 | 85850 | 108592 | NE | Lib | Est� apresentando indevidamente a mensagem "O total de CRF da guia eve |
-| 85916 | 108571 | NE | Lib | Está ocorrendo corte no botão "Salvar e Concluir" após preencher infor |
 | 85758 | 108569 | NE | Lib | N�o est� sendo gerado o relat�rio de confer�ncia dos eventos R-4010 e  |
 | 85760 | 108556 | NE | Lib | Em alguns casos est� fechando indevidamente o sistema ao gravar as alt |
 | 85907 | 108555 | NE | Lib | RS/PR/GO/MG-Est� sendo gerado incorretamente o valor do imposto 8-DIFA |
@@ -3722,8 +3588,6 @@
 | 85656 | 108314 | SAM | Lib | Criar campo para informar o contador na emiss�o da guia DAS pela API I |
 | 85636 | 108313 | NE | Desc | Est� sendo demonstrada a mensagem "Carregando portal e-Cac" ao realiza |
 | 85780 | 108311 | NE | Lib | N�o est� sendo validado as exist�ncias das chaves de integra��o com a  |
-| 85702 | 108298 | NE | Lib | Está sendo apresentada indevidamente a mensagem "Existem inconsistênci |
-| 86172 | 108290 | NE | Lib | Estão ocorrendo vínculos incorretos na 'Natureza das Contas' da Parame |
 | 85765 | 108296 | SAM | Lib | Alterar o sistema para importar o valor da base de c�lculo do imposto  |
 | 85689 | 108279 | NE | Lib | Em alguns casos o sistema est� sendo finalizado ao acessar o bot�o "Ou |
 | 85948 | 108276 | SAL | Desc | N�o est�o sendo parcelados os impostos municipais do Simples Nacional, |
@@ -3737,18 +3601,15 @@
 | 85655 | 108247 | SAM | Lib | Preparar o sistema para publicar e salvar a guia/extrato DAS pela API  |
 | 85998 | 108243 | NE | Lib | N�o est� calculando corretamente o valor da deprecia��o fiscal quando  |
 | 85574 | 108242 | NE | Desc | SP - Est� gerando incorretamente o c�lculo de juros para o imposto "SU |
-| 85552 | 108226 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-05. |
 | 85555 | 108231 | SAM | Lib | Retornar a emiss�o de boleto com QRCode no Digital Banking. |
 | 85565 | 108225 | NE | Lib | Est� ocorrendo erro de lote ao efetuar o envio dos eventos do reinf, q |
 | 86967 | 108208 | SAM | Pend | Criar imposto AMPARAST e permitir importar todas as guias deste impost |
 | 86001 | 108207 | SAL | Lib | Ajustar a gera��o da tag 'balancete' no informativo DIOPS. |
 | 86045 | 108206 | NE | Lib | Est� sendo duplicado o desconto na emiss�o de boleto ap�s a altera��o  |
-| 85739 | 108200 | NE | Lib | Não está ocorrendo atualização imediata ao alterar o toggle de integra |
 | 85643 | 108201 | NE | Pend | N�o est� considerando os registros C321/C370/C510/D110 quando realizad |
 | 85539 | 108197 | NE | Lib | Em alguns casos est� apresentando erro ao emitir os boletos do Digital |
 | 85559 | 108193 | NE | Lib | RS-Est� sendo validado incorretamente o campo "C�digo de tributa��o mu |
 | 85837 | 108186 | SAM | Pend | Permitir importar todos os valores de ICMS, quando possuir adicional d |
-| 85530 | 108163 | NE | Lib | Não está sendo traduzida corretamente para o idioma PT-BR a variável " |
 | 88286 | 108172 | SAL | Lib | BA-Calcular os impostos 31-ST/AT e 112-FUCEP-AT para esp�cies de trans |
 | 87810 | 108165 | SAL | Lib | SC-Alterar a rotina de gera��o do arquivo DCIP para considerar as info |
 | 85657 | 108150 | NE | Lib | N�o est� importando o c�digo CEST nas notas quando selecionado a op��o |
@@ -3770,26 +3631,16 @@
 | 85545 | 108107 | NE | Lib | N�o est� ocorrendo valida��es de status de contas cont�beis quando oco |
 | 86113 | 108104 | SAL | Lib | SP-Gerar o subitem 799 no registro CR=20 da GIA para valores de cr�dit |
 | 86750 | 108102 | SAL | Lib | SC-Gerar o campo 04-COD_ITEM do registro C197 para os lan�amentos de a |
-| 85560 | 108075 | NE | Lib | Está permitindo definir plano de contas, mesmo sem permissão para incl |
-| 85444 | 108063 | NE | Lib | Estão sendo preenchidos incorretamente os campos tipo de logradouro e  |
-| 85442 | 108060 | NE | Lib | Não está sendo realizada as validações dos campos ao acessar a edição  |
 | 86449 | 108085 | SAIL | Lib | Preparar o sistema para gerar a guia DARF DCTFWeb pela API Integra Con |
 | 85927 | 108083 | NE | Lib | N�o est� sendo poss�vel excluir a impress�o de boleto gerador a partir |
-| 85439 | 108055 | NE | Lib | Quando selecionamos a opção "Selecionar todos" em uma combobox o campo |
-| 85436 | 108053 | NE | Lib | Não está sendo exibida novamente a modal de confirmação nas edições da |
-| 85434 | 108051 | NE | Lib | Não está sendo salva a edição de empresa, quando efetuada uma retifica |
 | 85445 | 108046 | SAL | Lib | MS-Alterar o sistema para considerar o ICMS Semanal de Mar�o conforme  |
 | 86913 | 108045 | SAL | Lib | RS-Alterar o sistema para ser poss�vel informar que n�o deve ser calcu |
-| 85438 | 108006 | NE | Lib | Não estão sendo emitidos o Balanço e a DRE, quando o filtro da competê |
 | 85427 | 108026 | SAM | Pend | Alterar para o navegador Chromium a op��o "Efetuar op��o do regime de  |
 | 85426 | 108025 | SAM | Pend | Alterar para o navegador Chromium a op��o "D�bitos" da tela de emiss�o |
-| 85410 | 107985 | SAM | Lib | Permitir o usuário definir o código das empresas no momento do cadastr |
-| 85564 | 107976 | NE | Lib | Não está exibindo o código do histórico ao cadastrar ou editar um lanç |
 | 86221 | 107981 | SAL | Lib | Ajustar o sistema em empresas do Lucro Presumido com Regime de Caixa p |
 | 85549 | 107975 | NE | Lib | ES-Est� sendo importado o saldo final incorreto no campo "Estoque fina |
 | 87185 | 107964 | SAM | Lib | Ajustar a contabiliza��o dos Tributos Federais para que mantenha o lan |
 | 85401 | 107962 | NE | Lib | Est� apresentando o erro ao importar dados do par�metro da empresa de  |
-| 86352 | 107945 | NE | Desc | Está apresentando indevidamente contas contábeis nos campos 'Cliente'  |
 | 85488 | 107946 | SAM | Lib | Ajustar a importa��o padr�o para que o sistema importe as notas com o  |
 | 85384 | 107944 | SAL | Lib | AP-Alterar o sistema emissor para a emiss�o de Notas Fiscais de Servi� |
 | 85373 | 107937 | NE | Lib | N�o est� aparecendo empresas com o tipo CPF na tela do Digital Banking |
@@ -3814,11 +3665,9 @@
 | 86594 | 107877 | SAL | Lib | Alterar o sistema para calcular Adicional de Reten��o cfe. Lei 9.711/9 |
 | 85336 | 107876 | SAL | Lib | SP-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 85394 | 107873 | SAL | Lib | Ajustar os campos 20.01 do registro N620 e 12.01 do registro N660 do S |
-| 86543 | 107867 | NE | Lib | Não está sendo exibida a inconsistência correta na integração contábil |
 | 85688 | 107863 | NE | Lib | Est� permitindo efetuar inclus�o, exclus�o e altera��o da guia "Recolh |
 | 85934 | 107860 | SAL | Lib | SP-Efetuar o c�lculo do cr�dito do ICMS monof�sico para empresas do Si |
 | 85420 | 107857 | NE | Lib | RS-N�o est� calculando a restitui��o do ICMS ST quando a nota de entra |
-| 85376 | 107848 | NE | Lib | Não está sendo exibida a conta crédito no histórico do Livro Razão ao  |
 | 85306 | 107849 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 85829 | 107846 | SAL | Lib | SP-Permitir a utiliza��o do cr�dito de ICMS em parcela �nica conforme  |
 | 86689 | 107843 | NE | Lib | Est� apresentando o valor incorreto da "Deprecia��o Acumulada" no rela |
@@ -3831,8 +3680,6 @@
 | 88985 | 107801 | SAM | Lib | Ajustar a importa��o para empresas que possuem o mesmo CNPJ quando con |
 | 86372 | 107783 | NE | Lib | Est� sendo deduzido indevidamente o valor da devolu��o de compras das  |
 | 86691 | 107761 | SAIL | Lib | AL-Calcular o FECOEP na apura��o do imposto 1-ICMS.   |
-| 85340 | 107753 | SAM | Lib | Demonstrar o menu de Novidades. |
-| 85381 | 107740 | SAM | Lib | Incluir no arquivo do plano de contas enviado para Conta Azul o sistem |
 | 86528 | 107750 | NE | Desc | Est� sendo considerado incorretamente o valor dos juros para o campo V |
 | 85387 | 107749 | NE | Lib | Em alguns casos n�o est� sendo calculado o imposto "103-INSS receita b |
 | 85278 | 107748 | SAM | Lib | Demonstrar o novo imposto FUNCEP Incentivos conforme altera��es da Esc |
@@ -3899,10 +3746,8 @@
 | 84989 | 107357 | SAL | Lib | Importar o valor dos encargos "FGTS Rescis�rio", "FGTS Resc. Complemen |
 | 85460 | 107342 | SAM | Lib | Emitir uma mensagem quando o regime de apura��o do Simples Nacional na |
 | 84983 | 107336 | NE | Lib | N�o est�o sendo gerados os registros I050/I052 do informativo SPED Con |
-| 84962 | 107323 | NE | Lib | Não está sendo replicado o ID sequencial das vigências das empresas ca |
 | 84973 | 107320 | NE | Lib | N�o est� sendo replicado o ID sequencial das vig�ncias das empresas ca |
 | 85114 | 107311 | NE | Lib | MG-Est� ocorrendo erro de sistema ao gravar a janela "Tabela de Incent |
-| 84984 | 107278 | SAM | Lib | Copiar a estrutura do DRE ao aplicar perfil ou importar dados de outra |
 | 84957 | 107276 | SAL | Lib | Ajustar o comportamento de pagamentos via e-CAC por certificado digita |
 | 87528 | 107264 | SAL | Lib | GO-Ajustar o Demonstrativo Fomentar/Produzir/Microproduzir para aprese |
 | 90675 | 107262 | SAIL | Desc | RS-Implementar o c�lculo do Fundo de Reforma conforme Instru��o Normat |
@@ -3930,7 +3775,6 @@
 | 85654 | 107073 | SAL | Lib | RJ-Incluir c�digos de itens para IPM na tela de valores agregados do S |
 | 86086 | 107069 | SAM | Lib | MT-Realizar a importa��o dos valores das tags do ICMS monof�sico confo |
 | 84979 | 107066 | SAL | Lib | Deduzir o percentual de rateio dos cr�ditos das entradas quando marcad |
-| 84790 | 107043 | NE | Desc | O link da parametrização está encaminhando o usuário para o menu Iníci |
 | 84792 | 107059 | SAL | Lib | ES-Criar o campo 'valor cont�bil' na guia do Patrim�nio na tela de cad |
 | 86559 | 107057 | SAM | Lib | Implementar uma rotina no sistema onde seja poss�vel criar uma vig�nci |
 | 84772 | 107056 | SAM | Lib | Alterar o sistema para que seja poss�vel desbloquear a apura��o e rege |
@@ -3940,7 +3784,6 @@
 | 84721 | 107046 | NE | Lib | Corrigir registros duplicados na integra��o TRBanking x Dom�nio |
 | 84774 | 107045 | NE | Lib | Em alguns casos n�o est� sendo apresentada a mensagem de aviso do limi |
 | 84736 | 107042 | SAM | Lib | Implementar uma verifica��o referente ao n�mero de NSU que est� sendo  |
-| 84706 | 107028 | SAM | Lib | Criar a coluna 'Em uso por' na lista de empresas. |
 | 84765 | 107039 | SAM | Lib | Acrescentar ao utilit�rio agrupar SPED Fiscal a gera��o do registro 02 |
 | 84728 | 107038 | NE | Lib | Est� importando o n�mero da nota incorretamente na mensagem de advert� |
 | 98417 | 107036 | SAM | Lib | PE-Realizar a importa��o dos valores das tags do ICMS monof�sico confo |
@@ -3976,19 +3819,15 @@
 | 84703 | 106824 | SAL | Lib | MT-Alterar o c�lculo da multa e juros de mora do imposto ICMS. |
 | 84591 | 106823 | NE | Lib | Est� sendo setado o foco no campo incorreto na guia "Contabilidade" da |
 | 84592 | 106820 | NE | Lib | N�o est� demonstrando em negrito a vari�vel quando copiada e colada de |
-| 84825 | 106795 | NE | Lib | A informação 'Empresas' está sendo apresentada cortada no gráfico 'Int |
 | 84587 | 106816 | SAM | Pend | Realizar um estudo para mitigar bloqueios na gera��o da PGDAS e Pagame |
 | 84575 | 106812 | NE | Desc | N�o est� habilitando o bot�o 'Emitir guia' e 'Pagar imposto' em 'Consu |
 | 85604 | 106800 | NE | Lib | N�o est� sendo realizada a publica��o da guia "DARF DCTF Web" no Onvio |
-| 84554 | 106777 | NE | Lib | Não está efetuando a copia da Central de Contabilização quando aplicad |
 | 84567 | 106791 | NE | Lib | Em alguns casos est� ocorrendo bloqueio nas rotinas de envio do EFD RE |
 | 84556 | 106780 | NE | Lib | N�o est� efetuando a copia da Central de Contabiliza��o quando aplicad |
 | 84624 | 106772 | NE | Lib | Est� demonstrando a advert�ncia "O grupo do ICMS ST Retido n�o est� ha |
 | 90825 | 106762 | SAM | Pend | Criar comportamento para determinar impostos que ser�o considerados co |
-| 84823 | 106742 | NE | Desc | Está sendo apresentada barra de rolagem sem necessidade na parametriza |
 | 84684 | 106756 | SAL | Lib | MG-Alterar o sistema emissor para a emiss�o de Notas Fiscais de Servi� |
 | 85570 | 106754 | NE | Desc | Em alguns casos algumas notas com origem do Busca NF-e n�o est�o sendo |
-| 84542 | 106732 | NE | Desc | Não estão sendo apresentados os campos da opção 'Executar na data' na  |
 | 84579 | 106734 | NE | Lib | PE-N�o est� sendo demonstrado habilitado o campo "C�digo da apura��o"  |
 | 84535 | 106727 | NE | Lib | Est� sendo importado indevidamente valor na coluna "Valor Comiss�o" da |
 | 84594 | 106725 | NE | Lib | Est� ficando travado no status 'Em andamento agora' ao tentar Gerar gu |
@@ -4013,7 +3852,6 @@
 | 85578 | 106605 | SAL | Lib | SC-Alterar modo de emiss�o das Notas Fiscais de Servi�o Eletr�nicas pa |
 | 84766 | 106598 | SAIL | Lib | Implementar o evento R-4010, e gerar na EFD-Reinf nos eventos R-4010 e |
 | 84477 | 106596 | NE | Lib | Est� demonstrando valor a pagar de IR na 'Central de pagamentos' incor |
-| 84456 | 106585 | NE | Lib | Edição de lançamento está sendo bloqueada por causa da configuração da |
 | 84468 | 106594 | NE | Lib | RS-Est� sendo gerado indevidamente os registros E112 e E113 no informa |
 | 84467 | 106581 | NE | Lib | Est� sendo gerado indevidamente duplicada a informa��o de rendimento t |
 | 84590 | 106578 | NE | Lib | RJ-N�o est� sendo considerado o valor do ICMS referente ao cr�dito de  |
@@ -4038,7 +3876,6 @@
 | 84676 | 106426 | NE | Lib | Est� gerando incorretamente o saldo inicial do registro J150 anual no  |
 | 84475 | 106411 | NE | Lib | Em alguns casos est� fechando o sistema ao gerar o relat�rio REINF em  |
 | 84430 | 106409 | NE | Lib | MG-Est� sendo apresentada indevidamente a mensagem "A data do deferime |
-| 84357 | 106385 | SAM | Lib | Liberar tempo da automação de teste versão 10.4A-03. |
 | 84402 | 106405 | SAL | Lib | ES-Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�nica |
 | 84439 | 106403 | SAL | Lib | SP-Alterar o sistema emissor para a emiss�o de Notas Fiscais de Servi� |
 | 84398 | 106381 | SAL | Lib | RS-Alterar emiss�o da nota fiscal de servi�o eletr�nica para o munic�p |
@@ -4053,21 +3890,17 @@
 | 84405 | 106297 | SAL | Lib | PR-Alterar o sistema emissor para a emiss�o de Notas Fiscais de Servi� |
 | 84328 | 106292 | NE | Lib | Em alguns casos est� ficando travado no status 'Em processamento' ao t |
 | 84382 | 106286 | NE | Lib | Est� ocorrendo o erro de sistema "uo_imp_fixo_sped_def_dados_c100" no  |
-| 84539 | 106244 | NE | Lib | Está demonstrando indevidamente o motivo 'Conta 123, XXXX inativa', ao |
 | 85225 | 106249 | NE | Desc | Est� demonstrando a coluna 'Nat. de rendimentos' na nota 'Fiscal de se |
 | 84327 | 106239 | NE | Lib | Est� apresentando incorretamente o c�digo da empresa na janela "Opera� |
 | 84361 | 106236 | NE | Lib | N�o est� sendo gerado o lan�amento cont�bil referente ao valor do lan� |
-| 84495 | 106212 | SAM | Lib | Acrescentar contas contábeis referente aos Tributos Federais no plano  |
 | 84325 | 106222 | NE | Lib | Est� apresentando a descri��o incorreta para o c�digo ECF 216.15 na ad |
 | 84518 | 106219 | NE | Lib | DF-N�o est� sendo impresso corretamente o valor do campo "Vl. Total do |
 | 84404 | 106218 | SAL | Lib | RS-Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�nica |
 | 84308 | 106214 | NE | Lib | Ocorre erro ao gravar lan�amento de nota com fornecedor que possui dep |
-| 84315 | 106195 | NE | Desc | Não estão sendo apresentadas as notificações de erro na comunicação en |
 | 85265 | 106209 | NE | Lib | N�o est� sendo gerada a contabiliza��o do pagamento dos tributos feder |
 | 84311 | 106205 | NE | Desc | Ap�s importar as NFC-e em lote no banco do cliente, no momento de fech |
 | 84285 | 106196 | NE | Lib | Em alguns casos est� apresentando o erro de banco de dados na tabela ' |
 | 84295 | 106194 | NE | Lib | Est� importando o valor do imposto 16-IRRF em linha separada na baixa  |
-| 84286 | 106179 | NE | Desc | O Onvio não está enviando para a conta azul a informação das naturezas |
 | 84384 | 106189 | NE | Lib | N�o est� demonstrando as notas que ultrapassam o prazo de 6 meses de c |
 | 84396 | 106186 | SAM | Lib | Importar as informa��es dos itens correlacionados registro 0221 do SPE |
 | 85789 | 106171 | SAL | Lib | Ajustar o sistema em empresas do simples nacional com o regime de apur |
@@ -4075,7 +3908,6 @@
 | 85163 | 106168 | SAL | Lib | DF-Permitir gravar os lan�amentos de servi�os com valor de ISS Retido  |
 | 85359 | 106167 | SAL | Lib | SP-Alterar o sistema para que ao calcular o cr�dito outorgado o sistem |
 | 84593 | 106163 | NE | Lib | N�o est� listando corretamente a conta cont�bil configurada na central |
-| 84305 | 106160 | SAM | Lib | Remover a obrigatoriedade do campo Nome Fantasia no cadastro e edição  |
 | 84473 | 106159 | NE | Lib | Em alguns casos est� sendo exclu�do o lan�amento cont�beis de reten��o |
 | 84368 | 106154 | NE | Desc | Est� gerando o relat�rio REINF em Excel com falta de informa��es dos e |
 | 84737 | 106143 | SAL | Lib | SC-Incluir os c�digos de ajustes na tabela do benef�cio dispon�vel no  |
@@ -4084,13 +3916,11 @@
 | 84673 | 106107 | SAM | Pend | Criar a op��o "Emitir valores negativos entre par�nteses", no relat�ri |
 | 84300 | 106106 | SAIL | Pend | Criar a pend�ncia para quando a NF-e a ser escriturada possuir uma dat |
 | 84252 | 106103 | NE | Lib | RN-Est� sendo gerando indevidamente o registro RN055900 do informativo |
-| 84223 | 106092 | NE | Lib | O filtro de classificação da conta no transferbox de vínculo do DRE, n |
 | 84445 | 106099 | NE | Lib | SP-N�o est� sendo gerado o valor do desconto no arquivo TXT na emiss�o |
 | 85935 | 106083 | SAM | Lib | SP-Realizar a importa��o dos valores das tags do ICMS monof�sico confo |
 | 84214 | 106070 | NE | Lib | N�o est� habilitando para informar a conta cont�bil no registro L210 d |
 | 84369 | 106068 | NE | Lib | Em alguns casos est� ocorrendo erro ao gravar lan�amentos cont�beis re |
 | 84216 | 106064 | NE | Desc | Est�o ocorrendo erros nas tabelas 'PRMOVITENS_QUOTA' e 'GEATENDIMENTO_ |
-| 84961 | 106045 | SAM | Lib | Copiar configuração de integração contábil dos tributos federais na ap |
 | 84215 | 106057 | NE | Lib | Est� gerando indevidamente os lan�amentos cont�beis do ajuste anual pa |
 | 84372 | 106055 | NE | Lib | ES-N�o est� somando o valor dos estornos na apura��o do Livro Fiscal d |
 | 84220 | 106054 | SAL | Lib | RJ-Alterar o sistema emissor de Notas Fiscais de Servi�o Eletr�nicas p |
@@ -4115,9 +3945,6 @@
 | 84194 | 105852 | NE | Lib | Em alguns casos est� apresentando indevidamente a mensagem: "J� existe |
 | 84158 | 105844 | NE | Lib | Est� integrando o valor da Provis�o Cr�dito ICMS - Curto prazo incorre |
 | 88919 | 105843 | SAIL | Pend | Implementar o c�lculo dos Anexos I e II do Simples Nacional no Onvio. |
-| 84145 | 105833 | NE | Lib | Quando importamos os dados do CNPJ 00.394.460/0058-87, os dados estão  |
-| 84144 | 105831 | NE | Lib | Não está sendo emitido os alertas dos módulos ao retificar/criar uma v |
-| 84741 | 105830 | SAM | Pend | Atualizar o design das permissões de usuário e criar permissões por em |
 | 84160 | 105829 | SAM | Lib | Demonstrar os novos encargos FGTS Rescis�rio conforme altera��es do m� |
 | 84112 | 105828 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 84224 | 105817 | NE | Lib | Em alguns casos est� ocorrendo erro ao realizar a apura��o do m�s 11/2 |
@@ -4132,18 +3959,14 @@
 | 85094 | 105763 | SAL | Lib | RS-Gerar os registros C185 e C181 para notas para fora do Estado, com  |
 | 84057 | 105753 | SAM | Lib | N�o est� habilitando a guia "Contabilidade" para a baixa dos pagamento |
 | 84059 | 105739 | NE | Lib | Est� sendo gerado o valor duplicado no registro R10 do informativo DCT |
-| 84036 | 105715 | NE | Lib | [DEMO] Não está sendo possível editar um perfil de empresas quando os  |
-| 84063 | 105713 | NE | Lib | Está permitindo excluir contas informadas nos parâmetros quando seleci |
 | 84038 | 105722 | NE | Lib | [DEMO] N�o est� sendo poss�vel editar um pefil de empresas quando os g |
 | 84080 | 105719 | NE | Lib | Est� sendo gerado incorretamente o relat�rio "Resumo" para os impostos |
 | 84060 | 105718 | NE | Lib | RN-N�o est� sendo permitido informar as contas cont�beis na configura� |
 | 84039 | 105717 | NE | Lib | Est� sendo gerado indevidamente o registro RTDS na DIRF para fornecedo |
 | 84055 | 105711 | SAL | Lib | Ajustar a gera��o do arquivo DIOPS para n�o gerar a tag "quadroRiscoMe |
 | 84048 | 105706 | NE | Lib | O sistema est� emitindo as informa��es de apenas um m�s quando emitido |
-| 84065 | 105687 | SAM | Desc | Ajustar a geração do código das empresas para considerar sempre o meno |
 | 84192 | 105690 | SAL | Lib | RS-Alterar emiss�o da nota fiscal de servi�o eletr�nica para o munic�p |
 | 84199 | 105684 | NE | Lib | Est� ocorrendo erro no contabil.exe para ao realizar a importa��o de C |
-| 84034 | 105669 | NE | Desc | Está sendo apresentada a mensagem errada na edição de contas ao tentar |
 | 84047 | 105674 | NE | Desc | Est�o sendo gerados indevidamente os lan�amentos cont�beis de baixa de |
 | 85454 | 105660 | SAM | Lib | MG-Alterar a base de c�lculo do imposto 31-ICMS ST/AT para n�o conside |
 | 85322 | 105654 | SAL | Lib | Criar op��o para n�o deduzir o valor de ped�gio no c�lculo do IRPJ e C |
@@ -4158,7 +3981,6 @@
 | 85414 | 105581 | SAL | Lib | MG-Alterar o sistema para n�o diminuir o desconto da base de c�lculo d |
 | 83932 | 105571 | SAM | Lib | Efetuar testes dos itens da Escrita nas Rotinas Programadas.  |
 | 101021 | 105563 | SAIL | Pend | RS-Implementar o c�lculo do Cr�dito presumido sobre produtos farmac�ut |
-| 83927 | 105559 | SAM | Lib | Efetuar testes dos itens da Contabilidade nas rotinas programadas. |
 | 84033 | 105557 | NE | Lib | SP-N�o est� sendo calculado o estorno do ICMS do CT-e substituto quand |
 | 83981 | 105533 | NE | Lib | N�o est� sendo demonstrada a descri��o do grupo do produto no relat�ri |
 | 84013 | 105532 | NE | Desc | N�o est� sendo gerado para o campo 10 do registro 1320 do SPED Fiscal  |
@@ -4166,7 +3988,6 @@
 | 83919 | 105495 | NE | Lib | Est� ocorrendo erro no filtro de datas e n�o est� apresentando placeho |
 | 83915 | 105494 | NE | Lib | Est� sendo aceito na API arquivos duplicados quando realizado o envio  |
 | 85153 | 105482 | SAL | Lib | Alterar o sistema para que quando seja gerado o registro E531 no campo |
-| 84068 | 105450 | SAM | Lib | Bloquear a exclusão de lançamentos integrados de outro módulos e siste |
 | 84018 | 105459 | SAM | Lib | Ajustar o sistema para importar o total da nota como Base de c�lculo d |
 | 83912 | 105449 | NE | Lib | N�o est� sendo respeitada a ordena��o da coluna "Compet�ncia" na janel |
 | 85089 | 105446 | SAL | Lib | Importar o n�mero do recibo dos eventos da s�rie R-4000 no ambiente da |
@@ -4174,10 +3995,6 @@
 | 83879 | 105439 | SAL | Lib | Alterar para usar apenas os IPs nacionais no acesso ao e-CAC na emiss� |
 | 83958 | 105434 | NE | Lib | N�o est� emitindo a mensagem para considerar as parcelas em aberto em  |
 | 83935 | 105433 | NE | Lib | N�o est� sendo geradas as vari�veis de hist�rico na guia "Contabilidad |
-| 83887 | 105420 | NE | Lib | Quando cadastramos uma empresa no Domínio Contábil com o campo "Site"  |
-| 83884 | 105418 | SAM | Lib | Desabilitar o botão "Ativar empresa" quando a carga ainda não estiver  |
-| 83886 | 105414 | NE | Lib | Quando cadastramos/editamos uma empresa, está sendo possível cadastrar |
-| 83870 | 105411 | NE | Lib | Em alguns casos não está sendo aplicado o perfil ou importado os dados |
 | 84210 | 105430 | SAM | Pend | Contabilizar os bens mantidos para venda por centro de custos. |
 | 83942 | 105429 | NE | Lib | N�o est� atualizando a aba 'Contabiliza��o' do lan�amento/edi��o manua |
 | 84698 | 105428 | NE | Lib | SP-Sistema n�o est� considerando as configura��es do acumulador para c |
@@ -4190,12 +4007,9 @@
 | 83962 | 105387 | SAM | Lib | Criar campos para importar o tipo de dedu��o do imposto 63-IRRF-APF at |
 | 83882 | 105369 | NE | Lib | SC-Est� sendo gerado indevidamente o valor referente ao imposto 09-SUB |
 | 83856 | 105368 | NE | Lib | Em alguns casos est� ocorrendo erro de banco de dados ao realizar a ap |
-| 83888 | 105367 | SAM | Pend | Permitir a Folha indicar o status do eSocial na listagem e cadastro de |
-| 83877 | 105354 | SAM | Desc | Ajustar o BRClient para contemplar a volta de backup do Domínio Contáb |
 | 83936 | 105343 | NE | Lib | MA-Est� sendo gerado incorretamente o valor do cr�dito presumido no de |
 | 83875 | 105328 | SAL | Lib | PR-Alterar XML para gerar a tag "lista_item_servico" separadamente par |
 | 83937 | 105319 | NE | Lib | N�o est� sendo gerado o valor do INSS retido no relat�rio "R-9001" do  |
-| 83829 | 105308 | SAM | Lib | Ajustar a ativação de empresas para obter os dados atualizados de Resp |
 | 83938 | 105307 | NE | Lib | GO-Est� sendo demonstrada indevidamente selecionada a op��o "Opera��o  |
 | 84947 | 105306 | SAL | Lib | AP-Alterar o c�digo de ajuste gerado no E111 para o c�lculo do 'Cr�dit |
 | 84824 | 105304 | SAL | Lib | RR-Gerar o ajuste RR029999 no registro E111 quando possuir lan�amento  |
@@ -4238,7 +4052,6 @@
 | 83747 | 105078 | SAL | Lib | Ajustar o pagamento de impostos via e-CAC para que seja preenchido o n |
 | 83739 | 105076 | NE | Lib | MS-N�o est� importando a linha do imposto 9-SUBTRI quando realizado im |
 | 83732 | 105074 | SAL | Lib | Ajustar o direcionamento na emiss�o do DAS por certificado via rotina  |
-| 83795 | 105041 | NE | Lib | A informação 'Empresa' para o cabeçalho dos relatórios contábeis está  |
 | 85165 | 105069 | SAL | Lib | Gerar no campo 17 do registro tipo R03 da DCTF Mensal a UF do CRC do C |
 | 84104 | 105058 | SAL | Lib | MT-Alterar o c�lculo do imposto 8-DIFALI conforme Decreto n� 649/2023. |
 | 85728 | 105056 | SAL | Lib | Alterar o sistema para ser poss�vel gerar o indicativo 7 no registro R |
@@ -4247,7 +4060,6 @@
 | 84131 | 105001 | SAIL | Lib | Gerar novos registros para informativo SPED ECF para o leiaute 10 conf |
 | 83717 | 104968 | NE | Lib | Est� importando incorretamente os valores do registro L210, quando a o |
 | 83770 | 104959 | SAM | Lib | Otimizar processamento da DW dws_pis_cofins_c_soma_debitos_dados na ap |
-| 85599 | 104940 | SAM | Lib | Parar de enviar contas do Onvio para Conta Azul quando a empresa estiv |
 | 83832 | 104957 | NE | Lib | N�o est� importando o imposto 3-ISS quando realizado importa��o de not |
 | 83823 | 104949 | SAL | Lib | Incluir um campo com o tipo de dedu��o utilizado no c�lculo do IRRF-AP |
 | 83731 | 104944 | NE | Lib | N�o est� excluindo a DARF do imposto 16-IRRF ap�s excluir apura��o do  |
@@ -4257,40 +4069,27 @@
 | 83774 | 104904 | NE | Lib | MS-Est� ocorrendo erro de sistema ao dar um zoom no relat�rio CFEM, qu |
 | 83702 | 104903 | NE | Lib | Em alguns casos o sistema est� fechando e n�o est� sendo gerado o arqu |
 | 84135 | 104902 | NE | Lib | Em alguns casos, ocorre travamento do sistema ao salvar em PDF o relat |
-| 83724 | 104868 | NE | Lib | Não está sendo possível realizar o zeramento pois existe um em process |
 | 83676 | 104865 | NE | Lib | Est� importando o valor incorreto na guia "SPED/PIS/COFINS" da nota ao |
 | 84032 | 104827 | NE | Desc | Est� considerando indevidamente nota de sa�das sem configura��o no c�l |
 | 83939 | 104826 | NE | Lib | PR-Est� sendo gerada incorretamente a apura��o dos impostos 1-ICMS e 2 |
 | 83777 | 104825 | NE | Lib | MG-Est� sendo gerado o valor incorreto no campo "09-VL_AJ_ITEM" do reg |
 | 83689 | 104818 | SAM | Lib | Ajustar o fluxo de ativa��o de empresas no Onvio |
-| 83651 | 104812 | SAM | Lib | Ajustar o fluxo de ativação de empresas no Onvio. |
 | 83738 | 104817 | SAM | Lib | Alterar o comportamento da busca de produtos da tela "Conv�nio/Protoco |
 | 83828 | 104814 | NE | Lib | Em alguns casos n�o est�o sendo importados os valores de lucro ou prej |
 | 83643 | 104811 | SAM | Lib | MT-Criar op��o na janela 'Arquivos/Dados de impostos por NCM/CEST' par |
 | 83691 | 104784 | NE | Lib | N�o est� substituindo as vari�veis no campo 'Descri��o' da aba 'Dados  |
-| 96082 | 104769 | SAM | Lib | Permitir a importação de extrato bancário no formato OFC e OFX. |
 | 83692 | 104771 | NE | Lib | BA-N�o est� sendo considerando o MVA corretamente para o imposto 31-ST |
 | 83711 | 104770 | SAL | Lib | RS-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 83609 | 104749 | NE | Lib | ES-N�o est�o sendo demonstradas as notas fiscal no relat�rio "Demonstr |
 | 83617 | 104745 | NE | Lib | Em alguns casos n�o est�o sendo demonstrandos os benefici�rios mo info |
 | 83618 | 104744 | NE | Lib | DF-Est� sendo apresentada indevidamente a mensagem "Esp�cie inv�lida"  |
-| 83629 | 104737 | NE | Desc | Não está sendo apresentada a linha inferior das combobox de contas do  |
-| 83622 | 104733 | NE | Lib | Destaque laranja sendo apresentado abaixo do menu 'Processos' enquanto |
-| 83628 | 104724 | NE | Lib | Não estão sendo substituídas as variáveis do histórico no lançamento,  |
-| 83619 | 104711 | NE | Lib | Não estão sendo apresentadas a matriz e as filiais no filtro da listag |
 | 83604 | 104702 | NE | Lib | CE/SP-Est� sendo apresentada indevidamente a mensagem "CST/CSOSN" ao i |
 | 85238 | 104665 | SAL | Lib | Alterar a apura��o das notas de devolu��o de Redu��o Z para empresas d |
-| 83620 | 104656 | NE | Lib | Erro na filtragem em algumas listagens e falta de placeholder nos filt |
 | 83603 | 104650 | NE | Lib | N�o est� sendo gerada a contabiliza��o da baixa de parcela das notas d |
-| 83621 | 104630 | NE | Lib | Está apresentando a mensagem errada no alerta quando emitido um DRE e  |
-| 83624 | 104627 | SAM | Desc | Ajustar o BRClient para contemplar o exporta/importa do Domínio Contáb |
 | 83645 | 104635 | NE | Lib | N�o est� demonstrando a natureza da receita para o imposto 25-CRF no l |
 | 83565 | 104600 | SAM | Desc | Ajustar o BRClient para contemplar o exporta/importa do Dom�nio Cont�b |
 | 83764 | 104599 | SAL | Lib | TO-Atualizar o sistema para gerar a DIF 2024 referente ao ano base 202 |
 | 83566 | 104596 | NE | Lib | Est� importando incorretamente valores do registro L210 do informativo |
-| 83548 | 104575 | SAM | Lib | Cadastrar contador e vincular na empresa ao receber as empresas do Dom |
-| 83580 | 104565 | SAM | Lib | Cadastrar responsável legal e vincular na empresa ao receber as empres |
-| 83529 | 104552 | SAM | Lib | Cadastrar sócios e quadro societário e vincular na empresa ao receber  |
 | 83568 | 104564 | NE | Lib | Est� apresentando indevidamente a mensagem 'N�o existem contas para re |
 | 84585 | 104562 | SAL | Lib | RJ-Alterar o c�lculo do Cr�dito presumido nas sa�das de produtos pl�st |
 | 84633 | 104557 | SAL | Lib | RS-Alterar o sistema para que seja gerado o registro D197 para empresa |
@@ -4318,12 +4117,10 @@
 | 84406 | 104428 | SAL | Lib | RS-Alterar o sistema emissor para a emiss�o de Notas Fiscais de Servi� |
 | 83451 | 104427 | SAM | Lib | Criar um bot�o Solu��es na tela de importa��o do Lucro antes da CSLL e |
 | 83560 | 104424 | SAM | Lib | Validar altera��es da DARF Reclamat�ria Trabalhista da Folha. |
-| 83441 | 104417 | NE | Desc | Não está apresentando o feedback no processo de integração quando não  |
 | 83546 | 104420 | NE | Desc | N�o est� calculando o imposto 25-CRF quando importado via Leiaute Dom� |
 | 83409 | 104419 | NE | Lib | Est� apresentando o valor incorreto no demonstrativo DFC indireto para |
 | 83517 | 104406 | SAL | Lib | SP-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 83510 | 104405 | SAL | Lib | SC-Alterar o comportamento da al�quota quando for Simples Nacional par |
-| 83389 | 104385 | SAM | Lib | TECH - Ajustar a performance da consulta dos lançamentos do dashboard |
 | 84391 | 104398 | SAM | Lib | SC-Importar o c�digo de benef�cios fiscais na guia Estoque para produt |
 | 83388 | 104383 | SAL | Lib | Inserir o preenchimento do captcha na emiss�o da guia DAS via certific |
 | 83429 | 104379 | SAM | Lib | Ajustar a ativa��o de empresas para obter os dados atualizados de Resp |
@@ -4339,7 +4136,6 @@
 | 83419 | 104333 | SAM | Lib | Desabilitar o bot�o "Ativar empresa no Onvio", em empresas com origem  |
 | 83373 | 104328 | NE | Lib | Est� demonstrando o erro "do emitente da NFS-e � diferente da empresa  |
 | 83438 | 104327 | NE | Lib | E st� sendo poss�vel selecionar mais de um CNAE principal na aba 'Dado |
-| 83549 | 104320 | SAM | Lib | Verificar se para os três módulos existe uma rotina após o fechamento  |
 | 83844 | 104310 | SAL | Lib | SC-Alterar o sistema para informar um percentual com 6 casas decimais  |
 | 84312 | 104309 | SAL | Lib | Alterar o sistema para enviar o evento R-4010 no EFD Reinf quando a em |
 | 83365 | 104299 | NE | Lib | SC-N�o est� sendo gerado o valor correto no registro C197 com c�digo d |
@@ -4358,7 +4154,6 @@
 | 83446 | 104233 | SAL | Lib | MG-Alterar modo de emiss�o das Notas Fiscais de Servi�o Eletr�nicas pa |
 | 83402 | 104232 | SAL | Lib | MG-Alterar o sistema emissor de Notas Fiscais de Servi�o Eletr�nicas p |
 | 83587 | 104231 | NE | Lib | Est� gerando incorretamente o sequencial dos itens para notas de servi |
-| 83723 | 104208 | SAM | Lib | Não executar a rotina programada para empresas que estiverem em uso no |
 | 83360 | 104219 | SAM | Pend | Realizar testes explorat�rios dos envios para a Conta Azul. |
 | 83427 | 104216 | SAL | Lib | Alterar a listagem de rela��o de depend�ncia do cadastro dos dependent |
 | 84547 | 104215 | SAL | Lib | MT-Incluir novos c�digos de ajuste com opera��o de "Outros cr�ditos" e |
@@ -4381,12 +4176,10 @@
 | 83489 | 104082 | SAL | Lib | RS-Alterar a ordem das parcelas no arquivo XML para emiss�o de Notas F |
 | 83309 | 104075 | SAL | Lib | RS-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 83262 | 104071 | NE | Lib | NFS-e Nacional: Est� ocorrendo erro ao imprimir as NFS-e pelo Dom�nio  |
-| 86231 | 104065 | SAM | Lib | Permitir a integração contábil dos tributos federais pela rotina progr |
 | 84646 | 104063 | SAL | Lib | GO-Incluir o dispositivo GO000164, redu��o na base de c�lculo para res |
 | 83276 | 104059 | SAIL | Lib | Criar tela para pagamento do imposto 173-Tributos Federais |
 | 83461 | 104054 | SAL | Lib | Ajustar na Escrita os reflexos do PIS Folha que ser� informado na DCTF |
 | 83240 | 104045 | SAM | Lib | Alterar o tamanho do campo referente ao c�digo de verifica��o de NFS-e |
-| 83283 | 104036 | SAIL | Lib | Realizar a integração contábil do módulo 'Tributos Federais'. |
 | 85261 | 104043 | NE | Lib | Est� exibindo incorretamente notifica��o na central com a mensagem 'No |
 | 83257 | 104040 | NE | Lib | Est� importando o valor incorreto do lucro ou preju�zo, quando marcada |
 | 83522 | 104035 | SAM | Lib | Alterar a importa��o padr�o CF-e arquivo XML para que nas empresas do  |
@@ -4403,7 +4196,6 @@
 | 83217 | 103979 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 83268 | 103977 | NE | Lib | Est� apresentando erro ao efetuar o pagamento da Folha pelo Honor�rios |
 | 83192 | 103961 | NE | Lib | Est� ocorrendo erro de banco de dados ao realizar a consulta da apura� |
-| 83195 | 103944 | NE | Lib | Não está permitindo integrar os módulos escrita e/ou folha quando um t |
 | 90769 | 103951 | SAM | Lib | Ajustar o utilit�rio "Vincular plano referencial as contas cont�beis", |
 | 83193 | 103950 | NE | Lib | Est�o sendo importadas indevidamente notas quando os arquivos possuem  |
 | 83646 | 103948 | SAL | Lib | RJ-Alterar o sistema para n�o gerar os registros C197 com o c�digo RJ9 |
@@ -4458,8 +4250,6 @@
 | 83259 | 103666 | NE | Lib | DF-N�o est� setando a op��o correta no campo "Produto sujeito ao recol |
 | 83118 | 103662 | NE | Desc | SE-N�o est� considerando o percentual de base de c�lculo do acumulador |
 | 84651 | 103658 | SAM | Lib | Incluir campo com filtro para localizar as empresas na apura��o de imp |
-| 83034 | 103647 | NE | Lib | Está permitindo selecionar a integração contábil da escrita fiscal pel |
-| 83005 | 103643 | SAM | Lib | TECH - Ajustar o processo de messageprocessor pra quando a conta azul  |
 | 83111 | 103653 | SAL | Lib | MT-Alterar a nomenclatura do c�digo de ajuste MT029104 em Impostos Lan |
 | 83038 | 103642 | SAL | Lib | MG-Alterar o endere�o do webservice para emiss�o de Notas Fiscais de S |
 | 83025 | 103636 | SAM | Lib | Abrir em modal a interface 'Central de pagamentos', ao clicar em 'Paga |
@@ -4490,8 +4280,7 @@
 | 83043 | 103535 | SAL | Lib | Ajustar comportamento da tela de "Relacionamento" guia "Contas Cont�be |
 | 83006 | 103533 | NE | Lib | Est� gerando o valor incorreto do campo "Valor original" no cadastro d |
 | 83652 | 103525 | SAL | Lib | Alterar o sistema para calcular o imposto 103-INSS receita bruta e/ou  |
-| 97280 | 103491 | SAIL | Pend | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos A |
-| 98297 | 103490 | SAIL | Pend | Criar a estrutura e relatório da Demonstração das Mutações do Patrimôn |
+| 97280 | 103491 | SAIL | Lib | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos A |
 | 82939 | 103494 | SAM | Lib | Permitir c�lculo do Comparativo Regime Tribut�rio referente ao ano de  |
 | 82938 | 103489 | SAM | Lib | Deixar de demonstrar o bot�o de Excel ao visualizar a NFS-e Nacional. |
 | 82936 | 103486 | NE | Lib | SC-N�o est� sendo gerado o valor correto do cr�dito presumido confec�� |
@@ -4544,7 +4333,6 @@
 | 82847 | 103159 | SAL | Lib | NFS-e Nacional - Ajustar tela e arquivo XML para gerar as informa��es  |
 | 82846 | 103157 | SAL | Lib | BA-Considerar as notas com modelo 63-BP-e na importa��o dos valores ag |
 | 87546 | 103154 | SAM | Lib | Criar op��o "Determinar os dados de PIS/COFINS conforme o CFOP" na gui |
-| 82931 | 103110 | SAM | Lib | Não permitir selecionar a integração contábil da folha na rotina do mó |
 | 82744 | 103120 | NE | Lib | Em alguns casos est� mostrando indevidamente valor a recolher para o i |
 | 82763 | 103117 | SAM | Lib | NFS-e Nacional - Ajustar o XML para n�o gerar a tag de Inscri��o Munic |
 | 82754 | 103116 | NE | Lib | Est� sendo gerado indevidamente o valor do imposto 146-FCP nas linhas  |
@@ -4553,7 +4341,6 @@
 | 83254 | 103100 | SAL | Lib | SC-Alterar o c�lculo do imposto 27-ICMSA conforme mem�ria de c�lculo d |
 | 82726 | 103079 | NE | Lib | Em alguns casos est� ocorrendo erro ao gerar o arquivo do SPED Fiscal. |
 | 82816 | 103077 | NE | Lib | N�o est�o sendo gerados os eventos da s�rie R-4000 do informativo EFD- |
-| 83854 | 103058 | SAM | Pend | Permitir exportar as listagens em Excel. |
 | 82730 | 103066 | SAM | Lib | NFS-e Nacional - Ajustar nomes de campos para estar no substantivo fem |
 | 82771 | 103062 | NE | Lib | N�o est� considerando notas importadas na apura��o do incentivo TARE c |
 | 82722 | 103061 | SAM | Lib | Ajustar diferen�a de espa�amento do texto "VALOR TOTAL DO RPS" ao impr |
@@ -4596,10 +4383,8 @@
 | 82998 | 102889 | SAL | Lib | Alterar o sistema para importar o valor da Rubrica "9637-F.G.T.S DE AV |
 | 84108 | 102887 | SAL | Lib | MT-Considerar o valor do FETHAB na base de c�lculo dos impostos federa |
 | 86003 | 102881 | SAIL | Lib | BA-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
-| 82677 | 102869 | NE | Lib | Está indo direto para a tela de processamento antes de clicar em 'Noti |
 | 82603 | 102880 | NE | Lib | Est� ocorrendo erro na tabela HRPARAMETRO_SEQUENCIAL_NFSE_NACIONAL_LOT |
 | 82662 | 102876 | NE | Lib | Est� apresentando erro no objeto "of_abrir_cadastro" na tela da config |
-| 82622 | 102841 | SAM | Lib | TECH - BE - BRAccoutingEntryIntegrationServices |
 | 82595 | 102851 | NE | Lib | N�o est�o sendo gerado os registros 1050, M215 e M615 no informativo E |
 | 82578 | 102821 | SAM | Lib | Incluir op��o para selecionar o tipo de ambiente para envio da EFD-Rei |
 | 82579 | 102820 | NE | Lib | NFS-e Nacional - Est� sendo demonstrado incorretamente o campo "C�digo |
@@ -4611,7 +4396,6 @@
 | 82870 | 102771 | NE | Lib | Est� permitindo alterar lan�amentos fora do per�odo de trabalho quando |
 | 83039 | 102770 | NE | Pend | Est� apresentando erro de banco de dados ao tentar gravar um lan�ament |
 | 82689 | 102769 | NE | Lib | N�o est� gravando as informa��es dos registros T120, T150, T170 e T181 |
-| 82546 | 102761 | NE | Lib | Não está executando a rotina ficando pendente quando selecionado o env |
 | 82534 | 102747 | NE | Lib | Em alguns casos est� ocorrendo erro de sistema ao importar CF-e atrav� |
 | 82675 | 102746 | NE | Lib | N�o est�o sendo gerados corretamente os eventos do informativo EFD-Rei |
 | 82674 | 102743 | SAL | Lib | PR-Alterar o c�digo de ajuste gerado no Registro E111 para o estorno d |
@@ -4625,7 +4409,6 @@
 | 82701 | 102678 | NE | Lib | SC-Est�o sendo consideradas indevidamente notas vinculadas ao cr�dito  |
 | 82583 | 102677 | NE | Lib | SC-Est� sendo gerado o valor incorreto na linha "Estorno de cr�ditos d |
 | 82703 | 102675 | NE | Lib | MT-Esta sendo gerada indevidamente a informa��o da nota fiscal no rela |
-| 82564 | 102672 | NE | Desc | Não está exibindo o nome da empresa correto no cadastro de novo lançam |
 | 82513 | 102673 | NE | Lib | N�o est� enviando os dados do e-Sfinge ao TCE quando possui grande mov |
 | 82582 | 102670 | NE | Lib | Est� sendo permitido indevidamente que um usu�rio edite a janela de na |
 | 83704 | 102664 | SAL | Lib | Alterar o sistema para excluir as exporta��es indiretas da base de c�l |
@@ -4661,7 +4444,6 @@
 | 82453 | 102519 | SAL | Lib | Alterar o relat�rio de faturamento quando o CT-e substituto for em m�s |
 | 88258 | 102507 | SAL | Lib | RS-Implementar no sistema o calculo do credito presumido e-commerce Ar |
 | 83463 | 102503 | NE | Lib | RS-N�o est� sendo gerado o registro C197 no informativo SPED Fiscal, q |
-| 82411 | 102501 | NE | Lib | Está apresentando feedback 'Falha ao executar a ação' ao tentar cadast |
 | 82320 | 102502 | NE | Lib | N�o est� sendo gerado o evento R-2099 no informativo EFD Reinf, quando |
 | 82379 | 102497 | SAM | Pend | Ajustar a considera��o da mensagem do campo "Parcela a excluir do valo |
 | 82313 | 102493 | SAM | Lib | Realizar um estudo para resolver problemas de sobrecarga de certificad |
@@ -4677,7 +4459,6 @@
 | 82304 | 102466 | NE | Lib | Est� sendo calculado indevidamente valor de adicional de IRPJ para o i |
 | 82300 | 102464 | NE | Lib | SC-Est� sendo indevidamente desmarcada a op��o "Estornar cr�ditos de I |
 | 82403 | 102463 | NE | Lib | Em alguns casos est� ocorrendo o erro "FK_EFPAGIMP_PUBLICAR_DOCUMENTO_ |
-| 82560 | 102455 | NE | Lib | Não está limpando o smart badge e removendo o vínculo das contas de fo |
 | 82369 | 102459 | NE | Lib | Est� importando o valor incorreto do registro M010 do informativo SPED |
 | 82342 | 102452 | SAL | Lib | SP-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 82642 | 102439 | SAM | Lib | Ajustar o relat�rio de confer�ncia da EFD-Reinf para que n�o gere erro |
@@ -4712,8 +4493,6 @@
 | 82295 | 102299 | NE | Lib | Est� gerando valores incorretos nos registros M400, M410, M800 e M810  |
 | 82191 | 102298 | SAM | Lib | Ajustar o sistema para quando atualizar a conta patrimonial no cadastr |
 | 82294 | 102290 | NE | Lib | PA-Em alguns casos est� sendo calculado indevidamente valor para o ICM |
-| 82563 | 102283 | NE | Lib | Em alguns casos não está gerando as notificações dos relatórios emitid |
-| 82410 | 102281 | NE | Lib | Está retornando feedback 'Falha ao executar o processamento' na emissã |
 | 82713 | 102280 | SAL | Lib | Ajustar a gera��o dos eventos da EFD-Reinf conforme IN RFB N� 2.163 e  |
 | 82167 | 102277 | NE | Lib | N�o est� sendo gerado o CNPJ correto nos eventos da s�rie R4000 do inf |
 | 82362 | 102275 | SAL | Lib | MT-Incluir o ajuste MT030100 em Impostos Lan�ados. |
@@ -4724,7 +4503,6 @@
 | 82153 | 102247 | NE | Lib | N�o est�o sendo considerados os filtros de categorias na emiss�o do re |
 | 82372 | 102245 | NE | Lib | Est� ocorrendo encerramento do sistema quando realizado importa��o de  |
 | 82404 | 102243 | SAL | Lib | RS-Gerar o registro E240 para o c�digo RS100705 quando a op��o 'Possui |
-| 82154 | 102225 | NE | Lib | Não é possível salvar/editar o cadastro de histórico quando existe um  |
 | 82129 | 102241 | SAL | Lib | Atualizar para a vers�o 1.1 o conjunto TLS utilizado na conex�o com a  |
 | 87460 | 102239 | SAM | Lib | CE-Realizar a importa��o dos valores das tags do ICMS monof�sico confo |
 | 82157 | 102238 | SAL | Lib | MG-Alterar emiss�o da nota fiscal de servi�o eletr�nica para o munic�p |
@@ -4737,9 +4515,7 @@
 | 82340 | 102162 | SAL | Lib | Atualizar a tabela de c�digos NCM's conforme Ato Declarat�rio n� 03 de |
 | 82170 | 102131 | NE | Lib | Est� sendo gerada indevidamente a data do embarque no campo 12-DT_A_P  |
 | 82108 | 102128 | NE | Lib | Em alguns casos est� ocorrendo erro ao realizar o exporta/importa. |
-| 82332 | 102125 | NE | Lib | Não está demonstrando o agendamento da rotina programada nos períodos  |
 | 82091 | 102118 | NE | Lib | Est� ocorrendo erro de sistema referente ao benefici�rio ao realizar i |
-| 82565 | 102106 | NE | Lib | Está apresentando indevidamente a mensagem 'Não existem dados para emi |
 | 82084 | 102114 | SAM | Lib | Ajustar a ordem do menu hamb�rguer e remover algumas op��es |
 | 83456 | 102111 | SAL | Lib | Alterar o sistema para atender as novas altera��es do SPED Fiscal 2024 |
 | 82416 | 102102 | SAL | Lib | PE-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
@@ -4851,7 +4627,6 @@
 | 81837 | 101694 | SAM | Lib | Reorganizar as colunas em grupos na aba 'Servi�os' e  campos na aba 'T |
 | 83019 | 101691 | NE | Lib | SC-N�o est� sendo demonstrado o valor do "Total da base de c�lculo do  |
 | 86947 | 101688 | SAM | Lib | SC-Implementar a rotina de importa��o do ICMS Monof�sico atrav�s do Le |
-| 81831 | 101669 | NE | Lib | Rotina programada está sendo executada duas vezes de forma automática. |
 | 81798 | 101678 | SAM | Lib | Liberar tempo trabalhado de desenvolvimento e teste na vers�o 10.3A-09 |
 | 81797 | 101674 | SAM | Lib | Corrigir erros levantados em an�lise do PenTest (1.1). |
 | 82062 | 101668 | SAL | Lib | SP-Gerar o c�digo de ajuste para SP120701 quando efetuar o lan�amento  |
@@ -4859,7 +4634,6 @@
 | 81977 | 101665 | SAM | Lib | Alterar o comportamento do sistema para que liste todas as natureza de |
 | 81949 | 101664 | SAM | Lib | Incluir o bot�o "Solu��es" para algumas mensagens do sistema, relacion |
 | 95223 | 101661 | SAIL | Lib | MA-Permitir tomar cr�dito do ICMS Monof�sico dos combust�veis conforme |
-| 81811 | 101650 | NE | Lib | Combobox de contas de apuração de resultados da aplicação do perfil nã |
 | 82836 | 101652 | NE | Lib | N�o est� reordenando a listagem de dados adicionais ao clicar nas colu |
 | 81827 | 101642 | NE | Lib | N�o est� sendo gerada de forma correta algumas tags do evento R-4010 d |
 | 81830 | 101639 | SAL | Lib | SP-Alterar o endere�o do web service de produ��o para emiss�o de Notas |
@@ -4898,12 +4672,10 @@
 | 81688 | 101521 | NE | Lib | Est� permitindo alterar indevidamente a data do lan�amento na tela "Co |
 | 81667 | 101520 | NE | Lib | N�o est� demonstrando a assinatura digital do contador para o relat�ri |
 | 82584 | 101518 | NE | Lib | SC-Est�o sendo consideradas indevidamente notas lan�adas no relat�rio  |
-| 81653 | 101513 | SAM | Lib | TECH - Ajustes de performance. |
 | 81767 | 101512 | NE | Lib | Est� demonstrando o valor do lucro do per�odo na conta de preju�zo do  |
 | 81720 | 101509 | SAM | Lib | Incluir uma mensagem de valida��o na apura��o caso n�o tenha natureza  |
 | 81665 | 101508 | NE | Desc | Est� sendo apresentada indevidamente a mensagem "N�o existe movimento  |
 | 81672 | 101507 | NE | Lib | N�o est�o sendo geradas as informa��es referentes aos valores de parce |
-| 81706 | 101484 | NE | Lib | Sistema está deslogando quando o usuário tem permissão as telas que en |
 | 81661 | 101506 | NE | Lib | Est� ocorrendo erro de sistema ao digitar a natureza da receita para o |
 | 81781 | 101482 | NE | Lib | MT-N�o est� calculando o imposto 8-DIFALI por produto ao realizar impo |
 | 82287 | 101481 | NE | Lib | N�o est� demonstrando corretamente as vari�veis da escrita, nos lan�am |
@@ -4917,7 +4689,6 @@
 | 81759 | 101454 | NE | Lib | Est� sendo informada incorretamente a categoria a receber ao realizar  |
 | 81620 | 101453 | SAM | Lib | Armazenar o c�digo do banco ao cadastrar a conta financeira do Digital |
 | 81610 | 101449 | NE | Lib | N�o est� sendo atualizada a situa��o do campo "Situa��o Reinf" da guia |
-| 81678 | 101442 | NE | Lib | Não está demonstrando o nome do relatórios nas notificações de erro. |
 | 83345 | 101443 | SAM | Lib | Alterar o sistema para importar as informa��es do Bloco K quando o cli |
 | 81613 | 101440 | NE | Lib | DF-Est� ocorrendo erro no banco de dados ao excluir RPS quando o model |
 | 81621 | 101434 | SAL | Lib | SP-Alterar o endere�o do web service de produ��o para emiss�o de Notas |
@@ -4951,7 +4722,6 @@
 | 81564 | 101357 | NE | Lib | Est� integrando em duplicidade o valor do IRRF-Empregados, quando poss |
 | 81829 | 101354 | NE | Lib | Parcela renegociada com desconto est� apresentando valor incorreto na  |
 | 81713 | 101353 | NE | Lib | Em alguns casos n�o est�o sendo demonstrados os lan�amentos no relat�r |
-| 81530 | 101335 | SAM | Lib | Testar a performance da exclusão dos lançamentos. |
 | 81649 | 101341 | SAM | Lib | Enviar a informa��o de que o processo est� em andamento para o servido |
 | 82073 | 101333 | NE | Lib | RS-Est� gerando valor incorreto na contabiliza��o da SUBTRI ao regerar |
 | 81650 | 101331 | SAM | Lib | Enviar informa��o de que o processo da integra��o dos Cr�ditos de PIS  |
@@ -4990,7 +4760,6 @@
 | 81432 | 101167 | NE | Lib | N�o est� sendo enviado o arquivo de retifica��o dos eventos R-4010, R- |
 | 81417 | 101163 | NE | Desc | N�o est�o sendo setadas as regras de escri��o ao realizar a aplica��o  |
 | 81941 | 101161 | NE | Lib | Est� gerando erro de duplicidade de documentos referenciados incorreta |
-| 81396 | 101143 | SAM | Desc | Atualizar biblioteca para a versão snakeyaml-2.0.jar no projeto BRPaya |
 | 81457 | 101150 | SAL | Lib | Ajustar o informativo IBGE conforme altera��es para 2022. |
 | 81459 | 101134 | SAL | Lib | ES-Ajustar as tags "ValorDesconto" e "ValorServico" do arquivo XML par |
 | 81652 | 101129 | SAL | Lib | SP-Criar um campo para informar o Fator de Corre��o de Volume para apu |
@@ -5009,7 +4778,6 @@
 | 81355 | 101096 | NE | Lib | N�o est� considerando o grau m�ximo da classifica��o da conta para o r |
 | 81458 | 101095 | NE | Lib | Est� apresentando indevidamente a mensagem "Diferen�a de D�bito e cr�d |
 | 82284 | 101093 | NE | Lib | N�o est� exibindo corretamente a ordem das vig�ncias dos impostos ao a |
-| 81402 | 101081 | NE | Lib | Está apresentando uma mensagem incorreta na parametrização e na tela d |
 | 81338 | 101089 | SAM | Desc | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a A |
 | 81339 | 101087 | SAM | Lib | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a A |
 | 82422 | 101078 | SAL | Lib | SC-Gerar o ajuste SC21000001 no SPED Fiscal nas opera��es de estorno d |
@@ -5023,13 +4791,11 @@
 | 81522 | 101059 | SAM | Lib | RS-Alterar o sistema para realizar a importa��o conforme a nova estrut |
 | 82825 | 101057 | NE | Desc | N�o esta demonstrando a hora no campo compet�ncia ao consultar o XML d |
 | 81310 | 101052 | NE | Lib | O sistema n�o est� importando lan�amentos de outra empresa, quando a e |
-| 81344 | 101040 | SAM | Lib | Criar novo menu "Consultas" e ajustar opções "Consulta integração cont |
 | 81897 | 101049 | SAL | Lib | CE-Alterar o sistema para gerar o c�digo de ajuste CE030007 em imposto |
 | 81942 | 101042 | NE | Lib | Est� ocorrendo erro ao realizar importa��o de servi�o em empresa com " |
 | 81332 | 101033 | NE | Lib | N�o est�o sendo geradas as informa��es corretas referente a notas de d |
 | 82814 | 101032 | NE | Lib | Est� gerando de forma incorreta o campo 06-UNID do registro C170 do in |
 | 81302 | 101031 | NE | Lib | SC-N�o est� sendo gerado o registro C197 no informativo SPED Fiscal, q |
-| 81290 | 101017 | NE | Lib | Está ocorrendo lentidão na listagem de lançamentos contábeis. |
 | 82390 | 101022 | SAL | Lib | SC-Alterar o sistema para considerar o valor referente ao cr�dito de I |
 | 81492 | 101021 | NE | Lib | MG-N�o est� sendo feito o c�lculo correto do imposto 8-DIFALI na mem�r |
 | 82437 | 101009 | SAM | Lib | RJ-Alterar a importa��o dos valores da linha do imposto 154-FOT do Por |
@@ -5046,9 +4812,7 @@
 | 81675 | 100965 | SAM | Lib | Permitir configurar a natureza de rendimento no cadastro do fornecedor |
 | 81517 | 100963 | SAL | Lib | MG-Alterar o sistema para gerar o registro E113 para o Estorno de d�bi |
 | 81870 | 100955 | SAL | Lib | SC-Alterar o sistema para que n�o seja mais utilizada a tabela UFIR pa |
-| 81236 | 100935 | NE | Desc | Esta importando valores duplicados na Importação de Lançamentos Contáb |
 | 81407 | 100939 | SAL | Lib | Alterar o sistema para permitir informar os documentos fiscais sem pro |
-| 81260 | 100909 | SAM | Lib | TECH - Mover o módulo de Accouting Integration para @onviobr/accountin |
 | 83507 | 100925 | SAM | Pend | Alterar a demonstra��o das empresas no dashboard de 'Apura��o dos impo |
 | 81277 | 100916 | NE | Lib | Est� realizando lan�amento cont�bil com a provis�o de cliente quando s |
 | 81383 | 100913 | SAM | Lib | Permitir importar NFS-e de Sub-contrata��o de Frete com Base de cr�dit |
@@ -5071,7 +4835,6 @@
 | 81869 | 100822 | NE | Lib | N�o est�o sendo demonstradas corretamente as informa��es no Dashboard  |
 | 81151 | 100809 | NE | Lib | Est� ocorrendo erro de sistema ao realizar importa��o de notas no modo |
 | 81153 | 100805 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
-| 81146 | 100788 | SAM | Lib | TECH - Ajustar consumer do topico accountingentryintegration.fct.docum |
 | 81844 | 100792 | SAL | Lib | RJ-Gerar o c�digo de ajuste RJ018005 no registro E111 quando for calcu |
 | 81227 | 100779 | NE | Lib | N�o est� sendo poss�vel incluir o tipo de papel na janela "Sele��o" do |
 | 82795 | 100777 | SAIL | Lib | MA-Implementar o c�lculo do imposto 27-ICMSA por c�digo de recolhiment |
@@ -5092,8 +4855,6 @@
 | 81105 | 100684 | SAL | Lib | Ajustar a descri��o do quadro de Lucros ou Preju�zos para o informativ |
 | 87987 | 100683 | SAM | Lib | Alterar mensagem de sucesso exibida ao concluir um cadastro de 'Opera� |
 | 84851 | 100680 | SAM | Lib | Ajustar a tradu��o do termo Parametriza��o para que fique mais coerent |
-| 81116 | 100675 | NE | Lib | Está apresentando uma tela branca do tamanho de uma modal na tela de ' |
-| 81065 | 100672 | NE | Desc | O processamento em segundo plano não está ocorrendo de forma correta e |
 | 81096 | 100671 | SAL | Lib | SP-Alterar emiss�o da nota fiscal de servi�o eletr�nica para o munic�p |
 | 81129 | 100665 | NE | Lib | N�o est� sendo realizada a integra��o cont�bil das notas de sa�da e se |
 | 81128 | 100664 | NE | Lib | Est� sendo gerada indevidamente uma baixa para a SCP na janela de Paga |
@@ -5120,7 +4881,6 @@
 | 91945 | 100571 | SAM | Pend | Efetuar ajustes das mensagens de valida��o em rela��o as altera��es da |
 | 89957 | 100569 | SAM | Lib | Alterar o filtro da coluna "Documento" da interface de listagem de not |
 | 90283 | 100559 | SAIL | Lib | BA-Implementar a apura��o do ICMS conforme tributa��o monof�sica para  |
-| 81547 | 100537 | SAM | Pend | Enviar o plano de contas via API Conta Azul com o vínculo do cadastro  |
 | 81950 | 100543 | SAL | Lib | SC-Ajustar o Registro C197 referente o Cr�dito Presumido na sa�da de P |
 | 81031 | 100524 | NE | Lib | RS-Est� sendo duplicado o valor da base de c�lculo e valor de imposto  |
 | 81030 | 100523 | NE | Lib | N�o est� sendo feito o c�lculo correto do imposto 63-IRRF-APF, quando  |
@@ -5138,25 +4898,17 @@
 | 80968 | 100382 | SAL | Lib | RJ-Alterar o leiaute para a emiss�o de Notas Fiscais de Servi�o Eletr� |
 | 81148 | 100378 | SAL | Lib | BA-Alterar a descri��o do c�digo de ajuste BA020160 na tela de Imposto |
 | 81032 | 100339 | NE | Lib | RO-Est� sendo gerado o valor incorreto nos campos 05-VL_BC_ICMS e 07-V |
-| 80948 | 100318 | NE | Lib | Não está abrindo a combobox de contas na grid pelo ícone quando é apre |
-| 81406 | 100306 | NE | Lib | Estão sendo apresentados no Livro razão e Balancete saldos positivos c |
-| 81545 | 100301 | NE | Lib | Esta duplicando o zeramento quando feito o processo duas vezes seguido |
-| 81011 | 100297 | SAM | Lib | Aumentar a capacidade do campo do filtro da coluna Código na "Lista de |
 | 82361 | 100313 | SAL | Lib | Alterar o sistema para gerar valor da devolu��o no campo 04 e 09 do re |
 | 80946 | 100280 | NE | Lib | SC/RS-Est� sendo apresentada indevidamente a mensagem "O CT-e referenc |
 | 82016 | 100275 | SAL | Lib | SC-Gerar zerado os campos 7, 8, 10 e 11 do registro 2110 do DRCST em c |
 | 81027 | 100265 | NE | Lib | Est�o sendo gerados os valores incorretos dos impostos no relat�rio "R |
 | 80949 | 100245 | SAL | Lib | RS-Alterar endere�o do web service na emiss�o da nota fiscal de servi� |
-| 82018 | 100213 | NE | Lib | Não está listando o lote completo na Lista de lançamentos contábeis, q |
 | 80953 | 100228 | NE | Lib | Est� apagando o centro de custos na tela de lan�amentos ao clicar em " |
-| 81998 | 100207 | NE | Lib | Esta apresentando informações divergentes no menu "Inicio" quando troc |
 | 80970 | 100226 | NE | Lib | Est� apresentando o valor incorreto do campo "Saldo acumulado (Base do |
-| 80911 | 100205 | NE | Lib | Está apresentando indevidamente erro ao acessar empresa logo que cadas |
 | 80943 | 100210 | NE | Lib | N�o est� sendo demonstrado o valor do imposto INSS Receita Bruta na ja |
 | 80955 | 100202 | NE | Lib | Em alguns casos o sistema fecha ao fazer a concilia��o banc�ria autom� |
 | 87570 | 100196 | SAM | Lib | Incluir filtro "Data de Vig�ncia" no utilit�rio "Excluir Vig�ncia dos  |
 | 80912 | 100180 | NE | Lib | Est� sendo gerado indevidamente valor na coluna "Exclus�es" do relat�r |
-| 81989 | 100143 | SAM | Lib | Bloquear o menu "Inicio" quando não possuir empresas cadastradas no es |
 | 80895 | 100166 | SAM | Lib | Realizar Testes no Busca NF-e no ambiente do DW, ap�s a instala��o do  |
 | 80894 | 100164 | SAM | Lib | Realizar Testes no Web Service SEFAZ no ambiente do DW, ap�s a instala |
 | 83000 | 100154 | SAL | Lib | RS-Considerar a soma da Receita Bruta da Matriz e Filiais para o limit |
@@ -5172,21 +4924,16 @@
 | 80870 | 100096 | SAL | Lib | Alterar o pagamento de impostos via e-CAC e o envio da DEFIS atrav�s d |
 | 81615 | 100093 | SAL | Lib | SP-Gerar a guia DARE do imposto 27-ICMS Antecipado com o c�digo de rec |
 | 81581 | 100092 | SAM | Lib | MT-Considerar a Inscri��o Estadual do destinat�rio para importar a NF- |
-| 80909 | 100075 | SAM | Lib | Alterar a mensagem apresentada ao destinatário do e-mail do relatório  |
 | 80866 | 100083 | NE | Lib | Est� apresentando o erro "Syntax error near '(end of line)' on line 1" |
 | 82477 | 100069 | SAL | Lib | Desconsiderar as receitas com atividade alcan�ada pelo Perse na base d |
-| 81995 | 100059 | SAM | Lib | Buscar o endereço principal do cadastro da empresa para os termos. |
 | 80933 | 100060 | NE | Lib | N�o est� importando os valores da SCP para os registros P200 e P300 do |
-| 80844 | 100036 | SAM | Lib | Incluir mensagem para o usuário ao clicar no 'Cadastro de contabilizaç |
 | 80929 | 100041 | NE | Lib | Est� apresentando o valor do desconto incorreto no boleto do banco Bra |
 | 80868 | 100035 | NE | Lib | N�o est� importando o valor correto para o campo 10 do registro P300 d |
 | 80897 | 100032 | SAL | Lib | RJ-Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�nica |
 | 81769 | 100019 | SAM | Lib | Alterar o sistema para que a configura��o do identificador do plano de |
 | 81679 | 100013 | SAL | Lib | Criar op��o no SPED Cont�bil para a emiss�o do raz�o auxiliar somente  |
 | 80824 | 100012 | SAL | Lib | SP-Alterar arquivo XML para remover a tag "tipos:CodigoCnae" para a em |
-| 80828 | 99984 | SAM | Lib | Alterar a tela dos cards do cadastro de contas e ocultar o botão pesqu |
 | 80813 | 99992 | SAM | Lib | Realizar Testes no Busca NF-e utilizando os ambientes nonprod (DEMO e  |
-| 80811 | 99968 | NE | Lib | Está ocorrendo erro na realização do Zeramento quando Matriz e Filial. |
 | 80832 | 99979 | NE | Pend | ES-N�o est� sendo importado a base de cr�dito de PIS/COFINS conforme c |
 | 80851 | 99974 | NE | Lib | Em alguns casos n�o est� importando o valor do Lucro Antes da CSLL, qu |
 | 80845 | 99966 | NE | Lib | Est� sendo setado indevidamente valor de base de c�lculo para os impos |
@@ -5220,9 +4967,6 @@
 | 80735 | 99762 | SAM | Lib | Parar o agende do Busca NF-e do sistema ao realizar o processo de migr |
 | 80736 | 99761 | SAM | Lib | Parar o agente do Web Service SEFAZ do sistema ao realizar o processo  |
 | 80731 | 99760 | SAM | Lib | Realizar ajustes no MODO_DESENV. |
-| 80734 | 99754 | NE | Desc | Otimizar o tempo de processamento do vínculo das contas na estrutura d |
-| 80733 | 99742 | NE | Lib | Não está apresentando o comportamento correto na replicação de contas  |
-| 80732 | 99741 | SAM | Lib | Ajustar as telas de relatórios para utilizar o mesmo componente criado |
 | 82394 | 99720 | SAL | Lib | RS-Alterar o sistema referente a informa��o gerada no campo 12 e 13 do |
 | 80746 | 99711 | SAL | Lib | RS-Alterar endere�o do web service de produ��o na emiss�o da nota fisc |
 | 80741 | 99709 | NE | Lib | N�o est� sendo gerada a indica��o "Original" ou "Retificadora" no camp |
@@ -5237,9 +4981,6 @@
 | 80790 | 99653 | SAM | Lib | SP-Implementar rotina no sistema para gerar a guia DARE Online, com c� |
 | 80770 | 99649 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "Ano exerc�cio menor q |
 | 80688 | 99641 | NE | Lib | N�o est� gravando o lan�amento/edi��o da nota quando o servi�o da cont |
-| 80669 | 99615 | SAM | Lib | Mover o módulo de Históricos para a Lib da Contabilidade. |
-| 80673 | 99610 | SAM | Lib | Ajustar o journal para realizar a exclusão lógica. |
-| 80826 | 99607 | NE | Desc | Não está apresentando todas as opções no filtro das colunas quando o f |
 | 81221 | 99632 | SAL | Lib | Alterar o sistema para gerar o valor de PIS e COFINS nos campos 25 ao  |
 | 81603 | 99631 | NE | Lib | N�o est� demonstrando corretamente a label do bot�o 'Criar novo' de al |
 | 80737 | 99629 | NE | Lib | N�o est� setando o foco no campo correto na janela "Contratos de Empre |
@@ -5264,11 +5005,6 @@
 | 80621 | 99505 | SAM | Lib | Cria��o de casos de testes para a automa��o e registro de tempos com a |
 | 80648 | 99503 | NE | Lib | N�o est�o sendo gerados os valores das vari�veis do campo "Observa��o" |
 | 80738 | 99500 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "Per�odo de vig�ncia i |
-| 80609 | 99494 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Livro Ca |
-| 80607 | 99490 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Livro Ra |
-| 80606 | 99489 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Livro Di |
-| 80605 | 99487 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Balancet |
-| 80604 | 99486 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Balanço. |
 | 85838 | 99488 | SAIL | Lib | MG-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 80646 | 99475 | NE | Lib | N�o s�o demonstrados os lan�amentos cont�beis no utilit�rio\Ajustes de |
 | 80602 | 99472 | NE | Lib | Est� ocorrendo erro de banco de dados ao realizar importa��o de config |
@@ -5276,8 +5012,6 @@
 | 80599 | 99465 | NE | Lib | Est� sendo alterado indevidamente o valor do campo "ICMS n�o creditado |
 | 82238 | 99443 | SAM | Lib | RS-Importar o valor do campo "02-VL_FCP_OP" do registro C191 na coluna |
 | 80740 | 99434 | NE | Lib | Em alguns casos n�o est� sendo gerado o relat�rio Demonstrativo PIS e  |
-| 80579 | 99410 | SAM | Desc | Testes gerais de performance nos processos |
-| 80580 | 99406 | SAM | Lib | Rever arquitetura da emissão dos relatórios. |
 | 80578 | 99429 | SAM | Lib | Efetuar estudo no sistema para avaliar uma forma quando a gera��o do a |
 | 81004 | 99428 | NE | Lib | Est� permitindo incluir intervalo de contas reservadas para o dom�nio  |
 | 80600 | 99427 | NE | Lib | MA-Est� calculando incorretamente o valor do imposto 8-DIFALI a partir |
@@ -5291,7 +5025,6 @@
 | 80574 | 99397 | SAM | Lib | Corrigir vulnerabilidade devido aos endpoints do spring actuator estar |
 | 80653 | 99394 | NE | Lib | Est� sendo permitido indevidamente efetuar a exclus�o de um acumulador |
 | 80586 | 99393 | NE | Lib | SC-Est�o sendo gerados indevidamente os registros 0460, D195 e C197 no |
-| 80555 | 99369 | NE | Lib | Falta de feedback ao informar no campo 'Cód. histórico' um histórico n |
 | 80809 | 99358 | SAL | Lib | SP-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 80659 | 99349 | NE | Lib | N�o est� sendo setado o centro de custo no bot�o "Rateio" da guia "Con |
 | 80542 | 99332 | SAL | Lib | RS-Alterar o XML para gerar a tag "DescontoIncondicionado" para emiss� |
@@ -5370,14 +5103,12 @@
 | 80304 | 98793 | SAL | Lib | DF-Alterar modelo de impress�o de RPS para a emiss�o das Notas Fiscais |
 | 81084 | 98790 | SAM | Lib | Alterar o sistema para n�o importar o Munic�pio origem e destino de BP |
 | 80268 | 98788 | NE | Lib | Est� ocorrendo erro de sistema quando a listagem de notas estiver aber |
-| 82020 | 98771 | NE | Desc | Está sendo possível acessar o menu 'Históricos contábeis' mesmo quando |
 | 80511 | 98785 | SAL | Lib | MT-Atualizar a tabela de c�digo de ajuste na tela de Lan�amentos de Va |
 | 81896 | 98772 | SAL | Lib | RJ-Gerar o c�digo do item "RJREC00001" no Registro 1400 com os dados d |
 | 81083 | 98769 | SAL | Lib | Alterar o sistema para n�o ser necess�rio informar munic�pio de origem |
 | 80249 | 98767 | NE | Lib | Est� ocorrendo erro de banco de dados ao importar notas com produtos d |
 | 80271 | 98765 | SAM | Lib | SP-Realizar a importa��o dos valores das tags "qBCMonoRet", "adRemICMS |
 | 80224 | 98764 | NE | Desc | Teste integra��o com imagens |
-| 80513 | 98746 | NE | Desc | Não está apresentando o feedback quando a empresa não possui parâmetro |
 | 81590 | 98762 | SAM | Lib | Alterar a mensagem interrogativa na tela de relacionamento de produto  |
 | 80219 | 98750 | SAM | Lib | Alterar sistema para que seja poss�vel exportar o Plano de Contas Cont |
 | 80213 | 98721 | NE | Lib | PR-Est� sendo demonstrada a descri��o incorreta do c�digo de ajuste no |
@@ -5395,7 +5126,6 @@
 | 80145 | 98639 | NE | Lib | Sistema esta demonstrando a mensagem "Base de dados autenticada com su |
 | 80192 | 98637 | NE | Lib | MA-Est� sendo calculado o valor incorreto para o imposto 8-DIFALI. |
 | 80200 | 98636 | NE | Lib | Em alguns casos n�o est� sendo calculada a deprecia��o fiscal quando p |
-| 80512 | 98618 | NE | Lib | Falta de bloqueio na inativação de conta que possuem lançamentos na da |
 | 80285 | 98623 | SAL | Lib | Ajustar importa��o e c�lculo do campo 03 do registro N660 e do campo 0 |
 | 80341 | 98621 | SAM | Lib | Criar um bot�o de 'Regerar lan�amentos' cont�beis na toolbar da listag |
 | 80254 | 98617 | NE | Lib | N�o est� minimizando os CARDS BR quando rolar a listagem para baixo e  |
@@ -5419,7 +5149,6 @@
 | 80390 | 98528 | SAL | Lib | DF-Alterar modelo de impress�o de NFS-e para gerar com QR Code para a  |
 | 80097 | 98527 | SAL | Lib | SP-Alterar o comportamento da tag "AlqIss" e "VlIss" para empresas do  |
 | 80123 | 98523 | NE | Lib | Em alguns casos est� ocorrendo o erro de banco de dados quando realiza |
-| 80060 | 98511 | SAM | Desc | TESTE |
 | 80075 | 98521 | NE | Lib | Est� demonstrando incorretamente no relat�rio de pagamento de impostos |
 | 80447 | 98509 | SAL | Lib | PR-Alterar o sistema para que o c�lculo do 27-ICMSA ocorra somente qua |
 | 81200 | 98492 | SAL | Lib | GO-Alterar o sistema para gerar o registro E311 com o c�digo de ajuste |
@@ -5569,7 +5298,6 @@
 | 79580 | 97731 | NE | Lib | SP-N�o est� importando o c�digo de recolhimento para o imposto 31-ST/A |
 | 79928 | 97729 | SAL | Lib | MG-Alterar o comportamento do sistema para gerar o c�digo de ajuste MG |
 | 79675 | 97723 | NE | Lib | ES-Est�o sendo importadas indevidamente nostas lan�adas com fornecedor |
-| 79554 | 97716 | NE | Desc | NE TESTE |
 | 79560 | 97721 | NE | Lib | Est� sendo apresentada indevidamente a mensagem de fechamento e de per |
 | 79571 | 97715 | SAL | Lib | RS-Alterar os comportamentos das tags "Aliquota" e "ValorIss" na emiss |
 | 79550 | 97714 | SAL | Lib | RS-Alterar o sistema para gerar no SPED Fiscal o registro C197 com o c |
@@ -6922,7 +6650,6 @@
 | 75560 | 91098 | SAL | Lib | SC-Alterar o sistema para que o c�lculo do ICMSA ocorra somente quando |
 | 75501 | 91097 | SAL | Lib | SC-Alterar o sistema para que seja liberado mais caracteres no campo ' |
 | 75975 | 91096 | SAL | Lib | SP-Alterar a forma de calcular a base de c�lculo do imposto 8-DIFALI c |
-| 75475 | 91086 | SAM | Desc | Testes Integracao ADO |
 | 75913 | 91090 | SAM | Lib | Sobrescrever a estrutura da DLPA ao replicar ou importar os dados. |
 | 75668 | 91084 | SAM | Lib | ES-Alterar a importa��o do c�lculo do imposto 8-DIFALI para ado��o da  |
 | 75515 | 91078 | NE | Lib | N�o est� emitindo a assinatura digital no balan�o, quando estiver sele |
@@ -6940,12 +6667,10 @@
 | 76000 | 91028 | SAL | Lib | SC-Alterar o sistema para gerar o registro 2120 quando o produto possu |
 | 76151 | 91026 | SAL | Lib | SP-Alterar o sistema para que as notas complementares sejam considerad |
 | 75430 | 91023 | NE | Lib | Est� gerando incorretamente o registro J215 no SPED Cont�bil quando no |
-| 75408 | 91014 | SAIL | Desc | Testes da integração do SGD com o ADO em SAIL |
 | 75420 | 91021 | SAM | Lib | SC-Importar a informa��o "Regulariza��o de pre�o ou quantidade ou corr |
 | 75735 | 91017 | SAM | Lib | PE-Alterar a importa��o para realizar o c�lculo do valor da opera��o c |
 | 75484 | 91007 | NE | Lib | Est� emitindo indevidamente a mensagem 'O valor da linha LUCROS OU PRE |
 | 75406 | 91005 | NE | Lib | Em alguns casos est� ocorrendo o erro de sistema ao apurar o per�odo. |
-| 75395 | 90999 | SAM | Desc | Testes da integração do SGD com o ADO |
 | 75404 | 90997 | SAL | Lib | MT-Alterar o endere�o do web service para emiss�o de Notas Fiscais de  |
 | 75603 | 90990 | SAL | Lib | SP-Alterar o sistema para permitir o c�lculo do imposto 8-DIFALI com r |
 | 75573 | 90976 | NE | Lib | CE/SP-Est� sendo gerada a informa��o incorreta no campo 05-REC_BRU_CUM |
@@ -7653,7 +7378,7 @@
 | 74357 | 87135 | SAL | Lib | PR-Habilitar a op��o 'Quando enquadrada na 6� faixa, aplicar a redu��o |
 | 73333 | 87130 | SAL | Lib | Alterar o sistema para que o Comprovante anual de reten��o seja emitid |
 | 73655 | 87121 | SAL | Lib | GO-Incluir os dispositivos do PROTEGE referente aos c�digos de ajuste  |
-| 74389 | 87115 | SAM | Pend | Otimizar a apura��o do imposto 145-ICMS DIFAL - N�o Contribuinte. |
+| 74389 | 87115 | SAM | Desc | Otimizar a apura��o do imposto 145-ICMS DIFAL - N�o Contribuinte. |
 | 73260 | 87112 | NE | Lib | Ao emitir o Raz�o selecionando as op��es "Destacar linhas", "Totalizar |
 | 73291 | 87109 | NE | Lib | Est� duplicando o lan�amento cont�bil ao realizar a importa��o dos Lan |
 | 73328 | 87105 | NE | Desc | Na�o est� sendo feito o c�lculo correto do imposto 44-SIMPLESN, quando |
@@ -12595,7 +12320,6 @@
 | 58772 | 64917 | NE | Lib | Est� ocorrendo erro de sistema ao clicar com o bot�o direito do mouse  |
 | 58820 | 64914 | NE | Lib | RS-Est� ocorrendo erro mp objeto n_cst_intcont_escrita_impostos_apurac |
 | 58808 | 64913 | NE | Lib | PR- Est� sendo gerada indevidamente a contabiliza��o para o imposto 27 |
-| 59209 | 64884 | SAM | Desc | Criar modal padrão para seleção de empresas para replicação de cadastr |
 | 58635 | 64896 | NE | Lib | Em alguns casos est� ocorrendo lentid�o ao alterar ou incluir uma info |
 | 58679 | 64893 | SAL | Lib | SP-Alterar a descri��o da ocorr�ncia Valor destinado ao Programa Incen |
 | 58716 | 64875 | SAL | Lib | MT-Ajustar a escritura��o do informativo SPED Fiscal, referente as not |
@@ -12607,8 +12331,6 @@
 | 58633 | 64866 | NE | Lib | SP-N�o est� sendo gerado o registro 0190 no informativo SPED Fiscal, q |
 | 59160 | 64864 | NE | Lib | Est�o sendo demonstradas incorretamente as informa��es do demonstrativ |
 | 58930 | 64863 | SAM | Desc | Criar o cadastro de participantes no Onvio Escrita Fiscal. |
-| 58696 | 64825 | SAM | Desc | Criar um workspace para cadastrar contas contábeis nos campos de conta |
-| 58673 | 64824 | SAM | Desc | Criar um workspace para cadastrar históricos nos campos de históricos  |
 | 58600 | 64834 | NE | Lib | Est�o sendo importados os valores incorretos nos registros P200 e P400 |
 | 58688 | 64808 | SAL | Lib | BA-Gerar o c�digo de ajuste "BA050004" para o valor a recolher do impo |
 | 59131 | 64807 | NE | Lib | Est� sendo apresentado o nome do certificado A3 incorreto na na guia " |
@@ -12828,8 +12550,6 @@
 | 58693 | 63876 | SAL | Lib | MG-Habilitar o campo "Ajuste no SPED" para lan�amentos de ajuste para  |
 | 58090 | 63858 | NE | Lib | MT-N�o est� sendo calculado valor para o fundo IAGRO, quando a empresa |
 | 58137 | 63857 | NE | Lib | SP/CE-N�o est�o sendo listados os produtos no utilit�rio "Atualizar Im |
-| 58707 | 63848 | SAM | Desc | Criar o cadastro de Contas do módulo Contabilidade no Onvio. |
-| 58805 | 63847 | SAM | Desc | Criar o cadastro de lançamento padrão do módulo Contabilidade no Onvio |
 | 58531 | 63856 | NE | Lib | N�o est� sendo realizado consultas quando o Busca NF-e estiver instala |
 | 58092 | 63855 | NE | Lib | N�o est� sendo gerada corretamente a integra��o cont�bil dos lan�ament |
 | 58078 | 63853 | NE | Lib | SC-Est� sendo demonstrado indevidamente erro de banco e o erro "Erro a |
@@ -12888,7 +12608,6 @@
 | 58038 | 63549 | NE | Lib | SP-N�o est� sendo demonstrado o percentual do IRRF na emiss�o da NFS-e |
 | 57908 | 63547 | NE | Lib | Est� ocorrendo erro de banco de dados ao clicar no bot�o "Listar" da j |
 | 58650 | 63546 | SAL | Desc | Permitir cadastrar bens componentes sem informar o bem resultante. |
-| 58691 | 63522 | SAM | Desc | Criar o cadastro de históricos do módulo Contabilidade no Onvio. |
 | 57959 | 63504 | SAL | Lib | Criar op��o na estrutura da DLPA para deduzir valores com saldo devedo |
 | 58231 | 63502 | NE | Desc | Em alguns casos est� ficando travado a importa��o de nota atrav�s do N |
 | 57898 | 63501 | NE | Lib | Est� sendo gerado indevidamente o evento R-2060 do informativo Reinf p |
@@ -20560,1371 +20279,1371 @@
 | 40602 | 34195 | NE | Lib | Est� sendo gerado incorretamente o valor do campo 03-VL_TOT_REC dos re |
 | 40527 | 34194 | NE | Lib | SP-N�o est�o sendo demonstrados todos o produtos no relat�rio "Demonst |
 | 40787 | 34187 | SAL | Lib | Gerar no registro R10 da DCTF o valor l�quido da CSLL j� deduzido o b� |
-| 33706 | 34168 | SAM | Lib | Alterar a mensagem exibida sobre a exclus�o de registros de segmentos  |
-| 33912 | 34169 | SAM | Pend | Enviar para o Dom�nio Atendimento a informa��o de que a empresa � do r |
 | 33461 | 34166 | SAM | Desc | PA- Incluir as op��es de tipo de opera��o ao lado do campo "Opera��o c |
+| 33912 | 34169 | SAM | Pend | Enviar para o Dom�nio Atendimento a informa��o de que a empresa � do r |
 | 32745 | 34163 | SAM | Lib | Importar o cadastro de produtos e preencher na guia Impostos os valore |
+| 33706 | 34168 | SAM | Lib | Alterar a mensagem exibida sobre a exclus�o de registros de segmentos  |
 | 30483 | 34095 | SAM | Lib | Criar uma op��o no sistema para informar por dia o 'Valor Unit�rio' pa |
 | 29032 | 34068 | SAM | Lib | Alterar a importa��o do NF-e Portal conforme nova estrutura. |
-| 26610 | 34046 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
-| 27796 | 34062 | SAM | Lib | Gerar a Observa��o de interesse do fisco e do contribuinte do cadastro |
-| 26609 | 34045 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
 | 26406 | 34041 | SAM | Lib | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o |
 | 26632 | 34049 | SAM | Lib | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o |
 | 26445 | 34042 | SAM | Desc | MG-Disponibilizar o informativo estadual Gia Substitui��o Tribut�ria - |
-| 25537 | 34032 | SAM | Lib | Permitir importar o extrato banc�rio da compet�ncia informada mesmo qu |
-| 25970 | 34035 | SAM | Lib | Otimizar a demonstra��o dos avisos de vencimento |
+| 26610 | 34046 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
+| 27796 | 34062 | SAM | Lib | Gerar a Observa��o de interesse do fisco e do contribuinte do cadastro |
+| 26609 | 34045 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
+| 26403 | 34038 | SAM | Lib | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o |
 | 24520 | 34026 | SAM | Lib | Gerar o relat�rio de acompanhamento de entradas em modo retrato |
 | 26405 | 34040 | SAM | Lib | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o |
-| 26403 | 34038 | SAM | Lib | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o |
 | 26404 | 34039 | SAM | Desc | Alterar as chaves estrangeiras das tabelas para ficar compat�vel com o |
-| 23820 | 34015 | SAM | Lib | Alterar a tela de cadastro de �ndices. |
+| 25970 | 34035 | SAM | Lib | Otimizar a demonstra��o dos avisos de vencimento |
+| 25537 | 34032 | SAM | Lib | Permitir importar o extrato banc�rio da compet�ncia informada mesmo qu |
 | 23877 | 34017 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
-| 23881 | 34021 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
-| 23878 | 34018 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
 | 23882 | 34022 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
+| 23820 | 34015 | SAM | Lib | Alterar a tela de cadastro de �ndices. |
+| 23881 | 34021 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
 | 23935 | 34024 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
-| 23879 | 34019 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
+| 23878 | 34018 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
 | 23880 | 34020 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
-| 19989 | 33985 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
-| 19737 | 33984 | SAM | Lib | Desenvolver importa��o de NF-e via portal para empresas do estado PE,  |
+| 23879 | 34019 | SAM | Lib | Alterar sistema para rodar em banco DB2 |
 | 21281 | 33993 | SAM | Lib | Incluir detalhamento por nota ou acumulador no relat�rio demonstrativo |
 | 20958 | 33992 | SAM | Lib | Ocorre erro na transfer�ncia do Dom�nio Atendimento para o Dom�nio Con |
-| 18685 | 33975 | SAM | Lib | Disponibilizar a tabela "Notas Fiscais de Sa�das - PIS/COFINS (EFSAIDA |
+| 19989 | 33985 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
+| 19737 | 33984 | SAM | Lib | Desenvolver importa��o de NF-e via portal para empresas do estado PE,  |
 | 18687 | 33977 | SAM | Desc | Alterar o conjunto de dados "CT-e Formato XML - Notas Fiscais de Sa�da |
-| 18686 | 33976 | SAM | Lib | Criar vari�vel de f�rmula de evento que retorne o valor do sal�rio m�n |
+| 18751 | 33982 | SAM | Lib | Criar a op��o de transportar valores da �ltima tabela para as tabelas  |
 | 18747 | 33981 | SAM | Lib | Atualizar os leiautes Completo Dom�nio e 19 de notas de sa�das para im |
 | 18677 | 33974 | SAM | Lib | Criar a op��o Incluir, Alterar e Excluir nas op��es Lan�amentos, Consu |
-| 18751 | 33982 | SAM | Lib | Criar a op��o de transportar valores da �ltima tabela para as tabelas  |
+| 18686 | 33976 | SAM | Lib | Criar vari�vel de f�rmula de evento que retorne o valor do sal�rio m�n |
+| 18685 | 33975 | SAM | Lib | Disponibilizar a tabela "Notas Fiscais de Sa�das - PIS/COFINS (EFSAIDA |
 | 18604 | 33970 | SAM | Lib | Cadastrar os Fornecedores, Clientes e Remetentes/Destinat�rios somente |
 | 18729 | 33978 | SAM | Lib | Emitir aviso quando alterado lan�amento em lote que j� esteja concilia |
-| 18429 | 33951 | SAM | Lib | Possibilitar a importa��o de extrato banc�rio do banco do Brasil, quan |
-| 18233 | 33936 | SAM | Lib | Criar op��o para indentificar a exist�ncia de produtos pelo c�digo de  |
-| 18363 | 33946 | SAM | Lib | Gerar o boleto banc�rio e o arquivo de remessa de 400 posi��es para o  |
 | 18469 | 33958 | SAM | Lib | Otimizar o processo de lan�amentos de movimento de estoque quando o pr |
 | 18539 | 33963 | SAM | Lib | Alterar as informa��es do Aceite na emiss�o de boletos banc�rios e arq |
+| 18429 | 33951 | SAM | Lib | Possibilitar a importa��o de extrato banc�rio do banco do Brasil, quan |
+| 18233 | 33936 | SAM | Lib | Criar op��o para indentificar a exist�ncia de produtos pelo c�digo de  |
 | 18231 | 33935 | SAM | Lib | Otimizar o processo de listagem de boletos emitidos. |
+| 18363 | 33946 | SAM | Lib | Gerar o boleto banc�rio e o arquivo de remessa de 400 posi��es para o  |
 | 18055 | 33922 | SAM | Lib | Mostrar no lan�amento de eventos mensais somente os contratos que este |
+| 17911 | 33910 | SAM | Lib | Criar op��o para informar o n�mero sequencial de remessa no arquivo de |
 | 18034 | 33920 | SAM | Desc | Otimizar c�lculo do PIS e COFINS, quando realizado conforme EFD. |
 | 18084 | 33924 | SAM | Lib | Atualizar as importa��es para importar os dados necess�rios para o cal |
-| 17911 | 33910 | SAM | Lib | Criar op��o para informar o n�mero sequencial de remessa no arquivo de |
 | 18045 | 33921 | SAM | Lib | Deduzir das coluna Sa�das o valor do imposto 9-Subtri no relat�rio Dem |
 | 18098 | 33927 | SAM | Lib | Desenvolver importa��o padr�o para o leiaute do SPED PIS e COFINS |
 | 17878 | 33908 | SAM | Lib | Criar op��o para alterar os informa��es do SPED no cadastro de produto |
 | 17358 | 33867 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
-| 17582 | 33888 | SAM | Lib | Desenvolver relat�rio que demonstre a quantidade de NFes lan�adas por  |
-| 17482 | 33880 | SAM | Lib | GO - Incluir na Importa��o Padr�o do Leiaute Dom�nio Sistemas ? Comple |
 | 17444 | 33872 | SAM | Lib | Demonstrar o c�digo e o CNPJ da empresa no relat�rio de inconsist�ncia |
+| 17482 | 33880 | SAM | Lib | GO - Incluir na Importa��o Padr�o do Leiaute Dom�nio Sistemas ? Comple |
+| 17582 | 33888 | SAM | Lib | Desenvolver relat�rio que demonstre a quantidade de NFes lan�adas por  |
 | 17494 | 33881 | SAM | Lib | Permitir gravar as notas de devolu��o sem a informa��o da nota devolvi |
-| 17210 | 33848 | SAM | Desc | Otimizar a emiss�o de boletos quando possuem sub relat�rios. |
-| 17211 | 33849 | SAM | Lib | Otimizar a emiss�o e notas fiscais quando possuem sub relat�rios. |
-| 17192 | 33846 | SAM | Lib | Criar relat�rios de inconsist�ncias para c�lculo do PIS e COFINS por p |
-| 17187 | 33845 | SAM | Lib | Permitir a exclus�o do faturamento de clientes que possuem mais de um  |
 | 17209 | 33847 | SAM | Lib | Otimizar a emiss�o de documento de combran�a quando possuem sub relat� |
+| 17210 | 33848 | SAM | Desc | Otimizar a emiss�o de boletos quando possuem sub relat�rios. |
+| 17192 | 33846 | SAM | Lib | Criar relat�rios de inconsist�ncias para c�lculo do PIS e COFINS por p |
+| 17211 | 33849 | SAM | Lib | Otimizar a emiss�o e notas fiscais quando possuem sub relat�rios. |
 | 17218 | 33853 | SAM | Lib | Alterar a gera��o do arquivo de remessa do Banco do Brasil nos registr |
+| 17187 | 33845 | SAM | Lib | Permitir a exclus�o do faturamento de clientes que possuem mais de um  |
 | 17098 | 33832 | SAM | Lib | Criar relat�rios para confer�ncia do calculo do Pis e Cofins para empr |
-| 16722 | 33811 | SAM | Lib | Alterar a gera��o do arquivo de remessa do Banco do Brasil nos registr |
-| 16788 | 33820 | SAM | Lib | Alterar as informa��es do Aceite e da Esp�cie do Documento na emiss�o  |
 | 16723 | 33812 | SAM | Lib | Criar op��o para gerar arquivo de remessa para Cobran�a com Registro n |
-| 16428 | 33780 | SAM | Lib | Criar op��o para listar tamb�m os produtos com informa��o para o c�lcu |
+| 16788 | 33820 | SAM | Lib | Alterar as informa��es do Aceite e da Esp�cie do Documento na emiss�o  |
+| 16722 | 33811 | SAM | Lib | Alterar a gera��o do arquivo de remessa do Banco do Brasil nos registr |
 | 16445 | 33788 | SAM | Lib | Permitir alterar uma vig�ncia no cadastro do produto mesmo que n�o exi |
 | 16424 | 33779 | SAM | Lib | Criar op��o para n�o imprimir o balancete acumulado na emiss�o dos liv |
+| 16428 | 33780 | SAM | Lib | Criar op��o para listar tamb�m os produtos com informa��o para o c�lcu |
 | 16359 | 33775 | SAM | Lib | Criar filtro para selecionar por 'C�digo de Acumulador' e 'CFOP' no ut |
 | 15847 | 33748 | SAM | Lib | AL-Disponibilizar as colunas IPI e Subtri na linha do ICMS das notas d |
 | 15930 | 33753 | SAM | Lib | Em alguma situa��es ocorre lentid�o ao acessar a guia estoque das nota |
 | 15933 | 33754 | SAM | Lib | Em alguma situa��es ocorre lentid�o ao acessar a guia estoque das nota |
-| 15817 | 33745 | SAM | Lib | Otimizar processo de apura��o para empresas optantes do Simples Nacion |
 | 15644 | 33732 | SAM | Desc | Gerar a chave NFe ao realizar importa��o de notas pelo importador quan |
-| 15383 | 33718 | SAM | Lib | Listar nas consultas F2 os clientes inativos e em constitui��o somente |
-| 15386 | 33720 | SAM | Lib | Criar uma op��o para gerar no hist�rico do pagamento do relat�rio "Con |
+| 15817 | 33745 | SAM | Lib | Otimizar processo de apura��o para empresas optantes do Simples Nacion |
 | 15037 | 33701 | SAM | Desc | Criar op��o de informar compet�ncia inicial e final na tela de pagamen |
-| 15473 | 33723 | SAM | Lib | Alterar nome do campo "Conta cont�bil do bem" na tela de lan�amentos d |
+| 15383 | 33718 | SAM | Lib | Listar nas consultas F2 os clientes inativos e em constitui��o somente |
 | 15384 | 33719 | SAM | Lib | Trazer as op��es "N�o Listar Clientes Inativos e N�o Listar Clientes e |
-| 15055 | 33702 | SAM | Lib | Criar op��o para calcular o adicional de IRPJ mensalmente.     |
 | 15018 | 33700 | SAM | Lib | Incluir o campo localizador na listagem da tela de lan�amentos em lote |
+| 15386 | 33720 | SAM | Lib | Criar uma op��o para gerar no hist�rico do pagamento do relat�rio "Con |
+| 15055 | 33702 | SAM | Lib | Criar op��o para calcular o adicional de IRPJ mensalmente.     |
+| 15473 | 33723 | SAM | Lib | Alterar nome do campo "Conta cont�bil do bem" na tela de lan�amentos d |
 | 14866 | 33690 | SAM | Lib | Criar op��o para gerar os boletos da CAIXA do tipo 17 posi��es SIGCB c |
 | 14769 | 33684 | SAM | Desc | MT - Incluir no leiaute Dominio sistemas - Completo Registros para efe |
 | 14845 | 33687 | SAM | Lib | Enviar para a Dom�nio a quantidade de NFes de entradas e sa�das lan�ad |
-| 14568 | 33674 | SAM | Desc | Permitir que seja poss�vel inserir um campo com o nome do campo igual  |
 | 14509 | 33668 | SAM | Lib | Converter a compet�ncia de encerramento dos contratos sempre no dia 01 |
-| 14383 | 33639 | SAM | Lib | Cadastrar clientes e fornecedores como contribuintes do ICMS na import |
+| 14568 | 33674 | SAM | Desc | Permitir que seja poss�vel inserir um campo com o nome do campo igual  |
 | 14410 | 33642 | SAM | Lib | Criar filtro por acumulador na tela de emiss�o dos relat�rios de conta |
-| 14347 | 33633 | SAM | Desc | N�o permitir maximizar a janela de hist�ricos cont�beis. |
+| 14383 | 33639 | SAM | Lib | Cadastrar clientes e fornecedores como contribuintes do ICMS na import |
 | 14348 | 33634 | SAM | Lib | Habilitar a tecla de atalho F7 para cadastrar contas cont�beis e hist� |
-| 14295 | 33628 | SAM | Desc | Demonstrar todo o hist�rico nos livros que esses n�o possuirem espa�os |
+| 14347 | 33633 | SAM | Desc | N�o permitir maximizar a janela de hist�ricos cont�beis. |
 | 14083 | 33600 | SAM | Lib | Alterar relat�rio acompanhamento de entradas, sa�das e servi�os para d |
-| 13849 | 33579 | SAM | Lib | Criar a op��o de informar o nome da pessoa que recebeu na emiss�o do r |
-| 13853 | 33583 | SAM | Lib | Desenvolver novos modelos de boletos que listem os eventos faturados e |
-| 13848 | 33578 | SAM | Lib | Criar relat�rio de contas a pagar e receber que demonstre mais de uma  |
-| 13944 | 33594 | SAM | Lib | N�o est� sendo permitido relacionar produtos com unidades difentes na  |
+| 14295 | 33628 | SAM | Desc | Demonstrar todo o hist�rico nos livros que esses n�o possuirem espa�os |
 | 13951 | 33595 | SAM | Desc | RS- Incluir a Insc. Estadual e o respons�vel da empresa no cabe�alho d |
+| 13944 | 33594 | SAM | Lib | N�o est� sendo permitido relacionar produtos com unidades difentes na  |
+| 13848 | 33578 | SAM | Lib | Criar relat�rio de contas a pagar e receber que demonstre mais de uma  |
+| 13853 | 33583 | SAM | Lib | Desenvolver novos modelos de boletos que listem os eventos faturados e |
 | 13836 | 33576 | SAM | Lib | Habilitar as op��es para gerar parcelas na configura��o de importa��o  |
-| 13485 | 33537 | SAM | Desc | N�o est� sendo realizada nenhum tipo de valida��o das informa��es, ao  |
-| 13482 | 33535 | SAM | Desc | Validar as inoforma��es importadas pelo importador quando realizado a  |
+| 13849 | 33579 | SAM | Lib | Criar a op��o de informar o nome da pessoa que recebeu na emiss�o do r |
 | 13487 | 33539 | SAM | Desc | N�o permitir importar contas cont�beis do tipo sint�tica ou contas inv |
-| 13486 | 33538 | SAM | Desc | N�o est� sendo realizada nenhum tipo de valida��o das informa��es, ao  |
-| 13515 | 33544 | SAM | Lib | Gerar no relat�rio de inconsist�ncias do utilit�rios de regerar os lan |
+| 13482 | 33535 | SAM | Desc | Validar as inoforma��es importadas pelo importador quando realizado a  |
 | 13484 | 33536 | SAM | Desc | N�o est� sendo realizada nenhum tipo de valida��o das informa��es, ao  |
+| 13486 | 33538 | SAM | Desc | N�o est� sendo realizada nenhum tipo de valida��o das informa��es, ao  |
+| 13485 | 33537 | SAM | Desc | N�o est� sendo realizada nenhum tipo de valida��o das informa��es, ao  |
+| 13515 | 33544 | SAM | Lib | Gerar no relat�rio de inconsist�ncias do utilit�rios de regerar os lan |
 | 13437 | 33526 | SAM | Lib | Otimizar a apura��o dos impostos federais de empresas que apuraram pel |
-| 13202 | 33515 | SAM | Lib | Gerar para o informativos SPED a espress�o "S/N" no campo n�mero do en |
 | 13088 | 33504 | SAM | Lib | SP - Disponibilizar imposto DIFALI para o c�lculo dos impostos em atra |
 | 13401 | 33520 | SAM | Desc | N�o est� emitindo o Livro de Entradas, quando a empresa for filial e h |
+| 13202 | 33515 | SAM | Lib | Gerar para o informativos SPED a espress�o "S/N" no campo n�mero do en |
 | 13016 | 33498 | SAM | Lib | Otimizar o preocesso de emiss�o do Livro de Sa�das. |
-| 12900 | 33480 | SAM | Lib | MT-Considerar somente os �ltimos 9 digitos da inscri��o estadual para  |
-| 12864 | 33479 | SAM | Lib | Ignorar a informa��o do campo "Data" do estoque das Notas Fiscais de e |
-| 12975 | 33495 | SAM | Lib | Incluir o item "CT-e Substituto" no campo 'Tipo CT-e' na guia Compleme |
 | 12754 | 33474 | SAM | Desc | N�o est� sendo totalizado no relat�rio Acompanhamento de Sa�das o valo |
+| 12975 | 33495 | SAM | Lib | Incluir o item "CT-e Substituto" no campo 'Tipo CT-e' na guia Compleme |
+| 12900 | 33480 | SAM | Lib | MT-Considerar somente os �ltimos 9 digitos da inscri��o estadual para  |
 | 12974 | 33494 | SAM | Lib | Incluir a tabela de Pa�ses para realiza��o de consulta nas tabelas est |
-| 12537 | 33454 | SAM | Lib | Disponibilizar relacionamento com o Demonstrativo Fluxo de Caixa nos l |
-| 12603 | 33457 | SAM | Lib | N�o est� sendo poss�vel realizar a impora��o de extrato no ambiente we |
+| 12864 | 33479 | SAM | Lib | Ignorar a informa��o do campo "Data" do estoque das Notas Fiscais de e |
 | 12676 | 33460 | SAM | Lib | N�o atualizar as p�ginas da receita federal quando clicado F5 na empis |
 | 12535 | 33453 | SAM | Lib | Otimizar o processo de importa��o de NFe pelo importador quando existi |
-| 12246 | 33412 | SAM | Lib | N�o abrir a tela de detalhamento anexo VB quando o valor da coluna out |
+| 12537 | 33454 | SAM | Lib | Disponibilizar relacionamento com o Demonstrativo Fluxo de Caixa nos l |
+| 12603 | 33457 | SAM | Lib | N�o est� sendo poss�vel realizar a impora��o de extrato no ambiente we |
 | 12208 | 33409 | SAM | Lib | Criar relat�rio onde sejam demonstrado os adiantamentos dos clientes. |
-| 12209 | 33410 | SAM | Lib | Permitir informar hist�rio na baixa de parcelas ao importar boletos re |
-| 12207 | 33408 | SAM | Lib | Emitir o evento do contrato no relat�rio de lan�amentos. |
 | 12418 | 33423 | SAM | Lib | Alterar o nome da janela de rateio da DFC de "Fluxo de caixa" para "DF |
-| 12141 | 33406 | SAM | Lib | SC-Desenvolver Help para a tela de detalhamento no pagamento do impost |
-| 11844 | 33397 | SAM | Desc | Desabilitar o bot�o IMPORTAR DADOS do m�dulo quando usu�rio n�o tem pe |
+| 12207 | 33408 | SAM | Lib | Emitir o evento do contrato no relat�rio de lan�amentos. |
+| 12209 | 33410 | SAM | Lib | Permitir informar hist�rio na baixa de parcelas ao importar boletos re |
+| 12246 | 33412 | SAM | Lib | N�o abrir a tela de detalhamento anexo VB quando o valor da coluna out |
 | 11836 | 33390 | SAM | Lib | Ajustar o Bloqueto do Banco Unibanco para imprimir a Ag�ncia + o C�dig |
-| 12107 | 33402 | SAM | Desc | Otimizar o processo de gera��o do relat�rio de D.R.E por centro de cus |
+| 12028 | 33401 | SAM | Lib | Aumentar o campo observa��es da tela de gera��o do livro de ICMS. |
 | 11803 | 33385 | SAM | Lib | Permitir buscar contratos pelo nome do cliente na listagem de contrato |
 | 11837 | 33391 | SAM | Lib | Exibir aviso de confirma��o, quando informado data de emiss�o da nota  |
-| 11804 | 33386 | SAM | Lib | Criar op��o para selecionar Todas, nenhum e inverter sele��o na emiss� |
-| 11845 | 33398 | SAM | Lib | Criar cadastro de categorias de contas a pagar. |
+| 12141 | 33406 | SAM | Lib | SC-Desenvolver Help para a tela de detalhamento no pagamento do impost |
 | 11843 | 33396 | SAM | Lib | Parmitir definir o tempo gasto por m�dulo para emiss�o de avisos de co |
-| 12028 | 33401 | SAM | Lib | Aumentar o campo observa��es da tela de gera��o do livro de ICMS. |
-| 11750 | 33372 | SAM | Lib | Listar os clientes n�o faturados e o motivo no final do faturamento. |
-| 11746 | 33368 | SAM | Lib | Incluir campo para informar o celular no cadastro de clientes. |
-| 11714 | 33356 | SAM | Lib | Criar novo leiaute para importa��o de produtos aumentando para dois d� |
+| 12107 | 33402 | SAM | Desc | Otimizar o processo de gera��o do relat�rio de D.R.E por centro de cus |
+| 11844 | 33397 | SAM | Desc | Desabilitar o bot�o IMPORTAR DADOS do m�dulo quando usu�rio n�o tem pe |
+| 11845 | 33398 | SAM | Lib | Criar cadastro de categorias de contas a pagar. |
+| 11804 | 33386 | SAM | Lib | Criar op��o para selecionar Todas, nenhum e inverter sele��o na emiss� |
 | 11722 | 33364 | SAM | Lib | Desenvolver processo para mostrar o conta corrente do cliente e do esc |
-| 11661 | 33355 | SAM | Lib | O sistema est� gerando lan�amento em lote com c�digo sequ�ncial fora d |
-| 11751 | 33373 | SAM | Lib | Permitir a altera��o do dia de vencimento no contrato quando a empresa |
-| 11752 | 33374 | SAM | Lib | Criar op��o de estornar um cancelamento de nota fiscal. |
 | 11755 | 33377 | SAM | Lib | Criar op��o para que ao receber uma adiantamento o sistema j� verifiqu |
-| 11452 | 33349 | SAM | Lib | Ajustar a impress�o dos livros de Entradas e Sa�das para imprimir os 9 |
-| 11721 | 33363 | SAM | Lib | Permitir alterar o inicio do faturamento e inicio do contrato, desde q |
-| 11749 | 33371 | SAM | Lib | Permitir realizar faturamento de clientes sem contrato. |
-| 11753 | 33375 | SAM | Lib | Criar op��o para definir o vencimento do contrato no segundo m�s subse |
 | 11418 | 33345 | SAM | Lib | Validar o CNPJ/CPF/CEI para definir o tipo de inscri��o utilizada no c |
+| 11753 | 33375 | SAM | Lib | Criar op��o para definir o vencimento do contrato no segundo m�s subse |
+| 11750 | 33372 | SAM | Lib | Listar os clientes n�o faturados e o motivo no final do faturamento. |
+| 11751 | 33373 | SAM | Lib | Permitir a altera��o do dia de vencimento no contrato quando a empresa |
+| 11749 | 33371 | SAM | Lib | Permitir realizar faturamento de clientes sem contrato. |
+| 11714 | 33356 | SAM | Lib | Criar novo leiaute para importa��o de produtos aumentando para dois d� |
+| 11452 | 33349 | SAM | Lib | Ajustar a impress�o dos livros de Entradas e Sa�das para imprimir os 9 |
+| 11752 | 33374 | SAM | Lib | Criar op��o de estornar um cancelamento de nota fiscal. |
+| 11661 | 33355 | SAM | Lib | O sistema est� gerando lan�amento em lote com c�digo sequ�ncial fora d |
+| 11746 | 33368 | SAM | Lib | Incluir campo para informar o celular no cadastro de clientes. |
 | 11720 | 33362 | SAM | Lib | Criar op��o para inativar e reativar um contrato |
-| 11354 | 33335 | SAM | Lib | Criar a possibilidade de lan�ar adiantamento, mesmo existindo valores  |
+| 11721 | 33363 | SAM | Lib | Permitir alterar o inicio do faturamento e inicio do contrato, desde q |
 | 11395 | 33341 | SAM | Lib | N�o permitir inserir/importar inscri��o estadual com menos de 11 d�git |
 | 11357 | 33338 | SAM | Lib | Criar uma op��o no sistema onde liste o contas a pagar do escrit�rio i |
+| 11354 | 33335 | SAM | Lib | Criar a possibilidade de lan�ar adiantamento, mesmo existindo valores  |
 | 11355 | 33336 | SAM | Desc | Possibilitar a importa��o de arquivo de retorno do banco do nordeste |
 | 11399 | 33343 | SAM | Lib | Criar op��o para importar os dados de clientes, fornecedores e remeten |
 | 11238 | 33314 | SAM | Desc | Reformular o menu relat�rios deste m�dulo |
+| 11230 | 33310 | SAM | Desc | Incluir o per�odo no relat�rio de custo/benef�cio     |
+| 11265 | 33320 | SAM | Lib | Liberar para importa��o de dados no uitilit�rio de importa��o, as tabe |
 | 11237 | 33313 | SAM | Desc | Otimizar a emiss�o do Relat�rio de Tarefas Realizadas |
 | 11235 | 33311 | SAM | Lib | O sistema n�o est� filtrando corretamente quando utilizado os filtros  |
-| 11230 | 33310 | SAM | Desc | Incluir o per�odo no relat�rio de custo/benef�cio     |
 | 11236 | 33312 | SAM | Desc | Considerar somente eventos que est�o marcados para somar no faturament |
-| 11265 | 33320 | SAM | Lib | Liberar para importa��o de dados no uitilit�rio de importa��o, as tabe |
-| 11070 | 33283 | SAM | Lib | SP-Utilizar a data da NFe se a data do RPS estiver em branco quando se |
-| 11116 | 33289 | SAM | Lib | Criar op��o para selecionar a ordem dos clientes para emiss�o das nota |
 | 11071 | 33284 | SAM | Lib | SP-Criar op��o para importar o c�digo do servi�o prestado para o campo |
-| 10982 | 33281 | SAM | Lib | Aumentar o tamanho do campo para informar a "Quantidade Inicial" e "Qu |
 | 11057 | 33282 | SAM | Desc | Ocorre erro ao selecionar um imposto da Escrita fiscal e clicar no bot |
-| 11135 | 33290 | SAM | Lib | Ocorre o erro "Chave NF-e Inv�lida! Data de Emiss�o da Chave Nota Fisc |
 | 10944 | 33275 | SAM | Desc | MG - N�o esta emitindo a Guia DAE quando selecionado o impostos 9 - SU |
+| 11070 | 33283 | SAM | Lib | SP-Utilizar a data da NFe se a data do RPS estiver em branco quando se |
+| 11135 | 33290 | SAM | Lib | Ocorre o erro "Chave NF-e Inv�lida! Data de Emiss�o da Chave Nota Fisc |
+| 10982 | 33281 | SAM | Lib | Aumentar o tamanho do campo para informar a "Quantidade Inicial" e "Qu |
+| 11116 | 33289 | SAM | Lib | Criar op��o para selecionar a ordem dos clientes para emiss�o das nota |
 | 10868 | 33271 | SAM | Lib | Considerar a data de faturamento para listar na tela de lan�amentos os |
 | 10707 | 33259 | SAM | Desc | Sistema est� sempre trazendo a data atual nos hist�ricos dos lan�ament |
-| 10791 | 33262 | SAM | Lib | Sugerir no campo data base da tela de emiss�o do relat�rio cadastral d |
-| 10845 | 33268 | SAM | Lib | Desenvolver modelo de bloqueto do Banco do Nordeste do Brasil |
 | 10857 | 33269 | SAM | Lib | Retirar da tela de configura��o de hist�rios os �cones e o texto expli |
-| 10493 | 33230 | SAM | Lib | Incluir a op��o "Quebra de p�gina por cliente" na emiss�o do Relat�rio |
+| 10845 | 33268 | SAM | Lib | Desenvolver modelo de bloqueto do Banco do Nordeste do Brasil |
+| 10791 | 33262 | SAM | Lib | Sugerir no campo data base da tela de emiss�o do relat�rio cadastral d |
 | 10490 | 33227 | SAM | Lib | Ordenar as informa��es das colunas conforme clicado no cabe�alho da li |
 | 10489 | 33226 | SAM | Lib | Criar op��o na guia "Avisos de contrato" do cadastro de contrato para  |
+| 10493 | 33230 | SAM | Lib | Incluir a op��o "Quebra de p�gina por cliente" na emiss�o do Relat�rio |
 | 10494 | 33231 | SAM | Lib | Listar clientes sem contrato na consulta F2 do cadastro de clientes. |
 | 10550 | 33233 | SAM | Lib | Listar notas com vencimento posteriores a data informada no campo "pos |
 | 10491 | 33228 | SAM | Lib | Criar op��o para interromper o faturamento de um contrato. |
-| 10477 | 33217 | SAM | Lib | Incluir campo n�mero ao lado do endere�o no relat�rio cadastral de cli |
-| 10312 | 33191 | SAM | Desc | Sistema est� gerando situa��o de "Isen��o" e deveria gerar situa��o "S |
-| 10412 | 33201 | SAM | Desc | Selecionar automaticamente a primeira parcela demonstrada ao efetuar b |
-| 10413 | 33202 | SAM | Desc | Demonstrar a Raz�o Social da empresa no campo "Cliente" do cadastro de |
-| 10377 | 33197 | SAM | Lib | Efetuar controle das vers�es dos sites do PGDAS e DASN sem precisar a  |
 | 10483 | 33222 | SAM | Lib | Alterar descri��o do campo "Local de Pagamento" do Boleto Completo Ban |
+| 10377 | 33197 | SAM | Lib | Efetuar controle das vers�es dos sites do PGDAS e DASN sem precisar a  |
+| 10412 | 33201 | SAM | Desc | Selecionar automaticamente a primeira parcela demonstrada ao efetuar b |
+| 10312 | 33191 | SAM | Desc | Sistema est� gerando situa��o de "Isen��o" e deveria gerar situa��o "S |
+| 10477 | 33217 | SAM | Lib | Incluir campo n�mero ao lado do endere�o no relat�rio cadastral de cli |
+| 10413 | 33202 | SAM | Desc | Demonstrar a Raz�o Social da empresa no campo "Cliente" do cadastro de |
+| 10211 | 33169 | SAM | Desc | Permitir alterar o tipo de contrato no cadastro de contratos. |
+| 10216 | 33174 | SAM | Lib | Permitir informar zero nos campos "Ulrapassar a:" da guia avisos de co |
+| 10203 | 33162 | SAM | Desc | Desenvolver relat�rio que liste as notas e os bloquetos cancelados. |
+| 10272 | 33181 | SAM | Lib | Criar relat�rio que demonstre os totais por eventos recebidos. |
+| 10268 | 33178 | SAM | Lib | Permitir excluir um contrato sem faturamento vinculado, mesmo que exis |
+| 10277 | 33184 | SAM | Lib | Criar campo que demonstre o "valor pago da parcela" na tela de baixa d |
+| 10270 | 33179 | SAM | Lib | Criar um cadastro de hist�ricos para ser utilizado nas baixas e na tel |
+| 10271 | 33180 | SAM | Lib | Aumentar o tamanho do campo observa��es na emiss�o dos bloquetos. |
+| 10212 | 33170 | SAM | Lib | Criar coluna que demonstre a compet�ncia do faturamento no relat�rio d |
 | 10207 | 33166 | SAM | Lib | Incluir nova guia chamada "Impostos" no complemento de hist�ricos com  |
 | 10206 | 33165 | SAM | Lib | Criar vari�vel para buscar a compet�ncia do recebimento na guia Recebi |
-| 10268 | 33178 | SAM | Lib | Permitir excluir um contrato sem faturamento vinculado, mesmo que exis |
-| 10271 | 33180 | SAM | Lib | Aumentar o tamanho do campo observa��es na emiss�o dos bloquetos. |
-| 10272 | 33181 | SAM | Lib | Criar relat�rio que demonstre os totais por eventos recebidos. |
-| 10270 | 33179 | SAM | Lib | Criar um cadastro de hist�ricos para ser utilizado nas baixas e na tel |
-| 10277 | 33184 | SAM | Lib | Criar campo que demonstre o "valor pago da parcela" na tela de baixa d |
-| 10203 | 33162 | SAM | Desc | Desenvolver relat�rio que liste as notas e os bloquetos cancelados. |
-| 10211 | 33169 | SAM | Desc | Permitir alterar o tipo de contrato no cadastro de contratos. |
 | 10274 | 33183 | SAM | Lib | Criar campo para informar um hist�rico na importa��o de bloqutos receb |
-| 10212 | 33170 | SAM | Lib | Criar coluna que demonstre a compet�ncia do faturamento no relat�rio d |
-| 10216 | 33174 | SAM | Lib | Permitir informar zero nos campos "Ulrapassar a:" da guia avisos de co |
-| 10195 | 33155 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10114  |
-| 10194 | 33154 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10108  |
-| 10191 | 33151 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10071  |
 | 10199 | 33159 | SAM | Desc | Criar op��o para filtrar os eventos que s�o ou n�o faturados com o con |
-| 10192 | 33152 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10075  |
 | 10196 | 33156 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10115 |
+| 10197 | 33157 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10117  |
+| 10198 | 33158 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10119  |
+| 10194 | 33154 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10108  |
 | 10189 | 33149 | SAM | Lib | SAI para transfer�ncia e testes da SAI 9252 |
 | 10193 | 33153 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10092  |
-| 10197 | 33157 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10117  |
 | 10190 | 33150 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10102 |
-| 10198 | 33158 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10119  |
+| 10195 | 33155 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10114  |
+| 10192 | 33152 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10075  |
+| 10191 | 33151 | SAM | Lib | SAI para transfer�ncia e testes da SAI 10071  |
 | 10184 | 33147 | SAM | Desc | Criar op��o para emiss�o do relat�rio de contas a receber com os valor |
 | 10180 | 33143 | SAM | Lib | Criar op��o de de selecionar todos, nenhum e de inverter na tela de re |
-| 10176 | 33139 | SAM | Lib | Permitir ordena��o, clicando sobre o t�tulo da coluna, na tela de emis |
-| 10008 | 33111 | SAM | Desc | PR - Alterar o n�mero e o tipo demonstrados no relat�rio da GIA ao mar |
-| 10022 | 33114 | SAM | Desc | Ocorre erro de duplica��o de registro ao efetuar valida��o de arquivo  |
-| 10068 | 33127 | SAM | Desc | Quando a empresa efetua apura��o do Simples Nacional pelo regime de ca |
-| 10047 | 33120 | SAM | Desc | Criar op��o para selcionar por competencia o relat�rio de extrato clie |
 | 10174 | 33137 | SAM | Lib | Criar op��o no cadastro de cliente para selecionar o tipo de cobran�a |
-| 10016 | 33112 | SAM | Lib | N�o exibir a mensagem se deseja alterar todos os clientes, fornecedore |
+| 10176 | 33139 | SAM | Lib | Permitir ordena��o, clicando sobre o t�tulo da coluna, na tela de emis |
+| 10177 | 33140 | SAM | Lib | Criar um cadastro de categorias de contas a pagar para pagamento e con |
 | 10149 | 33133 | SAM | Lib | Disponibbilizar os mesmos campos utilizados na emiss�o dos bloquetos n |
-| 10046 | 33119 | SAM | Lib | Em empresas onde a apura��o do Simples Nacional � pelo regime de caixa |
+| 10022 | 33114 | SAM | Desc | Ocorre erro de duplica��o de registro ao efetuar valida��o de arquivo  |
 | 10175 | 33138 | SAM | Lib | Criar um campo no cadastro da conta financeira para informar o in�cio  |
+| 10046 | 33119 | SAM | Lib | Em empresas onde a apura��o do Simples Nacional � pelo regime de caixa |
+| 10068 | 33127 | SAM | Desc | Quando a empresa efetua apura��o do Simples Nacional pelo regime de ca |
+| 10008 | 33111 | SAM | Desc | PR - Alterar o n�mero e o tipo demonstrados no relat�rio da GIA ao mar |
+| 10016 | 33112 | SAM | Lib | N�o exibir a mensagem se deseja alterar todos os clientes, fornecedore |
+| 10047 | 33120 | SAM | Desc | Criar op��o para selcionar por competencia o relat�rio de extrato clie |
 | 10172 | 33136 | SAM | Lib | Otimizar a emiss�o do Livro de Apura��o de ICMS.   |
 | 10076 | 33131 | SAM | Lib | Habilitar o bot�o para Rateio por Centro de Custos na tela de baixa de |
-| 10177 | 33140 | SAM | Lib | Criar um cadastro de categorias de contas a pagar para pagamento e con |
-| 9992 | 33107 | SAM | Lib | Trazer o mesmo valor do campo Regime Federal definido nos par�metros d |
-| 10002 | 33109 | SAM | Desc | Disponibilizar na tela de emiss�o do balancete (individual) a op��o "T |
 | 9922 | 33095 | SAM | Lib | Otimizar o processo de busca na listagem dos lan�amentos cont�beis. |
+| 10002 | 33109 | SAM | Desc | Disponibilizar na tela de emiss�o do balancete (individual) a op��o "T |
+| 9992 | 33107 | SAM | Lib | Trazer o mesmo valor do campo Regime Federal definido nos par�metros d |
 | 9887 | 33084 | SAM | Lib | Otimizar a emiss�o do livro de sa�das |
-| 9917 | 33094 | SAM | Lib | Criar novo layout de importa��o de notas com registro para ser informa |
 | 10001 | 33108 | SAM | Desc | Criar op��o para utilizar a mesma conta contabil do fornecedor/cliente |
+| 9917 | 33094 | SAM | Lib | Criar novo layout de importa��o de notas com registro para ser informa |
 | 9960 | 33102 | SAM | Lib | RS-Trazer como sugest�o o per�odo do ano anterior ao per�odo atual na  |
-| 9811 | 33058 | SAM | Desc | Criar op��o para efetuar o rateio de centro de custo em cada partida d |
-| 9817 | 33063 | SAM | Desc | N�o permitir efetuar lan�amentos utilizando o c�digo de filial se essa |
-| 9795 | 33054 | SAM | Desc | RS-Gerar para o livro especial de ISS as notas de sa�das com CFOP 7949 |
-| 9773 | 33051 | SAM | Lib | Emitir a guia DAS diretamente pelo sistema interagindo com o site da r |
-| 9836 | 33068 | SAM | Lib | Otimizar a gera��o do arquivo Sintegra quando marcado a op��o para ger |
-| 9813 | 33060 | SAM | Lib | Criar op��o de emiss�o por centro de custo no relat�rio Comparativo de |
 | 9812 | 33059 | SAM | Lib | Criar op��o de emitir o Livro Di�rio por centro de custos. |
-| 9848 | 33071 | SAM | Desc | Criar op��o de replicar a estrutura do Balan�o de Demonstra��o. |
-| 9810 | 33057 | SAM | Lib | Criar op��o para detalhar as contas por centro de custo no Balancete. |
+| 9811 | 33058 | SAM | Desc | Criar op��o para efetuar o rateio de centro de custo em cada partida d |
 | 9851 | 33073 | SAM | Desc | Aumentar para 500 caracteres o limite para descri��o das contas na est |
-| 9675 | 33042 | SAM | Desc | Permitir ordena��o clicando sobre o nome da coluna nos quadros Lan�ame |
-| 9750 | 33048 | SAM | Desc | Alterar a exclus�o de lan�amentos para que a tela tenha a mesma funcio |
-| 9746 | 33045 | SAM | Desc | Otimizar o processo de emiss�o do balancete por centro de custos. |
-| 9674 | 33041 | SAM | Desc | Quando um grupo DRE estiver configurado para "Fechar Sub Total" o mesm |
+| 9817 | 33063 | SAM | Desc | N�o permitir efetuar lan�amentos utilizando o c�digo de filial se essa |
+| 9810 | 33057 | SAM | Lib | Criar op��o para detalhar as contas por centro de custo no Balancete. |
+| 9836 | 33068 | SAM | Lib | Otimizar a gera��o do arquivo Sintegra quando marcado a op��o para ger |
+| 9795 | 33054 | SAM | Desc | RS-Gerar para o livro especial de ISS as notas de sa�das com CFOP 7949 |
+| 9813 | 33060 | SAM | Lib | Criar op��o de emiss�o por centro de custo no relat�rio Comparativo de |
+| 9848 | 33071 | SAM | Desc | Criar op��o de replicar a estrutura do Balan�o de Demonstra��o. |
+| 9773 | 33051 | SAM | Lib | Emitir a guia DAS diretamente pelo sistema interagindo com o site da r |
 | 9749 | 33047 | SAM | Lib | Disponibilizar op��o de emitir valores negativos entre parenteses na e |
-| 9747 | 33046 | SAM | Desc | Permitir compartilhar departamentos e centros de custos entre empresas |
 | 9670 | 33037 | SAM | Desc | Demonstrar o IRRF no relat�rio de Saldo dos Impostos. |
+| 9747 | 33046 | SAM | Desc | Permitir compartilhar departamentos e centros de custos entre empresas |
+| 9675 | 33042 | SAM | Desc | Permitir ordena��o clicando sobre o nome da coluna nos quadros Lan�ame |
 | 9751 | 33049 | SAM | Desc | Criar consulta onde demonstre os departamentos e centro de custos de f |
-| 9601 | 33012 | SAM | Desc | Emitir o relat�rio Resumo dos Impostos em uma �nica p�gina. |
-| 9568 | 33006 | SAM | Lib | Disponibilizar no Balan�o Demonstra��o, relat�rio de lan�amentos Compa |
+| 9750 | 33048 | SAM | Desc | Alterar a exclus�o de lan�amentos para que a tela tenha a mesma funcio |
+| 9674 | 33041 | SAM | Desc | Quando um grupo DRE estiver configurado para "Fechar Sub Total" o mesm |
+| 9746 | 33045 | SAM | Desc | Otimizar o processo de emiss�o do balancete por centro de custos. |
 | 9632 | 33025 | SAM | Lib | Otimizar o processo de emiss�o do balancete por centros de custos. |
 | 9656 | 33029 | SAM | Desc | Aumentar a quantidade de caracteres do bot�o observa��es do livro de a |
-| 9492 | 32997 | SAM | Lib | Demonstrar na estrutura do balan�o demonstra��o as contas de ativo e p |
-| 9486 | 32994 | SAM | Desc | Criar as fun��es "Todas", "Nenhuma" e "Inverter" na sele��o de empresa |
 | 9563 | 33002 | SAM | Desc | N�o abrir a janela para rateio por centro de custos quando a empresa n |
-| 9566 | 33004 | SAM | Desc | Retirar a op��o de replicar do cadastro de clientes e fornecedores. |
 | 9557 | 32998 | SAM | Desc | Disponibilizar no F2 da consulta do c�digo NCM do cadastro de produto  |
+| 9486 | 32994 | SAM | Desc | Criar as fun��es "Todas", "Nenhuma" e "Inverter" na sele��o de empresa |
+| 9601 | 33012 | SAM | Desc | Emitir o relat�rio Resumo dos Impostos em uma �nica p�gina. |
+| 9568 | 33006 | SAM | Lib | Disponibilizar no Balan�o Demonstra��o, relat�rio de lan�amentos Compa |
 | 9558 | 32999 | SAM | Desc | Otimizar a grava��o de acumuladores quando o mesmo estiver vinculado a |
 | 9612 | 33021 | SAM | Desc | Habilitar a coluna "Desconto" da guia estoque das notas de entrada e s |
 | 9610 | 33019 | SAM | Desc | Tratar mensagem de erro ao efetuar a apura��o quando a empresa possui  |
-| 9567 | 33005 | SAM | Lib | Permitir acesso total ao cadastro de hist�ricos nas empresas que utili |
 | 9488 | 32996 | SAM | Lib | Ignorar a informa��o do fato gerador IRRF e CRF na importa��o de notas |
-| 9362 | 32969 | SAM | Desc | Criar op��o para imprimir a express�o Em Branco no verso, quando n�o h |
-| 9356 | 32964 | SAM | Lib | Criar op��o de replicar o cadastro de produtos. |
-| 9474 | 32988 | SAM | Desc | Obedecer a ordem das al�quotas cadastradas no bot�o defini��es do impo |
-| 9376 | 32970 | SAM | Desc | Criar uma tabela com os c�digos de recolhimentos de impostos federais  |
-| 9355 | 32963 | SAM | Desc | Emitir o demonstrativo de faturamento mesmo sem movimento. |
-| 9451 | 32985 | SAM | Lib | Realizar a importa��o de notas mesmo que existam impostos n�o definido |
-| 9441 | 32984 | SAM | Desc | Demonstrar a coluna "Valor M�dio" do relat�rio de movimenta��o individ |
-| 9380 | 32974 | SAM | Desc | Exibir a mensagem: "H� nota(s) de sa�das com c�digo 11 para esp�cie se |
-| 9358 | 32966 | SAM | Desc | Demonstrar tamb�m a receita bruta real no relat�rio do Simples Naciona |
-| 9377 | 32971 | SAM | Desc | Alterar o relat�rio Demonstrativo dos Impostos IRPJ para que os campos |
+| 9492 | 32997 | SAM | Lib | Demonstrar na estrutura do balan�o demonstra��o as contas de ativo e p |
+| 9567 | 33005 | SAM | Lib | Permitir acesso total ao cadastro de hist�ricos nas empresas que utili |
+| 9566 | 33004 | SAM | Desc | Retirar a op��o de replicar do cadastro de clientes e fornecedores. |
 | 9354 | 32962 | SAM | Desc | Permitir informar valor de receita bruta e folha para simples nacional |
-| 9440 | 32983 | SAM | Desc | Criar coluna para demonstrar o valor da parcela no relat�rio de reten� |
-| 9481 | 32992 | SAM | Desc | N�o permitir excluir fornecedor que esteja vinculado a um cadastro de  |
-| 9353 | 32961 | SAM | Desc | Criar vari�vel, no cadastro de observa��es, para digitar um complement |
-| 9359 | 32967 | SAM | Desc | Otimizar a emiss�o da DIME quando outro usu�rio est� gravando lan�amen |
+| 9358 | 32966 | SAM | Desc | Demonstrar tamb�m a receita bruta real no relat�rio do Simples Naciona |
+| 9441 | 32984 | SAM | Desc | Demonstrar a coluna "Valor M�dio" do relat�rio de movimenta��o individ |
+| 9377 | 32971 | SAM | Desc | Alterar o relat�rio Demonstrativo dos Impostos IRPJ para que os campos |
+| 9356 | 32964 | SAM | Lib | Criar op��o de replicar o cadastro de produtos. |
+| 9362 | 32969 | SAM | Desc | Criar op��o para imprimir a express�o Em Branco no verso, quando n�o h |
 | 9361 | 32968 | SAM | Desc | Retirar o campo "Valor Total (Base Calc. + IPI) posi��o 37 - 49" do La |
+| 9481 | 32992 | SAM | Desc | N�o permitir excluir fornecedor que esteja vinculado a um cadastro de  |
+| 9376 | 32970 | SAM | Desc | Criar uma tabela com os c�digos de recolhimentos de impostos federais  |
+| 9359 | 32967 | SAM | Desc | Otimizar a emiss�o da DIME quando outro usu�rio est� gravando lan�amen |
+| 9353 | 32961 | SAM | Desc | Criar vari�vel, no cadastro de observa��es, para digitar um complement |
+| 9451 | 32985 | SAM | Lib | Realizar a importa��o de notas mesmo que existam impostos n�o definido |
 | 9476 | 32990 | SAM | Desc | N�o gerar as reten��es automaticamente ao alterar o valor das parcelas |
-| 9322 | 32946 | SAM | Desc | N�o permitir excluir contas cont�beis vinculadas ao cadastro de contas |
-| 9326 | 32949 | SAM | Desc | Disponibilizar a quebra de linha no campo observa��o da tela de emiss� |
-| 9323 | 32947 | SAM | Lib | Posicionar o foco na linha do lan�amento selecionado na listagem do la |
-| 9313 | 32938 | SAM | Desc | Alterar a mensagem na importa��o de produtos quando o leiaute n�o esti |
-| 9325 | 32948 | SAM | Lib | N�o excluir os parcelamentos e os pagamentos do CSOC e IPRJ ao reapura |
-| 9337 | 32953 | SAM | Desc | Incluir campo com o valor do saldo credor do per�odo anterior no relat |
-| 9304 | 32936 | SAM | Desc | Exibir a mensagem que falta a conta caixa somente na emiss�o do livro  |
+| 9474 | 32988 | SAM | Desc | Obedecer a ordem das al�quotas cadastradas no bot�o defini��es do impo |
+| 9380 | 32974 | SAM | Desc | Exibir a mensagem: "H� nota(s) de sa�das com c�digo 11 para esp�cie se |
+| 9355 | 32963 | SAM | Desc | Emitir o demonstrativo de faturamento mesmo sem movimento. |
+| 9440 | 32983 | SAM | Desc | Criar coluna para demonstrar o valor da parcela no relat�rio de reten� |
 | 9319 | 32943 | SAM | Desc | Criar a op��o para selecionar os lan�amentos dos impostos pagos no rel |
+| 9341 | 32956 | SAM | Desc | Possibilitar a emiss�o do relat�rio de impostos pagos para mais de uma |
+| 9326 | 32949 | SAM | Desc | Disponibilizar a quebra de linha no campo observa��o da tela de emiss� |
+| 9304 | 32936 | SAM | Desc | Exibir a mensagem que falta a conta caixa somente na emiss�o do livro  |
+| 9317 | 32941 | SAM | Desc | Permitir informar a mesma al�quota para base de c�lculo diferente na g |
 | 9351 | 32959 | SAM | Desc | Criar op��o para demonstrar as movimenta��es de entradas e sa�das na m |
+| 9283 | 32931 | SAM | Lib | N�o listar notas sem valor de IRRF na guia DARF. |
+| 9285 | 32933 | SAM | Desc | Contabilizar separadamente por filial os impostos quando n�o agrupados |
+| 9337 | 32953 | SAM | Desc | Incluir campo com o valor do saldo credor do per�odo anterior no relat |
+| 9352 | 32960 | SAM | Desc | Disponibilizar o detalhamento no cadastro de ajuste e permitir definir |
+| 9340 | 32955 | SAM | Desc | Ao efetuar a importa��o de clientes/fornecedores em empresa que usa pl |
+| 9325 | 32948 | SAM | Lib | N�o excluir os parcelamentos e os pagamentos do CSOC e IPRJ ao reapura |
+| 9333 | 32952 | SAM | Desc | Trazer o hist�rico original sem os complementos quando selecionado par |
+| 9313 | 32938 | SAM | Desc | Alterar a mensagem na importa��o de produtos quando o leiaute n�o esti |
 | 9306 | 32937 | SAM | Desc | N�o disponibilizar para pagamento o IPI que n�o atingiu o valor m�nimo |
 | 9350 | 32958 | SAM | Desc | Exibir mensagem de grupo inv�lido ao cadastrar um produto sem grupo in |
-| 9283 | 32931 | SAM | Lib | N�o listar notas sem valor de IRRF na guia DARF. |
-| 9333 | 32952 | SAM | Desc | Trazer o hist�rico original sem os complementos quando selecionado par |
-| 9317 | 32941 | SAM | Desc | Permitir informar a mesma al�quota para base de c�lculo diferente na g |
-| 9352 | 32960 | SAM | Desc | Disponibilizar o detalhamento no cadastro de ajuste e permitir definir |
 | 9321 | 32945 | SAM | Desc | Incluir o m�s de refer�ncia nas observa��es da guia DARF da CSOC e IPR |
-| 9341 | 32956 | SAM | Desc | Possibilitar a emiss�o do relat�rio de impostos pagos para mais de uma |
-| 9340 | 32955 | SAM | Desc | Ao efetuar a importa��o de clientes/fornecedores em empresa que usa pl |
-| 9285 | 32933 | SAM | Desc | Contabilizar separadamente por filial os impostos quando n�o agrupados |
-| 9249 | 32915 | SAM | Desc | Criar vari�vel "Nome do Imposto" nas guias Apura��o e Pagto de Imposto |
-| 9217 | 32913 | SAM | Desc | Demonstrar na tela de Lan�amentos Normais (Movimentos, Lan�amentos) o  |
+| 9323 | 32947 | SAM | Lib | Posicionar o foco na linha do lan�amento selecionado na listagem do la |
+| 9322 | 32946 | SAM | Desc | N�o permitir excluir contas cont�beis vinculadas ao cadastro de contas |
+| 9260 | 32917 | SAM | Lib | Permitir selecionar/buscar os c�digos de recolhimento informados no ca |
+| 9259 | 32916 | SAM | Desc | N�o obrigar a digita��o do c�digo de recolhimento dos impostos retidos |
 | 9215 | 32911 | SAM | Desc | Atualizar leiaute de importa��o de clientes e fornecedores incluindo t |
 | 9216 | 32912 | SAM | Desc | Tratar mensagem de erro apresentada no momento da importa��o de Lan�am |
-| 9259 | 32916 | SAM | Desc | N�o obrigar a digita��o do c�digo de recolhimento dos impostos retidos |
-| 9266 | 32920 | SAM | Desc | Permitir retirar as contas cont�beis da tela de pagamento de impostos  |
-| 9273 | 32924 | SAM | Desc | Desabilitar o bot�o "Novo" do cadastro de estados. |
 | 9274 | 32925 | SAM | Desc | Alterar a ordem do relat�rio de Impostos Pagos com rela��o aos imposto |
-| 9260 | 32917 | SAM | Lib | Permitir selecionar/buscar os c�digos de recolhimento informados no ca |
-| 9140 | 32878 | SAM | Desc | Desabilitar o campo "Gera informativo nota fiscal paulista" quando a e |
-| 9146 | 32883 | SAM | Desc | Aumentar o tamanho do campo do n�mero da nota fiscal que acoberta a ca |
+| 9266 | 32920 | SAM | Desc | Permitir retirar as contas cont�beis da tela de pagamento de impostos  |
+| 9249 | 32915 | SAM | Desc | Criar vari�vel "Nome do Imposto" nas guias Apura��o e Pagto de Imposto |
+| 9273 | 32924 | SAM | Desc | Desabilitar o bot�o "Novo" do cadastro de estados. |
+| 9217 | 32913 | SAM | Desc | Demonstrar na tela de Lan�amentos Normais (Movimentos, Lan�amentos) o  |
 | 9138 | 32876 | SAM | Lib | SP-Emitir guia GARE referente ao DIFALI para empresas optantes pelo Si |
-| 9143 | 32881 | SAM | Desc | SP-Tornar obrigat�ria a informa��o do campo Unidade do cadastro de pro |
-| 9183 | 32889 | SAM | Desc | Preencher o campo CFOP nos lan�amentos de notas de sa�das e entradas,  |
 | 9141 | 32879 | SAM | Desc | SP-Criar sele��o de notas no bot�o "Notas" da tela de emiss�o do infor |
-| 9105 | 32864 | SAM | Lib | Incluir a hora de emiss�o em todos os relat�rios. |
-| 9111 | 32869 | SAM | Desc | Permitir informar impostos lan�ados no campo "Imposto Origem do Cr�dit |
-| 9155 | 32886 | SAM | Desc | Alterar a contabiliza��o do imposto no lan�amento de movimento de acum |
-| 9107 | 32865 | SAM | Desc | Criar um relat�rio que demonstre um resumo das tarefas realizadas para |
 | 9147 | 32884 | SAM | Desc | Criar op��o para sele��o de empresas no relat�rio do Simples Nacional. |
 | 9154 | 32885 | SAM | Lib | Ajustar a Base de calculo dos cr�ditos do PIS e COFINS para as empresa |
-| 9142 | 32880 | SAM | Desc | Listar todos os menus dos m�dulos no cadastro de usu�rios. |
+| 9140 | 32878 | SAM | Desc | Desabilitar o campo "Gera informativo nota fiscal paulista" quando a e |
+| 9146 | 32883 | SAM | Desc | Aumentar o tamanho do campo do n�mero da nota fiscal que acoberta a ca |
+| 9143 | 32881 | SAM | Desc | SP-Tornar obrigat�ria a informa��o do campo Unidade do cadastro de pro |
+| 9107 | 32865 | SAM | Desc | Criar um relat�rio que demonstre um resumo das tarefas realizadas para |
 | 9113 | 32871 | SAM | Lib | Criar op��o para controlar o vencimento das notas no cadastro de AIDF |
 | 9139 | 32877 | SAM | Desc | Tornar obrigat�ria a informa��o do munic�pio no cadastro de clientes e |
+| 9183 | 32889 | SAM | Desc | Preencher o campo CFOP nos lan�amentos de notas de sa�das e entradas,  |
+| 9155 | 32886 | SAM | Desc | Alterar a contabiliza��o do imposto no lan�amento de movimento de acum |
+| 9111 | 32869 | SAM | Desc | Permitir informar impostos lan�ados no campo "Imposto Origem do Cr�dit |
 | 9112 | 32870 | SAM | Desc | Criar op��o para utilizar a mesma conta do fornecedor/cliente cadastra |
-| 8995 | 32834 | SAM | Lib | Criar op��o de eliminar o cadastro de remetentes e destinat�rios no ut |
-| 8982 | 32825 | SAM | Lib | Criar op��o para demonstrar a m�scara da conta contabil quando o lan�a |
-| 8980 | 32823 | SAM | Lib | Permitir a inclus�o de um novo remetente/destinat�rio por meio da tecl |
+| 9142 | 32880 | SAM | Desc | Listar todos os menus dos m�dulos no cadastro de usu�rios. |
+| 9105 | 32864 | SAM | Lib | Incluir a hora de emiss�o em todos os relat�rios. |
 | 8996 | 32835 | SAM | Desc | Demonstrar o n�mero do lote na guia contabilidade do lan�amento de ent |
-| 9034 | 32849 | SAM | Desc | Ajustar c�digo de barras e linha digit�vel dos bloquetos da Caixa Econ |
 | 8988 | 32830 | SAM | Desc | Selecionar automaticamente o pr�ximo lan�amento para efetuar o rateio  |
-| 8989 | 32831 | SAM | Desc | Demonstrar o saldo da conta entra parenteses quando o saldo estiver di |
-| 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
-| 8978 | 32821 | SAM | Lib | Veirificar o regime federal do m�dulo Folha se est� diferente do selec |
 | 9032 | 32848 | SAM | Desc | Demonstrar na barra de ferramentas o per�odo atual da empresa. |
-| 8984 | 32827 | SAM | Lib | Criar campo para demonstrar o dia da semana ao lado do campo Data da t |
-| 9030 | 32846 | SAM | Desc | Criar op��o para informar data inicial e final na emiss�o do relat�rio |
-| 9005 | 32843 | SAM | Desc | Criar campo no cadastro de acumuladores para definir a situa��o tribut |
 | 9029 | 32845 | SAM | Lib | Criar op��o para informar remetentes e destinat�rios por nome, c�digo  |
+| 9034 | 32849 | SAM | Desc | Ajustar c�digo de barras e linha digit�vel dos bloquetos da Caixa Econ |
+| 8984 | 32827 | SAM | Lib | Criar campo para demonstrar o dia da semana ao lado do campo Data da t |
+| 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
+| 9030 | 32846 | SAM | Desc | Criar op��o para informar data inicial e final na emiss�o do relat�rio |
+| 8980 | 32823 | SAM | Lib | Permitir a inclus�o de um novo remetente/destinat�rio por meio da tecl |
+| 8989 | 32831 | SAM | Desc | Demonstrar o saldo da conta entra parenteses quando o saldo estiver di |
+| 8982 | 32825 | SAM | Lib | Criar op��o para demonstrar a m�scara da conta contabil quando o lan�a |
+| 8995 | 32834 | SAM | Lib | Criar op��o de eliminar o cadastro de remetentes e destinat�rios no ut |
+| 8978 | 32821 | SAM | Lib | Veirificar o regime federal do m�dulo Folha se est� diferente do selec |
+| 9005 | 32843 | SAM | Desc | Criar campo no cadastro de acumuladores para definir a situa��o tribut |
 | 8976 | 32819 | SAM | Desc | Criar vari�vel para gerar a descri��o completa da esp�cie nas guias En |
-| 8865 | 32783 | SAM | Lib | Otimizar o processo de gravar o cadastro de clientes e fornecedores qu |
-| 8826 | 32764 | SAM | Lib | Criar novo leiaute de importa��o de notas com op��o para importa��o de |
-| 8784 | 32758 | SAM | Desc | Permitir a emiss�o da guia GPS referente ao INSS Cooperativas por forn |
-| 8799 | 32762 | SAM | Lib | Aumentar o tamanho do campo Nome do fornecedor do cadastro de bens. |
-| 8867 | 32784 | SAM | Desc | Habilitar a op��o de al�quotas no acumulador para o imposto ISS retido |
-| 8800 | 32763 | SAM | Desc | Gerar o anexo de receita bruta do relat�rio de acompanhamento do simpl |
 | 8788 | 32760 | SAM | Lib | Disponibilizar demonstrativo DMPL nos Livros Cont�beis. |
+| 8800 | 32763 | SAM | Desc | Gerar o anexo de receita bruta do relat�rio de acompanhamento do simpl |
+| 8784 | 32758 | SAM | Desc | Permitir a emiss�o da guia GPS referente ao INSS Cooperativas por forn |
+| 8867 | 32784 | SAM | Desc | Habilitar a op��o de al�quotas no acumulador para o imposto ISS retido |
+| 8826 | 32764 | SAM | Lib | Criar novo leiaute de importa��o de notas com op��o para importa��o de |
+| 8865 | 32783 | SAM | Lib | Otimizar o processo de gravar o cadastro de clientes e fornecedores qu |
+| 8799 | 32762 | SAM | Lib | Aumentar o tamanho do campo Nome do fornecedor do cadastro de bens. |
 | 8692 | 32736 | SAM | Desc | N�o permitir passar pelos campos "Fornecedor:" e "Cliente:" em notas d |
-| 8773 | 32749 | SAM | Desc | MT-Criar campo na tela de pagamento de impostos para informar o valor  |
-| 8694 | 32738 | SAM | Lib | Aumentar para 6 casas decimais o campo "Valor unit�rio" no cadastro de |
-| 8645 | 32724 | SAM | Lib | Padronizar mensagens referente a contas cont�beis no cadastro de conta |
 | 8772 | 32748 | SAM | Lib | Disponibilizar vari�vel para o campo "Identidade Profissional" no Word |
-| 8646 | 32725 | SAM | Desc | Criar rotina que ao lan�ar um ajuste com o imposto ISS tenha a op��o d |
-| 8782 | 32756 | SAM | Desc | RS - Adequar a emiss�o do Resumo do ICMS para empresas com ICMS com a  |
-| 8644 | 32723 | SAM | Desc | Disponibilizar coluna DMPL na listagem do plano de contas. |
-| 8783 | 32757 | SAM | Desc | Disponibilizar o INSS Cooperativas(40) no menu de pagamento de imposto |
-| 8766 | 32742 | SAM | Desc | Aumentar para 16 caracteres o tamanho do campo para informar valores n |
+| 8694 | 32738 | SAM | Lib | Aumentar para 6 casas decimais o campo "Valor unit�rio" no cadastro de |
 | 8770 | 32746 | SAM | Desc | Otimizar o processo de digita��o de informa��es na consulta F2 do cada |
-| 8768 | 32744 | SAM | Lib | Gerar o campo "Data de Abertura da Matriz" do relat�rio DASN com base  |
-| 8730 | 32740 | SAM | Desc | Ajustar o processo de altera��o cadastral(Capital Social) para empresa |
-| 8774 | 32750 | SAM | Desc | Importar o n�mero do documento ao efetuar a importa��o de arquivo de e |
 | 8780 | 32754 | SAM | Desc | Criar op��o para Desconsiderar Zeramento na emiss�o do balan�o em empr |
-| 8779 | 32753 | SAM | Lib | Realizar o mesmo controle de verifica��o de nota existente do lan�amen |
+| 8645 | 32724 | SAM | Lib | Padronizar mensagens referente a contas cont�beis no cadastro de conta |
+| 8783 | 32757 | SAM | Desc | Disponibilizar o INSS Cooperativas(40) no menu de pagamento de imposto |
 | 8769 | 32745 | SAM | Desc | Somar o valor de IRRF na coluna "Reten��es" do relat�rio de posi��o. |
+| 8773 | 32749 | SAM | Desc | MT-Criar campo na tela de pagamento de impostos para informar o valor  |
 | 8771 | 32747 | SAM | Desc | Disponibilizar coluna "C�d. Recolhimento" na listagem do cadastro de i |
+| 8774 | 32750 | SAM | Desc | Importar o n�mero do documento ao efetuar a importa��o de arquivo de e |
+| 8768 | 32744 | SAM | Lib | Gerar o campo "Data de Abertura da Matriz" do relat�rio DASN com base  |
+| 8644 | 32723 | SAM | Desc | Disponibilizar coluna DMPL na listagem do plano de contas. |
+| 8646 | 32725 | SAM | Desc | Criar rotina que ao lan�ar um ajuste com o imposto ISS tenha a op��o d |
+| 8730 | 32740 | SAM | Desc | Ajustar o processo de altera��o cadastral(Capital Social) para empresa |
+| 8779 | 32753 | SAM | Lib | Realizar o mesmo controle de verifica��o de nota existente do lan�amen |
 | 8691 | 32735 | SAM | Desc | Alterar mensagem gerada pelo sistema ao imprimir Livro Apura��o ICMS p |
-| 8607 | 32714 | SAM | Desc | Considerar no relat�rio Comparativo de entradas e sa�das, a op��o de d |
-| 8540 | 32698 | SAM | Lib | Criar relat�rio que demonstre os valores de cr�dito de PIS e COFINS re |
-| 8535 | 32697 | SAM | Desc | Disponibilizar a op��o de incluir, excluir e alterar no cadastro de us |
-| 8543 | 32701 | SAM | Desc | Aumentar a quantidade de caracteres no campo "Bem", da tela "Incorpora |
-| 8544 | 32702 | SAM | Lib | Emitir mensagens quando cadastrado um bem sem descri��o, conta ou cent |
-| 8547 | 32705 | SAM | Lib | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a  |
-| 8525 | 32694 | SAM | Desc | SC-Disponibilizar o calculo do imposto ICMS ST/AT em atraso quando o m |
-| 8546 | 32704 | SAM | Desc | Criar op��o para demonstrar bens agregados no relat�rio resumo da depr |
-| 8602 | 32709 | SAM | Lib | Alterar a ordem dos campos "C�d Acesso" e "CPF Respons�vel" na emiss�o |
-| 8545 | 32703 | SAM | Lib | Tratar mensagem de erro ao efetuar importa��o de contas patrimoniais q |
+| 8782 | 32756 | SAM | Desc | RS - Adequar a emiss�o do Resumo do ICMS para empresas com ICMS com a  |
+| 8766 | 32742 | SAM | Desc | Aumentar para 16 caracteres o tamanho do campo para informar valores n |
 | 8637 | 32717 | SAM | Lib | Vincular help na tela de rateio por centro de custos no cadastro de co |
-| 8521 | 32692 | SAM | Desc | Criar op��o para lan�amento exporta��o de Entrada e Sa�da Extra de Est |
+| 8547 | 32705 | SAM | Lib | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a  |
 | 8640 | 32720 | SAM | Desc | Habilitar tela para rateio por centro de custos no cadastro de contas  |
-| 8524 | 32693 | SAM | Desc | SC-Disponibilizar o pagamento do imposto ICMS-ST AT com periodicidade  |
-| 8603 | 32710 | SAM | Desc | Criar op��o de emitir total a cada p�gina na emiss�o do livro de inven |
-| 8526 | 32695 | SAM | Desc | Criar op��o para informar a compet�ncia por item na emiss�o dos protoc |
-| 8606 | 32713 | SAM | Desc | SC-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados |
-| 8605 | 32712 | SAM | Lib | Possibilitar a integra��o do sistema com o office 2007. |
-| 8527 | 32696 | SAM | Desc | Incluir os campos CNPJ/CPF, Raz�o Social, e-mail, Insc. Estadual e Ins |
 | 8641 | 32721 | SAM | Desc | Emitir mensagem de aviso ao usu�rio quando o mesmo tentar cadastrar gr |
-| 8446 | 32670 | SAM | Lib | Demonstrar as contas de contra partida no relat�rio raz�o quando efetu |
-| 8403 | 32657 | SAM | Lib | Aumentar tamanho do campo para informar valores na estrutura da DLPA.  |
-| 8499 | 32678 | SAM | Lib | N�o listar na DASN CNPJs de filiais inativas em ano anterior ao da dec |
+| 8527 | 32696 | SAM | Desc | Incluir os campos CNPJ/CPF, Raz�o Social, e-mail, Insc. Estadual e Ins |
+| 8540 | 32698 | SAM | Lib | Criar relat�rio que demonstre os valores de cr�dito de PIS e COFINS re |
+| 8521 | 32692 | SAM | Desc | Criar op��o para lan�amento exporta��o de Entrada e Sa�da Extra de Est |
+| 8524 | 32693 | SAM | Desc | SC-Disponibilizar o pagamento do imposto ICMS-ST AT com periodicidade  |
+| 8545 | 32703 | SAM | Lib | Tratar mensagem de erro ao efetuar importa��o de contas patrimoniais q |
+| 8605 | 32712 | SAM | Lib | Possibilitar a integra��o do sistema com o office 2007. |
+| 8525 | 32694 | SAM | Desc | SC-Disponibilizar o calculo do imposto ICMS ST/AT em atraso quando o m |
+| 8526 | 32695 | SAM | Desc | Criar op��o para informar a compet�ncia por item na emiss�o dos protoc |
+| 8543 | 32701 | SAM | Desc | Aumentar a quantidade de caracteres no campo "Bem", da tela "Incorpora |
+| 8602 | 32709 | SAM | Lib | Alterar a ordem dos campos "C�d Acesso" e "CPF Respons�vel" na emiss�o |
+| 8544 | 32702 | SAM | Lib | Emitir mensagens quando cadastrado um bem sem descri��o, conta ou cent |
+| 8546 | 32704 | SAM | Desc | Criar op��o para demonstrar bens agregados no relat�rio resumo da depr |
+| 8607 | 32714 | SAM | Desc | Considerar no relat�rio Comparativo de entradas e sa�das, a op��o de d |
+| 8603 | 32710 | SAM | Desc | Criar op��o de emitir total a cada p�gina na emiss�o do livro de inven |
+| 8606 | 32713 | SAM | Desc | SC-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados |
+| 8535 | 32697 | SAM | Desc | Disponibilizar a op��o de incluir, excluir e alterar no cadastro de us |
 | 8445 | 32669 | SAM | Desc | N�o permitir marcar as op��es "C�d. Hist�rico" e "Hist�rico" no quadro |
-| 8512 | 32683 | SAM | Desc | Incluir o tempo gasto extra sistema no relat�rio de Custo benef�cio, T |
+| 8499 | 32678 | SAM | Lib | N�o listar na DASN CNPJs de filiais inativas em ano anterior ao da dec |
 | 8513 | 32684 | SAM | Desc | Permitir que os usu�rios diferentes do gerente possam selecionar usu�r |
-| 8514 | 32685 | SAM | Lib | Permitir importar e efetuar o c�lculo do INSS em atraso de empregados  |
+| 8403 | 32657 | SAM | Lib | Aumentar tamanho do campo para informar valores na estrutura da DLPA.  |
+| 8512 | 32683 | SAM | Desc | Incluir o tempo gasto extra sistema no relat�rio de Custo benef�cio, T |
 | 8402 | 32656 | SAM | Desc | Criar op��o de relacionar as contas com as estruturas pela pr�pria est |
-| 8297 | 32625 | SAM | Desc | MT-Criar campo para pr�-definir o c�digo de isen��o no cadastro de acu |
-| 8304 | 32631 | SAM | Lib | Desenvolver gr�fico Comnparativo de recebimento. |
-| 8303 | 32630 | SAM | Desc | Criar op��o para selecionar por "Vencimento" na emiss�o de notas fisca |
-| 8373 | 32641 | SAM | Lib | Criar op��o para configurar o resumo do balancete no pr�pria tela de e |
-| 8398 | 32652 | SAM | Lib | Disponibilizar a op��o "Descri��o da pagina��o" na emiss�o das notas e |
-| 8322 | 32634 | SAM | Desc | Disponibilizar o imposto ISS na rotina de pagamentos. |
+| 8446 | 32670 | SAM | Lib | Demonstrar as contas de contra partida no relat�rio raz�o quando efetu |
+| 8514 | 32685 | SAM | Lib | Permitir importar e efetuar o c�lculo do INSS em atraso de empregados  |
 | 8399 | 32653 | SAM | Desc | Demonstrar a conta caixa no cabe�alho dos relat�rios Livro Caixa. |
-| 8400 | 32654 | SAM | Desc | Criar campo que demonstre o dia da semana na tela de lan�amentos cont� |
+| 8398 | 32652 | SAM | Lib | Disponibilizar a op��o "Descri��o da pagina��o" na emiss�o das notas e |
 | 8394 | 32648 | SAM | Lib | Criar op��o para demonstrar o n�mero do lote nos livro Raz�o, Di�rio e |
-| 8224 | 32593 | SAM | Desc | N�o permitir lan�amentos cont�beis sem hist�rico se a op��o "Digita��o |
-| 8243 | 32602 | SAM | Lib | Considerar tamb�m as empresas filiais com cadastros separados da matri |
-| 8217 | 32588 | SAM | Desc | Exibir mensagem de confirma��o quando gravar o cadastro de clientes/fo |
-| 8245 | 32604 | SAM | Desc | SC-Permitir que sela selecionado mais de um imposto na emiss�o da DARE |
-| 8279 | 32615 | SAM | Desc | Desconsiderar caracteres especiais para verificar se a inscri��o estad |
-| 8283 | 32619 | SAM | Desc | Permitir informar um c�digo com n�mero de d�gitos supeior ao que o sis |
-| 8246 | 32605 | SAM | Desc | N�o est� sendo gerado a classifica��o correta quando o n�mero do forne |
-| 8219 | 32589 | SAM | Desc | Posicionar o foco a esquerda nos campos CNAE e CNAE 2.0 no cadastro da |
+| 8304 | 32631 | SAM | Lib | Desenvolver gr�fico Comnparativo de recebimento. |
+| 8297 | 32625 | SAM | Desc | MT-Criar campo para pr�-definir o c�digo de isen��o no cadastro de acu |
+| 8373 | 32641 | SAM | Lib | Criar op��o para configurar o resumo do balancete no pr�pria tela de e |
+| 8400 | 32654 | SAM | Desc | Criar campo que demonstre o dia da semana na tela de lan�amentos cont� |
+| 8322 | 32634 | SAM | Desc | Disponibilizar o imposto ISS na rotina de pagamentos. |
+| 8303 | 32630 | SAM | Desc | Criar op��o para selecionar por "Vencimento" na emiss�o de notas fisca |
 | 8281 | 32617 | SAM | Desc | N�o est� sendo gerado o valor da base de IPI lan�ada na nota no campo  |
-| 8229 | 32598 | SAM | Lib | Incluir o CNPJ ao lado do nome do cliente no relat�rios de Reten��es a |
-| 8293 | 32622 | SAM | Desc | Demonstrar o valor do saldo anterior no relat�rio de movimento individ |
-| 8291 | 32621 | SAM | Lib | Demonstrar o n�mero da nota que n�o foi importada no relat�rio de inco |
-| 8225 | 32594 | SAM | Desc | Posicionar o foco no bot�o incluir da tela dos dados do ECF quando lan |
-| 8284 | 32620 | SAM | Desc | Criar campo e-mail no cadastro de clientes. |
-| 8230 | 32599 | SAM | Desc | Gerar na coluna "Base de c�lculo" o valor de base de ISS lan�ado nas n |
-| 8222 | 32592 | SAM | Desc | N�o permitir a exclus�o de um ajuste se o mesmo possuir lan�amentos. |
-| 8227 | 32596 | SAM | Desc | Listar o emitente somente das notas que s�o listadas no livro de entra |
-| 8220 | 32590 | SAM | Desc | Gerar o valor cont�bil do seguimento do imposto nos relat�rios de acom |
-| 8282 | 32618 | SAM | Desc | Demonstrar o per�odo incial e final no relat�rio de notas n�o lan�adas |
-| 8226 | 32595 | SAM | Desc | Sistema n�o est� identificando que a nota j� existe quando lan�ado doc |
-| 8228 | 32597 | SAM | Desc | Trazer padr�o a op��o "N�o" no campo "Contribuinte de ICMS" quando sel |
+| 8245 | 32604 | SAM | Desc | SC-Permitir que sela selecionado mais de um imposto na emiss�o da DARE |
+| 8243 | 32602 | SAM | Lib | Considerar tamb�m as empresas filiais com cadastros separados da matri |
+| 8219 | 32589 | SAM | Desc | Posicionar o foco a esquerda nos campos CNAE e CNAE 2.0 no cadastro da |
+| 8217 | 32588 | SAM | Desc | Exibir mensagem de confirma��o quando gravar o cadastro de clientes/fo |
+| 8246 | 32605 | SAM | Desc | N�o est� sendo gerado a classifica��o correta quando o n�mero do forne |
 | 8273 | 32612 | SAM | Lib | Est� ficando um espa�o em branco muito grande entre o final do balan�o |
-| 8280 | 32616 | SAM | Desc | N�o permitir cadastrar um conta cont�bil ou hist�rico quando a empresa |
+| 8284 | 32620 | SAM | Desc | Criar campo e-mail no cadastro de clientes. |
+| 8282 | 32618 | SAM | Desc | Demonstrar o per�odo incial e final no relat�rio de notas n�o lan�adas |
+| 8225 | 32594 | SAM | Desc | Posicionar o foco no bot�o incluir da tela dos dados do ECF quando lan |
+| 8293 | 32622 | SAM | Desc | Demonstrar o valor do saldo anterior no relat�rio de movimento individ |
+| 8228 | 32597 | SAM | Desc | Trazer padr�o a op��o "N�o" no campo "Contribuinte de ICMS" quando sel |
+| 8283 | 32619 | SAM | Desc | Permitir informar um c�digo com n�mero de d�gitos supeior ao que o sis |
+| 8224 | 32593 | SAM | Desc | N�o permitir lan�amentos cont�beis sem hist�rico se a op��o "Digita��o |
+| 8229 | 32598 | SAM | Lib | Incluir o CNPJ ao lado do nome do cliente no relat�rios de Reten��es a |
+| 8220 | 32590 | SAM | Desc | Gerar o valor cont�bil do seguimento do imposto nos relat�rios de acom |
+| 8230 | 32599 | SAM | Desc | Gerar na coluna "Base de c�lculo" o valor de base de ISS lan�ado nas n |
+| 8227 | 32596 | SAM | Desc | Listar o emitente somente das notas que s�o listadas no livro de entra |
+| 8222 | 32592 | SAM | Desc | N�o permitir a exclus�o de um ajuste se o mesmo possuir lan�amentos. |
 | 8244 | 32603 | SAM | Desc | Permitir alterar tamb�m a descri��o da conta cont�bil ao alterar a raz |
 | 8247 | 32606 | SAM | Desc | RS-Criar op��o no relat�rio anexo VA e VB  para listar as notas que fo |
-| 8206 | 32585 | SAM | Lib | Otimizar o processo de integra��o cont�bil dos impostos ICMS, PIS e CO |
-| 8186 | 32575 | SAM | Desc | Disponibilizar nos movimentos de ajustes para os impostos IPI e ISS a  |
-| 8187 | 32576 | SAM | Lib | N�o listar as notas que foram lan�adas como Entradas cujo o emitente � |
-| 8183 | 32572 | SAM | Desc | RS-Alterar o relat�rio da GIA mensal emitido pelo sistema para que fiq |
-| 8144 | 32561 | SAM | Desc | Demonstrar as contas de mesma classifica��o em ordem alfab�tica na an� |
-| 8184 | 32573 | SAM | Desc | Incluir op��o de sele��o de impostos no relat�rio de impostos pagos. |
-| 8126 | 32559 | SAM | Desc | Desenvolver consulta de saldo dos impostos onde seja detalhado todos o |
-| 8181 | 32570 | SAM | Desc | Excluir os relat�rios de declara��o simplificada que est�o no gerencia |
-| 8168 | 32568 | SAM | Desc | BA-Gerar nos livros de Sa�das e ICMS as notas de sa�das com CFOP 5933  |
-| 8188 | 32577 | SAM | Desc | Incluir campo de observa��es nas entradas/sa�das extras de estoque. |
-| 8182 | 32571 | SAM | Desc | Trazer selecionada uma das op��es no campo tipo da tela de emiss�o do  |
-| 8197 | 32584 | SAM | Desc | Aumentar o tamanho do campo nome do arquivo nos informativos estaduais |
-| 8149 | 32565 | SAM | Desc | Considerar o valor dos produtos para gerar a diferen�a entre o valor c |
-| 8214 | 32586 | SAM | Desc | Mostrar os itens Inclus�o, Altera��o e Exclus�o dos lan�amentos em lot |
-| 8150 | 32566 | SAM | Desc | Demonstrar os valores lan�ados com as CFOPs 5.933/6.933 na coluna serv |
-| 8192 | 32581 | SAM | Desc | Trocar "ou" por "e" na mensagem que o sistema exibe quando marcado a o |
-| 8155 | 32567 | SAM | Desc | Criar op��o para imprimir a declara��o final na emiss�o do Balan�o. |
-| 8185 | 32574 | SAM | Desc | SP-Trazer padr�o na emiss�o da guia GARE o CNAE e o CNPJ da empresa co |
+| 8291 | 32621 | SAM | Lib | Demonstrar o n�mero da nota que n�o foi importada no relat�rio de inco |
+| 8279 | 32615 | SAM | Desc | Desconsiderar caracteres especiais para verificar se a inscri��o estad |
+| 8226 | 32595 | SAM | Desc | Sistema n�o est� identificando que a nota j� existe quando lan�ado doc |
+| 8280 | 32616 | SAM | Desc | N�o permitir cadastrar um conta cont�bil ou hist�rico quando a empresa |
 | 8194 | 32582 | SAM | Desc | PB-Disponibilizar o livro de ICMS P9-II. |
+| 8126 | 32559 | SAM | Desc | Desenvolver consulta de saldo dos impostos onde seja detalhado todos o |
+| 8192 | 32581 | SAM | Desc | Trocar "ou" por "e" na mensagem que o sistema exibe quando marcado a o |
+| 8168 | 32568 | SAM | Desc | BA-Gerar nos livros de Sa�das e ICMS as notas de sa�das com CFOP 5933  |
+| 8185 | 32574 | SAM | Desc | SP-Trazer padr�o na emiss�o da guia GARE o CNAE e o CNPJ da empresa co |
+| 8197 | 32584 | SAM | Desc | Aumentar o tamanho do campo nome do arquivo nos informativos estaduais |
+| 8155 | 32567 | SAM | Desc | Criar op��o para imprimir a declara��o final na emiss�o do Balan�o. |
+| 8181 | 32570 | SAM | Desc | Excluir os relat�rios de declara��o simplificada que est�o no gerencia |
+| 8144 | 32561 | SAM | Desc | Demonstrar as contas de mesma classifica��o em ordem alfab�tica na an� |
+| 8149 | 32565 | SAM | Desc | Considerar o valor dos produtos para gerar a diferen�a entre o valor c |
+| 8150 | 32566 | SAM | Desc | Demonstrar os valores lan�ados com as CFOPs 5.933/6.933 na coluna serv |
+| 8184 | 32573 | SAM | Desc | Incluir op��o de sele��o de impostos no relat�rio de impostos pagos. |
+| 8206 | 32585 | SAM | Lib | Otimizar o processo de integra��o cont�bil dos impostos ICMS, PIS e CO |
+| 8187 | 32576 | SAM | Lib | N�o listar as notas que foram lan�adas como Entradas cujo o emitente � |
+| 8182 | 32571 | SAM | Desc | Trazer selecionada uma das op��es no campo tipo da tela de emiss�o do  |
+| 8186 | 32575 | SAM | Desc | Disponibilizar nos movimentos de ajustes para os impostos IPI e ISS a  |
+| 8183 | 32572 | SAM | Desc | RS-Alterar o relat�rio da GIA mensal emitido pelo sistema para que fiq |
+| 8188 | 32577 | SAM | Desc | Incluir campo de observa��es nas entradas/sa�das extras de estoque. |
+| 8214 | 32586 | SAM | Desc | Mostrar os itens Inclus�o, Altera��o e Exclus�o dos lan�amentos em lot |
 | 8099 | 32546 | SAM | Desc | Sistema n�o est� deixando uma linha em branco entre todas as contas na |
 | 8038 | 32526 | SAM | Lib | Criar uma op��o para quando importar clientes ou fornecedores o sistem |
-| 8104 | 32551 | SAM | Desc | Disponibilizar os relat�rios Rateio de contas e Rateio de lan�amentos  |
-| 8095 | 32543 | SAM | Desc | N�o permitir excluir hist�rico quando o mesmo estiver vinculado � um l |
 | 8096 | 32544 | SAM | Desc | Em algumas situa��es o sistema est� permitindo gravar lan�amento cont� |
 | 8100 | 32547 | SAM | Desc | Gerar somente um resultado na emiss�o da DOAR, quando emitido consolid |
+| 8095 | 32543 | SAM | Desc | N�o permitir excluir hist�rico quando o mesmo estiver vinculado � um l |
 | 8037 | 32525 | SAM | Desc | Otimizar o processo de emiss�o do Mapa Resumo de ECF modelos II e III. |
+| 8104 | 32551 | SAM | Desc | Disponibilizar os relat�rios Rateio de contas e Rateio de lan�amentos  |
 | 7956 | 32496 | SAM | Desc | Efetuar a digita��o dos produtos antes do lan�amento dos impostos para |
+| 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
 | 7889 | 32469 | SAM | Desc | Disponibilizar o valor do adicionar do IRPJ na tela de apura��o |
+| 7885 | 32465 | SAM | Desc | Demonstrar o item de selecionado no cabe�alho do relat�rio de acompanh |
+| 7855 | 32463 | SAM | Desc | SP-Emitir o livros de ISS modelo 56 mesmo que n�o haja saldo para o im |
 | 7887 | 32467 | SAM | Desc | Disponibilizar a listagem de c�dgio de recolhimento dos impostos no ca |
 | 7854 | 32462 | SAM | Desc | Desabilitar o campo "N�mero do Caixa" na tela de outros dados do ECF p |
-| 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
-| 7855 | 32463 | SAM | Desc | SP-Emitir o livros de ISS modelo 56 mesmo que n�o haja saldo para o im |
-| 7885 | 32465 | SAM | Desc | Demonstrar o item de selecionado no cabe�alho do relat�rio de acompanh |
-| 7847 | 32456 | SAM | Lib | Criar campo para ser informado o hist�rico do imposto a compensar nos  |
-| 7786 | 32443 | SAM | Lib | SC-Considerar o valor do imposto DIFALI para realizar o lan�amento de  |
-| 7713 | 32431 | SAM | Desc | Criar op��o para selecionar as guias a serem baixadas na tela de pagam |
-| 7851 | 32459 | SAM | Desc | Est� sendo gerado agrupados os fornecedores com a mesma raz�o social n |
+| 7716 | 32434 | SAM | Desc | Criar campo para informar o hist�rico do ISS a compensar para notas qu |
 | 7849 | 32458 | SAM | Desc | Criar op��o para sele��o de empresas no relat�rio Saldo dos Impostos. |
+| 7786 | 32443 | SAM | Lib | SC-Considerar o valor do imposto DIFALI para realizar o lan�amento de  |
 | 7785 | 32442 | SAM | Desc | Realizar a importa��o de impostos de outros m�dulos somente quando o v |
 | 7714 | 32432 | SAM | Desc | Gerar o imposto IRRF no relatorio de impostos pagos. |
-| 7711 | 32429 | SAM | Desc | Gerar o nome das vari�veis do Microsoft Word, quando n�o existir infor |
-| 7776 | 32441 | SAM | Lib | Criar op��o para "Digita��o obrigat�ria de centro de custos" nos lan�a |
-| 7715 | 32433 | SAM | Desc | Retirar o campo "Total Geral" da coluna "Base de C�lculo" no relatorio |
+| 7713 | 32431 | SAM | Desc | Criar op��o para selecionar as guias a serem baixadas na tela de pagam |
 | 7757 | 32439 | SAM | Lib | Atualizar a tela de rateio por centro de custos conforme defini��es fe |
+| 7776 | 32441 | SAM | Lib | Criar op��o para "Digita��o obrigat�ria de centro de custos" nos lan�a |
+| 7787 | 32444 | SAM | Desc | Criar campo que indique que o bem est� agregado a outro no relat�rio c |
+| 7847 | 32456 | SAM | Lib | Criar campo para ser informado o hist�rico do imposto a compensar nos  |
+| 7711 | 32429 | SAM | Desc | Gerar o nome das vari�veis do Microsoft Word, quando n�o existir infor |
+| 7851 | 32459 | SAM | Desc | Est� sendo gerado agrupados os fornecedores com a mesma raz�o social n |
 | 7709 | 32427 | SAM | Desc | Demonstrar o endere�o completo no Livro de ISS. |
+| 7715 | 32433 | SAM | Desc | Retirar o campo "Total Geral" da coluna "Base de C�lculo" no relatorio |
 | 7712 | 32430 | SAM | Desc | Gerar a raz�o social da empresa em todas as folhas do relat�rio resumo |
 | 7745 | 32435 | SAM | Lib | Gerar o lan�amento cont�bil referente ao imposto ICMS lan�ado no cadas |
-| 7787 | 32444 | SAM | Desc | Criar campo que indique que o bem est� agregado a outro no relat�rio c |
-| 7716 | 32434 | SAM | Desc | Criar campo para informar o hist�rico do ISS a compensar para notas qu |
-| 7708 | 32426 | SAM | Desc | SP-Trazer a data de vencimento do imposto no campo "Data Recolhimento" |
-| 7639 | 32411 | SAM | Lib | Considerar o valor do imposto IPI para fechar os valores de ICMS com o |
-| 7622 | 32409 | SAM | Lib | MG - Habilitar a emiss�o da guia DAE para Substitui��o Tribut�ria. |
 | 7614 | 32404 | SAM | Lib | Criar no cadastro de adi��es e exclus�es da Contribui�ao Social grupos |
 | 7650 | 32412 | SAM | Lib | Acrescentar todos os impostos na op��o "impostos" no quadro "empresas  |
-| 7707 | 32425 | SAM | Desc | Criar sele��o pelo n�mero do documento de cobran�a na tela de emiss�o  |
+| 7639 | 32411 | SAM | Lib | Considerar o valor do imposto IPI para fechar os valores de ICMS com o |
 | 7698 | 32422 | SAM | Lib | Otimizar o processo de zeramento quando a empresa efetua rateio por ce |
+| 7622 | 32409 | SAM | Lib | MG - Habilitar a emiss�o da guia DAE para Substitui��o Tribut�ria. |
+| 7707 | 32425 | SAM | Desc | Criar sele��o pelo n�mero do documento de cobran�a na tela de emiss�o  |
+| 7708 | 32426 | SAM | Desc | SP-Trazer a data de vencimento do imposto no campo "Data Recolhimento" |
 | 7456 | 32367 | SAM | Lib | Disponibilizar o rateio gerencial na tela de lan�amentos em lotes. |
+| 7605 | 32395 | SAM | Lib | Criar cadastro de observa��es para serem utilizadas na emiss�o da nota |
 | 7606 | 32396 | SAM | Lib | SC-Quando realizado importa��o do m�dulo Folha para gerar a DIME, cons |
 | 7607 | 32397 | SAM | Desc | Alterar leiaute de importa��o de produtos para permitir a importa��o d |
-| 7605 | 32395 | SAM | Lib | Criar cadastro de observa��es para serem utilizadas na emiss�o da nota |
 | 7448 | 32362 | SAM | Lib | Criar op��o na guia contas das defini��es do imposto no cadastro do ac |
-| 7352 | 32339 | SAM | Lib | Quando efetuado uma baixa de faturamento com o valor de juros, multa e |
-| 7335 | 32332 | SAM | Lib | SP-Disponibilizar na guia DARE a op��o "Substituti��o Tribut�ria". |
-| 7418 | 32358 | SAM | Lib | Criar op��o na emiss�o do extrato de cliente para considerar a data de |
-| 7400 | 32356 | SAM | Lib | Permitir gravar somente as notas v�lidas na importa��o de notas quando |
 | 7359 | 32345 | SAM | Desc | Trazer o numero do telefone na emiss�o do DARF avulso. |
-| 7358 | 32344 | SAM | Lib | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da |
-| 7450 | 32363 | SAM | Lib | Disponibilizar o Configura��o de historiocos individualizada por empre |
-| 7367 | 32346 | SAM | Lib | Disponibilizar o cadastro de testemunhas nesse m�dulo. |
-| 7357 | 32343 | SAM | Lib | Demonstrar os valores das notas de sa�das com cfop 5933/6933 na coluna |
 | 7354 | 32341 | SAM | Desc | Permitir o cadastro de um bem no patrim�nio mesmo que o usu�rio n�o te |
-| 7355 | 32342 | SAM | Lib | Considerar a data de pagamento na emiss�o do relat�rio de reten��es a  |
+| 7367 | 32346 | SAM | Lib | Disponibilizar o cadastro de testemunhas nesse m�dulo. |
+| 7358 | 32344 | SAM | Lib | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da |
+| 7418 | 32358 | SAM | Lib | Criar op��o na emiss�o do extrato de cliente para considerar a data de |
+| 7450 | 32363 | SAM | Lib | Disponibilizar o Configura��o de historiocos individualizada por empre |
+| 7335 | 32332 | SAM | Lib | SP-Disponibilizar na guia DARE a op��o "Substituti��o Tribut�ria". |
+| 7357 | 32343 | SAM | Lib | Demonstrar os valores das notas de sa�das com cfop 5933/6933 na coluna |
+| 7400 | 32356 | SAM | Lib | Permitir gravar somente as notas v�lidas na importa��o de notas quando |
+| 7352 | 32339 | SAM | Lib | Quando efetuado uma baixa de faturamento com o valor de juros, multa e |
 | 7353 | 32340 | SAM | Desc | Trazer o hist�rico definido no acumulador, ao incluir um novo lan�amen |
-| 7270 | 32324 | SAM | Lib | Na consulta F6 quando as contas tiverem a mesma classifica��o listar e |
-| 7165 | 32298 | SAM | Desc | Criar op��o na emiss�o do balan�o para imprimir ou n�o o n�mero do liv |
-| 7211 | 32307 | SAM | Lib | Criar op��o "Desconsiderar saldo anterior" no relat�rio de comparativo |
-| 7320 | 32331 | SAM | Lib | Na integra��o cont�bil do simples nacional considerar o valor fixo de  |
-| 7210 | 32306 | SAM | Desc | Criar op��o na emiss�o do plano de contas para emitir contas sem movim |
-| 7251 | 32320 | SAM | Lib | Alterar a mensagem na tela de lan�amento padr�es para contas inexisten |
-| 7240 | 32316 | SAM | Lib | N�o listar na tela de reajuste de contratos, os contratos j� finalizad |
-| 7169 | 32302 | SAM | Desc | Criar op��o na estrutura do DRE para totalizar grupos acima. |
-| 7271 | 32325 | SAM | Lib | Na consulta F6, quando a tela de lan�amentos estiver aberta, ao seleci |
-| 7217 | 32312 | SAM | Desc | Utilizar a informa��o do campo "Tipo do Endere�o" do cadastro de empre |
-| 7216 | 32311 | SAM | Desc | Efetuar controle de numera��o do livros na emiss�o dos livros cont�bei |
+| 7355 | 32342 | SAM | Lib | Considerar a data de pagamento na emiss�o do relat�rio de reten��es a  |
 | 7269 | 32323 | SAM | Desc | Criar a op��o "N�o emitir contas com saldo anterior e atual zero" na e |
-| 7202 | 32305 | SAM | Lib | Disponibilizar a emiss�o do Livro de ICMS para empresas optantes do Si |
+| 7270 | 32324 | SAM | Lib | Na consulta F6 quando as contas tiverem a mesma classifica��o listar e |
+| 7271 | 32325 | SAM | Lib | Na consulta F6, quando a tela de lan�amentos estiver aberta, ao seleci |
+| 7210 | 32306 | SAM | Desc | Criar op��o na emiss�o do plano de contas para emitir contas sem movim |
 | 7168 | 32301 | SAM | Desc | Inserir na listagem dos lan�amentos cont�beis a coluna Data origem. |
+| 7320 | 32331 | SAM | Lib | Na integra��o cont�bil do simples nacional considerar o valor fixo de  |
+| 7211 | 32307 | SAM | Lib | Criar op��o "Desconsiderar saldo anterior" no relat�rio de comparativo |
 | 7247 | 32317 | SAM | Lib | Gerar a descri��o do tipo do endere�o existente no cadastro da empresa |
-| 7163 | 32297 | SAM | Lib | Na listagem dos lan�amentos padr�es n�o est� sendo transferido o lan�a |
-| 7161 | 32295 | SAM | Lib | Demonstrar o foco do cursor na lista de filiais da tela de escolha de  |
+| 7202 | 32305 | SAM | Lib | Disponibilizar a emiss�o do Livro de ICMS para empresas optantes do Si |
+| 7217 | 32312 | SAM | Desc | Utilizar a informa��o do campo "Tipo do Endere�o" do cadastro de empre |
+| 7165 | 32298 | SAM | Desc | Criar op��o na emiss�o do balan�o para imprimir ou n�o o n�mero do liv |
+| 7240 | 32316 | SAM | Lib | N�o listar na tela de reajuste de contratos, os contratos j� finalizad |
+| 7216 | 32311 | SAM | Desc | Efetuar controle de numera��o do livros na emiss�o dos livros cont�bei |
+| 7251 | 32320 | SAM | Lib | Alterar a mensagem na tela de lan�amento padr�es para contas inexisten |
+| 7169 | 32302 | SAM | Desc | Criar op��o na estrutura do DRE para totalizar grupos acima. |
 | 6913 | 32263 | SAM | Lib | Criar op��o no relat�rio Simples Nacional para demonstrar as receitas  |
+| 7145 | 32288 | SAM | Lib | Criar op��o na importa��o de baixa de parcelas para sobrescrever regis |
 | 7004 | 32270 | SAM | Lib | Quando efetuado lan�amento em contas configuradas para permitir rateio |
 | 7121 | 32283 | SAM | Lib | Criar op��o no cadastro de itens das tabelas municipais, para que os m |
 | 6914 | 32264 | SAM | Lib | Criar campo para ser informado o c�digo de acesso do Simples Nacional. |
+| 7163 | 32297 | SAM | Lib | Na listagem dos lan�amentos padr�es n�o est� sendo transferido o lan�a |
+| 7028 | 32277 | SAM | Lib | Ao realizar importa��o de baixa de parcelas, se ocorrer erro, ter a op |
+| 6960 | 32267 | SAM | Lib | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Norma |
+| 7025 | 32274 | SAM | Lib | O sistema n�o deve permitir importar um cadastro de Produto com c�digo |
+| 7161 | 32295 | SAM | Lib | Demonstrar o foco do cursor na lista de filiais da tela de escolha de  |
 | 7135 | 32286 | SAM | Lib | Quando realizado a importa��o do n�mero de empregados para a PJSI, con |
 | 7029 | 32278 | SAM | Lib | Ao realizar a importa��o de baixa de parcelas permitir que seja inform |
-| 7025 | 32274 | SAM | Lib | O sistema n�o deve permitir importar um cadastro de Produto com c�digo |
-| 6960 | 32267 | SAM | Lib | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Norma |
-| 7145 | 32288 | SAM | Lib | Criar op��o na importa��o de baixa de parcelas para sobrescrever regis |
-| 7028 | 32277 | SAM | Lib | Ao realizar importa��o de baixa de parcelas, se ocorrer erro, ter a op |
-| 6692 | 32240 | SAM | Desc | Quando sistema identifica que fornecedor j� est� cadastrado em outra e |
-| 6694 | 32242 | SAM | Desc | Incluir op��o na tela de gera��o dos relat�rios de acompanhamentos de  |
-| 6634 | 32228 | SAM | Lib | Quando lan�ado notas de devolu��o de vendas com ICMS e IPI em que o Fo |
-| 6691 | 32239 | SAM | Desc | Criar campo na emiss�o do DARF Simples Avulso para ser informado a Bas |
-| 6703 | 32247 | SAM | Lib | Criar campo no cadastro de s�cios para ser informado o c�digo do pa�s. |
-| 6693 | 32241 | SAM | Lib | Ajustar a gera��o do n�mero da nota que acoberta a carga de transporte |
-| 6697 | 32245 | SAM | Desc | Retirar a op��o "Energia" no campo agropecu�rio do cadastro de fornece |
-| 6657 | 32232 | SAM | Desc | Criar op��o para incluir a compet�ncia no registro de atividades. |
-| 6824 | 32257 | SAM | Lib | Permitir cadastrar o valor de receita bruta acumulada para periodos po |
-| 6715 | 32248 | SAM | Lib | SE-Quando gerado o DIC, para notas de entradas e sa�das de dentro do e |
 | 6724 | 32250 | SAM | Lib | Gerar a ficha 54 da DIPJ mesmo se a empresa n�o tenha os impostos IRPJ |
-| 6690 | 32238 | SAM | Desc | Quando nos cadastros de "Fornecedores", "Clientes", "Acumuladores", "I |
-| 6686 | 32234 | SAM | Desc | Quando gerado o relatorio resumo dos impostos de um periodo sem movime |
-| 6823 | 32256 | SAM | Lib | Quando gerado a integra��o cont�bil dos impostos de periodos anteriore |
+| 6878 | 32262 | SAM | Lib | Quando realizado importa��o de notas de entradas com os impostos CRF,  |
+| 6672 | 32233 | SAM | Lib | Tratar a mensagem que ocorre ao importar uma nota j� existente pelo ut |
+| 6692 | 32240 | SAM | Desc | Quando sistema identifica que fornecedor j� est� cadastrado em outra e |
 | 6857 | 32260 | SAM | Lib | Quando no cadastro da empresa o tipo de inscri��o for CEI, ao gerar o  |
+| 6690 | 32238 | SAM | Desc | Quando nos cadastros de "Fornecedores", "Clientes", "Acumuladores", "I |
+| 6691 | 32239 | SAM | Desc | Criar campo na emiss�o do DARF Simples Avulso para ser informado a Bas |
+| 6657 | 32232 | SAM | Desc | Criar op��o para incluir a compet�ncia no registro de atividades. |
 | 6822 | 32255 | SAM | Desc | Criar op��o para informar um valor fixo nas faixas at� 120.000,00 nas  |
 | 6698 | 32246 | SAM | Desc | Alterar o nome da coluna "Exclus�o DIEF" que est� presente na op��o "A |
-| 6672 | 32233 | SAM | Lib | Tratar a mensagem que ocorre ao importar uma nota j� existente pelo ut |
-| 6878 | 32262 | SAM | Lib | Quando realizado importa��o de notas de entradas com os impostos CRF,  |
+| 6715 | 32248 | SAM | Lib | SE-Quando gerado o DIC, para notas de entradas e sa�das de dentro do e |
+| 6693 | 32241 | SAM | Lib | Ajustar a gera��o do n�mero da nota que acoberta a carga de transporte |
 | 6720 | 32249 | SAM | Lib | Quando selecionado apenas um centro de custos na emiss�o do DRE, gerar |
+| 6634 | 32228 | SAM | Lib | Quando lan�ado notas de devolu��o de vendas com ICMS e IPI em que o Fo |
 | 6689 | 32237 | SAM | Lib | BA-Quando digitado outros dados no informativo DMA sistema esta gravan |
+| 6697 | 32245 | SAM | Desc | Retirar a op��o "Energia" no campo agropecu�rio do cadastro de fornece |
+| 6694 | 32242 | SAM | Desc | Incluir op��o na tela de gera��o dos relat�rios de acompanhamentos de  |
+| 6823 | 32256 | SAM | Lib | Quando gerado a integra��o cont�bil dos impostos de periodos anteriore |
+| 6703 | 32247 | SAM | Lib | Criar campo no cadastro de s�cios para ser informado o c�digo do pa�s. |
 | 6695 | 32243 | SAM | Desc | No cadastro de impostos, sistema deveria aceitar deixar os campos onde |
-| 6537 | 32204 | SAM | Desc | Aumentar tamanho do campo "Observa��es" dos itens na emiss�o do protoc |
-| 6597 | 32221 | SAM | Lib | MG- Retirar a op��o "MICRO GERAES" do cadastro de acumuladores. |
-| 6627 | 32227 | SAM | Lib | Quando efetuado uma altera��o no campo valor dos produtos no movimento |
-| 6538 | 32205 | SAM | Desc | Criar op��o no cadastro de �tens para bloquear a altera��o do mesmo na |
-| 6536 | 32203 | SAM | Lib | Allterar a descri��o do campo "Recebido Por" na tela de emiss�o do pro |
-| 6592 | 32220 | SAM | Lib | Gerar o lan�amento cont�bil do estorno de cr�dito gerado, baseado na i |
+| 6824 | 32257 | SAM | Lib | Permitir cadastrar o valor de receita bruta acumulada para periodos po |
+| 6686 | 32234 | SAM | Desc | Quando gerado o relatorio resumo dos impostos de um periodo sem movime |
 | 6598 | 32222 | SAM | Lib | Quando realizado a importa��o de clientes e fornecedores deve ser cons |
-| 6547 | 32214 | SAM | Desc | Criar cadastro de usu�rios/permiss�es dentro do m�dulo Dominio Cliente |
+| 6537 | 32204 | SAM | Desc | Aumentar tamanho do campo "Observa��es" dos itens na emiss�o do protoc |
+| 6627 | 32227 | SAM | Lib | Quando efetuado uma altera��o no campo valor dos produtos no movimento |
 | 6549 | 32216 | SAM | Desc | Criar modelo de requerimento Pesquisa de Situa��o Fiscal e Cadastral. |
+| 6597 | 32221 | SAM | Lib | MG- Retirar a op��o "MICRO GERAES" do cadastro de acumuladores. |
+| 6538 | 32205 | SAM | Desc | Criar op��o no cadastro de �tens para bloquear a altera��o do mesmo na |
+| 6547 | 32214 | SAM | Desc | Criar cadastro de usu�rios/permiss�es dentro do m�dulo Dominio Cliente |
 | 6535 | 32202 | SAM | Desc | Ao emitir o protocolo de imposto federal trazer no c�digo de recolhime |
-| 6539 | 32206 | SAM | Desc | Incluir nos modelos de Protocolo a data de emiss�o. |
 | 6544 | 32211 | SAM | Desc | Quando selecionado um item e o mesmo � do tipo imposto e depende do m� |
+| 6539 | 32206 | SAM | Desc | Incluir nos modelos de Protocolo a data de emiss�o. |
+| 6592 | 32220 | SAM | Lib | Gerar o lan�amento cont�bil do estorno de cr�dito gerado, baseado na i |
+| 6536 | 32203 | SAM | Lib | Allterar a descri��o do campo "Recebido Por" na tela de emiss�o do pro |
 | 6540 | 32207 | SAM | Desc | Quando selecionado na emiss�o, um item vinculado ao imposto/encargo FG |
-| 6491 | 32166 | SAM | Desc | Disponibilizar utilit�rio para realizar exlus�o de lan�amentos cont�be |
-| 6497 | 32168 | SAM | Lib | Quando realizado a importa��o na guia Ganhos no c�lculo da Contribui�� |
-| 6495 | 32167 | SAM | Lib | Otimizar telas de c�lculo de Imposto de renda e Contribui��o Social. |
 | 6498 | 32169 | SAM | Lib | Criar op��o para importar a receita das filiais no c�lculo estimado. |
+| 6495 | 32167 | SAM | Lib | Otimizar telas de c�lculo de Imposto de renda e Contribui��o Social. |
+| 6497 | 32168 | SAM | Lib | Quando realizado a importa��o na guia Ganhos no c�lculo da Contribui�� |
 | 6499 | 32170 | SAM | Lib | Quando efetuado o lan�amento de compensa��o de Per�odos Anteriores e n |
-| 6478 | 32153 | SAM | Lib | Quando efetuado altera��o cadastral em um cliente ou fornecedor verifi |
-| 6486 | 32161 | SAM | Lib | Incluir o imposto ICMS na rela��o de impostos a serem selecionados no  |
-| 6480 | 32155 | SAM | Desc | Disponibilizar no relat�rio dos impostos atualizados, uma coluna para  |
+| 6491 | 32166 | SAM | Desc | Disponibilizar utilit�rio para realizar exlus�o de lan�amentos cont�be |
 | 6402 | 32142 | SAM | Lib | Quando lan�ado notas de saidas com modelo 07, somente abrir a tela dad |
-| 6481 | 32156 | SAM | Lib | Incluir o imposto INSS na rela��o de impostos a serem selecionados no  |
 | 6483 | 32158 | SAM | Desc | Efetuar c�lculo em atraso dos impostos IRPJ e CSOC com a Per�odicidade |
-| 6482 | 32157 | SAM | Desc | Disponibilizar a digita��o de observa��es na emiss�o da GPS. |
+| 6480 | 32155 | SAM | Desc | Disponibilizar no relat�rio dos impostos atualizados, uma coluna para  |
 | 6485 | 32160 | SAM | Desc | Criar op��o para informar o c�digo de recolhimento no c�lculo dos impo |
-| 6367 | 32136 | SAM | Desc | Ao imprimir o Relat�rio Plano de Contas matricial configurado com marg |
-| 6484 | 32159 | SAM | Desc | Otimizar a tela de c�lculo dos impostos. |
+| 6482 | 32157 | SAM | Desc | Disponibilizar a digita��o de observa��es na emiss�o da GPS. |
 | 6477 | 32152 | SAM | Lib | Quando efetuado o lan�amento de notas de entradas, sa�das e servi�os e |
-| 6339 | 32124 | SAM | Lib | Individualizar por empresa o t�tulo do balan�o e o t�tulo do balan�o d |
+| 6484 | 32159 | SAM | Desc | Otimizar a tela de c�lculo dos impostos. |
+| 6367 | 32136 | SAM | Desc | Ao imprimir o Relat�rio Plano de Contas matricial configurado com marg |
+| 6486 | 32161 | SAM | Lib | Incluir o imposto ICMS na rela��o de impostos a serem selecionados no  |
+| 6481 | 32156 | SAM | Lib | Incluir o imposto INSS na rela��o de impostos a serem selecionados no  |
+| 6478 | 32153 | SAM | Lib | Quando efetuado altera��o cadastral em um cliente ou fornecedor verifi |
+| 6197 | 32099 | SAM | Desc | RS-Quando lan�ado um movimento de ajuste com opera��o por compensa��o  |
+| 6225 | 32105 | SAM | Desc | MS-Criar um campo de Descontos na op��o de Pagamento do Imposto ISS. |
 | 6336 | 32121 | SAM | Lib | Quando lan�ado notas de entradas somente com ICMS com valor de IPI e S |
+| 6338 | 32123 | SAM | Desc | Quando efetuado o lan�amento de notas e existir diferen�a de d�bito e  |
 | 6196 | 32098 | SAM | Lib | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das la |
-| 6243 | 32111 | SAM | Lib | Disponibilizar o bot�o listagem na tela de Adiantamentos. |
+| 6329 | 32120 | SAM | Lib | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio cadastral de |
+| 6324 | 32118 | SAM | Lib | Permitir que as empresas que utilizam o plano de contas de outras poss |
+| 6241 | 32109 | SAM | Lib | Disponibilizar na guia Baixa da Configura��o de historico campo para g |
+| 6328 | 32119 | SAM | Lib | Quando um usu�rio efetua um lan�amento de notas fora do per�odo de fec |
 | 6191 | 32094 | SAM | Lib | Quando realizado a exporta��o de baixas, deve ser exportado todas as b |
 | 6337 | 32122 | SAM | Desc | Criar controle de fachamento de periodo para o registro de atividades. |
-| 6328 | 32119 | SAM | Lib | Quando um usu�rio efetua um lan�amento de notas fora do per�odo de fec |
-| 6338 | 32123 | SAM | Desc | Quando efetuado o lan�amento de notas e existir diferen�a de d�bito e  |
-| 6241 | 32109 | SAM | Lib | Disponibilizar na guia Baixa da Configura��o de historico campo para g |
-| 6329 | 32120 | SAM | Lib | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio cadastral de |
-| 6195 | 32097 | SAM | Lib | RS-Quando o valor de devolu��o de vendas for maior que o valor de vend |
-| 6197 | 32099 | SAM | Desc | RS-Quando lan�ado um movimento de ajuste com opera��o por compensa��o  |
-| 6274 | 32112 | SAM | Lib | Criar op��o para gerar a redu��o no valor do imposto em forma de estor |
-| 6324 | 32118 | SAM | Lib | Permitir que as empresas que utilizam o plano de contas de outras poss |
-| 6200 | 32101 | SAM | Lib | Criar campo nas defini��es do imposto no cadastro de acumulador para d |
-| 6225 | 32105 | SAM | Desc | MS-Criar um campo de Descontos na op��o de Pagamento do Imposto ISS. |
+| 6243 | 32111 | SAM | Lib | Disponibilizar o bot�o listagem na tela de Adiantamentos. |
 | 6224 | 32104 | SAM | Desc | PR-Criar op��o para gerar nota de sa�das no estabelecimento centraliza |
-| 6008 | 32074 | SAM | Desc | No relat�rio de Impostos Resumo trimestral separar a base de calculo p |
+| 6274 | 32112 | SAM | Lib | Criar op��o para gerar a redu��o no valor do imposto em forma de estor |
+| 6200 | 32101 | SAM | Lib | Criar campo nas defini��es do imposto no cadastro de acumulador para d |
+| 6339 | 32124 | SAM | Lib | Individualizar por empresa o t�tulo do balan�o e o t�tulo do balan�o d |
+| 6195 | 32097 | SAM | Lib | RS-Quando o valor de devolu��o de vendas for maior que o valor de vend |
+| 6006 | 32072 | SAM | Desc | No Relat�rio de Reten��es a Recolher totalizar conforme a periodicidad |
 | 6016 | 32080 | SAM | Desc | Emitir aviso na concilia��o banc�ria quando selecionar lan�amentos con |
-| 6023 | 32081 | SAM | Desc | Gravar as altera��es feitas na sequencia das colunas da listagem da te |
-| 6000 | 32066 | SAM | Lib | Criar op��o no utilit�rio Altera��o de lan�amentos para alterar o hist |
-| 6074 | 32089 | SAM | Lib | No relat�rio previs�o de pagamento listar tamb�m os impostos que foram |
-| 5996 | 32062 | SAM | Desc | Disponibilizar o relat�rio de Movimenta��o/Extrato no gerador de relat |
-| 6002 | 32068 | SAM | Lib | Alterar a tela de emiss�o de documento de cobran�a para listar os ducu |
-| 6011 | 32077 | SAM | Desc | No relat�rio de Previs�o para pagamento quando selecionar todos os imp |
-| 6051 | 32087 | SAM | Desc | SC-Habilitar campo de exclus�o da DIME para lan�amentos de Presta��o e |
-| 5999 | 32065 | SAM | Desc | Disponibilizar a coluna NCM na ordem da listagem do cadastro de produt |
-| 6003 | 32069 | SAM | Lib | Aumentar o tamanho do campo arquivo/caminho da tela de emiss�o do Sint |
 | 6044 | 32085 | SAM | Lib | Criar um modelo de livro de IPI com seja demonstrado separadamente por |
 | 5998 | 32064 | SAM | Lib | No relat�rio de usu�rio tempo gasto agrupar por usu�rio desconsiderand |
-| 6004 | 32070 | SAM | Lib | Habilitar a op��o de Lan�amento com partida simples nas baixas de parc |
+| 6051 | 32087 | SAM | Desc | SC-Habilitar campo de exclus�o da DIME para lan�amentos de Presta��o e |
+| 6011 | 32077 | SAM | Desc | No relat�rio de Previs�o para pagamento quando selecionar todos os imp |
+| 6043 | 32084 | SAM | Lib | Quando lan�ado notas de sa�das com CFOP 5933 e 6933 na emiss�o do livr |
+| 6003 | 32069 | SAM | Lib | Aumentar o tamanho do campo arquivo/caminho da tela de emiss�o do Sint |
 | 6042 | 32083 | SAM | Lib | Mudar a op��o de N�o imprimir contas com saldo zero na emiss�o do bala |
 | 6005 | 32071 | SAM | Desc | Criar uma op��o no cadastro de usu�rio para n�o permitir alterar lan�a |
-| 6043 | 32084 | SAM | Lib | Quando lan�ado notas de sa�das com CFOP 5933 e 6933 na emiss�o do livr |
-| 6006 | 32072 | SAM | Desc | No Relat�rio de Reten��es a Recolher totalizar conforme a periodicidad |
+| 6008 | 32074 | SAM | Desc | No relat�rio de Impostos Resumo trimestral separar a base de calculo p |
+| 6002 | 32068 | SAM | Lib | Alterar a tela de emiss�o de documento de cobran�a para listar os ducu |
 | 5992 | 32060 | SAM | Desc | Incluir na listagem do cadastro de produto a coluna NCM. |
+| 6023 | 32081 | SAM | Desc | Gravar as altera��es feitas na sequencia das colunas da listagem da te |
+| 6000 | 32066 | SAM | Lib | Criar op��o no utilit�rio Altera��o de lan�amentos para alterar o hist |
+| 5996 | 32062 | SAM | Desc | Disponibilizar o relat�rio de Movimenta��o/Extrato no gerador de relat |
+| 6074 | 32089 | SAM | Lib | No relat�rio previs�o de pagamento listar tamb�m os impostos que foram |
+| 5999 | 32065 | SAM | Desc | Disponibilizar a coluna NCM na ordem da listagem do cadastro de produt |
+| 6004 | 32070 | SAM | Lib | Habilitar a op��o de Lan�amento com partida simples nas baixas de parc |
+| 5970 | 32043 | SAM | Desc | Na emiss�o dos livros sistema corta a nome nas assinaturas se as mesma |
+| 5969 | 32042 | SAM | Desc | No relat�rio Resumo por acumulador somar nas colunas de IPI e ICMS ST  |
+| 5977 | 32048 | SAM | Desc | PR-Sempre que efetuada atualiza��o do sistema, � necess�rio reinstalar |
 | 5941 | 32028 | SAM | Lib | Alterar a ordem dos campos dos impostos nos lan�amentos de notas de en |
-| 5944 | 32030 | SAM | Desc | Na tela de emiss�o do relat�rio de contas a pagar no campo Fornecedor  |
-| 5987 | 32055 | SAM | Desc | Criar op��o nos relatorios de acompanhamento de entradas e saidas de s |
+| 5963 | 32036 | SAM | Lib | RS-Ao digitar nota de entrada com modelo de esp�cie 6 deve habilitar u |
 | 5974 | 32047 | SAM | Lib | Incluir a op��o para regerar lan�amentos cont�beis dos outros moviment |
 | 5973 | 32046 | SAM | Desc | Incluir os cadastros do m�dulo Patrim�nio |
-| 5990 | 32058 | SAM | Desc | Permitir no cadastro de acumulador na guia impostos na defini��o, de t |
-| 5977 | 32048 | SAM | Desc | PR-Sempre que efetuada atualiza��o do sistema, � necess�rio reinstalar |
-| 5989 | 32057 | SAM | Desc | Criar op��o de sele��o de empresas no relatorio Demosntrativo do fatur |
-| 5945 | 32031 | SAM | Desc | Na tela de emiss�o do relat�rio de contas a receber no campo Cliente i |
-| 5984 | 32052 | SAM | Lib | Criar op��o de aviso de vencimentos ao acessar o sistema. |
 | 5942 | 32029 | SAM | Desc | Alterar a sequ�ncia do impostos nas notas de entradas e sa�das para qu |
-| 5970 | 32043 | SAM | Desc | Na emiss�o dos livros sistema corta a nome nas assinaturas se as mesma |
-| 5972 | 32045 | SAM | Desc | Alterar descri��o da vers�o na tela de emiss�o do Sintegra de 5.0.2 pa |
-| 5965 | 32038 | SAM | Desc | No relat�rio de acompanhamento de sa�das e entradas emxibir o campo CF |
-| 5969 | 32042 | SAM | Desc | No relat�rio Resumo por acumulador somar nas colunas de IPI e ICMS ST  |
-| 5963 | 32036 | SAM | Lib | RS-Ao digitar nota de entrada com modelo de esp�cie 6 deve habilitar u |
-| 5935 | 32025 | SAM | Lib | Criar bot�o selecionar clientes na tela de reajustes. |
-| 5986 | 32054 | SAM | Desc | Quando uma empresa n�o estiver definida para utilizar o m�dulo Honor�r |
-| 5983 | 32051 | SAM | Lib | Criar o cadastro de categorias para contas a pagar |
-| 5959 | 32033 | SAM | Lib | RS-Habilitar no cadastro de acumulador uma op��o para informar um c�di |
-| 5961 | 32035 | SAM | Desc | RS-Ao zerar valores de isentas e outras de ICMS deve ser excluido o de |
+| 5989 | 32057 | SAM | Desc | Criar op��o de sele��o de empresas no relatorio Demosntrativo do fatur |
 | 5968 | 32041 | SAM | Lib | Ter na tela de faturamento, na emiss�o de notas, bloquetos e documento |
+| 5945 | 32031 | SAM | Desc | Na tela de emiss�o do relat�rio de contas a receber no campo Cliente i |
+| 5986 | 32054 | SAM | Desc | Quando uma empresa n�o estiver definida para utilizar o m�dulo Honor�r |
+| 5987 | 32055 | SAM | Desc | Criar op��o nos relatorios de acompanhamento de entradas e saidas de s |
+| 5972 | 32045 | SAM | Desc | Alterar descri��o da vers�o na tela de emiss�o do Sintegra de 5.0.2 pa |
+| 5961 | 32035 | SAM | Desc | RS-Ao zerar valores de isentas e outras de ICMS deve ser excluido o de |
+| 5935 | 32025 | SAM | Lib | Criar bot�o selecionar clientes na tela de reajustes. |
+| 5959 | 32033 | SAM | Lib | RS-Habilitar no cadastro de acumulador uma op��o para informar um c�di |
+| 5983 | 32051 | SAM | Lib | Criar o cadastro de categorias para contas a pagar |
+| 5944 | 32030 | SAM | Desc | Na tela de emiss�o do relat�rio de contas a pagar no campo Fornecedor  |
+| 5965 | 32038 | SAM | Desc | No relat�rio de acompanhamento de sa�das e entradas emxibir o campo CF |
+| 5984 | 32052 | SAM | Lib | Criar op��o de aviso de vencimentos ao acessar o sistema. |
+| 5990 | 32058 | SAM | Desc | Permitir no cadastro de acumulador na guia impostos na defini��o, de t |
+| 5911 | 32010 | SAM | Lib | Otimizar a tela de lan�amento de notas de modo que todos os campos dos |
+| 5932 | 32022 | SAM | Lib | Incluir na configura��o de hist�rico na guia Recebimento a var�avel do |
+| 5897 | 31996 | SAM | Lib | Ter op��o de elaborar os contratos no Microsoft Word. |
+| 5931 | 32021 | SAM | Desc | RS-Ter a op��o para poder cadastrar os c�digos de detalhamento do anex |
+| 5904 | 32003 | SAM | Desc | Quando selecionado um imposto trimestral que foi parcelado, deve traze |
+| 5910 | 32009 | SAM | Lib | Criar no cadastro de acumuladores no campo Diferen�a entre valor cont� |
+| 5903 | 32002 | SAM | Lib | Criar um campo na tela de concilia��o banc�ria para totalizar os lan�a |
+| 5919 | 32014 | SAM | Desc | Na tela de emiss�o do relat�rio de acompanhamento de sa�da aumentar pa |
+| 5928 | 32018 | SAM | Desc | Ter op��o de importar arquivo de extrato banc�rio no formato FEBRABAN |
+| 5896 | 31995 | SAM | Desc | Disponibilizar os eventos 301 a 311, em Processos / Constitui��o / Req |
+| 5892 | 31993 | SAM | Desc | Quando usado o sistema como livro caixa e na guia Conta caixa dos par� |
 | 5929 | 32019 | SAM | Lib | Ter uma op��o para que na apura��o do ISS com ISS retido n�o fa�a a co |
 | 5898 | 31997 | SAM | Desc | Ao realizar a baixa de um iten que seja do tipo imposto, abriar a tela |
-| 5892 | 31993 | SAM | Desc | Quando usado o sistema como livro caixa e na guia Conta caixa dos par� |
-| 5897 | 31996 | SAM | Lib | Ter op��o de elaborar os contratos no Microsoft Word. |
-| 5911 | 32010 | SAM | Lib | Otimizar a tela de lan�amento de notas de modo que todos os campos dos |
-| 5904 | 32003 | SAM | Desc | Quando selecionado um imposto trimestral que foi parcelado, deve traze |
-| 5932 | 32022 | SAM | Lib | Incluir na configura��o de hist�rico na guia Recebimento a var�avel do |
-| 5910 | 32009 | SAM | Lib | Criar no cadastro de acumuladores no campo Diferen�a entre valor cont� |
-| 5928 | 32018 | SAM | Desc | Ter op��o de importar arquivo de extrato banc�rio no formato FEBRABAN |
 | 5902 | 32001 | SAM | Desc | Ter a op��o no relat�rio de Valores acumulados para n�o trazer os bens |
-| 5896 | 31995 | SAM | Desc | Disponibilizar os eventos 301 a 311, em Processos / Constitui��o / Req |
-| 5903 | 32002 | SAM | Lib | Criar um campo na tela de concilia��o banc�ria para totalizar os lan�a |
-| 5931 | 32021 | SAM | Desc | RS-Ter a op��o para poder cadastrar os c�digos de detalhamento do anex |
-| 5919 | 32014 | SAM | Desc | Na tela de emiss�o do relat�rio de acompanhamento de sa�da aumentar pa |
-| 5862 | 31967 | SAM | Lib | Habilitar as telas de centro de custo, DFC, Gerencial, DMPL nas telas  |
-| 5849 | 31960 | SAM | Lib | Demonstrar na consulta do cadastro de bem o valor da taxa de deprecia� |
-| 5869 | 31971 | SAM | Desc | Criar op��o para inclus�o e controle dos tr�mites dos processos de con |
-| 5885 | 31986 | SAM | Desc | No relat�rio Usu�rio tempo gasto ter um total geral do tempo trabalhdo |
-| 5874 | 31976 | SAM | Desc | SP-Quando emitido o livro de ISS modelo 53 alterar para que n�o seja l |
-| 5886 | 31987 | SAM | Desc | No relat�rio de Cliente tempo gasto ter um total geral com a soma do t |
-| 5887 | 31988 | SAM | Desc | Ajustar o tamanho do logotipo do m�dulo administrar no menu ajuda na o |
-| 5888 | 31989 | SAM | Lib | Permitir acesso total ao cadastro de contas nas empresas que utilizam  |
-| 5848 | 31959 | SAM | Desc | Na listagem de notas fiscais ao realizar uma busca por documento, o si |
 | 5884 | 31985 | SAM | Desc | No relat�rio cadastral de bens qo emitir com quebra, deve sair o nome  |
+| 5885 | 31986 | SAM | Desc | No relat�rio Usu�rio tempo gasto ter um total geral do tempo trabalhdo |
 | 5881 | 31982 | SAM | Desc | N�o permitir baixar protocolo com data menor que a emiss�o do mesmo. |
+| 5862 | 31967 | SAM | Lib | Habilitar as telas de centro de custo, DFC, Gerencial, DMPL nas telas  |
+| 5888 | 31989 | SAM | Lib | Permitir acesso total ao cadastro de contas nas empresas que utilizam  |
+| 5849 | 31960 | SAM | Lib | Demonstrar na consulta do cadastro de bem o valor da taxa de deprecia� |
+| 5886 | 31987 | SAM | Desc | No relat�rio de Cliente tempo gasto ter um total geral com a soma do t |
 | 5868 | 31970 | SAM | Lib | Ter op��o de gerar lan�amento para a contabilidade por centro de custo |
-| 5594 | 31933 | SAM | Lib | SC-Florian�polis-Desenvolver modelos de livros de ISS.   |
-| 5656 | 31943 | SAM | Lib | RS-Quando realizado importa��o da folha nos outros dados da GIS, consi |
-| 5580 | 31932 | SAM | Lib | Criar na estrutura da DLPA op��o para buscar Total de d�bito, Total de |
-| 5634 | 31942 | SAM | Lib | Gerar lan�amento cont�bil de fechamento para o IPI. |
+| 5869 | 31971 | SAM | Desc | Criar op��o para inclus�o e controle dos tr�mites dos processos de con |
+| 5848 | 31959 | SAM | Desc | Na listagem de notas fiscais ao realizar uma busca por documento, o si |
+| 5874 | 31976 | SAM | Desc | SP-Quando emitido o livro de ISS modelo 53 alterar para que n�o seja l |
+| 5887 | 31988 | SAM | Desc | Ajustar o tamanho do logotipo do m�dulo administrar no menu ajuda na o |
+| 5630 | 31939 | SAM | Desc | O sistema n�o est� habilitando o bot�o para rateio de centro de custos |
+| 5672 | 31944 | SAM | Desc | Criar op��o na exporta��o de lan�amentos para serem exportados tamb�m  |
 | 5846 | 31957 | SAM | Desc | Desenvolver um relat�rio que demonstre todos os impostos que a empresa |
-| 5560 | 31929 | SAM | Lib | RS-Criar op��o na tela de exclus�o da receita bruta para ser informado |
+| 5656 | 31943 | SAM | Lib | RS-Quando realizado importa��o da folha nos outros dados da GIS, consi |
+| 5841 | 31953 | SAM | Desc | Personalizar a tela de apura��o conforme cada imposto. |
+| 5758 | 31946 | SAM | Lib | Permitir alterar o d�bito, cr�dito e o hist�rio na lan�amento de outro |
+| 5626 | 31935 | SAM | Lib | Gerar lan�amento cont�bil do IPI mesmo que o acumulador utilizado no l |
+| 5796 | 31950 | SAM | Lib | Criar op��o para n�o imprimir estrutura com saldo zero na emiss�o do D |
+| 5627 | 31936 | SAM | Lib | Efetuar a contabiliza��o da apura��o mesmo que ocorra a situa��o de os |
 | 5629 | 31938 | SAM | Desc | Habilitar o bot�o contas no cadastro de acumuladores para todos os imp |
 | 5845 | 31956 | SAM | Lib | AL-Criar nos livros registro de ICMS op��o, para Imprimir Demonstrativ |
-| 5628 | 31937 | SAM | Desc | Criar op��o para replicar  os cadastros de Contas patrimoniais, Centro |
-| 5632 | 31940 | SAM | Lib | Quando emitido o relatorio demonstrativo mensal de um imposto trimestr |
-| 5672 | 31944 | SAM | Desc | Criar op��o na exporta��o de lan�amentos para serem exportados tamb�m  |
-| 5626 | 31935 | SAM | Lib | Gerar lan�amento cont�bil do IPI mesmo que o acumulador utilizado no l |
-| 5841 | 31953 | SAM | Desc | Personalizar a tela de apura��o conforme cada imposto. |
-| 5627 | 31936 | SAM | Lib | Efetuar a contabiliza��o da apura��o mesmo que ocorra a situa��o de os |
-| 5758 | 31946 | SAM | Lib | Permitir alterar o d�bito, cr�dito e o hist�rio na lan�amento de outro |
-| 5630 | 31939 | SAM | Desc | O sistema n�o est� habilitando o bot�o para rateio de centro de custos |
-| 5844 | 31955 | SAM | Lib | Criar op��o para reajustar contrato por indice |
-| 5796 | 31950 | SAM | Lib | Criar op��o para n�o imprimir estrutura com saldo zero na emiss�o do D |
+| 5634 | 31942 | SAM | Lib | Gerar lan�amento cont�bil de fechamento para o IPI. |
+| 5594 | 31933 | SAM | Lib | SC-Florian�polis-Desenvolver modelos de livros de ISS.   |
 | 5633 | 31941 | SAM | Desc | Quando gerado os relatorios de acompanhamento de entradas e sa�das, ge |
-| 5407 | 31915 | SAM | Lib | Quando lan�ado notas de devolu��o de compras, se o campo devolucao de  |
-| 5476 | 31918 | SAM | Lib | Quando ocorrer erros de informa��es nos lan�amentos durante o faturame |
-| 5365 | 31899 | SAM | Lib | Ordenar listagem de empresas nos outros dados da DIPJ conforme clicado |
-| 5398 | 31913 | SAM | Lib | Criar op��o para regerar os pagamentos de impostos. |
+| 5628 | 31937 | SAM | Desc | Criar op��o para replicar  os cadastros de Contas patrimoniais, Centro |
+| 5560 | 31929 | SAM | Lib | RS-Criar op��o na tela de exclus�o da receita bruta para ser informado |
+| 5632 | 31940 | SAM | Lib | Quando emitido o relatorio demonstrativo mensal de um imposto trimestr |
+| 5844 | 31955 | SAM | Lib | Criar op��o para reajustar contrato por indice |
+| 5580 | 31932 | SAM | Lib | Criar na estrutura da DLPA op��o para buscar Total de d�bito, Total de |
+| 5372 | 31905 | SAM | Desc | SP-Permitir emitir os livros de ISS de um ano todo. |
 | 5413 | 31916 | SAM | Lib | Criar op��o na importa��o de notas para sobrescrever registros existen |
-| 5480 | 31920 | SAM | Desc | Incluir no relat�rio demonstrativos dos impostos um campo totalizador  |
-| 5394 | 31910 | SAM | Lib | Exibir mensagem pedindo confirma��o quando uma nota fiscal for alterad |
-| 5369 | 31902 | SAM | Desc | Criar no cadastro do produto os campos Aliquota do ICMS e % de Redu��o |
-| 5360 | 31897 | SAM | Lib | Realizar o c�lculo em atraso dos impostos calculados pelo LALUR. |
+| 5365 | 31899 | SAM | Lib | Ordenar listagem de empresas nos outros dados da DIPJ conforme clicado |
 | 5485 | 31921 | SAM | Lib | N�o fazer o lan�amento do ICMS (devolu��o de vendas) caso n�o esteja p |
+| 5393 | 31909 | SAM | Lib | Quando no cadastro do imposto IPI estiver definido conta no campo Imp. |
 | 5356 | 31896 | SAM | Desc | Quando consultado o plano de contas atrav�s do F2, destacar as contas  |
 | 5479 | 31919 | SAM | Lib | N�o permitir a baixa de parcelas em data menor que a emiss�o da nota f |
+| 5480 | 31920 | SAM | Desc | Incluir no relat�rio demonstrativos dos impostos um campo totalizador  |
+| 5360 | 31897 | SAM | Lib | Realizar o c�lculo em atraso dos impostos calculados pelo LALUR. |
+| 5476 | 31918 | SAM | Lib | Quando ocorrer erros de informa��es nos lan�amentos durante o faturame |
+| 5394 | 31910 | SAM | Lib | Exibir mensagem pedindo confirma��o quando uma nota fiscal for alterad |
 | 5395 | 31911 | SAM | Lib | Efetuar a contabiliza��o do zeramento do ICMS na apura��o, mesmo quand |
-| 5372 | 31905 | SAM | Desc | SP-Permitir emitir os livros de ISS de um ano todo. |
-| 5393 | 31909 | SAM | Lib | Quando no cadastro do imposto IPI estiver definido conta no campo Imp. |
+| 5398 | 31913 | SAM | Lib | Criar op��o para regerar os pagamentos de impostos. |
+| 5407 | 31915 | SAM | Lib | Quando lan�ado notas de devolu��o de compras, se o campo devolucao de  |
+| 5369 | 31902 | SAM | Desc | Criar no cadastro do produto os campos Aliquota do ICMS e % de Redu��o |
 | 5343 | 31891 | SAM | Desc | Criar um op��o de Sele��o de Empresas no relat�rio de Resumo dos Impos |
 | 5354 | 31894 | SAM | Desc | N�o permitir desmarcar a op��o de Permitir raterio no cadastro de cont |
-| 5353 | 31893 | SAM | Lib | Criar op��o para emiss�o dos relatorios cont�beis em outro idioma. |
-| 5341 | 31890 | SAM | Lib | Criar op��o na tela de posi��o do usu�rio para mostrar a diferen�a por |
 | 5344 | 31892 | SAM | Desc | Criar a op��o no relat�rio de Resumo dos impostos atualizados Previs�o |
-| 5335 | 31886 | SAM | Lib | Quando realizado uma baixa de entradas, saidas ou servi�os, ao gerar o |
-| 5328 | 31879 | SAM | Lib | Incluir no relat�rio Rela��o de Contratos um totalizador de contratos  |
-| 5325 | 31877 | SAM | Lib | No relatorio de contas a receber, quando selecionado um agrupamento di |
-| 5308 | 31869 | SAM | Lib | Permitir o acesso de usu�rios comuns a este m�dulo. |
-| 5321 | 31873 | SAM | Desc | Habilitar campo documento para digita��o no extrato banc�rio. |
-| 5333 | 31884 | SAM | Desc | Criar o cadastro de departamento para ser selecionado na emiss�o do pr |
-| 5322 | 31874 | SAM | Desc | N�o realizar as criticas de lan�amento de notas quando as mesmas estiv |
-| 5319 | 31872 | SAM | Lib | Aumentar o numero de caracteres no cadastro e moivimentos de adi��es e |
-| 5323 | 31875 | SAM | Lib | SC-Criar mais uma op��o no campo Simples/SC dos par�metros chamada Est |
-| 5334 | 31885 | SAM | Desc | RS-Ao definir a op��o Apurar ICMS cfe dec 42.035 de 12/02 At�, � suger |
-| 5324 | 31876 | SAM | Desc | Criar op��o no relatorio de faturamento para ser listado somente as no |
+| 5341 | 31890 | SAM | Lib | Criar op��o na tela de posi��o do usu�rio para mostrar a diferen�a por |
+| 5353 | 31893 | SAM | Lib | Criar op��o para emiss�o dos relatorios cont�beis em outro idioma. |
 | 5329 | 31880 | SAM | Desc | Imprimir no relatorio cadastral de empresas um totalizador com o total |
+| 5328 | 31879 | SAM | Lib | Incluir no relat�rio Rela��o de Contratos um totalizador de contratos  |
+| 5324 | 31876 | SAM | Desc | Criar op��o no relatorio de faturamento para ser listado somente as no |
+| 5325 | 31877 | SAM | Lib | No relatorio de contas a receber, quando selecionado um agrupamento di |
+| 5323 | 31875 | SAM | Lib | SC-Criar mais uma op��o no campo Simples/SC dos par�metros chamada Est |
+| 5319 | 31872 | SAM | Lib | Aumentar o numero de caracteres no cadastro e moivimentos de adi��es e |
 | 5332 | 31883 | SAM | Desc | Quando efetuado o lan�amento de notas, e as contas dos lan�amentos con |
+| 5308 | 31869 | SAM | Lib | Permitir o acesso de usu�rios comuns a este m�dulo. |
+| 5322 | 31874 | SAM | Desc | N�o realizar as criticas de lan�amento de notas quando as mesmas estiv |
+| 5321 | 31873 | SAM | Desc | Habilitar campo documento para digita��o no extrato banc�rio. |
 | 5336 | 31887 | SAM | Lib | Ao lan�ar notas com CFOP 5933 ou 6933 com ISS, no relatorio Saldo dos  |
+| 5333 | 31884 | SAM | Desc | Criar o cadastro de departamento para ser selecionado na emiss�o do pr |
+| 5335 | 31886 | SAM | Lib | Quando realizado uma baixa de entradas, saidas ou servi�os, ao gerar o |
+| 5334 | 31885 | SAM | Desc | RS-Ao definir a op��o Apurar ICMS cfe dec 42.035 de 12/02 At�, � suger |
+| 5004 | 31828 | SAM | Lib | Quando efetuar os lan�amentos cont�beis, mesmo que o fechamento esteja |
+| 5095 | 31836 | SAM | Lib | Alterar layout de importa��o de parcelas de saidas, para permitir o la |
+| 5050 | 31834 | SAM | Lib | Permitir exportar e importar dados do Dominio Cliente para o Dominio C |
 | 5261 | 31858 | SAM | Lib | BA-Ao efetuar o lan�amento de entradas com o imposto 31, quando altera |
 | 5242 | 31851 | SAM | Lib | CE/MA-N�o est�o sendo listado no livro de ICMS modelo Normal, os movim |
 | 5031 | 31832 | SAM | Lib | Quando configurado os impostos PIS e COFINS para efetuar o c�lculo com |
-| 5112 | 31838 | SAM | Lib | PR-Criar op��o nos par�metros para deduzir os valores de ISENTAS da Ba |
 | 5256 | 31855 | SAM | Lib | Permitir c�lculo dos impostos PIS e COFINS cumulativos com mais de uma |
-| 5095 | 31836 | SAM | Lib | Alterar layout de importa��o de parcelas de saidas, para permitir o la |
+| 5144 | 31843 | SAM | Lib | Ao emitir o relatorio demonstrativo dos impostos PIS-66 e COFINS-NC de |
 | 5157 | 31845 | SAM | Lib | RS-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados |
 | 5185 | 31846 | SAM | Lib | Permitir que possa ser definido a al�quota do imposto IRRF no cadastro |
-| 5004 | 31828 | SAM | Lib | Quando efetuar os lan�amentos cont�beis, mesmo que o fechamento esteja |
-| 5144 | 31843 | SAM | Lib | Ao emitir o relatorio demonstrativo dos impostos PIS-66 e COFINS-NC de |
-| 5050 | 31834 | SAM | Lib | Permitir exportar e importar dados do Dominio Cliente para o Dominio C |
+| 5112 | 31838 | SAM | Lib | PR-Criar op��o nos par�metros para deduzir os valores de ISENTAS da Ba |
 | 4969 | 31813 | SAM | Lib | Quando lan�ado uma NF de entrada, sa�da ou servi�o, e no momento do la |
-| 4871 | 31797 | SAM | Desc | N�o permitir que seja lan�ado o mesmo produto com a mesma aliquota mai |
-| 4859 | 31796 | SAM | Desc | Criar op��o de subtotal no relat�rio cadastral de bens. |
-| 4978 | 31815 | SAM | Lib | SC-Na tela de emiss�o da DARE, n�o gravar os percentuais de juros e mu |
-| 4933 | 31805 | SAM | Lib | Criar op��o no contrato para configurar avisos no faturamento. |
-| 4886 | 31799 | SAM | Lib | RS-Criar opera��o de ajuste para ser lan�ado no campo 17 da GIS (d�bit |
-| 4994 | 31823 | SAM | Lib | Quando emitido o relatorio de reten��es a recolher deve somar os saldo |
 | 4857 | 31794 | SAM | Lib | Ao emitir o relatorio CLIENTE/TEMPO GASTO, n�o habilitar bot�o sele��o |
-| 4952 | 31811 | SAM | Lib | Quando nos parametros de uma empresa estiver marcado a op��o de inform |
 | 4858 | 31795 | SAM | Desc | Gravar por data o numero na emiss�o do mapa resumo. |
-| 4889 | 31800 | SAM | Lib | SE-Sistema n�o est� efetuando a contabiliza��o do ICMS para empresas o |
-| 4936 | 31806 | SAM | Lib | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar  |
+| 4952 | 31811 | SAM | Lib | Quando nos parametros de uma empresa estiver marcado a op��o de inform |
+| 4978 | 31815 | SAM | Lib | SC-Na tela de emiss�o da DARE, n�o gravar os percentuais de juros e mu |
 | 4872 | 31798 | SAM | Desc | Quando emitido o Relat�rio/Acompanhamento/Saidas ou Entradas, com orde |
+| 4859 | 31796 | SAM | Desc | Criar op��o de subtotal no relat�rio cadastral de bens. |
+| 4994 | 31823 | SAM | Lib | Quando emitido o relatorio de reten��es a recolher deve somar os saldo |
+| 4933 | 31805 | SAM | Lib | Criar op��o no contrato para configurar avisos no faturamento. |
+| 4871 | 31797 | SAM | Desc | N�o permitir que seja lan�ado o mesmo produto com a mesma aliquota mai |
+| 4936 | 31806 | SAM | Lib | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar  |
+| 4886 | 31799 | SAM | Lib | RS-Criar opera��o de ajuste para ser lan�ado no campo 17 da GIS (d�bit |
+| 4889 | 31800 | SAM | Lib | SE-Sistema n�o est� efetuando a contabiliza��o do ICMS para empresas o |
 | 4932 | 31804 | SAM | Lib | Criar op��o para incluir historicos manualmente no contrato. |
-| 4752 | 31759 | SAM | Desc | N�o permitir gravar notas, onde no acumulador esteja cadastrado contas |
-| 4765 | 31767 | SAM | Lib | Disponibilizar consulta F2 no campo filial na tela de lan�amentos traz |
-| 4777 | 31772 | SAM | Desc | Ao gerar a DIPJ campo 12 - Devolu��es, ficha 22A(PIS(04)) e 26A(COFINS |
-| 4755 | 31761 | SAM | Lib | Em Movimentos/Estoque/Saldo final do produtos n�o permitir que seja la |
-| 4829 | 31787 | SAM | Desc | Criar no cadastro de fornecedores um campo informar a al�quotas de ICM |
-| 4782 | 31775 | SAM | Lib | Criar op��o na emiss�o do Balan�o e Balancete para imprimir os valores |
-| 4816 | 31785 | SAM | Desc | Aumentar campo numero do telefone em todos relatorios e guias do siste |
-| 4762 | 31765 | SAM | Lib | Ao efetuar lan�amentos de notas seguimentadas de entradas ou saidas, e |
-| 4843 | 31793 | SAM | Desc | Criar no relatorio de Cliente/Tempo Gasto a op��o para ordenar por tem |
-| 4771 | 31771 | SAM | Lib | PE-Incluir o campo email no cadastro do respons�vel legal e gerar esta |
-| 4768 | 31769 | SAM | Desc | Quando emitido o Relat�rio/Resumo dos impostos Atualizados do imposto  |
-| 4746 | 31757 | SAM | Desc | Quando emitido um livro fiscal de um periodo que n�o tem numero do liv |
 | 4742 | 31756 | SAM | Lib | Quando for emitido uma guia e a mesma j� estiver totalmente paga, exib |
-| 4830 | 31788 | SAM | Desc | N�o permitir excluir um historico em que o mesmo esteja vinculado em u |
-| 4761 | 31764 | SAM | Desc | Realizar a valida��o do CPF no cadastro de Testemunhas. |
 | 4785 | 31777 | SAM | Lib | Criar campo para informar o c�digo do hist�rico, nos lan�amentos cont� |
-| 4754 | 31760 | SAM | Lib | Ao efetuar o lan�amento de notas em que esteja marcado no acumulador a |
-| 4798 | 31782 | SAM | Lib | Criar campo Conta cliente no cadastro de fornecedor e Conta fornecedor |
+| 4777 | 31772 | SAM | Desc | Ao gerar a DIPJ campo 12 - Devolu��es, ficha 22A(PIS(04)) e 26A(COFINS |
+| 4768 | 31769 | SAM | Desc | Quando emitido o Relat�rio/Resumo dos impostos Atualizados do imposto  |
+| 4771 | 31771 | SAM | Lib | PE-Incluir o campo email no cadastro do respons�vel legal e gerar esta |
+| 4761 | 31764 | SAM | Desc | Realizar a valida��o do CPF no cadastro de Testemunhas. |
+| 4830 | 31788 | SAM | Desc | N�o permitir excluir um historico em que o mesmo esteja vinculado em u |
 | 4757 | 31763 | SAM | Lib | Permitir cadastrar mais de um respons�vel pelas informa��es. |
+| 4816 | 31785 | SAM | Desc | Aumentar campo numero do telefone em todos relatorios e guias do siste |
+| 4798 | 31782 | SAM | Lib | Criar campo Conta cliente no cadastro de fornecedor e Conta fornecedor |
+| 4746 | 31757 | SAM | Desc | Quando emitido um livro fiscal de um periodo que n�o tem numero do liv |
+| 4782 | 31775 | SAM | Lib | Criar op��o na emiss�o do Balan�o e Balancete para imprimir os valores |
+| 4843 | 31793 | SAM | Desc | Criar no relatorio de Cliente/Tempo Gasto a op��o para ordenar por tem |
+| 4755 | 31761 | SAM | Lib | Em Movimentos/Estoque/Saldo final do produtos n�o permitir que seja la |
+| 4752 | 31759 | SAM | Desc | N�o permitir gravar notas, onde no acumulador esteja cadastrado contas |
+| 4754 | 31760 | SAM | Lib | Ao efetuar o lan�amento de notas em que esteja marcado no acumulador a |
+| 4765 | 31767 | SAM | Lib | Disponibilizar consulta F2 no campo filial na tela de lan�amentos traz |
+| 4762 | 31765 | SAM | Lib | Ao efetuar lan�amentos de notas seguimentadas de entradas ou saidas, e |
+| 4829 | 31787 | SAM | Desc | Criar no cadastro de fornecedores um campo informar a al�quotas de ICM |
+| 4725 | 31750 | SAM | Lib | Criar layout para importa��o dos rateios de centro de custos nos lan�a |
+| 4651 | 31733 | SAM | Lib | Criar no cadastro de cliente e fornecedores um tipo de incri��o Outros |
+| 4641 | 31726 | SAM | Lib | No Relatorio/Contribui??o Social, quando existe exclus?es e adi??es co |
 | 4728 | 31752 | SAM | Lib | Quando realizado a importa��o do Dominio Cont�bil de cadastros que som |
 | 4642 | 31727 | SAM | Lib | No Relatorio/Imposto de Renda, quando existe exclus?es e adi??es com a |
-| 4649 | 31732 | SAM | Lib | SC-Quando efetuado o cadastro de clientes e fornecedores com inscri��o |
-| 4721 | 31747 | SAM | Lib | Na tela de pagamento de impostos colocar a coluna de multa antes da co |
-| 4726 | 31751 | SAM | Lib | Permitir Usar o Dominio Cliente Empresas que usam contabilidade por ce |
-| 4725 | 31750 | SAM | Lib | Criar layout para importa��o dos rateios de centro de custos nos lan�a |
-| 4718 | 31746 | SAM | Desc | Desenvolver relatorio Ficha Cadastral Pessoa F�sica. |
-| 4648 | 31731 | SAM | Lib | Criar campo para ser informado o codigo de recolhimento, no pagamento  |
-| 4641 | 31726 | SAM | Lib | No Relatorio/Contribui??o Social, quando existe exclus?es e adi??es co |
-| 4683 | 31739 | SAM | Lib | Efetuar o lan�amento automatico da CSLL a pagar, nas adi��es do IRPJ.  |
-| 4651 | 31733 | SAM | Lib | Criar no cadastro de cliente e fornecedores um tipo de incri��o Outros |
 | 4628 | 31720 | SAM | Desc | Permitir estornar mais de uma baixa ao mesmo tempo. |
-| 4542 | 31691 | SAM | Lib | SC-Alterar formata��o do campo Inscri��o Estadual na impress�o da DIME |
-| 4530 | 31687 | SAM | Lib | Exportar para dominio cliente o cadastro de conficura��o de historicos |
-| 4619 | 31718 | SAM | Lib | Disponibilizar op��o para parcelamento de impostos trimestrais e a emi |
-| 4569 | 31701 | SAM | Lib | PE-Gerar o n�mero do Fax informado no cadastro da empresa e no cadastr |
-| 4544 | 31692 | SAM | Desc | Incluir no relat�rio de protocolos emitidos o valor do item, para quan |
-| 4584 | 31707 | SAM | Lib | Ordenar a listagem na tela de baixa de faturamento conforme clicado no |
-| 4561 | 31697 | SAM | Desc | Criar op��o no relatorio comparativo de entradas e saidas para, para q |
-| 4541 | 31690 | SAM | Desc | Ao efetuar a baixa de protocolos, quando os itens forem referente a im |
-| 4611 | 31714 | SAM | Desc | Disponibilizar tecla de consulta F2 na tela de filtro, nas op��es: pro |
-| 4551 | 31693 | SAM | Desc | Na emiss�o de protocolo individual quando efetuado consulta F2 no cada |
-| 4529 | 31686 | SAM | Lib | Permitir a emiss�a do relatorio de Acompanhamento/Impostos/Resumo Trim |
-| 4583 | 31706 | SAM | Lib | Disponibilizar variavel do n� da Nota Fiscal, na guia recebimento da c |
-| 4537 | 31688 | SAM | Lib | Incluir a op��o de exportar temb�m Cadastro de M�quinas ECF para o m�d |
+| 4648 | 31731 | SAM | Lib | Criar campo para ser informado o codigo de recolhimento, no pagamento  |
+| 4683 | 31739 | SAM | Lib | Efetuar o lan�amento automatico da CSLL a pagar, nas adi��es do IRPJ.  |
+| 4726 | 31751 | SAM | Lib | Permitir Usar o Dominio Cliente Empresas que usam contabilidade por ce |
+| 4649 | 31732 | SAM | Lib | SC-Quando efetuado o cadastro de clientes e fornecedores com inscri��o |
+| 4718 | 31746 | SAM | Desc | Desenvolver relatorio Ficha Cadastral Pessoa F�sica. |
+| 4721 | 31747 | SAM | Lib | Na tela de pagamento de impostos colocar a coluna de multa antes da co |
 | 4556 | 31696 | SAM | Lib | Quando emitido o relat�rio de faturamento, marcando a op��o de emitir  |
-| 4486 | 31679 | SAM | Desc | PR-Quando em uma nota de saidas tiver o imposto IPI, ao gerar o Valida |
-| 4454 | 31668 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4491 | 31681 | SAM | Lib | Ao digitar os dados do conhecimento, quando o estado do destinat�rio f |
-| 4452 | 31666 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4456 | 31670 | SAM | Desc | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4408 | 31658 | SAM | Desc | Disponibilizar no cadastro de observa��es uma vari�vel que retorne o n |
-| 4380 | 31649 | SAM | Desc | Desenvolver modelo Gr�fico do Balan�o Demonstra��o e criar op��o para  |
-| 4457 | 31671 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4440 | 31662 | SAM | Desc | Disponibilizar o INSS para sele��o na emiss�o do relatorio resumo dos  |
+| 4530 | 31687 | SAM | Lib | Exportar para dominio cliente o cadastro de conficura��o de historicos |
+| 4583 | 31706 | SAM | Lib | Disponibilizar variavel do n� da Nota Fiscal, na guia recebimento da c |
+| 4541 | 31690 | SAM | Desc | Ao efetuar a baixa de protocolos, quando os itens forem referente a im |
+| 4561 | 31697 | SAM | Desc | Criar op��o no relatorio comparativo de entradas e saidas para, para q |
+| 4544 | 31692 | SAM | Desc | Incluir no relat�rio de protocolos emitidos o valor do item, para quan |
+| 4611 | 31714 | SAM | Desc | Disponibilizar tecla de consulta F2 na tela de filtro, nas op��es: pro |
+| 4584 | 31707 | SAM | Lib | Ordenar a listagem na tela de baixa de faturamento conforme clicado no |
+| 4529 | 31686 | SAM | Lib | Permitir a emiss�a do relatorio de Acompanhamento/Impostos/Resumo Trim |
+| 4537 | 31688 | SAM | Lib | Incluir a op��o de exportar temb�m Cadastro de M�quinas ECF para o m�d |
+| 4542 | 31691 | SAM | Lib | SC-Alterar formata��o do campo Inscri��o Estadual na impress�o da DIME |
+| 4569 | 31701 | SAM | Lib | PE-Gerar o n�mero do Fax informado no cadastro da empresa e no cadastr |
+| 4619 | 31718 | SAM | Lib | Disponibilizar op��o para parcelamento de impostos trimestrais e a emi |
+| 4551 | 31693 | SAM | Desc | Na emiss�o de protocolo individual quando efetuado consulta F2 no cada |
 | 4398 | 31656 | SAM | Lib | Validar as incri��es estaduais na importa��o de clientes e fornecedore |
+| 4484 | 31677 | SAM | Desc | Gravar o numero da ultima p�gina impressa por periodo na emiss�o indiv |
+| 4454 | 31668 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4457 | 31671 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4381 | 31650 | SAM | Lib | Incluir no Filtro da Manuten��o de Protocolo, op��o de selecionar some |
+| 4463 | 31674 | SAM | Desc | Quando uma empresa ultrapassar o limite mensal da tabela no c�ulculo d |
+| 4452 | 31666 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4451 | 31665 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4383 | 31652 | SAM | Lib | Alterar a op��o no relatorio de notas emitidas para selecionar data de |
+| 4456 | 31670 | SAM | Desc | Incluir HELP em todas as telas que ainda n�o existe. |
+| 4440 | 31662 | SAM | Desc | Disponibilizar o INSS para sele��o na emiss�o do relatorio resumo dos  |
+| 4380 | 31649 | SAM | Desc | Desenvolver modelo Gr�fico do Balan�o Demonstra��o e criar op��o para  |
+| 4486 | 31679 | SAM | Desc | PR-Quando em uma nota de saidas tiver o imposto IPI, ao gerar o Valida |
+| 4491 | 31681 | SAM | Lib | Ao digitar os dados do conhecimento, quando o estado do destinat�rio f |
+| 4459 | 31673 | SAM | Lib | Criar op��o para sele��o de centro de custos, nas an�lises horizontais |
+| 4408 | 31658 | SAM | Desc | Disponibilizar no cadastro de observa��es uma vari�vel que retorne o n |
+| 4453 | 31667 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
 | 4382 | 31651 | SAM | Lib | Ter a op��o de per�odicidade Semanal nos itens para o impostos IRRF -  |
 | 4455 | 31669 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
 | 4458 | 31672 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4451 | 31665 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4463 | 31674 | SAM | Desc | Quando uma empresa ultrapassar o limite mensal da tabela no c�ulculo d |
-| 4383 | 31652 | SAM | Lib | Alterar a op��o no relatorio de notas emitidas para selecionar data de |
-| 4381 | 31650 | SAM | Lib | Incluir no Filtro da Manuten��o de Protocolo, op��o de selecionar some |
-| 4484 | 31677 | SAM | Desc | Gravar o numero da ultima p�gina impressa por periodo na emiss�o indiv |
-| 4453 | 31667 | SAM | Lib | Incluir HELP em todas as telas que ainda n�o existe. |
-| 4459 | 31673 | SAM | Lib | Criar op��o para sele��o de centro de custos, nas an�lises horizontais |
-| 4319 | 31623 | SAM | Lib | Nos lan�amentos dos dados de ECF, quando alterado o valor do GT atual, |
 | 4340 | 31631 | SAM | Lib | Criar op��o no cadastro de eventos para ser lan�ado por quantidade e p |
-| 4346 | 31637 | SAM | Lib | Disponibilizar a veri�vel Numero do Documento nas guias Faturamento e  |
-| 4337 | 31629 | SAM | Desc | Gerar o IRPJ e CSLL para a DCTF. |
-| 4320 | 31624 | SAM | Lib | No relatorio de reten��es a recolher, listar tamb�m o FUNRURAL lan�ado |
-| 4316 | 31622 | SAM | Lib | Na emiss�o dos livros fiscais criar campo para ser informada a date de |
-| 4331 | 31628 | SAM | Lib | Na emiss�o do relat�rio de concilia��o banc�ria permitir que se possa  |
-| 4315 | 31621 | SAM | Lib | Criar op��o na emiss�o dos bloquetos de agrupar por cliente e vencimen |
-| 4355 | 31641 | SAM | Lib | SE-Quando selecionado o campo Optante do Tare, nos parametros, abrir u |
-| 4321 | 31625 | SAM | Lib | Criar no relatorio Saldo dos impostos op��o para selecionar somente um |
-| 4313 | 31620 | SAM | Desc | No cadastro de clientes e fornecedores, quando tiver em modo de inclus |
-| 4330 | 31627 | SAM | Lib | Na emiss�o de notas fiscais, modelo completo matricial pereencher os c |
-| 4347 | 31638 | SAM | Desc | MT-Criar uma op��o de cadastrar as AIDF emitidas. |
-| 4378 | 31648 | SAM | Lib | Permitir que e tela da concilia��o banc�ria possa ser redimencionada e |
 | 4344 | 31635 | SAM | Lib | Desenvolver Relatorio de Custo Benef�cio |
+| 4331 | 31628 | SAM | Lib | Na emiss�o do relat�rio de concilia��o banc�ria permitir que se possa  |
+| 4355 | 31641 | SAM | Lib | SE-Quando selecionado o campo Optante do Tare, nos parametros, abrir u |
+| 4347 | 31638 | SAM | Desc | MT-Criar uma op��o de cadastrar as AIDF emitidas. |
 | 4343 | 31634 | SAM | Lib | Criar op��o nos lan�amentos para mostrar ou n�o os eventos fixos j� en |
-| 4259 | 31604 | SAM | Lib | Em relat�rios/c�lculos/resumo da deprecia��o no campo onde � efetuada  |
-| 4168 | 31573 | SAM | Desc | Criar na configura��o de historicos vari�veis para data de emiss�o e d |
+| 4378 | 31648 | SAM | Lib | Permitir que e tela da concilia��o banc�ria possa ser redimencionada e |
+| 4315 | 31621 | SAM | Lib | Criar op��o na emiss�o dos bloquetos de agrupar por cliente e vencimen |
+| 4313 | 31620 | SAM | Desc | No cadastro de clientes e fornecedores, quando tiver em modo de inclus |
+| 4320 | 31624 | SAM | Lib | No relatorio de reten��es a recolher, listar tamb�m o FUNRURAL lan�ado |
+| 4321 | 31625 | SAM | Lib | Criar no relatorio Saldo dos impostos op��o para selecionar somente um |
+| 4319 | 31623 | SAM | Lib | Nos lan�amentos dos dados de ECF, quando alterado o valor do GT atual, |
+| 4346 | 31637 | SAM | Lib | Disponibilizar a veri�vel Numero do Documento nas guias Faturamento e  |
+| 4330 | 31627 | SAM | Lib | Na emiss�o de notas fiscais, modelo completo matricial pereencher os c |
+| 4316 | 31622 | SAM | Lib | Na emiss�o dos livros fiscais criar campo para ser informada a date de |
+| 4337 | 31629 | SAM | Desc | Gerar o IRPJ e CSLL para a DCTF. |
+| 4190 | 31586 | SAM | Desc | Criar no relat�rio de valores acumulados op��o para selecionar Contas  |
 | 4170 | 31575 | SAM | Desc | MT-Ao lan�ar notas de entradas com ICMS e IPI, na linha do ICMS sistem |
-| 4193 | 31588 | SAM | Lib | Na emiss�o dos livros caixas listar sempre em ordem de dia e tipo, sen |
-| 4176 | 31579 | SAM | Desc | Nas baixas de entradas, saidas e servi�os quando efetuado uma sele��o  |
-| 4229 | 31597 | SAM | Lib | SC-Ao lan�ar notas de entrada com o imposto ICMSA(27), sistema n�o est |
 | 4173 | 31577 | SAM | Desc | Na emiss�o do livro de IPI, quando houver ajustes lan�ados e com obser |
-| 4276 | 31608 | SAM | Lib | Quando for realizada uma altera��o contratual, permitir que no campo o |
-| 4171 | 31576 | SAM | Desc | Ao cadastrar uma empresa na guia atividades no campo objeto social, tr |
-| 4177 | 31580 | SAM | Lib | Quando efetuada a importa��o de clientes/fornecedores mostrar a mensag |
-| 4175 | 31578 | SAM | Lib | Criar op��o para faturar empresas inativas e em constitui��o. |
-| 4194 | 31589 | SAM | Lib | Criar bot�o para sele��o de clientes na emiss�o dos graficos. |
 | 4256 | 31603 | SAM | Lib | Ao emitir o Cadastros Banc�rio modelo Caixa Econ�mica Federal, no camp |
+| 4177 | 31580 | SAM | Lib | Quando efetuada a importa��o de clientes/fornecedores mostrar a mensag |
+| 4176 | 31579 | SAM | Desc | Nas baixas de entradas, saidas e servi�os quando efetuado uma sele��o  |
+| 4276 | 31608 | SAM | Lib | Quando for realizada uma altera��o contratual, permitir que no campo o |
+| 4229 | 31597 | SAM | Lib | SC-Ao lan�ar notas de entrada com o imposto ICMSA(27), sistema n�o est |
 | 4251 | 31602 | SAM | Lib | Criar no cadastro de clientes, uma nova guia chamada Honor�rios com os |
 | 4164 | 31572 | SAM | Lib | Criar vari�vel a ser utilizada no cadastro de hist�ricos que retorne o |
+| 4175 | 31578 | SAM | Lib | Criar op��o para faturar empresas inativas e em constitui��o. |
+| 4168 | 31573 | SAM | Desc | Criar na configura��o de historicos vari�veis para data de emiss�o e d |
 | 4281 | 31611 | SAM | Lib | Criar op��o para replicar a estrutura dos coeficientes de an�lises. |
 | 4182 | 31582 | SAM | Lib | Quando digitado um extrato trazer padr�o o mesmo dia do lan�amento ant |
-| 4190 | 31586 | SAM | Desc | Criar no relat�rio de valores acumulados op��o para selecionar Contas  |
-| 4133 | 31563 | SAM | Desc | Criar op��o no cadastro de acumuladores, para permitir somente ser uti |
+| 4171 | 31576 | SAM | Desc | Ao cadastrar uma empresa na guia atividades no campo objeto social, tr |
+| 4194 | 31589 | SAM | Lib | Criar bot�o para sele��o de clientes na emiss�o dos graficos. |
+| 4193 | 31588 | SAM | Lib | Na emiss�o dos livros caixas listar sempre em ordem de dia e tipo, sen |
+| 4259 | 31604 | SAM | Lib | Em relat�rios/c�lculos/resumo da deprecia��o no campo onde � efetuada  |
 | 4118 | 31549 | SAM | Lib | Permitir que uma empresa filial acesse este m�dulo. |
-| 4119 | 31550 | SAM | Lib | Nos relat�rios Tempo de Servi�o e Usu�rio/Tempo Gasto no campo Sistema |
-| 4127 | 31557 | SAM | Lib | Disponibilizar a vari�vel nro do documento na guia recebimento na conf |
-| 4145 | 31566 | SAM | Desc | Ao realizar a importa��o de clientes e fornecedores, se a empresa usa  |
-| 4128 | 31558 | SAM | Desc | Criar vari�vel referente ao hist�rico da nota, na configura��o de hist |
-| 4110 | 31545 | SAM | Lib | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que p |
+| 4135 | 31565 | SAM | Lib | Quando n�o possui contas configuradas para os Grupos do IR e CSLL o si |
+| 4117 | 31548 | SAM | Desc | Criar op��o no livro de ISS para que as observa��es sejam impressas em |
 | 4129 | 31559 | SAM | Lib | Quando cadastrado um cliente/fornecedor verificar se a matriz ou a fil |
+| 4127 | 31557 | SAM | Lib | Disponibilizar a vari�vel nro do documento na guia recebimento na conf |
+| 4110 | 31545 | SAM | Lib | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que p |
+| 4119 | 31550 | SAM | Lib | Nos relat�rios Tempo de Servi�o e Usu�rio/Tempo Gasto no campo Sistema |
+| 4128 | 31558 | SAM | Desc | Criar vari�vel referente ao hist�rico da nota, na configura��o de hist |
+| 4130 | 31560 | SAM | Lib | SC-Sistema est� habilitando na tela de apura��o a op��o de n�o efetuar |
 | 4108 | 31543 | SAM | Lib | No processo de reajuste de contrato e reajuste de eventos fixos, orden |
 | 4124 | 31554 | SAM | Lib | Disponibilizar a op��o de imprimir somente contas sint�ticas na emiss� |
-| 4126 | 31556 | SAM | Desc | Na tela de emiss�o em grupo disponibilizar op��o para ordenar a listag |
+| 4145 | 31566 | SAM | Desc | Ao realizar a importa��o de clientes e fornecedores, se a empresa usa  |
+| 4133 | 31563 | SAM | Desc | Criar op��o no cadastro de acumuladores, para permitir somente ser uti |
 | 4131 | 31561 | SAM | Lib | Ao cadastrar uma empresa se o campo CNPJ for preenchido errado, sistem |
 | 4134 | 31564 | SAM | Lib | Ao realizar a importa��o de notas, o sistema n�o est� considerando as  |
-| 4130 | 31560 | SAM | Lib | SC-Sistema est� habilitando na tela de apura��o a op��o de n�o efetuar |
-| 4117 | 31548 | SAM | Desc | Criar op��o no livro de ISS para que as observa��es sejam impressas em |
-| 4135 | 31565 | SAM | Lib | Quando n�o possui contas configuradas para os Grupos do IR e CSLL o si |
-| 4080 | 31532 | SAM | Lib | Incluir variavel com a data de emiss�o da Identidade do Socio. |
-| 3936 | 31512 | SAM | Desc | Quando emitido o relatorio de acumulador completo n�o existir nenhum i |
+| 4126 | 31556 | SAM | Desc | Na tela de emiss�o em grupo disponibilizar op��o para ordenar a listag |
 | 4079 | 31531 | SAM | Desc | RS-Gravar o n�mero da p�gina informado na tela de emiss�o do livro de  |
 | 3972 | 31517 | SAM | Lib | Criar op��o para discriminar os centros de custos dos lan�amentos cont |
-| 4075 | 31529 | SAM | Lib | Aumentar para 14 Digitos o campo Org�o Emissor da Cart. de Identidade, |
-| 4101 | 31536 | SAM | Lib | Na impress�o dos livros de entradas modelo jato de tinta, somente impr |
 | 4078 | 31530 | SAM | Lib | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/imp |
+| 4080 | 31532 | SAM | Lib | Incluir variavel com a data de emiss�o da Identidade do Socio. |
+| 4101 | 31536 | SAM | Lib | Na impress�o dos livros de entradas modelo jato de tinta, somente impr |
+| 3936 | 31512 | SAM | Desc | Quando emitido o relatorio de acumulador completo n�o existir nenhum i |
 | 4100 | 31535 | SAM | Lib | Criar op��o para poder definir a descri��o de Lucro e Prejuizo ne emis |
+| 4075 | 31529 | SAM | Lib | Aumentar para 14 Digitos o campo Org�o Emissor da Cart. de Identidade, |
 | 3869 | 31472 | SAM | Lib | Desenvolver relatorio Comparativo de movimento. |
-| 3932 | 31508 | SAM | Lib | Na emiss�o dos livros fiscais gravar a pagina inicial por periodo. |
-| 3910 | 31496 | SAM | Desc | Criar na guia Sociedade Civil do cadastro de empresas campo para ser i |
-| 3871 | 31473 | SAM | Desc | Na configura��o de hist�rico, criar op��o para historicos dos lan�amen |
-| 3889 | 31481 | SAM | Lib | SC-Gravar as informa��es digitadas na tela de emiss�o da DARE. |
-| 3877 | 31477 | SAM | Desc | SC-Criar op��o na impress�o do Livro de ICMS para as empresas optantes |
-| 3876 | 31476 | SAM | Lib | Na emiss�o do DARF da contribui��o social, alterar a descri��o da sigl |
 | 3904 | 31492 | SAM | Lib | Quando fianalizado um processo de constiui��o atualizar o cadastro de  |
-| 3894 | 31485 | SAM | Desc | Criar op��o para realizar a transferencia de Centro de Custo dos Bens  |
-| 3890 | 31482 | SAM | Lib | Incluir no cadastro da testemunha o campo para CPF e tamb�m a vari�vel |
-| 3923 | 31503 | SAM | Lib | Criar op��o para importar da Escrita os valores de receita bruta para  |
-| 3914 | 31499 | SAM | Lib | Ao imprimir o livro parte B em modo retrato sistema corta colunas do r |
-| 3908 | 31494 | SAM | Desc | Criar op��o no relatorio de ICMS creditado op��o para emitir de v�rias |
-| 3930 | 31506 | SAM | Lib | Criar op��o na emiss�o do extrato de clientes para quebrar p�gina por  |
-| 3903 | 31491 | SAM | Lib | Disponibilizar na guia Pagto Parcelas da configura��o de hist�ricos as |
+| 3889 | 31481 | SAM | Lib | SC-Gravar as informa��es digitadas na tela de emiss�o da DARE. |
 | 3898 | 31488 | SAM | Lib | Quando lan�ado notas com PIS(17) e COFINS(19) do tipo lan�ado diminuir |
 | 3909 | 31495 | SAM | Desc | N�o listar notas canceladas no relat�rio Resumo por Acumulador. |
+| 3871 | 31473 | SAM | Desc | Na configura��o de hist�rico, criar op��o para historicos dos lan�amen |
+| 3876 | 31476 | SAM | Lib | Na emiss�o do DARF da contribui��o social, alterar a descri��o da sigl |
+| 3923 | 31503 | SAM | Lib | Criar op��o para importar da Escrita os valores de receita bruta para  |
 | 3912 | 31497 | SAM | Desc | Ao efetuar o lan�amento de um movimento de acumulador, se no acumulado |
-| 3867 | 31470 | SAM | Lib | Na tela de estornar faturamento, quando clicado nos cabe�alhos das col |
-| 3865 | 31468 | SAM | Lib | Criar no relatorio de acompanhamento de entradas colunas com valores d |
-| 3821 | 31439 | SAM | Lib | Na emiss�o da GPS criar op��o para imprimir data do vencimento e nas o |
-| 3868 | 31471 | SAM | Lib | Quando for clicado F2 em um campo que n�o existem cadastros, sistema e |
-| 3812 | 31436 | SAM | Lib | Criar no acumulador op��o para informar contas cont�beis diferentes do |
-| 3857 | 31461 | SAM | Desc | RS-Tratar a mensagem de erro para quando no detalhamento do ajuste 22  |
-| 3863 | 31466 | SAM | Desc | Criar no relatorio de movimenta��es estaduais, op��o para listar somen |
-| 3849 | 31456 | SAM | Lib | AL-Na impress�o do livro de ICMS modelo P9 deixar uma linha em branco  |
-| 3859 | 31463 | SAM | Desc | Ordenar os impostos nos par�metros de acordo como clicado no cabe�alho |
-| 3864 | 31467 | SAM | Desc | RS-Criar a op��o de emitir o livro de ISS especial de mais de um m�s a |
+| 3914 | 31499 | SAM | Lib | Ao imprimir o livro parte B em modo retrato sistema corta colunas do r |
+| 3903 | 31491 | SAM | Lib | Disponibilizar na guia Pagto Parcelas da configura��o de hist�ricos as |
+| 3877 | 31477 | SAM | Desc | SC-Criar op��o na impress�o do Livro de ICMS para as empresas optantes |
+| 3910 | 31496 | SAM | Desc | Criar na guia Sociedade Civil do cadastro de empresas campo para ser i |
+| 3932 | 31508 | SAM | Lib | Na emiss�o dos livros fiscais gravar a pagina inicial por periodo. |
+| 3908 | 31494 | SAM | Desc | Criar op��o no relatorio de ICMS creditado op��o para emitir de v�rias |
+| 3890 | 31482 | SAM | Lib | Incluir no cadastro da testemunha o campo para CPF e tamb�m a vari�vel |
+| 3894 | 31485 | SAM | Desc | Criar op��o para realizar a transferencia de Centro de Custo dos Bens  |
+| 3930 | 31506 | SAM | Lib | Criar op��o na emiss�o do extrato de clientes para quebrar p�gina por  |
+| 3824 | 31441 | SAM | Desc | Criar no livro de ISS op��o para imprimir nome e CNPJ do cliente. |
+| 3843 | 31450 | SAM | Desc | Se editar um lan�amento de ajuste, cancelar e clicar no bot�o novo os  |
+| 3814 | 31437 | SAM | Desc | Cria op��o no regime estadual de Isenta e no relatorio cadastral de em |
 | 3833 | 31445 | SAM | Desc | Criar op��o para cadastrar os protocolos retornados. |
+| 3868 | 31471 | SAM | Lib | Quando for clicado F2 em um campo que n�o existem cadastros, sistema e |
+| 3850 | 31457 | SAM | Lib | Ao lan�ar um conhecimento de frete, nos dados do conhecimento trazer n |
 | 3858 | 31462 | SAM | Lib | Tratar mensagem de erro quando no rateio gerencial de um lan�amento co |
 | 3834 | 31446 | SAM | Desc | Ao inlcuir um item relacionando com o IRRF da Escrita n�o existe a per |
 | 3842 | 31449 | SAM | Lib | Na impress�o do protocolo sistema est� cortando as observa��es. |
+| 3812 | 31436 | SAM | Lib | Criar no acumulador op��o para informar contas cont�beis diferentes do |
+| 3859 | 31463 | SAM | Desc | Ordenar os impostos nos par�metros de acordo como clicado no cabe�alho |
 | 3852 | 31459 | SAM | Lib | Criar no cadastro de fornecedores campo para ser informado o complemen |
-| 3843 | 31450 | SAM | Desc | Se editar um lan�amento de ajuste, cancelar e clicar no bot�o novo os  |
-| 3824 | 31441 | SAM | Desc | Criar no livro de ISS op��o para imprimir nome e CNPJ do cliente. |
-| 3850 | 31457 | SAM | Lib | Ao lan�ar um conhecimento de frete, nos dados do conhecimento trazer n |
-| 3814 | 31437 | SAM | Desc | Cria op��o no regime estadual de Isenta e no relatorio cadastral de em |
-| 3810 | 31435 | SAM | Lib | Ao emitir os DARF''s modelos Jato de Tinta, destacar em negrito as dat |
+| 3864 | 31467 | SAM | Desc | RS-Criar a op��o de emitir o livro de ISS especial de mais de um m�s a |
+| 3849 | 31456 | SAM | Lib | AL-Na impress�o do livro de ICMS modelo P9 deixar uma linha em branco  |
+| 3863 | 31466 | SAM | Desc | Criar no relatorio de movimenta��es estaduais, op��o para listar somen |
+| 3821 | 31439 | SAM | Lib | Na emiss�o da GPS criar op��o para imprimir data do vencimento e nas o |
 | 3832 | 31444 | SAM | Lib | Quando na guia contabilidade do acumulador estiver marcado a op��o de  |
-| 3742 | 31411 | SAM | Lib | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as |
-| 3632 | 31401 | SAM | Lib | SC-Trazer na lista de empresas para digita��o dos dados mensais e dado |
-| 3807 | 31432 | SAM | Desc | Permitir que seja lan�ado mais de um movimento de ajuste e de acumulad |
+| 3857 | 31461 | SAM | Desc | RS-Tratar a mensagem de erro para quando no detalhamento do ajuste 22  |
+| 3865 | 31468 | SAM | Lib | Criar no relatorio de acompanhamento de entradas colunas com valores d |
+| 3810 | 31435 | SAM | Lib | Ao emitir os DARF''s modelos Jato de Tinta, destacar em negrito as dat |
+| 3867 | 31470 | SAM | Lib | Na tela de estornar faturamento, quando clicado nos cabe�alhos das col |
 | 3768 | 31421 | SAM | Lib | Criar op��o na emiss�o do protocolo em grupo de salvar a sele��o reali |
 | 3726 | 31410 | SAM | Lib | Criar op��o na emiss�o do livro de entradas para ordenar por Data de e |
-| 3750 | 31413 | SAM | Lib | Criar op��o na importa��o de clientes/fornecedores para importar somen |
-| 3767 | 31420 | SAM | Desc | Quando o valor do ISS for menor que o m�nimo para recolhimento, deve r |
-| 3769 | 31422 | SAM | Lib | Ao fazer um lan�amento de saidas e servi�os com valor cont�bil igual a |
+| 3807 | 31432 | SAM | Desc | Permitir que seja lan�ado mais de um movimento de ajuste e de acumulad |
 | 3755 | 31415 | SAM | Lib | Alterar os lay-outs de importa��o de notas com as altera��es, com os n |
 | 3669 | 31407 | SAM | Lib | Incluir HELP na Integra��o com o EXCEL, estrutura do DRE e emiss�o do  |
+| 3769 | 31422 | SAM | Lib | Ao fazer um lan�amento de saidas e servi�os com valor cont�bil igual a |
 | 3754 | 31414 | SAM | Lib | Criar a op��o de efetuar a Reten��o de INSS e ISS. |
-| 3622 | 31398 | SAM | Lib | Desenvolver m�dulo que possibilite a emiss�o e controle de contratos s |
+| 3750 | 31413 | SAM | Lib | Criar op��o na importa��o de clientes/fornecedores para importar somen |
+| 3742 | 31411 | SAM | Lib | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as |
+| 3632 | 31401 | SAM | Lib | SC-Trazer na lista de empresas para digita��o dos dados mensais e dado |
+| 3767 | 31420 | SAM | Desc | Quando o valor do ISS for menor que o m�nimo para recolhimento, deve r |
 | 3556 | 31392 | SAM | Lib | Criar nos acumuladores campo para ser informada a conta do ICMS sobre  |
-| 3432 | 31338 | SAM | Desc | Criar modelo do Balan�o Demonstra��o no novo padr�o de impress�o com o |
-| 3445 | 31344 | SAM | Desc | Permitir cadastrar mais de um fornecedor com a mesma Incri��o Federal, |
-| 3427 | 31333 | SAM | Desc | Quando for usada como livro caixa, na tela de lan�amento mostrar a con |
-| 3460 | 31351 | SAM | Desc | Criar no livro de ISS op��o para imprimir total por p�gina. |
-| 3459 | 31350 | SAM | Desc | Criar uma op��o no relat�rio Demonstrativo Mensal para Somar ou N�o as |
-| 3441 | 31341 | SAM | Desc | Na impress�o do livro de ISS, imprimit o demosntrativo logo ap�s a lis |
-| 3429 | 31335 | SAM | Lib | Criar uma nova base de dados para a instala��o do sistema. |
-| 3447 | 31345 | SAM | Desc | Criar vari�vel nos hist�ricos que retorne o m�s a ano anterior a data  |
-| 3457 | 31349 | SAM | Desc | Retirar os imposto 29-PINAT e 31-SA/AT, que aparece em Processo/Impost |
-| 3454 | 31347 | SAM | Lib | Na importa��o do arquivo de Baixa de Parcelas, quando a NF (Entrada ou |
+| 3622 | 31398 | SAM | Lib | Desenvolver m�dulo que possibilite a emiss�o e controle de contratos s |
 | 3426 | 31332 | SAM | Desc | No relatorio de protocolos emitidos pendentes, listar tamb�m os protoc |
-| 3456 | 31348 | SAM | Lib | Em Movimento/Imposto de Renda - Quando utilizar o F2 no campo c�digo d |
+| 3429 | 31335 | SAM | Lib | Criar uma nova base de dados para a instala��o do sistema. |
 | 3439 | 31340 | SAM | Desc | Quando entrar nos outros dados do livro de ISS, no campo recolhimentos |
+| 3460 | 31351 | SAM | Desc | Criar no livro de ISS op��o para imprimir total por p�gina. |
+| 3454 | 31347 | SAM | Lib | Na importa��o do arquivo de Baixa de Parcelas, quando a NF (Entrada ou |
+| 3432 | 31338 | SAM | Desc | Criar modelo do Balan�o Demonstra��o no novo padr�o de impress�o com o |
+| 3456 | 31348 | SAM | Lib | Em Movimento/Imposto de Renda - Quando utilizar o F2 no campo c�digo d |
+| 3459 | 31350 | SAM | Desc | Criar uma op��o no relat�rio Demonstrativo Mensal para Somar ou N�o as |
+| 3457 | 31349 | SAM | Desc | Retirar os imposto 29-PINAT e 31-SA/AT, que aparece em Processo/Impost |
+| 3441 | 31341 | SAM | Desc | Na impress�o do livro de ISS, imprimit o demosntrativo logo ap�s a lis |
+| 3445 | 31344 | SAM | Desc | Permitir cadastrar mais de um fornecedor com a mesma Incri��o Federal, |
+| 3447 | 31345 | SAM | Desc | Criar vari�vel nos hist�ricos que retorne o m�s a ano anterior a data  |
+| 3427 | 31333 | SAM | Desc | Quando for usada como livro caixa, na tela de lan�amento mostrar a con |
 | 3288 | 31307 | SAM | Desc | Criar nas consultas F2 uma atalho para que possa ser efetuado um novo  |
-| 3421 | 31331 | SAM | Desc | Ao emitir os termos de abertura ou encerramento em modo paisagem, est� |
-| 3327 | 31316 | SAM | Lib | SC-Permitir que ao emitir o livro de ICMS as observa��es possam ser gr |
-| 3409 | 31323 | SAM | Desc | Demonstrar no relat�rio Demonstrativo/Impostos Calculados os valores d |
-| 3309 | 31312 | SAM | Lib | Disponibilizar o cadastro de Socios e Contadores. |
-| 3249 | 31302 | SAM | Lib | Ao emitir o livro de ISS, quando em m�s der mais de uma p�gina n�o est |
 | 3419 | 31330 | SAM | Lib | Ao realizar importa��o de fornecedores sistema est� completando o camp |
 | 3407 | 31322 | SAM | Desc | Colocar o relat�rio Demonstrativo ISSQN no gerador de relat�rios. |
+| 3309 | 31312 | SAM | Lib | Disponibilizar o cadastro de Socios e Contadores. |
+| 3421 | 31331 | SAM | Desc | Ao emitir os termos de abertura ou encerramento em modo paisagem, est� |
+| 3327 | 31316 | SAM | Lib | SC-Permitir que ao emitir o livro de ICMS as observa��es possam ser gr |
+| 3249 | 31302 | SAM | Lib | Ao emitir o livro de ISS, quando em m�s der mais de uma p�gina n�o est |
+| 3409 | 31323 | SAM | Desc | Demonstrar no relat�rio Demonstrativo/Impostos Calculados os valores d |
 | 3155 | 31274 | SAM | Lib | Quando clicado F2 no campo codigo do munic�pio do cadastro de clientes |
-| 3154 | 31273 | SAM | Lib | Criar op��o para realizar lan�amento cont�bil a prazo para parcelas pa |
+| 3225 | 31296 | SAM | Lib | Permitir digitar contas cont�beis com 7 d�gito no cadastro de clientes |
 | 3226 | 31297 | SAM | Lib | No utilit�rios de Gerar contas para clientes/fornecedor o sistema n�o  |
 | 3151 | 31272 | SAM | Lib | No relatorio cadastral de eventos criar sele��o de somente os eventos  |
-| 3225 | 31296 | SAM | Lib | Permitir digitar contas cont�beis com 7 d�gito no cadastro de clientes |
-| 3215 | 31293 | SAM | Desc | MS-Na consulta F2 do campo CAE do cadastro de empresas trazer a rela�� |
+| 3154 | 31273 | SAM | Lib | Criar op��o para realizar lan�amento cont�bil a prazo para parcelas pa |
 | 3159 | 31275 | SAM | Desc | Em alguns casos ao tentar cadastrar itens do protocolo do tipo imposto |
-| 3026 | 31240 | SAM | Lib | Quando fato gerador do CRF for emiss�o considerar todas as notas emiti |
-| 3027 | 31241 | SAM | Lib | Na emiss�o do Livro de ISS criar bot�o outros dados para ser preenchid |
-| 3133 | 31264 | SAM | Lib | Criar um cadastro de s�cios unico para todas as empresas e nas empresa |
-| 3105 | 31256 | SAM | Desc | PR-Na importa��o do valor da folha nos outros dados da GIA, se no m�s  |
+| 3215 | 31293 | SAM | Desc | MS-Na consulta F2 do campo CAE do cadastro de empresas trazer a rela�� |
 | 3048 | 31247 | SAM | Desc | PR-Quando lan�ado notas de entrada com IPI e ICMS e for alterado o val |
-| 3118 | 31259 | SAM | Lib | N�o permitir alterar o periodo inicial nos par�metros para um per�odo  |
+| 3133 | 31264 | SAM | Lib | Criar um cadastro de s�cios unico para todas as empresas e nas empresa |
 | 3110 | 31258 | SAM | Desc | Quando clicar F2 nos campos cliente/fornecedor na tela dos relatorios  |
-| 3040 | 31243 | SAM | Desc | Quando cadastrado um s�cio em que no nome contem um ap�stofre(aspa sim |
 | 3090 | 31253 | SAM | Desc | Ao emitir o livro diario, o sistema mostra primeiro um valor a debito  |
+| 3044 | 31245 | SAM | Desc | Na tela de apura��o demonstrar os lan�amentos gerados no Honor�rios. |
+| 3040 | 31243 | SAM | Desc | Quando cadastrado um s�cio em que no nome contem um ap�stofre(aspa sim |
+| 3026 | 31240 | SAM | Lib | Quando fato gerador do CRF for emiss�o considerar todas as notas emiti |
+| 3034 | 31242 | SAM | Desc | No utilit�rio de limpeza criar op��o para ser excluido os cadastros de |
+| 3118 | 31259 | SAM | Lib | N�o permitir alterar o periodo inicial nos par�metros para um per�odo  |
+| 3105 | 31256 | SAM | Desc | PR-Na importa��o do valor da folha nos outros dados da GIA, se no m�s  |
+| 3053 | 31249 | SAM | Lib | Ao emitir livro raz�o, mostrar zero nas colunas D�bito e Cr�dito somen |
 | 2993 | 31234 | SAM | Desc | TO-Quando o valor do ICMS do m�s anterior for menor que o m�nimo para  |
+| 3027 | 31241 | SAM | Lib | Na emiss�o do Livro de ISS criar bot�o outros dados para ser preenchid |
 | 3045 | 31246 | SAM | Desc | Nos relatorios Resumo dos impostos e Demonstativo de impostos calculad |
 | 2992 | 31233 | SAM | Desc | No relat�rio Demonstrativo/Faturamento incluir o numero do endere�o da |
-| 3034 | 31242 | SAM | Desc | No utilit�rio de limpeza criar op��o para ser excluido os cadastros de |
-| 3044 | 31245 | SAM | Desc | Na tela de apura��o demonstrar os lan�amentos gerados no Honor�rios. |
-| 3053 | 31249 | SAM | Lib | Ao emitir livro raz�o, mostrar zero nas colunas D�bito e Cr�dito somen |
-| 2925 | 31208 | SAM | Lib | Criar op��o na emiss�o dos documentos de cobran�a para sele��o da orde |
-| 2939 | 31214 | SAM | Lib | Ao lan�ar um pagamento e divid-lo em parcelas, se o valor da primeira  |
-| 2957 | 31219 | SAM | Lib | Criar op��o pela selecionar o usu�rio no relatorio de Usu�rio Tempo Ga |
-| 2920 | 31205 | SAM | Desc | Gerar valor do PIS sobre Folha para DIPJ. |
-| 2926 | 31209 | SAM | Lib | Criar na emiss�o do Balancete op��o para imprimir ou n�o o n�mero do L |
 | 2938 | 31213 | SAM | Lib | Na guia DARF Simples modelos matricial e matricial c/vencto no quadro  |
-| 2912 | 31203 | SAM | Lib | Vincular novo HELP a este m�dulo. |
-| 2928 | 31211 | SAM | Desc | SC-Tirar a op��o para impress�o de DAE(Estadual) Avulso. |
-| 2922 | 31207 | SAM | Desc | No relat�rio resumo dos impostos, quando for selecionado o PIS e COFIN |
 | 2975 | 31225 | SAM | Desc | Criar um campo para selecionar a conta base para emiss�o da an�lise ve |
+| 2926 | 31209 | SAM | Lib | Criar na emiss�o do Balancete op��o para imprimir ou n�o o n�mero do L |
+| 2925 | 31208 | SAM | Lib | Criar op��o na emiss�o dos documentos de cobran�a para sele��o da orde |
+| 2912 | 31203 | SAM | Lib | Vincular novo HELP a este m�dulo. |
+| 2957 | 31219 | SAM | Lib | Criar op��o pela selecionar o usu�rio no relatorio de Usu�rio Tempo Ga |
 | 2927 | 31210 | SAM | Desc | Criar op��o no relatorio de lan�amentos para ser listado somente quand |
+| 2939 | 31214 | SAM | Lib | Ao lan�ar um pagamento e divid-lo em parcelas, se o valor da primeira  |
+| 2922 | 31207 | SAM | Desc | No relat�rio resumo dos impostos, quando for selecionado o PIS e COFIN |
 | 2991 | 31232 | SAM | Desc | Ampliar o tamanho do campo para disgita��o da descri��o do registro de |
-| 2844 | 31180 | SAM | Lib | Nos relatorios de acompanhamento de entradas, saidas e servi�os listar |
-| 2823 | 31172 | SAM | Lib | Ao gerar o arquivo para o SINTEGRA o registro 51 s� pode ser gerado pa |
-| 2852 | 31186 | SAM | Lib | Vincular novo Help a este m�dulo. |
+| 2920 | 31205 | SAM | Desc | Gerar valor do PIS sobre Folha para DIPJ. |
+| 2928 | 31211 | SAM | Desc | SC-Tirar a op��o para impress�o de DAE(Estadual) Avulso. |
 | 2884 | 31194 | SAM | Lib | No relat�rio Rela��o de Contrato, criar op��o para n�o emitir os contr |
+| 2852 | 31186 | SAM | Lib | Vincular novo Help a este m�dulo. |
+| 2831 | 31175 | SAM | Lib | Criar na guia saldo final do cadastro de produtos campo com valor unit |
 | 2903 | 31198 | SAM | Lib | Vincular novo HELP a este m�dulo. |
 | 2854 | 31187 | SAM | Lib | Na impress�o do DARF normal mostrar os impostos PIS-66 e COFINS-NC, me |
-| 2831 | 31175 | SAM | Lib | Criar na guia saldo final do cadastro de produtos campo com valor unit |
-| 2773 | 31150 | SAM | Desc | Disponibilizar na estrutura do balan�o demonstra��o um campo para info |
-| 2766 | 31146 | SAM | Lib | Vincular novo HELP a este m�dulo. |
-| 2792 | 31158 | SAM | Desc | MT-Criar op��o no lan�amento dos ajustes para informar observa��es a s |
-| 2793 | 31159 | SAM | Lib | Inserir no relatorio Rela��o de Contratos somatoria das colunas Valor  |
-| 2756 | 31138 | SAM | Lib | Quando for emitido um documento de cobran�a e o numero de itens ultrap |
-| 2779 | 31151 | SAM | Lib | No lan�amento das adi��es e exlcus�es do imposto de renda, permitir qu |
+| 2844 | 31180 | SAM | Lib | Nos relatorios de acompanhamento de entradas, saidas e servi�os listar |
+| 2823 | 31172 | SAM | Lib | Ao gerar o arquivo para o SINTEGRA o registro 51 s� pode ser gerado pa |
 | 2765 | 31145 | SAM | Lib | Vincular novo HELP a este m�dulo |
-| 2760 | 31142 | SAM | Lib | Permitir cadastrar um contrato com valor = 0,00. |
-| 2757 | 31139 | SAM | Desc | Ao cadastrar uma conta anal�tica, verificar se existe uma conta sint�t |
-| 2794 | 31160 | SAM | Desc | Disponibilizar as variaveis especie e serie nas guias Imposto Entrada, |
-| 2795 | 31161 | SAM | Lib | Criar op��o para emitir o relat�rio de Extrato de Clientes por ordem a |
-| 2783 | 31154 | SAM | Lib | No tela de lan�amento de notas de entradas e saidas, listar sempre o I |
+| 2766 | 31146 | SAM | Lib | Vincular novo HELP a este m�dulo. |
 | 2764 | 31144 | SAM | Desc | Vincular novo HELP a este m�dulo |
-| 2728 | 31128 | SAM | Lib | Permitir selecionar centro de custo ao gerar dados para o Excel |
-| 2726 | 31126 | SAM | Lib | MT-Na emiss�o dos livros de Entradas, Saidas, ISS e IPI n�o est� sendo |
-| 2727 | 31127 | SAM | Lib | Ajustar o relat�rio do Diferencial de Al�quotas para emitir em modo gr |
+| 2795 | 31161 | SAM | Lib | Criar op��o para emitir o relat�rio de Extrato de Clientes por ordem a |
+| 2756 | 31138 | SAM | Lib | Quando for emitido um documento de cobran�a e o numero de itens ultrap |
+| 2760 | 31142 | SAM | Lib | Permitir cadastrar um contrato com valor = 0,00. |
+| 2792 | 31158 | SAM | Desc | MT-Criar op��o no lan�amento dos ajustes para informar observa��es a s |
+| 2783 | 31154 | SAM | Lib | No tela de lan�amento de notas de entradas e saidas, listar sempre o I |
+| 2793 | 31159 | SAM | Lib | Inserir no relatorio Rela��o de Contratos somatoria das colunas Valor  |
+| 2779 | 31151 | SAM | Lib | No lan�amento das adi��es e exlcus�es do imposto de renda, permitir qu |
+| 2757 | 31139 | SAM | Desc | Ao cadastrar uma conta anal�tica, verificar se existe uma conta sint�t |
+| 2773 | 31150 | SAM | Desc | Disponibilizar na estrutura do balan�o demonstra��o um campo para info |
+| 2794 | 31160 | SAM | Desc | Disponibilizar as variaveis especie e serie nas guias Imposto Entrada, |
 | 2729 | 31129 | SAM | Lib | Disponibilizar nos relat�rios Balan�o, Balancete e Raz�o a op��o de se |
+| 2726 | 31126 | SAM | Lib | MT-Na emiss�o dos livros de Entradas, Saidas, ISS e IPI n�o est� sendo |
+| 2728 | 31128 | SAM | Lib | Permitir selecionar centro de custo ao gerar dados para o Excel |
+| 2727 | 31127 | SAM | Lib | Ajustar o relat�rio do Diferencial de Al�quotas para emitir em modo gr |
+| 2669 | 31101 | SAM | Desc | Na digita��o de extratos, no campo Tipo, quando for digitado o sinal d |
+| 2668 | 31100 | SAM | Lib | Disponibilizar o relatorio de lan�amentos fiscais quando nos par�metro |
+| 2683 | 31109 | SAM | Desc | Na Guia DARF(Simples Deskjet e matricial) 2 vias c/vencimento,no campo |
 | 2655 | 31094 | SAM | Desc | A op��o de mostrar a guia estoque no lan�amento das notas deve obedece |
 | 2680 | 31107 | SAM | Lib | Na configura��o de historico disponibilizar em uma unica vari�vel o nu |
 | 2689 | 31113 | SAM | Desc | Trazer padr�o "Sim" na mensagem que o sistema mostra quando � cadastra |
-| 2683 | 31109 | SAM | Desc | Na Guia DARF(Simples Deskjet e matricial) 2 vias c/vencimento,no campo |
-| 2688 | 31112 | SAM | Desc | Permitir cadastrar fornecedores e clientes sem apelido. |
 | 2672 | 31103 | SAM | Desc | RS-Retirar do sistema a op��o em Arquivo/Tabelas/Detalhamentos Anexo V |
-| 2654 | 31093 | SAM | Lib | Na emiss�o e retorno de protocolo utilizar o usu�rio logado como funci |
-| 2668 | 31100 | SAM | Lib | Disponibilizar o relatorio de lan�amentos fiscais quando nos par�metro |
-| 2669 | 31101 | SAM | Desc | Na digita��o de extratos, no campo Tipo, quando for digitado o sinal d |
 | 2670 | 31102 | SAM | Lib | Na emiss�o dos DRE, Balan�o e Balancete quando selecionado apenas um c |
 | 2667 | 31099 | SAM | Lib | Na emiss�o do DRE criar op��o de informar o n�mero do livro. |
-| 2652 | 31091 | SAM | Desc | No relatorio resumo por acumulador, criar op��o para listar valores da |
+| 2654 | 31093 | SAM | Lib | Na emiss�o e retorno de protocolo utilizar o usu�rio logado como funci |
+| 2688 | 31112 | SAM | Desc | Permitir cadastrar fornecedores e clientes sem apelido. |
+| 2619 | 31075 | SAM | Lib | Possibilitar a importa��o de extratos no formato ofx. |
+| 2600 | 31063 | SAM | Lib | Quando for faturar um periodo em que o periodo anterior ainda n�o foi  |
+| 2618 | 31074 | SAM | Desc | Aumentar o tamanho da visualiza��o na listagem dos itens das tabelas m |
 | 2599 | 31062 | SAM | Desc | Criar no relat�rio/demonstrativo/impostos calculados, um total dos acu |
-| 2622 | 31077 | SAM | Lib | No demonstrativo ISSQN possui no texto final a palavra "seguinte" escr |
+| 2601 | 31064 | SAM | Desc | MT-Criar nos par�metros um campo chamado Inicio Atividades e quando fo |
 | 2606 | 31068 | SAM | Desc | Criar na guia zeramento das op��es da contabilidade, campos para serem |
 | 2609 | 31069 | SAM | Lib | Quando existe varios lan�amentos no mesmo dia com saldo diferente da n |
-| 2603 | 31066 | SAM | Desc | Na tela de emiss�o dos DARF''s gravar a op��o de Imprime total da DARF |
-| 2624 | 31079 | SAM | Desc | Criar no cadastro de contrato um campo para ser informado o proximo re |
 | 2629 | 31082 | SAM | Lib | Aumentar o tamanho do campo "Codigo", no cadastro de Conta Patrimonial |
-| 2618 | 31074 | SAM | Desc | Aumentar o tamanho da visualiza��o na listagem dos itens das tabelas m |
-| 2623 | 31078 | SAM | Lib | Criar um campo para informar hist�rico na tela de lan�amento de pagame |
-| 2634 | 31084 | SAM | Lib | Vincular novo Help a este m�dulo. |
-| 2601 | 31064 | SAM | Desc | MT-Criar nos par�metros um campo chamado Inicio Atividades e quando fo |
+| 2622 | 31077 | SAM | Lib | No demonstrativo ISSQN possui no texto final a palavra "seguinte" escr |
+| 2652 | 31091 | SAM | Desc | No relatorio resumo por acumulador, criar op��o para listar valores da |
 | 2637 | 31086 | SAM | Lib | PR-Realizar c�lculo do ICMS em atraso. |
-| 2600 | 31063 | SAM | Lib | Quando for faturar um periodo em que o periodo anterior ainda n�o foi  |
-| 2619 | 31075 | SAM | Lib | Possibilitar a importa��o de extratos no formato ofx. |
+| 2603 | 31066 | SAM | Desc | Na tela de emiss�o dos DARF''s gravar a op��o de Imprime total da DARF |
 | 2633 | 31083 | SAM | Lib | TO-Ao emitir o livro de entrada ou saida de um periodo do m�s sistema  |
 | 2627 | 31080 | SAM | Lib | Utilizar o mesmo cadastro de fornecedores da Escrita Fiscal. |
-| 2587 | 31052 | SAM | Lib | Na emiss�o individual de protocolo criar campo para ser informado o no |
-| 2593 | 31056 | SAM | Lib | Na emiss�o do plano de contas, na op��o Grupo, se for informada uma co |
-| 2552 | 31033 | SAM | Desc | Permitir que os grupos da estrutura DLPA que s�o informados em valor s |
-| 2586 | 31051 | SAM | Lib | Incluir a op��o para selecionar se deve lan�ar a diferen�a entre base  |
-| 2553 | 31034 | SAM | Lib | Ao realizar importa��o de notas quando no arquivo tiver um fornecedor/ |
+| 2623 | 31078 | SAM | Lib | Criar um campo para informar hist�rico na tela de lan�amento de pagame |
+| 2624 | 31079 | SAM | Desc | Criar no cadastro de contrato um campo para ser informado o proximo re |
+| 2634 | 31084 | SAM | Lib | Vincular novo Help a este m�dulo. |
 | 2592 | 31055 | SAM | Lib | Quando for regerado um lan�amento cont�bil, e o mesmo j� estiver conci |
-| 2551 | 31032 | SAM | Lib | Possibilitar o sistema a trabalhar com mais de uma empresa. |
-| 2591 | 31054 | SAM | Desc | Aumentar o espa�o para digit��o das observa��es na emiss�o do livro de |
-| 2580 | 31046 | SAM | Lib | Salvar a ordem escolhida na listagem de empresas que traz no canto sup |
-| 2575 | 31041 | SAM | Desc | No relatorio Resumo de Impostos Atualizados, criar op��o de ordem de I |
-| 2554 | 31035 | SAM | Lib | Criar outro campo no cadastro de bens para identifica��o. |
 | 2590 | 31053 | SAM | Desc | Disponibilizar a variavel Esp�cie nas guias Impostos Entradas, Imposto |
-| 2583 | 31048 | SAM | Desc | Criar op��o no cadastro de empresas  para informar endere�o para corre |
+| 2587 | 31052 | SAM | Lib | Na emiss�o individual de protocolo criar campo para ser informado o no |
+| 2591 | 31054 | SAM | Desc | Aumentar o espa�o para digit��o das observa��es na emiss�o do livro de |
+| 2554 | 31035 | SAM | Lib | Criar outro campo no cadastro de bens para identifica��o. |
+| 2552 | 31033 | SAM | Desc | Permitir que os grupos da estrutura DLPA que s�o informados em valor s |
+| 2553 | 31034 | SAM | Lib | Ao realizar importa��o de notas quando no arquivo tiver um fornecedor/ |
+| 2580 | 31046 | SAM | Lib | Salvar a ordem escolhida na listagem de empresas que traz no canto sup |
 | 2527 | 31026 | SAM | Desc | Criar um relat�rio, onde seja listado todos o lan�amentos e apura��es  |
+| 2575 | 31041 | SAM | Desc | No relatorio Resumo de Impostos Atualizados, criar op��o de ordem de I |
+| 2551 | 31032 | SAM | Lib | Possibilitar o sistema a trabalhar com mais de uma empresa. |
+| 2593 | 31056 | SAM | Lib | Na emiss�o do plano de contas, na op��o Grupo, se for informada uma co |
+| 2586 | 31051 | SAM | Lib | Incluir a op��o para selecionar se deve lan�ar a diferen�a entre base  |
+| 2583 | 31048 | SAM | Desc | Criar op��o no cadastro de empresas  para informar endere�o para corre |
 | 2490 | 31009 | SAM | Desc | Na emiss�o dos livros de Entradas, Saidas e ICMS gravar as op��es da j |
-| 2457 | 31000 | SAM | Lib | Alterar o campo digito verificador do cadastro de conta financeira e d |
-| 2493 | 31010 | SAM | Lib | Ter op��o de cadastrar e importar as inscri��es estaduais canceladas p |
-| 2488 | 31008 | SAM | Lib | Ao excluir uma linha da estrutura do DRE, DRA, DLPA, DMPL ou DOAR, apr |
-| 2494 | 31011 | SAM | Lib | Na tela de concilia��o banc�ria quando der um duplo clique em um lan�a |
-| 2515 | 31019 | SAM | Desc | SP-No livro de ISS especial modelo normal no campo endere�o trazer o e |
 | 2501 | 31014 | SAM | Lib | SC: Incluir campo para informar classe de vencimento no cadastro do im |
-| 2419 | 30987 | SAM | Desc | Quando emitido o relatorio resumo dos impostos somente com a op��o Pis |
-| 2414 | 30983 | SAM | Lib | Quando nas op��es estiver selecionada a op��o usar como Livro Caixa, d |
-| 2362 | 30962 | SAM | Lib | Na consulta F6 quando o saldo for maior que 999.999.999,99 sistema est |
-| 2394 | 30974 | SAM | Lib | SC-Ter op��o de gerar arquivo e relatorios para guia DARE-SC, para o i |
-| 2358 | 30959 | SAM | Desc | Disponibilizar a DMPS - Demonstra��o das Muta��es do Patrim�nio Social |
-| 2421 | 30989 | SAM | Lib | Desenvolver relat�rios para demonstrar o Lucro Presumido Liquido. |
+| 2457 | 31000 | SAM | Lib | Alterar o campo digito verificador do cadastro de conta financeira e d |
+| 2494 | 31011 | SAM | Lib | Na tela de concilia��o banc�ria quando der um duplo clique em um lan�a |
+| 2493 | 31010 | SAM | Lib | Ter op��o de cadastrar e importar as inscri��es estaduais canceladas p |
+| 2515 | 31019 | SAM | Desc | SP-No livro de ISS especial modelo normal no campo endere�o trazer o e |
+| 2488 | 31008 | SAM | Lib | Ao excluir uma linha da estrutura do DRE, DRA, DLPA, DMPL ou DOAR, apr |
+| 2393 | 30973 | SAM | Lib | Quando estiver sendo lan�ado uma conta a pagar ter op��o de baixar a p |
 | 2418 | 30986 | SAM | Lib | Quando for efetuada uma baixa e n�o estiver defino conta para recebime |
-| 2361 | 30961 | SAM | Lib | No cadastro de lan�amentos padr�es criar uma op��o para posicionar o c |
+| 2419 | 30987 | SAM | Desc | Quando emitido o relatorio resumo dos impostos somente com a op��o Pis |
+| 2367 | 30963 | SAM | Lib | Quando est� sendo realizado lan�amentos e digita-se uma conta inv�lida |
+| 2425 | 30992 | SAM | Lib | Quando � definida natureza permitida por acumulador, nos lan�amentos s |
+| 2394 | 30974 | SAM | Lib | SC-Ter op��o de gerar arquivo e relatorios para guia DARE-SC, para o i |
+| 2414 | 30983 | SAM | Lib | Quando nas op��es estiver selecionada a op��o usar como Livro Caixa, d |
 | 2386 | 30970 | SAM | Desc | Ao lan�ar um item do tipo livros, nas observa��es sistemas aceita 40 c |
+| 2369 | 30965 | SAM | Lib | Quando no acumulador for marcado para mostrar sempre o lan�amento cont |
+| 2396 | 30975 | SAM | Lib | Gravar as op��es usadas para emiss�o do Di�rio, Raz�o, Balan�o e Balan |
+| 2358 | 30959 | SAM | Desc | Disponibilizar a DMPS - Demonstra��o das Muta��es do Patrim�nio Social |
 | 2420 | 30988 | SAM | Desc | Disponibilizar no Gerador de Relat�rios o Relatorio Demonstrativo Mens |
 | 2390 | 30972 | SAM | Desc | No relatorio demonstrativo mensal, ter op��o de escolher o Indice para |
-| 2393 | 30973 | SAM | Lib | Quando estiver sendo lan�ado uma conta a pagar ter op��o de baixar a p |
-| 2370 | 30966 | SAM | Desc | Ter op��o de emitir o relatorio Resumo dos Impostos de mais de um peri |
-| 2374 | 30969 | SAM | Lib | Quando na concilia��o banc�ria a op��o historico for marcada, o sistem |
-| 2416 | 30985 | SAM | Desc | Criar op��o sobrescrever ou adicionar um cadastro quando executado o p |
-| 2410 | 30980 | SAM | Lib | No relatorio de cliente tempo gasto modelo completo e resumido ter no  |
+| 2421 | 30989 | SAM | Lib | Desenvolver relat�rios para demonstrar o Lucro Presumido Liquido. |
+| 2362 | 30962 | SAM | Lib | Na consulta F6 quando o saldo for maior que 999.999.999,99 sistema est |
 | 2407 | 30978 | SAM | Lib | Quando emitido o relatorio de saldos, sistema n�o est� considerando o  |
-| 2367 | 30963 | SAM | Lib | Quando est� sendo realizado lan�amentos e digita-se uma conta inv�lida |
-| 2369 | 30965 | SAM | Lib | Quando no acumulador for marcado para mostrar sempre o lan�amento cont |
+| 2374 | 30969 | SAM | Lib | Quando na concilia��o banc�ria a op��o historico for marcada, o sistem |
+| 2370 | 30966 | SAM | Desc | Ter op��o de emitir o relatorio Resumo dos Impostos de mais de um peri |
+| 2416 | 30985 | SAM | Desc | Criar op��o sobrescrever ou adicionar um cadastro quando executado o p |
+| 2361 | 30961 | SAM | Lib | No cadastro de lan�amentos padr�es criar uma op��o para posicionar o c |
+| 2410 | 30980 | SAM | Lib | No relatorio de cliente tempo gasto modelo completo e resumido ter no  |
 | 2372 | 30968 | SAM | Lib | AL-Permitir que seja cadastrado AIDF com a mesma serie e numera��o e c |
-| 2396 | 30975 | SAM | Lib | Gravar as op��es usadas para emiss�o do Di�rio, Raz�o, Balan�o e Balan |
-| 2425 | 30992 | SAM | Lib | Quando � definida natureza permitida por acumulador, nos lan�amentos s |
-| 2338 | 30956 | SAM | Desc | No cadastro de Produtos quando teclar F2 no campo Grupo trazer a lista |
-| 2322 | 30955 | SAM | Lib | Mesmo com fechamento de um determinado per�odo o sistema est� permitin |
-| 2197 | 30932 | SAM | Lib | SC-Quando emitido o livro de ICMS modelo P9 sem movimento sistema deve |
-| 2243 | 30940 | SAM | Desc | Ao emitir o DRE modelo II com valor maiou que 99.999.999,00 sistema co |
-| 2189 | 30930 | SAM | Lib | Discriminar nos relatorios de acompanhamento de Entradas, saidas e ser |
 | 2320 | 30953 | SAM | Lib | Se a empresa estiver parametrizada para controlar contas a pagar e a r |
 | 2183 | 30927 | SAM | Desc | N�o gerar para a contabilidade lan�amento com valor zerado se nas op�� |
-| 2295 | 30950 | SAM | Lib | N�o permitir lan�ar nos campos base de calculo, isentas, outras e valo |
-| 2321 | 30954 | SAM | Desc | No relat�rio de faturamento incluir o n�mero do endere�o, bairro e est |
-| 2199 | 30933 | SAM | Lib | Transferir para a conta financeira o codigo cendente que hoje est� no  |
 | 2200 | 30934 | SAM | Lib | No cadastro da ag�ncia ter um campo para o c�digo sequencial e outro p |
-| 2171 | 30922 | SAM | Desc | No relatorio resumo dos impostos na apura��o do lucro presumido, discr |
-| 2181 | 30925 | SAM | Desc | Na emiss�o de protocolo em grupo ter op��o de ordenar por codigo ou no |
+| 2321 | 30954 | SAM | Desc | No relat�rio de faturamento incluir o n�mero do endere�o, bairro e est |
+| 2243 | 30940 | SAM | Desc | Ao emitir o DRE modelo II com valor maiou que 99.999.999,00 sistema co |
+| 2197 | 30932 | SAM | Lib | SC-Quando emitido o livro de ICMS modelo P9 sem movimento sistema deve |
+| 2322 | 30955 | SAM | Lib | Mesmo com fechamento de um determinado per�odo o sistema est� permitin |
+| 2199 | 30933 | SAM | Lib | Transferir para a conta financeira o codigo cendente que hoje est� no  |
+| 2338 | 30956 | SAM | Desc | No cadastro de Produtos quando teclar F2 no campo Grupo trazer a lista |
+| 2295 | 30950 | SAM | Lib | N�o permitir lan�ar nos campos base de calculo, isentas, outras e valo |
+| 2189 | 30930 | SAM | Lib | Discriminar nos relatorios de acompanhamento de Entradas, saidas e ser |
+| 2159 | 30920 | SAM | Lib | PR-Ter op��o de discriminar no livro de saidas a Substitui��o Tribut�r |
 | 2129 | 30908 | SAM | Desc | Criar no menu utilitarios op��o de Estruturas -> DRE, DLPA e DOAR e qu |
+| 2119 | 30902 | SAM | Lib | Ter opcao de quando lancar uma nota de tranferencia de prudutos, reali |
+| 2181 | 30925 | SAM | Desc | Na emiss�o de protocolo em grupo ter op��o de ordenar por codigo ou no |
 | 2130 | 30909 | SAM | Lib | Possibilitar importar valores de receita bruta para c�lculo do IRPJ co |
-| 2178 | 30923 | SAM | Lib | Permitir informar uma conta sint�tica na emiss�o do relat�rio de acomp |
+| 2143 | 30912 | SAM | Lib | No relatorio cadastral de bens ter op��o de imprimir tamb�m o historic |
 | 2128 | 30907 | SAM | Desc | Na emiss�o do livro caixa, ter op��o de gerar demostrativo por conta,  |
 | 2123 | 30905 | SAM | Lib | Quando for cadastrado um fornecedor verificar em outra empresa tambem  |
-| 2155 | 30918 | SAM | Desc | Ter op��o de definir a estrutura do plano de contas quanto a sua natur |
+| 2171 | 30922 | SAM | Desc | No relatorio resumo dos impostos na apura��o do lucro presumido, discr |
+| 2178 | 30923 | SAM | Lib | Permitir informar uma conta sint�tica na emiss�o do relat�rio de acomp |
 | 2121 | 30904 | SAM | Lib | PR-Ter op��o de informar o codigo do municipio nos lan�amentos das not |
 | 2117 | 30901 | SAM | Lib | SC-Nos livros Registro de Entradas e Registro de Saidas alterar a colu |
-| 2143 | 30912 | SAM | Lib | No relatorio cadastral de bens ter op��o de imprimir tamb�m o historic |
-| 2159 | 30920 | SAM | Lib | PR-Ter op��o de discriminar no livro de saidas a Substitui��o Tribut�r |
-| 2119 | 30902 | SAM | Lib | Ter opcao de quando lancar uma nota de tranferencia de prudutos, reali |
-| 2026 | 30879 | SAM | Desc | Incluir op��o para digitar o codigo do historico na tela de contabiliz |
+| 2155 | 30918 | SAM | Desc | Ter op��o de definir a estrutura do plano de contas quanto a sua natur |
+| 2062 | 30890 | SAM | Lib | Criar um novo layout de importa��o de arquivos para lan�amenos cont�be |
+| 2099 | 30895 | SAM | Lib | Quando definido a variavel #C no evento do honorarios, ao faturar sist |
+| 1979 | 30871 | SAM | Lib | Ter no relatorio de usuario tempo gasto, a op��o de agrupar por sistem |
+| 1988 | 30874 | SAM | Desc | Ao lan�ar uma nota com o impostos DIFALI, trazer como padr�o a diferen |
+| 2115 | 30900 | SAM | Lib | Desenvolver relatorio de acompanhamento dos valores de CRF,PIS Retido, |
 | 2110 | 30899 | SAM | Desc | Ter op��o no Livro de ISS de n�o imprimir total por aliquota. |
 | 2100 | 30896 | SAM | Lib | Quando definido a variavel #C em um evento fixo, ao faturar deve compl |
-| 2062 | 30890 | SAM | Lib | Criar um novo layout de importa��o de arquivos para lan�amenos cont�be |
-| 1988 | 30874 | SAM | Desc | Ao lan�ar uma nota com o impostos DIFALI, trazer como padr�o a diferen |
 | 2041 | 30885 | SAM | Desc | Nos lan�amentos de entradas ou saidas, quando passo pelo campo base de |
-| 1979 | 30871 | SAM | Lib | Ter no relatorio de usuario tempo gasto, a op��o de agrupar por sistem |
-| 1992 | 30876 | SAM | Lib | Quando o modelo do gr�fico � pizza a fonte os valores de percentuais e |
 | 1968 | 30866 | SAM | Lib | Incluir o bot�o replicar no cadastro de historicos. |
-| 2099 | 30895 | SAM | Lib | Quando definido a variavel #C no evento do honorarios, ao faturar sist |
-| 2040 | 30884 | SAM | Lib | Quando nos acumuladores estiver marcado para mostrar sempre o lan�amen |
-| 2115 | 30900 | SAM | Lib | Desenvolver relatorio de acompanhamento dos valores de CRF,PIS Retido, |
-| 2042 | 30886 | SAM | Lib | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o comp |
-| 1980 | 30872 | SAM | Lib | Permitir alterar a data de aquisi��o do bem se o periodo atual for o m |
-| 2037 | 30883 | SAM | Desc | No cadastro de acumuladores, se copiar o registro e colar, sistema n�o |
-| 2109 | 30898 | SAM | Lib | Ter op��o nos demonstrativos DOAR e DLPA de informar o numero do livro |
 | 2064 | 30891 | SAM | Desc | Ter uma op��o onde permita ou n�o o usu�rio registrar uma atividade em |
 | 2005 | 30877 | SAM | Lib | Desenvolver os dois modelos de contrato de servi�os cont�beis padr�es  |
-| 1965 | 30864 | SAM | Lib | MT-Ao imprimir um livro de icms modelo P9 com a data inicial de 09/03/ |
-| 1848 | 30837 | SAM | Lib | Quando a op��o mentem tela de consulta estiver marcada, se pedir a mes |
-| 1934 | 30856 | SAM | Lib | AL-Permitir gerar DAC sem cadastro de AIDF. |
+| 1980 | 30872 | SAM | Lib | Permitir alterar a data de aquisi��o do bem se o periodo atual for o m |
+| 1992 | 30876 | SAM | Lib | Quando o modelo do gr�fico � pizza a fonte os valores de percentuais e |
+| 2042 | 30886 | SAM | Lib | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o comp |
+| 2109 | 30898 | SAM | Lib | Ter op��o nos demonstrativos DOAR e DLPA de informar o numero do livro |
+| 2040 | 30884 | SAM | Lib | Quando nos acumuladores estiver marcado para mostrar sempre o lan�amen |
+| 2037 | 30883 | SAM | Desc | No cadastro de acumuladores, se copiar o registro e colar, sistema n�o |
+| 2026 | 30879 | SAM | Desc | Incluir op��o para digitar o codigo do historico na tela de contabiliz |
 | 1831 | 30832 | SAM | Desc | Criar op��o de identificar a filial, nas variaveis cadastrais que s�o  |
-| 1877 | 30845 | SAM | Lib | AL-Sistema deve permitir cadastrar mais de uma AIDF com o mesmo n�mero |
-| 1923 | 30850 | SAM | Lib | Na emiss�o do balancete ter op��o de n�o imprimir codigo das contas. |
+| 1965 | 30864 | SAM | Lib | MT-Ao imprimir um livro de icms modelo P9 com a data inicial de 09/03/ |
+| 1934 | 30856 | SAM | Lib | AL-Permitir gerar DAC sem cadastro de AIDF. |
 | 1925 | 30851 | SAM | Lib | Quando lan�ado uma nota com acumulador com PIS66 e COFINS-NC, com base |
-| 1964 | 30863 | SAM | Lib | Quando um cadastro de produtos � editado pela listagem, ao altera a qu |
-| 1837 | 30835 | SAM | Lib | Na emiss�o do balan�o quando for marcado a op��o para imprimir saldo a |
 | 1867 | 30844 | SAM | Lib | Permitir alterar o campo M�s do vencimento depois de um contrato grava |
+| 1877 | 30845 | SAM | Lib | AL-Sistema deve permitir cadastrar mais de uma AIDF com o mesmo n�mero |
+| 1837 | 30835 | SAM | Lib | Na emiss�o do balan�o quando for marcado a op��o para imprimir saldo a |
+| 1848 | 30837 | SAM | Lib | Quando a op��o mentem tela de consulta estiver marcada, se pedir a mes |
 | 1930 | 30854 | SAM | Lib | SP-S�o Paulo-A impress�o do livro de ISS modelo 51, deve ser ordenada  |
-| 1770 | 30812 | SAM | Desc | O adiantamento s� aparece no rel�t�rio de extrato de cliente depois de |
+| 1964 | 30863 | SAM | Lib | Quando um cadastro de produtos � editado pela listagem, ao altera a qu |
+| 1923 | 30850 | SAM | Lib | Na emiss�o do balancete ter op��o de n�o imprimir codigo das contas. |
+| 1755 | 30807 | SAM | Lib | Ao imprimir o livro LALUR PARTE B sair em modo retrato. |
+| 1749 | 30805 | SAM | Desc | Criar um utilit�rio para estornar o cancelamento de notas. |
+| 1742 | 30798 | SAM | Lib | Na emiss�o dos documentos de cobran�a ter op��o de selecionar somente  |
+| 1805 | 30821 | SAM | Lib | RS-Quando a empresa for EPP ou ME, na tela de apura��o mostrar os valo |
+| 1791 | 30820 | SAM | Desc | SC-Quando lan�ado ajuste e neste for digitado observa��es, no livro de |
+| 1752 | 30806 | SAM | Desc | RS-Na apura��o do ISS destacar o valor devedor do imposto que n�o foi  |
+| 1747 | 30803 | SAM | Lib | Criar endere�o de cobran�a no cadastro de clientes. |
 | 1788 | 30817 | SAM | Desc | No Relat�rio de Acompanhamento de Servi�os trazer as informa��es dos I |
 | 1814 | 30822 | SAM | Desc | Quando emitir o relatorio cadastral de bens e marcar a op��o agrega be |
-| 1749 | 30805 | SAM | Desc | Criar um utilit�rio para estornar o cancelamento de notas. |
-| 1786 | 30816 | SAM | Lib | Ao editar uma nota pela listagem o lado esquerdo da nota fica cinza. |
-| 1791 | 30820 | SAM | Desc | SC-Quando lan�ado ajuste e neste for digitado observa��es, no livro de |
-| 1743 | 30799 | SAM | Lib | No cadastro do banco ter um campo para o codigo sequencial e outro par |
-| 1755 | 30807 | SAM | Lib | Ao imprimir o livro LALUR PARTE B sair em modo retrato. |
-| 1772 | 30814 | SAM | Desc | Colocar op��o na impress�o do plano de para imprimir somente os fornec |
-| 1742 | 30798 | SAM | Lib | Na emiss�o dos documentos de cobran�a ter op��o de selecionar somente  |
-| 1752 | 30806 | SAM | Desc | RS-Na apura��o do ISS destacar o valor devedor do imposto que n�o foi  |
-| 1815 | 30823 | SAM | Lib | Na emiss�o do plano de contas ter op��o de emitir a data e hora. |
-| 1805 | 30821 | SAM | Lib | RS-Quando a empresa for EPP ou ME, na tela de apura��o mostrar os valo |
-| 1747 | 30803 | SAM | Lib | Criar endere�o de cobran�a no cadastro de clientes. |
 | 1771 | 30813 | SAM | Lib | Permitir cadastrar mais de um contrato por cliente. |
-| 1684 | 30772 | SAM | Lib | MT/PR/RS-Colocar na nova sistem�tica os livros de ICMS P9 do MT e RS e |
-| 1726 | 30789 | SAM | Lib | Se nos par�metros da contabilidade estiver marcado para permitir grava |
-| 1727 | 30790 | SAM | Desc | Criar op��o de atalho para chamada de cadastro em modo de inser��o qua |
-| 1718 | 30786 | SAM | Lib | Permitir no cadastro de produtos informar a data � que se referem os s |
-| 1738 | 30796 | SAM | Lib | Ter op��o na concilia��o banc�ria de mostrar somente lan�amentos n�o c |
+| 1743 | 30799 | SAM | Lib | No cadastro do banco ter um campo para o codigo sequencial e outro par |
+| 1770 | 30812 | SAM | Desc | O adiantamento s� aparece no rel�t�rio de extrato de cliente depois de |
+| 1815 | 30823 | SAM | Lib | Na emiss�o do plano de contas ter op��o de emitir a data e hora. |
+| 1786 | 30816 | SAM | Lib | Ao editar uma nota pela listagem o lado esquerdo da nota fica cinza. |
+| 1772 | 30814 | SAM | Desc | Colocar op��o na impress�o do plano de para imprimir somente os fornec |
 | 1739 | 30797 | SAM | Desc | Ao alterar o valor contabil de uma nota onde o valor total foi lan�ado |
-| 1736 | 30794 | SAM | Lib | Ter op��o de baixar ou n�o a parcela a vista de uma nota. |
-| 1653 | 30765 | SAM | Lib | Mudar a descri��o do bot�o compartilhamento na tela de par�metros, par |
-| 1732 | 30792 | SAM | Desc | Colocar op��o para somar o valor das filiais no relatorio demonstrativ |
-| 1715 | 30785 | SAM | Lib | Criar relatorio que conste os clientes que excederam os valores inform |
-| 1734 | 30793 | SAM | Lib | Quando lan�ada uma nota de compra de imobilizado, ao digitar os bens,  |
-| 1700 | 30781 | SAM | Desc | Incluir a op��o de consultar saldos das contas contabeis (F5) que exis |
-| 1729 | 30791 | SAM | Desc | No relatorio de acompanhamento, permitir informar conta sintetica para |
+| 1684 | 30772 | SAM | Lib | MT/PR/RS-Colocar na nova sistem�tica os livros de ICMS P9 do MT e RS e |
 | 1737 | 30795 | SAM | Desc | No relat�rio que � emitido atrav�s do bot�o Rela��o (menu controle/emp |
-| 1720 | 30787 | SAM | Lib | Criar op��o para replicar a  estrutura do DRE, DLPA, DOAR e DMPL. |
-| 1689 | 30775 | SAM | Lib | MT - No livro de entrada ao lado da raz�o social do forncedor sair a I |
+| 1734 | 30793 | SAM | Lib | Quando lan�ada uma nota de compra de imobilizado, ao digitar os bens,  |
+| 1715 | 30785 | SAM | Lib | Criar relatorio que conste os clientes que excederam os valores inform |
 | 1698 | 30779 | SAM | Lib | Fazer com que o cadastro de adi��es e exclus�es do IR e CSLL sejam por |
+| 1729 | 30791 | SAM | Desc | No relatorio de acompanhamento, permitir informar conta sintetica para |
+| 1653 | 30765 | SAM | Lib | Mudar a descri��o do bot�o compartilhamento na tela de par�metros, par |
+| 1718 | 30786 | SAM | Lib | Permitir no cadastro de produtos informar a data � que se referem os s |
+| 1726 | 30789 | SAM | Lib | Se nos par�metros da contabilidade estiver marcado para permitir grava |
 | 1697 | 30778 | SAM | Lib | Ao realizar pagamento de mais de um imposto ao mesmo tempo, o lan�amen |
+| 1727 | 30790 | SAM | Desc | Criar op��o de atalho para chamada de cadastro em modo de inser��o qua |
+| 1720 | 30787 | SAM | Lib | Criar op��o para replicar a  estrutura do DRE, DLPA, DOAR e DMPL. |
+| 1700 | 30781 | SAM | Desc | Incluir a op��o de consultar saldos das contas contabeis (F5) que exis |
+| 1689 | 30775 | SAM | Lib | MT - No livro de entrada ao lado da raz�o social do forncedor sair a I |
+| 1736 | 30794 | SAM | Lib | Ter op��o de baixar ou n�o a parcela a vista de uma nota. |
 | 1655 | 30767 | SAM | Desc | Quando cadastrado um fornecedor/cliente em uma filial e na matriz ja e |
-| 1571 | 30736 | SAM | Lib | No cadastro de fornecedores e clientes permitir cadastrar dois com o m |
-| 1572 | 30737 | SAM | Lib | Em alguns relatorios quando o tempo ultrapassa a 100 minutos, sistema  |
+| 1732 | 30792 | SAM | Desc | Colocar op��o para somar o valor das filiais no relatorio demonstrativ |
+| 1738 | 30796 | SAM | Lib | Ter op��o na concilia��o banc�ria de mostrar somente lan�amentos n�o c |
 | 1576 | 30741 | SAM | Lib | Ao gerar DIPJ gerar os impostos retidos por �rg�o publicos. |
+| 1631 | 30754 | SAM | Lib | MS-Realizar calculo de empresas enquadradas com Estimativa Fixa. |
+| 1550 | 30729 | SAM | Lib | Nos lan�amentos de notas, quando est� marcado a op��o por CNPJ, e for  |
+| 1648 | 30762 | SAM | Lib | Criar o campo bairro no cadastro de fornecedores e clientes. |
+| 1581 | 30744 | SAM | Lib | Disponibilizar o bot�o replicar no cadastro de contas. |
+| 1575 | 30740 | SAM | Lib | Na importa��o de Clientes e fornecedores trazer no final da importa��o |
+| 1621 | 30753 | SAM | Desc | Na importa��o de arquivo texto de clientes e fornecedores n�o apresent |
+| 1572 | 30737 | SAM | Lib | Em alguns relatorios quando o tempo ultrapassa a 100 minutos, sistema  |
+| 1619 | 30752 | SAM | Lib | O sistema est� permitindo colocar data inicial maior que data final. |
+| 1571 | 30736 | SAM | Lib | No cadastro de fornecedores e clientes permitir cadastrar dois com o m |
+| 1642 | 30758 | SAM | Desc | MT - No livro de ICMS no modelo P9, o imposto DIFALI est� saindo somen |
+| 1646 | 30760 | SAM | Lib | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri�� |
 | 1647 | 30761 | SAM | Lib | Criar no cadastro de fornecedores o campo incri��o municipal. |
 | 1579 | 30742 | SAM | Lib | Possibilitar que nas consultas F2 e F3 o sistema interprete tambem os  |
-| 1646 | 30760 | SAM | Lib | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri�� |
-| 1581 | 30744 | SAM | Lib | Disponibilizar o bot�o replicar no cadastro de contas. |
-| 1643 | 30759 | SAM | Lib | MT/RS/PR-Na emiss�o do livro de ICMS normal e P9 ter a op��o de digita |
-| 1648 | 30762 | SAM | Lib | Criar o campo bairro no cadastro de fornecedores e clientes. |
 | 1580 | 30743 | SAM | Lib | PR-Disponibilizar no relat�rio DAE(Estadual)Avulso os campos 18, 19 e  |
-| 1642 | 30758 | SAM | Desc | MT - No livro de ICMS no modelo P9, o imposto DIFALI est� saindo somen |
-| 1621 | 30753 | SAM | Desc | Na importa��o de arquivo texto de clientes e fornecedores n�o apresent |
-| 1550 | 30729 | SAM | Lib | Nos lan�amentos de notas, quando est� marcado a op��o por CNPJ, e for  |
-| 1619 | 30752 | SAM | Lib | O sistema est� permitindo colocar data inicial maior que data final. |
-| 1575 | 30740 | SAM | Lib | Na importa��o de Clientes e fornecedores trazer no final da importa��o |
-| 1631 | 30754 | SAM | Lib | MS-Realizar calculo de empresas enquadradas com Estimativa Fixa. |
-| 1513 | 30717 | SAM | Lib | Criar op��o de Intervalo e Ordem de Departamento, no relatorio cadastr |
+| 1643 | 30759 | SAM | Lib | MT/RS/PR-Na emiss�o do livro de ICMS normal e P9 ter a op��o de digita |
 | 1510 | 30715 | SAM | Lib | No relatorio de concilia��o bancaria, mostrar o saldo final do extrato |
-| 1474 | 30698 | SAM | Lib | Ter uma op��o se deseja ou n�o mostrar a mensagem de ociosidade para o |
-| 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
 | 1470 | 30696 | SAM | Lib | Aumentar o tamanho do campo de % de multa e juros na tela de emiss�o d |
 | 1465 | 30693 | SAM | Lib | Na tela de cadastro de contratos onde diz dia de faturamento deveria d |
+| 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
 | 1473 | 30697 | SAM | Desc | No relat�rio Demonstrativo Mensal ter a op��o de selecionar o indice. |
+| 1474 | 30698 | SAM | Lib | Ter uma op��o se deseja ou n�o mostrar a mensagem de ociosidade para o |
+| 1513 | 30717 | SAM | Lib | Criar op��o de Intervalo e Ordem de Departamento, no relatorio cadastr |
 | 1321 | 30673 | SAM | Lib | Permitir o cadastro de observa��es padr�es que poderiam ser aplicadas  |
-| 1316 | 30670 | SAM | Lib | Alterar tela de sele��o do livro Registro de saidas, para que os campo |
-| 1294 | 30664 | SAM | Desc | Ter op��o no relat�rio Registro de Entradas de imprimir ou n�o a raz�o |
-| 1462 | 30691 | SAM | Desc | O livro LALUR est� saindo no cabe�alho P�gina e o correto � Folha |
-| 1463 | 30692 | SAM | Lib | Quando no acumulador estiver marcado para descriminar natureza para la |
 | 1319 | 30671 | SAM | Lib | Permiti que o usu�rio possa incluir uma tarefa informando a quantidade |
+| 1463 | 30692 | SAM | Lib | Quando no acumulador estiver marcado para descriminar natureza para la |
+| 1294 | 30664 | SAM | Desc | Ter op��o no relat�rio Registro de Entradas de imprimir ou n�o a raz�o |
+| 1316 | 30670 | SAM | Lib | Alterar tela de sele��o do livro Registro de saidas, para que os campo |
 | 1337 | 30676 | SAM | Lib | No cadastro de contrato mudar os campos tipo de contrato e evento hono |
+| 1462 | 30691 | SAM | Desc | O livro LALUR est� saindo no cabe�alho P�gina e o correto � Folha |
+| 1198 | 30624 | SAM | Lib | Existe a op��o de informar o Nosso n� na impress�o do bloqueto, mas pa |
+| 1184 | 30617 | SAM | Lib | No final do relatorio Extrato de Clientes, ter um Total Geral. |
 | 1185 | 30618 | SAM | Lib | No relatorio extrato de clientes n�o emitir clientes sem movimento no  |
 | 1223 | 30636 | SAM | Desc | N�o permitir cadastrar lan�amentos padr�es com somente uma conta defin |
-| 1250 | 30645 | SAM | Desc | Criar um relat�rio com as colunas M�s - Receita Acumulada - Receita do |
-| 1229 | 30639 | SAM | Desc | Exibir mensagem de alerta, quando for gravar uma nota e os valores de  |
-| 1232 | 30642 | SAM | Desc | Disponibilizar na Configura��o de historico, na guia pagto parcelas a  |
-| 1221 | 30634 | SAM | Lib | No relatorio previs�o para pagamento, sistema deve considerar o valor  |
-| 1184 | 30617 | SAM | Lib | No final do relatorio Extrato de Clientes, ter um Total Geral. |
-| 1213 | 30630 | SAM | Lib | RS-Criar ajuste para que some somente no campo 02(Creditos por Importa |
+| 1212 | 30629 | SAM | Desc | No relatorio Informativos/Resumos/Municio a descri��o est� Entrada de  |
+| 1228 | 30638 | SAM | Desc | Disponibilizar o campo observa��o digitada no lan�amento das notas, na |
 | 1224 | 30637 | SAM | Lib | Na tela do Cadastro de Empresas em + Dados, na guia Respons�vel Legal, |
+| 1231 | 30641 | SAM | Lib | Ter a op��o nos relatorios de contas a pagar e receber de informar uma |
+| 1213 | 30630 | SAM | Lib | RS-Criar ajuste para que some somente no campo 02(Creditos por Importa |
+| 1249 | 30644 | SAM | Lib | No cadastro de contrato, quando � editado ter op��o da consulta F2 par |
+| 1233 | 30643 | SAM | Desc | No relatorio resumo dos impostos, discriminar as bases por mes quando  |
+| 1221 | 30634 | SAM | Lib | No relatorio previs�o para pagamento, sistema deve considerar o valor  |
+| 1229 | 30639 | SAM | Desc | Exibir mensagem de alerta, quando for gravar uma nota e os valores de  |
+| 1250 | 30645 | SAM | Desc | Criar um relat�rio com as colunas M�s - Receita Acumulada - Receita do |
+| 1268 | 30654 | SAM | Lib | Gravar o caminho informado de todos os informativos gerados pelo siste |
 | 1230 | 30640 | SAM | Desc | Criar op��o para quando imprimir o livro de ISS no campo classifica��o |
 | 1218 | 30633 | SAM | Desc | Ter uma op��o para marcar no ato da emiss�o do Livro de ISS para emiti |
-| 1231 | 30641 | SAM | Lib | Ter a op��o nos relatorios de contas a pagar e receber de informar uma |
-| 1268 | 30654 | SAM | Lib | Gravar o caminho informado de todos os informativos gerados pelo siste |
-| 1198 | 30624 | SAM | Lib | Existe a op��o de informar o Nosso n� na impress�o do bloqueto, mas pa |
-| 1212 | 30629 | SAM | Desc | No relatorio Informativos/Resumos/Municio a descri��o est� Entrada de  |
-| 1233 | 30643 | SAM | Desc | No relatorio resumo dos impostos, discriminar as bases por mes quando  |
-| 1228 | 30638 | SAM | Desc | Disponibilizar o campo observa��o digitada no lan�amento das notas, na |
-| 1249 | 30644 | SAM | Lib | No cadastro de contrato, quando � editado ter op��o da consulta F2 par |
 | 1251 | 30646 | SAM | Lib | Ter op��o de reajuste proporcional dos contratos. |
-| 1140 | 30600 | SAM | Lib | Fazer com que o sistema regere automaticamente o lan�amento contabil d |
-| 1134 | 30599 | SAM | Lib | Importar os valores dos impostos da escrita fiscal para o sistema Novo |
-| 1179 | 30613 | SAM | Lib | Quando efetuar um recebimento com valor de juros,multa e desconto, sis |
-| 1178 | 30612 | SAM | Lib | Ao excluir um recebimento com adiantamento, o sistema deve excluir tam |
+| 1232 | 30642 | SAM | Desc | Disponibilizar na Configura��o de historico, na guia pagto parcelas a  |
+| 1102 | 30590 | SAM | Lib | Implementar Modelo Deskjet para guia de ISS. |
 | 1122 | 30592 | SAM | Lib | Criar uma nova guia nos Par�metros chamada Apura��o, que deve conter t |
+| 1178 | 30612 | SAM | Lib | Ao excluir um recebimento com adiantamento, o sistema deve excluir tam |
+| 1134 | 30599 | SAM | Lib | Importar os valores dos impostos da escrita fiscal para o sistema Novo |
+| 1140 | 30600 | SAM | Lib | Fazer com que o sistema regere automaticamente o lan�amento contabil d |
+| 1179 | 30613 | SAM | Lib | Quando efetuar um recebimento com valor de juros,multa e desconto, sis |
 | 1183 | 30616 | SAM | Lib | No relatorio Extrato de Clientes criar op��o para sar analitico, discr |
 | 1130 | 30597 | SAM | Lib | Nos lan�amentos cont�beis do Honor�rios permitir informar o c�digo do  |
-| 1102 | 30590 | SAM | Lib | Implementar Modelo Deskjet para guia de ISS. |
-| 992 | 30562 | SAM | Lib | Mudar a tela emiss�o de protocolo fazer a sele��o de itens do protolo  |
-| 978 | 30552 | SAM | Lib | Quando utilizo no hist�rico as vari�veis e nas op��es est� marcado par |
-| 996 | 30564 | SAM | Lib | O sistema s� abre a op��o para ECF quando chega no �ltimo seguimento d |
-| 1009 | 30567 | SAM | Lib | Ao cadastrar uma empresa o sistema deveria realizar a valida��o da Ins |
-| 969 | 30551 | SAM | Lib | Quando digito uma cta invalida na contabilidade e volto para digitar a |
 | 1012 | 30570 | SAM | Lib | Aumentar o Campo Endere�o no Cadastro de Empresas em + Dados na op��o  |
+| 1009 | 30567 | SAM | Lib | Ao cadastrar uma empresa o sistema deveria realizar a valida��o da Ins |
 | 986 | 30556 | SAM | Lib | Gravar as �ltimas sele��es utilizadas na emiss�o de todos os Livros. |
+| 969 | 30551 | SAM | Lib | Quando digito uma cta invalida na contabilidade e volto para digitar a |
 | 988 | 30558 | SAM | Lib | Ao lan�ar um Cupom Fiscal, e na tela da Nota, no campo "Isentos" do IC |
+| 992 | 30562 | SAM | Lib | Mudar a tela emiss�o de protocolo fazer a sele��o de itens do protolo  |
+| 996 | 30564 | SAM | Lib | O sistema s� abre a op��o para ECF quando chega no �ltimo seguimento d |
+| 978 | 30552 | SAM | Lib | Quando utilizo no hist�rico as vari�veis e nas op��es est� marcado par |
 | 990 | 30560 | SAM | Lib | Criar cadastro de Centro de Custos, com op��o de dividir os lan�amento |
-| 959 | 30548 | SAM | Lib | Incluir utilit�rio para altera��o de lan�amentos cont�beis em grupo. E |
-| 906 | 30535 | SAM | Lib | Criar op��o para importar extratos banc�rios via arquivo txt. |
-| 905 | 30534 | SAM | Lib | Em Baixas de parcelas quando o valor for a menor que o valor principal |
-| 883 | 30520 | SAM | Lib | Quando estorna uma baixa com adiantamento a baixa estorna correto mas  |
-| 951 | 30542 | SAM | Lib | Criar op��o no gr�fico de Custo/Beneficio para omitir coluna outros. |
-| 904 | 30533 | SAM | Desc | Ter possibilidade de realizar calculo de varios impostos estaduais ou  |
-| 899 | 30529 | SAM | Lib | Cliente de Tocantins com CNPJ 38.127.916/0001-80 com Inscri��o Estadua |
-| 960 | 30549 | SAM | Lib | Habilitar a possibilidade de Importar estruturas DLPA e DOAR de outra  |
-| 934 | 30540 | SAM | Lib | Quando baixar uma duplicata com adiantamento ao mesmo tempo, o sistema |
-| 903 | 30532 | SAM | Lib | Na op��o - movimento - outros - impostos lan�ados, se no ajuste deixam |
-| 889 | 30524 | SAM | Lib | Se for calculado um imposto de 8/00, por exemplo, e a taxa Selic estiv |
-| 901 | 30530 | SAM | Lib | Quando se est� comprando um bem via a escrita fiscal, quando abre a te |
+| 955 | 30544 | SAM | Lib | Permitir cadastrar mais de uma vez o mesmo banco. |
 | 887 | 30523 | SAM | Lib | Em Acompanhamento/Servi�os ter a op��o de ordenar o relat�rio por Muni |
-| 922 | 30537 | SAM | Lib | Permitir alterar a Taxa de Deprecia��o Alternativa no Cadastro de bens |
+| 905 | 30534 | SAM | Lib | Em Baixas de parcelas quando o valor for a menor que o valor principal |
+| 960 | 30549 | SAM | Lib | Habilitar a possibilidade de Importar estruturas DLPA e DOAR de outra  |
 | 968 | 30550 | SAM | Lib | Dar op��o de escolher quais filiais queremos consolidar para emiss�o d |
 | 891 | 30526 | SAM | Lib | Quando existe uma redu��o na base de calculo de ICMS para Nota Fiscal  |
-| 907 | 30536 | SAM | Lib | Criar opcao para gerar lancamentos contabeis do valor calculado de IRP |
-| 955 | 30544 | SAM | Lib | Permitir cadastrar mais de uma vez o mesmo banco. |
 | 954 | 30543 | SAM | Lib | Quando clicar a consulta F6, trazer so o periodo que esta definido no  |
+| 906 | 30535 | SAM | Lib | Criar op��o para importar extratos banc�rios via arquivo txt. |
+| 951 | 30542 | SAM | Lib | Criar op��o no gr�fico de Custo/Beneficio para omitir coluna outros. |
+| 889 | 30524 | SAM | Lib | Se for calculado um imposto de 8/00, por exemplo, e a taxa Selic estiv |
+| 899 | 30529 | SAM | Lib | Cliente de Tocantins com CNPJ 38.127.916/0001-80 com Inscri��o Estadua |
 | 957 | 30546 | SAM | Lib | Criar uma maneira de colocar um hist�rico na baixa das parcelas para p |
-| 792 | 30495 | SAM | Lib | N�o permitir fazer um adiantamento se o cliente estiver com parcelas e |
-| 842 | 30506 | SAM | Lib | No acumulador existe a op��o de zerar a aliquota ou informar uma aliqu |
-| 807 | 30500 | SAM | Lib | Se nas op��es estiver marcado, lan�amentos por mascara, sistema est� p |
-| 845 | 30509 | SAM | Lib | Criar um relatorio,Extrato de Clientes, onde possa imprimir o saldo an |
-| 863 | 30516 | SAM | Lib | Nos lay-outs de importa��o de notas n�o existe o campo contador de rei |
-| 781 | 30493 | SAM | Desc | Quando colocarmos que � um imposto e depende do sistema, como exemplo  |
-| 830 | 30504 | SAM | Lib | Fazer que o sistema da Dom�nio gere var�aveis que possam ser utilizada |
-| 846 | 30510 | SAM | Lib | Quando emitir O livro de entradas com a op��o de Resumo por natureza,  |
-| 776 | 30490 | SAM | Lib | Relatorio Resumo dos Impostos, fazer um quebra para totalizar por impo |
+| 883 | 30520 | SAM | Lib | Quando estorna uma baixa com adiantamento a baixa estorna correto mas  |
+| 901 | 30530 | SAM | Lib | Quando se est� comprando um bem via a escrita fiscal, quando abre a te |
+| 959 | 30548 | SAM | Lib | Incluir utilit�rio para altera��o de lan�amentos cont�beis em grupo. E |
+| 903 | 30532 | SAM | Lib | Na op��o - movimento - outros - impostos lan�ados, se no ajuste deixam |
+| 934 | 30540 | SAM | Lib | Quando baixar uma duplicata com adiantamento ao mesmo tempo, o sistema |
+| 904 | 30533 | SAM | Desc | Ter possibilidade de realizar calculo de varios impostos estaduais ou  |
+| 907 | 30536 | SAM | Lib | Criar opcao para gerar lancamentos contabeis do valor calculado de IRP |
+| 922 | 30537 | SAM | Lib | Permitir alterar a Taxa de Deprecia��o Alternativa no Cadastro de bens |
 | 739 | 30484 | SAM | Lib | No faturamento avisar os contratos que possuem reajustes vencidos. |
+| 830 | 30504 | SAM | Lib | Fazer que o sistema da Dom�nio gere var�aveis que possam ser utilizada |
 | 793 | 30496 | SAM | Lib | Ao fazer um adiantamento e n�o gerar lan�amentos, os sistema grava sua |
-| 867 | 30517 | SAM | Lib | Sistema n�o est� permitindo alterar lan�amentos seguimentados de ECF,  |
+| 842 | 30506 | SAM | Lib | No acumulador existe a op��o de zerar a aliquota ou informar uma aliqu |
+| 757 | 30488 | SAM | Lib | No ajuste 31 (cr�ditos por transfer�ncia da mesma empresa) torna-se de |
+| 778 | 30491 | SAM | Lib | Criar uma op��o para puxar automaticamente o cadastro de um cliente pa |
 | 783 | 30494 | SAM | Lib | Sistema n�o est� obedecendo data de vencimento de IPI decendial cfe. c |
+| 863 | 30516 | SAM | Lib | Nos lay-outs de importa��o de notas n�o existe o campo contador de rei |
+| 845 | 30509 | SAM | Lib | Criar um relatorio,Extrato de Clientes, onde possa imprimir o saldo an |
+| 772 | 30489 | SAM | Desc | Gerar arquivo Sintegra separado por opera��es por Estado. |
+| 776 | 30490 | SAM | Lib | Relatorio Resumo dos Impostos, fazer um quebra para totalizar por impo |
+| 810 | 30501 | SAM | Lib | Criar uma op��o no cadastro do acumulador e para marcar que refere-se  |
+| 846 | 30510 | SAM | Lib | Quando emitir O livro de entradas com a op��o de Resumo por natureza,  |
+| 807 | 30500 | SAM | Lib | Se nas op��es estiver marcado, lan�amentos por mascara, sistema est� p |
+| 781 | 30493 | SAM | Desc | Quando colocarmos que � um imposto e depende do sistema, como exemplo  |
 | 844 | 30508 | SAM | Lib | No lan�amento de estoque, quando informo o codigo do produto, alterar  |
 | 798 | 30498 | SAM | Lib | O sistema n�o tem a op��o de finalidade da apresenta��o � 3 (retifica� |
-| 778 | 30491 | SAM | Lib | Criar uma op��o para puxar automaticamente o cadastro de um cliente pa |
-| 810 | 30501 | SAM | Lib | Criar uma op��o no cadastro do acumulador e para marcar que refere-se  |
-| 772 | 30489 | SAM | Desc | Gerar arquivo Sintegra separado por opera��es por Estado. |
-| 757 | 30488 | SAM | Lib | No ajuste 31 (cr�ditos por transfer�ncia da mesma empresa) torna-se de |
-| 713 | 30478 | SAM | Lib | Liberar este realt�rio DOAR para ser reconfigurado pelo gerador de rel |
+| 792 | 30495 | SAM | Lib | N�o permitir fazer um adiantamento se o cliente estiver com parcelas e |
+| 867 | 30517 | SAM | Lib | Sistema n�o est� permitindo alterar lan�amentos seguimentados de ECF,  |
+| 721 | 30480 | SAM | Lib | No Cadastro de Clientes quando vai cadastrar um cliente no campo do es |
+| 722 | 30481 | SAM | Lib | quando a empresa tiver v�rios fornecedores (Matriz e Filiais) o sistem |
 | 714 | 30479 | SAM | Lib | Ter uma op��o no acumulador de definir para qual c�digo de Natureza se |
 | 706 | 30472 | SAM | Lib | O sistema controla a digita��o de notas de mesmo n�mero, informando es |
-| 721 | 30480 | SAM | Lib | No Cadastro de Clientes quando vai cadastrar um cliente no campo do es |
 | 709 | 30475 | SAM | Lib | Implementar segmenta��o aliquota ISS, igual foi feito com o icms. |
-| 722 | 30481 | SAM | Lib | quando a empresa tiver v�rios fornecedores (Matriz e Filiais) o sistem |
-| 677 | 30465 | SAM | Lib | Incluir o imposto n� 17 (PIS-MP66) na sele��o dos impostos em "Control |
-| 672 | 30464 | SAM | Desc | Existe Espa�o entre o Cabe�alho e os registro das Notas Fiscais nos Li |
-| 645 | 30457 | SAM | Lib | Ter op��o no relatorio resumo dos impostos, de ser sintetico(como sai  |
-| 668 | 30462 | SAM | Lib | Poderia ter um campo espec�fico para informar o valor do IRRF. Talvez  |
-| 655 | 30460 | SAM | Lib | Ao gerar duplicatas por exemplo de R$ 1.000,00 (total) e a primeira pa |
-| 699 | 30471 | SAM | Lib | No relat�rio de faturamento destacar os impostos deduzidos no faturame |
-| 650 | 30458 | SAM | Lib | Contabilizar o tempo gasto por funcion�rio na utiliza��o dos m�dulos P |
+| 713 | 30478 | SAM | Lib | Liberar este realt�rio DOAR para ser reconfigurado pelo gerador de rel |
 | 643 | 30456 | SAM | Desc | Criar o mesmo relatorios que existia no honorarios antigo, em Relatori |
+| 668 | 30462 | SAM | Lib | Poderia ter um campo espec�fico para informar o valor do IRRF. Talvez  |
+| 672 | 30464 | SAM | Desc | Existe Espa�o entre o Cabe�alho e os registro das Notas Fiscais nos Li |
+| 677 | 30465 | SAM | Lib | Incluir o imposto n� 17 (PIS-MP66) na sele��o dos impostos em "Control |
+| 699 | 30471 | SAM | Lib | No relat�rio de faturamento destacar os impostos deduzidos no faturame |
+| 645 | 30457 | SAM | Lib | Ter op��o no relatorio resumo dos impostos, de ser sintetico(como sai  |
+| 655 | 30460 | SAM | Lib | Ao gerar duplicatas por exemplo de R$ 1.000,00 (total) e a primeira pa |
 | 651 | 30459 | SAM | Desc | Quando se faz uma compra de imobilizado com ICMS pelo acumulador a con |
-| 566 | 30427 | SAM | Lib | Na emiss�o da DARF simples avulso, no campo da data, o ano est� saindo |
-| 564 | 30425 | SAM | Lib | em Utilit�rios -> Limpeza, a sele��o dos registros deveria ser tamb�m  |
-| 600 | 30446 | SAM | Lib | Ao gerar DCTF gerar o IRRF e PIS s/ folha de pagamento. |
-| 588 | 30440 | SAM | Lib | Criar op��o de resumido, no relatorio Cliente tempo Gasto, onde apare� |
-| 597 | 30443 | SAM | Lib | Criar op��o para impress�o do livro do IPI por dec�ndio. |
-| 612 | 30450 | SAM | Lib | RS: Quando  lan�amos notas de venda fora do estabelecimento e apenas a |
-| 604 | 30447 | SAM | Lib | Importar tamb�m o codigo do municipio no layout de notas fiscais saida |
-| 614 | 30451 | SAM | Desc | Incluir no boleto impostos incidentes no faturamento, como IRRF,  como |
-| 570 | 30430 | SAM | Desc | Na consulta de saldo em tela, icone "lupa" aparece todas as informa��e |
-| 577 | 30434 | SAM | Lib | Gerar Dirf pela Escrita Fiscal das notas onde foram lan�ados o IRRF |
-| 635 | 30455 | SAM | Lib | Criar um relat�rio somente com o valor demonstrando o faturamento, ou  |
-| 572 | 30432 | SAM | Lib | No sistema a partir da vers�o 6D deixou de aparecer a mensagem que ao  |
-| 589 | 30441 | SAM | Lib | O cadastro de clientes e fornecedores permite o cadastramento com 7 d� |
-| 585 | 30438 | SAM | Lib | Criar op��o para exclus�o de historicos padr�es. |
+| 650 | 30458 | SAM | Lib | Contabilizar o tempo gasto por funcion�rio na utiliza��o dos m�dulos P |
 | 610 | 30449 | SAM | Lib | Habilitar campos da guia contabilidade em Movimentos/Pagamentos de Imp |
+| 588 | 30440 | SAM | Lib | Criar op��o de resumido, no relatorio Cliente tempo Gasto, onde apare� |
+| 612 | 30450 | SAM | Lib | RS: Quando  lan�amos notas de venda fora do estabelecimento e apenas a |
+| 598 | 30444 | SAM | Desc | Possibilidade de haver nas variaveis da configuracao dos historicos qu |
+| 577 | 30434 | SAM | Lib | Gerar Dirf pela Escrita Fiscal das notas onde foram lan�ados o IRRF |
+| 570 | 30430 | SAM | Desc | Na consulta de saldo em tela, icone "lupa" aparece todas as informa��e |
+| 564 | 30425 | SAM | Lib | em Utilit�rios -> Limpeza, a sele��o dos registros deveria ser tamb�m  |
+| 572 | 30432 | SAM | Lib | No sistema a partir da vers�o 6D deixou de aparecer a mensagem que ao  |
+| 597 | 30443 | SAM | Lib | Criar op��o para impress�o do livro do IPI por dec�ndio. |
+| 582 | 30437 | SAM | Lib | Na rotina de regerar lan�amentos contabeis criar op��o de impostos lan |
+| 566 | 30427 | SAM | Lib | Na emiss�o da DARF simples avulso, no campo da data, o ano est� saindo |
+| 615 | 30452 | SAM | Lib | No Utilit�rios Regerar quando seleciono um periodo grande, o sistema a |
+| 589 | 30441 | SAM | Lib | O cadastro de clientes e fornecedores permite o cadastramento com 7 d� |
+| 604 | 30447 | SAM | Lib | Importar tamb�m o codigo do municipio no layout de notas fiscais saida |
 | 565 | 30426 | SAM | Lib | Incluir modelo darf/ trimestral/matricial.Para formularios branco. |
+| 635 | 30455 | SAM | Lib | Criar um relat�rio somente com o valor demonstrando o faturamento, ou  |
+| 586 | 30439 | SAM | Desc | Incluir op��o no cadastro de contador para Pessoa Jur�dica. |
+| 600 | 30446 | SAM | Lib | Ao gerar DCTF gerar o IRRF e PIS s/ folha de pagamento. |
+| 585 | 30438 | SAM | Lib | Criar op��o para exclus�o de historicos padr�es. |
+| 567 | 30428 | SAM | Lib | Incluir o CNPJ e Inscri��o Estadual no relatorio de  Impostos Calculad |
 | 580 | 30436 | SAM | Lib | Criar uma rotina onde pode ser configurado lan�amentos habituais. Exem |
 | 618 | 30453 | SAM | Lib | Criar rotina que possibilite o cadastro de tabelas municipais para  a  |
-| 567 | 30428 | SAM | Lib | Incluir o CNPJ e Inscri��o Estadual no relatorio de  Impostos Calculad |
-| 598 | 30444 | SAM | Desc | Possibilidade de haver nas variaveis da configuracao dos historicos qu |
-| 582 | 30437 | SAM | Lib | Na rotina de regerar lan�amentos contabeis criar op��o de impostos lan |
-| 615 | 30452 | SAM | Lib | No Utilit�rios Regerar quando seleciono um periodo grande, o sistema a |
+| 614 | 30451 | SAM | Desc | Incluir no boleto impostos incidentes no faturamento, como IRRF,  como |
 | 561 | 30424 | SAM | Desc | Tenho uma nota fiscal com duas bases de ICMS ou seja ex:1500 a 12% e 1 |
-| 586 | 30439 | SAM | Desc | Incluir op��o no cadastro de contador para Pessoa Jur�dica. |
-| 546 | 30414 | SAM | Lib | Ao Consultar Produtos sendo este referente a veiculos, a consulta esta |
-| 525 | 30405 | SAM | Lib | Quando fa�o uma transferencia de um bens de um centro de custo para ou |
-| 528 | 30407 | SAM | Lib | Este relat�rio, modelo completo + s�cios, n�o possibilita colocar em o |
-| 513 | 30402 | SAM | Lib | Criar vig�ncia no cadastro de par�metros, impostos e acumuladores. |
+| 555 | 30420 | SAM | Desc | Desenvolver o Livro de Registro de Duplicatas |
 | 516 | 30404 | SAM | Lib | Calcular todos os impostos federais centralizados na matriz, com op��o |
+| 528 | 30407 | SAM | Lib | Este relat�rio, modelo completo + s�cios, n�o possibilita colocar em o |
+| 548 | 30416 | SAM | Lib | Ver a possibilidade de incluir no sistema as seguintes formulas de coe |
+| 554 | 30419 | SAM | Desc | Possibilitar e emiss�odos livros multi-empresa. |
+| 542 | 30411 | SAM | Desc | No relatorio resumo dos impostos, PIS66 - seje demonstrados os debitos |
+| 488 | 30400 | SAM | Lib | Inclus�o do campo "Nome fantasia" no cadastro da empresa.Este � um dad |
+| 546 | 30414 | SAM | Lib | Ao Consultar Produtos sendo este referente a veiculos, a consulta esta |
 | 515 | 30403 | SAM | Lib | Criar op��o no cadastro de cliente para dizer se ele � um cliente even |
+| 560 | 30423 | SAM | Desc | Emissao do Relatorio resumo dos impostos multi_empresas. |
+| 513 | 30402 | SAM | Lib | Criar vig�ncia no cadastro de par�metros, impostos e acumuladores. |
+| 544 | 30413 | SAM | Lib | Controlar acesso de usu�rios por sistema e por empresa. |
+| 543 | 30412 | SAM | Lib | Ao buscar as notas fiscais de sa�da, localizamos atrav�s das setas (<< |
+| 525 | 30405 | SAM | Lib | Quando fa�o uma transferencia de um bens de um centro de custo para ou |
+| 526 | 30406 | SAM | Lib | Criar op��o de contabilizar automaticamente ao importar um extrato ban |
 | 559 | 30422 | SAM | Lib | O sistema atualmente est� permitindo fazer lan�amentos pelas filiais q |
 | 553 | 30418 | SAM | Lib | Quando se lan�a uma nota fiscal de compra de imobilizado e nesta nota  |
-| 560 | 30423 | SAM | Desc | Emissao do Relatorio resumo dos impostos multi_empresas. |
-| 544 | 30413 | SAM | Lib | Controlar acesso de usu�rios por sistema e por empresa. |
-| 488 | 30400 | SAM | Lib | Inclus�o do campo "Nome fantasia" no cadastro da empresa.Este � um dad |
-| 548 | 30416 | SAM | Lib | Ver a possibilidade de incluir no sistema as seguintes formulas de coe |
-| 526 | 30406 | SAM | Lib | Criar op��o de contabilizar automaticamente ao importar um extrato ban |
-| 543 | 30412 | SAM | Lib | Ao buscar as notas fiscais de sa�da, localizamos atrav�s das setas (<< |
-| 554 | 30419 | SAM | Desc | Possibilitar e emiss�odos livros multi-empresa. |
-| 555 | 30420 | SAM | Desc | Desenvolver o Livro de Registro de Duplicatas |
-| 542 | 30411 | SAM | Desc | No relatorio resumo dos impostos, PIS66 - seje demonstrados os debitos |
-| 475 | 30398 | SAM | Lib | Quando se emite o relatorio cadastral de bens, a descri�ao dos bens (q |
-| 443 | 30396 | SAM | Lib | Permitir fazer reajuste apenas para alguns contratos que s�o listados  |
-| 440 | 30394 | SAM | Lib | Criar uma op��o para excluir reajustes de contrato. |
-| 401 | 30389 | SAM | Lib | Desenvolver um novo sistema de honor�rios, que possua controle de cont |
-| 400 | 30388 | SAM | Lib | Ter op��o de informar o percentual de juros e multas por atraso e ter  |
 | 487 | 30399 | SAM | Lib | IMPORTA��O DAS EMPRESAS CADASTRADAS NO SISTEMA DOMSIS PARA SISTEMA GIA |
-| 442 | 30395 | SAM | Lib | N�o permitir alterar o valor do contrato no cadastro se j� existir fat |
+| 440 | 30394 | SAM | Lib | Criar uma op��o para excluir reajustes de contrato. |
+| 400 | 30388 | SAM | Lib | Ter op��o de informar o percentual de juros e multas por atraso e ter  |
+| 443 | 30396 | SAM | Lib | Permitir fazer reajuste apenas para alguns contratos que s�o listados  |
+| 401 | 30389 | SAM | Lib | Desenvolver um novo sistema de honor�rios, que possua controle de cont |
+| 475 | 30398 | SAM | Lib | Quando se emite o relatorio cadastral de bens, a descri�ao dos bens (q |
 | 444 | 30397 | SAM | Lib | Quando � feito reajuste de contrato que n�o seja por percentual, e sim |
-| 398 | 30386 | SAM | Lib | Nas notas fiscais emitidas pelos escrit�rios cont�beis, existe o desta |
+| 442 | 30395 | SAM | Lib | N�o permitir alterar o valor do contrato no cadastro se j� existir fat |
 | 368 | 30378 | SAM | Desc | SC: Aumentar o numero de campos de Municipios para lan�amento no Quadr |
-| 399 | 30387 | SAM | Lib | Permitir ao sistema imprimir os bloquetos com c�digo de barras para De |
-| 382 | 30379 | SAM | Lib | Nos Par�metros da Escrita Fiscal, na guia Personaliza, a �ltima op��o  |
 | 390 | 30383 | SAM | Lib | Incluir uma op��o para imprimir contratos de presta��o de servi�os a s |
+| 382 | 30379 | SAM | Lib | Nos Par�metros da Escrita Fiscal, na guia Personaliza, a �ltima op��o  |
 | 387 | 30381 | SAM | Lib | Restringir a  exclus�o de lan�amentos de outros sistemas, caso n�o est |
+| 399 | 30387 | SAM | Lib | Permitir ao sistema imprimir os bloquetos com c�digo de barras para De |
 | 309 | 30375 | SAM | Desc | No sistema existe a op��o Relat�rio / Estoque / Movimento Individual.  |
 | 299 | 30374 | SAM | Lib | No lan�amento de entrada de imobilizado o sistema permite cadastrar be |
-| 259 | 30364 | SAM | Lib | Quando utilizar a op��o de REPLICAR dar um aviso que ir� sobrepor o qu |
-| 256 | 30361 | SAM | Lib | Realizar na apura��o o lan�amento de fechamento para PIS e COFINS n�o  |
+| 398 | 30386 | SAM | Lib | Nas notas fiscais emitidas pelos escrit�rios cont�beis, existe o desta |
 | 195 | 30351 | SAM | Lib | Permitir informar nos acumuladores al�quotas pre-definidas para que qu |
+| 256 | 30361 | SAM | Lib | Realizar na apura��o o lan�amento de fechamento para PIS e COFINS n�o  |
+| 259 | 30364 | SAM | Lib | Quando utilizar a op��o de REPLICAR dar um aviso que ir� sobrepor o qu |
 | 100 | 30326 | SAM | Lib | Criar um cadastro de observa��es para serem informadas no lan�amento d |
-| 105 | 30329 | SAM | Lib | Na rotina de exporta��o de lan�amentos de uma contabilidade para outra |
-| 99 | 30325 | SAM | Desc | Em todas as guias de recolhimento de impostos nas quais traz campo par |
 | 102 | 30327 | SAM | Lib | SE: Fazer o informativo DIC em arquivo e relat�rio, para o estado do S |
-| 108 | 30330 | SAM | Desc | Calcular IRPJ e Contr. Social lucro real e estimado, permitindo import |
+| 105 | 30329 | SAM | Lib | Na rotina de exporta��o de lan�amentos de uma contabilidade para outra |
 | 109 | 30331 | SAM | Lib | Incluir rotina de pagamento de impostos no Lalur. |
-| 98 | 30324 | SAM | Lib | Op��o para somar valor das filiais no resumo dos impostos (mensal e tr |
-| 94 | 30321 | SAM | Lib | Incluir no Patrim�nio configura��o de hist�ricos para os lan�amentos a |
-| 97 | 30323 | SAM | Lib | No relat�rio Resumo - Trimestral, antes do campo Base de c�lculo dever |
+| 108 | 30330 | SAM | Desc | Calcular IRPJ e Contr. Social lucro real e estimado, permitindo import |
+| 99 | 30325 | SAM | Desc | Em todas as guias de recolhimento de impostos nas quais traz campo par |
 | 95 | 30322 | SAM | Desc | Nos livros de saidas (verificar entradas), o total geral da substitui� |
+| 94 | 30321 | SAM | Lib | Incluir no Patrim�nio configura��o de hist�ricos para os lan�amentos a |
+| 98 | 30324 | SAM | Lib | Op��o para somar valor das filiais no resumo dos impostos (mensal e tr |
+| 97 | 30323 | SAM | Lib | No relat�rio Resumo - Trimestral, antes do campo Base de c�lculo dever |
 | 92 | 30320 | SAM | Lib | TO: A partir de abril/2002 a guia para recolhimento de ICMS de Tocanti |
-| 81 | 30311 | SAM | Lib | Integrar o Atualizar com a Folha permitindo importar valores de INSS,  |
-| 80 | 30310 | SAM | Desc | Incluir o c�lculo de ICMS em atraso para o Estado do RS. |
-| 53 | 30308 | SAM | Desc | Colocar no acumulador a possibilidade de se preencher um campo com a a |
-| 87 | 30317 | SAM | Lib | Como existe relat�rio de CS e IRPJ com op��o de real ou estimado, seri |
 | 86 | 30316 | SAM | Desc | No livro de ISS modelo normal sempre saem 2 folhas mesmo que sobre esp |
+| 80 | 30310 | SAM | Desc | Incluir o c�lculo de ICMS em atraso para o Estado do RS. |
+| 82 | 30312 | SAM | Lib | Colocar op��o nos eventos do Honor�rios para dizer se o mesmo comp�e o |
+| 87 | 30317 | SAM | Lib | Como existe relat�rio de CS e IRPJ com op��o de real ou estimado, seri |
+| 53 | 30308 | SAM | Desc | Colocar no acumulador a possibilidade de se preencher um campo com a a |
+| 84 | 30314 | SAM | Lib | Ao lan�ar evento calculado o sistema calcula sobre todos os outros. Ex |
 | 50 | 30306 | SAM | Lib | No relat�rio acompanhamento de sa�das ou entrada por acumulador, inclu |
 | 85 | 30315 | SAM | Desc | Fazer o relat�rio da DIEF em modo texto para emiss�o em impressora mat |
-| 82 | 30312 | SAM | Lib | Colocar op��o nos eventos do Honor�rios para dizer se o mesmo comp�e o |
-| 84 | 30314 | SAM | Lib | Ao lan�ar evento calculado o sistema calcula sobre todos os outros. Ex |
-| 37 | 30299 | SAM | Lib | Clientes que tem suas cobran�as vinculadas num determinado Banco, gera |
+| 81 | 30311 | SAM | Lib | Integrar o Atualizar com a Folha permitindo importar valores de INSS,  |
 | 45 | 30302 | SAM | Lib | Nos gr�ficos de saldos da consulta F6 o sistema sempre gera o valor ac |
-| 40 | 30300 | SAM | Lib | O Administrar hoje mostra em tarefas realizadas os lan�amentos de um d |
 | 46 | 30303 | SAM | Lib | Incluir op��o no livro raz�o de especificar o n�mero m�ximo folhas por |
+| 40 | 30300 | SAM | Lib | O Administrar hoje mostra em tarefas realizadas os lan�amentos de um d |
+| 37 | 30299 | SAM | Lib | Clientes que tem suas cobran�as vinculadas num determinado Banco, gera |
 | 35 | 30297 | SAM | Lib | Ao tentar cadastrar uma inscri��o estadual iniciando com 241..., o sis |
 | 31 | 30294 | SAM | Desc | Em arquivo\ lan�amentos, implement\aar o CLP. Digita-se um c�digo e au |
-| 29 | 30292 | SAM | Desc | Quando � lan�ado cupom fiscal seguimentado, para cada seguimento o sis |
 | 30 | 30293 | SAM | Lib | Desenvolver cadastro de remetente/destinat�rio. |
+| 29 | 30292 | SAM | Desc | Quando � lan�ado cupom fiscal seguimentado, para cada seguimento o sis |
 | 18 | 30290 | SAM | Lib | Na emiss�o do livro de entradas e sa�das gravar sempre as �ltimas sele |
 | 24 | 30291 | SAM | Desc | Aumentar o espa�o para observa��es , em MOVIMENTOS // OUTROS // IMPOST |
 | 17 | 30289 | SAM | Lib | Desenvolver uma guia para recolhimento de ICMS avulsa para o Estado de |
 | 15 | 30288 | SAM | Desc | Tem acontecido com certa frequencia, situa��es de clientes lan�arem ac |
-| 12 | 30286 | SAM | Lib | O sistema s� faz a valida��o da natureza quando passa por este campo s |
 | 11 | 30285 | SAM | Lib | Ao contabilizar os impostos incidentes sobre as NF de entrada e sa�da, |
-| 8 | 30283 | SAM | Lib | Identificar de alguma forma as empresas que est�o marcadas como INATIV |
+| 12 | 30286 | SAM | Lib | O sistema s� faz a valida��o da natureza quando passa por este campo s |
 | 10 | 30284 | SAM | Lib | Permitir cadastrar produtos informando no c�digo letras e n�meros (alf |
+| 8 | 30283 | SAM | Lib | Identificar de alguma forma as empresas que est�o marcadas como INATIV |
 | 6 | 30282 | SAM | Lib | Quando existe a situa��o de ICMS � recuperar deve-se ser feito um lanc |
 | 4 | 30280 | SAM | Lib | Na janela de concilia��o banc�ria mostrar a coluna VALOR ap�s a coluna |
 | 40516 | 30276 | NE | Lib | Est� ocorrendo erro na tabela "EFSAIDAS_DIFAL_NC" ao realizar a import |
@@ -28478,15 +28197,28 @@
 | 18875 | 6 | SAIL | Lib | PR-Emitir a guia GR-PR diretamente no sistema interagindo com o site d |
 | 18868 | 2 | SAL | Lib | RS-Ajustar o comportamento do campo "Exclus�o GIA" no lan�amento das n |
 
-## Contabilidade (13063 total, 6318 pendentes)
+## Contabilidade (12943 total, 6289 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 0 | 130779 | NE | Pend | - |
+| 0 | 131520 | NE | Pend | - |
+| 102266 | 131346 | NE | Pend | Em alguns casos está apresentando erro de banco de dados ao emitir o B |
+| 102192 | 131254 | NE | Pend | Não está preenchendo os códigos de configuração ao contratar a Contabi |
+| 102071 | 131216 | NE | Lib | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
+| 102188 | 131176 | NE | Pend | Replicação de configuração das contas não funciona ao infornar a conta |
+| 102057 | 131171 | NE | Lib | Não está sendo gerado o Razão, quando na guia "Contas" possui informad |
+| 102171 | 131156 | NE | Pend | Está atribuindo indevidamente a situação "Equivalente entre os planos" |
+| 102154 | 131130 | NE | Pend | Está realizando a contabilização da baixa do bem nas contas contábeis  |
+| 102067 | 131128 | NE | Pend | Está apresentado o erro "Expression is not valid" ao informar uma cont |
+| 101997 | 131100 | NE | Lib | Em alguns casos, não está exibindo o saldo anterior na emissão do Razã |
+| 101994 | 131098 | NE | Lib | Está apresentando o erro 'Syntax error near '(end of line)' on line 36 |
+| 101819 | 130839 | SAM | Pend | Limitar a quantidade de conex�es no banco de dados do usu�rio 'USUARIO |
+| 101752 | 130652 | NE | Lib | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
+| 101837 | 130642 | SAM | Pend | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na  |
 | 101685 | 130604 | NE | Lib | Est� exibindo a mensagem 'Sem dados para emitir' ao emitir o Balan�o c |
+| 101885 | 130585 | SAL | Pend | Adequar os c�lculos do Lucro da Explora��o e dos incentivos fiscais co |
 | 101749 | 130552 | NE | Pend | Est� filtrando incorretamente as contas na tela 'Consulta Class F4' qu |
-| 101556 | 130509 | NE | Pend | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o pl |
-| 101491 | 130440 | SAM | Pend | Alterar o sistema para enviar o Plano de contas compactado em GZIP par |
+| 101556 | 130509 | NE | Lib | Está sendo apresentado erro ao gerar o relatório na guia "Alteração pl |
 | 101617 | 130441 | SAM | Pend | Testar o envio do plano de contas e o recebimento de lan�amentos do Co |
 | 101444 | 130388 | SAM | Lib | Melhorar performance para evitar gargalos no DW |
 | 101528 | 130372 | NE | Pend | Est� sendo considerado a natureza do saldo da conta ao inv�s da nature |
@@ -28495,32 +28227,22 @@
 | 101460 | 130212 | NE | Pend | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table ' |
 | 101352 | 130176 | NE | Pend | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_aut |
 | 101313 | 130132 | SAL | Lib | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A pa |
-| 101334 | 130038 | SAM | Pend | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados a |
-| 101357 | 129974 | SAM | Pend | Gerar o SPED ECF considerando o plano de contas vigente no período do  |
-| 101356 | 129973 | SAM | Pend | Criar a permissão para o menu Novo plano de contas |
 | 101320 | 129969 | SAM | Pend | Reimplementar o relat�rio Controle de Incentivos Fiscais. |
 | 101069 | 129891 | NE | Pend | Lentid�o ao realizar a grava��o de lan�amentos no Contabilidade Digita |
-| 101453 | 129870 | SAM | Pend | Realizar a implantação de saldos no novo plano de contas respeitando o |
 | 101049 | 129862 | SAM | Pend | Ler e utilizar a tag updated_at no consentimento |
 | 101039 | 129826 | NE | Pend | Em alguns casos, est� gerando indevidamente o valor da Receita L�quida |
 | 101052 | 129803 | NE | Pend | Em alguns casos est� apresentando a mensagem "Data inferior a data de  |
-| 101103 | 129703 | SAM | Pend | Realizar a conversão dos vínculos do plano referencial após o cadastro |
-| 101450 | 129665 | SAM | Pend | Criar a tela de bloqueio para quando o novo plano de contas estiver se |
-| 101189 | 129627 | SAM | Pend | Realizar a conversão das contas vinculadas nas estruturas do DRE, DLPA |
-| 101397 | 129620 | SAM | Pend | Realizar a conversão das configurações de integração contábil após o c |
-| 101094 | 129609 | SAM | Pend | Contabilizar os lançamentos importados via TXT de acordo com o plano d |
-| 101257 | 129506 | SAM | Pend | Preencher automaticamente a aba 'Plano de contas anterior' na modal Ou |
 | 100816 | 129511 | SAM | Pend | Registrar no banco de dados o tempo de gera��o do Balan�o e Balancete  |
 | 100902 | 129482 | NE | Lib | Est� gerando valores incorretos para os registros K155, K156 e L100 do |
-| 101107 | 129460 | SAM | Pend | Realizar a conversão das regras de contabilização de extrato após o ca |
-| 101104 | 129438 | SAM | Pend | Criar uma nova vigência na parametrização ao concluir o cadastro de um |
 | 100733 | 129406 | SAM | Lib | Utilizar IA para realizar v�nculos entre plano referencial e contas co |
 | 100732 | 129405 | SAM | Lib | Implementar IA para an�lise de relat�rios dentro do Cont�bil. |
+| 101777 | 129273 | NE | Pend | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta con |
 | 100631 | 129267 | SAM | Lib | Redefinir as senhas dos usu�rios utilizados para uso interno do Cont�b |
 | 100931 | 129212 | SAM | Pend | Otimizar a emiss�o do Balancete com a op��o "N�o imprimir contas com s |
 | 100587 | 129177 | SAM | Lib | Alterar setas da contabilidade Digital |
 | 100591 | 129156 | NE | Pend | N�o � efetuado a contabiliza��o da folha quando integra��o n�o possui  |
-| 100488 | 129035 | NE | Pend | Não está sendo respeitado o parâmetro "Enviar individualmente aos clie |
+| 101803 | 129074 | NE | Pend | Est� sendo exclu�do indevidamente o centro de custo referente a contab |
+| 100488 | 129035 | NE | Lib | Não está sendo respeitado o parâmetro "Enviar individualmente aos clie |
 | 100334 | 128801 | SAM | Lib | Realizar testes no processo de Rotinas Autom�ticas no m�dulo Contabili |
 | 100317 | 128744 | NE | Lib | Excluir as transa��es duplicadas quando o banco de dados possui m�ltip |
 | 100737 | 128718 | NE | Pend | Est� ocorrendo o erro 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao re |
@@ -28534,12 +28256,8 @@
 | 100023 | 128042 | NE | Lib | N�o est� validando corretamente a correspond�ncia de contas com c�digo |
 | 100236 | 128036 | SAL | Lib | Aplicar redu��o linear de 10% aos incentivos fiscais a partir de 2026, |
 | 100001 | 128015 | NE | Lib | Em alguns casos est� apresentando erro de banco de dados na tabela 'CT |
-| 99967 | 127948 | NE | Lib | Está demonstrando incorretamente o campo 'Histórico' na tela de Lançam |
-| 99863 | 127848 | SAM | Pend | Disponibilizar para a Plataforma a informação de que a empresa tem ou  |
 | 99806 | 127809 | NE | Lib | Est� ocorrendo erro Maleta Vermelha "Contabilidade Digital Baixa Parce |
 | 99777 | 127665 | NE | Lib | N�o carrega transa��o para Concilia��o manual de filial |
-| 99815 | 127594 | SAM | Lib | Verificar template dos e-mails enviados pelo Onvio Contabilidade após  |
-| 99890 | 127267 | SAM | Pend | Integração Onvio x DW - Realizar a integração dos lançamentos contábei |
 | 99548 | 127176 | NE | Lib | O sistema n�o est� respeitando o filtro "Ocultar contas cont�beis vinc |
 | 99568 | 127111 | SAL | Lib | Alterar o cabe�alho do arquivo DIOPS de 2026. |
 | 99643 | 126712 | NE | Lib | Em alguns casos est� duplicando contas do relat�rio Plano de Contas, a |
@@ -28573,16 +28291,12 @@
 | 98821 | 125844 | SAM | Desc | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 po |
 | 98939 | 125748 | NE | Pend | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nom |
 | 98854 | 125730 | SAM | Lib | Exportar o relat�rio An�lise Vertical do DRE em excel sem mesclar c�lu |
-| 100879 | 125653 | SAM | Pend | Adequar o módulo Contabilidade a nova moldura/design do Domínio Contáb |
 | 98630 | 125548 | SAM | Lib | Atualizar tabela de feriados Febraban 2026 |
-| 98682 | 125492 | SAM | Pend | Ajustar o vídeo de boas-vindas da Contabilidade para ser demonstrado a |
 | 98601 | 125436 | SAM | Pend | Ajustar a emiss�o dos relat�rios Raz�o e DRE para buscar os saldos da  |
 | 98569 | 125396 | SAM | Lib | Implementar IA para an�lise de relat�rios dentro do Cont�bil. |
 | 98643 | 125367 | NE | Lib | Est� gerando erro de banco ao salvar em pdf o Relat�rio de Concilia��o |
 | 98538 | 125104 | NE | Lib | Est� excluindo indevidamente a classifica��o das contas cont�beis, qua |
 | 98405 | 125084 | NE | Lib | Est� sendo realizado de forma incorreta o envio de requisi��es para o  |
-| 98777 | 124899 | SAM | Pend | Integração Onvio x DW - Criar e integrar as contas contábeis e históri |
-| 98609 | 124894 | SAM | Pend | Integração Onvio x DW - Listar as contas contábeis e históricos do Onv |
 | 98293 | 124832 | SAM | Lib | Testar a cria��o de conta cont�bil quando for criada atrav�s das rotin |
 | 98191 | 124589 | SAM | Lib | Utilizar IA para realizar v�nculos entre plano referencial e contas co |
 | 98160 | 124546 | NE | Lib | Em alguns casos est� duplicando as transa��es na Contabilidade Digital |
@@ -28594,7 +28308,6 @@
 | 98034 | 124298 | SAM | Lib | Alterar ordena��o da tag order de decrescente para crescente |
 | 98115 | 124219 | NE | Lib | Contabilidade Digital: Revers�o de PIX est� travando a fila quando con |
 | 97935 | 124163 | SAM | Lib | Ordenar transa��es atrav�s da tag order |
-| 98189 | 124136 | SAM | Lib | Criar regras de contabilização para o extrato bancário OFX/OFC. |
 | 98004 | 124115 | NE | Lib | Est� habilitando indevidamente a guia 'Conglomerado' na tela de lan�am |
 | 97925 | 124113 | NE | Lib | Est� gerando incorretamente o valor da coluna "Saldo-Exerc�cio" da lin |
 | 97900 | 124103 | NE | Lib | Contabilidade Digital: Transa��es duplicadas no extrato do cliente |
@@ -28615,14 +28328,12 @@
 | 97595 | 123691 | SAM | Desc | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es |
 | 97580 | 123628 | NE | Lib | Est� gerando valores divergentes no Balan�o quando a op��o "Detalhar p |
 | 97807 | 123586 | SAM | Pend | Contabilidade Digital: Contabilizar juros, multa e descontos dos event |
-| 97459 | 123532 | NE | Lib | Estão sumindo as informações nas abas 'Plano de contas anterior' e 'En |
 | 98061 | 123490 | SAM | Pend | Contabilidade Digital: Efetuar testes nos pontos impactados pela atual |
 | 97421 | 123456 | NE | Lib | Est� apresentando indevidamente a mensagem sobre diverg�ncia de saldos |
 | 97876 | 123450 | NE | Lib | Contabilidade Digital: Em alguns casos, n�o est� listando na tela de e |
 | 97320 | 123363 | NE | Lib | N�o est� sendo habilitado o campo "Devolu��es Vendas" na guia "Contabi |
 | 97318 | 123362 | SAM | Lib | Identificar as threads que poder�o ser retiradas do processamento de d |
 | 97426 | 123301 | NE | Lib | N�o est� demonstrando a descri��o de centro de custos quando na emiss� |
-| 97859 | 123288 | SAM | Pend | Alterar interface e comportamentos do fluxo da estrutura do DRE |
 | 97522 | 123275 | SAM | Lib | Exportar em Excel o Balan�o sem mesclar as c�lulas. |
 | 97411 | 123231 | SAM | Lib | Permitir excluir empresas sem validar o fechamento e per�odo de trabal |
 | 97314 | 123144 | SAL | Lib | Atualizar o plano referencial do Banco Central (a partir de 2025), con |
@@ -28639,12 +28350,8 @@
 | 98257 | 122873 | SAM | Lib | Alterar o relat�rio de Consolida��o de Receitas e Despesas do LCDPR pa |
 | 98116 | 122835 | SAM | Lib | Realizar testes devido � altera��o do m�dulo contabilidade, onde ser�  |
 | 98079 | 122821 | SAM | Pend | Listar as contas cont�beis e hist�ricos do Onvio Contabilidade no DW E |
-| 96837 | 122758 | NE | Lib | Ajustar o sistema para quando for enviado uma informação a conta Azul  |
 | 99675 | 122653 | SAM | Pend | Permitir salvar o relat�rio Concilia��o Banc�ria Contabilidade Digital |
-| 101098 | 122558 | SAM | Pend | Criar a interface para efetuar a troca do plano de contas. |
 | 96719 | 122551 | NE | Lib | N�o est� traduzindo as colunas 'C�digo' e 'Classifica��o' na emiss�o d |
-| 96737 | 122539 | NE | Lib | Não está gerando o relatório do DRE na sequência da estrutura salva. |
-| 96749 | 122535 | NE | Lib | Não está gerando inconsistência na rotina, ou está gerando a inconsist |
 | 96520 | 122352 | NE | Lib | N�o est� sendo gerado o lan�amento cont�bil na guia "Contabilidade" da |
 | 96548 | 122269 | NE | Lib | Est� gerando informa��es incorretas de Saldos para o Balancete Referen |
 | 96473 | 122263 | NE | Lib | Contabilidade Digital: Falta de JSON de consentimento bloqueando fila |
@@ -28655,7 +28362,6 @@
 | 96506 | 122185 | NE | Lib | N�o est� abrindo o lan�amento cont�bil quando acessado o Balancete pel |
 | 96449 | 122155 | NE | Lib | Contabilidade Digital: Est� apagando incorretamente o hist�rico inseri |
 | 96475 | 122151 | NE | Lib | N�o est� gerando os lan�amentos da empresa consolidada no Balancete qu |
-| 96587 | 122113 | SAM | Lib | Remover as linhas que separam as opções nos menus do módulo Contabilid |
 | 96343 | 122102 | NE | Desc | Contabilidade Digital: Em alguns casos, o tipo "Aplica��o Financeira"  |
 | 96321 | 122090 | NE | Lib | Contabilidade Digital - Est� duplicando a empresa na tela de extrato d |
 | 96317 | 122082 | NE | Lib | Contabilidade Digital: Erro ao clicar no bot�o "Complemento de hist�ri |
@@ -28673,15 +28379,12 @@
 | 95851 | 121431 | SAM | Lib | Contabilidade Digital: Preparar Agente de Comunica��o para utilizar o  |
 | 95828 | 121411 | SAM | Lib | Avaliar se as tabelas de backup da Contabilidade podem ser exclu�das d |
 | 95800 | 121370 | SAM | Lib | Realizar a baixa de pagamento de impostos feitos pela "Contabilidade D |
-| 95743 | 121283 | NE | Lib | Está ficando em processamento travado indevidamente quando realizado u |
 | 99525 | 121260 | SAM | Pend | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e O |
 | 95698 | 121244 | NE | Lib | Contabilidade Digital: Est� ocorrendo erro quando conciliado transa��o |
 | 95706 | 121234 | NE | Lib | Contabilidade Digital: N�o est� gerando a configura��o para o tipo 20  |
-| 95681 | 121209 | SAM | Lib | Incluir um loader na replicação do plano de contas e dos históricos. |
 | 95721 | 121197 | NE | Lib | Est�o sendo apresentadas as contas sint�ticas zeradas no Balancete Ref |
 | 95690 | 121196 | NE | Lib | Est� apresentando erro de banco de dados ao gerar a DRE, quando a tela |
 | 95694 | 121186 | NE | Lib | Contabilidade Digital: N�o est� contabilizando automaticamente quando  |
-| 96557 | 121130 | SAM | Lib | Apresentar o saldo contábil na tela de Lançamentos de extrato bancário |
 | 97189 | 121120 | SAM | Lib | Criar no quadro "Filtros" da tela "Consulta e Lan�amentos" uma op��o p |
 | 95593 | 121104 | NE | Lib | Contabilidade Digital: Transa��o de pagamento de folha est� gerando co |
 | 95639 | 121072 | NE | Lib | Est� ocorrendo a gera��o duplicada dos registros M310 e M360 no inform |
@@ -28742,7 +28445,6 @@
 | 94710 | 119816 | NE | Lib | N�o esta demonstrando o modelo DRE padr�o "Modelo VII - Saldo Anterior |
 | 94539 | 119788 | NE | Lib | Contabilidade Digital: N�o est� sendo efetuado as baixas das parcelas  |
 | 94515 | 119765 | NE | Lib | Contabilidade Digital: N�o est� carregando a configura��o de parte do  |
-| 100927 | 119731 | SAM | Pend | Ocultar as funcionalidades de integrações do Onvio Escrita Fiscal com  |
 | 94504 | 119739 | NE | Lib | Contabilidade Digital: N�o est� sendo realizada a baixa da parcela na  |
 | 94892 | 119736 | SAM | Lib | Alterar a forma de carregar os lan�amentos na tela "Contas X Lan�ament |
 | 94495 | 119729 | NE | Lib | Contabilidade Digital: Gerando incorretamente uma linha na contabilida |
@@ -28764,7 +28466,6 @@
 | 94234 | 119174 | SAL | Lib | Atualizar o plano referencial do Banco Central (a partir de 2025), con |
 | 94251 | 119172 | NE | Lib | Contabilidade Digital: N�o est� gerando a replica��o das contas ao inf |
 | 94078 | 119153 | NE | Lib | Contabilidade Digital: [Fintech] Atraso na leitura das transa��es envi |
-| 94015 | 119041 | NE | Lib | Em alguns casos está demonstrando indevidamente a mensagem 'Falha ao e |
 | 94006 | 119030 | NE | Lib | Est� ocorrendo erro de banco de dados ao gravar uma rescis�o de contra |
 | 93973 | 118870 | NE | Lib | Contabilidade Digital: Corrigir detalhes no JSON Automa��o |
 | 93975 | 118853 | NE | Lib | Contabilidade Digital: Valida��o de acesso � tela "Lan�amentos Cont�be |
@@ -28787,7 +28488,6 @@
 | 94054 | 118446 | SAL | Lib | Implementar plano referencial Pessoa Jur�dica Financeira a partir de 2 |
 | 93990 | 118417 | NE | Lib | N�o est� sendo gerado o Centro de Custo no lan�amento cont�bil, quando |
 | 93495 | 118381 | SAM | Lib | Liberar tempo automa��o. |
-| 93481 | 118355 | NE | Lib | Não está salvando corretamente uma rotina de integração contábil ao ed |
 | 93471 | 118350 | SAM | Lib | Alterar o processo de sele��o de IPs no Dom�nio Web. |
 | 93441 | 118300 | NE | Lib | Contabilidade Digital: N�o est� fazendo a baixa da folha de pagamento  |
 | 93517 | 118297 | SAM | Lib | Contabilidade Digital: Permitir utilizar a importa��o via arquivo OFX/ |
@@ -28809,11 +28509,7 @@
 | 94175 | 117951 | SAM | Pend | Contabilidade Digital: Permitir Incluir manualmente transa��es banc�ri |
 | 93518 | 117949 | SAM | Lib | Contabilidade Digital: Permitir alterar a data das transa��es dentro d |
 | 93154 | 117941 | NE | Lib | Contabilidade Digital: Em alguns casos, est� sendo demonstrado erro de |
-| 93115 | 117921 | NE | Lib | Está ocorrendo erro ao tentar emitir um Balancete com 50 mil lançament |
-| 93034 | 117911 | NE | Desc | Está apresentando erro na rotina de integração contábil da Escrita Fis |
-| 93016 | 117896 | NE | Lib | Está apontando erro indevidamente ao clicar em Avançar no cadastro de  |
 | 93155 | 117825 | NE | Lib | Contabilidade Digital: Em alguns casos, est� sendo gravado a conta con |
-| 92961 | 117811 | NE | Lib | Não está executando o vídeo de boas-vindas no Onvio Contabilidade. |
 | 94428 | 117821 | SAM | Lib | Demonstrar saldo anterior no Balan�o e Balancete com plano referencial |
 | 93004 | 117812 | NE | Desc | Contabilidade Digital: Preenchimento das contas est� sendo feito pela  |
 | 93476 | 117803 | SAL | Lib | Incluir as ocupa��es "Fonoaudi�logo", "Fisioterapeuta" e "Terapeuta oc |
@@ -28822,9 +28518,6 @@
 | 94796 | 117738 | SAL | Lib | Atualizar a vers�o do programa de envio da DIOPS.   |
 | 93003 | 117683 | SAM | Pend | Contabilidade Digital: Criar rotina para editar o lan�amento de extrat |
 | 92981 | 117567 | NE | Lib | Est� sendo apresentada indevidamente a mensagem 'Esta empresa n�o poss |
-| 92776 | 117526 | NE | Desc | Está exibindo incorretamente uma tooltip exibida no menu hambúrguer do |
-| 92772 | 117522 | SAM | Desc | Atualizar fontes do cabeçalho do módulo Onvio Contabilidade para a nov |
-| 92732 | 117443 | SAM | Pend | Incluir ícone da Central de soluções no cabeçalho do Onvio Contabilida |
 | 94258 | 117409 | SAM | Pend | Contabilidade Digital: Separar a tela de Configura��o para Contabiliza |
 | 93186 | 117405 | SAM | Pend | Contabilidade Digital: Aumentar para 25 dias o tempo de pesquisa das p |
 | 92778 | 117324 | NE | Lib | Contabilidade Digital: Em alguns casos, n�o est�o sendo apresentadas t |
@@ -28869,7 +28562,6 @@
 | 91580 | 115989 | NE | Lib | N�o est� sendo realizada a baixa autom�tica pelo extrato banc�rio Dom� |
 | 91576 | 115964 | NE | Lib | Contabilidade Digital: Est� alterando o status da transa��o para Pende |
 | 91485 | 115911 | SAM | Lib | Liberar tempo automa��o. |
-| 91624 | 115887 | NE | Lib | Está validando incorretamente a capacidade máxima de caracteres no cam |
 | 91449 | 115852 | NE | Lib | Contabilidade Digital: Est� apresentando indevidamente a mensagem "Dat |
 | 91415 | 115840 | NE | Lib | Contabilidade Digital: N�o est� atualizando automaticamente o DW por c |
 | 91448 | 115833 | NE | Lib | Contabilidade Digital: N�o est� permitindo informar a contra partida p |
@@ -28901,7 +28593,6 @@
 | 94257 | 115214 | SAM | Pend | Contabilidade Digital: Criar a op��o "Subtrai/Soma/Ambos" na configura |
 | 90856 | 115201 | NE | Lib | Contabilidade Digital: N�o est� integrando as transa��es dos tipos "CO |
 | 90928 | 115166 | NE | Lib | Contabilidade Digital: N�o est� permitindo informar a contrapartida na |
-| 93339 | 115151 | SAM | Lib | Avaliar a Performance geral do módulo Contabilidade. |
 | 90768 | 115128 | NE | Lib | Contabilidade Digital: Em alguns casos est� apresentando indevidamente |
 | 90728 | 115113 | NE | Lib | Est� ocorrendo demora no processamento dos movimenta��es da Contabilid |
 | 90961 | 115103 | NE | Lib | Contabilidade Digital: N�o est�o sendo integradas as transa��es entre  |
@@ -28912,50 +28603,20 @@
 | 90689 | 114999 | NE | Lib | Contabilidade Digital: Em alguns casos n�o est�o sendo demonstrados os |
 | 90668 | 114997 | NE | Lib | Contabilidade Digital: Em alguns casos est� contabilizando indevidamen |
 | 90606 | 114898 | SAM | Lib | Incluir colunas c�digo e nome do cliente na guia Honor�rios no Envio C |
-| 90578 | 114864 | NE | Lib | Não está finalizando o processo de integração contábil quando existe a |
 | 90634 | 114847 | NE | Lib | Est� apresentando o erro "Conta inv�lida" ao informar uma conta cont�b |
 | 90554 | 114814 | NE | Lib | Contabilidade Digital: Est� mantendo indevidamente o lan�amento como " |
-| 92023 | 114795 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Transferência entr |
-| 92024 | 114794 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Transferência entr |
-| 91949 | 114793 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Transferência banc |
-| 91948 | 114792 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Transferência banc |
-| 92003 | 114791 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Saque'. |
-| 91940 | 114790 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Reversão de PIX re |
-| 91939 | 114788 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Reversão de PIX en |
-| 91931 | 114787 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Resgate de aplicaç |
-| 91930 | 114786 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Renovação pacote d |
-| 91924 | 114785 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Rendimento de apli |
-| 91923 | 114784 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Rendimento de apli |
-| 91875 | 114782 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'PIX recebido' |
-| 91873 | 114779 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'PIX enviado'. |
-| 91862 | 114776 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Pagamento de conta |
-| 91844 | 114775 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Pagamentos agrupad |
-| 91788 | 114774 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Outras transações' |
 | 90532 | 114800 | NE | Lib | Contabilidade Digital: N�o est�o sendo contabilizadas algumas transa�� |
-| 91864 | 114759 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Juros cheque espec |
-| 91280 | 114756 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Compra realizada c |
-| 91274 | 114753 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Cobrança de tarifa |
 | 90506 | 114748 | NE | Lib | Est� ocorrendo lentid�o no processamento das transa��es da Contabilida |
-| 91258 | 114741 | SAM | Pend | Contabilidade digital: Receber a transação do tipo 'Assinatura pacote  |
-| 90666 | 114734 | SAM | Pend | Contabilidade digital: Incluir um ícone no header para apresentar a qu |
 | 92905 | 114697 | SAM | Lib | Otimizar a integra��o das transa��es da Contabilidade Digital para o D |
 | 91078 | 114688 | NE | Lib | Est� sendo gerando indevidamente lan�amentos cont�beis com Centro de C |
 | 90441 | 114668 | SAM | Pend | Contabilidade Digital: Criar uma monitoria no WebSocket do recebimento |
 | 90373 | 114593 | SAM | Lib | Liberar tempo automa��o. |
-| 93088 | 114586 | SAM | Pend | Contabilidade digital: Contabilizar as transações que ocorrerem entre  |
-| 93561 | 114582 | SAM | Pend | Contabilidade digital: Realizar busca e baixa de impostos na Central d |
 | 90385 | 114568 | NE | Lib | Contabilidade Digital: Est� apresentando indevidamente a mensagem "Voc |
-| 92885 | 114560 | SAM | Pend | Contabilidade digital: Realizar busca e baixa de FGTS na Central de pa |
 | 91251 | 114546 | SAM | Pend | Contabilidade Digital: Incluir filtro de compet�ncia inicial e final,  |
 | 90440 | 114532 | SAL | Lib | Criar simula��o de c�lculo desconsiderando valor de exclus�es para imp |
 | 90316 | 114512 | SAM | Desc | Realizar estudo e melhoria dos �ndices duplicados em todas as tabelas  |
-| 90324 | 114492 | SAM | Pend | Criar mensagens mais intuitivas na integração contábil referente a tra |
 | 90955 | 114489 | SAM | Lib | Alterar o utilit�rio "Elimina per�odo".    |
 | 90367 | 114479 | NE | Lib | Est� marcando indevidamente a op��o "Realizar a integra��o do plano de |
-| 93541 | 114468 | SAM | Pend | Contabilidade digital: Realizar busca e baixa de impostos federais na  |
-| 90259 | 114460 | NE | Lib | Está permitindo atribuir apenas o número 0 para código da conta e tamb |
-| 90740 | 114419 | SAM | Lib | Otimizar a abertura do Livro razão pelo Balancete. |
-| 90260 | 114417 | NE | Lib | Em alguns casos as contas contábeis não estão sendo apresentadas em or |
 | 95357 | 114385 | SAM | Lib | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es |
 | 90231 | 114363 | NE | Lib | Contabilidade Digital: N�o est�o sendo integradas as transa��es do tip |
 | 90360 | 114342 | SAM | Lib | Contabilidade Digital: Incluir novos bancos para serem integrados. |
@@ -28970,7 +28631,6 @@
 | 89753 | 113785 | SAM | Lib | Contabilidade Digital: Ajustar o status das empresas sem configura��o  |
 | 89732 | 113781 | SAM | Lib | Liberar no m�dulo Honor�rios o envio dos boletos para o Dom�nio Conta  |
 | 89905 | 113778 | SAM | Lib | Contabilidade Digital: Realizar as baixas no m�dulo Folha para todas a |
-| 90742 | 113746 | SAM | Pend | Contabilidade digital: Apresentar informações da contabilidade digital |
 | 92025 | 113731 | SAM | Lib | Contabilidade Digital: Realizar a baixa autom�tica de pagamentos de im |
 | 89843 | 113707 | SAL | Lib | BA - Alterar a importa��o das sa�das do c�lculo do coeficiente de cr�d |
 | 89641 | 113569 | NE | Lib | Contabilidade Digital - N�o est� recebendo as transa��es do Dom�nio Co |
@@ -28978,26 +28638,19 @@
 | 89835 | 113534 | SAM | Pend | Otimizar a gera��o do informativo SPED ECF referente a tabela "dw_sped |
 | 89544 | 113479 | SAM | Lib | Contabilidade Digital: Alterar a forma de salvar as configura��es de c |
 | 89678 | 113466 | NE | Pend | Est� apresentando a SCP incorreta ao acessar "..." da SCP da guia "Pla |
-| 89644 | 113281 | NE | Lib | Não estão sendo demonstrados o destaque em vermelho e a tooltip com a  |
 | 89321 | 113205 | SAM | Lib | Alterar a forma de exclus�o dos lan�amentos com mais de 60 dias no cat |
 | 89366 | 113202 | SAM | Lib | Contabilidade Digital: Considerar o CNPJ da Receita Federal para o pag |
 | 89424 | 113201 | SAM | Lib | Contabilidade Digital: Alterar a descri��o da transa��o "Dep�sito por  |
 | 90972 | 113192 | SAM | Pend | Contabilidade Digital: Criar separador das transa��es na tela de extra |
-| 90115 | 113164 | SAM | Pend | Contabilidade digital: Criar a tela para apresentar os lançamentos de  |
 | 89302 | 113159 | SAM | Lib | Contabilidade Digital: Ajustar a forma de demonstrar e contabilizar as |
 | 89282 | 113150 | SAM | Lib | Atualizar a vers�o do navegador CefSharp/Chromium no Dominio Cont�bil. |
 | 89417 | 113111 | NE | Lib | Contabilidade Digital: Em alguns casos est� classificando incorretamen |
 | 89305 | 113089 | SAM | Lib | Contabilidade Digital: Inativar o bot�o "Gravar" durante o processo de |
-| 89727 | 113045 | SAM | Lib | Contabilidade digital: Criar as regras de contabilização da contabilid |
 | 89177 | 113031 | NE | Lib | Est� excluindo o lan�amento de notas com lan�amento cont�bil indevidam |
-| 89240 | 113017 | NE | Lib | Não está sendo demonstrado habilitado o campo "Estrutura da classifica |
-| 89320 | 112976 | SAM | Lib | Contabilidade digital: Criar o menu para informar qual conta contábil  |
 | 89170 | 112986 | SAM | Lib | Contabilidade Digital: Alterar a forma de contabilizar por parte do hi |
 | 89137 | 112980 | SAM | Lib | Contabilidade Digital: Alterar a visualiza��o dos lan�amentos cont�bei |
 | 89200 | 112919 | SAM | Lib | Preparar o m�dulo Honor�rios para efetuar o envio dos boletos para o D |
-| 89185 | 112875 | NE | Lib | Está apresentando indevidamente a mensagem "Esse código já foi atribuí |
 | 89004 | 112876 | SAM | Desc | Atualizar a vers�o do navegador CefSharp/Chromium no Dominio Cont�bil. |
-| 89190 | 112722 | NE | Lib | Os valores do período comparativo no DRE estão sendo apresentados '0,0 |
 | 88854 | 112702 | NE | Desc | Esta sendo demonstrado "N�o" no campo detalhar do item "20 - Contabili |
 | 89075 | 112653 | SAM | Lib | Contabilidade Digital: Criar op��o na tela de configura��es para as tr |
 | 89077 | 112650 | SAM | Lib | Contabilidade Digital: Rever transa��es da tela de configura��es. |
@@ -29010,17 +28663,12 @@
 | 89363 | 112426 | SAL | Lib | RO-Alterar a tag "Discriminacao" para gerar quebra de linha quando hou |
 | 88793 | 112420 | SAM | Lib | Contabilidade Digital: Utilizar a mesma configura��o para empresas que |
 | 88745 | 112386 | NE | Lib | N�o est� permanecendo marcado a sele��o realizada no bot�o "Centro de  |
-| 88672 | 112356 | SAM | Lib | Apresentar 'D' ou 'C' de acordo com a natureza da conta, quando na aba |
 | 88531 | 112351 | SAM | Lib | Liberar tempo automa��o. |
 | 88812 | 112347 | SAM | Lib | Contabilidade Digital: Considerar o CNPJ da Caixa Econ�mica Federal pa |
 | 88555 | 112325 | NE | Pend | Est� apresentando erro ao gravar o cadastro da conta cont�bil, quando  |
-| 88655 | 112246 | NE | Lib | Está exibindo incorretamente a estrutura da classificação no cadastro  |
 | 88790 | 112240 | SAM | Lib | Contabilidade Digital: Ajustar a considera��o para realizar a baixa de |
-| 88545 | 112173 | NE | Lib | File Selector não está apresentando o tamanho máximo correto do arquiv |
 | 98088 | 112146 | SAM | Pend | Criar op��o para acessar a ferramenta "Reten��es". |
-| 88408 | 112057 | NE | Lib | Ao adicionar linha na última página na modal 'Informar contas anterior |
 | 93543 | 112025 | SAM | Lib | Otimizar a gera��o do balancete por centro de custos. |
-| 89188 | 112005 | NE | Desc | Está apresentando indevidamente inconsistência na execução da integraç |
 | 88338 | 112010 | NE | Lib | Est� ocorrendo erro no arquivo ao salvar as An�lises vertical e horizo |
 | 88484 | 112009 | SAM | Lib | BA - Garantir funcionamento do Honor�rios, Atualizar e Protocolo com a |
 | 89545 | 111959 | SAM | Lib | Criar atalho para executar Json no modo automa��o.   |
@@ -29038,7 +28686,6 @@
 | 87870 | 111363 | SAM | Lib | Ordenar as opera��es do extrato Dom�nio Conta Digital e Contabilidade  |
 | 88070 | 111252 | SAM | Lib | Alterar o sistema para que ao abrir a tela de Lan�amentos Cont�beis Ex |
 | 87823 | 111200 | SAIL | Lib | ES-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
-| 87679 | 111076 | NE | Lib | Página à esquerda do transferbox de vínculo na estrutura do DRE está s |
 | 87564 | 111017 | NE | Lib | Est� ocorrendo o erro "SQLSTATE = 23000" no SPED ECF quando selecionad |
 | 87504 | 110899 | NE | Lib | N�o est� sendo demonstrado lan�amentos com o tipo Outros no extrato da |
 | 87471 | 110781 | NE | Pend | Est� demonstrando o "Saldo Anterior" incorreto no relat�rio "Altera��o |
@@ -29046,11 +28693,7 @@
 | 87403 | 110760 | SAM | Lib | Liberar tempo automa��o. |
 | 89074 | 110575 | SAM | Lib | Salvar as informa��es dos boletos do Dom�nio Conta Digital na base de  |
 | 87248 | 110574 | SAM | Lib | Ajuste da descri��o da guia e op��o dentro dos parametros da contabili |
-| 87633 | 110531 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED ECD identific |
 | 87412 | 110524 | SAL | Lib | Considerar os valores de devolu��o de venda na importa��o de receitas  |
-| 87323 | 110514 | NE | Lib | Não está notificando a contabilização dos lançamentos vindos da Conta  |
-| 87208 | 110499 | NE | Lib | Não está sendo possível emitir os relatórios da contabilidade. |
-| 87207 | 110457 | SAM | Pend | Apresentar uma tooltip ao passar o mouse pela descrição da conta no Ba |
 | 87599 | 110424 | SAIL | Lib | SC-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 87153 | 110422 | NE | Lib | N�o est�o sendo substituidas as vari�veis de informa��o e observa��o d |
 | 87102 | 110406 | SAM | Lib | MG-Criar DLL para assinatura dos RPS do munic�pio de Uberl�ndia. |
@@ -29059,154 +28702,107 @@
 | 86986 | 110241 | NE | Lib | Est�o sendo exclu�das indevidamente as informa��es importadas na janel |
 | 87045 | 110167 | NE | Lib | N�o est� emitindo corretamente o Balancete Referencial com a op��o "Co |
 | 86895 | 110092 | SAL | Lib | Alterar o cabe�alho do arquivo DIOPS de 2024. |
-| 86856 | 110047 | SAIL | Lib | Realizar a integração contábil do imposto SIMEI. |
 | 86803 | 109990 | NE | Lib | Em alguns casos est� apresentando erro ao gravar o par�metro, quando c |
 | 86853 | 109982 | NE | Lib | Est� apresentando erro de banco de dados ao gravar a importa��o da alt |
 | 86704 | 109858 | SAM | Lib | Liberar tempo automa��o. |
-| 86669 | 109829 | SAM | Lib | Gravar a data inicial e final do Balancete aberto pela notificação, pa |
 | 86638 | 109781 | NE | Lib | Enviar dados referente as integra��es e contabiliza��es do Digital Ban |
 | 86737 | 109773 | NE | Lib | Est� apresentando incorretamente os saldos das contas de lucro acumula |
-| 86660 | 109735 | SAM | Lib | Remover o ícone 'Home' da barra superior do Onvio Contabilidade. |
 | 86685 | 109717 | NE | Lib | Est� gerando indevidamente o centro de custo no campo 02 do registro I |
-| 86720 | 109699 | NE | Lib | Está sendo apresentando uma mensagem de erro de quantidade máxima de c |
 | 86709 | 109655 | SAIL | Lib | SC-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 86894 | 109651 | NE | Lib | Est� sendo detalhado de forma duplicada a exibi��o de centro de custos |
 | 86494 | 109634 | SAM | Lib | Liberar os tempos das SAI's 82226 e 82227 |
-| 86499 | 109540 | NE | Desc | Ao aplicar perfil na Contabilidade e Folha simultaneamente as informaç |
 | 86592 | 109543 | NE | Lib | Est� ocorrendo o erro "Falha no processamento. Tente novamente." ao re |
 | 88625 | 109510 | SAM | Lib | Contabilidade Digital: Considerar permiss�o do usu�rio na apresenta��o |
-| 86793 | 109285 | SAM | Pend | Permitir a importação de caracteres especiais em arquivos TXT no forma |
-| 86942 | 109197 | SAM | Lib | Criar filtro que permita selecionar conta contábil para emitir o 'Livr |
-| 94296 | 109171 | SAM | Pend | Realizar a integração da Contabilidade no Onvio com o Processos. |
 | 87114 | 109135 | SAIL | Lib | MG-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 86137 | 109118 | NE | Lib | Est� sendo feita de forma incorreta a importa��o dos s�cios na janela  |
 | 86126 | 109107 | NE | Lib | Est� sendo importado incorretamente o saldo das contas na janela "Impo |
 | 86071 | 109068 | SAM | Lib | Liberar tempo automa��o. |
-| 86176 | 108945 | NE | Desc | Está sendo apresentada uma modal abaixo da tela de processamento caso  |
-| 86244 | 108944 | NE | Lib | Não está sendo demonstrado desabilitado o campo 'Estrutura da classifi |
 | 86421 | 108948 | SAM | Lib | Ajustar a importa��o da Distribui��o de Lucros do m�dulo Contabilidade |
 | 85988 | 108933 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "N�o � permitido impor |
 | 87634 | 108869 | SAIL | Lib | PR-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
-| 85925 | 108838 | SAM | Lib | Testar performance da importação do plano de contas pelo arquivo SPED  |
 | 85926 | 108826 | NE | Lib | Em alguns casos ocorre erro no objeto "w_conciliacao_bco_ct" ao efetua |
 | 86260 | 108795 | SAM | Lib | Alterar o link de homologa��o do TCE para o informativo e-Sfinge. |
-| 85971 | 108751 | NE | Desc | Em alguns casos está apresentando indevidamente a tela em branco ao re |
 | 94893 | 108689 | SAM | Lib | Emitir Balancete, Balan�o e DRE em PDF pelas Rotinas Autom�ticas. |
-| 86166 | 108673 | SAM | Pend | Possibilitar o envio de relatórios da Contabilidade pelo Onvio Messeng |
 | 86311 | 108680 | NE | Lib | Est� demonstrando conta cont�bil para o participante na aplica��o do p |
 | 85840 | 108661 | NE | Lib | N�o est� sendo apresentada a pasta para publica��o no Onvio, quando o  |
 | 96071 | 108608 | SAM | Lib | Criar o relat�rio Declara��o de Conformidade.      |
 | 85784 | 108595 | NE | Lib | Est� sendo exclu�do indevidamente o centro de custo referente a contab |
-| 85916 | 108571 | NE | Lib | Está ocorrendo corte no botão "Salvar e Concluir" após preencher infor |
 | 85973 | 108528 | SAM | Lib | Remover tabelas liberadas para importa��o "De Tabelas". |
 | 85710 | 108512 | SAM | Lib | Enviar dados referente as integra��es e contabiliza��es do Digital Ban |
 | 85704 | 108502 | SAM | Lib | Realizar altera��es para que aconte�a a migra��o do login OnePass para |
 | 85692 | 108431 | SAIL | Lib | SP-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 85667 | 108421 | SAM | Lib | Gravar a informa��o se a contabiliza��o do Digital Banking aconteceu d |
-| 85626 | 108331 | SAM | Lib | Permitir que o Livro razão seja emitido pelo Balancete |
 | 85780 | 108311 | NE | Lib | N�o est� sendo validado as exist�ncias das chaves de integra��o com a  |
-| 86172 | 108290 | NE | Lib | Estão ocorrendo vínculos incorretos na 'Natureza das Contas' da Parame |
 | 85577 | 108238 | SAM | Lib | DF-Alterar a forma de impress�o para o munic�pio de NFS-e de Bras�lia. |
 | 85644 | 108218 | SAM | Lib | Garantir que na integra��o das notas de entrada, sa�da e servi�os seja |
 | 86001 | 108207 | SAL | Lib | Ajustar a gera��o da tag 'balancete' no informativo DIOPS. |
-| 85739 | 108200 | NE | Lib | Não está ocorrendo atualização imediata ao alterar o toggle de integra |
 | 85523 | 108187 | SAM | Lib | Liberar tempo automa��o. |
 | 85487 | 108132 | SAM | Desc | Incluir regra para a conta financeira na baixa de contas a pagar no ho |
-| 85560 | 108075 | NE | Lib | Está permitindo definir plano de contas, mesmo sem permissão para incl |
-| 85438 | 108006 | NE | Lib | Não estão sendo emitidos o Balanço e a DRE, quando o filtro da competê |
 | 85411 | 108024 | SAM | Desc | Incluir regra para a conta financeira na baixa de recebimentos de cont |
 | 85416 | 108016 | SAL | Lib | Atualizar a vers�o do programa de envio da DIOPS. |
-| 86352 | 107945 | NE | Desc | Está apresentando indevidamente contas contábeis nos campos 'Cliente'  |
 | 85529 | 107915 | NE | Lib | Em alguns casos est� sendo apresentado o saldo incorreto na linha "Luc |
-| 86543 | 107867 | NE | Lib | Não está sendo exibida a inconsistência correta na integração contábil |
 | 85328 | 107861 | SAM | Lib | Atualizar a Escrita Fiscal para realizar as integra��es cont�beis cons |
-| 85376 | 107848 | NE | Lib | Não está sendo exibida a conta crédito no histórico do Livro Razão ao  |
 | 87600 | 107802 | SAM | Lib | Implementar nova vari�vel somente com a descri��o da "Natureza Jur�dic |
-| 85381 | 107740 | SAM | Lib | Incluir no arquivo do plano de contas enviado para Conta Azul o sistem |
 | 85279 | 107751 | SAM | Lib | Garantir funcionamento do Honor�rios e do Protocolo com a libera��o pa |
 | 85182 | 107628 | NE | Desc | N�o permite informar conta contabil em lan�amentos que n�o possui a in |
 | 86005 | 107586 | SAIL | Lib | RO-Criar op��o para gerar Notas Fiscais de Servi�os Eletr�nicas para o |
-| 85120 | 107414 | NE | Lib | Erro ao aplicar perfil no módulo Contabilidade |
 | 85156 | 107359 | SAL | Lib | Ajustar gera��o do registro J150 anual do SPED Cont�bil quando utiliza |
-| 84954 | 107304 | SAM | Lib | Parar de enviar o plano de contas para a Conta Azul |
 | 87602 | 107297 | SAIL | Lib | RO-Criar op��o para gerar Notas Fiscais de Servi�os Eletr�nicas para o |
-| 84984 | 107278 | SAM | Lib | Copiar a estrutura do DRE ao aplicar perfil ou importar dados de outra |
 | 84829 | 107214 | SAM | Lib | Alterar o processo de exclus�o de boletos e renegocia��o para boletos  |
 | 85196 | 107091 | SAM | Pend | Permitir gravar Ata de Reuni�o sem s�cios.   |
 | 84663 | 106996 | SAM | Lib | Liberar tempo automa��o. |
 | 84843 | 106978 | SAL | Lib | Atualizar o plano de contas do banco central no Dom�nio de acordo com  |
-| 84753 | 106897 | SAM | Lib | Alterar o título da tela, botão e cards de acesso rápido da 'Central d |
 | 84601 | 106880 | NE | Lib | N�o est� sendo enviado corretamente as contas cont�beis para conta azu |
 | 84591 | 106823 | NE | Lib | Est� sendo setado o foco no campo incorreto na guia "Contabilidade" da |
-| 84825 | 106795 | NE | Lib | A informação 'Empresas' está sendo apresentada cortada no gráfico 'Int |
-| 84554 | 106777 | NE | Lib | Não está efetuando a copia da Central de Contabilização quando aplicad |
 | 84490 | 106683 | NE | Lib | N�o est� sendo enviado corretamente as contas cont�beis para conta azu |
 | 99432 | 106456 | SAM | Lib | Criar rotina autom�tica para emiss�o do Balancete, Balan�o e DRE em Ex |
 | 84676 | 106426 | NE | Lib | Est� gerando incorretamente o saldo inicial do registro J150 anual no  |
 | 84413 | 106367 | SAM | Desc | Permitir que ao importar a altera��o do plano de contas do SPED Cont�b |
 | 85424 | 106318 | SAM | Lib | Permitir agrupar receitas no relat�rio "Consolida��o de Receitas e Des |
-| 84539 | 106244 | NE | Lib | Está demonstrando indevidamente o motivo 'Conta 123, XXXX inativa', ao |
 | 84309 | 106254 | SAM | Lib | Garantir a funcionalidade de integra��o do plano de contas com a Conta |
-| 84495 | 106212 | SAM | Lib | Acrescentar contas contábeis referente aos Tributos Federais no plano  |
 | 90849 | 106134 | SAM | Lib | Criar uma op��o para o usu�rio escolher se os arquivos em Excel ser�o  |
 | 84673 | 106107 | SAM | Pend | Criar a op��o "Emitir valores negativos entre par�nteses", no relat�ri |
-| 84223 | 106092 | NE | Lib | O filtro de classificação da conta no transferbox de vínculo do DRE, n |
 | 84216 | 106064 | NE | Desc | Est�o ocorrendo erros nas tabelas 'PRMOVITENS_QUOTA' e 'GEATENDIMENTO_ |
-| 84961 | 106045 | SAM | Lib | Copiar configuração de integração contábil dos tributos federais na ap |
 | 84177 | 105973 | SAM | Lib | Liberar tempo automa��o. |
 | 84089 | 105780 | NE | Lib | Est� gerando incorretamente o saldo inicial do registro J150 do primei |
 | 84057 | 105753 | SAM | Lib | N�o est� habilitando a guia "Contabilidade" para a baixa dos pagamento |
 | 84060 | 105718 | NE | Lib | RN-N�o est� sendo permitido informar as contas cont�beis na configura� |
-| 84322 | 105691 | SAM | Desc | Alterar o comportamento do 'Replicar plano de contas'. |
 | 84173 | 105700 | SAM | Lib | Permitir salvar o relat�rio 'Acompanhamentos/Lan�amentos' com a extens |
 | 84172 | 105699 | SAM | Lib | Permitir salvar o relat�rio 'Raz�o' com a extens�o ".xlsx" no bot�o "S |
 | 84047 | 105674 | NE | Desc | Est�o sendo gerados indevidamente os lan�amentos cont�beis de baixa de |
 | 84387 | 105602 | SAM | Pend | Permitir visualizar valores com at� um bilh�o nas colunas "D�bito" e " |
 | 87700 | 105564 | SAIL | Lib | PE-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
-| 83927 | 105559 | SAM | Lib | Efetuar testes dos itens da Contabilidade nas rotinas programadas. |
 | 83907 | 105523 | SAM | Lib | Alterar o proxy do ambiente Dom�nio Web para 'Nacional' no acesso aos  |
 | 83895 | 105473 | SAM | Lib | Integrar os recebimentos de boleto do TR Digital Banking  |
 | 83894 | 105456 | SAM | Lib | Alterar o proxy do ambiente Dom�nio Web para 'Nacional' no acesso aos  |
 | 83935 | 105433 | NE | Lib | N�o est� sendo geradas as vari�veis de hist�rico na guia "Contabilidad |
 | 84210 | 105430 | SAM | Pend | Contabilizar os bens mantidos para venda por centro de custos. |
-| 85625 | 105233 | SAM | Lib | Permitir que o lançamento contábil seja visualizado e editado pelo Liv |
 | 83753 | 105106 | SAL | Lib | Incluir novo c�digo de empresa concession�ria de energia el�trica para |
-| 83621 | 104630 | NE | Lib | Está apresentando a mensagem errada no alerta quando emitido um DRE e  |
 | 83541 | 104588 | SAM | Lib | Liberar tempo automa��o. |
-| 83506 | 104533 | NE | Lib | Conta analítica sendo apresentada como sintética no plano de contas pa |
 | 83480 | 104505 | SAM | Lib | Realizar testes explorat�rios do envio do plano de contas, Lan�amentos |
 | 83474 | 104496 | SAM | Desc | Alterar a gera��o dos boletos do Digital Banking, para a gera��o ass�n |
 | 83470 | 104490 | SAM | Lib | Criar uma valida��o ao alterar o "Grupo DRE" no cadastro das Contas Co |
 | 85505 | 104485 | SAIL | Lib | TO-Criar op��o para gerar Notas Fiscais de Servi�os Eletr�nicas para o |
-| 83390 | 104382 | SAM | Desc | Atualizar a lib para que as alterações feitas pela plataforma reflitam |
 | 101642 | 104337 | SAM | Pend | Permitir informar de 1 a 12 colunas nos relat�rios de An�lise horizont |
 | 84599 | 104275 | SAM | Lib | Otimizar a emiss�o do plano de contas. |
 | 83355 | 104139 | SAM | Pend | Otimizar processo de emitir o raz�o em tela. |
 | 83304 | 104134 | SAM | Lib | Realizar testes explorat�rios do envio do plano de contas, Lan�amentos |
 | 84507 | 104109 | SAM | Lib | Permitir copiar as configura��es das contas do ano base anterior da gu |
-| 86231 | 104065 | SAM | Lib | Permitir a integração contábil dos tributos federais pela rotina progr |
-| 83283 | 104036 | SAIL | Lib | Realizar a integração contábil do módulo 'Tributos Federais'. |
 | 83350 | 103999 | NE | Lib | Est� gerando o saldo inicial incorreto para o registro J150 anual, qua |
 | 83141 | 103898 | SAM | Lib | Liberar tempo automa��o. |
 | 84250 | 103871 | SAM | Lib | Implementar no sistema a op��o de importar a distribui��o de lucros do |
-| 83063 | 103745 | SAM | Lib | Atualizar a lib para que as alterações feitas pela plataforma reflitam |
 | 83056 | 103701 | NE | Desc | N�o foi enviado corretamente a carga inicial a conta azul, quando o cl |
-| 83034 | 103647 | NE | Lib | Está permitindo selecionar a integração contábil da escrita fiscal pel |
 | 82987 | 103584 | NE | Lib | N�o est�o sendo gerados os lan�amentos de distribui��o de lucros, quan |
 | 82978 | 103549 | SAL | Lib | ES-Alterar a forma de consulta de lote de RPS para o munic�pio de Linh |
 | 83046 | 103548 | NE | Lib | Est�o ocorrendo erros nas tabelas 'PRMOVITENS_QUOTA','GEATENDIMENTO_PL |
-| 84233 | 103487 | SAM | Pend | Criar assinatura com o certificado digital nos relatórios da contabili |
 | 82965 | 103495 | SAM | Lib | Incluir o campo "CNPJ/CPF" para os modelos de boleto do banco 85 - Ail |
 | 83191 | 103476 | SAM | Lib | Criar uma valida��o ao alterar o "Grupo DRE" no cadastro das Contas Co |
 | 82857 | 103399 | SAM | Lib | Liberar os Tempos 82032 e 82050. |
 | 88039 | 103395 | SAIL | Lib | RS-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 82791 | 103230 | SAM | Lib | Realizar testes explorat�rios do envio do plano de contas para Conta A |
 | 83167 | 103187 | NE | Lib | Est� ocorrendo falha na sincroniza��o dos extratos quando possui empre |
-| 82931 | 103110 | SAM | Lib | Não permitir selecionar a integração contábil da folha na rotina do mó |
 | 82749 | 103008 | SAM | Desc | Otimizar a emiss�o do SPED ECF para empresas com centro de custos. |
-| 83040 | 102937 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED Contábil. |
 | 82606 | 102888 | NE | Lib | Ocorre erro ao atualizar o banco de dados na tabela "HRPARAMETRO_SEQUE |
-| 82546 | 102761 | NE | Lib | Não está executando a rotina ficando pendente quando selecionado o env |
 | 82533 | 102741 | NE | Lib | Est� apresentando o erro "Null object reference at line 6 in ue_transf |
 | 85591 | 102697 | SAIL | Lib | PR-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 82463 | 102688 | SAM | Lib | Liberar tempo automa��o. |
@@ -29215,16 +28811,13 @@
 | 82413 | 102593 | SAIL | Lib | Implementar a modalidade "FILAN - Filantropia" para gerar o arquivo DI |
 | 82388 | 102535 | NE | Desc | Est� apresentando indevidamente a mensagem "Sem dados para emitir" par |
 | 82354 | 102528 | SAM | Desc | Refatorar trecho que gera contas cont�beis para os participantes e pas |
-| 82560 | 102455 | NE | Lib | Não está limpando o smart badge e removendo o vínculo das contas de fo |
 | 82471 | 102405 | SAM | Lib | Incluir linha totalizadora no relat�rio "Consolida��o de Receitas e De |
 | 82508 | 102403 | SAM | Lib | Incluir bot�o de Busca Avan�ada na tela da "Concilia��o Banc�ria".  |
 | 82237 | 102360 | SAM | Lib | Ajustar o comportamento do sistema na 'Aplica��o de perfil de empresa' |
 | 82228 | 102349 | SAM | Lib | Atualizar Lib da Escrita conforme altera��o realizada na Contabilidade |
 | 82215 | 102346 | SAM | Lib | Atualizar Lib da Escrita conforme altera��o realizada na Contabilidade |
 | 82216 | 102342 | SAM | Lib | Atualizar Lib da Escrita conforme altera��es realizadas na Contabilida |
-| 82410 | 102281 | NE | Lib | Está retornando feedback 'Falha ao executar o processamento' na emissã |
 | 82272 | 102124 | SAM | Lib | Validar a data de in�cio de lan�amentos ao "Sobrescrever" Par�metros. |
-| 82565 | 102106 | NE | Lib | Está apresentando indevidamente a mensagem 'Não existem dados para emi |
 | 82050 | 102067 | SAM | Lib | Efetuar cancelamento de boletos no parceiro Celcoin |
 | 82045 | 102059 | SAM | Lib | Otimizar o plano geral do informativo "Arquivo Banco Central". |
 | 82030 | 102038 | SAM | Lib | Permitir que as Rotinas Autom�ticas sejam utilizadas por todos os tipo |
@@ -29235,33 +28828,25 @@
 | 81879 | 101793 | SAM | Lib | Liberar tempo automa��o. |
 | 81873 | 101767 | SAM | Lib | Implementar retornos da Conta Azul referente ao plano de contas via AP |
 | 84054 | 101657 | SAM | Desc | SP-Mitigar bloqueios de IP's internacionais no Dom�nio WEB para envio  |
-| 81730 | 101601 | SAM | Lib | TECH - Atualizar a versão do spring-kafka nos projetos da contabilidad |
 | 81832 | 101534 | SAIL | Lib | Criar modelo de impress�o e exporta��o de DPS e NFS-e para o Modelo Na |
 | 81767 | 101512 | NE | Lib | Est� demonstrando o valor do lucro do per�odo na conta de preju�zo do  |
 | 82287 | 101481 | NE | Lib | N�o est� demonstrando corretamente as vari�veis da escrita, nos lan�am |
 | 81759 | 101454 | NE | Lib | Est� sendo informada incorretamente a categoria a receber ao realizar  |
-| 82021 | 101421 | SAM | Lib | Alterar a forma de gerar e apresentar o Lucro Líquido/Prejuízo do Exer |
 | 85108 | 101371 | SAIL | Lib | MG-Criar op��o para gerar Notas Fiscais de Servi�os Eletr�nicas para o |
 | 81511 | 101286 | NE | Desc | N�o est� excluindo os lan�amentos cont�beis na contabilidade quando a  |
 | 82055 | 101193 | SAM | Lib | Permitir gravar uma edi��o de nota quando o per�odo da contabilidade e |
 | 81588 | 101109 | SAM | Lib | Enviar o plano de contas via API Conta Azul com o v�nculo do cadastro  |
 | 81381 | 101074 | NE | Lib | Est� demonstrando incorretamente um espa�amento no demonstrativo DRE p |
 | 81310 | 101052 | NE | Lib | O sistema n�o est� importando lan�amentos de outra empresa, quando a e |
-| 81841 | 101043 | SAM | Lib | Copiar configuração de integração contábil na aplicação do perfil e na |
-| 81344 | 101040 | SAM | Lib | Criar novo menu "Consultas" e ajustar opções "Consulta integração cont |
 | 81306 | 100943 | SAIL | Lib | PB-Criar op��o para gerar Notas Fiscais de Servi�os Eletr�nicas para o |
 | 81305 | 100883 | SAIL | Lib | RO-Criar op��o para gerar Notas Fiscais de Servi�os Eletr�nicas para o |
 | 81194 | 100865 | SAM | Lib | Liberar tempo automa��o. |
 | 81257 | 100795 | SAIL | Lib | Implementar telas para gerar Notas Fiscais de Servi�o Eletr�nicas do m |
 | 81058 | 100657 | SAM | Lib | Enviar o plano de contas para a Conta Azul via API. |
 | 81275 | 100594 | NE | Lib | N�o est�o sendo listados os lan�amentos nos relat�rios, quando a empre |
-| 81547 | 100537 | SAM | Pend | Enviar o plano de contas via API Conta Azul com o vínculo do cadastro  |
-| 81406 | 100306 | NE | Lib | Estão sendo apresentados no Livro razão e Balancete saldos positivos c |
-| 83076 | 100282 | SAM | Lib | Criar uma opção na parametrização para permitir alterar os lançamentos |
 | 82944 | 100232 | SAL | Lib | Cessar a deprecia��o e o c�lculo de bens mantidos para venda.     |
 | 80953 | 100228 | NE | Lib | Est� apagando o centro de custos na tela de lan�amentos ao clicar em " |
 | 80952 | 100081 | SAM | Lib | Alterar o quadro "Multa" posi��o 66 (campo 14.3R) para gera��o do arqu |
-| 80844 | 100036 | SAM | Lib | Incluir mensagem para o usuário ao clicar no 'Cadastro de contabilizaç |
 | 81769 | 100019 | SAM | Lib | Alterar o sistema para que a configura��o do identificador do plano de |
 | 84208 | 100008 | SAM | Lib | Permitir salvar o relat�rio 'Balancete' com a extens�o ".xlsx" no bot� |
 | 80851 | 99974 | NE | Lib | Em alguns casos n�o est� importando o valor do Lucro Antes da CSLL, qu |
@@ -29270,22 +28855,11 @@
 | 80807 | 99867 | NE | Lib | N�o est� apresentando o CNPJ no balancete salvo em txt na vers�o 10.3A |
 | 80847 | 99844 | SAM | Lib | Otimizar o tempo de importa��o de boletos recebidos.   |
 | 80874 | 99809 | SAL | Lib | Atualizar o Plano de Contas Referencial do Banco Central para o tipo d |
-| 80734 | 99754 | NE | Desc | Otimizar o tempo de processamento do vínculo das contas na estrutura d |
 | 81025 | 99679 | NE | Lib | Est� sendo setado o foco no campo incorreto na guia "Contabilidade" da |
 | 80688 | 99641 | NE | Lib | N�o est� gravando o lan�amento/edi��o da nota quando o servi�o da cont |
-| 80672 | 99628 | SAM | Lib | Remover os módulos da Contabilidade da lib de Platarforma. |
-| 80671 | 99626 | SAM | Lib | Mover o módulo de Relatórios para a Lib da Contabilidade. |
-| 80670 | 99618 | SAM | Lib | Mover o módulo de Contas para a Lib da Contabilidade. |
-| 80669 | 99615 | SAM | Lib | Mover o módulo de Históricos para a Lib da Contabilidade. |
 | 80662 | 99606 | SAM | Lib | Liberar tempo automa��o. |
 | 80667 | 99605 | SAIL | Lib | RS-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
-| 80837 | 99513 | SAM | Lib | Criar opção para realizar a Integração Contábil nas rotinas programada |
-| 80607 | 99490 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Livro Ra |
-| 80605 | 99487 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Balancet |
-| 80604 | 99486 | SAM | Lib | Solucionar problemas de performance encontrados na emissão do Balanço. |
 | 80646 | 99475 | NE | Lib | N�o s�o demonstrados os lan�amentos cont�beis no utilit�rio\Ajustes de |
-| 80610 | 99455 | SAM | Lib | Permitir definir o plano de contas antes da parametrização. |
-| 80588 | 99433 | SAM | Lib | Enviar o plano de contas para a Conta Azul via API. |
 | 80659 | 99349 | NE | Lib | N�o est� sendo setado o centro de custo no bot�o "Rateio" da guia "Con |
 | 80549 | 99243 | SAM | Lib | Alterar esp�cie do t�tulo na gera��o do arquivo de remessa de CNAB 400 |
 | 80548 | 99241 | SAM | Lib | Alterar boleto modelo Banrisul do banco 41-Banrisul.     |
@@ -29294,14 +28868,12 @@
 | 80414 | 99054 | NE | Lib | Est� sendo apresentado indevidamente mensagem de erro de sistema "dfc_ |
 | 80481 | 98975 | SAL | Lib | Incluir o quadro "Auxiliar de Risco de Mercado" para gera��o da DIOPS  |
 | 80377 | 98974 | SAM | Lib | DF-Implementar m�todo ConsultarUrlNfseEnvio para gerar o QR Code das N |
-| 80330 | 98924 | NE | Lib | Falha na integração quando a competência já havia sido integrada e o p |
 | 80635 | 98850 | SAIL | Lib | MG-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o  |
 | 81601 | 98839 | SAM | Lib | PR-Realizar a importa��o dos valores das tags "qBCMonoRet", "adRemICMS |
 | 80473 | 98823 | SAM | Lib | RS-Realizar a importa��o dos valores das tags "qBCMonoRet", "adRemICMS |
 | 80271 | 98765 | SAM | Lib | SP-Realizar a importa��o dos valores das tags "qBCMonoRet", "adRemICMS |
 | 80219 | 98750 | SAM | Lib | Alterar sistema para que seja poss�vel exportar o Plano de Contas Cont |
 | 80196 | 98709 | SAM | Lib | Liberar tempo automa��o. |
-| 80446 | 98598 | NE | Lib | Comportamento incorreto na seleção de conta na modal do 'Plano de cont |
 | 80059 | 98455 | SAM | Pend | Enviar guias com c�digo de barras de forma autom�tica para o Digital B |
 | 81294 | 98405 | SAM | Lib | Alterar nome do banco 84 - Uniprime para 84 - Sisprime |
 | 82710 | 98391 | SAM | Lib | Criar uma op��o no "Utilit�rios" para atualizar o campo nosso n�mero d |
@@ -29823,7 +29395,6 @@
 | 59237 | 65492 | NE | Lib | N�o est�o sendo replicada as contas cont�beis no cadastro de Contas Pa |
 | 58999 | 65429 | SAM | Desc | Disponibilizar acesso ao cadastro de 'Contas Cont�beis' e 'Hist�ricos  |
 | 58952 | 65200 | NE | Lib | N�o est� sendo gerado corretamente as contas do lan�amento cont�bil do |
-| 58676 | 64952 | SAM | Desc | Criar módulo Contabilidade no Onvio. |
 | 59160 | 64864 | NE | Lib | Est�o sendo demonstradas incorretamente as informa��es do demonstrativ |
 | 58596 | 64838 | SAM | Desc | Exibir mensagem para alterar o cliente de fixo para eventual quando o  |
 | 58495 | 64636 | NE | Lib | Est� sendo gerado indevidamente registros I155 no informativo SPED Con |
@@ -29840,15 +29411,9 @@
 | 58207 | 64049 | SAL | Lib | Atualizar o plano de contas referenciais de Partidos Pol�ticos conform |
 | 58091 | 63914 | NE | Lib | N�o est� sendo gerado o relat�rio Balancete, quando for configurado pa |
 | 60633 | 63913 | SAM | Lib | Alterar o comportamento para identifica��o da conta financeira na impo |
-| 58806 | 63867 | SAM | Desc | Criar rotina de fechamento da contabilidade no Onvio. |
-| 58707 | 63848 | SAM | Desc | Criar o cadastro de Contas do módulo Contabilidade no Onvio. |
-| 58805 | 63847 | SAM | Desc | Criar o cadastro de lançamento padrão do módulo Contabilidade no Onvio |
 | 58005 | 63781 | NE | Lib | Est� sendo gerado incorretamente o campo "03-COD_AGL" do registro I052 |
-| 58743 | 63711 | SAM | Desc | Criar o zeramento no módulo Contabilidade no Onvio. |
 | 57953 | 63619 | NE | Lib | N�o est� sendo gerada corretamente a informa��o do campo "05-COD_AGL_S |
 | 57924 | 63584 | SAM | Lib | Otimizar o processo de gerar lan�amentos referenciais em grupo. |
-| 58691 | 63522 | SAM | Desc | Criar o cadastro de históricos do módulo Contabilidade no Onvio. |
-| 58709 | 63521 | SAM | Desc | Criar os parâmetros do módulo Contabilidade. |
 | 57864 | 63413 | SAL | Lib | SC-Alterar o m�todo de consulta de lote de RPS para o munic�pio de Joi |
 | 57942 | 63350 | NE | Lib | RN-N�o est� sendo importados os saldos das contas cont�beis no bot�o " |
 | 57844 | 63306 | NE | Lib | N�o est� sendo gerado o registro I051 do informativo SPED Cont�bil, qu |
@@ -30336,580 +29901,580 @@
 | 40707 | 34225 | NE | Lib | Est�o sendo exclu�dos indevidamente os centros de custo informados nas |
 | 34074 | 34170 | SAM | Lib | Alterar o processo de envio de informa��es para o Dom�nio Atendimento. |
 | 31871 | 34149 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
-| 31872 | 34150 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
-| 31873 | 34151 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
 | 32078 | 34158 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
 | 31878 | 34153 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
+| 31873 | 34151 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
 | 31877 | 34152 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
+| 31872 | 34150 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
+| 31290 | 34138 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31270 | 34132 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31291 | 34139 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31285 | 34133 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31289 | 34137 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31290 | 34138 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30809 | 34109 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31291 | 34139 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31217 | 34122 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30808 | 34108 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31215 | 34120 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30809 | 34109 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31216 | 34121 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 29911 | 34084 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
-| 30239 | 34093 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30783 | 34101 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 29912 | 34085 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
-| 30237 | 34091 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30807 | 34107 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30723 | 34097 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30802 | 34102 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30235 | 34089 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 29909 | 34083 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
-| 29907 | 34081 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
 | 30803 | 34103 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 29907 | 34081 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 29909 | 34083 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 29911 | 34084 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 30723 | 34097 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30783 | 34101 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30239 | 34093 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30235 | 34089 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30237 | 34091 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 29912 | 34085 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 30802 | 34102 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 29863 | 34076 | SAM | Lib | Melhorar o controle de erros na troca de informa��o entre o Dom�nio At |
 | 29833 | 34075 | SAM | Desc | Melhorar o controle de erros na troca de informa��o entre o Dom�nio At |
 | 28773 | 34065 | SAM | Lib | Parar de enviar informa��es para o Dom�nio atendimento a partir de uma |
-| 29863 | 34076 | SAM | Lib | Melhorar o controle de erros na troca de informa��o entre o Dom�nio At |
+| 26994 | 34055 | SAM | Lib | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensit |
 | 26640 | 34050 | SAM | Lib | Criar recurso para desabilitar/habilitar manualmente o envio de inform |
 | 26995 | 34056 | SAM | Lib | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensit |
 | 26993 | 34054 | SAM | Lib | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensit |
-| 26994 | 34055 | SAM | Lib | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensit |
+| 18662 | 33973 | SAM | Lib | Implantar novo logotipo do Banco Sicredi no Boleto.   |
 | 18740 | 33979 | SAM | Lib | Criar op��o para realizar a concilia��o de lan�amentos cont�beis. |
 | 18743 | 33980 | SAM | Lib | Conciliar somente a conta e n�o todo o lan�amento, ao efetuar a concil |
 | 18677 | 33974 | SAM | Lib | Criar a op��o Incluir, Alterar e Excluir nas op��es Lan�amentos, Consu |
 | 18752 | 33983 | SAM | Lib | Possibilitar a inclus�o de um par�metro para especificar a compet�ncia |
-| 18662 | 33973 | SAM | Lib | Implantar novo logotipo do Banco Sicredi no Boleto.   |
 | 18440 | 33955 | SAM | Lib | Criar campo para informar se o cliente autoriza o d�bito em conta.   |
 | 18356 | 33945 | SAM | Lib | Possibilitar a abertura da tela de lan�amentos cont�beis ao pressionar |
-| 18120 | 33928 | SAM | Lib | Reorganizar tela de par�metros do m�dulo Contabilidade. |
 | 18194 | 33932 | SAM | Lib | Permitir gerar o arquivo de remessa do Banco Bradesco sem informa��es  |
+| 18120 | 33928 | SAM | Lib | Reorganizar tela de par�metros do m�dulo Contabilidade. |
 | 18068 | 33923 | SAM | Lib | Criar op��o para gerar os lan�amentos para contas referenciais em grup |
 | 17818 | 33905 | SAM | Lib | Gerar arquivo de remessa de 400 posi��es para o banco Ita�. |
-| 17221 | 33855 | SAM | Lib | Gravar a data de recebimento do boleto informada no arquivo de retorno |
-| 17217 | 33852 | SAM | Lib | Permitir gerar o arquivo de remessa do Banco do Brasil sem informa��es |
+| 17174 | 33843 | SAM | Lib | Gerar o n�mero do endere�o e o complemento do endere�o, no segmento Q  |
+| 17168 | 33841 | SAM | Lib | Criar relat�rio de aviso de excedentes. |
 | 17219 | 33854 | SAM | Lib | Criar vari�veis para serem utilizadas no complemento de eventos. |
 | 17224 | 33856 | SAM | Lib | Criar op��o para lan�ar descontos informando o per�odo inicial e final |
-| 17168 | 33841 | SAM | Lib | Criar relat�rio de aviso de excedentes. |
+| 17221 | 33855 | SAM | Lib | Gravar a data de recebimento do boleto informada no arquivo de retorno |
+| 17217 | 33852 | SAM | Lib | Permitir gerar o arquivo de remessa do Banco do Brasil sem informa��es |
 | 17216 | 33851 | SAM | Lib | Gerar arquivo de remessa de 400 posi��es para o banco Bradesco. |
-| 17174 | 33843 | SAM | Lib | Gerar o n�mero do endere�o e o complemento do endere�o, no segmento Q  |
 | 17186 | 33844 | SAM | Lib | Gerar o boleto do banco Santander no modelo Completo - Detalhado |
-| 16725 | 33814 | SAM | Lib | Gerar o boleto do banco Mercantil no modelo Completo - Detalhado   |
 | 16720 | 33809 | SAM | Lib | Gerar o boleto do banco BANCOOB no modelo Completo - Detalhado   |
-| 16718 | 33807 | SAM | Lib | Gerar o boleto do banco SICREDI no modelo Completo - Detalhado     |
-| 16724 | 33813 | SAM | Lib | Possibilitar a gera��o do arquivo de remessa do Banco do Brasil, espec |
 | 16721 | 33810 | SAM | Lib | Gerar o boleto do banco HSBC no modelo Completo - Detalhado   |
+| 16724 | 33813 | SAM | Lib | Possibilitar a gera��o do arquivo de remessa do Banco do Brasil, espec |
+| 16725 | 33814 | SAM | Lib | Gerar o boleto do banco Mercantil no modelo Completo - Detalhado   |
+| 16718 | 33807 | SAM | Lib | Gerar o boleto do banco SICREDI no modelo Completo - Detalhado     |
 | 16424 | 33779 | SAM | Lib | Criar op��o para n�o imprimir o balancete acumulado na emiss�o dos liv |
 | 16447 | 33789 | SAM | Lib | Gerar arquivo de remessa para o banco Santander.     |
 | 15619 | 33729 | SAM | Lib | ALterar a formata��o dos campos Ag�ncia, C�digo Cedente e Nosso N�mero |
-| 15426 | 33722 | SAM | Desc | Criar op��o para gerar a coluna saldo anterior dos modelo do DRE IV e  |
-| 15229 | 33708 | SAM | Lib | Liberar no importador a tabela para detalhamento da DFC. |
-| 15004 | 33697 | SAM | Lib | Criar op��o de emitir a declara��o final do balan�o e DRE pelo menu Li |
 | 15017 | 33699 | SAM | Lib | Permitir alterar a data de lan�amentos em lotes para tipos diferente d |
-| 14876 | 33691 | SAM | Lib | Retirar campo Intervalo de dias do lan�amento de contas a pagar a praz |
+| 15004 | 33697 | SAM | Lib | Criar op��o de emitir a declara��o final do balan�o e DRE pelo menu Li |
+| 15229 | 33708 | SAM | Lib | Liberar no importador a tabela para detalhamento da DFC. |
+| 15426 | 33722 | SAM | Desc | Criar op��o para gerar a coluna saldo anterior dos modelo do DRE IV e  |
 | 14879 | 33692 | SAM | Lib | Otimizar o processo de impress�o dos boletos do tipo Completo - Detalh |
+| 14876 | 33691 | SAM | Lib | Retirar campo Intervalo de dias do lan�amento de contas a pagar a praz |
 | 14508 | 33667 | SAM | Lib | Converter como boletos n�o emitidos os faturamentos que n�o possuirem  |
 | 14351 | 33635 | SAM | Desc | Permitir incluir eventos novos numa renegocia��o. |
+| 14261 | 33622 | SAM | Lib | Permitir que seja utilizada as vers�es do Honor�rios 3 e Honor�rios 4, |
 | 14296 | 33629 | SAM | Lib | Criar op��o para imprimir local e data nos relat�rios an�lise do DRE e |
 | 14345 | 33632 | SAM | Desc | Abrir a tela de adiantamento automaticamente ao realizar um recebiment |
-| 14261 | 33622 | SAM | Lib | Permitir que seja utilizada as vers�es do Honor�rios 3 e Honor�rios 4, |
 | 13851 | 33581 | SAM | Lib | Criar o processo de lan�amentos or�ados por categoria para contas a pa |
+| 14038 | 33599 | SAM | Lib | Criar op��o para realizar a convers�o do Honr�rios 3 para o Honor�rios |
 | 13850 | 33580 | SAM | Lib | Criar op��o para informar s�rie e sub s�rie para notas fiscais. |
 | 13852 | 33582 | SAM | Lib | Criar op��o de informar uma imagem para ser utilizada nos relat�rios p |
-| 14038 | 33599 | SAM | Lib | Criar op��o para realizar a convers�o do Honr�rios 3 para o Honor�rios |
 | 13486 | 33538 | SAM | Desc | N�o est� sendo realizada nenhum tipo de valida��o das informa��es, ao  |
-| 13407 | 33521 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita e Contabi |
-| 13040 | 33502 | SAM | Lib | Desenvolver nova tela de lan�amentos onde na mesma tela possa ser cons |
 | 13251 | 33517 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
 | 13017 | 33499 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita fiscal e  |
+| 13040 | 33502 | SAM | Lib | Desenvolver nova tela de lan�amentos onde na mesma tela possa ser cons |
+| 13407 | 33521 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulo Escrita e Contabi |
+| 12852 | 33478 | SAM | Lib | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabi |
+| 12740 | 33473 | SAM | Lib | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabi |
 | 12934 | 33488 | SAM | Desc | Possibilitar a importa��o do arquivo de retorno do banco Bradesco |
 | 12729 | 33469 | SAM | Lib | Criar op��o para realizar os lan�amentos or�ados por filial |
-| 12740 | 33473 | SAM | Lib | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabi |
-| 12852 | 33478 | SAM | Lib | Atualizar esse m�dulo conforme altera��o nos m�dulos Escrita e Contabi |
-| 12449 | 33427 | SAM | Lib | Criar op��o para filtrar os clientes por tipo de cobran�a. |
+| 12451 | 33428 | SAM | Lib | Criar op��o para impress�o de recibo do Adiantamento.   |
 | 12448 | 33426 | SAM | Lib | Criar a op��o de agrupar por cliente no relat�rio de lan�amentos |
 | 12210 | 33411 | SAM | Lib | Gravar as configura��es das telas de relat�rios por empresa e usu�rio  |
-| 12451 | 33428 | SAM | Lib | Criar op��o para impress�o de recibo do Adiantamento.   |
-| 12417 | 33422 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
+| 12449 | 33427 | SAM | Lib | Criar op��o para filtrar os clientes por tipo de cobran�a. |
 | 12321 | 33416 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
-| 11793 | 33383 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
+| 12417 | 33422 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
 | 11839 | 33392 | SAM | Lib | Criar op��o para consolidar contas financeiras na op��o "Saldo de Cont |
-| 12108 | 33403 | SAM | Lib | Criar um campo "Localizador" na tela de lan�amentos em lote.         |
 | 11766 | 33379 | SAM | Lib | Permitir pr� configurar um lan�amento de contas a pgar |
-| 11841 | 33394 | SAM | Lib | Disponibilizar op��o de dia �til na forma de vencimento dos par�metros |
-| 11769 | 33380 | SAM | Lib | Criar op��o de gerar uma faturamento parcelado em mais de um venciment |
-| 12107 | 33402 | SAM | Desc | Otimizar o processo de gera��o do relat�rio de D.R.E por centro de cus |
-| 11805 | 33387 | SAM | Lib | Integrar o Honor�rios com a contabilidade dos clientes. |
-| 11834 | 33389 | SAM | Lib | Criar atalho na barra de ferramentas para acessar a baixa de contas a  |
-| 11798 | 33384 | SAM | Lib | Criar op��o de faturar taxa adicional de final de ano (13� sal�rio) |
 | 11774 | 33382 | SAM | Lib | Criar op��o para informar, ao realizar um lan�amento de evento, se o m |
-| 11772 | 33381 | SAM | Lib | Disponibilizar a op��o de selecionar todas as parcelas na baixa de fat |
+| 12108 | 33403 | SAM | Lib | Criar um campo "Localizador" na tela de lan�amentos em lote.         |
+| 11769 | 33380 | SAM | Lib | Criar op��o de gerar uma faturamento parcelado em mais de um venciment |
+| 11793 | 33383 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
+| 11834 | 33389 | SAM | Lib | Criar atalho na barra de ferramentas para acessar a baixa de contas a  |
+| 12107 | 33402 | SAM | Desc | Otimizar o processo de gera��o do relat�rio de D.R.E por centro de cus |
 | 12000 | 33399 | SAM | Lib | Desenvolver novo m�dulo Honor�rios |
-| 11747 | 33369 | SAM | Lib | Criar op��o para contabilizar ou n�o um evento. |
-| 11744 | 33366 | SAM | Lib | Criar sele��o de clientes semelhante a sele��o de empregados da Folha |
-| 11716 | 33358 | SAM | Lib | Desenvolver boleto completo do banco Santander |
-| 11718 | 33360 | SAM | Lib | Desenvolver boleto do banco de Bras�lia. |
+| 11841 | 33394 | SAM | Lib | Disponibilizar op��o de dia �til na forma de vencimento dos par�metros |
+| 11798 | 33384 | SAM | Lib | Criar op��o de faturar taxa adicional de final de ano (13� sal�rio) |
+| 11805 | 33387 | SAM | Lib | Integrar o Honor�rios com a contabilidade dos clientes. |
+| 11772 | 33381 | SAM | Lib | Disponibilizar a op��o de selecionar todas as parcelas na baixa de fat |
 | 11717 | 33359 | SAM | Lib | Desenvolver boleto completo do banco Sudameris. |
-| 11719 | 33361 | SAM | Desc | Desenvolver Boleto completo do Banco Unicred. |
-| 11748 | 33370 | SAM | Lib | Criar relat�rio de fluxo de caixa. |
-| 11745 | 33367 | SAM | Lib | Criar processo de renegocia��o. |
-| 11754 | 33376 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco HSBC no padr� |
+| 11744 | 33366 | SAM | Lib | Criar sele��o de clientes semelhante a sele��o de empregados da Folha |
+| 11747 | 33369 | SAM | Lib | Criar op��o para contabilizar ou n�o um evento. |
 | 11715 | 33357 | SAM | Lib | Contabilizar o valor bruto do faturamento quando houver aproveitamento |
-| 11356 | 33337 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do banco Sicoob. |
+| 11718 | 33360 | SAM | Lib | Desenvolver boleto do banco de Bras�lia. |
+| 11719 | 33361 | SAM | Desc | Desenvolver Boleto completo do Banco Unicred. |
+| 11754 | 33376 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco HSBC no padr� |
+| 11745 | 33367 | SAM | Lib | Criar processo de renegocia��o. |
+| 11748 | 33370 | SAM | Lib | Criar relat�rio de fluxo de caixa. |
+| 11716 | 33358 | SAM | Lib | Desenvolver boleto completo do banco Santander |
 | 11371 | 33340 | SAM | Lib | Gerar um PDF para cada cliente ao salvar notas fiscais, boletos e docu |
 | 11402 | 33344 | SAM | Desc | Incluir a op��o "vencimento" no quadro ordem do relat�rio de bloquetos |
+| 11356 | 33337 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do banco Sicoob. |
 | 11239 | 33315 | SAM | Desc | Refazer o relat�rio de tarefas realizadas alterando o nome para Lan�am |
 | 10658 | 33253 | SAM | Desc | Gravar o local das telas de consulta tamb�m por resolu��o de v�deo. |
+| 10867 | 33270 | SAM | Lib | Permitir informar data de vencimento de eventos com o formato DD/MM/AA |
 | 10826 | 33265 | SAM | Desc | Disponibilizar a consulta F11 na tela de lan�amentos em lote. |
 | 10835 | 33267 | SAM | Lib | Criar op��o para calcular descontos autom�ticos para clientes adimplen |
-| 10867 | 33270 | SAM | Lib | Permitir informar data de vencimento de eventos com o formato DD/MM/AA |
-| 10488 | 33225 | SAM | Lib | Gravar a informa��o do �ltimo caminho selecionado na importa��o de blo |
-| 10555 | 33234 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal e C |
 | 10492 | 33229 | SAM | Lib | Criar coluna Compet�ncia no relat�rio de Contas a Receber.       |
-| 10479 | 33219 | SAM | Lib | Criar op��o de excluir sele��es gravadas na tela de sele��o de cliente |
-| 10481 | 33221 | SAM | Lib | Bloquear lan�amentos em contas cont�beis sint�ticas. |
-| 10478 | 33218 | SAM | Lib | Criar op��o de ordenar o relat�rio de posi��o por ordem alfab�tica de  |
+| 10555 | 33234 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal e C |
+| 10488 | 33225 | SAM | Lib | Gravar a informa��o do �ltimo caminho selecionado na importa��o de blo |
 | 10480 | 33220 | SAM | Lib | Criar op��o para ordenar e quebrar os eventos por compet�ncia no relat |
+| 10479 | 33219 | SAM | Lib | Criar op��o de excluir sele��es gravadas na tela de sele��o de cliente |
 | 10411 | 33200 | SAM | Lib | Detalhar as baixas parciais feitas no relat�rio de contas a pagar.     |
+| 10481 | 33221 | SAM | Lib | Bloquear lan�amentos em contas cont�beis sint�ticas. |
 | 10484 | 33223 | SAM | Lib | Implantar novo logotipo Banco Real no Boleto. |
-| 10202 | 33161 | SAM | Lib | Criar op��o para lan�amento de eventos fixos onde possa ser informado  |
-| 10310 | 33189 | SAM | Lib | Permitir baixar pagamento da mesma parcela mais de uma vez com a mesma |
+| 10478 | 33218 | SAM | Lib | Criar op��o de ordenar o relat�rio de posi��o por ordem alfab�tica de  |
 | 10209 | 33168 | SAM | Lib | Permitir excluir em grupo eventos lan�ados |
-| 10215 | 33173 | SAM | Lib | Permitir alterar a contabiliza��o na tela de movimenta��o. |
 | 10208 | 33167 | SAM | Desc | Permitir informar descri��es individuais por parcela ao baixar parcela |
-| 10309 | 33188 | SAM | Lib | N�o permitir informar manualmente o nosso n�mero mais de uma vez. |
-| 10200 | 33160 | SAM | Desc | Permitir alterar data de vencimento de um determinado faturamento. |
-| 10273 | 33182 | SAM | Lib | Criar op��o de ordena��o por "Nosso N�mero" no relat�rio Bloquetos Emi |
-| 10213 | 33171 | SAM | Lib | Trazer automaticamente a conta financeira e os demais dados ao efetuar |
+| 10215 | 33173 | SAM | Lib | Permitir alterar a contabiliza��o na tela de movimenta��o. |
 | 10311 | 33190 | SAM | Lib | Permitir selecionar mais de um evento no relat�rio Rela��o de Lan�amen |
-| 10204 | 33163 | SAM | Lib | Permitir realizar adiantamento por evento. |
+| 10202 | 33161 | SAM | Lib | Criar op��o para lan�amento de eventos fixos onde possa ser informado  |
 | 10287 | 33185 | SAM | Lib | Criar modelo de Coeficiente de An�lises em modo gr�fico.     |
+| 10309 | 33188 | SAM | Lib | N�o permitir informar manualmente o nosso n�mero mais de uma vez. |
+| 10273 | 33182 | SAM | Lib | Criar op��o de ordena��o por "Nosso N�mero" no relat�rio Bloquetos Emi |
 | 10205 | 33164 | SAM | Lib | Disponibilizar vari�veis para serem utilizadas no complemento de event |
-| 10182 | 33145 | SAM | Desc | Alterar a tela de baixa de faturamento, deixando semelhante � baixa de |
+| 10200 | 33160 | SAM | Desc | Permitir alterar data de vencimento de um determinado faturamento. |
+| 10213 | 33171 | SAM | Lib | Trazer automaticamente a conta financeira e os demais dados ao efetuar |
+| 10310 | 33189 | SAM | Lib | Permitir baixar pagamento da mesma parcela mais de uma vez com a mesma |
+| 10204 | 33163 | SAM | Lib | Permitir realizar adiantamento por evento. |
 | 10183 | 33146 | SAM | Lib | Criar op��o nos parametros para somente avisar ou avisar e n�o faturar |
 | 10181 | 33144 | SAM | Desc | Criar agrupamento "Data de Pagamento" no relat�rio de contas a pagar.  |
-| 10076 | 33131 | SAM | Lib | Habilitar o bot�o para Rateio por Centro de Custos na tela de baixa de |
-| 10150 | 33134 | SAM | Lib | Permitir alterar o vencimento de um faturamento. |
-| 10178 | 33141 | SAM | Lib | Criar op��o para ordenar por n�mero de documento o relat�rio de contas |
-| 10043 | 33116 | SAM | Desc | Possibilitar a importa��o de arquivo de retorno do SECOVICRED |
-| 10151 | 33135 | SAM | Lib | Fazer com que os eventos que n�o tenham contas cont�beis n�o sejam con |
+| 10182 | 33145 | SAM | Desc | Alterar a tela de baixa de faturamento, deixando semelhante � baixa de |
 | 10179 | 33142 | SAM | Lib | Permitirr informar quantidade/valor diferente por cliente na tela de l |
+| 10151 | 33135 | SAM | Lib | Fazer com que os eventos que n�o tenham contas cont�beis n�o sejam con |
+| 10043 | 33116 | SAM | Desc | Possibilitar a importa��o de arquivo de retorno do SECOVICRED |
+| 10178 | 33141 | SAM | Lib | Criar op��o para ordenar por n�mero de documento o relat�rio de contas |
+| 10076 | 33131 | SAM | Lib | Habilitar o bot�o para Rateio por Centro de Custos na tela de baixa de |
 | 10045 | 33118 | SAM | Lib | Criar op��o para ordenar por nome ou c�digo do cliente/fornecedor, ind |
-| 9912 | 33090 | SAM | Lib | Criar uma op��o para imprimir o c�digo ou a classifica��o da conta no  |
-| 10002 | 33109 | SAM | Desc | Disponibilizar na tela de emiss�o do balancete (individual) a op��o "T |
+| 10150 | 33134 | SAM | Lib | Permitir alterar o vencimento de um faturamento. |
 | 10001 | 33108 | SAM | Desc | Criar op��o para utilizar a mesma conta contabil do fornecedor/cliente |
-| 9911 | 33089 | SAM | Lib | Criar op��o para alterar a descri��o do t�tulo do Livro Caixa. |
 | 9910 | 33088 | SAM | Lib | Otimizar a gera��o do informativo Sinco Cont�beis |
-| 9812 | 33059 | SAM | Lib | Criar op��o de emitir o Livro Di�rio por centro de custos. |
+| 9911 | 33089 | SAM | Lib | Criar op��o para alterar a descri��o do t�tulo do Livro Caixa. |
+| 10002 | 33109 | SAM | Desc | Disponibilizar na tela de emiss�o do balancete (individual) a op��o "T |
+| 9912 | 33090 | SAM | Lib | Criar uma op��o para imprimir o c�digo ou a classifica��o da conta no  |
+| 9835 | 33067 | SAM | Lib | Limitar o valor da deprecia��o ao valor original do bem no ultimo m�s  |
+| 9853 | 33075 | SAM | Desc | N�o permitir configurar um grupo de contas para ser zerado se a conta  |
+| 9819 | 33065 | SAM | Lib | Gravar os lan�amentos cont�beis importados via arquivo texto com o tip |
+| 9844 | 33069 | SAM | Desc | Alterar a totaliza��o do Di�rio, quando marcado a op��o para emitir a  |
 | 9779 | 33052 | SAM | Lib | Melhorar a performance no processo de "Consulta dos Saldos(F6)".     |
+| 9812 | 33059 | SAM | Lib | Criar op��o de emitir o Livro Di�rio por centro de custos. |
+| 9815 | 33062 | SAM | Desc | Criar op��o na tela de fechamento para exibir mensagem de aviso quando |
+| 9850 | 33072 | SAM | Desc | Criar op��o para imprimir a classifica��o da conta contrapartida no Li |
+| 9810 | 33057 | SAM | Lib | Criar op��o para detalhar as contas por centro de custo no Balancete. |
 | 9814 | 33061 | SAM | Lib | Criar totalizadores nos relat�rios or�ament�rios: Acompanhamento Mensa |
 | 9852 | 33074 | SAM | Lib | Possibilitar a integra��o desse m�dulo com o Office 2007. |
 | 9846 | 33070 | SAM | Desc | Criar op��o de emitir a classifica��o da conta nos relat�rios or�ament |
-| 9815 | 33062 | SAM | Desc | Criar op��o na tela de fechamento para exibir mensagem de aviso quando |
 | 9818 | 33064 | SAM | Lib | N�o selecionar o primeiro lan�amento ao efetuar uma busca no utilit�ri |
-| 9850 | 33072 | SAM | Desc | Criar op��o para imprimir a classifica��o da conta contrapartida no Li |
-| 9819 | 33065 | SAM | Lib | Gravar os lan�amentos cont�beis importados via arquivo texto com o tip |
-| 9853 | 33075 | SAM | Desc | N�o permitir configurar um grupo de contas para ser zerado se a conta  |
-| 9835 | 33067 | SAM | Lib | Limitar o valor da deprecia��o ao valor original do bem no ultimo m�s  |
 | 9813 | 33060 | SAM | Lib | Criar op��o de emiss�o por centro de custo no relat�rio Comparativo de |
-| 9810 | 33057 | SAM | Lib | Criar op��o para detalhar as contas por centro de custo no Balancete. |
-| 9844 | 33069 | SAM | Desc | Alterar a totaliza��o do Di�rio, quando marcado a op��o para emitir a  |
 | 9811 | 33058 | SAM | Desc | Criar op��o para efetuar o rateio de centro de custo em cada partida d |
-| 9674 | 33041 | SAM | Desc | Quando um grupo DRE estiver configurado para "Fechar Sub Total" o mesm |
 | 9752 | 33050 | SAM | Desc | Criar op��o para ordenar contas do mesmo grupo por ordem alfab�tica no |
-| 9751 | 33049 | SAM | Desc | Criar consulta onde demonstre os departamentos e centro de custos de f |
-| 9672 | 33039 | SAM | Desc | Alterar a descri��o do campo "Resultado do M�s" para "Resultado do Per |
-| 9671 | 33038 | SAM | Desc | Gravar o n�mero do livro do Di�rio e Raz�o individualmente.   |
-| 9746 | 33045 | SAM | Desc | Otimizar o processo de emiss�o do balancete por centro de custos. |
 | 9747 | 33046 | SAM | Desc | Permitir compartilhar departamentos e centros de custos entre empresas |
+| 9674 | 33041 | SAM | Desc | Quando um grupo DRE estiver configurado para "Fechar Sub Total" o mesm |
+| 9671 | 33038 | SAM | Desc | Gravar o n�mero do livro do Di�rio e Raz�o individualmente.   |
+| 9672 | 33039 | SAM | Desc | Alterar a descri��o do campo "Resultado do M�s" para "Resultado do Per |
+| 9746 | 33045 | SAM | Desc | Otimizar o processo de emiss�o do balancete por centro de custos. |
+| 9751 | 33049 | SAM | Desc | Criar consulta onde demonstre os departamentos e centro de custos de f |
+| 9634 | 33026 | SAM | Lib | Reincluir a op��o de salvar relat�rios no formato "Excel com cabe�alho |
+| 9602 | 33013 | SAM | Desc | Obrigar a informa��o da classifica��o quando marcada as op��es Cada Cl |
+| 9632 | 33025 | SAM | Lib | Otimizar o processo de emiss�o do balancete por centros de custos. |
+| 9569 | 33007 | SAM | Desc | Criar campos para informar conta inicial e final no utilit�rio de expo |
 | 9611 | 33020 | SAM | Desc | Permitir zerar as contas cont�beis para realizar lan�amentos cont�beis |
 | 9563 | 33002 | SAM | Desc | N�o abrir a janela para rateio por centro de custos quando a empresa n |
-| 9602 | 33013 | SAM | Desc | Obrigar a informa��o da classifica��o quando marcada as op��es Cada Cl |
-| 9569 | 33007 | SAM | Desc | Criar campos para informar conta inicial e final no utilit�rio de expo |
-| 9632 | 33025 | SAM | Lib | Otimizar o processo de emiss�o do balancete por centros de custos. |
-| 9634 | 33026 | SAM | Lib | Reincluir a op��o de salvar relat�rios no formato "Excel com cabe�alho |
-| 9340 | 32955 | SAM | Desc | Ao efetuar a importa��o de clientes/fornecedores em empresa que usa pl |
+| 9315 | 32939 | SAM | Lib | Alterar os relat�rios para o formato padr�o e somente modelo gr�fico. |
+| 9318 | 32942 | SAM | Desc | Criar um campo para informar a data base para os relat�rios de contas  |
+| 9328 | 32950 | SAM | Desc | Criar as contas na empresa origem do plano de contas que realizado imp |
+| 9320 | 32944 | SAM | Desc | Criar op��p para n�o regerar lan�amentos cont�beis alterados manualmen |
 | 9303 | 32935 | SAM | Lib | Imprimir o CNAE 2.0 na guia GARE. |
 | 9316 | 32940 | SAM | Lib | Trazer sempre selecionada a conta quando repatido da partida anterior. |
-| 9315 | 32939 | SAM | Lib | Alterar os relat�rios para o formato padr�o e somente modelo gr�fico. |
+| 9340 | 32955 | SAM | Desc | Ao efetuar a importa��o de clientes/fornecedores em empresa que usa pl |
 | 9332 | 32951 | SAM | Lib | N�o permitir alterar o per�odo de trabalho com a tela de lan�amentos e |
-| 9318 | 32942 | SAM | Desc | Criar um campo para informar a data base para os relat�rios de contas  |
-| 9320 | 32944 | SAM | Desc | Criar op��p para n�o regerar lan�amentos cont�beis alterados manualmen |
-| 9328 | 32950 | SAM | Desc | Criar as contas na empresa origem do plano de contas que realizado imp |
 | 9214 | 32910 | SAM | Desc | Imprimir o CNPJ da empresa no relat�rio raz�o auxiliar |
 | 9268 | 32921 | SAM | Desc | Permitir a exclus�o da empresa independente do fechamento utilizado. |
-| 9102 | 32861 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco Ita�. |
 | 9108 | 32866 | SAM | Desc | Criar op��o para quebrar por filiais quando selecionado a op��o todos  |
-| 9116 | 32873 | SAM | Desc | Passar pela guia contabilidade da tela de lan�amentos de entradas, sa� |
-| 9110 | 32868 | SAM | Desc | Possibilitar a importa��o de arquivo de retorno do Unibanco. |
+| 9102 | 32861 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco Ita�. |
 | 9103 | 32862 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco do Brasil no  |
+| 9110 | 32868 | SAM | Desc | Possibilitar a importa��o de arquivo de retorno do Unibanco. |
+| 9116 | 32873 | SAM | Desc | Passar pela guia contabilidade da tela de lan�amentos de entradas, sa� |
+| 9065 | 32853 | SAM | Lib | Criar op��o de omitir grupos de contas nos relat�rios or�ament�rios de |
 | 9066 | 32854 | SAM | Desc | Incluir assinaturas nos relat�rios or�ament�rios de Acompanhamento Men |
 | 9072 | 32858 | SAM | Lib | Criar op��o de emitir apenas as contas com movimento nos relat�rios or |
-| 9065 | 32853 | SAM | Lib | Criar op��o de omitir grupos de contas nos relat�rios or�ament�rios de |
-| 8986 | 32829 | SAM | Desc | Disponibilizar a fun��o F11 na tela de lan�amento em lotes. |
-| 8981 | 32824 | SAM | Desc | Criar atalho para selecionar os tipos de lan�amentos na tela de lan�am |
 | 8979 | 32822 | SAM | Lib | Alterar a tela de retorno de protocolo para que seja poss�vel efetuar  |
-| 8996 | 32835 | SAM | Desc | Demonstrar o n�mero do lote na guia contabilidade do lan�amento de ent |
+| 8981 | 32824 | SAM | Desc | Criar atalho para selecionar os tipos de lan�amentos na tela de lan�am |
 | 8983 | 32826 | SAM | Lib | Criar op��o para repetir dados a cada partida de lan�amentos.   |
 | 8985 | 32828 | SAM | Desc | Trazer padr�o na tela de lan�amentos em lote a data do primeiro dia do |
+| 8986 | 32829 | SAM | Desc | Disponibilizar a fun��o F11 na tela de lan�amento em lotes. |
+| 8996 | 32835 | SAM | Desc | Demonstrar o n�mero do lote na guia contabilidade do lan�amento de ent |
+| 8874 | 32787 | SAM | Lib | Gerar os lan�amentos cont�beis referente aos pagamentos da Folha em lo |
 | 8787 | 32759 | SAM | Desc | Disponibilizar op��o para imprimir DLPA e DOAR consolidado entre empre |
 | 8868 | 32785 | SAM | Desc | Incluir a op��o "N�mero do documento" em par�metros/contabilidade grup |
-| 8874 | 32787 | SAM | Lib | Gerar os lan�amentos cont�beis referente aos pagamentos da Folha em lo |
-| 8781 | 32755 | SAM | Lib | Permitir a baixa de parcelas a pagar em grupo. |
-| 8776 | 32752 | SAM | Lib | Ordenar conforme clicado sobre o t�tulo da coluna na consulta F2 de cl |
 | 8707 | 32739 | SAM | Lib | Abrir a tela de lan�amentos em lote quando editado os lan�amentos pela |
-| 8775 | 32751 | SAM | Desc | Criar atalho ao lado dos campos que buscam valores da Contabilidade no |
+| 8776 | 32752 | SAM | Lib | Ordenar conforme clicado sobre o t�tulo da coluna na consulta F2 de cl |
 | 8644 | 32723 | SAM | Desc | Disponibilizar coluna DMPL na listagem do plano de contas. |
+| 8775 | 32751 | SAM | Desc | Criar atalho ao lado dos campos que buscam valores da Contabilidade no |
+| 8781 | 32755 | SAM | Lib | Permitir a baixa de parcelas a pagar em grupo. |
 | 8780 | 32754 | SAM | Desc | Criar op��o para Desconsiderar Zeramento na emiss�o do balan�o em empr |
-| 8542 | 32700 | SAM | Lib | Gerar os lan�amentos cont�beis de baixa no momento que a mesma for efe |
+| 8544 | 32702 | SAM | Lib | Emitir mensagens quando cadastrado um bem sem descri��o, conta ou cent |
+| 8541 | 32699 | SAM | Desc | N�o permitir c�lculos de per�odos menores que o per�odo atual. |
+| 8639 | 32719 | SAM | Lib | Vincular help na janela de importa��o de lan�amentos de outra empresa. |
 | 8547 | 32705 | SAM | Lib | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a  |
 | 8604 | 32711 | SAM | Desc | Aumentar o limite de inser��o de contas no resumo do balancete. |
 | 8637 | 32717 | SAM | Lib | Vincular help na tela de rateio por centro de custos no cadastro de co |
-| 8639 | 32719 | SAM | Lib | Vincular help na janela de importa��o de lan�amentos de outra empresa. |
 | 8640 | 32720 | SAM | Desc | Habilitar tela para rateio por centro de custos no cadastro de contas  |
-| 8541 | 32699 | SAM | Desc | N�o permitir c�lculos de per�odos menores que o per�odo atual. |
-| 8544 | 32702 | SAM | Lib | Emitir mensagens quando cadastrado um bem sem descri��o, conta ou cent |
-| 8411 | 32663 | SAM | Lib | Atualizar utilit�rio de altera��o de lan�amentos conforme controles ef |
-| 8504 | 32679 | SAM | Desc | Disponibilizar campo para selecionar a filial na tela de lan�amentos o |
-| 8505 | 32680 | SAM | Lib | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio de coeficien |
-| 8413 | 32665 | SAM | Lib | Gerar em lote, os lan�amentos de saldo gerados pelo utilit�rio "Elimin |
-| 8412 | 32664 | SAM | Lib | Retirar a op��o de "Permite mudar a data com diferen�a de d�bito e cr� |
-| 8407 | 32660 | SAM | Lib | N�o permitir alterar lan�amentos em lote pela tela de lan�amentos de c |
-| 8458 | 32673 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e |
+| 8542 | 32700 | SAM | Lib | Gerar os lan�amentos cont�beis de baixa no momento que a mesma for efe |
 | 8455 | 32672 | SAM | Lib | Desenvolver bloqueto de cobran�a modelo completo do banco Bancoob. |
+| 8505 | 32680 | SAM | Lib | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio de coeficien |
+| 8407 | 32660 | SAM | Lib | N�o permitir alterar lan�amentos em lote pela tela de lan�amentos de c |
+| 8411 | 32663 | SAM | Lib | Atualizar utilit�rio de altera��o de lan�amentos conforme controles ef |
+| 8412 | 32664 | SAM | Lib | Retirar a op��o de "Permite mudar a data com diferen�a de d�bito e cr� |
+| 8458 | 32673 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e |
 | 8409 | 32661 | SAM | Lib | N�o permitir incluir lan�amentos pela tela de lan�amentos normais. |
 | 8441 | 32668 | SAM | Desc | Desenvolver bloqueto de cobran�a modelo completo do banco Sicoob. |
-| 8357 | 32640 | SAM | Lib | Gerar os lan�amentos cont�beis em lotes |
-| 8302 | 32629 | SAM | Lib | Incluir op��o de sele�ao por pagamento no relat�rio de contas a pagar. |
-| 8323 | 32635 | SAM | Lib | Emitir aviso quando informado data de pagamento em um dia n�o �til. |
-| 8387 | 32647 | SAM | Lib | Criar op��o de reinclus�o de lan�amentos no utilit�rio de exclus�o de  |
-| 8382 | 32643 | SAM | Lib | Levar em considera��o as op��es dos par�metros para repetir ap�s grava |
-| 8396 | 32650 | SAM | Lib | Desenvolver consulta de movimento mensal. |
-| 8300 | 32627 | SAM | Lib | Criar op��o para efetuar quebra de p�gina conforme agrupamento no rela |
-| 8301 | 32628 | SAM | Lib | Criar processo para exclus�o de lan�amentos em grupo. |
-| 8373 | 32641 | SAM | Lib | Criar op��o para configurar o resumo do balancete no pr�pria tela de e |
-| 8401 | 32655 | SAM | Lib | Criar utilit�rio para importa��o de lan�amentos em lote de outra empre |
-| 8383 | 32644 | SAM | Lib | Para os lan�amentos realizado em lote abrir a tela de lan�amentos em l |
+| 8504 | 32679 | SAM | Desc | Disponibilizar campo para selecionar a filial na tela de lan�amentos o |
+| 8413 | 32665 | SAM | Lib | Gerar em lote, os lan�amentos de saldo gerados pelo utilit�rio "Elimin |
 | 8381 | 32642 | SAM | Desc | Alterar a tela de lan�amentos padr�es para efetuar os lan�amentos em l |
-| 8386 | 32646 | SAM | Desc | Criar coluna "N�mero do lote" na consulta de contas F6. |
-| 8385 | 32645 | SAM | Lib | Criar op��o para imprimir o n�mero do lote no relat�rios de Lan�amento |
-| 8397 | 32651 | SAM | Desc | Respeitar a op��o "Permite gravar lan�amentos com valor zero" ao gerar |
-| 8298 | 32626 | SAM | Desc | Aumentar o tamanho da coluna descri��o do Livro Di�rio.   |
+| 8383 | 32644 | SAM | Lib | Para os lan�amentos realizado em lote abrir a tela de lan�amentos em l |
+| 8382 | 32643 | SAM | Lib | Levar em considera��o as op��es dos par�metros para repetir ap�s grava |
+| 8301 | 32628 | SAM | Lib | Criar processo para exclus�o de lan�amentos em grupo. |
+| 8302 | 32629 | SAM | Lib | Incluir op��o de sele�ao por pagamento no relat�rio de contas a pagar. |
+| 8396 | 32650 | SAM | Lib | Desenvolver consulta de movimento mensal. |
 | 8296 | 32624 | SAM | Desc | Quebrar a linha ao utilizar o "Enter" na descri��o final do balan�o. |
+| 8357 | 32640 | SAM | Lib | Gerar os lan�amentos cont�beis em lotes |
+| 8323 | 32635 | SAM | Lib | Emitir aviso quando informado data de pagamento em um dia n�o �til. |
+| 8373 | 32641 | SAM | Lib | Criar op��o para configurar o resumo do balancete no pr�pria tela de e |
+| 8397 | 32651 | SAM | Desc | Respeitar a op��o "Permite gravar lan�amentos com valor zero" ao gerar |
+| 8300 | 32627 | SAM | Lib | Criar op��o para efetuar quebra de p�gina conforme agrupamento no rela |
+| 8385 | 32645 | SAM | Lib | Criar op��o para imprimir o n�mero do lote no relat�rios de Lan�amento |
+| 8387 | 32647 | SAM | Lib | Criar op��o de reinclus�o de lan�amentos no utilit�rio de exclus�o de  |
+| 8386 | 32646 | SAM | Desc | Criar coluna "N�mero do lote" na consulta de contas F6. |
+| 8298 | 32626 | SAM | Desc | Aumentar o tamanho da coluna descri��o do Livro Di�rio.   |
+| 8401 | 32655 | SAM | Lib | Criar utilit�rio para importa��o de lan�amentos em lote de outra empre |
 | 8258 | 32608 | SAM | Lib | Atualizar m�dulo conforme altera��es no m�dulo Escrita e Contabilidade |
 | 8241 | 32600 | SAM | Desc | Levar em considera��o as op��es dos par�metros quando realizado lan�am |
 | 8224 | 32593 | SAM | Desc | N�o permitir lan�amentos cont�beis sem hist�rico se a op��o "Digita��o |
 | 8143 | 32560 | SAM | Lib | Permitir informar mais de uma conta nos coeficientes de an�lise. |
 | 8144 | 32561 | SAM | Desc | Demonstrar as contas de mesma classifica��o em ordem alfab�tica na an� |
-| 8039 | 32527 | SAM | Lib | Repetir a data do �ltimo lan�amento ao lan�ar no processo de movimenta |
-| 8109 | 32552 | SAM | Lib | Desenvolver bloqueto de cobran�a modelo completo do banco SECOVICRED.  |
-| 8101 | 32548 | SAM | Desc | Trocar a coluna dia para data relat�rio de concilia��o banc�ria. |
-| 8094 | 32542 | SAM | Lib | Desconsiderar as contas sint�ticas nas an�lises vertical e horizontal  |
-| 8086 | 32541 | SAM | Lib | Trazer o valor da parcela no campo valor pago ao realizar uma baixa de |
-| 8102 | 32549 | SAM | Desc | Permitir efetuar fechamento para bancos mono-usu�rios. |
-| 8034 | 32524 | SAM | Lib | Permitir informar conta com 7 d�gitos nas consulta F5 e F6. |
-| 8103 | 32550 | SAM | Desc | Disponibilizar op��o para excluir tamb�m as contas anal�tica ao exclui |
 | 8098 | 32545 | SAM | Desc | Exibir a mensagem de fechamento de per�odo no momento que for digitada |
+| 8103 | 32550 | SAM | Desc | Disponibilizar op��o para excluir tamb�m as contas anal�tica ao exclui |
+| 8101 | 32548 | SAM | Desc | Trocar a coluna dia para data relat�rio de concilia��o banc�ria. |
+| 8109 | 32552 | SAM | Lib | Desenvolver bloqueto de cobran�a modelo completo do banco SECOVICRED.  |
+| 8034 | 32524 | SAM | Lib | Permitir informar conta com 7 d�gitos nas consulta F5 e F6. |
+| 8086 | 32541 | SAM | Lib | Trazer o valor da parcela no campo valor pago ao realizar uma baixa de |
+| 8094 | 32542 | SAM | Lib | Desconsiderar as contas sint�ticas nas an�lises vertical e horizontal  |
+| 8102 | 32549 | SAM | Desc | Permitir efetuar fechamento para bancos mono-usu�rios. |
+| 8039 | 32527 | SAM | Lib | Repetir a data do �ltimo lan�amento ao lan�ar no processo de movimenta |
+| 7776 | 32441 | SAM | Lib | Criar op��o para "Digita��o obrigat�ria de centro de custos" nos lan�a |
 | 7757 | 32439 | SAM | Lib | Atualizar a tela de rateio por centro de custos conforme defini��es fe |
 | 7758 | 32440 | SAM | Lib | Criar campo para ser informada a conta caixa na tela de baixa parcial  |
-| 7776 | 32441 | SAM | Lib | Criar op��o para "Digita��o obrigat�ria de centro de custos" nos lan�a |
-| 7613 | 32403 | SAM | Lib | Ordenar o gr�fico de faturamento por compet�ncia. |
-| 7609 | 32399 | SAM | Desc | Gerar somente um lan�amento cont�bil ao realizar baixa de mais de uma  |
-| 7706 | 32424 | SAM | Lib | Criar relat�rio de posi��o para o contas a pagar. |
 | 7698 | 32422 | SAM | Lib | Otimizar o processo de zeramento quando a empresa efetua rateio por ce |
-| 7702 | 32423 | SAM | Lib | Otimizar o processo de c�lculo, pois em algumas situa��es o processo f |
-| 7615 | 32405 | SAM | Desc | Inserir campo Docto Origem no relat�rio ficha anal�tica do bem. |
+| 7613 | 32403 | SAM | Lib | Ordenar o gr�fico de faturamento por compet�ncia. |
+| 7706 | 32424 | SAM | Lib | Criar relat�rio de posi��o para o contas a pagar. |
+| 7609 | 32399 | SAM | Desc | Gerar somente um lan�amento cont�bil ao realizar baixa de mais de uma  |
 | 7612 | 32402 | SAM | Lib | Criar um utilit�rio para poder regerar os lan�amentos cont�beis |
 | 7608 | 32398 | SAM | Desc | Permitir criar modelos para notas explicativas |
+| 7615 | 32405 | SAM | Desc | Inserir campo Docto Origem no relat�rio ficha anal�tica do bem. |
+| 7702 | 32423 | SAM | Lib | Otimizar o processo de c�lculo, pois em algumas situa��es o processo f |
 | 7610 | 32400 | SAM | Desc | Criar a op��o para emitir somente os eventos que fazem base para o fat |
-| 7611 | 32401 | SAM | Lib | Permitir realizar baixa parcial em baixas em grupo. |
 | 7694 | 32421 | SAM | Lib | Criar utilit�rio para exclus�o de lan�amentos em lote. |
-| 7505 | 32385 | SAM | Desc | Criar op��o na impress�o dos livros cont�beis, de n�mero m�ximo de pag |
-| 7558 | 32389 | SAM | Lib | Efetuar os lan�amentos de zeramento em lotes |
-| 7559 | 32390 | SAM | Lib | Criar campo pata identificar a origem dos lan�amentos na tela de lan�a |
-| 7457 | 32368 | SAM | Lib | Disponibilizar a DMPL na tela de lan�amentos em lotes. |
-| 7455 | 32366 | SAM | Lib | Levar em considera��o as op��es dos par�metros quando realizado lan�am |
-| 7502 | 32384 | SAM | Lib | Criar op��o para imprimir tamb�m as contas sem or�amento nos relat�rio |
+| 7611 | 32401 | SAM | Lib | Permitir realizar baixa parcial em baixas em grupo. |
 | 7454 | 32365 | SAM | Lib | Permitir nos lan�amentos em lote que possa se repetido a conta nos lan |
+| 7455 | 32366 | SAM | Lib | Levar em considera��o as op��es dos par�metros quando realizado lan�am |
+| 7558 | 32389 | SAM | Lib | Efetuar os lan�amentos de zeramento em lotes |
 | 7554 | 32386 | SAM | Lib | Alterar a tela de lan�amentos em lotes para que seja permitido lan�ar  |
-| 7345 | 32333 | SAM | Lib | Ordenar os lan�amento na consulta F6 conforme clicado no cabe�alho de  |
-| 7350 | 32338 | SAM | Desc | Criar op��o para informar a p�gina inicial e o numero do livros em tod |
-| 7453 | 32364 | SAM | Lib | Alterar tela de lan�amentos em lote permitindo que possa ser realizado |
-| 7386 | 32348 | SAM | Desc | Criar op��o para poder armazenar documentos scaneados no banco de dado |
+| 7559 | 32390 | SAM | Lib | Criar campo pata identificar a origem dos lan�amentos na tela de lan�a |
+| 7505 | 32385 | SAM | Desc | Criar op��o na impress�o dos livros cont�beis, de n�mero m�ximo de pag |
+| 7457 | 32368 | SAM | Lib | Disponibilizar a DMPL na tela de lan�amentos em lotes. |
+| 7502 | 32384 | SAM | Lib | Criar op��o para imprimir tamb�m as contas sem or�amento nos relat�rio |
 | 7373 | 32347 | SAM | Lib | Desenvolver bloqueto do banco Nossa Caixa. |
-| 7249 | 32318 | SAM | Lib | Quando efetuado lan�amentos cont�beis trazer sempre selecionado o dia  |
-| 7268 | 32322 | SAM | Desc | Inserir no balancete e balan�o a descri��o do �ndice |
-| 7252 | 32321 | SAM | Lib | Criar op��o para configurar assinaturas para o relat�rio de coeficient |
-| 7169 | 32302 | SAM | Desc | Criar op��o na estrutura do DRE para totalizar grupos acima. |
-| 7218 | 32313 | SAM | Lib | Criar vari�veis no WORD com o nome do Pai e M�e do s�cio. |
-| 7212 | 32308 | SAM | Desc | Criar fun��o no Excel para buscar o munic�pio da empresa. |
-| 7250 | 32319 | SAM | Lib | Incluir o Balancete como anexo do Raz�o nos Livros Cont�beis. |
-| 7167 | 32300 | SAM | Desc | Quando efetuado a consulta F6, trazer o cursor sempre  no campo conta  |
-| 7214 | 32309 | SAM | Lib | Alterar a tela de lan�amentos padr�es para efetuar os lan�amentos em l |
-| 7305 | 32329 | SAM | Lib | Gerar a integra��o cont�bil da baixa dos bens individualmente. |
-| 7166 | 32299 | SAM | Desc | Quando emitido o livro sempre ordenar por Data, Tipo e N�mero de lan�a |
-| 7215 | 32310 | SAM | Desc | Quando n�o for definidas todas as contas para um indice de coeficiente |
-| 7210 | 32306 | SAM | Desc | Criar op��o na emiss�o do plano de contas para emitir contas sem movim |
+| 7345 | 32333 | SAM | Lib | Ordenar os lan�amento na consulta F6 conforme clicado no cabe�alho de  |
+| 7453 | 32364 | SAM | Lib | Alterar tela de lan�amentos em lote permitindo que possa ser realizado |
+| 7350 | 32338 | SAM | Desc | Criar op��o para informar a p�gina inicial e o numero do livros em tod |
+| 7386 | 32348 | SAM | Desc | Criar op��o para poder armazenar documentos scaneados no banco de dado |
 | 7299 | 32327 | SAM | Lib | Desenvolver novo modelo de livro caixa. |
+| 7167 | 32300 | SAM | Desc | Quando efetuado a consulta F6, trazer o cursor sempre  no campo conta  |
+| 7252 | 32321 | SAM | Lib | Criar op��o para configurar assinaturas para o relat�rio de coeficient |
+| 7249 | 32318 | SAM | Lib | Quando efetuado lan�amentos cont�beis trazer sempre selecionado o dia  |
+| 7215 | 32310 | SAM | Desc | Quando n�o for definidas todas as contas para um indice de coeficiente |
+| 7166 | 32299 | SAM | Desc | Quando emitido o livro sempre ordenar por Data, Tipo e N�mero de lan�a |
+| 7305 | 32329 | SAM | Lib | Gerar a integra��o cont�bil da baixa dos bens individualmente. |
+| 7210 | 32306 | SAM | Desc | Criar op��o na emiss�o do plano de contas para emitir contas sem movim |
+| 7169 | 32302 | SAM | Desc | Criar op��o na estrutura do DRE para totalizar grupos acima. |
+| 7214 | 32309 | SAM | Lib | Alterar a tela de lan�amentos padr�es para efetuar os lan�amentos em l |
+| 7268 | 32322 | SAM | Desc | Inserir no balancete e balan�o a descri��o do �ndice |
+| 7250 | 32319 | SAM | Lib | Incluir o Balancete como anexo do Raz�o nos Livros Cont�beis. |
+| 7212 | 32308 | SAM | Desc | Criar fun��o no Excel para buscar o munic�pio da empresa. |
+| 7218 | 32313 | SAM | Lib | Criar vari�veis no WORD com o nome do Pai e M�e do s�cio. |
 | 7286 | 32326 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita Fiscal e |
-| 7158 | 32293 | SAM | Desc | Adicionar no modelo II do livro caixa a coluna Contrapartida. |
-| 7004 | 32270 | SAM | Lib | Quando efetuado lan�amento em contas configuradas para permitir rateio |
 | 7157 | 32292 | SAM | Desc | Gerar a "Raz�o Social" da empresa nos relat�rios de an�lise. |
-| 7156 | 32291 | SAM | Desc | Criar op��o para gravar a sele��o de contas nos relat�rios Raz�o, Bala |
-| 7045 | 32280 | SAM | Lib | Desenvolver Bloqueto de cobran�a completo para o banco Blucredi. |
 | 7160 | 32294 | SAM | Lib | Incluir o �ndice de liquidez imediata nos coeficientes de an�lises. |
+| 7156 | 32291 | SAM | Desc | Criar op��o para gravar a sele��o de contas nos relat�rios Raz�o, Bala |
 | 7143 | 32287 | SAM | Lib | Criar a op��o para realizar lan�amentos em lotes. |
-| 6720 | 32249 | SAM | Lib | Quando selecionado apenas um centro de custos na emiss�o do DRE, gerar |
+| 7004 | 32270 | SAM | Lib | Quando efetuado lan�amento em contas configuradas para permitir rateio |
+| 7158 | 32293 | SAM | Desc | Adicionar no modelo II do livro caixa a coluna Contrapartida. |
+| 7045 | 32280 | SAM | Lib | Desenvolver Bloqueto de cobran�a completo para o banco Blucredi. |
 | 6695 | 32243 | SAM | Desc | No cadastro de impostos, sistema deveria aceitar deixar os campos onde |
-| 6552 | 32217 | SAM | Lib | Criar op��o para gerar parcelas a partir do faturamento. |
-| 6554 | 32218 | SAM | Lib | Criar op��o no DRE para consolidar empresas. |
-| 6543 | 32210 | SAM | Desc | Ordenar os itens na tela de baixa de acordo com a coluna selecionada. |
+| 6720 | 32249 | SAM | Lib | Quando selecionado apenas um centro de custos na emiss�o do DRE, gerar |
 | 6548 | 32215 | SAM | Lib | Inserir a vari�vel "Natureza Jur�dica" para documentos do WORD. |
-| 6545 | 32212 | SAM | Desc | Permitir baixar itens de mais de um protocolo ao mesmo tempo. |
 | 6546 | 32213 | SAM | Desc | Otimizar a tela de manuten��o de protocolo implementando os bot�es Bus |
+| 6554 | 32218 | SAM | Lib | Criar op��o no DRE para consolidar empresas. |
+| 6545 | 32212 | SAM | Desc | Permitir baixar itens de mais de um protocolo ao mesmo tempo. |
+| 6552 | 32217 | SAM | Lib | Criar op��o para gerar parcelas a partir do faturamento. |
+| 6543 | 32210 | SAM | Desc | Ordenar os itens na tela de baixa de acordo com a coluna selecionada. |
 | 6489 | 32164 | SAM | Desc | Alterar a tela de lan�amentos cont�beis para empresas definidas como c |
-| 6487 | 32162 | SAM | Lib | Permitir que o relat�rio de Previs�o para pagamento seja gerado com da |
 | 6367 | 32136 | SAM | Desc | Ao imprimir o Relat�rio Plano de Contas matricial configurado com marg |
-| 6473 | 32150 | SAM | Desc | No relat�rio de tarefas realizadas ter op��o de totalizar por tipo de  |
-| 6403 | 32143 | SAM | Desc | No relat�rio de acompanhamento ter op��o de consolidar empresas que n� |
 | 6368 | 32137 | SAM | Desc | Criar op��o para filtrar por usu�rio, na op��o de exclus�o de lan�amen |
 | 6479 | 32154 | SAM | Desc | Efetuar c�lculo do INSS am atraso de contribuinte individual. |
-| 6242 | 32110 | SAM | Lib | Quando gerado lan�amento cont�bil da baixa do bem, gerar esse lan�amen |
-| 6324 | 32118 | SAM | Lib | Permitir que as empresas que utilizam o plano de contas de outras poss |
-| 6338 | 32123 | SAM | Desc | Quando efetuado o lan�amento de notas e existir diferen�a de d�bito e  |
+| 6473 | 32150 | SAM | Desc | No relat�rio de tarefas realizadas ter op��o de totalizar por tipo de  |
+| 6487 | 32162 | SAM | Lib | Permitir que o relat�rio de Previs�o para pagamento seja gerado com da |
+| 6403 | 32143 | SAM | Desc | No relat�rio de acompanhamento ter op��o de consolidar empresas que n� |
 | 6328 | 32119 | SAM | Lib | Quando um usu�rio efetua um lan�amento de notas fora do per�odo de fec |
+| 6242 | 32110 | SAM | Lib | Quando gerado lan�amento cont�bil da baixa do bem, gerar esse lan�amen |
+| 6338 | 32123 | SAM | Desc | Quando efetuado o lan�amento de notas e existir diferen�a de d�bito e  |
+| 6324 | 32118 | SAM | Lib | Permitir que as empresas que utilizam o plano de contas de outras poss |
+| 5991 | 32059 | SAM | Lib | No relat�rio de previs�o para recebimento colocar um total geral que s |
 | 6083 | 32090 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos M�dulos Contabilidade e  |
 | 6042 | 32083 | SAM | Lib | Mudar a op��o de N�o imprimir contas com saldo zero na emiss�o do bala |
-| 5991 | 32059 | SAM | Lib | No relat�rio de previs�o para recebimento colocar um total geral que s |
 | 5971 | 32044 | SAM | Desc | Ao emitir um raz�o consolidado sair logo abaixo do par�odo a palavra C |
 | 5966 | 32039 | SAM | Desc | No relat�rio de tarefas realizadas ter a op��o de quebrar por Usu�rio  |
 | 5982 | 32050 | SAM | Lib | Ter op��o de excluir a impress�o de boletos e documentos de cobran�a. |
-| 5930 | 32020 | SAM | Lib | Criar op��o para realizar o fechamento de per�odo. |
+| 5908 | 32007 | SAM | Desc | Ao criar uma nova conta por meio do F4 j� trazer a defini��o dos grupo |
+| 5901 | 32000 | SAM | Desc | Incluir um campo chamado assinatura no quandro societ�rio para identif |
 | 5891 | 31992 | SAM | Lib | Disponibilizar o F2 no campo c�digo da conta cont�bil na consulta de c |
 | 5914 | 32013 | SAM | Lib | Gerar Bloqueto da Caixa Econonica Federal com carteira tipo 12 cobran� |
-| 5901 | 32000 | SAM | Desc | Incluir um campo chamado assinatura no quandro societ�rio para identif |
-| 5908 | 32007 | SAM | Desc | Ao criar uma nova conta por meio do F4 j� trazer a defini��o dos grupo |
 | 5893 | 31994 | SAM | Desc | Corrigir a ortografia das contas cont�beis 306 e 329 do plano de conta |
+| 5930 | 32020 | SAM | Lib | Criar op��o para realizar o fechamento de per�odo. |
 | 5868 | 31970 | SAM | Lib | Ter op��o de gerar lan�amento para a contabilidade por centro de custo |
 | 5880 | 31981 | SAM | Desc | Na tela de manuten��o de protocolo ter a op��o de ordenar clicando no  |
-| 5879 | 31980 | SAM | Desc | Criar uma sele��o na tela do relat�rio de protocolos emitidos, para in |
-| 5883 | 31984 | SAM | Lib | Na tela de consulta de bens trocar o nome de conta cont�bil para conta |
-| 5861 | 31966 | SAM | Lib | Validar as datas dos campos data inicial e final do Controle Fechament |
-| 5862 | 31967 | SAM | Lib | Habilitar as telas de centro de custo, DFC, Gerencial, DMPL nas telas  |
-| 5877 | 31978 | SAM | Lib | Disponibilizar a op��o de multi empresa no Controle Fechamento. |
-| 5873 | 31975 | SAM | Desc | Incluir na tela de baixa a observa��o do protocolo. |
-| 5860 | 31965 | SAM | Desc | Desenvolver modelos gr�ficos para an�lises de balan�o e DRE  |
 | 5889 | 31990 | SAM | Desc | Ter op��o de selecionar mais de uma cliente no relat�rio de protocolos |
-| 5888 | 31989 | SAM | Lib | Permitir acesso total ao cadastro de contas nas empresas que utilizam  |
 | 5863 | 31968 | SAM | Desc | Aumentar as fontes na impress�o da an�lise horizontal do balan�o e do  |
+| 5883 | 31984 | SAM | Lib | Na tela de consulta de bens trocar o nome de conta cont�bil para conta |
+| 5888 | 31989 | SAM | Lib | Permitir acesso total ao cadastro de contas nas empresas que utilizam  |
+| 5879 | 31980 | SAM | Desc | Criar uma sele��o na tela do relat�rio de protocolos emitidos, para in |
+| 5877 | 31978 | SAM | Lib | Disponibilizar a op��o de multi empresa no Controle Fechamento. |
 | 5890 | 31991 | SAM | Desc | Ter a op��o no relat�rio de protocolos emitidos de selecionar mais de  |
-| 5630 | 31939 | SAM | Desc | O sistema n�o est� habilitando o bot�o para rateio de centro de custos |
+| 5860 | 31965 | SAM | Desc | Desenvolver modelos gr�ficos para an�lises de balan�o e DRE  |
+| 5861 | 31966 | SAM | Lib | Validar as datas dos campos data inicial e final do Controle Fechament |
+| 5873 | 31975 | SAM | Desc | Incluir na tela de baixa a observa��o do protocolo. |
+| 5862 | 31967 | SAM | Lib | Habilitar as telas de centro de custo, DFC, Gerencial, DMPL nas telas  |
 | 5820 | 31952 | SAM | Lib | Desenvolver bloqueto completo com c�digo de barras para o banco Banris |
-| 5672 | 31944 | SAM | Desc | Criar op��o na exporta��o de lan�amentos para serem exportados tamb�m  |
-| 5843 | 31954 | SAM | Lib | Criar op��o na baixa de contas a receber para jogar o saldo a menor pa |
-| 5628 | 31937 | SAM | Desc | Criar op��o para replicar  os cadastros de Contas patrimoniais, Centro |
-| 5796 | 31950 | SAM | Lib | Criar op��o para n�o imprimir estrutura com saldo zero na emiss�o do D |
-| 5529 | 31925 | SAM | Lib | Atualizar m�dulo conforme altera��es nos m�dulos Contabilidade e Escri |
 | 5551 | 31928 | SAM | Lib | Atualizar m�dulo Cliente conforme altera��es nos m�dulos Contabilidade |
-| 5356 | 31896 | SAM | Desc | Quando consultado o plano de contas atrav�s do F2, destacar as contas  |
+| 5630 | 31939 | SAM | Desc | O sistema n�o est� habilitando o bot�o para rateio de centro de custos |
+| 5628 | 31937 | SAM | Desc | Criar op��o para replicar  os cadastros de Contas patrimoniais, Centro |
+| 5672 | 31944 | SAM | Desc | Criar op��o na exporta��o de lan�amentos para serem exportados tamb�m  |
+| 5529 | 31925 | SAM | Lib | Atualizar m�dulo conforme altera��es nos m�dulos Contabilidade e Escri |
+| 5796 | 31950 | SAM | Lib | Criar op��o para n�o imprimir estrutura com saldo zero na emiss�o do D |
+| 5843 | 31954 | SAM | Lib | Criar op��o na baixa de contas a receber para jogar o saldo a menor pa |
 | 5355 | 31895 | SAM | Lib | Disponibilizar a vari�vel para o tipo de endere�o no Word. |
+| 5356 | 31896 | SAM | Desc | Quando consultado o plano de contas atrav�s do F2, destacar as contas  |
 | 5331 | 31882 | SAM | Desc | Criar op��o para informar a p�gina inicial e o n�mero do livro nos rel |
 | 5034 | 31833 | SAM | Lib | Criar op��o na impress�o do relat�rio de Contribui��o Social para orde |
 | 5228 | 31848 | SAM | Desc | Gerar arquivo magn�tico de acordo com a Portaria MPS/SRP n� 58. |
 | 4969 | 31813 | SAM | Lib | Quando lan�ado uma NF de entrada, sa�da ou servi�o, e no momento do la |
-| 4841 | 31791 | SAM | Desc | Habilitar altera��o de quadro societ�rio para empresas individual. |
-| 4752 | 31759 | SAM | Desc | N�o permitir gravar notas, onde no acumulador esteja cadastrado contas |
-| 4754 | 31760 | SAM | Lib | Ao efetuar o lan�amento de notas em que esteja marcado no acumulador a |
-| 4750 | 31758 | SAM | Lib | Quando emitido os livros contabeis com o balan�o e balancete anexo, o  |
-| 4782 | 31775 | SAM | Lib | Criar op��o na emiss�o do Balan�o e Balancete para imprimir os valores |
-| 4779 | 31773 | SAM | Desc | No relat�rio de coeficientes de an�lises criar op��o para imprimir res |
 | 4764 | 31766 | SAM | Lib | Aumentar o limite do numero do lan�amento cont�bil para 999.999.999 |
-| 4839 | 31789 | SAM | Lib | Habilitar a consulta F2 na tela do utilit�rio de altera��o de lan�amen |
-| 4796 | 31780 | SAM | Desc | Aumentar para quatro casas decimais o campo participa��o societ�ria no |
+| 4750 | 31758 | SAM | Lib | Quando emitido os livros contabeis com o balan�o e balancete anexo, o  |
 | 4842 | 31792 | SAM | Lib | Incluir nos dois modelos de etiquetas o n�mero do endere�o. |
-| 4726 | 31751 | SAM | Lib | Permitir Usar o Dominio Cliente Empresas que usam contabilidade por ce |
-| 4631 | 31723 | SAM | Desc | Quando efetuada a baixa de faturamento e n�o for gerado lan�amento con |
-| 4632 | 31724 | SAM | Lib | Criar op��o de trazer automaticamente todas as adi��es ou exclus�es di |
-| 4652 | 31734 | SAM | Lib | Incluir o CNPJ da Empresa nos Relat�rios.   |
-| 4681 | 31737 | SAM | Lib | Criar op��o de emitir o Livro, termos e anexos juntos. |
-| 4644 | 31728 | SAM | Lib | N�o permitir gravar um bloqueto sem a informa��o do nosso n�mero. |
-| 4725 | 31750 | SAM | Lib | Criar layout para importa��o dos rateios de centro de custos nos lan�a |
-| 4630 | 31722 | SAM | Desc | Criar na tela de faturamento campo para ser informada a data dos lan�a |
-| 4647 | 31730 | SAM | Desc | SC-Alterar no menu processo a op��o de emitir a Guia DAR-19, para DARE |
+| 4754 | 31760 | SAM | Lib | Ao efetuar o lan�amento de notas em que esteja marcado no acumulador a |
+| 4782 | 31775 | SAM | Lib | Criar op��o na emiss�o do Balan�o e Balancete para imprimir os valores |
+| 4839 | 31789 | SAM | Lib | Habilitar a consulta F2 na tela do utilit�rio de altera��o de lan�amen |
+| 4779 | 31773 | SAM | Desc | No relat�rio de coeficientes de an�lises criar op��o para imprimir res |
+| 4841 | 31791 | SAM | Desc | Habilitar altera��o de quadro societ�rio para empresas individual. |
+| 4796 | 31780 | SAM | Desc | Aumentar para quatro casas decimais o campo participa��o societ�ria no |
+| 4752 | 31759 | SAM | Desc | N�o permitir gravar notas, onde no acumulador esteja cadastrado contas |
 | 4659 | 31736 | SAM | Lib | Gravar a Descri��o Final do Balancete por Empresa. |
-| 4587 | 31709 | SAM | Lib | Na tela de baixa de faturamento em grupo, alterar a descri��o da colun |
+| 4630 | 31722 | SAM | Desc | Criar na tela de faturamento campo para ser informada a data dos lan�a |
+| 4652 | 31734 | SAM | Lib | Incluir o CNPJ da Empresa nos Relat�rios.   |
+| 4632 | 31724 | SAM | Lib | Criar op��o de trazer automaticamente todas as adi��es ou exclus�es di |
+| 4726 | 31751 | SAM | Lib | Permitir Usar o Dominio Cliente Empresas que usam contabilidade por ce |
+| 4644 | 31728 | SAM | Lib | N�o permitir gravar um bloqueto sem a informa��o do nosso n�mero. |
+| 4681 | 31737 | SAM | Lib | Criar op��o de emitir o Livro, termos e anexos juntos. |
+| 4647 | 31730 | SAM | Desc | SC-Alterar no menu processo a op��o de emitir a Guia DAR-19, para DARE |
+| 4725 | 31750 | SAM | Lib | Criar layout para importa��o dos rateios de centro de custos nos lan�a |
+| 4631 | 31723 | SAM | Desc | Quando efetuada a baixa de faturamento e n�o for gerado lan�amento con |
+| 4520 | 31684 | SAM | Lib | Gravar a op��o de gerar lan�amentos cont�beis na tela de faturar. |
 | 4555 | 31695 | SAM | Desc | Criar op��o para controlar datas de vencimento dos requerimentos. |
 | 4597 | 31711 | SAM | Lib | Quando efetuar um lan�amento cont�bil, ao passar pelo campo data selec |
-| 4520 | 31684 | SAM | Lib | Gravar a op��o de gerar lan�amentos cont�beis na tela de faturar. |
+| 4587 | 31709 | SAM | Lib | Na tela de baixa de faturamento em grupo, alterar a descri��o da colun |
+| 4459 | 31673 | SAM | Lib | Criar op��o para sele��o de centro de custos, nas an�lises horizontais |
 | 4397 | 31655 | SAM | Lib | Alterar a posi��o do bot�es Gravar e Fechar na tela de lan�amentos. |
 | 4485 | 31678 | SAM | Lib | Ao realizar a busca no utilit�rio de cancelamento de notas fiscais, n� |
 | 4484 | 31677 | SAM | Desc | Gravar o numero da ultima p�gina impressa por periodo na emiss�o indiv |
-| 4459 | 31673 | SAM | Lib | Criar op��o para sele��o de centro de custos, nas an�lises horizontais |
-| 4326 | 31626 | SAM | Lib | Ao efetuar a apura��o Real do IR e CS, deve buscar para o campo "Compe |
 | 4352 | 31640 | SAM | Desc | Criar op��o nos par�metro para n�o permitir realizar lan�amentos em di |
-| 4341 | 31632 | SAM | Desc | Na exclus�o de lan�amentos criar op��o para selecionar a filial. |
+| 4326 | 31626 | SAM | Lib | Ao efetuar a apura��o Real do IR e CS, deve buscar para o campo "Compe |
 | 4342 | 31633 | SAM | Lib | N�o permitir realizar lan�amentos com valor negativo. |
+| 4341 | 31632 | SAM | Desc | Na exclus�o de lan�amentos criar op��o para selecionar a filial. |
 | 4169 | 31574 | SAM | Lib | Permitir efetuar uma baixa de pagamento com valor zero. |
 | 4241 | 31599 | SAM | Lib | Disponibilizar op��o de Trocar senha. |
 | 4185 | 31585 | SAM | Lib | Disponibilizar vari�vel da data da inscri��o na junta e data incio de  |
 | 4163 | 31571 | SAM | Desc | Criar fun��o no Excel para buscar a raz�o do social da empresa. |
-| 4132 | 31562 | SAM | Desc | N�o permitir que seja criado uma atualiza��o com data anterior � de um |
-| 4111 | 31546 | SAM | Lib | Criar op��o na impress�o do plano de contas para imprimir o numero do  |
-| 4121 | 31551 | SAM | Desc | Permitir que um protocolo possa ser editado e alterado. |
 | 4122 | 31552 | SAM | Lib | Imprimir no cabe�alho dos relat�rios de contas a pagar e receber o per |
-| 3937 | 31513 | SAM | Lib | Disponibilizar na guia Balan�o dos Livros Cont�beis a op��o de Grau m� |
+| 4132 | 31562 | SAM | Desc | N�o permitir que seja criado uma atualiza��o com data anterior � de um |
+| 4121 | 31551 | SAM | Desc | Permitir que um protocolo possa ser editado e alterado. |
+| 4111 | 31546 | SAM | Lib | Criar op��o na impress�o do plano de contas para imprimir o numero do  |
 | 4100 | 31535 | SAM | Lib | Criar op��o para poder definir a descri��o de Lucro e Prejuizo ne emis |
 | 4023 | 31523 | SAM | Lib | Alterar o tamanho da tela de concilia��o banc�ria para suportar a reso |
-| 3907 | 31493 | SAM | Lib | Criar no op�o para gerar os lan�amentos para a escrita e contabildade  |
-| 3878 | 31478 | SAM | Desc | No utilit�rio de exclus�o de contas, criar op��o para selecionara por  |
-| 3895 | 31486 | SAM | Desc | Incluir a op��o para emitir assinatura nos livros Raz�o e Livro Caixa. |
-| 3894 | 31485 | SAM | Desc | Criar op��o para realizar a transferencia de Centro de Custo dos Bens  |
-| 3887 | 31480 | SAM | Lib | Ao gravar o relat�rio Raz�o em arquivo, a coluna saldo do exercicio n� |
-| 3892 | 31483 | SAM | Lib | Disponibilizar a importa��o de bloquetos recebidos do banco Bradesco. |
+| 3937 | 31513 | SAM | Lib | Disponibilizar na guia Balan�o dos Livros Cont�beis a op��o de Grau m� |
 | 3917 | 31500 | SAM | Lib | Criar no di�rio op��o para imprimir conta cr�dito e d�bto na mesma lin |
+| 3895 | 31486 | SAM | Desc | Incluir a op��o para emitir assinatura nos livros Raz�o e Livro Caixa. |
+| 3878 | 31478 | SAM | Desc | No utilit�rio de exclus�o de contas, criar op��o para selecionara por  |
+| 3907 | 31493 | SAM | Lib | Criar no op�o para gerar os lan�amentos para a escrita e contabildade  |
+| 3887 | 31480 | SAM | Lib | Ao gravar o relat�rio Raz�o em arquivo, a coluna saldo do exercicio n� |
+| 3894 | 31485 | SAM | Desc | Criar op��o para realizar a transferencia de Centro de Custo dos Bens  |
+| 3892 | 31483 | SAM | Lib | Disponibilizar a importa��o de bloquetos recebidos do banco Bradesco. |
 | 3809 | 31434 | SAM | Desc | Na op��o em Utilit�rio/Importa��o criar op��o de Arquivo texto. |
-| 3860 | 31464 | SAM | Lib | Criar no raz�o op��o para omitir a coluna Saldo Exerc�cio. |
 | 3840 | 31447 | SAM | Desc | Disponibilizar na integra��o com o Excel a vari�vel para trazer o nome |
 | 3832 | 31444 | SAM | Lib | Quando na guia contabilidade do acumulador estiver marcado a op��o de  |
-| 3778 | 31428 | SAM | Lib | Disponibilizar novas v�ri�veis no Word. |
-| 3808 | 31433 | SAM | Lib | Quando clicado na consulta F6, posicionar o cursor no campo do codigo  |
-| 3762 | 31417 | SAM | Lib | Ao realizar importa��o de lan�amentos, n�o permitir lan�amentos com co |
+| 3860 | 31464 | SAM | Lib | Criar no raz�o op��o para omitir a coluna Saldo Exerc�cio. |
 | 3633 | 31402 | SAM | Lib | N�o permitir que nos par�metros da Escrita, na guia Contabilidade no c |
-| 3781 | 31429 | SAM | Desc | Criar no raz�o op��o para agrupar lan�amentos por dia. |
-| 3775 | 31426 | SAM | Desc | Quando clicado F7 na consulta de contas trazer aum�tico a classifica�� |
+| 3762 | 31417 | SAM | Lib | Ao realizar importa��o de lan�amentos, n�o permitir lan�amentos com co |
 | 3774 | 31425 | SAM | Lib | Disponibilizar a vari�vel do n�mero da altera��o ordinal por extenso. |
+| 3781 | 31429 | SAM | Desc | Criar no raz�o op��o para agrupar lan�amentos por dia. |
+| 3808 | 31433 | SAM | Lib | Quando clicado na consulta F6, posicionar o cursor no campo do codigo  |
+| 3775 | 31426 | SAM | Desc | Quando clicado F7 na consulta de contas trazer aum�tico a classifica�� |
 | 3669 | 31407 | SAM | Lib | Incluir HELP na Integra��o com o EXCEL, estrutura do DRE e emiss�o do  |
-| 3224 | 31295 | SAM | Lib | Permitir digitar contas com 7 digitos |
-| 3160 | 31276 | SAM | Lib | Aumentar o campo descri��o na baixa de faturamento. |
+| 3778 | 31428 | SAM | Lib | Disponibilizar novas v�ri�veis no Word. |
 | 3142 | 31268 | SAM | Lib | Criar op��o para selecionar a ordem de impress�o dos bloquetos. |
+| 3160 | 31276 | SAM | Lib | Aumentar o campo descri��o na baixa de faturamento. |
+| 3224 | 31295 | SAM | Lib | Permitir digitar contas com 7 digitos |
 | 3090 | 31253 | SAM | Desc | Ao emitir o livro diario, o sistema mostra primeiro um valor a debito  |
 | 3043 | 31244 | SAM | Desc | Incluir uma op��o para n�o permitir que um usu�rio altere lan�amentos  |
 | 3141 | 31267 | SAM | Lib | Ter op��o de alterar a descri��o da denomina��o Lucro ou Prejuizo nas  |
-| 2926 | 31209 | SAM | Lib | Criar na emiss�o do Balancete op��o para imprimir ou n�o o n�mero do L |
-| 2985 | 31230 | SAM | Lib | Gravar a sele��o de clientes por usu�rio e por empresa |
 | 2943 | 31216 | SAM | Lib | Ao realizar um lan�amento em grupo nos lan�amentos habilitar o campo v |
+| 2985 | 31230 | SAM | Lib | Gravar a sele��o de clientes por usu�rio e por empresa |
+| 2926 | 31209 | SAM | Lib | Criar na emiss�o do Balancete op��o para imprimir ou n�o o n�mero do L |
 | 2857 | 31188 | SAM | Desc | Criar no utilit�rio de exclus�o de contas, op��o para excluir por fili |
+| 2798 | 31162 | SAM | Lib | Desenvolver modelo de carta de cobran�a. |
+| 2736 | 31131 | SAM | Desc | N�o permitir que sejam gravados lan�amentos vindos de outros m�dulos c |
+| 2790 | 31157 | SAM | Lib | Desenvolver bloqueto do banco Mercantil do Brasil completo com c�digo  |
+| 2789 | 31156 | SAM | Lib | N�o permitir que sejam incluidas contas em empresas que s�o filiais, c |
 | 2737 | 31132 | SAM | Lib | Desenvolver modelo de bloqueto BESC Completo com c�digo de barras. |
 | 2758 | 31140 | SAM | Lib | Permitir que seja lan�ado o mesmo evento mais de uma vez. |
-| 2790 | 31157 | SAM | Lib | Desenvolver bloqueto do banco Mercantil do Brasil completo com c�digo  |
-| 2798 | 31162 | SAM | Lib | Desenvolver modelo de carta de cobran�a. |
-| 2789 | 31156 | SAM | Lib | N�o permitir que sejam incluidas contas em empresas que s�o filiais, c |
-| 2736 | 31131 | SAM | Desc | N�o permitir que sejam gravados lan�amentos vindos de outros m�dulos c |
-| 2729 | 31129 | SAM | Lib | Disponibilizar nos relat�rios Balan�o, Balancete e Raz�o a op��o de se |
 | 2728 | 31128 | SAM | Lib | Permitir selecionar centro de custo ao gerar dados para o Excel |
+| 2729 | 31129 | SAM | Lib | Disponibilizar nos relat�rios Balan�o, Balancete e Raz�o a op��o de se |
 | 2687 | 31111 | SAM | Desc | Colocar o processo de gerar lan�amentos cont�beis do Patrim�nio no men |
 | 2668 | 31100 | SAM | Lib | Disponibilizar o relatorio de lan�amentos fiscais quando nos par�metro |
-| 2667 | 31099 | SAM | Lib | Na emiss�o do DRE criar op��o de informar o n�mero do livro. |
-| 2656 | 31095 | SAM | Lib | Criar op��o de gerar somente um recibo discrimando os eventos cobrados |
-| 2675 | 31104 | SAM | Desc | Quando a tela de concilia��o banc�ria for maximizada, aumentar as jane |
 | 2670 | 31102 | SAM | Lib | Na emiss�o dos DRE, Balan�o e Balancete quando selecionado apenas um c |
-| 2638 | 31087 | SAM | Lib | Ao realizar a concilia��o manual, levar em considera��o o que foi marc |
+| 2667 | 31099 | SAM | Lib | Na emiss�o do DRE criar op��o de informar o n�mero do livro. |
+| 2675 | 31104 | SAM | Desc | Quando a tela de concilia��o banc�ria for maximizada, aumentar as jane |
+| 2656 | 31095 | SAM | Lib | Criar op��o de gerar somente um recibo discrimando os eventos cobrados |
 | 2602 | 31065 | SAM | Desc | Quando for efetuado faturamento e a empresa gera lan�amentos cont�beis |
 | 2597 | 31060 | SAM | Desc | Criar op��o no Balan�o para impress�o da data inicial e final. |
-| 2653 | 31092 | SAM | Lib | Nas an�lises horizontais de DRE e balan�o, aumentar o numero de coluna |
-| 2621 | 31076 | SAM | Lib | Permitir efetuar lan�amentos mesmo com mais de uma filial selecionada. |
-| 2595 | 31058 | SAM | Lib | Permitir que possa ser importado baixa de bloquetos utilizando o arqui |
 | 2616 | 31073 | SAM | Lib | Quando tiver lan�amentos com valor zero(0,00),no di�rio e raz�o deve s |
 | 2606 | 31068 | SAM | Desc | Criar na guia zeramento das op��es da contabilidade, campos para serem |
-| 2593 | 31056 | SAM | Lib | Na emiss�o do plano de contas, na op��o Grupo, se for informada uma co |
+| 2621 | 31076 | SAM | Lib | Permitir efetuar lan�amentos mesmo com mais de uma filial selecionada. |
+| 2638 | 31087 | SAM | Lib | Ao realizar a concilia��o manual, levar em considera��o o que foi marc |
+| 2653 | 31092 | SAM | Lib | Nas an�lises horizontais de DRE e balan�o, aumentar o numero de coluna |
+| 2595 | 31058 | SAM | Lib | Permitir que possa ser importado baixa de bloquetos utilizando o arqui |
 | 2550 | 31031 | SAM | Lib | Permitir realizar mais de uma baixa parcial no mesmo dia, para o mesmo |
 | 2579 | 31045 | SAM | Lib | Disponibilizar campo nos par�metros para informar conta do preju�zo. |
-| 2517 | 31021 | SAM | Desc | Aumentar a largura da tela de Consulta de Contas ( F2 e F3 ). |
+| 2593 | 31056 | SAM | Lib | Na emiss�o do plano de contas, na op��o Grupo, se for informada uma co |
 | 2507 | 31015 | SAM | Lib | No utilit�rio de exclus�o de contas criar op��o para selecionar por cl |
-| 2516 | 31020 | SAM | Desc | Disponibilizar a op��o desconsiderar zeramento no Raz�o |
 | 2518 | 31022 | SAM | Lib | Criar op��o no balancete de n�o imprimir contas com saldo zero. |
 | 2508 | 31016 | SAM | Lib | Ao clicar F2 para selecionar um cliente trazer ao lado da raz�o social |
+| 2517 | 31021 | SAM | Desc | Aumentar a largura da tela de Consulta de Contas ( F2 e F3 ). |
 | 2488 | 31008 | SAM | Lib | Ao excluir uma linha da estrutura do DRE, DRA, DLPA, DMPL ou DOAR, apr |
-| 2412 | 30981 | SAM | Lib | Permitir que o campo serie fique em branco no lan�amento de contas a p |
-| 2396 | 30975 | SAM | Lib | Gravar as op��es usadas para emiss�o do Di�rio, Raz�o, Balan�o e Balan |
-| 2397 | 30976 | SAM | Lib | Ter op��o de imprimir bloquetos do banco UNIBANCO com codigo de barras |
+| 2516 | 31020 | SAM | Desc | Disponibilizar a op��o desconsiderar zeramento no Raz�o |
 | 2371 | 30967 | SAM | Lib | Ter op��o no relatorio de plano de contas e no balancete de quebrar pa |
-| 2359 | 30960 | SAM | Lib | SC-Disponibilizar no atualizar op��o de exportar arquivo para DARE. |
-| 2368 | 30964 | SAM | Desc | Ao clicar a consulta F4, trazer as contas com a mesma classifica��o em |
+| 2397 | 30976 | SAM | Lib | Ter op��o de imprimir bloquetos do banco UNIBANCO com codigo de barras |
 | 2369 | 30965 | SAM | Lib | Quando no acumulador for marcado para mostrar sempre o lan�amento cont |
-| 2213 | 30936 | SAM | Lib | No utilit�rio Altera��o de Lan�amento ter op��o para altera��o da Data |
+| 2368 | 30964 | SAM | Desc | Ao clicar a consulta F4, trazer as contas com a mesma classifica��o em |
+| 2396 | 30975 | SAM | Lib | Gravar as op��es usadas para emiss�o do Di�rio, Raz�o, Balan�o e Balan |
+| 2359 | 30960 | SAM | Lib | SC-Disponibilizar no atualizar op��o de exportar arquivo para DARE. |
+| 2412 | 30981 | SAM | Lib | Permitir que o campo serie fique em branco no lan�amento de contas a p |
 | 2243 | 30940 | SAM | Desc | Ao emitir o DRE modelo II com valor maiou que 99.999.999,00 sistema co |
 | 2183 | 30927 | SAM | Desc | N�o gerar para a contabilidade lan�amento com valor zerado se nas op�� |
+| 2213 | 30936 | SAM | Lib | No utilit�rio Altera��o de Lan�amento ter op��o para altera��o da Data |
 | 2214 | 30937 | SAM | Lib | Gerar o bloqueto do banco SICREDI com codigo de barras. |
 | 2244 | 30941 | SAM | Lib | Quando emitido o balan�o e balancete com a op��o de modelo que totaliz |
 | 2318 | 30952 | SAM | Lib | Na tela de sele��o de filial ativa ter op��o de poder selecionar todas |
+| 2154 | 30917 | SAM | Desc | Criar op��o para omitir contas na impress�o dos grupos de DRE por grup |
+| 2182 | 30926 | SAM | Lib | Atualizar os valores das demais parcelas ao alterar a primeira parcela |
 | 2129 | 30908 | SAM | Desc | Criar no menu utilitarios op��o de Estruturas -> DRE, DLPA e DOAR e qu |
 | 2155 | 30918 | SAM | Desc | Ter op��o de definir a estrutura do plano de contas quanto a sua natur |
-| 2182 | 30926 | SAM | Lib | Atualizar os valores das demais parcelas ao alterar a primeira parcela |
 | 2120 | 30903 | SAM | Desc | Criar op��o nos livros caixa de Salto de Pagina por M�s. |
-| 2154 | 30917 | SAM | Desc | Criar op��o para omitir contas na impress�o dos grupos de DRE por grup |
-| 1969 | 30867 | SAM | Lib | Incluir o modelo de bloqueto do Banco Bradesco com codigo de barras. |
-| 2089 | 30894 | SAM | Lib | Permitir que um item seja incluso mais de uma vez no mesmo protocolo. |
 | 2107 | 30897 | SAM | Lib | Criar relat�rio de recebimento por per�odo. |
+| 1986 | 30873 | SAM | Lib | Alterar o campo saida do escritorio para Tipo, com as op��es de Entrad |
 | 2042 | 30886 | SAM | Lib | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o comp |
 | 2040 | 30884 | SAM | Lib | Quando nos acumuladores estiver marcado para mostrar sempre o lan�amen |
-| 1986 | 30873 | SAM | Lib | Alterar o campo saida do escritorio para Tipo, com as op��es de Entrad |
+| 1969 | 30867 | SAM | Lib | Incluir o modelo de bloqueto do Banco Bradesco com codigo de barras. |
+| 2089 | 30894 | SAM | Lib | Permitir que um item seja incluso mais de uma vez no mesmo protocolo. |
 | 1931 | 30855 | SAM | Lib | Ao exportar lan�amentos gerar o codigo da filial. |
-| 1860 | 30841 | SAM | Desc | Ter op��o na exporta��o de lan�amentos e contas, de fiscal ou gerencia |
 | 1854 | 30839 | SAM | Lib | Incluir no balancete o campo para descri�ao final igual a do balan�o p |
+| 1860 | 30841 | SAM | Desc | Ter op��o na exporta��o de lan�amentos e contas, de fiscal ou gerencia |
 | 1923 | 30850 | SAM | Lib | Na emiss�o do balancete ter op��o de n�o imprimir codigo das contas. |
 | 1815 | 30823 | SAM | Lib | Na emiss�o do plano de contas ter op��o de emitir a data e hora. |
-| 1745 | 30801 | SAM | Lib | Incluir na grade de sele��o para baixa do faturamento o apelido do cli |
-| 1826 | 30828 | SAM | Desc | Criar op��o de inutiliza��o de p�gina final por m�s no Di�rio quando s |
 | 1825 | 30827 | SAM | Lib | Desenvolver os relat�rios raz�o, di�rio, balan�o, balancete e termos,  |
+| 1826 | 30828 | SAM | Desc | Criar op��o de inutiliza��o de p�gina final por m�s no Di�rio quando s |
+| 1745 | 30801 | SAM | Lib | Incluir na grade de sele��o para baixa do faturamento o apelido do cli |
 | 1746 | 30802 | SAM | Lib | Disponibilizar importa��o de recebimentos do Banco do Brasil. |
-| 1654 | 30766 | SAM | Lib | Criar op��o nos par�metros para informar a classifica��o contabil dos  |
-| 1726 | 30789 | SAM | Lib | Se nos par�metros da contabilidade estiver marcado para permitir grava |
-| 1692 | 30777 | SAM | Lib | Ter a op��o de informar o n�mero tipogr�fico ao inv�s do n�mero do doc |
-| 1690 | 30776 | SAM | Lib | Tem op��o no modelo do balancete para totalizar todos os n�veis. |
 | 1655 | 30767 | SAM | Desc | Quando cadastrado um fornecedor/cliente em uma filial e na matriz ja e |
 | 1712 | 30783 | SAM | Desc | Permitir ao usu�rio cancelar um protocolo na tela de manuten��o, e com |
-| 1685 | 30773 | SAM | Lib | Ter uma op��o para selecionar se deseja imprimir Folha ou P�gina no Di |
+| 1692 | 30777 | SAM | Lib | Ter a op��o de informar o n�mero tipogr�fico ao inv�s do n�mero do doc |
 | 1714 | 30784 | SAM | Desc | Em todos os gr�ficos ter o per�odo inicial e final. |
+| 1654 | 30766 | SAM | Lib | Criar op��o nos par�metros para informar a classifica��o contabil dos  |
+| 1726 | 30789 | SAM | Lib | Se nos par�metros da contabilidade estiver marcado para permitir grava |
+| 1690 | 30776 | SAM | Lib | Tem op��o no modelo do balancete para totalizar todos os n�veis. |
 | 1700 | 30781 | SAM | Desc | Incluir a op��o de consultar saldos das contas contabeis (F5) que exis |
+| 1685 | 30773 | SAM | Lib | Ter uma op��o para selecionar se deseja imprimir Folha ou P�gina no Di |
 | 1720 | 30787 | SAM | Lib | Criar op��o para replicar a  estrutura do DRE, DLPA, DOAR e DMPL. |
-| 1582 | 30745 | SAM | Lib | Disponibilizar tranporte de valores da calculadora para tela de lan�am |
 | 1568 | 30735 | SAM | Lib | Uma nota, mesmo depois de cancelada, continua sendo emitida nos docume |
 | 1609 | 30749 | SAM | Lib | Disponibilizar na grade de sele��o para baixa do faturamento a raz�o s |
+| 1582 | 30745 | SAM | Lib | Disponibilizar tranporte de valores da calculadora para tela de lan�am |
 | 1551 | 30730 | SAM | Lib | Criar op��o para contabilizar a baixa do bem. |
-| 1510 | 30715 | SAM | Lib | No relatorio de concilia��o bancaria, mostrar o saldo final do extrato |
+| 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
 | 1467 | 30695 | SAM | Lib | Criar eventos com f�rmulas |
 | 1516 | 30719 | SAM | Lib | Na impress�o dos termos nos livros contabeis, no termo de abertura imp |
-| 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
-| 1313 | 30669 | SAM | Lib | Criar modelo completo matricial para guia GPS. |
-| 1355 | 30678 | SAM | Lib | Desenvolver bloqueto do cobran�a para Caixa Economica Federal com codi |
+| 1510 | 30715 | SAM | Lib | No relatorio de concilia��o bancaria, mostrar o saldo final do extrato |
 | 1390 | 30683 | SAM | Lib | Diminuir a largura do Relat�rio Raz�o. |
+| 1355 | 30678 | SAM | Lib | Desenvolver bloqueto do cobran�a para Caixa Economica Federal com codi |
+| 1313 | 30669 | SAM | Lib | Criar modelo completo matricial para guia GPS. |
 | 1222 | 30635 | SAM | Lib | Permitir que o titulo do balancete possa ser configurado por empresa. |
+| 1253 | 30647 | SAM | Lib | No Relat�rio/Contas a pagar criar uma coluna para a data do pagamento. |
 | 1186 | 30619 | SAM | Lib | Implementar a impress�o do boleto com c�digo de barras do Banco Real/A |
 | 1258 | 30650 | SAM | Lib | Agilizar a busca de dados necess�rios aos lan�amentos cont�beis durant |
-| 1253 | 30647 | SAM | Lib | No Relat�rio/Contas a pagar criar uma coluna para a data do pagamento. |
-| 1171 | 30608 | SAM | Lib | Disponibilizar a mesma consulta F4 da contabilidade.(Contas em ordem d |
 | 1113 | 30591 | SAM | Lib | Em Processo na op��o Movimenta��o permitir fazer um d�bito para v�rios |
-| 1129 | 30596 | SAM | Lib | Na importa��o de tabelas, ver a possibilidade de fazer separador tab,  |
+| 1171 | 30608 | SAM | Lib | Disponibilizar a mesma consulta F4 da contabilidade.(Contas em ordem d |
 | 1180 | 30614 | SAM | Lib | Criar op��o para imprimir o relat�rio contas a receber em ordem alfab� |
+| 1129 | 30596 | SAM | Lib | Na importa��o de tabelas, ver a possibilidade de fazer separador tab,  |
 | 1146 | 30601 | SAM | Lib | Na baixa de Faturamento permitir que possa selecionar mais de uma comp |
 | 1127 | 30594 | SAM | Lib | Possibilitar baixa parcial da nota por eventos, para que se possa sabe |
-| 981 | 30553 | SAM | Lib | Desenvolver bloqueto banc�rio com codigo de barras dos Bancos ITAU e B |
-| 987 | 30557 | SAM | Lib | No relat�rio contas a receber aparecer tambem o n�mero da parcela. |
 | 1010 | 30568 | SAM | Lib | Permitir que na impress�o do raz�o seja selecionada contas por classif |
 | 969 | 30551 | SAM | Lib | Quando digito uma cta invalida na contabilidade e volto para digitar a |
 | 990 | 30560 | SAM | Lib | Criar cadastro de Centro de Custos, com op��o de dividir os lan�amento |
-| 898 | 30528 | SAM | Desc | Desenvolver uma consulta onde seja poss�vel verificar m�s a m�s os cam |
-| 956 | 30545 | SAM | Lib | Quando trabalho com empresas Matriz X Filiais - Ao definir uma filial  |
-| 930 | 30539 | SAM | Lib | Criar op��o para replicar lan�amentos padr�es. |
-| 890 | 30525 | SAM | Lib | No Relat�rio de An�lises - Coeficientes  O segundo coeficiente diz  "� |
-| 958 | 30547 | SAM | Lib | Acrescentar coluna filial na consulta F6. (modo consolidado) |
+| 981 | 30553 | SAM | Lib | Desenvolver bloqueto banc�rio com codigo de barras dos Bancos ITAU e B |
+| 987 | 30557 | SAM | Lib | No relat�rio contas a receber aparecer tambem o n�mero da parcela. |
 | 902 | 30531 | SAM | Lib | Criar em par�metro uma op��o para aceitar lan�amentos zerados, inclusi |
+| 930 | 30539 | SAM | Lib | Criar op��o para replicar lan�amentos padr�es. |
 | 885 | 30522 | SAM | Lib | Em Par�metros-Contabilidade, no campo "Classifica��o" (sob Fornecedore |
+| 958 | 30547 | SAM | Lib | Acrescentar coluna filial na consulta F6. (modo consolidado) |
+| 956 | 30545 | SAM | Lib | Quando trabalho com empresas Matriz X Filiais - Ao definir uma filial  |
+| 898 | 30528 | SAM | Desc | Desenvolver uma consulta onde seja poss�vel verificar m�s a m�s os cam |
+| 890 | 30525 | SAM | Lib | No Relat�rio de An�lises - Coeficientes  O segundo coeficiente diz  "� |
 | 802 | 30499 | SAM | Lib | Quando for efetuar uma baixa no faturamento, criar op��o para selecion |
 | 814 | 30503 | SAM | Lib | Incluir no Balancete a op��o imprimir classifica��o. |
 | 843 | 30507 | SAM | Lib | Incluir comprovante de recebimento de adiantamento quando um cliente d |
-| 731 | 30482 | SAM | Lib | Permitir alterar dia do faturamento. |
 | 710 | 30476 | SAM | Desc | Implementar lan�amentos sinteticos para a contabilidade.  Entradas:Tod |
+| 731 | 30482 | SAM | Lib | Permitir alterar dia do faturamento. |
 | 678 | 30466 | SAM | Desc | Permitir incluir o mesmo item mais de uma vez. |
-| 609 | 30448 | SAM | Lib | N�o permitir gravar lan�amentos cont�beis com a mesma conta a D�bito e |
+| 599 | 30445 | SAM | Lib | Criar rotina para criar contas na contabilidade de clientes e forneced |
 | 571 | 30431 | SAM | Lib | Colocar uma op��o no livro raz�o para emitir somente as contas que tem |
 | 569 | 30429 | SAM | Lib | Quando um bem � trocado de conta, nos relat�rios Resumo da Deprecia��o |
-| 599 | 30445 | SAM | Lib | Criar rotina para criar contas na contabilidade de clientes e forneced |
+| 610 | 30449 | SAM | Lib | Habilitar campos da guia contabilidade em Movimentos/Pagamentos de Imp |
 | 593 | 30442 | SAM | Desc | Ter op��o de selecionar a empresa que se deseja gerar os lan�amentos c |
 | 632 | 30454 | SAM | Lib | Ao lan�ar um evento ter op��o de complementa-lo, com descri��o livre o |
-| 610 | 30449 | SAM | Lib | Habilitar campos da guia contabilidade em Movimentos/Pagamentos de Imp |
-| 525 | 30405 | SAM | Lib | Quando fa�o uma transferencia de um bens de um centro de custo para ou |
-| 552 | 30417 | SAM | Lib | Na cofigura��o de assinaturas criar variaveis para poder selecionar os |
+| 609 | 30448 | SAM | Lib | N�o permitir gravar lan�amentos cont�beis com a mesma conta a D�bito e |
 | 538 | 30408 | SAM | Lib | Criar Nas Analises do DRE item para o valor do Resultado do Exerc�cio  |
+| 552 | 30417 | SAM | Lib | Na cofigura��o de assinaturas criar variaveis para poder selecionar os |
 | 539 | 30409 | SAM | Lib | Criar a possibilidade de informar a numera��o das p�ginas no relat�rio |
-| 401 | 30389 | SAM | Lib | Desenvolver um novo sistema de honor�rios, que possua controle de cont |
+| 525 | 30405 | SAM | Lib | Quando fa�o uma transferencia de um bens de um centro de custo para ou |
 | 404 | 30391 | SAM | Lib | Nos termos de abertura e encerramento possibilitar digitar o nome da e |
+| 401 | 30389 | SAM | Lib | Desenvolver um novo sistema de honor�rios, que possua controle de cont |
 | 402 | 30390 | SAM | Desc | Incluir uma op��o no Honor�rios para bloquear clientes inadimplentes. |
 | 391 | 30384 | SAM | Lib | Inserir novos coeficientes no m�dulo Contabilidade:  - �ndice de Endiv |
 | 288 | 30371 | SAM | Lib | No rel�t�rio de tarefas realizadas criar a possibilidade de quebrar po |
@@ -31691,14 +31256,19 @@
 | 18896 | 35 | SAIL | Lib | Disponibilizar op��o para emitir o Balan�o Fiscal. |
 | 18856 | 34 | SAIL | Lib | Emitir o balan�o considerando a configura��o da natureza das contas de |
 
-## Conteúdo Contábil Tributário (1009 total, 24 pendentes)
+## Conteúdo Contábil Tributário (1003 total, 15 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
+| 102309 | 131407 | NE | Pend | Está importando os valores do registro L210 do SPED ECF de forma acumu |
+| 102034 | 131072 | NE | Pend | Não estão sendo importados os registros Y570, Y600 e Y612 do informati |
+| 101887 | 130882 | NE | Lib | Está apresentando indevidamente o aviso de vigência não cadastrada ao  |
+| 101853 | 130794 | SAL | Lib | Remover linhas de cálculo referente ao Programa Perse no registro N610 |
+| 101809 | 130767 | NE | Lib | Os valores do registro P300 não estão sendo exibidos na tela Outros Da |
+| 101837 | 130642 | SAM | Pend | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na  |
 | 101592 | 130556 | SAL | Pend | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de  |
-| 101758 | 130507 | NE | Pend | Est� importando os valores do registro Y570 do informativo SPED ECF in |
+| 101758 | 130507 | NE | Lib | Está importando os valores do registro Y570 do informativo SPED ECF in |
 | 101278 | 130133 | NE | Lib | Est� calculando incorretamente o valor da linha 4-Adicional no registr |
-| 101357 | 129974 | SAM | Pend | Gerar o SPED ECF considerando o plano de contas vigente no período do  |
 | 101080 | 129838 | NE | Lib | Est� apresentando erro de banco de dados ao gravar a tela "Outros Dado |
 | 101048 | 129824 | SAL | Lib | Atualizar tabelas do informativo SPED ECF. |
 | 101040 | 129818 | NE | Pend | Est� importando incorretamente os valores do registro Y730 do informat |
@@ -31706,24 +31276,14 @@
 | 100942 | 129610 | NE | Lib | Est� gerando o relacionamento do M300 e M350 do SPED ECF de forma inco |
 | 100902 | 129482 | NE | Lib | Est� gerando valores incorretos para os registros K155, K156 e L100 do |
 | 100814 | 129461 | SAM | Pend | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED |
-| 100519 | 128739 | SAM | Pend | Alterar a guia Informativos da Parametrização no modo Visualizar param |
-| 100571 | 128355 | SAIL | Pend | Implementar a geração do bloco Y para empresas do Lucro Presumido na g |
 | 99880 | 127945 | SAL | Lib | Atualizar o informativo SPED ECF para o leiaute 12 conforme manual de  |
 | 100858 | 127709 | SAL | Lib | Adequar SPED ECF ao encerramento do Programa PERSE a partir de 04/2025 |
 | 99965 | 127283 | SAL | Lib | Atualizar tabelas conforme leiaute 12 do SPED ECF. |
 | 99964 | 127209 | SAL | Lib | Atualizar o informativo SPED ECF para o leiaute 12 conforme manual de  |
 | 100015 | 126993 | SAL | Lib | Alterar o sistema para realizar os ajustes referente a majora��o de 10 |
 | 100007 | 126827 | SAL | Lib | Alterar o sistema para considerar a majora��o de 10% no %CSLL e %IRPJ  |
-| 99955 | 126446 | SAM | Pend | Criar um relatório de conferência do bloco P do SPED ECF. |
-| 99862 | 125994 | SAM | Pend | Ajustar o SPED Contábil para usar o toggle 'Gerar o SPED ECF' nas vali |
 | 99223 | 125927 | SAL | Lib | Alterar o sistema para considerar a majora��o de 10% no percentual de  |
-| 99946 | 125731 | SAM | Pend | Realizar melhorias no plano referencial para atender as necessidade do |
-| 100529 | 125723 | SAIL | Pend | Implementar a geração dos registros P130, P230 e X280 para o Lucro Pre |
 | 98621 | 125438 | SAM | Pend | Ajustar a gera��o do informativo SPED ECF para buscar os saldos das co |
-| 99873 | 125374 | SAM | Pend | Criar as regras de permissões no menu SPED ECF. |
-| 99954 | 125365 | SAIL | Pend | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
-| 99952 | 125364 | SAIL | Pend | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivo |
-| 99947 | 124829 | SAIL | Pend | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9 |
 | 98042 | 124293 | SAL | Lib | Atualizar o informativo SPED ECF conforme altera��es da tabela din�mic |
 | 97742 | 123808 | NE | Lib | Em alguns casos, est� apresentando erro de banco de dados ao acessar o |
 | 97274 | 123145 | NE | Lib | Est� importando incorretamente os valores dos campos "Rendimento bruto |
@@ -31837,7 +31397,6 @@
 | 83568 | 104564 | NE | Lib | Est� apresentando indevidamente a mensagem 'N�o existem contas para re |
 | 95310 | 104301 | SAM | Lib | Permitir atualizar os dados do contador da guia "Signat�rios" sub guia |
 | 83348 | 104118 | SAM | Lib | Validar as contas cont�beis com mesma classifica��o quando utilizado a |
-| 94398 | 104002 | SAIL | Lib | Criar a interface 'Plano referencial' e o vínculo do plano referencial |
 | 83184 | 103933 | SAM | Lib | Ajustar comportamento do cadastro das assinaturas do SPED Cont�bil e S |
 | 83171 | 103930 | NE | Lib | Em alguns casos ocorre erro na tabela 'BETHADBA.CTSPED_ECF_SIGNATARIO' |
 | 82994 | 103623 | NE | Lib | Erro ocorrendo erro de atualiza��o de banco de dados na tabela CTSPED_ |
@@ -32366,34 +31925,34 @@
 | 9380 | 32974 | SAM | Desc | Exibir a mensagem: "H� nota(s) de sa�das com c�digo 11 para esp�cie se |
 | 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
 | 9004 | 32842 | SAM | Desc | Criar campos com os valores totais de cada situa��o tribut�ria no rela |
-| 9003 | 32841 | SAM | Desc | Considerar os valores por situa��o tribut�ria do ECF para gerar o rela |
-| 9005 | 32843 | SAM | Desc | Criar campo no cadastro de acumuladores para definir a situa��o tribut |
 | 9002 | 32840 | SAM | Desc | Criar campo para informar observa��es no relat�rio Mapa Resumo de ECF. |
+| 9005 | 32843 | SAM | Desc | Criar campo no cadastro de acumuladores para definir a situa��o tribut |
+| 9003 | 32841 | SAM | Desc | Considerar os valores por situa��o tribut�ria do ECF para gerar o rela |
 | 8775 | 32751 | SAM | Desc | Criar atalho ao lado dos campos que buscam valores da Contabilidade no |
 | 8607 | 32714 | SAM | Desc | Considerar no relat�rio Comparativo de entradas e sa�das, a op��o de d |
 | 8309 | 32633 | SAM | Lib | Alterar a ficha 39 da DIPJ para ser relacionada com as contas cont�bei |
 | 8306 | 32632 | SAM | Lib | Gerar o email do respons�vel legal para a DIPJ. |
-| 8225 | 32594 | SAM | Desc | Posicionar o foco no bot�o incluir da tela dos dados do ECF quando lan |
 | 8243 | 32602 | SAM | Lib | Considerar tamb�m as empresas filiais com cadastros separados da matri |
+| 8225 | 32594 | SAM | Desc | Posicionar o foco no bot�o incluir da tela dos dados do ECF quando lan |
 | 8037 | 32525 | SAM | Desc | Otimizar o processo de emiss�o do Mapa Resumo de ECF modelos II e III. |
+| 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
 | 7854 | 32462 | SAM | Desc | Desabilitar o campo "N�mero do Caixa" na tela de outros dados do ECF p |
 | 7853 | 32461 | SAM | Lib | Considerar sempre o GT final do ultimo dia anterior para calcular o GT |
-| 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
 | 6724 | 32250 | SAM | Lib | Gerar a ficha 54 da DIPJ mesmo se a empresa n�o tenha os impostos IRPJ |
 | 5985 | 32053 | SAM | Lib | Criar op��o para que na importa��o de ECFs seja informado o numero de  |
 | 5452 | 31917 | SAM | Lib | Criar a fun��o de replicar contas cont�beis nos outros dados da DIPJ 2 |
 | 5365 | 31899 | SAM | Lib | Ordenar listagem de empresas nos outros dados da DIPJ conforme clicado |
-| 4777 | 31772 | SAM | Desc | Ao gerar a DIPJ campo 12 - Devolu��es, ficha 22A(PIS(04)) e 26A(COFINS |
 | 4786 | 31778 | SAM | Lib | Desenvolver novo modelo de Mapa resumo de ECF |
+| 4777 | 31772 | SAM | Desc | Ao gerar a DIPJ campo 12 - Devolu��es, ficha 22A(PIS(04)) e 26A(COFINS |
 | 4537 | 31688 | SAM | Lib | Incluir a op��o de exportar temb�m Cadastro de M�quinas ECF para o m�d |
 | 4319 | 31623 | SAM | Lib | Nos lan�amentos dos dados de ECF, quando alterado o valor do GT atual, |
 | 4242 | 31600 | SAM | Lib | Criar campos para serem informados contas para contabilizar os cancela |
 | 3931 | 31507 | SAM | Lib | Ao alterar a esp�cie de um cupom fiscal para nota fiscal, exibir mensa |
 | 3431 | 31337 | SAM | Desc | Nos lan�amentos de notas de saidas ou servi�os na tela de dados do ECF |
 | 2920 | 31205 | SAM | Desc | Gerar valor do PIS sobre Folha para DIPJ. |
+| 2340 | 30958 | SAM | Lib | Em relatorio Acompanhamento/ecf colocar a data do lan�amento. |
 | 2421 | 30989 | SAM | Lib | Desenvolver relat�rios para demonstrar o Lucro Presumido Liquido. |
 | 2415 | 30984 | SAM | Desc | No relatorio de mapa da integra��o cont�bil ter op��o de PJ e DIPJ. |
-| 2340 | 30958 | SAM | Lib | Em relatorio Acompanhamento/ecf colocar a data do lan�amento. |
 | 2171 | 30922 | SAM | Desc | No relatorio resumo dos impostos na apura��o do lucro presumido, discr |
 | 1576 | 30741 | SAM | Lib | Ao gerar DIPJ gerar os impostos retidos por �rg�o publicos. |
 | 1293 | 30663 | SAM | Lib | Gerar DIPJ para empresas lucro real. |
@@ -32705,14 +32264,32 @@
 | 19507 | 188 | SAL | Lib | Atualizar o informativo DIPJ 2012 conforme vers�o 2012 do analisador - |
 | 19021 | 175 | SAL | Lib | Ajustar emiss�o do mapa resumo ECF 2D |
 
-## Escrituracao e movimento fiscal (24647 total, 4474 pendentes)
+## Escrituracao e movimento fiscal (24742 total, 4518 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 0 | 130776 | NE | Pend | - |
+| 0 | 131513 | NE | Pend | - |
+| 102221 | 131359 | NE | Pend | SP-Não está importando o Código do Benefício Fiscal na guia Estoque da |
+| 102182 | 131337 | NE | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102172 | 131273 | NE | Pend | Não está sendo feito o cálculo correto da majoração dos impostos 6-CSL |
+| 102185 | 131271 | NE | Pend | Está considerando indevidamente documentos cancelados para o cálculo d |
+| 102071 | 131216 | NE | Lib | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
+| 102044 | 131166 | SAM | Pend | MG- Otimizar as DW's 'ds_sped_blocoC_regC190_s_MG' e 'ds_sped_blocoE_r |
+| 102048 | 131148 | NE | Lib | Está importando incorretamente a opção do campo "Calcular redução conf |
+| 102033 | 131136 | SAM | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102215 | 131134 | NE | Pend | Não está sendo zerada a guia "IVA" das notas canceladas de saídas de C |
+| 102264 | 131103 | NE | Pend | Não está sendo salvo corretamente os relatórios do Simples Nacional na |
+| 102014 | 131095 | NE | Lib | Não está sendo setada a informação correta na coluna "Calcular redução |
+| 102294 | 131039 | NE | Pend | ES-Está sendo gerado incorretamente o registro C197 com o código de aj |
+| 102021 | 131032 | NE | Desc | Está sendo demonstrado o valor incorreto de "Redução referente à alíqu |
+| 101966 | 131029 | NE | Lib | Não está sendo feito o cálculo da majoração dos impostos 6-CSLL, 7-IRP |
+| 101823 | 130820 | NE | Pend | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro  |
+| 101853 | 130794 | SAL | Lib | Remover linhas de cálculo referente ao Programa Perse no registro N610 |
 | 101723 | 130731 | SAM | Pend | Corrigir as pend�ncias de vulnerabilidade no servidor do Busca NF-e. |
 | 101754 | 130691 | SAM | Pend | Realizar compacta��o em zip no envio de notas do Busca NF-e Cliente pa |
-| 101718 | 130663 | NE | Pend | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101810 | 130657 | SAL | Lib | Atualizar os códigos de Natureza da Receita para o CST 07, conforme ve |
+| 101718 | 130663 | NE | Lib | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101772 | 130635 | NE | Lib | Está sendo gerado o valor incorreto no Relatório "Resumo dos Impostos  |
 | 101678 | 130623 | SAM | Pend | Importar nos lan�amentos de entradas de devolu��o a op��o relacionada  |
 | 101691 | 130537 | NE | Pend | Em alguns casos o sistema fecha ao gerar o arquivo Excel do Relat�rio  |
 | 101521 | 130484 | SAM | Pend | Utilizar a Intelig�ncia Artificial (IA) para emitir um relat�rio geren |
@@ -32725,6 +32302,8 @@
 | 101321 | 130237 | NE | Lib | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na g |
 | 101727 | 130209 | NE | Pend | SP-Est� sendo gerada incorretamente a descri��o no campo "Tipo de d�bi |
 | 101713 | 130208 | NE | Pend | Est� sendo demonstrado incorretamente o valor de "Al�quota Efetiva por |
+| 101811 | 130201 | NE | Pend | Est� sendo realizado indevidamente consulta/download de notas fora do  |
+| 101369 | 130191 | SAIL | Lib | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apuração de Tribu |
 | 101283 | 130181 | NE | Lib | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRP |
 | 101352 | 130176 | NE | Pend | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_aut |
 | 101605 | 130149 | SAL | Pend | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela  |
@@ -32732,9 +32311,9 @@
 | 101010 | 129811 | SAM | Desc | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF |
 | 101052 | 129803 | NE | Pend | Em alguns casos est� apresentando a mensagem "Data inferior a data de  |
 | 101307 | 129788 | SAM | Pend | Realizar a importa��o do campo "Entrega" no lan�amento de nota fiscal  |
+| 101013 | 129761 | NE | Lib | Não estão sendo armazenadas as notas enviadas pelo Busca NF-e para o B |
 | 101141 | 129762 | NE | Pend | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma c |
-| 101013 | 129761 | NE | Pend | N�o est�o sendo armazenadas as notas enviadas pelo Busca NF-e para o B |
-| 101695 | 129731 | NE | Pend | TO-N�o est�o sendo gerados corretamente os quadros 3 e 4 do informativ |
+| 101695 | 129731 | NE | Desc | TO-Não estão sendo gerados corretamente os quadros 3 e 4 do informativ |
 | 101277 | 129722 | SAM | Pend | Implementar a gera��o do relat�rio de precifica��o de produtos e servi |
 | 100985 | 129721 | NE | Lib | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador |
 | 100954 | 129718 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "A soma do imposto PIS |
@@ -32754,8 +32333,10 @@
 | 100632 | 129268 | SAM | Lib | Redefinir as senhas dos usu�rios utilizados para uso interno do Cont�b |
 | 100808 | 129248 | NE | Lib | MT-Est� sendo apresentada indevidamente a mensagem "C�digo de Ajuste n |
 | 100757 | 129164 | SAL | Lib | Atualizar a tabela de NCM conforme Ato Declarat�rio Executivo RFB N� 0 |
+| 101794 | 129133 | SAM | Pend | Alterar o comportamento para o bot�o "Cancelar" quando realizada a apu |
 | 100542 | 129127 | SAM | Lib | Realizar melhorias nas rotinas de baixa, inser��o e consulta de notas  |
 | 101136 | 129109 | NE | Pend | Est� ocorrendo o erro: "O(s) arquivo(s) selecionado(s) n�o existe(m)!" |
+| 101802 | 129062 | NE | Pend | RS-N�o est� sendo limitando o saldo credor do cr�dito presumido nas sa |
 | 100517 | 129061 | NE | Lib | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas |
 | 101168 | 129047 | NE | Pend | Esta sendo calculado incorretamente a RBT12 para o c�lculo do Simples  |
 | 100498 | 129001 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "A soma dos campos 'Va |
@@ -32782,7 +32363,7 @@
 | 100287 | 128438 | NE | Pend | Est� sendo importado incorretamente o valor da "Diferen�a entre o valo |
 | 101186 | 128436 | NE | Pend | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primar |
 | 100524 | 128426 | NE | Lib | SP-Est� sendo direcionada para a janela de emiss�o da guia incorreta d |
-| 100571 | 128355 | SAIL | Pend | Implementar a geração do bloco Y para empresas do Lucro Presumido na g |
+| 101820 | 128425 | NE | Pend | N�o est� sendo feita corretamente a contabiliza��o das Notas de Entrad |
 | 100847 | 128299 | SAL | Pend | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias d |
 | 100476 | 128282 | SAM | Lib | Ajustar a ferramenta de envio de documentos para o cat�logo para ser p |
 | 100139 | 128280 | SAM | Pend | Implementar ferramenta para precifica��o de produtos e servi�os. |
@@ -32807,6 +32388,7 @@
 | 99676 | 127480 | SAM | Lib | Investigar e eliminar o consumo indevido do servi�o Documents pelo Man |
 | 101291 | 127448 | SAIL | Pend | SC-Implementar sub-apura��o e limitador do Cr�dito Presumido de ICMS p |
 | 99674 | 127442 | NE | Lib | SP-Est� sendo deduzido indevidamente as notas com esp�cie de comunica� |
+| 101828 | 127424 | SAM | Pend | Implementar controle de observabilidade da API de consulta de NCM e NB |
 | 100063 | 127423 | NE | Lib | Em alguns casos ocorre lentid�o na apura��o do per�odo. |
 | 99659 | 127418 | SAM | Lib | Realizar um estudo para verificar os impactos da altera��o do CNPJ com |
 | 99834 | 127393 | NE | Lib | RS-Est� sendo considerada indevidamente a nota de apropria��o de cr�di |
@@ -32841,7 +32423,6 @@
 | 99222 | 126500 | NE | Lib | Est� sendo gerado o valor incorreto no campo 03-VL_REC_BRT dos registr |
 | 99214 | 126498 | NE | Lib | RO-Est� finalizando o processo de importa��o na etapa 1/7 quando nas c |
 | 101300 | 126497 | SAM | Pend | Permitir importar o tipo de isen��o 2-Di�ria de viagem na importa��o d |
-| 99955 | 126446 | SAM | Pend | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99213 | 126395 | SAL | Desc | SP - Garantir funcionamento da integra��o do Cr�dito de ICMS com Escri |
 | 99215 | 126358 | NE | Lib | N�o est� sendo gerada informa��o no campo 19-COD_INF do registro D700  |
 | 99437 | 126341 | SAL | Pend | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os |
@@ -32852,6 +32433,7 @@
 | 99187 | 126104 | NE | Lib | Est� ocorrendo erro de sistema ao importar nota com produtos do tipo " |
 | 99301 | 126094 | NE | Lib | PA-N�o est� sendo gerado corretamente o registro C197 com o c�digo de  |
 | 98953 | 126088 | NE | Lib | N�o est� realizando download de servi�os cancelados no Padr�o Nacional |
+| 99063 | 126047 | SAM | Lib | Adequar o sistema para ao importar as informações do cálculo do INSS R |
 | 98888 | 125949 | SAM | Pend | Realizar testes conforme nova funcionalidade de gerenciamento de certi |
 | 101305 | 125948 | SAIL | Pend | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o d |
 | 98874 | 125926 | SAM | Lib | Corrigir as pend�ncias de vulnerabilidade no servidor do Busca NF-e. |
@@ -32873,8 +32455,6 @@
 | 98622 | 125539 | SAM | Lib | Testar aplica��o Busca NF-e p�s migra��o dos servidores do balanceador |
 | 98995 | 125535 | SAIL | Lib | Implementar novos benef�cios na DIRBI conforme IN RFB 2.294/2025. |
 | 98807 | 125418 | NE | Lib | Est� importando incorretamente o valor no campo "Outras" da linha do I |
-| 99954 | 125365 | SAIL | Pend | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
-| 99952 | 125364 | SAIL | Pend | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivo |
 | 98966 | 125363 | SAM | Lib | Criar a op��o "Considerar como exce��o a op��o Todos das colunas para  |
 | 99579 | 125353 | SAL | Lib | MG-Alterar o sistema para n�o deduzir as entradas do valor total das p |
 | 98688 | 125321 | NE | Lib | SC-N�o est� sendo gerado o valor correto do estorno de ICMS no registr |
@@ -32889,7 +32469,6 @@
 | 99837 | 125027 | SAL | Lib | RS-Alterar o c�lculo do imposto 8-DIFALI por produto, referente a aqui |
 | 98403 | 124994 | NE | Lib | Est� sendo preenchido indevidamente a guia "Relacionamento de produtos |
 | 98348 | 124973 | SAM | Lib | Realizar estudos para altera��es na forma de gerar bloco D do SPED Fis |
-| 99947 | 124829 | SAIL | Pend | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9 |
 | 99395 | 124848 | SAL | Lib | SC-Ajustar o SPED Fiscal para n�o gerar o registro E200 e filhos para  |
 | 98302 | 124798 | SAM | Pend | MG-Otimizar as DWs 'dw_mg_demonstrativo_credito_presumido_ret_dados_sa |
 | 98351 | 124778 | NE | Lib | Est� solicitando indevidamente o relacionamento de produtos quando imp |
@@ -33505,7 +33084,6 @@
 | 89971 | 113576 | SAL | Lib | RS-Alterar o sistema para que n�o gere o registro E115 no SPED Fiscal  |
 | 91542 | 113566 | SAL | Lib | MT-Alterar o sistema para gerar o ajuste MT030001 nas opera��es de dev |
 | 89666 | 113552 | SAM | Lib | Alterar o comportamento das opera��es de importa��o no simulador de c� |
-| 89797 | 113524 | SAIL | Pend | Criar as origens 'Entradas EF' e 'Saídas EF' para contabilizar lançame |
 | 89634 | 113539 | NE | Lib | PR-Pato Branco-N�o est� sendo considerada a al�quota m�nima de 2% na a |
 | 89629 | 113538 | NE | Lib | PI-Est� gerando o registro E111 com o c�digo de ajuste incorreto "PI05 |
 | 89597 | 113537 | NE | Lib | N�o est� sobrescrevendo os lan�amentos cont�beis no m�dulo "Escrita Fi |
@@ -33599,7 +33177,6 @@
 | 88510 | 111770 | SAL | Lib | RS-Alterar a base de c�lculo do cr�dito presumido abatedores de su�nos |
 | 88146 | 111721 | NE | Lib | BA-N�o est� sendo considerando o MVA corretamente para o imposto "31-S |
 | 90006 | 111713 | SAL | Lib | MG-Alterar a forma de calcular o cr�dito presumido de artefatos de joa |
-| 88076 | 111631 | SAIL | Lib | Criar as origens 'Entradas EF' e 'Saídas EF' para contabilizar lançame |
 | 92957 | 111596 | SAM | Lib | RJ-Disponibilizar a op��o para alterar o produto para n�o calcular FEC |
 | 88040 | 111574 | NE | Lib | Est� ocorrendo o erro "N�o � permitido lan�ar valor de imposto ICMS/ST |
 | 87992 | 111515 | NE | Lib | CE-N�o est� importando o imposto 8-DIFALI corretamente quando o percen |
@@ -33890,7 +33467,6 @@
 | 83643 | 104811 | SAM | Lib | MT-Criar op��o na janela 'Arquivos/Dados de impostos por NCM/CEST' par |
 | 83692 | 104771 | NE | Lib | BA-N�o est� sendo considerando o MVA corretamente para o imposto 31-ST |
 | 83609 | 104749 | NE | Lib | ES-N�o est�o sendo demonstradas as notas fiscal no relat�rio "Demonstr |
-| 83629 | 104737 | NE | Desc | Não está sendo apresentada a linha inferior das combobox de contas do  |
 | 83604 | 104702 | NE | Lib | CE/SP-Est� sendo apresentada indevidamente a mensagem "CST/CSOSN" ao i |
 | 85238 | 104665 | SAL | Lib | Alterar a apura��o das notas de devolu��o de Redu��o Z para empresas d |
 | 87856 | 104637 | SAM | Lib | Incluir um filtro no utilit�rio "Excluir Parcelas" para permitir filtr |
@@ -35016,7 +34592,7 @@
 | 73708 | 87183 | SAL | Lib | SP-Alterar o campo 08 do registro SP40090227 e SP40090228 para conside |
 | 74357 | 87135 | SAL | Lib | PR-Habilitar a op��o 'Quando enquadrada na 6� faixa, aplicar a redu��o |
 | 73434 | 87133 | SAM | Lib | SC- Otimizar a DW 'ds_sped_blocoD_regD197_SC' com lentid�o na gera��o  |
-| 74389 | 87115 | SAM | Pend | Otimizar a apura��o do imposto 145-ICMS DIFAL - N�o Contribuinte. |
+| 74389 | 87115 | SAM | Desc | Otimizar a apura��o do imposto 145-ICMS DIFAL - N�o Contribuinte. |
 | 73328 | 87105 | NE | Desc | Na�o est� sendo feito o c�lculo correto do imposto 44-SIMPLESN, quando |
 | 84704 | 87101 | SAM | Lib | SC- Otimizar o c�lculo do imposto 1-ICMS na apura��o de impostos quand |
 | 73953 | 87093 | SAL | Lib | SP-Alterar o comportamento do registro C197 com c�digo SP90090278 do S |
@@ -40915,45 +40491,45 @@
 | 41253 | 34189 | SAL | Lib | PR-Criar op��o para efetuar lan�amentos de entrada/sa�da sem efetuar c |
 | 36437 | 34179 | SAM | Lib | Atualizar o Dom�nio Cliente conforme altera��es nos m�dulos do Cont�bi |
 | 34900 | 34173 | SAM | Lib | Atualizar o Dom�nio Cliente conforme altera��es nos m�dulos do Cont�bi |
+| 31880 | 34154 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
 | 32061 | 34157 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
 | 31635 | 34146 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
-| 31880 | 34154 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
 | 32060 | 34156 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
+| 31466 | 34141 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31286 | 34134 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31551 | 34142 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2. |
-| 31466 | 34141 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31138 | 34116 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31136 | 34114 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31268 | 34130 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31221 | 34125 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31213 | 34118 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31224 | 34128 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31221 | 34125 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31268 | 34130 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31136 | 34114 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31213 | 34118 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31138 | 34116 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 30234 | 34088 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 30258 | 34094 | SAM | Lib | Corrigir error encontrados em bancos migrados para o DB2 |
 | 30804 | 34104 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 30234 | 34088 | SAM | Lib | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 29032 | 34068 | SAM | Lib | Alterar a importa��o do NF-e Portal conforme nova estrutura. |
-| 29268 | 34070 | SAM | Lib | Corrigir erros encontrados em bancos convertidos para o DB2 |
 | 29904 | 34078 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
+| 29268 | 34070 | SAM | Lib | Corrigir erros encontrados em bancos convertidos para o DB2 |
+| 29032 | 34068 | SAM | Lib | Alterar a importa��o do NF-e Portal conforme nova estrutura. |
 | 26992 | 34053 | SAM | Lib | Alterar a aplica��o para n�o causar erros devido ao DB2 ser CaseSensit |
-| 26609 | 34045 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
-| 26610 | 34046 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
 | 27262 | 34060 | SAM | Lib | Otimizar a busca de 'parcelas em aberto' na baixa de Sa�das e Entradas |
+| 26610 | 34046 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
+| 26609 | 34045 | SAM | Lib | Gerar o n�mero do documento conforme o n�mero da nota fiscal, document |
 | 26445 | 34042 | SAM | Desc | MG-Disponibilizar o informativo estadual Gia Substitui��o Tribut�ria - |
 | 24520 | 34026 | SAM | Lib | Gerar o relat�rio de acompanhamento de entradas em modo retrato |
 | 22265 | 33998 | SAM | Lib | Unificar a tela de importa��o da receita bruta para o c�lculo do INSS  |
 | 19989 | 33985 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
-| 21360 | 33994 | SAM | Lib | Alterar Help e Manual da tela de lan�amentos cont�beis para que fique  |
 | 19737 | 33984 | SAM | Lib | Desenvolver importa��o de NF-e via portal para empresas do estado PE,  |
+| 21360 | 33994 | SAM | Lib | Alterar Help e Manual da tela de lan�amentos cont�beis para que fique  |
 | 18557 | 33966 | SAM | Lib | Criar op��o para excluir as informa��es de uma nota automaticamente qu |
 | 18685 | 33975 | SAM | Lib | Disponibilizar a tabela "Notas Fiscais de Sa�das - PIS/COFINS (EFSAIDA |
 | 18430 | 33952 | SAM | Lib | Criar op��o no utilit�rios de altera��o de produtos para marcar a op�� |
-| 17897 | 33909 | SAM | Lib | BA - Criar op��o de gerar Nota Fiscal de Servi�o Eletr�nica para o mun |
 | 18084 | 33924 | SAM | Lib | Atualizar as importa��es para importar os dados necess�rios para o cal |
+| 17897 | 33909 | SAM | Lib | BA - Criar op��o de gerar Nota Fiscal de Servi�o Eletr�nica para o mun |
+| 17358 | 33867 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
+| 17609 | 33891 | SAM | Lib | Criar op��o para importar notas canceladas no importador padr�o NFe XM |
 | 17582 | 33888 | SAM | Lib | Desenvolver relat�rio que demonstre a quantidade de NFes lan�adas por  |
 | 17604 | 33890 | SAM | Lib | Otimizar o processo de grava��o de notas de entradas. |
 | 17419 | 33869 | SAM | Lib | BA - Criar op��o de gerar Nota Fiscal de Servi�o Eletr�nica para o mun |
-| 17609 | 33891 | SAM | Lib | Criar op��o para importar notas canceladas no importador padr�o NFe XM |
-| 17358 | 33867 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
 | 17138 | 33839 | SAM | Lib | Permitir configurar mais de uma situa��o tribut�ria para CFOP e acumul |
 | 17098 | 33832 | SAM | Lib | Criar relat�rios para confer�ncia do calculo do Pis e Cofins para empr |
 | 16891 | 33822 | SAM | Lib | Disponibilizar os lan�amentos de bilhetes de passagem e exportar os la |
@@ -40961,549 +40537,549 @@
 | 16364 | 33776 | SAM | Lib | Desenvolver importa��o espec�fica para arquivo XML de NFe. |
 | 16359 | 33775 | SAM | Lib | Criar filtro para selecionar por 'C�digo de Acumulador' e 'CFOP' no ut |
 | 16335 | 33774 | SAM | Lib | Incluir novas op��es no utilit�rio de Altera��o de Produtos. |
-| 15988 | 33758 | SAM | Lib | Prorrogar a obriga��o do uso da nova tela de lan�amentos de redu��es Z |
-| 16141 | 33767 | SAM | Lib | Atualizar esse m�edulo conforme altera��es no m�dulo Escrita Fiscal. |
 | 16262 | 33771 | SAM | Lib | Gravar somente por empresa as informa��es do importador.   |
+| 15988 | 33758 | SAM | Lib | Prorrogar a obriga��o do uso da nova tela de lan�amentos de redu��es Z |
 | 15847 | 33748 | SAM | Lib | AL-Disponibilizar as colunas IPI e Subtri na linha do ICMS das notas d |
+| 16141 | 33767 | SAM | Lib | Atualizar esse m�edulo conforme altera��es no m�dulo Escrita Fiscal. |
 | 16065 | 33762 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
-| 15818 | 33746 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
+| 15643 | 33731 | SAM | Lib | Criar op��o para selecionar quais campos ser�o utilizados para identif |
 | 15817 | 33745 | SAM | Lib | Otimizar processo de apura��o para empresas optantes do Simples Nacion |
 | 15644 | 33732 | SAM | Desc | Gerar a chave NFe ao realizar importa��o de notas pelo importador quan |
-| 15643 | 33731 | SAM | Lib | Criar op��o para selecionar quais campos ser�o utilizados para identif |
+| 15818 | 33746 | SAM | Lib | Atualizar esse m�dulo conforme altera��es nos m�dulos Escrita e Contab |
 | 15622 | 33730 | SAM | Lib | ALterar importa��o de NFe diretamente do portal conforme nova vers�o d |
-| 15307 | 33715 | SAM | Lib | N�o permitir realizar importa��o entre os m�dulos se a vers�o for meno |
 | 15005 | 33698 | SAM | Lib | Liberar os dados da guia �tens das notas fiscais de Servi�os para sere |
-| 15478 | 33724 | SAM | Lib | Prorrogar o prazo para o la�amento de redu��es Z pela tela de sa�das a |
-| 15518 | 33726 | SAM | Lib | Atualizar esse m�dulo conforme atualiza��o do m�dulos Escrita Fiscal |
 | 15326 | 33716 | SAM | Desc | Otimizar Processo de apura��o para obter um melhor desempenho.   |
+| 15518 | 33726 | SAM | Lib | Atualizar esse m�dulo conforme atualiza��o do m�dulos Escrita Fiscal |
+| 15478 | 33724 | SAM | Lib | Prorrogar o prazo para o la�amento de redu��es Z pela tela de sa�das a |
 | 15264 | 33712 | SAM | Lib | Criar op��o para imprimir o nome do licenciado no rodap� dos livros.   |
+| 15307 | 33715 | SAM | Lib | N�o permitir realizar importa��o entre os m�dulos se a vers�o for meno |
+| 14944 | 33694 | SAM | Lib | Criar modelo de documento que n�o tenha nenhum vinculo com os livros e |
 | 14892 | 33693 | SAM | Lib | Comparar com o CPF do respons�vel a inscri��o das NFes do portal, quan |
 | 14845 | 33687 | SAM | Lib | Enviar para a Dom�nio a quantidade de NFes de entradas e sa�das lan�ad |
-| 14944 | 33694 | SAM | Lib | Criar modelo de documento que n�o tenha nenhum vinculo com os livros e |
 | 14541 | 33670 | SAM | Lib | DB2-N�o � poss�vel acessar nenhuma fun��o que dependa dos par�metros d |
-| 14465 | 33655 | SAM | Lib | Alterar a disposi��o do menu relat�rio/informativos/federais separando |
 | 14383 | 33639 | SAM | Lib | Cadastrar clientes e fornecedores como contribuintes do ICMS na import |
 | 14385 | 33640 | SAM | Lib | DF-Disponibilizar o campo Itens Decreto das notas de sa�da para ser ut |
-| 14094 | 33601 | SAM | Lib | Transcrever a chave NFe da nota de sa�da para a nota de entrada em out |
-| 14313 | 33630 | SAM | Lib | Otimizar o processo de regerar lan�amentos cont�beis.     |
-| 14330 | 33631 | SAM | Lib | Otimizar o Processo de Grava��o de Notas Fiscais.   |
+| 14465 | 33655 | SAM | Lib | Alterar a disposi��o do menu relat�rio/informativos/federais separando |
 | 14083 | 33600 | SAM | Lib | Alterar relat�rio acompanhamento de entradas, sa�das e servi�os para d |
-| 13892 | 33588 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
-| 13951 | 33595 | SAM | Desc | RS- Incluir a Insc. Estadual e o respons�vel da empresa no cabe�alho d |
+| 14330 | 33631 | SAM | Lib | Otimizar o Processo de Grava��o de Notas Fiscais.   |
+| 14313 | 33630 | SAM | Lib | Otimizar o processo de regerar lan�amentos cont�beis.     |
+| 14094 | 33601 | SAM | Lib | Transcrever a chave NFe da nota de sa�da para a nota de entrada em out |
 | 13944 | 33594 | SAM | Lib | N�o est� sendo permitido relacionar produtos com unidades difentes na  |
+| 13951 | 33595 | SAM | Desc | RS- Incluir a Insc. Estadual e o respons�vel da empresa no cabe�alho d |
+| 13892 | 33588 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
 | 13836 | 33576 | SAM | Lib | Habilitar as op��es para gerar parcelas na configura��o de importa��o  |
 | 13711 | 33564 | SAM | Lib | Importar informa��es do arquivo sped fiscal(txt), para a guia compleme |
-| 13164 | 33511 | SAM | Lib | Otimizar o processo de importa��o de NFe via arquivo XML.     |
 | 13401 | 33520 | SAM | Desc | N�o est� emitindo o Livro de Entradas, quando a empresa for filial e h |
+| 13164 | 33511 | SAM | Lib | Otimizar o processo de importa��o de NFe via arquivo XML.     |
 | 13413 | 33522 | SAM | Lib | Possibilitar a importa��o de NFe com vers�o do XML 2.00.         |
-| 12808 | 33477 | SAM | Lib | Permitir usar um campo tempor�rio nas condi��es de uma regra nas defin |
 | 12735 | 33472 | SAM | Lib | SP-Criar op��o para importar os valores para as Tabelas municipais na  |
-| 12535 | 33453 | SAM | Lib | Otimizar o processo de importa��o de NFe pelo importador quando existi |
+| 12808 | 33477 | SAM | Lib | Permitir usar um campo tempor�rio nas condi��es de uma regra nas defin |
 | 12686 | 33464 | SAM | Lib | Criar op��o para informar a data de entrada/sa�da das NFe importadas d |
-| 11829 | 33388 | SAM | Lib | Criar op��o para importar tamb�m a movimenta��o de produtos diretament |
+| 12535 | 33453 | SAM | Lib | Otimizar o processo de importa��o de NFe pelo importador quando existi |
 | 12010 | 33400 | SAM | Lib | Atualiza��o esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
+| 11829 | 33388 | SAM | Lib | Criar op��o para importar tamb�m a movimenta��o de produtos diretament |
 | 12028 | 33401 | SAM | Lib | Aumentar o campo observa��es da tela de gera��o do livro de ICMS. |
-| 11752 | 33374 | SAM | Lib | Criar op��o de estornar um cancelamento de nota fiscal. |
-| 11452 | 33349 | SAM | Lib | Ajustar a impress�o dos livros de Entradas e Sa�das para imprimir os 9 |
 | 11648 | 33354 | SAM | Lib | Otimizar o processo de regerar lan�amentos cont�beis. |
+| 11452 | 33349 | SAM | Lib | Ajustar a impress�o dos livros de Entradas e Sa�das para imprimir os 9 |
+| 11752 | 33374 | SAM | Lib | Criar op��o de estornar um cancelamento de nota fiscal. |
 | 11398 | 33342 | SAM | Lib | Criar op��o para importar os dados de NFe diretamente do site de Recei |
+| 11265 | 33320 | SAM | Lib | Liberar para importa��o de dados no uitilit�rio de importa��o, as tabe |
 | 11188 | 33307 | SAM | Lib | Criar utilit�rio para gerar autom�ticamente parcelas para as notas. |
 | 11223 | 33309 | SAM | Desc | a |
-| 11265 | 33320 | SAM | Lib | Liberar para importa��o de dados no uitilit�rio de importa��o, as tabe |
 | 11070 | 33283 | SAM | Lib | SP-Utilizar a data da NFe se a data do RPS estiver em branco quando se |
-| 11159 | 33296 | SAM | Lib | N�o efetuar o controle de AIDF no lan�amento de notas fiscais modelo 5 |
-| 11071 | 33284 | SAM | Lib | SP-Criar op��o para importar o c�digo do servi�o prestado para o campo |
 | 11135 | 33290 | SAM | Lib | Ocorre o erro "Chave NF-e Inv�lida! Data de Emiss�o da Chave Nota Fisc |
-| 10666 | 33255 | SAM | Lib | Permitir lan�ar notas com modelo 55 sem informar a Chave NF-e quando a |
+| 11071 | 33284 | SAM | Lib | SP-Criar op��o para importar o c�digo do servi�o prestado para o campo |
+| 11159 | 33296 | SAM | Lib | N�o efetuar o controle de AIDF no lan�amento de notas fiscais modelo 5 |
 | 10830 | 33266 | SAM | Lib | Atualizar esse m�dulo Cliente altera��es feitas no Dominio Cont�bil.   |
+| 10666 | 33255 | SAM | Lib | Permitir lan�ar notas com modelo 55 sem informar a Chave NF-e quando a |
 | 10312 | 33191 | SAM | Desc | Sistema est� gerando situa��o de "Isen��o" e deveria gerar situa��o "S |
 | 10214 | 33172 | SAM | Desc | Criar op��o de gerar lan�amentos cont�beis de partida simples ao baixa |
-| 10068 | 33127 | SAM | Desc | Quando a empresa efetua apura��o do Simples Nacional pelo regime de ca |
-| 10046 | 33119 | SAM | Lib | Em empresas onde a apura��o do Simples Nacional � pelo regime de caixa |
 | 10008 | 33111 | SAM | Desc | PR - Alterar o n�mero e o tipo demonstrados no relat�rio da GIA ao mar |
+| 10068 | 33127 | SAM | Desc | Quando a empresa efetua apura��o do Simples Nacional pelo regime de ca |
 | 10172 | 33136 | SAM | Lib | Otimizar a emiss�o do Livro de Apura��o de ICMS.   |
-| 9884 | 33082 | SAM | Lib | Otimizar processo de importa��o de notas. |
+| 10046 | 33119 | SAM | Lib | Em empresas onde a apura��o do Simples Nacional � pelo regime de caixa |
 | 9886 | 33083 | SAM | Lib | SP-Otimizar a gera��o do informativo Nova GIA |
+| 9884 | 33082 | SAM | Lib | Otimizar processo de importa��o de notas. |
 | 9916 | 33093 | SAM | Lib | Exportar para a Escrita Fiscal as informa��o dos dados do frete. |
 | 9923 | 33096 | SAM | Lib | Corrigir o utilit�rio de limpeza notas. |
 | 9780 | 33053 | SAM | Lib | Melhorar a performance da integra��o cont�bil. |
 | 9795 | 33054 | SAM | Desc | RS-Gerar para o livro especial de ISS as notas de sa�das com CFOP 7949 |
 | 9745 | 33044 | SAM | Lib | Emitir aviso de diferen�as entre o valor cont�bil e base somente no fi |
-| 9561 | 33000 | SAM | Lib | MG-N�o transferir a diferen�a ao alterar o valor de uma campo do quadr |
-| 9611 | 33020 | SAM | Desc | Permitir zerar as contas cont�beis para realizar lan�amentos cont�beis |
 | 9562 | 33001 | SAM | Desc | SP - Trazer o valor do campo modalidade de freta da tela de sa�da no c |
-| 9613 | 33022 | SAM | Desc | SP - Permitir alterar a data do campo "C�lculo para recolhimento at� 0 |
 | 9614 | 33023 | SAM | Desc | N�o abrir a tela para informa��o dos dados do conhecimento ao lan�ar c |
-| 9605 | 33016 | SAM | Desc | Discriminar o per�odo informado no quadro "Sele��o" no cabe�alho do re |
-| 9487 | 32995 | SAM | Desc | Replicar as informa��es da guia MVA do bot�o defini��es ao efetuar uma |
+| 9609 | 33018 | SAM | Desc | Alterar o cabe�alho dos relat�rios de acompanhamento de entradas, sa�d |
 | 9603 | 33014 | SAM | Desc | Considerar o munic�pio informado na nota quando marcado a op��o de ord |
+| 9611 | 33020 | SAM | Desc | Permitir zerar as contas cont�beis para realizar lan�amentos cont�beis |
+| 9605 | 33016 | SAM | Desc | Discriminar o per�odo informado no quadro "Sele��o" no cabe�alho do re |
+| 9656 | 33029 | SAM | Desc | Aumentar a quantidade de caracteres do bot�o observa��es do livro de a |
+| 9613 | 33022 | SAM | Desc | SP - Permitir alterar a data do campo "C�lculo para recolhimento at� 0 |
+| 9571 | 33008 | SAM | Desc | SC-Somar os valores do Projeto SEITEC no campo outros cr�ditos do rela |
+| 9561 | 33000 | SAM | Lib | MG-N�o transferir a diferen�a ao alterar o valor de uma campo do quadr |
+| 9487 | 32995 | SAM | Desc | Replicar as informa��es da guia MVA do bot�o defini��es ao efetuar uma |
 | 9606 | 33017 | SAM | Desc | Permitir salvar o relat�rio resumo por acumulador em arquivo texto. |
 | 9557 | 32998 | SAM | Desc | Disponibilizar no F2 da consulta do c�digo NCM do cadastro de produto  |
-| 9571 | 33008 | SAM | Desc | SC-Somar os valores do Projeto SEITEC no campo outros cr�ditos do rela |
-| 9609 | 33018 | SAM | Desc | Alterar o cabe�alho dos relat�rios de acompanhamento de entradas, sa�d |
-| 9656 | 33029 | SAM | Desc | Aumentar a quantidade de caracteres do bot�o observa��es do livro de a |
-| 9379 | 32973 | SAM | Desc | Habilitar a sele��o por pagamento e recebimento independente do agrupa |
-| 9358 | 32966 | SAM | Desc | Demonstrar tamb�m a receita bruta real no relat�rio do Simples Naciona |
-| 9357 | 32965 | SAM | Desc | MG - Criar campo para totalizar valores de isentas e outras no detalha |
 | 9361 | 32968 | SAM | Desc | Retirar o campo "Valor Total (Base Calc. + IPI) posi��o 37 - 49" do La |
-| 9482 | 32993 | SAM | Desc | Desmembrar op��o "Controla contas a pagar e receber" para duas novas o |
-| 9475 | 32989 | SAM | Desc | Considerar a Subs�rie da nota no relat�rio de notas n�o lan�adas.      |
-| 9384 | 32975 | SAM | Lib | Otimizar o processo de gera��o do informativo DACON. |
 | 9477 | 32991 | SAM | Desc | Criar op��o para gerar os lan�amentos cont�beis das notas de sa�das, s |
-| 9354 | 32962 | SAM | Desc | Permitir informar valor de receita bruta e folha para simples nacional |
 | 9377 | 32971 | SAM | Desc | Alterar o relat�rio Demonstrativo dos Impostos IRPJ para que os campos |
-| 9351 | 32959 | SAM | Desc | Criar op��o para demonstrar as movimenta��es de entradas e sa�das na m |
-| 9306 | 32937 | SAM | Desc | N�o disponibilizar para pagamento o IPI que n�o atingiu o valor m�nimo |
+| 9357 | 32965 | SAM | Desc | MG - Criar campo para totalizar valores de isentas e outras no detalha |
+| 9482 | 32993 | SAM | Desc | Desmembrar op��o "Controla contas a pagar e receber" para duas novas o |
+| 9379 | 32973 | SAM | Desc | Habilitar a sele��o por pagamento e recebimento independente do agrupa |
+| 9354 | 32962 | SAM | Desc | Permitir informar valor de receita bruta e folha para simples nacional |
+| 9358 | 32966 | SAM | Desc | Demonstrar tamb�m a receita bruta real no relat�rio do Simples Naciona |
+| 9384 | 32975 | SAM | Lib | Otimizar o processo de gera��o do informativo DACON. |
+| 9475 | 32989 | SAM | Desc | Considerar a Subs�rie da nota no relat�rio de notas n�o lan�adas.      |
 | 9317 | 32941 | SAM | Desc | Permitir informar a mesma al�quota para base de c�lculo diferente na g |
-| 9339 | 32954 | SAM | Desc | Permitir apagar a informa��o do campo "Documento Final" no momento do  |
 | 9284 | 32932 | SAM | Desc | Criar campo para informar o c�digo da filial nos lan�amentos cont�beis |
+| 9339 | 32954 | SAM | Desc | Permitir apagar a informa��o do campo "Documento Final" no momento do  |
+| 9306 | 32937 | SAM | Desc | N�o disponibilizar para pagamento o IPI que n�o atingiu o valor m�nimo |
 | 9349 | 32957 | SAM | Desc | Criar controle de numera��o de livros fiscal |
+| 9351 | 32959 | SAM | Desc | Criar op��o para demonstrar as movimenta��es de entradas e sa�das na m |
 | 9265 | 32919 | SAM | Desc | Respeitar a op��o "C�digo do cliente igual ao da conta" na importa��o  |
-| 9246 | 32914 | SAM | Desc | Formatar a validar a chave da NFe informada no lan�amento das notas da |
 | 9276 | 32927 | SAM | Desc | Criar bot�o "Outros Dados" no informativo DCTF. |
 | 9212 | 32909 | SAM | Lib | Alterar a tela de exporta��o de lan�amentos cont�beis para permitir se |
+| 9246 | 32914 | SAM | Desc | Formatar a validar a chave da NFe informada no lan�amento das notas da |
 | 9259 | 32916 | SAM | Desc | N�o obrigar a digita��o do c�digo de recolhimento dos impostos retidos |
 | 9141 | 32879 | SAM | Desc | SP-Criar sele��o de notas no bot�o "Notas" da tela de emiss�o do infor |
-| 9146 | 32883 | SAM | Desc | Aumentar o tamanho do campo do n�mero da nota fiscal que acoberta a ca |
-| 9143 | 32881 | SAM | Desc | SP-Tornar obrigat�ria a informa��o do campo Unidade do cadastro de pro |
 | 9130 | 32875 | SAM | Lib | Repetir n�mero da chave da NF-e na guia "Complementar" em todos os seg |
-| 9154 | 32885 | SAM | Lib | Ajustar a Base de calculo dos cr�ditos do PIS e COFINS para as empresa |
-| 9116 | 32873 | SAM | Desc | Passar pela guia contabilidade da tela de lan�amentos de entradas, sa� |
 | 9183 | 32889 | SAM | Desc | Preencher o campo CFOP nos lan�amentos de notas de sa�das e entradas,  |
 | 9138 | 32876 | SAM | Lib | SP-Emitir guia GARE referente ao DIFALI para empresas optantes pelo Si |
-| 9140 | 32878 | SAM | Desc | Desabilitar o campo "Gera informativo nota fiscal paulista" quando a e |
+| 9146 | 32883 | SAM | Desc | Aumentar o tamanho do campo do n�mero da nota fiscal que acoberta a ca |
 | 9117 | 32874 | SAM | Desc | Exibir aviso de alerta ao deixar campo Cliente/Fornecedor em branco no |
+| 9140 | 32878 | SAM | Desc | Desabilitar o campo "Gera informativo nota fiscal paulista" quando a e |
+| 9143 | 32881 | SAM | Desc | SP-Tornar obrigat�ria a informa��o do campo Unidade do cadastro de pro |
+| 9154 | 32885 | SAM | Lib | Ajustar a Base de calculo dos cr�ditos do PIS e COFINS para as empresa |
+| 9116 | 32873 | SAM | Desc | Passar pela guia contabilidade da tela de lan�amentos de entradas, sa� |
 | 9147 | 32884 | SAM | Desc | Criar op��o para sele��o de empresas no relat�rio do Simples Nacional. |
-| 9089 | 32859 | SAM | Lib | Criar a op��o para repetir os dados ap�s gravas as notas |
 | 9060 | 32850 | SAM | Desc | Disponibilizar utilit�rio para exclus�o de lan�amentos em lote. |
-| 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
-| 9006 | 32844 | SAM | Desc | Permitir configurar tipo de contabiliza��o diferente para uma redu��o  |
+| 9089 | 32859 | SAM | Lib | Criar a op��o para repetir os dados ap�s gravas as notas |
+| 8997 | 32836 | SAM | Desc | PR-Aumentar o quadro 05 do relat�rio GIA para que valores acima de 1.0 |
 | 9031 | 32847 | SAM | Desc | Permitir informar 7 d�gitos nos campos somente cliente/somente fornece |
 | 8996 | 32835 | SAM | Desc | Demonstrar o n�mero do lote na guia contabilidade do lan�amento de ent |
-| 8997 | 32836 | SAM | Desc | PR-Aumentar o quadro 05 do relat�rio GIA para que valores acima de 1.0 |
-| 8976 | 32819 | SAM | Desc | Criar vari�vel para gerar a descri��o completa da esp�cie nas guias En |
+| 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
+| 9006 | 32844 | SAM | Desc | Permitir configurar tipo de contabiliza��o diferente para uma redu��o  |
 | 8926 | 32796 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal |
+| 8976 | 32819 | SAM | Desc | Criar vari�vel para gerar a descri��o completa da esp�cie nas guias En |
 | 8800 | 32763 | SAM | Desc | Gerar o anexo de receita bruta do relat�rio de acompanhamento do simpl |
 | 8798 | 32761 | SAM | Lib | Permitir gravar lan�amento sem informa��o nos "campos livres" da guia  |
+| 8690 | 32734 | SAM | Desc | SP-Formatar o campo 05 da guia GARE/DR, conforme o n�mero de d�gitos i |
+| 8691 | 32735 | SAM | Desc | Alterar mensagem gerada pelo sistema ao imprimir Livro Apura��o ICMS p |
+| 8767 | 32743 | SAM | Desc | N�o realizar a cr�tica quanto a origem da nota ao alterar notas com mo |
+| 8693 | 32737 | SAM | Desc | Incluir no relat�rio de acompanhamento de servi�os o per�odo inicial e |
 | 8782 | 32756 | SAM | Desc | RS - Adequar a emiss�o do Resumo do ICMS para empresas com ICMS com a  |
 | 8692 | 32736 | SAM | Desc | N�o permitir passar pelos campos "Fornecedor:" e "Cliente:" em notas d |
-| 8767 | 32743 | SAM | Desc | N�o realizar a cr�tica quanto a origem da nota ao alterar notas com mo |
-| 8691 | 32735 | SAM | Desc | Alterar mensagem gerada pelo sistema ao imprimir Livro Apura��o ICMS p |
-| 8690 | 32734 | SAM | Desc | SP-Formatar o campo 05 da guia GARE/DR, conforme o n�mero de d�gitos i |
-| 8693 | 32737 | SAM | Desc | Incluir no relat�rio de acompanhamento de servi�os o per�odo inicial e |
+| 8638 | 32718 | SAM | Lib | BA- Vincular help a tela de gera��o do informativo DMA.       |
+| 8615 | 32716 | SAM | Desc | N�o abrir tela do bem quando editado nota fiscal de compra para o imob |
+| 8547 | 32705 | SAM | Lib | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a  |
+| 8606 | 32713 | SAM | Desc | SC-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados |
+| 8607 | 32714 | SAM | Desc | Considerar no relat�rio Comparativo de entradas e sa�das, a op��o de d |
+| 8519 | 32690 | SAM | Desc | Alterar o foco do cursor ao teclar enter no campo "Trcoar para" na tel |
+| 8525 | 32694 | SAM | Desc | SC-Disponibilizar o calculo do imposto ICMS ST/AT em atraso quando o m |
 | 8524 | 32693 | SAM | Desc | SC-Disponibilizar o pagamento do imposto ICMS-ST AT com periodicidade  |
 | 8613 | 32715 | SAM | Lib | Formatar e validar a chave da NFe informada no lan�amento das notas da |
-| 8525 | 32694 | SAM | Desc | SC-Disponibilizar o calculo do imposto ICMS ST/AT em atraso quando o m |
-| 8638 | 32718 | SAM | Lib | BA- Vincular help a tela de gera��o do informativo DMA.       |
-| 8606 | 32713 | SAM | Desc | SC-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados |
-| 8615 | 32716 | SAM | Desc | N�o abrir tela do bem quando editado nota fiscal de compra para o imob |
-| 8643 | 32722 | SAM | Desc | Otimizar o processo de impress�o dos livros fiscais quando marcada as  |
-| 8547 | 32705 | SAM | Lib | Tratar mensagem de erro que � gerada quando o usu�rio tenta efetuar a  |
-| 8519 | 32690 | SAM | Desc | Alterar o foco do cursor ao teclar enter no campo "Trcoar para" na tel |
-| 8607 | 32714 | SAM | Desc | Considerar no relat�rio Comparativo de entradas e sa�das, a op��o de d |
 | 8520 | 32691 | SAM | Desc | Incluir m�dulo Folha nesse m�dulo. |
-| 8498 | 32677 | SAM | Desc | Criar op��o nos relat�rios de acompanhamentos de Entradas, Sa�das e Se |
-| 8517 | 32688 | SAM | Desc | Disponibilizar a op��o de digita��o do saldo final dos produtos no men |
-| 8410 | 32662 | SAM | Lib | N�o permitir realizar importa��o de lan�amentos de partidas simples qu |
+| 8643 | 32722 | SAM | Desc | Otimizar o processo de impress�o dos livros fiscais quando marcada as  |
 | 8418 | 32666 | SAM | Lib | Atualizar o m�dulo Cliente conforme altera��es da vers�o 7.2A-04 do Co |
+| 8410 | 32662 | SAM | Lib | N�o permitir realizar importa��o de lan�amentos de partidas simples qu |
+| 8517 | 32688 | SAM | Desc | Disponibilizar a op��o de digita��o do saldo final dos produtos no men |
 | 8518 | 32689 | SAM | Desc | Disponibilizar a op��o configurar atualiza��o nesse m�dulo. |
+| 8498 | 32677 | SAM | Desc | Criar op��o nos relat�rios de acompanhamentos de Entradas, Sa�das e Se |
 | 8395 | 32649 | SAM | Lib | Incluir o c�digo de acesso e o CPF do respons�vel no relat�rio DASN. |
-| 8248 | 32607 | SAM | Desc | Criar op��es "Emitir somente produtos com movimento"  no relat�rio de  |
+| 8217 | 32588 | SAM | Desc | Exibir mensagem de confirma��o quando gravar o cadastro de clientes/fo |
 | 8230 | 32599 | SAM | Desc | Gerar na coluna "Base de c�lculo" o valor de base de ISS lan�ado nas n |
-| 8220 | 32590 | SAM | Desc | Gerar o valor cont�bil do seguimento do imposto nos relat�rios de acom |
-| 8221 | 32591 | SAM | Lib | Gerar a raz�o social da empresa para o informativo DCTF. |
 | 8225 | 32594 | SAM | Desc | Posicionar o foco no bot�o incluir da tela dos dados do ECF quando lan |
 | 8281 | 32617 | SAM | Desc | N�o est� sendo gerado o valor da base de IPI lan�ada na nota no campo  |
-| 8217 | 32588 | SAM | Desc | Exibir mensagem de confirma��o quando gravar o cadastro de clientes/fo |
-| 8228 | 32597 | SAM | Desc | Trazer padr�o a op��o "N�o" no campo "Contribuinte de ICMS" quando sel |
-| 8227 | 32596 | SAM | Desc | Listar o emitente somente das notas que s�o listadas no livro de entra |
+| 8221 | 32591 | SAM | Lib | Gerar a raz�o social da empresa para o informativo DCTF. |
 | 8276 | 32613 | SAM | Desc | GO - Gerar o n�mero e o complemento da empresa no campo endere�o dos P |
-| 8168 | 32568 | SAM | Desc | BA-Gerar nos livros de Sa�das e ICMS as notas de sa�das com CFOP 5933  |
-| 8187 | 32576 | SAM | Lib | N�o listar as notas que foram lan�adas como Entradas cujo o emitente � |
-| 8188 | 32577 | SAM | Desc | Incluir campo de observa��es nas entradas/sa�das extras de estoque. |
+| 8228 | 32597 | SAM | Desc | Trazer padr�o a op��o "N�o" no campo "Contribuinte de ICMS" quando sel |
+| 8220 | 32590 | SAM | Desc | Gerar o valor cont�bil do seguimento do imposto nos relat�rios de acom |
+| 8248 | 32607 | SAM | Desc | Criar op��es "Emitir somente produtos com movimento"  no relat�rio de  |
+| 8227 | 32596 | SAM | Desc | Listar o emitente somente das notas que s�o listadas no livro de entra |
 | 8194 | 32582 | SAM | Desc | PB-Disponibilizar o livro de ICMS P9-II. |
-| 8189 | 32578 | SAM | Lib | Gerar em ordem alfab�tica os relat�rios de contas a pagar/receber quan |
-| 8183 | 32572 | SAM | Desc | RS-Alterar o relat�rio da GIA mensal emitido pelo sistema para que fiq |
-| 8190 | 32579 | SAM | Lib | Realizar o controle de AIDF tamb�m pela notas de servi�os. |
-| 8150 | 32566 | SAM | Desc | Demonstrar os valores lan�ados com as CFOPs 5.933/6.933 na coluna serv |
 | 8195 | 32583 | SAM | Desc | Disponibilizar o campo c�digo do munic�pio no utilit�rio alterar notas |
-| 8149 | 32565 | SAM | Desc | Considerar o valor dos produtos para gerar a diferen�a entre o valor c |
-| 8206 | 32585 | SAM | Lib | Otimizar o processo de integra��o cont�bil dos impostos ICMS, PIS e CO |
 | 8186 | 32575 | SAM | Desc | Disponibilizar nos movimentos de ajustes para os impostos IPI e ISS a  |
+| 8188 | 32577 | SAM | Desc | Incluir campo de observa��es nas entradas/sa�das extras de estoque. |
+| 8168 | 32568 | SAM | Desc | BA-Gerar nos livros de Sa�das e ICMS as notas de sa�das com CFOP 5933  |
+| 8149 | 32565 | SAM | Desc | Considerar o valor dos produtos para gerar a diferen�a entre o valor c |
+| 8190 | 32579 | SAM | Lib | Realizar o controle de AIDF tamb�m pela notas de servi�os. |
+| 8183 | 32572 | SAM | Desc | RS-Alterar o relat�rio da GIA mensal emitido pelo sistema para que fiq |
+| 8189 | 32578 | SAM | Lib | Gerar em ordem alfab�tica os relat�rios de contas a pagar/receber quan |
+| 8187 | 32576 | SAM | Lib | N�o listar as notas que foram lan�adas como Entradas cujo o emitente � |
+| 8206 | 32585 | SAM | Lib | Otimizar o processo de integra��o cont�bil dos impostos ICMS, PIS e CO |
+| 8150 | 32566 | SAM | Desc | Demonstrar os valores lan�ados com as CFOPs 5.933/6.933 na coluna serv |
 | 8084 | 32540 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Cont�bil e Escrita |
 | 7959 | 32497 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no Dom�nio Cont�bil e Dom�ni |
 | 7971 | 32500 | SAM | Lib | Ordenar os itens das tabelas municipais por "Valor do item" na guia mu |
-| 7852 | 32460 | SAM | Desc | Gravar sempre a �ltima sele��o feita em todas importa��es de arquivo t |
-| 7888 | 32468 | SAM | Desc | Incluir um campo para selecionar somente notas canceladas nos relat�ri |
 | 7887 | 32467 | SAM | Desc | Disponibilizar a listagem de c�dgio de recolhimento dos impostos no ca |
-| 7886 | 32466 | SAM | Desc | Permitir sempre alterar as informa��es das parcelas da nota, no moment |
+| 7888 | 32468 | SAM | Desc | Incluir um campo para selecionar somente notas canceladas nos relat�ri |
 | 7894 | 32471 | SAM | Desc | Finalizar todas as p�ginas do livro de invent�rio com tra�o na horizon |
-| 7845 | 32454 | SAM | Desc | GO-Gerar os CFOP's para a DPI em ordem crescente. |
-| 7786 | 32443 | SAM | Lib | SC-Considerar o valor do imposto DIFALI para realizar o lan�amento de  |
-| 7851 | 32459 | SAM | Desc | Est� sendo gerado agrupados os fornecedores com a mesma raz�o social n |
+| 7852 | 32460 | SAM | Desc | Gravar sempre a �ltima sele��o feita em todas importa��es de arquivo t |
+| 7886 | 32466 | SAM | Desc | Permitir sempre alterar as informa��es das parcelas da nota, no moment |
 | 7745 | 32435 | SAM | Lib | Gerar o lan�amento cont�bil referente ao imposto ICMS lan�ado no cadas |
-| 7846 | 32455 | SAM | Desc | Gerar zero na coluna saldo financeiro quando o mesmo for negativo nos  |
+| 7786 | 32443 | SAM | Lib | SC-Considerar o valor do imposto DIFALI para realizar o lan�amento de  |
 | 7797 | 32447 | SAM | Desc | Gerar o campo Reten��es proporcional ao valor pago ao efetuar o pagame |
+| 7851 | 32459 | SAM | Desc | Est� sendo gerado agrupados os fornecedores com a mesma raz�o social n |
+| 7846 | 32455 | SAM | Desc | Gerar zero na coluna saldo financeiro quando o mesmo for negativo nos  |
+| 7845 | 32454 | SAM | Desc | GO-Gerar os CFOP's para a DPI em ordem crescente. |
 | 7639 | 32411 | SAM | Lib | Considerar o valor do imposto IPI para fechar os valores de ICMS com o |
-| 7557 | 32388 | SAM | Lib | Gerar os lan�amentos cont�beis em lotes. |
 | 7468 | 32372 | SAM | Lib | Disponibilizar a op��o de lan�amentos em lotes. |
+| 7557 | 32388 | SAM | Lib | Gerar os lan�amentos cont�beis em lotes. |
 | 7605 | 32395 | SAM | Lib | Criar cadastro de observa��es para serem utilizadas na emiss�o da nota |
 | 7357 | 32343 | SAM | Lib | Demonstrar os valores das notas de sa�das com cfop 5933/6933 na coluna |
 | 7358 | 32344 | SAM | Lib | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da |
-| 7174 | 32303 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal. |
 | 7320 | 32331 | SAM | Lib | Na integra��o cont�bil do simples nacional considerar o valor fixo de  |
 | 7202 | 32305 | SAM | Lib | Disponibilizar a emiss�o do Livro de ICMS para empresas optantes do Si |
-| 6960 | 32267 | SAM | Lib | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Norma |
-| 7155 | 32290 | SAM | Desc | Disponibilizar op��o para excluir empresas. |
-| 7039 | 32279 | SAM | Lib | SP-S�o Paulo-Criar op��o para importa��o de notas fiscais eletr�nicas. |
-| 6914 | 32264 | SAM | Lib | Criar campo para ser informado o c�digo de acesso do Simples Nacional. |
+| 7174 | 32303 | SAM | Lib | Atualizar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal. |
 | 7027 | 32276 | SAM | Lib | Quando realizado importa��o de notas gravar como o usu�rio o mesmo que |
-| 7023 | 32272 | SAM | Desc | Na importa��o arquivos textos ter a op��o de edit�-lo com um editor qu |
-| 7123 | 32284 | SAM | Desc | Quando o fato gerador for pelo pagamento, permitir que nas baixas das  |
-| 7134 | 32285 | SAM | Lib | Quando gerado a PJSI para o campo do CRC do contador deve ser gerado s |
-| 6913 | 32263 | SAM | Lib | Criar op��o no relat�rio Simples Nacional para demonstrar as receitas  |
-| 7024 | 32273 | SAM | Desc | Criar barra de progress�o na importa��o de arquivo texto. |
-| 7029 | 32278 | SAM | Lib | Ao realizar a importa��o de baixa de parcelas permitir que seja inform |
 | 7026 | 32275 | SAM | Lib | Criar na tela de importa��o de notas uma op��o para imprimir o relat�r |
-| 6687 | 32235 | SAM | Desc | Criar op��o no utilit�rio de limpeza para filtras as notas por Esp�cie |
+| 7039 | 32279 | SAM | Lib | SP-S�o Paulo-Criar op��o para importa��o de notas fiscais eletr�nicas. |
+| 7134 | 32285 | SAM | Lib | Quando gerado a PJSI para o campo do CRC do contador deve ser gerado s |
+| 6960 | 32267 | SAM | Lib | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Norma |
+| 6914 | 32264 | SAM | Lib | Criar campo para ser informado o c�digo de acesso do Simples Nacional. |
+| 7029 | 32278 | SAM | Lib | Ao realizar a importa��o de baixa de parcelas permitir que seja inform |
+| 7123 | 32284 | SAM | Desc | Quando o fato gerador for pelo pagamento, permitir que nas baixas das  |
+| 6913 | 32263 | SAM | Lib | Criar op��o no relat�rio Simples Nacional para demonstrar as receitas  |
+| 7023 | 32272 | SAM | Desc | Na importa��o arquivos textos ter a op��o de edit�-lo com um editor qu |
+| 7024 | 32273 | SAM | Desc | Criar barra de progress�o na importa��o de arquivo texto. |
+| 7155 | 32290 | SAM | Desc | Disponibilizar op��o para excluir empresas. |
+| 6691 | 32239 | SAM | Desc | Criar campo na emiss�o do DARF Simples Avulso para ser informado a Bas |
+| 6861 | 32261 | SAM | Desc | Alterar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal. |
+| 6643 | 32229 | SAM | Lib | MG-Implementar guia DAE avulsa. |
+| 6696 | 32244 | SAM | Desc | Otimizar o processo de busca de clientes e fornecedores atrav�z do F2  |
+| 6800 | 32254 | SAM | Lib | Atualizar esse m�dulo conforme altera��es na vers�o 7.1A-02 do M�dulo  |
+| 6688 | 32236 | SAM | Desc | Retirar a o~p��o de Eliminar Saldo no utilit�rio limpeza |
+| 6715 | 32248 | SAM | Lib | SE-Quando gerado o DIC, para notas de entradas e sa�das de dentro do e |
 | 6822 | 32255 | SAM | Desc | Criar op��o para informar um valor fixo nas faixas at� 120.000,00 nas  |
 | 6843 | 32258 | SAM | Lib | SP-Otimizar processo de gera��o da GIA em relat�rio e arquivo.   |
-| 6643 | 32229 | SAM | Lib | MG-Implementar guia DAE avulsa. |
-| 6691 | 32239 | SAM | Desc | Criar campo na emiss�o do DARF Simples Avulso para ser informado a Bas |
-| 6688 | 32236 | SAM | Desc | Retirar a o~p��o de Eliminar Saldo no utilit�rio limpeza |
-| 6694 | 32242 | SAM | Desc | Incluir op��o na tela de gera��o dos relat�rios de acompanhamentos de  |
-| 6861 | 32261 | SAM | Desc | Alterar esse m�dulo conforme altera��es no m�dulo Escrita Fiscal. |
-| 6800 | 32254 | SAM | Lib | Atualizar esse m�dulo conforme altera��es na vers�o 7.1A-02 do M�dulo  |
-| 6878 | 32262 | SAM | Lib | Quando realizado importa��o de notas de entradas com os impostos CRF,  |
-| 6696 | 32244 | SAM | Desc | Otimizar o processo de busca de clientes e fornecedores atrav�z do F2  |
-| 6715 | 32248 | SAM | Lib | SE-Quando gerado o DIC, para notas de entradas e sa�das de dentro do e |
 | 6697 | 32245 | SAM | Desc | Retirar a op��o "Energia" no campo agropecu�rio do cadastro de fornece |
+| 6878 | 32262 | SAM | Lib | Quando realizado importa��o de notas de entradas com os impostos CRF,  |
 | 6634 | 32228 | SAM | Lib | Quando lan�ado notas de devolu��o de vendas com ICMS e IPI em que o Fo |
 | 6733 | 32251 | SAM | Lib | Atualiza��o Dom�nio Cliente conforme altera��es do Dom�nio Cont�bil ve |
+| 6687 | 32235 | SAM | Desc | Criar op��o no utilit�rio de limpeza para filtras as notas por Esp�cie |
+| 6694 | 32242 | SAM | Desc | Incluir op��o na tela de gera��o dos relat�rios de acompanhamentos de  |
 | 6627 | 32227 | SAM | Lib | Quando efetuado uma altera��o no campo valor dos produtos no movimento |
-| 6491 | 32166 | SAM | Desc | Disponibilizar utilit�rio para realizar exlus�o de lan�amentos cont�be |
 | 6490 | 32165 | SAM | Desc | Criar op��o para exportar notas por c�digo de lan�amentos. |
-| 6486 | 32161 | SAM | Lib | Incluir o imposto ICMS na rela��o de impostos a serem selecionados no  |
+| 6491 | 32166 | SAM | Desc | Disponibilizar utilit�rio para realizar exlus�o de lan�amentos cont�be |
 | 6402 | 32142 | SAM | Lib | Quando lan�ado notas de saidas com modelo 07, somente abrir a tela dad |
-| 6468 | 32147 | SAM | Desc | Incluir o saldo anterior da conta no relat�rio de acompanhamento lan�a |
+| 6486 | 32161 | SAM | Lib | Incluir o imposto ICMS na rela��o de impostos a serem selecionados no  |
 | 6477 | 32152 | SAM | Lib | Quando efetuado o lan�amento de notas de entradas, sa�das e servi�os e |
-| 6192 | 32095 | SAM | Desc | Realizar o controle de sequencia autom�tica nas notas de saidas e serv |
-| 6196 | 32098 | SAM | Lib | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das la |
-| 6197 | 32099 | SAM | Desc | RS-Quando lan�ado um movimento de ajuste com opera��o por compensa��o  |
+| 6468 | 32147 | SAM | Desc | Incluir o saldo anterior da conta no relat�rio de acompanhamento lan�a |
 | 6200 | 32101 | SAM | Lib | Criar campo nas defini��es do imposto no cadastro de acumulador para d |
-| 6195 | 32097 | SAM | Lib | RS-Quando o valor de devolu��o de vendas for maior que o valor de vend |
 | 6336 | 32121 | SAM | Lib | Quando lan�ado notas de entradas somente com ICMS com valor de IPI e S |
+| 6195 | 32097 | SAM | Lib | RS-Quando o valor de devolu��o de vendas for maior que o valor de vend |
+| 6192 | 32095 | SAM | Desc | Realizar o controle de sequencia autom�tica nas notas de saidas e serv |
+| 6197 | 32099 | SAM | Desc | RS-Quando lan�ado um movimento de ajuste com opera��o por compensa��o  |
 | 6199 | 32100 | SAM | Lib | RS-Ao realizar a importa��o do total de despesas para a GIS, o saldo d |
-| 6015 | 32079 | SAM | Desc | SP-Habilitar a digita��o nos campos 6, 8, 12 e 13 da GARE avulsa. |
-| 5995 | 32061 | SAM | Lib | Atualizar m�dulo Cliente de acordo com altera��es feitas para vers�o 7 |
-| 6044 | 32085 | SAM | Lib | Criar um modelo de livro de IPI com seja demonstrado separadamente por |
-| 6009 | 32075 | SAM | Desc | Permitir informar mais de uma classifica��o cont�bil para criar contas |
-| 5997 | 32063 | SAM | Desc | Criar op��o no relat�rio de reten��es a recolher para agrupar por c�di |
-| 6043 | 32084 | SAM | Lib | Quando lan�ado notas de sa�das com CFOP 5933 e 6933 na emiss�o do livr |
-| 6004 | 32070 | SAM | Lib | Habilitar a op��o de Lan�amento com partida simples nas baixas de parc |
-| 5999 | 32065 | SAM | Desc | Disponibilizar a coluna NCM na ordem da listagem do cadastro de produt |
-| 6008 | 32074 | SAM | Desc | No relat�rio de Impostos Resumo trimestral separar a base de calculo p |
+| 6196 | 32098 | SAM | Lib | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das la |
 | 6066 | 32088 | SAM | Lib | Realizar as mesmas considera��es na convers�o da S�rie da AIDF que foi |
+| 5997 | 32063 | SAM | Desc | Criar op��o no relat�rio de reten��es a recolher para agrupar por c�di |
+| 6044 | 32085 | SAM | Lib | Criar um modelo de livro de IPI com seja demonstrado separadamente por |
 | 5992 | 32060 | SAM | Desc | Incluir na listagem do cadastro de produto a coluna NCM. |
 | 6001 | 32067 | SAM | Desc | Na baixa de parcelas sugerir o valor a ser pago conforme valor em aber |
+| 5999 | 32065 | SAM | Desc | Disponibilizar a coluna NCM na ordem da listagem do cadastro de produt |
 | 6007 | 32073 | SAM | Desc | Na tela de integra��o cont�bil ter a op��o de emitir um relat�rio com  |
+| 6008 | 32074 | SAM | Desc | No relat�rio de Impostos Resumo trimestral separar a base de calculo p |
+| 5995 | 32061 | SAM | Lib | Atualizar m�dulo Cliente de acordo com altera��es feitas para vers�o 7 |
 | 6012 | 32078 | SAM | Desc | N�o permitir realizar baixa de notas de per�odos j� fechados. |
-| 5964 | 32037 | SAM | Desc | Criar op��o para definir se o evento deve ser emitido na nota fiscal o |
-| 5965 | 32038 | SAM | Desc | No relat�rio de acompanhamento de sa�das e entradas emxibir o campo CF |
-| 5936 | 32026 | SAM | Lib | Na tela de notas de entradas, sa�das e servi�o quando utilizado a op�� |
-| 5969 | 32042 | SAM | Desc | No relat�rio Resumo por acumulador somar nas colunas de IPI e ICMS ST  |
-| 5942 | 32029 | SAM | Desc | Alterar a sequ�ncia do impostos nas notas de entradas e sa�das para qu |
-| 5941 | 32028 | SAM | Lib | Alterar a ordem dos campos dos impostos nos lan�amentos de notas de en |
-| 5990 | 32058 | SAM | Desc | Permitir no cadastro de acumulador na guia impostos na defini��o, de t |
+| 6009 | 32075 | SAM | Desc | Permitir informar mais de uma classifica��o cont�bil para criar contas |
+| 6004 | 32070 | SAM | Lib | Habilitar a op��o de Lan�amento com partida simples nas baixas de parc |
+| 6043 | 32084 | SAM | Lib | Quando lan�ado notas de sa�das com CFOP 5933 e 6933 na emiss�o do livr |
+| 6015 | 32079 | SAM | Desc | SP-Habilitar a digita��o nos campos 6, 8, 12 e 13 da GARE avulsa. |
 | 5937 | 32027 | SAM | Desc | No utilit�rio Alterar Notas, quando for de entradas, ter a op��o de al |
-| 5979 | 32049 | SAM | Desc | Nos lan�amentos de notas de entrada na tela de dados adicionais do pat |
+| 5969 | 32042 | SAM | Desc | No relat�rio Resumo por acumulador somar nas colunas de IPI e ICMS ST  |
 | 5987 | 32055 | SAM | Desc | Criar op��o nos relatorios de acompanhamento de entradas e saidas de s |
-| 5960 | 32034 | SAM | Desc | RS-Habilitar a digita��o dos anexos VA e VB no lan�amento de notas com |
+| 5964 | 32037 | SAM | Desc | Criar op��o para definir se o evento deve ser emitido na nota fiscal o |
 | 5961 | 32035 | SAM | Desc | RS-Ao zerar valores de isentas e outras de ICMS deve ser excluido o de |
+| 5936 | 32026 | SAM | Lib | Na tela de notas de entradas, sa�das e servi�o quando utilizado a op�� |
+| 5965 | 32038 | SAM | Desc | No relat�rio de acompanhamento de sa�das e entradas emxibir o campo CF |
+| 5979 | 32049 | SAM | Desc | Nos lan�amentos de notas de entrada na tela de dados adicionais do pat |
+| 5960 | 32034 | SAM | Desc | RS-Habilitar a digita��o dos anexos VA e VB no lan�amento de notas com |
+| 5941 | 32028 | SAM | Lib | Alterar a ordem dos campos dos impostos nos lan�amentos de notas de en |
+| 5942 | 32029 | SAM | Desc | Alterar a sequ�ncia do impostos nas notas de entradas e sa�das para qu |
+| 5990 | 32058 | SAM | Desc | Permitir no cadastro de acumulador na guia impostos na defini��o, de t |
 | 5967 | 32040 | SAM | Desc | Na tela de baixa de parcelas de entradas trazer no campo fornecedor a  |
-| 5909 | 32008 | SAM | Lib | Desenvolver relat�rio de acompanhameno de redu��es Z. |
-| 5905 | 32004 | SAM | Desc | No livro de sa�das centralizar os campo Especie, Serie/Sub, Dia e Clas |
-| 5912 | 32011 | SAM | Lib | RS-Quando gerar a GIA modelo B, gerar o campos das exclus�es do anexo  |
-| 5907 | 32006 | SAM | Desc | No livro de servi�o centralizar os campo Especie, Serie/Sub e Dia. |
-| 5913 | 32012 | SAM | Lib | Alterar a descri��o Natureza para CFOP nos lan�amentos de notas e em t |
-| 5934 | 32024 | SAM | Desc | RS-Incluir o livro simplificado EPP nos livros fiscais. |
-| 5906 | 32005 | SAM | Desc | No livro de entradas centralizar os campo Especie, Serie/Sub, Dia e Cl |
-| 5921 | 32016 | SAM | Desc | Criar um modelo de DARF Simples com vencimento |
 | 5910 | 32009 | SAM | Lib | Criar no cadastro de acumuladores no campo Diferen�a entre valor cont� |
+| 5912 | 32011 | SAM | Lib | RS-Quando gerar a GIA modelo B, gerar o campos das exclus�es do anexo  |
+| 5906 | 32005 | SAM | Desc | No livro de entradas centralizar os campo Especie, Serie/Sub, Dia e Cl |
+| 5934 | 32024 | SAM | Desc | RS-Incluir o livro simplificado EPP nos livros fiscais. |
+| 5909 | 32008 | SAM | Lib | Desenvolver relat�rio de acompanhameno de redu��es Z. |
+| 5907 | 32006 | SAM | Desc | No livro de servi�o centralizar os campo Especie, Serie/Sub e Dia. |
+| 5921 | 32016 | SAM | Desc | Criar um modelo de DARF Simples com vencimento |
+| 5905 | 32004 | SAM | Desc | No livro de sa�das centralizar os campo Especie, Serie/Sub, Dia e Clas |
+| 5913 | 32012 | SAM | Lib | Alterar a descri��o Natureza para CFOP nos lan�amentos de notas e em t |
+| 5882 | 31983 | SAM | Lib | Ter op��o de realizar o calculo de mais de um per�odo |
 | 5870 | 31972 | SAM | Lib | Alterar a posicao do campo acumulador para que fique antes do campo CF |
 | 5854 | 31964 | SAM | Desc | MT-Ter a op��o de gerar a GIA multi empresa |
-| 5882 | 31983 | SAM | Lib | Ter op��o de realizar o calculo de mais de um per�odo |
-| 5634 | 31942 | SAM | Lib | Gerar lan�amento cont�bil de fechamento para o IPI. |
-| 5560 | 31929 | SAM | Lib | RS-Criar op��o na tela de exclus�o da receita bruta para ser informado |
 | 5633 | 31941 | SAM | Desc | Quando gerado os relatorios de acompanhamento de entradas e sa�das, ge |
-| 5626 | 31935 | SAM | Lib | Gerar lan�amento cont�bil do IPI mesmo que o acumulador utilizado no l |
-| 5846 | 31957 | SAM | Desc | Desenvolver um relat�rio que demonstre todos os impostos que a empresa |
 | 5845 | 31956 | SAM | Lib | AL-Criar nos livros registro de ICMS op��o, para Imprimir Demonstrativ |
 | 5627 | 31936 | SAM | Lib | Efetuar a contabiliza��o da apura��o mesmo que ocorra a situa��o de os |
-| 5367 | 31901 | SAM | Lib | Quando realizado a baixa duplicatas em grupo, gerar lan�amentos cont�b |
-| 5526 | 31922 | SAM | Desc | RS-Gravar as configura��es cont�beis dos outros dados da GIS de maneir |
+| 5560 | 31929 | SAM | Lib | RS-Criar op��o na tela de exclus�o da receita bruta para ser informado |
+| 5626 | 31935 | SAM | Lib | Gerar lan�amento cont�bil do IPI mesmo que o acumulador utilizado no l |
+| 5634 | 31942 | SAM | Lib | Gerar lan�amento cont�bil de fechamento para o IPI. |
+| 5846 | 31957 | SAM | Desc | Desenvolver um relat�rio que demonstre todos os impostos que a empresa |
+| 5395 | 31911 | SAM | Lib | Efetuar a contabiliza��o do zeramento do ICMS na apura��o, mesmo quand |
+| 5485 | 31921 | SAM | Lib | N�o fazer o lan�amento do ICMS (devolu��o de vendas) caso n�o esteja p |
+| 5369 | 31902 | SAM | Desc | Criar no cadastro do produto os campos Aliquota do ICMS e % de Redu��o |
 | 5527 | 31923 | SAM | Desc | RS-Criar nos outros dados da GIS o bot�o replicar, para ser replicado  |
+| 5370 | 31903 | SAM | Lib | Criar op��o para regerar a contabiliza��o das baixas das parcelas. |
+| 5480 | 31920 | SAM | Desc | Incluir no relat�rio demonstrativos dos impostos um campo totalizador  |
+| 5364 | 31898 | SAM | Lib | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5526 | 31922 | SAM | Desc | RS-Gravar as configura��es cont�beis dos outros dados da GIS de maneir |
 | 5479 | 31919 | SAM | Lib | N�o permitir a baixa de parcelas em data menor que a emiss�o da nota f |
+| 5367 | 31901 | SAM | Lib | Quando realizado a baixa duplicatas em grupo, gerar lan�amentos cont�b |
 | 5394 | 31910 | SAM | Lib | Exibir mensagem pedindo confirma��o quando uma nota fiscal for alterad |
 | 5393 | 31909 | SAM | Lib | Quando no cadastro do imposto IPI estiver definido conta no campo Imp. |
-| 5370 | 31903 | SAM | Lib | Criar op��o para regerar a contabiliza��o das baixas das parcelas. |
-| 5485 | 31921 | SAM | Lib | N�o fazer o lan�amento do ICMS (devolu��o de vendas) caso n�o esteja p |
-| 5364 | 31898 | SAM | Lib | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
-| 5480 | 31920 | SAM | Desc | Incluir no relat�rio demonstrativos dos impostos um campo totalizador  |
-| 5369 | 31902 | SAM | Desc | Criar no cadastro do produto os campos Aliquota do ICMS e % de Redu��o |
-| 5395 | 31911 | SAM | Lib | Efetuar a contabiliza��o do zeramento do ICMS na apura��o, mesmo quand |
+| 5323 | 31875 | SAM | Lib | SC-Criar mais uma op��o no campo Simples/SC dos par�metros chamada Est |
 | 5335 | 31886 | SAM | Lib | Quando realizado uma baixa de entradas, saidas ou servi�os, ao gerar o |
 | 5334 | 31885 | SAM | Desc | RS-Ao definir a op��o Apurar ICMS cfe dec 42.035 de 12/02 At�, � suger |
 | 5336 | 31887 | SAM | Lib | Ao lan�ar notas com CFOP 5933 ou 6933 com ISS, no relatorio Saldo dos  |
-| 5323 | 31875 | SAM | Lib | SC-Criar mais uma op��o no campo Simples/SC dos par�metros chamada Est |
-| 5261 | 31858 | SAM | Lib | BA-Ao efetuar o lan�amento de entradas com o imposto 31, quando altera |
-| 5259 | 31857 | SAM | Lib | Quando lan�ado notas de saidas com CFOPs 5929 ou 6929, n�o exibir mens |
 | 5242 | 31851 | SAM | Lib | CE/MA-N�o est�o sendo listado no livro de ICMS modelo Normal, os movim |
-| 5095 | 31836 | SAM | Lib | Alterar layout de importa��o de parcelas de saidas, para permitir o la |
-| 5186 | 31847 | SAM | Lib | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
-| 5112 | 31838 | SAM | Lib | PR-Criar op��o nos par�metros para deduzir os valores de ISENTAS da Ba |
-| 5076 | 31835 | SAM | Lib | Otimizar o processo de apura��o de empresas que n�o possuem e nem s�o  |
-| 5243 | 31852 | SAM | Lib | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
 | 5028 | 31831 | SAM | Lib | RS-Quando lan�ado notas com CFOP 5933 e 6933 devem ser gerados no camp |
+| 5261 | 31858 | SAM | Lib | BA-Ao efetuar o lan�amento de entradas com o imposto 31, quando altera |
+| 5095 | 31836 | SAM | Lib | Alterar layout de importa��o de parcelas de saidas, para permitir o la |
+| 5243 | 31852 | SAM | Lib | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5112 | 31838 | SAM | Lib | PR-Criar op��o nos par�metros para deduzir os valores de ISENTAS da Ba |
+| 5186 | 31847 | SAM | Lib | Atualizar m�dulo conforme altera��es realizadas no Dominio Cont�bil. |
+| 5259 | 31857 | SAM | Lib | Quando lan�ado notas de saidas com CFOPs 5929 ou 6929, n�o exibir mens |
 | 5258 | 31856 | SAM | Lib | Criar campo valor de produtos na tela de lan�amento de notas de entrad |
 | 5157 | 31845 | SAM | Lib | RS-Criar op��o na tela de lan�amento de ajustes para impostos lan�ados |
-| 4972 | 31814 | SAM | Lib | Habilitar a digita��o de dados das tabelas municipais nas notas de sa� |
-| 4889 | 31800 | SAM | Lib | SE-Sistema n�o est� efetuando a contabiliza��o do ICMS para empresas o |
-| 4936 | 31806 | SAM | Lib | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar  |
+| 5076 | 31835 | SAM | Lib | Otimizar o processo de apura��o de empresas que n�o possuem e nem s�o  |
 | 4992 | 31822 | SAM | Lib | Quando gerar a DIRF gerar tamb�m com os valores pagos pelas filiais. |
-| 4872 | 31798 | SAM | Desc | Quando emitido o Relat�rio/Acompanhamento/Saidas ou Entradas, com orde |
 | 4871 | 31797 | SAM | Desc | N�o permitir que seja lan�ado o mesmo produto com a mesma aliquota mai |
+| 4936 | 31806 | SAM | Lib | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar  |
+| 4972 | 31814 | SAM | Lib | Habilitar a digita��o de dados das tabelas municipais nas notas de sa� |
+| 4872 | 31798 | SAM | Desc | Quando emitido o Relat�rio/Acompanhamento/Saidas ou Entradas, com orde |
 | 4945 | 31809 | SAM | Lib | Aumemntar o campo No do livro para 5 casas. |
+| 4889 | 31800 | SAM | Lib | SE-Sistema n�o est� efetuando a contabiliza��o do ICMS para empresas o |
 | 4746 | 31757 | SAM | Desc | Quando emitido um livro fiscal de um periodo que n�o tem numero do liv |
-| 4783 | 31776 | SAM | Desc | SC-Ao efetuar lan�amento de nota de entrada com CFOP 1.601, disponibib |
-| 4780 | 31774 | SAM | Lib | Criar uma barra de progress�o na apura��o da Escrita Fiscal. |
 | 4766 | 31768 | SAM | Desc | PR-Gravar o caminho que foi informado para gera��o do arquivo da GIA. |
-| 4785 | 31777 | SAM | Lib | Criar campo para informar o c�digo do hist�rico, nos lan�amentos cont� |
-| 4777 | 31772 | SAM | Desc | Ao gerar a DIPJ campo 12 - Devolu��es, ficha 22A(PIS(04)) e 26A(COFINS |
-| 4829 | 31787 | SAM | Desc | Criar no cadastro de fornecedores um campo informar a al�quotas de ICM |
 | 4741 | 31755 | SAM | Desc | Alterar a descri��o de Acumulador para Opera��es. |
+| 4785 | 31777 | SAM | Lib | Criar campo para informar o c�digo do hist�rico, nos lan�amentos cont� |
+| 4829 | 31787 | SAM | Desc | Criar no cadastro de fornecedores um campo informar a al�quotas de ICM |
+| 4777 | 31772 | SAM | Desc | Ao gerar a DIPJ campo 12 - Devolu��es, ficha 22A(PIS(04)) e 26A(COFINS |
+| 4783 | 31776 | SAM | Desc | SC-Ao efetuar lan�amento de nota de entrada com CFOP 1.601, disponibib |
 | 4762 | 31765 | SAM | Lib | Ao efetuar lan�amentos de notas seguimentadas de entradas ou saidas, e |
+| 4780 | 31774 | SAM | Lib | Criar uma barra de progress�o na apura��o da Escrita Fiscal. |
 | 4725 | 31750 | SAM | Lib | Criar layout para importa��o dos rateios de centro de custos nos lan�a |
 | 4629 | 31721 | SAM | Desc | Criar compartilhamento de clientes e fornecedores. |
 | 4654 | 31735 | SAM | Lib | PR-Aumentar as colunas nas Saidas no Relat�rio GI para caberem valores |
 | 4568 | 31700 | SAM | Lib | PE-Gerar e-mail do contador para o campo correspondente no arquivo SEF |
 | 4583 | 31706 | SAM | Lib | Disponibilizar variavel do n� da Nota Fiscal, na guia recebimento da c |
-| 4615 | 31715 | SAM | Lib | Desenvolver novo m�dulo Dominio Cliente. |
 | 4561 | 31697 | SAM | Desc | Criar op��o no relatorio comparativo de entradas e saidas para, para q |
-| 4414 | 31659 | SAM | Lib | N�o permitir desmarcar a op��o de gerar lan�amentos cont�beis se j� fo |
-| 4486 | 31679 | SAM | Desc | PR-Quando em uma nota de saidas tiver o imposto IPI, ao gerar o Valida |
-| 4408 | 31658 | SAM | Desc | Disponibilizar no cadastro de observa��es uma vari�vel que retorne o n |
-| 4441 | 31663 | SAM | Lib | BA-Efetuar a contabiliza��o do SIMBAHIA   |
-| 4492 | 31682 | SAM | Desc | Criar op��o para que as parcelas sejam lan�adas somente no ultimo segu |
+| 4615 | 31715 | SAM | Lib | Desenvolver novo m�dulo Dominio Cliente. |
 | 4463 | 31674 | SAM | Desc | Quando uma empresa ultrapassar o limite mensal da tabela no c�ulculo d |
-| 4374 | 31647 | SAM | Lib | RS-Quando lan�ado notas de entradas com valor lan�ado no campo Sub Tri |
-| 4316 | 31622 | SAM | Lib | Na emiss�o dos livros fiscais criar campo para ser informada a date de |
+| 4492 | 31682 | SAM | Desc | Criar op��o para que as parcelas sejam lan�adas somente no ultimo segu |
+| 4486 | 31679 | SAM | Desc | PR-Quando em uma nota de saidas tiver o imposto IPI, ao gerar o Valida |
+| 4441 | 31663 | SAM | Lib | BA-Efetuar a contabiliza��o do SIMBAHIA   |
+| 4414 | 31659 | SAM | Lib | N�o permitir desmarcar a op��o de gerar lan�amentos cont�beis se j� fo |
+| 4408 | 31658 | SAM | Desc | Disponibilizar no cadastro de observa��es uma vari�vel que retorne o n |
 | 4320 | 31624 | SAM | Lib | No relatorio de reten��es a recolher, listar tamb�m o FUNRURAL lan�ado |
 | 4345 | 31636 | SAM | Desc | Criar campo na guia Parcelas nos lan�amentos de Entradas, Saidas e Ser |
 | 4305 | 31618 | SAM | Desc | Desenvolver relatorio Controle de lan�amentos, que fornecer� total de  |
+| 4374 | 31647 | SAM | Lib | RS-Quando lan�ado notas de entradas com valor lan�ado no campo Sub Tri |
+| 4316 | 31622 | SAM | Lib | Na emiss�o dos livros fiscais criar campo para ser informada a date de |
 | 4229 | 31597 | SAM | Lib | SC-Ao lan�ar notas de entrada com o imposto ICMSA(27), sistema n�o est |
-| 4170 | 31575 | SAM | Desc | MT-Ao lan�ar notas de entradas com ICMS e IPI, na linha do ICMS sistem |
-| 4228 | 31596 | SAM | Lib | Quando for lan�ado Cupom Fiscal permitir informar numero documento fin |
-| 4173 | 31577 | SAM | Desc | Na emiss�o do livro de IPI, quando houver ajustes lan�ados e com obser |
-| 4176 | 31579 | SAM | Desc | Nas baixas de entradas, saidas e servi�os quando efetuado uma sele��o  |
 | 4168 | 31573 | SAM | Desc | Criar na configura��o de historicos vari�veis para data de emiss�o e d |
+| 4176 | 31579 | SAM | Desc | Nas baixas de entradas, saidas e servi�os quando efetuado uma sele��o  |
+| 4228 | 31596 | SAM | Lib | Quando for lan�ado Cupom Fiscal permitir informar numero documento fin |
 | 4193 | 31588 | SAM | Lib | Na emiss�o dos livros caixas listar sempre em ordem de dia e tipo, sen |
+| 4173 | 31577 | SAM | Desc | Na emiss�o do livro de IPI, quando houver ajustes lan�ados e com obser |
+| 4170 | 31575 | SAM | Desc | MT-Ao lan�ar notas de entradas com ICMS e IPI, na linha do ICMS sistem |
+| 4146 | 31567 | SAM | Lib | Na tela de sele��o de duplicatas a serem baixadas, ordenar pela coluna |
+| 4162 | 31570 | SAM | Desc | No utilitario de alterar notas, quando for saidas e o modelo de esp�ci |
 | 4133 | 31563 | SAM | Desc | Criar op��o no cadastro de acumuladores, para permitir somente ser uti |
 | 4128 | 31558 | SAM | Desc | Criar vari�vel referente ao hist�rico da nota, na configura��o de hist |
-| 4162 | 31570 | SAM | Desc | No utilitario de alterar notas, quando for saidas e o modelo de esp�ci |
 | 4125 | 31555 | SAM | Desc | No relatorio de acompanhamentro de entradas e saidas, aumentar o taman |
-| 4146 | 31567 | SAM | Lib | Na tela de sele��o de duplicatas a serem baixadas, ordenar pela coluna |
 | 4110 | 31545 | SAM | Lib | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que p |
-| 4104 | 31539 | SAM | Desc | Incluir op��o para imprimir carta de corre��o: |
-| 4078 | 31530 | SAM | Lib | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/imp |
 | 4101 | 31536 | SAM | Lib | Na impress�o dos livros de entradas modelo jato de tinta, somente impr |
-| 4090 | 31533 | SAM | Desc | Permitir que os livros de entradas e saidas possam ser enviados por em |
+| 4104 | 31539 | SAM | Desc | Incluir op��o para imprimir carta de corre��o: |
 | 3972 | 31517 | SAM | Lib | Criar op��o para discriminar os centros de custos dos lan�amentos cont |
-| 3908 | 31494 | SAM | Desc | Criar op��o no relatorio de ICMS creditado op��o para emitir de v�rias |
+| 4090 | 31533 | SAM | Desc | Permitir que os livros de entradas e saidas possam ser enviados por em |
+| 4078 | 31530 | SAM | Lib | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/imp |
 | 3898 | 31488 | SAM | Lib | Quando lan�ado notas com PIS(17) e COFINS(19) do tipo lan�ado diminuir |
-| 3932 | 31508 | SAM | Lib | Na emiss�o dos livros fiscais gravar a pagina inicial por periodo. |
-| 3933 | 31509 | SAM | Lib | No utilit�rio de limpeza criar op��o para excluir fornecedores e clien |
-| 3885 | 31479 | SAM | Lib | Permitir que os Livros Cont�beis sejam enviados por Email. |
-| 3913 | 31498 | SAM | Lib | Criar na baixa de parcelas entradas, sa�das, servi�os e Cupons Fiscais |
-| 3877 | 31477 | SAM | Desc | SC-Criar op��o na impress�o do Livro de ICMS para as empresas optantes |
-| 3910 | 31496 | SAM | Desc | Criar na guia Sociedade Civil do cadastro de empresas campo para ser i |
 | 3931 | 31507 | SAM | Lib | Ao alterar a esp�cie de um cupom fiscal para nota fiscal, exibir mensa |
+| 3885 | 31479 | SAM | Lib | Permitir que os Livros Cont�beis sejam enviados por Email. |
+| 3910 | 31496 | SAM | Desc | Criar na guia Sociedade Civil do cadastro de empresas campo para ser i |
+| 3908 | 31494 | SAM | Desc | Criar op��o no relatorio de ICMS creditado op��o para emitir de v�rias |
+| 3913 | 31498 | SAM | Lib | Criar na baixa de parcelas entradas, sa�das, servi�os e Cupons Fiscais |
+| 3932 | 31508 | SAM | Lib | Na emiss�o dos livros fiscais gravar a pagina inicial por periodo. |
+| 3877 | 31477 | SAM | Desc | SC-Criar op��o na impress�o do Livro de ICMS para as empresas optantes |
+| 3933 | 31509 | SAM | Lib | No utilit�rio de limpeza criar op��o para excluir fornecedores e clien |
 | 3822 | 31440 | SAM | Desc | Quando lan�ado movimento de acumuladores criar op��o para ser lan�ado  |
-| 3862 | 31465 | SAM | Desc | No utilit�rio de altera��o de notas criar op��o para alterar o numero  |
+| 3865 | 31468 | SAM | Lib | Criar no relatorio de acompanhamento de entradas colunas com valores d |
 | 3831 | 31443 | SAM | Lib | Desenvolver Relatorio para verificar a falta de lan�amento de alguma n |
 | 3849 | 31456 | SAM | Lib | AL-Na impress�o do livro de ICMS modelo P9 deixar uma linha em branco  |
 | 3816 | 31438 | SAM | Lib | Desenvolver Relat�rio de Reten��es a compensar. |
-| 3865 | 31468 | SAM | Lib | Criar no relatorio de acompanhamento de entradas colunas com valores d |
-| 3763 | 31418 | SAM | Lib | Criar no lay out de importa��o de clientes e fornecedores o campo DDD. |
-| 3769 | 31422 | SAM | Lib | Ao fazer um lan�amento de saidas e servi�os com valor cont�bil igual a |
-| 3742 | 31411 | SAM | Lib | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as |
+| 3862 | 31465 | SAM | Desc | No utilit�rio de altera��o de notas criar op��o para alterar o numero  |
 | 3726 | 31410 | SAM | Lib | Criar op��o na emiss�o do livro de entradas para ordenar por Data de e |
-| 3747 | 31412 | SAM | Lib | MT-Aumentar o tamanho dos campos Saldo inicial e final de caixa/banco  |
 | 3756 | 31416 | SAM | Lib | PE-Criar no lay out de importa��o de produtos das notas de saidas os c |
+| 3769 | 31422 | SAM | Lib | Ao fazer um lan�amento de saidas e servi�os com valor cont�bil igual a |
+| 3747 | 31412 | SAM | Lib | MT-Aumentar o tamanho dos campos Saldo inicial e final de caixa/banco  |
 | 3770 | 31423 | SAM | Desc | Criar op��o nos livros de saidas e entradas para imprimir o nome da em |
+| 3742 | 31411 | SAM | Lib | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as |
+| 3763 | 31418 | SAM | Lib | Criar no lay out de importa��o de clientes e fornecedores o campo DDD. |
 | 3556 | 31392 | SAM | Lib | Criar nos acumuladores campo para ser informada a conta do ICMS sobre  |
 | 3434 | 31339 | SAM | Lib | Disponibilizar a op��o de gerar a DCTF de v�rias empresas ao mesmo tem |
 | 3442 | 31342 | SAM | Desc | RS-Criar op��o no relatorio de acompanhamento de esclus�es de agrupame |
-| 3444 | 31343 | SAM | Lib | SP-Criar op��o de emitir a Guia GARE/DR- Avulsa.  |
-| 3431 | 31337 | SAM | Desc | Nos lan�amentos de notas de saidas ou servi�os na tela de dados do ECF |
 | 3430 | 31336 | SAM | Lib | PR-Criar nos livros de saidas op��o para imprimir as linhas verticais  |
+| 3431 | 31337 | SAM | Desc | Nos lan�amentos de notas de saidas ou servi�os na tela de dados do ECF |
+| 3444 | 31343 | SAM | Lib | SP-Criar op��o de emitir a Guia GARE/DR- Avulsa.  |
+| 3327 | 31316 | SAM | Lib | SC-Permitir que ao emitir o livro de ICMS as observa��es possam ser gr |
+| 3299 | 31310 | SAM | Lib | Permitir gerar a DIRF de v�rias empresas ao mesmo tempo, gerando um ar |
 | 3308 | 31311 | SAM | Lib | SC-No PRODEC criar op��o para informar o Montante do Incentivo e a Bas |
 | 3405 | 31321 | SAM | Lib | Quando for alterado o per�odo inicial nos Par�metros n�o considerar o  |
-| 3299 | 31310 | SAM | Lib | Permitir gerar a DIRF de v�rias empresas ao mesmo tempo, gerando um ar |
-| 3327 | 31316 | SAM | Lib | SC-Permitir que ao emitir o livro de ICMS as observa��es possam ser gr |
 | 3144 | 31270 | SAM | Desc | Quando realizar a exclus�o de uma nota e a mesma possuir parcelas paga |
 | 3203 | 31289 | SAM | Lib | PR-Aumentar o tamanho do campo Valor da Folha nos outros dados da GIA. |
-| 3091 | 31254 | SAM | Desc | Nos lan�amentos das notas de entradas, saidas e servi�os aumentar o ta |
-| 2993 | 31234 | SAM | Desc | TO-Quando o valor do ICMS do m�s anterior for menor que o m�nimo para  |
 | 3105 | 31256 | SAM | Desc | PR-Na importa��o do valor da folha nos outros dados da GIA, se no m�s  |
-| 3040 | 31243 | SAM | Desc | Quando cadastrado um s�cio em que no nome contem um ap�stofre(aspa sim |
-| 3048 | 31247 | SAM | Desc | PR-Quando lan�ado notas de entrada com IPI e ICMS e for alterado o val |
+| 3091 | 31254 | SAM | Desc | Nos lan�amentos das notas de entradas, saidas e servi�os aumentar o ta |
 | 3074 | 31250 | SAM | Desc | Em utilitaios/exporta��o/dctf alterar a descri��o "Qualica��o da Pesso |
-| 3092 | 31255 | SAM | Lib | Aumentar o campo "Autoriza��o numero" movimento de Utiliza��o de Docum |
+| 3040 | 31243 | SAM | Desc | Quando cadastrado um s�cio em que no nome contem um ap�stofre(aspa sim |
 | 3137 | 31266 | SAM | Lib | MT-Criar op��o nos livros de entradas modelo P1 e P1/A, op��o para dis |
+| 3048 | 31247 | SAM | Desc | PR-Quando lan�ado notas de entrada com IPI e ICMS e for alterado o val |
+| 2993 | 31234 | SAM | Desc | TO-Quando o valor do ICMS do m�s anterior for menor que o m�nimo para  |
+| 3092 | 31255 | SAM | Lib | Aumentar o campo "Autoriza��o numero" movimento de Utiliza��o de Docum |
 | 2990 | 31231 | SAM | Lib | MT-Criar modelo de Livros de Entradas e Saidas onde as observa��es sej |
 | 2938 | 31213 | SAM | Lib | Na guia DARF Simples modelos matricial e matricial c/vencto no quadro  |
-| 2848 | 31183 | SAM | Lib | Criar op��o na impress�o dos termos para imprimir periodo inicial e fi |
+| 2845 | 31181 | SAM | Desc | Nos lan�amentos de saidas, criar op��o para abrir a tela de servi�os,  |
 | 2844 | 31180 | SAM | Lib | Nos relatorios de acompanhamento de entradas, saidas e servi�os listar |
 | 2890 | 31195 | SAM | Lib | Quando clicar F2 no campo do CFOP das entradas trazer somente as natur |
-| 2845 | 31181 | SAM | Desc | Nos lan�amentos de saidas, criar op��o para abrir a tela de servi�os,  |
+| 2848 | 31183 | SAM | Lib | Criar op��o na impress�o dos termos para imprimir periodo inicial e fi |
 | 2783 | 31154 | SAM | Lib | No tela de lan�amento de notas de entradas e saidas, listar sempre o I |
-| 2770 | 31148 | SAM | Lib | PR-Ao gerar o livro de entradas modelo P1/A ordenar por data/fornecedo |
-| 2768 | 31147 | SAM | Desc | Desenvolver vari�veis para que possam ser importadas em planilhas Exce |
-| 2739 | 31133 | SAM | Lib | Poder complementar as descri��es das adi��es e exclus�es no calculo da |
 | 2794 | 31160 | SAM | Desc | Disponibilizar as variaveis especie e serie nas guias Imposto Entrada, |
 | 2772 | 31149 | SAM | Lib | Quando lan�ar notas com parcelas no campo vencimento inicial, posicion |
-| 2759 | 31141 | SAM | Lib | Permitir que seja lan�ado mais de uma parcela com o mesmo vecimento. |
+| 2770 | 31148 | SAM | Lib | PR-Ao gerar o livro de entradas modelo P1/A ordenar por data/fornecedo |
 | 2792 | 31158 | SAM | Desc | MT-Criar op��o no lan�amento dos ajustes para informar observa��es a s |
-| 2727 | 31127 | SAM | Lib | Ajustar o relat�rio do Diferencial de Al�quotas para emitir em modo gr |
-| 2726 | 31126 | SAM | Lib | MT-Na emiss�o dos livros de Entradas, Saidas, ISS e IPI n�o est� sendo |
+| 2768 | 31147 | SAM | Desc | Desenvolver vari�veis para que possam ser importadas em planilhas Exce |
+| 2759 | 31141 | SAM | Lib | Permitir que seja lan�ado mais de uma parcela com o mesmo vecimento. |
+| 2739 | 31133 | SAM | Lib | Poder complementar as descri��es das adi��es e exclus�es no calculo da |
 | 2724 | 31125 | SAM | Lib | PR-Desenvolver calculo para empresas com regime de Credito Presumido.  |
-| 2659 | 31098 | SAM | Lib | SP-Retirar a op��o de Relatorios/Informativos/GIA. |
+| 2726 | 31126 | SAM | Lib | MT-Na emiss�o dos livros de Entradas, Saidas, ISS e IPI n�o est� sendo |
+| 2727 | 31127 | SAM | Lib | Ajustar o relat�rio do Diferencial de Al�quotas para emitir em modo gr |
 | 2699 | 31118 | SAM | Desc | Criar op��o de informar a data de vencimento, na guia Darf Simples Avu |
-| 2697 | 31117 | SAM | Desc | Quando a tela de baixas de entradas, sadias ou servi�os for maximizada |
 | 2683 | 31109 | SAM | Desc | Na Guia DARF(Simples Deskjet e matricial) 2 vias c/vencimento,no campo |
-| 2604 | 31067 | SAM | Lib | Disponibilizar no Lay out de importa��o de notas de Saidas e Servi�os  |
-| 2637 | 31086 | SAM | Lib | PR-Realizar c�lculo do ICMS em atraso. |
+| 2659 | 31098 | SAM | Lib | SP-Retirar a op��o de Relatorios/Informativos/GIA. |
+| 2697 | 31117 | SAM | Desc | Quando a tela de baixas de entradas, sadias ou servi�os for maximizada |
 | 2615 | 31072 | SAM | Desc | Criar op��o de controlar o valor contabil quando for lan�ado nota segu |
-| 2601 | 31064 | SAM | Desc | MT-Criar nos par�metros um campo chamado Inicio Atividades e quando fo |
 | 2599 | 31062 | SAM | Desc | Criar no relat�rio/demonstrativo/impostos calculados, um total dos acu |
+| 2637 | 31086 | SAM | Lib | PR-Realizar c�lculo do ICMS em atraso. |
 | 2651 | 31090 | SAM | Desc | RS-Permitir que possa ser lan�ado mais de uma exclus�o por nota. |
+| 2601 | 31064 | SAM | Desc | MT-Criar nos par�metros um campo chamado Inicio Atividades e quando fo |
+| 2604 | 31067 | SAM | Lib | Disponibilizar no Lay out de importa��o de notas de Saidas e Servi�os  |
+| 2594 | 31057 | SAM | Desc | Criar op��o de repetir dados do ultimos lan�amento para entradas, said |
+| 2571 | 31040 | SAM | Desc | Criar utilit�rio para configurar assinaturas a serem impressas nos ter |
+| 2590 | 31053 | SAM | Desc | Disponibilizar a variavel Esp�cie nas guias Impostos Entradas, Imposto |
 | 2537 | 31030 | SAM | Lib | Criar utilit�rio para regerar os lan�amentos de tabelas municipais. |
 | 2591 | 31054 | SAM | Desc | Aumentar o espa�o para digit��o das observa��es na emiss�o do livro de |
-| 2590 | 31053 | SAM | Desc | Disponibilizar a variavel Esp�cie nas guias Impostos Entradas, Imposto |
-| 2571 | 31040 | SAM | Desc | Criar utilit�rio para configurar assinaturas a serem impressas nos ter |
-| 2594 | 31057 | SAM | Desc | Criar op��o de repetir dados do ultimos lan�amento para entradas, said |
 | 2513 | 31018 | SAM | Desc | Criar op��o para realizar fechamento autom�tico ao gerar novo per�odo. |
-| 2446 | 30999 | SAM | Lib | Permitir realizar um fechamento para uma data igual ao periodo inicial |
 | 2490 | 31009 | SAM | Desc | Na emiss�o dos livros de Entradas, Saidas e ICMS gravar as op��es da j |
-| 2418 | 30986 | SAM | Lib | Quando for efetuada uma baixa e n�o estiver defino conta para recebime |
+| 2446 | 30999 | SAM | Lib | Permitir realizar um fechamento para uma data igual ao periodo inicial |
 | 2390 | 30972 | SAM | Desc | No relatorio demonstrativo mensal, ter op��o de escolher o Indice para |
+| 2418 | 30986 | SAM | Lib | Quando for efetuada uma baixa e n�o estiver defino conta para recebime |
 | 2413 | 30982 | SAM | Lib | Ao realizar uma baixa sem realizar o lan�amento contabil emitir mensag |
 | 2197 | 30932 | SAM | Lib | SC-Quando emitido o livro de ICMS modelo P9 sem movimento sistema deve |
-| 2295 | 30950 | SAM | Lib | N�o permitir lan�ar nos campos base de calculo, isentas, outras e valo |
-| 2322 | 30955 | SAM | Lib | Mesmo com fechamento de um determinado per�odo o sistema est� permitin |
-| 2189 | 30930 | SAM | Lib | Discriminar nos relatorios de acompanhamento de Entradas, saidas e ser |
 | 2188 | 30929 | SAM | Lib | SC-Na impress�o do livro de entradas ter op��o de imprimir ou n�o a Ra |
+| 2189 | 30930 | SAM | Lib | Discriminar nos relatorios de acompanhamento de Entradas, saidas e ser |
+| 2322 | 30955 | SAM | Lib | Mesmo com fechamento de um determinado per�odo o sistema est� permitin |
+| 2295 | 30950 | SAM | Lib | N�o permitir lan�ar nos campos base de calculo, isentas, outras e valo |
 | 2187 | 30928 | SAM | Lib | BA-Na impress�o do livro de entradas ter op��o de imprimir a Raz�o Soc |
 | 2159 | 30920 | SAM | Lib | PR-Ter op��o de discriminar no livro de saidas a Substitui��o Tribut�r |
-| 2121 | 30904 | SAM | Lib | PR-Ter op��o de informar o codigo do municipio nos lan�amentos das not |
-| 2119 | 30902 | SAM | Lib | Ter opcao de quando lancar uma nota de tranferencia de prudutos, reali |
-| 2117 | 30901 | SAM | Lib | SC-Nos livros Registro de Entradas e Registro de Saidas alterar a colu |
-| 2140 | 30910 | SAM | Lib | AL-Ter op��o de informar valores de Despesa e do Balan�o Patrimonial p |
 | 2147 | 30915 | SAM | Lib | RS-No relatorio, acompanhamento, Sumario Entradas/Saidas modelo 1 apar |
-| 1974 | 30870 | SAM | Lib | Criar nos relatorios de acompanhamento de entradas e saidas, a op��o d |
+| 2119 | 30902 | SAM | Lib | Ter opcao de quando lancar uma nota de tranferencia de prudutos, reali |
+| 2140 | 30910 | SAM | Lib | AL-Ter op��o de informar valores de Despesa e do Balan�o Patrimonial p |
+| 2117 | 30901 | SAM | Lib | SC-Nos livros Registro de Entradas e Registro de Saidas alterar a colu |
+| 2121 | 30904 | SAM | Lib | PR-Ter op��o de informar o codigo do municipio nos lan�amentos das not |
 | 1988 | 30874 | SAM | Desc | Ao lan�ar uma nota com o impostos DIFALI, trazer como padr�o a diferen |
-| 2061 | 30889 | SAM | Lib | Disbponibilizar na busca avan�ada da baixa de parcelas de entrada,said |
-| 2041 | 30885 | SAM | Desc | Nos lan�amentos de entradas ou saidas, quando passo pelo campo base de |
 | 2110 | 30899 | SAM | Desc | Ter op��o no Livro de ISS de n�o imprimir total por aliquota. |
+| 2041 | 30885 | SAM | Desc | Nos lan�amentos de entradas ou saidas, quando passo pelo campo base de |
 | 2035 | 30882 | SAM | Lib | MS - Aumentar o espa�o para informar o nome do arquivo da GIA |
+| 2061 | 30889 | SAM | Lib | Disbponibilizar na busca avan�ada da baixa de parcelas de entrada,said |
+| 1974 | 30870 | SAM | Lib | Criar nos relatorios de acompanhamento de entradas e saidas, a op��o d |
 | 1990 | 30875 | SAM | Lib | SC-Na tela de gera��o da DIEF trazer sempre a �ltima configura��o real |
 | 1834 | 30834 | SAM | Lib | PR-Disponibilizar a op��o de despesas no bot�o outros dados da GIA. |
-| 1928 | 30853 | SAM | Desc | Nos relatorios de acompanhamentos de entradas, saidas e servi�os quand |
 | 1839 | 30836 | SAM | Lib | SC-Alterar arquivo GIA conforme novo layout. |
-| 1963 | 30862 | SAM | Lib | No DARF SImples Avulso, quando desmarcado a op��o Imprimir Total do Da |
-| 1965 | 30864 | SAM | Lib | MT-Ao imprimir um livro de icms modelo P9 com a data inicial de 09/03/ |
 | 1925 | 30851 | SAM | Lib | Quando lan�ado uma nota com acumulador com PIS66 e COFINS-NC, com base |
-| 1961 | 30860 | SAM | Lib | SC-Aumentar para 10 linhas o espa�o para digita��o das informa��es adi |
-| 1878 | 30846 | SAM | Lib | RS- Na tela do detalhamento do VA ou VB, quando o valor total fechar c |
+| 1965 | 30864 | SAM | Lib | MT-Ao imprimir um livro de icms modelo P9 com a data inicial de 09/03/ |
+| 1928 | 30853 | SAM | Desc | Nos relatorios de acompanhamentos de entradas, saidas e servi�os quand |
 | 1926 | 30852 | SAM | Lib | RS-Ter op��o de informar o C�digo para entrega da GIA. |
-| 1828 | 30830 | SAM | Desc | No relat�rio de acompanhamento de Exclus�o discrimiar a CFOP. |
+| 1878 | 30846 | SAM | Lib | RS- Na tela do detalhamento do VA ou VB, quando o valor total fechar c |
+| 1961 | 30860 | SAM | Lib | SC-Aumentar para 10 linhas o espa�o para digita��o das informa��es adi |
+| 1963 | 30862 | SAM | Lib | No DARF SImples Avulso, quando desmarcado a op��o Imprimir Total do Da |
 | 1791 | 30820 | SAM | Desc | SC-Quando lan�ado ajuste e neste for digitado observa��es, no livro de |
-| 1829 | 30831 | SAM | Lib | Criar a op��o de sele��o por acumulador no relat�rio de acompanhamento |
-| 1752 | 30806 | SAM | Desc | RS-Na apura��o do ISS destacar o valor devedor do imposto que n�o foi  |
-| 1817 | 30824 | SAM | Lib | Ter op��o para selecionar v�rias duplicatas de uma s� vez para dar bai |
 | 1822 | 30825 | SAM | Desc | Incluir campo para "outros" encargos finaceiros para baixa de faturas  |
+| 1828 | 30830 | SAM | Desc | No relat�rio de acompanhamento de Exclus�o discrimiar a CFOP. |
+| 1829 | 30831 | SAM | Lib | Criar a op��o de sele��o por acumulador no relat�rio de acompanhamento |
+| 1817 | 30824 | SAM | Lib | Ter op��o para selecionar v�rias duplicatas de uma s� vez para dar bai |
+| 1752 | 30806 | SAM | Desc | RS-Na apura��o do ISS destacar o valor devedor do imposto que n�o foi  |
 | 1721 | 30788 | SAM | Lib | Nos relatorios de acompanhamento de entradas e saidas, incluir a sele� |
 | 1649 | 30763 | SAM | Lib | SP - Retirar do menu Movimentos/outros a op��o Despesa. |
 | 1684 | 30772 | SAM | Lib | MT/PR/RS-Colocar na nova sistem�tica os livros de ICMS P9 do MT e RS e |
-| 1574 | 30739 | SAM | Lib | Disponibilizar na grade de sele��o para baixa de parcela a inscri��o d |
-| 1573 | 30738 | SAM | Desc | O relat�rio Mapa integra��o contabil n�o incluiu as novas op��es de pa |
-| 1642 | 30758 | SAM | Desc | MT - No livro de ICMS no modelo P9, o imposto DIFALI est� saindo somen |
-| 1631 | 30754 | SAM | Lib | MS-Realizar calculo de empresas enquadradas com Estimativa Fixa. |
-| 1591 | 30747 | SAM | Lib | RS - Permitir lan�ar Anexo VA e VB no momento do lan�amento da nota de |
 | 1646 | 30760 | SAM | Lib | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri�� |
+| 1642 | 30758 | SAM | Desc | MT - No livro de ICMS no modelo P9, o imposto DIFALI est� saindo somen |
+| 1574 | 30739 | SAM | Lib | Disponibilizar na grade de sele��o para baixa de parcela a inscri��o d |
+| 1631 | 30754 | SAM | Lib | MS-Realizar calculo de empresas enquadradas com Estimativa Fixa. |
+| 1573 | 30738 | SAM | Desc | O relat�rio Mapa integra��o contabil n�o incluiu as novas op��es de pa |
 | 1643 | 30759 | SAM | Lib | MT/RS/PR-Na emiss�o do livro de ICMS normal e P9 ter a op��o de digita |
-| 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
+| 1591 | 30747 | SAM | Lib | RS - Permitir lan�ar Anexo VA e VB no momento do lan�amento da nota de |
 | 1470 | 30696 | SAM | Lib | Aumentar o tamanho do campo de % de multa e juros na tela de emiss�o d |
-| 1310 | 30668 | SAM | Lib | Totalizr a coluna valor original,no relario contas a pagar com agrupam |
-| 1316 | 30670 | SAM | Lib | Alterar tela de sele��o do livro Registro de saidas, para que os campo |
+| 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
 | 1294 | 30664 | SAM | Desc | Ter op��o no relat�rio Registro de Entradas de imprimir ou n�o a raz�o |
 | 1341 | 30677 | SAM | Desc | Gravar as altera��es feitas nas colunas da consulta F2 por usu�rio. |
-| 1261 | 30653 | SAM | Lib | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis da |
+| 1310 | 30668 | SAM | Lib | Totalizr a coluna valor original,no relario contas a pagar com agrupam |
+| 1316 | 30670 | SAM | Lib | Alterar tela de sele��o do livro Registro de saidas, para que os campo |
 | 1213 | 30630 | SAM | Lib | RS-Criar ajuste para que some somente no campo 02(Creditos por Importa |
+| 1261 | 30653 | SAM | Lib | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis da |
 | 1212 | 30629 | SAM | Desc | No relatorio Informativos/Resumos/Municio a descri��o est� Entrada de  |
-| 1259 | 30651 | SAM | Lib | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis da |
+| 1229 | 30639 | SAM | Desc | Exibir mensagem de alerta, quando for gravar uma nota e os valores de  |
 | 1211 | 30628 | SAM | Desc | Se uma nota for alterado o seu valor, n�o permitir grava-la se o seu v |
+| 1218 | 30633 | SAM | Desc | Ter uma op��o para marcar no ato da emiss�o do Livro de ISS para emiti |
+| 1250 | 30645 | SAM | Desc | Criar um relat�rio com as colunas M�s - Receita Acumulada - Receita do |
+| 1228 | 30638 | SAM | Desc | Disponibilizar o campo observa��o digitada no lan�amento das notas, na |
+| 1259 | 30651 | SAM | Lib | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis da |
 | 1260 | 30652 | SAM | Lib | Otimizar o processo de grava��o e gera��o dos lan�amentos cont�beis da |
 | 1224 | 30637 | SAM | Lib | Na tela do Cadastro de Empresas em + Dados, na guia Respons�vel Legal, |
-| 1229 | 30639 | SAM | Desc | Exibir mensagem de alerta, quando for gravar uma nota e os valores de  |
-| 1218 | 30633 | SAM | Desc | Ter uma op��o para marcar no ato da emiss�o do Livro de ISS para emiti |
-| 1228 | 30638 | SAM | Desc | Disponibilizar o campo observa��o digitada no lan�amento das notas, na |
-| 1250 | 30645 | SAM | Desc | Criar um relat�rio com as colunas M�s - Receita Acumulada - Receita do |
-| 988 | 30558 | SAM | Lib | Ao lan�ar um Cupom Fiscal, e na tela da Nota, no campo "Isentos" do IC |
 | 1011 | 30569 | SAM | Lib | Disponibilizar lay-out das importa��es para que possam ser enviados po |
-| 949 | 30541 | SAM | Desc | Quando enviar uma guia por email, no assunto colocar tambem a competen |
-| 904 | 30533 | SAM | Desc | Ter possibilidade de realizar calculo de varios impostos estaduais ou  |
-| 928 | 30538 | SAM | Lib | Criar uma op��o no acumulador para selecionar os itens daquele acumula |
+| 988 | 30558 | SAM | Lib | Ao lan�ar um Cupom Fiscal, e na tela da Nota, no campo "Isentos" do IC |
 | 884 | 30521 | SAM | Lib | Onde houver lotes de empresa, trocar para sele��o de empresas. |
-| 887 | 30523 | SAM | Lib | Em Acompanhamento/Servi�os ter a op��o de ordenar o relat�rio por Muni |
+| 928 | 30538 | SAM | Lib | Criar uma op��o no acumulador para selecionar os itens daquele acumula |
 | 891 | 30526 | SAM | Lib | Quando existe uma redu��o na base de calculo de ICMS para Nota Fiscal  |
-| 863 | 30516 | SAM | Lib | Nos lay-outs de importa��o de notas n�o existe o campo contador de rei |
-| 850 | 30513 | SAM | Lib | SC-Incluir o nome e codigo da empresa no relatorio da GIA emitido pelo |
-| 813 | 30502 | SAM | Lib | A op��o alterar notas, s� podemos alterar s�rie com algum item informa |
-| 842 | 30506 | SAM | Lib | No acumulador existe a op��o de zerar a aliquota ou informar uma aliqu |
-| 870 | 30518 | SAM | Lib | Disponibilizar uma op��o de agrupamento por data de entrada no Relat�r |
-| 846 | 30510 | SAM | Lib | Quando emitir O livro de entradas com a op��o de Resumo por natureza,  |
-| 810 | 30501 | SAM | Lib | Criar uma op��o no cadastro do acumulador e para marcar que refere-se  |
-| 839 | 30505 | SAM | Lib | Ter op��o de gerar o arquivo (sintegra) somente de Entradas ou somente |
+| 887 | 30523 | SAM | Lib | Em Acompanhamento/Servi�os ter a op��o de ordenar o relat�rio por Muni |
+| 904 | 30533 | SAM | Desc | Ter possibilidade de realizar calculo de varios impostos estaduais ou  |
+| 949 | 30541 | SAM | Desc | Quando enviar uma guia por email, no assunto colocar tambem a competen |
 | 783 | 30494 | SAM | Lib | Sistema n�o est� obedecendo data de vencimento de IPI decendial cfe. c |
+| 813 | 30502 | SAM | Lib | A op��o alterar notas, s� podemos alterar s�rie com algum item informa |
+| 863 | 30516 | SAM | Lib | Nos lay-outs de importa��o de notas n�o existe o campo contador de rei |
+| 839 | 30505 | SAM | Lib | Ter op��o de gerar o arquivo (sintegra) somente de Entradas ou somente |
+| 846 | 30510 | SAM | Lib | Quando emitir O livro de entradas com a op��o de Resumo por natureza,  |
+| 850 | 30513 | SAM | Lib | SC-Incluir o nome e codigo da empresa no relatorio da GIA emitido pelo |
+| 870 | 30518 | SAM | Lib | Disponibilizar uma op��o de agrupamento por data de entrada no Relat�r |
+| 842 | 30506 | SAM | Lib | No acumulador existe a op��o de zerar a aliquota ou informar uma aliqu |
+| 810 | 30501 | SAM | Lib | Criar uma op��o no cadastro do acumulador e para marcar que refere-se  |
 | 710 | 30476 | SAM | Desc | Implementar lan�amentos sinteticos para a contabilidade.  Entradas:Tod |
-| 733 | 30483 | SAM | Lib | Criar uma fun��o que exclua os lotes de sele��o de empresas definidos  |
 | 709 | 30475 | SAM | Lib | Implementar segmenta��o aliquota ISS, igual foi feito com o icms. |
+| 733 | 30483 | SAM | Lib | Criar uma fun��o que exclua os lotes de sele��o de empresas definidos  |
+| 672 | 30464 | SAM | Desc | Existe Espa�o entre o Cabe�alho e os registro das Notas Fiscais nos Li |
 | 645 | 30457 | SAM | Lib | Ter op��o no relatorio resumo dos impostos, de ser sintetico(como sai  |
 | 651 | 30459 | SAM | Desc | Quando se faz uma compra de imobilizado com ICMS pelo acumulador a con |
 | 657 | 30461 | SAM | Lib | A op��o alterar notas, somente � permitido alterar s�rie e esp�cie  da |
-| 672 | 30464 | SAM | Desc | Existe Espa�o entre o Cabe�alho e os registro das Notas Fiscais nos Li |
-| 579 | 30435 | SAM | Lib | No menu da Escrita Fiscal alterar Descri��o de Gia Mensal em Disquete  |
-| 615 | 30452 | SAM | Lib | No Utilit�rios Regerar quando seleciono um periodo grande, o sistema a |
+| 597 | 30443 | SAM | Lib | Criar op��o para impress�o do livro do IPI por dec�ndio. |
 | 561 | 30424 | SAM | Desc | Tenho uma nota fiscal com duas bases de ICMS ou seja ex:1500 a 12% e 1 |
 | 566 | 30427 | SAM | Lib | Na emiss�o da DARF simples avulso, no campo da data, o ano est� saindo |
-| 604 | 30447 | SAM | Lib | Importar tamb�m o codigo do municipio no layout de notas fiscais saida |
-| 597 | 30443 | SAM | Lib | Criar op��o para impress�o do livro do IPI por dec�ndio. |
+| 579 | 30435 | SAM | Lib | No menu da Escrita Fiscal alterar Descri��o de Gia Mensal em Disquete  |
 | 598 | 30444 | SAM | Desc | Possibilidade de haver nas variaveis da configuracao dos historicos qu |
+| 615 | 30452 | SAM | Lib | No Utilit�rios Regerar quando seleciono um periodo grande, o sistema a |
+| 604 | 30447 | SAM | Lib | Importar tamb�m o codigo do municipio no layout de notas fiscais saida |
+| 553 | 30418 | SAM | Lib | Quando se lan�a uma nota fiscal de compra de imobilizado e nesta nota  |
 | 557 | 30421 | SAM | Lib | Importa��o de Notas: Permitir  importar somente as baixas(pagamento e/ |
 | 547 | 30415 | SAM | Lib | Aumentar o numero de casas, do campo Produtos Primarios em Outros Dado |
-| 553 | 30418 | SAM | Lib | Quando se lan�a uma nota fiscal de compra de imobilizado e nesta nota  |
 | 487 | 30399 | SAM | Lib | IMPORTA��O DAS EMPRESAS CADASTRADAS NO SISTEMA DOMSIS PARA SISTEMA GIA |
-| 389 | 30382 | SAM | Lib | Op��o para incluir os produtos na nota pelo c�digo NCM. |
 | 368 | 30378 | SAM | Desc | SC: Aumentar o numero de campos de Municipios para lan�amento no Quadr |
+| 389 | 30382 | SAM | Lib | Op��o para incluir os produtos na nota pelo c�digo NCM. |
 | 95 | 30322 | SAM | Desc | Nos livros de saidas (verificar entradas), o total geral da substitui� |
 | 92 | 30320 | SAM | Lib | TO: A partir de abril/2002 a guia para recolhimento de ICMS de Tocanti |
 | 86 | 30316 | SAM | Desc | No livro de ISS modelo normal sempre saem 2 folhas mesmo que sobre esp |
+| 80 | 30310 | SAM | Desc | Incluir o c�lculo de ICMS em atraso para o Estado do RS. |
+| 49 | 30305 | SAM | Lib | No relat�rio de contas a pagar e receber, permitir fazer agrupamento p |
 | 51 | 30307 | SAM | Lib | SC: Possibilidade de copiar o enquadramento das contas de ativo, passi |
 | 62 | 30309 | SAM | Lib | Criar na Escrita Fiscal Importa��o de Produtos, semelhante a fornecedo |
-| 49 | 30305 | SAM | Lib | No relat�rio de contas a pagar e receber, permitir fazer agrupamento p |
-| 80 | 30310 | SAM | Desc | Incluir o c�lculo de ICMS em atraso para o Estado do RS. |
 | 44 | 30301 | SAM | Lib | Na baixa das parcelas trazer tamb�m o nome do fornecedor/cliente, incl |
 | 32 | 30295 | SAM | Desc | Aumentar o campo de descri��o do acumulador. |
 | 18 | 30290 | SAM | Lib | Na emiss�o do livro de entradas e sa�das gravar sempre as �ltimas sele |
@@ -44813,13 +44389,26 @@
 | 18868 | 2 | SAL | Lib | RS-Ajustar o comportamento do campo "Exclus�o GIA" no lan�amento das n |
 | 21789 | 1 | SAIL | Lib | Criar op��o para calcular o B�nus de Adimpl�ncia Fiscal na Contribui�� |
 
-## Integracoes e canais digitais (1680 total, 89 pendentes)
+## Integracoes e canais digitais (1648 total, 87 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 101705 | 130704 | SAM | Pend | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL ad |
+| 102302 | 131434 | SAM | Pend | Realizar os testes de fluxo completo da API quando as notas foram rece |
+| 102182 | 131337 | NE | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102159 | 131291 | SAM | Pend | Realizar a reconexão do agente do Web Service SEFAZ quando houve desco |
+| 102247 | 131237 | NE | Pend | Está gerando incorretamente o Ganho/perda de Capital ao realizar a bai |
+| 102071 | 131216 | NE | Lib | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
+| 102033 | 131136 | SAM | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102154 | 131130 | NE | Pend | Está realizando a contabilização da baixa do bem nas contas contábeis  |
+| 101977 | 131071 | SAM | Pend | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados a |
+| 102068 | 131055 | SAL | Lib | Ajustar a comunicação com o webservice no envio da DIRBI via API. |
+| 102294 | 131039 | NE | Pend | ES-Está sendo gerado incorretamente o registro C197 com o código de aj |
+| 101781 | 130796 | SAM | Pend | Realizar testes de importa��o atrav�s da API e BOX-e ap�s a atualiza�� |
+| 101705 | 130704 | SAM | Lib | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL ad |
 | 101675 | 130664 | SAM | Pend | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para ze |
-| 101718 | 130663 | NE | Pend | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101718 | 130663 | NE | Lib | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101752 | 130652 | NE | Lib | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
+| 101800 | 130594 | NE | Pend | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui m |
 | 101574 | 130190 | SAM | Lib | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz |
 | 101605 | 130149 | SAL | Pend | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela  |
 | 101233 | 130124 | SAM | Lib | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas  |
@@ -44829,8 +44418,7 @@
 | 101645 | 129795 | SAM | Pend | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do |
 | 101043 | 129701 | NE | Pend | Em alguns casos est� ocorrendo encerramento do sistema quando importad |
 | 101065 | 129649 | SAM | Lib | Adequar o sistema para as mudan�as do portal e-CAC no processo de "Pag |
-| 101397 | 129620 | SAM | Pend | Realizar a conversão das configurações de integração contábil após o c |
-| 101599 | 129573 | SAM | Pend | Realizar um estudo para criar a integração por API com ERPs Externos p |
+| 101599 | 129573 | SAM | Lib | Realizar um estudo para criar a integração por API com ERPs Externos p |
 | 101342 | 129540 | NE | Pend | N�o est� sendo feita corretamente a importa��o das informa��es da jane |
 | 100725 | 129399 | SAM | Lib | Realizar os testes no Web Service e Busca NF-e ap�s a migra��o do SO d |
 | 100741 | 129097 | SAL | Lib | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SP |
@@ -44846,9 +44434,9 @@
 | 99944 | 128045 | SAIL | Pend | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma  |
 | 99801 | 127785 | NE | Lib | N�o est� retornando o CNPJ do Contador que o cliente est� vinculado ao |
 | 99843 | 127551 | SAIL | Lib | Implementar a gera��o dos benef�cios da DIRBI pela API integra contado |
+| 101828 | 127424 | SAM | Pend | Implementar controle de observabilidade da API de consulta de NCM e NB |
 | 101227 | 127420 | SAM | Pend | Implementar a API da apura��o assistida da CBS. |
 | 99658 | 127417 | SAM | Lib | Realizar um estudo para verificar os impactos da altera��o do CNPJ com |
-| 99890 | 127267 | SAM | Pend | Integração Onvio x DW - Realizar a integração dos lançamentos contábei |
 | 99513 | 127080 | SAM | Lib | Atualizar a API para aceitar NFS-e Padr�o Nacional vers�o 1.01 |
 | 101161 | 126935 | NE | Pend | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no rela |
 | 99364 | 126784 | SAL | Lib | Ajustar o sistema para observar as altera��es de acesso ao e-CAC, assi |
@@ -44862,8 +44450,6 @@
 | 98422 | 125125 | SAM | Lib | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Web  |
 | 99837 | 125027 | SAL | Lib | RS-Alterar o c�lculo do imposto 8-DIFALI por produto, referente a aqui |
 | 98403 | 124994 | NE | Lib | Est� sendo preenchido indevidamente a guia "Relacionamento de produtos |
-| 98777 | 124899 | SAM | Pend | Integração Onvio x DW - Criar e integrar as contas contábeis e históri |
-| 98609 | 124894 | SAM | Pend | Integração Onvio x DW - Listar as contas contábeis e históricos do Onv |
 | 98351 | 124778 | NE | Lib | Est� solicitando indevidamente o relacionamento de produtos quando imp |
 | 98224 | 124642 | SAM | Lib | Realizar um teste na importa��o Web Service SEFAZ RS ap�s homologa��o  |
 | 98228 | 124627 | SAL | Lib | Ajustar a comunica��o com o webservice no envio do MIT e DEFIS via API |
@@ -44927,7 +44513,6 @@
 | 95424 | 120868 | SAL | Lib | Alterar o sistema conforme as modifica��es do Portal e-CAC para as rot |
 | 95421 | 120849 | SAL | Lib | Adequar o sistema �s mudan�as ocorridas no Portal e-CAC. |
 | 96579 | 120813 | SAM | Lib | Alterar a mensagem de aviso quando n�o gerado o Extrato do DAS na roti |
-| 95393 | 120724 | NE | Lib | Não está enviando a notificação ao Agente de comunicação do Contábil d |
 | 95249 | 120627 | SAM | Pend | Implementar no sistema um retry autom�tico e aviso para os cliente em  |
 | 95251 | 120625 | SAM | Pend | Fazer com que o hist�rico de notas recebidas na API e enviadas ao BOX- |
 | 95253 | 120623 | SAM | Lib | Criar um local onde seja poss�vel verificar quais notas foram recebida |
@@ -44955,10 +44540,8 @@
 | 93917 | 118895 | NE | Lib | Est� ocorrendo encerramento do sistema durante a importa��o quando nas |
 | 93780 | 118559 | NE | Lib | Est�o sendo enviados os cancelamentos de NF-e apenas para uma empresa  |
 | 93756 | 118369 | SAL | Lib | Criar op��o de envio de guia em andamento para DCTFWeb via API Integra |
-| 93481 | 118355 | NE | Lib | Não está salvando corretamente uma rotina de integração contábil ao ed |
 | 93597 | 118284 | NE | Lib | RJ-Est� sendo duplicado o valor da linha "Sa�das interestaduais - RIOL |
 | 93253 | 118008 | NE | Lib | N�o est� sendo informado o dado adicional conforme o cadastro da Opera |
-| 93034 | 117911 | NE | Desc | Está apresentando erro na rotina de integração contábil da Escrita Fis |
 | 93148 | 117902 | NE | Lib | Est� sendo demonstrado indevidamente desabilitada a op��o "Emitir guia |
 | 92986 | 117768 | NE | Lib | Est� sendo gerada indevidamente a mensagem 'Deseja abater pagamentos a |
 | 94665 | 117753 | SAIL | Lib | Implementar a gera��o dos benef�cios na API DIRBI conforme IN 2.241/20 |
@@ -44990,7 +44573,6 @@
 | 93649 | 116053 | SAM | Pend | Gerar a DEFIS API Integra Contador pelas rotinas autom�ticas. |
 | 91545 | 115968 | NE | Lib | RO-N�o est� sendo gerado o registro C197 com o c�digo de ajuste RO1000 |
 | 91541 | 115892 | NE | Lib | Em alguns casos est� ocorrendo erro na tabela 'BETHADBA.EFDAS_API_TOKE |
-| 91624 | 115887 | NE | Lib | Está validando incorretamente a capacidade máxima de caracteres no cam |
 | 92112 | 115704 | SAIL | Lib | Implementar a gera��o dos benef�cios na API DIRBI conforme IN 2.241/20 |
 | 91300 | 115655 | NE | Lib | Em alguns casos est� sendo apresentada indevidamente a mensagem 'Erro  |
 | 91294 | 115645 | NE | Lib | Em alguns casos est� ocorrendo erro ao realizar a buscar dos impostos  |
@@ -45000,11 +44582,8 @@
 | 90974 | 115329 | NE | Lib | Est� demonstrando indevidamente a mensagem de aten��o "Per�odo de vig� |
 | 90808 | 115190 | NE | Lib | N�o est� sendo recebido na API as notas de empresas cadastradas como C |
 | 90813 | 115143 | NE | Lib | SP-Est� considerando indevidamente a al�quota interestadual da tag "pC |
-| 90736 | 115127 | NE | Desc | Não está notificando a Conta Azul quando uma chave de integração for e |
-| 91599 | 115120 | SAM | Lib | Alterar as URLs da API e receber o token de produção de envio de conta |
 | 90786 | 115072 | SAL | Lib | Ignorar diferen�as de arredondamento e n�o gerar a tag "FolhaSalario"  |
 | 90609 | 114924 | SAM | Pend | Refatorar a API de notas. |
-| 90578 | 114864 | NE | Lib | Não está finalizando o processo de integração contábil quando existe a |
 | 90533 | 114811 | SAM | Lib | Realizar testes de envio de notas ao BOX-e atrav�s do Web Service SEFA |
 | 90630 | 114796 | NE | Lib | Est� importando indevidamente a al�quota interestadual da tag "pCredSN |
 | 90633 | 114752 | NE | Lib | Em alguns casos est� importando valores diferentes para o imposto 27-I |
@@ -45015,8 +44594,6 @@
 | 90382 | 114599 | SAM | Pend | Realizar a importa��o da NFC-e com parcelas atrav�s da API. |
 | 90362 | 114566 | NE | Lib | Est� ocorrendo erro de banco de dados quando abre a tela de docs fisca |
 | 90665 | 114548 | SAL | Lib | RS-Alterar o endere�o do web service para emiss�o de Notas Fiscais de  |
-| 90324 | 114492 | SAM | Pend | Criar mensagens mais intuitivas na integração contábil referente a tra |
-| 93541 | 114468 | SAM | Pend | Contabilidade digital: Realizar busca e baixa de impostos federais na  |
 | 90255 | 114462 | SAL | Lib | Alterar o sistema conforme altera��o da RFB referente ao acesso ao e-C |
 | 90881 | 114461 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "N�o � permitido grava |
 | 90200 | 114399 | SAM | Pend | Realizar um estudo para identificar em alguns casos n�o s�o retornadas |
@@ -45053,9 +44630,7 @@
 | 92752 | 113176 | SAM | Pend | Alterar o sistema para que seja poss�vel fazer a auditoria atrav�s do  |
 | 89401 | 113155 | SAM | Pend | Alterar vers�o do TLS (Protocolo de seguran�a) para 1.3 utilizado pela |
 | 89260 | 113126 | SAM | Lib | Testar os pontos do sistema do Dom�nio que utilizam a fun��o "ShellExe |
-| 89645 | 113055 | NE | Lib | Estão ocorrendo erros na exibição de lançamentos pendentes da Conta Az |
 | 89150 | 113012 | SAM | Lib | Atualizar a informa��o do Respons�vel Legal das empresas na API cadast |
-| 89320 | 112976 | SAM | Lib | Contabilidade digital: Criar o menu para informar qual conta contábil  |
 | 89853 | 112965 | SAIL | Lib | Implementar o envio do informativo DIRBI via API |
 | 89293 | 112962 | SAM | Lib | Alterar o Web Service SEFAZ para emitir um aviso ao usu�rio quando a d |
 | 89024 | 112900 | SAM | Pend | Realizar estudos e monitorias para identificar os problemas que ocorre |
@@ -45065,7 +44640,6 @@
 | 88671 | 112499 | SAL | Lib | Alterar a forma de preenchimento do captcha no acesso ao e-CAC na DIRB |
 | 88624 | 112477 | SAL | Lib | Alterar a forma de preenchimento do captcha no acesso ao e-CAC na emis |
 | 88613 | 112453 | SAL | Lib | Alterar o comportamento do sistema para se adaptar ao leiaute do arqui |
-| 88563 | 112404 | SAM | Lib | Incluir no Header de envio da API de Lançamentos da Conta Azul o clien |
 | 88638 | 112414 | NE | Lib | Est� sendo demonstrado o erro "CFOP 'xxxx' inv�lido para Fornecedor de |
 | 88559 | 112401 | SAM | Lib | Realizar a migra��o do app do Webservice SEFAZ para o Github (novo rep |
 | 88564 | 112377 | SAM | Lib | Considerar o ClientID do Header de lan�amentos cont�beis via API da Co |
@@ -45075,10 +44649,8 @@
 | 88414 | 112220 | NE | Lib | Est� ocorrendo erro de sistema no momento da importa��o ao clicar em " |
 | 88439 | 112179 | SAM | Lib | Emitir uma mensagem explicativa quando apresentado a mensagem 'XML com |
 | 88400 | 112136 | SAIL | Lib | Implementar a gera��o da guia DAS por meio da API Integra Contador nas |
-| 88345 | 112102 | SAM | Lib | Criar uma integração do card Agenda Tributária do Onvio com SGD |
 | 88300 | 112095 | NE | Lib | N�o est�o sendo disponibilizadas os cancelanentos de NFC-e recebidas p |
 | 88257 | 112052 | SAM | Lib | Obter a informa��o de cadastro de empresas CAEPF para utiliza��o das v |
-| 89188 | 112005 | NE | Desc | Está apresentando indevidamente inconsistência na execução da integraç |
 | 88284 | 111977 | NE | Lib | Em alguns casos as NFS-e recebidas pela API n�o foram disponibilizadas |
 | 88212 | 111922 | NE | Lib | Est� ocorrendo o erro 'CNPJ do arquivo diferente do CNPJ da empresa at |
 | 88176 | 111897 | SAM | Pend | Enviar cadastros de Fornecedores, Clientes e Produtos para a Conta Azu |
@@ -45090,7 +44662,6 @@
 | 87953 | 111441 | NE | Lib | RS-Est� demonstrando o erro "O valor total do imposto 31 dos produtos  |
 | 87825 | 111319 | SAM | Lib | Ajustar os pontos de dependencia da API com o DA ap�s desativa��o dos  |
 | 87888 | 111261 | NE | Lib | Est� emitindo um alert do tipo erro incorretamente, quando h� diverg�n |
-| 87758 | 111239 | SAM | Lib | Testar performance da importação dos lançamentos contábeis da Conta Az |
 | 87719 | 111169 | SAL | Lib | SC - Alterar o endere�o do web service de produ��o para emiss�o de Not |
 | 87577 | 111054 | SAM | Lib | Zerar o NSU quando houver altera��o na configura��o da empresa para im |
 | 87578 | 110964 | NE | Lib | Em alguns casos n�o est� importando o imposto 25-CRF em servi�os prest |
@@ -45119,7 +44690,6 @@
 | 89646 | 110255 | NE | Desc | Empresas n�o est�o sendo listadas para criar chave API ou habilitar Bo |
 | 86938 | 110201 | NE | Lib | Em alguns casos o sistema n�o est� baixando notas atrav�s do Web Servi |
 | 87646 | 110102 | NE | Lib | Est� sendo gerado indevidamente valor para o c�digo de recolhimento in |
-| 86856 | 110047 | SAIL | Lib | Realizar a integração contábil do imposto SIMEI. |
 | 86843 | 110041 | SAM | Lib | Garantir que os lan�amentos cont�beis seja realizado conforme a baixa  |
 | 86836 | 110001 | SAL | Lib | RS-Alterar o endere�o do web service para emiss�o de Notas Fiscais de  |
 | 86825 | 109987 | SAL | Lib | RS-Alterar o endere�o do web service para emiss�o de Notas Fiscais de  |
@@ -45140,10 +44710,8 @@
 | 87593 | 109236 | SAM | Pend | Alterar a API de notas para realizar recebimentos de arquivos em lote. |
 | 86249 | 109220 | SAM | Lib | Ajustar o c�digo de conclus�o de atividade no Gestta Processos ao publ |
 | 86204 | 109215 | NE | Lib | Alterar o local onde o Agente de Comunica��o verifica a quantidade de  |
-| 94296 | 109171 | SAM | Pend | Realizar a integração da Contabilidade no Onvio com o Processos. |
 | 86332 | 109172 | NE | Lib | Est� apresentando uma mensagem indevidamente ao executar rotinas autom |
 | 86145 | 109146 | NE | Lib | Est� ocorrendo erro de sistema no momento da importa��o ao clicar em " |
-| 86110 | 109108 | NE | Lib | Sistema está deslogando quando o usuário tem acesso as telas que envol |
 | 86178 | 109101 | NE | Lib | Est� sendo feita a chamada de valida��o de forma incorreta nos campos  |
 | 86079 | 109070 | SAL | Lib | RS-Gerar o c�digo de ajuste RS990001 para identificar o contribuinte o |
 | 86078 | 109066 | NE | Lib | N�o est� sendo aberta a janela de conclus�o de atividades no gestta pr |
@@ -45159,7 +44727,6 @@
 | 85816 | 108681 | NE | Lib | Est� ocorrendo erro de sistema no momento da importa��o ao clicar em " |
 | 85891 | 108639 | NE | Lib | Em alguns casos n�o sendo poss�vel realizar a baixa dos tributos feder |
 | 86414 | 108616 | NE | Lib | N�o est� demonstrando corretamente a modal de 'Cadastro de dados adici |
-| 85916 | 108571 | NE | Lib | Está ocorrendo corte no botão "Salvar e Concluir" após preencher infor |
 | 85687 | 108439 | NE | Lib | Est� sendo enviada indevidamente a tag "FolhaSalario" na guia DAS emit |
 | 85831 | 108430 | NE | Desc | Est�o sendo emitidas de forma incorreta as mensagem de valida��o na em |
 | 85662 | 108400 | NE | Lib | Est� ocorrendo o erro "Houve um erro interno n�o previsto. o servidor  |
@@ -45172,16 +44739,13 @@
 | 85598 | 108248 | SAM | Lib | Ajustar a ferramenta de envio de documentos para o cat�logo para que s |
 | 85655 | 108247 | SAM | Lib | Preparar o sistema para publicar e salvar a guia/extrato DAS pela API  |
 | 88940 | 108214 | SAM | Lib | Ignorar as notas duplicadas recebidas da API ao gravar no cat�logo do  |
-| 85739 | 108200 | NE | Lib | Não está ocorrendo atualização imediata ao alterar o toggle de integra |
 | 88585 | 108131 | SAM | Lib | Alterar o comportamento de acesso na rotina autom�tica "Pagamento de I |
 | 85476 | 108123 | NE | Lib | Est�o sendo preenchidos incorretamente os campos tipo de logradouro e  |
-| 85444 | 108063 | NE | Lib | Estão sendo preenchidos incorretamente os campos tipo de logradouro e  |
 | 86449 | 108085 | SAIL | Lib | Preparar o sistema para gerar a guia DARF DCTFWeb pela API Integra Con |
 | 85502 | 108019 | SAL | Lib | Alterar o envio do arquivo DIOPS Financeiro via webservice conforme al |
 | 85349 | 107894 | NE | Lib | Est� travando a emiss�o da DAS via API Contador, quando for informado  |
 | 85351 | 107881 | NE | Lib | Est� sendo indevidamente setada selecionada a op��o "Gerar guia DAS pe |
 | 85336 | 107876 | SAL | Lib | SP-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
-| 86543 | 107867 | NE | Lib | Não está sendo exibida a inconsistência correta na integração contábil |
 | 85420 | 107857 | NE | Lib | RS-N�o est� calculando a restitui��o do ICMS ST quando a nota de entra |
 | 86340 | 107836 | NE | Lib | SP-Est� sendo gerada incorretamente a tag "nfe:Email1" com os dados do |
 | 85480 | 107743 | SAM | Lib | Criar relat�rio para confer�ncia do consumo das rotinas de gera��o da  |
@@ -45195,7 +44759,6 @@
 | 84699 | 106997 | SAM | Lib | Alterar o comportamento da listagem de notas fiscais de servi�o tomado |
 | 85258 | 106928 | NE | Lib | N�o est� demonstrando todas as opera��es cadastradas na 'Lista de oper |
 | 84591 | 106823 | NE | Lib | Est� sendo setado o foco no campo incorreto na guia "Contabilidade" da |
-| 84825 | 106795 | NE | Lib | A informação 'Empresas' está sendo apresentada cortada no gráfico 'Int |
 | 84587 | 106816 | SAM | Pend | Realizar um estudo para mitigar bloqueios na gera��o da PGDAS e Pagame |
 | 84544 | 106759 | SAM | Lib | Implementar rotina no Agente de Comunica��o quando a API apresentar er |
 | 85774 | 106698 | SAL | Lib | RJ-Alterar sistema para calcular o 154-FOT para empresas que possuem i |
@@ -45205,10 +44768,8 @@
 | 84562 | 106430 | NE | Lib | N�o est� importando nota de entrada em outra empresa ap�s realizar imp |
 | 84393 | 106379 | SAL | Lib | SC-Alterar a data de validade do c�lculo do TTD 1.076 - Cr�dito Presum |
 | 87243 | 106330 | SAIL | Lib | Criar o menu 'Regras de importa��o' para a importa��o via API. |
-| 84539 | 106244 | NE | Lib | Está demonstrando indevidamente o motivo 'Conta 123, XXXX inativa', ao |
 | 85225 | 106249 | NE | Desc | Est� demonstrando a coluna 'Nat. de rendimentos' na nota 'Fiscal de se |
 | 85265 | 106209 | NE | Lib | N�o est� sendo gerada a contabiliza��o do pagamento dos tributos feder |
-| 84961 | 106045 | SAM | Lib | Copiar configuração de integração contábil dos tributos federais na ap |
 | 84372 | 106055 | NE | Lib | ES-N�o est� somando o valor dos estornos na apura��o do Livro Fiscal d |
 | 88138 | 105949 | SAM | Pend | Enviar cadastros de Fornecedores, Clientes e Produtos para a Conta Azu |
 | 84155 | 105908 | SAM | Desc | N�o est� gerando os lan�amentos das contas cont�beis na tela de Pagame |
@@ -45224,30 +44785,25 @@
 | 83711 | 104770 | SAL | Lib | RS-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 83471 | 104493 | SAM | Lib | Realizar um teste de importa��o no cont�bil de NFS-e com chave com 50  |
 | 83588 | 104431 | NE | Lib | SC-Est� sendo gerado o valor incorreto do campo 08-VL_TOT_AJ_CREDITOS  |
-| 83441 | 104417 | NE | Desc | Não está apresentando o feedback no processo de integração quando não  |
 | 83517 | 104406 | SAL | Lib | SP-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 83556 | 104352 | NE | Lib | N�o est� reconhecendo a "Restitui��o de ICMS ST" quando realizado a im |
 | 83373 | 104328 | NE | Lib | Est� demonstrando o erro "do emitente da NFS-e � diferente da empresa  |
 | 83349 | 104243 | NE | Desc | [Tech API] Corrigir problema "The attribute [field] is not present in  |
 | 84784 | 104151 | SAM | Lib | Alterar o local do sistema para utiliza��o do certificado digital na i |
 | 83309 | 104075 | SAL | Lib | RS-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
-| 86231 | 104065 | SAM | Lib | Permitir a integração contábil dos tributos federais pela rotina progr |
 | 84646 | 104063 | SAL | Lib | GO-Incluir o dispositivo GO000164, redu��o na base de c�lculo para res |
-| 83283 | 104036 | SAIL | Lib | Realizar a integração contábil do módulo 'Tributos Federais'. |
 | 83198 | 103915 | SAL | Lib | SP-Alterar os endere�os dos web services para emiss�o de Notas Fiscais |
 | 84051 | 103893 | SAM | Lib | Modificar o comportamento de envio das contas cont�beis via API para C |
 | 83214 | 103869 | SAL | Lib | RS-Alterar endere�o do web service na emiss�o da nota fiscal de servi� |
 | 83260 | 103830 | NE | Lib | SC-Est� sendo gerado um valor diferente do calculado na apura��o na li |
 | 84450 | 103738 | SAIL | Lib | RJ-Implementar o c�lculo do Complemento/Restitui��o do ICMS-ST conform |
 | 83259 | 103666 | NE | Lib | DF-N�o est� setando a op��o correta no campo "Produto sujeito ao recol |
-| 83034 | 103647 | NE | Lib | Está permitindo selecionar a integração contábil da escrita fiscal pel |
 | 83038 | 103642 | SAL | Lib | MG-Alterar o endere�o do webservice para emiss�o de Notas Fiscais de S |
 | 90331 | 103539 | SAIL | Pend | Implementar a gera��o dos campos da DEFIS no Onvio referente a NF-e po |
 | 83523 | 103446 | SAM | Lib | SC-Realizar a importa��o de CT-e atrav�s do Web Service SEFAZ SC.   |
 | 82856 | 103397 | SAM | Pend | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
 | 82778 | 103213 | NE | Lib | Est� demonstrando incorretamente o nome "NSF-e API" no quadro "Dados I |
 | 82851 | 103205 | SAL | Lib | SC-Alterar o sistema para deduzir as devolu��es de entrada e sa�das no |
-| 82931 | 103110 | SAM | Lib | Não permitir selecionar a integração contábil da folha na rotina do mó |
 | 82763 | 103117 | SAM | Lib | NFS-e Nacional - Ajustar o XML para n�o gerar a tag de Inscri��o Munic |
 | 82751 | 103114 | NE | Lib | Ao realizar a importa��o de notas fiscais atrav�s do "Docs fiscais" em |
 | 82730 | 103066 | SAM | Lib | NFS-e Nacional - Ajustar nomes de campos para estar no substantivo fem |
@@ -45282,7 +44838,6 @@
 | 81830 | 101639 | SAL | Lib | SP-Alterar o endere�o do web service de produ��o para emiss�o de Notas |
 | 81754 | 101615 | NE | Lib | Est� demonstrando caracteres n�o reconhecidos ao realizar importa��o d |
 | 81732 | 101595 | NE | Desc | Est� avan�ando o per�odo de trabalho quando realizada importa��o de no |
-| 81706 | 101484 | NE | Lib | Sistema está deslogando quando o usuário tem permissão as telas que en |
 | 81756 | 101465 | NE | Lib | Est� apresentado advert�ncia indevidamente quando configurado para imp |
 | 81621 | 101434 | SAL | Lib | SP-Alterar o endere�o do web service de produ��o para emiss�o de Notas |
 | 81622 | 101406 | SAL | Lib | PR-Alterar o endere�o do web service de produ��o para emiss�o de Notas |
@@ -45291,22 +44846,17 @@
 | 81588 | 101109 | SAM | Lib | Enviar o plano de contas via API Conta Azul com o v�nculo do cadastro  |
 | 81338 | 101089 | SAM | Desc | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a A |
 | 81339 | 101087 | SAM | Lib | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a A |
-| 81841 | 101043 | SAM | Lib | Copiar configuração de integração contábil na aplicação do perfil e na |
-| 81344 | 101040 | SAM | Lib | Criar novo menu "Consultas" e ajustar opções "Consulta integração cont |
 | 81292 | 101004 | NE | Lib | RS-N�o est� sendo gerado o registro E113 no informativo SPED Fiscal, q |
 | 81301 | 101000 | SAL | Lib | RS-Alterar o endere�o do web service de produ��o para emiss�o de Notas |
 | 84297 | 100818 | SAIL | Lib | Criar comportamento para realizar a importa��o das NF-e - modelo 55 vi |
 | 81120 | 100735 | NE | Lib | Est� realizando download de notas somente uma vez ao dia quando n�o po |
 | 87987 | 100683 | SAM | Lib | Alterar mensagem de sucesso exibida ao concluir um cadastro de 'Opera� |
-| 81116 | 100675 | NE | Lib | Está apresentando uma tela branca do tamanho de uma modal na tela de ' |
 | 81058 | 100657 | SAM | Lib | Enviar o plano de contas para a Conta Azul via API. |
-| 81547 | 100537 | SAM | Pend | Enviar o plano de contas via API Conta Azul com o vínculo do cadastro  |
 | 80949 | 100245 | SAL | Lib | RS-Alterar endere�o do web service na emiss�o da nota fiscal de servi� |
 | 80894 | 100164 | SAM | Lib | Realizar Testes no Web Service SEFAZ no ambiente do DW, ap�s a instala |
 | 80882 | 100129 | SAM | Lib | Alterar o comportamento do sistema para que n�o seja demonstrado o err |
 | 80870 | 100096 | SAL | Lib | Alterar o pagamento de impostos via e-CAC e o envio da DEFIS atrav�s d |
 | 80933 | 100060 | NE | Lib | N�o est� importando os valores da SCP para os registros P200 e P300 do |
-| 80844 | 100036 | SAM | Lib | Incluir mensagem para o usuário ao clicar no 'Cadastro de contabilizaç |
 | 80793 | 99928 | SAL | Lib | RO-Alterar endere�o do web service de produ��o na emiss�o da nota fisc |
 | 80794 | 99909 | SAL | Lib | SP-Alterar endere�o do web service de produ��o na emiss�o da nota fisc |
 | 80781 | 99891 | SAM | Lib | Criar um bot�o "Automa��o" na tela do Painel de Importa��o. |
@@ -45318,16 +44868,12 @@
 | 80716 | 99684 | NE | Lib | Est� ocorrendo erro de importa��o quando realizado baixa de parcela pa |
 | 80772 | 99603 | SAM | Lib | RS-Importar os dados da nota de compra pelo registro C176 do SPED Fisc |
 | 80647 | 99551 | SAL | Lib | SC-Alterar endere�o do web service na emiss�o da nota fiscal de servi� |
-| 80830 | 99530 | SAM | Lib | Permitir receber os lançamentos contábeis da Conta Azul via API |
-| 80837 | 99513 | SAM | Lib | Criar opção para realizar a Integração Contábil nas rotinas programada |
-| 80588 | 99433 | SAM | Lib | Enviar o plano de contas para a Conta Azul via API. |
 | 80666 | 99331 | NE | Lib | Em alguns casos n�o est� importando nota de entrada cancelada atrav�s  |
 | 80499 | 99231 | SAL | Lib | RS-Alterar endere�os dos web services na emiss�o da nota fiscal de ser |
 | 80421 | 99135 | NE | Lib | N�o est� demonstrando barra de rolagem (Scroll) na combobox das coluna |
 | 81974 | 98969 | SAM | Lib | BA-Alterar o valor do imposto 8-DIFALI considerando a diferen�a de al� |
 | 81973 | 98936 | SAL | Lib | BA-Calcular o imposto 8-DIFALI considerando a diferen�a de al�quota in |
 | 80351 | 98935 | SAM | Lib | Considerar a identifica��o da parcela por n�mero do t�tulo somente qua |
-| 80330 | 98924 | NE | Lib | Falha na integração quando a competência já havia sido integrada e o p |
 | 80348 | 98862 | SAM | Lib | Ocultar o bot�o 'Exportar' da Grid das interfaces 'Notas fiscais de se |
 | 80288 | 98818 | SAM | Lib | Realizar o teste do fluxo completo quando o CT-e 4.0 foi recebido pela |
 | 80341 | 98621 | SAM | Lib | Criar um bot�o de 'Regerar lan�amentos' cont�beis na toolbar da listag |
@@ -45443,9 +44989,6 @@
 | 75529 | 91152 | NE | Lib | RS-Est� sendo gerado o valor incorreto nos campos 12 e 13 do registro  |
 | 75517 | 91142 | NE | Desc | RS-N�o est� sendo considerada a nota de entrada correta para o c�lculo |
 | 76861 | 91126 | SAM | Pend | Listar automaticamente o c�digo da 'Natureza do Frete' do acumulador n |
-| 75475 | 91086 | SAM | Desc | Testes Integracao ADO |
-| 75408 | 91014 | SAIL | Desc | Testes da integração do SGD com o ADO em SAIL |
-| 75395 | 90999 | SAM | Desc | Testes da integração do SGD com o ADO |
 | 75404 | 90997 | SAL | Lib | MT-Alterar o endere�o do web service para emiss�o de Notas Fiscais de  |
 | 75487 | 90953 | SAL | Lib | Gerar no arquivo DIOPS todas as movimenta��es da guia "Capital do Risc |
 | 75373 | 90945 | SAL | Lib | MT-Alterar o endere�o do webservice para emiss�o de Notas Fiscais de S |
@@ -46292,8 +45835,8 @@
 | 40713 | 34485 | NE | Lib | SC-Est� sendo gerado indevidamente o c�digo "2" no campo "Transfer�nci |
 | 40574 | 34262 | NE | Lib | PR-Est� sendo duplicado o valor do cr�dito sobre insumos de servi�os d |
 | 12676 | 33460 | SAM | Lib | N�o atualizar as p�ginas da receita federal quando clicado F5 na empis |
-| 11398 | 33342 | SAM | Lib | Criar op��o para importar os dados de NFe diretamente do site de Recei |
 | 11399 | 33343 | SAM | Lib | Criar op��o para importar os dados de clientes, fornecedores e remeten |
+| 11398 | 33342 | SAM | Lib | Criar op��o para importar os dados de NFe diretamente do site de Recei |
 | 11071 | 33284 | SAM | Lib | SP-Criar op��o para importar o c�digo do servi�o prestado para o campo |
 | 9773 | 33051 | SAM | Lib | Emitir a guia DAS diretamente pelo sistema interagindo com o site da r |
 | 8730 | 32740 | SAM | Desc | Ajustar o processo de altera��o cadastral(Capital Social) para empresa |
@@ -46493,11 +46036,19 @@
 | 19194 | 316 | SAM | Lib | Ajustar a Importa��o da NF-e pelo portal, conforme nova vers�o do port |
 | 18993 | 157 | SAIL | Lib | Criar op��o para informar o valor do capital social no Requerimento de |
 
-## LALUR (798 total, 21 pendentes)
+## LALUR (806 total, 23 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 101752 | 130652 | NE | Pend | N�o est� sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
+| 102265 | 131323 | NE | Pend | Em alguns casos está importando incorretamente os valores da CSLL Reti |
+| 102207 | 131282 | NE | Pend | Está importando incorretamente o valor do 'Lucro antes da CSLL e IRPJ' |
+| 102172 | 131273 | NE | Pend | Não está sendo feito o cálculo correto da majoração dos impostos 6-CSL |
+| 102071 | 131216 | NE | Lib | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
+| 102018 | 131149 | NE | Lib | Não está sendo calculado corretamente o valor de majoração dos imposto |
+| 102143 | 131102 | NE | Desc | Está sendo calculado incorretamente o valor da majoração dos impostos  |
+| 101966 | 131029 | NE | Lib | Não está sendo feito o cálculo da majoração dos impostos 6-CSLL, 7-IRP |
+| 101752 | 130652 | NE | Lib | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na  |
+| 101772 | 130635 | NE | Lib | Está sendo gerado o valor incorreto no Relatório "Resumo dos Impostos  |
 | 101673 | 130619 | NE | Pend | N�o est� sendo gerado o valor correto para os impostos 6-CSLL, 7-IRPJ, |
 | 101686 | 130530 | NE | Pend | N�o est� sendo gerada a linha "(-) Divulga��o Eleitoral e Partid�ria G |
 | 101547 | 130513 | NE | Lib | Est� sendo calculado incorretamente o valor dos impostos 6-CSLL e 7-IR |
@@ -47011,8 +46562,8 @@
 | 1755 | 30807 | SAM | Lib | Ao imprimir o livro LALUR PARTE B sair em modo retrato. |
 | 1698 | 30779 | SAM | Lib | Fazer com que o cadastro de adi��es e exclus�es do IR e CSLL sejam por |
 | 1496 | 30709 | SAM | Lib | Alterar tela de cadastro de impostos conforme segue:  01 - Quando impo |
-| 1462 | 30691 | SAM | Desc | O livro LALUR est� saindo no cabe�alho P�gina e o correto � Folha |
 | 1293 | 30663 | SAM | Lib | Gerar DIPJ para empresas lucro real. |
+| 1462 | 30691 | SAM | Desc | O livro LALUR est� saindo no cabe�alho P�gina e o correto � Folha |
 | 907 | 30536 | SAM | Lib | Criar opcao para gerar lancamentos contabeis do valor calculado de IRP |
 | 679 | 30467 | SAM | Lib | Desconsiderar zeramento ao importar saldo das contas para o LALUR. |
 | 108 | 30330 | SAM | Desc | Calcular IRPJ e Contr. Social lucro real e estimado, permitindo import |
@@ -47296,13 +46847,27 @@
 | 19357 | 352 | SAL | Lib | Calcular IRPJ e CSLL sobre o valor de juros e multa informado na baixa |
 | 27630 | 7 | SAIL | Lib | Efetuar o c�lculo do adicional do IRPJ proporcional ao meses do trimes |
 
-## Obrigacoes e relatorios estaduais (3518 total, 98 pendentes)
+## Obrigacoes e relatorios estaduais (3495 total, 96 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 101705 | 130704 | SAM | Pend | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL ad |
+| 102159 | 131291 | SAM | Pend | Realizar a reconexão do agente do Web Service SEFAZ quando houve desco |
+| 102264 | 131103 | NE | Pend | Não está sendo salvo corretamente os relatórios do Simples Nacional na |
+| 101989 | 131097 | SAM | Pend | Testar as funcionalidades de IA para o pergunte ao seu relatório na Es |
+| 101988 | 131096 | SAM | Pend | Testar as funcionalidades de IA para o pergunte ao seu relatório na Es |
+| 102019 | 131093 | NE | Lib | Está sendo demonstrado indevidamente sócio com inscrição CNPJ no relat |
+| 102294 | 131039 | NE | Pend | ES-Está sendo gerado incorretamente o registro C197 com o código de aj |
+| 102021 | 131032 | NE | Desc | Está sendo demonstrado o valor incorreto de "Redução referente à alíqu |
+| 101870 | 130894 | SAM | Pend | ES-Alterar a importa��o via SEFAZ ES conforme as mudan�as do site para |
+| 101823 | 130820 | NE | Pend | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro  |
+| 101816 | 130774 | SAM | Pend | MT-Alterar a importa��o via SEFAZ MT conforme as mudan�as do site para |
+| 101705 | 130704 | SAM | Lib | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL ad |
 | 101675 | 130664 | SAM | Pend | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para ze |
+| 101772 | 130635 | NE | Lib | Está sendo gerado o valor incorreto no Relatório "Resumo dos Impostos  |
+| 101800 | 130594 | NE | Pend | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui m |
+| 101808 | 130536 | NE | Pend | Est� sendo gerado indevidamente o destinat�rio trocado na guia GNRE do |
 | 101686 | 130530 | NE | Pend | N�o est� sendo gerada a linha "(-) Divulga��o Eleitoral e Partid�ria G |
+| 101556 | 130509 | NE | Lib | Está sendo apresentado erro ao gerar o relatório na guia "Alteração pl |
 | 101555 | 130339 | NE | Pend | Est� sendo demonstrado o n�mero do documento e o CNPJ do fornecedor in |
 | 101374 | 130288 | NE | Lib | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstra |
 | 101341 | 130238 | NE | Lib | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstra |
@@ -47318,6 +46883,7 @@
 | 100417 | 128896 | NE | Lib | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas |
 | 101100 | 128886 | NE | Pend | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lc |
 | 100539 | 128808 | NE | Pend | Est� sendo gerado indevidamente a mensagem 'O relat�rio deve ser emiti |
+| 101878 | 128794 | SAL | Pend | Alterar o c�digo de ajuste gerado no registro E311 no SPED Fiscal para |
 | 100464 | 128709 | SAL | Lib | MT-Incluir data fim para o c�digo de ajuste MT002010 do SPED Fiscal da |
 | 100297 | 128624 | SAL | Lib | TO-Ajustar o sistema para n�o gerar o segmento G no informativo DIF pa |
 | 100070 | 128307 | NE | Lib | Filtro "Extrato Banc�rio" n�o funciona na listagem de lan�amentos |
@@ -47326,7 +46892,6 @@
 | 99609 | 126998 | NE | Lib | BA-N�o est� sendo emitido o relat�rio Demonstrativo do Cr�dito presumi |
 | 101161 | 126935 | NE | Pend | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no rela |
 | 99607 | 126845 | NE | Pend | Em alguns casos est� fechando o sistema ao emitir o demonstrativo do i |
-| 99955 | 126446 | SAM | Pend | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99650 | 126338 | SAM | Pend | Emitir o demonstrativo dos impostos e demonstrativo EFD PIS e COFINS n |
 | 100347 | 126290 | NE | Lib | MG-Est� sendo gerado indevidamente o registro tipo 22 no informativo D |
 | 99079 | 126260 | SAM | Lib | Ajustar para n�o gerar a mensagem 'N�o foi poss�vel acessar o site par |
@@ -47367,7 +46932,6 @@
 | 98520 | 123465 | NE | Lib | SP-Est� sendo gerado indevidamente o registro E311 para a UF "SP" no i |
 | 97517 | 123416 | SAL | Lib | SE-Incluir o c�digo de ajuste SE020010 em 'Movimentos/Outros/Impostos  |
 | 97432 | 123294 | NE | Lib | GO-Est� sendo gerada a informa��o incorreta no campo 13-IND_PGTO do re |
-| 97311 | 123175 | NE | Lib | Não estão sendo apresentadas por inteiro as informações Insc. Junta Co |
 | 97350 | 123136 | SAM | Pend | GO-Atualizar a forma de gerar a guia DARE online conforme nova estrutu |
 | 97518 | 123043 | SAL | Lib | PR/SP/SC-Alterar a gera��o da GIA ST para que o valor do imposto 57-FC |
 | 97507 | 123038 | NE | Lib | MG-N�o est�o sendo geradas corretamente as informa��es no informativo  |
@@ -47381,14 +46945,12 @@
 | 96888 | 122706 | SAM | Lib | ES-Realizar a importa��o do campo 'Opera��o' do grupo 'Enquadramento n |
 | 98484 | 122663 | SAM | Pend | Implementar filtros e relat�rios na tela de listagem de NFS-e API para |
 | 97028 | 122565 | NE | Lib | Est� gerando incorretamente o resultado da Consulta regra tribut�ria a |
-| 96737 | 122539 | NE | Lib | Não está gerando o relatório do DRE na sequência da estrutura salva. |
-| 96749 | 122535 | NE | Lib | Não está gerando inconsistência na rotina, ou está gerando a inconsist |
 | 98046 | 122514 | NE | Lib | N�o est�o sendo gerados o recibo, extrato, guia DAS e demonstrativo do |
 | 96633 | 122490 | SAM | Lib | Realizar testes nas regras de seguran�a dos ambientes SAT01 e PROD01 n |
 | 97013 | 122374 | SAL | Lib | AL-Incluir o c�digo de ajuste AL021106 em 'Movimentos/Outros/Impostos  |
 | 97415 | 122361 | SAL | Lib | MS-Incluir novos c�digos de ajuste em 'Movimentos/Outros/Impostos Lan� |
 | 96520 | 122352 | NE | Lib | N�o est� sendo gerado o lan�amento cont�bil na guia "Contabilidade" da |
-| 97302 | 122168 | SAM | Pend | Permitir que as configurações dos relatórios da parametrização e as as |
+| 97302 | 122168 | SAM | Lib | Permitir que as configurações dos relatórios da parametrização e as as |
 | 96276 | 122033 | NE | Lib | Est� ocorrendo erro de sistema ao emitir o relat�rio de Demonstrativo  |
 | 96190 | 121958 | SAM | Lib | ES-Alterar a importa��o conforme a nova mudan�a no site atrav�s do SEF |
 | 96166 | 121932 | SAM | Pend | Realizar um estudo para que seja poss�vel utilizar o Proxy do Windows  |
@@ -47411,7 +46973,6 @@
 | 97412 | 120523 | SAL | Lib | RJ-Separar c�lculo de devolu��es de vendas no Regime Especial de Recup |
 | 95157 | 120485 | NE | Lib | Est� ocorrendo indevidamente o erro de importa��o "Destinat�rio da NF- |
 | 95184 | 120445 | NE | Lib | Est� emitindo duplicado a declara��o de veracidade no demonstrativo DV |
-| 95127 | 120404 | NE | Pend | Não está funcionando a ação de 'Imprimir' na barra de ferramentas dos  |
 | 96900 | 120264 | SAM | Pend | Criar a op��o de "Exporta��o" nas Rotinas Autom�ticas para os arquivos |
 | 94858 | 120138 | NE | Lib | Est� ocorrendo erro de banco de dados e n�o est� gerando a guia DARF D |
 | 95316 | 120125 | SAL | Lib | SP-Incluir os c�digos de ajuste SP129705 e SP129706 em 'Movimentos/Out |
@@ -47426,8 +46987,6 @@
 | 94820 | 119741 | NE | Lib | Est� gerada incorretamente a data dos campos "Per�odo de apura��o" e " |
 | 94551 | 119724 | NE | Lib | Est� ocorrendo erro ao efetuar uma buscar pelo bot�o "Listagem" da jan |
 | 94478 | 119661 | NE | Pend | Em alguns casos n�o est� sendo demonstrando na ordem correta a listage |
-| 98466 | 119542 | SAIL | Pend | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa ( |
-| 97772 | 119540 | SAIL | Pend | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa ( |
 | 94341 | 119532 | SAM | Lib | Permitir a importa��o de notas do tipo CT-e Simplificado atrav�s do We |
 | 94245 | 119338 | NE | Lib | Est� ocorrendo erro de sistema ao abrir a janela do relat�rio Demonstr |
 | 94365 | 119337 | NE | Lib | Em alguns casos est� ocorrendo erro e finalizando o sistema ao gerar o |
@@ -47449,7 +47008,6 @@
 | 96572 | 117985 | SAIL | Lib | RJ-Implementar no lan�amento de nota um campo para informar o valor do |
 | 93228 | 117969 | NE | Lib | RO-Est� sendo importado valores para o imposto 57-FECOEP-N na guia pri |
 | 93074 | 117930 | SAM | Lib | Incluir o bot�o "Solu��es" na mensagem da emiss�o DARF DCTFweb relacio |
-| 93158 | 117923 | NE | Lib | Não está validando os quadros de processos e envios no cadastro da rot |
 | 92975 | 117776 | SAM | Lib | ES-Alterar o sistema para realizar a importa��o conforme a nova estrut |
 | 92986 | 117768 | NE | Lib | Est� sendo gerada indevidamente a mensagem 'Deseja abater pagamentos a |
 | 94353 | 117627 | SAL | Lib | RJ-Alterar a apura��o do incentivo Regime especial de tributa��o do IC |
@@ -47461,7 +47019,6 @@
 | 92428 | 117128 | NE | Lib | Est� apresentando erro de banco de dados ao emitir o demonstrativo DLP |
 | 92379 | 117020 | SAL | Desc | Ajustar o sistema para n�o gerar a UF e o n�mero do CRC no arquivo 'ja |
 | 94035 | 116874 | SAM | Lib | Permitir alterar munic�pio e UF de clientes e fornecedores via utilit� |
-| 92168 | 116777 | NE | Lib | Não está salvando alterações ao editar a configuração de assinaturas d |
 | 92311 | 116783 | SAM | Lib | GO-Em "Movimentos/Sa�das", preencher de forma autom�tica na guia "Esta |
 | 92373 | 116754 | NE | Lib | Est� sendo gerada incorretamente a al�quota dos impostos '110-CSLL - S |
 | 92098 | 116643 | NE | Lib | N�o est� sendo gerado o demonstrativo do imposto 168-RET-SCP, quando a |
@@ -47503,7 +47060,6 @@
 | 89999 | 114107 | NE | Lib | N�o est� considerando a n�o marca��o da op��o '[ ] Somar o valor do CT |
 | 89963 | 114043 | NE | Lib | SP-N�o est� gerando o valor do ICMS monof�sico para o campo 'Imposto'  |
 | 89954 | 114033 | SAM | Lib | Alterar o sistema para emitir a guia DARF Online - Sicalcweb" sem demo |
-| 89935 | 114019 | SAM | Lib | Criar opção para ocultar empresas inativas na listagem de empresas e n |
 | 89965 | 113965 | SAM | Lib | Permitir ocultar empresas inativas na listagem de empresas e no seleto |
 | 91404 | 113957 | SAL | Lib | TO-Ajustar o sistema para gerar os valores do imposto "149-FECOEP-N" n |
 | 90673 | 113896 | SAL | Lib | MG-Alterar o sistema para gerar os valores de notas de entrada com CFO |
@@ -47522,7 +47078,6 @@
 | 89395 | 113262 | NE | Lib | Esta travando o relat�rio demonstrativo dos impostos 133-PIS-I e 134-C |
 | 89328 | 113208 | NE | Desc | N�o est� sendo poss�vel visualizar a listagem de contas cont�beis na c |
 | 89260 | 113126 | SAM | Lib | Testar os pontos do sistema do Dom�nio que utilizam a fun��o "ShellExe |
-| 94611 | 113100 | SAM | Lib | Incluir a aba 'Arquivos RTF' na modal 'Outros dados' do SPED Contábil  |
 | 89273 | 113061 | NE | Lib | N�o est� sendo conclu�da a atividade nem anexada a guia DARF Normal no |
 | 89161 | 113013 | SAL | Lib | RS-Incluir novos c�digos e atualizar a vig�ncia dos c�digos Anexo V.A  |
 | 91278 | 112993 | SAM | Lib | RN-Alterar a importa��o do imposto 8-DIFALI conforme IN SEI N� 001/202 |
@@ -47533,13 +47088,11 @@
 | 89464 | 112884 | NE | Lib | N�o est� demonstrando as notas de entrada com impostos 133-PIS-I e 134 |
 | 89143 | 112872 | NE | Lib | PR-Est� sendo gerado o c�digo de ajuste incorreto no registro E220 no  |
 | 91256 | 112817 | SAL | Lib | TO-Alterar a GIAM TO para que no bloco H, n�o seja gerada as quantidad |
-| 89189 | 112736 | NE | Lib | Os relatórios estão sendo emitidos com valores errados porque a agrega |
 | 88855 | 112720 | SAM | Lib | Validar se o envio de notas ao BOX-e atrav�s do Web Service SEFAZ e Bu |
 | 88893 | 112632 | NE | Lib | MS-N�o est�o sendo geradas corretamente as notas fiscais no relat�rio  |
 | 88624 | 112477 | SAL | Lib | Alterar a forma de preenchimento do captcha no acesso ao e-CAC na emis |
 | 88641 | 112476 | NE | Lib | Est� ocorrendo problema de performance durante a importa��o quando exi |
 | 88559 | 112401 | SAM | Lib | Realizar a migra��o do app do Webservice SEFAZ para o Github (novo rep |
-| 88594 | 112384 | SAM | Lib | Desabilitar o ícone e coluna de publicação para o Portal do cliente no |
 | 88560 | 112391 | SAM | Pend | Realizar um estudo para redu��o de custos no processo de preenchimento |
 | 88534 | 112354 | NE | Lib | N�o est� salvando o redimensionamento da tela de listagem e da tela de |
 | 91277 | 112350 | SAL | Lib | RN-Alterar o c�lculo do imposto 8-DIFALI conforme IN SEI N� 001/2024-C |
@@ -47550,10 +47103,8 @@
 | 91465 | 112244 | SAL | Lib | Alterar o sistema para habilitar o campo de chave de acesso para as no |
 | 88476 | 112223 | SAM | Lib | Garantir funcionamento da emiss�o da Guia DARF Online - Sicalcweb com  |
 | 92510 | 112209 | SAM | Pend | Alterar o sistema para importar o tipo de inscri��o do cliente/fornece |
-| 88545 | 112173 | NE | Lib | File Selector não está apresentando o tamanho máximo correto do arquiv |
 | 88377 | 112156 | SAL | Lib | Realizar um estudo para o processo de preenchimento do captcha na emis |
 | 89275 | 112154 | NE | Lib | N�o est� sendo anexada na atividade correta a guia DARF Quotas, quando |
-| 88346 | 112111 | NE | Lib | Está sendo realizada a tradução incorreta da tooltip de publicação no  |
 | 89270 | 112056 | NE | Lib | Est� sendo demonstrado os valores de PIS e COFINS incorretamente nos q |
 | 89840 | 111467 | SAIL | Pend | Implementar no sistema a emiss�o das guias DARF pela integra��o com a  |
 | 89987 | 111458 | SAL | Lib | SC-Alterar o c�lculo do Demonstrativo de Cr�ditos Acumulados para sere |
@@ -47568,12 +47119,9 @@
 | 87431 | 110725 | SAM | Lib | Criar a coluna 'Origem' na Listagem de notas. |
 | 87353 | 110666 | NE | Lib | Em alguns casos est� ocorrendo estouro de mem�ria ao abrir o hist�rico |
 | 87904 | 110638 | NE | Desc | Est�o sendo demonstradas indevidamente notas na compet�ncia 12/XXXX no |
-| 87318 | 110618 | NE | Lib | Não está gerando os relatórios quando o tipo do lançamento vindo da Co |
-| 87359 | 110610 | NE | Lib | Não está gerando os relatórios quando a empresa possui lançamentos com |
 | 87292 | 110602 | SAM | Lib | Realizar um teste no Web Service SEFAZ no Dom�nio Web para garantir qu |
 | 88161 | 110552 | SAL | Lib | MS-Alterar a quantidade de caracteres do campo 'N� identifica��o DAEMS |
 | 87237 | 110538 | NE | Lib | N�o est� baixando notas quando possuem downloads de NF-es + CT-es conf |
-| 87208 | 110499 | NE | Lib | Não está sendo possível emitir os relatórios da contabilidade. |
 | 87379 | 110441 | NE | Lib | Em alguns casos est� sendo demonstrado indevidamente valor de dedu��o  |
 | 87094 | 110378 | SAM | Lib | Garantir que o envio de notas para o BOX-e atrav�s do Busca NF-e e Web |
 | 88569 | 110304 | NE | Lib | N�o est�o sendo gerados no relat�rio "Demonstrativo das receitas de PI |
@@ -47584,7 +47132,6 @@
 | 86772 | 109966 | SAM | Lib | Realizar um teste de envio de notas para o BOX-e de notas das ferramen |
 | 86769 | 109954 | NE | Lib | Em alguns casos est� ocorrendo erro de sistema ao realizar importa��o  |
 | 86707 | 109846 | SAM | Lib | Realizar um teste na importa��o Web Service SEFAZ RS ap�s as implement |
-| 87569 | 109683 | SAM | Pend | Limitar data para que movimentos, consultas e relatórios só possam ser |
 | 86955 | 109590 | SAL | Lib | MA-Atualizar o c�digo gerado no SPED Fiscal para os lan�amentos de Out |
 | 86451 | 109441 | NE | Lib | MG-Est� sendo gerado indevidamente valor na linha "Saldo credor do per |
 | 89049 | 109371 | SAM | Lib | Alterar o sistema para permitir informar o "Per�odo inicial" e "Per�od |
@@ -47597,7 +47144,6 @@
 | 96772 | 108866 | SAM | Lib | Criar op��o para replicar a configura��o da coluna "Idiomas" na estrut |
 | 87728 | 108855 | SAL | Lib | SP-Alterar o sistema para gerar valor de IPI lan�ado em "Outras" na li |
 | 85858 | 108766 | NE | Lib | Em alguns casos est� ocorrendo encerramento do sistema/estouro de mem� |
-| 86166 | 108673 | SAM | Pend | Possibilitar o envio de relatórios da Contabilidade pelo Onvio Messeng |
 | 85738 | 108444 | NE | Lib | N�o est� calculando a �ltima parcela do cr�dito de ICMS para empresas  |
 | 86113 | 108104 | SAL | Lib | SP-Gerar o subitem 799 no registro CR=20 da GIA para valores de cr�dit |
 | 86449 | 108085 | SAIL | Lib | Preparar o sistema para gerar a guia DARF DCTFWeb pela API Integra Con |
@@ -47614,23 +47160,19 @@
 | 84699 | 106997 | SAM | Lib | Alterar o comportamento da listagem de notas fiscais de servi�o tomado |
 | 85604 | 106800 | NE | Lib | N�o est� sendo realizada a publica��o da guia "DARF DCTF Web" no Onvio |
 | 84518 | 106219 | NE | Lib | DF-N�o est� sendo impresso corretamente o valor do campo "Vl. Total do |
-| 84223 | 106092 | NE | Lib | O filtro de classificação da conta no transferbox de vínculo do DRE, n |
 | 85443 | 105951 | SAM | Lib | AC-Gerar a guia GRNE normal e GNRE avulsa para a UF Favorecida AC com  |
 | 84029 | 105664 | SAM | Lib | Alterar a gera��o do comando SQL referente ao zeramento de NSU nas fer |
 | 83912 | 105449 | NE | Lib | N�o est� sendo respeitada a ordena��o da coluna "Compet�ncia" na janel |
-| 83888 | 105367 | SAM | Pend | Permitir a Folha indicar o status do eSocial na listagem e cadastro de |
 | 83936 | 105343 | NE | Lib | MA-Est� sendo gerado incorretamente o valor do cr�dito presumido no de |
 | 83804 | 105224 | SAM | Desc | Permitir a Folha indicar o status do eSocial na listagem e cadastro de |
 | 83916 | 105158 | SAM | Lib | Otimizar as requisi��es feitas no Web Service SEFAZ RS para empresas q |
 | 83753 | 105106 | SAL | Lib | Incluir novo c�digo de empresa concession�ria de energia el�trica para |
 | 84083 | 105097 | NE | Lib | Est� gerando incorretamente o valor de dedu��o da SCP no relat�rio Dem |
-| 83795 | 105041 | NE | Lib | A informação 'Empresa' para o cabeçalho dos relatórios contábeis está  |
 | 85165 | 105069 | SAL | Lib | Gerar no campo 17 do registro tipo R03 da DCTF Mensal a UF do CRC do C |
 | 83731 | 104944 | NE | Lib | N�o est� excluindo a DARF do imposto 16-IRRF ap�s excluir apura��o do  |
 | 84135 | 104902 | NE | Lib | Em alguns casos, ocorre travamento do sistema ao salvar em PDF o relat |
 | 83609 | 104749 | NE | Lib | ES-N�o est�o sendo demonstradas as notas fiscal no relat�rio "Demonstr |
 | 83618 | 104744 | NE | Lib | DF-Est� sendo apresentada indevidamente a mensagem "Esp�cie inv�lida"  |
-| 83619 | 104711 | NE | Lib | Não estão sendo apresentadas a matriz e as filiais no filtro da listag |
 | 83470 | 104490 | SAM | Lib | Criar uma valida��o ao alterar o "Grupo DRE" no cadastro das Contas Co |
 | 83560 | 104424 | SAM | Lib | Validar altera��es da DARF Reclamat�ria Trabalhista da Folha. |
 | 83409 | 104419 | NE | Lib | Est� apresentando o valor incorreto no demonstrativo DFC indireto para |
@@ -47648,9 +47190,7 @@
 | 84450 | 103738 | SAIL | Lib | RJ-Implementar o c�lculo do Complemento/Restitui��o do ICMS-ST conform |
 | 83464 | 103603 | NE | Lib | PR-Est� sendo gerada a data de vencimento incorreta do imposto 09-SUBT |
 | 83465 | 103589 | NE | Lib | Est� sendo gerado indevidamente o valor de dedu��o lan�ado na janela " |
-| 97280 | 103491 | SAIL | Pend | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos A |
-| 98297 | 103490 | SAIL | Pend | Criar a estrutura e relatório da Demonstração das Mutações do Patrimôn |
-| 84233 | 103487 | SAM | Pend | Criar assinatura com o certificado digital nos relatórios da contabili |
+| 97280 | 103491 | SAIL | Lib | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos A |
 | 82936 | 103486 | NE | Lib | SC-N�o est� sendo gerado o valor correto do cr�dito presumido confec�� |
 | 83191 | 103476 | SAM | Lib | Criar uma valida��o ao alterar o "Grupo DRE" no cadastro das Contas Co |
 | 82967 | 103474 | SAM | Lib | Alterar apresenta��o das mensagens de valida��es da op��o "Imprimir lo |
@@ -47661,9 +47201,7 @@
 | 82775 | 103064 | SAM | Lib | SC-Alterar a mensagem ao acessar a importa��o SEFAZ SC indicando que n |
 | 82756 | 102998 | NE | Lib | N�o est� ordenando a listagem de Emiss�es PGDAS conforme defini��o de  |
 | 82813 | 102971 | NE | Lib | Est� sendo gerado o valor incorreto no campo "Valor deduzido" do demon |
-| 82930 | 102961 | SAM | Pend | Permitir exportar os relatórios contábeis em Excel |
 | 82649 | 102917 | SAM | Lib | NFS-e Nacional - Ajustar descri��o do campo "C�digo de Tributa��o Naci |
-| 82677 | 102869 | NE | Lib | Está indo direto para a tela de processamento antes de clicar em 'Noti |
 | 82672 | 102799 | SAL | Lib | MT-Alterar o arquivo XML para gerar a tag "InscricaoEstadual" para os  |
 | 82702 | 102679 | NE | Lib | SC-N�o est� sendo gerado o percentual de propor��o correto no demonstr |
 | 82583 | 102677 | NE | Lib | SC-Est� sendo gerado o valor incorreto na linha "Estorno de cr�ditos d |
@@ -47672,9 +47210,7 @@
 | 82402 | 102541 | NE | Desc | Em alguns casos est� ocorrendo erro de banco de dados ao gerar o Relat |
 | 82313 | 102493 | SAM | Lib | Realizar um estudo para resolver problemas de sobrecarga de certificad |
 | 82392 | 102480 | SAM | Desc | SC-Alterar o sistema para realizar a importa��o conforme a nova estrut |
-| 82563 | 102283 | NE | Lib | Em alguns casos não está gerando as notificações dos relatórios emitid |
 | 82527 | 102177 | NE | Desc | Est�o sendo geradas indevidamente notas que n�o tiverem recebimento no |
-| 82565 | 102106 | NE | Lib | Está apresentando indevidamente a mensagem 'Não existem dados para emi |
 | 82169 | 102075 | NE | Lib | MG-N�o est� sendo demonstrada a op��o "Considerar a data de emiss�o da |
 | 83383 | 102047 | NE | Desc | MG-Est� sendo gerado indevidamente o valor do estorno de d�bitos e/ou  |
 | 82838 | 102010 | NE | Lib | Est� permitindo agrupar a coluna 'A��es' indevidamente da 'Lista de pa |
@@ -47683,15 +47219,12 @@
 | 82836 | 101652 | NE | Lib | N�o est� reordenando a listagem de dados adicionais ao clicar nas colu |
 | 81757 | 101537 | NE | Lib | N�o est� importando notas simultaneamente quando possuem o mesmo produ |
 | 83027 | 101459 | SAL | Lib | SC-Alterar o sistema para calcular Estorno de Cr�ditos de Energia El�t |
-| 81678 | 101442 | NE | Lib | Não está demonstrando o nome do relatórios nas notificações de erro. |
 | 81602 | 101323 | NE | Lib | Est� ocorrendo o erro "Senha Inv�lida" no momento da importa��o quando |
 | 81685 | 101264 | NE | Lib | ES-Em alguns casos est�o sendo gerados valores diferentes referentes a |
 | 81479 | 101247 | NE | Lib | Est� importando notas incorretamente quando no cadastro da empresa pos |
-| 81516 | 101154 | SAM | Lib | Copiar informações de 'Livro caixa', 'Padrões' e 'Assinatura>Relatório |
 | 81686 | 101103 | NE | Lib | Em alguns casos n�o est� sendo gerada a linha "Ajuste de redu��o - Dev |
 | 81381 | 101074 | NE | Lib | Est� demonstrando incorretamente um espa�amento no demonstrativo DRE p |
 | 81522 | 101059 | SAM | Lib | RS-Alterar o sistema para realizar a importa��o conforme a nova estrut |
-| 81290 | 101017 | NE | Lib | Está ocorrendo lentidão na listagem de lançamentos contábeis. |
 | 81870 | 100955 | SAL | Lib | SC-Alterar o sistema para que n�o seja mais utilizada a tabela UFIR pa |
 | 81491 | 100847 | NE | Lib | SP-N�o est� sendo gerada a informa��o correta no campo "04-Pr�pria ou  |
 | 81151 | 100809 | NE | Lib | Est� ocorrendo erro de sistema ao realizar importa��o de notas no modo |
@@ -47705,25 +47238,18 @@
 | 80912 | 100180 | NE | Lib | Est� sendo gerado indevidamente valor na coluna "Exclus�es" do relat�r |
 | 80894 | 100164 | SAM | Lib | Realizar Testes no Web Service SEFAZ no ambiente do DW, ap�s a instala |
 | 81581 | 100092 | SAM | Lib | MT-Considerar a Inscri��o Estadual do destinat�rio para importar a NF- |
-| 80909 | 100075 | SAM | Lib | Alterar a mensagem apresentada ao destinatário do e-mail do relatório  |
-| 81195 | 100064 | SAM | Lib | Buscar dados para gerar as informações no rodapé dos Relatórios. |
 | 80832 | 99979 | NE | Pend | ES-N�o est� sendo importado a base de cr�dito de PIS/COFINS conforme c |
 | 80769 | 99783 | NE | Lib | Est�o sendo geradas as informa��es das notas fiscais na compet�ncia in |
 | 80751 | 99782 | NE | Lib | MG-Est� sendo gerado indevidamente na empresa matriz os lan�amentos de |
 | 80736 | 99761 | SAM | Lib | Parar o agente do Web Service SEFAZ do sistema ao realizar o processo  |
-| 80732 | 99741 | SAM | Lib | Ajustar as telas de relatórios para utilizar o mesmo componente criado |
 | 82394 | 99720 | SAL | Lib | RS-Alterar o sistema referente a informa��o gerada no campo 12 e 13 do |
 | 80748 | 99716 | SAM | Pend | Alterar o envio das notas ao BOX-e conforme novo link quando as notas  |
-| 80671 | 99626 | SAM | Lib | Mover o módulo de Relatórios para a Lib da Contabilidade. |
-| 80675 | 99612 | SAM | Lib | Criar uma rotina para executar na data o processo de Zeramento, Fecham |
 | 81603 | 99631 | NE | Lib | N�o est� demonstrando corretamente a label do bot�o 'Criar novo' de al |
 | 80739 | 99627 | NE | Lib | Est� sendo demonstrado indevidamente o lan�amento feito na janela "Con |
 | 82687 | 99621 | SAIL | Lib | Implementar a interface DARF DCTFWeb para o m�dulo Escrita Fiscal, e c |
 | 80744 | 99616 | NE | Lib | Est� emitindo incorretamente os saldos do "Demonstrativo PARTE B" quan |
 | 80740 | 99434 | NE | Lib | Em alguns casos n�o est� sendo gerado o relat�rio Demonstrativo PIS e  |
-| 80580 | 99406 | SAM | Lib | Rever arquitetura da emissão dos relatórios. |
 | 80666 | 99331 | NE | Lib | Em alguns casos n�o est� importando nota de entrada cancelada atrav�s  |
-| 81115 | 99282 | SAM | Lib | Validar e-mail duplicado quando enviado pela visualização dos relatóri |
 | 80651 | 99130 | SAL | Lib | RN-Incluir no sistema a Tabela de Itens UF �ndice de Participa��o dos  |
 | 81974 | 98969 | SAM | Lib | BA-Alterar o valor do imposto 8-DIFALI considerando a diferen�a de al� |
 | 81973 | 98936 | SAL | Lib | BA-Calcular o imposto 8-DIFALI considerando a diferen�a de al�quota in |
@@ -49559,8 +49085,8 @@
 | 13951 | 33595 | SAM | Desc | RS- Incluir a Insc. Estadual e o respons�vel da empresa no cabe�alho d |
 | 12900 | 33480 | SAM | Lib | MT-Considerar somente os �ltimos 9 digitos da inscri��o estadual para  |
 | 12537 | 33454 | SAM | Lib | Disponibilizar relacionamento com o Demonstrativo Fluxo de Caixa nos l |
-| 11840 | 33393 | SAM | Lib | Desenvolver Bloqueto Pr�-Impresso do Banco Bradesco     |
 | 11803 | 33385 | SAM | Lib | Permitir buscar contratos pelo nome do cliente na listagem de contrato |
+| 11840 | 33393 | SAM | Lib | Desenvolver Bloqueto Pr�-Impresso do Banco Bradesco     |
 | 11395 | 33341 | SAM | Lib | N�o permitir inserir/importar inscri��o estadual com menos de 11 d�git |
 | 10490 | 33227 | SAM | Lib | Ordenar as informa��es das colunas conforme clicado no cabe�alho da li |
 | 10485 | 33224 | SAM | Lib | Incluir n�mero do documento no relatorio de contas a pagar. |
@@ -49570,289 +49096,289 @@
 | 9886 | 33083 | SAM | Lib | SP-Otimizar a gera��o do informativo Nova GIA |
 | 9836 | 33068 | SAM | Lib | Otimizar a gera��o do arquivo Sintegra quando marcado a op��o para ger |
 | 9604 | 33015 | SAM | Lib | Buscar a taxa Selic informada no m�dulo Atualizar ao emitir a 3� parce |
-| 9377 | 32971 | SAM | Desc | Alterar o relat�rio Demonstrativo dos Impostos IRPJ para que os campos |
 | 9355 | 32963 | SAM | Desc | Emitir o demonstrativo de faturamento mesmo sem movimento. |
-| 9321 | 32945 | SAM | Desc | Incluir o m�s de refer�ncia nas observa��es da guia DARF da CSOC e IPR |
-| 9283 | 32931 | SAM | Lib | N�o listar notas sem valor de IRRF na guia DARF. |
+| 9377 | 32971 | SAM | Desc | Alterar o relat�rio Demonstrativo dos Impostos IRPJ para que os campos |
 | 9323 | 32947 | SAM | Lib | Posicionar o foco na linha do lan�amento selecionado na listagem do la |
+| 9283 | 32931 | SAM | Lib | N�o listar notas sem valor de IRRF na guia DARF. |
+| 9321 | 32945 | SAM | Desc | Incluir o m�s de refer�ncia nas observa��es da guia DARF da CSOC e IPR |
 | 9144 | 32882 | SAM | Desc | N�o permitir importa��o de clientes/fornecedores com c�digo de munic�p |
 | 8997 | 32836 | SAM | Desc | PR-Aumentar o quadro 05 do relat�rio GIA para que valores acima de 1.0 |
 | 8788 | 32760 | SAM | Lib | Disponibilizar demonstrativo DMPL nos Livros Cont�beis. |
-| 8771 | 32747 | SAM | Desc | Disponibilizar coluna "C�d. Recolhimento" na listagem do cadastro de i |
 | 8644 | 32723 | SAM | Desc | Disponibilizar coluna DMPL na listagem do plano de contas. |
+| 8771 | 32747 | SAM | Desc | Disponibilizar coluna "C�d. Recolhimento" na listagem do cadastro de i |
 | 8527 | 32696 | SAM | Desc | Incluir os campos CNPJ/CPF, Raz�o Social, e-mail, Insc. Estadual e Ins |
-| 8217 | 32588 | SAM | Desc | Exibir mensagem de confirma��o quando gravar o cadastro de clientes/fo |
 | 8279 | 32615 | SAM | Desc | Desconsiderar caracteres especiais para verificar se a inscri��o estad |
-| 8150 | 32566 | SAM | Desc | Demonstrar os valores lan�ados com as CFOPs 5.933/6.933 na coluna serv |
+| 8217 | 32588 | SAM | Desc | Exibir mensagem de confirma��o quando gravar o cadastro de clientes/fo |
 | 8183 | 32572 | SAM | Desc | RS-Alterar o relat�rio da GIA mensal emitido pelo sistema para que fiq |
+| 8150 | 32566 | SAM | Desc | Demonstrar os valores lan�ados com as CFOPs 5.933/6.933 na coluna serv |
 | 7887 | 32467 | SAM | Desc | Disponibilizar a listagem de c�dgio de recolhimento dos impostos no ca |
 | 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
 | 7714 | 32432 | SAM | Desc | Gerar o imposto IRRF no relatorio de impostos pagos. |
-| 7848 | 32457 | SAM | Desc | Retirar os modelos trimetraisdo menu Relatorio/Guia/Darf Normal. |
 | 7715 | 32433 | SAM | Desc | Retirar o campo "Total Geral" da coluna "Base de C�lculo" no relatorio |
+| 7848 | 32457 | SAM | Desc | Retirar os modelos trimetraisdo menu Relatorio/Guia/Darf Normal. |
+| 7358 | 32344 | SAM | Lib | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da |
 | 7357 | 32343 | SAM | Lib | Demonstrar os valores das notas de sa�das com cfop 5933/6933 na coluna |
 | 7359 | 32345 | SAM | Desc | Trazer o numero do telefone na emiss�o do DARF avulso. |
-| 7358 | 32344 | SAM | Lib | PR-Gravar a informa��o selecionada no grupo tipo da tela de emiss�o da |
-| 7168 | 32301 | SAM | Desc | Inserir na listagem dos lan�amentos cont�beis a coluna Data origem. |
 | 7219 | 32314 | SAM | Desc | Incluir vari�vel da UF da COMARCA para o Word. |
-| 6960 | 32267 | SAM | Lib | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Norma |
+| 7168 | 32301 | SAM | Desc | Inserir na listagem dos lan�amentos cont�beis a coluna Data origem. |
 | 7163 | 32297 | SAM | Lib | Na listagem dos lan�amentos padr�es n�o est� sendo transferido o lan�a |
-| 6656 | 32231 | SAM | Lib | Incluir nesse m�dulo o Relatorio Raz�o. |
-| 6693 | 32241 | SAM | Lib | Ajustar a gera��o do n�mero da nota que acoberta a carga de transporte |
-| 6697 | 32245 | SAM | Desc | Retirar a op��o "Energia" no campo agropecu�rio do cadastro de fornece |
-| 6686 | 32234 | SAM | Desc | Quando gerado o relatorio resumo dos impostos de um periodo sem movime |
-| 6843 | 32258 | SAM | Lib | SP-Otimizar processo de gera��o da GIA em relat�rio e arquivo.   |
-| 6691 | 32239 | SAM | Desc | Criar campo na emiss�o do DARF Simples Avulso para ser informado a Bas |
+| 6960 | 32267 | SAM | Lib | N�o disponibilizar o imposto Simples Nacional na emiss�o do Darf Norma |
 | 6857 | 32260 | SAM | Lib | Quando no cadastro da empresa o tipo de inscri��o for CEI, ao gerar o  |
+| 6843 | 32258 | SAM | Lib | SP-Otimizar processo de gera��o da GIA em relat�rio e arquivo.   |
+| 6656 | 32231 | SAM | Lib | Incluir nesse m�dulo o Relatorio Raz�o. |
+| 6686 | 32234 | SAM | Desc | Quando gerado o relatorio resumo dos impostos de um periodo sem movime |
+| 6697 | 32245 | SAM | Desc | Retirar a op��o "Energia" no campo agropecu�rio do cadastro de fornece |
+| 6693 | 32241 | SAM | Lib | Ajustar a gera��o do n�mero da nota que acoberta a carga de transporte |
+| 6691 | 32239 | SAM | Desc | Criar campo na emiss�o do DARF Simples Avulso para ser informado a Bas |
 | 6598 | 32222 | SAM | Lib | Quando realizado a importa��o de clientes e fornecedores deve ser cons |
-| 6481 | 32156 | SAM | Lib | Incluir o imposto INSS na rela��o de impostos a serem selecionados no  |
 | 6488 | 32163 | SAM | Desc | Disponibilizar op��o para emitir DARF e GPS avulsa. |
 | 6486 | 32161 | SAM | Lib | Incluir o imposto ICMS na rela��o de impostos a serem selecionados no  |
-| 6195 | 32097 | SAM | Lib | RS-Quando o valor de devolu��o de vendas for maior que o valor de vend |
-| 6329 | 32120 | SAM | Lib | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio cadastral de |
-| 6196 | 32098 | SAM | Lib | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das la |
+| 6481 | 32156 | SAM | Lib | Incluir o imposto INSS na rela��o de impostos a serem selecionados no  |
 | 6336 | 32121 | SAM | Lib | Quando lan�ado notas de entradas somente com ICMS com valor de IPI e S |
+| 6329 | 32120 | SAM | Lib | Disponibilizar a op��o "Descri��o pagina��o" no relat�rio cadastral de |
 | 6197 | 32099 | SAM | Desc | RS-Quando lan�ado um movimento de ajuste com opera��o por compensa��o  |
+| 6195 | 32097 | SAM | Lib | RS-Quando o valor de devolu��o de vendas for maior que o valor de vend |
+| 6196 | 32098 | SAM | Lib | Quando emitido o relatorio Demonstrativo de ISS, as notas de sa�das la |
 | 6243 | 32111 | SAM | Lib | Disponibilizar o bot�o listagem na tela de Adiantamentos. |
 | 5999 | 32065 | SAM | Desc | Disponibilizar a coluna NCM na ordem da listagem do cadastro de produt |
+| 6023 | 32081 | SAM | Desc | Gravar as altera��es feitas na sequencia das colunas da listagem da te |
 | 6003 | 32069 | SAM | Lib | Aumentar o tamanho do campo arquivo/caminho da tela de emiss�o do Sint |
 | 5992 | 32060 | SAM | Desc | Incluir na listagem do cadastro de produto a coluna NCM. |
-| 6023 | 32081 | SAM | Desc | Gravar as altera��es feitas na sequencia das colunas da listagem da te |
-| 5972 | 32045 | SAM | Desc | Alterar descri��o da vers�o na tela de emiss�o do Sintegra de 5.0.2 pa |
-| 5987 | 32055 | SAM | Desc | Criar op��o nos relatorios de acompanhamento de entradas e saidas de s |
 | 5989 | 32057 | SAM | Desc | Criar op��o de sele��o de empresas no relatorio Demosntrativo do fatur |
+| 5972 | 32045 | SAM | Desc | Alterar descri��o da vers�o na tela de emiss�o do Sintegra de 5.0.2 pa |
 | 5988 | 32056 | SAM | Lib | Criar no relat�rio de correspond�ncia uma caixa de texto para que seja |
+| 5987 | 32055 | SAM | Desc | Criar op��o nos relatorios de acompanhamento de entradas e saidas de s |
 | 5913 | 32012 | SAM | Lib | Alterar a descri��o Natureza para CFOP nos lan�amentos de notas e em t |
-| 5921 | 32016 | SAM | Desc | Criar um modelo de DARF Simples com vencimento |
 | 5912 | 32011 | SAM | Lib | RS-Quando gerar a GIA modelo B, gerar o campos das exclus�es do anexo  |
-| 5848 | 31959 | SAM | Desc | Na listagem de notas fiscais ao realizar uma busca por documento, o si |
+| 5921 | 32016 | SAM | Desc | Criar um modelo de DARF Simples com vencimento |
 | 5876 | 31977 | SAM | Lib | Disponibilizar as Guias de DARF no Gerador de Relat�rios |
-| 5854 | 31964 | SAM | Desc | MT-Ter a op��o de gerar a GIA multi empresa |
 | 5847 | 31958 | SAM | Desc | Criar um relatorio de lan�amentos padr�es. |
-| 5632 | 31940 | SAM | Lib | Quando emitido o relatorio demonstrativo mensal de um imposto trimestr |
-| 5845 | 31956 | SAM | Lib | AL-Criar nos livros registro de ICMS op��o, para Imprimir Demonstrativ |
+| 5854 | 31964 | SAM | Desc | MT-Ter a op��o de gerar a GIA multi empresa |
+| 5848 | 31959 | SAM | Desc | Na listagem de notas fiscais ao realizar uma busca por documento, o si |
 | 5633 | 31941 | SAM | Desc | Quando gerado os relatorios de acompanhamento de entradas e sa�das, ge |
+| 5845 | 31956 | SAM | Lib | AL-Criar nos livros registro de ICMS op��o, para Imprimir Demonstrativ |
+| 5632 | 31940 | SAM | Lib | Quando emitido o relatorio demonstrativo mensal de um imposto trimestr |
 | 5365 | 31899 | SAM | Lib | Ordenar listagem de empresas nos outros dados da DIPJ conforme clicado |
 | 5480 | 31920 | SAM | Desc | Incluir no relat�rio demonstrativos dos impostos um campo totalizador  |
-| 5353 | 31893 | SAM | Lib | Criar op��o para emiss�o dos relatorios cont�beis em outro idioma. |
 | 5344 | 31892 | SAM | Desc | Criar a op��o no relat�rio de Resumo dos impostos atualizados Previs�o |
-| 5333 | 31884 | SAM | Desc | Criar o cadastro de departamento para ser selecionado na emiss�o do pr |
-| 5322 | 31874 | SAM | Desc | N�o realizar as criticas de lan�amento de notas quando as mesmas estiv |
-| 5325 | 31877 | SAM | Lib | No relatorio de contas a receber, quando selecionado um agrupamento di |
-| 5336 | 31887 | SAM | Lib | Ao lan�ar notas com CFOP 5933 ou 6933 com ISS, no relatorio Saldo dos  |
-| 5330 | 31881 | SAM | Desc | Gravar o numero da folha por periodo no relatorio de caixa, para quand |
-| 5329 | 31880 | SAM | Desc | Imprimir no relatorio cadastral de empresas um totalizador com o total |
+| 5353 | 31893 | SAM | Lib | Criar op��o para emiss�o dos relatorios cont�beis em outro idioma. |
 | 5324 | 31876 | SAM | Desc | Criar op��o no relatorio de faturamento para ser listado somente as no |
-| 5283 | 31860 | SAM | Lib | Criar modelos gr�ficos dos relatorios acompanhamento Di�rio e Mensal. |
+| 5325 | 31877 | SAM | Lib | No relatorio de contas a receber, quando selecionado um agrupamento di |
+| 5322 | 31874 | SAM | Desc | N�o realizar as criticas de lan�amento de notas quando as mesmas estiv |
+| 5333 | 31884 | SAM | Desc | Criar o cadastro de departamento para ser selecionado na emiss�o do pr |
+| 5330 | 31881 | SAM | Desc | Gravar o numero da folha por periodo no relatorio de caixa, para quand |
+| 5336 | 31887 | SAM | Lib | Ao lan�ar notas com CFOP 5933 ou 6933 com ISS, no relatorio Saldo dos  |
+| 5329 | 31880 | SAM | Desc | Imprimir no relatorio cadastral de empresas um totalizador com o total |
 | 5144 | 31843 | SAM | Lib | Ao emitir o relatorio demonstrativo dos impostos PIS-66 e COFINS-NC de |
+| 5283 | 31860 | SAM | Lib | Criar modelos gr�ficos dos relatorios acompanhamento Di�rio e Mensal. |
 | 5109 | 31837 | SAM | Lib | Desabilitar o acesso ao relatorio de atividades realizadas � usu�rios  |
-| 4936 | 31806 | SAM | Lib | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar  |
-| 4994 | 31823 | SAM | Lib | Quando emitido o relatorio de reten��es a recolher deve somar os saldo |
-| 4857 | 31794 | SAM | Lib | Ao emitir o relatorio CLIENTE/TEMPO GASTO, n�o habilitar bot�o sele��o |
 | 4914 | 31803 | SAM | Lib | Alterar vers�o Validador Sintegra de 5.1.0 para 5.2.0 |
+| 4857 | 31794 | SAM | Lib | Ao emitir o relatorio CLIENTE/TEMPO GASTO, n�o habilitar bot�o sele��o |
+| 4994 | 31823 | SAM | Lib | Quando emitido o relatorio de reten��es a recolher deve somar os saldo |
+| 4936 | 31806 | SAM | Lib | SP-Quando realizado o c�lculo do ICMS para empresas ME ou EPP, gravar  |
 | 4762 | 31765 | SAM | Lib | Ao efetuar lan�amentos de notas seguimentadas de entradas ou saidas, e |
-| 4756 | 31762 | SAM | Desc | Disponibilizar os modelos da guia GPS no Gerador de Relatorios. |
 | 4816 | 31785 | SAM | Desc | Aumentar campo numero do telefone em todos relatorios e guias do siste |
-| 4766 | 31768 | SAM | Desc | PR-Gravar o caminho que foi informado para gera��o do arquivo da GIA. |
-| 4843 | 31793 | SAM | Desc | Criar no relatorio de Cliente/Tempo Gasto a op��o para ordenar por tem |
 | 4765 | 31767 | SAM | Lib | Disponibilizar consulta F2 no campo filial na tela de lan�amentos traz |
-| 4682 | 31738 | SAM | Desc | Desenvolver relatorio Resumo por naturezas. |
-| 4649 | 31732 | SAM | Lib | SC-Quando efetuado o cadastro de clientes e fornecedores com inscri��o |
+| 4766 | 31768 | SAM | Desc | PR-Gravar o caminho que foi informado para gera��o do arquivo da GIA. |
+| 4756 | 31762 | SAM | Desc | Disponibilizar os modelos da guia GPS no Gerador de Relatorios. |
+| 4843 | 31793 | SAM | Desc | Criar no relatorio de Cliente/Tempo Gasto a op��o para ordenar por tem |
 | 4641 | 31726 | SAM | Lib | No Relatorio/Contribui??o Social, quando existe exclus?es e adi??es co |
-| 4642 | 31727 | SAM | Lib | No Relatorio/Imposto de Renda, quando existe exclus?es e adi??es com a |
-| 4627 | 31719 | SAM | Desc | SC-Gerar o relatorio da DIME em modo matricial. |
-| 4718 | 31746 | SAM | Desc | Desenvolver relatorio Ficha Cadastral Pessoa F�sica. |
-| 4684 | 31740 | SAM | Desc | Desenvolver relatorio DACON. |
 | 4646 | 31729 | SAM | Desc | Criar op��o para emitir as Guias DARF, DARC e DARE avulsas. |
+| 4684 | 31740 | SAM | Desc | Desenvolver relatorio DACON. |
+| 4649 | 31732 | SAM | Lib | SC-Quando efetuado o cadastro de clientes e fornecedores com inscri��o |
+| 4627 | 31719 | SAM | Desc | SC-Gerar o relatorio da DIME em modo matricial. |
+| 4642 | 31727 | SAM | Lib | No Relatorio/Imposto de Renda, quando existe exclus?es e adi??es com a |
+| 4682 | 31738 | SAM | Desc | Desenvolver relatorio Resumo por naturezas. |
+| 4718 | 31746 | SAM | Desc | Desenvolver relatorio Ficha Cadastral Pessoa F�sica. |
+| 4584 | 31707 | SAM | Lib | Ordenar a listagem na tela de baixa de faturamento conforme clicado no |
 | 4561 | 31697 | SAM | Desc | Criar op��o no relatorio comparativo de entradas e saidas para, para q |
 | 4542 | 31691 | SAM | Lib | SC-Alterar formata��o do campo Inscri��o Estadual na impress�o da DIME |
-| 4584 | 31707 | SAM | Lib | Ordenar a listagem na tela de baixa de faturamento conforme clicado no |
-| 4588 | 31710 | SAM | Desc | No relatorio de posi��o, preservar a data de vencimento, mesmo que o d |
 | 4529 | 31686 | SAM | Lib | Permitir a emiss�a do relatorio de Acompanhamento/Impostos/Resumo Trim |
-| 4617 | 31716 | SAM | Lib | SC-Quando realizado importa��o de notas de entrada com modelo de esp�c |
 | 4619 | 31718 | SAM | Lib | Disponibilizar op��o para parcelamento de impostos trimestrais e a emi |
-| 4383 | 31652 | SAM | Lib | Alterar a op��o no relatorio de notas emitidas para selecionar data de |
+| 4617 | 31716 | SAM | Lib | SC-Quando realizado importa��o de notas de entrada com modelo de esp�c |
+| 4588 | 31710 | SAM | Desc | No relatorio de posi��o, preservar a data de vencimento, mesmo que o d |
 | 4440 | 31662 | SAM | Desc | Disponibilizar o INSS para sele��o na emiss�o do relatorio resumo dos  |
-| 4355 | 31641 | SAM | Lib | SE-Quando selecionado o campo Optante do Tare, nos parametros, abrir u |
+| 4383 | 31652 | SAM | Lib | Alterar a op��o no relatorio de notas emitidas para selecionar data de |
+| 4351 | 31639 | SAM | Lib | Ao utilizar a vari�vel, d�gito verificador da conta corrente em um blo |
+| 4321 | 31625 | SAM | Lib | Criar no relatorio Saldo dos impostos op��o para selecionar somente um |
 | 4344 | 31635 | SAM | Lib | Desenvolver Relatorio de Custo Benef�cio |
+| 4355 | 31641 | SAM | Lib | SE-Quando selecionado o campo Optante do Tare, nos parametros, abrir u |
 | 4320 | 31624 | SAM | Lib | No relatorio de reten��es a recolher, listar tamb�m o FUNRURAL lan�ado |
 | 4305 | 31618 | SAM | Desc | Desenvolver relatorio Controle de lan�amentos, que fornecer� total de  |
 | 4312 | 31619 | SAM | Lib | Desenvolver relatorio de Bloquetos Emitidos. |
-| 4351 | 31639 | SAM | Lib | Ao utilizar a vari�vel, d�gito verificador da conta corrente em um blo |
-| 4321 | 31625 | SAM | Lib | Criar no relatorio Saldo dos impostos op��o para selecionar somente um |
-| 4176 | 31579 | SAM | Desc | Nas baixas de entradas, saidas e servi�os quando efetuado uma sele��o  |
 | 4177 | 31580 | SAM | Lib | Quando efetuada a importa��o de clientes/fornecedores mostrar a mensag |
+| 4176 | 31579 | SAM | Desc | Nas baixas de entradas, saidas e servi�os quando efetuado uma sele��o  |
 | 4192 | 31587 | SAM | Desc | Incluir no relatorio Gr�fico do Faturamento, cabe�alho com os dados da |
-| 4123 | 31553 | SAM | Lib | Criar no relatorio de Faturamento op��o de emitir somente o Relat�rio  |
-| 4110 | 31545 | SAM | Lib | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que p |
-| 4125 | 31555 | SAM | Desc | No relatorio de acompanhamentro de entradas e saidas, aumentar o taman |
 | 4126 | 31556 | SAM | Desc | Na tela de emiss�o em grupo disponibilizar op��o para ordenar a listag |
 | 4108 | 31543 | SAM | Lib | No processo de reajuste de contrato e reajuste de eventos fixos, orden |
+| 4125 | 31555 | SAM | Desc | No relatorio de acompanhamentro de entradas e saidas, aumentar o taman |
+| 4110 | 31545 | SAM | Lib | Ao emitir um relatorio demosntrativo dos impostos de uma empresa que p |
+| 4123 | 31553 | SAM | Lib | Criar no relatorio de Faturamento op��o de emitir somente o Relat�rio  |
+| 4078 | 31530 | SAM | Lib | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/imp |
+| 4107 | 31542 | SAM | Lib | Criar modelo de relatorio para impressoras Laser e Deskjet do relatori |
 | 3934 | 31510 | SAM | Lib | Criar um totalizador no final do relatorio de notas emitidas. |
 | 4102 | 31537 | SAM | Lib | Quando importado notas de entrada com modelo de esp�cie 08 ou 09, n�o  |
 | 3936 | 31512 | SAM | Desc | Quando emitido o relatorio de acumulador completo n�o existir nenhum i |
-| 4078 | 31530 | SAM | Lib | No relatorio de Reten��es a recolher "Em relatorios/acompanhamento/imp |
-| 4107 | 31542 | SAM | Lib | Criar modelo de relatorio para impressoras Laser e Deskjet do relatori |
-| 3869 | 31472 | SAM | Lib | Desenvolver relatorio Comparativo de movimento. |
-| 3873 | 31474 | SAM | Desc | Incluir no relatorio Resumo da Deprecia��o a Taxa de Deprecia��o Alter |
 | 3899 | 31489 | SAM | Lib | Criar sele��o no relatorio de tarefas realizadas para considerar a dat |
+| 3914 | 31499 | SAM | Lib | Ao imprimir o livro parte B em modo retrato sistema corta colunas do r |
+| 3873 | 31474 | SAM | Desc | Incluir no relatorio Resumo da Deprecia��o a Taxa de Deprecia��o Alter |
+| 3876 | 31476 | SAM | Lib | Na emiss�o do DARF da contribui��o social, alterar a descri��o da sigl |
 | 3908 | 31494 | SAM | Desc | Criar op��o no relatorio de ICMS creditado op��o para emitir de v�rias |
 | 3900 | 31490 | SAM | Lib | Criar op��o no relatorio de tarefas realizadas para selecionar um ou m |
-| 3914 | 31499 | SAM | Lib | Ao imprimir o livro parte B em modo retrato sistema corta colunas do r |
-| 3876 | 31476 | SAM | Lib | Na emiss�o do DARF da contribui��o social, alterar a descri��o da sigl |
+| 3869 | 31472 | SAM | Lib | Desenvolver relatorio Comparativo de movimento. |
 | 3844 | 31451 | SAM | Lib | Criar op��o na impress�o do relatorio de faturamento para separar clie |
-| 3831 | 31443 | SAM | Lib | Desenvolver Relatorio para verificar a falta de lan�amento de alguma n |
-| 3866 | 31469 | SAM | Desc | Ao imprimir o gr�fico PIZZA de uma an�lise vertical do balan�o, n�o fo |
-| 3810 | 31435 | SAM | Lib | Ao emitir os DARF''s modelos Jato de Tinta, destacar em negrito as dat |
 | 3814 | 31437 | SAM | Desc | Cria op��o no regime estadual de Isenta e no relatorio cadastral de em |
 | 3863 | 31466 | SAM | Desc | Criar no relatorio de movimenta��es estaduais, op��o para listar somen |
+| 3831 | 31443 | SAM | Lib | Desenvolver Relatorio para verificar a falta de lan�amento de alguma n |
 | 3865 | 31468 | SAM | Lib | Criar no relatorio de acompanhamento de entradas colunas com valores d |
+| 3810 | 31435 | SAM | Lib | Ao emitir os DARF''s modelos Jato de Tinta, destacar em negrito as dat |
+| 3866 | 31469 | SAM | Desc | Ao imprimir o gr�fico PIZZA de uma an�lise vertical do balan�o, n�o fo |
 | 3851 | 31458 | SAM | Lib | Criar no relatorio de lan�amentos op��o para selecionar o tipo. |
 | 3632 | 31401 | SAM | Lib | SC-Trazer na lista de empresas para digita��o dos dados mensais e dado |
-| 3742 | 31411 | SAM | Lib | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as |
 | 3747 | 31412 | SAM | Lib | MT-Aumentar o tamanho dos campos Saldo inicial e final de caixa/banco  |
 | 3766 | 31419 | SAM | Lib | Na impress�o de um DARF imprimir a data para pagamento no campo das ob |
 | 3669 | 31407 | SAM | Lib | Incluir HELP na Integra��o com o EXCEL, estrutura do DRE e emiss�o do  |
-| 3426 | 31332 | SAM | Desc | No relatorio de protocolos emitidos pendentes, listar tamb�m os protoc |
-| 3459 | 31350 | SAM | Desc | Criar uma op��o no relat�rio Demonstrativo Mensal para Somar ou N�o as |
+| 3742 | 31411 | SAM | Lib | MT-Ao entrar nos outros dados de GIA o pelido da empresa est� sobre as |
 | 3441 | 31341 | SAM | Desc | Na impress�o do livro de ISS, imprimit o demosntrativo logo ap�s a lis |
+| 3426 | 31332 | SAM | Desc | No relatorio de protocolos emitidos pendentes, listar tamb�m os protoc |
 | 3442 | 31342 | SAM | Desc | RS-Criar op��o no relatorio de acompanhamento de esclus�es de agrupame |
-| 3249 | 31302 | SAM | Lib | Ao emitir o livro de ISS, quando em m�s der mais de uma p�gina n�o est |
-| 3409 | 31323 | SAM | Desc | Demonstrar no relat�rio Demonstrativo/Impostos Calculados os valores d |
+| 3459 | 31350 | SAM | Desc | Criar uma op��o no relat�rio Demonstrativo Mensal para Somar ou N�o as |
 | 3419 | 31330 | SAM | Lib | Ao realizar importa��o de fornecedores sistema est� completando o camp |
+| 3249 | 31302 | SAM | Lib | Ao emitir o livro de ISS, quando em m�s der mais de uma p�gina n�o est |
 | 3407 | 31322 | SAM | Desc | Colocar o relat�rio Demonstrativo ISSQN no gerador de relat�rios. |
-| 3151 | 31272 | SAM | Lib | No relatorio cadastral de eventos criar sele��o de somente os eventos  |
+| 3409 | 31323 | SAM | Desc | Demonstrar no relat�rio Demonstrativo/Impostos Calculados os valores d |
 | 3203 | 31289 | SAM | Lib | PR-Aumentar o tamanho do campo Valor da Folha nos outros dados da GIA. |
-| 3110 | 31258 | SAM | Desc | Quando clicar F2 nos campos cliente/fornecedor na tela dos relatorios  |
-| 3105 | 31256 | SAM | Desc | PR-Na importa��o do valor da folha nos outros dados da GIA, se no m�s  |
-| 3045 | 31246 | SAM | Desc | Nos relatorios Resumo dos impostos e Demonstativo de impostos calculad |
+| 3151 | 31272 | SAM | Lib | No relatorio cadastral de eventos criar sele��o de somente os eventos  |
+| 3050 | 31248 | SAM | Lib | Otimizar o tempo de gera��o do arquivo para o SINTEGRA. |
 | 3090 | 31253 | SAM | Desc | Ao emitir o livro diario, o sistema mostra primeiro um valor a debito  |
+| 3027 | 31241 | SAM | Lib | Na emiss�o do Livro de ISS criar bot�o outros dados para ser preenchid |
 | 2992 | 31233 | SAM | Desc | No relat�rio Demonstrativo/Faturamento incluir o numero do endere�o da |
+| 3105 | 31256 | SAM | Desc | PR-Na importa��o do valor da folha nos outros dados da GIA, se no m�s  |
+| 3110 | 31258 | SAM | Desc | Quando clicar F2 nos campos cliente/fornecedor na tela dos relatorios  |
+| 3045 | 31246 | SAM | Desc | Nos relatorios Resumo dos impostos e Demonstativo de impostos calculad |
 | 3040 | 31243 | SAM | Desc | Quando cadastrado um s�cio em que no nome contem um ap�stofre(aspa sim |
 | 3024 | 31239 | SAM | Desc | No relatorio de acompanhamento de sa�das, aumentar o tamanho do campo  |
-| 3027 | 31241 | SAM | Lib | Na emiss�o do Livro de ISS criar bot�o outros dados para ser preenchid |
-| 3050 | 31248 | SAM | Lib | Otimizar o tempo de gera��o do arquivo para o SINTEGRA. |
-| 2928 | 31211 | SAM | Desc | SC-Tirar a op��o para impress�o de DAE(Estadual) Avulso. |
 | 2927 | 31210 | SAM | Desc | Criar op��o no relatorio de lan�amentos para ser listado somente quand |
+| 2928 | 31211 | SAM | Desc | SC-Tirar a op��o para impress�o de DAE(Estadual) Avulso. |
+| 2938 | 31213 | SAM | Lib | Na guia DARF Simples modelos matricial e matricial c/vencto no quadro  |
 | 2921 | 31206 | SAM | Lib | Criar no relatorio de acompanhamento a op��o de selecionar mais de uma |
 | 2957 | 31219 | SAM | Lib | Criar op��o pela selecionar o usu�rio no relatorio de Usu�rio Tempo Ga |
-| 2938 | 31213 | SAM | Lib | Na guia DARF Simples modelos matricial e matricial c/vencto no quadro  |
+| 2854 | 31187 | SAM | Lib | Na impress�o do DARF normal mostrar os impostos PIS-66 e COFINS-NC, me |
+| 2844 | 31180 | SAM | Lib | Nos relatorios de acompanhamento de entradas, saidas e servi�os listar |
 | 2847 | 31182 | SAM | Lib | Criar op��o para que no relatorio Pedido de Uso, no campos que se refe |
 | 2823 | 31172 | SAM | Lib | Ao gerar o arquivo para o SINTEGRA o registro 51 s� pode ser gerado pa |
-| 2844 | 31180 | SAM | Lib | Nos relatorios de acompanhamento de entradas, saidas e servi�os listar |
-| 2854 | 31187 | SAM | Lib | Na impress�o do DARF normal mostrar os impostos PIS-66 e COFINS-NC, me |
 | 2741 | 31134 | SAM | Desc | Criar op��o para imprimir os dados complementares, no relatorio de Pro |
+| 2756 | 31138 | SAM | Lib | Quando for emitido um documento de cobran�a e o numero de itens ultrap |
 | 2785 | 31155 | SAM | Lib | Otimizar tempo de gera��o do arquivo Sintegra. |
 | 2793 | 31159 | SAM | Lib | Inserir no relatorio Rela��o de Contratos somatoria das colunas Valor  |
-| 2756 | 31138 | SAM | Lib | Quando for emitido um documento de cobran�a e o numero de itens ultrap |
-| 2684 | 31110 | SAM | Desc | Criar nos relatorios de contas a pagar e receber, na sele��o da situa� |
-| 2683 | 31109 | SAM | Desc | Na Guia DARF(Simples Deskjet e matricial) 2 vias c/vencimento,no campo |
 | 2668 | 31100 | SAM | Lib | Disponibilizar o relatorio de lan�amentos fiscais quando nos par�metro |
-| 2699 | 31118 | SAM | Desc | Criar op��o de informar a data de vencimento, na guia Darf Simples Avu |
+| 2683 | 31109 | SAM | Desc | Na Guia DARF(Simples Deskjet e matricial) 2 vias c/vencimento,no campo |
+| 2684 | 31110 | SAM | Desc | Criar nos relatorios de contas a pagar e receber, na sele��o da situa� |
 | 2659 | 31098 | SAM | Lib | SP-Retirar a op��o de Relatorios/Informativos/GIA. |
+| 2699 | 31118 | SAM | Desc | Criar op��o de informar a data de vencimento, na guia Darf Simples Avu |
+| 2601 | 31064 | SAM | Desc | MT-Criar nos par�metros um campo chamado Inicio Atividades e quando fo |
+| 2652 | 31091 | SAM | Desc | No relatorio resumo por acumulador, criar op��o para listar valores da |
+| 2618 | 31074 | SAM | Desc | Aumentar o tamanho da visualiza��o na listagem dos itens das tabelas m |
+| 2622 | 31077 | SAM | Lib | No demonstrativo ISSQN possui no texto final a palavra "seguinte" escr |
+| 2636 | 31085 | SAM | Desc | Desenvolver relatorio de acompanhamento de dados do conhecimento. |
 | 2603 | 31066 | SAM | Desc | Na tela de emiss�o dos DARF''s gravar a op��o de Imprime total da DARF |
 | 2599 | 31062 | SAM | Desc | Criar no relat�rio/demonstrativo/impostos calculados, um total dos acu |
-| 2601 | 31064 | SAM | Desc | MT-Criar nos par�metros um campo chamado Inicio Atividades e quando fo |
 | 2628 | 31081 | SAM | Lib | Quando emitir relatorio de concilia��o banc�ria ordenar sempre em orde |
-| 2652 | 31091 | SAM | Desc | No relatorio resumo por acumulador, criar op��o para listar valores da |
 | 2643 | 31088 | SAM | Desc | No relatorio de Protocolos Emitidos criar op��o para selecionar por ti |
-| 2622 | 31077 | SAM | Lib | No demonstrativo ISSQN possui no texto final a palavra "seguinte" escr |
-| 2618 | 31074 | SAM | Desc | Aumentar o tamanho da visualiza��o na listagem dos itens das tabelas m |
-| 2636 | 31085 | SAM | Desc | Desenvolver relatorio de acompanhamento de dados do conhecimento. |
 | 2575 | 31041 | SAM | Desc | No relatorio Resumo de Impostos Atualizados, criar op��o de ordem de I |
 | 2580 | 31046 | SAM | Lib | Salvar a ordem escolhida na listagem de empresas que traz no canto sup |
 | 2490 | 31009 | SAM | Desc | Na emiss�o dos livros de Entradas, Saidas e ICMS gravar as op��es da j |
 | 2429 | 30994 | SAM | Lib | No relatorio raz�o n�o permitir que o usuario selecione a mesma conta  |
-| 2340 | 30958 | SAM | Lib | Em relatorio Acompanhamento/ecf colocar a data do lan�amento. |
-| 2387 | 30971 | SAM | Desc | Quando o relatorio de lan�amentos for emitido consolidado identificar  |
-| 2407 | 30978 | SAM | Lib | Quando emitido o relatorio de saldos, sistema n�o est� considerando o  |
-| 2371 | 30967 | SAM | Lib | Ter op��o no relatorio de plano de contas e no balancete de quebrar pa |
-| 2410 | 30980 | SAM | Lib | No relatorio de cliente tempo gasto modelo completo e resumido ter no  |
 | 2420 | 30988 | SAM | Desc | Disponibilizar no Gerador de Relat�rios o Relatorio Demonstrativo Mens |
+| 2407 | 30978 | SAM | Lib | Quando emitido o relatorio de saldos, sistema n�o est� considerando o  |
 | 2419 | 30987 | SAM | Desc | Quando emitido o relatorio resumo dos impostos somente com a op��o Pis |
+| 2371 | 30967 | SAM | Lib | Ter op��o no relatorio de plano de contas e no balancete de quebrar pa |
 | 2402 | 30977 | SAM | Desc | No relatorio de acompanhamento de exclus�es ter op��o de Sintetico ou  |
-| 2409 | 30979 | SAM | Desc | No relatorio de movimento individual do produto ter op��o de pagina in |
-| 2390 | 30972 | SAM | Desc | No relatorio demonstrativo mensal, ter op��o de escolher o Indice para |
-| 2415 | 30984 | SAM | Desc | No relatorio de mapa da integra��o cont�bil ter op��o de PJ e DIPJ. |
+| 2340 | 30958 | SAM | Lib | Em relatorio Acompanhamento/ecf colocar a data do lan�amento. |
 | 2394 | 30974 | SAM | Lib | SC-Ter op��o de gerar arquivo e relatorios para guia DARE-SC, para o i |
-| 2358 | 30959 | SAM | Desc | Disponibilizar a DMPS - Demonstra��o das Muta��es do Patrim�nio Social |
 | 2370 | 30966 | SAM | Desc | Ter op��o de emitir o relatorio Resumo dos Impostos de mais de um peri |
-| 2338 | 30956 | SAM | Desc | No cadastro de Produtos quando teclar F2 no campo Grupo trazer a lista |
+| 2387 | 30971 | SAM | Desc | Quando o relatorio de lan�amentos for emitido consolidado identificar  |
+| 2410 | 30980 | SAM | Lib | No relatorio de cliente tempo gasto modelo completo e resumido ter no  |
+| 2390 | 30972 | SAM | Desc | No relatorio demonstrativo mensal, ter op��o de escolher o Indice para |
+| 2358 | 30959 | SAM | Desc | Disponibilizar a DMPS - Demonstra��o das Muta��es do Patrim�nio Social |
+| 2415 | 30984 | SAM | Desc | No relatorio de mapa da integra��o cont�bil ter op��o de PJ e DIPJ. |
+| 2409 | 30979 | SAM | Desc | No relatorio de movimento individual do produto ter op��o de pagina in |
 | 2189 | 30930 | SAM | Lib | Discriminar nos relatorios de acompanhamento de Entradas, saidas e ser |
 | 2339 | 30957 | SAM | Desc | Criar op��o para poder ordenar o relatorio de acompanhamenot Lan�ament |
-| 2143 | 30912 | SAM | Lib | No relatorio cadastral de bens ter op��o de imprimir tamb�m o historic |
+| 2338 | 30956 | SAM | Desc | No cadastro de Produtos quando teclar F2 no campo Grupo trazer a lista |
 | 2171 | 30922 | SAM | Desc | No relatorio resumo dos impostos na apura��o do lucro presumido, discr |
-| 2129 | 30908 | SAM | Desc | Criar no menu utilitarios op��o de Estruturas -> DRE, DLPA e DOAR e qu |
 | 2147 | 30915 | SAM | Lib | RS-No relatorio, acompanhamento, Sumario Entradas/Saidas modelo 1 apar |
+| 2129 | 30908 | SAM | Desc | Criar no menu utilitarios op��o de Estruturas -> DRE, DLPA e DOAR e qu |
+| 2143 | 30912 | SAM | Lib | No relatorio cadastral de bens ter op��o de imprimir tamb�m o historic |
+| 1979 | 30871 | SAM | Lib | Ter no relatorio de usuario tempo gasto, a op��o de agrupar por sistem |
+| 2042 | 30886 | SAM | Lib | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o comp |
+| 1974 | 30870 | SAM | Lib | Criar nos relatorios de acompanhamento de entradas e saidas, a op��o d |
+| 2109 | 30898 | SAM | Lib | Ter op��o nos demonstrativos DOAR e DLPA de informar o numero do livro |
 | 2115 | 30900 | SAM | Lib | Desenvolver relatorio de acompanhamento dos valores de CRF,PIS Retido, |
 | 2035 | 30882 | SAM | Lib | MS - Aumentar o espa�o para informar o nome do arquivo da GIA |
-| 2042 | 30886 | SAM | Lib | No relatorio Acompanhamento/Lan�amento quando selecionado a op��o comp |
-| 2109 | 30898 | SAM | Lib | Ter op��o nos demonstrativos DOAR e DLPA de informar o numero do livro |
-| 1974 | 30870 | SAM | Lib | Criar nos relatorios de acompanhamento de entradas e saidas, a op��o d |
-| 1979 | 30871 | SAM | Lib | Ter no relatorio de usuario tempo gasto, a op��o de agrupar por sistem |
-| 1964 | 30863 | SAM | Lib | Quando um cadastro de produtos � editado pela listagem, ao altera a qu |
+| 1839 | 30836 | SAM | Lib | SC-Alterar arquivo GIA conforme novo layout. |
 | 1926 | 30852 | SAM | Lib | RS-Ter op��o de informar o C�digo para entrega da GIA. |
+| 1928 | 30853 | SAM | Desc | Nos relatorios de acompanhamentos de entradas, saidas e servi�os quand |
+| 1964 | 30863 | SAM | Lib | Quando um cadastro de produtos � editado pela listagem, ao altera a qu |
 | 1834 | 30834 | SAM | Lib | PR-Disponibilizar a op��o de despesas no bot�o outros dados da GIA. |
 | 1963 | 30862 | SAM | Lib | No DARF SImples Avulso, quando desmarcado a op��o Imprimir Total do Da |
-| 1839 | 30836 | SAM | Lib | SC-Alterar arquivo GIA conforme novo layout. |
-| 1928 | 30853 | SAM | Desc | Nos relatorios de acompanhamentos de entradas, saidas e servi�os quand |
-| 1814 | 30822 | SAM | Desc | Quando emitir o relatorio cadastral de bens e marcar a op��o agrega be |
 | 1786 | 30816 | SAM | Lib | Ao editar uma nota pela listagem o lado esquerdo da nota fica cinza. |
+| 1814 | 30822 | SAM | Desc | Quando emitir o relatorio cadastral de bens e marcar a op��o agrega be |
 | 1732 | 30792 | SAM | Desc | Colocar op��o para somar o valor das filiais no relatorio demonstrativ |
-| 1721 | 30788 | SAM | Lib | Nos relatorios de acompanhamento de entradas e saidas, incluir a sele� |
-| 1737 | 30795 | SAM | Desc | No relat�rio que � emitido atrav�s do bot�o Rela��o (menu controle/emp |
 | 1715 | 30785 | SAM | Lib | Criar relatorio que conste os clientes que excederam os valores inform |
 | 1729 | 30791 | SAM | Desc | No relatorio de acompanhamento, permitir informar conta sintetica para |
 | 1689 | 30775 | SAM | Lib | MT - No livro de entrada ao lado da raz�o social do forncedor sair a I |
+| 1737 | 30795 | SAM | Desc | No relat�rio que � emitido atrav�s do bot�o Rela��o (menu controle/emp |
+| 1721 | 30788 | SAM | Lib | Nos relatorios de acompanhamento de entradas e saidas, incluir a sele� |
 | 1572 | 30737 | SAM | Lib | Em alguns relatorios quando o tempo ultrapassa a 100 minutos, sistema  |
-| 1646 | 30760 | SAM | Lib | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri�� |
-| 1580 | 30743 | SAM | Lib | PR-Disponibilizar no relat�rio DAE(Estadual)Avulso os campos 18, 19 e  |
 | 1608 | 30748 | SAM | Lib | Ter no relatorio de contas a receber, opcao de agrupamento geral. |
+| 1580 | 30743 | SAM | Lib | PR-Disponibilizar no relat�rio DAE(Estadual)Avulso os campos 18, 19 e  |
+| 1646 | 30760 | SAM | Lib | Quando estiver lan�ando notas de saidas/entradas/servi�os pela incri�� |
 | 1470 | 30696 | SAM | Lib | Aumentar o tamanho do campo de % de multa e juros na tela de emiss�o d |
+| 1473 | 30697 | SAM | Desc | No relat�rio Demonstrativo Mensal ter a op��o de selecionar o indice. |
 | 1510 | 30715 | SAM | Lib | No relatorio de concilia��o bancaria, mostrar o saldo final do extrato |
 | 1513 | 30717 | SAM | Lib | Criar op��o de Intervalo e Ordem de Departamento, no relatorio cadastr |
-| 1473 | 30697 | SAM | Desc | No relat�rio Demonstrativo Mensal ter a op��o de selecionar o indice. |
 | 1309 | 30667 | SAM | Desc | Ao emitir relatorios de contas a pagar e receber, ter op��o de totaliz |
+| 1231 | 30641 | SAM | Lib | Ter a op��o nos relatorios de contas a pagar e receber de informar uma |
 | 1185 | 30618 | SAM | Lib | No relatorio extrato de clientes n�o emitir clientes sem movimento no  |
 | 1184 | 30617 | SAM | Lib | No final do relatorio Extrato de Clientes, ter um Total Geral. |
 | 1213 | 30630 | SAM | Lib | RS-Criar ajuste para que some somente no campo 02(Creditos por Importa |
 | 1233 | 30643 | SAM | Desc | No relatorio resumo dos impostos, discriminar as bases por mes quando  |
-| 1231 | 30641 | SAM | Lib | Ter a op��o nos relatorios de contas a pagar e receber de informar uma |
-| 1221 | 30634 | SAM | Lib | No relatorio previs�o para pagamento, sistema deve considerar o valor  |
 | 1212 | 30629 | SAM | Desc | No relatorio Informativos/Resumos/Municio a descri��o est� Entrada de  |
+| 1221 | 30634 | SAM | Lib | No relatorio previs�o para pagamento, sistema deve considerar o valor  |
 | 1182 | 30615 | SAM | Lib | No relatorio contas a receber ter op��o para sair o saldo at� uma dete |
 | 1183 | 30616 | SAM | Lib | No relatorio Extrato de Clientes criar op��o para sar analitico, discr |
 | 982 | 30554 | SAM | Lib | Aumentar o espa�o para impress�o do titulo do Balan�o.  O espa�o para  |
-| 1009 | 30567 | SAM | Lib | Ao cadastrar uma empresa o sistema deveria realizar a valida��o da Ins |
 | 996 | 30564 | SAM | Lib | O sistema s� abre a op��o para ECF quando chega no �ltimo seguimento d |
+| 1009 | 30567 | SAM | Lib | Ao cadastrar uma empresa o sistema deveria realizar a valida��o da Ins |
 | 899 | 30529 | SAM | Lib | Cliente de Tocantins com CNPJ 38.127.916/0001-80 com Inscri��o Estadua |
 | 845 | 30509 | SAM | Lib | Criar um relatorio,Extrato de Clientes, onde possa imprimir o saldo an |
-| 850 | 30513 | SAM | Lib | SC-Incluir o nome e codigo da empresa no relatorio da GIA emitido pelo |
-| 776 | 30490 | SAM | Lib | Relatorio Resumo dos Impostos, fazer um quebra para totalizar por impo |
-| 772 | 30489 | SAM | Desc | Gerar arquivo Sintegra separado por opera��es por Estado. |
 | 839 | 30505 | SAM | Lib | Ter op��o de gerar o arquivo (sintegra) somente de Entradas ou somente |
+| 772 | 30489 | SAM | Desc | Gerar arquivo Sintegra separado por opera��es por Estado. |
+| 776 | 30490 | SAM | Lib | Relatorio Resumo dos Impostos, fazer um quebra para totalizar por impo |
 | 794 | 30497 | SAM | Lib | Disponibilizar os termos de abertura e encerramento no gerador de rela |
+| 850 | 30513 | SAM | Lib | SC-Incluir o nome e codigo da empresa no relatorio da GIA emitido pelo |
+| 708 | 30474 | SAM | Lib | No caminho a ser gravado o sintegra, memorizar o ultimo caminho coloca |
 | 707 | 30473 | SAM | Desc | Incluir um campo nos DARFs avulsos para informar a data de recolhiment |
 | 713 | 30478 | SAM | Lib | Liberar este realt�rio DOAR para ser reconfigurado pelo gerador de rel |
-| 708 | 30474 | SAM | Lib | No caminho a ser gravado o sintegra, memorizar o ultimo caminho coloca |
-| 645 | 30457 | SAM | Lib | Ter op��o no relatorio resumo dos impostos, de ser sintetico(como sai  |
-| 672 | 30464 | SAM | Desc | Existe Espa�o entre o Cabe�alho e os registro das Notas Fiscais nos Li |
 | 643 | 30456 | SAM | Desc | Criar o mesmo relatorios que existia no honorarios antigo, em Relatori |
+| 672 | 30464 | SAM | Desc | Existe Espa�o entre o Cabe�alho e os registro das Notas Fiscais nos Li |
+| 645 | 30457 | SAM | Lib | Ter op��o no relatorio resumo dos impostos, de ser sintetico(como sai  |
+| 574 | 30433 | SAM | Lib | Criar campo para digita��o de observa��o nas darf�s do atualizar |
+| 579 | 30435 | SAM | Lib | No menu da Escrita Fiscal alterar Descri��o de Gia Mensal em Disquete  |
 | 565 | 30426 | SAM | Lib | Incluir modelo darf/ trimestral/matricial.Para formularios branco. |
 | 566 | 30427 | SAM | Lib | Na emiss�o da DARF simples avulso, no campo da data, o ano est� saindo |
-| 567 | 30428 | SAM | Lib | Incluir o CNPJ e Inscri��o Estadual no relatorio de  Impostos Calculad |
-| 579 | 30435 | SAM | Lib | No menu da Escrita Fiscal alterar Descri��o de Gia Mensal em Disquete  |
-| 574 | 30433 | SAM | Lib | Criar campo para digita��o de observa��o nas darf�s do atualizar |
 | 588 | 30440 | SAM | Lib | Criar op��o de resumido, no relatorio Cliente tempo Gasto, onde apare� |
-| 512 | 30401 | SAM | Lib | Implementar na escrita fiscal modelo de guia dar 19 avulso em relatori |
-| 542 | 30411 | SAM | Desc | No relatorio resumo dos impostos, PIS66 - seje demonstrados os debitos |
+| 567 | 30428 | SAM | Lib | Incluir o CNPJ e Inscri��o Estadual no relatorio de  Impostos Calculad |
 | 560 | 30423 | SAM | Desc | Emissao do Relatorio resumo dos impostos multi_empresas. |
+| 542 | 30411 | SAM | Desc | No relatorio resumo dos impostos, PIS66 - seje demonstrados os debitos |
 | 525 | 30405 | SAM | Lib | Quando fa�o uma transferencia de um bens de um centro de custo para ou |
 | 547 | 30415 | SAM | Lib | Aumentar o numero de casas, do campo Produtos Primarios em Outros Dado |
+| 512 | 30401 | SAM | Lib | Implementar na escrita fiscal modelo de guia dar 19 avulso em relatori |
 | 488 | 30400 | SAM | Lib | Inclus�o do campo "Nome fantasia" no cadastro da empresa.Este � um dad |
+| 475 | 30398 | SAM | Lib | Quando se emite o relatorio cadastral de bens, a descri�ao dos bens (q |
 | 400 | 30388 | SAM | Lib | Ter op��o de informar o percentual de juros e multas por atraso e ter  |
 | 487 | 30399 | SAM | Lib | IMPORTA��O DAS EMPRESAS CADASTRADAS NO SISTEMA DOMSIS PARA SISTEMA GIA |
-| 475 | 30398 | SAM | Lib | Quando se emite o relatorio cadastral de bens, a descri�ao dos bens (q |
 | 398 | 30386 | SAM | Lib | Nas notas fiscais emitidas pelos escrit�rios cont�beis, existe o desta |
 | 92 | 30320 | SAM | Lib | TO: A partir de abril/2002 a guia para recolhimento de ICMS de Tocanti |
 | 85 | 30315 | SAM | Desc | Fazer o relat�rio da DIEF em modo texto para emiss�o em impressora mat |
@@ -50817,101 +50343,43 @@
 | 18796 | 21 | SAL | Lib | RS-Alterar o informativo GIA SN para relat�rios gerados a partir de 01 |
 | 18868 | 2 | SAL | Lib | RS-Ajustar o comportamento do campo "Exclus�o GIA" no lan�amento das n |
 
-## Onvio Contábil (286 total, 87 pendentes)
+## Onvio Contábil (14 total, 2 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 0 | 130491 | NE | Pend | - |
-| 100593 | 128283 | SAM | Pend | Incluir vigências na parametrização. |
-| 99815 | 127594 | SAM | Lib | Verificar template dos e-mails enviados pelo Onvio Contabilidade após  |
-| 99890 | 127267 | SAM | Pend | Integração Onvio x DW - Realizar a integração dos lançamentos contábei |
+| 0 | 131213 | SAIL | Desc | - |
 | 98405 | 125084 | NE | Lib | Est� sendo realizado de forma incorreta o envio de requisi��es para o  |
-| 98777 | 124899 | SAM | Pend | Integração Onvio x DW - Criar e integrar as contas contábeis e históri |
-| 98609 | 124894 | SAM | Pend | Integração Onvio x DW - Listar as contas contábeis e históricos do Onv |
-| 97437 | 123318 | SAL | Pend | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
-| 98443 | 123223 | SAM | Pend | Criar tela para consultar detalhes dos lançamentos da DMPL. |
-| 98367 | 123186 | SAL | Pend | Gerar DMPL para matriz e filial. |
+| 97437 | 123318 | SAL | Lib | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
 | 98079 | 122821 | SAM | Pend | Listar as contas cont�beis e hist�ricos do Onvio Contabilidade no DW E |
-| 96682 | 122357 | SAM | Pend | Preparar o módulo para fornecer informações para as monitorias. |
-| 97524 | 122171 | SAL | Pend | Gerar DLPA para matriz e filial. |
-| 96743 | 122166 | SAL | Pend | Transferir automaticamente o valor de lucro ou prejuízo do período par |
+| 97524 | 122171 | SAL | Lib | Gerar DLPA para matriz e filial. |
+| 96743 | 122166 | SAL | Lib | Transferir automaticamente o valor de lucro ou prejuízo do período par |
 | 99525 | 121260 | SAM | Pend | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e O |
-| 96219 | 120713 | SAM | Lib | Apresentar no menu "Início" um dashboard com a quantidade de transaçõe |
-| 96171 | 120543 | SAM | Pend | Sugerir por meio da IA, lançamentos contábeis para transações bancária |
-| 95083 | 120272 | SAM | Pend | Sugerir contas referenciais às contas contábeis utilizando a IA |
-| 96142 | 120240 | SAM | Lib | Incluir a conciliação automática na interface de conciliação de lançam |
-| 94927 | 120223 | SAM | Lib | Melhorar a performance na exclusão de Lançamentos contábeis. |
-| 96137 | 119843 | SAM | Lib | Criar a função de fechar contas contábeis na interface de conciliação  |
-| 95695 | 118893 | SAM | Lib | Criar a conciliação de lançamentos contábeis. |
-| 92961 | 117811 | NE | Lib | Não está executando o vídeo de boas-vindas no Onvio Contabilidade. |
-| 92776 | 117526 | NE | Desc | Está exibindo incorretamente uma tooltip exibida no menu hambúrguer do |
-| 92772 | 117522 | SAM | Desc | Atualizar fontes do cabeçalho do módulo Onvio Contabilidade para a nov |
-| 92763 | 117506 | SAM | Desc | Exibir os próximos eventos do card da Agenda Tributária em linhas sepa |
-| 92732 | 117443 | SAM | Pend | Incluir ícone da Central de soluções no cabeçalho do Onvio Contabilida |
-| 91221 | 115625 | SAM | Desc | Incluir prazos e feriados no card de Agenda Tributária para 2025. |
-| 94475 | 115549 | SAM | Desc | Criar um novo componente para realizar carregamento de arquivos. |
-| 89774 | 113848 | SAM | Pend | Exportar todos os dados das grids em XLSX (Excel). |
-| 89352 | 113217 | SAM | Lib | Criar monitoria do envio das contas contábeis para a Conta Azul. |
-| 89351 | 113207 | SAM | Lib | Criar monitoria dos lançamentos contábeis da Conta Azul. |
-| 88903 | 112734 | SAIL | Lib | Disponibilizar informações dos lançamentos contábeis e saldo de contas |
-| 88813 | 112630 | SAM | Lib | Permitir a inclusão de validações externas no componente seletor de ar |
-| 88344 | 112100 | SAM | Pend | Reformular a seção de "Novidades", criar a seção de "Notícias" nos das |
-| 87943 | 111453 | SAM | Desc | Analisar impacto da implementação de gerar uma nova versão da bibliote |
-| 87552 | 110912 | SAM | Lib | Padronizar a formatação dos componentes Month Datepicker e DatePicker  |
-| 87696 | 110689 | SAM | Lib | Receber todos os lançamentos da Conta Azul independente da situação |
-| 87187 | 110395 | SAM | Lib | Alterar a nomenclatura do card "Fique de Olho" para "Agenda Tributária |
-| 86999 | 110284 | SAM | Lib | Lançar os tempos não computados de versões anteriores. |
-| 86660 | 109735 | SAM | Lib | Remover o ícone 'Home' da barra superior do Onvio Contabilidade. |
-| 86611 | 109696 | SAM | Lib | Alterar o BRClient para receber o campo CNPJ do Produtor Rural para em |
-| 86610 | 109680 | SAM | Lib | Atualizar automaticamente a quantidade de lançamentos pendentes no íco |
 | 86137 | 109118 | NE | Lib | Est� sendo feita de forma incorreta a importa��o dos s�cios na janela  |
 | 86126 | 109107 | NE | Lib | Est� sendo importado incorretamente o saldo das contas na janela "Impo |
-| 85453 | 108067 | SAM | Lib | Permitir a criação de empresas com até 7 dígitos no campo código |
-| 86295 | 107181 | SAM | Lib | Apresentar o filtro na coluna 'Empresa' na tela de lançamentos contábe |
-| 84738 | 107067 | SAM | Lib | Permitir receber e-mails inválidos através da Carga Inicial para Empre |
-| 84540 | 106702 | NE | Lib | Ao editar uma conta que foi enviada para a Conta Azul, o arquivo do up |
-| 83885 | 105422 | SAM | Lib | Exibir uma mensagem de confirmação para empresas sem o campo Regime ao |
-| 83868 | 105409 | SAM | Lib | Atualizar o card "Fique de olho" com os itens requeridos. |
-| 83881 | 105404 | SAM | Lib | Ignorar alguns campos da carga inicial para empresas inativas. |
-| 83871 | 105347 | SAM | Lib | Transformar os módulos gerenciados pela plataforma em projetos micro f |
-| 83843 | 105337 | SAM | Lib | Alterar o notification para permitir o uso do WebSocket por outros ser |
-| 83009 | 103660 | NE | Lib | TECH - Foram liberados dois serviços indevidamente no ambiente de prod |
-| 82883 | 103164 | SAM | Pend | Criar a opção 'Selecionar todos' nas combobox de múltipla seleção |
-| 82729 | 102995 | SAM | Lib | Apresentar mensagem de link expirado quando o link da notificação for  |
-| 82624 | 102844 | SAM | Lib | TECH - BRAccountingReportProcessorServices |
-| 82621 | 102839 | SAM | Lib | TECH - BE - BRPlanOfAccountingFacadeServices |
-| 82620 | 102837 | SAM | Lib | TECH - FE - BRAccountingApplication |
-| 82619 | 102835 | SAM | Lib | TECH - BE - BRPlanOfAccountingFacadeServices - Atualizar a dependência |
-| 82618 | 102833 | SAM | Lib | TECH - BE - Atualizar as communs (quando a plataforma terminar a corre |
-| 82616 | 102829 | SAM | Lib | TECH - BE - Tirar o R2DBC do Journal para que possamos atualizar a com |
-| 82181 | 102279 | SAM | Lib | Atualizar a lib para a versão "@blue/ng-base": "1.0.0-beta.46-15" |
-| 82051 | 102070 | SAM | Lib | Tech - Refatorar a utilização do webclient para sanar problemas de tim |
-| 82230 | 101888 | SAM | Lib | Alterar as etapas da tela de parametrização. |
-| 81586 | 101398 | SAM | Lib | TECH - Corrigir problemas de performance das integrações com os outros |
-| 81518 | 101306 | SAM | Lib | Atualizar a lib para versão "@blue/profile-screen": "10.4.0" |
-| 81397 | 100927 | SAM | Lib | Apresentar mensagem de link expirado quando a notificação ultrapassar  |
-| 81118 | 100540 | NE | Lib | Corrigir chamadas de validação dos grupos de Matriz e Filial ao entrar |
-| 81994 | 100290 | SAM | Lib | Alterar tela do Fechamento para deixar as informações mais claras. |
-| 81354 | 100186 | NE | Lib | Tooltip com o nome da conta nos Lançamentos contábeis apresentada de f |
-| 81707 | 100165 | SAM | Lib | Alterar o processamento do zeramento para ser possível escolher entre  |
-| 81996 | 100145 | SAM | Lib | Apresentar as empresas zeradas na conclusão do zeramento da Matriz e f |
-| 80835 | 100015 | SAM | Lib | Alterar informações da tela do Fechamento multiempresas |
-| 81009 | 99998 | SAM | Lib | Criar a coluna 'Código' das empresas nas modais dos dashboards. |
-| 80810 | 99973 | SAM | Lib | Realizar o merge do sprint 2023.08.03.x |
-| 80829 | 99939 | SAM | Lib | Padronizar o template de envio de e-mail. |
-| 80608 | 99493 | SAM | Lib | Solucionar problemas de performance encontrados no processo de Zeramen |
-| 80581 | 99402 | SAM | Lib | Rever arquitetura do serviço de agregação dos saldos. |
-| 82951 | 98777 | NE | Lib | Combobox de contas da Aplicação de perfil se movimentando junto com o  |
-| 80514 | 98590 | NE | Lib | Corrigir a tradução do ícone de Home |
-| 79805 | 98060 | SAIL | Desc | DESCRIÇÃO FEATURE |
 
-## Onvio, importacao e dados (12083 total, 5679 pendentes)
+## Onvio, importacao e dados (12070 total, 5718 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 0 | 130775 | SAM | Pend | - |
+| 0 | 131503 | NE | Pend | - |
+| 102319 | 131461 | NE | Pend | Não está importando os dados do beneficiário para a nota de serviço qu |
+| 102309 | 131407 | NE | Pend | Está importando os valores do registro L210 do SPED ECF de forma acumu |
+| 102221 | 131359 | NE | Pend | SP-Não está importando o Código do Benefício Fiscal na guia Estoque da |
+| 102182 | 131337 | NE | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102232 | 131327 | NE | Pend | Está ocorrendo indevidamente os erros de importação: "CNPJ do emitente |
+| 102185 | 131271 | NE | Pend | Está considerando indevidamente documentos cancelados para o cálculo d |
+| 102048 | 131148 | NE | Lib | Está importando incorretamente a opção do campo "Calcular redução conf |
+| 102033 | 131136 | SAM | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102067 | 131128 | NE | Pend | Está apresentado o erro "Expression is not valid" ao informar uma cont |
+| 102008 | 131112 | NE | Lib | Está apresentando indevidamente caracteres indevidos e comportamento i |
+| 102141 | 131104 | NE | Pend | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 101793 | 130807 | NE | Pend | Est� replicando indevidamente os acumuladores que possuem CNAE informa |
+| 101781 | 130796 | SAM | Pend | Realizar testes de importa��o atrav�s da API e BOX-e ap�s a atualiza�� |
+| 101821 | 130766 | NE | Pend | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metr |
 | 101741 | 130750 | SAM | Pend | Realizar o encerramento de forma mais adequada de conex�es �rf�s com o |
+| 101797 | 130730 | SAM | Pend | Importar para as Bases de Impostos por Parcela op��o relacionada � n�o |
 | 101678 | 130623 | SAM | Pend | Importar nos lan�amentos de entradas de devolu��o a op��o relacionada  |
+| 101807 | 130597 | NE | Pend | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao |
 | 101542 | 130511 | NE | Lib | Est� ocorrendo indevidamente a cr�tica de estrutura "Erro processando  |
 | 101513 | 130476 | SAM | Pend | Inibir a importa��o de grandes lotes de arquivos de notas descompactad |
 | 101594 | 130428 | SAM | Pend | GO-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fis |
@@ -50935,6 +50403,7 @@
 | 100941 | 129535 | NE | Pend | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/ |
 | 101150 | 129343 | SAM | Pend | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cada |
 | 101575 | 129338 | SAM | Lib | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz |
+| 101777 | 129273 | NE | Pend | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta con |
 | 100634 | 129270 | SAM | Lib | Redefinir as senhas dos usu�rios utilizados para uso interno do Cont�b |
 | 100830 | 129205 | SAM | Pend | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
 | 100787 | 129158 | SAM | Pend | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
@@ -50953,22 +50422,19 @@
 | 99992 | 128197 | SAM | Lib | Realizar um estudo para mapear os principais processos pesados existen |
 | 99958 | 128070 | SAM | Lib | Realizar a importa��o de NFS-e cancelada para servi�os tomados. |
 | 100594 | 128049 | SAM | Pend | Desativar o m�dulo Escrita Fiscal do Onvio. |
-| 100008 | 128043 | NE | Lib | Está exibindo incorretamente os arquivos OFX/OFC importados na tela de |
 | 100527 | 128018 | SAM | Lib | SP-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fis |
+| 100763 | 127922 | SAM | Lib | Ajustar a importação do CT-e e CT-eOS quando o CT-e Substituto for com |
 | 99977 | 127931 | SAM | Lib | Realizar a importa��o do Imposto Seletivo-IS conforme a reforma tribut |
 | 100016 | 127904 | NE | Lib | Est� ocorrendo erro de banco de dados ao realizar importa��o de NFS-e  |
 | 99811 | 127744 | NE | Lib | RJ-Est� importando incorretamente o valor do imposto 56-FECOP-SI (lan� |
 | 100112 | 127734 | SAM | Lib | Realizar a importa��o de NFS-e de cancelamento de servi�os tomados atr |
-| 99815 | 127594 | SAM | Lib | Verificar template dos e-mails enviados pelo Onvio Contabilidade após  |
 | 99878 | 127508 | NE | Pend | Est� importando incorretamente a base de c�lculo e o valor do imposto  |
 | 99854 | 127505 | NE | Lib | Transa��es marcadas como Read no socket da Fintech n�o estao presentes |
-| 99890 | 127267 | SAM | Pend | Integração Onvio x DW - Realizar a integração dos lançamentos contábei |
 | 99521 | 127099 | SAM | Lib | Atualizar o BOX-e para aceitar NFS-e Padr�o Nacional vers�o 1.01 |
 | 99470 | 127010 | NE | Lib | Est� importando incorretamente o "Valor Total Nota" quando as notas de |
 | 99996 | 126938 | NE | Pend | Est� importando incorretamente a al�quota do ISS na guia "Itens" da no |
 | 99407 | 126872 | SAM | Lib | Cria��o de backlog de SAIs antigas na vers�o de Fevereiro de 2026. |
 | 99310 | 126692 | NE | Pend | Est� permitindo importar NF3-e com dedu��es (cclass 590) indevidamente |
-| 99572 | 126629 | SAM | Pend | Permitir somente o cadastro de empresas Ativas no Onvio e interromper  |
 | 99367 | 126542 | NE | Lib | Est� considerando documento(s) cancelado(s) para o c�lculo dos imposto |
 | 99214 | 126498 | NE | Lib | RO-Est� finalizando o processo de importa��o na etapa 1/7 quando nas c |
 | 101300 | 126497 | SAM | Pend | Permitir importar o tipo de isen��o 2-Di�ria de viagem na importa��o d |
@@ -50976,11 +50442,10 @@
 | 99205 | 126237 | SAM | Lib | MA-Importar para o produto o cr�dito presumido estabelecimento atacadi |
 | 99153 | 126165 | NE | Lib | Est� importando incorretamente o CFPS na nota quando o cliente � de ou |
 | 99187 | 126104 | NE | Lib | Est� ocorrendo erro de sistema ao importar nota com produtos do tipo " |
-| 99063 | 126047 | SAM | Pend | Adequar o sistema para ao importar as informa��es do c�lculo do INSS R |
+| 99063 | 126047 | SAM | Lib | Adequar o sistema para ao importar as informações do cálculo do INSS R |
 | 99126 | 125925 | SAM | Lib | Adequar o sistema para importar o cadastro da empresa com a nova op��o |
 | 98845 | 125884 | SAM | Lib | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a  |
 | 98790 | 125798 | SAM | Lib | Cria��o de backlog de SAIs antigas na vers�o de Janeiro de 2026. |
-| 98770 | 125775 | NE | Lib | Em alguns casos os lançamentos da Conta Azul não estão chegando no Onv |
 | 98809 | 125719 | NE | Lib | Est� sendo demonstrado indevidamente as cr�ticas de estrutura "N�o foi |
 | 98696 | 125696 | SAM | Lib | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 po |
 | 98697 | 125690 | SAM | Lib | Parar de sinalizar para o Onvio o consumo dos dados da Conta Azul. |
@@ -50991,15 +50456,12 @@
 | 98807 | 125418 | NE | Lib | Est� importando incorretamente o valor no campo "Outras" da linha do I |
 | 98966 | 125363 | SAM | Lib | Criar a op��o "Considerar como exce��o a op��o Todos das colunas para  |
 | 99343 | 125356 | SAM | Pend | Limitar a quantidade de notas enviadas para o Kolossus Auditor ao ativ |
-| 98510 | 125260 | NE | Lib | Está selecionando o menu incorreto ao clicar no submenu 'Consulta impo |
 | 99312 | 125161 | SAM | Lib | Permitir importar extrato OFX com a tag DTPOSTED no formato 'AAAA-MM-D |
 | 98576 | 125114 | NE | Lib | N�o est� sendo demonstrado a data correta da nota devolvida na guia es |
 | 98405 | 125084 | NE | Lib | Est� sendo realizado de forma incorreta o envio de requisi��es para o  |
 | 98813 | 124981 | NE | Lib | Est� importando para o campo "Valor Servi�os" o valor da tag "ValorLiq |
 | 98507 | 124961 | NE | Lib | Est� apresentando indevidamente o erro de importa��o "Destinat�rio do  |
 | 98557 | 124960 | SAM | Lib | Liberar as tabelas do IBS e CBS para servi�os. |
-| 98777 | 124899 | SAM | Pend | Integração Onvio x DW - Criar e integrar as contas contábeis e históri |
-| 98609 | 124894 | SAM | Pend | Integração Onvio x DW - Listar as contas contábeis e históricos do Onv |
 | 98233 | 124675 | SAM | Pend | Auxiliar time do Cont�bil Plataforma nos retornos de importa��o na mig |
 | 98225 | 124648 | NE | Lib | Est� ocorrendo erro de comunica��o no Onvio na baixa de parcelas para  |
 | 99583 | 124647 | SAL | Lib | Criado op��o para considerar no c�lculo do Fator R, na op��o 'Importar |
@@ -51015,6 +50477,7 @@
 | 98413 | 124334 | NE | Lib | RJ-Em alguns casos est� modificando a al�quota do imposto 8-DIFALI par |
 | 98861 | 124303 | NE | Lib | N�o est�o sendo gerados corretamente os impostos na janela "Importar B |
 | 99113 | 124289 | SAM | Lib | Incluir op��o para relacionar o acumulador ao cadastro de produtos na  |
+| 101874 | 124238 | SAM | Pend | Implementar op��o para importar os produtos rateados entre os segmento |
 | 99872 | 124203 | SAM | Pend | Incluir a op��o de importar os valores da folha de pagamento informado |
 | 98473 | 124199 | SAM | Lib | Alterar a forma de importar o campo "Valor do Servi�o" para que seja c |
 | 98053 | 124164 | NE | Lib | Est� incorreto o texto na tela de Inclus�o de Grupos nas configura��es |
@@ -51041,7 +50504,6 @@
 | 97241 | 123289 | SAM | Lib | Permitir realizar o desvinculo de contas do Onvio Gest�o ap�s realizad |
 | 97244 | 123283 | NE | Lib | Est� ocorrendo o encerramento do sistema quando a empresa possui os im |
 | 97409 | 123274 | SAM | Lib | PA-Importar op��o no produto para o cr�dito presumido cesta b�sica Art |
-| 97205 | 123261 | SAM | Lib | Permitir realizar o desvínculo de contas do Onvio Gestão após realizad |
 | 98003 | 123228 | SAM | Lib | Incluir a op��o de importar a Receita Bruta Acumulada dos �ltimos doze |
 | 97269 | 123222 | NE | Lib | N�o est� sendo apresentada a mensagem de advert�ncia "O imposto 's%' n |
 | 97275 | 123133 | NE | Lib | Est� sendo gerado incorretamente apenas os relat�rios do �ltimo lote d |
@@ -51089,7 +50551,6 @@
 | 98021 | 121161 | SAM | Lib | Permitir informar contas cont�beis no cadastro de incentivos fiscais,  |
 | 99468 | 120864 | SAM | Lib | Permitir importar extrato OFX com duas tags MEMO utilizando como compl |
 | 96573 | 120822 | SAM | Lib | RJ-Importar o valor do ICMS ST Desonerado nas notas de sa�das. |
-| 96172 | 120711 | SAM | Lib | Incluir um ícone no header para apresentar a quantidade de transações  |
 | 95256 | 120620 | SAM | Pend | Aumentar a capacidade de recebimento de notas fiscais do Onvio API (Pr |
 | 95244 | 120614 | SAM | Lib | SAI para termos os tempos de SSs alocados na Sprint |
 | 95243 | 120613 | SAM | Pend | Subir as vers�es das outras aplica��es em java 11 e 8 para java 17+ |
@@ -51099,7 +50560,6 @@
 | 95574 | 120468 | SAM | Lib | MS-Alterar o sistema para importar as devolu��es dos impostos FUNDERSU |
 | 95815 | 120434 | SAM | Lib | Ajustar o comportamento do Onvio Processos para o DAS e incluir nas ro |
 | 95063 | 120373 | NE | Lib | Est� ocorrendo indevidamente o erro de importa��o "O CFOP xxxx n�o est |
-| 95046 | 120354 | NE | Lib | Está apresentando indevidamente o botão 'Importação de lançamentos' na |
 | 95642 | 120329 | SAM | Lib | RS-Realizar a importa��o do imposto 27-ICMSA por produto, com percentu |
 | 95094 | 120327 | NE | Lib | N�o est�o sendo escrituradas corretamente as notas de servi�os prestad |
 | 96059 | 120306 | SAM | Lib | MG-Realizar a importa��o do imposto 27-ICMSA por produto, com percentu |
@@ -51111,10 +50571,8 @@
 | 94855 | 120141 | SAM | Lib | Externalizar endpoint exclusivo para recebeimento de NFS-e sem qualque |
 | 95006 | 120130 | NE | Lib | RS-N�o est� importando o valor do imposto 56-AMPARAST no campo "Fundo  |
 | 95034 | 120081 | NE | Lib | BA-Est� importando o valor do imposto 8-DIFALI incorretamente quando a |
-| 96599 | 120073 | SAM | Lib | Aplicar permissões nos menus 'Importação de extrato bancário', 'Consul |
 | 94838 | 119895 | SAM | Lib | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "CBe |
 | 94633 | 119805 | NE | Lib | RJ-Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado !" |
-| 100927 | 119731 | SAM | Pend | Ocultar as funcionalidades de integrações do Onvio Escrita Fiscal com  |
 | 94817 | 119737 | SAL | Lib | Importar os valores das receitas nos registros P200 e P400 do SPED ECF |
 | 99023 | 119696 | SAM | Lib | Incluir op��o para relacionar o acumulador ao cadastro de Clientes e F |
 | 95726 | 119695 | SAM | Lib | Alterar o sistema para ser criado uma op��o nas configura��es de impor |
@@ -51142,7 +50600,6 @@
 | 94666 | 118650 | SAM | Lib | Importar para o produto os c�digos 70, 71 e 72 do benef�cio DIRBI conf |
 | 93676 | 118560 | SAM | Lib | Criar op��o na importa��o do SPED Fiscal para importar o valor do impo |
 | 93673 | 118501 | NE | Lib | Est� ocorrendo erro indevidamente ao importar contratos de Fomento Mer |
-| 93574 | 118470 | SAM | Lib | Permitir logar no Kolossus Auditor com o mesmo usuário e senha do ONVI |
 | 93586 | 118483 | SAM | Desc | Atualizar o BOX-e para que seja poss�vel importar CT-eOS quando a tag  |
 | 93420 | 118280 | NE | Lib | Remover logs da SAI 93121 para normalizar o uso de mem�ria nos servido |
 | 93417 | 118279 | SAM | Lib | Permitir logar no Kolossus Auditor com o mesmo usu�rio e senha do ONVI |
@@ -51151,17 +50608,13 @@
 | 93219 | 118085 | SAM | Pend | Otimizar a importa��o NFC-e Arquivo XML. |
 | 93138 | 117999 | NE | Lib | Corrigir problema de escrit�rios antigos que ainda n�o foram criados a |
 | 93228 | 117969 | NE | Lib | RO-Est� sendo importado valores para o imposto 57-FECOEP-N na guia pri |
-| 92961 | 117811 | NE | Lib | Não está executando o vídeo de boas-vindas no Onvio Contabilidade. |
 | 92964 | 117815 | NE | Lib | N�o est� executando o v�deo de boas-vindas no Onvio Escrita. |
 | 93124 | 117810 | NE | Lib | O sistema est� considerando incorretamente primeiro a tag 'Exigibilida |
 | 93018 | 117655 | SAM | Lib | Incluir bot�es "Solu��es" nas telas de importa��o do Importador. |
 | 93072 | 117608 | NE | Lib | Ajustar cabe�alho do Onvio API e �cone exibido na aba do navegador |
 | 92869 | 117595 | SAM | Lib | Atualizar fontes do cabe�alho do m�dulo Escrita Fiscal para a nova mar |
 | 92956 | 117578 | NE | Lib | Est� deduzindo indevidamente o desconto na base de c�lculo do CRF atra |
-| 92776 | 117526 | NE | Desc | Está exibindo incorretamente uma tooltip exibida no menu hambúrguer do |
-| 92772 | 117522 | SAM | Desc | Atualizar fontes do cabeçalho do módulo Onvio Contabilidade para a nov |
 | 92738 | 117473 | SAM | Pend | Incluir �cone da Central de solu��es no cabe�alho do Onvio Escrita.  |
-| 92732 | 117443 | SAM | Pend | Incluir ícone da Central de soluções no cabeçalho do Onvio Contabilida |
 | 93540 | 117361 | SAM | Lib | PR-Criar rotina para importar via XML o valor do ICMS Diferido. |
 | 92602 | 117344 | SAM | Pend | Melhorar a arquitetura da agrega��o. |
 | 92751 | 117319 | NE | Lib | CE-Est� apurando incorretamente o ICMS Monof�sico mesmo sem a informa� |
@@ -51198,11 +50651,7 @@
 | 92527 | 115385 | SAM | Pend | Implementar uma mensagem de aviso quando o usu�rio realizar importa��o |
 | 91453 | 115235 | NE | Lib | N�o est� sendo publicado na pasta correta o relat�rio "Gr�fico Simulad |
 | 100195 | 115197 | SAM | Lib | Implementar a op��o 'N�o verificar a exist�ncia dos documentos nos lan |
-| 90784 | 115176 | SAM | Lib | Liberar tempo trabalhado nas ações de Performance do Onvio na versão 1 |
-| 90726 | 115108 | SAM | Desc | Implementar ícone do Messenger no cabeçalho do Onvio. |
 | 90814 | 115080 | NE | Desc | Est� permitindo importar lan�amento cont�bil com conta conciliada inde |
-| 90717 | 115074 | SAM | Desc | Alterar as cores dos gráficos exibidos na tela de início do Onvio refe |
-| 90659 | 115009 | SAM | Lib | Computar o tempo trabalhado em ações de Performance do Onvio. |
 | 90787 | 115000 | NE | Pend | Est� ocorrendo erro de banco de dados na tela "Receita Bruta", quando  |
 | 90815 | 114969 | NE | Lib | Est� importando os valores de "Base de c�lculo" e "Valor imposto" para |
 | 90585 | 114900 | SAM | Lib | Implementar �cone do Messenger no cabe�alho do Onvio. |
@@ -51227,7 +50676,6 @@
 | 90302 | 114516 | SAM | Lib | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2024, p |
 | 90286 | 114497 | SAM | Lib | N�o exportar determinadas colunas do NSU no procedimento de exporta/im |
 | 90422 | 114481 | SAM | Lib | Importar a base de c�lculo do PIS/COFINS quando informado o CST 06-Ope |
-| 90259 | 114460 | NE | Lib | Está permitindo atribuir apenas o número 0 para código da conta e tamb |
 | 101022 | 114414 | SAM | Pend | RS-Importar para o produto o cr�dito presumido sobre produtos farmac�u |
 | 91358 | 114369 | SAL | Lib | Alterar o sistema para importar o valor da rubrica "9524-HORAS AFAST.  |
 | 90160 | 114339 | NE | Desc | Mitigar o problema de indisponibilidade do BOX-e do dia 05/11/2024. |
@@ -51255,7 +50703,6 @@
 | 89659 | 113462 | NE | Lib | N�o est� importando cadastros quando selecionado para importar "Soment |
 | 96459 | 113399 | SAM | Lib | Otimizar a 'ds_sped_importacao_valores_agregados_2015' no processo de  |
 | 94231 | 113341 | SAM | Lib | Criar a op��o "Gerar observa��o na nota conforme informado no(a):" nas |
-| 89644 | 113281 | NE | Lib | Não estão sendo demonstrados o destaque em vermelho e a tooltip com a  |
 | 89388 | 113275 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
 | 89387 | 113274 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
 | 89386 | 113273 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
@@ -51265,13 +50712,10 @@
 | 89325 | 113183 | NE | Lib | Est� demonstrando a tela em branco ao editar o cadastro de participant |
 | 89719 | 113128 | SAM | Lib | Remover a IAC da DIRF e validar a gera��o do informativo ap�s a implem |
 | 89273 | 113061 | NE | Lib | N�o est� sendo conclu�da a atividade nem anexada a guia DARF Normal no |
-| 89240 | 113017 | NE | Lib | Não está sendo demonstrado habilitado o campo "Estrutura da classifica |
 | 89215 | 113011 | NE | Lib | N�o est� importando reten��es quando na configura��o de importa��o est |
 | 99640 | 112922 | SAM | Lib | SP-Importar para o produto o cr�dito outorgado de ICMS nas sa�das inte |
 | 89024 | 112900 | SAM | Pend | Realizar estudos e monitorias para identificar os problemas que ocorre |
 | 89214 | 112889 | NE | Lib | Est� ocorrendo o erro "Produto n�o possui al�quota interna informada e |
-| 89185 | 112875 | NE | Lib | Está apresentando indevidamente a mensagem "Esse código já foi atribuí |
-| 89310 | 112851 | SAM | Lib | Atualizar o cabeçalho dos módulos do Onvio para a nova marca da Thomso |
 | 91402 | 112856 | SAM | Lib | Importar dados nas notas fiscais de entradas e sa�das para atender o i |
 | 89624 | 112849 | SAM | Lib | SP-Implementar na rotina de importa��o Leiaute Dom�nio Sistemas com Se |
 | 88942 | 112826 | SAM | Lib | Alterar a forma de exclus�o das notas com mais de 60 dias no cat�logo  |
@@ -51291,13 +50735,9 @@
 | 89042 | 112235 | SAL | Lib | RS-Alterar o comportamento do arquivo XML quando o tomador for do exte |
 | 88451 | 112221 | SAM | Pend | Criar uma integra��o do card Agenda Tribut�ria do Onvio com SGD. |
 | 92510 | 112209 | SAM | Pend | Alterar o sistema para importar o tipo de inscri��o do cliente/fornece |
-| 88545 | 112173 | NE | Lib | File Selector não está apresentando o tamanho máximo correto do arquiv |
 | 95893 | 112165 | SAM | Pend | ES-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fis |
 | 89275 | 112154 | NE | Lib | N�o est� sendo anexada na atividade correta a guia DARF Quotas, quando |
 | 88337 | 112134 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
-| 88348 | 112107 | SAM | Lib | Aplicar regras de permissões nos menus Importação de lançamentos e Con |
-| 88345 | 112102 | SAM | Lib | Criar uma integração do card Agenda Tributária do Onvio com SGD |
-| 88384 | 112070 | NE | Lib | Não estão sendo apresentados os códigos das contas de contrapartida na |
 | 88241 | 112026 | SAM | Lib | Verificar a cria��o das threads do Digital banking no momento de inici |
 | 96174 | 111984 | SAM | Lib | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut |
 | 88284 | 111977 | NE | Lib | Em alguns casos as NFS-e recebidas pela API n�o foram disponibilizadas |
@@ -51315,7 +50755,6 @@
 | 90322 | 111427 | SAM | Lib | RJ-Alterar a importa��o dos valores da linha do imposto 154-FOT do Por |
 | 87919 | 111404 | NE | Lib | Em alguns casos est� apresentando o erro "Valores lan�ados diferem do  |
 | 87827 | 111317 | NE | Lib | Em alguma casos est� apresentando indevidamente o bot�o 'Importar folh |
-| 87758 | 111239 | SAM | Lib | Testar performance da importação dos lançamentos contábeis da Conta Az |
 | 87714 | 111205 | SAM | Lib | Migrar contas de e-mail inativas ou de cliente ativo por�m n�o migrado |
 | 87915 | 111192 | NE | Lib | Est� importando incorretamente o CST de PIS e COFINS em empresas do Si |
 | 87729 | 111190 | SAM | Lib | Criar comportamento para que n�o seja poss�vel alterar o campo 'Identi |
@@ -51335,10 +50774,8 @@
 | 87457 | 110823 | NE | Lib | Est� ocorrendo erro no objeto:"uo_extrato_bancario_importar_ct" na imp |
 | 87427 | 110786 | SAM | Lib | Alterar mecanismo de conex�o do banco de dados no Box-e. |
 | 87348 | 110677 | NE | Lib | Est� apresentando o erro "N�o foi poss�vel buscar a codifica��o do arq |
-| 87318 | 110618 | NE | Lib | Não está gerando os relatórios quando o tipo do lançamento vindo da Co |
 | 88259 | 110554 | SAM | Lib | RS-Importar para o produto o cr�dito presumido nas sa�das de com�rcio  |
 | 87227 | 110541 | SAM | Desc | Otimizar Importa��o Padr�o CF-e arquivo XML na etapa de carregamento d |
-| 87633 | 110531 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED ECD identific |
 | 87240 | 110534 | SAM | Lib | Alterar a nomenclatura do card "Fique de Olho" para "Agenda Tribut�ria |
 | 90593 | 110515 | SAIL | Pend | Criar tela para visualizar o arquivo xml da NFS-e Padr�o Nacional |
 | 88505 | 110513 | SAIL | Pend | Apresentar os erros e advert�ncias ocorridos na importa��o da NFS-e Pa |
@@ -51347,14 +50784,12 @@
 | 87180 | 110470 | SAM | Pend | N�o enviar mais as notas para o BOX-e do DA quando o cliente ainda n�o |
 | 87641 | 110427 | SAM | Pend | Importar notas fiscais canceladas quando o arquivo possuir a Tag "Nfse |
 | 87195 | 110419 | NE | Lib | Em alguns casos est� ocorrendo encerramento de sistema ao importar CT- |
-| 87150 | 110385 | SAM | Lib | Permitir manter os cadastros de Responsáveis Legais, Sócios e Contador |
 | 87005 | 110281 | SAL | Lib | NFS-e Nacional - Remover do arquivo XML a tag 'cTribMun' para emiss�o  |
 | 87044 | 110240 | NE | Lib | Em alguns casos o sistema est� fechando ao importar os registros M300  |
 | 86982 | 110230 | SAM | Desc | Permitir manter os cadastros de Respons�veis Legais, S�cios e Contador |
 | 86961 | 110226 | NE | Lib | N�o est�o sendo importadas as informa��es calculadas no m�dulo Folha n |
 | 87019 | 110165 | NE | Lib | N�o est� sendo apresentada a pasta para publica��o no Onvio, ao imprim |
 | 86905 | 110154 | SAM | Pend | Adicionar proxy nas leituras da caixa de email. |
-| 86870 | 110108 | SAM | Lib | Realizar o filtro por regime nos perfis de empresas e importação de da |
 | 86869 | 110076 | NE | Lib | BA-Est� calculando incorretamente o valor do imposto 27-ICMSA quando c |
 | 86858 | 110073 | SAM | Lib | Realizar o filtro por regime nos perfis de empresas e importa��o de da |
 | 86939 | 110064 | NE | Desc | N�o est� excluindo o lan�amento cont�bil de nota cancelada quando sele |
@@ -51364,9 +50799,6 @@
 | 86963 | 109965 | SAM | Lib | Permitir importar todas as guias do imposto 9 - SUBITRI por periodicid |
 | 86736 | 109850 | NE | Lib | Est� permitindo importar o extrato banc�rio mais de uma vez, quando ut |
 | 86632 | 109771 | NE | Lib | Em alguns casos n�o est� sendo replicado o ID sequencial das vig�ncias |
-| 86660 | 109735 | SAM | Lib | Remover o ícone 'Home' da barra superior do Onvio Contabilidade. |
-| 86721 | 109700 | NE | Lib | Não está sendo possível importar os dados de distritos e povoados quan |
-| 86605 | 109689 | NE | Lib | Em alguns casos não está sendo replicado o ID sequencial das vigências |
 | 87016 | 109671 | SAM | Lib | Efetuar a importa��o de CF-e Arquivo XML conforme CFOP informado no ca |
 | 86566 | 109644 | SAM | Lib | Permitir processar, validar e disponibilizar o arquivo de CF-e vers�o  |
 | 86403 | 109471 | NE | Lib | N�o est� sendo poss�vel importar os dados de distritos e povoados quan |
@@ -51374,7 +50806,6 @@
 | 86444 | 109439 | NE | Lib | Em alguns acasos est� ocorrendo encerramento do sistema ao importar no |
 | 86371 | 109378 | SAL | Lib | PR-Alterar o arquivo XML para gerar a tag "data_fato_gerador" na emiss |
 | 86313 | 109367 | SAM | Lib | Garantir que o envio de notas para o BOX-e n�o ser� afetado pela SAI 8 |
-| 86793 | 109285 | SAM | Pend | Permitir a importação de caracteres especiais em arquivos TXT no forma |
 | 90592 | 109283 | SAIL | Pend | Realizar a escritura��o da NFS-e Padr�o Nacional. |
 | 86599 | 109262 | SAM | Lib | Criar op��o 'Selecionar todos' nas comboboxes de m�ltipla sele��o. |
 | 86914 | 109257 | SAM | Lib | RS-Alterar o sistema para considerar a op��o marcada no acumulador e n |
@@ -51382,7 +50813,6 @@
 | 86239 | 109226 | SAM | Lib | Atualizar as formas de pagamento conforme Informe T�cnico 2024.002 - v |
 | 86241 | 109223 | NE | Lib | Em alguns casos est� sendo importado clientes com conta patrimonial in |
 | 86278 | 109205 | SAL | Lib | SP-Alterar o comportamento do arquivo XML quando o tomador for do exte |
-| 94296 | 109171 | SAM | Pend | Realizar a integração da Contabilidade no Onvio com o Processos. |
 | 86465 | 109159 | SAM | Lib | ES-Importar o imposto 31-ST/AT quando configurado "Por produto" atrav� |
 | 86137 | 109118 | NE | Lib | Est� sendo feita de forma incorreta a importa��o dos s�cios na janela  |
 | 86126 | 109107 | NE | Lib | Est� sendo importado incorretamente o saldo das contas na janela "Impo |
@@ -51391,16 +50821,12 @@
 | 86287 | 109071 | SAM | Lib | Permitir realizar a importa��o de CF-e Arquivo XML em lote. |
 | 86061 | 109052 | NE | Lib | Est� permitindo importar a "Nota de Aquisi��o" na nota de sa�da quando |
 | 95558 | 109028 | SAM | Lib | MS-Importar para o produto o cr�dito presumido aos estabelecimentos fr |
-| 86176 | 108945 | NE | Desc | Está sendo apresentada uma modal abaixo da tela de processamento caso  |
-| 86244 | 108944 | NE | Lib | Não está sendo demonstrado desabilitado o campo 'Estrutura da classifi |
 | 85988 | 108933 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "N�o � permitido impor |
 | 85983 | 108929 | SAM | Pend | [Tech] Refatorar consumidor do BOX-e. |
 | 86350 | 108891 | SAIL | Lib | Implementar no Onvio o regime tribut�rio Microempreendedor Individual  |
-| 85925 | 108838 | SAM | Lib | Testar performance da importação do plano de contas pelo arquivo SPED  |
 | 87242 | 108788 | SAM | Pend | Implementar no Onvio Core para que seja poss�vel o recebimento via imp |
 | 85858 | 108766 | NE | Lib | Em alguns casos est� ocorrendo encerramento do sistema/estouro de mem� |
 | 88596 | 108718 | SAIL | Lib | Implementar o c�lculo de Sal�o-parceiro para as empresas do Simples Na |
-| 86166 | 108673 | SAM | Pend | Possibilitar o envio de relatórios da Contabilidade pelo Onvio Messeng |
 | 90525 | 108665 | SAM | Pend | Realizar a integra��o da Escrita Fiscal no Onvio com o Processos.   |
 | 86208 | 108663 | SAM | Lib | RS-Importar para o produto o cr�dito presumido nas sa�das internas de  |
 | 85840 | 108661 | NE | Lib | N�o est� sendo apresentada a pasta para publica��o no Onvio, quando o  |
@@ -51408,14 +50834,12 @@
 | 85944 | 108553 | NE | Lib | Est�o sendo importados invertidos os valores referente ao "Estoque Ini |
 | 85945 | 108508 | NE | Lib | N�o est� considerando o IPI na base de c�lculo do imposto 8-DIFALI qua |
 | 85665 | 108420 | SAM | Pend | Reativar a exclus�o dos dados no Box-e de empresas exclu�das do Dom�ni |
-| 86172 | 108290 | NE | Lib | Estão ocorrendo vínculos incorretos na 'Natureza das Contas' da Parame |
 | 85765 | 108296 | SAM | Lib | Alterar o sistema para importar o valor da base de c�lculo do imposto  |
 | 86967 | 108208 | SAM | Pend | Criar imposto AMPARAST e permitir importar todas as guias deste impost |
 | 85837 | 108186 | SAM | Pend | Permitir importar todos os valores de ICMS, quando possuir adicional d |
 | 85498 | 108138 | NE | Lib | Est� importando nota com situa��o "Cancelada" quando no arquivo possui |
 | 85991 | 108105 | SAM | Pend | Realizar a integra��o do Onvio Escrita com o Messenger. |
 | 85470 | 108057 | SAM | Lib | Permitir a cria��o de empresas com at� 7 d�gitos no campo c�digo. |
-| 85410 | 107985 | SAM | Lib | Permitir o usuário definir o código das empresas no momento do cadastr |
 | 85401 | 107962 | NE | Lib | Est� apresentando o erro ao importar dados do par�metro da empresa de  |
 | 85420 | 107857 | NE | Lib | RS-N�o est� calculando a restitui��o do ICMS ST quando a nota de entra |
 | 85382 | 107822 | SAM | Lib | Garantir a funcionalidade de integra��o com a Conta azul quando a empr |
@@ -51423,14 +50847,10 @@
 | 85155 | 107535 | NE | Lib | N�o est� importando os dados do ICMS Desonerado na guia "Estoque" da n |
 | 84989 | 107357 | SAL | Lib | Importar o valor dos encargos "FGTS Rescis�rio", "FGTS Resc. Complemen |
 | 87387 | 107345 | SAM | Lib | Criar op��o para importar as notas de produtor rural com valor zerado. |
-| 85232 | 107305 | SAM | Lib | Alterar a frase da aba Zeramento > Contas Zeradas, na parametrização m |
-| 84984 | 107278 | SAM | Lib | Copiar a estrutura do DRE ao aplicar perfil ou importar dados de outra |
-| 84842 | 107221 | SAM | Lib | Alterar o recebimento do Responsável Legal, Sócios e Contadores para v |
 | 84949 | 107237 | SAL | Lib | PR-Alterar o comportamento da tag "ResponsavelRetencao" para gerar no  |
 | 84971 | 107229 | SAM | Lib | Permitir o usu�rio definir o c�digo das empresas no momento do cadastr |
 | 84837 | 107222 | SAM | Lib | Alterar o recebimento do Respons�vel Legal, S�cios e Contadores para v |
 | 84811 | 107192 | SAM | Lib | Atualizar vulnerabilidades do Veracode no BOX-e. |
-| 88166 | 107115 | SAM | Lib | Permitir a importação de lançamentos contábeis via arquivo TXT. |
 | 84780 | 107121 | NE | Lib | Est� importando os benefici�rios sem selecionar as advert�ncias das no |
 | 84844 | 107110 | SAM | Lib | Alterar o nome da tela de 'Central de contabiliza��es' para 'Configura |
 | 84776 | 107055 | NE | Lib | N�o est� apresentando mensagem interrogativa quando no campo "NCM sele |
@@ -51446,13 +50866,10 @@
 | 84487 | 106679 | SAM | Lib | Bloquear direcionamento de Notas da API do Onvio quando a empresa for  |
 | 84413 | 106367 | SAM | Desc | Permitir que ao importar a altera��o do plano de contas do SPED Cont�b |
 | 84347 | 106341 | SAM | Lib | Garantir a devida al�quota na importa��o de valores do INSS Receita Br |
-| 84315 | 106195 | NE | Desc | Não estão sendo apresentadas as notificações de erro na comunicação en |
 | 84311 | 106205 | NE | Desc | Ap�s importar as NFC-e em lote no banco do cliente, no momento de fech |
-| 84286 | 106179 | NE | Desc | O Onvio não está enviando para a conta azul a informação das naturezas |
 | 84396 | 106186 | SAM | Lib | Importar as informa��es dos itens correlacionados registro 0221 do SPE |
 | 84307 | 106110 | NE | Lib | Est� ocorrendo erro de banco de dados ao importar SPED FISCAL quando a |
 | 84445 | 106099 | NE | Lib | SP-N�o est� sendo gerado o valor do desconto no arquivo TXT na emiss�o |
-| 84961 | 106045 | SAM | Lib | Copiar configuração de integração contábil dos tributos federais na ap |
 | 84197 | 106029 | NE | Lib | Ocorre erro ao realizar a importa��o via importador de pagamentos de p |
 | 88746 | 105892 | SAM | Lib | Realizar a importa��o de "NFS-e Padr�o Nacional" quando o cliente for  |
 | 84304 | 105879 | SAIL | Pend | Criar tela para visualizar o arquivo xml das NF-e modelo 55. |
@@ -51473,15 +50890,12 @@
 | 83853 | 105103 | SAM | Pend | Considerar a mesma conta cont�bil quando ocorrer mais de um cadastro d |
 | 83739 | 105076 | NE | Lib | MS-N�o est� importando a linha do imposto 9-SUBTRI quando realizado im |
 | 83717 | 104968 | NE | Lib | Est� importando incorretamente os valores do registro L210, quando a o |
-| 85599 | 104940 | SAM | Lib | Parar de enviar contas do Onvio para Conta Azul quando a empresa estiv |
 | 83832 | 104957 | NE | Lib | N�o est� importando o imposto 3-ISS quando realizado importa��o de not |
 | 83676 | 104865 | NE | Lib | Est� importando o valor incorreto na guia "SPED/PIS/COFINS" da nota ao |
 | 83689 | 104818 | SAM | Lib | Ajustar o fluxo de ativa��o de empresas no Onvio |
-| 83651 | 104812 | SAM | Lib | Ajustar o fluxo de ativação de empresas no Onvio. |
 | 83738 | 104817 | SAM | Lib | Alterar o comportamento da busca de produtos da tela "Conv�nio/Protoco |
 | 83828 | 104814 | NE | Lib | Em alguns casos n�o est�o sendo importados os valores de lucro ou prej |
 | 83643 | 104811 | SAM | Lib | MT-Criar op��o na janela 'Arquivos/Dados de impostos por NCM/CEST' par |
-| 96082 | 104769 | SAM | Lib | Permitir a importação de extrato bancário no formato OFC e OFX. |
 | 83692 | 104771 | NE | Lib | BA-N�o est� sendo considerando o MVA corretamente para o imposto 31-ST |
 | 84440 | 104663 | SAM | Pend | Gerar lan�amentos cont�beis de forma centralizada na empresas matriz e |
 | 84727 | 104478 | SAM | Lib | Alterar o sistema quanto a obten��o do valor da base de c�lculo do PIS |
@@ -51503,7 +50917,6 @@
 | 83489 | 104082 | SAL | Lib | RS-Alterar a ordem das parcelas no arquivo XML para emiss�o de Notas F |
 | 83257 | 104040 | NE | Lib | Est� importando o valor incorreto do lucro ou preju�zo, quando marcada |
 | 83522 | 104035 | SAM | Lib | Alterar a importa��o padr�o CF-e arquivo XML para que nas empresas do  |
-| 83329 | 104012 | SAM | Lib | Permitir a ativação de empresas do Onvio no Domínio. |
 | 83379 | 104004 | NE | Lib | N�o est�o sendo importados os valores corretos de INSS/CPP na janela " |
 | 94840 | 103971 | SAM | Pend | Permitir importar os valores dos produtos que possuem classifica��o in |
 | 83197 | 103966 | SAM | Lib | Alterar a data da mensagem ao realizar a importa��o do Dominio Atendim |
@@ -51539,10 +50952,8 @@
 | 82827 | 103105 | SAM | Lib | Incluir bot�es 'Solu��es" em algumas op��es nas telas de configura��o  |
 | 82771 | 103062 | NE | Lib | N�o est� considerando notas importadas na apura��o do incentivo TARE c |
 | 82935 | 103007 | SAM | Lib | RS-Importar no cadastro do produto a op��o pelo cr�dito presumido aos  |
-| 82769 | 102965 | SAM | Pend | Limpar todas as informações da empresa se a importação de dados de out |
 | 82796 | 102956 | SAM | Lib | MA-Importar o c�digo de recolhimento do imposto 27-ICMSA na importa��o |
 | 92995 | 102953 | SAM | Lib | Alterar o sistema para que seja poss�vel informado itens de servi�o co |
-| 83040 | 102937 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED Contábil. |
 | 83488 | 102925 | SAL | Lib | RS-Alterar a ordem das parcelas no arquivo XML para emiss�o de Notas F |
 | 82808 | 102909 | SAM | Lib | Realizar a importa��o da NFS-e de cancelamento atrav�s da NFS-e Padr�o |
 | 82998 | 102889 | SAL | Lib | Alterar o sistema para importar o valor da Rubrica "9637-F.G.T.S DE AV |
@@ -51562,7 +50973,6 @@
 | 82242 | 102353 | SAM | Lib | [TECH] Remover comportamentos no BrEscritaServices e que foram aplicad |
 | 82241 | 102351 | SAM | Lib | [TECH] Remover comportamentos no BrEscritaServices que foram aplicados |
 | 82219 | 102348 | NE | Desc | Est� importando a base de c�lculo do imposto 28-FUNRURAL incorretament |
-| 82164 | 102278 | SAM | Lib | Realizar um HotFix com a versão @onviobr 4.7.607-3 |
 | 87439 | 102237 | SAIL | Lib | Implementar a gera��o da DEFIS no Onvio por meio da API Integra Contad |
 | 82091 | 102118 | NE | Lib | Est� ocorrendo erro de sistema referente ao benefici�rio ao realizar i |
 | 82353 | 102064 | NE | Lib | Est� importando a al�quota do imposto 27-ICMSA incorretamente quando s |
@@ -51592,18 +51002,12 @@
 | 88741 | 101108 | SAM | Lib | Retirar o campo 'Conta d�bito' para a configura��o de contabiliza��o c |
 | 81338 | 101089 | SAM | Desc | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a A |
 | 81339 | 101087 | SAM | Lib | Alterar o sistema para que quando a Origem da empresa for 'Onvio', a A |
-| 81841 | 101043 | SAM | Lib | Copiar configuração de integração contábil na aplicação do perfil e na |
 | 82437 | 101009 | SAM | Lib | RJ-Alterar a importa��o dos valores da linha do imposto 154-FOT do Por |
-| 81236 | 100935 | NE | Desc | Esta importando valores duplicados na Importação de Lançamentos Contáb |
-| 81262 | 100911 | SAM | Lib | TECH - Mover o módulo de Scheduled Routines para @onviobr/scheduled-ro |
-| 81261 | 100910 | SAM | Lib | TECH - Mover o módulo de Accouting Center para @onviobr/accounting-cen |
-| 81260 | 100909 | SAM | Lib | TECH - Mover o módulo de Accouting Integration para @onviobr/accountin |
 | 81277 | 100916 | NE | Lib | Est� realizando lan�amento cont�bil com a provis�o de cliente quando s |
 | 81383 | 100913 | SAM | Lib | Permitir importar NFS-e de Sub-contrata��o de Frete com Base de cr�dit |
 | 81276 | 100894 | NE | Lib | Est� sendo emitido mensagem de configura��o incorretamente quando real |
 | 81349 | 100852 | NE | Lib | N�o est� buscando corretamente a informa��o do cedente ao importar o a |
 | 81192 | 100851 | NE | Desc | Est� apresentando erro ao importar os lan�amentos da Conta Azul, quand |
-| 81147 | 100782 | SAM | Lib | Ocultar card 'Importação de dados de outra empresa' da tela inicial da |
 | 82891 | 100768 | SAM | Lib | SC-Importar para o produto o cr�dito presumido na sa�da interna de caf |
 | 81712 | 100621 | SAM | Lib | Realizar o relacionamento de clientes e fornecedores aos acumuladores  |
 | 82592 | 100616 | SAL | Lib | Importar os valores das f�rias para a tela "Valor da Folha" na data do |
@@ -51618,7 +51022,6 @@
 | 80817 | 100004 | SAM | Pend | Alterar a ferramenta Envia BOX-e conforme novo novo link de recebiment |
 | 80851 | 99974 | NE | Lib | Em alguns casos n�o est� importando o valor do Lucro Antes da CSLL, qu |
 | 80776 | 99882 | NE | Lib | Est� ocorrendo erro de importa��o indevidamente ao realizar importa��o |
-| 80686 | 99640 | SAM | Lib | Criar a importação de dados de outra empresa. |
 | 80808 | 99654 | NE | Lib | Esta enviando indevidamente relat�rios solicitados pelo Onvio Messenge |
 | 80683 | 99639 | SAM | Desc | Atualizar a vers�o da Lib do perfil de usu�rios do Onvio Escrita. |
 | 86116 | 99609 | SAM | Lib | Acrescentar coluna c�digo na modal dos Widgets da interface 'Dashboard |
@@ -52521,7 +51924,6 @@
 | 58754 | 65028 | NE | Lib | MT-Est� sendo demonstrado indevidamente a mensagem "Destinat�rio da NF |
 | 59063 | 64995 | NE | Lib | Est�o sendo importados produtos com tipo "Medicamentos" indevidamente  |
 | 59056 | 64954 | SAM | Lib | MS-Importar o valor dos impostos FUNDERSUL e FUNDEMS. |
-| 58676 | 64952 | SAM | Desc | Criar módulo Contabilidade no Onvio. |
 | 60713 | 64907 | SAM | Lib | Criar a origem BF-e Arquivo XML para a tela de lan�amento dos Bilhetes |
 | 58930 | 64863 | SAM | Desc | Criar o cadastro de participantes no Onvio Escrita Fiscal. |
 | 58747 | 64800 | SAM | Lib | Realizar a importa��o da Nota Fiscal de Energia El�trica Eletr�nica NF |
@@ -52534,7 +51936,6 @@
 | 58515 | 64416 | SAM | Lib | Alterar a forma de importar o valor do imposto 26-INSS-RET e seu total |
 | 95082 | 64378 | SAM | Lib | Alterar o sistema para importar o valor do ICMS Recuper�vel para a tel |
 | 58278 | 64221 | NE | Lib | PR-N�o est� sendo importado o c�digo de recolhimento do imposto 153-FE |
-| 59185 | 64209 | SAM | Desc | Criar tela para efetuar lançamentos contábeis no Onvio. |
 | 58675 | 64133 | NE | Lib | SP-N�o est� sendo importada corretamente a al�quota do ICMS e al�quota |
 | 58575 | 64131 | NE | Desc | RS-Est� segmentando incorretamente o valor cont�bil para o imposto 27  |
 | 58431 | 64106 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "N�o foi encontrada co |
@@ -52544,19 +51945,14 @@
 | 58110 | 63950 | SAL | Lib | RS-Criar campo 'Mont. Imposto Presumido' na guia estoque da nota para  |
 | 58179 | 63909 | SAM | Lib | PE-Preparar o sistema para importar o imposto 27-ICMSA na importa��o d |
 | 58279 | 63888 | NE | Lib | N�o est� sendo replicado o CFOP informado na guia "Entradas/Acumulador |
-| 58806 | 63867 | SAM | Desc | Criar rotina de fechamento da contabilidade no Onvio. |
-| 58707 | 63848 | SAM | Desc | Criar o cadastro de Contas do módulo Contabilidade no Onvio. |
-| 58805 | 63847 | SAM | Desc | Criar o cadastro de lançamento padrão do módulo Contabilidade no Onvio |
 | 58048 | 63824 | NE | Lib | N�o est� sendo demonstrada a tabela de relacionamento na importa��o da |
 | 58072 | 63800 | SAM | Lib | RJ-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fis |
 | 58002 | 63769 | SAM | Lib | Adaptar o sistema para que seja poss�vel importar as notas atrav�s do  |
-| 58743 | 63711 | SAM | Desc | Criar o zeramento no módulo Contabilidade no Onvio. |
 | 58079 | 63701 | NE | Lib | Em alguns casos est� duplicando a quantidade de produtos ao realizar i |
 | 57964 | 63685 | SAM | Lib | Migra��o Escrita para ONVIO - Etapa 1 - Reorganiza��o das bibliotecas |
 | 57972 | 63652 | NE | Lib | Est� ocorrendo erro no objeto "w_inicializacao_saldo_contas_referencia |
 | 58241 | 63648 | NE | Lib | Est� sendo demonstrada indevidamente a mensagem de advert�ncia "O impo |
 | 58513 | 63565 | NE | Lib | Em alguns casos est� sendo demonstrada indevidamente a mensagem "O(s)  |
-| 58691 | 63522 | SAM | Desc | Criar o cadastro de históricos do módulo Contabilidade no Onvio. |
 | 58231 | 63502 | NE | Desc | Em alguns casos est� ficando travado a importa��o de nota atrav�s do N |
 | 58782 | 63273 | SAL | Lib | SP-Ajustar a gera��o do arquivo XML de RPS para o munic�pio de S�o Pau |
 | 57729 | 63181 | NE | Lib | RS-Est� ocorrendo erro no objeto "dfc_u_ole_webcontrol" ao tentar impo |
@@ -53432,14 +52828,14 @@
 | 35259 | 34176 | SAM | Lib | Alterar o processo de envio de  informa��es para o Dom�nio Atendimento |
 | 32745 | 34163 | SAM | Lib | Importar o cadastro de produtos e preencher na guia Impostos os valore |
 | 31782 | 34147 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
-| 31269 | 34131 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 31219 | 34123 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
+| 31269 | 34131 | SAM | Desc | Corrigir erros encontrados em bancos migrados para o DB2 |
 | 29908 | 34082 | SAM | Lib | Corrigir erros encontrados em banco convertidos para o DB2 |
 | 25537 | 34032 | SAM | Lib | Permitir importar o extrato banc�rio da compet�ncia informada mesmo qu |
-| 23505 | 34012 | SAM | Lib | RN-N�o gravar as redu��es Z na tabela de sa�das. |
-| 23850 | 34016 | SAM | Lib | N�o gravar mais as redu��es Z na tela de sa�das ao realizar as importa |
-| 23347 | 34010 | SAM | Lib | PR-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa |
 | 23345 | 34009 | SAM | Lib | MG-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa |
+| 23347 | 34010 | SAM | Lib | PR-N�o gravar mais as Redu��es Z na tela de Sa�das em todas as importa |
+| 23850 | 34016 | SAM | Lib | N�o gravar mais as redu��es Z na tela de sa�das ao realizar as importa |
+| 23505 | 34012 | SAM | Lib | RN-N�o gravar as redu��es Z na tabela de sa�das. |
 | 20958 | 33992 | SAM | Lib | Ocorre erro na transfer�ncia do Dom�nio Atendimento para o Dom�nio Con |
 | 18747 | 33981 | SAM | Lib | Atualizar os leiautes Completo Dom�nio e 19 de notas de sa�das para im |
 | 18256 | 33941 | SAM | Lib | DF - Gerar valores na subguia "Situa��o Tribut�ria", da guia "Cupons f |
@@ -53457,28 +52853,28 @@
 | 13164 | 33511 | SAM | Lib | Otimizar o processo de importa��o de NFe via arquivo XML.     |
 | 12735 | 33472 | SAM | Lib | SP-Criar op��o para importar os valores para as Tabelas municipais na  |
 | 12209 | 33410 | SAM | Lib | Permitir informar hist�rio na baixa de parcelas ao importar boletos re |
+| 11757 | 33378 | SAM | Lib | Criar leiaute para importar arquivos gerados conforme Portaria CAT 52. |
 | 11842 | 33395 | SAM | Lib | Importar bloquetos recebidos da Caixa Economica Federal - CNAB 240 SIG |
 | 11844 | 33397 | SAM | Desc | Desabilitar o bot�o IMPORTAR DADOS do m�dulo quando usu�rio n�o tem pe |
-| 11757 | 33378 | SAM | Lib | Criar leiaute para importar arquivos gerados conforme Portaria CAT 52. |
 | 11829 | 33388 | SAM | Lib | Criar op��o para importar tamb�m a movimenta��o de produtos diretament |
 | 11507 | 33351 | SAM | Desc | Em alguns casos ocorre erro ao importar arquivos "OFC" ou "OFX".     |
+| 11399 | 33343 | SAM | Lib | Criar op��o para importar os dados de clientes, fornecedores e remeten |
 | 11398 | 33342 | SAM | Lib | Criar op��o para importar os dados de NFe diretamente do site de Recei |
 | 11395 | 33341 | SAM | Lib | N�o permitir inserir/importar inscri��o estadual com menos de 11 d�git |
-| 11399 | 33343 | SAM | Lib | Criar op��o para importar os dados de clientes, fornecedores e remeten |
-| 11057 | 33282 | SAM | Desc | Ocorre erro ao selecionar um imposto da Escrita fiscal e clicar no bot |
 | 11071 | 33284 | SAM | Lib | SP-Criar op��o para importar o c�digo do servi�o prestado para o campo |
+| 11057 | 33282 | SAM | Desc | Ocorre erro ao selecionar um imposto da Escrita fiscal e clicar no bot |
 | 9378 | 32972 | SAM | Desc | Voltar o periodo atual ao importar notas para a menor competencia dent |
 | 8774 | 32750 | SAM | Desc | Importar o n�mero do documento ao efetuar a importa��o de arquivo de e |
 | 8514 | 32685 | SAM | Lib | Permitir importar e efetuar o c�lculo do INSS em atraso de empregados  |
 | 8038 | 32526 | SAM | Lib | Criar uma op��o para quando importar clientes ou fornecedores o sistem |
 | 7028 | 32277 | SAM | Lib | Ao realizar importa��o de baixa de parcelas, se ocorrer erro, ter a op |
 | 7025 | 32274 | SAM | Lib | O sistema n�o deve permitir importar um cadastro de Produto com c�digo |
-| 6672 | 32233 | SAM | Lib | Tratar a mensagem que ocorre ao importar uma nota j� existente pelo ut |
 | 6692 | 32240 | SAM | Desc | Quando sistema identifica que fornecedor j� est� cadastrado em outra e |
+| 6672 | 32233 | SAM | Lib | Tratar a mensagem que ocorre ao importar uma nota j� existente pelo ut |
 | 6498 | 32169 | SAM | Lib | Criar op��o para importar a receita das filiais no c�lculo estimado. |
 | 5928 | 32018 | SAM | Desc | Ter op��o de importar arquivo de extrato banc�rio no formato FEBRABAN |
-| 5528 | 31924 | SAM | Desc | RS-Quando clicado no bot�o importar nos outros dados da GIS, abrir tel |
 | 5413 | 31916 | SAM | Lib | Criar op��o na importa��o de notas para sobrescrever registros existen |
+| 5528 | 31924 | SAM | Desc | RS-Quando clicado no bot�o importar nos outros dados da GIS, abrir tel |
 | 5050 | 31834 | SAM | Lib | Permitir exportar e importar dados do Dominio Cliente para o Dominio C |
 | 4769 | 31770 | SAM | Desc | Criar op��o de importar de uma empresa para outra a configura��o cont� |
 | 3923 | 31503 | SAM | Lib | Criar op��o para importar da Escrita os valores de receita bruta para  |
@@ -53486,16 +52882,16 @@
 | 3143 | 31269 | SAM | Lib | RS-Na tela de movimentos/outros/empregados quando clicar no bot�o impo |
 | 2493 | 31010 | SAM | Lib | Ter op��o de cadastrar e importar as inscri��es estaduais canceladas p |
 | 2130 | 30909 | SAM | Lib | Possibilitar importar valores de receita bruta para c�lculo do IRPJ co |
-| 1832 | 30833 | SAM | Lib | SC-Quando gerar a DIME, criar op��o para importar o numero de empregad |
 | 1962 | 30861 | SAM | Lib | RS-Inserir no layout de importacao de notas os detalhamentos anexo VA  |
+| 1832 | 30833 | SAM | Lib | SC-Quando gerar a DIME, criar op��o para importar o numero de empregad |
 | 1134 | 30599 | SAM | Lib | Importar os valores dos impostos da escrita fiscal para o sistema Novo |
-| 906 | 30535 | SAM | Lib | Criar op��o para importar extratos banc�rios via arquivo txt. |
 | 960 | 30549 | SAM | Lib | Habilitar a possibilidade de Importar estruturas DLPA e DOAR de outra  |
+| 906 | 30535 | SAM | Lib | Criar op��o para importar extratos banc�rios via arquivo txt. |
 | 679 | 30467 | SAM | Lib | Desconsiderar zeramento ao importar saldo das contas para o LALUR. |
 | 604 | 30447 | SAM | Lib | Importar tamb�m o codigo do municipio no layout de notas fiscais saida |
 | 557 | 30421 | SAM | Lib | Importa��o de Notas: Permitir  importar somente as baixas(pagamento e/ |
-| 541 | 30410 | SAM | Desc | Importar as informa��es do saldo do caixa e bancos e o numero de empre |
 | 526 | 30406 | SAM | Lib | Criar op��o de contabilizar automaticamente ao importar um extrato ban |
+| 541 | 30410 | SAM | Desc | Importar as informa��es do saldo do caixa e bancos e o numero de empre |
 | 108 | 30330 | SAM | Desc | Calcular IRPJ e Contr. Social lucro real e estimado, permitindo import |
 | 81 | 30311 | SAM | Lib | Integrar o Atualizar com a Folha permitindo importar valores de INSS,  |
 | 37 | 30299 | SAM | Lib | Clientes que tem suas cobran�as vinculadas num determinado Banco, gera |
@@ -54280,10 +53676,12 @@
 | 20113 | 31 | SAM | Lib | Criar op��o para definir onde deve ser informado o valor da diferen�a  |
 | 18791 | 25 | SAM | Desc | Criar op��o para importar os dados de uma NFe do portal quando salvo e |
 
-## Parcelamento e planejamento tributario (186 total, 4 pendentes)
+## Parcelamento e planejamento tributario (187 total, 5 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
+| 102071 | 131216 | NE | Lib | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRP |
+| 102020 | 131120 | NE | Pend | Está ocorrendo um erro de banco de dados ao replicar as configurações  |
 | 101726 | 130453 | NE | Pend | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao  |
 | 101036 | 129802 | NE | Pend | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na  |
 | 99860 | 127928 | SAM | Lib | Apoio em auxilio na demanda da POC do visual expert ao time do Platafo |
@@ -54297,7 +53695,6 @@
 | 85948 | 108276 | SAL | Desc | N�o est�o sendo parcelados os impostos municipais do Simples Nacional, |
 | 85282 | 107682 | SAL | Lib | Alterar o link de acesso ao portal do Simples Nacional via c�digo de a |
 | 84425 | 106546 | NE | Lib | Est� importando o valor incorreto do registro M010 do informativo SPED |
-| 84066 | 105448 | SAM | Lib | Alterar a mensagem de bloqueio de exclusão de vários lançamentos que p |
 | 83844 | 104310 | SAL | Lib | SC-Alterar o sistema para informar um percentual com 6 casas decimais  |
 | 82369 | 102459 | NE | Lib | Est� importando o valor incorreto do registro M010 do informativo SPED |
 | 80152 | 98564 | NE | Lib | Est� sendo importado o valor incorreto no campo "INSS/CPP" da janela " |
@@ -54471,10 +53868,13 @@
 | 30725 | 12213 | NE | Lib | N�o est� gerando corretamente o campo "02" do registro "J150" do infor |
 | 29428 | 3521 | SAIL | Lib | Criar rotina para controlar os parcelamentos de impostos. |
 
-## Patrimônio (159 total, 3 pendentes)
+## Patrimônio (161 total, 5 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
+| 102293 | 131283 | NE | Pend | Está calculando incorretamente a depreciação de períodos anteriores à  |
+| 102247 | 131237 | NE | Pend | Está gerando incorretamente o Ganho/perda de Capital ao realizar a bai |
+| 101807 | 130597 | NE | Pend | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao |
 | 101726 | 130453 | NE | Pend | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao  |
 | 100847 | 128299 | SAL | Pend | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias d |
 | 97238 | 122900 | NE | Lib | ES-Est� sendo gerado incorretamente o lan�amento de zeramento de ICMS  |
@@ -54486,7 +53886,6 @@
 | 92817 | 116285 | SAL | Lib | SC-Gerar o ajuste SC020065 para lan�amentos com opera��o 'Cr�dito Ativ |
 | 85316 | 106170 | SAL | Lib | MT-Alterar o sistema para que o valor do cr�dito referente ao ativo im |
 | 84824 | 105304 | SAL | Lib | RR-Gerar o ajuste RR029999 no registro E111 quando possuir lan�amento  |
-| 98297 | 103490 | SAIL | Pend | Criar a estrutura e relatório da Demonstração das Mutações do Patrimôn |
 | 82474 | 102686 | NE | Lib | Est� apresentando erro "Error calling method of a PBNI object" ao efet |
 | 83095 | 101876 | NE | Desc | N�o est� calculando a deprecia��o societ�ria quando a data informada n |
 | 81078 | 100496 | SAL | Lib | SP-Alterar o c�digo de ajuste do E111 para SP000299 quando possuir lan |
@@ -54635,19 +54034,18 @@
 | 19225 | 304 | SAL | Lib | RN-Gerar o registro E111 no informativo Sped Fiscal para ajustes com o |
 | 19280 | 131 | SAIL | Lib | PR-Efetuar o c�lculo do d�bito de ICMS na importa��o de bens destinado |
 
-## Registros Contábeis (43 total, 2 pendentes)
+## Registros Contábeis (42 total, 3 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
+| 101837 | 130642 | SAM | Pend | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na  |
 | 101523 | 130327 | NE | Pend | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para rea |
-| 97311 | 123175 | NE | Lib | Não estão sendo apresentadas por inteiro as informações Insc. Junta Co |
 | 97381 | 120696 | SAM | Lib | Criar valida��o para n�o permitir vincular conta referencial do SPED E |
 | 94710 | 119816 | NE | Lib | N�o esta demonstrando o modelo DRE padr�o "Modelo VII - Saldo Anterior |
 | 94536 | 119782 | SAM | Lib | Alterar a solu��o do bot�o "Solu��es" da tela principal do SPED ECD.  |
 | 94107 | 118892 | SAM | Lib | Criar bot�o "Solu��es" em mensagens relacionadas aos SPED ECD e lan�am |
 | 93040 | 117631 | NE | Lib | N�o est� sendo gerado o registro 0500 e n�o est� sendo gerada nenhuma  |
 | 91793 | 116143 | NE | Lib | Est� fechando o sistema ao gerar o informativo SPED Cont�bil, quando v |
-| 87633 | 110531 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED ECD identific |
 | 81769 | 100019 | SAM | Lib | Alterar o sistema para que a configura��o do identificador do plano de |
 | 71570 | 84500 | SAL | Lib | Gerar a descri��o Dispensa de ECD - IN RFB n� 1.774/2017, nos campos " |
 | 71447 | 84346 | NE | Lib | Esta gerado o valor errado no registro N670 SPED Contabil quando na gu |
@@ -54683,18 +54081,47 @@
 | 26521 | 7732 | SAL | Lib | Criar op��o para emitir a inscri��o na Junta Comercial/Cart�rio/OAB no |
 | 30406 | 5070 | SAM | Lib | Gravar a data de inscri��o na Junta Comercial no bot�o 'Altera��es' do |
 
-## SPED e documentos eletronicos (8468 total, 218 pendentes)
+## SPED e documentos eletronicos (8448 total, 214 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
+| 102319 | 131461 | NE | Pend | Não está importando os dados do beneficiário para a nota de serviço qu |
+| 102309 | 131407 | NE | Pend | Está importando os valores do registro L210 do SPED ECF de forma acumu |
+| 102221 | 131359 | NE | Pend | SP-Não está importando o Código do Benefício Fiscal na guia Estoque da |
+| 102232 | 131327 | NE | Pend | Está ocorrendo indevidamente os erros de importação: "CNPJ do emitente |
+| 102185 | 131271 | NE | Pend | Está considerando indevidamente documentos cancelados para o cálculo d |
+| 102046 | 131184 | NE | Pend | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRA |
+| 102044 | 131166 | SAM | Pend | MG- Otimizar as DW's 'ds_sped_blocoC_regC190_s_MG' e 'ds_sped_blocoE_r |
+| 102171 | 131156 | NE | Pend | Está atribuindo indevidamente a situação "Equivalente entre os planos" |
+| 102197 | 131151 | NE | Pend | Estão sendo gerados indevidamente os registros 0460 e D195 no informat |
+| 102048 | 131148 | NE | Lib | Está importando incorretamente a opção do campo "Calcular redução conf |
+| 102215 | 131134 | NE | Pend | Não está sendo zerada a guia "IVA" das notas canceladas de saídas de C |
+| 102067 | 131128 | NE | Pend | Está apresentado o erro "Expression is not valid" ao informar uma cont |
+| 102008 | 131112 | NE | Lib | Está apresentando indevidamente caracteres indevidos e comportamento i |
+| 102141 | 131104 | NE | Pend | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102034 | 131072 | NE | Pend | Não estão sendo importados os registros Y570, Y600 e Y612 do informati |
+| 102294 | 131039 | NE | Pend | ES-Está sendo gerado incorretamente o registro C197 com o código de aj |
+| 102021 | 131032 | NE | Desc | Está sendo demonstrado o valor incorreto de "Redução referente à alíqu |
+| 101948 | 131006 | NE | Lib | Está sendo gerada mais de uma vez a tag ideDep/cpfDep no evento R-4010 |
+| 101887 | 130882 | NE | Lib | Está apresentando indevidamente o aviso de vigência não cadastrada ao  |
+| 101823 | 130820 | NE | Pend | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro  |
+| 101793 | 130807 | NE | Pend | Est� replicando indevidamente os acumuladores que possuem CNAE informa |
+| 101853 | 130794 | SAL | Lib | Remover linhas de cálculo referente ao Programa Perse no registro N610 |
+| 101809 | 130767 | NE | Lib | Os valores do registro P300 não estão sendo exibidos na tela Outros Da |
 | 101762 | 130769 | SAM | Pend | Contabilizar na importa��o de notas, como "Sint�tico por dia" ou "Sint |
-| 101718 | 130663 | NE | Pend | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101821 | 130766 | NE | Pend | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metr |
+| 101810 | 130657 | SAL | Lib | Atualizar os códigos de Natureza da Receita para o CST 07, conforme ve |
+| 101718 | 130663 | NE | Lib | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 101837 | 130642 | SAM | Pend | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na  |
+| 101855 | 130630 | SAL | Lib | Gerar a TAG 'rendIsento' no informativo EFD-Reinf, para rendimentos is |
 | 101698 | 130610 | NE | Pend | N�o est� sendo poss�vel informar caracteres alfanum�ricos no campo "N� |
+| 101807 | 130597 | NE | Pend | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao |
+| 101800 | 130594 | NE | Pend | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui m |
 | 101592 | 130556 | SAL | Pend | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de  |
 | 101691 | 130537 | NE | Pend | Em alguns casos o sistema fecha ao gerar o arquivo Excel do Relat�rio  |
+| 101556 | 130509 | NE | Lib | Está sendo apresentado erro ao gerar o relatório na guia "Alteração pl |
+| 101758 | 130507 | NE | Lib | Está importando os valores do registro Y570 do informativo SPED ECF in |
 | 101542 | 130511 | NE | Lib | Est� ocorrendo indevidamente a cr�tica de estrutura "Erro processando  |
-| 101556 | 130509 | NE | Pend | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o pl |
-| 101758 | 130507 | NE | Pend | Est� importando os valores do registro Y570 do informativo SPED ECF in |
 | 101513 | 130476 | SAM | Pend | Inibir a importa��o de grandes lotes de arquivos de notas descompactad |
 | 101761 | 130469 | SAM | Pend | Criar op��es nos par�metros para contabilizar como "Sint�tico por dia" |
 | 101668 | 130465 | SAL | Pend | Considerar as devolu��es de vendas e os devidos valores dos CT-es subs |
@@ -54712,7 +54139,6 @@
 | 101165 | 130014 | NE | Pend | N�o est� sendo feita corretamente a importa��o dos lan�amentos cont�be |
 | 101314 | 129992 | NE | Pend | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primar |
 | 101607 | 129991 | NE | Pend | Est� ocorrendo travamento durante a importa��o quando a empresa possui |
-| 101357 | 129974 | SAM | Pend | Gerar o SPED ECF considerando o plano de contas vigente no período do  |
 | 101316 | 129919 | NE | Pend | Est� ocorrendo o erro de sistema "Algum dado n�o cadastrado!" ao grava |
 | 101139 | 129879 | NE | Pend | Est� gerando o saldo anterior incorreto no DFC em RTF no informativo S |
 | 101080 | 129838 | NE | Lib | Est� apresentando erro de banco de dados ao gravar a tela "Outros Dado |
@@ -54729,9 +54155,8 @@
 | 100912 | 129643 | NE | Lib | Em alguns casos n�o est�o sendo gerados todos os registros D197 no arq |
 | 100942 | 129610 | NE | Lib | Est� gerando o relacionamento do M300 e M350 do SPED ECF de forma inco |
 | 100940 | 129545 | NE | Pend | N�o est� gerando o registro D750 no arquivo SPED Fiscal quando a nota  |
-| 100956 | 129531 | NE | Pend | Não está gerando o SPED Contábil quando há contas sem movimento/saldo  |
+| 100956 | 129531 | NE | Lib | Não está gerando o SPED Contábil quando há contas sem movimento/saldo  |
 | 100941 | 129535 | NE | Pend | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/ |
-| 101257 | 129506 | SAM | Pend | Preencher automaticamente a aba 'Plano de contas anterior' na modal Ou |
 | 100955 | 129513 | NE | Lib | PA-N�o est�o sendo gerados dos registros 0460, C195 e C197 no informat |
 | 100902 | 129482 | NE | Lib | Est� gerando valores incorretos para os registros K155, K156 e L100 do |
 | 100814 | 129461 | SAM | Pend | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED |
@@ -54742,6 +54167,7 @@
 | 101575 | 129338 | SAM | Lib | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz |
 | 100806 | 129317 | NE | Lib | DF-N�o est� sendo gerado corretamente o registro C197 com o c�digo de  |
 | 100647 | 129305 | SAM | Pend | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui�� |
+| 101777 | 129273 | NE | Pend | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta con |
 | 100808 | 129248 | NE | Lib | MT-Est� sendo apresentada indevidamente a mensagem "C�digo de Ajuste n |
 | 100544 | 129130 | SAM | Lib | Realizar melhorias nas rotinas de grava��o do XML no banco de dados vi |
 | 100741 | 129097 | SAL | Lib | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SP |
@@ -54756,8 +54182,8 @@
 | 100525 | 128811 | NE | Pend | Em alguns casos est� ocorrendo lentid�o ao gerar o informativo EFD Con |
 | 100564 | 128809 | NE | Lib | SC-N�o est� sendo gerado o registro 1921 com o c�digo de ajuste SC0040 |
 | 100779 | 128806 | NE | Pend | Est� apresentando indevidamente a tela "Configurar Emiss�o de Relat�ri |
+| 101878 | 128794 | SAL | Pend | Alterar o c�digo de ajuste gerado no registro E311 no SPED Fiscal para |
 | 100383 | 128759 | SAM | Pend | Otimizar a gera��o do informativo SPED Cont�bil. |
-| 100519 | 128739 | SAM | Pend | Alterar a guia Informativos da Parametrização no modo Visualizar param |
 | 100578 | 128734 | NE | Pend | N�o est� gerando os valores de IPI para alguns produtos na guia "Estoq |
 | 100342 | 128729 | NE | Lib | N�o est�o sendo gerados os registros dos blocos C100, C300, C350, C500 |
 | 100284 | 128721 | NE | Lib | BA/RS/SC/SP-Est�o sendo duplicados os registros D760 e D761 no informa |
@@ -54766,33 +54192,29 @@
 | 100707 | 128705 | NE | Pend | Est� ocorrendo erro de banco de dados na tela de "Concilia��o de Lan�a |
 | 100389 | 128664 | NE | Pend | Est� voltando o per�odo de apura��o indevidamente, quando nos par�metr |
 | 101058 | 128657 | SAL | Pend | Ajustar o comprovante anual para que gere os rendimentos isentos de di |
-| 100327 | 128582 | NE | Pend | Está validando indevidamente a coluna 'Checkbox' como obrigatória quan |
-| 100325 | 128581 | NE | Pend | Não está abrindo o calendário dos campos 'Arquivamento dos atos consti |
+| 100327 | 128582 | NE | Lib | Está validando indevidamente a coluna 'Checkbox' como obrigatória quan |
+| 100325 | 128581 | NE | Lib | Não está abrindo o calendário dos campos 'Arquivamento dos atos consti |
 | 100182 | 128563 | SAM | Pend | Realizar a importa��o a importa��o de NF-e e NFC-e fora do servidor de |
 | 100287 | 128438 | NE | Pend | Est� sendo importado incorretamente o valor da "Diferen�a entre o valo |
 | 101186 | 128436 | NE | Pend | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primar |
 | 100523 | 128427 | NE | Pend | SC-N�o est� sendo gerado o registro C197 com c�digo de ajuste "SC50000 |
 | 101002 | 128421 | SAM | Pend | Otimizar importa��o NFC-e Arquivo XML. |
 | 100853 | 128376 | SAL | Pend | RS-Alterar o sistema para que seja gerado o registro E311 do SPED Fisc |
-| 100571 | 128355 | SAIL | Pend | Implementar a geração do bloco Y para empresas do Lucro Presumido na g |
 | 99997 | 128201 | SAM | Lib | Liberar tempos de desenvolvedores envolvidos em demanda do EFD-Reinf. |
 | 99992 | 128197 | SAM | Lib | Realizar um estudo para mapear os principais processos pesados existen |
 | 100011 | 128189 | NE | Lib | RS-N�o est� sendo gerado corretamente o totalizador referente ao regis |
 | 100012 | 128179 | NE | Pend | Em alguns casos est� ocorrendo erro na execu��o do exporta/importa ref |
 | 99959 | 128103 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "A distribui��o de luc |
 | 100062 | 128101 | NE | Pend | RS-N�o est� sendo gerado corretamente o registro E113 e n�o est� sendo |
-| 100094 | 128069 | SAM | Pend | Apresentar lançamentos encontrados para todas as transações pendentes  |
 | 100023 | 128042 | NE | Lib | N�o est� validando corretamente a correspond�ncia de contas com c�digo |
 | 100001 | 128015 | NE | Lib | Em alguns casos est� apresentando erro de banco de dados na tabela 'CT |
 | 99919 | 127960 | NE | Lib | N�o est� sendo gerado o valor correto no campo 14-VL_SERV_NT do regist |
 | 99885 | 127956 | NE | Lib | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com desc |
 | 99880 | 127945 | SAL | Lib | Atualizar o informativo SPED ECF para o leiaute 12 conforme manual de  |
+| 100763 | 127922 | SAM | Lib | Ajustar a importação do CT-e e CT-eOS quando o CT-e Substituto for com |
 | 99977 | 127931 | SAM | Lib | Realizar a importa��o do Imposto Seletivo-IS conforme a reforma tribut |
-| 100763 | 127922 | SAM | Pend | Ajustar a importa��o do CT-e e CT-eOS quando o CT-e Substituto for com |
 | 100016 | 127904 | NE | Lib | Est� ocorrendo erro de banco de dados ao realizar importa��o de NFS-e  |
 | 99881 | 127900 | SAM | Lib | Ajustar a mensagem emitida na guia "Rendimentos isentos" da EFD Reinf  |
-| 99858 | 127770 | NE | Desc | Não está validando erro em alerta quando se trata de uma única empresa |
-| 99891 | 127768 | SAM | Pend | Alterar a apresentação da modal de validações e das notificações do SP |
 | 99797 | 127773 | NE | Lib | N�o est� sendo gerado o Comprovante Eletr�nico de Rendimentos e/ou Com |
 | 99788 | 127767 | NE | Lib | SP-Est�o sendo gerados indevidamente os registros 0460, C195 e C197 co |
 | 99811 | 127744 | NE | Lib | RJ-Est� importando incorretamente o valor do imposto 56-FECOP-SI (lan� |
@@ -54825,7 +54247,6 @@
 | 99462 | 126507 | SAL | Lib | Realizar testes com o arquivo SPED Cont�bil e com o SPED Cont�bil - Ra |
 | 99222 | 126500 | NE | Lib | Est� sendo gerado o valor incorreto no campo 03-VL_REC_BRT dos registr |
 | 99214 | 126498 | NE | Lib | RO-Est� finalizando o processo de importa��o na etapa 1/7 quando nas c |
-| 99955 | 126446 | SAM | Pend | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99330 | 126460 | SAL | Lib | Ajustar o comprovante anual para que gere os rendimentos isentos de di |
 | 99215 | 126358 | NE | Lib | N�o est� sendo gerada informa��o no campo 19-COD_INF do registro D700  |
 | 99437 | 126341 | SAL | Pend | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os |
@@ -54840,19 +54261,12 @@
 | 101553 | 126108 | SAL | Pend | Incluir as naturezas de rendimento 10011 e 11008 para envio na EFD-Rei |
 | 99301 | 126094 | NE | Lib | PA-N�o est� sendo gerado corretamente o registro C197 com o c�digo de  |
 | 98974 | 126089 | NE | Lib | Esta demonstrando a tela de gera��o do arquivo SPED Fiscal com resolu� |
-| 99862 | 125994 | SAM | Pend | Ajustar o SPED Contábil para usar o toggle 'Gerar o SPED ECF' nas vali |
 | 98902 | 125972 | NE | Lib | N�o est� sendo gerado o valor correto no campo "05-VL_OPR" do registro |
 | 98845 | 125884 | SAM | Lib | MA-Alterar a importa��o da NF-e Portal e NF-e Arquivo XML, conforme a  |
-| 98811 | 125801 | NE | Lib | Não está listando as entidades no filtro da guia 'Entidades' do botão  |
-| 98818 | 125785 | NE | Lib | Está listando no ano incorreto os 'Arquivos gerados' do SPED Contábil. |
-| 98842 | 125783 | NE | Lib | Está exibindo o erro 'Falha ao executar o processamento. Tente novamen |
-| 99946 | 125731 | SAM | Pend | Realizar melhorias no plano referencial para atender as necessidade do |
-| 100529 | 125723 | SAIL | Pend | Implementar a geração dos registros P130, P230 e X280 para o Lucro Pre |
 | 98809 | 125719 | NE | Lib | Est� sendo demonstrado indevidamente as cr�ticas de estrutura "N�o foi |
 | 99340 | 125709 | SAL | Lib | Permitir gerar a guia DARF via Sicalcweb referente as impostos retidos |
 | 99030 | 125672 | SAL | Pend | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 98678 | 125650 | NE | Lib | Est� importando incorretamente o "Valor Cont�bil" e "Valor fornecido/c |
-| 98779 | 125640 | NE | Lib | Está sumindo o alert 'Existem inconsistências. Verifique o preenchimen |
 | 98904 | 125645 | NE | Desc | Em alguns casos est� travando o sistema ao executar as "Rotinas autom� |
 | 98666 | 125642 | SAM | Pend | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do  |
 | 98994 | 125636 | SAL | Lib | SP-Alterar o sistema para gerar os documentos com esp�cie NFCom - mode |
@@ -54862,21 +54276,16 @@
 | 98607 | 125495 | NE | Lib | Em alguns casos ocorre lentid�o na gera��o do informativo EFD-Reinf. |
 | 98621 | 125438 | SAM | Pend | Ajustar a gera��o do informativo SPED ECF para buscar os saldos das co |
 | 98807 | 125418 | NE | Lib | Est� importando incorretamente o valor no campo "Outras" da linha do I |
-| 99873 | 125374 | SAM | Pend | Criar as regras de permissões no menu SPED ECF. |
-| 99954 | 125365 | SAIL | Pend | Implementar no SPED ECF a geração do bloco P (Lucro Presumido). |
-| 99952 | 125364 | SAIL | Pend | Implementar no SPED ECF a geração dos blocos J e K e a tela de arquivo |
 | 98966 | 125363 | SAM | Lib | Criar a op��o "Considerar como exce��o a op��o Todos das colunas para  |
 | 99579 | 125353 | SAL | Lib | MG-Alterar o sistema para n�o deduzir as entradas do valor total das p |
 | 98688 | 125321 | NE | Lib | SC-N�o est� sendo gerado o valor correto do estorno de ICMS no registr |
 | 98947 | 125271 | SAL | Lib | BA/RS/SC/SP-Alterar o sistema para gerar a escritura��o consolidada no |
-| 98511 | 125179 | SAL | Pend | Gerar o registro J210 no SPED Contábil com referência de notas explica |
 | 98576 | 125114 | NE | Lib | N�o est� sendo demonstrado a data correta da nota devolvida na guia es |
 | 98813 | 124981 | NE | Lib | Est� importando para o campo "Valor Servi�os" o valor da tag "ValorLiq |
 | 98348 | 124973 | SAM | Lib | Realizar estudos para altera��es na forma de gerar bloco D do SPED Fis |
 | 98507 | 124961 | NE | Lib | Est� apresentando indevidamente o erro de importa��o "Destinat�rio do  |
 | 98342 | 124945 | SAL | Lib | RJ-Incluir c�digos de itens para IPM na tela de valores agregados do S |
 | 99351 | 124865 | SAIL | Lib | Implementar rotina de distribui��o de lucros e dividendos com reten��o |
-| 99947 | 124829 | SAIL | Pend | Implementar a tela de emissão do SPED ECF e a geração dos blocos 0 e 9 |
 | 99395 | 124848 | SAL | Lib | SC-Ajustar o SPED Fiscal para n�o gerar o registro E200 e filhos para  |
 | 98334 | 124677 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "� preciso informar o  |
 | 98235 | 124672 | NE | Lib | DF-Est� apresentando a advert�ncia "Os valores do ICMS ST Retido n�o p |
@@ -54895,6 +54304,7 @@
 | 98043 | 124309 | NE | Desc | SC-Em alguns casos est� ocorrendo erro na valida��o do informativo SPE |
 | 98042 | 124293 | SAL | Lib | Atualizar o informativo SPED ECF conforme altera��es da tabela din�mic |
 | 99113 | 124289 | SAM | Lib | Incluir op��o para relacionar o acumulador ao cadastro de produtos na  |
+| 101874 | 124238 | SAM | Pend | Implementar op��o para importar os produtos rateados entre os segmento |
 | 98069 | 124231 | NE | Lib | RJ-N�o est� sendo gerada a informa��o correta do campo 07-VL_ICMS do r |
 | 97965 | 124216 | NE | Lib | PE-N�o est� sendo gerado o c�digo no campo 02-COD_INF_ITEM do registro |
 | 98324 | 124204 | SAL | Lib | MG-Alterar o sistema para gerar o c�digo de ajuste MG50000200 no regis |
@@ -54924,7 +54334,6 @@
 | 97668 | 123576 | NE | Lib | Est� importando incorretamente o "Valor cont�bil" para o imposto 3-ISS |
 | 97504 | 123567 | NE | Lib | SC-N�o est�o sendo gerados os registros C195 e C197 no informativo SPE |
 | 97467 | 123548 | NE | Lib | Est� permitindo selecionar indevidamente mais de um tipo de importa��o |
-| 97459 | 123532 | NE | Lib | Estão sumindo as informações nas abas 'Plano de contas anterior' e 'En |
 | 97581 | 123486 | NE | Lib | RJ-Est� importando incorretamente o imposto 154-FOT nas notas sem o im |
 | 98520 | 123465 | NE | Lib | SP-Est� sendo gerado indevidamente o registro E311 para a UF "SP" no i |
 | 97421 | 123456 | NE | Lib | Est� apresentando indevidamente a mensagem sobre diverg�ncia de saldos |
@@ -54937,7 +54346,6 @@
 | 97433 | 123254 | NE | Lib | BA-N�o est� sendo importado os dados de valores agregados no informati |
 | 97269 | 123222 | NE | Lib | N�o est� sendo apresentada a mensagem de advert�ncia "O imposto 's%' n |
 | 97878 | 123203 | SAM | Lib | Preencher o campo de 'Capacidade nominal' quando realizado a importa�� |
-| 98340 | 123183 | SAL | Pend | Gerar a DMPL no SPED Contábil. |
 | 97228 | 123170 | SAL | Lib | SC-Alterar o sistema para gerar o c�digo de ajuste SC10000135 no SPED  |
 | 97877 | 123158 | SAL | Lib | Ajustar o sistema para atender as novas altera��es do SPED Fiscal para |
 | 97274 | 123145 | NE | Lib | Est� importando incorretamente os valores dos campos "Rendimento bruto |
@@ -54986,12 +54394,12 @@
 | 96712 | 122198 | SAM | Lib | RJ-Ajustar a importa��o do imposto "56-FECOP-ICMS ST OP.Internas" nas  |
 | 96407 | 122195 | SAM | Lib | Ajustar a ferramenta "Comparativo Regime Tribut�rio" para considerar o |
 | 97428 | 122174 | SAM | Lib | DF-Realizar a importa��o do ICMS ST Retido nas Entradas na importa��o  |
-| 97336 | 122170 | SAL | Pend | Gerar a DLPA no SPED Contábil |
+| 97336 | 122170 | SAL | Lib | Gerar a DLPA no SPED Contábil |
 | 96437 | 122165 | SAM | Lib | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "CBe |
 | 96436 | 122157 | SAL | Lib | SC-Atualizar os c�digos da tabela 5.2 e 5.1.1, conforme Correio Eletr� |
 | 96551 | 122150 | SAM | Lib | Realizar a importa��o dos registros de CT-e e CT-eOS para o simulador  |
 | 96452 | 122146 | NE | Lib | Em alguns casos est� fechando o sistema ao gerar o informativo SPED Fi |
-| 97482 | 122114 | SAL | Pend | Incluir o relacionamento de contas contábeis nas notas explicativas, e |
+| 97482 | 122114 | SAL | Lib | Incluir o relacionamento de contas contábeis nas notas explicativas, e |
 | 101729 | 122105 | SAM | Pend | Considerar a tag 'xEvento' na importa��o de cancelamento atrav�s do NF |
 | 96374 | 122066 | NE | Lib | Est� replicando incorretamente os CFOP's dos acumuladores nas configur |
 | 96617 | 122004 | SAM | Lib | Importar os valores de todas as guias "Mensais" ou "Trimestrais" de um |
@@ -55034,10 +54442,8 @@
 | 96696 | 121473 | NE | Lib | MA-N�o est� considerando o valor de MVA configurado nos produtos para  |
 | 95945 | 121316 | NE | Lib | Est� importando para o campo incorreto os valores de juros e multa no  |
 | 96089 | 121280 | NE | Lib | Est� sendo setada a al�quota incorreta no lan�amento de notas, quando  |
-| 95909 | 121251 | NE | Lib | Não está demonstrando corretamente as validações de campos na modal de |
 | 101133 | 121247 | SAM | Pend | Realizar a importa��o do Cadastro do Benefici�rio para a tela de cadas |
 | 97116 | 121241 | SAL | Lib | Criar op��o para gerar o sequencial dos itens conforme o documento fis |
-| 95754 | 121187 | NE | Lib | Não está substituindo a variável do histórico no arquivo do SPED Contá |
 | 95620 | 121142 | SAM | Lib | Registrar os tempos trabalhados nos estudos do certificado A3 da EFD-R |
 | 95636 | 121124 | NE | Lib | Est� gerando valor incorreto para o registro K155 do informativo SPED  |
 | 95618 | 121105 | NE | Lib | RS-N�o est� sendo gerado o registro E240 por produto no informativo SP |
@@ -55104,7 +54510,6 @@
 | 98033 | 120093 | SAM | Lib | Alterar o tipo das mensagens exibidas nas telas "Outros Dados - Balan� |
 | 95034 | 120081 | NE | Lib | BA-Est� importando o valor do imposto 8-DIFALI incorretamente quando a |
 | 94784 | 120077 | SAM | Pend | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan |
-| 94958 | 120060 | NE | Lib | Está demonstrando indevidamente o erro de 'Falha ao executar o process |
 | 94777 | 120028 | NE | Lib | Est� importando incorretamente o valor da linha '7-Vendas Canceladas,  |
 | 94792 | 120027 | NE | Lib | N�o est� importando valor para o campo "29 - Cr�dito Fiscal de IRPJ -  |
 | 95439 | 120026 | SAM | Pend | Alterar o sistema para n�o demonstrar a mensagem "Essa nota j� existe" |
@@ -55155,7 +54560,6 @@
 | 94127 | 119252 | SAM | Lib | Alterar o sistema para aceitar o arquivo do CT-e Simplificado quando p |
 | 94126 | 119250 | SAM | Lib | Alterar o sistema para aceitar o arquivo do CT-e Simplificado quando p |
 | 94189 | 119225 | NE | Lib | Est� importando incorretamente o valor do campo "Valor do aglutinado"  |
-| 96505 | 119177 | SAM | Lib | Implementar validações na geração do arquivo e alterar a tela 'Arquivo |
 | 94124 | 119167 | NE | Lib | Est� ocorrendo indevidamente o erro de importa��o "Sem dados para impo |
 | 94116 | 119146 | NE | Lib | ES-Est� sendo gerado indevidamente valor no campo "22-VL_ICMS" do regi |
 | 94233 | 119137 | NE | Lib | PA-N�o est� importando o c�digo de recolhimento para o imposto 31-ST/A |
@@ -55181,7 +54585,6 @@
 | 93698 | 118625 | SAM | Lib | Liberar os tempos do ajuste de fechando o sistema ao gerar o SPED Fisc |
 | 93798 | 118584 | SAL | Lib | RJ-Inserir c�digos de itens para IPM na tela de valores agregados do S |
 | 93676 | 118560 | SAM | Lib | Criar op��o na importa��o do SPED Fiscal para importar o valor do impo |
-| 93645 | 118537 | SAM | Lib | Disponibilizar informações de saldos e lançamentos contábeis para a Es |
 | 93586 | 118483 | SAM | Desc | Atualizar o BOX-e para que seja poss�vel importar CT-eOS quando a tag  |
 | 93834 | 118467 | NE | Lib | Est� sendo setada a al�quota incorreta do imposto FUNRURAL nas notas d |
 | 93565 | 118319 | SAM | Lib | Criar op��o para salvar o xml dos arquivos 4010 e 4016 do Banco Centra |
@@ -55263,7 +54666,6 @@
 | 91559 | 115995 | NE | Lib | N�o esta importando a linha do COSIRF quando no XML possui apenas a ta |
 | 91545 | 115968 | NE | Lib | RO-N�o est� sendo gerado o registro C197 com o c�digo de ajuste RO1000 |
 | 91541 | 115892 | NE | Lib | Em alguns casos est� ocorrendo erro na tabela 'BETHADBA.EFDAS_API_TOKE |
-| 91624 | 115887 | NE | Lib | Está validando incorretamente a capacidade máxima de caracteres no cam |
 | 91448 | 115833 | NE | Lib | Contabilidade Digital: N�o est� permitindo informar a contra partida p |
 | 91709 | 115821 | SAM | Desc | Gerar a distribui��o de lucros na DIRF importando da guia Rendimentos  |
 | 91560 | 115818 | NE | Lib | PR-Est� sendo gerado o valor incorreto da linha "Estorno de d�bito nas |
@@ -55283,7 +54685,6 @@
 | 91590 | 115424 | SAL | Lib | Atualizar o informativo SPED ECF para o leiaute 11 conforme manual de  |
 | 91430 | 115416 | SAL | Lib | Alterar o comportamento para n�o abater as devolu��es do valor das rec |
 | 92527 | 115385 | SAM | Pend | Implementar uma mensagem de aviso quando o usu�rio realizar importa��o |
-| 90950 | 115327 | NE | Lib | Não está encaminhando para o menu "Início" quando pela tela do SPED Co |
 | 90974 | 115329 | NE | Lib | Est� demonstrando indevidamente a mensagem de aten��o "Per�odo de vig� |
 | 96927 | 115320 | SAM | Lib | Otimizar a gera��o dos arquivos de confer�ncia R4010, R4020 e R4080 da |
 | 91148 | 115278 | NE | Lib | N�o est� importando automaticamente a "Nota Devolvida" no quadro "Devo |
@@ -55296,10 +54697,7 @@
 | 90928 | 115166 | NE | Lib | Contabilidade Digital: N�o est� permitindo informar a contrapartida na |
 | 90922 | 115156 | SAL | Lib | Alterar o sistema para n�o gerar o campo 02 do registro E113, quando a |
 | 90813 | 115143 | NE | Lib | SP-Est� considerando indevidamente a al�quota interestadual da tag "pC |
-| 90752 | 115102 | SAM | Pend | Possibilitar o cadastro de novo contador e novo responsável legal pela |
 | 90814 | 115080 | NE | Desc | Est� permitindo importar lan�amento cont�bil com conta conciliada inde |
-| 90723 | 115069 | NE | Desc | Não está gerando o arquivo RTF no SPED Contábil, quando carregado arqu |
-| 90710 | 115066 | NE | Desc | Está ocorrendo lentidão ao salvar arquivos selecionados no componente  |
 | 92218 | 115038 | SAL | Lib | AM-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 91775 | 115031 | SAL | Lib | PA-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 91454 | 115025 | NE | Lib | MG-Est� sendo gerado o valor incorreto do campo 07-VL_ICMS do registro |
@@ -55323,7 +54721,6 @@
 | 90559 | 114671 | NE | Lib | RS-N�o est� sendo gerado o registro C180 no informativo SPED Fiscal, q |
 | 90469 | 114670 | NE | Lib | Est� demonstrando a mensagem "Existe a mesma combina��o de itens de se |
 | 91200 | 114661 | SAL | Lib | Realizar o c�lculo do imposto 28-FUNRURAL considerando as al�quotas co |
-| 90472 | 114646 | NE | Lib | Não está emitindo o SPED Contábil quando na parametrização está config |
 | 91428 | 114656 | NE | Lib | Em alguns casos n�o est� atualizando o banco de dados na tabela 'EFIMP |
 | 90486 | 114655 | NE | Lib | Est� fechando a tela "Progresso de importa��o" quando selecionado para |
 | 91184 | 114611 | SAL | Lib | Alterar o informativo da DIRF conforme leiaute do ano de 2025. |
@@ -55333,11 +54730,9 @@
 | 90362 | 114566 | NE | Lib | Est� ocorrendo erro de banco de dados quando abre a tela de docs fisca |
 | 91810 | 114523 | SAL | Lib | MT-Habilitar o campo 'Ajuste no SPED' para os lan�amentos de impostos  |
 | 90315 | 114511 | SAM | Lib | Corrigir �ndices duplicados nas tabelas CTLANCTO, CTLANCTO_SPED_ECF_GE |
-| 90259 | 114460 | NE | Lib | Está permitindo atribuir apenas o número 0 para código da conta e tamb |
 | 90271 | 114466 | SAM | Pend | Alterar a tela de sele��o de arquivos para particionamento do SPED Fis |
 | 90388 | 114375 | SAL | Lib | SC-Alterar o sistema para gerar o c�digo de ajuste SC20000011 no D197  |
 | 90364 | 114332 | SAL | Lib | SC-Alterar a escritura��o do SPED Fiscal no c�lculo do TTD 409, 410 e  |
-| 90176 | 114319 | NE | Lib | Não estão sendo listadas as empresas e nem sendo apresentadas as abas  |
 | 90300 | 114286 | NE | Lib | Est� apresentando indevidamente a advert�ncia "C�digo de benef�cio inv |
 | 90128 | 114251 | SAL | Lib | Alterar descri��o da "Natureza de Opera��o" dos c�digos 22301 e 22318  |
 | 90187 | 114250 | SAL | Lib | Alterar o sistema para n�o gerar o registro 0145 e o Bloco P da EFD Co |
@@ -55381,7 +54776,6 @@
 | 89483 | 113357 | NE | Lib | Est� importando os dados PIS e COFINS incorretamente quando a empresa  |
 | 94231 | 113341 | SAM | Lib | Criar a op��o "Gerar observa��o na nota conforme informado no(a):" nas |
 | 91575 | 113338 | SAL | Lib | PB-Alterar o sistema para gerar o registro E113 no SPED Fiscal para la |
-| 89644 | 113281 | NE | Lib | Não estão sendo demonstrados o destaque em vermelho e a tooltip com a  |
 | 89388 | 113275 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
 | 89387 | 113274 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
 | 89386 | 113273 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
@@ -55390,13 +54784,11 @@
 | 91201 | 113231 | SAM | Lib | Importar as al�quotas do imposto 28-FUNRURAL nas notas de entrada, sa� |
 | 89872 | 113228 | SAL | Lib | MG-Alterar o sistema para que seja gerado o registro E311 do SPED Fisc |
 | 89345 | 113204 | NE | Lib | Est� sobrescrevendo indevidamente notas segmentadas que possuem a op�� |
-| 94611 | 113100 | SAM | Lib | Incluir a aba 'Arquivos RTF' na modal 'Outros dados' do SPED Contábil  |
 | 90511 | 113068 | SAL | Lib | PB-Alterar a rotina de Anula��o de CT-e e CT-eOS conforme Ajustes Sini |
 | 89824 | 113040 | SAM | Lib | Implementar a rotina de importa��o dos fundos e clubes de investimento |
 | 89357 | 113028 | NE | Lib | Esta emitindo mensagem indevida ao gerar o SPED Fiscal multiempresas q |
 | 89245 | 113020 | SAM | Lib | Otimizar a DW ds_sped_blococ_regc197_sc_2 na gera��o do arquivo SPED F |
 | 89216 | 113018 | NE | Lib | Em alguns casos est� ocorrendo encerramento do sistema ao realizar imp |
-| 89240 | 113017 | NE | Lib | Não está sendo demonstrado habilitado o campo "Estrutura da classifica |
 | 89215 | 113011 | NE | Lib | N�o est� importando reten��es quando na configura��o de importa��o est |
 | 89165 | 113006 | SAL | Lib | RS-Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�nica |
 | 89129 | 112996 | SAM | Lib | Implementar o destaque dos impostos 133-PIS-I e 134-COFINS-I na import |
@@ -55411,7 +54803,6 @@
 | 89324 | 112886 | NE | Lib | RS-N�o est� sendo considerada a nota de devolu��o de compra no c�lculo |
 | 89152 | 112885 | NE | Lib | N�o est� sendo gerado corretamente o registro 1900 no informativo EFD  |
 | 89464 | 112884 | NE | Lib | N�o est� demonstrando as notas de entrada com impostos 133-PIS-I e 134 |
-| 89185 | 112875 | NE | Lib | Está apresentando indevidamente a mensagem "Esse código já foi atribuí |
 | 89143 | 112872 | NE | Lib | PR-Est� sendo gerado o c�digo de ajuste incorreto no registro E220 no  |
 | 89624 | 112849 | SAM | Lib | SP-Implementar na rotina de importa��o Leiaute Dom�nio Sistemas com Se |
 | 91407 | 112847 | SAL | Lib | Alterar o comportamento da guia "SPED/PIS/COFINS" nos lan�amentos de s |
@@ -55433,20 +54824,15 @@
 | 88767 | 112578 | NE | Desc | Est� sendo gerado incorretamente o DFC em rtf no informativo SPED Cont |
 | 89123 | 112557 | SAM | Lib | Ajustar a gera��o do SPED Cont�bil Invent�rio e Contas a pagar e receb |
 | 88729 | 112485 | SAL | Lib | ES-Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�nica |
-| 90697 | 112451 | SAM | Lib | Alterar alguns comportamentos da tela "Arquivos gerados" do "SPED Cont |
 | 89041 | 112455 | SAL | Lib | RS-Alterar o leiaute para a emiss�o de Notas Fiscais de Servi�o Eletr� |
 | 88613 | 112453 | SAL | Lib | Alterar o comportamento do sistema para se adaptar ao leiaute do arqui |
-| 88668 | 112363 | SAM | Lib | Considerar os arquivos apresentados na grid 'Defina o tipo do arquivo  |
-| 88667 | 112362 | NE | Lib | Está acontecendo a substituição da modal 'Outros dados' do SPED Contáb |
 | 88777 | 112368 | SAL | Lib | ES - Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�ni |
-| 88672 | 112356 | SAM | Lib | Apresentar 'D' ou 'C' de acordo com a natureza da conta, quando na aba |
 | 88735 | 112344 | NE | Lib | SC-N�o est� sendo gerado o registro E111 com o c�digo de ajuste SC0200 |
 | 88581 | 112341 | NE | Lib | Est� importando valores incorretos nos registros P200/P400 do SPED ECF |
 | 88513 | 112329 | SAL | Lib | MT-Alterar o arquivo XML para gerar a tag "InscricaoEstadual" para os  |
 | 88508 | 112310 | NE | Lib | Esta ocorrendo rejei��o das notas ao enviar XML para o Kolossus Audito |
 | 88640 | 112307 | NE | Lib | BA-Est� ocorrendo o erro de importa��o "N�o � permitido lan�ar valor d |
 | 88483 | 112288 | NE | Lib | Em alguns casos est� ocorrendo erro e encerramento do sistema ao reali |
-| 88877 | 112266 | SAL | Lib | Permitir gerar o SPED Contábil consolidado entre matriz e filiais |
 | 88462 | 112268 | SAM | Desc | Realizar estudo para avaliar o motivo de alguns registros do informati |
 | 91465 | 112244 | SAL | Lib | Alterar o sistema para habilitar o campo de chave de acesso para as no |
 | 89042 | 112235 | SAL | Lib | RS-Alterar o comportamento do arquivo XML quando o tomador for do exte |
@@ -55457,7 +54843,6 @@
 | 88337 | 112134 | SAM | Lib | Realizar o tratamento adequado para objetos n�o destru�dos ap�s a impo |
 | 88300 | 112095 | NE | Lib | N�o est�o sendo disponibilizadas os cancelanentos de NFC-e recebidas p |
 | 88302 | 112088 | NE | Lib | Est� ocorrendo o erro 'uo_imp_fixo_parser_xml' ao realizar importa��o  |
-| 88408 | 112057 | NE | Lib | Ao adicionar linha na última página na modal 'Informar contas anterior |
 | 90749 | 112013 | SAL | Lib | RO-Alterar a rotina de Anula��o de CTe e CT-eOS conforme Ajustes Sinie |
 | 96174 | 111984 | SAM | Lib | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut |
 | 90790 | 111971 | SAL | Lib | Alterar o sistema para ser poss�vel realizar a rotina de Anula��o de C |
@@ -55467,10 +54852,8 @@
 | 88211 | 111855 | NE | Lib | Est� setando incorretamente o CFPS na nota, ao realizar a importa��o d |
 | 88210 | 111842 | NE | Lib | Est� ocorrendo o erro "o pais exterior n�o encontrado" ao realizar a i |
 | 88194 | 111760 | NE | Lib | Est� importando incorretamente os registros P200/P300/P400/P500 do inf |
-| 88139 | 111741 | SAIL | Lib | Aplicar regras de permissões no menu SPED Contábil |
 | 88146 | 111721 | NE | Lib | BA-N�o est� sendo considerando o MVA corretamente para o imposto "31-S |
 | 88134 | 111715 | NE | Lib | N�o est� carregando a interface 'Outros dados' da EFD-Reinf quando sel |
-| 88115 | 111704 | NE | Lib | Componente Month datepicker está permitindo digitar mais caracteres do |
 | 88064 | 111685 | NE | Lib | N�o est� sendo feito a comunica��o com webservice da EFD-Reinf, ficand |
 | 88103 | 111648 | NE | Lib | Est� importando incorretamente o "Indicador do saldo inicial" do regis |
 | 88121 | 111611 | NE | Lib | Est� gerando incorretamente o registro K156 do informativo "SPED ECF"  |
@@ -55542,7 +54925,6 @@
 | 88161 | 110552 | SAL | Lib | MS-Alterar a quantidade de caracteres do campo 'N� identifica��o DAEMS |
 | 87227 | 110541 | SAM | Desc | Otimizar Importa��o Padr�o CF-e arquivo XML na etapa de carregamento d |
 | 87237 | 110538 | NE | Lib | N�o est� baixando notas quando possuem downloads de NF-es + CT-es conf |
-| 87633 | 110531 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED ECD identific |
 | 87246 | 110523 | NE | Lib | Est� importando incorretamente os registros P200/P300 do informativo S |
 | 90593 | 110515 | SAIL | Pend | Criar tela para visualizar o arquivo xml da NFS-e Padr�o Nacional |
 | 87199 | 110469 | NE | Desc | AL-N�o est� somando o valor de FCP ST ao valor da SUBTRI quando seleci |
@@ -55586,7 +54968,6 @@
 | 87811 | 109731 | SAL | Lib | Ajustar a gera��o da EFD-Reinf conforme a Nota T�cnica 02/2024. |
 | 87028 | 109721 | SAM | Lib | CE-Adicionar o valor de FCP ao valor do ICMS ST em notas de entrada (o |
 | 86685 | 109717 | NE | Lib | Est� gerando indevidamente o centro de custo no campo 02 do registro I |
-| 86720 | 109699 | NE | Lib | Está sendo apresentando uma mensagem de erro de quantidade máxima de c |
 | 87017 | 109684 | SAM | Pend | Otimizar gera��o do informativo Sped Cont�bil.  |
 | 87016 | 109671 | SAM | Lib | Efetuar a importa��o de CF-e Arquivo XML conforme CFOP informado no ca |
 | 86985 | 109591 | SAM | Lib | SP-Otimizar a gera��o do SPED Fiscal para as ds_sped_notas_entradas, d |
@@ -55600,7 +54981,6 @@
 | 86377 | 109384 | SAL | Lib | RJ-Alterar o leiaute de emiss�o de Notas Fiscais de Servi�o Eletr�nica |
 | 86371 | 109378 | SAL | Lib | PR-Alterar o arquivo XML para gerar a tag "data_fato_gerador" na emiss |
 | 86327 | 109330 | NE | Lib | Em alguns casos n�o est� importando corretamente os cancelamentos de C |
-| 86793 | 109285 | SAM | Pend | Permitir a importação de caracteres especiais em arquivos TXT no forma |
 | 87077 | 109290 | SAL | Lib | Criar valida��o no SPED ECF entre os registros N620+N630 e N660+N670 c |
 | 86272 | 109253 | NE | Lib | Est� sendo gerado na compet�ncia incorreta os contratos no Demonstrati |
 | 86240 | 109239 | NE | Lib | Em alguns casos est� encerrando o sistema ao gravar e fechar a tela de |
@@ -55624,8 +55004,6 @@
 | 86092 | 109039 | NE | Lib | Est� sendo considerado na tabela de relacionamento apenas um dos produ |
 | 86067 | 108980 | NE | Desc | SP-Est� importando incorretamente os valores de ICMS ST no quadro "Tot |
 | 99962 | 108973 | SAIL | Lib | RO-Implementar a transfer�ncia de cr�ditos gerando o c�digo de ajuste  |
-| 86176 | 108945 | NE | Desc | Está sendo apresentada uma modal abaixo da tela de processamento caso  |
-| 86244 | 108944 | NE | Lib | Não está sendo demonstrado desabilitado o campo 'Estrutura da classifi |
 | 86421 | 108948 | SAM | Lib | Ajustar a importa��o da Distribui��o de Lucros do m�dulo Contabilidade |
 | 85990 | 108943 | NE | Lib | PE-N�o est� sendo gerado o registro E113 e est� sendo gerado incorreta |
 | 85993 | 108935 | NE | Lib | Em alguns casos o sistema est� fechando ao gerar o SPED Cont�bil. |
@@ -55636,7 +55014,6 @@
 | 86066 | 108893 | NE | Lib | RS-N�o est� importando o imposto 31-ST/AT por produto para empresas do |
 | 85976 | 108887 | NE | Lib | Est� gerando incorretamente o evento R-4020 no informativo EFD-Reinf,  |
 | 86060 | 108876 | NE | Lib | N�o est� sendo gerada corretamente a DMPL em RTF no informativo SPED C |
-| 85925 | 108838 | SAM | Lib | Testar performance da importação do plano de contas pelo arquivo SPED  |
 | 88004 | 108823 | SAL | Lib | MA-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 85967 | 108817 | NE | Desc | Em alguns casos est� duplicando o registro I050 do informativo SPED Co |
 | 86082 | 108809 | NE | Lib | N�o est� somando o valor do frete no valor cont�bil da nota quando no  |
@@ -55656,7 +55033,6 @@
 | 85713 | 108436 | NE | Lib | MG-N�o est� sendo gerado o registro C197 com o c�digo de ajuste MG5000 |
 | 86214 | 108428 | SAM | Lib | GO-Implementar o destaque do imposto FUNDEINFRA na importa��o de NF-e  |
 | 85681 | 108375 | NE | Lib | N�o est�o sendo replicadas as contas do registro L210 do informativo S |
-| 86172 | 108290 | NE | Lib | Estão ocorrendo vínculos incorretos na 'Natureza das Contas' da Parame |
 | 85689 | 108279 | NE | Lib | Em alguns casos o sistema est� sendo finalizado ao acessar o bot�o "Ou |
 | 85643 | 108201 | NE | Pend | N�o est� considerando os registros C321/C370/C510/D110 quando realizad |
 | 85657 | 108150 | NE | Lib | N�o est� importando o c�digo CEST nas notas quando selecionado a op��o |
@@ -55727,7 +55103,6 @@
 | 84252 | 106103 | NE | Lib | RN-Est� sendo gerando indevidamente o registro RN055900 do informativo |
 | 84214 | 106070 | NE | Lib | N�o est� habilitando para informar a conta cont�bil no registro L210 d |
 | 84205 | 106034 | NE | Lib | Est� apresentando erro de bando de dados ao gravar a tela "Outros Dado |
-| 84175 | 106004 | SAM | Lib | Alterar a quantidade de caracteres do campo Razão Social. |
 | 84193 | 105959 | NE | Lib | SE-N�o est�o sendo gerados os registros 0460, C195 e C197 no informati |
 | 85443 | 105951 | SAM | Lib | AC-Gerar a guia GRNE normal e GNRE avulsa para a UF Favorecida AC com  |
 | 84392 | 105945 | SAL | Lib | Permitir gerar mais de uma linha para o mesmo s�cio na EFD REINF/SCP p |
@@ -55863,7 +55238,6 @@
 | 82796 | 102956 | SAM | Lib | MA-Importar o c�digo de recolhimento do imposto 27-ICMSA na importa��o |
 | 82789 | 102954 | SAL | Lib | Alterar a forma de gerar o valor do campo '6' do registro H010 do SPED |
 | 92995 | 102953 | SAM | Lib | Alterar o sistema para que seja poss�vel informado itens de servi�o co |
-| 83040 | 102937 | SAM | Lib | Permitir importar o plano de contas pelo arquivo do SPED Contábil. |
 | 83488 | 102925 | SAL | Lib | RS-Alterar a ordem das parcelas no arquivo XML para emiss�o de Notas F |
 | 82625 | 102912 | NE | Lib | Esta cortando o n�mero da inscri��o ao salvar relat�rio do registro R- |
 | 82854 | 102894 | SAL | Lib | Alterar o sistema para n�o gerar o evento R-4020 do EFD Reinf em casos |
@@ -56070,7 +55444,6 @@
 | 80586 | 99393 | NE | Lib | SC-Est�o sendo gerados indevidamente os registros 0460, D195 e C197 no |
 | 80809 | 99358 | SAL | Lib | SP-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 80542 | 99332 | SAL | Lib | RS-Alterar o XML para gerar a tag "DescontoIncondicionado" para emiss� |
-| 82708 | 99299 | SAIL | Lib | Gerar SPED Contábil |
 | 81779 | 99298 | SAL | Lib | Alterar a rotina de Anula��o de CT-e conforme Ajuste Sinief n� 31/2022 |
 | 80685 | 99289 | NE | Lib | Em alguns casos est� importando a base de c�lculo do imposto 28-FUNRUR |
 | 80528 | 99266 | SAL | Lib | AM-Permitir informar mais de 10 caracteres no campo "N� Documento de A |
@@ -61056,34 +60429,34 @@
 | 45977 | 34183 | SAM | Lib | Criar as op��es "Gerar informa��es complementares na nota conforme inf |
 | 27796 | 34062 | SAM | Lib | Gerar a Observa��o de interesse do fisco e do contribuinte do cadastro |
 | 20958 | 33992 | SAM | Lib | Ocorre erro na transfer�ncia do Dom�nio Atendimento para o Dom�nio Con |
-| 18687 | 33977 | SAM | Desc | Alterar o conjunto de dados "CT-e Formato XML - Notas Fiscais de Sa�da |
 | 18604 | 33970 | SAM | Lib | Cadastrar os Fornecedores, Clientes e Remetentes/Destinat�rios somente |
+| 18687 | 33977 | SAM | Desc | Alterar o conjunto de dados "CT-e Formato XML - Notas Fiscais de Sa�da |
 | 18747 | 33981 | SAM | Lib | Atualizar os leiautes Completo Dom�nio e 19 de notas de sa�das para im |
-| 18470 | 33959 | SAM | Lib | Atualizar a gera��o do arquivo de remessa de 240 posi��es para o banco |
 | 18429 | 33951 | SAM | Lib | Possibilitar a importa��o de extrato banc�rio do banco do Brasil, quan |
+| 18470 | 33959 | SAM | Lib | Atualizar a gera��o do arquivo de remessa de 240 posi��es para o banco |
 | 18233 | 33936 | SAM | Lib | Criar op��o para indentificar a exist�ncia de produtos pelo c�digo de  |
 | 18034 | 33920 | SAM | Desc | Otimizar c�lculo do PIS e COFINS, quando realizado conforme EFD. |
 | 18098 | 33927 | SAM | Lib | Desenvolver importa��o padr�o para o leiaute do SPED PIS e COFINS |
 | 17878 | 33908 | SAM | Lib | Criar op��o para alterar os informa��es do SPED no cadastro de produto |
 | 17496 | 33882 | SAM | Lib | Criar campo para informar nota devolvida nos leiautes completo e 19 do |
-| 17482 | 33880 | SAM | Lib | GO - Incluir na Importa��o Padr�o do Leiaute Dom�nio Sistemas ? Comple |
 | 17494 | 33881 | SAM | Lib | Permitir gravar as notas de devolu��o sem a informa��o da nota devolvi |
+| 17482 | 33880 | SAM | Lib | GO - Incluir na Importa��o Padr�o do Leiaute Dom�nio Sistemas ? Comple |
 | 17609 | 33891 | SAM | Lib | Criar op��o para importar notas canceladas no importador padr�o NFe XM |
 | 17358 | 33867 | SAM | Lib | Criar op��o para ajustar diferen�a que ocorre entre o valor do imposto |
 | 17138 | 33839 | SAM | Lib | Permitir configurar mais de uma situa��o tribut�ria para CFOP e acumul |
 | 17098 | 33832 | SAM | Lib | Criar relat�rios para confer�ncia do calculo do Pis e Cofins para empr |
-| 16366 | 33778 | SAM | Lib | Desenvolver importa��o espec�fica para arquivo no formato SPED fiscal |
 | 16364 | 33776 | SAM | Lib | Desenvolver importa��o espec�fica para arquivo XML de NFe. |
+| 16366 | 33778 | SAM | Lib | Desenvolver importa��o espec�fica para arquivo no formato SPED fiscal |
 | 15060 | 33703 | SAM | Lib | Buscar os dados referente aos ECFs da nova tela de lan�amento de redu� |
-| 14769 | 33684 | SAM | Desc | MT - Incluir no leiaute Dominio sistemas - Completo Registros para efe |
 | 14846 | 33688 | SAM | Lib | Enviar para a Dominio a quantidade de empresas que geram o informativo |
+| 14769 | 33684 | SAM | Desc | MT - Incluir no leiaute Dominio sistemas - Completo Registros para efe |
 | 14848 | 33689 | SAM | Lib | Enviar para a Dom�nio a quantidade de empresa que geram o informativo  |
 | 14568 | 33674 | SAM | Desc | Permitir que seja poss�vel inserir um campo com o nome do campo igual  |
 | 13711 | 33564 | SAM | Lib | Importar informa��es do arquivo sped fiscal(txt), para a guia compleme |
-| 13413 | 33522 | SAM | Lib | Possibilitar a importa��o de NFe com vers�o do XML 2.00.         |
 | 13164 | 33511 | SAM | Lib | Otimizar o processo de importa��o de NFe via arquivo XML.     |
-| 13202 | 33515 | SAM | Lib | Gerar para o informativos SPED a espress�o "S/N" no campo n�mero do en |
+| 13413 | 33522 | SAM | Lib | Possibilitar a importa��o de NFe com vers�o do XML 2.00.         |
 | 13315 | 33519 | SAM | Lib | Otimizar o processo de gera��o do informativo SPED Fiscal |
+| 13202 | 33515 | SAM | Lib | Gerar para o informativos SPED a espress�o "S/N" no campo n�mero do en |
 | 12975 | 33495 | SAM | Lib | Incluir o item "CT-e Substituto" no campo 'Tipo CT-e' na guia Compleme |
 | 12600 | 33456 | SAM | Lib | Criar leiaute padr�o em XML para Importa��o de Conhecimento de Transpo |
 | 12246 | 33412 | SAM | Lib | N�o abrir a tela de detalhamento anexo VB quando o valor da coluna out |
@@ -61093,8 +60466,8 @@
 | 10737 | 33261 | SAM | Lib | MG-Aumentar para 60 caracteres o campo arquivo da tela de gera��o do i |
 | 10666 | 33255 | SAM | Lib | Permitir lan�ar notas com modelo 55 sem informar a Chave NF-e quando a |
 | 10404 | 33199 | SAM | Desc | Incluir totalizadores para as colunas "Cancelamentos e Descontos" no M |
-| 10044 | 33117 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do leiaute 040 da CEF |
 | 10068 | 33127 | SAM | Desc | Quando a empresa efetua apura��o do Simples Nacional pelo regime de ca |
+| 10044 | 33117 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do leiaute 040 da CEF |
 | 9917 | 33094 | SAM | Lib | Criar novo layout de importa��o de notas com registro para ser informa |
 | 9851 | 33073 | SAM | Desc | Aumentar para 500 caracteres o limite para descri��o das contas na est |
 | 9656 | 33029 | SAM | Desc | Aumentar a quantidade de caracteres do bot�o observa��es do livro de a |
@@ -61102,18 +60475,18 @@
 | 9380 | 32974 | SAM | Desc | Exibir a mensagem: "H� nota(s) de sa�das com c�digo 11 para esp�cie se |
 | 9313 | 32938 | SAM | Desc | Alterar a mensagem na importa��o de produtos quando o leiaute n�o esti |
 | 9215 | 32911 | SAM | Desc | Atualizar leiaute de importa��o de clientes e fornecedores incluindo t |
-| 9109 | 32867 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco Sicredi, conf |
-| 9143 | 32881 | SAM | Desc | SP-Tornar obrigat�ria a informa��o do campo Unidade do cadastro de pro |
-| 9104 | 32863 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco Real conforme |
 | 9154 | 32885 | SAM | Lib | Ajustar a Base de calculo dos cr�ditos do PIS e COFINS para as empresa |
-| 9139 | 32877 | SAM | Desc | Tornar obrigat�ria a informa��o do munic�pio no cadastro de clientes e |
+| 9109 | 32867 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco Sicredi, conf |
 | 9146 | 32883 | SAM | Desc | Aumentar o tamanho do campo do n�mero da nota fiscal que acoberta a ca |
+| 9143 | 32881 | SAM | Desc | SP-Tornar obrigat�ria a informa��o do campo Unidade do cadastro de pro |
+| 9139 | 32877 | SAM | Desc | Tornar obrigat�ria a informa��o do munic�pio no cadastro de clientes e |
+| 9104 | 32863 | SAM | Lib | Possibilitar a importa��o de arquivo de retorno do Banco Real conforme |
 | 9100 | 32860 | SAM | Lib | Permitir a  importa��o de bloquetos recebidos do banco HSBC conforme l |
-| 9005 | 32843 | SAM | Desc | Criar campo no cadastro de acumuladores para definir a situa��o tribut |
-| 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
 | 9002 | 32840 | SAM | Desc | Criar campo para informar observa��es no relat�rio Mapa Resumo de ECF. |
+| 9005 | 32843 | SAM | Desc | Criar campo no cadastro de acumuladores para definir a situa��o tribut |
 | 9003 | 32841 | SAM | Desc | Considerar os valores por situa��o tribut�ria do ECF para gerar o rela |
 | 9004 | 32842 | SAM | Desc | Criar campos com os valores totais de cada situa��o tribut�ria no rela |
+| 9001 | 32839 | SAM | Desc | Incluir mais uma coluna de aliquota nos relat�rios Mapa Resumo ECF mod |
 | 8826 | 32764 | SAM | Lib | Criar novo leiaute de importa��o de notas com op��o para importa��o de |
 | 8766 | 32742 | SAM | Desc | Aumentar para 16 caracteres o tamanho do campo para informar valores n |
 | 8543 | 32701 | SAM | Desc | Aumentar a quantidade de caracteres no campo "Bem", da tela "Incorpora |
@@ -61126,17 +60499,17 @@
 | 8191 | 32580 | SAM | Desc | Incluir o campo E-mail no layout de importa��o de fornecedores. |
 | 8037 | 32525 | SAM | Desc | Otimizar o processo de emiss�o do Mapa Resumo de ECF modelos II e III. |
 | 7854 | 32462 | SAM | Desc | Desabilitar o campo "N�mero do Caixa" na tela de outros dados do ECF p |
-| 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
 | 7853 | 32461 | SAM | Lib | Considerar sempre o GT final do ultimo dia anterior para calcular o GT |
-| 7459 | 32370 | SAM | Lib | N�o permitir realizar a importa��o de lan�amentos se a empresa gera o  |
-| 7556 | 32387 | SAM | Lib | Criar leiaute de importa��o de lan�amentos em lotes. |
-| 7607 | 32397 | SAM | Desc | Alterar leiaute de importa��o de produtos para permitir a importa��o d |
+| 7884 | 32464 | SAM | Desc | Demonstrar os valores de descontos e cancelamentos de ECF no relat�rio |
 | 7458 | 32369 | SAM | Lib | N�o permitir incluir lan�amentos pela tela de lan�amentos se a empresa |
+| 7607 | 32397 | SAM | Desc | Alterar leiaute de importa��o de produtos para permitir a importa��o d |
+| 7556 | 32387 | SAM | Lib | Criar leiaute de importa��o de lan�amentos em lotes. |
 | 7576 | 32392 | SAM | Lib | Exportar os lan�amentos efetuados em lotes conforme leiaute para impor |
+| 7459 | 32370 | SAM | Lib | N�o permitir realizar a importa��o de lan�amentos se a empresa gera o  |
 | 7162 | 32296 | SAM | Desc | Na consulta F4 considerar caracteres especiais para localizar a conta. |
 | 6693 | 32241 | SAM | Lib | Ajustar a gera��o do n�mero da nota que acoberta a carga de transporte |
-| 6537 | 32204 | SAM | Desc | Aumentar tamanho do campo "Observa��es" dos itens na emiss�o do protoc |
 | 6609 | 32223 | SAM | Lib | Criar layout de importa��o de notas onde possa ser informado qual o ti |
+| 6537 | 32204 | SAM | Desc | Aumentar tamanho do campo "Observa��es" dos itens na emiss�o do protoc |
 | 6402 | 32142 | SAM | Lib | Quando lan�ado notas de saidas com modelo 07, somente abrir a tela dad |
 | 6367 | 32136 | SAM | Desc | Ao imprimir o Relat�rio Plano de Contas matricial configurado com marg |
 | 5985 | 32053 | SAM | Lib | Criar op��o para que na importa��o de ECFs seja informado o numero de  |
@@ -61146,13 +60519,13 @@
 | 4914 | 31803 | SAM | Lib | Alterar vers�o Validador Sintegra de 5.1.0 para 5.2.0 |
 | 4786 | 31778 | SAM | Lib | Desenvolver novo modelo de Mapa resumo de ECF |
 | 4725 | 31750 | SAM | Lib | Criar layout para importa��o dos rateios de centro de custos nos lan�a |
-| 4537 | 31688 | SAM | Lib | Incluir a op��o de exportar temb�m Cadastro de M�quinas ECF para o m�d |
 | 4569 | 31701 | SAM | Lib | PE-Gerar o n�mero do Fax informado no cadastro da empresa e no cadastr |
+| 4537 | 31688 | SAM | Lib | Incluir a op��o de exportar temb�m Cadastro de M�quinas ECF para o m�d |
 | 4319 | 31623 | SAM | Lib | Nos lan�amentos dos dados de ECF, quando alterado o valor do GT atual, |
 | 4242 | 31600 | SAM | Lib | Criar campos para serem informados contas para contabilizar os cancela |
 | 4147 | 31568 | SAM | Desc | Disponibilizar o envio de Layout por email, em todos os itens do menu  |
-| 3931 | 31507 | SAM | Lib | Ao alterar a esp�cie de um cupom fiscal para nota fiscal, exibir mensa |
 | 3896 | 31487 | SAM | Lib | PR-Ao gerar DFC eliminar todos os caracteres diferentes de numeros e l |
+| 3931 | 31507 | SAM | Lib | Ao alterar a esp�cie de um cupom fiscal para nota fiscal, exibir mensa |
 | 3431 | 31337 | SAM | Desc | Nos lan�amentos de notas de saidas ou servi�os na tela de dados do ECF |
 | 3185 | 31285 | SAM | Lib | Desenvolver importa��o de bloquetos pagos para o banco BESC no layout  |
 | 2821 | 31171 | SAM | Lib | Gerar arquivo DNF conforme novo layout |
@@ -63153,19 +62526,25 @@
 | 18790 | 16 | SAL | Lib | N�o gerar o registro C173 para as empresas do ramos de com�rcio vareji |
 | 18949 | 4 | SAL | Lib | BA-Atualizar informativo DMA conforme vers�o do leiaute DMA2011 |
 
-## Utilitarios e rotinas (859 total, 69 pendentes)
+## Utilitarios e rotinas (823 total, 65 pendentes)
 
 | SAI | PSAI | Tipo | Status | Resumo |
 |-----|------|------|--------|--------|
-| 101718 | 130663 | NE | Pend | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
+| 102182 | 131337 | NE | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102159 | 131291 | SAM | Pend | Realizar a reconexão do agente do Web Service SEFAZ quando houve desco |
+| 102138 | 131267 | SAM | Pend | Realizar testes no processo das Rotinas Automáticas devido a alteração |
+| 102033 | 131136 | SAM | Lib | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102141 | 131104 | NE | Pend | Em alguns casos está travando o sistema ao executar as Rotinas automát |
+| 102264 | 131103 | NE | Pend | Não está sendo salvo corretamente os relatórios do Simples Nacional na |
+| 101977 | 131071 | SAM | Pend | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados a |
+| 101839 | 130873 | SAM | Pend | Realizar testes no processo das Rotinas Autom�ticas devido a altera��o |
+| 101718 | 130663 | NE | Lib | Est�o sendo corrompidos os arquivos XML com o atributo de namespace in |
 | 101572 | 130569 | SAM | Pend | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa |
 | 101571 | 130564 | SAM | Pend | Incluir os comandos SQL referente aos problemas de travamento no agent |
 | 101352 | 130176 | NE | Pend | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_aut |
 | 101233 | 130124 | SAM | Lib | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas  |
 | 101230 | 130119 | NE | Lib | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a |
 | 101279 | 130073 | NE | Lib | N�o est� sendo respeitado o limite de lote de arquivo(s) configurado n |
-| 101334 | 130038 | SAM | Pend | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados a |
-| 101195 | 129906 | NE | Pend | Não estão sendo apresentadas todas as mensagens de inconsistências enc |
 | 101070 | 129900 | SAM | Pend | Reduzir quantidade de mensagens repetidas no agente de comunica��o |
 | 101007 | 129819 | SAM | Lib | Realizar testes nas rotinas autom�ticas devido a altera��es feitas pel |
 | 101010 | 129811 | SAM | Desc | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF |
@@ -63181,7 +62560,7 @@
 | 100348 | 128819 | SAM | Pend | Realizar os testes de autentica��o do Agente de Comunica��o com a API  |
 | 100337 | 128804 | SAM | Lib | Realizar testes no processo de Rotinas Autom�ticas na Escrita Fiscal. |
 | 100334 | 128801 | SAM | Lib | Realizar testes no processo de Rotinas Autom�ticas no m�dulo Contabili |
-| 100281 | 128605 | NE | Pend | Corrigir o sistema para que a reten��o referente a rotina de distribui |
+| 100281 | 128605 | NE | Desc | Corrigir o sistema para que a reten��o referente a rotina de distribui |
 | 100085 | 128357 | SAM | Lib | Adequar o uso definitivo de Certificado Digital A3 no Cont�bil. |
 | 100084 | 128354 | SAM | Desc | Adequar o uso definitivo de Certificado Digital A3 no Cont�bil. |
 | 99916 | 128034 | SAM | Pend | Alterar a arquitetura do processo de execu��o das Rotinas Autom�ticas  |
@@ -63191,7 +62570,6 @@
 | 99892 | 127005 | SAM | Pend | Realizar testes em todos os processos/servi�os da escrita que utilizam |
 | 99469 | 127000 | NE | Lib | N�o est�o sendo mantidas as configura��es feitas na janela de Rotinas  |
 | 99427 | 126810 | SAM | Pend | Criar uma rotina para desativa��o das caixas de e-mail do BOX-e quando |
-| 99572 | 126629 | SAM | Pend | Permitir somente o cadastro de empresas Ativas no Onvio e interromper  |
 | 99463 | 126635 | SAM | Pend | Criar rotina autom�tica para emiss�o da DLPA em PDF e Excel. |
 | 100121 | 126442 | NE | Pend | Em alguns casos n�o est� finalizando o processo de apura��o pelas Roti |
 | 99650 | 126338 | SAM | Pend | Emitir o demonstrativo dos impostos e demonstrativo EFD PIS e COFINS n |
@@ -63201,7 +62579,6 @@
 | 98939 | 125748 | NE | Pend | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nom |
 | 99030 | 125672 | SAL | Pend | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 98904 | 125645 | NE | Desc | Em alguns casos est� travando o sistema ao executar as "Rotinas autom� |
-| 98472 | 125057 | SAM | Pend | Permitir que o DFC indireto seja gerado e enviado pelas Rotinas progra |
 | 99351 | 124865 | SAIL | Lib | Implementar rotina de distribui��o de lucros e dividendos com reten��o |
 | 98293 | 124832 | SAM | Lib | Testar a cria��o de conta cont�bil quando for criada atrav�s das rotin |
 | 98275 | 124780 | NE | Lib | Ocorre erro no agente de comunica��o quando trocado belvo para pluggy  |
@@ -63214,9 +62591,7 @@
 | 97467 | 123548 | NE | Lib | Est� permitindo selecionar indevidamente mais de um tipo de importa��o |
 | 98258 | 123498 | SAM | Desc | Efetuar testes nos pontos impactados devido � altera��o do time de Pla |
 | 99628 | 123478 | SAM | Lib | Criar rotina autom�tica para emiss�o do Di�rio e Raz�o em PDF e Excel. |
-| 98471 | 123281 | SAM | Pend | Permitir que o DFC direto seja gerado e enviado pelas Rotinas programa |
 | 97180 | 123212 | SAM | Lib | Criar uma rotina de higieniza��o para deletar os jobIds antigos ap�s o |
-| 98368 | 123185 | SAM | Pend | Permitir que a DMPL seja gerada e enviada pelas Rotinas programadas. |
 | 97589 | 123137 | SAM | Lib | Implementar no Sistema op��o para gerar o arquivo SPED Fiscal via Roti |
 | 97275 | 123133 | NE | Lib | Est� sendo gerado incorretamente apenas os relat�rios do �ltimo lote d |
 | 97017 | 122961 | SAM | Pend | Inserir informa��o para separa��o por lote nas importa��es NFS-e ABRAS |
@@ -63224,14 +62599,13 @@
 | 96741 | 122658 | SAM | Lib | Realizar testes de conex�o do Dom�nio Cont�bil e Agente de Comunica��o |
 | 97881 | 122589 | SAL | Lib | SE-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 96693 | 122576 | SAM | Desc | Inserir informa��o para separa��o por lote nas importa��es NFS-e, CF-e |
-| 96749 | 122535 | NE | Lib | Não está gerando inconsistência na rotina, ou está gerando a inconsist |
 | 98046 | 122514 | NE | Lib | N�o est�o sendo gerados o recibo, extrato, guia DAS e demonstrativo do |
 | 96667 | 122476 | NE | Lib | As notas fiscais n�o est�o sendo enviadas para o Box-e atrav�s do Busc |
 | 96586 | 122422 | NE | Lib | Est� ocorrendo erro no Agente de Comunica��o nos envios do Kolossus Au |
 | 96529 | 122366 | SAL | Lib | Realizar estudos na gera��o da EFD-Reinf com certificados do tipo A3 e |
 | 96849 | 122228 | SAM | Pend | Implementar no sistema para n�o ser exibido mensagem de aten��o exigin |
 | 96547 | 122203 | NE | Lib | Em alguns casos n�o est� considerando corretamente a marca��o da op��o |
-| 97341 | 122169 | SAM | Pend | Permitir que a DLPA seja gerada e enviada pelas Rotinas programadas. |
+| 97341 | 122169 | SAM | Lib | Permitir que a DLPA seja gerada e enviada pelas Rotinas programadas. |
 | 96311 | 122076 | SAM | Lib | Alterar o Agente de Comunica��o para atender a altera��o do parceiro C |
 | 96112 | 121850 | SAM | Pend | Implementar Logs no Agente de Comunica��o para capturar as informa��es |
 | 96102 | 121824 | SAM | Lib | Emitir uma mensagem ao gerar a EFD-Reinf e ocorrer 'Erro lote', quando |
@@ -63252,7 +62626,6 @@
 | 95424 | 120868 | SAL | Lib | Alterar o sistema conforme as modifica��es do Portal e-CAC para as rot |
 | 96579 | 120813 | SAM | Lib | Alterar a mensagem de aviso quando n�o gerado o Extrato do DAS na roti |
 | 95408 | 120750 | NE | Lib | Est� importando incorretamente apenas um segmento da NF-e, quando na e |
-| 95393 | 120724 | NE | Lib | Não está enviando a notificação ao Agente de comunicação do Contábil d |
 | 95252 | 120624 | SAM | Pend | Alterar a rotina de remover as notas do cat�logo de importa��o da escr |
 | 95257 | 120615 | SAM | Pend | Remover itens com latencia alta para processos assincronos |
 | 95222 | 120583 | SAL | Lib | Realizar estudos para tornar poss�vel a gera��o da EFD-Reinf com certi |
@@ -63270,15 +62643,11 @@
 | 94093 | 118838 | SAM | Lib | Alterar para que seja utilizado o certificado digital informado no men |
 | 93821 | 118766 | SAM | Lib | Realizar estudos com solu��o em IA, criando um Agente Copilot para SQL |
 | 93847 | 118715 | NE | Pend | Em alguns casos, uma mesma rotina programada est� sendo apresentada em |
-| 93481 | 118355 | NE | Lib | Não está salvando corretamente uma rotina de integração contábil ao ed |
 | 93423 | 118283 | NE | Lib | Est� sendo apresentada indevidamente a mensagem 'Esta empresa n�o poss |
 | 93487 | 118257 | NE | Lib | Est� travando indevidamente o agente de comunica��o quando ocorre o re |
 | 93163 | 117978 | NE | Pend | Esta sendo apresentado indevidamente a situa��o de inconsist�ncia ao e |
 | 93294 | 117944 | NE | Desc | Est� apresentando o erro "String was not recognized as a valid DateTim |
-| 93158 | 117923 | NE | Lib | Não está validando os quadros de processos e envios no cadastro da rot |
-| 93034 | 117911 | NE | Desc | Está apresentando erro na rotina de integração contábil da Escrita Fis |
 | 93035 | 117915 | SAM | Lib | Implementar a altera��o proveniente do estudo da SAI 92013, ajustando  |
-| 93016 | 117896 | NE | Lib | Está apontando erro indevidamente ao clicar em Avançar no cadastro de  |
 | 93003 | 117683 | SAM | Pend | Contabilidade Digital: Criar rotina para editar o lan�amento de extrat |
 | 92827 | 117613 | SAM | Lib | Implementar a altera��o proveniente do estudo da SAI 92013, ajustando  |
 | 92981 | 117567 | NE | Lib | Est� sendo apresentada indevidamente a mensagem 'Esta empresa n�o poss |
@@ -63291,7 +62660,6 @@
 | 91691 | 116141 | SAM | Pend | Contabilidade Digital: Melhorar o controle das altera��es das configur |
 | 93649 | 116053 | SAM | Pend | Gerar a DEFIS API Integra Contador pelas rotinas autom�ticas. |
 | 91381 | 115756 | SAM | Lib | Alterar comportamento do Busca NF-e quando no campo "Requerente" do ce |
-| 91601 | 115687 | NE | Pend | Está apresentando indevidamente a mesma rotina em dois status: 'Em and |
 | 91224 | 115568 | NE | Lib | Contabilidade Digital: Realizar ajuste no Agente de Comunica��o para e |
 | 91117 | 115514 | SAM | Lib | Contabilidade Digital: Realizar testes devido a implementa��o do OpenT |
 | 93283 | 115496 | SAL | Lib | TO-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
@@ -63300,11 +62668,11 @@
 | 90853 | 115244 | SAM | Lib | Realizar um estudo para verificar o excesso de requisi��es ao BOX-e pe |
 | 90856 | 115201 | NE | Lib | Contabilidade Digital: N�o est� integrando as transa��es dos tipos "CO |
 | 90758 | 115119 | SAL | Desc | Ajustar o envio da guia DAS nas Rotinas Autom�ticas.   |
-| 90717 | 115074 | SAM | Desc | Alterar as cores dos gráficos exibidos na tela de início do Onvio refe |
 | 90962 | 115061 | NE | Lib | Contabilidade Digital: Est� apresentando o erro "Erro ao processar bai |
 | 92218 | 115038 | SAL | Lib | AM-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 91775 | 115031 | SAL | Lib | PA-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes S |
 | 90586 | 114842 | NE | Lib | Est� ocorrendo erro no agente de comunica��o ao tentar enviar boleto d |
+| 101804 | 114629 | SAIL | Pend | Implementar rotina para reconhecer a receita pelo POC com valor atuali |
 | 90467 | 114578 | NE | Lib | Esta ocorrendo indevidamente a mensagem de aviso "O CNPJ informado n�o |
 | 90470 | 114540 | NE | Lib | Est� executando a rotina autom�tica de Importa��o/Importador na �ltima |
 | 90207 | 114407 | SAL | Desc | Alterar o sistema para considerar os bloqueios da RFB ao gerar o infor |
@@ -63328,27 +62696,21 @@
 | 88897 | 112778 | SAM | Lib | Realizar os ajustes necess�rios nos WebServices "NFeDistribuicaoDFe",  |
 | 88900 | 112776 | SAM | Pend | Implementar os ajustes necess�rios para realizar a importa��o de notas |
 | 88822 | 112676 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
-| 88594 | 112384 | SAM | Lib | Desabilitar o ícone e coluna de publicação para o Portal do cliente no |
 | 88458 | 112245 | SAM | Lib | Desabilitar o �cone e coluna de publica��o para o Portal do cliente no |
 | 88400 | 112136 | SAIL | Lib | Implementar a gera��o da guia DAS por meio da API Integra Contador nas |
 | 88300 | 112095 | NE | Lib | N�o est�o sendo disponibilizadas os cancelanentos de NFC-e recebidas p |
 | 90749 | 112013 | SAL | Lib | RO-Alterar a rotina de Anula��o de CTe e CT-eOS conforme Ajustes Sinie |
-| 89188 | 112005 | NE | Desc | Está apresentando indevidamente inconsistência na execução da integraç |
 | 90790 | 111971 | SAL | Lib | Alterar o sistema para ser poss�vel realizar a rotina de Anula��o de C |
 | 88148 | 111815 | SAM | Lib | Alterar a descri��o "Dom�nio Atendimento" para "Portal do Cliente" na  |
 | 88140 | 111761 | SAIL | Lib | Implementar a gera��o da guia DASMEI via API Integra Contador nas roti |
-| 88117 | 111705 | NE | Lib | Está duplicando o e-mail quando preenchido pelo autocomplete na etapa  |
 | 95092 | 111563 | SAIL | Pend | BA-Implementar no sistema rotina para escritura��o de documento extemp |
 | 88112 | 111561 | SAM | Lib | Alterar a descri��o "Dom�nio Atendimento" para "Portal do Cliente" na  |
 | 87998 | 111550 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
-| 88497 | 111538 | SAM | Lib | Alterar a verificação dos lançamentos pendentes na realização do zeram |
 | 87826 | 111316 | NE | Lib | Est� duplicando o e-mail quando preenchido pelo autocomplete na etapa  |
 | 87817 | 111304 | NE | Lib | N�o est� sendo demonstrada corretamente a sele��o de empresas ao criar |
 | 87747 | 111233 | SAM | Lib | Testar o Busca NF-e para garantir o funcionamento da ferramenta nos am |
 | 87714 | 111205 | SAM | Lib | Migrar contas de e-mail inativas ou de cliente ativo por�m n�o migrado |
-| 87707 | 111152 | NE | Lib | Não estão sendo exibidos os campos da opção "Executar na data" ao edit |
 | 88122 | 111150 | NE | Lib | Est� demonstrando uma informa��o incorreta no campo 'Ocorr�ncia', ao e |
-| 87831 | 111093 | NE | Lib | Não estão sendo executadas rotinas programadas de zeramento quando vin |
 | 87940 | 111020 | NE | Lib | Est� sendo apresentada indevidamente a mensagem "Per�odo n�o processad |
 | 87555 | 111010 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 87457 | 110823 | NE | Lib | Est� ocorrendo erro no objeto:"uo_extrato_bancario_importar_ct" na imp |
@@ -63366,11 +62728,9 @@
 | 86552 | 109687 | NE | Lib | N�o est� sendo exibida a inconsist�ncia correta na integra��o cont�bil |
 | 86573 | 109666 | SAM | Lib | Definir um prazo limite para execu��o das Rotinas Programadas e aprese |
 | 88031 | 109648 | NE | Lib | Est� ocorrendo travamento e encerramento do sistema ao gravar a tela d |
-| 86429 | 109477 | NE | Desc | Não está sendo exibido os campos da opção Executar na data ao editar a |
 | 86356 | 109407 | SAM | Lib | Efetuar testes explorat�rios nas funcionalidades do sistema Escrita qu |
 | 86204 | 109215 | NE | Lib | Alterar o local onde o Agente de Comunica��o verifica a quantidade de  |
 | 86332 | 109172 | NE | Lib | Est� apresentando uma mensagem indevidamente ao executar rotinas autom |
-| 86146 | 109150 | NE | Lib | Não está permitindo utilizar o atalho 'Vincular empresas' na lista de  |
 | 85985 | 108936 | NE | Lib | N�o est� permitindo utilizar o atalho 'Vincular empresas' na lista de  |
 | 85978 | 108914 | NE | Lib | Est� sendo apresentado o erro "SN-Entregar: O tipo de declara��o 2-Ret |
 | 88004 | 108823 | SAL | Lib | MA-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
@@ -63380,12 +62740,10 @@
 | 85649 | 108352 | SAM | Lib | Efetuar testes nos processos da Rotina Autom�tica ap�s implementa��o d |
 | 85630 | 108338 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 86209 | 108336 | SAM | Lib | Incluir op��o para publicar e salvar a declara��o mensal/recibo DAS pe |
-| 85739 | 108200 | NE | Lib | Não está ocorrendo atualização imediata ao alterar o toggle de integra |
 | 87810 | 108165 | SAL | Lib | SC-Alterar a rotina de gera��o do arquivo DCIP para considerar as info |
 | 88585 | 108131 | SAM | Lib | Alterar o comportamento de acesso na rotina autom�tica "Pagamento de I |
 | 96691 | 107907 | SAIL | Lib | Criar uma rotina onde possa calcular o RET considerando a faixa de ren |
 | 85351 | 107881 | NE | Lib | Est� sendo indevidamente setada selecionada a op��o "Gerar guia DAS pe |
-| 86543 | 107867 | NE | Lib | Não está sendo exibida a inconsistência correta na integração contábil |
 | 85480 | 107743 | SAM | Lib | Criar relat�rio para confer�ncia do consumo das rotinas de gera��o da  |
 | 91551 | 107730 | SAM | Lib | Gerar a DEFIS via rotinas autom�ticas.   |
 | 88694 | 107726 | SAM | Lib | Criar a op��o de informar no cadastro da rotina autom�tica, o contador |
@@ -63398,51 +62756,36 @@
 | 86559 | 107057 | SAM | Lib | Implementar uma rotina no sistema onde seja poss�vel criar uma vig�nci |
 | 84725 | 107047 | SAM | Lib | N�o executar a rotina programada para empresas que estiverem em uso no |
 | 84632 | 106945 | SAL | Lib | RJ-Alterar a escritura��o da rotina de Anula��o de CT-e conforme Ajust |
-| 84825 | 106795 | NE | Lib | A informação 'Empresas' está sendo apresentada cortada no gráfico 'Int |
 | 84567 | 106791 | NE | Lib | Em alguns casos est� ocorrendo bloqueio nas rotinas de envio do EFD RE |
 | 84544 | 106759 | SAM | Lib | Implementar rotina no Agente de Comunica��o quando a API apresentar er |
-| 84542 | 106732 | NE | Desc | Não estão sendo apresentados os campos da opção 'Executar na data' na  |
 | 84594 | 106725 | NE | Lib | Est� ficando travado no status 'Em andamento agora' ao tentar Gerar gu |
 | 84595 | 106690 | NE | Lib | Est� demonstrando os campos incorretamente ao editar uma rotina e alte |
 | 84481 | 106559 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas.   |
 | 99432 | 106456 | SAM | Lib | Criar rotina autom�tica para emiss�o do Balancete, Balan�o e DRE em Ex |
-| 84299 | 106215 | SAM | Lib | Desbloquear a rotina para que outros módulos possam selecionar seus pr |
 | 84194 | 105852 | NE | Lib | Em alguns casos est� apresentando indevidamente a mensagem: "J� existe |
 | 84112 | 105828 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 83932 | 105571 | SAM | Lib | Efetuar testes dos itens da Escrita nas Rotinas Programadas.  |
-| 83927 | 105559 | SAM | Lib | Efetuar testes dos itens da Contabilidade nas rotinas programadas. |
-| 83877 | 105354 | SAM | Desc | Ajustar o BRClient para contemplar a volta de backup do Domínio Contáb |
 | 85133 | 105338 | SAM | Lib | Incluir na Rotina Autom�tica a importa��o atrav�s do Conv�nio 115/03. |
 | 83802 | 105213 | SAM | Desc | Ajustar o BRClient para contemplar a volta de backup do Dom�nio Cont�b |
 | 83732 | 105074 | SAL | Lib | Ajustar o direcionamento na emiss�o do DAS por certificado via rotina  |
-| 83616 | 104742 | NE | Lib | Em alguns casos quando o reporte services envia um retorno de erro par |
 | 83388 | 104383 | SAL | Lib | Inserir o preenchimento do captcha na emiss�o da guia DAS via certific |
-| 83549 | 104320 | SAM | Lib | Verificar se para os três módulos existe uma rotina após o fechamento  |
 | 84619 | 104259 | SAL | Lib | BA-Alterar a rotina de Anula��o de CT-e conforme Ajuste Sinief n� 31/2 |
-| 83723 | 104208 | SAM | Lib | Não executar a rotina programada para empresas que estiverem em uso no |
 | 84784 | 104151 | SAM | Lib | Alterar o local do sistema para utiliza��o do certificado digital na i |
 | 85899 | 104133 | SAIL | Pend | Implementar a emiss�o do relat�rio dos Tributos Federais e alterar o c |
-| 86231 | 104065 | SAM | Lib | Permitir a integração contábil dos tributos federais pela rotina progr |
 | 83236 | 104010 | SAL | Lib | Inserir a permiss�o para o preenchimento do captcha na emiss�o da guia |
 | 83217 | 103979 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 83253 | 103753 | SAL | Lib | ES-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 84651 | 103658 | SAM | Lib | Incluir campo com filtro para localizar as empresas na apura��o de imp |
-| 83034 | 103647 | NE | Lib | Está permitindo selecionar a integração contábil da escrita fiscal pel |
 | 82989 | 103618 | SAM | Lib | Remover altera��es criadas no Agente de Comunica��o oriundas das an�li |
 | 82982 | 103606 | SAM | Lib | Efetuar testes conforme remo��es de altera��es criadas no Agente de Co |
 | 82996 | 103550 | NE | Desc | Em alguns casos est� ocorrendo travamento ao executar rotina autom�tic |
 | 82922 | 103529 | SAM | Lib | Realizar tentativa de reconex�o do agente a cada 10 minutos caso n�o c |
-| 84233 | 103487 | SAM | Pend | Criar assinatura com o certificado digital nos relatórios da contabili |
 | 83433 | 103270 | SAL | Lib | Alterar a rotina no sistema para que seja gerado os registros do R-400 |
 | 82778 | 103213 | NE | Lib | Est� demonstrando incorretamente o nome "NSF-e API" no quadro "Dados I |
 | 82899 | 103166 | NE | Desc | Em alguns casos est� ocorrendo o erro "WebException ao efetuar upload: |
-| 82931 | 103110 | SAM | Lib | Não permitir selecionar a integração contábil da folha na rotina do mó |
 | 84546 | 103032 | SAM | Lib | Melhorar o fluxo do Agente de Comunica��o com a API no recebimento de  |
 | 82626 | 102911 | SAL | Desc | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
-| 82546 | 102761 | NE | Lib | Não está executando a rotina ficando pendente quando selecionado o env |
 | 82313 | 102493 | SAM | Lib | Realizar um estudo para resolver problemas de sobrecarga de certificad |
-| 82274 | 102341 | SAM | Lib | Incluir a consulta de rotinas programadas no menu "Consultas". |
-| 82332 | 102125 | NE | Lib | Não está demonstrando o agendamento da rotina programada nos períodos  |
 | 82416 | 102102 | SAL | Lib | PE-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 82030 | 102038 | SAM | Lib | Permitir que as Rotinas Autom�ticas sejam utilizadas por todos os tipo |
 | 81993 | 101980 | NE | Desc | Est� ocorrendo erro de lote em todos os eventos no envio do EFD-Reinf, |
@@ -63452,14 +62795,12 @@
 | 81914 | 101814 | SAL | Lib | Retirar do sistema a op��o "Informar os caracteres anti-rob� automatic |
 | 81874 | 101752 | SAM | Lib | Implementar as mensagens de retorno da Conta Azul no agente de comunic |
 | 86947 | 101688 | SAM | Lib | SC-Implementar a rotina de importa��o do ICMS Monof�sico atrav�s do Le |
-| 81831 | 101669 | NE | Lib | Rotina programada está sendo executada duas vezes de forma automática. |
 | 82292 | 101632 | SAIL | Lib | Implementar as rotinas programadas com execu��o 'Ap�s o fechamento' e  |
 | 81728 | 101577 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 81982 | 101418 | SAL | Lib | MT-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 81450 | 101228 | NE | Lib | N�o est� enviando os eventos de fechamento do R-2099 e R-4099 no infor |
 | 82004 | 101124 | SAL | Lib | MS-Alterar a rotina de Anula��o de CT-e conforme Ajuste Sinief n� 31/2 |
 | 81153 | 100805 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
-| 81065 | 100672 | NE | Desc | O processamento em segundo plano não está ocorrendo de forma correta e |
 | 85561 | 100421 | SAM | Lib | Alterar a mensagem do relat�rio de erros e avisos das rotinas autom�ti |
 | 80895 | 100166 | SAM | Lib | Realizar Testes no Busca NF-e no ambiente do DW, ap�s a instala��o do  |
 | 80894 | 100164 | SAM | Lib | Realizar Testes no Web Service SEFAZ no ambiente do DW, ap�s a instala |
@@ -63467,14 +62808,10 @@
 | 80870 | 100096 | SAL | Lib | Alterar o pagamento de impostos via e-CAC e o envio da DEFIS atrav�s d |
 | 80813 | 99992 | SAM | Lib | Realizar Testes no Busca NF-e utilizando os ambientes nonprod (DEMO e  |
 | 80736 | 99761 | SAM | Lib | Parar o agente do Web Service SEFAZ do sistema ao realizar o processo  |
-| 80732 | 99741 | SAM | Lib | Ajustar as telas de relatórios para utilizar o mesmo componente criado |
 | 80790 | 99653 | SAM | Lib | SP-Implementar rotina no sistema para gerar a guia DARE Online, com c� |
-| 80675 | 99612 | SAM | Lib | Criar uma rotina para executar na data o processo de Zeramento, Fecham |
 | 81279 | 99620 | NE | Lib | N�o est� sendo salvo o PDF do boleto gerado via rotinas autom�ticas qu |
 | 90412 | 99529 | SAM | Lib | Alterar comportamento do Busca NF-e quando no campo "Requerente" do ce |
-| 80837 | 99513 | SAM | Lib | Criar opção para realizar a Integração Contábil nas rotinas programada |
 | 80627 | 99527 | SAL | Lib | Ajustar a emiss�o da guia DAS atrav�s do certificado digital. |
-| 81721 | 99439 | SAM | Lib | Criar nas rotinas programadas a execução após o fechamento do período. |
 | 80583 | 99408 | SAL | Lib | Ajustar a emiss�o da guia DAS nas rotinas autom�ticas. |
 | 80809 | 99358 | SAL | Lib | SP-Alterar a rotina de Anula��o de CTe conforme Ajuste Sinief n� 31/20 |
 | 81779 | 99298 | SAL | Lib | Alterar a rotina de Anula��o de CT-e conforme Ajuste Sinief n� 31/2022 |
@@ -63702,7 +63039,6 @@
 | 58154 | 64046 | SAM | Lib | Otimizar a rotina de Regerar lan�amentos Cont�beis para o tipo de movi |
 | 58170 | 64020 | SAM | Lib | Criar rotina para editar o arquivo do EFD Contribui��es na tela de emi |
 | 58161 | 63928 | SAM | Lib | RS-Incluir acesso ao quadro "Enviar notas para o BOX-e" do agente do S |
-| 58806 | 63867 | SAM | Desc | Criar rotina de fechamento da contabilidade no Onvio. |
 | 58087 | 63831 | SAM | Lib | Alterar o sistema para que as rotinas de "Consultar NF-e" e "Emitir Da |
 | 57881 | 63487 | NE | Desc | Em alguns casos est� apresentando mensagem "Executa thead, Error acces |
 | 57934 | 63143 | NE | Lib | Em alguns casos est� ocorrendo o erro "Cont�bil.exe" ao executar o pro |
@@ -63936,23 +63272,23 @@
 | 4951 | 31810 | SAM | Lib | Desenvolver rotina para gerar lan�amentos cont�beis. |
 | 4840 | 31790 | SAM | Lib | Desenvolver rotina para gerar as notas ficais no m�dulo Escrita Fiscal |
 | 4194 | 31589 | SAM | Lib | Criar bot�o para sele��o de clientes na emiss�o dos graficos. |
-| 4147 | 31568 | SAM | Desc | Disponibilizar o envio de Layout por email, em todos os itens do menu  |
 | 4162 | 31570 | SAM | Desc | No utilitario de alterar notas, quando for saidas e o modelo de esp�ci |
+| 4147 | 31568 | SAM | Desc | Disponibilizar o envio de Layout por email, em todos os itens do menu  |
 | 3893 | 31484 | SAM | Lib | Desnvolver rotina para importa��o de Grupo de Produtos. |
 | 3439 | 31340 | SAM | Desc | Quando entrar nos outros dados do livro de ISS, no campo recolhimentos |
 | 3231 | 31299 | SAM | Desc | Disponibilizar F2 para contas cont�beis e filiais, em utilitarios/alte |
 | 2576 | 31042 | SAM | Desc | No utilitario de Alterar Notas, ter op��o de alterar a observa��o. |
 | 2129 | 30908 | SAM | Desc | Criar no menu utilitarios op��o de Estruturas -> DRE, DLPA e DOAR e qu |
 | 1892 | 30847 | SAM | Lib | Criar grafico da evolu��o do faturamento em formato de barras e que so |
-| 1748 | 30804 | SAM | Lib | Na rotina de reimpress�o de notas fiscais n�o aparecer as notas cancel |
 | 1823 | 30826 | SAM | Lib | Criar rotinas para realizar lan�amentos or�ados. |
+| 1748 | 30804 | SAM | Lib | Na rotina de reimpress�o de notas fiscais n�o aparecer as notas cancel |
 | 1549 | 30728 | SAM | Lib | Fazer com que a calculadora possa ficar em segundo plano. |
 | 1292 | 30662 | SAM | Desc | Criar uma rotina para localizar intervalos entre a numera��o das notas |
 | 892 | 30527 | SAM | Lib | Na hora de emitir grafico de faturamento ter op��o de emitr junto o va |
 | 580 | 30436 | SAM | Lib | Criar uma rotina onde pode ser configurado lan�amentos habituais. Exem |
+| 582 | 30437 | SAM | Lib | Na rotina de regerar lan�amentos contabeis criar op��o de impostos lan |
 | 618 | 30453 | SAM | Lib | Criar rotina que possibilite o cadastro de tabelas municipais para  a  |
 | 599 | 30445 | SAM | Lib | Criar rotina para criar contas na contabilidade de clientes e forneced |
-| 582 | 30437 | SAM | Lib | Na rotina de regerar lan�amentos contabeis criar op��o de impostos lan |
 | 105 | 30329 | SAM | Lib | Na rotina de exporta��o de lan�amentos de uma contabilidade para outra |
 | 109 | 30331 | SAM | Lib | Incluir rotina de pagamento de impostos no Lalur. |
 | 39918 | 29186 | NE | Lib | Est� apresentando indevidamente a mensagem "Para comunica��o com o Ser |

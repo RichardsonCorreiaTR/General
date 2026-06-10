@@ -1,0 +1,75 @@
+﻿---
+description: Acesso ao GitHub (codigo-fonte tr/brtap-dominio_contabil) - regras de seguranca, fallback gh api e setup do analista
+alwaysApply: true
+---
+
+# Acesso ao GitHub - Seguranca e padrao de consulta (Filho)
+
+## Quando ativada
+
+Sempre que a IA precisar acessar o codigo-fonte do BR Contabil
+(`tr/brtap-dominio_contabil`) ou orientar o analista sobre setup do
+`gh CLI`.
+
+Setup completo do analista: ver `SETUP-GITHUB.md` na raiz do projeto.
+
+## Regras duras de seguranca
+
+**NUNCA:**
+- Pedir ao analista para colar token (PAT), senha, secret ou cookie no
+  chat do Cursor.
+- Usar token de uma pessoa para outra (quebra de auditoria).
+- Gravar token em arquivo do projeto (`.env`, `config/`, comentario em
+  script, log, cache ou backup). Se ver token gravado, AVISE o analista
+  para remover e regerar.
+- Sugerir PAT com scope amplo ou validade longa.
+
+**Preferencia (mais seguro -> menos seguro):**
+1. `gh auth login --web` -- token no keyring do Windows.
+2. PAT em variavel de ambiente da maquina (`setx GITHUB_TOKEN ...`),
+   scope minimo `repo`, validade <= 90 dias.
+3. PAT em arquivo de projeto -- proibido.
+
+## Padrao de consulta ao codigo
+
+**Modo A -- Codigo local** (preferido): caminho em
+`config/caminhos.json -> codigo_local`. Para popular, o analista roda
+`.\scripts\atualizar-codigo.ps1` em terminal SEPARADO.
+
+**Modo B -- Fallback via `gh api`**: usar quando local nao existe ou
+para investigar outra branch sem mexer no local.
+
+```
+gh api "repos/tr/brtap-dominio_contabil/branches?per_page=100"
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH"
+```
+
+Para arquivos grandes, prefira `--jq '.content'` + decode base64
+(comando que a IA mostra ao analista).
+
+## Branches declaradas pelo gestor
+
+A branch real e declarada em `config/codigo-fonte-branches.json` (campos
+`vigente.branch`, `vigente_anterior.branch`, `em_dev.branch`). Sempre
+confirme qual e a `vigente` antes de tirar conclusao sobre "como o
+sistema calcula hoje" -- principalmente em demandas SAL/SAIL (clientes
+em release anterior podem estar em `vigente_anterior`).
+
+## Em caso de falha de acesso (Mensagem Prioritaria)
+
+Se `gh repo view tr/brtap-dominio_contabil` der 404 OU o codigo local
+estiver vazio, gere uma **Mensagem Prioritaria** para o analista enviar
+ao gestor (Richardson):
+
+```
+Preciso de acesso ao codigo-fonte do BR Contabil para esta analise.
+
+- Time: fiscont-gp-codigo-leitura (org "tr")
+- Repo: tr/brtap-dominio_contabil
+
+Por favor confirme se estou no Team (status Active) e se o Fernando
+Pizetti ja liberou Read. Ate la, posso usar o ZIP do OneDrive como
+fallback?
+```
+
+Continue a analise com SAIs/regras enquanto o acesso nao chega.

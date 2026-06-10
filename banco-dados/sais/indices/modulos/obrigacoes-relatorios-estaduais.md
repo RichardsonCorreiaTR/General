@@ -1,15 +1,24 @@
 ﻿# Obrigacoes e relatorios estaduais
 
 > Dominio Escrita Fiscal | slug `obrigacoes-relatorios-estaduais`
-> Atualizado em: 16/05/2026 00:10
-> Pendentes: 98 | Liberadas: 3063 | Descartadas: 361 | Total SAIs: 3516
+> Atualizado em: 10/06/2026 12:02
+> Pendentes: 96 | Liberadas: 3039 | Descartadas: 360 | Total SAIs: 3491
 
-## Pendentes (98)
+## Pendentes (96)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101705 | 130704 | SAM | Normal | 12/05/2026 | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL adotado pelo |
+| 102159 | 131291 | SAM | Normal | 02/06/2026 | Realizar a reconexão do agente do Web Service SEFAZ quando houve desconexão do a |
+| 102264 | 131103 | NE | Normal | 26/05/2026 | Não está sendo salvo corretamente os relatórios do Simples Nacional nas rotinas  |
+| 101989 | 131097 | SAM | Normal | 25/05/2026 | Testar as funcionalidades de IA para o pergunte ao seu relatório na Escrita Fisc |
+| 101988 | 131096 | SAM | Normal | 25/05/2026 | Testar as funcionalidades de IA para o pergunte ao seu relatório na Escrita Fisc |
+| 102294 | 131039 | NE | Normal | 25/05/2026 | ES-Está sendo gerado incorretamente o registro C197 com o código de ajuste "ES10 |
+| 101870 | 130894 | SAM | Normal | 19/05/2026 | ES-Alterar a importa��o via SEFAZ ES conforme as mudan�as do site para o Dom�nio |
+| 101823 | 130820 | NE | Normal | 18/05/2026 | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro D700 do SP |
+| 101816 | 130774 | SAM | Normal | 14/05/2026 | MT-Alterar a importa��o via SEFAZ MT conforme as mudan�as do site para o Dom�nio |
 | 101675 | 130664 | SAM | Normal | 11/05/2026 | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para zerar o NSU  |
+| 101800 | 130594 | NE | Normal | 06/05/2026 | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui mais de 80  |
+| 101808 | 130536 | NE | Normal | 04/05/2026 | Est� sendo gerado indevidamente o destinat�rio trocado na guia GNRE do imposto 1 |
 | 101686 | 130530 | NE | Normal | 04/05/2026 | N�o est� sendo gerada a linha "(-) Divulga��o Eleitoral e Partid�ria Gratuita" n |
 | 101555 | 130339 | NE | Normal | 24/04/2026 | Est� sendo demonstrado o n�mero do documento e o CNPJ do fornecedor incorretos n |
 | 101713 | 130208 | NE | Normal | 20/04/2026 | Est� sendo demonstrado incorretamente o valor de "Al�quota Efetiva por imposto"  |
@@ -18,35 +27,24 @@
 | 101011 | 129356 | SAL | Normal | 20/03/2026 | SP-Adequar o sistema para permitir realizar lan�amentos de ajustes de 'Outros d� |
 | 101100 | 128886 | NE | Normal | 06/03/2026 | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lculo" do re |
 | 100539 | 128808 | NE | Normal | 04/03/2026 | Est� sendo gerado indevidamente a mensagem 'O relat�rio deve ser emitido na empr |
+| 101878 | 128794 | SAL | Normal | 04/03/2026 | Alterar o c�digo de ajuste gerado no registro E311 no SPED Fiscal para lan�ament |
 | 101161 | 126935 | NE | Normal | 23/01/2026 | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no relat�rio demo |
 | 99607 | 126845 | NE | Normal | 21/01/2026 | Em alguns casos est� fechando o sistema ao emitir o demonstrativo do imposto 9-S |
-| 99955 | 126446 | SAM | Normal | 14/01/2026 | Criar um relatório de conferência do bloco P do SPED ECF. |
 | 99650 | 126338 | SAM | Normal | 12/01/2026 | Emitir o demonstrativo dos impostos e demonstrativo EFD PIS e COFINS nas rotinas |
 | 98302 | 124798 | SAM | Normal | 27/11/2025 | MG-Otimizar as DWs 'dw_mg_demonstrativo_credito_presumido_ret_dados_saidas' e 'd |
 | 97350 | 123136 | SAM | Normal | 03/10/2025 | GO-Atualizar a forma de gerar a guia DARE online conforme nova estrutura do site |
 | 98484 | 122663 | SAM | Normal | 16/09/2025 | Implementar filtros e relat�rios na tela de listagem de NFS-e API para visualiza |
-| 97302 | 122168 | SAM | Normal | 28/08/2025 | Permitir que as configurações dos relatórios da parametrização e as assinaturas  |
 | 96166 | 121932 | SAM | Normal | 20/08/2025 | Realizar um estudo para que seja poss�vel utilizar o Proxy do Windows (Navegador |
 | 95735 | 121299 | NE | Normal | 29/07/2025 | Em alguns casos as rotinas que fazem a paralisa��o dos Utilit�rios WebService SE |
-| 95127 | 120404 | NE | Normal | 27/06/2025 | Não está funcionando a ação de 'Imprimir' na barra de ferramentas dos relatórios |
 | 96900 | 120264 | SAM | Normal | 23/06/2025 | Criar a op��o de "Exporta��o" nas Rotinas Autom�ticas para os arquivos armazenad |
 | 94818 | 119876 | NE | Normal | 06/06/2025 | Est� sendo gerado o c�digo incorreto do CT-e substituto no demonstrativo da CSLL |
 | 94478 | 119661 | NE | Normal | 28/05/2025 | Em alguns casos n�o est� sendo demonstrando na ordem correta a listagem de notas |
-| 98466 | 119542 | SAIL | Normal | 22/05/2025 | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
-| 97772 | 119540 | SAIL | Normal | 22/05/2025 | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
 | 90515 | 113628 | SAM | Normal | 10/10/2024 | Otimizar a DW 'dw_dados_imposto_lancado_produto_difal_nc' na gera��o do relat�ri |
 | 88560 | 112391 | SAM | Normal | 27/08/2024 | Realizar um estudo para redu��o de custos no processo de preenchimento do captch |
 | 92510 | 112209 | SAM | Normal | 20/08/2024 | Alterar o sistema para importar o tipo de inscri��o do cliente/fornecedor quando |
 | 89840 | 111467 | SAIL | Normal | 29/07/2024 | Implementar no sistema a emiss�o das guias DARF pela integra��o com a ferramenta |
-| 87569 | 109683 | SAM | Normal | 21/05/2024 | Limitar data para que movimentos, consultas e relatórios só possam ser feitos e/ |
-| 86166 | 108673 | SAM | Normal | 12/04/2024 | Possibilitar o envio de relatórios da Contabilidade pelo Onvio Messenger. |
 | 85892 | 107031 | SAM | Normal | 26/02/2024 | Otimizar o bot�o "Buscar" da listagem de lan�amentos.   |
-| 83888 | 105367 | SAM | Normal | 15/01/2024 | Permitir a Folha indicar o status do eSocial na listagem e cadastro de empresa. |
-| 97280 | 103491 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
-| 98297 | 103490 | SAIL | Normal | 21/11/2023 | Criar a estrutura e relatório da Demonstração das Mutações do Patrimônio Líquido |
-| 84233 | 103487 | SAM | Normal | 21/11/2023 | Criar assinatura com o certificado digital nos relatórios da contabilidade. |
 | 82856 | 103397 | SAM | Normal | 17/11/2023 | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
-| 82930 | 102961 | SAM | Normal | 06/11/2023 | Permitir exportar os relatórios contábeis em Excel |
 | 80832 | 99979 | NE | Normal | 02/08/2023 | ES-N�o est� sendo importado a base de cr�dito de PIS/COFINS conforme configura�� |
 | 80748 | 99716 | SAM | Normal | 27/07/2023 | Alterar o envio das notas ao BOX-e conforme novo link quando as notas forem baix |
 | 79777 | 97880 | SAIL | Normal | 31/05/2023 | MG-Implementar rotina no sistema para calcular os impostos estaduais e gerar os  |
@@ -111,6 +109,10 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102019 | 131093 | NE | 25/05/2026 | Está sendo demonstrado indevidamente sócio com inscrição CNPJ no relatório de Pe |
+| 101705 | 130704 | SAM | 12/05/2026 | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL adotado pelo |
+| 101772 | 130635 | NE | 11/05/2026 | Está sendo gerado o valor incorreto no Relatório "Resumo dos Impostos Calculados |
+| 101556 | 130509 | NE | 30/04/2026 | Está sendo apresentado erro ao gerar o relatório na guia "Alteração plano de con |
 | 101374 | 130288 | NE | 22/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
 | 101341 | 130238 | NE | 20/04/2026 | Est� ocorrendo diverg�ncia de valores por arrendondamento no demonstrativo dos i |
 | 100898 | 129624 | NE | 27/03/2026 | MT-Est� desmarcando automaticamente a op��o "Acesso ao portal - SEFAZ" ao gravar |
@@ -137,10 +139,6 @@
 | 98422 | 125125 | SAM | 05/12/2025 | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Web Service SE |
 | 98664 | 125077 | SAL | 05/12/2025 | MT-Alterar o sistema para tornar opcionais os campos referentes � GIA-ICMS para  |
 | 98547 | 125047 | NE | 03/12/2025 | Est� ocorrendo erro de sistema ao gerar o relatorio do Simples Nacional, quando  |
-| 99837 | 125027 | SAL | 03/12/2025 | RS-Alterar o c�lculo do imposto 8-DIFALI por produto, referente a aquisi��o de f |
-| 98507 | 124961 | NE | 02/12/2025 | Est� apresentando indevidamente o erro de importa��o "Destinat�rio do CT-e � dif |
-| 100020 | 124951 | SAL | 02/12/2025 | GO-Alterar o sistema para que o 'Cr�dito presumido PROTEGE' e os lan�amentos rea |
-| 98816 | 124849 | SAL | 28/11/2025 | MG-Atualizar os dados da empresa desenvolvedora no relat�rio de pedido de uso mo |
 
 ## Temas Frequentes
 
@@ -156,16 +154,16 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102021 | 131032 | NE | 22/05/2026 | Está sendo demonstrado o valor incorreto de "Redução referente à alíquota zero d |
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
 | 97627 | 123713 | SAM | 23/10/2025 | Ajustar o sistema para que consiga seguir no captcha 'Sou humano' no momento da  |
-| 97311 | 123175 | NE | 06/10/2025 | Não estão sendo apresentadas por inteiro as informações Insc. Junta Comercial e  |
 | 97028 | 122565 | NE | 12/09/2025 | Est� gerando incorretamente o resultado da Consulta regra tribut�ria ao pesquisa |
-| 96737 | 122539 | NE | 11/09/2025 | Não está gerando o relatório do DRE na sequência da estrutura salva. |
-| 96749 | 122535 | NE | 11/09/2025 | Não está gerando inconsistência na rotina, ou está gerando a inconsistência erra |
+| 97302 | 122168 | SAM | 28/08/2025 | Permitir que as configurações dos relatórios da parametrização e as assinaturas  |
 | 94244 | 119198 | NE | 13/05/2025 | N�o est� importando a tabela de Al�quota Interestadual de ICMS conforme o perfil |
 | 95101 | 119008 | NE | 06/05/2025 | Em alguns casos est� ocorrendo o erro "Ocorreu um erro ao unir os PDF's. Um dos  |
 | 92379 | 117020 | SAL | 24/02/2025 | Ajustar o sistema para n�o gerar a UF e o n�mero do CRC no arquivo 'jason" do in |
 | 91436 | 115787 | NE | 09/01/2025 | N�o est� replicando da configura��o de importa��o NF-e Arquivo XML para a import |
+| 91021 | 114973 | SAM | 29/11/2024 | Garantir o funcionamento da emiss�o da Guia DARF Online - Sicalcweb |
 
 ## Busca Completa
 

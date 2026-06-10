@@ -20,9 +20,21 @@ agente-produto.mdc nos passos de investigacao das rotas NE/SA.
 
 ## Onde busca codigo
 
+**Modo A - codigo local (preferido):**
 1. Path de `config/caminhos.json` -> `codigo_local`
 2. Padrao: `C:\CursorEscrita\codigo-sistema\versao-atual\`
 3. Mapa: `referencia/banco-dados/mapa-sistema/mapa-escrita.md` (indice: `indice-mapas-areas.md`)
+
+**Modo B - fallback via `gh api` (sem clonar):**
+Quando o local nao esta disponivel OU para olhar outra branch.
+Branches declaradas em `config/codigo-fonte-branches.json`.
+
+```
+gh api "repos/tr/brtap-dominio_contabil/contents/escrita/CAMINHO?ref=BRANCH"
+```
+
+Setup do acesso GitHub: `arquitetura/acesso-github-codigo.md` (General)
+e `projeto-filho/SETUP-GITHUB.md` (analista).
 
 ## O que identifica
 

@@ -1,17 +1,17 @@
 ﻿# SAIL Descartadas - Escrita Fiscal
 
-> Atualizado em: 16/05/2026 00:10
-> Total SAIs unicas: 82
+> Atualizado em: 10/06/2026 12:02
+> Total SAIs unicas: 81
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 128412 |  | 24/02/2026 | ID 0 | - |
+| 0 | 131213 |  | 28/05/2026 | ID 0 | - |
+| 97385 | 119122 |  | 08/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar o cadastro de Notas Explicativas. |
 | 91722 | 116008 |  | 21/01/2025 | SAI Aprovada | Garantir que o novo modelo de Nota Fiscal Fatura de Servi�os de Comunica��o Elet |
 | 90935 | 114573 |  | 14/11/2024 | SAI Aprovada | RJ-Implementar a escritura��o do FECP por meio de sub-apura��o - Resolu��o SEFAZ |
 | 90675 | 107262 |  | 05/03/2024 | SAI Aprovada | RS-Implementar o c�lculo do Fundo de Reforma conforme Instru��o Normativa RE 30/ |
-| 94398 | 104002 |  | 07/12/2023 | Aguardando Resposta do Desenvolvimento DEMO | Criar a interface 'Plano referencial' e o vínculo do plano referencial PJ Geral  |
+| 97280 | 103491 |  | 21/11/2023 | Aguardando Resposta do Desenvolvimento DEMO | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
 | 80049 | 98489 |  | 26/06/2023 | SAI Aprovada | teste descri��o |
-| 79805 | 98060 |  | 07/06/2023 | SAI Aprovada | DESCRIÇÃO FEATURE |
 | 79802 | 98059 |  | 07/06/2023 | SAI Aprovada | DESCRI��O DA FEATURE/PSAI |
 | 79795 | 98053 |  | 07/06/2023 | SAI Aprovada | TESTE MANUAL SGD |
 | 79935 | 97887 |  | 31/05/2023 | Aguardando Resposta do Desenvolvimento DEMO | Na aplica��o dos perfis de empresa, definir comportamentos quando a empresa n�o  |
@@ -21,7 +21,6 @@
 | 79693 | 97391 |  | 08/05/2023 | SAI Aprovada | RJ-Alterar a escritura��o da rotina de Anula��o de CT-e conforme Ajuste Sinief n |
 | 78991 | 96487 |  | 30/03/2023 | SAI Aprovada | teste INTEGRA��O ADO |
 | 79959 | 95971 |  | 10/03/2023 | SAI Aprovada | Teste Onvio BR Escrita |
-| 75408 | 91014 |  | 29/06/2022 | SAI Aprovada | Testes da integração do SGD com o ADO em SAIL |
 | 65590 | 70122 |  | 25/11/2019 | SAI Aprovada | RS-Criar op��o para gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
 | 57595 | 61998 |  | 01/03/2019 | SAI Aprovada | MG-Criar op��o para gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |
 | 57698 | 61775 |  | 22/02/2019 | SAI Aprovada | MG-Criar op��o para gerar Nota Fiscal de Servi�o Eletr�nica para o munic�pio de  |

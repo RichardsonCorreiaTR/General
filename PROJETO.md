@@ -1,4 +1,4 @@
-# PROJETO — Escrita SDD: Gestão de Definições de Produto
+﻿# PROJETO — Escrita SDD: Gestão de Definições de Produto
 
 > **ATENÇÃO AGENTE**: Este arquivo é o blueprint mestre do projeto. Nunca leia inteiro.
 > Use busca (Grep) para encontrar a seção relevante. Cada seção é autossuficiente.
@@ -287,3 +287,13 @@ e ficam registrados em `config/caminhos.json`.
 | 2.9 | 2026-04-30 | Agente IA + Gerente | **v2.4.16**: `Consultar-PSAI-SGD.ps1` e `Enriquecer-PSAI-DadosBrutos.ps1` pedem SGD so na primeira consulta (sem `.sgd-credentials.local`); opcao gravar credenciais locais; `lib-sgd-caminhos.ps1` com `Test-SgdCredentialsLocalFile` / `Save-SgdCredentialsLocalFile` |
 | 2.10 | 2026-04-30 | Agente IA + Gerente | **v2.4.17**: `sync-sgd-consulta-para-projeto-filho.ps1` + `gerar-atualizacao.ps1` alinham `scripts/sgd_consulta` (Python) Admin para o filho antes do pacote; `setup-sgd-python.ps1` (venv, pip, Playwright); `verificar-ambiente.ps1` checa Python/modulo SGD; SharePoint sync inclui novos scripts |
 | 2.11 | 2026-05-04 | Agente IA + Gerente | **v2.4.18**: Cursor Agent — `.cursor/sandbox.json` (rede no sandbox + cache partilhado), `permissions.json.example`, `configurar-cursor-auto-run.ps1`; regras `onboarding`/`projeto` com Auto-Run e WSL2; sync SharePoint inclui o script |
+| 2.12 | 2026-05-04 | Agente IA + Gerente | **v2.4.19/v2.4.20**: links SAI/PSAI obrigatorios em toda citacao na IA; fix links ausentes quando `agente-produto.mdc` nao carregado |
+| 2.13 | 2026-05-04 | Agente IA + Gerente | **v2.4.21/v2.4.22/v2.4.23**: setup Python SGD no instalador (`setup-sgd-python.ps1`); `PROMPT-INSTALACAO.md` criado com passo credenciais SGD obrigatorio |
+| 2.14 | 2026-05-06 | Agente IA + Gerente | **v2.4.25**: `Consultar-SAI-SGD.ps1` via SGSAI; correcao referencia PROJETO FOLHA -> ESCRITA em todo o projeto-filho |
+| 2.15 | 2026-05-06 | Agente IA + Gerente | **v2.4.26/v2.4.27**: contato escalonamento atualizado para Richardson Picinini Correia; fix `atualizar-codigo.ps1` e `atualizar-codigo-fonte.ps1` |
+| 2.16 | 2026-05-11 | Agente IA + Gerente | **v2.4.28/v2.4.29**: fixes de scripts; automacao de logs; area ONVIO CONTABIL adicionada; novos analistas Contabil no time |
+| 2.17 | 2026-05-12 | Agente IA + Gerente | **v2.4.30**: regra `guardiao.mdc` para comportamento vazio SGD + aviso ao usuario; fix extrator ODBC multi-area |
+| 2.18 | 2026-05-16 | Agente IA + Gerente | **v2.4.32**: `extrair-sais.ps1` modo merge preserva fracionados de outras areas; pausa interativa ao cair zScaler; `agente-produto.mdc` publica log automaticamente apos cada interacao; indices regenerados com 5 areas |
+| 2.19 | 2026-05-18 | Agente IA + Gerente | **v2.4.33**: analise de legislacao via Claude AI (`claude-sonnet-4-6`); `consultar_legislacao.py`, `Consultar-Legislacao.ps1` e regra `consultar-legislacao.mdc`; resultados em `data/legislacao/` |
+| 2.20 | 2026-05-18 | Agente IA + Gerente | **v2.4.34**: validacao robusta de credenciais SGD; `LoginError` em `session.py` detecta senha incorreta via redirect; retry automatico ate 3x em terminal interativo; mensagem orientativa em terminal nao-interativo (Cursor/agente) |
+| 2.21 | 2026-06-10 | Agente IA + Gerente | **v2.4.38**: acesso ao codigo-fonte GitHub `tr/brtap-dominio_contabil` formalizado. Documento canonico em `arquitetura/acesso-github-codigo.md` (Team `fiscont-gp-codigo-leitura` + Fernando Pizetti); guia do analista `projeto-filho/SETUP-GITHUB.md`; regra dedicada `.cursor/rules/acesso-github.mdc` (alwaysApply) com seguranca de token (NUNCA pedir/gravar PAT); `config/codigo-fonte-branches.json` para branches `vigente`/`vigente_anterior`/`em_dev`; `atualizar-codigo.ps1` (`-BranchConceito`) le do config; `verificar-ambiente.ps1` checa `gh`, `gh auth status`, acesso ao repo; `agente-codigo.mdc` ganha Modo B (fallback `gh api`) |
