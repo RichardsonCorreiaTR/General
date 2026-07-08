@@ -1,103 +1,103 @@
 ﻿# Indice de SAIs por Cenario Complexo
 
-> Atualizado em: 10/06/2026 15:03
+> Atualizado em: 07/07/2026 15:02
 > Cenarios que cruzam multiplos dominios (SAIs classificadas em 2+ dominios)
 
 ## Resumo por combinacao de dominios
 
 | Combinacao | SAIs | Pendentes |
 |-----------|------|-----------|
-| Apuracao de impostos + Escrituracao e movimento fiscal | 4978 | 68 |
-| Apuracao de impostos + SPED e documentos eletronicos | 2774 | 57 |
-| Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos | 1469 | 18 |
-| Apuracao de impostos + Obrigacoes e relatorios estaduais | 1027 | 25 |
-| Apuracao de impostos + Escrituracao e movimento fiscal + Onvio, importacao e dados + SPED e documentos eletronicos | 915 | 23 |
+| Apuracao de impostos + Escrituracao e movimento fiscal | 4993 | 60 |
+| Apuracao de impostos + SPED e documentos eletronicos | 2787 | 48 |
+| Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos | 1478 | 22 |
+| Apuracao de impostos + Obrigacoes e relatorios estaduais | 1032 | 26 |
+| Apuracao de impostos + Escrituracao e movimento fiscal + Onvio, importacao e dados + SPED e documentos eletronicos | 923 | 24 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + Obrigacoes e relatorios estaduais | 891 | 7 |
-| Apuracao de impostos + Contabilidade | 812 | 39 |
-| Apuracao de impostos + Onvio, importacao e dados + SPED e documentos eletronicos | 578 | 24 |
-| Apuracao de impostos + Conteúdo Contábil Tributário + SPED e documentos eletronicos | 480 | 8 |
-| Apuracao de impostos + Integracoes e canais digitais | 437 | 20 |
-| Apuracao de impostos + LALUR | 415 | 12 |
-| Apuracao de impostos + Onvio, importacao e dados | 354 | 16 |
-| Apuracao de impostos + Utilitarios e rotinas | 268 | 24 |
-| Apuracao de impostos + Escrituracao e movimento fiscal + Integracoes e canais digitais | 255 | 5 |
-| Apuracao de impostos + Obrigacoes e relatorios estaduais + SPED e documentos eletronicos | 240 | 1 |
+| Apuracao de impostos + Contabilidade | 814 | 33 |
+| Apuracao de impostos + Onvio, importacao e dados + SPED e documentos eletronicos | 580 | 15 |
+| Apuracao de impostos + Conteúdo Contábil Tributário + SPED e documentos eletronicos | 488 | 10 |
+| Apuracao de impostos + Integracoes e canais digitais | 441 | 23 |
+| Apuracao de impostos + LALUR | 425 | 10 |
+| Apuracao de impostos + Onvio, importacao e dados | 356 | 14 |
+| Apuracao de impostos + Utilitarios e rotinas | 277 | 24 |
+| Apuracao de impostos + Escrituracao e movimento fiscal + Integracoes e canais digitais | 255 | 4 |
+| Apuracao de impostos + Obrigacoes e relatorios estaduais + SPED e documentos eletronicos | 244 | 3 |
 
 ## Detalhamento dos maiores cenarios
 
-### Apuracao de impostos + Escrituracao e movimento fiscal (4978 SAIs, 68 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal (4993 SAIs, 60 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
-| 101425 | 130331 | NE | Em alguns casos est� travando o sistema ao gerar o relat�rio do Simple |
-| 101767 | 130265 | NE | Est� exibindo valores incorretos nos relat�rios ICMS Creditado e Resum |
-| 101727 | 130209 | NE | SP-Est� sendo gerada incorretamente a descri��o no campo "Tipo de d�bi |
-| 101811 | 130201 | NE | Est� sendo realizado indevidamente consulta/download de notas fora do  |
-| 101277 | 129722 | SAM | Implementar a gera��o do relat�rio de precifica��o de produtos e servi |
-| 101164 | 129275 | NE | Em alguns casos, n�o est� sendo gerado o valor correto na apura��o do  |
-| 101136 | 129109 | NE | Est� ocorrendo o erro: "O(s) arquivo(s) selecionado(s) n�o existe(m)!" |
-| 101802 | 129062 | NE | RS-N�o est� sendo limitando o saldo credor do cr�dito presumido nas sa |
-| 101168 | 129047 | NE | Esta sendo calculado incorretamente a RBT12 para o c�lculo do Simples  |
-| 101340 | 128957 | NE | N�o est� sendo demonstrado as receitas da filial no relat�rio Simples  |
+| 102644 | 131811 | SAL | MT-Atualizar a tabela de c�digo de ajuste na tela de Lan�amentos de Va |
+| 102693 | 131546 | NE | SP-N�o est�o sendo gerados os registros "5315" e "5350" no informativo |
+| 102694 | 131334 | NE | SC-Em alguns casos est� sendo gerado incorretamente o valor no campo " |
+| 102330 | 131332 | NE | Em alguns casos est� ocorrendo erro de sistema ao gravar o cadastro de |
+| 102695 | 131331 | NE | Est�o sendo gerados valores incorretos nos campos "Base de c�lculo Tot |
+| 102605 | 131008 | NE | N�o est�o sendo repetidos os campos "cClassTrib", "CST" e "Al�quota" d |
+| 102189 | 130885 | NE | Est� sendo atribu�do o status "Aguardando nota fiscal" para transa��es |
+| 102559 | 130818 | SAM | RJ-Atualizar a vig�ncia dos c�digos da tabela 5.2 Valores Declarat�rio |
+| 102639 | 130722 | SAL | Incluir no sistema o NCM 5903.90.90 conforme retifica��o do Ato Declar |
+| 102246 | 130721 | NE | SC-N�o est� sendo gerado o quadro 46 na DIME, quando houver lan�amento |
 
-### Apuracao de impostos + SPED e documentos eletronicos (2774 SAIs, 57 pendentes)
+### Apuracao de impostos + SPED e documentos eletronicos (2787 SAIs, 48 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
-| 102046 | 131184 | NE | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRA |
-| 102197 | 131151 | NE | Estão sendo gerados indevidamente os registros 0460 e D195 no informat |
-| 101698 | 130610 | NE | N�o est� sendo poss�vel informar caracteres alfanum�ricos no campo "N� |
-| 101668 | 130465 | SAL | Considerar as devolu��es de vendas e os devidos valores dos CT-es subs |
+| 102688 | 131908 | SAM | Refatorar a forma de gerar os registros D750 e D760 no SPED Fiscal  |
+| 102563 | 131709 | SAIL | Implementar o plano referencial TEF - Tributa��o Espec�fica do Futebol |
+| 102197 | 131151 | NE | Est�o sendo gerados indevidamente os registros 0460 e D195 no informat |
+| 102031 | 131028 | NE | Est� apresentando erro de banco de dados ao vincular a conta referenci |
+| 101935 | 130804 | NE | Em alguns casos ocorre lentid�o na gera��o do evento R-4099 e a abertu |
+| 102671 | 130479 | SAL | BA-Alterar o sistema para gerar os documentos com esp�cie NFCom - mode |
 | 101690 | 130456 | NE | Em alguns casos ocorre o fechamento do sistema ao gerar Relat�rio de C |
 | 101584 | 130433 | SAL | RO-Gerar o registro E112 no SPED Fiscal para lan�amentos de ajustes ge |
 | 101286 | 130098 | NE | Em alguns casos est� sendo gerado valor negativo no campo 06-VL_CRED_D |
 | 101343 | 130015 | NE | Em alguns casos est� ocorrendo diferen�a no valor de "Valor do estorno |
-| 101165 | 130014 | NE | N�o est� sendo feita corretamente a importa��o dos lan�amentos cont�be |
-| 101139 | 129879 | NE | Est� gerando o saldo anterior incorreto no DFC em RTF no informativo S |
 
-### Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos (1469 SAIs, 18 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos (1478 SAIs, 22 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
-| 102215 | 131134 | NE | Não está sendo zerada a guia "IVA" das notas canceladas de saídas de C |
-| 101691 | 130537 | NE | Em alguns casos o sistema fecha ao gerar o arquivo Excel do Relat�rio  |
-| 101485 | 128897 | NE | SC-N�o est�o sendo gerados os registros 0460, C195 e C197 no informati |
+| 102584 | 131756 | NE | Est�o sendo gerados indevidamente os registros M225 e M625 referente � |
+| 102595 | 131627 | NE | Est� importando incorretamente a al�quota do imposto 28-FUNRURAL nas n |
+| 102404 | 131553 | NE | Em alguns casos n�o est� sendo gerado o valor correto nos campos "06-V |
+| 101945 | 131013 | SAM | Otimizar a gera��o dos arquivos de confer�ncia R4010 e R4020 da EFD RE |
+| 102308 | 130803 | NE | Est�o ocorrendo os erros "N�o foi poss�vel verificar o Pa�s" e erro de |
+| 102558 | 130762 | SAL | RJ-Ajustar os c�digos dos registros E111/E115 do SPED Fiscal para o Re |
+| 102224 | 128540 | SAL | MS-Alterar o sistema para gerar o Bloco K do SPED Fiscal, quando o imp |
 | 100287 | 128438 | NE | Est� sendo importado incorretamente o valor da "Diferen�a entre o valo |
-| 100751 | 126795 | SAL | Alterar o sistema para considerar a dedu��o do CT-e substituto no c�lc |
-| 99437 | 126341 | SAL | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os |
-| 98666 | 125642 | SAM | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do  |
-| 95283 | 120661 | SAM | Reduzir o consumo de mem�ria carregando apenas as estruturas necess�ri |
-| 81980 | 97803 | NE | Est� ocorrendo erro de importa��o quando selecionado a op��o "Gerar CS |
-| 78635 | 96008 | NE | RJ-Est� importando incorretamente a al�quota do imposto '57-FECP-DIFAL |
+| 102150 | 127975 | SAL | SC-Alterar o comportamento do sistema para permitir efetuar o lan�amen |
+| 102148 | 127538 | SAL | MG-Alterar o sistema para gerar a escritura��o consolidada no SPED Fis |
 
-### Apuracao de impostos + Obrigacoes e relatorios estaduais (1027 SAIs, 25 pendentes)
+### Apuracao de impostos + Obrigacoes e relatorios estaduais (1032 SAIs, 26 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
-| 101989 | 131097 | SAM | Testar as funcionalidades de IA para o pergunte ao seu relatório na Es |
-| 101988 | 131096 | SAM | Testar as funcionalidades de IA para o pergunte ao seu relatório na Es |
-| 101808 | 130536 | NE | Est� sendo gerado indevidamente o destinat�rio trocado na guia GNRE do |
+| 102871 | 132127 | NE | Está listando indevidamente contas caixa e equivalentes de caixa na li |
+| 102571 | 131750 | SAM | Refatorar o Demonstrativo do imposto 9-SUBTRI |
+| 102580 | 130613 | SAL | PR-Disponibilizar os c�digos de ajuste PR021087 e PR011087 para lan�am |
+| 102292 | 130609 | NE | MG-Est� sendo demonstrada incorretamente a base de c�lculo do imposto  |
+| 102699 | 130535 | SAL | SP-Gerar o registro do DIFAL E300 para a UF Origem mesmo a partir de 2 |
 | 101555 | 130339 | NE | Est� sendo demonstrado o n�mero do documento e o CNPJ do fornecedor in |
-| 101100 | 128886 | NE | N�o est� sendo desconsiderado o desconto na coluna "Valor base de c�lc |
-| 100539 | 128808 | NE | Est� sendo gerado indevidamente a mensagem 'O relat�rio deve ser emiti |
 | 99607 | 126845 | NE | Em alguns casos est� fechando o sistema ao emitir o demonstrativo do i |
 | 97350 | 123136 | SAM | GO-Atualizar a forma de gerar a guia DARE online conforme nova estrutu |
 | 96166 | 121932 | SAM | Realizar um estudo para que seja poss�vel utilizar o Proxy do Windows  |
 | 90515 | 113628 | SAM | Otimizar a DW 'dw_dados_imposto_lancado_produto_difal_nc' na gera��o d |
 
-### Apuracao de impostos + Escrituracao e movimento fiscal + Onvio, importacao e dados + SPED e documentos eletronicos (915 SAIs, 23 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal + Onvio, importacao e dados + SPED e documentos eletronicos (923 SAIs, 24 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|
-| 102221 | 131359 | NE | SP-Não está importando o Código do Benefício Fiscal na guia Estoque da |
-| 102185 | 131271 | NE | Está considerando indevidamente documentos cancelados para o cálculo d |
-| 101141 | 129762 | NE | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma c |
-| 100941 | 129535 | NE | PA-N�o est� sendo importado o c�digo de recolhimento do imposto 31-ST/ |
-| 100578 | 128734 | NE | N�o est� gerando os valores de IPI para alguns produtos na guia "Estoq |
-| 99878 | 127508 | NE | Est� importando incorretamente a base de c�lculo e o valor do imposto  |
+| 102455 | 131500 | NE | Est� importando indevidamente valor de "Desconto" nas notas que n�o po |
+| 102448 | 131445 | NE | Est� importando incorretamente o "Valor cont�bil" na linha do imposto  |
+| 102452 | 131167 | NE | MG-N�o est� importando os valores do imposto 31-ICMS ST/AT na guia est |
+| 102184 | 131031 | NE | Est� importando o cliente/Fornecedor incorreto para guia "Complementar |
+| 102530 | 130735 | NE | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador |
+| 101998 | 130337 | NE | RJ-Est� reduzindo a base de c�lculo do imposto 154-FOT indevidamente q |
+| 102320 | 130213 | NE | Est� importando a al�quota incorreta do imposto 28-Funrural quando a e |
 | 96928 | 122664 | NE | RJ-Est� ocorrendo erro de banco de dados "Algum dado n�o cadastrado !" |
 | 94964 | 120257 | NE | CE-Est� apurando incorretamente o ICMS Monof�sico mesmo sem a informa� |
 | 87976 | 111505 | NE | Est� sendo apresentado produtos na guia "Relacionamento de produtos" i |
-| 76476 | 91386 | NE | N�o est� sendo importado na coluna "Exclus�es" da guia "SPED Pis/Cofin |
 
 

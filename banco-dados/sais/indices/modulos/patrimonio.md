@@ -1,23 +1,21 @@
 ﻿# Patrimônio
 
 > Dominio Escrita Fiscal | slug `patrimonio`
-> Atualizado em: 10/06/2026 15:03
-> Pendentes: 5 | Liberadas: 150 | Descartadas: 6 | Total SAIs: 161
+> Atualizado em: 07/07/2026 15:02
+> Pendentes: 2 | Liberadas: 151 | Descartadas: 6 | Total SAIs: 159
 
-## Pendentes (5)
+## Pendentes (2)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 102293 | 131283 | NE | Normal | 01/06/2026 | Está calculando incorretamente a depreciação de períodos anteriores à transferên |
-| 102247 | 131237 | NE | Normal | 01/06/2026 | Está gerando incorretamente o Ganho/perda de Capital ao realizar a baixa total,  |
 | 101807 | 130597 | NE | Normal | 06/05/2026 | Est� ocorrendo erro de banco de dados: "Algum dado n�o cadastrado!" ao importar  |
 | 101726 | 130453 | NE | Normal | 29/04/2026 | Est� sendo gerado indevidamente o registro F120 (Bens Incorporados ao Ativo Imob |
-| 100847 | 128299 | SAL | Normal | 23/02/2026 | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
 
 ## Liberadas Recentes (30 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 100847 | 128299 | SAL | 23/02/2026 | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
 | 97238 | 122900 | NE | 24/09/2025 | ES-Est� sendo gerado incorretamente o lan�amento de zeramento de ICMS na Integra |
 | 96308 | 121816 | SAL | 15/08/2025 | PR-Alterar comportamento do sistema para gerar o ajuste PR000040 no SPED Fiscal  |
 | 95494 | 120881 | SAL | 15/07/2025 | SC - Criar a op��o "Cr�dito de ICMS Ativo Imobilizado Ind�stria SN 7% - An2, Art |
@@ -47,14 +45,13 @@
 | 63302 | 72009 | NE | 04/02/2020 | Est� ocorrendo erro de sistema ao realizar uma baixa de bem, quando o bem possui |
 | 62954 | 71428 | NE | 20/01/2020 | Est� ocorrendo erro no objeto "w_cad_credito_imobilizado" ao acessar a janela "O |
 | 62743 | 71116 | NE | 07/01/2020 | Est� sendo gerado o valor incorreto no campo "Deprecia��o Societ�ria acumulada"  |
-| 62296 | 70412 | NE | 06/12/2019 | Est�o sendo gerados lan�amentos cont�beis indevidamente na janela "Cr�dito Sobre |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| imobilizado | 141 |
-| ativo imobilizado | 109 |
+| imobilizado | 142 |
+| ativo imobilizado | 110 |
 | valor residual | 6 |
 | baixa de bem | 3 |
 

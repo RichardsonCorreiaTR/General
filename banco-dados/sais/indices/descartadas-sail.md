@@ -1,16 +1,17 @@
 ﻿# SAIL Descartadas - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total SAIs unicas: 81
+> Atualizado em: 07/07/2026 15:02
+> Total SAIs unicas: 82
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 131213 |  | 28/05/2026 | ID 0 | - |
-| 97385 | 119122 |  | 08/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar o cadastro de Notas Explicativas. |
+| 0 | 130262 |  | 22/04/2026 | ID 0 | - |
+| 101157 | 129940 |  | 08/04/2026 | SAI Aprovada | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
+| 98466 | 119542 |  | 22/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
+| 97772 | 119540 |  | 22/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
 | 91722 | 116008 |  | 21/01/2025 | SAI Aprovada | Garantir que o novo modelo de Nota Fiscal Fatura de Servi�os de Comunica��o Elet |
 | 90935 | 114573 |  | 14/11/2024 | SAI Aprovada | RJ-Implementar a escritura��o do FECP por meio de sub-apura��o - Resolu��o SEFAZ |
 | 90675 | 107262 |  | 05/03/2024 | SAI Aprovada | RS-Implementar o c�lculo do Fundo de Reforma conforme Instru��o Normativa RE 30/ |
-| 97280 | 103491 |  | 21/11/2023 | Aguardando Resposta do Desenvolvimento DEMO | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
 | 80049 | 98489 |  | 26/06/2023 | SAI Aprovada | teste descri��o |
 | 79802 | 98059 |  | 07/06/2023 | SAI Aprovada | DESCRI��O DA FEATURE/PSAI |
 | 79795 | 98053 |  | 07/06/2023 | SAI Aprovada | TESTE MANUAL SGD |

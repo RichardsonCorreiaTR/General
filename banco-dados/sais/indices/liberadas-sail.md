@@ -1,12 +1,17 @@
 ﻿# SAIL Liberadas - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total SAIs unicas: 1703
+> Atualizado em: 07/07/2026 15:02
+> Total SAIs unicas: 1708
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 101369 | 130191 | 10.6A-06 | 17/04/2026 | Aguardando Resposta do Gerente de Testes | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apuração de Tributos federa |
+| 101593 | 130263 | 10.6A-06 | 22/04/2026 | Em Teste DEMO | GO-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
+| 101369 | 130191 | 10.6A-06 | 17/04/2026 | Em Teste DEMO | Criar campo 'Adicional ao SENAI' na janela 'Consulta Apura��o de Tributos federa |
+| 101159 | 129936 | 10.6A-05 | 08/04/2026 | Em Teste DEMO | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
+| 101789 | 128974 | 10.6A-06 | 10/03/2026 | Em Teste DEMO | Implementar o c�lculo dos impostos 183-IBS e 184-CBS na aliena��o de bem im�vel  |
 | 99843 | 127551 | 10.6A-03 | 04/02/2026 | Em Teste DEMO | Implementar a gera��o dos benef�cios da DIRBI pela API integra contador, conform |
+| 101291 | 127448 | 10.6A-06 | 03/02/2026 | Em Teste DEMO | SC-Implementar sub-apura��o e limitador do Cr�dito Presumido de ICMS para abated |
+| 101305 | 125948 | 10.6A-06 | 30/12/2025 | Em Teste DEMO | Implementar o campo "Entrega" na tela de lan�amento das notas de sa�das, conform |
 | 100555 | 125883 | 10.6A-04 | 26/12/2025 | Em Teste DEMO | Implementar o envio do 'Evento: 211124 - Perecimento, perda, roubo ou furto dura |
 | 98693 | 125691 | 10.5A-12 | 19/12/2025 | Em Teste DEMO | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 por�m n�o fo |
 | 100574 | 125613 | 10.6A-04 | 17/12/2025 | Em Teste DEMO | Implementar o novo 'Evento: 112130 - Perecimento, perda, roubo ou furto durante  |
@@ -24,8 +29,9 @@
 | 96440 | 119623 | 10.5A-11 | 27/05/2025 | Em Teste DEMO | Aumentar a quantidade de caracteres da guia "Saldo inicial" do par�metros para o |
 | 96514 | 119610 | 10.5A-10 | 26/05/2025 | Em Teste DEMO | RS-Implementar a gera��o do c�digo de ajuste RS10001706 no informativo SPED Fisc |
 | 96083 | 119577 | 10.5A-09 | 26/05/2025 | Em Teste DEMO | TO-Implementar o c�lculo do cr�dito presumido com base em 3% nas opera��es inter |
+| 98466 | 119542 |  | 22/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
+| 97772 | 119540 |  | 22/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar a estrutura e emissão do Demonstrativo de Fluxo de Caixa (DFC) pelo  |
 | 94851 | 119165 | 10.5A-07 | 12/05/2025 | Em Teste DEMO | Preparar o sistema para calcular o Imposto sobre Bens e Servi�os-IBS e a Contrib |
-| 97385 | 119122 |  | 08/05/2025 | Aguardando Resposta do Desenvolvimento DEMO | Implementar o cadastro de Notas Explicativas. |
 | 99204 | 118044 | 10.6A-02 | 27/03/2025 | Em Teste DEMO | MA-Implementar o c�lculo de cr�dito presumido estabelecimento atacadista por pro |
 | 96572 | 117985 | 10.5A-10 | 25/03/2025 | Em Teste DEMO | RJ-Implementar no lan�amento de nota um campo para informar o valor do ICMS ST d |
 | 94665 | 117753 | 10.5A-10 | 18/03/2025 | Em Teste DEMO | Implementar a gera��o dos benef�cios na API DIRBI conforme IN 2.241/2024 - C�dig |
@@ -98,7 +104,6 @@
 | 85370 | 104144 | 10.4A-05 | 13/12/2023 | Em Teste DEMO | RJ-Implementar o c�lculo do cr�dito presumido sobre as sa�das internas de estabe |
 | 83276 | 104059 | 10.4A-01 | 08/12/2023 | Em Teste DEMO | Criar tela para pagamento do imposto 173-Tributos Federais |
 | 84450 | 103738 | 10.4A-04 | 29/11/2023 | Em Teste DEMO | RJ-Implementar o c�lculo do Complemento/Restitui��o do ICMS-ST conforme Resolu�� |
-| 97280 | 103491 |  | 21/11/2023 | Aguardando Resposta do Desenvolvimento DEMO | Criar a estrutura e relatório da Demonstração de Lucros ou Prejuízos Acumulados  |
 | 88039 | 103395 | 10.4A-10 | 17/11/2023 | Em Teste DEMO | RS-Criar op��o para gerar Notas Fiscais de Servi�o Eletr�nicas para o munic�pio  |
 | 85152 | 103022 | 10.4A-10 | 08/11/2023 | Em Teste DEMO | Definir m�scara e valida��es para chave NF-e. |
 | 85198 | 103021 | 10.4A-08 | 08/11/2023 | Em Teste DEMO | Implementar a aba 'Situa��o Tribut�ria' na NF-e, quando na 'Parametriza��o' o to |

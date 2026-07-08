@@ -1,6 +1,6 @@
 ﻿# SAIs da Versao ONVIO Escrita -
 
-> Total: 32 registros
+> Total: 33 registros
 
 | SAI | PSAI | Tipo | Gravidade | Status | Cadastro | Descricao |
 |-----|------|------|-----------|--------|----------|-----------|
@@ -20,11 +20,12 @@
 | 97728 | 123875 | NE | Normal | Liberada | 30/10/2025 | Ajustar o BOX-e para as notas que n�o foram recebidas. (SAI 97720). |
 | 97855 | 124038 | NE | Grave | Liberada | 05/11/2025 | Est� ocorrendo instabilidade nas consultas e processamento dos status de manifes |
 | 97176 | 123202 | NE | Normal | Liberada | 07/10/2025 | Est� ocorrendo um travamento no download de notas da API ao utilizar o novo serv |
+| 101013 | 129761 | NE | Normal | Liberada | 01/04/2026 | N�o est�o sendo armazenadas as notas enviadas pelo Busca NF-e para o BOX-e.     |
 | 101230 | 130119 | NE | Normal | Liberada | 15/04/2026 | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
 | 98702 | 125427 | NE | Normal | Liberada | 12/12/2025 | Est� demonstrando indevidamente as empresas como desabilitadas no menu ONVIO API |
-| 101013 | 129761 | NE | Normal | Liberada | 01/04/2026 | Não estão sendo armazenadas as notas enviadas pelo Busca NF-e para o BOX-e. |
 | 99659 | 127418 | SAM | Normal | Liberada | 02/02/2026 | Realizar um estudo para verificar os impactos da altera��o do CNPJ com caractere |
 | 99513 | 127080 | SAM | Normal | Liberada | 27/01/2026 | Atualizar a API para aceitar NFS-e Padr�o Nacional vers�o 1.01 |
+| 101977 | 131071 | SAM | Normal | Liberada | 25/05/2026 | Apresentar no menu hamb�rguer a op��o de Gerenciador de Certificados ao acessar  |
 | 97326 | 122280 | SAM | Normal | Liberada | 02/09/2025 | Demonstrar os dados de IBS e CBS na visualiza��o de NF-e conforme altera��es da  |
 | 97824 | 124006 | SAM | Normal | Liberada | 04/11/2025 | Alterar a API do BOX-e para carregar as notas pendentes de reprocessamento em lo |
 | 98868 | 125910 | SAM | Normal | Liberada | 29/12/2025 | Alterar os servi�os que se comunicam com o SocketServices para se comunicar com  |

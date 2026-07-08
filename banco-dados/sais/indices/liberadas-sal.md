@@ -1,36 +1,57 @@
 ﻿# SAL Liberadas - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total SAIs unicas: 7115
+> Atualizado em: 07/07/2026 15:02
+> Total SAIs unicas: 7140
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 102068 | 131055 | 10.6A-06 | 25/05/2026 | Respondido Gerente de Testes | Ajustar a comunicação com o webservice no envio da DIRBI via API. |
+| 102553 | 131600 | 10.6A-07 | 12/06/2026 | Respondido Gerente de Testes | Tornar opcional a geração do tipo de isenção '12' para a natureza de rendimento  |
+| 102350 | 131231 | 10.6A-07 | 29/05/2026 | Aguardando Resposta do Desenvolvimento | Atualizar as tabelas do SPED ECF, registro M350, conforme tabela dinâmica de 28/ |
+| 102349 | 131230 | 10.6A-07 | 29/05/2026 | Aguardando Resposta do Desenvolvimento | Atualizar as tabelas do SPED ECF, registro M350, conforme tabela dinâmica de 28/ |
+| 102068 | 131055 | 10.6A-06 | 25/05/2026 | Em Teste DEMO | Ajustar a comunica��o com o webservice no envio da DIRBI via API. |
 | 101806 | 130832 |  | 18/05/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o envio da guia DAS conforme as altera��es ocorridas no Captcha do PGDAS |
-| 101853 | 130794 | 10.6A-06 | 15/05/2026 | Respondido Gerente de Testes | Remover linhas de cálculo referente ao Programa Perse no registro N610 do SPED E |
-| 101810 | 130657 | 10.6A-06 | 11/05/2026 | Respondido Gerente de Produto | Atualizar os códigos de Natureza da Receita para o CST 07, conforme versão 1.0.4 |
-| 101855 | 130630 | 10.6A-06 | 08/05/2026 | Respondido Gerente de Produto | Gerar a TAG 'rendIsento' no informativo EFD-Reinf, para rendimentos isentos que  |
-| 101313 | 130132 | 10.6A-05 | 15/04/2026 | Respondido Coordenador de Módulos DEMO | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
+| 101853 | 130794 | 10.6A-06 | 15/05/2026 | Em Teste DEMO | Remover linhas de c�lculo referente ao Programa Perse no registro N610 do SPED E |
+| 101810 | 130657 | 10.6A-06 | 11/05/2026 | Em Teste DEMO | Atualizar os c�digos de Natureza da Receita para o CST 07, conforme vers�o 1.0.4 |
+| 101855 | 130630 | 10.6A-06 | 08/05/2026 | Em Teste DEMO | Gerar a TAG 'rendIsento' no informativo EFD-Reinf, para rendimentos isentos que  |
+| 101885 | 130585 | 10.6A-06 | 05/05/2026 | Em Teste DEMO | Adequar os c�lculos do Lucro da Explora��o e dos incentivos fiscais conforme a L |
+| 101592 | 130556 | 10.6A-05 | 05/05/2026 | Em Teste DEMO | Atualizar tabelas do informativo SPED ECF conforme tabela din�mica de 30/04/2026 |
+| 101668 | 130465 | 10.6A-05 | 29/04/2026 | Em Teste DEMO | Considerar as devolu��es de vendas e os devidos valores dos CT-es substitutos e  |
+| 101928 | 130442 | 10.6A-06 | 28/04/2026 | Em Teste DEMO | Realizar altera��es da Lei Complementar 224/2025 no SPED ECF (Leiaute 12), confo |
+| 101790 | 130298 | 10.6A-06 | 22/04/2026 | Em Teste DEMO | Adequar os informativos aos reflexos decorrentes das altera��es na redu��o linea |
+| 101561 | 130179 | 10.6A-06 | 17/04/2026 | Em Teste DEMO | MS-Alterar a escritura��o do Cr�dito Presumido de Hortifrutigranjeiros, conforme |
+| 101605 | 130149 | 10.6A-06 | 16/04/2026 | Em Teste DEMO | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
+| 101313 | 130132 | 10.6A-05 | 15/04/2026 | Em Teste DEMO | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
+| 101706 | 130025 | 10.6A-07 | 13/04/2026 | Respondido Gerente de Testes | PR-Habilitar a guia 'Detalhamento' para alguns códigos nos lançamentos de ajuste |
+| 101796 | 129931 | 10.6A-06 | 08/04/2026 | Em Teste DEMO | Calcular a redu��o linear de 10% nos incentivos e benef�cios tribut�rios de isen |
 | 101048 | 129824 | 10.6A-04 | 02/04/2026 | Em Teste DEMO | Atualizar tabelas do informativo SPED ECF. |
 | 101044 | 129794 | 10.6A-04 | 01/04/2026 | Em Teste DEMO | Atualizar tabelas do informativo SPED ECF. |
 | 101046 | 129742 | 10.6A-04 | 01/04/2026 | Em Teste DEMO | Adequar a tela de ajustes de PIS/COFINS incluindo as novas origens observando a  |
 | 100726 | 129393 | 10.6A-04 | 23/03/2026 | Em Teste DEMO | Ajustar o sistema para que consiga seguir no captcha do portal na DEFIS no Dom�n |
 | 100757 | 129164 | 10.6A-04 | 17/03/2026 | Em Teste DEMO | Atualizar a tabela de NCM conforme Ato Declarat�rio Executivo RFB N� 001, de 30  |
-| 100741 | 129097 | 10.6A-05 | 13/03/2026 | Respondido Coordenador de Módulos DEMO | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
+| 100741 | 129097 | 10.6A-05 | 13/03/2026 | Em Teste DEMO | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
+| 101354 | 128938 | 10.6A-05 | 10/03/2026 | Em Teste DEMO | PI-Incluir o c�digo de ajuste PI020062 na tela de Impostos Lan�ados Estaduais, q |
 | 100423 | 128936 |  | 10/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para que consiga seguir no captcha para emiss�o do DAS, DEFIS  |
 | 100418 | 128885 | 10.6A-04 | 06/03/2026 | Em Teste DEMO | SC-Atualizar os c�digos de ajuste do SPED Fiscal referente Cr�dito Presumido ao  |
 | 100445 | 128857 | 10.6A-04 | 05/03/2026 | Em Teste DEMO | MG-Ajustar o sistema para atender a prorroga��o dos prazos tribut�rios para empr |
+| 101384 | 128845 | 10.6A-06 | 05/03/2026 | Em Teste DEMO | SC-Atualizar os c�digos de ajuste de ICMS da Tabela 5.2, conforme Correio Eletr� |
+| 101299 | 128827 | 10.6A-05 | 05/03/2026 | Em Teste DEMO | Alterar o sistema para permitir a utiliza��o do tipo de isen��o 2 - Di�ria de vi |
+| 101878 | 128794 | 10.6A-06 | 04/03/2026 | Em Teste DEMO | Alterar o c�digo de ajuste gerado no registro E311 no SPED Fiscal para lan�ament |
+| 101603 | 128714 | 10.6A-06 | 03/03/2026 | Em Teste DEMO | Alterar a base de c�lculo dos impostos 183-IBS e 184-CBS para considerar o valor |
 | 100464 | 128709 | 10.6A-04 | 03/03/2026 | Em Teste DEMO | MT-Incluir data fim para o c�digo de ajuste MT002010 do SPED Fiscal da tela de " |
+| 101058 | 128657 | 10.6A-05 | 02/03/2026 | Em Teste DEMO | Ajustar o comprovante anual para que gere os rendimentos isentos de distribui��o |
 | 100297 | 128624 | 10.6A-03 | 27/02/2026 | Em Teste DEMO | TO-Ajustar o sistema para n�o gerar o segmento G no informativo DIF para os CNAE |
 | 100499 | 128590 | 10.6A-04 | 27/02/2026 | Em Teste DEMO | MS-Alterar o sistema para adequa��o �s novas IE's do estado do Mato Grosso do Su |
 | 100773 | 128556 | 10.6A-04 | 26/02/2026 | Em Teste DEMO | Criar novas al�quotas de CSLL a partir de 04/2026 conforme Lei Complementar 224/ |
-| 100608 | 128452 | 10.6A-05 | 25/02/2026 | Respondido Coordenador de Módulos DEMO | Alterar a al�quota do imposto 28-FUNRURAL aplicando a majora��o de 10% conforme  |
+| 100608 | 128452 | 10.6A-05 | 25/02/2026 | Em Teste DEMO | Alterar a al�quota do imposto 28-FUNRURAL aplicando a majora��o de 10% conforme  |
 | 100110 | 128384 | 10.6A-03 | 24/02/2026 | Em Teste DEMO | Atualizar a vers�o do programa de envio da DIOPS. |
+| 100853 | 128376 | 10.6A-05 | 24/02/2026 | Em Teste DEMO | RS-Alterar o sistema para que seja gerado o registro E311 do SPED Fiscal pelo la |
+| 100847 | 128299 | 10.6A-05 | 23/02/2026 | Em Teste DEMO | MT-Ajustar a escritura��o das opera��es de devolu��es de mercadorias do ativo im |
 | 100104 | 128116 | 10.6A-04 | 18/02/2026 | Em Teste DEMO | Atualizar as bases legais dos Comprovantes Anuais de Reten��o, substituindo a re |
 | 100658 | 128115 | 10.6A-04 | 18/02/2026 | Em Teste DEMO | Adequar o sistema ao encerramento do benef�cio fiscal PERSE a partir de 04/2025, |
 | 100236 | 128036 | 10.6A-04 | 13/02/2026 | Em Teste DEMO | Aplicar redu��o linear de 10% aos incentivos fiscais a partir de 2026, conforme  |
 | 99880 | 127945 | 10.6A-03 | 12/02/2026 | Em Teste DEMO | Atualizar o informativo SPED ECF para o leiaute 12 conforme manual de orienta��o |
 | 100858 | 127709 | 10.6A-04 | 06/02/2026 | Em Teste DEMO | Adequar SPED ECF ao encerramento do Programa PERSE a partir de 04/2025, conforme |
+| 100615 | 127678 | 10.6A-05 | 06/02/2026 | Em Teste DEMO | Alterar o sistema para n�o deduzir a reten��o de CSLL no campo 04 do registro F6 |
 | 99883 | 127671 | 10.6A-03 | 06/02/2026 | Em Teste DEMO | RS-Alterar o sistema para que atualize as vig�ncias dos c�digos do anexo VA e VB |
 | 99772 | 127605 | 10.6A-02 | 05/02/2026 | Em Teste DEMO | SC-Alterar os percentuais do Cr�dito Presumido ao estabelecimento abatedor de ga |
 | 99915 | 127541 | 10.6A-03 | 04/02/2026 | Em Teste DEMO | RN-Alterar o percentual de cr�dito nas aquisi��es de produtos da ind�stria local |
@@ -44,17 +65,26 @@
 | 99568 | 127111 | 10.6A-02 | 27/01/2026 | Em Teste DEMO | Alterar o cabe�alho do arquivo DIOPS de 2026. |
 | 100015 | 126993 | 10.6A-03 | 23/01/2026 | Em Teste DEMO | Alterar o sistema para realizar os ajustes referente a majora��o de 10% no perce |
 | 100007 | 126827 | 10.6A-03 | 21/01/2026 | Em Teste DEMO | Alterar o sistema para considerar a majora��o de 10% no %CSLL e %IRPJ no planeja |
+| 101590 | 126798 | 10.6A-06 | 21/01/2026 | Em Teste DEMO | PB-Alterar o c�lculo do DIFALI para n�o excluir o ICMS da base de c�lculo quando |
+| 100751 | 126795 | 10.6A-05 | 21/01/2026 | Em Teste DEMO | Alterar o sistema para considerar a dedu��o do CT-e substituto no c�lculo do Sim |
 | 99364 | 126784 | 10.6A-02 | 20/01/2026 | Em Teste DEMO | Ajustar o sistema para observar as altera��es de acesso ao e-CAC, assim como env |
 | 99569 | 126632 | 10.6A-04 | 19/01/2026 | Em Teste DEMO | SP-Alterar o sistema para que permita incluir at� 60 caracteres no campo "N� do  |
+| 99852 | 126630 | 10.6A-06 | 19/01/2026 | Em Teste DEMO | Incluir o CNAE 8220-2/00 nos par�metros para c�lculo do INSS Receita Bruta. |
 | 100068 | 126583 | 10.6A-03 | 16/01/2026 | Em Teste DEMO | TO-Atualizar o sistema para gerar a DIF 2026 referente ao ano base 2025. |
+| 99799 | 126559 | 10.6A-06 | 16/01/2026 | Em Teste DEMO | Alterar o sistema para que seja poss�vel informar a chave das notas modelo 62 no |
+| 100979 | 126557 | 10.6A-05 | 16/01/2026 | Em Teste DEMO | RS-Ajustar a gera��o do SPED Fiscal referente a anula��o de CT-e/CT-eOS quando o |
 | 99418 | 126512 | 10.6A-02 | 15/01/2026 | Em Teste DEMO | Ajustar o envio da e-Sfinge para 2026. |
 | 99462 | 126507 | 10.6A-03 | 15/01/2026 | Em Teste DEMO | Realizar testes com o arquivo SPED Cont�bil e com o SPED Cont�bil - Raz�o Auxili |
 | 99330 | 126460 | 10.6A-02 | 14/01/2026 | Em Teste DEMO | Ajustar o comprovante anual para que gere os rendimentos isentos de distribui��o |
+| 101293 | 126447 | 10.6A-05 | 14/01/2026 | Em Teste DEMO | Ajustar o PIS e COFINS para calcular a redu��o linear de 10% nos incentivos e be |
+| 99437 | 126341 | 10.6A-06 | 12/01/2026 | Em Teste DEMO | AL-Alterar o sistema para gerar o registro E113 no SPED Fiscal para os lan�ament |
+| 101553 | 126108 | 10.6A-06 | 07/01/2026 | Em Teste DEMO | Incluir as naturezas de rendimento 10011 e 11008 para envio na EFD-Reinf conform |
 | 99136 | 125986 | 10.6A-02 | 30/12/2025 | Em Teste DEMO | Preparar o sistema para gerar a DEFIS 2026. |
 | 99223 | 125927 | 10.6A-02 | 29/12/2025 | Em Teste DEMO | Alterar o sistema para considerar a majora��o de 10% no percentual de B.C. dos i |
 | 99844 | 125791 | 10.6A-04 | 23/12/2025 | Em Teste DEMO | RS-Alterar o c�lculo do imposto 27-ICMSA com fornecedor optante pelo Simples Nac |
 | 99340 | 125709 | 10.6A-02 | 19/12/2025 | Em Teste DEMO | Permitir gerar a guia DARF via Sicalcweb referente as impostos retidos informado |
 | 98692 | 125688 | 10.5A-12 | 19/12/2025 | Em Teste DEMO | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 por�m n�o fo |
+| 99030 | 125672 | 10.6A-05 | 19/12/2025 | Em Teste DEMO | PI-Alterar a rotina de Anula��o de CT-e e\ou CT-eOS conforme Ajustes Sinief n� 2 |
 | 98994 | 125636 | 10.6A-02 | 18/12/2025 | Em Teste DEMO | SP-Alterar o sistema para gerar os documentos com esp�cie NFCom - modelo 62 no r |
 | 98808 | 125626 | 10.6A-01 | 18/12/2025 | Em Teste DEMO | Atualizar o plano referencial do Banco Central(A partir de 2025), conforme Instr |
 | 99250 | 125623 | 10.6A-02 | 18/12/2025 | Em Teste DEMO | PR-Gerar os valores agregados das Notas Fiscais de modelo 62 (NFCom) no registro |
@@ -62,6 +92,7 @@
 | 99579 | 125353 | 10.6A-04 | 11/12/2025 | Em Teste DEMO | MG-Alterar o sistema para n�o deduzir as entradas do valor total das presta��es  |
 | 98947 | 125271 | 10.6A-02 | 10/12/2025 | Em Teste DEMO | BA/RS/SC/SP-Alterar o sistema para gerar a escritura��o consolidada no SPED Fisc |
 | 98616 | 125182 | 10.6A-01 | 08/12/2025 | Em Teste DEMO | Atualizar automaticamente os valores das Tabelas do MEI conforme o Sal�rio M�nim |
+| 100988 | 125146 | 10.6A-05 | 08/12/2025 | Em Teste DEMO | Alterar o sistema para calcular o valor dos contratos de Empresas Simples de Cr� |
 | 98664 | 125077 | 10.6A-04 | 05/12/2025 | Em Teste DEMO | MT-Alterar o sistema para tornar opcionais os campos referentes � GIA-ICMS para  |
 | 99837 | 125027 | 10.6A-03 | 03/12/2025 | Em Teste DEMO | RS-Alterar o c�lculo do imposto 8-DIFALI por produto, referente a aquisi��o de f |
 | 100020 | 124951 | 10.6A-04 | 02/12/2025 | Em Teste DEMO | GO-Alterar o sistema para que o 'Cr�dito presumido PROTEGE' e os lan�amentos rea |
@@ -97,7 +128,6 @@
 | 97867 | 123488 | 10.5A-12 | 16/10/2025 | Em Teste DEMO | MT-Alterar o sistema para calcular o FETHAB/ADICIONAL e INPECMT com redu��o de 3 |
 | 97517 | 123416 | 10.5A-11 | 15/10/2025 | Em Teste DEMO | SE-Incluir o c�digo de ajuste SE020010 em 'Movimentos/Outros/Impostos Lan�ados/E |
 | 97630 | 123335 | 10.5A-11 | 13/10/2025 | Em Teste DEMO | SP-Alterar o sistema para que ao calcular o Cr�dito Outorgado de Empresas T�xtei |
-| 97437 | 123318 |  | 10/10/2025 | Aguardando Resposta do Desenvolvimento DEMO | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
 | 98300 | 123315 | 10.5A-12 | 10/10/2025 | Em Teste DEMO | MS-Calcular o FUNDERSUL sobre o valor da opera��o, para empresas com Cr�dito pre |
 | 97228 | 123170 | 10.5A-10 | 06/10/2025 | Em Teste DEMO | SC-Alterar o sistema para gerar o c�digo de ajuste SC10000135 no SPED Fiscal par |
 | 97877 | 123158 | 10.5A-12 | 06/10/2025 | Em Teste DEMO | Ajustar o sistema para atender as novas altera��es do SPED Fiscal para o ano de  |
@@ -142,11 +172,7 @@
 | 98468 | 122278 | 10.6A-01 | 02/09/2025 | Em Teste DEMO | SC-Alterar os campos 02 e 03 do registro D197 referente ao estorno de cr�dito de |
 | 98539 | 122277 | 10.6A-01 | 02/09/2025 | Em Teste DEMO | SP-Alterar o sistema para gerar os registros referentes as parcelas de apropria� |
 | 98420 | 122273 | 10.6A-01 | 02/09/2025 | Em Teste DEMO | SC-Alterar o sistema para calcular o cr�dito presumido de inform�tica Art. 144 d |
-| 97524 | 122171 |  | 28/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Gerar DLPA para matriz e filial. |
-| 97336 | 122170 |  | 28/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Gerar a DLPA no SPED Contábil |
-| 96743 | 122166 |  | 28/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Transferir automaticamente o valor de lucro ou prejuízo do período para o lucro  |
 | 96436 | 122157 | 10.5A-09 | 28/08/2025 | Em Teste DEMO | SC-Atualizar os c�digos da tabela 5.2 e 5.1.1, conforme Correio Eletr�nico Circu |
-| 97482 | 122114 |  | 27/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Incluir o relacionamento de contas contábeis nas notas explicativas, e gerar no  |
 | 97509 | 122115 | 10.5A-12 | 27/08/2025 | Em Teste DEMO | SC-Alterar o sistema para incluir novos produtos e alterar a descri��o de alguns |
 | 96474 | 122052 | 10.5A-11 | 26/08/2025 | Em Teste DEMO | PR - Alterar o preenchimento do campo 'Observa��o' na integra��o dos d�bitos de  |
 | 98349 | 122050 | 10.6A-01 | 26/08/2025 | Em Teste DEMO | SC-Ajustar a gera��o do valor de ICMS de notas complementares nos quadros 09 e 1 |
@@ -308,7 +334,6 @@
 | 92505 | 117008 | 10.5A-03 | 21/02/2025 | Em Teste DEMO | Ajustar o envio da e-Sfinge para 2025. |
 | 93185 | 116962 | 10.5A-05 | 21/02/2025 | Em Teste DEMO | Permitir a escolha do respons�vel pela apura��o no arquivo do informativo MIT. |
 | 92371 | 116890 | 10.5A-03 | 20/02/2025 | Em Teste DEMO | RS-Permitir a utiliza��o do cr�dito de ICMS em parcela �nica conforme art. 31, � |
-| 93083 | 116793 |  | 18/02/2025 | Aguardando Resposta do Desenvolvimento DEMO | Alterar o sistema para aceitar o novo CNPJ com o formato alfanumérico conforme I |
 | 92343 | 116755 | 10.5A-04 | 18/02/2025 | Em Teste DEMO | RS-Permitir efetuar lan�amentos com o imposto 31-ST/AT quando o valor cont�bil f |
 | 94151 | 116725 | 10.5A-06 | 17/02/2025 | Em Teste DEMO | MG-Alterar o c�lculo do RET em rela��o aos cr�ditos pelas entradas para efetuar  |
 | 92936 | 116724 | 10.5A-05 | 17/02/2025 | Em Teste DEMO | SC-Alterar o sistema para permtir o lan�amento do c�digo de ajuste SC900001 para |

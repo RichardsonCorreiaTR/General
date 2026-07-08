@@ -1,53 +1,35 @@
 ﻿# Contabilidade
 
 > Dominio Escrita Fiscal | slug `contabilidade`
-> Atualizado em: 10/06/2026 15:03
-> Pendentes: 118 | Liberadas: 2621 | Descartadas: 326 | Total SAIs: 3054
+> Atualizado em: 07/07/2026 15:02
+> Pendentes: 100 | Liberadas: 2647 | Descartadas: 330 | Total SAIs: 3063
 
-## Pendentes (118)
+## Pendentes (100)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 131526 | SAM | Normal | 10/06/2026 | - |
-| 102266 | 131346 | NE | Normal | 03/06/2026 | Em alguns casos está apresentando erro de banco de dados ao emitir o Balanço qua |
-| 102192 | 131254 | NE | Normal | 01/06/2026 | Não está preenchendo os códigos de configuração ao contratar a Contabilidade Dig |
-| 102188 | 131176 | NE | Normal | 27/05/2026 | Replicação de configuração das contas não funciona ao infornar a conta contábil. |
-| 102171 | 131156 | NE | Normal | 27/05/2026 | Está atribuindo indevidamente a situação "Equivalente entre os planos", quando n |
-| 102154 | 131130 | NE | Normal | 26/05/2026 | Está realizando a contabilização da baixa do bem nas contas contábeis incorretas |
-| 102067 | 131128 | NE | Normal | 26/05/2026 | Está apresentado o erro "Expression is not valid" ao informar uma conta na tela  |
+| 102957 | 132224 | SAM | Normal | 07/07/2026 | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
+| 102577 | 131679 | SAM | Normal | 16/06/2026 | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |
+| 102675 | 131657 | NE | Normal | 15/06/2026 | N�o est�o sendo considerados os lan�amentos cont�beis de custos e despesas no Pl |
+| 102407 | 131572 | SAM | Normal | 11/06/2026 | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |
+| 102395 | 131516 | SAM | Normal | 10/06/2026 | Alterar a forma como os lan�amentos cont�beis do Conta Azul s�o recebidos pela C |
+| 102542 | 131333 | NE | Normal | 02/06/2026 | Est�o sendo gerados indevidamente lotes com diferen�a de d�bito e cr�dito na Con |
+| 102192 | 131254 | NE | Normal | 01/06/2026 | N�o est� preenchendo os c�digos de configura��o ao contratar a Contabilidade Dig |
+| 102414 | 131249 | SAL | Normal | 01/06/2026 | Impedir os lan�amentos dos incentivos PRONON e PRONAS/PCD a partir de 01/2027 co |
 | 101819 | 130839 | SAM | Normal | 18/05/2026 | Limitar a quantidade de conex�es no banco de dados do usu�rio 'USUARIO_DIGITAL_B |
-| 101837 | 130642 | SAM | Normal | 11/05/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na tela de No |
-| 101885 | 130585 | SAL | Normal | 05/05/2026 | Adequar os c�lculos do Lucro da Explora��o e dos incentivos fiscais conforme a L |
+| 102428 | 130782 | NE | Normal | 15/05/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis com origem "Extempor�neo EF"  |
 | 101749 | 130552 | NE | Normal | 04/05/2026 | Est� filtrando incorretamente as contas na tela 'Consulta Class F4' quando a emp |
-| 101617 | 130441 | SAM | Normal | 28/04/2026 | Testar o envio do plano de contas e o recebimento de lan�amentos do Conta Azul. |
-| 101528 | 130372 | NE | Normal | 24/04/2026 | Est� sendo considerado a natureza do saldo da conta ao inv�s da natureza do sald |
-| 101523 | 130327 | NE | Normal | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
+| 102163 | 130547 | SAM | Normal | 04/05/2026 | Criar campo para configurar contabiliza��o de valor de juros, multa e desconto n |
 | 101381 | 130316 | SAM | Normal | 23/04/2026 | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
 | 101460 | 130212 | NE | Normal | 20/04/2026 | Est� apresentando o erro 'FK_CTCONTAS_ANS_REF_CTCONTAS_ANS' in table 'CTCONTAS_A |
-| 101352 | 130176 | NE | Normal | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
 | 101320 | 129969 | SAM | Normal | 09/04/2026 | Reimplementar o relat�rio Controle de Incentivos Fiscais. |
 | 101069 | 129891 | NE | Normal | 07/04/2026 | Lentid�o ao realizar a grava��o de lan�amentos no Contabilidade Digital |
-| 101049 | 129862 | SAM | Normal | 06/04/2026 | Ler e utilizar a tag updated_at no consentimento |
 | 101039 | 129826 | NE | Normal | 02/04/2026 | Em alguns casos, est� gerando indevidamente o valor da Receita L�quida para as D |
 | 101052 | 129803 | NE | Normal | 02/04/2026 | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
-| 100816 | 129511 | SAM | Normal | 25/03/2026 | Registrar no banco de dados o tempo de gera��o do Balan�o e Balancete para auxil |
-| 101777 | 129273 | NE | Normal | 19/03/2026 | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta cont�bil do f |
-| 100931 | 129212 | SAM | Normal | 17/03/2026 | Otimizar a emiss�o do Balancete com a op��o "N�o imprimir contas com saldo anter |
-| 100591 | 129156 | NE | Normal | 16/03/2026 | N�o � efetuado a contabiliza��o da folha quando integra��o n�o possui configura� |
-| 101803 | 129074 | NE | Normal | 12/03/2026 | Est� sendo exclu�do indevidamente o centro de custo referente a contabiliza��o n |
 | 100737 | 128718 | NE | Normal | 03/03/2026 | Est� ocorrendo o erro 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao realizar a i |
-| 101186 | 128436 | NE | Normal | 25/02/2026 | Est� ocorrendo o erro "Problema com o banco de dados! = (-193): Primary key for  |
 | 101634 | 126597 | SAM | Normal | 16/01/2026 | Otimizar o c�lculo da Deprecia��o Societ�ria. |
-| 99047 | 126236 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-12. |
-| 99046 | 126235 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-11. |
-| 99044 | 126234 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-10. |
-| 99043 | 126233 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-09. |
-| 99042 | 126232 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-08. |
-| 99041 | 126231 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-07. |
-| 99040 | 126228 | SAM | Normal | 08/01/2026 | Liberar tempo de automa��o vers�o 10.6A-06. |
 | 98939 | 125748 | NE | Normal | 22/12/2025 | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nome do licen |
 | 98601 | 125436 | SAM | Normal | 15/12/2025 | Ajustar a emiss�o dos relat�rios Raz�o e DRE para buscar os saldos da nova tabel |
-| 98337 | 124504 | NE | Normal | 19/11/2025 | Foco incorreto ao clicar em, sim, na mensagem de replica��o de configura��o da c |
 | 97814 | 123993 | SAM | Normal | 04/11/2025 | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es na Contab |
 | 97807 | 123586 | SAM | Normal | 21/10/2025 | Contabilidade Digital: Contabilizar juros, multa e descontos dos eventos de paga |
 | 98061 | 123490 | SAM | Normal | 16/10/2025 | Contabilidade Digital: Efetuar testes nos pontos impactados pela atualiza��o da  |
@@ -57,7 +39,6 @@
 | 96476 | 122199 | NE | Normal | 29/08/2025 | N�o est� desabilitando o bot�o "Centro de Custos" quando o bot�o "Consolidar Emp |
 | 99525 | 121260 | SAM | Normal | 28/07/2025 | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e Onvio Conta |
 | 95441 | 120428 | SAM | Normal | 30/06/2025 | Permitir realizar importa��o de Lan�amentos de Centro de Custos em lan�amentos j |
-| 99751 | 120226 | SAM | Normal | 20/06/2025 | Ajustar a Altera��o de Lan�amentos via Utilit�rios para n�o permitir a troca par |
 | 94934 | 120189 | SAM | Normal | 18/06/2025 | Contabilidade Digital: Possibilitar buscar a parcela da nota fiscal com uma marg |
 | 94875 | 120175 | NE | Normal | 17/06/2025 | Contabilidade Digital: N�o est� atualizando as contas de lan�amento composto qua |
 | 94873 | 120172 | NE | Normal | 17/06/2025 | Contabilidade Digital: N�o est� atualizando o hist�rico/complemento do lan�ament |
@@ -66,12 +47,13 @@
 | 94250 | 119434 | SAM | Normal | 20/05/2025 | Atualizar build do Gerenciador de Bancos de Dados Sybase 17. |
 | 94175 | 117951 | SAM | Normal | 24/03/2025 | Contabilidade Digital: Permitir Incluir manualmente transa��es banc�rias na tela |
 | 93003 | 117683 | SAM | Normal | 14/03/2025 | Contabilidade Digital: Criar rotina para editar o lan�amento de extrato na conta |
+| 102691 | 117462 | SAM | Normal | 10/03/2025 | Permitir gravar as informa��es da tela 'Lan�amentos Cont�beis Extrato Banc�rio D |
 | 94258 | 117409 | SAM | Normal | 07/03/2025 | Contabilidade Digital: Separar a tela de Configura��o para Contabilizar Extrato  |
-| 93186 | 117405 | SAM | Normal | 07/03/2025 | Contabilidade Digital: Aumentar para 25 dias o tempo de pesquisa das parcelas no |
 | 98672 | 116961 | SAM | Normal | 21/02/2025 | Contabilidade digital: Integrar o banco Nordeste �s op��es do Open Finance dispo |
 | 99230 | 116764 | SAM | Normal | 18/02/2025 | Criar op��o para abrir a tela de baixas de parcelas, para permitir realizar a ba |
 | 93629 | 116438 | SAM | Normal | 06/02/2025 | Contabilidade Digital: Replicar configura��es para contabilizar Extrato Banc�rio |
 | 91691 | 116141 | SAM | Normal | 27/01/2025 | Contabilidade Digital: Melhorar o controle das altera��es das configura��es de c |
+| 102524 | 115402 | SAM | Normal | 18/12/2024 | Efetuar baixas autom�ticas referente matriz e filial onde possa identificar as p |
 | 94257 | 115214 | SAM | Normal | 10/12/2024 | Contabilidade Digital: Criar a op��o "Subtrai/Soma/Ambos" na configura��o por pa |
 | 94566 | 115090 | SAM | Normal | 05/12/2024 | Contabilidade Digital: Implementar no sistema para que n�o apare�a no extrato ba |
 | 90441 | 114668 | SAM | Normal | 19/11/2024 | Contabilidade Digital: Criar uma monitoria no WebSocket do recebimento dos callb |
@@ -131,61 +113,61 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 102071 | 131216 | NE | 28/05/2026 | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRPJ na integ |
-| 102057 | 131171 | NE | 27/05/2026 | Não está sendo gerado o Razão, quando na guia "Contas" possui informada uma cont |
-| 101997 | 131100 | NE | 25/05/2026 | Em alguns casos, não está exibindo o saldo anterior na emissão do Razão por dent |
-| 101994 | 131098 | NE | 25/05/2026 | Está apresentando o erro 'Syntax error near '(end of line)' on line 36' ao gerar |
-| 101752 | 130652 | NE | 11/05/2026 | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integração |
+| 102689 | 131907 | SAM | 24/06/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECF na tela de Novidades do  |
+| 102592 | 131759 | NE | 18/06/2026 | Está apresentando erro na emissão do Balanço, quando marcada a opção "Detalhar p |
+| 102587 | 131739 | NE | 18/06/2026 | Está apresentando incorretamente o código da filial no relatório Razão, quando m |
+| 102581 | 131615 | NE | 12/06/2026 | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
+| 102444 | 131601 | NE | 12/06/2026 | Est� apresentando erro na tabela 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao g |
+| 102439 | 131581 | NE | 11/06/2026 | Est� apresentando erro de banco de dados ao realizar a importa��o de altera��o p |
+| 102057 | 131171 | NE | 27/05/2026 | N�o est� sendo gerado o Raz�o, quando na guia "Contas" possui informada uma cont |
+| 102171 | 131156 | NE | 27/05/2026 | Est� atribuindo indevidamente a situa��o "Equivalente entre os planos", quando n |
+| 102067 | 131128 | NE | 26/05/2026 | Est� apresentado o erro "Expression is not valid" ao informar uma conta na tela  |
+| 101997 | 131100 | NE | 25/05/2026 | Em alguns casos, n�o est� exibindo o saldo anterior na emiss�o do Raz�o por dent |
+| 101994 | 131098 | NE | 25/05/2026 | Est� apresentando o erro 'Syntax error near '(end of line)' on line 36' ao gerar |
+| 101965 | 130884 | NE | 19/05/2026 | Transa��o Tipo OUTROS para CPF n�o efetua baixa na escrita e gera configura��o d |
+| 101837 | 130642 | SAM | 11/05/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na tela de No |
 | 101685 | 130604 | NE | 06/05/2026 | Est� exibindo a mensagem 'Sem dados para emitir' ao emitir o Balan�o com o model |
-| 101556 | 130509 | NE | 30/04/2026 | Está sendo apresentado erro ao gerar o relatório na guia "Alteração plano de con |
+| 101885 | 130585 | SAL | 05/05/2026 | Adequar os c�lculos do Lucro da Explora��o e dos incentivos fiscais conforme a L |
+| 101556 | 130509 | NE | 30/04/2026 | Est� sendo apresentado erro ao gerar o relat�rio na guia "Altera��o plano de con |
+| 101617 | 130441 | SAM | 28/04/2026 | Testar o envio do plano de contas e o recebimento de lan�amentos do Conta Azul. |
 | 101444 | 130388 | SAM | 27/04/2026 | Melhorar performance para evitar gargalos no DW |
+| 101528 | 130372 | NE | 24/04/2026 | Est� sendo considerado a natureza do saldo da conta ao inv�s da natureza do sald |
+| 101523 | 130327 | NE | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
+| 101352 | 130176 | NE | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
 | 101313 | 130132 | SAL | 15/04/2026 | Criar contas para o plano referencial Pessoa Jur�dica Financeira (A partir de 20 |
+| 101334 | 130038 | SAM | 13/04/2026 | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
+| 101049 | 129862 | SAM | 06/04/2026 | Ler e utilizar a tag updated_at no consentimento |
+| 102585 | 129682 | NE | 30/03/2026 | Não está limpando o campo "Conta contábil do banco" ou "Contrapartida" na Regra  |
+| 100816 | 129511 | SAM | 25/03/2026 | Registrar no banco de dados o tempo de gera��o do Balan�o e Balancete para auxil |
 | 100902 | 129482 | NE | 24/03/2026 | Est� gerando valores incorretos para os registros K155, K156 e L100 do informati |
 | 100733 | 129406 | SAM | 23/03/2026 | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
 | 100732 | 129405 | SAM | 23/03/2026 | Implementar IA para an�lise de relat�rios dentro do Cont�bil. |
-| 100631 | 129267 | SAM | 18/03/2026 | Redefinir as senhas dos usu�rios utilizados para uso interno do Cont�bil. |
-| 100587 | 129177 | SAM | 17/03/2026 | Alterar setas da contabilidade Digital |
-| 100488 | 129035 | NE | 11/03/2026 | Não está sendo respeitado o parâmetro "Enviar individualmente aos clientes um li |
-| 100334 | 128801 | SAM | 04/03/2026 | Realizar testes no processo de Rotinas Autom�ticas no m�dulo Contabilidade e Pat |
-| 100317 | 128744 | NE | 03/03/2026 | Excluir as transa��es duplicadas quando o banco de dados possui m�ltiplos consen |
-| 100262 | 128681 | SAM | 02/03/2026 | Integrar o Banco Mercado Pago �s op��es do Open Finance dispon�veis atualmente. |
-| 100231 | 128639 | SAM | 27/02/2026 | Otimizar a gera��o do Balan�o. |
-| 100200 | 128595 | NE | 27/02/2026 | Contabilidade Digital: Em alguns casos est� ocorrendo o erro na emiss�o de extra |
-| 100149 | 128470 | SAM | 25/02/2026 | Incluir bot�o [Solu��es] para a solu��o n�12495 na nova mensagem definida pela S |
-| 100110 | 128384 | SAL | 24/02/2026 | Atualizar a vers�o do programa de envio da DIOPS. |
-| 100023 | 128042 | NE | 13/02/2026 | N�o est� validando corretamente a correspond�ncia de contas com c�digos que exis |
-| 100236 | 128036 | SAL | 13/02/2026 | Aplicar redu��o linear de 10% aos incentivos fiscais a partir de 2026, conforme  |
-| 100001 | 128015 | NE | 13/02/2026 | Em alguns casos est� apresentando erro de banco de dados na tabela 'CTSPED_CONTA |
-| 99806 | 127809 | NE | 10/02/2026 | Est� ocorrendo erro Maleta Vermelha "Contabilidade Digital Baixa Parcela NF" |
-| 99777 | 127665 | NE | 06/02/2026 | N�o carrega transa��o para Concilia��o manual de filial |
-| 99548 | 127176 | NE | 28/01/2026 | O sistema n�o est� respeitando o filtro "Ocultar contas cont�beis vinculadas ao  |
-| 99568 | 127111 | SAL | 27/01/2026 | Alterar o cabe�alho do arquivo DIOPS de 2026. |
-| 99643 | 126712 | NE | 20/01/2026 | Em alguns casos est� duplicando contas do relat�rio Plano de Contas, ao salver e |
+| 101777 | 129273 | NE | 19/03/2026 | N�o est� utilizando o menor c�digo dispon�vel ao cadastrar a conta cont�bil do f |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| contabilidade | 576 |
-| plano de contas | 229 |
-| centro de custo | 185 |
-| dre | 168 |
-| balancete | 162 |
+| contabilidade | 582 |
+| plano de contas | 235 |
+| centro de custo | 190 |
+| dre | 169 |
+| balancete | 164 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 100488 | 129035 | NE | 11/03/2026 | Não está sendo respeitado o parâmetro "Enviar individualmente aos clientes um li |
+| 0 | 132196 | NE | 07/07/2026 | - |
+| 102581 | 131615 | NE | 12/06/2026 | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
+| 101334 | 130038 | SAM | 13/04/2026 | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
+| 102585 | 129682 | NE | 30/03/2026 | Não está limpando o campo "Conta contábil do banco" ou "Contrapartida" na Regra  |
 | 100262 | 128681 | SAM | 02/03/2026 | Integrar o Banco Mercado Pago �s op��es do Open Finance dispon�veis atualmente. |
 | 100105 | 128377 | SAM | 24/02/2026 | Integrar o banco C6 �s op��es do Open Finance dispon�veis atualmente.   |
 | 98821 | 125844 | SAM | 23/12/2025 | Liberar tempos das SAIs que foram trabalhadas durante o ano de 2025 por�m n�o fo |
 | 97823 | 124005 | SAM | 04/11/2025 | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es na Contab |
 | 99334 | 123986 | NE | 04/11/2025 | Em alguns casos, ao regerar as baixas de notas de entradas, sa�das e servi�os da |
 | 97597 | 123693 | SAM | 23/10/2025 | Contabilidade Digital: Demonstrar status da conex�o da tela da Contabilidade Dig |
-| 97596 | 123692 | SAM | 23/10/2025 | Contabilidade Digital: Permitir a integra��o de mais de uma conta banc�ria para  |
-| 97595 | 123691 | SAM | 23/10/2025 | Contabilidade Digital: Considerar atualiza��es/exclus�es de transa��es na Contab |
-| 97012 | 122965 | SAM | 26/09/2025 | Contabilidade Digital: Ignorar transa��es com messageOrigin "OPEN_BANKING" e/ou  |
 
 ## Busca Completa
 

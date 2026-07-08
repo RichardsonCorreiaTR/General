@@ -1,26 +1,26 @@
 ﻿# Resumo de Pendentes - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total pendentes (SAIs unicas): 1007
+> Atualizado em: 07/07/2026 15:02
+> Total pendentes (SAIs unicas): 926
 
 ## Totais por dominio
 
 | Dominio | Pendentes | % do Total |
 |---------|-----------|------------|
-| Apuracao de impostos | 730 | 72.5% |
-| Escrituracao e movimento fiscal | 239 | 23.7% |
-| SPED e documentos eletronicos | 214 | 21.3% |
-| Onvio, importacao e dados | 177 | 17.6% |
-| Contabilidade | 118 | 11.7% |
-| Obrigacoes e relatorios estaduais | 96 | 9.5% |
-| Integracoes e canais digitais | 87 | 8.6% |
-| Utilitarios e rotinas | 65 | 6.5% |
-| LALUR | 23 | 2.3% |
-| Conteúdo Contábil Tributário | 15 | 1.5% |
-| Patrimônio | 5 | 0.5% |
+| Apuracao de impostos | 664 | 71.7% |
+| Escrituracao e movimento fiscal | 237 | 25.6% |
+| SPED e documentos eletronicos | 199 | 21.5% |
+| Onvio, importacao e dados | 162 | 17.5% |
+| Contabilidade | 100 | 10.8% |
+| Obrigacoes e relatorios estaduais | 96 | 10.4% |
+| Integracoes e canais digitais | 91 | 9.8% |
+| Utilitarios e rotinas | 64 | 6.9% |
+| LALUR | 21 | 2.3% |
+| Conteúdo Contábil Tributário | 18 | 1.9% |
 | Parcelamento e planejamento tributario | 5 | 0.5% |
-| Registros Contábeis | 3 | 0.3% |
-| Onvio Contábil | 2 | 0.2% |
+| Onvio Contábil | 4 | 0.4% |
+| Patrimônio | 2 | 0.2% |
+| Registros Contábeis | 1 | 0.1% |
 | Atualização Monetária | 0 | 0% |
 | Nao Classificado | 0 | 0% |
 
@@ -28,24 +28,24 @@
 
 | SAI | PSAI | Tipo | Dominio(s) | Cadastro | Resumo |
 |-----|------|------|------------|----------|--------|
-| 102385 | 131533 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 102381 | 131530 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 102380 | 131528 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 102379 | 131527 | SAM | Apuracao de impostos | 10/06/2026 | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 0 | 131526 | SAM | Contabilidade | 10/06/2026 | - |
-| 102319 | 131461 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Apuracao de impostos | 08/06/2026 | Não está importando os dados do beneficiário para a nota de serviço quando reali |
-| 102302 | 131434 | SAM | Apuracao de impostos, Integracoes e canais digitais | 08/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
-| 102309 | 131407 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Conteúdo Contábil Tributário, Apuracao de impostos | 05/06/2026 | Está importando os valores do registro L210 do SPED ECF de forma acumulada para  |
-| 102259 | 131404 | NE | Apuracao de impostos | 05/06/2026 | Está sendo gerada indevidamente a tag "rendIsento" no evento R-4010 do informati |
-| 102221 | 131359 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Escrituracao e movimento fiscal, Apuracao de impostos | 03/06/2026 | SP-Não está importando o Código do Benefício Fiscal na guia Estoque das notas fi |
-| 102266 | 131346 | NE | Contabilidade, Apuracao de impostos | 03/06/2026 | Em alguns casos está apresentando erro de banco de dados ao emitir o Balanço qua |
-| 102232 | 131327 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Apuracao de impostos | 02/06/2026 | Está ocorrendo indevidamente os erros de importação: "CNPJ do emitente da NFS-e  |
-| 102265 | 131323 | NE | LALUR, Apuracao de impostos | 02/06/2026 | Em alguns casos está importando incorretamente os valores da CSLL Retida no regi |
-| 102159 | 131291 | SAM | Obrigacoes e relatorios estaduais, Utilitarios e rotinas, Integracoes e canais digitais | 02/06/2026 | Realizar a reconexão do agente do Web Service SEFAZ quando houve desconexão do a |
-| 102293 | 131283 | NE | Apuracao de impostos, Patrimônio | 01/06/2026 | Está calculando incorretamente a depreciação de períodos anteriores à transferên |
-| 102207 | 131282 | NE | LALUR, Apuracao de impostos | 01/06/2026 | Está importando incorretamente o valor do 'Lucro antes da CSLL e IRPJ', quando p |
-| 102172 | 131273 | NE | LALUR, Escrituracao e movimento fiscal, Apuracao de impostos | 01/06/2026 | Não está sendo feito o cálculo correto da majoração dos impostos 6-CSLL, 7-IRPJ, |
-| 102185 | 131271 | NE | SPED e documentos eletronicos, Onvio, importacao e dados, Escrituracao e movimento fiscal, Apuracao de impostos | 01/06/2026 | Está considerando indevidamente documentos cancelados para o cálculo dos imposto |
-| 102138 | 131267 | SAM | Utilitarios e rotinas, Apuracao de impostos | 01/06/2026 | Realizar testes no processo das Rotinas Automáticas devido a alteração na config |
-| 102206 | 131265 | NE | Apuracao de impostos | 01/06/2026 | Está apresentando a mensagem 'A conta referencial deve ser analítica' quando sel |
+| 102957 | 132224 | SAM | Contabilidade, Onvio, importacao e dados, Onvio Contábil, Apuracao de impostos | 07/07/2026 | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
+| 0 | 132217 | SAM | Onvio, importacao e dados | 07/07/2026 | - |
+| 102947 | 132209 | SAM | Escrituracao e movimento fiscal | 07/07/2026 | Preparar o servidor do Busca NF-e para receber os arquivos compactados. |
+| 102924 | 132180 | SAM | Escrituracao e movimento fiscal | 06/07/2026 | Corrigir as novas pendências "Medium" e "High" apresentadas pelo SNYK no servido |
+| 102871 | 132127 | NE | Obrigacoes e relatorios estaduais, Apuracao de impostos | 02/07/2026 | Está listando indevidamente contas caixa e equivalentes de caixa na listagem de  |
+| 102845 | 132103 | SAM | Onvio, importacao e dados, Apuracao de impostos, Integracoes e canais digitais | 01/07/2026 | [Regression test] Analisar o impacto no módulo API Escrita da remoção de conexõe |
+| 102812 | 132055 | SAM | Apuracao de impostos, Integracoes e canais digitais | 30/06/2026 | Criar API para realizar a comunicação entre a RFB e Contábil referente a apuraçã |
+| 102788 | 132039 | SAM | Apuracao de impostos, Integracoes e canais digitais | 30/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
+| 102756 | 131995 | NE | Apuracao de impostos | 26/06/2026 | Está demonstrando o código e a descrição do histórico da empresa indevida |
+| 102752 | 131993 | SAM | Apuracao de impostos | 26/06/2026 | Registrar os tempos atuados nas pesquisas de inovações com IA. |
+| 102751 | 131992 | SAM | Apuracao de impostos | 26/06/2026 | Criação de casos de testes para a automação e registro de tempos com atividades  |
+| 102688 | 131908 | SAM | SPED e documentos eletronicos, Apuracao de impostos | 24/06/2026 | Refatorar a forma de gerar os registros D750 e D760 no SPED Fiscal  |
+| 102706 | 131886 | NE | SPED e documentos eletronicos, Obrigacoes e relatorios estaduais, Onvio, importacao e dados, Escrituracao e movimento fiscal, Apuracao de impostos | 23/06/2026 | Est� sendo apresentada indevidamente a op��o "NF-e SEFAZ SC" nas "Permiss�es dos |
+| 102642 | 131856 | SAM | Apuracao de impostos | 23/06/2026 | Registrar os tempos atuados nas pesquisas de inova��es com IA na vers�o de Julho |
+| 102620 | 131831 | SAM | Apuracao de impostos | 22/06/2026 | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 102644 | 131811 | SAL | Escrituracao e movimento fiscal, Apuracao de impostos | 22/06/2026 | MT-Atualizar a tabela de c�digo de ajuste na tela de Lan�amentos de Valores Decl |
+| 102576 | 131784 | SAM | Apuracao de impostos | 19/06/2026 | Liberar tempo gasto nos testes das SAIs de IA. |
+| 102708 | 131770 | NE | SPED e documentos eletronicos, Conteúdo Contábil Tributário, Apuracao de impostos | 18/06/2026 | Est� importando duplicado o valor do campo 14 do registro P500 do SPED ECF quand |
+| 102578 | 131763 | SAM | Apuracao de impostos | 18/06/2026 | Implementar no processo de importa��o a valida��o e mensagem, quando realizar im |
+| 102584 | 131756 | NE | SPED e documentos eletronicos, Escrituracao e movimento fiscal, Apuracao de impostos | 18/06/2026 | Est�o sendo gerados indevidamente os registros M225 e M625 referente � redu��o l |
 

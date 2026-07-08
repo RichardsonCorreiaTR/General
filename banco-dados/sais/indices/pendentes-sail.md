@@ -1,10 +1,26 @@
 ﻿# SAIL Pendentes - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total pendentes: 1657
+> Atualizado em: 07/07/2026 15:02
+> Total pendentes: 1668
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 132198 |  | 07/07/2026 | ID 0 | - |
+| 0 | 132181 |  | 06/07/2026 | ID 0 | - |
+| 0 | 132146 |  | 03/07/2026 | ID 0 | - |
+| 0 | 132118 |  | 02/07/2026 | ID 0 | - |
+| 0 | 131788 |  | 19/06/2026 | ID 0 | - |
+| 0 | 131787 |  | 19/06/2026 | ID 0 | - |
+| 0 | 131764 |  | 18/06/2026 | ID 0 | - |
+| 102685 | 131752 | 10.6A-07 | 18/06/2026 | Respondido Gerente de Produto | Implementar a forma de tributa��o 'TEF - Tributa��o Espec�fica de Futebol' no In |
+| 102556 | 131749 | 10.6A-07 | 18/06/2026 | Respondido Gerente de Produto | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o de entrega' |
+| 102563 | 131709 | 10.6A-07 | 17/06/2026 | Respondido Gerente de Produto | Implementar o plano referencial TEF - Tributa��o Espec�fica do Futebol e ajustar |
+| 0 | 131706 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131705 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131655 |  | 15/06/2026 | ID 0 | - |
+| 0 | 131621 |  | 12/06/2026 | ID 0 | - |
+| 0 | 131619 |  | 12/06/2026 | ID 0 | - |
+| 0 | 131535 |  | 10/06/2026 | ID 0 | - |
 | 0 | 131441 |  | 08/06/2026 | ID 0 | - |
 | 0 | 131309 |  | 02/06/2026 | ID 0 | - |
 | 0 | 131197 |  | 28/05/2026 | ID 0 | - |
@@ -12,18 +28,20 @@
 | 0 | 131065 |  | 25/05/2026 | ID 0 | - |
 | 0 | 131009 |  | 22/05/2026 | ID 0 | - |
 | 0 | 131007 |  | 22/05/2026 | ID 0 | - |
+| 0 | 130982 |  | 21/05/2026 | ID 0 | - |
+| 0 | 130970 |  | 21/05/2026 | ID 0 | - |
+| 0 | 130968 |  | 21/05/2026 | ID 0 | - |
 | 0 | 130917 |  | 20/05/2026 | ID 0 | - |
 | 0 | 130910 |  | 20/05/2026 | ID 0 | - |
 | 0 | 130909 |  | 20/05/2026 | ID 0 | - |
 | 0 | 130874 |  | 19/05/2026 | ID 0 | - |
 | 0 | 130869 |  | 19/05/2026 | ID 0 | - |
-| 0 | 130864 |  | 18/05/2026 | ID 0 | - |
+| 102484 | 130864 |  | 18/05/2026 | Retorno de Teste | Implementar o c�lculo do cr�dito presumido na aquisi��o de produtor n�o contribu |
 | 0 | 130519 |  | 04/05/2026 | ID 0 | - |
 | 0 | 130496 |  | 30/04/2026 | ID 0 | - |
 | 0 | 130464 |  | 29/04/2026 | ID 0 | - |
-| 0 | 130318 |  | 23/04/2026 | ID 0 | - |
+| 102214 | 130318 | APerformance Es | 23/04/2026 | Respondido Gerente de Produto | Implementar o c�lculo dos impostos 183-IBS e 184-CBS na incorpora��o imobili�ria |
 | 0 | 130264 |  | 22/04/2026 | ID 0 | - |
-| 101593 | 130263 |  | 22/04/2026 | Retorno de Teste | GO-Implementar o campo C�digo de Benef�cio Fiscal (cBenef) informado em NF-e e N |
 | 0 | 130258 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130257 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130224 |  | 20/04/2026 | ID 0 | - |
@@ -31,31 +49,28 @@
 | 0 | 130202 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130185 |  | 17/04/2026 | ID 0 | - |
 | 0 | 130184 |  | 17/04/2026 | ID 0 | - |
-| 101310 | 130088 |  | 14/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112140 - Fornecimento n�o realizado c |
+| 101310 | 130088 | 10.6A-07 | 14/04/2026 | Respondido Gerente de Produto | Implementar o arquivo de envio do 'Evento: 112140 - Fornecimento n�o realizado c |
 | 0 | 130060 |  | 14/04/2026 | ID 0 | - |
 | 101306 | 130042 |  | 13/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112150 - Atualiza��o da data de previ |
 | 0 | 130011 |  | 13/04/2026 | ID 0 | - |
-| 101157 | 129940 |  | 08/04/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211120 - Destina��o de item para cons |
-| 101159 | 129936 | 10.6A-05 | 08/04/2026 | Respondido Coordenador de Módulos DEMO | Implementar os reflexos do envio do 'Evento: 211120 - Destina��o de item para co |
 | 0 | 129925 |  | 08/04/2026 | ID 0 | - |
-| 0 | 129842 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129836 |  | 06/04/2026 | ID 0 | - |
 | 0 | 129688 |  | 31/03/2026 | ID 0 | - |
 | 0 | 129591 |  | 27/03/2026 | ID 0 | - |
+| 0 | 129553 |  | 26/03/2026 | ID 0 | - |
 | 0 | 129552 |  | 26/03/2026 | ID 0 | - |
-| 100983 | 129508 |  | 25/03/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 112130 - Perecimento, perda, roubo ou |
+| 100983 | 129508 | 10.6A-07 | 25/03/2026 | Respondido Gerente de Produto | Implementar o arquivo de envio do 'Evento: 112130 - Perecimento, perda, roubo ou |
 | 0 | 129501 |  | 25/03/2026 | ID 0 | - |
-| 100987 | 129486 |  | 24/03/2026 | Retorno de Teste | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda, roubo ou |
+| 100987 | 129486 | 10.6A-07 | 24/03/2026 | Respondido Gerente de Produto | Implementar o arquivo de envio do 'Evento: 211124 - Perecimento, perda, roubo ou |
 | 0 | 129397 |  | 23/03/2026 | ID 0 | - |
 | 0 | 129241 |  | 18/03/2026 | ID 0 | - |
 | 0 | 129176 |  | 17/03/2026 | ID 0 | - |
-| 0 | 129139 |  | 16/03/2026 | ID 0 | - |
+| 102122 | 129139 |  | 16/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | MS-Implementar o c�lculo do PR�-DESENVOLVE e Adicional, e escritura��o no SPED F |
 | 0 | 129100 |  | 13/03/2026 | ID 0 | - |
 | 0 | 129054 |  | 12/03/2026 | ID 0 | - |
 | 0 | 128999 |  | 11/03/2026 | ID 0 | - |
 | 0 | 128997 |  | 11/03/2026 | ID 0 | - |
 | 0 | 128995 |  | 11/03/2026 | ID 0 | - |
-| 101789 | 128974 |  | 10/03/2026 | Retorno de Teste | Implementar o c�lculo dos impostos 183-IBS e 184-CBS na aliena��o de bem im�vel  |
 | 0 | 128944 |  | 10/03/2026 | ID 0 | - |
 | 0 | 128902 |  | 09/03/2026 | ID 0 | - |
 | 0 | 128901 |  | 09/03/2026 | ID 0 | - |
@@ -73,16 +88,15 @@
 | 0 | 128592 |  | 27/02/2026 | ID 0 | - |
 | 0 | 128591 |  | 27/02/2026 | ID 0 | - |
 | 0 | 128579 |  | 26/02/2026 | ID 0 | - |
-| 0 | 128578 |  | 26/02/2026 | ID 0 | - |
 | 0 | 128451 |  | 25/02/2026 | ID 0 | - |
 | 0 | 128415 |  | 24/02/2026 | ID 0 | - |
 | 0 | 128220 |  | 19/02/2026 | ID 0 | - |
-| 101309 | 128218 |  | 19/02/2026 | Retorno de Teste | Implementar a escritura��o da Nota de D�bito do tipo '06-Pagamento antecipado' e |
+| 101309 | 128218 | 10.6A-07 | 19/02/2026 | Respondido Gerente de Produto | Implementar a escritura��o da Nota de D�bito do tipo '06-Pagamento antecipado' e |
 | 0 | 128137 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128135 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128132 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128050 |  | 16/02/2026 | ID 0 | - |
-| 99944 | 128045 |  | 14/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma Tribut�ria |
+| 99944 | 128045 | APerformance Es | 14/02/2026 | Respondido Gerente de Produto | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma Tribut�ria |
 | 0 | 127967 |  | 12/02/2026 | ID 0 | - |
 | 0 | 127966 |  | 12/02/2026 | ID 0 | - |
 | 0 | 127962 |  | 12/02/2026 | ID 0 | - |
@@ -96,7 +110,6 @@
 | 0 | 127549 |  | 04/02/2026 | ID 0 | - |
 | 0 | 127548 |  | 04/02/2026 | ID 0 | - |
 | 0 | 127545 |  | 04/02/2026 | ID 0 | - |
-| 101291 | 127448 | APerformance Es | 03/02/2026 | Respondido Gerente de Produto | SC-Implementar sub-apura��o e limitador do Cr�dito Presumido de ICMS para abated |
 | 0 | 127446 |  | 03/02/2026 | ID 0 | - |
 | 0 | 127441 |  | 03/02/2026 | ID 0 | - |
 | 0 | 127363 |  | 02/02/2026 | ID 0 | - |
@@ -110,7 +123,7 @@
 | 0 | 126492 |  | 14/01/2026 | ID 0 | - |
 | 0 | 126454 |  | 14/01/2026 | ID 0 | - |
 | 0 | 126265 |  | 09/01/2026 | ID 0 | - |
-| 101226 | 126219 |  | 08/01/2026 | Retorno de Teste | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
+| 101226 | 126219 | APerformance Es | 08/01/2026 | Respondido Gerente de Produto | Implementar no sistema a apura��o assistida da Reforma Tribut�ria do Consumo. |
 | 0 | 126211 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126192 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126100 |  | 07/01/2026 | ID 0 | - |
@@ -119,7 +132,6 @@
 | 0 | 126036 |  | 05/01/2026 | ID 0 | - |
 | 0 | 126035 |  | 05/01/2026 | ID 0 | - |
 | 0 | 126033 |  | 05/01/2026 | ID 0 | - |
-| 101305 | 125948 |  | 30/12/2025 | Retorno de Teste | Implementar o novo 'Evento: 112150 - Atualiza��o da data de previs�o de entrega' |
 | 0 | 125886 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125885 |  | 26/12/2025 | ID 0 | - |
 | 0 | 125839 |  | 23/12/2025 | ID 0 | - |
@@ -322,7 +334,7 @@
 | 0 | 114915 |  | 28/11/2024 | ID 0 | - |
 | 0 | 114765 |  | 26/11/2024 | ID 0 | - |
 | 0 | 114698 |  | 22/11/2024 | ID 0 | - |
-| 101804 | 114629 |  | 19/11/2024 | Retorno de Teste | Implementar rotina para reconhecer a receita pelo POC com valor atualizado do co |
+| 101804 | 114629 | 10.6A-07 | 19/11/2024 | Aguardando Resposta do Gerente de Produto | Implementar rotina para reconhecer a receita pelo POC com valor atualizado do co |
 | 0 | 114591 |  | 18/11/2024 | ID 0 | - |
 | 0 | 114590 |  | 18/11/2024 | ID 0 | - |
 | 0 | 114475 |  | 12/11/2024 | ID 0 | - |
@@ -792,7 +804,6 @@
 | 0 | 91707 |  | 10/08/2022 | ID 0 | - |
 | 0 | 91703 |  | 10/08/2022 | ID 0 | - |
 | 0 | 91658 |  | 08/08/2022 | ID 0 | - |
-| 0 | 91656 |  | 08/08/2022 | ID 0 | - |
 | 0 | 91641 |  | 05/08/2022 | ID 0 | - |
 | 0 | 91595 |  | 03/08/2022 | ID 0 | - |
 | 0 | 91573 |  | 02/08/2022 | ID 0 | - |

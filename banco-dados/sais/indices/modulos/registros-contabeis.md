@@ -1,21 +1,22 @@
 ﻿# Registros Contábeis
 
 > Dominio Escrita Fiscal | slug `registros-contabeis`
-> Atualizado em: 10/06/2026 15:03
-> Pendentes: 3 | Liberadas: 36 | Descartadas: 3 | Total SAIs: 42
+> Atualizado em: 07/07/2026 15:02
+> Pendentes: 1 | Liberadas: 39 | Descartadas: 4 | Total SAIs: 43
 
-## Pendentes (3)
+## Pendentes (1)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 101837 | 130642 | SAM | Normal | 11/05/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na tela de No |
-| 101523 | 130327 | NE | Normal | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
 | 65138 | 75133 | SAM | Normal | 26/05/2020 | Otimizar o Script na gera��o do arquivo SPED Cont�bil(ECD). |
 
 ## Liberadas Recentes (30 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102492 | 130871 | NE | 19/05/2026 | Não está gerando linhas no J100 do SPED ECD quando a conta tem movimento no perí |
+| 101837 | 130642 | SAM | 11/05/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na tela de No |
+| 101523 | 130327 | NE | 23/04/2026 | N�o est� respeitando o par�metro 'Gerar contas cont�beis por' para realizar os v |
 | 97381 | 120696 | SAM | 09/07/2025 | Criar valida��o para n�o permitir vincular conta referencial do SPED ECF/ECD com |
 | 94710 | 119816 | NE | 03/06/2025 | N�o esta demonstrando o modelo DRE padr�o "Modelo VII - Saldo Anterior" na guia  |
 | 94536 | 119782 | SAM | 02/06/2025 | Alterar a solu��o do bot�o "Solu��es" da tela principal do SPED ECD.  |
@@ -43,15 +44,12 @@
 | 40608 | 34363 | NE | 09/03/2016 | Est� sendo emitida indevidamente a hora da emiss�o no demonstrativo DRE modelo I |
 | 8768 | 32744 | SAM | 03/03/2016 | Gerar o campo "Data de Abertura da Matriz" do relat�rio DASN com base no campo " |
 | 3904 | 31492 | SAM | 03/03/2016 | Quando fianalizado um processo de constiui��o atualizar o cadastro de empresa co |
-| 47 | 30304 | SAM | 03/03/2016 | Op��o para imprimir o n�mero de inscri��o na junta comercial no balan�o. |
-| 39237 | 28098 | NE | 21/12/2015 | N�o est� sendo considerado a altera��o da Inscri��o da Junta Comercial na tela d |
-| 38616 | 27044 | NE | 19/11/2015 | N�o est� atualizando as contas da guia "Plano referencial\SPED ECF SPED Contabil |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| ecd | 17 |
+| ecd | 20 |
 | junta comercial | 11 |
 | sped contabil | 8 |
 
@@ -59,6 +57,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102492 | 130871 | NE | 19/05/2026 | Não está gerando linhas no J100 do SPED ECD quando a conta tem movimento no perí |
 | 66255 | 76569 | SAM | 03/08/2020 | SPED Cont�bil-Otimizar a gera��o do informativo ECD com grande movimenta��o de l |
 | 64073 | 73607 | NE | 23/03/2020 | Em alguns casos est� ocorrendo erro ao emitir SPED Contabil. |
 | 8527 | 32696 | SAM | 03/03/2016 | Incluir os campos CNPJ/CPF, Raz�o Social, e-mail, Insc. Estadual e Insc. Junta C |

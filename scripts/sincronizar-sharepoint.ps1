@@ -78,6 +78,7 @@ $arqsCopia = @(
     "scripts\configurar-cursor-auto-run.ps1",
     "scripts\instalar-projeto-filho.ps1",
     "scripts\sincronizar-sharepoint.ps1",
+    "scripts\publicar-dados-banco.ps1",
     "scripts\relatorio-versoes-analistas.ps1",
     "scripts\importar-sais.ps1",
     "scripts\extrair-sais.ps1",
@@ -99,8 +100,7 @@ $arqsCopia = @(
     "projeto-filho\PROMPT-INSTALACAO.md",           # v2.4.38: passo 8b GitHub no instalador
     # --- Projeto-filho scripts ---
     "projeto-filho\scripts\atualizar-projeto.ps1",
-    "projeto-filho\scripts\atualizar-codigo.ps1",
-    "projeto-filho\scripts\atualizar-codigo-fonte.ps1",
+    # v2.4.39: atualizar-codigo.ps1 e atualizar-codigo-fonte.ps1 removidos do filho (GitHub-only via gh CLI).
     "projeto-filho\scripts\buscar-sai.ps1",
     "projeto-filho\scripts\verificar-ambiente.ps1",
     "projeto-filho\scripts\corrigir-symlinks.ps1",
@@ -110,6 +110,11 @@ $arqsCopia = @(
     "projeto-filho\scripts\configurar-cursor-auto-run.ps1",
     "projeto-filho\scripts\verificar-regras-cursor.ps1",
     "projeto-filho\scripts\Consultar-Legislacao.ps1",
+    "projeto-filho\scripts\Consultar-PSAI-SGD.ps1",         # v2.4.40: credenciais auto via .sgd-credentials.local
+    "projeto-filho\scripts\Enriquecer-PSAI-DadosBrutos.ps1", # v2.4.40: idem
+    "projeto-filho\scripts\lib-sgd-caminhos.ps1",            # v2.4.40: Test-SgdCredentialsLocalFileAny
+    "projeto-filho\scripts\Consultar-SAI-SGD.ps1",
+    "projeto-filho\scripts\sincronizar-areas.ps1",
     # --- Projeto-filho regras .mdc ---
     "projeto-filho\.cursor\rules\acesso-github.mdc",  # v2.4.38: regra dedicada de seguranca GitHub
     "projeto-filho\.cursor\rules\agente-codigo.mdc",

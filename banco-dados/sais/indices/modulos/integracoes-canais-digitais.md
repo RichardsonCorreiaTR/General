@@ -1,23 +1,28 @@
 ﻿# Integracoes e canais digitais
 
 > Dominio Escrita Fiscal | slug `integracoes-canais-digitais`
-> Atualizado em: 10/06/2026 15:03
-> Pendentes: 87 | Liberadas: 1429 | Descartadas: 132 | Total SAIs: 1642
+> Atualizado em: 07/07/2026 15:02
+> Pendentes: 91 | Liberadas: 1434 | Descartadas: 131 | Total SAIs: 1651
 
-## Pendentes (87)
+## Pendentes (91)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 102302 | 131434 | SAM | Normal | 08/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
-| 102159 | 131291 | SAM | Normal | 02/06/2026 | Realizar a reconexão do agente do Web Service SEFAZ quando houve desconexão do a |
-| 102247 | 131237 | NE | Normal | 01/06/2026 | Está gerando incorretamente o Ganho/perda de Capital ao realizar a baixa total,  |
-| 102154 | 131130 | NE | Normal | 26/05/2026 | Está realizando a contabilização da baixa do bem nas contas contábeis incorretas |
-| 101977 | 131071 | SAM | Normal | 25/05/2026 | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
-| 102294 | 131039 | NE | Normal | 25/05/2026 | ES-Está sendo gerado incorretamente o registro C197 com o código de ajuste "ES10 |
-| 101781 | 130796 | SAM | Normal | 15/05/2026 | Realizar testes de importa��o atrav�s da API e BOX-e ap�s a atualiza��o de segur |
-| 101675 | 130664 | SAM | Normal | 11/05/2026 | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para zerar o NSU  |
+| 102845 | 132103 | SAM | Normal | 01/07/2026 | [Regression test] Analisar o impacto no módulo API Escrita da remoção de conexõe |
+| 102812 | 132055 | SAM | Normal | 30/06/2026 | Criar API para realizar a comunicação entre a RFB e Contábil referente a apuraçã |
+| 102788 | 132039 | SAM | Normal | 30/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
+| 102329 | 131385 | SAM | Normal | 05/06/2026 | Alterar o sistema para atualizar acesso ao portal e-CAC, e adequar as mudan�as n |
+| 102682 | 131364 | SAM | Normal | 03/06/2026 | Alterar o comportamento da tela "Documentos Fiscais Armazenados na API" para bus |
+| 102542 | 131333 | NE | Normal | 02/06/2026 | Est�o sendo gerados indevidamente lotes com diferen�a de d�bito e cr�dito na Con |
+| 102159 | 131291 | SAM | Normal | 02/06/2026 | Realizar a reconex�o do agente do Web Service SEFAZ quando houve desconex�o do a |
+| 102247 | 131237 | NE | Normal | 01/06/2026 | Est� gerando incorretamente o Ganho/perda de Capital ao realizar a baixa total,  |
+| 102392 | 131221 | NE | Normal | 28/05/2026 | RJ-Est� sendo gerado um valor incorreto na coluna "Valor Cr�d. Presumido" do rel |
+| 102294 | 131039 | NE | Normal | 25/05/2026 | ES-Est� sendo gerado incorretamente o registro C197 com o c�digo de ajuste "ES10 |
+| 102136 | 130927 | NE | Normal | 20/05/2026 | Em alguns casos esta demonstrando indevidamente a mensagem de erro "N�o foi info |
+| 102541 | 130923 | NE | Normal | 20/05/2026 | Est� sendo apresentada indevidamente v�rias vezes a mensagem "Sem dados para emi |
+| 102453 | 130902 | NE | Normal | 19/05/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
 | 101800 | 130594 | NE | Normal | 06/05/2026 | Est� ocorrendo lentid�o e travando o sistema quando a empresa possui mais de 80  |
-| 101605 | 130149 | SAL | Normal | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
+| 102438 | 130517 | SAL | Normal | 04/05/2026 | RO-Permitir o c�lculo do imposto 165-FIDER para o cr�dito presumido nas sa�das i |
 | 101578 | 129935 | SAM | Normal | 08/04/2026 | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
 | 101645 | 129795 | SAM | Normal | 01/04/2026 | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do acesso ao |
 | 101043 | 129701 | NE | Normal | 31/03/2026 | Em alguns casos est� ocorrendo encerramento do sistema quando importado grande v |
@@ -25,16 +30,14 @@
 | 100422 | 128930 | SAM | Normal | 09/03/2026 | Realizar um estudo e testes no agente de comunica��o referente ao consumo da nov |
 | 100371 | 128848 | SAM | Normal | 05/03/2026 | Adequar as autentica��o da API e BOX-e ap�s a migra��o dos EndPoints alternativo |
 | 100348 | 128819 | SAM | Normal | 05/03/2026 | Realizar os testes de autentica��o do Agente de Comunica��o com a API de notas a |
-| 101262 | 128584 | NE | Normal | 27/02/2026 | Est� ocorrendo erro de sistema ao emitir o MIT via API Integra Contador, quando  |
 | 99944 | 128045 | SAIL | Normal | 14/02/2026 | Criar a comunica��o para o Webservice de envio dos Eventos da Reforma Tribut�ria |
 | 101828 | 127424 | SAM | Normal | 02/02/2026 | Implementar controle de observabilidade da API de consulta de NCM e NBS. |
 | 101227 | 127420 | SAM | Normal | 02/02/2026 | Implementar a API da apura��o assistida da CBS. |
-| 101161 | 126935 | NE | Normal | 23/01/2026 | N�o est� calculando o imposto 33-IRPJ Postergado na apura��o e no relat�rio demo |
 | 98907 | 124455 | SAM | Normal | 19/11/2025 | Criar API no Onvio para ser poss�vel que sistemas externos consultem NCM/NBS e s |
 | 97017 | 122961 | SAM | Normal | 26/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e ABRASF XML/NFS- |
 | 96991 | 122936 | SAM | Normal | 25/09/2025 | Enviar dados do download de notas da API para o Datadog. |
 | 98484 | 122663 | SAM | Normal | 16/09/2025 | Implementar filtros e relat�rios na tela de listagem de NFS-e API para visualiza |
-| 97641 | 122446 | SAL | Normal | 09/09/2025 | Criar op��o para escolher a origem dos d�bitos na emiss�o da guia DCTFWeb via AP |
+| 97641 | 122446 | SAM | Normal | 09/09/2025 | Criar op��o para escolher a origem dos d�bitos na emiss�o da guia DCTFWeb via AP |
 | 95848 | 121428 | SAM | Normal | 01/08/2025 | [Tech] Realizar altera��o para mover toda parte de login da API para um servi�o  |
 | 95735 | 121299 | NE | Normal | 29/07/2025 | Em alguns casos as rotinas que fazem a paralisa��o dos Utilit�rios WebService SE |
 | 95249 | 120627 | SAM | Normal | 07/07/2025 | Implementar no sistema um retry autom�tico e aviso para os cliente em casos onde |
@@ -62,6 +65,7 @@
 | 87593 | 109236 | SAM | Normal | 03/05/2024 | Alterar a API de notas para realizar recebimentos de arquivos em lote. |
 | 84587 | 106816 | SAM | Normal | 21/02/2024 | Realizar um estudo para mitigar bloqueios na gera��o da PGDAS e Pagamento via e- |
 | 88138 | 105949 | SAM | Normal | 30/01/2024 | Enviar cadastros de Fornecedores, Clientes e Produtos para a Conta Azul via API. |
+| 102447 | 105229 | SAM | Normal | 12/01/2024 | SC-Importar a NFC-e atrav�s do Web Service do estado de Santa Catarina no Busca  |
 | 90331 | 103539 | SAIL | Normal | 22/11/2023 | Implementar a gera��o dos campos da DEFIS no Onvio referente a NF-e por meio da  |
 | 82856 | 103397 | SAM | Normal | 17/11/2023 | Realizar o tratamento para o retorno 8005 do Web Service SEFAZ RS. |
 | 80748 | 99716 | SAM | Normal | 27/07/2023 | Alterar o envio das notas ao BOX-e conforme novo link quando as notas forem baix |
@@ -100,22 +104,25 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 102182 | 131337 | NE | 02/06/2026 | Em alguns casos está travando o sistema ao executar as Rotinas automáticas quand |
-| 102071 | 131216 | NE | 28/05/2026 | Não está sendo gerado corretamente o valor dos impostos 6-CSLL e 7-IRPJ na integ |
-| 102033 | 131136 | SAM | 26/05/2026 | Em alguns casos está travando o sistema ao executar as Rotinas automáticas quand |
-| 102068 | 131055 | SAL | 25/05/2026 | Ajustar a comunicação com o webservice no envio da DIRBI via API. |
+| 102302 | 131434 | SAM | 08/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
+| 102182 | 131337 | NE | 02/06/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
+| 102033 | 131136 | SAM | 26/05/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
+| 101977 | 131071 | SAM | 25/05/2026 | Apresentar no menu hamb�rguer a op��o de Gerenciador de Certificados ao acessar  |
+| 102068 | 131055 | SAL | 25/05/2026 | Ajustar a comunica��o com o webservice no envio da DIRBI via API. |
+| 101781 | 130796 | SAM | 15/05/2026 | Realizar testes de importa��o atrav�s da API e BOX-e ap�s a atualiza��o de segur |
 | 101705 | 130704 | SAM | 12/05/2026 | Ajustar a emiss�o da guia DARF DCTFWeb considerando o novo link/URL adotado pelo |
+| 101675 | 130664 | SAM | 11/05/2026 | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para zerar o NSU  |
 | 101718 | 130663 | NE | 11/05/2026 | Est�o sendo corrompidos os arquivos XML com o atributo de namespace inserido inc |
-| 101752 | 130652 | NE | 11/05/2026 | Não está sendo gerado o valor correto dos impostos 6-CSLL e 7-IRPJ na integração |
 | 101574 | 130190 | SAM | 17/04/2026 | Alterar o sistema para aceitar o arquivo XML quando possuir a tag raiz "Consulta |
+| 101605 | 130149 | SAL | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
 | 101233 | 130124 | SAM | 15/04/2026 | Realizar testes ap�s corre��o da indisponibilidade em uma das rotinas que tenta  |
 | 101230 | 130119 | NE | 15/04/2026 | Est� ocorrendo indisponibilidade em uma das rotinas que tenta gravar a nota na A |
 | 101065 | 129649 | SAM | 30/03/2026 | Adequar o sistema para as mudan�as do portal e-CAC no processo de "Pagamento de  |
-| 101599 | 129573 | SAM | 26/03/2026 | Realizar um estudo para criar a integração por API com ERPs Externos para recebi |
 | 100725 | 129399 | SAM | 23/03/2026 | Realizar os testes no Web Service e Busca NF-e ap�s a migra��o do SO dos servido |
 | 100741 | 129097 | SAL | 13/03/2026 | MS-Alterar o sistema para gerar os ajustes MS10080000 e MS010011 no SPED Fiscal, |
 | 100517 | 129061 | NE | 12/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
 | 100417 | 128896 | NE | 09/03/2026 | N�o est�o sendo exclu�dos os lan�amentos cont�beis, estoque e parcelas das notas |
+| 101262 | 128584 | NE | 27/02/2026 | Est� ocorrendo erro de sistema ao emitir o MIT via API Integra Contador, quando  |
 | 100476 | 128282 | SAM | 20/02/2026 | Ajustar a ferramenta de envio de documentos para o cat�logo para ser poss�vel en |
 | 100042 | 128277 | SAM | 20/02/2026 | Realizar os testes no Web Service e Busca NF-e ap�s a migra��o do SO dos servido |
 | 100036 | 128129 | SAM | 18/02/2026 | Implementar um timer de 3 segundos entre uma consulta e outra para evitar sobrec |
@@ -123,22 +130,19 @@
 | 99843 | 127551 | SAIL | 04/02/2026 | Implementar a gera��o dos benef�cios da DIRBI pela API integra contador, conform |
 | 99658 | 127417 | SAM | 02/02/2026 | Realizar um estudo para verificar os impactos da altera��o do CNPJ com caractere |
 | 99513 | 127080 | SAM | 27/01/2026 | Atualizar a API para aceitar NFS-e Padr�o Nacional vers�o 1.01 |
+| 101161 | 126935 | NE | 23/01/2026 | N�o est� calculando corretamente os impostos 7-IRPJ e 33-IRPJ Postergado na apur |
 | 99364 | 126784 | SAL | 20/01/2026 | Ajustar o sistema para observar as altera��es de acesso ao e-CAC, assim como env |
 | 100347 | 126290 | NE | 09/01/2026 | MG-Est� sendo gerado indevidamente o registro tipo 22 no informativo DAPI, quand |
 | 99187 | 126104 | NE | 07/01/2026 | Est� ocorrendo erro de sistema ao importar nota com produtos do tipo "Ve�culos U |
-| 99257 | 125812 | SAM | 23/12/2025 | Atualizar a 'Tabela de V�nculo de NCM/NBS por cClassTrib' e o 'Classificador Tri |
-| 99844 | 125791 | SAL | 23/12/2025 | RS-Alterar o c�lculo do imposto 27-ICMSA com fornecedor optante pelo Simples Nac |
-| 99250 | 125623 | SAL | 18/12/2025 | PR-Gerar os valores agregados das Notas Fiscais de modelo 62 (NFCom) no registro |
-| 98702 | 125427 | NE | 12/12/2025 | Est� demonstrando indevidamente as empresas como desabilitadas no menu ONVIO API |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| rest | 566 |
-| api | 352 |
-| web service | 217 |
-| webservice | 132 |
+| rest | 567 |
+| api | 355 |
+| web service | 218 |
+| webservice | 133 |
 | e-cac | 108 |
 
 ## Descartadas Recentes (10 mais recentes)
@@ -146,7 +150,6 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 101010 | 129811 | SAM | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
-| 101599 | 129573 | SAM | 26/03/2026 | Realizar um estudo para criar a integração por API com ERPs Externos para recebi |
 | 97420 | 122935 | NE | 25/09/2025 | RS-N�o est� reconhecendo a "Restitui��o de ICMS ST" quando est� selecionado a op |
 | 96693 | 122576 | SAM | 12/09/2025 | Inserir informa��o para separa��o por lote nas importa��es NFS-e, CF-e e CT-e e  |
 | 96028 | 121607 | NE | 07/08/2025 | Est� sendo aceito indevidamente arquivos de NFC-e com valores negativos na API. |
@@ -155,6 +158,7 @@
 | 94244 | 119198 | NE | 13/05/2025 | N�o est� importando a tabela de Al�quota Interestadual de ICMS conforme o perfil |
 | 93965 | 118989 | NE | 05/05/2025 | Est� sendo apresentada indevidamente a mensagem "O sistema n�o est� preparado pa |
 | 92781 | 117531 | SAM | 11/03/2025 | Testar a altera��o das URLs da API da Conta Azul para o envio de Contas Cont�bei |
+| 90476 | 114690 | NE | 21/11/2024 | N�o est� sendo gerado corretamente o valor da tag "valoresParaComparacao" da gui |
 
 ## Busca Completa
 

@@ -1,24 +1,18 @@
 ﻿# SAL Descartadas - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total SAIs unicas: 144
+> Atualizado em: 07/07/2026 15:02
+> Total SAIs unicas: 138
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 131479 |  | 09/06/2026 | ID 0 | - |
+| 0 | 131704 |  | 17/06/2026 | ID 0 | - |
 | 101806 | 130832 |  | 18/05/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o envio da guia DAS conforme as altera��es ocorridas no Captcha do PGDAS |
 | 100423 | 128936 |  | 10/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para que consiga seguir no captcha para emiss�o do DAS, DEFIS  |
 | 100115 | 128385 |  | 24/02/2026 | SAI Aprovada | Ajustar a transmiss�o da DEFIS observando as altera��es recentes da p�gina. |
 | 99213 | 126395 |  | 13/01/2026 | SAI Aprovada | SP - Garantir funcionamento da integra��o do Cr�dito de ICMS com Escrita devido  |
 | 99201 | 126391 |  | 13/01/2026 | SAI Aprovada | SP-Alterar o sistema para gerar os registros referentes as parcelas de apropria� |
-| 97437 | 123318 |  | 10/10/2025 | Aguardando Resposta do Desenvolvimento DEMO | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
-| 97524 | 122171 |  | 28/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Gerar DLPA para matriz e filial. |
-| 97336 | 122170 |  | 28/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Gerar a DLPA no SPED Contábil |
-| 96743 | 122166 |  | 28/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Transferir automaticamente o valor de lucro ou prejuízo do período para o lucro  |
-| 97482 | 122114 |  | 27/08/2025 | Aguardando Resposta do Desenvolvimento DEMO | Incluir o relacionamento de contas contábeis nas notas explicativas, e gerar no  |
 | 93251 | 118120 |  | 31/03/2025 | Aguardando Resposta do Desenvolvimento DEMO | Ajustar o sistema para que consiga seguir no captcha do portal na DEFIS no Dom�n |
 | 92379 | 117020 |  | 24/02/2025 | SAI Aprovada | Ajustar o sistema para n�o gerar a UF e o n�mero do CRC no arquivo 'jason" do in |
-| 93083 | 116793 |  | 18/02/2025 | Aguardando Resposta do Desenvolvimento DEMO | Alterar o sistema para aceitar o novo CNPJ com o formato alfanumérico conforme I |
 | 92012 | 116417 |  | 05/02/2025 | SAI Aprovada | Atualizar o informativo I-SIMP 02/2025. |
 | 92035 | 116169 |  | 28/01/2025 | SAI Aprovada | Gerar o registro 0045 do LCDPR quando o tipo de explora��o for im�vel arrendado  |
 | 90826 | 115220 |  | 10/12/2024 | SAI Aprovada | Atualizar o User Agent e garantir que siga na emiss�o do DAS e na DEFIS. |

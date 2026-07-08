@@ -1,37 +1,129 @@
 ﻿# SAM Pendentes - Escrita Fiscal
 
-> Atualizado em: 10/06/2026 15:03
-> Total pendentes: 14885
+> Atualizado em: 07/07/2026 15:02
+> Total pendentes: 14881
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 102385 | 131533 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 102381 | 131530 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 102380 | 131528 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 102379 | 131527 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Domínio em uma FARM do Domínio WEB  |
-| 0 | 131526 |  | 10/06/2026 | ID 0 | - |
-| 0 | 131516 |  | 10/06/2026 | ID 0 | - |
+| 102957 | 132224 |  | 07/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
+| 0 | 132217 |  | 07/07/2026 | ID 0 | - |
+| 102947 | 132209 | 10.6A-07 | 07/07/2026 | Respondido Gerente de Produto | Preparar o servidor do Busca NF-e para receber os arquivos compactados. |
+| 0 | 132197 |  | 07/07/2026 | ID 0 | - |
+| 0 | 132185 |  | 06/07/2026 | ID 0 | - |
+| 102924 | 132180 | 10.6A-07 | 06/07/2026 | Respondido Gerente de Produto | Corrigir as novas pendências "Medium" e "High" apresentadas pelo SNYK no servido |
+| 0 | 132172 |  | 06/07/2026 | ID 0 | - |
+| 0 | 132167 |  | 06/07/2026 | ID 0 | - |
+| 0 | 132165 |  | 06/07/2026 | ID 0 | - |
+| 0 | 132162 |  | 06/07/2026 | ID 0 | - |
+| 0 | 132151 |  | 03/07/2026 | ID 0 | - |
+| 0 | 132149 |  | 03/07/2026 | ID 0 | - |
+| 0 | 132148 |  | 03/07/2026 | ID 0 | - |
+| 0 | 132147 |  | 03/07/2026 | ID 0 | - |
+| 0 | 132135 |  | 02/07/2026 | ID 0 | - |
+| 0 | 132134 |  | 02/07/2026 | ID 0 | - |
+| 0 | 132133 |  | 02/07/2026 | ID 0 | - |
+| 0 | 132130 |  | 02/07/2026 | ID 0 | - |
+| 0 | 132124 |  | 02/07/2026 | ID 0 | - |
+| 0 | 132108 |  | 01/07/2026 | ID 0 | - |
+| 102845 | 132103 |  | 01/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [Regression test] Analisar o impacto no módulo API Escrita da remoção de conexõe |
+| 0 | 132102 |  | 01/07/2026 | ID 0 | - |
+| 0 | 132079 |  | 01/07/2026 | ID 0 | - |
+| 0 | 132072 |  | 01/07/2026 | ID 0 | - |
+| 0 | 132067 |  | 01/07/2026 | ID 0 | - |
+| 0 | 132061 |  | 30/06/2026 | ID 0 | - |
+| 102812 | 132055 |  | 30/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar API para realizar a comunicação entre a RFB e Contábil referente a apuraçã |
+| 0 | 132051 |  | 30/06/2026 | ID 0 | - |
+| 0 | 132048 |  | 30/06/2026 | ID 0 | - |
+| 0 | 132041 |  | 30/06/2026 | ID 0 | - |
+| 102788 | 132039 | 10.6A-07 | 30/06/2026 | Aguardando Resposta do Desenvolvimento | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
+| 0 | 132036 |  | 30/06/2026 | ID 0 | - |
+| 0 | 132034 |  | 30/06/2026 | ID 0 | - |
+| 0 | 132014 |  | 29/06/2026 | ID 0 | - |
+| 0 | 132012 |  | 29/06/2026 | ID 0 | - |
+| 0 | 132006 |  | 29/06/2026 | ID 0 | - |
+| 0 | 132003 |  | 29/06/2026 | ID 0 | - |
+| 102752 | 131993 | 10.6A-07 | 26/06/2026 | Respondido Gerente de Produto | Registrar os tempos atuados nas pesquisas de inovações com IA. |
+| 102751 | 131992 | 10.6A-07 | 26/06/2026 | Respondido Gerente de Produto | Criação de casos de testes para a automação e registro de tempos com atividades  |
+| 0 | 131937 |  | 24/06/2026 | ID 0 | - |
+| 0 | 131931 |  | 24/06/2026 | ID 0 | - |
+| 0 | 131929 |  | 24/06/2026 | ID 0 | - |
+| 0 | 131927 |  | 24/06/2026 | ID 0 | - |
+| 0 | 131912 |  | 24/06/2026 | ID 0 | - |
+| 0 | 131910 |  | 24/06/2026 | ID 0 | - |
+| 102688 | 131908 |  | 24/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Refatorar a forma de gerar os registros D750 e D760 no SPED Fiscal  |
+| 0 | 131906 |  | 24/06/2026 | ID 0 | - |
+| 0 | 131881 |  | 23/06/2026 | ID 0 | - |
+| 0 | 131876 |  | 23/06/2026 | ID 0 | - |
+| 0 | 131875 |  | 23/06/2026 | ID 0 | - |
+| 0 | 131866 |  | 23/06/2026 | ID 0 | - |
+| 102642 | 131856 | 10.6A-07 | 23/06/2026 | Respondido Gerente de Produto | Registrar os tempos atuados nas pesquisas de inova��es com IA na vers�o de Julho |
+| 0 | 131855 |  | 23/06/2026 | ID 0 | - |
+| 0 | 131834 |  | 22/06/2026 | ID 0 | - |
+| 102620 | 131831 | 10.6A-07 | 22/06/2026 | Respondido Gerente de Produto | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 0 | 131785 |  | 19/06/2026 | ID 0 | - |
+| 102576 | 131784 | 10.6A-07 | 19/06/2026 | Respondido Gerente de Produto | Liberar tempo gasto nos testes das SAIs de IA. |
+| 0 | 131779 |  | 19/06/2026 | ID 0 | - |
+| 102578 | 131763 |  | 18/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar no processo de importa��o a valida��o e mensagem, quando realizar im |
+| 0 | 131751 |  | 18/06/2026 | ID 0 | - |
+| 102571 | 131750 |  | 18/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Refatorar o Demonstrativo do imposto 9-SUBTRI |
+| 0 | 131748 |  | 18/06/2026 | ID 0 | - |
+| 0 | 131733 |  | 18/06/2026 | ID 0 | - |
+| 102532 | 131730 | 10.6A-07 | 17/06/2026 | Respondido Gerente de Produto | Testar o envio de contas cont�beis para o Conta Azul. |
+| 0 | 131729 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131711 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131710 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131702 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131701 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131699 |  | 17/06/2026 | ID 0 | - |
+| 0 | 131691 |  | 16/06/2026 | ID 0 | - |
+| 102577 | 131679 | 10.6A-07 | 16/06/2026 | Respondido Gerente de Produto | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |
+| 0 | 131675 |  | 16/06/2026 | ID 0 | - |
+| 0 | 131665 |  | 15/06/2026 | ID 0 | - |
+| 0 | 131650 |  | 15/06/2026 | ID 0 | - |
+| 0 | 131647 |  | 15/06/2026 | ID 0 | - |
+| 0 | 131644 |  | 15/06/2026 | ID 0 | - |
+| 0 | 131643 |  | 15/06/2026 | ID 0 | - |
+| 0 | 131624 |  | 12/06/2026 | ID 0 | - |
+| 0 | 131623 |  | 12/06/2026 | ID 0 | - |
+| 102443 | 131610 |  | 12/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Gerar log di�rios referente ao Keep Alive de forma que sejam mantidos os �ltimos |
+| 0 | 131609 |  | 12/06/2026 | ID 0 | - |
+| 102442 | 131608 | 10.6A-07 | 12/06/2026 | Respondido Gerente de Produto | Realizar testes no processo das Rotinas autom�ticas no ambiente Dom�nio Web devi |
+| 0 | 131597 |  | 12/06/2026 | ID 0 | - |
+| 102430 | 131595 | 10.6A-07 | 12/06/2026 | Respondido Gerente de Produto | Realizar testes no processo do Utilit�rios/Regerar Lan�amentos Cont�beis. |
+| 102420 | 131584 | 10.6A-07 | 11/06/2026 | Respondido Gerente de Produto | Realizar testes no processo das Rotinas autom�ticas no ambiente Dom�nio Web devi |
+| 102456 | 131580 |  | 11/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Importar as Informa��es de Pagamento das NF-e e NFC-e. |
+| 102485 | 131577 |  | 11/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a importa��o dos dados de cr�dito presumido para nota fiscal com IBS e  |
+| 102407 | 131572 | 10.6A-07 | 11/06/2026 | Respondido Gerente de Produto | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |
+| 0 | 131570 |  | 11/06/2026 | ID 0 | - |
+| 0 | 131569 |  | 11/06/2026 | ID 0 | - |
+| 0 | 131564 |  | 11/06/2026 | ID 0 | - |
+| 0 | 131562 |  | 11/06/2026 | ID 0 | - |
+| 0 | 131561 |  | 11/06/2026 | ID 0 | - |
+| 102450 | 131559 |  | 11/06/2026 | Retorno de Teste | Liberar tabelas de informa��es de pagamentos de notas de entradas e sa�das - Ino |
+| 102385 | 131533 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Dom�nio em uma FARM do Dom�nio WEB  |
+| 102381 | 131530 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Dom�nio em uma FARM do Dom�nio WEB  |
+| 102380 | 131528 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Dom�nio em uma FARM do Dom�nio WEB  |
+| 102379 | 131527 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais do sistema Dom�nio em uma FARM do Dom�nio WEB  |
+| 102410 | 131526 | 10.6A-07 | 10/06/2026 | Respondido Gerente de Produto | Realizar testes nas Rotinas autom�ticas devido a cria��o da rotina automatizada  |
+| 102395 | 131516 |  | 10/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar a forma como os lan�amentos cont�beis do Conta Azul s�o recebidos pela C |
 | 0 | 131482 |  | 09/06/2026 | ID 0 | - |
-| 0 | 131460 |  | 08/06/2026 | ID 0 | - |
+| 102429 | 131460 |  | 08/06/2026 | Retorno de Teste | Otimizar a emiss�o do Raz�o com a op��o "Emitir com plano referencial". |
 | 0 | 131439 |  | 08/06/2026 | ID 0 | - |
-| 102302 | 131434 |  | 08/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
 | 0 | 131430 |  | 08/06/2026 | ID 0 | - |
 | 0 | 131428 |  | 08/06/2026 | ID 0 | - |
-| 0 | 131385 |  | 05/06/2026 | ID 0 | - |
+| 102329 | 131385 | 10.6A-07 | 05/06/2026 | Aguardando Resposta do Gerente de Testes | Alterar o sistema para atualizar acesso ao portal e-CAC, e adequar as mudan�as n |
 | 0 | 131374 |  | 03/06/2026 | ID 0 | - |
 | 0 | 131372 |  | 03/06/2026 | ID 0 | - |
 | 0 | 131371 |  | 03/06/2026 | ID 0 | - |
-| 0 | 131364 |  | 03/06/2026 | ID 0 | - |
-| 0 | 131297 |  | 02/06/2026 | ID 0 | - |
-| 102159 | 131291 |  | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a reconexão do agente do Web Service SEFAZ quando houve desconexão do a |
-| 0 | 131290 |  | 02/06/2026 | ID 0 | - |
-| 102138 | 131267 | 10.6A-06 | 01/06/2026 | Respondido Gerente de Testes | Realizar testes no processo das Rotinas Automáticas devido a alteração na config |
+| 102682 | 131364 |  | 03/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o comportamento da tela "Documentos Fiscais Armazenados na API" para bus |
+| 102459 | 131297 |  | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o permitir que o mesmo usu�rio na mesma empresa realize apura��o de impostos e |
+| 102159 | 131291 |  | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a reconex�o do agente do Web Service SEFAZ quando houve desconex�o do a |
+| 102418 | 131290 | 10.6A-07 | 02/06/2026 | Respondido Gerente de Produto | Criar uma op��o no utilit�rio 'Utilit�rios/Alterar Produtos para C�lculo de PIS  |
 | 0 | 131264 |  | 01/06/2026 | ID 0 | - |
 | 0 | 131262 |  | 01/06/2026 | ID 0 | - |
-| 0 | 131255 |  | 01/06/2026 | ID 0 | - |
+| 102502 | 131255 | 10.6A-07 | 01/06/2026 | Respondido Gerente de Produto | Otimizar e alterar a periodicidade do evento "EVENTO_ATUALIZAR_STATUS_OPCOES_BAR |
 | 0 | 131248 |  | 01/06/2026 | ID 0 | - |
 | 0 | 131215 |  | 28/05/2026 | ID 0 | - |
-| 102066 | 131211 | 10.6A-06 | 28/05/2026 | Respondido Gerente de Produto | Registrar os tempos atuados nas pesquisas de inovações com IA na versão de Junho |
 | 0 | 131210 |  | 28/05/2026 | ID 0 | - |
 | 0 | 131208 |  | 28/05/2026 | ID 0 | - |
 | 0 | 131199 |  | 28/05/2026 | ID 0 | - |
@@ -40,77 +132,57 @@
 | 0 | 131164 |  | 27/05/2026 | ID 0 | - |
 | 0 | 131159 |  | 27/05/2026 | ID 0 | - |
 | 0 | 131147 |  | 26/05/2026 | ID 0 | - |
-| 102080 | 131127 |  | 26/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Permitir a emissão do encargo "Adicional ao SENAI" na guia da DCTFWeb parcial co |
+| 102080 | 131127 | 10.6A-07 | 26/05/2026 | Respondido Gerente de Produto | Permitir a emiss�o do encargo "Adicional ao SENAI" na guia da DCTFWeb parcial co |
 | 0 | 131124 |  | 26/05/2026 | ID 0 | - |
 | 0 | 131113 |  | 26/05/2026 | ID 0 | - |
 | 0 | 131111 |  | 26/05/2026 | ID 0 | - |
 | 0 | 131106 |  | 26/05/2026 | ID 0 | - |
-| 101989 | 131097 | 10.6A-06 | 25/05/2026 | Respondido Gerente de Testes | Testar as funcionalidades de IA para o pergunte ao seu relatório na Escrita Fisc |
-| 101988 | 131096 | 10.6A-06 | 25/05/2026 | Respondido Gerente de Testes | Testar as funcionalidades de IA para o pergunte ao seu relatório na Escrita Fisc |
 | 0 | 131090 |  | 25/05/2026 | ID 0 | - |
 | 0 | 131084 |  | 25/05/2026 | ID 0 | - |
 | 0 | 131080 |  | 25/05/2026 | ID 0 | - |
 | 0 | 131077 |  | 25/05/2026 | ID 0 | - |
 | 0 | 131076 |  | 25/05/2026 | ID 0 | - |
 | 0 | 131075 |  | 25/05/2026 | ID 0 | - |
-| 101977 | 131071 |  | 25/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
-| 0 | 131062 |  | 25/05/2026 | ID 0 | - |
+| 102387 | 131062 | 10.6A-07 | 25/05/2026 | Respondido Gerente de Produto | Otimizar a importa��o do registro Y570 do informativo SPED ECF. |
 | 0 | 131051 |  | 25/05/2026 | ID 0 | - |
-| 101969 | 131050 | 10.6A-06 | 25/05/2026 | Respondido Gerente de Testes | Criação de casos de testes para a automação e registro de tempos com atividades  |
 | 0 | 131048 |  | 25/05/2026 | ID 0 | - |
-| 0 | 131013 |  | 22/05/2026 | ID 0 | - |
+| 101945 | 131013 |  | 22/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar a gera��o dos arquivos de confer�ncia R4010 e R4020 da EFD REINF. |
 | 0 | 131004 |  | 22/05/2026 | ID 0 | - |
 | 0 | 131003 |  | 22/05/2026 | ID 0 | - |
-| 0 | 130995 |  | 22/05/2026 | ID 0 | - |
+| 0 | 130995 |  | 21/05/2026 | ID 0 | - |
+| 0 | 130983 |  | 21/05/2026 | ID 0 | - |
+| 102010 | 130974 |  | 21/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | SP- Otimizar as DW's 'ds_sped_blocoC_regC100_130_175_SP', 'ds_sped_blocoC_regC19 |
 | 0 | 130948 |  | 21/05/2026 | ID 0 | - |
 | 0 | 130944 |  | 20/05/2026 | ID 0 | - |
 | 0 | 130940 |  | 20/05/2026 | ID 0 | - |
-| 0 | 130934 |  | 20/05/2026 | ID 0 | - |
-| 101854 | 130900 |  | 19/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo gasto nos testes das SAIs de IA. |
-| 101851 | 130899 | 10.6A-05 | 19/05/2026 | Respondido Coordenador de Módulos DEMO | Possibilitar a emiss�o do extrato PDF do Dom�nio Conta PJ dentro do Dom�nio Cont |
-| 101881 | 130897 | 10.6A-06 | 19/05/2026 | Aguardando Resposta do Coordenador de Módulos | Adequar a importa��o de cadastros da RFB conforme altera��es do site na valida�� |
-| 101870 | 130894 | 10.6A-06 | 19/05/2026 | Aguardando Resposta do Coordenador de Módulos | ES-Alterar a importa��o via SEFAZ ES conforme as mudan�as do site para o Dom�nio |
-| 101846 | 130892 | 10.6A-05 | 19/05/2026 | Respondido Gerente de Testes | Liberar tempo gasto nos testes das SAIs de IA. |
 | 0 | 130878 |  | 19/05/2026 | ID 0 | - |
-| 101839 | 130873 |  | 19/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar testes no processo das Rotinas Autom�ticas devido a altera��o na config |
 | 0 | 130868 |  | 19/05/2026 | ID 0 | - |
-| 0 | 130867 |  | 19/05/2026 | ID 0 | - |
 | 101819 | 130839 |  | 18/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Limitar a quantidade de conex�es no banco de dados do usu�rio 'USUARIO_DIGITAL_B |
 | 0 | 130837 |  | 18/05/2026 | ID 0 | - |
-| 0 | 130836 |  | 18/05/2026 | ID 0 | - |
 | 0 | 130835 |  | 18/05/2026 | ID 0 | - |
 | 0 | 130823 |  | 18/05/2026 | ID 0 | - |
 | 0 | 130822 |  | 18/05/2026 | ID 0 | - |
 | 0 | 130821 |  | 18/05/2026 | ID 0 | - |
-| 0 | 130818 |  | 18/05/2026 | ID 0 | - |
+| 102559 | 130818 | 10.6A-07 | 18/05/2026 | Respondido Gerente de Produto | RJ-Atualizar a vig�ncia dos c�digos da tabela 5.2 Valores Declarat�rios do ICMS  |
 | 0 | 130810 |  | 15/05/2026 | ID 0 | - |
 | 0 | 130797 |  | 15/05/2026 | ID 0 | - |
-| 101781 | 130796 |  | 15/05/2026 | Retorno de Teste | Realizar testes de importa��o atrav�s da API e BOX-e ap�s a atualiza��o de segur |
 | 0 | 130778 |  | 14/05/2026 | ID 0 | - |
 | 0 | 130777 |  | 14/05/2026 | ID 0 | - |
 | 0 | 130775 |  | 14/05/2026 | ID 0 | - |
-| 101816 | 130774 | 10.6A-06 | 14/05/2026 | Aguardando Resposta do Coordenador de Módulos | MT-Alterar a importa��o via SEFAZ MT conforme as mudan�as do site para o Dom�nio |
-| 101762 | 130769 |  | 14/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Contabilizar na importa��o de notas, como "Sint�tico por dia" ou "Sint�tico por  |
-| 0 | 130755 |  | 13/05/2026 | ID 0 | - |
-| 101741 | 130750 | 10.6A-05 | 13/05/2026 | Respondido Coordenador de Módulos DEMO | Realizar o encerramento de forma mais adequada de conex�es �rf�s com o banco de  |
+| 101762 | 130769 |  | 14/05/2026 | Retorno de Teste | Contabilizar na importa��o de notas, como "Sint�tico por dia" ou "Sint�tico por  |
+| 101953 | 130755 |  | 13/05/2026 | Retorno de Teste | Otimizar a gera��o do relat�rio de Deprecia��o Societ�ria quando utilizada a op� |
 | 0 | 130743 |  | 13/05/2026 | ID 0 | - |
-| 101732 | 130739 |  | 13/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar um estudo no sistema para que n�o ocorra o bloqueio de usu�rios na apur |
 | 0 | 130738 |  | 13/05/2026 | ID 0 | - |
 | 0 | 130737 |  | 13/05/2026 | ID 0 | - |
 | 0 | 130736 |  | 13/05/2026 | ID 0 | - |
-| 101723 | 130731 |  | 13/05/2026 | Retorno de Teste | Corrigir as pend�ncias de vulnerabilidade no servidor do Busca NF-e. |
-| 101797 | 130730 |  | 13/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Importar para as Bases de Impostos por Parcela op��o relacionada � n�o aplica��o |
 | 0 | 130715 |  | 12/05/2026 | ID 0 | - |
-| 101754 | 130691 |  | 12/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar compacta��o em zip no envio de notas do Busca NF-e Cliente para o Busca |
+| 101754 | 130691 | 10.6A-07 | 12/05/2026 | Respondido Gerente de Produto | Realizar compacta��o em zip no envio de notas do Busca NF-e Cliente para o Busca |
 | 0 | 130690 |  | 12/05/2026 | ID 0 | - |
 | 0 | 130689 |  | 12/05/2026 | ID 0 | - |
 | 0 | 130686 |  | 12/05/2026 | ID 0 | - |
 | 0 | 130682 |  | 12/05/2026 | ID 0 | - |
 | 0 | 130667 |  | 11/05/2026 | ID 0 | - |
-| 101730 | 130665 |  | 11/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar um estudo no sistema para que n�o ocorra o bloqueio na ctlancto na etap |
-| 101675 | 130664 |  | 11/05/2026 | Retorno de Teste | Alterar a ferramenta dentro do Cont�bil que gera o comando SQL para zerar o NSU  |
-| 101837 | 130642 |  | 11/05/2026 | Retorno de Teste | Criar mensagem de alerta sobre o vencimento do SPED ECD e SPED ECF na tela de No |
-| 101678 | 130623 | 10.6A-05 | 07/05/2026 | Respondido Coordenador de Módulos DEMO | Importar nos lan�amentos de entradas de devolu��o a op��o relacionada ao c�lculo |
+| 101730 | 130665 | 10.6A-07 | 11/05/2026 | Respondido Gerente de Produto | Realizar um estudo no sistema para que n�o ocorra o bloqueio na ctlancto na etap |
 | 0 | 130622 |  | 07/05/2026 | ID 0 | - |
 | 0 | 130618 |  | 07/05/2026 | ID 0 | - |
 | 0 | 130617 |  | 07/05/2026 | ID 0 | - |
@@ -118,10 +190,9 @@
 | 0 | 130614 |  | 07/05/2026 | ID 0 | - |
 | 0 | 130603 |  | 06/05/2026 | ID 0 | - |
 | 0 | 130595 |  | 06/05/2026 | ID 0 | - |
-| 101572 | 130569 | 10.6A-05 | 05/05/2026 | Respondido Coordenador de Módulos DEMO | Realizar estudos para ativa��o do AlertCont�bil nas rotinas da importa��o no DW. |
 | 101571 | 130564 |  | 05/05/2026 | Retorno de Teste | Incluir os comandos SQL referente aos problemas de travamento no agente de comun |
 | 0 | 130555 |  | 04/05/2026 | ID 0 | - |
-| 0 | 130547 |  | 04/05/2026 | ID 0 | - |
+| 102163 | 130547 |  | 04/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar campo para configurar contabiliza��o de valor de juros, multa e desconto n |
 | 0 | 130541 |  | 04/05/2026 | ID 0 | - |
 | 0 | 130533 |  | 04/05/2026 | ID 0 | - |
 | 0 | 130528 |  | 04/05/2026 | ID 0 | - |
@@ -136,63 +207,43 @@
 | 0 | 130487 |  | 29/04/2026 | ID 0 | - |
 | 0 | 130486 |  | 29/04/2026 | ID 0 | - |
 | 0 | 130485 |  | 29/04/2026 | ID 0 | - |
-| 101521 | 130484 |  | 29/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Utilizar a Intelig�ncia Artificial (IA) para emitir um relat�rio gerencial no si |
+| 101521 | 130484 | PacotesIA | 29/04/2026 | Respondido Gerente de Produto | Utilizar a Intelig�ncia Artificial (IA) para emitir um relat�rio gerencial no si |
 | 0 | 130482 |  | 29/04/2026 | ID 0 | - |
-| 101513 | 130476 |  | 29/04/2026 | Retorno de Teste | Inibir a importa��o de grandes lotes de arquivos de notas descompactadas atrav�s |
 | 101761 | 130469 |  | 29/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar op��es nos par�metros para contabilizar como "Sint�tico por dia" ou "Sint� |
 | 0 | 130468 |  | 29/04/2026 | ID 0 | - |
 | 0 | 130466 |  | 29/04/2026 | ID 0 | - |
-| 0 | 130446 |  | 28/04/2026 | ID 0 | - |
-| 101617 | 130441 | 10.6A-05 | 28/04/2026 | Respondido Coordenador de Módulos DEMO | Testar o envio do plano de contas e o recebimento de lan�amentos do Conta Azul. |
+| 101974 | 130446 | 10.6A-07 | 28/04/2026 | Respondido Gerente de Produto | Realizar a replica��o das configura��es de importa��o do ABRASF e rotinas autom� |
 | 0 | 130431 |  | 28/04/2026 | ID 0 | - |
-| 101594 | 130428 |  | 27/04/2026 | Retorno de Teste | GO-Importar o C�digo do Benef�cio Fiscal na guia Estoque das notas fiscais de en |
-| 101469 | 130424 | 10.6A-05 | 27/04/2026 | Respondido Gerente de Testes | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
 | 0 | 130419 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130416 |  | 27/04/2026 | ID 0 | - |
-| 101452 | 130409 | 10.6A-05 | 27/04/2026 | Respondido Gerente de Testes | Registrar os tempos atuados nas pesquisas de inova��es com IA para a vers�o de M |
 | 0 | 130390 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130377 |  | 24/04/2026 | ID 0 | - |
-| 101416 | 130365 | 10.6A-05 | 24/04/2026 | Respondido Coordenador de Testes DEMO | Realizar testes na ferramenta de IA para an�lise de relat�rios dentro do Cont�bi |
-| 101433 | 130364 |  | 24/04/2026 | Retorno de Teste | Realizar testes na replica��o/importa��o de dados de outra empresa devido altera |
+| 101416 | 130365 | PacotesIA | 24/04/2026 | Respondido Coordenador de Testes DEMO | Realizar testes na ferramenta de IA para an�lise de relat�rios dentro do Cont�bi |
+| 101433 | 130364 | 10.6A-07 | 24/04/2026 | Respondido Gerente de Produto | Realizar testes na replica��o/importa��o de dados de outra empresa devido altera |
 | 0 | 130333 |  | 24/04/2026 | ID 0 | - |
 | 0 | 130330 |  | 24/04/2026 | ID 0 | - |
 | 0 | 130329 |  | 24/04/2026 | ID 0 | - |
 | 0 | 130325 |  | 23/04/2026 | ID 0 | - |
-| 101396 | 130324 |  | 23/04/2026 | Retorno de Teste | Realizar testes no 'Extrator da DIRF' no m�dulo Escrita - Refatora��o - Parte 2. |
-| 101381 | 130316 | 10.6A-05 | 23/04/2026 | Respondido Coordenador de Testes DEMO | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
-| 101373 | 130303 | 10.6A-05 | 23/04/2026 | Respondido Gerente de Testes | Cria��o de casos de testes para a automa��o e registro de tempos com atividades  |
+| 101381 | 130316 | PacotesIA | 23/04/2026 | Respondido Gerente de Testes | Utilizar IA para realizar v�nculos entre plano referencial e contas cont�beis. |
 | 0 | 130290 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130289 |  | 22/04/2026 | ID 0 | - |
-| 0 | 130284 |  | 22/04/2026 | ID 0 | - |
+| 102204 | 130284 | 10.6A-07 | 22/04/2026 | Respondido Gerente de Produto | Validar os pontos de integra��o e demais impactos com a Folha de Pagamento, cons |
 | 0 | 130283 |  | 22/04/2026 | ID 0 | - |
 | 0 | 130282 |  | 22/04/2026 | ID 0 | - |
-| 0 | 130277 |  | 22/04/2026 | ID 0 | - |
+| 102262 | 130277 | 10.6A-07 | 22/04/2026 | Respondido Gerente de Produto | Realizar testes explorat�rios quanto a inclus�o do menu "Empresa Centralizadora" |
 | 0 | 130261 |  | 22/04/2026 | ID 0 | - |
-| 101308 | 130231 | 10.6A-05 | 20/04/2026 | Respondido Coordenador de Módulos DEMO | Refatorar o c�lculo da majora��o do IRPJ e CSLL. |
 | 0 | 130229 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130227 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130221 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130220 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130218 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130192 |  | 17/04/2026 | ID 0 | - |
-| 0 | 130157 |  | 16/04/2026 | ID 0 | - |
-| 0 | 130153 |  | 16/04/2026 | ID 0 | - |
+| 102127 | 130157 | 10.6A-07 | 16/04/2026 | Respondido Gerente de Produto | RJ-Considerar a al�quota das defini��es do imposto 154-FOT do acumulador para im |
+| 102165 | 130153 |  | 16/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar relat�rios detalhando a apura��o assistida. |
 | 0 | 130148 |  | 16/04/2026 | ID 0 | - |
-| 0 | 130146 |  | 16/04/2026 | ID 0 | - |
-| 101225 | 130117 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
-| 101222 | 130114 |  | 15/04/2026 | Retorno de Teste | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
-| 101221 | 130113 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
-| 101220 | 130112 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 40 do sistema Dom�nio no Dom�nio  |
-| 101218 | 130108 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 39 do sistema Dom�nio no Dom�nio  |
-| 101215 | 130105 |  | 15/04/2026 | Retorno de Teste | [TECH] Realizar testes funcionais da nova FARM 39 do sistema Dom�nio no Dom�nio  |
-| 101214 | 130104 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 39 do sistema Dom�nio no Dom�nio  |
-| 101213 | 130103 |  | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 39 do sistema Dom�nio no Dom�nio  |
+| 102697 | 130146 |  | 16/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Demonstrar no Relat�rio Al�quota Efetiva do Per�odo Seguinte Simples Nacional o  |
 | 0 | 130102 |  | 15/04/2026 | ID 0 | - |
 | 0 | 130090 |  | 14/04/2026 | ID 0 | - |
-| 101203 | 130084 | 10.6A-05 | 14/04/2026 | Respondido Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM RA1 do sistema Dom�nio no Dom�nio |
-| 101200 | 130081 | 10.6A-05 | 14/04/2026 | Respondido Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM RA1 do sistema Dom�nio no Dom�nio |
-| 101199 | 130080 | 10.6A-05 | 14/04/2026 | Respondido Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM RA1 do sistema Dom�nio no Dom�nio |
-| 101198 | 130079 | 10.6A-05 | 14/04/2026 | Respondido Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM RA1 do sistema Dom�nio no Dom�nio |
 | 101282 | 130077 |  | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Efetuar baixa de impostos em atraso e/ou com pagamento parcial existente |
 | 101281 | 130076 |  | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Efetuar baixa de impostos atrav�s da description |
 | 0 | 130062 |  | 14/04/2026 | ID 0 | - |
@@ -205,22 +256,18 @@
 | 0 | 129950 |  | 09/04/2026 | ID 0 | - |
 | 0 | 129949 |  | 09/04/2026 | ID 0 | - |
 | 0 | 129948 |  | 09/04/2026 | ID 0 | - |
-| 101578 | 129935 |  | 08/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
+| 101578 | 129935 | 10.6A-07 | 08/04/2026 | Respondido Gerente de Produto | Realizar estudo para adequar o sistema ao processamento de grande volume de nota |
 | 0 | 129928 |  | 08/04/2026 | ID 0 | - |
-| 101280 | 129923 |  | 08/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Efetuar a baixa de impostos sempre que possui operation_type CONVENIO_ARRECADACA |
 | 0 | 129915 |  | 08/04/2026 | ID 0 | - |
 | 0 | 129913 |  | 08/04/2026 | ID 0 | - |
-| 101294 | 129902 | 10.6A-05 | 07/04/2026 | Respondido Coordenador de Módulos DEMO | Importar para o produto e para os lan�amentos de sa�das as op��es relacionadas � |
-| 101070 | 129900 |  | 07/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Reduzir quantidade de mensagens repetidas no agente de comunica��o |
 | 0 | 129886 |  | 07/04/2026 | ID 0 | - |
 | 0 | 129880 |  | 07/04/2026 | ID 0 | - |
 | 0 | 129876 |  | 07/04/2026 | ID 0 | - |
 | 0 | 129871 |  | 07/04/2026 | ID 0 | - |
 | 0 | 129863 |  | 06/04/2026 | ID 0 | - |
-| 101049 | 129862 | 10.6A-05 | 06/04/2026 | Respondido Coordenador de Módulos DEMO | Ler e utilizar a tag updated_at no consentimento |
 | 0 | 129798 |  | 01/04/2026 | ID 0 | - |
 | 0 | 129797 |  | 01/04/2026 | ID 0 | - |
-| 101645 | 129795 |  | 01/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do acesso ao |
+| 101645 | 129795 | 10.6A-07 | 01/04/2026 | Respondido Gerente de Produto | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do acesso ao |
 | 101307 | 129788 |  | 01/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a importa��o do campo "Entrega" no lan�amento de nota fiscal de sa�da. |
 | 0 | 129724 |  | 31/03/2026 | ID 0 | - |
 | 101276 | 129723 |  | 31/03/2026 | Retorno de Teste | Implementar a gera��o do relat�rio de precifica��o de produtos e servi�os para a |
@@ -238,34 +285,27 @@
 | 0 | 129679 |  | 30/03/2026 | ID 0 | - |
 | 0 | 129659 |  | 30/03/2026 | ID 0 | - |
 | 0 | 129656 |  | 30/03/2026 | ID 0 | - |
-| 0 | 129648 |  | 30/03/2026 | ID 0 | - |
 | 0 | 129641 |  | 30/03/2026 | ID 0 | - |
 | 101311 | 129630 |  | 30/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a importa��o dos campos "Finalidade" e "Tipo de nota" da Nota de D�bito |
-| 100903 | 129628 | 10.6A-05 | 27/03/2026 | Respondido Coordenador de Módulos DEMO | Corrigir as pend�ncias de vulnerabilidade high no servidor do Busca NF-e. |
 | 0 | 129546 |  | 26/03/2026 | ID 0 | - |
 | 100825 | 129536 |  | 25/03/2026 | Retorno de Teste | Realizar estudos e avaliar arquitetura para implementa��o da nova tabela de sald |
 | 0 | 129518 |  | 25/03/2026 | ID 0 | - |
-| 0 | 129517 |  | 25/03/2026 | ID 0 | - |
+| 102568 | 129517 | 10.6A-07 | 25/03/2026 | Respondido Gerente de Produto | Adequar o sistema para considerar a nova op��o de empresa centralizadora na gera |
 | 100815 | 129516 |  | 25/03/2026 | Retorno de Teste | Registrar no banco de dados o tempo de gera��o do Di�rio, Raz�o e Zeramento para |
 | 0 | 129515 |  | 25/03/2026 | ID 0 | - |
-| 100816 | 129511 | 10.6A-05 | 25/03/2026 | Respondido Gerente de Testes | Registrar no banco de dados o tempo de gera��o do Balan�o e Balancete para auxil |
 | 0 | 129509 |  | 25/03/2026 | ID 0 | - |
 | 0 | 129505 |  | 25/03/2026 | ID 0 | - |
 | 0 | 129504 |  | 25/03/2026 | ID 0 | - |
 | 0 | 129497 |  | 24/03/2026 | ID 0 | - |
 | 0 | 129491 |  | 24/03/2026 | ID 0 | - |
 | 0 | 129488 |  | 24/03/2026 | ID 0 | - |
-| 100814 | 129461 | 10.6A-05 | 24/03/2026 | Respondido Gerente de Testes | Registrar no banco de dados o tempo de gera��o do SPED Cont�bil e SPED ECF para  |
-| 100774 | 129458 |  | 24/03/2026 | Retorno de Teste | Gravar no banco de dados o tempo de gera��o do SPED Fiscal para auxiliar nas an� |
 | 0 | 129427 |  | 23/03/2026 | ID 0 | - |
 | 0 | 129418 |  | 23/03/2026 | ID 0 | - |
 | 0 | 129415 |  | 23/03/2026 | ID 0 | - |
 | 100746 | 129351 |  | 20/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar SQL para rodar no DW para buscar dados para defini��o de SAI de IA. |
-| 101150 | 129343 | 10.6A-05 | 20/03/2026 | Respondido Desenvolvimento | Criar a op��o "Considerar as defini��es do imposto INSS Retido do cadastro do ac |
 | 0 | 129342 |  | 20/03/2026 | ID 0 | - |
 | 0 | 129341 |  | 20/03/2026 | ID 0 | - |
 | 0 | 129328 |  | 20/03/2026 | ID 0 | - |
-| 100647 | 129305 | 10.6A-05 | 19/03/2026 | Respondido Coordenador de Módulos DEMO | Refatorar a forma de gerar os registros F550 e 1011 no EFD Contribui��es. |
 | 100904 | 129302 |  | 19/03/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar a apura��o do imposto 69-ST-TRANS por nota. |
 | 0 | 129289 |  | 19/03/2026 | ID 0 | - |
 | 0 | 129287 |  | 19/03/2026 | ID 0 | - |
@@ -279,7 +319,6 @@
 | 0 | 129258 |  | 18/03/2026 | ID 0 | - |
 | 0 | 129230 |  | 18/03/2026 | ID 0 | - |
 | 0 | 129229 |  | 18/03/2026 | ID 0 | - |
-| 100931 | 129212 | 10.6A-05 | 17/03/2026 | Respondido Coordenador de Módulos DEMO | Otimizar a emiss�o do Balancete com a op��o "N�o imprimir contas com saldo anter |
 | 100830 | 129205 |  | 17/03/2026 | Retorno de Teste | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
 | 0 | 129190 |  | 17/03/2026 | ID 0 | - |
 | 0 | 129175 |  | 17/03/2026 | ID 0 | - |
@@ -287,7 +326,6 @@
 | 0 | 129163 |  | 17/03/2026 | ID 0 | - |
 | 100787 | 129158 |  | 16/03/2026 | Retorno de Teste | Migrar Endpoints de autentica��o do Onvio no Cont�bil. |
 | 0 | 129144 |  | 16/03/2026 | ID 0 | - |
-| 101794 | 129133 |  | 13/03/2026 | Retorno de Teste | Alterar o comportamento para o bot�o "Cancelar" quando realizada a apura��o com  |
 | 0 | 129103 |  | 13/03/2026 | ID 0 | - |
 | 0 | 129067 |  | 12/03/2026 | ID 0 | - |
 | 0 | 129045 |  | 12/03/2026 | ID 0 | - |
@@ -304,11 +342,8 @@
 | 100422 | 128930 |  | 09/03/2026 | Retorno de Teste | Realizar um estudo e testes no agente de comunica��o referente ao consumo da nov |
 | 0 | 128923 |  | 09/03/2026 | ID 0 | - |
 | 0 | 128907 |  | 09/03/2026 | ID 0 | - |
-| 0 | 128906 |  | 09/03/2026 | ID 0 | - |
 | 0 | 128905 |  | 09/03/2026 | ID 0 | - |
 | 0 | 128898 |  | 09/03/2026 | ID 0 | - |
-| 100620 | 128880 | 10.6A-05 | 06/03/2026 | Respondido Coordenador de Módulos DEMO | Adequar o sistema para considerar a nova op��o de empresa centralizadora no subm |
-| 101385 | 128876 |  | 06/03/2026 | Retorno de Teste | SC-Importar novos c�digos de Valores Declarat�rios do ICMS na tag "cBenef" das n |
 | 0 | 128872 |  | 06/03/2026 | ID 0 | - |
 | 0 | 128870 |  | 06/03/2026 | ID 0 | - |
 | 0 | 128869 |  | 06/03/2026 | ID 0 | - |
@@ -327,18 +362,13 @@
 | 0 | 128689 |  | 02/03/2026 | ID 0 | - |
 | 0 | 128687 |  | 02/03/2026 | ID 0 | - |
 | 0 | 128685 |  | 02/03/2026 | ID 0 | - |
-| 100245 | 128648 | 10.6A-05 | 28/02/2026 | Respondido Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 38 do sistema Dom�nio no Dom�nio  |
-| 100241 | 128645 | 10.6A-05 | 28/02/2026 | Respondido Coordenador de Módulos DEMO | [TECH] Realizar testes funcionais da nova FARM 37 do sistema Dom�nio no Dom�nio  |
 | 0 | 128608 |  | 27/02/2026 | ID 0 | - |
 | 0 | 128607 |  | 27/02/2026 | ID 0 | - |
-| 0 | 128574 |  | 26/02/2026 | ID 0 | - |
 | 100182 | 128563 |  | 26/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a importa��o a importa��o de NF-e e NFC-e fora do servidor de sess�o no |
 | 0 | 128547 |  | 26/02/2026 | ID 0 | - |
-| 101669 | 128528 |  | 25/02/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Adequar o sistema para considerar a nova op��o de empresa centralizadora no Util |
+| 101669 | 128528 | 10.6A-07 | 25/02/2026 | Respondido Gerente de Produto | Adequar o sistema para considerar a nova op��o de empresa centralizadora no Util |
 | 0 | 128440 |  | 25/02/2026 | ID 0 | - |
-| 101002 | 128421 | APerformance Es | 24/02/2026 | Respondido Gerente de Produto | Otimizar importa��o NFC-e Arquivo XML. |
-| 100990 | 128410 | 10.6A-05 | 24/02/2026 | Respondido Coordenador de Módulos DEMO | Adequar o sistema para considerar a nova op��o de empresa centralizadora na gera |
-| 100811 | 128409 | APerformance Es | 24/02/2026 | Respondido Gerente de Testes | Adequar o sistema para considerar a nova op��o de empresa centralizadora na gera |
+| 101002 | 128421 | APerformance Es | 24/02/2026 | Respondido Coordenador de Testes DEMO | Otimizar importa��o NFC-e Arquivo XML. |
 | 0 | 128404 |  | 24/02/2026 | ID 0 | - |
 | 0 | 128395 |  | 24/02/2026 | ID 0 | - |
 | 0 | 128394 |  | 24/02/2026 | ID 0 | - |
@@ -347,12 +377,12 @@
 | 0 | 128379 |  | 24/02/2026 | ID 0 | - |
 | 0 | 128371 |  | 24/02/2026 | ID 0 | - |
 | 0 | 128301 |  | 23/02/2026 | ID 0 | - |
-| 100139 | 128280 |  | 20/02/2026 | Retorno de Teste | Implementar ferramenta para precifica��o de produtos e servi�os. |
+| 100139 | 128280 | 10.6A-07 | 20/02/2026 | Respondido Gerente de Produto | Implementar ferramenta para precifica��o de produtos e servi�os. |
 | 0 | 128264 |  | 20/02/2026 | ID 0 | - |
-| 0 | 128244 |  | 20/02/2026 | ID 0 | - |
+| 102152 | 128244 | 10.6A-07 | 20/02/2026 | Respondido Gerente de Produto | SC-Alterar o sistema para importar informa��o para o campo "Motivo" da guia "Est |
 | 0 | 128203 |  | 19/02/2026 | ID 0 | - |
 | 0 | 128202 |  | 19/02/2026 | ID 0 | - |
-| 0 | 128199 |  | 19/02/2026 | ID 0 | - |
+| 102149 | 128199 | 10.6A-07 | 19/02/2026 | Respondido Gerente de Produto | MG-Ajustar a importa��o das notas modelo 'Nota Fiscal de Fatura de Servi�os de C |
 | 0 | 128163 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128140 |  | 18/02/2026 | ID 0 | - |
 | 0 | 128138 |  | 18/02/2026 | ID 0 | - |
@@ -372,11 +402,9 @@
 | 0 | 127729 |  | 09/02/2026 | ID 0 | - |
 | 0 | 127727 |  | 09/02/2026 | ID 0 | - |
 | 0 | 127720 |  | 09/02/2026 | ID 0 | - |
-| 99812 | 127707 | 10.6A-05 | 06/02/2026 | Respondido Coordenador de Módulos DEMO | Realizar testes nas importa��es que utilizam certificado digital ap�s a implemen |
 | 0 | 127676 |  | 06/02/2026 | ID 0 | - |
 | 0 | 127670 |  | 06/02/2026 | ID 0 | - |
 | 100439 | 127663 |  | 06/02/2026 | Retorno de Teste | Ajustar o utilit�rio de alterar produtos para o c�lculo de PIS e COFINS referent |
-| 101116 | 127620 |  | 05/02/2026 | Retorno de Teste | Adequar o sistema para considerar a nova op��o de empresa centralizadora, devido |
 | 0 | 127619 |  | 05/02/2026 | ID 0 | - |
 | 0 | 127618 |  | 05/02/2026 | ID 0 | - |
 | 0 | 127616 |  | 05/02/2026 | ID 0 | - |
@@ -415,19 +443,15 @@
 | 0 | 127224 |  | 29/01/2026 | ID 0 | - |
 | 0 | 127212 |  | 29/01/2026 | ID 0 | - |
 | 0 | 127210 |  | 29/01/2026 | ID 0 | - |
-| 101591 | 127197 |  | 28/01/2026 | Retorno de Teste | PB-Alterar a importa��o do DIFALI para n�o excluir o ICMS da base de c�lculo qua |
 | 0 | 127154 |  | 28/01/2026 | ID 0 | - |
 | 0 | 127153 |  | 28/01/2026 | ID 0 | - |
 | 0 | 127129 |  | 28/01/2026 | ID 0 | - |
 | 99526 | 127128 |  | 28/01/2026 | Retorno de Teste | Realizar testes no bot�o 'Empresas' da tela do 'Extrator da DIRF' no m�dulo Escr |
-| 101554 | 127063 |  | 26/01/2026 | Retorno de Teste | Ajustar a importa��o das naturezas de rendimento do imposto 63-IRRF-APF, conside |
-| 0 | 127061 |  | 26/01/2026 | ID 0 | - |
 | 0 | 127055 |  | 26/01/2026 | ID 0 | - |
 | 0 | 127028 |  | 26/01/2026 | ID 0 | - |
 | 0 | 127023 |  | 26/01/2026 | ID 0 | - |
 | 0 | 127016 |  | 26/01/2026 | ID 0 | - |
 | 0 | 127013 |  | 26/01/2026 | ID 0 | - |
-| 99892 | 127005 | 10.6A-05 | 26/01/2026 | Respondido Coordenador de Módulos DEMO | Realizar testes em todos os processos/servi�os da escrita que utilizam certifica |
 | 0 | 126963 |  | 23/01/2026 | ID 0 | - |
 | 0 | 126950 |  | 23/01/2026 | ID 0 | - |
 | 0 | 126949 |  | 23/01/2026 | ID 0 | - |
@@ -442,7 +466,6 @@
 | 0 | 126780 |  | 20/01/2026 | ID 0 | - |
 | 0 | 126777 |  | 20/01/2026 | ID 0 | - |
 | 0 | 126764 |  | 20/01/2026 | ID 0 | - |
-| 0 | 126762 |  | 20/01/2026 | ID 0 | - |
 | 0 | 126748 |  | 20/01/2026 | ID 0 | - |
 | 0 | 126715 |  | 20/01/2026 | ID 0 | - |
 | 0 | 126711 |  | 20/01/2026 | ID 0 | - |
@@ -456,7 +479,6 @@
 | 99232 | 126531 |  | 15/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar tabela de saldos das contas cont�beis para otimizar a emiss�o de relat�rio |
 | 0 | 126506 |  | 15/01/2026 | ID 0 | - |
 | 0 | 126505 |  | 15/01/2026 | ID 0 | - |
-| 101300 | 126497 | 10.6A-05 | 14/01/2026 | Respondido Coordenador de Módulos DEMO | Permitir importar o tipo de isen��o 2-Di�ria de viagem na importa��o de entradas |
 | 0 | 126433 |  | 13/01/2026 | ID 0 | - |
 | 0 | 126404 |  | 13/01/2026 | ID 0 | - |
 | 0 | 126403 |  | 13/01/2026 | ID 0 | - |
@@ -472,14 +494,12 @@
 | 0 | 126256 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126251 |  | 08/01/2026 | ID 0 | - |
 | 0 | 126250 |  | 08/01/2026 | ID 0 | - |
-| 99047 | 126236 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-12. |
-| 99046 | 126235 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-11. |
-| 99044 | 126234 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-10. |
-| 99043 | 126233 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-09. |
-| 99042 | 126232 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-08. |
-| 99041 | 126231 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-07. |
-| 99040 | 126228 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o vers�o 10.6A-06. |
-| 99039 | 126227 | 10.6A-05 | 08/01/2026 | Respondido Gerente de Testes | Liberar tempo de automa��o e estimativas vers�o 10.6A-05. |
+| 99047 | 126236 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o e estimativas vers�o 10.6A-12. |
+| 99046 | 126235 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o e estimativas vers�o 10.6A-11. |
+| 99044 | 126234 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o e estimativas vers�o 10.6A-10. |
+| 99043 | 126233 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o e estimativas vers�o 10.6A-09. |
+| 99042 | 126232 |  | 08/01/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Liberar tempo de automa��o e estimativas vers�o 10.6A-08. |
+| 99041 | 126231 | 10.6A-07 | 08/01/2026 | Respondido Gerente de Produto | Liberar tempo de automa��o e estimativas vers�o 10.6A-07. |
 | 99086 | 126206 |  | 08/01/2026 | Retorno de Teste | Realizar a importa��o dos impostos IBS e CBS conforme a reforma tribut�ria atrav |
 | 0 | 126119 |  | 07/01/2026 | ID 0 | - |
 | 99324 | 126096 |  | 07/01/2026 | Retorno de Teste | Permitir a emiss�o do relat�rio extrator da DIRF por benefici�rio. |
@@ -500,7 +520,6 @@
 | 0 | 125806 |  | 23/12/2025 | ID 0 | - |
 | 0 | 125780 |  | 22/12/2025 | ID 0 | - |
 | 98772 | 125779 |  | 22/12/2025 | Retorno de Teste | Realizar estudo para rever a arquitetura do Conta Azul. |
-| 99980 | 125734 | 10.6A-05 | 22/12/2025 | Respondido Coordenador de Módulos DEMO | Preparar o sistema para implementar a ferramenta de precifica��o de produtos e s |
 | 0 | 125669 |  | 19/12/2025 | ID 0 | - |
 | 100590 | 125652 |  | 18/12/2025 | Retorno de Teste | Permitir a importa��o dos impostos IBS e CBS para as notas de entrada e sa�da vi |
 | 98666 | 125642 |  | 18/12/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar um estudo para realizar a importa��o de NF-e e NFC-e fora do servidor d |
@@ -510,7 +529,6 @@
 | 0 | 125635 |  | 18/12/2025 | ID 0 | - |
 | 0 | 125634 |  | 18/12/2025 | ID 0 | - |
 | 0 | 125633 |  | 18/12/2025 | ID 0 | - |
-| 101108 | 125618 | 10.6A-05 | 18/12/2025 | Respondido Coordenador de Módulos DEMO | Alterar o utilit�rio 'Inclus�o e Altera��o de Impostos' para atualizar os acumul |
 | 98652 | 125612 | APerformance Es | 17/12/2025 | Respondido Gerente de Produto | Efetuar estudo de viabilidade e funcionamento da retirada de processos de alto c |
 | 0 | 125572 |  | 17/12/2025 | ID 0 | - |
 | 0 | 125489 |  | 15/12/2025 | ID 0 | - |
@@ -578,7 +596,7 @@
 | 0 | 124638 |  | 25/11/2025 | ID 0 | - |
 | 0 | 124618 |  | 24/11/2025 | ID 0 | - |
 | 0 | 124571 |  | 21/11/2025 | ID 0 | - |
-| 100078 | 124540 |  | 19/11/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Retirar do servidor de sess�o as Threads respons�veis por inserir os XMLs no ban |
+| 100078 | 124540 | 10.6A-07 | 19/11/2025 | Respondido Gerente de Produto | Retirar do servidor de sess�o as Threads respons�veis por inserir os XMLs no ban |
 | 0 | 124533 |  | 19/11/2025 | ID 0 | - |
 | 0 | 124467 |  | 19/11/2025 | ID 0 | - |
 | 0 | 124466 |  | 19/11/2025 | ID 0 | - |
@@ -592,7 +610,6 @@
 | 0 | 124349 |  | 17/11/2025 | ID 0 | - |
 | 0 | 124346 |  | 17/11/2025 | ID 0 | - |
 | 0 | 124345 |  | 17/11/2025 | ID 0 | - |
-| 98095 | 124328 |  | 14/11/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar um estudo para realizar a emiss�o da nota fiscal de ajuste e gera��o do |
 | 0 | 124327 |  | 14/11/2025 | ID 0 | - |
 | 0 | 124317 |  | 14/11/2025 | ID 0 | - |
 | 0 | 124316 |  | 14/11/2025 | ID 0 | - |
@@ -605,12 +622,11 @@
 | 0 | 124245 |  | 12/11/2025 | ID 0 | - |
 | 0 | 124240 |  | 12/11/2025 | ID 0 | - |
 | 0 | 124239 |  | 12/11/2025 | ID 0 | - |
-| 101874 | 124238 |  | 12/11/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar op��o para importar os produtos rateados entre os segmentos na impor |
+| 101874 | 124238 | 10.6A-07 | 12/11/2025 | Respondido Gerente de Produto | Implementar op��o para importar os produtos rateados entre os segmentos na impor |
 | 0 | 124237 |  | 12/11/2025 | ID 0 | - |
 | 0 | 124235 |  | 12/11/2025 | ID 0 | - |
 | 0 | 124211 |  | 11/11/2025 | ID 0 | - |
 | 0 | 124209 |  | 11/11/2025 | ID 0 | - |
-| 99872 | 124203 | 10.6A-05 | 11/11/2025 | Respondido Coordenador de Módulos DEMO | Incluir a op��o de importar os valores da folha de pagamento informados no extra |
 | 0 | 124200 |  | 11/11/2025 | ID 0 | - |
 | 0 | 124197 |  | 11/11/2025 | ID 0 | - |
 | 0 | 124190 |  | 11/11/2025 | ID 0 | - |
@@ -771,6 +787,7 @@
 | 0 | 122480 |  | 10/09/2025 | ID 0 | - |
 | 0 | 122479 |  | 10/09/2025 | ID 0 | - |
 | 0 | 122451 |  | 09/09/2025 | ID 0 | - |
+| 97641 | 122446 |  | 09/09/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar op��o para escolher a origem dos d�bitos na emiss�o da guia DCTFWeb via AP |
 | 0 | 122439 |  | 09/09/2025 | ID 0 | - |
 | 0 | 122436 |  | 09/09/2025 | ID 0 | - |
 | 0 | 122434 |  | 09/09/2025 | ID 0 | - |
@@ -907,7 +924,6 @@
 | 0 | 121262 |  | 28/07/2025 | ID 0 | - |
 | 99525 | 121260 |  | 28/07/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e Onvio Conta |
 | 0 | 121249 |  | 28/07/2025 | ID 0 | - |
-| 101133 | 121247 | 10.6A-05 | 28/07/2025 | Respondido Coordenador de Módulos DEMO | Realizar a importa��o do Cadastro do Benefici�rio para a tela de cadastro do cli |
 | 0 | 121236 |  | 25/07/2025 | ID 0 | - |
 | 0 | 121230 |  | 25/07/2025 | ID 0 | - |
 | 0 | 121229 |  | 25/07/2025 | ID 0 | - |
@@ -967,7 +983,6 @@
 | 0 | 120705 |  | 09/07/2025 | ID 0 | - |
 | 0 | 120704 |  | 09/07/2025 | ID 0 | - |
 | 0 | 120702 |  | 09/07/2025 | ID 0 | - |
-| 0 | 120699 |  | 09/07/2025 | ID 0 | - |
 | 0 | 120692 |  | 09/07/2025 | ID 0 | - |
 | 0 | 120690 |  | 09/07/2025 | ID 0 | - |
 | 0 | 120688 |  | 09/07/2025 | ID 0 | - |
@@ -1035,7 +1050,6 @@
 | 0 | 120254 |  | 23/06/2025 | ID 0 | - |
 | 0 | 120252 |  | 23/06/2025 | ID 0 | - |
 | 0 | 120233 |  | 20/06/2025 | ID 0 | - |
-| 99751 | 120226 | 10.6A-05 | 20/06/2025 | Respondido Coordenador de Módulos DEMO | Ajustar a Altera��o de Lan�amentos via Utilit�rios para n�o permitir a troca par |
 | 0 | 120224 |  | 20/06/2025 | ID 0 | - |
 | 0 | 120222 |  | 20/06/2025 | ID 0 | - |
 | 0 | 120220 |  | 20/06/2025 | ID 0 | - |
@@ -1246,7 +1260,6 @@
 | 0 | 118552 |  | 17/04/2025 | ID 0 | - |
 | 0 | 118540 |  | 16/04/2025 | ID 0 | - |
 | 0 | 118531 |  | 16/04/2025 | ID 0 | - |
-| 0 | 118529 |  | 16/04/2025 | ID 0 | - |
 | 0 | 118528 |  | 16/04/2025 | ID 0 | - |
 | 0 | 118487 |  | 15/04/2025 | ID 0 | - |
 | 0 | 118472 |  | 15/04/2025 | ID 0 | - |
@@ -1346,7 +1359,7 @@
 | 92738 | 117473 |  | 10/03/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Incluir �cone da Central de solu��es no cabe�alho do Onvio Escrita.  |
 | 0 | 117465 |  | 10/03/2025 | ID 0 | - |
 | 0 | 117464 |  | 10/03/2025 | ID 0 | - |
-| 0 | 117462 |  | 10/03/2025 | ID 0 | - |
+| 102691 | 117462 |  | 10/03/2025 | Aguardando Resposta do Coordenador de Módulos DEMO | Permitir gravar as informa��es da tela 'Lan�amentos Cont�beis Extrato Banc�rio D |
 | 0 | 117461 |  | 10/03/2025 | ID 0 | - |
 | 0 | 117460 |  | 10/03/2025 | ID 0 | - |
 | 0 | 117459 |  | 10/03/2025 | ID 0 | - |
@@ -1359,7 +1372,6 @@
 | 0 | 117420 |  | 07/03/2025 | ID 0 | - |
 | 0 | 117418 |  | 07/03/2025 | ID 0 | - |
 | 94258 | 117409 |  | 07/03/2025 | Retorno de Teste | Contabilidade Digital: Separar a tela de Configura��o para Contabilizar Extrato  |
-| 93186 | 117405 |  | 07/03/2025 | Retorno de Teste | Contabilidade Digital: Aumentar para 25 dias o tempo de pesquisa das parcelas no |
 | 0 | 117403 |  | 07/03/2025 | ID 0 | - |
 | 0 | 117402 |  | 07/03/2025 | ID 0 | - |
 | 0 | 117400 |  | 07/03/2025 | ID 0 | - |
@@ -1520,7 +1532,7 @@
 | 0 | 115406 |  | 18/12/2024 | ID 0 | - |
 | 0 | 115405 |  | 18/12/2024 | ID 0 | - |
 | 0 | 115404 |  | 18/12/2024 | ID 0 | - |
-| 0 | 115402 |  | 18/12/2024 | ID 0 | - |
+| 102524 | 115402 |  | 18/12/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Efetuar baixas autom�ticas referente matriz e filial onde possa identificar as p |
 | 92527 | 115385 |  | 17/12/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Implementar uma mensagem de aviso quando o usu�rio realizar importa��o de arquiv |
 | 0 | 115384 |  | 17/12/2024 | ID 0 | - |
 | 0 | 115383 |  | 17/12/2024 | ID 0 | - |
@@ -1530,7 +1542,6 @@
 | 0 | 115308 |  | 13/12/2024 | ID 0 | - |
 | 0 | 115307 |  | 13/12/2024 | ID 0 | - |
 | 0 | 115306 |  | 13/12/2024 | ID 0 | - |
-| 90857 | 115253 | 10.6A-05 | 11/12/2024 | Respondido Coordenador de Módulos DEMO | Realizar um estudo e implementa��o de uma nova tabela para o cat�logo de notas,  |
 | 0 | 115238 |  | 11/12/2024 | ID 0 | - |
 | 0 | 115233 |  | 11/12/2024 | ID 0 | - |
 | 94257 | 115214 |  | 10/12/2024 | Retorno de Teste | Contabilidade Digital: Criar a op��o "Subtrai/Soma/Ambos" na configura��o por pa |
@@ -1550,9 +1561,6 @@
 | 0 | 115043 |  | 03/12/2024 | ID 0 | - |
 | 0 | 115034 |  | 03/12/2024 | ID 0 | - |
 | 0 | 114996 |  | 02/12/2024 | ID 0 | - |
-| 0 | 114965 |  | 29/11/2024 | ID 0 | - |
-| 0 | 114964 |  | 29/11/2024 | ID 0 | - |
-| 0 | 114963 |  | 29/11/2024 | ID 0 | - |
 | 0 | 114958 |  | 29/11/2024 | ID 0 | - |
 | 90609 | 114924 |  | 28/11/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Refatorar a API de notas. |
 | 0 | 114895 |  | 27/11/2024 | ID 0 | - |
@@ -1619,7 +1627,6 @@
 | 0 | 114206 |  | 31/10/2024 | ID 0 | - |
 | 0 | 114205 |  | 31/10/2024 | ID 0 | - |
 | 0 | 114161 |  | 30/10/2024 | ID 0 | - |
-| 0 | 114140 |  | 29/10/2024 | ID 0 | - |
 | 0 | 114139 |  | 29/10/2024 | ID 0 | - |
 | 96826 | 114127 |  | 29/10/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o sistema para emitir uma mensagem mais explicativa quando tivermos inst |
 | 0 | 114124 |  | 29/10/2024 | ID 0 | - |
@@ -1635,9 +1642,8 @@
 | 0 | 113955 |  | 22/10/2024 | ID 0 | - |
 | 0 | 113950 |  | 22/10/2024 | ID 0 | - |
 | 0 | 113907 |  | 21/10/2024 | ID 0 | - |
-| 100602 | 113876 | 10.6A-05 | 18/10/2024 | Respondido Gerente de Testes | Importar as informa��es do Profissional-parceiro atrav�s da importa��o NFS-e Arq |
 | 0 | 113875 |  | 18/10/2024 | ID 0 | - |
-| 0 | 113874 |  | 18/10/2024 | ID 0 | - |
+| 102069 | 113874 |  | 18/10/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar as DW's 'dw_rel_piscofins_credito_nota', 'dw_rel_piscofins_debito_nota_ |
 | 0 | 113847 |  | 17/10/2024 | ID 0 | - |
 | 0 | 113845 |  | 17/10/2024 | ID 0 | - |
 | 0 | 113799 |  | 16/10/2024 | ID 0 | - |
@@ -1967,7 +1973,6 @@
 | 0 | 110507 |  | 21/06/2024 | ID 0 | - |
 | 0 | 110493 |  | 21/06/2024 | ID 0 | - |
 | 87180 | 110470 |  | 20/06/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o enviar mais as notas para o BOX-e do DA quando o cliente ainda n�o possui o  |
-| 0 | 110462 |  | 20/06/2024 | ID 0 | - |
 | 0 | 110461 |  | 20/06/2024 | ID 0 | - |
 | 87641 | 110427 |  | 19/06/2024 | Retorno de Teste | Importar notas fiscais canceladas quando o arquivo possuir a Tag "NfseSubstituid |
 | 0 | 110423 |  | 19/06/2024 | ID 0 | - |
@@ -2653,7 +2658,7 @@
 | 0 | 105285 |  | 12/01/2024 | ID 0 | - |
 | 0 | 105276 |  | 12/01/2024 | ID 0 | - |
 | 0 | 105231 |  | 12/01/2024 | ID 0 | - |
-| 0 | 105229 |  | 12/01/2024 | ID 0 | - |
+| 102447 | 105229 |  | 12/01/2024 | Aguardando Resposta do Coordenador de Módulos DEMO | SC-Importar a NFC-e atrav�s do Web Service do estado de Santa Catarina no Busca  |
 | 0 | 105226 |  | 12/01/2024 | ID 0 | - |
 | 0 | 105127 |  | 10/01/2024 | ID 0 | - |
 | 83853 | 105103 |  | 10/01/2024 | Retorno de Teste | Considerar a mesma conta cont�bil quando ocorrer mais de um cadastro de clientes |
@@ -2737,7 +2742,6 @@
 | 0 | 103996 |  | 07/12/2023 | ID 0 | - |
 | 0 | 103993 |  | 07/12/2023 | ID 0 | - |
 | 0 | 103992 |  | 07/12/2023 | ID 0 | - |
-| 94840 | 103971 | APerformance Es | 06/12/2023 | Respondido Coordenador de Testes DEMO | Permitir importar os valores dos produtos que possuem classifica��o iniciada em  |
 | 0 | 103941 |  | 06/12/2023 | ID 0 | - |
 | 0 | 103928 |  | 05/12/2023 | ID 0 | - |
 | 0 | 103927 |  | 05/12/2023 | ID 0 | - |
@@ -2779,7 +2783,6 @@
 | 0 | 103215 |  | 13/11/2023 | ID 0 | - |
 | 83721 | 103207 |  | 13/11/2023 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar a importa��o do registro L210 do Sped ECF. |
 | 0 | 103202 |  | 13/11/2023 | ID 0 | - |
-| 101734 | 103198 |  | 13/11/2023 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a op��o para tornar opcional a importa��o dos descontos para NFS-e Arquivo |
 | 0 | 103152 |  | 10/11/2023 | ID 0 | - |
 | 0 | 103147 |  | 10/11/2023 | ID 0 | - |
 | 0 | 103132 |  | 10/11/2023 | ID 0 | - |
@@ -3652,7 +3655,7 @@
 | 0 | 95340 |  | 14/02/2023 | ID 0 | - |
 | 0 | 95338 |  | 14/02/2023 | ID 0 | - |
 | 0 | 95303 |  | 13/02/2023 | ID 0 | - |
-| 0 | 95259 |  | 10/02/2023 | ID 0 | - |
+| 102252 | 95259 |  | 10/02/2023 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o comportamento do sistema para que seja gerado o valor da parcela via U |
 | 0 | 95225 |  | 09/02/2023 | ID 0 | - |
 | 0 | 95223 |  | 09/02/2023 | ID 0 | - |
 | 0 | 95222 |  | 09/02/2023 | ID 0 | - |
@@ -4075,7 +4078,6 @@
 | 0 | 92758 |  | 13/10/2022 | ID 0 | - |
 | 0 | 92753 |  | 13/10/2022 | ID 0 | - |
 | 0 | 92750 |  | 13/10/2022 | ID 0 | - |
-| 0 | 92749 |  | 13/10/2022 | ID 0 | - |
 | 0 | 92748 |  | 13/10/2022 | ID 0 | - |
 | 82761 | 92747 |  | 13/10/2022 | Aguardando Resposta do Coordenador de Módulos DEMO | RO-Importar para o produto o ICMS Diferido devido na entrada e com benef�cio de  |
 | 0 | 92746 |  | 13/10/2022 | ID 0 | - |
@@ -4425,7 +4427,7 @@
 | 0 | 87334 |  | 03/01/2022 | ID 0 | - |
 | 0 | 87333 |  | 03/01/2022 | ID 0 | - |
 | 0 | 87275 |  | 28/12/2021 | ID 0 | - |
-| 0 | 87274 |  | 28/12/2021 | ID 0 | - |
+| 102660 | 87274 | 10.6A-07 | 28/12/2021 | Respondido Gerente de Produto | Criar op��o para indicar onde ser� informado o valor da diferen�a do rateio do f |
 | 73436 | 87256 |  | 27/12/2021 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar as DW's 'ds_sped_blocoC_regC850' e 'ds_sped_blocok_regk200' na gera��o  |
 | 0 | 87228 |  | 23/12/2021 | ID 0 | - |
 | 73435 | 87196 |  | 21/12/2021 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar as DW's 'ds_sped_notas_entradas', 'ds_sped_blocoC_regC190_e_ES', 'ds_sp |
@@ -4886,7 +4888,6 @@
 | 95055 | 84332 |  | 21/07/2021 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o sistema para realizar a importa��o dos cancelamentos conforme o per�od |
 | 0 | 84330 |  | 21/07/2021 | ID 0 | - |
 | 0 | 84328 |  | 21/07/2021 | ID 0 | - |
-| 0 | 84327 |  | 21/07/2021 | ID 0 | - |
 | 0 | 84308 |  | 20/07/2021 | ID 0 | - |
 | 0 | 84307 |  | 20/07/2021 | ID 0 | - |
 | 0 | 84306 |  | 20/07/2021 | ID 0 | - |
@@ -5269,7 +5270,6 @@
 | 0 | 80665 |  | 29/01/2021 | ID 0 | - |
 | 0 | 80456 |  | 20/01/2021 | ID 0 | - |
 | 0 | 80455 |  | 20/01/2021 | ID 0 | - |
-| 101618 | 80454 | 10.6A-05 | 20/01/2021 | Respondido Gerente de Testes | Criar a op��o "Considerar as defini��es das contribui��es retidas na fonte (PIS, |
 | 0 | 80452 |  | 20/01/2021 | ID 0 | - |
 | 0 | 80451 |  | 20/01/2021 | ID 0 | - |
 | 0 | 80448 |  | 20/01/2021 | ID 0 | - |
@@ -6501,7 +6501,7 @@
 | 0 | 68247 |  | 26/09/2019 | ID 0 | - |
 | 0 | 68246 |  | 26/09/2019 | ID 0 | - |
 | 0 | 68245 |  | 26/09/2019 | ID 0 | - |
-| 79960 | 68240 |  | 26/09/2019 | Retorno de Teste | Realizar um estudo no servidor do Busca NF-e para melhorar a parformance do rece |
+| 79960 | 68240 | 10.6A-07 | 26/09/2019 | Respondido Gerente de Produto | Realizar um estudo no servidor do Busca NF-e para melhorar a parformance do rece |
 | 0 | 68237 |  | 26/09/2019 | ID 0 | - |
 | 0 | 68229 |  | 26/09/2019 | ID 0 | - |
 | 0 | 68186 |  | 25/09/2019 | ID 0 | - |
@@ -6661,7 +6661,6 @@
 | 0 | 65476 |  | 28/06/2019 | ID 0 | - |
 | 68979 | 65456 |  | 27/06/2019 | Aguardando Resposta do Coordenador de Módulos DEMO | Demonstrar as notifica��es referente a produtos e defini��es tribut�rias vincula |
 | 0 | 65441 |  | 26/06/2019 | ID 0 | - |
-| 0 | 65440 |  | 26/06/2019 | ID 0 | - |
 | 68977 | 65431 |  | 26/06/2019 | Aguardando Resposta do Coordenador de Módulos DEMO | Demonstrar a notifica��o referente as parcelas originais de compras no OnBalance |
 | 68976 | 65426 |  | 26/06/2019 | Aguardando Resposta do Coordenador de Módulos DEMO | Demonstrar a notifica��o referente as parcelas originais de vendas de produtos n |
 | 68981 | 65385 |  | 25/06/2019 | Aguardando Resposta do Coordenador de Módulos DEMO | Demonstrar as notifica��es referentes a emiss�o de Nota Fiscal Eletr�nica no OnB |
@@ -8043,7 +8042,7 @@
 | 0 | 56096 |  | 17/07/2018 | ID 0 | - |
 | 0 | 56085 |  | 16/07/2018 | ID 0 | - |
 | 0 | 56084 |  | 16/07/2018 | ID 0 | - |
-| 0 | 56080 |  | 16/07/2018 | ID 0 | - |
+| 102295 | 56080 |  | 16/07/2018 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar a op��o Identificador na listagem e busca do cadastro de produtos. |
 | 0 | 56040 |  | 13/07/2018 | ID 0 | - |
 | 0 | 55995 |  | 12/07/2018 | ID 0 | - |
 | 0 | 55974 |  | 11/07/2018 | ID 0 | - |
@@ -8530,7 +8529,6 @@
 | 0 | 53525 |  | 06/04/2018 | ID 0 | - |
 | 0 | 53508 |  | 05/04/2018 | ID 0 | - |
 | 0 | 53494 |  | 05/04/2018 | ID 0 | - |
-| 0 | 53493 |  | 05/04/2018 | ID 0 | - |
 | 0 | 53490 |  | 05/04/2018 | ID 0 | - |
 | 0 | 53488 |  | 05/04/2018 | ID 0 | - |
 | 0 | 53485 |  | 05/04/2018 | ID 0 | - |
@@ -9739,7 +9737,6 @@
 | 48996 | 47541 |  | 15/08/2017 | Aguardando Resposta do Coordenador de Módulos DEMO | Otimizar o tempo de execu��o da rotina de abertura do cadastro de produtos. |
 | 0 | 47539 |  | 15/08/2017 | ID 0 | - |
 | 0 | 47536 |  | 15/08/2017 | ID 0 | - |
-| 0 | 47535 |  | 15/08/2017 | ID 0 | - |
 | 0 | 47534 |  | 15/08/2017 | ID 0 | - |
 | 0 | 47528 |  | 15/08/2017 | ID 0 | - |
 | 0 | 47472 |  | 11/08/2017 | ID 0 | - |
@@ -9925,7 +9922,6 @@
 | 0 | 45390 |  | 08/05/2017 | ID 0 | - |
 | 0 | 45379 |  | 05/05/2017 | ID 0 | - |
 | 0 | 45378 |  | 05/05/2017 | ID 0 | - |
-| 98820 | 45373 | 10.6A-05 | 05/05/2017 | Respondido Coordenador de Módulos DEMO | Criar op��o para emitir o Raz�o com as Contas Referenciais do SPED. |
 | 0 | 45370 |  | 05/05/2017 | ID 0 | - |
 | 0 | 45368 |  | 05/05/2017 | ID 0 | - |
 | 0 | 45366 |  | 05/05/2017 | ID 0 | - |
@@ -11008,7 +11004,7 @@
 | 0 | 35712 |  | 18/04/2016 | ID 0 | - |
 | 0 | 35707 |  | 15/04/2016 | ID 0 | - |
 | 0 | 35706 |  | 15/04/2016 | ID 0 | - |
-| 80661 | 35702 |  | 15/04/2016 | Aguardando Resposta do Coordenador de Módulos DEMO | Criar op��o para emitir somente contas anal�ticas no relat�rio cadastral de cont |
+| 80661 | 35702 |  | 15/04/2016 | Retorno de Teste | Criar op��o para emitir somente contas anal�ticas no relat�rio cadastral de cont |
 | 0 | 35688 |  | 15/04/2016 | ID 0 | - |
 | 41544 | 35686 |  | 15/04/2016 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o Importador para importar o estoque de notas fiscais de Entrada, Sa�da  |
 | 0 | 35679 |  | 14/04/2016 | ID 0 | - |

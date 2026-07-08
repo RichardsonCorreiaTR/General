@@ -1,40 +1,44 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 10/06/2026 15:03
-> Total SAIs unicas: 1673
+> Atualizado em: 07/07/2026 15:02
+> Total SAIs unicas: 1677
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 0 | 131474 |  | Normal | 09/06/2026 | ID 0 | - |
-| 102143 | 131102 |  | Normal | 26/05/2026 | SAI Aprovada | Está sendo calculado incorretamente o valor da majoração dos impostos 6-CSLL, 7- |
-| 102021 | 131032 |  | Normal | 22/05/2026 | SAI Aprovada | Está sendo demonstrado o valor incorreto de "Redução referente à alíquota zero d |
-| 101801 | 130776 |  | Normal | 14/05/2026 | SAI Aprovada | Não está calculando corretamente o saldo na apuração dos impostos 4-PIS e 5-COFI |
+| 0 | 132196 |  | Normal | 07/07/2026 | ID 0 | - |
+| 102581 | 131615 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
+| 102565 | 131603 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está impedindo a exclusão de lançamentos pela tela de Lançamentos de extrato |
+| 102460 | 131593 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
+| 102046 | 131184 |  | Normal | 27/05/2026 | Aguardando Resposta do Desenvolvimento DEMO | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRATO_BANCARI |
+| 102143 | 131102 |  | Normal | 26/05/2026 | SAI Aprovada | Est� sendo calculado incorretamente o valor da majora��o dos impostos 6-CSLL, 7- |
+| 102021 | 131032 |  | Normal | 22/05/2026 | SAI Aprovada | Est� sendo demonstrado o valor incorreto de "Redu��o referente � al�quota zero d |
+| 102473 | 130872 |  | Normal | 19/05/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está gerando o I157 para contas que não tiverem movimento no primeiro mês do |
+| 102492 | 130871 |  | Normal | 19/05/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está gerando linhas no J100 do SPED ECD quando a conta tem movimento no perí |
+| 101801 | 130776 |  | Normal | 14/05/2026 | SAI Aprovada | N�o est� calculando corretamente o saldo na apura��o dos impostos 4-PIS e 5-COFI |
 | 101549 | 130532 |  | Normal | 04/05/2026 | SAI Aprovada | Est� ocorrendo erro de banco de dados 'EFSDOIMP_RECEITA_IMPOSTOS_MAJORACAO_SCP'  |
 | 101489 | 130444 |  | Normal | 28/04/2026 | SAI Aprovada | N�o est�o sendo gerados todos os s�cios no relat�rio "Comprovante Anual de Reten |
 | 101275 | 130155 |  | Normal | 16/04/2026 | SAI Aprovada | N�o est�o sendo enviadas as atualiza��es das contas cont�beis para Conta Azul qu |
 | 101181 | 130055 |  | Normal | 13/04/2026 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no M�dulo Folha quando real |
-| 101124 | 129978 |  | Normal | 09/04/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está demonstrando indevidamente o submenu da DMPL no menu Emissões. |
-| 101085 | 129751 |  | Normal | 01/04/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está listando indevidamente as contas e os históricos da empresa corrente em tod |
-| 101695 | 129731 |  | Normal | 01/04/2026 | SAI Aprovada | TO-Não estão sendo gerados corretamente os quadros 3 e 4 do informativo DIF, qua |
+| 101326 | 129954 |  | Normal | 09/04/2026 | SAI Aprovada | N�o est� processando novo consentimento quando antigo est� inv�lido e possui tra |
+| 102366 | 129939 |  | Normal | 08/04/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está importando lançamento como pendente quando no arquivo não há a informaç |
+| 101695 | 129731 |  | Normal | 01/04/2026 | SAI Aprovada | TO-N�o est�o sendo gerados corretamente os quadros 3 e 4 do informativo DIF, qua |
+| 102585 | 129682 |  | Normal | 30/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está limpando o campo "Conta contábil do banco" ou "Contrapartida" na Regra  |
 | 100943 | 129661 |  | Normal | 30/03/2026 | SAI Aprovada | Est� habilitando indevidamente a guia "Relacionamento de produtos" no resumo de  |
-| 100956 | 129531 |  | Normal | 25/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está gerando o SPED Contábil quando há contas sem movimento/saldo não vincul |
-| 100901 | 129307 |  | Normal | 19/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está preenchendo automaticamente a conta referencial da nova conta contábil  |
-| 100597 | 129150 |  | Normal | 16/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está sendo exibido o CNPJ de empresas cadastradas com CNPJ alfanumérico no S |
-| 100963 | 129050 |  | Normal | 12/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está atualizando corretamente o número no ícone de transações pendentes, qua |
-| 100488 | 129035 |  | Normal | 11/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está sendo respeitado o parâmetro "Enviar individualmente aos clientes um li |
+| 101035 | 129512 |  | Normal | 25/03/2026 | SAI Aprovada | Em alguns casos est� ocorrendo o erro "uo_carrega_empresas_relat�rio" ao executa |
 | 100427 | 128943 |  | Normal | 10/03/2026 | SAI Aprovada | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
-| 100589 | 128887 |  | Normal | 06/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está consolidando corretamente o saldo anterior nos Livros Razão e Caixa, qu |
 | 100281 | 128605 |  | Normal | 27/02/2026 | SAI Aprovada | Corrigir o sistema para que a reten��o referente a rotina de distribui��o de luc |
 | 100203 | 128585 |  | Normal | 27/02/2026 | SAI Aprovada | Em alguns casos est� ocorrendo erro ao gerar o relat�rio de Comprovante Eletr�ni |
-| 100327 | 128582 |  | Normal | 26/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está validando indevidamente a coluna 'Checkbox' como obrigatória quando há algu |
-| 100325 | 128581 |  | Normal | 26/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está abrindo o calendário dos campos 'Arquivamento dos atos constitutivos *' |
 | 99885 | 127956 |  | Normal | 12/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
 | 100076 | 127937 |  | Normal | 12/02/2026 | SAI Aprovada | Est� sendo apresentada indevidamente a mensagem de erro "C�digo de atividade n�o |
 | 99781 | 127722 |  | Normal | 09/02/2026 | SAI Aprovada | Est� sendo apresentada mensagem de erro ao acessar o Comparativo de Regime Tribu |
 | 99836 | 127623 |  | Normal | 05/02/2026 | SAI Aprovada | Est�o sendo demonstrados incorretamente os impostos 183-IBS e 184-CBS no relat�r |
 | 99854 | 127505 |  | Normal | 03/02/2026 | Aguardando Resposta do Desenvolvimento DEMO | Transa��es marcadas como Read no socket da Fintech n�o estao presentes na tabela |
+| 100618 | 127428 |  | Normal | 03/02/2026 | SAI Aprovada | SC-Em alguns casos n�o est� sendo gerado o valor correto nos itens 040 e 199 do  |
+| 99479 | 127026 |  | Normal | 26/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� gerando o Status do consentimento corretamente no cont�bil quando ao al |
+| 99323 | 126700 |  | Normal | 19/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� exportando os dados do campo inscri��o do relat�rio para o excel |
 | 99315 | 126696 |  | Normal | 19/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� habilitado para filtrar no campo "Inscri��o" e n�o funciona multi-filtr |
 | 99313 | 126695 |  | Normal | 19/01/2026 | SAI Aprovada | N�o est� permitindo copiar os campos Transa��o e Inscri��o. |
+| 99306 | 126691 |  | Normal | 19/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | N�o est� sendo demonstrado completamente a descri��o da transa��o no parceiro Be |
 | 99242 | 126552 |  | Normal | 15/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Em alguns casos n�o est� atribuindo corretamente as permiss�es ao administrador  |
 | 99095 | 126320 |  | Normal | 09/01/2026 | Aguardando Resposta do Desenvolvimento DEMO | Transa��es com mesmo transaction_id est�o duplicando |
 | 98944 | 126014 |  | Normal | 02/01/2026 | SAI Aprovada | Est� mesclando indevidamente as c�lulas do relat�rio Raz�o em Excel. |

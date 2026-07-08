@@ -1,13 +1,15 @@
 ﻿# Onvio Contábil
 
 > Dominio Escrita Fiscal | slug `onvio-contabil`
-> Atualizado em: 10/06/2026 15:03
-> Pendentes: 2 | Liberadas: 6 | Descartadas: 4 | Total SAIs: 9
+> Atualizado em: 07/07/2026 15:02
+> Pendentes: 4 | Liberadas: 3 | Descartadas: 0 | Total SAIs: 7
 
-## Pendentes (2)
+## Pendentes (4)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 102957 | 132224 | SAM | Normal | 07/07/2026 | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
+| 0 | 132079 | SAM | Normal | 01/07/2026 | - |
 | 98079 | 122821 | SAM | Normal | 23/09/2025 | Listar as contas cont�beis e hist�ricos do Onvio Contabilidade no DW Escrita. |
 | 99525 | 121260 | SAM | Normal | 28/07/2025 | Criar e integrar as contas cont�beis e hist�ricos entre DW Escrita e Onvio Conta |
 
@@ -16,9 +18,6 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 98405 | 125084 | NE | 05/12/2025 | Est� sendo realizado de forma incorreta o envio de requisi��es para o Onvio Cont |
-| 97437 | 123318 | SAL | 10/10/2025 | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
-| 97524 | 122171 | SAL | 28/08/2025 | Gerar DLPA para matriz e filial. |
-| 96743 | 122166 | SAL | 28/08/2025 | Transferir automaticamente o valor de lucro ou prejuízo do período para o lucro  |
 | 86137 | 109118 | NE | 29/04/2024 | Est� sendo feita de forma incorreta a importa��o dos s�cios na janela "Importar  |
 | 86126 | 109107 | NE | 26/04/2024 | Est� sendo importado incorretamente o saldo das contas na janela "Importar Conta |
 
@@ -31,12 +30,7 @@
 
 ## Descartadas Recentes (10 mais recentes)
 
-| SAI | PSAI | Tipo | Cadastro | Resumo |
-|-----|------|------|----------|--------|
-| 0 | 131213 | SAIL | 28/05/2026 | - |
-| 97437 | 123318 | SAL | 10/10/2025 | Compensar automaticamente o lucro e prejuízo entre matriz e filiais. |
-| 97524 | 122171 | SAL | 28/08/2025 | Gerar DLPA para matriz e filial. |
-| 96743 | 122166 | SAL | 28/08/2025 | Transferir automaticamente o valor de lucro ou prejuízo do período para o lucro  |
+Nenhuma SAI descartada neste dominio.
 
 ## Busca Completa
 
