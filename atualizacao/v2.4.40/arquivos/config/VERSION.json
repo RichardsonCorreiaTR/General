@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "- feat: scripts/Consultar-PSAI-SGD.ps1 e Enriquecer-PSAI-DadosBrutos.ps1 -- credenciais SGD detectadas automaticamente (variaveis de ambiente, .sgd-credentials.local em multiplos caminhos); Read-Host apenas se nao houver credenciais configuradas.\n- feat: scripts/lib-sgd-caminhos.ps1 -- nova funcao Test-SgdCredentialsLocalFileAny para busca de credenciais em multiplos caminhos.\n- feat: scripts/atualizar-projeto.ps1 -- publicar logs do analista automaticamente para o General (ultimos 3 dias) apos atualizacao; nao interrompe se falhar.\n- feat: .cursor/rules/revisar-psai.mdc -- verificacao obrigatoria para NE: Definicao com conteudo deve incluir clausula para demais casos.",
-    "data":  "2026-07-08",
-    "hash_validacao":  "CD4A25AEC67DCC36544FF09FBF879ACB",
-    "versao":  "2.4.40"
-}

@@ -44,6 +44,14 @@ function Get-UrlPsai($numero) {
     $n = 0; if ([int]::TryParse([string]$numero, [ref]$n) -and $n -gt 0) { return "$URL_PSAI_BASE$n" } else { return "" }
 }
 
+function Test-NumeroSaiPsai($reg, [string]$numStr) {
+    $num = 0
+    if (-not [int]::TryParse($numStr.Trim(), [ref]$num) -or $num -le 0) { return $false }
+    $sai = 0; [void][int]::TryParse([string]$reg.i_sai, [ref]$sai)
+    $psai = 0; [void][int]::TryParse([string]$reg.i_psai, [ref]$psai)
+    return ($sai -eq $num -or $psai -eq $num)
+}
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
 if ($env:BUSCAR_SAI_DADOS_DIR -and (Test-Path $env:BUSCAR_SAI_DADOS_DIR)) {
@@ -136,6 +144,10 @@ if ($SAI -ne 0) {
     # Filtro por termo (busca em 14 campos: texto + BLOBs + metadados)
     if ($Termo) {
         $termoLower = $Termo.ToLower()
+        if ($Termo -match '^\d+$') {
+            Write-Host "  Termo numerico: buscando i_sai/i_psai = $Termo" -ForegroundColor DarkCyan
+            $resultado = @($resultado | Where-Object { Test-NumeroSaiPsai $_ $Termo })
+        } else {
         $resultado = @($resultado | Where-Object {
             (SafeStr $_.sai_descricao).ToLower().Contains($termoLower) -or
             (SafeStr $_.comportamento).ToLower().Contains($termoLower) -or
@@ -152,6 +164,7 @@ if ($SAI -ne 0) {
             (SafeStr $_.situacaoPsai).ToLower().Contains($termoLower) -or
             (SafeStr $_.nivel_alteracao).ToLower().Contains($termoLower)
         })
+        }
     }
 
     # Filtro por modulo (busca em nomeArea e sai_descricao)

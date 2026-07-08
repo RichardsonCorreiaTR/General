@@ -62,6 +62,14 @@ function Get-UrlPsai($numero) {
     $n = 0; if ([int]::TryParse([string]$numero, [ref]$n) -and $n -gt 0) { return "$URL_PSAI_BASE$n" } else { return "" }
 }
 
+function Test-NumeroSaiPsai($reg, [string]$numStr) {
+    $num = 0
+    if (-not [int]::TryParse($numStr.Trim(), [ref]$num) -or $num -le 0) { return $false }
+    $sai = 0; [void][int]::TryParse([string]$reg.i_sai, [ref]$sai)
+    $psai = 0; [void][int]::TryParse([string]$reg.i_psai, [ref]$psai)
+    return ($sai -eq $num -or $psai -eq $num)
+}
+
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $projetoDir = Split-Path -Parent $scriptDir
 if ($env:BUSCAR_SAI_DADOS_DIR -and (Test-Path $env:BUSCAR_SAI_DADOS_DIR)) {
@@ -206,7 +214,9 @@ if ($SAI -ne 0) {
             # Para cada termo, ver se bate em ALGUM dos campos. OR entre termos.
             $bateAlgumTermo = $false
             for ($i = 0; $i -lt $termosBusca.Count; $i++) {
-                if ($SomenteDescricao) {
+                if ($termosBusca[$i] -match '^\d+$') {
+                    if (Test-NumeroSaiPsai $reg $termosBusca[$i]) { $bateAlgumTermo = $true; break }
+                } elseif ($SomenteDescricao) {
                     # Restringe a sai_descricao
                     if (Test-TermoMatch $reg.sai_descricao $i) { $bateAlgumTermo = $true; break }
                 } else {
@@ -231,6 +241,7 @@ if ($SAI -ne 0) {
         })
 
         $modoBusca = if ($Termos.Count -gt 0) { "OR entre $($termosBusca.Count) termos" } else { "termo unico" }
+        if ($termosBusca.Count -eq 1 -and $termosBusca[0] -match '^\d+$') { $modoBusca += ", numero SAI/PSAI" }
         if ($PalavraIsolada) { $modoBusca += ", palavra isolada" }
         if ($SomenteDescricao) { $modoBusca += ", so descricao" }
         Write-Host "  Filtro de termo aplicado: $modoBusca" -ForegroundColor DarkCyan

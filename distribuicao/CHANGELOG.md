@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.41 - 08/07/2026
+
+- fix: scripts/buscar-sai.ps1 -- -Termo com apenas digitos agora busca por numero de SAI ou PSAI (ex.: -Termo 101291).
+
+---
+
 ## v2.4.40 - 08/07/2026
 
 - feat: scripts/Consultar-PSAI-SGD.ps1 e Enriquecer-PSAI-DadosBrutos.ps1 -- credenciais SGD detectadas automaticamente (variaveis de ambiente, .sgd-credentials.local em multiplos caminhos); Read-Host apenas se nao houver credenciais configuradas.
@@ -370,6 +376,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

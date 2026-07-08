@@ -1,13 +1,10 @@
-﻿# Atualizacao v2.4.40 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.41 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-- feat: scripts/Consultar-PSAI-SGD.ps1 e Enriquecer-PSAI-DadosBrutos.ps1 -- credenciais SGD detectadas automaticamente (variaveis de ambiente, .sgd-credentials.local em multiplos caminhos); Read-Host apenas se nao houver credenciais configuradas.
-- feat: scripts/lib-sgd-caminhos.ps1 -- nova funcao Test-SgdCredentialsLocalFileAny para busca de credenciais em multiplos caminhos.
-- feat: scripts/atualizar-projeto.ps1 -- publicar logs do analista automaticamente para o General (ultimos 3 dias) apos atualizacao; nao interrompe se falhar.
-- feat: .cursor/rules/revisar-psai.mdc -- verificacao obrigatoria para NE: Definicao com conteudo deve incluir clausula para demais casos.
+- fix: scripts/buscar-sai.ps1 -- -Termo com apenas digitos agora busca por numero de SAI ou PSAI (ex.: -Termo 101291).
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -99,6 +96,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.40".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.41".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.
