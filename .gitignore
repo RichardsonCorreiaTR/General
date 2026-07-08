@@ -79,3 +79,10 @@ projeto-filho/referencia/logs/
 
 # Pasta de saidas temporarias (logs operacionais, drafts de mensagens)
 tmp/
+
+# Consultas SGD locais (GP) — saidas pesadas e credenciais
+data/sgd-psai-consultas/
+
+# SGD Python cache e consultas SAI locais (Admin)
+scripts/sgd_consulta/__pycache__/
+scripts/sgd_consulta/data/consultas/sai_*.json
