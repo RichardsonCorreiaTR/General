@@ -1,20 +1,13 @@
-﻿# Atualizacao v2.4.39 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.40 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-- breaking: GitHub-only no projeto-filho. Analista NAO clona mais o codigo do BR Contabil; toda consulta vai via gh CLI sob demanda.
-- remove: scripts/atualizar-codigo.ps1 e scripts/atualizar-codigo-fonte.ps1 (nao mais necessarios no filho).
-- remove: config/codigo-fonte.json (consumido pelos scripts removidos).
-- breaking: campo "codigo_local" removido de config/caminhos.json. Instalador (General) nao escreve mais esse campo.
-- feat: .cursor/rules/agente-codigo.mdc reescrito - "Onde buscar" agora documenta apenas gh api (sem clone local). Inclui comandos basicos (branches, contents, search/code) e protecao de rate limit.
-- feat: .cursor/rules/acesso-github.mdc enfatiza que gh api e o UNICO modo de consulta (sem mais "Modo A/Modo B").
-- feat: scripts/verificar-ambiente.ps1 sem checagem "Codigo-fonte local" (checagens 2b/2c/2d ja cobrem gh + auth + acesso ao repo).
-- feat: scripts/instalar-projeto-filho.ps1 (General) - Install-GitCode/Install-FromZip substituidos por Test-GitHubAccess (verifica gh, auth, acesso a tr/brtap-dominio_contabil); Passo 6 do instalador renomeado "Verificando acesso ao GitHub".
-- docs: SETUP.md (pre-requisitos sem Git opcional), SETUP-GITHUB.md (secao "Como a IA usa" reescrita), PROMPT-INSTALACAO.md (passo 4 sem codigo_local), PROJETO.md (estrutura sem atualizar-codigo.ps1; tabela de scripts atualizada), GUIA-RAPIDO.md (FAQ "Onde vejo o codigo-fonte" reescrita), CORRECAO-SYMLINKS.md (sem codigo_local).
-- docs: corrigir-symlinks.ps1 - codigo_local removido da reconstrucao automatica.
-- nota: General MANTEM Modo A (gestor tem clone local em C:\1 - A\B\Programas\brtap-dominio; scripts/atualizar-codigo.ps1 e atualizar-tudo.bat continuam validos para o admin).
+- feat: scripts/Consultar-PSAI-SGD.ps1 e Enriquecer-PSAI-DadosBrutos.ps1 -- credenciais SGD detectadas automaticamente (variaveis de ambiente, .sgd-credentials.local em multiplos caminhos); Read-Host apenas se nao houver credenciais configuradas.
+- feat: scripts/lib-sgd-caminhos.ps1 -- nova funcao Test-SgdCredentialsLocalFileAny para busca de credenciais em multiplos caminhos.
+- feat: scripts/atualizar-projeto.ps1 -- publicar logs do analista automaticamente para o General (ultimos 3 dias) apos atualizacao; nao interrompe se falhar.
+- feat: .cursor/rules/revisar-psai.mdc -- verificacao obrigatoria para NE: Definicao com conteudo deve incluir clausula para demais casos.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -106,6 +99,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.39".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.40".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

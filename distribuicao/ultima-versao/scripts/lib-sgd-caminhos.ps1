@@ -48,6 +48,30 @@ function Test-SgdCredentialsLocalFile {
     return $false
 }
 
+function Test-SgdCredentialsLocalFileAny {
+    <#
+    .SYNOPSIS
+      True se existir credencial local valida num dos caminhos usados pelo env.py (monorepo ou filho).
+    #>
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$GeneralRoot,
+        [Parameter(Mandatory = $true)]
+        [string]$PkgDir
+    )
+    $dirs = @(
+        (Join-Path $GeneralRoot "projeto-filho\data\sgd-psai-consultas"),
+        (Join-Path $GeneralRoot "data\sgd-psai-consultas"),
+        (Join-Path $GeneralRoot "scripts\sgd_consulta"),
+        $PkgDir
+    )
+    foreach ($d in $dirs) {
+        if ([string]::IsNullOrWhiteSpace($d)) { continue }
+        if (Test-SgdCredentialsLocalFile -DataRootSgd $d) { return $true }
+    }
+    return $false
+}
+
 function Save-SgdCredentialsLocalFile {
     <#
     .SYNOPSIS

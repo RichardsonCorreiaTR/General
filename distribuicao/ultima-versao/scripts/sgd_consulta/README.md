@@ -8,15 +8,15 @@ Cópia autocontida do fluxo `consultar_psai.py` + sessão Playwright do projeto 
 - Pacotes: `pip install -r requirements.txt`
 - Navegador: `playwright install chromium`
 
-Não há dependência do repositório `SGD` no disco; apenas o site SGD e credenciais indicadas **por si** em cada execução.
+Não há dependência do repositório `SGD` no disco; apenas o site SGD e credenciais (ambiente, ficheiro local ou pedido no terminal).
 
 ## Credenciais (política)
 
 - **`SGD_USERNAME` e `SGD_PASSWORD` não são lidos dos `.env` gerais** do projeto (evita misturar contas).
-- **Opcional na sua máquina:** copie `.sgd-credentials.local.example` para **`.sgd-credentials.local`** (na mesma pasta) e preencha — ficheiro **gitignored**; o `env.py` carrega só se as variáveis ainda não estiverem definidas (variáveis de ambiente ou o script PowerShell têm prioridade). **Projeto-filho:** o mesmo ficheiro pode ficar em `projeto-filho/data/sgd-psai-consultas/.sgd-credentials.local` (é tentado **antes** do ficheiro em `scripts/sgd_consulta/`).
-- **Variável `SGD_SGD_DATA_ROOT`:** se definida (o `projeto-filho/scripts/Consultar-PSAI-SGD.ps1` define automaticamente), todas as saídas (`consultas/`, `arquivo/`, `logs/`) e a sessão Playwright passam a gravar nessa pasta em vez de `scripts/sgd_consulta/data/`.
-- **Recomendado em equipa:** `.\scripts\Consultar-PSAI-SGD.ps1` ou `projeto-filho\scripts\...` — pedem utilizador e senha no terminal.
-- **Terminal interativo sem ficheiro local:** o Python pede credenciais. Em CI, exporte `SGD_USERNAME` e `SGD_PASSWORD` no ambiente.
+- **Opcional na sua máquina:** copie `.sgd-credentials.local.example` para **`.sgd-credentials.local`** e preencha — ficheiro **gitignored**. O `env.py` tenta, por ordem: `projeto-filho/data/sgd-psai-consultas/`, `data/sgd-psai-consultas/` (raiz do General) e `scripts/sgd_consulta/` — só aplica se as variáveis **ainda não** estiverem definidas no ambiente.
+- **`Consultar-PSAI-SGD.ps1` na raiz do General** (`.\scripts\Consultar-PSAI-SGD.ps1`): usa variáveis de ambiente, depois qualquer um desses `.sgd-credentials.local`; só pede `Read-Host` se faltar tudo. Define `SGD_SGD_DATA_ROOT` para `data/sgd-psai-consultas` na raiz do clone (saídas fora de `scripts/sgd_consulta/data/`).
+- **`projeto-filho/scripts/Consultar-PSAI-SGD.ps1`:** define `SGD_SGD_DATA_ROOT` em `projeto-filho/data/sgd-psai-consultas/` (fluxo do analista).
+- **Terminal / CI sem ficheiro:** o Python pode pedir credenciais; em CI use `SGD_USERNAME` e `SGD_PASSWORD` no ambiente.
 
 O `.env` serve para `SGD_URL`, `SCRAPER_HEADLESS`, `SCRAPER_TIMEOUT_MS`, `SCRAPER_SESSION_FILE`, `LOG_LEVEL`, etc. — ver `.env.example`.
 

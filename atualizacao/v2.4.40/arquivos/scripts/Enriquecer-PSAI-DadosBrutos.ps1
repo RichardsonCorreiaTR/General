@@ -36,12 +36,34 @@ $dataRoot = Join-Path $projetoDir "data\sgd-psai-consultas"
 New-Item -ItemType Directory -Force -Path $dataRoot | Out-Null
 $env:SGD_SGD_DATA_ROOT = $dataRoot
 
+$parent = Split-Path -Parent $projetoDir
+$credRoot = $projetoDir
+$pyMonorepo = Join-Path $parent "scripts\sgd_consulta\consultar_psai.py"
+if (Test-Path -LiteralPath $pyMonorepo) {
+    $credRoot = $parent
+}
+
 $credFromShell = $false
-if (Test-SgdCredentialsLocalFile -DataRootSgd $dataRoot) {
+$envUser = $env:SGD_USERNAME
+$envPass = $env:SGD_PASSWORD
+$envCred = (-not [string]::IsNullOrWhiteSpace($envUser)) -and (-not [string]::IsNullOrWhiteSpace($envPass))
+
+if ($envCred) {
     Write-Host ""
-    Write-Host "Credenciais SGD: a usar ficheiro local." -ForegroundColor DarkGray
+    Write-Host "Credenciais SGD: variaveis de ambiente." -ForegroundColor DarkGray
+}
+elseif (Test-SgdCredentialsLocalFileAny -GeneralRoot $credRoot -PkgDir $pkg) {
+    Write-Host ""
+    Write-Host "Credenciais SGD: ficheiro .sgd-credentials.local." -ForegroundColor DarkGray
 }
 else {
+    if ([Console]::IsInputRedirected) {
+        Write-Error @"
+Credenciais SGD nao configuradas (execucao nao-interativa).
+
+Defina SGD_USERNAME/SGD_PASSWORD ou crie .sgd-credentials.local (ver scripts\sgd_consulta\.sgd-credentials.local.example).
+"@
+    }
     Write-Host ""
     Write-Host "SGD — indique utilizador e senha (primeira vez ou sem ficheiro .sgd-credentials.local)." -ForegroundColor Cyan
     $u = Read-Host "Utilizador SGD"

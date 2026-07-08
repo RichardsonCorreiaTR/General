@@ -1,4 +1,4 @@
----
+﻿---
 description: Revisao completa de PSAI/SAI — tipo, ortografia, ambiguidade, exemplos e conformidade com padroes (alinhado ao General; passo 6 em meu-trabalho)
 alwaysApply: false
 ---
@@ -82,7 +82,7 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` (geral); 
 - [ ] **Calculos** (SAM/SAL/SAIL apenas — nao aplicavel a NE): cada calculo classificado quanto a possibilidade de gerar negativo + tratamento explicito definido (ver `GUIA-validacao-calculos-negativos.md`)?
 
 ### Especifico por tipo
-- **NE**: **comportamento** e o foco da revisao (padroes completos). **Definicao:** avaliar se ha conteudo; se houver, validar; se vazio, aceitar. Qual/onde/quando; banco de cliente com "Em alguns casos..." sem "quando"; comportamento separado por topicos de Menu/Submenu; topico "Banco de Dados" presente se reproduzido em banco proprio; classificacao (Grave/Alta/Media) definida.
+- **NE**: **comportamento** e o foco da revisao (padroes completos). **Definicao:** avaliar se ha conteudo; se houver, validar; se vazio, aceitar. **Definicao com conteudo:** verificar se indica que "para os demais casos deve ser mantido o comportamento atual" -- quando a definicao define o "sendo correto" apenas para cenarios especificos, a clausula e obrigatoria para evitar ambiguidade no desenvolvimento. Qual/onde/quando; banco de cliente com "Em alguns casos..." sem "quando"; comportamento separado por topicos de Menu/Submenu; topico "Banco de Dados" presente se reproduzido em banco proprio; classificacao (Grave/Alta/Media) definida.
 - **SAM**: descricao clara da limitacao ou necessidade; cenarios de uso cobertos; impacto em outros modulos avaliado.
 - **SAL**: aplicar `templates/GUIA-validacao-sal.md` (guia dedicado — identificacao da norma, datas de publicacao/vigencia/eficacia/retroatividade, comportamento anterior x novo, plano de liberacao, reflexos e comunicacao externa).
 - **SAIL**: base legal citada; data de vigencia informada; comportamento anterior x novo descrito (guia dedicado em desenvolvimento).
@@ -144,3 +144,4 @@ APROVADO / DEVOLVER (com motivo) / ESCALAR
 ```
 
 Apos emitir o parecer no chat, **atualizar** `meu-trabalho/validacoes-psai/psai-<N>.md` conforme passo 6.
+

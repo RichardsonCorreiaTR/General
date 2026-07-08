@@ -164,6 +164,64 @@ if (Test-Path $syncAreasScript) {
     }
 }
 
+# Publicar logs do analista para o General (silencioso; nao interrompe a atualizacao se falhar)
+$caminhosLogFile = Join-Path $projetoDir "config\caminhos.json"
+if (Test-Path -LiteralPath $caminhosLogFile) {
+    try {
+        $caminhosLog = Get-Content $caminhosLogFile -Raw -ErrorAction Stop | ConvertFrom-Json
+
+        # Determinar raiz do General
+        $generalRootLog = ""
+        if ($caminhosLog.PSObject.Properties['onedrive_base'] -and $caminhosLog.onedrive_base) {
+            $generalRootLog = $caminhosLog.onedrive_base
+        }
+
+        $publicarScript = if ($generalRootLog) { Join-Path $generalRootLog "scripts\Publicar-LogAnalista.ps1" } else { "" }
+
+        if ($generalRootLog -and (Test-Path -LiteralPath $publicarScript)) {
+
+            # Derivar slug: preferir ultimo segmento de onedrive_logs, senao derivar do nome
+            $slugLog = ""
+            if ($caminhosLog.PSObject.Properties['onedrive_logs'] -and $caminhosLog.onedrive_logs) {
+                $slugLog = Split-Path -Leaf $caminhosLog.onedrive_logs
+            }
+            if (-not $slugLog -and $analista.PSObject.Properties['nome'] -and $analista.nome) {
+                $n = $analista.nome.ToLower()
+                $n = $n -replace '[áàãâä]','a' -replace '[éèêë]','e' -replace '[íìîï]','i'
+                $n = $n -replace '[óòõôö]','o' -replace '[úùûü]','u' -replace '[ç]','c'
+                $n = $n -replace '\s+','-' -replace '[^a-z0-9\-]',''
+                $slugLog = $n
+            }
+
+            if ($slugLog) {
+                Write-Host "  Publicando logs no General (ultimos 3 dias)..." -ForegroundColor Yellow
+                $logOrigem = Join-Path $projetoDir "referencia\logs"
+                $publicados = 0
+                $diasPublicar = 0..2 | ForEach-Object { (Get-Date).AddDays(-$_).ToString("yyyy-MM-dd") }
+                foreach ($dia in $diasPublicar) {
+                    $logArquivo = Join-Path $logOrigem "${dia}.md"
+                    if (Test-Path -LiteralPath $logArquivo) {
+                        try {
+                            & $publicarScript -AnalistaSlug $slugLog -OrigemDir $logOrigem -Data $dia -GeneralRoot $generalRootLog
+                            $publicados++
+                        } catch {
+                            Write-Host "  (Aviso) Nao foi possivel publicar log ${dia}: $($_.Exception.Message)" -ForegroundColor DarkYellow
+                        }
+                    }
+                }
+                if ($publicados -gt 0) {
+                    Write-Host "  Logs publicados: $publicados dia(s)." -ForegroundColor Green
+                    Write-Host "  No General: .\scripts\consolidar-logs.ps1 -Periodo semana" -ForegroundColor DarkGray
+                } else {
+                    Write-Host "  Nenhum log encontrado para publicar nos ultimos 3 dias." -ForegroundColor DarkGray
+                }
+            }
+        }
+    } catch {
+        Write-Host "  (Aviso) Publicacao de logs ignorada: $($_.Exception.Message)" -ForegroundColor DarkYellow
+    }
+}
+
 # Limpeza
 if ($fonteDir -like "*$($env:TEMP)*") { Remove-Item -Recurse -Force $fonteDir -ErrorAction SilentlyContinue }
 

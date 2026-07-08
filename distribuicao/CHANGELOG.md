@@ -1,5 +1,14 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.40 - 08/07/2026
+
+- feat: scripts/Consultar-PSAI-SGD.ps1 e Enriquecer-PSAI-DadosBrutos.ps1 -- credenciais SGD detectadas automaticamente (variaveis de ambiente, .sgd-credentials.local em multiplos caminhos); Read-Host apenas se nao houver credenciais configuradas.
+- feat: scripts/lib-sgd-caminhos.ps1 -- nova funcao Test-SgdCredentialsLocalFileAny para busca de credenciais em multiplos caminhos.
+- feat: scripts/atualizar-projeto.ps1 -- publicar logs do analista automaticamente para o General (ultimos 3 dias) apos atualizacao; nao interrompe se falhar.
+- feat: .cursor/rules/revisar-psai.mdc -- verificacao obrigatoria para NE: Definicao com conteudo deve incluir clausula para demais casos.
+
+---
+
 ## v2.4.39 - 10/06/2026
 
 - breaking: GitHub-only no projeto-filho. Analista NAO clona mais o codigo do BR Contabil; toda consulta vai via gh CLI sob demanda.
@@ -361,6 +370,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 

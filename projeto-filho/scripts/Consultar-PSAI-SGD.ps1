@@ -49,10 +49,27 @@ New-Item -ItemType Directory -Force -Path $dataRoot | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $dataRoot "consultas") | Out-Null
 $env:SGD_SGD_DATA_ROOT = $dataRoot
 
+$parent = Split-Path -Parent $projetoDir
+$credRoot = $projetoDir
+$pyMonorepo = Join-Path $parent "scripts\sgd_consulta\consultar_psai.py"
+if (Test-Path -LiteralPath $pyMonorepo) {
+    $credRoot = $parent
+}
+
 $credFromShell = $false
-if (Test-SgdCredentialsLocalFile -DataRootSgd $dataRoot) {
+$envUser = $env:SGD_USERNAME
+$envPass = $env:SGD_PASSWORD
+$envCred = (-not [string]::IsNullOrWhiteSpace($envUser)) -and (-not [string]::IsNullOrWhiteSpace($envPass))
+
+if ($envCred) {
     Write-Host ""
-    Write-Host "Credenciais SGD: a usar ficheiro local (primeira consulta já configurada)." -ForegroundColor DarkGray
+    Write-Host "Credenciais SGD: a usar variaveis de ambiente SGD_USERNAME/SGD_PASSWORD." -ForegroundColor DarkGray
+    Write-Host "Dados locais (JSON, arquivo, logs, sessão): $dataRoot" -ForegroundColor DarkGray
+    Write-Host ""
+}
+elseif (Test-SgdCredentialsLocalFileAny -GeneralRoot $credRoot -PkgDir $pkg) {
+    Write-Host ""
+    Write-Host "Credenciais SGD: a usar .sgd-credentials.local (data do filho, data/ ou scripts/sgd_consulta do monorepo)." -ForegroundColor DarkGray
     Write-Host "Dados locais (JSON, arquivo, logs, sessão): $dataRoot" -ForegroundColor DarkGray
     Write-Host ""
 }
@@ -61,14 +78,11 @@ else {
         Write-Error @"
 Credenciais SGD nao configuradas e execucao nao-interativa detectada.
 
-Para configurar as credenciais, execute o script UMA VEZ manualmente no terminal:
+Configure variaveis SGD_USERNAME/SGD_PASSWORD, um ficheiro .sgd-credentials.local (ver exemplo no pacote sgd_consulta),
+ou execute UMA VEZ manualmente:
 
     cd <pasta-projeto-filho>
     .\scripts\Consultar-PSAI-SGD.ps1 <numero-psai> --json
-
-Na primeira execucao interativa o script pedira usuario/senha e oferecera gravar
-em data\sgd-psai-consultas\.sgd-credentials.local.
-Apos isso o agente Cursor podera rodar automaticamente sem interrupcao.
 "@
     }
     Write-Host ""
