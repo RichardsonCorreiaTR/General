@@ -1,10 +1,12 @@
 ﻿# SAIL Pendentes - Escrita Fiscal
 
-> Atualizado em: 07/07/2026 15:02
-> Total pendentes: 1668
+> Atualizado em: 14/07/2026 18:03
+> Total pendentes: 1670
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 132335 |  | 13/07/2026 | ID 0 | - |
+| 0 | 132231 |  | 07/07/2026 | ID 0 | - |
 | 0 | 132198 |  | 07/07/2026 | ID 0 | - |
 | 0 | 132181 |  | 06/07/2026 | ID 0 | - |
 | 0 | 132146 |  | 03/07/2026 | ID 0 | - |

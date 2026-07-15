@@ -1,8 +1,8 @@
 ﻿# LALUR
 
 > Dominio Escrita Fiscal | slug `lalur`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 21 | Liberadas: 731 | Descartadas: 64 | Total SAIs: 816
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 21 | Liberadas: 732 | Descartadas: 64 | Total SAIs: 817
 
 ## Pendentes (21)
 
@@ -35,6 +35,7 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 102888 | 132136 | NE | 02/07/2026 | Não está sendo feito o cálculo correto do imposto 7-IRPJ, quando no período poss |
+| 102928 | 132128 | NE | 02/07/2026 | Está apresentando indevidamente mensagem de validação no cálculo do LALUR, quand |
 | 102406 | 131504 | NE | 10/06/2026 | N�o est� sendo gerado o valor correto para os impostos 6-CSLL e 7-IRPJ na apura� |
 | 102265 | 131323 | NE | 02/06/2026 | Em alguns casos está importando incorretamente os valores da CSLL Retida no regi |
 | 102207 | 131282 | NE | 01/06/2026 | Est� importando incorretamente o valor do 'Lucro antes da CSLL e IRPJ', quando p |
@@ -63,7 +64,6 @@
 | 101657 | 129308 | NE | 19/03/2026 | N�o est� sendo habilitada a op��o 'Aplicar o percentual de presun��o dos imposto |
 | 100616 | 129151 | NE | 16/03/2026 | Em alguns casos n�o est� sendo feito o c�lculo correto do imposto 7-IRPJ. |
 | 100319 | 128756 | NE | 04/03/2026 | Est� sendo indevidamente considerada majora��o maior que 100% no c�lculo dos imp |
-| 100773 | 128556 | SAL | 26/02/2026 | Criar novas al�quotas de CSLL a partir de 04/2026 conforme Lei Complementar 224/ |
 
 ## Temas Frequentes
 
@@ -71,7 +71,7 @@
 |------|-------------|
 | irpj | 484 |
 | csll | 372 |
-| lalur | 127 |
+| lalur | 128 |
 | lucro real | 84 |
 | lacs | 1 |
 

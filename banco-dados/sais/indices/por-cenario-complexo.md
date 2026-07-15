@@ -1,13 +1,13 @@
 ﻿# Indice de SAIs por Cenario Complexo
 
-> Atualizado em: 07/07/2026 15:02
+> Atualizado em: 14/07/2026 15:03
 > Cenarios que cruzam multiplos dominios (SAIs classificadas em 2+ dominios)
 
 ## Resumo por combinacao de dominios
 
 | Combinacao | SAIs | Pendentes |
 |-----------|------|-----------|
-| Apuracao de impostos + Escrituracao e movimento fiscal | 4993 | 60 |
+| Apuracao de impostos + Escrituracao e movimento fiscal | 4995 | 60 |
 | Apuracao de impostos + SPED e documentos eletronicos | 2787 | 48 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + SPED e documentos eletronicos | 1478 | 22 |
 | Apuracao de impostos + Obrigacoes e relatorios estaduais | 1032 | 26 |
@@ -15,17 +15,17 @@
 | Apuracao de impostos + Escrituracao e movimento fiscal + Obrigacoes e relatorios estaduais | 891 | 7 |
 | Apuracao de impostos + Contabilidade | 814 | 33 |
 | Apuracao de impostos + Onvio, importacao e dados + SPED e documentos eletronicos | 580 | 15 |
-| Apuracao de impostos + Conteúdo Contábil Tributário + SPED e documentos eletronicos | 488 | 10 |
+| Apuracao de impostos + Conteúdo Contábil Tributário + SPED e documentos eletronicos | 488 | 9 |
 | Apuracao de impostos + Integracoes e canais digitais | 441 | 23 |
 | Apuracao de impostos + LALUR | 425 | 10 |
-| Apuracao de impostos + Onvio, importacao e dados | 356 | 14 |
-| Apuracao de impostos + Utilitarios e rotinas | 277 | 24 |
+| Apuracao de impostos + Onvio, importacao e dados | 357 | 15 |
+| Apuracao de impostos + Utilitarios e rotinas | 278 | 24 |
 | Apuracao de impostos + Escrituracao e movimento fiscal + Integracoes e canais digitais | 255 | 4 |
 | Apuracao de impostos + Obrigacoes e relatorios estaduais + SPED e documentos eletronicos | 244 | 3 |
 
 ## Detalhamento dos maiores cenarios
 
-### Apuracao de impostos + Escrituracao e movimento fiscal (4993 SAIs, 60 pendentes)
+### Apuracao de impostos + Escrituracao e movimento fiscal (4995 SAIs, 60 pendentes)
 
 | SAI | PSAI | Tipo | Resumo |
 |-----|------|------|--------|

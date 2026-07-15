@@ -1,8 +1,8 @@
 ﻿# Obrigacoes e relatorios estaduais
 
 > Dominio Escrita Fiscal | slug `obrigacoes-relatorios-estaduais`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 96 | Liberadas: 3051 | Descartadas: 360 | Total SAIs: 3503
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 96 | Liberadas: 3051 | Descartadas: 361 | Total SAIs: 3504
 
 ## Pendentes (96)
 
@@ -154,6 +154,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102859 | 132081 | NE | 01/07/2026 | Estão sendo geradas indevidamente as notas de "Operação considerada no cálculo d |
 | 102021 | 131032 | NE | 22/05/2026 | Est� sendo demonstrado o valor incorreto de "Redu��o referente � al�quota zero d |
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
 | 97627 | 123713 | SAM | 23/10/2025 | Ajustar o sistema para que consiga seguir no captcha 'Sou humano' no momento da  |
@@ -163,7 +164,6 @@
 | 94244 | 119198 | NE | 13/05/2025 | N�o est� importando a tabela de Al�quota Interestadual de ICMS conforme o perfil |
 | 95101 | 119008 | NE | 06/05/2025 | Em alguns casos est� ocorrendo o erro "Ocorreu um erro ao unir os PDF's. Um dos  |
 | 92379 | 117020 | SAL | 24/02/2025 | Ajustar o sistema para n�o gerar a UF e o n�mero do CRC no arquivo 'jason" do in |
-| 91436 | 115787 | NE | 09/01/2025 | N�o est� replicando da configura��o de importa��o NF-e Arquivo XML para a import |
 
 ## Busca Completa
 

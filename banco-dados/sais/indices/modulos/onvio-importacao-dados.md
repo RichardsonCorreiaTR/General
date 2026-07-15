@@ -1,15 +1,17 @@
 ﻿# Onvio, importacao e dados
 
 > Dominio Escrita Fiscal | slug `onvio-importacao-dados`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 162 | Liberadas: 2874 | Descartadas: 311 | Total SAIs: 3340
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 164 | Liberadas: 2874 | Descartadas: 311 | Total SAIs: 3342
 
-## Pendentes (162)
+## Pendentes (164)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 0 | 132390 | SAM | Normal | 14/07/2026 | - |
+| 103074 | 132374 | SAM | Normal | 14/07/2026 | Inibir a importação de grandes lotes de arquivos de notas descompactadas para im |
+| 103045 | 132347 | SAM | Normal | 13/07/2026 | Testar a importação do cadastro de fornecedores com a criação do campo "Data Nas |
 | 102957 | 132224 | SAM | Normal | 07/07/2026 | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
-| 0 | 132217 | SAM | Normal | 07/07/2026 | - |
 | 102845 | 132103 | SAM | Normal | 01/07/2026 | [Regression test] Analisar o impacto no módulo API Escrita da remoção de conexõe |
 | 102706 | 131886 | NE | Normal | 23/06/2026 | Est� sendo apresentada indevidamente a op��o "NF-e SEFAZ SC" nas "Permiss�es dos |
 | 102577 | 131679 | SAM | Normal | 16/06/2026 | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |

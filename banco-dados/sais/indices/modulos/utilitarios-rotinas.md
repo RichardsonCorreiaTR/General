@@ -1,8 +1,8 @@
 ﻿# Utilitarios e rotinas
 
 > Dominio Escrita Fiscal | slug `utilitarios-rotinas`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 64 | Liberadas: 682 | Descartadas: 96 | Total SAIs: 837
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 64 | Liberadas: 684 | Descartadas: 97 | Total SAIs: 840
 
 ## Pendentes (64)
 
@@ -78,9 +78,11 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 102872 | 132110 | NE | 02/07/2026 | Está ocorrendo erro de sistema ao realizar uma alteração referente à data de emi |
+| 102797 | 132015 | NE | 29/06/2026 | Não está sendo demonstrado o acumulador utilizado nas notas no utilitários "Alte |
 | 102736 | 131959 | NE | 25/06/2026 | CE-Está ocorrendo erro de sistema ao tentar realizar uma alteração nas notas de  |
 | 102460 | 131593 | NE | 12/06/2026 | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
 | 102182 | 131337 | NE | 02/06/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
+| 102418 | 131290 | SAM | 02/06/2026 | Criar uma opção no utilitário 'Utilitários/Alterar Produtos para Cálculo de PIS  |
 | 102138 | 131267 | SAM | 01/06/2026 | Realizar testes no processo das Rotinas Autom�ticas devido a altera��o na config |
 | 102033 | 131136 | SAM | 26/05/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
 | 101977 | 131071 | SAM | 25/05/2026 | Apresentar no menu hamb�rguer a op��o de Gerenciador de Certificados ao acessar  |
@@ -105,8 +107,6 @@
 | 99812 | 127707 | SAM | 06/02/2026 | Realizar testes nas importa��es que utilizam certificado digital ap�s a implemen |
 | 101909 | 127061 | SAM | 26/01/2026 | Realizar testes nas telas que utilizam certificados digitais ap�s a implementa�� |
 | 99892 | 127005 | SAM | 26/01/2026 | Realizar testes em todos os processos/servi�os da escrita que utilizam certifica |
-| 99469 | 127000 | NE | 26/01/2026 | N�o est�o sendo mantidas as configura��es feitas na janela de Rotinas Autom�tica |
-| 99079 | 126260 | SAM | 09/01/2026 | Ajustar para n�o gerar a mensagem 'N�o foi poss�vel acessar o site para emiss�o  |
 
 ## Temas Frequentes
 
@@ -122,6 +122,7 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 103001 | 132270 | NE | 09/07/2026 | Está ocorrendo erro ao aplicar um log de modificações em um backup completo da v |
 | 102460 | 131593 | NE | 12/06/2026 | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
 | 101334 | 130038 | SAM | 13/04/2026 | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
 | 101070 | 129900 | SAM | 07/04/2026 | Reduzir quantidade de mensagens repetidas no agente de comunica��o |
@@ -131,7 +132,6 @@
 | 100427 | 128943 | NE | 10/03/2026 | Corrigir internamente a rotina de cancelamento de notas com os impostos 183-IBS  |
 | 100281 | 128605 | NE | 27/02/2026 | Corrigir o sistema para que a reten��o referente a rotina de distribui��o de luc |
 | 100084 | 128354 | SAM | 23/02/2026 | Adequar o uso definitivo de Certificado Digital A3 no Cont�bil. |
-| 99885 | 127956 | NE | 12/02/2026 | Ocorreu entre os dias 06/02/2026 a 11/02/2026 um erro de lote com descri��o em b |
 
 ## Busca Completa
 

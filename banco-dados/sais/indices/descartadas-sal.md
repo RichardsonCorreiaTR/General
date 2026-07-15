@@ -1,6 +1,6 @@
 ﻿# SAL Descartadas - Escrita Fiscal
 
-> Atualizado em: 07/07/2026 15:02
+> Atualizado em: 14/07/2026 18:03
 > Total SAIs unicas: 138
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |

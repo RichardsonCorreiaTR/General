@@ -1,0 +1,32 @@
+﻿{
+    "tipo":  "publicacao-dados-banco",
+    "versaoManifesto":  1,
+    "dataPublicacao":  "2026-07-15T09:01:07-03:00",
+    "origemRepo":  "C:\\1 - A\\B\\Programas\\General",
+    "destinoSharePoint":  "C:\\Users\\0181286\\OneDrive - Thomson Reuters Incorporated\\CursorEscrita - CursorEscrita\\General",
+    "importacao":  {
+                       "dataPsaiMaisRecente":  "2026-07-14",
+                       "ultimaExecucao":  "2026-07-14T15:16:17.4633205-03:00",
+                       "resultado":  "sucesso",
+                       "totalNoBanco":  66522,
+                       "registrosProcessados":  65752,
+                       "psaiMaisRecente":  132388,
+                       "alertas":  [
+
+                                   ]
+                   },
+    "pastasPublicadas":  [
+                             "banco-dados\\dados-brutos",
+                             "banco-dados\\sais\\validacoes"
+                         ],
+    "arquivosPublicados":  [
+                               "banco-dados\\sais\\cache\\importacao-meta.json",
+                               "atualizacao\\status.json"
+                           ],
+    "incluiSincronizarSharePoint":  true,
+    "instrucoesProjetoFilho":  [
+                                   "Analistas: nao e necessario rodar atualizar-projeto.ps1 para dados brutos.",
+                                   "A junction referencia/banco-dados aponta para o espelho OneDrive/SharePoint.",
+                                   "Aguardar sync OneDrive (1-5 min) e reabrir o Cursor se indices estiverem em cache."
+                               ]
+}

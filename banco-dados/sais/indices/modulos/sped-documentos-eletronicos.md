@@ -1,13 +1,14 @@
 ﻿# SPED e documentos eletronicos
 
 > Dominio Escrita Fiscal | slug `sped-documentos-eletronicos`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 199 | Liberadas: 7658 | Descartadas: 650 | Total SAIs: 8502
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 199 | Liberadas: 7659 | Descartadas: 651 | Total SAIs: 8504
 
 ## Pendentes (199)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 103074 | 132374 | SAM | Normal | 14/07/2026 | Inibir a importação de grandes lotes de arquivos de notas descompactadas para im |
 | 102688 | 131908 | SAM | Normal | 24/06/2026 | Refatorar a forma de gerar os registros D750 e D760 no SPED Fiscal  |
 | 102706 | 131886 | NE | Normal | 23/06/2026 | Est� sendo apresentada indevidamente a op��o "NF-e SEFAZ SC" nas "Permiss�es dos |
 | 102708 | 131770 | NE | Normal | 18/06/2026 | Est� importando duplicado o valor do campo 14 do registro P500 do SPED ECF quand |
@@ -15,7 +16,6 @@
 | 102685 | 131752 | SAIL | Normal | 18/06/2026 | Implementar a forma de tributa��o 'TEF - Tributa��o Espec�fica de Futebol' no In |
 | 102563 | 131709 | SAIL | Normal | 17/06/2026 | Implementar o plano referencial TEF - Tributa��o Espec�fica do Futebol e ajustar |
 | 102595 | 131627 | NE | Normal | 12/06/2026 | Est� importando incorretamente a al�quota do imposto 28-FUNRURAL nas notas de en |
-| 102475 | 131611 | NE | Normal | 12/06/2026 | Est� sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102572 | 131583 | NE | Normal | 11/06/2026 | Em alguns casos est� fechando o sistema ao emitir o Demonstrativo EFD PIS e COFI |
 | 102456 | 131580 | SAM | Normal | 11/06/2026 | Importar as Informa��es de Pagamento das NF-e e NFC-e. |
 | 102485 | 131577 | SAM | Normal | 11/06/2026 | Realizar a importa��o dos dados de cr�dito presumido para nota fiscal com IBS e  |
@@ -217,6 +217,7 @@
 | 102615 | 131798 | SAM | 19/06/2026 | Alterar a mensagem genérica apresentada "Sem dados para importar". Nenhuma linha |
 | 102550 | 131637 | NE | 15/06/2026 | Está gerando o saldo anterior incorreto no DFC em RTF no informativo SPED Contáb |
 | 102534 | 131612 | NE | 12/06/2026 | Não estão sendo gerados os registros I350 e I355 do informativo SPED Contábil qu |
+| 102475 | 131611 | NE | 12/06/2026 | Está sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102553 | 131600 | SAL | 12/06/2026 | Tornar opcional a geração do tipo de isenção '12' para a natureza de rendimento  |
 | 102444 | 131601 | NE | 12/06/2026 | Est� apresentando erro na tabela 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao g |
 | 102439 | 131581 | NE | 11/06/2026 | Est� apresentando erro de banco de dados ao realizar a importa��o de altera��o p |
@@ -241,22 +242,22 @@
 | 101914 | 130877 | NE | 19/05/2026 | Est� sendo importado valor incorreto para o campo 10 do registro P300 do informa |
 | 101823 | 130820 | NE | 18/05/2026 | Est� gerando incorretamente o valor no campo "13-VL_SERV" do registro D700 do SP |
 | 101793 | 130807 | NE | 15/05/2026 | Est� replicando indevidamente os acumuladores que possuem CNAE informado nas con |
-| 101853 | 130794 | SAL | 15/05/2026 | Remover linhas de c�lculo referente ao Programa Perse no registro N610 do SPED E |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| sped | 3739 |
+| sped | 3740 |
 | sped fiscal | 2369 |
 | xml | 1793 |
 | efd | 1138 |
-| ecf | 802 |
+| ecf | 803 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102859 | 132081 | NE | 01/07/2026 | Estão sendo geradas indevidamente as notas de "Operação considerada no cálculo d |
 | 102046 | 131184 | NE | 27/05/2026 | Esta ocorrendo erro "Erro ao inserir dados temporarios da TEMP_CTEXTRATO_BANCARI |
 | 102021 | 131032 | NE | 22/05/2026 | Est� sendo demonstrado o valor incorreto de "Redu��o referente � al�quota zero d |
 | 102492 | 130871 | NE | 19/05/2026 | Não está gerando linhas no J100 do SPED ECD quando a conta tem movimento no perí |
@@ -266,7 +267,6 @@
 | 98904 | 125645 | NE | 18/12/2025 | Em alguns casos est� travando o sistema ao executar as "Rotinas autom�ticas" qua |
 | 98356 | 124587 | NE | 24/11/2025 | PR-N�o est� marcando a op��o "Produto sujeito ao Fundo Estadual de Combate a Pob |
 | 98043 | 124309 | NE | 13/11/2025 | SC-Em alguns casos est� ocorrendo erro na valida��o do informativo SPED Fiscal.  |
-| 97918 | 123811 | NE | 28/10/2025 | Est� sendo gerado o valor incorreto do campo 04-VL_BC_RET do registro F600 do in |
 
 ## Busca Completa
 

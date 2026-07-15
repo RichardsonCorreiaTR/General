@@ -1,10 +1,36 @@
 ﻿# SAM Pendentes - Escrita Fiscal
 
-> Atualizado em: 07/07/2026 15:02
-> Total pendentes: 14881
+> Atualizado em: 14/07/2026 18:03
+> Total pendentes: 14904
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 132390 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132389 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132388 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132383 |  | 14/07/2026 | ID 0 | - |
+| 103074 | 132374 |  | 14/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Inibir a importação de grandes lotes de arquivos de notas descompactadas para im |
+| 0 | 132372 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132371 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132353 |  | 13/07/2026 | ID 0 | - |
+| 103045 | 132347 |  | 13/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Testar a importação do cadastro de fornecedores com a criação do campo "Data Nas |
+| 0 | 132336 |  | 13/07/2026 | ID 0 | - |
+| 0 | 132331 |  | 13/07/2026 | ID 0 | - |
+| 0 | 132323 |  | 10/07/2026 | ID 0 | - |
+| 0 | 132311 |  | 10/07/2026 | ID 0 | - |
+| 0 | 132307 |  | 10/07/2026 | ID 0 | - |
+| 0 | 132305 |  | 10/07/2026 | ID 0 | - |
+| 0 | 132294 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132293 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132292 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132291 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132286 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132266 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132262 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132256 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132241 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132234 |  | 07/07/2026 | ID 0 | - |
+| 0 | 132233 |  | 07/07/2026 | ID 0 | - |
 | 102957 | 132224 |  | 07/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
 | 0 | 132217 |  | 07/07/2026 | ID 0 | - |
 | 102947 | 132209 | 10.6A-07 | 07/07/2026 | Respondido Gerente de Produto | Preparar o servidor do Busca NF-e para receber os arquivos compactados. |
@@ -118,10 +144,8 @@
 | 102682 | 131364 |  | 03/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Alterar o comportamento da tela "Documentos Fiscais Armazenados na API" para bus |
 | 102459 | 131297 |  | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o permitir que o mesmo usu�rio na mesma empresa realize apura��o de impostos e |
 | 102159 | 131291 |  | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Realizar a reconex�o do agente do Web Service SEFAZ quando houve desconex�o do a |
-| 102418 | 131290 | 10.6A-07 | 02/06/2026 | Respondido Gerente de Produto | Criar uma op��o no utilit�rio 'Utilit�rios/Alterar Produtos para C�lculo de PIS  |
 | 0 | 131264 |  | 01/06/2026 | ID 0 | - |
 | 0 | 131262 |  | 01/06/2026 | ID 0 | - |
-| 102502 | 131255 | 10.6A-07 | 01/06/2026 | Respondido Gerente de Produto | Otimizar e alterar a periodicidade do evento "EVENTO_ATUALIZAR_STATUS_OPCOES_BAR |
 | 0 | 131248 |  | 01/06/2026 | ID 0 | - |
 | 0 | 131215 |  | 28/05/2026 | ID 0 | - |
 | 0 | 131210 |  | 28/05/2026 | ID 0 | - |
@@ -1685,7 +1709,6 @@
 | 0 | 113655 |  | 10/10/2024 | ID 0 | - |
 | 0 | 113654 |  | 10/10/2024 | ID 0 | - |
 | 0 | 113653 |  | 10/10/2024 | ID 0 | - |
-| 0 | 113652 |  | 10/10/2024 | ID 0 | - |
 | 0 | 113651 |  | 10/10/2024 | ID 0 | - |
 | 0 | 113650 |  | 10/10/2024 | ID 0 | - |
 | 0 | 113648 |  | 10/10/2024 | ID 0 | - |

@@ -1,7 +1,7 @@
 ﻿# NEs Pendentes - Recentes (2025+)
 
-> Atualizado em: 07/07/2026 15:02
-> Total: 225 NEs
+> Atualizado em: 14/07/2026 18:03
+> Total: 227 NEs
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
@@ -66,7 +66,6 @@
 | 101978 | 129728 | 10.6A-07 | Normal | 01/04/2026 | Respondido Gerente de Produto | N�o est� sendo gerada a assinatura digital do contador no Livro Termo de Abertur |
 | 101153 | 129729 |  | Normal | 01/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� fechando o sistema e n�o est� sendo gerado o arquivo do SPE |
 | 101036 | 129802 | 10.6A-07 | Normal | 02/04/2026 | Respondido Gerente de Produto | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na apura��o,  |
-| 101052 | 129803 | 10.6A-07 | Normal | 02/04/2026 | Respondido Gerente de Produto | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
 | 101039 | 129826 | 10.6A-07 | Normal | 02/04/2026 | Respondido Gerente de Produto | Em alguns casos, est� gerando indevidamente o valor da Receita L�quida para as D |
 | 101184 | 129830 | 10.6A-07 | Normal | 02/04/2026 | Respondido Gerente de Produto | Em alguns casos est� ocorrendo o erro de sistema "N�mero do Erro...: 6" ao reali |
 | 0 | 129860 |  | Normal | 06/04/2026 | ID 0 | - |
@@ -76,7 +75,6 @@
 | 101979 | 130053 | 10.6A-07 | Normal | 13/04/2026 | Respondido Gerente de Produto | SC-N�o est� sendo gerado valor do Cr�dito Presumido estabelecimento abatedor de  |
 | 0 | 130058 |  | Normal | 14/04/2026 | ID 0 | - |
 | 101378 | 130092 |  | Normal | 14/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos, n�o est� carregando as transa��es para o extrato se possui m�lt |
-| 0 | 130097 |  | Normal | 15/04/2026 | ID 0 | - |
 | 101286 | 130098 | 10.6A-07 | Normal | 15/04/2026 | Respondido Gerente de Produto | Em alguns casos est� sendo gerado valor negativo no campo 06-VL_CRED_DIF do regi |
 | 101414 | 130134 | 10.6A-07 | Normal | 15/04/2026 | Respondido Gerente de Produto | Est� importando incorretamente o valor da opera��o do contrato de factoring quan |
 | 101256 | 130136 |  | Normal | 15/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est�o sendo disponibilizadas para o Cont�bil as notas armazenadas no BOX-e. |
@@ -129,13 +127,11 @@
 | 102031 | 131028 |  | Normal | 22/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� apresentando erro de banco de dados ao vincular a conta referencial do SPED |
 | 102184 | 131031 |  | Normal | 22/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� importando o cliente/Fornecedor incorreto para guia "Complementar/Documento |
 | 102294 | 131039 | 10.6A-07 | Normal | 25/05/2026 | Respondido Gerente de Produto | ES-Est� sendo gerado incorretamente o registro C197 com o c�digo de ajuste "ES10 |
-| 0 | 131040 |  | Normal | 25/05/2026 | ID 0 | - |
 | 102034 | 131072 |  | Normal | 25/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est�o sendo importados os registros Y570, Y600 e Y612 do informativo SPED EC |
 | 102264 | 131103 |  | Normal | 26/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | N�o est� sendo salvo corretamente os relat�rios do Simples Nacional nas rotinas  |
 | 102141 | 131104 | 10.6A-07 | Normal | 26/05/2026 | Respondido Gerente de Produto | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
 | 102154 | 131130 |  | Normal | 26/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� realizando a contabiliza��o da baixa do bem nas contas cont�beis incorretas |
 | 102197 | 131151 |  | Normal | 26/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est�o sendo gerados indevidamente os registros 0460 e D195 no informativo SPED F |
-| 0 | 131157 |  | Normal | 27/05/2026 | ID 0 | - |
 | 102452 | 131167 |  | Normal | 27/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | MG-N�o est� importando os valores do imposto 31-ICMS ST/AT na guia estoque da no |
 | 102523 | 131168 |  | Normal | 27/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� apresentando indevidamente a cr�tica de estrutura "Emitente e Destinat�rio  |
 | 102392 | 131221 |  | Normal | 28/05/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | RJ-Est� sendo gerado um valor incorreto na coluna "Valor Cr�d. Presumido" do rel |
@@ -146,7 +142,6 @@
 | 102650 | 131281 |  | Normal | 01/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� importando o valor incorreto para a Subven��o para Investimentos, quando a  |
 | 102293 | 131283 |  | Normal | 01/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� calculando incorretamente a deprecia��o de per�odos anteriores � transfer�n |
 | 102548 | 131300 |  | Normal | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� gerando incorretamente o sequencial dos itens para notas de servi�os tomado |
-| 0 | 131313 |  | Normal | 02/06/2026 | ID 0 | - |
 | 102232 | 131327 | 10.6A-07 | Normal | 02/06/2026 | Respondido Gerente de Produto | Est� ocorrendo indevidamente os erros de importa��o: "CNPJ do emitente da NFS-e  |
 | 102695 | 131331 |  | Normal | 02/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est�o sendo gerados valores incorretos nos campos "Base de c�lculo Total" e "Bas |
 | 102330 | 131332 | 10.6A-07 | Normal | 02/06/2026 | Respondido Gerente de Produto | Em alguns casos est� ocorrendo erro de sistema ao gravar o cadastro de produtos  |
@@ -155,7 +150,6 @@
 | 102266 | 131346 |  | Normal | 03/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� apresentando erro de banco de dados ao emitir o Balan�o qua |
 | 0 | 131370 |  | Normal | 03/06/2026 | ID 0 | - |
 | 0 | 131410 |  | Normal | 08/06/2026 | ID 0 | - |
-| 0 | 131411 |  | Normal | 08/06/2026 | ID 0 | - |
 | 102448 | 131445 |  | Normal | 08/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Est� importando incorretamente o "Valor cont�bil" na linha do imposto 1-ICMS qua |
 | 0 | 131462 |  | Normal | 08/06/2026 | ID 0 | - |
 | 102463 | 131463 |  | Normal | 08/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos, as transa��es est�o sendo marcadas como lida no offset e n�o s� |
@@ -173,7 +167,6 @@
 | 102404 | 131553 |  | Normal | 11/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos n�o est� sendo gerado o valor correto nos campos "06-VL_BC_ICMS" |
 | 0 | 131573 |  | Normal | 11/06/2026 | ID 0 | - |
 | 102572 | 131583 |  | Normal | 11/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos est� fechando o sistema ao emitir o Demonstrativo EFD PIS e COFI |
-| 102475 | 131611 | 10.6A-07 | Normal | 12/06/2026 | Respondido Gerente de Produto | Est� sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102595 | 131627 | 10.6A-07 | Normal | 12/06/2026 | Respondido Gerente de Produto | Est� importando incorretamente a al�quota do imposto 28-FUNRURAL nas notas de en |
 | 0 | 131632 |  | Normal | 13/06/2026 | ID 0 | - |
 | 0 | 131633 |  | Normal | 14/06/2026 | ID 0 | - |
@@ -202,32 +195,41 @@
 | 0 | 131940 |  | Normal | 24/06/2026 | ID 0 | - |
 | 0 | 131981 |  | Normal | 26/06/2026 | ID 0 | - |
 | 102756 | 131995 |  | Normal | 26/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Está demonstrando o código e a descrição do histórico da empresa indevida |
-| 0 | 132007 |  | Normal | 29/06/2026 | ID 0 | - |
-| 0 | 132015 |  | Normal | 29/06/2026 | ID 0 | - |
 | 0 | 132020 |  | Normal | 29/06/2026 | ID 0 | - |
 | 0 | 132021 |  | Normal | 29/06/2026 | ID 0 | - |
 | 0 | 132050 |  | Normal | 30/06/2026 | ID 0 | - |
 | 0 | 132052 |  | Normal | 30/06/2026 | ID 0 | - |
 | 0 | 132057 |  | Normal | 30/06/2026 | ID 0 | - |
-| 0 | 132058 |  | Normal | 30/06/2026 | ID 0 | - |
 | 0 | 132066 |  | Normal | 30/06/2026 | ID 0 | - |
-| 0 | 132081 |  | Normal | 01/07/2026 | ID 0 | - |
 | 0 | 132089 |  | Normal | 01/07/2026 | ID 0 | - |
-| 0 | 132093 |  | Normal | 01/07/2026 | ID 0 | - |
 | 0 | 132094 |  | Normal | 01/07/2026 | ID 0 | - |
 | 0 | 132104 |  | Normal | 01/07/2026 | ID 0 | - |
 | 0 | 132109 |  | Normal | 02/07/2026 | ID 0 | - |
 | 0 | 132120 |  | Normal | 02/07/2026 | ID 0 | - |
 | 0 | 132123 |  | Normal | 02/07/2026 | ID 0 | - |
 | 102871 | 132127 |  | Normal | 02/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Está listando indevidamente contas caixa e equivalentes de caixa na listagem de  |
-| 0 | 132128 |  | Normal | 02/07/2026 | ID 0 | - |
 | 0 | 132132 |  | Normal | 02/07/2026 | ID 0 | - |
 | 0 | 132137 |  | Normal | 02/07/2026 | ID 0 | - |
 | 0 | 132140 |  | Normal | 03/07/2026 | ID 0 | - |
 | 0 | 132156 |  | Normal | 03/07/2026 | ID 0 | - |
 | 0 | 132161 |  | Normal | 06/07/2026 | ID 0 | - |
-| 0 | 132171 |  | Normal | 06/07/2026 | ID 0 | - |
 | 0 | 132182 |  | Normal | 06/07/2026 | ID 0 | - |
-| 0 | 132191 |  | Normal | 06/07/2026 | ID 0 | - |
 | 0 | 132216 |  | Normal | 07/07/2026 | ID 0 | - |
+| 0 | 132236 |  | Normal | 07/07/2026 | ID 0 | - |
+| 0 | 132239 |  | Normal | 08/07/2026 | ID 0 | - |
+| 0 | 132240 |  | Normal | 08/07/2026 | ID 0 | - |
+| 0 | 132257 |  | Normal | 08/07/2026 | ID 0 | - |
+| 0 | 132271 |  | Normal | 09/07/2026 | ID 0 | - |
+| 0 | 132303 |  | Normal | 10/07/2026 | ID 0 | - |
+| 0 | 132308 |  | Normal | 10/07/2026 | ID 0 | - |
+| 0 | 132316 |  | Normal | 10/07/2026 | ID 0 | - |
+| 0 | 132325 |  | Normal | 10/07/2026 | ID 0 | - |
+| 0 | 132326 |  | Normal | 10/07/2026 | ID 0 | - |
+| 103027 | 132327 |  | Normal | 10/07/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Em alguns casos, a conciliação anterior está sendo desfeita ao conciliar novas t |
+| 0 | 132332 |  | Normal | 13/07/2026 | ID 0 | - |
+| 0 | 132342 |  | Normal | 13/07/2026 | ID 0 | - |
+| 0 | 132349 |  | Normal | 13/07/2026 | ID 0 | - |
+| 0 | 132378 |  | Normal | 14/07/2026 | ID 0 | - |
+| 0 | 132387 |  | Normal | 14/07/2026 | ID 0 | - |
+| 0 | 132393 |  | Normal | 14/07/2026 | ID 0 | - |
 

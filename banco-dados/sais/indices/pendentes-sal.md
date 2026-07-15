@@ -1,10 +1,23 @@
 ﻿# SAL Pendentes - Escrita Fiscal
 
-> Atualizado em: 07/07/2026 15:02
-> Total pendentes: 147
+> Atualizado em: 14/07/2026 18:03
+> Total pendentes: 156
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
+| 0 | 132386 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132376 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132375 |  | 14/07/2026 | ID 0 | - |
+| 0 | 132343 |  | 13/07/2026 | ID 0 | - |
+| 0 | 132334 |  | 13/07/2026 | ID 0 | - |
+| 0 | 132306 |  | 10/07/2026 | ID 0 | - |
+| 0 | 132282 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132275 |  | 09/07/2026 | ID 0 | - |
+| 0 | 132267 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132250 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132247 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132242 |  | 08/07/2026 | ID 0 | - |
+| 0 | 132238 |  | 07/07/2026 | ID 0 | - |
 | 0 | 132200 |  | 07/07/2026 | ID 0 | - |
 | 0 | 132199 |  | 07/07/2026 | ID 0 | - |
 | 0 | 132188 |  | 06/07/2026 | ID 0 | - |
@@ -63,7 +76,6 @@
 | 0 | 131292 |  | 02/06/2026 | ID 0 | - |
 | 102414 | 131249 |  | 01/06/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Impedir os lan�amentos dos incentivos PRONON e PRONAS/PCD a partir de 01/2027 co |
 | 0 | 131229 |  | 29/05/2026 | ID 0 | - |
-| 0 | 131227 |  | 29/05/2026 | ID 0 | - |
 | 0 | 131201 |  | 28/05/2026 | ID 0 | - |
 | 0 | 131195 |  | 27/05/2026 | ID 0 | - |
 | 0 | 131163 |  | 27/05/2026 | ID 0 | - |
@@ -115,9 +127,7 @@
 | 0 | 130402 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130399 |  | 27/04/2026 | ID 0 | - |
 | 0 | 130392 |  | 27/04/2026 | ID 0 | - |
-| 0 | 130341 |  | 24/04/2026 | ID 0 | - |
 | 0 | 130259 |  | 22/04/2026 | ID 0 | - |
-| 0 | 130225 |  | 20/04/2026 | ID 0 | - |
 | 0 | 130182 |  | 17/04/2026 | ID 0 | - |
 | 102702 | 129983 |  | 10/04/2026 | Aguardando Resposta do Coordenador de Módulos DEMO | Incluir na tabela de servi�os da guia SPED do cadastro de Produtos o servi�o 11. |
 | 0 | 129982 |  | 10/04/2026 | ID 0 | - |
@@ -136,7 +146,6 @@
 | 102531 | 129165 | 10.6A-07 | 17/03/2026 | Respondido Gerente de Produto | GO-Alterar o sistema para que as notas de servi�os tomados n�o sejam considerada |
 | 101951 | 129142 | 10.6A-07 | 16/03/2026 | Respondido Gerente de Produto | CE-Alterar o comportamento da Transfer�ncia de saldo credor do ICMS para que con |
 | 0 | 129110 |  | 13/03/2026 | ID 0 | - |
-| 0 | 129096 |  | 13/03/2026 | ID 0 | - |
 | 0 | 129060 |  | 12/03/2026 | ID 0 | - |
 | 0 | 129059 |  | 12/03/2026 | ID 0 | - |
 | 0 | 129036 |  | 11/03/2026 | ID 0 | - |

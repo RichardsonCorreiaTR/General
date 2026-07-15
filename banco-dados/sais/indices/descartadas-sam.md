@@ -1,11 +1,11 @@
 ﻿# SAM Descartadas - Escrita Fiscal
 
-> Atualizado em: 07/07/2026 15:02
+> Atualizado em: 14/07/2026 18:03
 > Total SAIs unicas: 1307
 
 | SAI | PSAI | Versao | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|----------|----------|-------------------|
-| 0 | 132075 |  | 01/07/2026 | ID 0 | - |
+| 0 | 132384 |  | 14/07/2026 | ID 0 | - |
 | 101334 | 130038 |  | 13/04/2026 | Aguardando Resposta do Desenvolvimento DEMO | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
 | 101070 | 129900 |  | 07/04/2026 | SAI Aprovada | Reduzir quantidade de mensagens repetidas no agente de comunica��o |
 | 101010 | 129811 |  | 02/04/2026 | SAI Aprovada | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |

@@ -1,7 +1,7 @@
 ﻿# Integracoes e canais digitais
 
 > Dominio Escrita Fiscal | slug `integracoes-canais-digitais`
-> Atualizado em: 07/07/2026 15:02
+> Atualizado em: 14/07/2026 18:03
 > Pendentes: 91 | Liberadas: 1434 | Descartadas: 131 | Total SAIs: 1651
 
 ## Pendentes (91)

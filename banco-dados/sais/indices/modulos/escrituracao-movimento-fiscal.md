@@ -1,14 +1,14 @@
 ﻿# Escrituracao e movimento fiscal
 
 > Dominio Escrita Fiscal | slug `escrituracao-movimento-fiscal`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 237 | Liberadas: 10825 | Descartadas: 1106 | Total SAIs: 12167
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 236 | Liberadas: 10831 | Descartadas: 1108 | Total SAIs: 12174
 
-## Pendentes (237)
+## Pendentes (236)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
-| 0 | 132216 | NE | Normal | 07/07/2026 | - |
+| 0 | 132387 | NE | Normal | 14/07/2026 | - |
 | 102947 | 132209 | SAM | Normal | 07/07/2026 | Preparar o servidor do Busca NF-e para receber os arquivos compactados. |
 | 102924 | 132180 | SAM | Normal | 06/07/2026 | Corrigir as novas pendências "Medium" e "High" apresentadas pelo SNYK no servido |
 | 102706 | 131886 | NE | Normal | 23/06/2026 | Est� sendo apresentada indevidamente a op��o "NF-e SEFAZ SC" nas "Permiss�es dos |
@@ -59,7 +59,6 @@
 | 101811 | 130201 | NE | Normal | 17/04/2026 | Est� sendo realizado indevidamente consulta/download de notas fora do hor�rio de |
 | 102697 | 130146 | SAM | Normal | 16/04/2026 | Demonstrar no Relat�rio Al�quota Efetiva do Per�odo Seguinte Simples Nacional o  |
 | 101979 | 130053 | NE | Normal | 13/04/2026 | SC-N�o est� sendo gerado valor do Cr�dito Presumido estabelecimento abatedor de  |
-| 101052 | 129803 | NE | Normal | 02/04/2026 | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
 | 101307 | 129788 | SAM | Normal | 01/04/2026 | Realizar a importa��o do campo "Entrega" no lan�amento de nota fiscal de sa�da. |
 | 101277 | 129722 | SAM | Normal | 31/03/2026 | Implementar a gera��o do relat�rio de precifica��o de produtos e servi�os para a |
 | 101043 | 129701 | NE | Normal | 31/03/2026 | Em alguns casos est� ocorrendo encerramento do sistema quando importado grande v |
@@ -250,13 +249,19 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 103017 | 132319 | NE | 10/07/2026 | Desfazimento da SAI 102079. |
+| 102944 | 132191 | NE | 06/07/2026 | SC-Estão sendo gerados os valores incorretos na apuração e sub-apuração do ICMS  |
 | 102888 | 132136 | NE | 02/07/2026 | Não está sendo feito o cálculo correto do imposto 7-IRPJ, quando no período poss |
+| 102928 | 132128 | NE | 02/07/2026 | Está apresentando indevidamente mensagem de validação no cálculo do LALUR, quand |
+| 102862 | 132058 | NE | 30/06/2026 | Em alguns casos está apresentando indevidamente na apuração a mensagem 'Foram id |
+| 102797 | 132015 | NE | 29/06/2026 | Não está sendo demonstrado o acumulador utilizado nas notas no utilitários "Alte |
 | 102677 | 131884 | NE | 23/06/2026 | Está gerando indevidamente valores de PIS e COFINS nos impostos normais referent |
 | 102683 | 131874 | NE | 23/06/2026 | Está replicando indevidamente as linhas de acumuladores da guia "Serviços/Acumul |
 | 102651 | 131822 | SAM | 22/06/2026 | Alterar o sistema para emitir uma mensagem interrogativa ao realizar importação  |
 | 102221 | 131359 | NE | 03/06/2026 | SP-N�o est� importando o C�digo do Benef�cio Fiscal na guia Estoque das notas fi |
 | 102182 | 131337 | NE | 02/06/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
 | 102326 | 131335 | NE | 02/06/2026 | N�o est� sendo demonstrada corretamente a descri��o da op��o "N�o somar o valor  |
+| 102418 | 131290 | SAM | 02/06/2026 | Criar uma opção no utilitário 'Utilitários/Alterar Produtos para Cálculo de PIS  |
 | 102048 | 131148 | NE | 26/05/2026 | Est� importando incorretamente a op��o do campo "Calcular redu��o conf. LC 224/2 |
 | 102033 | 131136 | SAM | 26/05/2026 | Em alguns casos est� travando o sistema ao executar as Rotinas autom�ticas quand |
 | 102215 | 131134 | NE | 26/05/2026 | N�o est� sendo zerada a guia "IVA" das notas canceladas de sa�das de CT-e, quand |
@@ -274,18 +279,12 @@
 | 101321 | 130237 | NE | 20/04/2026 | RS-Est� ocorrendo erro de banco de dados ao alterar o CST de ICMS na guia Estoqu |
 | 101727 | 130209 | NE | 20/04/2026 | SP-Est� sendo gerada incorretamente a descri��o no campo "Tipo de d�bito" da gui |
 | 101283 | 130181 | NE | 17/04/2026 | N�o est� sendo feito o c�lculo correto da majora��o dos impostos 7-IRPJ e 6-CSLL |
-| 101352 | 130176 | NE | 17/04/2026 | Est� gerando o erro 'of_executa_ct_balanco of object n_cst_rotinas_automaticas'  |
-| 101605 | 130149 | SAL | 16/04/2026 | Atualizar a 'Tabela de Classifica��o Tribut�ria IBS e CBS', a 'Tabela de V�nculo |
-| 101061 | 129875 | NE | 07/04/2026 | Est� ocorrendo o erro "Erro realizando requisi��o: Erro ao realizar requisi��o:  |
-| 101141 | 129762 | NE | 01/04/2026 | Est� demonstrando indevidamente a mensagem de aviso: "Existe a mesma combina��o  |
-| 101013 | 129761 | NE | 01/04/2026 | N�o est�o sendo armazenadas as notas enviadas pelo Busca NF-e para o BOX-e.     |
-| 100985 | 129721 | NE | 31/03/2026 | Est� ocorrendo erro de sistema ao importar notas, quando no acumulador est� sele |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| icms | 3861 |
+| icms | 3862 |
 | nf-e | 1651 |
 | nota fiscal | 1589 |
 | simples | 1305 |
@@ -295,6 +294,8 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102859 | 132081 | NE | 01/07/2026 | Estão sendo geradas indevidamente as notas de "Operação considerada no cálculo d |
+| 101052 | 129803 | NE | 02/04/2026 | Em alguns casos está apresentando a mensagem "Data inferior a data de fechamento |
 | 101010 | 129811 | SAM | 02/04/2026 | Implementar o AlertCont�bil nas rotinas autom�ticas das importa��es NF-e Arquivo |
 | 101695 | 129731 | NE | 01/04/2026 | TO-N�o est�o sendo gerados corretamente os quadros 3 e 4 do informativo DIF, qua |
 | 100943 | 129661 | NE | 30/03/2026 | Est� habilitando indevidamente a guia "Relacionamento de produtos" no resumo de  |
@@ -303,8 +304,6 @@
 | 98423 | 125124 | SAM | 05/12/2025 | Realizar testes ap�s atualiza��es das builds do TomCat e NginX no Busca NF-e. |
 | 97955 | 124194 | SAM | 11/11/2025 | Criar um servi�o do eSocial e demais threads que tire o processamento de todas a |
 | 98238 | 124148 | NE | 07/11/2025 | Em alguns casos est�o sendo gerados diferentes de uma compet�ncia para outra no  |
-| 99334 | 123986 | NE | 04/11/2025 | Em alguns casos, ao regerar as baixas de notas de entradas, sa�das e servi�os da |
-| 97918 | 123811 | NE | 28/10/2025 | Est� sendo gerado o valor incorreto do campo 04-VL_BC_RET do registro F600 do in |
 
 ## Busca Completa
 

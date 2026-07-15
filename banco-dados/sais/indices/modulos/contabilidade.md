@@ -1,13 +1,14 @@
 ﻿# Contabilidade
 
 > Dominio Escrita Fiscal | slug `contabilidade`
-> Atualizado em: 07/07/2026 15:02
+> Atualizado em: 14/07/2026 18:03
 > Pendentes: 100 | Liberadas: 2647 | Descartadas: 330 | Total SAIs: 3063
 
 ## Pendentes (100)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 0 | 132393 | NE | Normal | 14/07/2026 | - |
 | 102957 | 132224 | SAM | Normal | 07/07/2026 | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
 | 102577 | 131679 | SAM | Normal | 16/06/2026 | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |
 | 102675 | 131657 | NE | Normal | 15/06/2026 | N�o est�o sendo considerados os lan�amentos cont�beis de custos e despesas no Pl |
@@ -25,7 +26,6 @@
 | 101320 | 129969 | SAM | Normal | 09/04/2026 | Reimplementar o relat�rio Controle de Incentivos Fiscais. |
 | 101069 | 129891 | NE | Normal | 07/04/2026 | Lentid�o ao realizar a grava��o de lan�amentos no Contabilidade Digital |
 | 101039 | 129826 | NE | Normal | 02/04/2026 | Em alguns casos, est� gerando indevidamente o valor da Receita L�quida para as D |
-| 101052 | 129803 | NE | Normal | 02/04/2026 | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
 | 100737 | 128718 | NE | Normal | 03/03/2026 | Est� ocorrendo o erro 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao realizar a i |
 | 101634 | 126597 | SAM | Normal | 16/01/2026 | Otimizar o c�lculo da Deprecia��o Societ�ria. |
 | 98939 | 125748 | NE | Normal | 22/12/2025 | N�o est� considerando corretamente a marca��o da op��o "Imprimir o nome do licen |
@@ -158,9 +158,9 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
-| 0 | 132196 | NE | 07/07/2026 | - |
 | 102581 | 131615 | NE | 12/06/2026 | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
 | 101334 | 130038 | SAM | 13/04/2026 | Apresentar no menu hambúrguer a opção de Gerenciador de Certificados ao acessar  |
+| 101052 | 129803 | NE | 02/04/2026 | Em alguns casos está apresentando a mensagem "Data inferior a data de fechamento |
 | 102585 | 129682 | NE | 30/03/2026 | Não está limpando o campo "Conta contábil do banco" ou "Contrapartida" na Regra  |
 | 100262 | 128681 | SAM | 02/03/2026 | Integrar o Banco Mercado Pago �s op��es do Open Finance dispon�veis atualmente. |
 | 100105 | 128377 | SAM | 24/02/2026 | Integrar o banco C6 �s op��es do Open Finance dispon�veis atualmente.   |

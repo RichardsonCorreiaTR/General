@@ -1,14 +1,19 @@
 ﻿# NEs Liberadas - Recentes (2022+)
 
-> Atualizado em: 07/07/2026 15:02
-> Total SAIs unicas: 3542
+> Atualizado em: 14/07/2026 18:03
+> Total SAIs unicas: 3548
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
+| 103017 | 132319 | 10.6A-07 | Grave | 10/07/2026 | Respondido Gerente de Produto | Desfazimento da SAI 102079. |
+| 102944 | 132191 | 10.6A-07 | Normal | 06/07/2026 | Respondido Gerente de Produto | SC-Estão sendo gerados os valores incorretos na apuração e sub-apuração do ICMS  |
 | 102888 | 132136 | 10.6A-07 | Normal | 02/07/2026 | Respondido Gerente de Produto | Não está sendo feito o cálculo correto do imposto 7-IRPJ, quando no período poss |
+| 102928 | 132128 | 10.6A-07 | Normal | 02/07/2026 | Respondido Gerente de Testes | Está apresentando indevidamente mensagem de validação no cálculo do LALUR, quand |
 | 102872 | 132110 | 10.6A-07 | Normal | 02/07/2026 | Respondido Gerente de Produto | Está ocorrendo erro de sistema ao realizar uma alteração referente à data de emi |
 | 102841 | 132095 | 10.6A-07 | Grave | 01/07/2026 | Respondido Gerente de Produto | Está ocorrendo erro "Ocorreu um erro ao buscar informações da instituição" ao ac |
+| 102862 | 132058 | 10.6A-07 | Normal | 30/06/2026 | Respondido Gerente de Testes | Em alguns casos está apresentando indevidamente na apuração a mensagem 'Foram id |
 | 102781 | 132030 | 10.6A-07 | Normal | 29/06/2026 | Respondido Gerente de Produto | Ao desconciliar a ultima transação do extrato da competência está travando o sis |
+| 102797 | 132015 | 10.6A-07 | Normal | 29/06/2026 | Respondido Gerente de Produto | Não está sendo demonstrado o acumulador utilizado nas notas no utilitários "Alte |
 | 102736 | 131959 | 10.6A-07 | Grave | 25/06/2026 | Respondido Gerente de Produto | CE-Está ocorrendo erro de sistema ao tentar realizar uma alteração nas notas de  |
 | 102677 | 131884 | 10.6A-07 | Normal | 23/06/2026 | Respondido Gerente de Produto | Está gerando indevidamente valores de PIS e COFINS nos impostos normais referent |
 | 102683 | 131874 | 10.6A-07 | Normal | 23/06/2026 | Respondido Gerente de Produto | Está replicando indevidamente as linhas de acumuladores da guia "Serviços/Acumul |
@@ -19,6 +24,7 @@
 | 102550 | 131637 | 10.6A-07 | Normal | 15/06/2026 | Aguardando Resposta do Desenvolvimento | Está gerando o saldo anterior incorreto no DFC em RTF no informativo SPED Contáb |
 | 102581 | 131615 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
 | 102534 | 131612 | 10.6A-07 | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento | Não estão sendo gerados os registros I350 e I355 do informativo SPED Contábil qu |
+| 102475 | 131611 | 10.6A-07 | Normal | 12/06/2026 | Respondido Gerente de Testes | Está sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102565 | 131603 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está impedindo a exclusão de lançamentos pela tela de Lançamentos de extrato |
 | 102460 | 131593 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
 | 102444 | 131601 | 10.6A-06 | Normal | 12/06/2026 | Em Teste DEMO | Est� apresentando erro na tabela 'CTSPED_CONTABIL_OD_ALTERACAO_PLANO_CONTA' ao g |

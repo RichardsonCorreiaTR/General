@@ -1,11 +1,13 @@
 ﻿# NEs Descartadas
 
-> Atualizado em: 07/07/2026 15:02
-> Total SAIs unicas: 1677
+> Atualizado em: 14/07/2026 18:03
+> Total SAIs unicas: 1680
 
 | SAI | PSAI | Versao | Gravidade | Cadastro | Situacao | Descricao (resumo) |
 |-----|------|--------|-----------|----------|----------|-------------------|
-| 0 | 132196 |  | Normal | 07/07/2026 | ID 0 | - |
+| 0 | 132290 |  | Normal | 09/07/2026 | ID 0 | - |
+| 103001 | 132270 |  | Normal | 09/07/2026 | SAI Aprovada | Está ocorrendo erro ao aplicar um log de modificações em um backup completo da v |
+| 102859 | 132081 |  | Normal | 01/07/2026 | SAI Aprovada | Estão sendo geradas indevidamente as notas de "Operação considerada no cálculo d |
 | 102581 | 131615 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
 | 102565 | 131603 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está impedindo a exclusão de lançamentos pela tela de Lançamentos de extrato |
 | 102460 | 131593 |  | Normal | 12/06/2026 | Aguardando Resposta do Desenvolvimento DEMO | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
@@ -21,6 +23,7 @@
 | 101181 | 130055 |  | Normal | 13/04/2026 | SAI Aprovada | Em alguns casos est� ocorrendo travamento do sistema no M�dulo Folha quando real |
 | 101326 | 129954 |  | Normal | 09/04/2026 | SAI Aprovada | N�o est� processando novo consentimento quando antigo est� inv�lido e possui tra |
 | 102366 | 129939 |  | Normal | 08/04/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está importando lançamento como pendente quando no arquivo não há a informaç |
+| 101052 | 129803 |  | Normal | 02/04/2026 | SAI Aprovada | Em alguns casos está apresentando a mensagem "Data inferior a data de fechamento |
 | 101695 | 129731 |  | Normal | 01/04/2026 | SAI Aprovada | TO-N�o est�o sendo gerados corretamente os quadros 3 e 4 do informativo DIF, qua |
 | 102585 | 129682 |  | Normal | 30/03/2026 | Aguardando Resposta do Desenvolvimento DEMO | Não está limpando o campo "Conta contábil do banco" ou "Contrapartida" na Regra  |
 | 100943 | 129661 |  | Normal | 30/03/2026 | SAI Aprovada | Est� habilitando indevidamente a guia "Relacionamento de produtos" no resumo de  |

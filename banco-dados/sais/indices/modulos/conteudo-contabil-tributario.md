@@ -1,16 +1,15 @@
 ﻿# Conteúdo Contábil Tributário
 
 > Dominio Escrita Fiscal | slug `conteudo-contabil-tributario`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 18 | Liberadas: 929 | Descartadas: 71 | Total SAIs: 1018
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 17 | Liberadas: 930 | Descartadas: 71 | Total SAIs: 1018
 
-## Pendentes (18)
+## Pendentes (17)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
 | 102708 | 131770 | NE | Normal | 18/06/2026 | Est� importando duplicado o valor do campo 14 do registro P500 do SPED ECF quand |
 | 102685 | 131752 | SAIL | Normal | 18/06/2026 | Implementar a forma de tributa��o 'TEF - Tributa��o Espec�fica de Futebol' no In |
-| 102475 | 131611 | NE | Normal | 12/06/2026 | Est� sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102377 | 131483 | NE | Normal | 09/06/2026 | N�o est� sendo demonstrada a informa��o correta no campo "Opera��o" da janela "O |
 | 102034 | 131072 | NE | Normal | 25/05/2026 | N�o est�o sendo importados os registros Y570, Y600 e Y612 do informativo SPED EC |
 | 102387 | 131062 | SAM | Normal | 25/05/2026 | Otimizar a importa��o do registro Y570 do informativo SPED ECF. |
@@ -32,6 +31,7 @@
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
 | 102689 | 131907 | SAM | 24/06/2026 | Criar mensagem de alerta sobre o vencimento do SPED ECF na tela de Novidades do  |
+| 102475 | 131611 | NE | 12/06/2026 | Está sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102309 | 131407 | NE | 05/06/2026 | Está importando os valores do registro L210 do SPED ECF de forma acumulada para  |
 | 102350 | 131231 | SAL | 29/05/2026 | Atualizar as tabelas do SPED ECF, registro M350, conforme tabela dinâmica de 28/ |
 | 102349 | 131230 | SAL | 29/05/2026 | Atualizar as tabelas do SPED ECF, registro M350, conforme tabela dinâmica de 28/ |
@@ -60,13 +60,12 @@
 | 100015 | 126993 | SAL | 23/01/2026 | Alterar o sistema para realizar os ajustes referente a majora��o de 10% no perce |
 | 100007 | 126827 | SAL | 21/01/2026 | Alterar o sistema para considerar a majora��o de 10% no %CSLL e %IRPJ no planeja |
 | 99223 | 125927 | SAL | 29/12/2025 | Alterar o sistema para considerar a majora��o de 10% no percentual de B.C. dos i |
-| 98042 | 124293 | SAL | 13/11/2025 | Atualizar o informativo SPED ECF conforme altera��es da tabela din�mica de 09/11 |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| ecf | 802 |
+| ecf | 803 |
 | lucro presumido | 119 |
 | dipj | 33 |
 | lucro arbitrado | 8 |

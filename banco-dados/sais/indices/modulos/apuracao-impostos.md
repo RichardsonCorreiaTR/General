@@ -1,13 +1,15 @@
 ﻿# Apuracao de impostos
 
 > Dominio Escrita Fiscal | slug `apuracao-impostos`
-> Atualizado em: 07/07/2026 15:02
-> Pendentes: 664 | Liberadas: 25141 | Descartadas: 2608 | Total SAIs: 28359
+> Atualizado em: 14/07/2026 18:03
+> Pendentes: 662 | Liberadas: 25148 | Descartadas: 2611 | Total SAIs: 28367
 
-## Pendentes (664)
+## Pendentes (662)
 
 | SAI | PSAI | Tipo | Gravidade | Cadastro | Resumo |
 |-----|------|------|-----------|----------|--------|
+| 103045 | 132347 | SAM | Normal | 13/07/2026 | Testar a importação do cadastro de fornecedores com a criação do campo "Data Nas |
+| 103027 | 132327 | NE | Normal | 10/07/2026 | Em alguns casos, a conciliação anterior está sendo desfeita ao conciliar novas t |
 | 102957 | 132224 | SAM | Normal | 07/07/2026 | Receber a alteração do Cadastro de empresas para os novos regimes tributários im |
 | 102871 | 132127 | NE | Normal | 02/07/2026 | Está listando indevidamente contas caixa e equivalentes de caixa na listagem de  |
 | 102845 | 132103 | SAM | Normal | 01/07/2026 | [Regression test] Analisar o impacto no módulo API Escrita da remoção de conexõe |
@@ -31,7 +33,6 @@
 | 102577 | 131679 | SAM | Normal | 16/06/2026 | Realizar testes no processo Exporta/Importa ap�s altera��o de comportamento que  |
 | 102675 | 131657 | NE | Normal | 15/06/2026 | N�o est�o sendo considerados os lan�amentos cont�beis de custos e despesas no Pl |
 | 102595 | 131627 | NE | Normal | 12/06/2026 | Est� importando incorretamente a al�quota do imposto 28-FUNRURAL nas notas de en |
-| 102475 | 131611 | NE | Normal | 12/06/2026 | Est� sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102442 | 131608 | SAM | Normal | 12/06/2026 | Realizar testes no processo das Rotinas autom�ticas no ambiente Dom�nio Web devi |
 | 102430 | 131595 | SAM | Normal | 12/06/2026 | Realizar testes no processo do Utilit�rios/Regerar Lan�amentos Cont�beis. |
 | 102420 | 131584 | SAM | Normal | 11/06/2026 | Realizar testes no processo das Rotinas autom�ticas no ambiente Dom�nio Web devi |
@@ -62,10 +63,8 @@
 | 102232 | 131327 | NE | Normal | 02/06/2026 | Est� ocorrendo indevidamente os erros de importa��o: "CNPJ do emitente da NFS-e  |
 | 102548 | 131300 | NE | Normal | 02/06/2026 | Est� gerando incorretamente o sequencial dos itens para notas de servi�os tomado |
 | 102459 | 131297 | SAM | Normal | 02/06/2026 | N�o permitir que o mesmo usu�rio na mesma empresa realize apura��o de impostos e |
-| 102418 | 131290 | SAM | Normal | 02/06/2026 | Criar uma op��o no utilit�rio 'Utilit�rios/Alterar Produtos para C�lculo de PIS  |
 | 102293 | 131283 | NE | Normal | 01/06/2026 | Est� calculando incorretamente a deprecia��o de per�odos anteriores � transfer�n |
 | 102650 | 131281 | NE | Normal | 01/06/2026 | Est� importando o valor incorreto para a Subven��o para Investimentos, quando a  |
-| 102502 | 131255 | SAM | Normal | 01/06/2026 | Otimizar e alterar a periodicidade do evento "EVENTO_ATUALIZAR_STATUS_OPCOES_BAR |
 | 102192 | 131254 | NE | Normal | 01/06/2026 | N�o est� preenchendo os c�digos de configura��o ao contratar a Contabilidade Dig |
 | 102247 | 131237 | NE | Normal | 01/06/2026 | Est� gerando incorretamente o Ganho/perda de Capital ao realizar a baixa total,  |
 | 102647 | 131235 | NE | Normal | 01/06/2026 | Transa��es de UPDATED/DELETED est�o travando a fila de processamento quando cheg |
@@ -164,7 +163,6 @@
 | 101184 | 129830 | NE | Normal | 02/04/2026 | Em alguns casos est� ocorrendo o erro de sistema "N�mero do Erro...: 6" ao reali |
 | 101039 | 129826 | NE | Normal | 02/04/2026 | Em alguns casos, est� gerando indevidamente o valor da Receita L�quida para as D |
 | 101696 | 129812 | SAL | Normal | 02/04/2026 | Alterar o c�lculo do cr�dito presumido da Lei 12.865/13, conforme a redu��o line |
-| 101052 | 129803 | NE | Normal | 02/04/2026 | Em alguns casos est� apresentando a mensagem "Data inferior a data de fechamento |
 | 101036 | 129802 | NE | Normal | 02/04/2026 | N�o est�o sendo calculados os impostos 110-CSLL/SCP e 111-IRPJ/SCP na apura��o,  |
 | 101645 | 129795 | SAM | Normal | 01/04/2026 | Realizar testes nos m�dulos Lalur e Atualizar, devido a atualiza��o do acesso ao |
 | 101153 | 129729 | NE | Normal | 01/04/2026 | Em alguns casos est� fechando o sistema e n�o est� sendo gerado o arquivo do SPE |
@@ -677,10 +675,14 @@
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 102944 | 132191 | NE | 06/07/2026 | SC-Estão sendo gerados os valores incorretos na apuração e sub-apuração do ICMS  |
 | 102888 | 132136 | NE | 02/07/2026 | Não está sendo feito o cálculo correto do imposto 7-IRPJ, quando no período poss |
+| 102928 | 132128 | NE | 02/07/2026 | Está apresentando indevidamente mensagem de validação no cálculo do LALUR, quand |
 | 102872 | 132110 | NE | 02/07/2026 | Está ocorrendo erro de sistema ao realizar uma alteração referente à data de emi |
 | 102841 | 132095 | NE | 01/07/2026 | Está ocorrendo erro "Ocorreu um erro ao buscar informações da instituição" ao ac |
+| 102862 | 132058 | NE | 30/06/2026 | Em alguns casos está apresentando indevidamente na apuração a mensagem 'Foram id |
 | 102781 | 132030 | NE | 29/06/2026 | Ao desconciliar a ultima transação do extrato da competência está travando o sis |
+| 102797 | 132015 | NE | 29/06/2026 | Não está sendo demonstrado o acumulador utilizado nas notas no utilitários "Alte |
 | 102795 | 132009 | SAM | 29/06/2026 | Adequar a importação do cadastro de empresas da RFB para importar todos os CNAE' |
 | 102736 | 131959 | NE | 25/06/2026 | CE-Está ocorrendo erro de sistema ao tentar realizar uma alteração nas notas de  |
 | 102677 | 131884 | NE | 23/06/2026 | Está gerando indevidamente valores de PIS e COFINS nos impostos normais referent |
@@ -694,6 +696,7 @@
 | 102550 | 131637 | NE | 15/06/2026 | Está gerando o saldo anterior incorreto no DFC em RTF no informativo SPED Contáb |
 | 102581 | 131615 | NE | 12/06/2026 | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
 | 102534 | 131612 | NE | 12/06/2026 | Não estão sendo gerados os registros I350 e I355 do informativo SPED Contábil qu |
+| 102475 | 131611 | NE | 12/06/2026 | Está sendo validado incorretamente os valores do registro P150 com o P200/P400 n |
 | 102565 | 131603 | NE | 12/06/2026 | Não está impedindo a exclusão de lançamentos pela tela de Lançamentos de extrato |
 | 102553 | 131600 | SAL | 12/06/2026 | Tornar opcional a geração do tipo de isenção '12' para a natureza de rendimento  |
 | 102460 | 131593 | NE | 12/06/2026 | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
@@ -702,26 +705,23 @@
 | 102469 | 131575 | NE | 11/06/2026 | Est� apresentando erro de banco de dados ao gravar a tela Altera��o de Lan�ament |
 | 102421 | 131550 | NE | 11/06/2026 | Em alguns casos, est� apresentando erro de banco de dados ao gerar o SPED Cont�b |
 | 102391 | 131513 | NE | 10/06/2026 | Est� ocorrendo erro de banco de dados ao realizar a apura��o do sistema, quando  |
-| 102426 | 131506 | NE | 10/06/2026 | N�o est� sendo apresentada a mensagem de aviso para a reapura��o dos Tributos Fe |
-| 102406 | 131504 | NE | 10/06/2026 | N�o est� sendo gerado o valor correto para os impostos 6-CSLL e 7-IRPJ na apura� |
-| 102409 | 131477 | NE | 09/06/2026 | N�o est� sendo gerado lan�amento cont�bil de compensa��o do PIS e COFINS na inte |
-| 102319 | 131461 | NE | 08/06/2026 | N�o est� importando os dados do benefici�rio para a nota de servi�o quando reali |
-| 102302 | 131434 | SAM | 08/06/2026 | Realizar os testes de fluxo completo da API quando as notas foram recebidas pelo |
 
 ## Temas Frequentes
 
 | Tema | Ocorrencias |
 |------|-------------|
-| st | 23149 |
-| icms | 3861 |
+| st | 23156 |
+| icms | 3862 |
 | iss | 2430 |
 | rat | 1808 |
-| pis | 1353 |
+| pis | 1354 |
 
 ## Descartadas Recentes (10 mais recentes)
 
 | SAI | PSAI | Tipo | Cadastro | Resumo |
 |-----|------|------|----------|--------|
+| 103001 | 132270 | NE | 09/07/2026 | Está ocorrendo erro ao aplicar um log de modificações em um backup completo da v |
+| 102859 | 132081 | NE | 01/07/2026 | Estão sendo geradas indevidamente as notas de "Operação considerada no cálculo d |
 | 102581 | 131615 | NE | 12/06/2026 | Não está apresentando uma mensagem clara na tela Lançamentos de extrato bancário |
 | 102565 | 131603 | NE | 12/06/2026 | Não está impedindo a exclusão de lançamentos pela tela de Lançamentos de extrato |
 | 102460 | 131593 | NE | 12/06/2026 | Está aparecendo indevidamente o toggle da DMPL no cadastro e edição de rotinas p |
@@ -730,8 +730,6 @@
 | 102021 | 131032 | NE | 22/05/2026 | Est� sendo demonstrado o valor incorreto de "Redu��o referente � al�quota zero d |
 | 102473 | 130872 | NE | 19/05/2026 | Não está gerando o I157 para contas que não tiverem movimento no primeiro mês do |
 | 102492 | 130871 | NE | 19/05/2026 | Não está gerando linhas no J100 do SPED ECD quando a conta tem movimento no perí |
-| 101806 | 130832 | SAL | 18/05/2026 | Ajustar o envio da guia DAS conforme as altera��es ocorridas no Captcha do PGDAS |
-| 101801 | 130776 | NE | 14/05/2026 | N�o est� calculando corretamente o saldo na apura��o dos impostos 4-PIS e 5-COFI |
 
 ## Busca Completa
 
