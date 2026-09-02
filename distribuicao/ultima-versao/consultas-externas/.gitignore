@@ -1,0 +1,8 @@
+entrada/*.json
+processando/*.json
+saida/*.json
+erros/*.json
+!entrada/.gitkeep
+!processando/.gitkeep
+!saida/.gitkeep
+!erros/.gitkeep

@@ -1,5 +1,17 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.43 - 02/09/2026
+
+- feat: fila consultas-externas para outro projeto pedir busca de SAI e pesquisa no codigo-fonte (entrada/saida), processar-consultas-externas.ps1, pacote cliente e -Json/-JsonOut no buscar-sai.ps1.
+
+---
+
+## v2.4.42 - 17/08/2026
+
+- feat: validacao de PSAI confere valores/opcoes/datas nas imagens (capturas) vs. texto/exemplos; divergencias no parecer (secao Valores nas imagens).
+
+---
+
 ## v2.4.41 - 08/07/2026
 
 - fix: scripts/buscar-sai.ps1 -- -Termo com apenas digitos agora busca por numero de SAI ou PSAI (ex.: -Termo 101291).
@@ -376,6 +388,8 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
+
 
 
 

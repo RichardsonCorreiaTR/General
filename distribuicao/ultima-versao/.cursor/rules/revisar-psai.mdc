@@ -65,6 +65,7 @@ Se no export em `referencia/banco-dados/dados-brutos/psai/*.json` faltar `compor
 - Para calculos: os valores do exemplo devem resultar exatamente no que a regra diz. Refaca o calculo para confirmar.
 - Se houver exemplo de calculo + exemplo de relatorio: os dados devem ser os mesmos (ou o calculo do relatorio deve estar explicito).
 - Mais de um "sendo correto": cada um deve estar **destacado em amarelo** (verificar se o analista indicou isso).
+- **Imagens/capturas:** se houver tela ou relatorio em imagem, conferir valores/opcoes/datas visiveis nos campos vs. texto e exemplos. Divergencias → secao **Valores nas imagens** do parecer (para verificacao humana). Sem imagem ou ilegivel: declarar N/A ou lacuna.
 
 ## Passo 5 — Conformidade com os padroes estabelecidos
 
@@ -74,7 +75,7 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` (geral); 
 - [ ] Texto principal do pedido contem as 3 informacoes obrigatorias onde o manual exige (qual erro/situacao, onde, quando)? **NE:** exigir no **comportamento** (e em descricao PSAI se for onde estiver o resumo); nao exigir qual/onde/quando **dentro de definicao** se o campo estiver vazio.
 - [ ] Topicos em MAIUSCULO + negrito; subtopicos com primeira letra maiuscula + negrito?
 - [ ] Listas numeradas; reiniciadas a cada topico?
-- [ ] Telas: imagem abaixo do texto, explicacao dos campos abaixo da imagem?
+- [ ] Telas: imagem abaixo do texto, explicacao dos campos abaixo da imagem; valores/opcoes na captura batem com texto/exemplos?
 - [ ] Mensagens: sem imagem, com tipo/titulo/texto/botoes entre colchetes?
 - [ ] Campos novos: comportamento na atualizacao definido (combobox, checkbox, valor, data)?
 - [ ] Areas de Impacto marcadas corretamente (Escrita/Importacao/Contabilidade)?
@@ -130,6 +131,9 @@ Ao final, emita sempre neste formato:
 
 ### Exemplos
 - [inconsistencias encontradas, ou "Exemplos consistentes com a definicao"]
+
+### Valores nas imagens
+- [divergencias: campo | valor na imagem | valor esperado no texto — ou "Sem divergencias" / "Sem imagens para conferir" / "Imagem ilegivel"]
 
 ### Conformidade com padroes
 - [itens nao conformes com referencia ao guia, ou "Conforme"]

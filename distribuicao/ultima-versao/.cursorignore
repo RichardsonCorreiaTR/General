@@ -1,2 +1,6 @@
-﻿# Dados pesados do OneDrive - NAO indexar no Cursor
+# Dados pesados do OneDrive - NAO indexar no Cursor
 referencia/banco-dados/dados-brutos/
+consultas-externas/entrada/
+consultas-externas/saida/
+consultas-externas/processando/
+consultas-externas/erros/

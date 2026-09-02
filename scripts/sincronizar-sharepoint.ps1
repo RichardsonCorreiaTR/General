@@ -102,6 +102,7 @@ $arqsCopia = @(
     "projeto-filho\scripts\atualizar-projeto.ps1",
     # v2.4.39: atualizar-codigo.ps1 e atualizar-codigo-fonte.ps1 removidos do filho (GitHub-only via gh CLI).
     "projeto-filho\scripts\buscar-sai.ps1",
+    "projeto-filho\scripts\processar-consultas-externas.ps1",
     "projeto-filho\scripts\verificar-ambiente.ps1",
     "projeto-filho\scripts\corrigir-symlinks.ps1",
     "projeto-filho\scripts\Publicar-LogParaConsolidacao.ps1",
@@ -126,6 +127,7 @@ $arqsCopia = @(
     "projeto-filho\.cursor\rules\revisar-psai.mdc",
     "projeto-filho\.cursor\rules\sgd-enriquecer-psai.mdc",
     "projeto-filho\.cursor\rules\consultar-legislacao.mdc",
+    "projeto-filho\.cursor\rules\consultas-externas.mdc",
     # --- Outros ---
     "logs\README.md"
 )

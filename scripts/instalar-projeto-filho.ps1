@@ -165,7 +165,7 @@ function Install-ProjectFiles {
     }
     New-Item -ItemType Directory -Path $Destino -Force | Out-Null
     $itens = 0
-    foreach ($pasta in @(".cursor", "templates", "meu-trabalho")) {
+    foreach ($pasta in @(".cursor", "templates", "meu-trabalho", "consultas-externas")) {
         $src = Join-Path $fonteProjetoFilho $pasta
         $dst = Join-Path $Destino $pasta
         if (Test-Path $src) { Copy-Item -Path $src -Destination $dst -Recurse -Force; $itens++ }

@@ -10,7 +10,7 @@
 - Versão produto (se constar): <ex.: 10.6A-03.02>
 
 ### Achados (não conforme / atenção)
-- <lista objetiva: ortografia, manual, duplicidade, etc.>
+- <lista objetiva: ortografia, manual, duplicidade, divergência de valor em imagem (campo | valor na imagem | valor esperado), etc.>
 
 ### Decisão sugerida
 <APROVADO | APROVADO COM AJUSTES | DEVOLVER | ESCALAR> — <uma linha>

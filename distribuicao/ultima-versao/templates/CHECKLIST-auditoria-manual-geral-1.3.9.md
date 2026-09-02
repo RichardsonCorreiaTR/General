@@ -23,6 +23,7 @@
 - [ ] Imagem **abaixo** do texto da alteração; explicação de campos **abaixo** da imagem.
 - [ ] Tela com rolagem: **todas** as capturas, empilhadas.
 - [ ] Revisão de tela existente: alterações em **laranja**; destaques em **retângulo vermelho**.
+- [ ] **Valores na captura:** valores, opções, datas e dados visíveis nos campos batem com definição/comportamento e exemplos; divergências listadas no resumo da validação (campo | valor na imagem | valor esperado).
 
 ## 4. Relatórios (§1.6)
 

@@ -53,6 +53,7 @@
 - Tela com barra de rolagem: incluir **todas** as capturas (uma embaixo da outra).
 - Alterações em telas já existentes (revisão): destacar em **laranja**.
 - Destaques de alterações em telas/relatórios: **retângulo vermelho** ao redor.
+- **Valores na captura:** conferir se os valores, opções selecionadas, datas e demais dados visíveis nos campos da imagem batem com o texto da definição/comportamento e com os exemplos. Qualquer divergência deve constar no resumo da validação para verificação humana (campo, valor na imagem, valor esperado no texto).
 
 ---
 

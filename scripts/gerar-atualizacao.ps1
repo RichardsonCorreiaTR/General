@@ -71,7 +71,7 @@ Write-Host "[2/6] Coletando arquivos..." -ForegroundColor Yellow
 $tempPack = Join-Path $env:TEMP "projeto-filho-pack-$(Get-Random)"
 New-Item -ItemType Directory -Path $tempPack -Force | Out-Null
 
-$pastasIncluir = @(".cursor", "templates", "meu-trabalho", "scripts", "config")
+$pastasIncluir = @(".cursor", "templates", "meu-trabalho", "scripts", "config", "consultas-externas")
 foreach ($pasta in $pastasIncluir) {
     $src = Join-Path $fonteDir $pasta
     if (Test-Path $src) {
@@ -118,7 +118,7 @@ $manifesto = @{
     data = (Get-Date -Format "yyyy-MM-ddTHH:mm:ss")
     geradoPor = $env:USERNAME
     changelog = if ($Changelog) { $Changelog } else { "Atualizacao v$Versao" }
-    preservar = @("config/analista.json", "config/caminhos.json", "meu-trabalho")
+    preservar = @("config/analista.json", "config/caminhos.json", "meu-trabalho", "consultas-externas/entrada", "consultas-externas/saida")
 } | ConvertTo-Json -Depth 2
 Set-Content -Path (Join-Path $tempPack "MANIFESTO-UPDATE.json") -Value $manifesto -Encoding UTF8
 
@@ -148,7 +148,7 @@ New-Item -ItemType Directory -Path $atVersaoDir -Force | Out-Null
 $atArquivosDir = Join-Path $atVersaoDir "arquivos"
 New-Item -ItemType Directory -Path $atArquivosDir -Force | Out-Null
 
-$pastasCanal2 = @(".cursor", "scripts", "config", "templates")
+$pastasCanal2 = @(".cursor", "scripts", "config", "templates", "consultas-externas")
 foreach ($pasta in $pastasCanal2) {
     $src = Join-Path $tempPack $pasta
     if (Test-Path $src) {
@@ -170,7 +170,7 @@ $manifestoIA = @{
     arquivosAlterados = @(Get-ChildItem $atArquivosDir -Recurse -File | ForEach-Object {
         $_.FullName.Replace("$atArquivosDir\", "").Replace("\", "/")
     })
-    preservar = @("config/analista.json", "config/caminhos.json", "meu-trabalho")
+    preservar = @("config/analista.json", "config/caminhos.json", "meu-trabalho", "consultas-externas/entrada", "consultas-externas/saida")
     requerSymlink = @("atualizacao")
 } | ConvertTo-Json -Depth 3
 Set-Content -Path (Join-Path $atVersaoDir "manifesto.json") -Value $manifestoIA -Encoding UTF8

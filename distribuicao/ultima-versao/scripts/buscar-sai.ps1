@@ -30,7 +30,9 @@ param(
     [switch]$VerPSAIs,
     [switch]$VisualizarSai,
     [switch]$Resumido,
-    [int]$Max = 30
+    [int]$Max = 30,
+    [switch]$Json,
+    [string]$JsonOut = ""
 )
 
 # URLs internas do SGSAI/SGD (clicaveis via Ctrl+Click no terminal)
@@ -60,6 +62,25 @@ function Get-UrlSai($numero) {
 }
 function Get-UrlPsai($numero) {
     $n = 0; if ([int]::TryParse([string]$numero, [ref]$n) -and $n -gt 0) { return "$URL_PSAI_BASE$n" } else { return "" }
+}
+
+function ConvertTo-SaiResumo($reg) {
+    $status = if ($VisualizarSai) { SafeStr $reg.situacaoSai } elseif ($reg.Liberacao) { "Liberada" } elseif ($reg.Descarte) { "Descartada" } else { "Pendente" }
+    $desc = SafeStr $reg.sai_descricao
+    $desc = ($desc -replace "`r|`n", " ")
+    if ($desc.Length -gt 200) { $desc = $desc.Substring(0, 200) }
+    [pscustomobject]@{
+        i_sai         = $reg.i_sai
+        i_psai        = $reg.i_psai
+        tipoSAI       = $reg.tipoSAI
+        nomeVersao    = $reg.nomeVersao
+        status        = $status
+        nomeArea      = $reg.nomeArea
+        gravidade_ne  = $reg.gravidade_ne
+        sai_descricao = $desc
+        url_sai       = Get-UrlSai $reg.i_sai
+        url_psai      = Get-UrlPsai $reg.i_psai
+    }
 }
 
 function Test-NumeroSaiPsai($reg, [string]$numStr) {
@@ -122,6 +143,8 @@ if (-not $Termo -and $Termos.Count -eq 0 -and $SAI -eq 0 -and $PSAI -eq 0 -and -
     Write-Host "  -VisualizarSai          Usar arquivos SAI resumidos (sem BLOBs)"
     Write-Host "  -Resumido               Saida compacta (1 linha por resultado)"
     Write-Host "  -Max 30                 Limite de resultados (padrao: 30)"
+    Write-Host "  -Json                   Imprime JSON resumido (sem BLOBs) no stdout"
+    Write-Host "  -JsonOut caminho.json   Grava o mesmo JSON em arquivo"
     Write-Host ""
     Write-Host "Comportamento padrao:" -ForegroundColor Yellow
     Write-Host "  Busca nos PSAIs (todos os campos). Agrupa por SAI e mostra"
@@ -297,6 +320,28 @@ if (-not $VerPSAIs -and -not $VisualizarSai -and $SAI -eq 0 -and $PSAI -eq 0) {
 $totalResultados = $resultado.Count
 Write-Host ""
 Write-Host "=== $totalResultados resultado(s) ===" -ForegroundColor Cyan
+
+if ($Json -or $JsonOut) {
+    $itens = @()
+    if ($totalResultados -gt 0) {
+        $itens = @($resultado | Select-Object -First $Max | ForEach-Object { ConvertTo-SaiResumo $_ })
+    }
+    $payloadObj = [pscustomobject]@{
+        total     = $totalResultados
+        mostrando = $itens.Count
+        itens     = $itens
+    }
+    $payload = $payloadObj | ConvertTo-Json -Depth 6
+    if ($JsonOut) {
+        $dirOut = Split-Path -Parent $JsonOut
+        if ($dirOut -and -not (Test-Path $dirOut)) { New-Item -ItemType Directory -Path $dirOut -Force | Out-Null }
+        Set-Content -Path $JsonOut -Value $payload -Encoding UTF8
+        Write-Host "JSON gravado em: $JsonOut" -ForegroundColor Green
+    }
+    if ($Json) { Write-Output $payload }
+    exit 0
+}
+
 if ($totalResultados -eq 0) { exit 0 }
 
 $resultado | Select-Object -First $Max | ForEach-Object {

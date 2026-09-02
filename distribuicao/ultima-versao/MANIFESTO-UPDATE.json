@@ -1,11 +1,13 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "- fix: scripts/buscar-sai.ps1 -- -Termo com apenas digitos agora busca por numero de SAI ou PSAI (ex.: -Termo 101291).",
-    "data":  "2026-07-08T09:57:15",
+    "changelog":  "- feat: fila consultas-externas para outro projeto pedir busca de SAI e pesquisa no codigo-fonte (entrada/saida), processar-consultas-externas.ps1, pacote cliente e -Json/-JsonOut no buscar-sai.ps1.",
+    "data":  "2026-09-02T08:16:49",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
-                      "meu-trabalho"
+                      "meu-trabalho",
+                      "consultas-externas/entrada",
+                      "consultas-externas/saida"
                   ],
-    "versao":  "2.4.41"
+    "versao":  "2.4.43"
 }

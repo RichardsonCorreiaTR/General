@@ -1,0 +1,18 @@
+---
+description: Fila de consultas de SAI e codigo vindas de outro projeto
+alwaysApply: true
+---
+
+# Consultas externas (fila)
+
+Se o usuario pedir para processar consultas externas, OU se existir `*.json` em `consultas-externas/entrada/`:
+
+1. Rode `powershell -File scripts\processar-consultas-externas.ps1`
+2. Informe os ids gravados em `consultas-externas/saida/`
+3. Resuma o resultado (tabela de SAIs com links; codigo em linguagem de produto)
+
+Nao leia `referencia/banco-dados/dados-brutos/` no terminal do Cursor.
+Nao peca token/PAT. Codigo so via `gh` (ja usado pelo processador).
+
+Tipos aceitos: `sai`, `codigo`, `ler-arquivo`, `sai-sgd`, `psai-sgd`.
+Pacote para outro projeto: `consultas-externas/cliente/`.

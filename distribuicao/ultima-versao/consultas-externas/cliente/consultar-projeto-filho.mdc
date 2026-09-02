@@ -1,0 +1,40 @@
+---
+description: Consultar SAIs e codigo-fonte via projeto-filho (fila ou scripts)
+alwaysApply: true
+---
+
+# Consultas ao Projeto Filho (Escrita SDD)
+
+Este workspace NAO tem a base de SAIs nem as regras de investigacao do BR Contabil.
+Use o **projeto-filho** instalado nesta maquina.
+
+Caminho padrao: `C:\CursorEscrita\projeto-filho`
+Se existir `config/caminhos-filho.json`, use o campo `projeto_filho`.
+
+## Quando usar
+
+- Buscar SAI/PSAI por termo ou numero
+- Pesquisar codigo no repo `tr/brtap-dominio_contabil`
+- Ler um arquivo PowerBuilder na branch vigente
+
+## Modo A -- direto (preferido na mesma maquina)
+
+1. SAI: `powershell -File "{filho}\scripts\buscar-sai.ps1" -Termo "..." -JsonOut "{workspace}\sai-tmp.json" -Max 20`
+2. Depois leia o JSON gerado. Nao carregue `dados-brutos` no Cursor.
+3. Codigo: leia `{filho}\config\codigo-fonte-branches.json` (campo `vigente.branch`).
+   - Busca: `gh api "search/code?q=TERMO+repo:tr/brtap-dominio_contabil"`
+   - Arquivo: `gh api "repos/tr/brtap-dominio_contabil/contents/CAMINHO?ref=BRANCH" -H "Accept: application/vnd.github.raw"`
+4. NUNCA peca token/PAT no chat.
+
+## Modo B -- fila (quando o filho deve processar)
+
+1. Grave um JSON em `{filho}\consultas-externas\entrada\{id}.json` (veja o template no filho).
+2. Peca ao usuario para processar no filho, OU rode `{filho}\scripts\processar-consultas-externas.ps1` se tiver permissao.
+3. Leia `{filho}\consultas-externas\saida\{id}.json`.
+
+Tipos: `sai`, `codigo`, `ler-arquivo`, `sai-sgd`, `psai-sgd`.
+
+## Resposta ao usuario
+
+- SAIs: tabela com links `sgsai` / `sgd` (mesmo padrao do filho).
+- Codigo: resumo em linguagem de produto, path e branch. Nao despeje 50+ trechos.

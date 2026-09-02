@@ -11,7 +11,8 @@
                                "projeto.mdc",
                                "revisar-psai.mdc",
                                "sgd-enriquecer-psai.mdc",
-                               "consultar-legislacao.mdc"
+                               "consultar-legislacao.mdc",
+                               "consultas-externas.mdc"
                            ],
     "arquivosCursorOpcionais":  [
                                     ".cursor/sandbox.json",

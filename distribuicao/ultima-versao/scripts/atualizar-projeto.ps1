@@ -137,6 +137,29 @@ foreach ($nome in $configPacote) {
     }
 }
 
+# Fila de consultas externas: atualiza cliente/templates/README sem apagar pedidos/resultados
+$ceSrc = Join-Path $fonteDir "consultas-externas"
+$ceDst = Join-Path $projetoDir "consultas-externas"
+if (Test-Path -LiteralPath $ceSrc) {
+    New-Item -ItemType Directory -Path $ceDst -Force | Out-Null
+    foreach ($sub in @("cliente", "templates")) {
+        $s = Join-Path $ceSrc $sub
+        if (Test-Path -LiteralPath $s) {
+            $d = Join-Path $ceDst $sub
+            if (Test-Path -LiteralPath $d) { Remove-Item -LiteralPath $d -Recurse -Force }
+            Copy-Item -LiteralPath $s -Destination $d -Recurse -Force
+        }
+    }
+    foreach ($arqCe in @("README.md", ".gitignore")) {
+        $sArq = Join-Path $ceSrc $arqCe
+        if (Test-Path -LiteralPath $sArq) { Copy-Item -LiteralPath $sArq -Destination (Join-Path $ceDst $arqCe) -Force }
+    }
+    foreach ($fila in @("entrada", "processando", "saida", "erros")) {
+        New-Item -ItemType Directory -Path (Join-Path $ceDst $fila) -Force | Out-Null
+    }
+    Write-Host "  Atualizado: consultas-externas (fila preservada)" -ForegroundColor Green
+}
+
 # Restaurar dados do analista
 Write-Host "[3/3] Restaurando seus dados..." -ForegroundColor Yellow
 foreach ($item in @("config\analista.json", "config\caminhos.json", "config\status-ambiente.json")) {

@@ -1,0 +1,20 @@
+{
+  "id": "ex-20260825-001",
+  "origem": "nome-do-outro-projeto",
+  "tipo": "sai",
+  "criadoEm": "2026-08-25T12:00:00-03:00",
+  "pergunta": "Buscar SAIs sobre ICMS ST",
+  "parametros": {
+    "termo": "ICMS ST",
+    "tipoSai": "",
+    "sai": 0,
+    "psai": 0,
+    "max": 20,
+    "modulo": "",
+    "pendentes": false,
+    "query": "",
+    "arquivo": "",
+    "conceitoBranch": "vigente",
+    "numero": 0
+  }
+}
