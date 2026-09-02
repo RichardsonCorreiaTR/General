@@ -113,6 +113,7 @@ Se **não** houver arquivo Processos no contexto: escrever uma linha **“Cruzam
 ## Dimensões da análise (PADRÃO ou superior)
 
 1. **Consistência de nomenclatura** (campos, telas, parâmetros) — texto vs. imagem vs. exemplos.
+1b. **Valores nas imagens** — quando houver captura: conferir valores, opções selecionadas, datas e demais dados visíveis nos campos vs. definição/comportamento/exemplos; listar cada divergência no resumo (campo | valor na imagem | valor esperado) para verificação humana; sem imagem ou ilegível = N/A ou lacuna.
 2. **Ortografia e clareza** — citar cada erro com localização.
 3. **Completude contábil/fiscal** — lacunas, vigências, retroatividade, bases legais quando aplicável.
 4. **Impactos técnicos** — interface, cálculo, dados, relatórios, integrações, performance (se o manual exigir menção).
@@ -162,6 +163,10 @@ Se **não** houver arquivo Processos no contexto: escrever uma linha **“Cruzam
 …
 
 #### 3. Nomenclatura e consistência texto × imagem
+…
+
+#### 3b. Valores nas imagens (campos preenchidos)
+- [divergências campo | valor na imagem | valor esperado — ou Sem divergências / Sem imagens / Imagem ilegível]
 …
 
 #### 4. Conformidade com GUIA-padroes / GUIA-validacao-ne / checklists

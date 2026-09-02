@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.43 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.44 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-- feat: fila consultas-externas para outro projeto pedir busca de SAI e pesquisa no codigo-fonte (entrada/saida), processar-consultas-externas.ps1, pacote cliente e -Json/-JsonOut no buscar-sai.ps1.
+- fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -89,7 +89,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 | arquivos/templates/GUIA-validacao-calculos-negativos.md | templates/GUIA-validacao-calculos-negativos.md |
 | arquivos/templates/GUIA-validacao-ne.md | templates/GUIA-validacao-ne.md |
 | arquivos/templates/GUIA-validacao-sal.md | templates/GUIA-validacao-sal.md |
-| arquivos/templates/Novo(a) Apresentação do Microsoft PowerPoint.pptx | templates/Novo(a) Apresentação do Microsoft PowerPoint.pptx |
 | arquivos/templates/PROMPT-auditoria-psai.md | templates/PROMPT-auditoria-psai.md |
 | arquivos/templates/README-auditoria-psai.md | templates/README-auditoria-psai.md |
 | arquivos/templates/TEMPLATE-analise-impacto.md | templates/TEMPLATE-analise-impacto.md |
@@ -114,6 +113,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.43".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.44".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

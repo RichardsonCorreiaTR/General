@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "- feat: fila consultas-externas para outro projeto pedir busca de SAI e pesquisa no codigo-fonte (entrada/saida), processar-consultas-externas.ps1, pacote cliente e -Json/-JsonOut no buscar-sai.ps1.",
-    "data":  "2026-09-02",
-    "hash_validacao":  "CD4A25AEC67DCC36544FF09FBF879ACB",
-    "versao":  "2.4.43"
-}

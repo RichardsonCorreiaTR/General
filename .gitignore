@@ -80,6 +80,9 @@ projeto-filho/referencia/logs/
 # Pasta de saidas temporarias (logs operacionais, drafts de mensagens)
 tmp/
 
+# PowerPoint vazio criado pelo Office (nao e template do projeto)
+**/Novo(a)*.pptx
+
 # Consultas SGD locais (GP) — saidas pesadas e credenciais
 data/sgd-psai-consultas/
 

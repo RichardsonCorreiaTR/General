@@ -1,6 +1,6 @@
 ﻿{
     "data":  "2026-09-02",
-    "versao":  "2.4.43",
+    "versao":  "2.4.44",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -81,7 +81,6 @@
                               "templates/GUIA-validacao-calculos-negativos.md",
                               "templates/GUIA-validacao-ne.md",
                               "templates/GUIA-validacao-sal.md",
-                              "templates/Novo(a) Apresentação do Microsoft PowerPoint.pptx",
                               "templates/PROMPT-auditoria-psai.md",
                               "templates/README-auditoria-psai.md",
                               "templates/TEMPLATE-analise-impacto.md",
@@ -94,7 +93,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "- feat: fila consultas-externas para outro projeto pedir busca de SAI e pesquisa no codigo-fonte (entrada/saida), processar-consultas-externas.ps1, pacote cliente e -Json/-JsonOut no buscar-sai.ps1.",
+    "changelog":  "- fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.",
     "requerSymlink":  [
                           "atualizacao"
                       ],

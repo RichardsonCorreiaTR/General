@@ -1,7 +1,7 @@
 ﻿{
     "geradoPor":  "0181286",
-    "changelog":  "- feat: fila consultas-externas para outro projeto pedir busca de SAI e pesquisa no codigo-fonte (entrada/saida), processar-consultas-externas.ps1, pacote cliente e -Json/-JsonOut no buscar-sai.ps1.",
-    "data":  "2026-09-02T08:16:49",
+    "changelog":  "- fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.",
+    "data":  "2026-09-02T08:29:24",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -9,5 +9,5 @@
                       "consultas-externas/entrada",
                       "consultas-externas/saida"
                   ],
-    "versao":  "2.4.43"
+    "versao":  "2.4.44"
 }
