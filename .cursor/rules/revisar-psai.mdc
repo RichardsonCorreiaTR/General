@@ -61,6 +61,7 @@ Se no export local faltar `comportamento` e/ou `definicao` e/ou `psai_descricao`
 - Para calculos: os valores do exemplo devem resultar exatamente no que a regra diz. Refaca o calculo para confirmar.
 - Se houver exemplo de calculo + exemplo de relatorio: os dados devem ser os mesmos (ou o calculo do relatorio deve estar explicito).
 - Mais de um "sendo correto": cada um deve estar **destacado em amarelo** (verificar se o analista indicou isso).
+- **Imagens/capturas:** se houver tela ou relatorio em imagem, conferir valores/opcoes/datas visiveis nos campos vs. texto e exemplos. Divergencias → secao **Valores nas imagens** do parecer (para verificacao humana). Sem imagem ou ilegivel: declarar N/A ou lacuna.
 
 ## Passo 5 — Conformidade com os padroes estabelecidos
 
@@ -70,7 +71,7 @@ Verifique contra os guias do projeto (`templates/GUIA-padroes-psai.md` (geral); 
 - [ ] Texto principal do pedido contem as 3 informacoes obrigatorias onde o manual exige (qual erro/situacao, onde, quando)? **NE:** exigir no **comportamento** (e em descricao PSAI se for onde estiver o resumo); nao exigir qual/onde/quando **dentro de definicao** se o campo estiver vazio.
 - [ ] Topicos em MAIUSCULO + negrito; subtopicos com primeira letra maiuscula + negrito?
 - [ ] Listas numeradas; reiniciadas a cada topico?
-- [ ] Telas: imagem abaixo do texto, explicacao dos campos abaixo da imagem?
+- [ ] Telas: imagem abaixo do texto, explicacao dos campos abaixo da imagem; valores/opcoes na captura batem com texto/exemplos?
 - [ ] Mensagens: sem imagem, com tipo/titulo/texto/botoes entre colchetes?
 - [ ] Campos novos: comportamento na atualizacao definido (combobox, checkbox, valor, data)?
 - [ ] Areas de Impacto marcadas corretamente (Escrita/Importacao/Contabilidade)?
@@ -103,6 +104,16 @@ Antes do parecer final, quando existir **numero de PSAI** (ou SAI) no pedido:
 
 Sem numero identificavel (consulta generica), o passo 6 nao aplica.
 
+## Passo 7 — Reflexos no codigo-fonte (sempre, antes do parecer)
+
+Apos os passos 1–5 (e a leitura do historico no passo 6, se houver), **sempre** cruzar a definicao/comportamento com o codigo do BR Contabil. Objetivo: achar pontos do sistema que a PSAI **nao trata** e que teriam reflexo (outras telas, rotinas, importacao, apuracao, SPED, eventos, replicacao, calculo, etc.).
+
+1. Branch: `config/codigo-fonte-branches.json` (`vigente`; em SAL/SAIL tambem `vigente_anterior` se clientes estiverem nela). Consulta via `gh` — `@acesso-github.mdc` e `@agente-codigo.mdc`. Nao clonar; nao pedir PAT.
+2. Localizar arquivos: `banco-dados/mapa-sistema/mapa-escrita.md` e `indice-arquivos.md` (Importacao/Onvio: mapas correspondentes). Depois `gh api` search/code e/ou contents na branch.
+3. Partir de menus, PBL, funcoes, campos e rotinas citados no texto. Seguir quem chama e quem reusa o resultado. Se a busca passar de **50** hits, refinar (nao despejar).
+4. No parecer, secao **«Reflexos no codigo-fonte»**: paths/funcoes olhados; **lacunas** (o codigo faz X e a definicao nao cobre); ou «Definicao cobre os pontos encontrados». Sem acesso (`gh` 404/nao autenticado): Mensagem Prioritaria (`acesso-github.mdc`) e listar reflexos so com mapa/SAIs; nao inventar codigo.
+5. Lacuna material (fluxo, tela, rotina ou calculo no codigo sem tratamento no texto) → **DEVOLVER** (ou **ESCALAR** se o analista nao puder completar sozinho).
+
 ## Formato do parecer
 
 Ao final, emita sempre neste formato:
@@ -122,6 +133,9 @@ Ao final, emita sempre neste formato:
 ### Exemplos
 - [inconsistencias encontradas, ou "Exemplos consistentes com a definicao"]
 
+### Valores nas imagens
+- [divergencias: campo | valor na imagem | valor esperado no texto — ou "Sem divergencias" / "Sem imagens para conferir" / "Imagem ilegivel"]
+
 ### Conformidade com padroes
 - [itens nao conformes com referencia ao guia, ou "Conforme"]
 - **NE:** discriminar **Comportamento** (obrigatorio na analise) e **Definicao** (so se houver texto; se vazio, indicar "Definicao vazia — esperado / nao aplicavel").
@@ -129,6 +143,9 @@ Ao final, emita sempre neste formato:
 
 ### Evolucao vs validacao anterior
 - [Se existir `banco-dados/sais/validacoes/psai-<N>.md`: melhoras, pendente, regressoes; senao: "Primeira validacao registada" apos gravar o ficheiro]
+
+### Reflexos no codigo-fonte
+- [paths/funcoes; lacunas vs definicao; ou "Definicao cobre os pontos encontrados". Se sem `gh`: "Codigo nao consultado — [motivo]" + reflexos so de mapa]
 
 ### Decisao sugerida
 APROVADO / DEVOLVER (com motivo) / ESCALAR

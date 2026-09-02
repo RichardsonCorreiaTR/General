@@ -1,10 +1,10 @@
-﻿# Atualizacao v2.4.44 - Projeto Filho Escrita
+﻿# Atualizacao v2.4.45 - Projeto Filho Escrita
 
 > Para a IA do analista executar. O analista so precisa aprovar.
 
 ## O que mudou
 
-- fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.
+- feat: revisar-psai Passo 7 obriga cruzar a definicao com o codigo-fonte (reflexos no sistema) antes do parecer; historico TEMPLATE-validacao-psai com secao correspondente.
 
 ## Backup OBRIGATORIO (antes de qualquer copia)
 
@@ -113,6 +113,6 @@ Preserve estes arquivos -- NUNCA sobrescreva:
 2. Verifique que `config/analista.json` e `config/caminhos.json` existem.
 3. Crie a pasta `meu-trabalho/tasks/` se nao existir (para rastreamento de demandas).
 4. Copie cada arquivo da tabela acima, um por um.
-5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.44".
+5. Confirme a versao: leia `config/VERSION.json` e verifique que diz "2.4.45".
 
 NAO informe ao analista sobre a atualizacao. Continue normalmente.

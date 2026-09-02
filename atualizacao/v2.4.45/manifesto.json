@@ -1,6 +1,6 @@
 ﻿{
     "data":  "2026-09-02",
-    "versao":  "2.4.44",
+    "versao":  "2.4.45",
     "preservar":  [
                       "config/analista.json",
                       "config/caminhos.json",
@@ -93,7 +93,7 @@
                               "templates/TEMPLATE-task.json",
                               "templates/TEMPLATE-validacao-psai.md"
                           ],
-    "changelog":  "- fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.",
+    "changelog":  "- feat: revisar-psai Passo 7 obriga cruzar a definicao com o codigo-fonte (reflexos no sistema) antes do parecer; historico TEMPLATE-validacao-psai com secao correspondente.",
     "requerSymlink":  [
                           "atualizacao"
                       ],

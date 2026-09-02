@@ -543,7 +543,7 @@ transferencia entre empresas. Isso pode ser um gap."
 
 ## Validacao de texto PSAI/SAI (manual de padroes)
 
-Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md` (geral); para NE: `GUIA-validacao-ne.md`; para SAL: `GUIA-validacao-sal.md`; para calculo em SAM/SAL/SAIL: `GUIA-validacao-calculos-negativos.md`), seguir `@revisar-psai.mdc` ate o **Passo 6**: registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
+Quando o analista pedir para **validar**, **revisar** ou **checar** uma PSAI/SAI contra os manuais (`templates/GUIA-padroes-psai.md` (geral); para NE: `GUIA-validacao-ne.md`; para SAL: `GUIA-validacao-sal.md`; para calculo em SAM/SAL/SAIL: `GUIA-validacao-calculos-negativos.md`), seguir `@revisar-psai.mdc` ate o **Passo 7** (codigo-fonte + registo em `meu-trabalho/validacoes-psai/psai-<N>.md` (nunca em `referencia/`). Export sem texto: `@sgd-enriquecer-psai.mdc` e `.\scripts\Consultar-PSAI-SGD.ps1`.
 
 ---
 

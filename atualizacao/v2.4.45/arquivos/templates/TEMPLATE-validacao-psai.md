@@ -12,6 +12,9 @@
 ### Achados (não conforme / atenção)
 - <lista objetiva: ortografia, manual, duplicidade, divergência de valor em imagem (campo | valor na imagem | valor esperado), etc.>
 
+### Reflexos no código-fonte
+- <paths/funções consultados; lacunas da definição vs sistema; ou «definição cobre os pontos encontrados»; se sem `gh`: motivo>
+
 ### Decisão sugerida
 <APROVADO | APROVADO COM AJUSTES | DEVOLVER | ESCALAR> — <uma linha>
 

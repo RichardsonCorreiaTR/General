@@ -113,6 +113,16 @@ O gerente pode **fundir** depois entradas relevantes em `banco-dados/sais/valida
 
 Sem numero identificavel (consulta generica), o passo 6 nao aplica.
 
+## Passo 7 — Reflexos no codigo-fonte (sempre, antes do parecer)
+
+Apos os passos 1–5 (e a leitura do historico no passo 6, se houver), **sempre** cruzar a definicao/comportamento com o codigo do BR Contabil. Objetivo: achar pontos do sistema que a PSAI **nao trata** e que teriam reflexo (outras telas, rotinas, importacao, apuracao, SPED, eventos, replicacao, calculo, etc.).
+
+1. Branch: `config/codigo-fonte-branches.json` (`vigente`; em SAL/SAIL tambem `vigente_anterior` se clientes estiverem nela). Consulta via `gh` — `@acesso-github.mdc` e `@agente-codigo.mdc`. Nao clonar; nao pedir PAT.
+2. Localizar arquivos: `referencia/banco-dados/mapa-sistema/mapa-escrita.md` e `indice-arquivos.md` (Importacao/Onvio: mapas correspondentes). Depois `gh api` search/code e/ou contents na branch.
+3. Partir de menus, PBL, funcoes, campos e rotinas citados no texto. Seguir quem chama e quem reusa o resultado. Se a busca passar de **50** hits, refinar (nao despejar).
+4. No parecer, secao **«Reflexos no codigo-fonte»**: paths/funcoes olhados; **lacunas** (o codigo faz X e a definicao nao cobre); ou «Definicao cobre os pontos encontrados». Sem acesso (`gh` 404/nao autenticado): Mensagem Prioritaria (`acesso-github.mdc`) e listar reflexos so com mapa/SAIs; nao inventar codigo.
+5. Lacuna material (fluxo, tela, rotina ou calculo no codigo sem tratamento no texto) → **DEVOLVER** (ou **ESCALAR** se o analista nao puder completar sozinho).
+
 ## Formato do parecer
 
 Ao final, emita sempre neste formato:
@@ -142,6 +152,9 @@ Ao final, emita sempre neste formato:
 
 ### Evolucao vs validacao anterior
 - [Ler `meu-trabalho/validacoes-psai/psai-<N>.md` e/ou `referencia/.../validacoes/`; melhoras, pendente, regressoes; ou "Primeira validacao neste ficheiro do analista"]
+
+### Reflexos no codigo-fonte
+- [paths/funcoes; lacunas vs definicao; ou "Definicao cobre os pontos encontrados". Se sem `gh`: "Codigo nao consultado — [motivo]" + reflexos so de mapa]
 
 ### Decisao sugerida
 APROVADO / DEVOLVER (com motivo) / ESCALAR

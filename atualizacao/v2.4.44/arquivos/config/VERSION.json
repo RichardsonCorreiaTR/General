@@ -1,7 +1,0 @@
-﻿{
-    "compativel_com_admin":  "2.5",
-    "changelog":  "- fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.",
-    "data":  "2026-09-02",
-    "hash_validacao":  "CD4A25AEC67DCC36544FF09FBF879ACB",
-    "versao":  "2.4.44"
-}

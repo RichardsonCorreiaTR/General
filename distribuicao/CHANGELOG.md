@@ -1,5 +1,11 @@
 ﻿# Changelog - Projeto Filho
 
+## v2.4.45 - 02/09/2026
+
+- feat: revisar-psai Passo 7 obriga cruzar a definicao com o codigo-fonte (reflexos no sistema) antes do parecer; historico TEMPLATE-validacao-psai com secao correspondente.
+
+---
+
 ## v2.4.44 - 02/09/2026
 
 - fix: remove PowerPoint acidental dos templates (Novo(a) Apresentacao) e lixo de instalacao pontual; pacote igual a v2.4.43 sem esse arquivo.
@@ -394,6 +400,7 @@ Sistema de tasks para rastreamento de demandas. Retomada entre chats. Deteccao a
 Versao inicial do projeto filho. Pipeline exploratorio de 7 fases, logs com essencia do analista, integracao OneDrive.
 
 ---
+
 
 
 
